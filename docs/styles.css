@@ -1,0 +1,776 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville&family=Libre+Baskerville:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@900&display=swap');
+
+
+
+:root {
+  --background-color: #F9F9F9;
+  --secondary-color-normal: #21C1BD;
+  --secondary-color-light: #D1F7F6;
+
+  
+  --nav-color: #fff;
+  --nav-text: #000;
+
+  --normal-text-color: #6A6666;
+  --bolded-text-color: #21C1BD;
+  --giant-text-color:  #062423;
+  --highlight-color: #FFF2CC;
+}
+
+/*---------------
+Typography
+------------------*/
+
+.para1, .para2, .para3 {
+  text-align: center;
+}
+
+.para2 {
+  line-height: normal;
+}
+
+.service-header, .project-header, .about-header {
+font-size: 2rem
+  
+}
+
+.normal-text, .selected-paragraph {
+  font-family: 'Libre Baskerville';
+  color: var(--normal-text-color);
+  font-size: 1.5rem;
+
+}
+
+.bolded-text {
+  font-family: 'Libre Franklin';
+  color: var(--bolded-text-color);
+  font-size: 1.75rem;
+  font-weight: 900;
+}
+
+.giant-text {
+  font-family: 'Libre Franklin';
+  color: var(--giant-text-color);
+  font-size: 6rem;
+  font-weight: 900;
+}
+
+.page-design-info {
+  font-size: 1.5rem;
+  font-family: 'Lora' ;
+  color: var(--secondary-color-normal);
+}
+
+.arrow {
+  font-size: 3rem;
+  color: var(--secondary-color-normal);
+}
+
+.service-num, .project-num{
+  font-family: 'Lora';
+  color: var(--secondary-color-normal);
+  font-weight: 500;
+
+}
+
+.service-rest, .project-rest, .about-header{
+  font-family: 'Libre Franklin';
+  font-weight: 500;
+
+}
+
+.project-rest, .about-header {
+  color: var(--giant-text-color);
+}
+
+.bolded-text:hover {
+  color: #000;
+  background-color: #FFF2CC;
+}
+
+.stat-num{
+  font-size: 3rem ;
+  color: var(--secondary-color-normal);
+  font-family: 'Libre Franklin';
+}
+
+.stat-text{
+  font-size: 1rem ;
+  color: var(--normal-text-color);
+  font-family: 'Libre Baskerville';
+}
+
+.card-link{
+  text-decoration: none !important;
+}
+
+/*
+.para2 .giant-text:hover{
+  color: #fff;
+  background-color: var(--secondary-color-normal);
+}
+*/
+/*---------------
+Layout
+------------------*/
+
+
+.container-fluid {
+  padding-right: 0;
+  padding-left:0; 
+  /*margin-right: 0; 
+  margin-left: 0;*/
+}
+
+
+.overall-container {
+  max-width: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.maduong-container {
+  max-width: 1000%;
+  width: 1000%;
+}
+
+.c-selected, .c-hero, .c-bio, .c-gallery {
+  background: var(--background-color);
+}
+
+.c-services, .c-contact {
+  background: var(--secondary-color-light);
+}
+
+
+.main-container{
+  max-width: 100% !important;
+  background: var(--background-color);
+
+}
+
+section {
+  margin: 0 auto;
+  max-width: 95%;
+}
+
+.hero-section{
+  display: flex;
+  background: var(--background-color);
+  
+}
+.bar-animation-container{
+  width: 5%;
+  padding-top: 5px;
+}
+
+.message-container, .service-container, .selected-container, .contact-container, .project-col-container, .bio-container, .skill-container{
+  width: 100%;
+}
+
+.page-design-container{
+  width: 12%;
+  display:flex;
+  align-items: flex-end;
+}
+
+.page-design-holder {
+  align-self: flex-end;
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+  margin: 10px 20px;
+}
+.page-design-line{
+  width: 2px;
+  height: 100px;
+  background: var(--secondary-color-normal);
+}
+.services-section{
+  display:flex;
+  background: var(--secondary-color-light);
+}
+.service-container{
+  display:flex;
+}
+
+.button-container{
+  display:flex;
+  justify-content: center;
+  column-gap: 10px;
+  margin-bottom: 10px;
+}
+
+.selected-section {
+  display:flex;
+  background: var(--background-color);
+}
+
+.footer-section {
+  display:flex;
+  background: var(--secondary-color-light);
+}
+
+.place-holder{
+width: 100px;
+background: grey;
+height: 100px;
+}
+
+.selected-holder1{
+  display:flex;
+}
+
+.service-col1{
+  width: 100%;
+}
+
+.service-col2{
+  width: 5%;
+  margin: 1%
+}
+
+.service-paragraph {
+  font-family: "Libre Baskerville";
+  color: #6A6666;
+  font-weight: 1.3rem;
+}
+
+.project-section, .bio-section, .skill-section{
+  display: flex;
+  background: var(--background-color);
+}
+
+.c-section, .c-project{
+  background: var(--background-color);
+}
+
+
+/*---------------
+Navigation
+------------------*/
+.c-nav {
+ position: sticky;
+ top: 0;
+ width: 100%;
+ z-index: 15;
+ margin: 0 auto;
+ background: var(--nav-color);
+}
+  
+.nav-section {
+  background-color: var(--nav-color);
+  top: 0;
+  z-index: 15;
+
+}
+
+nav {
+    background-color: var(--nav-color);
+}
+
+nav ul {
+    list-style: none;
+    display:flex;
+    justify-content:space-between;
+    margin: 0 0;
+    padding: 0;
+}
+
+
+nav a{
+    text-decoration: none;
+    color: var(--nav-text);
+    font-weight: 700;
+    font-size: 1.5rem;
+
+}
+
+nav a:hover{
+      text-decoration: none;
+      color: var(--secondary-color-normal);
+}
+
+.nav-me a {
+    font-size: 1.5rem;
+    color: var(--secondary-color-normal);
+}
+
+.nav-other::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--secondary-color-normal);
+  transform: scaleX(0);
+  transition: transform 0.5s ease-in-out;
+}
+
+
+.nav-other:hover::after {
+  transform: scaleX(1);
+}
+
+.nav-item{
+  font-family: 'Libre Baskerville';
+  font-weight: 700;
+  line-height: 45px;
+  
+}
+
+
+/*---------------
+Footer
+------------------*/
+
+.contact-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.c-contact{
+  position: absolute;
+}
+
+.footer-icons, .bio-icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.social {
+  background-color: #333;
+    border-radius: 30px;
+    color: #fff;
+    display: inline-block;
+    height: 30px;
+    margin: auto 3px;
+    width: 30px;
+    font-size: 15px;
+    text-align: center;
+    padding: 8px;
+}
+
+.social2 {
+    background-color: var(--nav-text);
+    border-radius: 30px;
+    color: var(--nav-color);
+    display: inline-block;
+    height: 30px;
+    margin: auto 3px;
+    width: 30px;
+    font-size: 15px;
+    text-align: center;
+    padding: 8px;
+}
+
+
+
+.social3 {
+  background-color:var(--nav-text);
+  border-radius: 25px;
+  color: var(--nav-color);
+  display: inline-block;
+  height: 25px;
+  margin: auto 2px;
+  width: 25px;
+  font-size: 15px;
+  text-align: center;
+  padding: 5px;
+}
+
+
+
+.social:hover, .social2:hover, .social3:hover{
+    background-color: var(--secondary-color-normal);
+}
+
+
+.footer-text {
+  text-align: center;
+}
+
+
+/*---------------
+Themes 
+------------------*/
+
+
+.light {
+  background-color: var(--secondary-color-light)y ;
+}
+
+.dark {
+  background-color: var(--secondary-color-normal) ;
+}
+
+.theme-holder{
+  display: flex;
+  justify-content: center;
+  padding: 8px 5px;
+}
+
+.theme-text {
+  padding: 11px 5px;
+  margin: 0 0;
+}
+
+.theme:hover {
+  transform: scale(1.1);
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+}
+
+
+/*---------------
+Hero 
+------------------*/
+
+.svg, .svg2, .svg3, .svg4, .svg5, .svg6, .svg7{
+    margin: auto;
+}
+
+.one, .two, .three {
+    fill: var(--secondary-color-normal);
+}
+
+@keyframes bar-anim {
+    0% {width: 30px}
+    50% {width: 1px}
+    100% {width: 30px}
+}
+
+@keyframes bar-anim2 {
+    0% {width: 30px}
+    50% {width: 1px}
+    100% {width: 30px}
+}
+
+@keyframes bar-anim3 {
+    0% {width: 30px}
+    50% {width: 1px}
+    100% {width: 30px}
+}
+
+.one {
+    animation-name: bar-anim;
+    animation-duration: 1s; 
+    animation-delay: 0.25s;
+    animation-iteration-count: infinite;
+}
+
+.two {
+    animation-name: bar-anim2;
+    animation-duration: 1s; 
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+.three {
+    animation-name: bar-anim3;
+    animation-duration: 1s; 
+    animation-delay: 0.75s;
+    animation-iteration-count: infinite;
+}
+
+
+button {
+  background: var(--secondary-color-normal);
+  color: #fff;
+  border-radius: 4%;
+  border: none;
+  font-family: 'Libre Baskerville';
+}
+
+button:hover {
+    color: var(--secondary-color-normal);
+    background-color: #fff;
+    border: solid 1px  var(--secondary-color-light);
+}
+
+
+@keyframes pointing{
+  from {top: 0px}
+  to {top: 4px}
+}
+
+@keyframes pointing2{
+  from {left: 0px}
+  to {left: 4px}
+}
+
+
+.arrow1 {
+  position: relative;
+  text-align: center;
+  animation-name:pointing;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transition: ease-in-out;
+}
+
+.service-arrow {
+  position: relative;
+  animation-name:pointing2;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  transition: ease-in-out;
+
+}
+
+
+
+
+.body{
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/*---------------
+Styles
+------------------*/
+
+.pic-selected{
+  width: 100%;
+}
+
+.project-card {
+  display: flex;
+  width: 85%;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 15px;
+  margin-top:10px;
+  box-shadow: 0 6px 6px hsl(0deg 0% 0% / 0.6);
+  border: none;
+}
+
+.project-card2 {
+  display: flex;
+  width: 85%;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 15px;
+  margin-top:10px;
+  box-shadow: 0 6px 6px hsl(0deg 0% 0% / 0.6);
+  border: none;
+}
+
+
+.project-card:hover, .project-card2:hover{
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0 10px 12px hsl(0deg 0% 0% / 0.7);
+  text-decoration: none;
+  filter: brightness(1.1);
+  transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+.card-description {
+  background: var(--secondary-color-light);
+  margin: 0 0;
+  width: 100%;
+  line-height: 0.75;
+}
+
+
+.card-heading  {
+  padding-top: 2px !important;
+  padding-left: 5px !important;
+  text-align: left;
+  color: var(--secondary-color-normal);
+  font-size: 1.2rem;
+  font-family: 'Libre Baskerville';
+}
+
+.card-info{
+  padding-left: 5px !important;
+  color: #000;
+  text-align: left;
+  font-size: 1rem;
+  font-family: 'Libre Baskerville';
+  line-height: normal;
+}
+
+
+.card-tags{
+  padding-left: 5px !important;
+  text-align: left;
+  color: var(--secondary-color-normal);
+  font-size: 1rem;
+  font-family: 'Libre Baskerville';
+  line-height: normal;
+
+ }
+ 
+
+.card-heading:hover, .card-info:hover, .card-tags:hover{
+  text-decoration:none;
+}
+ 
+
+.divider {
+  background: var(--secondary-color-normal);
+  width: 100%;
+  height: 5px;
+  margin: 50px 0;
+}
+
+.button-form {
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-bottom: 50px;
+}
+
+.cedric-pic{
+  width: 100%;
+  border-radius:50%;
+  border: solid var(--secondary-color-normal) ;
+  margin-top: 10px;
+}
+
+.button-holder2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 4px;
+}
+
+.about-cont{
+  flex-direction: column;
+}
+
+.class-stat-holder {
+  display: flex;
+  gap: 22%;
+}
+
+.download-link {
+  position: relative;
+  left: 40%;
+}
+
+.highcharts-legend-item text, .highcharts-title {
+    fill: var(--giant-text-color) !important;
+}
+
+
+.project-button {
+  position: relative;
+  left: 50%;
+  margin-bottom: 20px;
+}
+
+#img6, #img7, #img8, #img9, #img10{
+ width: 300px;
+}
+
+
+#img6:hover, #img7:hover, #img8:hover, #img9:hover, #img10:hover  {
+  transition: all 0.5s ease-in-out;
+  transform: scale(1.05);
+  filter: brightness(1.05);
+}
+
+.gallery-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 3px;
+  margin-top: 20px;
+  background: var(--background-color);
+}
+
+.gallery-pic p {
+  text-align: center;
+}
+
+.gallery-section::before {
+  content: none;
+}
+
+.project-card-holder {
+  display: grid;
+  grid-auto-flow: column;
+}
+
+
+.button-holder2 button {
+  width:100%;
+}
+
+
+@media (max-width: 920px) {
+  .giant-text{
+    font-size:9rem;
+  }
+}
+
+
+@media (max-width: 700px) {
+  .giant-text{
+    font-size:6rem;
+  }
+  .arrow {
+    display: none;
+  }
+  .index .bar-animation-container, .index .page-design-container, 
+  .project .bar-animation-container , .project .page-design-container,
+  .about .bar-animation-container, .about .page-design-holder{
+    display:none;
+  }
+  .service-container, .selected-holder1, .bio-section {
+    flex-direction: column;
+  }
+  .about-cont {
+    width:70%;
+    align-items: center;
+  }
+  .social3 {
+    font-size: 30px !important;
+    border-radius: 60px;
+    margin: auto 6px;
+    height: 60px;
+    width: 60px;
+    font-size: 15px;
+    padding: 16px;
+}
+.gallery-section, .project-card-holder{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.download-link {
+  left: 25%;
+}
+
+.project-button {
+  left: 25%;
+}
+
+}
+
+
+@media (max-width: 480px) {
+.giant-text{
+    font-size:5rem;
+  }
+  nav a {
+  font-size: 1rem;
+}
+}
+
+

@@ -1,0 +1,31 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Nichodemus Amollo"
+  navbar:
+    left: 
+      - text: Projects
+        href: projects.qmd
+      - text: About
+        href: about.qmd
+      - text: Resources
+        href: blog.qmd
+      - text: Resume
+        href: resume.qmd
+
+    right:
+      - icon: github
+        href: https://github.com/gondamol
+      - icon: linkedin
+        href: https://linkedin.com/in/amollow  
+      - icon: twitter
+        href: https://twitter.com/nwerre    
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+
+
+
