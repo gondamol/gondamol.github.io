@@ -1,12 +1,110 @@
 ---
-title: "gondamol.github.io"
-listing:
-  contents: posts
-  sort: "date desc"
-  type: default
-  categories: true
-  sort-ui: false
-  filter-ui: false
-page-layout: full
-title-block-banner: true
+resources: amollo.pdf
+about: 
+  id: jfrench-heading
+  template: jolla
+  image-shape: rounded
+  image-width: 15em
+  links:
+    - text: Email
+      icon: envelope
+      href: mailto:nichodemuswerre@gmail.com
+    - text: GitHub
+      icon: github
+      href: https://github.com/gondamol
+    - text: YouTube
+      icon: youtube
+      href: https://youtube.com/@gondamol
+    - text: Scholar
+      icon: google
+      href: https://scholar.google.com/
+    - text: CV
+      icon: file-text
+      href: amollo.pdf
 ---
+
+:::nic-heading
+
+Hello! Welcome to my portfolio website. Here I share my data science learning, research work and write blogs about a range of topics. 
+
+I am a statistician and data scientist. I am currently pursuing my Master’s of Epidemiology and Biostatistics at [JOOUST](https://www.jooust.ac.ke/). I am passionate about using statistics and data science to learn from data, developing software to help others learn from data, and training others to do data analysis.
+
+I help organizations to collect, Process, analyze, and communicate data-rom supporting everyday business decisions to driving global change
+ 
+:::
+
+
+
+<div class= "service-container">
+<div class= "service-col1">
+<img class="service-images" src="./images/beautiful.jpg" />
+<h2 class="service-header">
+
+Collect
+
+</h2>
+
+<p class= "service-paragraph">
+I gather data using tools like [Kobo Toolbox]{.bolded-text}, [web
+scraping]{.bolded-text}, [Airtable]{.bolded-text}, and [SQL]{.bolded-text} . 
+
+<p>
+</div>
+
+
+
+<div class= "service-col2">
+<img class="service-images" src="./images/construction.jpg" />
+
+<h2 class="service-header">
+
+Process
+
+</h2>
+
+<p class= "service-paragraph">
+
+I perform data analysis, exploration, and apply statistical tests using
+[R]{.bolded-text} and [Python]{.bolded-text}.
+
+<p>
+</div>
+
+<div class="service-col3">
+<img class="service-images" src="./images/beautiful.jpg" />
+<h2 class="service-header">
+
+Data Storytelling
+
+</h2>
+
+<p class= "service-paragraph">
+I have experience creating interactive and static [visualizations]{.bolded-text} that 
+communicate key insights.
+
+<p>
+
+</div>
+
+</div>
+
+
+
+<form action="projects.html">
+
+<button class="see-projects-button">
+
+see projects
+
+</button>
+
+</form>
+
+
+
+
+
+
+
+
+

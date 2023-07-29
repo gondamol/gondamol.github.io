@@ -5,6 +5,8 @@ project:
 website:
   title: "Nichodemus Amollo"
   navbar:
+    background: primary
+    search: true
     left: 
       - text: Projects
         href: projects.qmd
@@ -22,6 +24,13 @@ website:
         href: https://linkedin.com/in/amollow  
       - icon: twitter
         href: https://twitter.com/nwerre    
+    page-footer: 
+      left: "Copyright 2021, Norah Jones" 
+      right: 
+        - icon: github
+          href: https://github.com/
+        - icon: twitter 
+          href: https://twitter.com/ 
 format:
   html:
     theme: cosmo

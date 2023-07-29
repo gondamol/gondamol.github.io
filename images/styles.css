@@ -1,0 +1,72 @@
+/* Set the background color to red */
+body {
+  background-color: red;
+}
+
+
+/* Define a class for the service container */
+.service-container {
+  background-color: blue;
+  display: flex; /* Use flexbox layout */
+  flex-wrap: wrap; /* Allow wrapping of items */
+  justify-content: center; /* Center the items horizontally */
+  align-items: center; /* Center the items vertically */
+  margin: 20px; /* Add some margin around the container */
+}
+.service-container{
+  background-color: purple;
+}
+
+/* Define a class for each service column */
+.service-col1 {
+  flex: 1; /* Grow and shrink as needed */
+  max-width: 300px; /* Set a maximum width */
+  margin: 10px; /* Add some margin around each column */
+  padding: 10px; /* Add some padding inside each column */
+  border: 2px solid black; /* Add a black border around each column */
+  border-radius: 10px; /* Make the corners rounded */
+  background-color: #64c5eb;
+}
+
+.service-col2 {
+  flex: 1; /* Grow and shrink as needed */
+  max-width: 300px; /* Set a maximum width */
+  margin: 10px; /* Add some margin around each column */
+  padding: 10px; /* Add some padding inside each column */
+  border: 2px solid black; /* Add a black border around each column */
+  border-radius: 10px; /* Make the corners rounded */
+  background-color: green;
+}
+.service-col3 {
+  flex: 1; /* Grow and shrink as needed */
+  max-width: 300px; /* Set a maximum width */
+  margin: 10px; /* Add some margin around each column */
+  padding: 10px; /* Add some padding inside each column */
+  border: 2px solid black; /* Add a black border around each column */
+  border-radius: 10px; /* Make the corners rounded */
+  background-color: yellow;
+}
+
+/* Define a class for the service images */
+.service-images {
+  width: 100%; /* Make the images fill the column width */
+  height: auto; /* Keep the aspect ratio of the images */
+}
+
+/* Define a class for the service header */
+.service-header {
+  font-size: 24px; /* Set the font size of the header */
+  font-weight: bold; /* Make the header bold */
+  text-align: center; /* Center the header text */
+}
+
+/* Define a class for the service paragraph */
+.service-paragraph {
+  font-size: 16px; /* Set the font size of the paragraph */
+  text-align: justify; /* Justify the paragraph text */
+}
+
+/* Define a class for bolded text */
+.bolded-text {
+  font-weight: bold; /* Make the text bold */
+}

@@ -7,11 +7,18 @@
     "text": "About this blog"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "gondamol.github.io",
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Nichodemus Amollo",
     "section": "",
     "text": "Post With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nJul 20, 2023\n\n\nHarlow Malloc\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nJul 17, 2023\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Nichodemus Amollo",
+    "section": "",
+    "text": "Hello! Welcome to my portfolio website. Here I share my data science learning, research work and write blogs about a range of topics.\nI am a statistician and data scientist. I am currently pursuing my Master’s of Epidemiology and Biostatistics at JOOUST. I am passionate about using statistics and data science to learn from data, developing software to help others learn from data, and training others to do data analysis.\nI help organizations to collect, Process, analyze, and communicate data-rom supporting everyday business decisions to driving global change\n\n\n\n\n\nCollect\n\n\nI gather data using tools like Kobo Toolbox, web scraping, Airtable, and SQL .\n\n\n\n\n\nProcess\n\n\nI perform data analysis, exploration, and apply statistical tests using R and Python.\n\n\n\n\n\nData Storytelling\n\n\nI have experience creating interactive and static visualizations that communicate key insights.\n\n\n\n\n\nsee projects"
   },
   {
     "objectID": "posts/welcome/index.html",
@@ -26,5 +33,12 @@
     "title": "Post With Code",
     "section": "",
     "text": "This is a post with executable code.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Nichodemus Amollo",
+    "section": "",
+    "text": "Post With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nJul 20, 2023\n\n\nHarlow Malloc\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nJul 17, 2023\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
   }
 ]
