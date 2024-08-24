@@ -1,0 +1,41 @@
+---
+title: "Global Temperature Changes"
+date: "2024-01-02"
+---
+
+# Global Temperature Changes
+
+This week's Tidy Tuesday dataset focuses on global temperature changes over time. In this analysis, I explore the trends in global temperature increases and their potential implications on climate change.
+
+## Data Preparation
+
+```{r}
+# Load necessary libraries
+library(tidyverse)
+
+# Generate random data
+set.seed(123)  # Set seed for reproducibility
+
+# Create a sequence of years from 1900 to 2024
+years <- seq(1900, 2024)
+
+# Generate random temperature changes, simulating a gradual increase over time
+temperature_change <- cumsum(rnorm(length(years), mean = 0.02, sd = 0.1))
+
+# Combine the years and temperature changes into a data frame
+temperature_data <- data.frame(year = years, temperature_change = temperature_change)
+
+# Preview the data
+head(temperature_data)
+```
+
+
+
+```{r}
+# Example plot
+ggplot(temperature_data, aes(x = year, y = temperature_change)) +
+  geom_line() +
+  labs(title = "Global Temperature Changes Over Time", x = "Year", y = "Temperature Change (°C)")
+```
+
+

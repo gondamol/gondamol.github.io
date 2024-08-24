@@ -1,0 +1,28 @@
+---
+title: "Resources"
+---
+
+# Resources
+
+Welcome to my resources page! Here, you'll find a collection of tools, articles, and datasets that I regularly use in my work as a data analyst and statistician.
+
+## Data Science Tools
+
+- **R:** A powerful tool for statistical computing and graphics.
+- **Python:** Versatile programming language for data analysis, modeling, and visualization.
+- **SQL:** Essential for managing and querying large datasets.
+- **Tableau:** Data visualization tool that helps turn data into actionable insights.
+
+## Recommended Reading
+
+- **"Bayesian Data Analysis" by Andrew Gelman**
+- **"The Art of R Programming" by Norman Matloff**
+- **"Deep Learning with Python" by François Chollet**
+
+## Useful Datasets
+
+- **[Kaggle Datasets](https://www.kaggle.com/datasets):** A vast collection of datasets for various data science projects.
+- **[WHO Health Data](https://www.who.int/data):** Public health datasets from the World Health Organization.
+- **[CDC WONDER](https://wonder.cdc.gov/):** A comprehensive database of public health data.
+
+

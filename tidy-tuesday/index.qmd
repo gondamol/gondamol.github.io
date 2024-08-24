@@ -1,0 +1,16 @@
+---
+title: "Tidy Tuesday Analysis"
+---
+
+# Tidy Tuesday Projects
+
+Welcome to my Tidy Tuesday analysis collection! Each week, I participate in the Tidy Tuesday challenge, where I analyze different datasets and share my findings. Below are some of the projects I've worked on.
+
+## Recent Projects
+
+- [2024-01-02: Analysis on Global Temperature Changes](2024-01-02-analysis.qmd)
+- [2024-01-09: Analysis on Movie Ratings Trends](2024-01-09-analysis.qmd)
+- [2024-01-16: Analysis on World Population Growth](2024-01-16-analysis.qmd)
+
+Feel free to explore each analysis to see the data visualization, statistical methods, and insights drawn from each dataset.
+

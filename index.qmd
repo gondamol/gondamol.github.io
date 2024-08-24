@@ -1,0 +1,47 @@
+---
+title: "Nichodemus Amollo"
+image: img/profile.jpeg
+about:
+  template: trestles
+  image-width: 20em
+  image-shape: round
+ 
+  
+  links:
+     # - icon: mastodon
+     #   text: Mastodon
+     #   href: https://fosstodon.org/
+      - icon: kaggle
+        text: Kaggle
+        url: https://www.kaggle.com/
+      #- icon: linkedin
+       # text: LinkedIn
+       # url: https://www.linkedin.com/in/
+      #- icon: twitter
+      #  text: Twitter
+       # url: https://twitter.com/
+      - icon: github
+        text: Github
+        url: https://github.com/
+      - icon: envelope
+        text: Email
+        href: mailto:nichodemuswerre@gmail.com
+  #    - text: "{{< ai orcid >}} ORCID"
+   #     url: https://orcid.org/
+  #    - text: "{{< ai google-scholar >}} Google Scholar"
+   #     url: https://scholar.google.com/
+   #   - text: "{{< ai osf >}} OSF"
+     #   url: https://osf.io/
+---
+
+Hello!
+
+I’m a data analyst and statistician passionate about public health data. I aim to use my expertise to drive impactful change, especially in resource-limited settings.
+
+With over five years of experience, I've developed strong skills in data collection, analysis, and visualization. I'm proficient in RedCap and other EDC systems and have advanced expertise in R, SPSS, STATA, and SAS. My technical leadership and database management have been key in advancing public health projects.
+
+In addition to my work, I serve as a part-time lecturer at JOOUST School of Health Sciences, where I teach statistics. I also conduct R programming workshops at LERIS HUB, helping researchers enhance their data analysis skills.
+
+Outside work, I’m a fitness enthusiast who enjoys morning runs and nature walks. I’ve been following a keto diet for two years and practice OMAD (One Meal A Day), integrating wellness into my daily routine.
+
+

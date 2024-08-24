@@ -1,0 +1,52 @@
+project:
+  type: website
+
+website:
+  page-navigation: true
+  title: "Hi, I'm Amollo"
+  
+  page-footer: 
+    left: "Copyright 2024, Nichodemus Amollo" 
+    right: 
+      - icon: github
+        href: https://github.com/gondamol
+      - icon: twitter 
+        href: https://twitter.com/nwerre 
+      - icon: kaggle
+        href: https://kaggle.com/nwerre
+        
+  navbar:
+    right:
+    #center:
+      - href: about/index.qmd
+        text: About
+      - href: tidy-tuesday/index.qmd
+        text: Tidy Tuesday
+      - href: projects/index.qmd
+        text: Projects
+      - href: teaching/index.qmd
+        text: Teaching
+      - href: blogs/index.qmd
+        text: Blogs/Notes
+      - href: CV/index.qmd
+        text: CV
+      #- href: resources/index.qmd
+       # text: Resources
+      - icon: github
+        href: https://github.com/gondamol
+      - icon: linkedin
+        href: https://linkedin.com/in/amollow  
+      - icon: twitter
+        href: https://twitter.com/nwerre  
+      - icon: kaggle
+        href: https://kaggle.com/nwerre 
+
+
+
+format:
+  html:
+    theme: Yeti
+    css: styles.scss
+
+editor: source
+
