@@ -16,9 +16,9 @@
   {
     "objectID": "projects/index.html",
     "href": "projects/index.html",
-    "title": "Projects",
+    "title": "projects",
     "section": "",
-    "text": "Developed agent-based models to simulate the spread of infectious diseases, incorporating real-world data to improve the accuracy of predictions.\nKey Technologies: R, Python, Geospatial Analysis\n\n\n\n\nLed data analysis efforts in oncology research, focusing on improving patient outcomes through data-driven insights.\nKey Technologies: SQL, Python, Machine Learning\n\n\n\n\nDesigned and implemented public health surveillance systems to track and monitor the spread of non-communicable diseases.\nKey Technologies: R, SQL, Tableau\n\n\n\n\nApplied Bayesian statistical methods to public health research, contributing to more robust and reliable findings.\nKey Technologies: R, Bayesian Inference, Statistical Modeling\n\n\n\n\nPromoted best practices for reproducible research through workshops, publications, and the development of open-source tools.\nKey Technologies: R, Python, Git"
+    "text": "Logistic Regression for Predictive Modeling\n\n\nThis dataset is originally from the National Institute of Diabetes and Digestive and Kidney Diseases. The objective of the dataset is to diagnostically predict whether a…\n\n\n\n\n\n\nAug 24, 2024\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "projects/index.html#computational-epidemiology-models",
@@ -145,5 +145,61 @@
     "title": "Global Temperature Changes",
     "section": "",
     "text": "# Load necessary libraries\nlibrary(tidyverse)\n\nWarning: package 'tidyverse' was built under R version 4.3.2\n\n\nWarning: package 'tibble' was built under R version 4.3.2\n\n\nWarning: package 'readr' was built under R version 4.3.2\n\n\nWarning: package 'purrr' was built under R version 4.3.2\n\n\nWarning: package 'dplyr' was built under R version 4.3.2\n\n\nWarning: package 'stringr' was built under R version 4.3.2\n\n\nWarning: package 'forcats' was built under R version 4.3.2\n\n\nWarning: package 'lubridate' was built under R version 4.3.2\n\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.5.1\n✔ ggplot2   3.5.1     ✔ tibble    3.2.1\n✔ lubridate 1.9.3     ✔ tidyr     1.3.1\n✔ purrr     1.0.2     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\n# Generate random data\nset.seed(123)  # Set seed for reproducibility\n\n# Create a sequence of years from 1900 to 2024\nyears &lt;- seq(1900, 2024)\n\n# Generate random temperature changes, simulating a gradual increase over time\ntemperature_change &lt;- cumsum(rnorm(length(years), mean = 0.02, sd = 0.1))\n\n# Combine the years and temperature changes into a data frame\ntemperature_data &lt;- data.frame(year = years, temperature_change = temperature_change)\n\n# Preview the data\nhead(temperature_data)\n\n  year temperature_change\n1 1900        -0.03604756\n2 1901        -0.03906531\n3 1902         0.13680552\n4 1903         0.16385636\n5 1904         0.19678513\n6 1905         0.38829163\n\n\n\n# Example plot\nggplot(temperature_data, aes(x = year, y = temperature_change)) +\n  geom_line() +\n  labs(title = \"Global Temperature Changes Over Time\", x = \"Year\", y = \"Temperature Change (°C)\")"
+  },
+  {
+    "objectID": "projects/my_projects/2024-08-24-diabetes/diabetes_eda_lr.html",
+    "href": "projects/my_projects/2024-08-24-diabetes/diabetes_eda_lr.html",
+    "title": "Logistic Regression for Predictive Modeling",
+    "section": "",
+    "text": "This project uses a dataset from the National Institute of Diabetes and Digestive and Kidney Diseases to predict whether a patient has diabetes based on diagnostic measurements. The patients are female and of Pima Indian heritage, aged at least 21 years."
+  },
+  {
+    "objectID": "projects/my_projects/2024-08-24-diabetes/diabetes_eda_lr.html#load-the-dataset",
+    "href": "projects/my_projects/2024-08-24-diabetes/diabetes_eda_lr.html#load-the-dataset",
+    "title": "Logistic Regression for Predictive Modeling",
+    "section": "3.1 Load the Dataset",
+    "text": "3.1 Load the Dataset\n\n\nCode\ndf &lt;- read.csv(\"diabetes.csv\")\n\n# Display the first few rows\ndf %&gt;% \n  head() %&gt;% \n  kable(caption = \"First Few Rows of the Diabetes Dataset\") %&gt;%\n  kable_styling(bootstrap_options = c(\"striped\", \"hover\", \"condensed\"), \n                full_width = F, \n                position = \"left\")\n\n\n\n\nFirst Few Rows of the Diabetes Dataset\n\n\nPregnancies\nGlucose\nBloodPressure\nSkinThickness\nInsulin\nBMI\nDiabetesPedigreeFunction\nAge\nOutcome\n\n\n\n\n6\n148\n72\n35\n0\n33.6\n0.627\n50\n1\n\n\n1\n85\n66\n29\n0\n26.6\n0.351\n31\n0\n\n\n8\n183\n64\n0\n0\n23.3\n0.672\n32\n1\n\n\n1\n89\n66\n23\n94\n28.1\n0.167\n21\n0\n\n\n0\n137\n40\n35\n168\n43.1\n2.288\n33\n1\n\n\n5\n116\n74\n0\n0\n25.6\n0.201\n30\n0"
+  },
+  {
+    "objectID": "projects/my_projects/2024-08-24-diabetes/diabetes_eda_lr.html#summary-statistics",
+    "href": "projects/my_projects/2024-08-24-diabetes/diabetes_eda_lr.html#summary-statistics",
+    "title": "Logistic Regression for Predictive Modeling",
+    "section": "3.2 Summary Statistics",
+    "text": "3.2 Summary Statistics\n\n\nCode\n# Get summary statistics\nsummary_stats &lt;- summary(df)\nkable(summary_stats, caption = \"Summary Statistics of the Dataset\") %&gt;%\n  kable_styling(bootstrap_options = c(\"striped\", \"hover\", \"condensed\"),\n                full_width = F,\n                position = \"left\")\n\n\n\n\nSummary Statistics of the Dataset\n\n\n\nPregnancies\nGlucose\nBloodPressure\nSkinThickness\nInsulin\nBMI\nDiabetesPedigreeFunction\nAge\nOutcome\n\n\n\n\n\nMin. : 0.000\nMin. : 0.0\nMin. : 0.00\nMin. : 0.00\nMin. : 0.0\nMin. : 0.00\nMin. :0.0780\nMin. :21.00\nMin. :0.000\n\n\n\n1st Qu.: 1.000\n1st Qu.: 99.0\n1st Qu.: 62.00\n1st Qu.: 0.00\n1st Qu.: 0.0\n1st Qu.:27.30\n1st Qu.:0.2437\n1st Qu.:24.00\n1st Qu.:0.000\n\n\n\nMedian : 3.000\nMedian :117.0\nMedian : 72.00\nMedian :23.00\nMedian : 30.5\nMedian :32.00\nMedian :0.3725\nMedian :29.00\nMedian :0.000\n\n\n\nMean : 3.845\nMean :120.9\nMean : 69.11\nMean :20.54\nMean : 79.8\nMean :31.99\nMean :0.4719\nMean :33.24\nMean :0.349\n\n\n\n3rd Qu.: 6.000\n3rd Qu.:140.2\n3rd Qu.: 80.00\n3rd Qu.:32.00\n3rd Qu.:127.2\n3rd Qu.:36.60\n3rd Qu.:0.6262\n3rd Qu.:41.00\n3rd Qu.:1.000\n\n\n\nMax. :17.000\nMax. :199.0\nMax. :122.00\nMax. :99.00\nMax. :846.0\nMax. :67.10\nMax. :2.4200\nMax. :81.00\nMax. :1.000\n\n\n\n\n\n\n\n\n##3.3 Missing Values\n\n\nCode\n# Check for missing values\ncolSums(is.na(df))\n\n\n             Pregnancies                  Glucose            BloodPressure \n                       0                        0                        0 \n           SkinThickness                  Insulin                      BMI \n                       0                        0                        0 \nDiabetesPedigreeFunction                      Age                  Outcome \n                       0                        0                        0 \n\n\n#4. Exploratory Data Analysis (EDA) ##4.1 Univariate Analysis ###4.1.1 Distribution of Outcome Variable\n\n\nCode\n# Distribution of the Outcome variable\nggplot(df, aes(x=factor(Outcome))) +\n  geom_bar(fill=\"steelblue\") +\n  labs(x=\"Outcome\", y=\"Count\", title=\"Distribution of Diabetes Outcome\")\n\n\n\n\n\n\n\n\n\n###4.1.2 Distribution of Continuous Variables\n\n\nCode\n# Plot distributions of all continuous variables\ncontinuous_vars &lt;- df %&gt;% select(-Outcome, -Pregnancies)\ncontinuous_plots &lt;- lapply(names(continuous_vars), function(var) {\n  ggplot(df, aes_string(x=var)) +\n    geom_histogram(fill=\"steelblue\", bins=30) +\n    labs(x=var, y=\"Count\", title=paste(\"Distribution of\", var))\n})\n\n\nWarning: `aes_string()` was deprecated in ggplot2 3.0.0.\nℹ Please use tidy evaluation idioms with `aes()`.\nℹ See also `vignette(\"ggplot2-in-packages\")` for more information.\n\n\nCode\ngrid.arrange(grobs=continuous_plots, ncol=2)"
+  },
+  {
+    "objectID": "projects/my_projects/2024-08-24-diabetes/diabetes_eda_lr.html#bivariate-analysis",
+    "href": "projects/my_projects/2024-08-24-diabetes/diabetes_eda_lr.html#bivariate-analysis",
+    "title": "Logistic Regression for Predictive Modeling",
+    "section": "4.2 Bivariate Analysis",
+    "text": "4.2 Bivariate Analysis\n\n4.2.1 Correlation Matrix\n\n\nCode\n# Correlation matrix\ncorr_matrix &lt;- cor(df %&gt;% select(-Outcome))\nggcorr(corr_matrix, label=TRUE, label_size=3)"
+  },
+  {
+    "objectID": "projects/my_projects/2024-08-24-diabetes/diabetes_eda_lr.html#relationships-with-outcome",
+    "href": "projects/my_projects/2024-08-24-diabetes/diabetes_eda_lr.html#relationships-with-outcome",
+    "title": "Logistic Regression for Predictive Modeling",
+    "section": "4.2.2 Relationships with Outcome",
+    "text": "4.2.2 Relationships with Outcome\n\n\nCode\n# Scatter plots for continuous variables vs Outcome\nscatter_plots &lt;- lapply(names(continuous_vars), function(var) {\n  ggplot(df, aes_string(x=var, y=\"Outcome\")) +\n    geom_point(alpha=0.5) +\n    labs(x=var, y=\"Outcome\", title=paste(var, \"vs Outcome\"))\n})\n\ngrid.arrange(grobs=scatter_plots, ncol=2)"
+  },
+  {
+    "objectID": "projects/my_projects/2024-08-24-diabetes/diabetes_eda_lr.html#train-test-split",
+    "href": "projects/my_projects/2024-08-24-diabetes/diabetes_eda_lr.html#train-test-split",
+    "title": "Logistic Regression for Predictive Modeling",
+    "section": "5.1.2 Train-Test Split",
+    "text": "5.1.2 Train-Test Split\n\n\nCode\n# Create training (80%) and test (20%) sets\nset.seed(123)\ntrainIndex &lt;- createDataPartition(df_scaled$Outcome, p = .8, \n                                  list = FALSE, \n                                  times = 1)\ndfTrain &lt;- df_scaled[ trainIndex,]\ndfTest  &lt;- df_scaled[-trainIndex,]"
+  },
+  {
+    "objectID": "projects/my_projects/2024-08-24-diabetes/diabetes_eda_lr.html#model-training",
+    "href": "projects/my_projects/2024-08-24-diabetes/diabetes_eda_lr.html#model-training",
+    "title": "Logistic Regression for Predictive Modeling",
+    "section": "5.2 Model Training",
+    "text": "5.2 Model Training\n\n\nCode\n# Fit logistic regression model\nlogit_model &lt;- glm(Outcome ~ ., data=dfTrain, family=binomial)\n\n# Summary of the model\nsummary(logit_model)\n\n\n\nCall:\nglm(formula = Outcome ~ ., family = binomial, data = dfTrain)\n\nCoefficients:\n                         Estimate Std. Error z value Pr(&gt;|z|)    \n(Intercept)              -1.31946    0.18002  -7.330 2.31e-13 ***\nPregnancies               0.11852    0.03579   3.311 0.000929 ***\nGlucose                   1.12827    0.13380   8.433  &lt; 2e-16 ***\nBloodPressure            -0.25320    0.11086  -2.284 0.022374 *  \nSkinThickness            -0.01560    0.12010  -0.130 0.896648    \nInsulin                  -0.10500    0.11341  -0.926 0.354533    \nBMI                       0.67938    0.13114   5.180 2.21e-07 ***\nDiabetesPedigreeFunction  0.25926    0.10642   2.436 0.014845 *  \nAge                       0.17927    0.12106   1.481 0.138676    \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\n(Dispersion parameter for binomial family taken to be 1)\n\n    Null deviance: 797.28  on 614  degrees of freedom\nResidual deviance: 583.64  on 606  degrees of freedom\nAIC: 601.64\n\nNumber of Fisher Scoring iterations: 5"
+  },
+  {
+    "objectID": "projects/my_projects/2024-08-24-diabetes/diabetes_eda_lr.html#model-evaluation",
+    "href": "projects/my_projects/2024-08-24-diabetes/diabetes_eda_lr.html#model-evaluation",
+    "title": "Logistic Regression for Predictive Modeling",
+    "section": "5.3 Model Evaluation",
+    "text": "5.3 Model Evaluation\n\n\nCode\n# Predict on test data\npred_probs &lt;- predict(logit_model, newdata=dfTest, type=\"response\")\npred_classes &lt;- ifelse(pred_probs &gt; 0.5, 1, 0)\n\n\n\n\nCode\n# Confusion matrix\nconf_matrix &lt;- confusionMatrix(factor(pred_classes), factor(dfTest$Outcome))\nconf_matrix\n\n\nConfusion Matrix and Statistics\n\n          Reference\nPrediction  0  1\n         0 91 22\n         1 10 30\n                                          \n               Accuracy : 0.7908          \n                 95% CI : (0.7178, 0.8523)\n    No Information Rate : 0.6601          \n    P-Value [Acc &gt; NIR] : 0.0002786       \n                                          \n                  Kappa : 0.5063          \n                                          \n Mcnemar's Test P-Value : 0.0518299       \n                                          \n            Sensitivity : 0.9010          \n            Specificity : 0.5769          \n         Pos Pred Value : 0.8053          \n         Neg Pred Value : 0.7500          \n             Prevalence : 0.6601          \n         Detection Rate : 0.5948          \n   Detection Prevalence : 0.7386          \n      Balanced Accuracy : 0.7390          \n                                          \n       'Positive' Class : 0               \n                                          \n\n\n\n\nCode\n# ROC curve and AUC\npred &lt;- prediction(pred_probs, dfTest$Outcome)\nperf &lt;- performance(pred, \"tpr\", \"fpr\")\nauc &lt;- performance(pred, \"auc\")@y.values[[1]]\n\n# Plot ROC curve\nplot(perf, col=\"blue\", lwd=2, main=paste(\"ROC Curve (AUC =\", round(auc, 2), \")\"))\nabline(a=0, b=1, lty=2, col=\"red\")\n\n\n\n\n\n\n\n\n\n\nSteps to Use This Template:\n\nSave the .qmd file: Copy the content above into a text editor and save it as diabetes_analysis.qmd.\nPlace the dataset: Ensure the diabetes.csv file is in your working directory.\nRender the Quarto document: Open the .qmd file in an R or Quarto-compatible IDE (such as RStudio) and render it to create the report.\n\nThis template includes loading necessary packages without warnings, performing EDA with visualizations, and running a logistic regression analysis."
   }
 ]

@@ -1,0 +1,212 @@
+---
+title: "Logistic Regression for Predictive Modeling"
+description: |
+  This dataset is originally from the National Institute of Diabetes and Digestive and Kidney Diseases. The objective of the dataset is to diagnostically predict whether a patient has diabetes, based on certain diagnostic measurements included in the dataset
+date: 2024-08-24
+categories: [Quarto website]
+image: 2024-08-24-191338.png
+draft: false
+
+format: 
+  html: 
+    toc: true
+    code-fold: true
+execute:
+  echo: true
+---
+
+# 1. Introduction
+
+This project uses a dataset from the National Institute of Diabetes and Digestive and Kidney Diseases to predict whether a patient has diabetes based on diagnostic measurements. The patients are female and of Pima Indian heritage, aged at least 21 years.
+
+# 2. Load Packages
+
+```{r setup, message=FALSE, warning=FALSE}
+# Load necessary libraries
+suppressWarnings({
+  library(tidyverse)
+  library(caret)
+  library(gridExtra)
+  library(GGally)
+  library(ROCR)
+  library(knitr)
+  library(kableExtra)
+})
+```
+
+# 3. Load and Explore Data
+## 3.1 Load the Dataset
+```{r}
+df <- read.csv("diabetes.csv")
+
+# Display the first few rows
+df %>% 
+  head() %>% 
+  kable(caption = "First Few Rows of the Diabetes Dataset") %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"), 
+                full_width = F, 
+                position = "left")
+```
+
+## 3.2 Summary Statistics
+```{r}
+# Get summary statistics
+summary_stats <- summary(df)
+kable(summary_stats, caption = "Summary Statistics of the Dataset") %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"),
+                full_width = F,
+                position = "left")
+
+```
+
+##3.3 Missing Values
+```{r}
+# Check for missing values
+colSums(is.na(df))
+```
+
+
+#4. Exploratory Data Analysis (EDA)
+##4.1 Univariate Analysis
+###4.1.1 Distribution of Outcome Variable
+```{r}
+# Distribution of the Outcome variable
+ggplot(df, aes(x=factor(Outcome))) +
+  geom_bar(fill="steelblue") +
+  labs(x="Outcome", y="Count", title="Distribution of Diabetes Outcome")
+```
+
+
+###4.1.2 Distribution of Continuous Variables
+```{r}
+# Plot distributions of all continuous variables
+continuous_vars <- df %>% select(-Outcome, -Pregnancies)
+continuous_plots <- lapply(names(continuous_vars), function(var) {
+  ggplot(df, aes_string(x=var)) +
+    geom_histogram(fill="steelblue", bins=30) +
+    labs(x=var, y="Count", title=paste("Distribution of", var))
+})
+
+grid.arrange(grobs=continuous_plots, ncol=2)
+```
+
+
+## 4.2 Bivariate Analysis
+### 4.2.1 Correlation Matrix
+```{r}
+# Correlation matrix
+corr_matrix <- cor(df %>% select(-Outcome))
+ggcorr(corr_matrix, label=TRUE, label_size=3)
+```
+
+
+## 4.2.2 Relationships with Outcome
+```{r}
+# Scatter plots for continuous variables vs Outcome
+scatter_plots <- lapply(names(continuous_vars), function(var) {
+  ggplot(df, aes_string(x=var, y="Outcome")) +
+    geom_point(alpha=0.5) +
+    labs(x=var, y="Outcome", title=paste(var, "vs Outcome"))
+})
+
+grid.arrange(grobs=scatter_plots, ncol=2)
+```
+
+# 5. Logistic Regression
+```{r}
+# Standardizing continuous variables
+df_scaled <- df
+df_scaled[,-c(1,9)] <- scale(df_scaled[,-c(1,9)])
+head(df_scaled)
+```
+
+## 5.1.2 Train-Test Split
+```{r}
+# Create training (80%) and test (20%) sets
+set.seed(123)
+trainIndex <- createDataPartition(df_scaled$Outcome, p = .8, 
+                                  list = FALSE, 
+                                  times = 1)
+dfTrain <- df_scaled[ trainIndex,]
+dfTest  <- df_scaled[-trainIndex,]
+
+```
+
+## 5.2 Model Training
+```{r}
+# Fit logistic regression model
+logit_model <- glm(Outcome ~ ., data=dfTrain, family=binomial)
+
+# Summary of the model
+summary(logit_model)
+
+```
+
+## 5.3 Model Evaluation
+```{r}
+# Predict on test data
+pred_probs <- predict(logit_model, newdata=dfTest, type="response")
+pred_classes <- ifelse(pred_probs > 0.5, 1, 0)
+
+```
+
+```{r}
+# Confusion matrix
+conf_matrix <- confusionMatrix(factor(pred_classes), factor(dfTest$Outcome))
+conf_matrix
+
+```
+
+```{r}
+# ROC curve and AUC
+pred <- prediction(pred_probs, dfTest$Outcome)
+perf <- performance(pred, "tpr", "fpr")
+auc <- performance(pred, "auc")@y.values[[1]]
+
+# Plot ROC curve
+plot(perf, col="blue", lwd=2, main=paste("ROC Curve (AUC =", round(auc, 2), ")"))
+abline(a=0, b=1, lty=2, col="red")
+
+```
+
+
+### Steps to Use This Template:
+
+1. **Save the .qmd file**: Copy the content above into a text editor and save it as `diabetes_analysis.qmd`.
+2. **Place the dataset**: Ensure the `diabetes.csv` file is in your working directory.
+3. **Render the Quarto document**: Open the `.qmd` file in an R or Quarto-compatible IDE (such as RStudio) and render it to create the report.
+
+This template includes loading necessary packages without warnings, performing EDA with visualizations, and running a logistic regression analysis.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Hi, I’m Amollo - Projects</title>
+<title>Hi, I’m Amollo - projects</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,6 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -66,15 +68,73 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../styles.scss">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
@@ -109,7 +169,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Blogs/Notes</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../CV/index.qmd"> 
+    <a class="nav-link" href="../cv/index.html"> 
 <span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item compact">
@@ -140,68 +200,70 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-page">
+      <h1 class="title">projects</h1>
+            <p class="subtitle lead">some of my more notable side projects and freelancing work</p>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta column-page">
+
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content quarto-banner-title-block column-page" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Projects</h1>
+
+
+
+
+
+
+
+
+<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="Quarto website" data-listing-date-sort="1724446800000" data-listing-file-modified-sort="1724517027987" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="566">
+<a href="../projects/my_projects/2024-08-24-diabetes/diabetes_eda_lr.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="../projects/my_projects/2024-08-24-diabetes/2024-08-24-191338.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Logistic Regression for Predictive Modeling
+</h5>
+<div class="card-text listing-description">
+This dataset is originally from the National Institute of Diabetes and Digestive and Kidney Diseases. The objective of the dataset is to diagnostically predict whether a…
 </div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
 
-
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<section id="projects" class="level1">
-<h1>Projects</h1>
-<section id="computational-epidemiology-models" class="level2">
-<h2 class="anchored" data-anchor-id="computational-epidemiology-models">1. Computational Epidemiology Models</h2>
-<p>Developed agent-based models to simulate the spread of infectious diseases, incorporating real-world data to improve the accuracy of predictions.</p>
-<p><strong>Key Technologies:</strong> R, Python, Geospatial Analysis</p>
-<hr>
-</section>
-<section id="oncology-data-analysis" class="level2">
-<h2 class="anchored" data-anchor-id="oncology-data-analysis">2. Oncology Data Analysis</h2>
-<p>Led data analysis efforts in oncology research, focusing on improving patient outcomes through data-driven insights.</p>
-<p><strong>Key Technologies:</strong> SQL, Python, Machine Learning</p>
-<hr>
-</section>
-<section id="public-health-surveillance-systems" class="level2">
-<h2 class="anchored" data-anchor-id="public-health-surveillance-systems">3. Public Health Surveillance Systems</h2>
-<p>Designed and implemented public health surveillance systems to track and monitor the spread of non-communicable diseases.</p>
-<p><strong>Key Technologies:</strong> R, SQL, Tableau</p>
-<hr>
-</section>
-<section id="bayesian-statistics-in-public-health" class="level2">
-<h2 class="anchored" data-anchor-id="bayesian-statistics-in-public-health">4. Bayesian Statistics in Public Health</h2>
-<p>Applied Bayesian statistical methods to public health research, contributing to more robust and reliable findings.</p>
-<p><strong>Key Technologies:</strong> R, Bayesian Inference, Statistical Modeling</p>
-<hr>
-</section>
-<section id="reproducibility-in-research" class="level2">
-<h2 class="anchored" data-anchor-id="reproducibility-in-research">5. Reproducibility in Research</h2>
-<p>Promoted best practices for reproducible research through workshops, publications, and the development of open-source tools.</p>
-<p><strong>Key Technologies:</strong> R, Python, Git</p>
-
-
-</section>
-</section>
-
-</main> <!-- /main -->
+</div>
+<div class="listing-date">
+Aug 24, 2024
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

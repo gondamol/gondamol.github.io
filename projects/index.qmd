@@ -1,45 +1,18 @@
 ---
-title: "Projects"
+title: "projects"
+subtitle: "some of my more notable side projects and freelancing work" 
+listing:
+  contents: my_projects
+  feed: true
+  sort: "date desc"
+  type: grid
+  grid-item-border: true
+  grid-item-align: left
+  max-description-length: 175
+  date-format: medium
+  #categories: numbered
+  sort-ui: false
+  filter-ui: false
+page-layout: full
+title-block-banner: true
 ---
-
-# Projects
-
-## 1. Computational Epidemiology Models
-
-Developed agent-based models to simulate the spread of infectious diseases, incorporating real-world data to improve the accuracy of predictions.
-
-**Key Technologies:** R, Python, Geospatial Analysis
-
----
-
-## 2. Oncology Data Analysis
-
-Led data analysis efforts in oncology research, focusing on improving patient outcomes through data-driven insights.
-
-**Key Technologies:** SQL, Python, Machine Learning
-
----
-
-## 3. Public Health Surveillance Systems
-
-Designed and implemented public health surveillance systems to track and monitor the spread of non-communicable diseases.
-
-**Key Technologies:** R, SQL, Tableau
-
----
-
-## 4. Bayesian Statistics in Public Health
-
-Applied Bayesian statistical methods to public health research, contributing to more robust and reliable findings.
-
-**Key Technologies:** R, Bayesian Inference, Statistical Modeling
-
----
-
-## 5. Reproducibility in Research
-
-Promoted best practices for reproducible research through workshops, publications, and the development of open-source tools.
-
-**Key Technologies:** R, Python, Git
-
-
