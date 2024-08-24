@@ -63,11 +63,18 @@
     "text": "This is a post with executable code.\n\n1 + 1\n\n[1] 2"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "about/index.html",
+    "href": "about/index.html",
+    "title": "Nichodemus Amollo",
     "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
+    "text": "Kaggle\n  \n  \n    \n     Github\n  \n  \n    \n     Email\nI am a passionate data analyst and statistician specializing in computational epidemiology, public health, oncology research, and Bayesian statistics. With a strong background in data management, analysis, and storytelling, I am dedicated to using data to uncover insights that drive impactful decisions.. Over the past few years, I’ve become very interested in research software, open source, reproducibility and data science practices in public sector.\nIn my current role, I leverage my skills to contribute to cutting-edge research and projects that address critical public health challenges. My passion for data extends beyond the workplace, as I continually seek to expand my knowledge and share it through publications, speaking engagements, and mentoring.\nMy Key Research Interests are:\nI am currently pusruing my MSc in Epidemiology and Biostatistics at JOOUST, where I have finshed my coursework and designed a case study design to assess primary health facility financing for management of hypertension and diabestes in kisumu county. I look forward to registering for a PhD position to continue exploring the application of statistical methods in public health data, particularly in randomized clinical trails. Soon, I want to start developing R packages, I want to turn my thesis into a package, transparency, openness, and reproducibility."
+  },
+  {
+    "objectID": "about/index.html#ongoing-publications",
+    "href": "about/index.html#ongoing-publications",
+    "title": "Nichodemus Amollo",
+    "section": "Ongoing Publications",
+    "text": "Ongoing Publications\n\n[assess primary health facility financing for management of hypertension and diabestes in kisumu county] - MSc Thesis.\n\nSometimes I teach biostatistics courses at JOOUST school of health sciences (JOOUST), Kisumu. As a DataCamp certified data scientist, I also teach and help with R programming at the LERIS HUB.\nI speak fluent English, Swahili and dholuo, and trying to learn French. Outside of work, I enjoy staying active and engaging in various sports. I have a deep appreciation for classical music, particularly Renaissance polyphony, and enjoy reading on topics ranging from Cold War history to Greek drama. Living with neuromyelitis optica has fueled my curiosity about complex health conditions and has driven me to understand them better through my research."
   },
   {
     "objectID": "index.html",
