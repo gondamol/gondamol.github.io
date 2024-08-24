@@ -28,7 +28,7 @@ website:
         text: Teaching
       - href: blogs/index.qmd
         text: Blogs/Notes
-      - href: CV/index.qmd
+      - href: cv/index.qmd
         text: CV
       #- href: resources/index.qmd
        # text: Resources
