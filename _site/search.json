@@ -1,0 +1,128 @@
+[
+  {
+    "objectID": "tidy-tuesday/index.html",
+    "href": "tidy-tuesday/index.html",
+    "title": "Tidy Tuesday Analysis",
+    "section": "",
+    "text": "Welcome to my Tidy Tuesday analysis collection! Each week, I participate in the Tidy Tuesday challenge, where I analyze different datasets and share my findings. Below are some of the projects I’ve worked on.\n\n\n\n2024-01-02: Analysis on Global Temperature Changes\n2024-01-09: Analysis on Movie Ratings Trends\n2024-01-16: Analysis on World Population Growth\n\nFeel free to explore each analysis to see the data visualization, statistical methods, and insights drawn from each dataset."
+  },
+  {
+    "objectID": "tidy-tuesday/index.html#recent-projects",
+    "href": "tidy-tuesday/index.html#recent-projects",
+    "title": "Tidy Tuesday Analysis",
+    "section": "",
+    "text": "2024-01-02: Analysis on Global Temperature Changes\n2024-01-09: Analysis on Movie Ratings Trends\n2024-01-16: Analysis on World Population Growth\n\nFeel free to explore each analysis to see the data visualization, statistical methods, and insights drawn from each dataset."
+  },
+  {
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Developed agent-based models to simulate the spread of infectious diseases, incorporating real-world data to improve the accuracy of predictions.\nKey Technologies: R, Python, Geospatial Analysis\n\n\n\n\nLed data analysis efforts in oncology research, focusing on improving patient outcomes through data-driven insights.\nKey Technologies: SQL, Python, Machine Learning\n\n\n\n\nDesigned and implemented public health surveillance systems to track and monitor the spread of non-communicable diseases.\nKey Technologies: R, SQL, Tableau\n\n\n\n\nApplied Bayesian statistical methods to public health research, contributing to more robust and reliable findings.\nKey Technologies: R, Bayesian Inference, Statistical Modeling\n\n\n\n\nPromoted best practices for reproducible research through workshops, publications, and the development of open-source tools.\nKey Technologies: R, Python, Git"
+  },
+  {
+    "objectID": "projects/index.html#computational-epidemiology-models",
+    "href": "projects/index.html#computational-epidemiology-models",
+    "title": "Projects",
+    "section": "",
+    "text": "Developed agent-based models to simulate the spread of infectious diseases, incorporating real-world data to improve the accuracy of predictions.\nKey Technologies: R, Python, Geospatial Analysis"
+  },
+  {
+    "objectID": "projects/index.html#oncology-data-analysis",
+    "href": "projects/index.html#oncology-data-analysis",
+    "title": "Projects",
+    "section": "",
+    "text": "Led data analysis efforts in oncology research, focusing on improving patient outcomes through data-driven insights.\nKey Technologies: SQL, Python, Machine Learning"
+  },
+  {
+    "objectID": "projects/index.html#public-health-surveillance-systems",
+    "href": "projects/index.html#public-health-surveillance-systems",
+    "title": "Projects",
+    "section": "",
+    "text": "Designed and implemented public health surveillance systems to track and monitor the spread of non-communicable diseases.\nKey Technologies: R, SQL, Tableau"
+  },
+  {
+    "objectID": "projects/index.html#bayesian-statistics-in-public-health",
+    "href": "projects/index.html#bayesian-statistics-in-public-health",
+    "title": "Projects",
+    "section": "",
+    "text": "Applied Bayesian statistical methods to public health research, contributing to more robust and reliable findings.\nKey Technologies: R, Bayesian Inference, Statistical Modeling"
+  },
+  {
+    "objectID": "projects/index.html#reproducibility-in-research",
+    "href": "projects/index.html#reproducibility-in-research",
+    "title": "Projects",
+    "section": "",
+    "text": "Promoted best practices for reproducible research through workshops, publications, and the development of open-source tools.\nKey Technologies: R, Python, Git"
+  },
+  {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "This is a post with executable code.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Nichodemus Amollo",
+    "section": "",
+    "text": "Hello!\nI’m a data analyst and statistician passionate about public health data. I aim to use my expertise to drive impactful change, especially in resource-limited settings.\nWith over five years of experience, I’ve developed strong skills in data collection, analysis, and visualization. I’m proficient in RedCap and other EDC systems and have advanced expertise in R, SPSS, STATA, and SAS. My technical leadership and database management have been key in advancing public health projects.\nIn addition to my work, I serve as a part-time lecturer at JOOUST School of Health Sciences, where I teach statistics. I also conduct R programming workshops at LERIS HUB, helping researchers enhance their data analysis skills.\nOutside work, I’m a fitness enthusiast who enjoys morning runs and nature walks. I’ve been following a keto diet for two years and practice OMAD (One Meal A Day), integrating wellness into my daily routine."
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
+    "objectID": "resources/index.html",
+    "href": "resources/index.html",
+    "title": "Resources",
+    "section": "",
+    "text": "Welcome to my resources page! Here, you’ll find a collection of tools, articles, and datasets that I regularly use in my work as a data analyst and statistician.\n\n\n\nR: A powerful tool for statistical computing and graphics.\nPython: Versatile programming language for data analysis, modeling, and visualization.\nSQL: Essential for managing and querying large datasets.\nTableau: Data visualization tool that helps turn data into actionable insights.\n\n\n\n\n\n“Bayesian Data Analysis” by Andrew Gelman\n“The Art of R Programming” by Norman Matloff\n“Deep Learning with Python” by François Chollet\n\n\n\n\n\nKaggle Datasets: A vast collection of datasets for various data science projects.\nWHO Health Data: Public health datasets from the World Health Organization.\nCDC WONDER: A comprehensive database of public health data."
+  },
+  {
+    "objectID": "resources/index.html#data-science-tools",
+    "href": "resources/index.html#data-science-tools",
+    "title": "Resources",
+    "section": "",
+    "text": "R: A powerful tool for statistical computing and graphics.\nPython: Versatile programming language for data analysis, modeling, and visualization.\nSQL: Essential for managing and querying large datasets.\nTableau: Data visualization tool that helps turn data into actionable insights."
+  },
+  {
+    "objectID": "resources/index.html#recommended-reading",
+    "href": "resources/index.html#recommended-reading",
+    "title": "Resources",
+    "section": "",
+    "text": "“Bayesian Data Analysis” by Andrew Gelman\n“The Art of R Programming” by Norman Matloff\n“Deep Learning with Python” by François Chollet"
+  },
+  {
+    "objectID": "resources/index.html#useful-datasets",
+    "href": "resources/index.html#useful-datasets",
+    "title": "Resources",
+    "section": "",
+    "text": "Kaggle Datasets: A vast collection of datasets for various data science projects.\nWHO Health Data: Public health datasets from the World Health Organization.\nCDC WONDER: A comprehensive database of public health data."
+  },
+  {
+    "objectID": "tidy-tuesday/2024-01-02-analysis.html",
+    "href": "tidy-tuesday/2024-01-02-analysis.html",
+    "title": "Global Temperature Changes",
+    "section": "",
+    "text": "This week’s Tidy Tuesday dataset focuses on global temperature changes over time. In this analysis, I explore the trends in global temperature increases and their potential implications on climate change.\n\n\n\n# Load necessary libraries\nlibrary(tidyverse)\n\nWarning: package 'tidyverse' was built under R version 4.3.2\n\n\nWarning: package 'tibble' was built under R version 4.3.2\n\n\nWarning: package 'readr' was built under R version 4.3.2\n\n\nWarning: package 'purrr' was built under R version 4.3.2\n\n\nWarning: package 'dplyr' was built under R version 4.3.2\n\n\nWarning: package 'stringr' was built under R version 4.3.2\n\n\nWarning: package 'forcats' was built under R version 4.3.2\n\n\nWarning: package 'lubridate' was built under R version 4.3.2\n\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.5.1\n✔ ggplot2   3.5.1     ✔ tibble    3.2.1\n✔ lubridate 1.9.3     ✔ tidyr     1.3.1\n✔ purrr     1.0.2     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\n# Generate random data\nset.seed(123)  # Set seed for reproducibility\n\n# Create a sequence of years from 1900 to 2024\nyears &lt;- seq(1900, 2024)\n\n# Generate random temperature changes, simulating a gradual increase over time\ntemperature_change &lt;- cumsum(rnorm(length(years), mean = 0.02, sd = 0.1))\n\n# Combine the years and temperature changes into a data frame\ntemperature_data &lt;- data.frame(year = years, temperature_change = temperature_change)\n\n# Preview the data\nhead(temperature_data)\n\n  year temperature_change\n1 1900        -0.03604756\n2 1901        -0.03906531\n3 1902         0.13680552\n4 1903         0.16385636\n5 1904         0.19678513\n6 1905         0.38829163\n\n\n\n# Example plot\nggplot(temperature_data, aes(x = year, y = temperature_change)) +\n  geom_line() +\n  labs(title = \"Global Temperature Changes Over Time\", x = \"Year\", y = \"Temperature Change (°C)\")"
+  },
+  {
+    "objectID": "tidy-tuesday/2024-01-02-analysis.html#data-preparation",
+    "href": "tidy-tuesday/2024-01-02-analysis.html#data-preparation",
+    "title": "Global Temperature Changes",
+    "section": "",
+    "text": "# Load necessary libraries\nlibrary(tidyverse)\n\nWarning: package 'tidyverse' was built under R version 4.3.2\n\n\nWarning: package 'tibble' was built under R version 4.3.2\n\n\nWarning: package 'readr' was built under R version 4.3.2\n\n\nWarning: package 'purrr' was built under R version 4.3.2\n\n\nWarning: package 'dplyr' was built under R version 4.3.2\n\n\nWarning: package 'stringr' was built under R version 4.3.2\n\n\nWarning: package 'forcats' was built under R version 4.3.2\n\n\nWarning: package 'lubridate' was built under R version 4.3.2\n\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.5.1\n✔ ggplot2   3.5.1     ✔ tibble    3.2.1\n✔ lubridate 1.9.3     ✔ tidyr     1.3.1\n✔ purrr     1.0.2     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\n# Generate random data\nset.seed(123)  # Set seed for reproducibility\n\n# Create a sequence of years from 1900 to 2024\nyears &lt;- seq(1900, 2024)\n\n# Generate random temperature changes, simulating a gradual increase over time\ntemperature_change &lt;- cumsum(rnorm(length(years), mean = 0.02, sd = 0.1))\n\n# Combine the years and temperature changes into a data frame\ntemperature_data &lt;- data.frame(year = years, temperature_change = temperature_change)\n\n# Preview the data\nhead(temperature_data)\n\n  year temperature_change\n1 1900        -0.03604756\n2 1901        -0.03906531\n3 1902         0.13680552\n4 1903         0.16385636\n5 1904         0.19678513\n6 1905         0.38829163\n\n\n\n# Example plot\nggplot(temperature_data, aes(x = year, y = temperature_change)) +\n  geom_line() +\n  labs(title = \"Global Temperature Changes Over Time\", x = \"Year\", y = \"Temperature Change (°C)\")"
+  }
+]
