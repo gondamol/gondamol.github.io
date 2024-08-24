@@ -63,11 +63,18 @@
     "text": "This is a post with executable code.\n\n1 + 1\n\n[1] 2"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "about/index.html",
+    "href": "about/index.html",
+    "title": "Nichodemus Amollo",
     "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
+    "text": "Kaggle\n  \n  \n    \n     Github\n  \n  \n    \n     Email\nI am a passionate data analyst and statistician specializing in computational epidemiology, public health, oncology research, and Bayesian statistics. With a strong background in data management, analysis, and storytelling, I am dedicated to using data to uncover insights that drive impactful decisions.. Over the past few years, I’ve become very interested in research software, open source, reproducibility and data science practices in public sector.\nIn my current role, I leverage my skills to contribute to cutting-edge research and projects that address critical public health challenges. My passion for data extends beyond the workplace, as I continually seek to expand my knowledge and share it through publications, speaking engagements, and mentoring.\nMy Key Research Interests are:\nI am currently pusruing my MSc in Epidemiology and Biostatistics at JOOUST, where I have finshed my coursework and designed a case study design to assess primary health facility financing for management of hypertension and diabestes in kisumu county. I look forward to registering for a PhD position to continue exploring the application of statistical methods in public health data, particularly in randomized clinical trails. Soon, I want to start developing R packages, I want to turn my thesis into a package, transparency, openness, and reproducibility."
+  },
+  {
+    "objectID": "about/index.html#ongoing-publications",
+    "href": "about/index.html#ongoing-publications",
+    "title": "Nichodemus Amollo",
+    "section": "Ongoing Publications",
+    "text": "Ongoing Publications\n\n[assess primary health facility financing for management of hypertension and diabestes in kisumu county] - MSc Thesis.\n\nSometimes I teach biostatistics courses at JOOUST school of health sciences (JOOUST), Kisumu. As a DataCamp certified data scientist, I also teach and help with R programming at the LERIS HUB.\nI speak fluent English, Swahili and dholuo, and trying to learn French. Outside of work, I enjoy staying active and engaging in various sports. I have a deep appreciation for classical music, particularly Renaissance polyphony, and enjoy reading on topics ranging from Cold War history to Greek drama. Living with neuromyelitis optica has fueled my curiosity about complex health conditions and has driven me to understand them better through my research."
   },
   {
     "objectID": "index.html",
@@ -124,19 +131,5 @@
     "title": "Global Temperature Changes",
     "section": "",
     "text": "# Load necessary libraries\nlibrary(tidyverse)\n\nWarning: package 'tidyverse' was built under R version 4.3.2\n\n\nWarning: package 'tibble' was built under R version 4.3.2\n\n\nWarning: package 'readr' was built under R version 4.3.2\n\n\nWarning: package 'purrr' was built under R version 4.3.2\n\n\nWarning: package 'dplyr' was built under R version 4.3.2\n\n\nWarning: package 'stringr' was built under R version 4.3.2\n\n\nWarning: package 'forcats' was built under R version 4.3.2\n\n\nWarning: package 'lubridate' was built under R version 4.3.2\n\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.5.1\n✔ ggplot2   3.5.1     ✔ tibble    3.2.1\n✔ lubridate 1.9.3     ✔ tidyr     1.3.1\n✔ purrr     1.0.2     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\n# Generate random data\nset.seed(123)  # Set seed for reproducibility\n\n# Create a sequence of years from 1900 to 2024\nyears &lt;- seq(1900, 2024)\n\n# Generate random temperature changes, simulating a gradual increase over time\ntemperature_change &lt;- cumsum(rnorm(length(years), mean = 0.02, sd = 0.1))\n\n# Combine the years and temperature changes into a data frame\ntemperature_data &lt;- data.frame(year = years, temperature_change = temperature_change)\n\n# Preview the data\nhead(temperature_data)\n\n  year temperature_change\n1 1900        -0.03604756\n2 1901        -0.03906531\n3 1902         0.13680552\n4 1903         0.16385636\n5 1904         0.19678513\n6 1905         0.38829163\n\n\n\n# Example plot\nggplot(temperature_data, aes(x = year, y = temperature_change)) +\n  geom_line() +\n  labs(title = \"Global Temperature Changes Over Time\", x = \"Year\", y = \"Temperature Change (°C)\")"
-  },
-  {
-    "objectID": "about/index.html",
-    "href": "about/index.html",
-    "title": "Nichodemus Amollo",
-    "section": "",
-    "text": "Kaggle\n  \n  \n    \n     Github\n  \n  \n    \n     Email\nI am a passionate data analyst and statistician specializing in computational epidemiology, public health, oncology research, and Bayesian statistics. With a strong background in data management, analysis, and storytelling, I am dedicated to using data to uncover insights that drive impactful decisions.. Over the past few years, I’ve become very interested in research software, open source, reproducibility and data science practices in public sector.\nIn my current role, I leverage my skills to contribute to cutting-edge research and projects that address critical public health challenges. My passion for data extends beyond the workplace, as I continually seek to expand my knowledge and share it through publications, speaking engagements, and mentoring.\nMy Key Research Interests are:\nI am currently pusruing my MSc in Epidemiology and Biostatistics at JOOUST, where I have finshed my coursework and designed a case study design to assess primary health facility financing for management of hypertension and diabestes in kisumu county. I look forward to registering for a PhD position to continue exploring the application of statistical methods in public health data, particularly in randomized clinical trails. Soon, I want to start developing R packages, I want to turn my thesis into a package, transparency, openness, and reproducibility."
-  },
-  {
-    "objectID": "about/index.html#ongoing-publications",
-    "href": "about/index.html#ongoing-publications",
-    "title": "Nichodemus Amollo",
-    "section": "Ongoing Publications",
-    "text": "Ongoing Publications\n\n[assess primary health facility financing for management of hypertension and diabestes in kisumu county] - MSc Thesis.\n\nSometimes I teach biostatistics courses at JOOUST school of health sciences (JOOUST), Kisumu. As a DataCamp certified data scientist, I also teach and help with R programming at the LERIS HUB.\nI speak fluent English, Swahili and dholuo, and trying to learn French. Outside of work, I enjoy staying active and engaging in various sports. I have a deep appreciation for classical music, particularly Renaissance polyphony, and enjoy reading on topics ranging from Cold War history to Greek drama. Living with neuromyelitis optica has fueled my curiosity about complex health conditions and has driven me to understand them better through my research."
   }
 ]
