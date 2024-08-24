@@ -1,0 +1,69 @@
+---
+title: "Nichodemus Amollo"
+image: mount.jpeg
+page-layout: article
+format: 
+  html:
+    linestretch: 1.7
+about:
+  id: hero-heading
+  template: jolla
+  image-shape: round
+  links:
+    - icon: kaggle
+      text: Kaggle
+      url: https://www.kaggle.com/
+      #- icon: linkedin
+       # text: LinkedIn
+       # url: https://www.linkedin.com/in/
+      #- icon: twitter
+      #  text: Twitter
+       # url: https://twitter.com/
+    - icon: github
+      text: Github
+      url: https://github.com/
+    - icon: envelope
+      text: Email
+      href: mailto:nichodemuswerre@gmail.com
+  #    - text: "{{< ai orcid >}} ORCID"
+---
+
+::: {#hero-heading}
+
+:::
+
+I am a passionate data analyst and statistician specializing in computational epidemiology, public health, oncology research, and Bayesian statistics. With a strong background in data management, analysis, and storytelling, I am dedicated to using data to uncover insights that drive impactful decisions.. Over the past few years, I've become very interested in **research software, open source, reproducibility** and **data science** practices in public sector.
+
+
+In my current role, I leverage my skills to contribute to cutting-edge research and projects that address critical public health challenges. My passion for data extends beyond the workplace, as I continually seek to expand my knowledge and share it through publications, speaking engagements, and mentoring.
+
+My **Key Research Interests** are: 
+
+- **Computational Epidemiology:** Agent-based modeling, geospatial analysis, and dynamic networks in the context of infectious diseases.
+- **Public Health:** Evidence-based public health policy, health systems improvement, and public health ethics.
+- **Oncology Research:** Investigating cancer epidemiology and improving cancer treatment outcomes.
+- **Non-Communicable Diseases:** Focusing on chronic disease prevention and control.
+- **Bayesian Statistics:** Application of Bayesian methods in epidemiology and biostatistics.
+- **Reproducibility:** Promoting reproducible research practices in public health and epidemiology. Statistical software development in public health and clinical research
+
+I am currently pusruing my MSc in Epidemiology and Biostatistics at JOOUST, where I have finshed my coursework and designed a case study design to **assess primary health facility financing for management of hypertension and diabestes in kisumu county**. I look forward to registering for a PhD position to continue exploring the application of statistical methods in public health data, particularly in randomized clinical trails. Soon, I want to start developing R packages, I want to turn my thesis into a package, transparency, openness, and reproducibility. 
+
+## Ongoing Publications
+
+- **[assess primary health facility financing for management of hypertension and diabestes in kisumu county]** - MSc Thesis.
+
+
+Sometimes I teach **biostatistics** courses at JOOUST school of health sciences ([JOOUST](https://www.jooust.ac.ke/)), Kisumu. As a DataCamp certified data scientist, I also teach and help with **R programming** at the [LERIS HUB](https://lerishub.com/). 
+
+
+
+I speak fluent English, Swahili and dholuo, and trying to learn French. Outside of work, I enjoy staying active and engaging in various sports. I have a deep appreciation for classical music, particularly Renaissance polyphony, and enjoy reading on topics ranging from Cold War history to Greek drama. Living with neuromyelitis optica has fueled my curiosity about complex health conditions and has driven me to understand them better through my research.
+
+
+
+
+
+
+
+
+
