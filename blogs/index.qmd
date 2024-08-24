@@ -1,0 +1,35 @@
+---
+title: "Blogs"
+---
+
+# Blogs
+
+## Latest Posts
+
+### 1. **Understanding Bayesian Statistics in Public Health**
+Bayesian statistics offer a powerful framework for analyzing public health data. In this post, I explore its applications and benefits.
+
+[Read more →](#)
+
+---
+
+### 2. **The Role of Reproducibility in Epidemiology**
+Reproducibility is crucial for advancing scientific knowledge. Here’s how we can improve reproducibility in epidemiological studies.
+
+[Read more →](#)
+
+---
+
+### 3. **Agent-Based Modeling for Infectious Diseases**
+Agent-based models provide a dynamic way to simulate the spread of infectious diseases. Learn how they work and why they’re important.
+
+[Read more →](#)
+
+---
+
+### 4. **Data-Driven Approaches to Oncology Research**
+Explore how data science is transforming oncology research, from early detection to personalized treatment.
+
+[Read more →](#)
+
+
