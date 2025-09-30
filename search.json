@@ -259,151 +259,158 @@
     "text": "Code"
   },
   {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "Welcome To My Blog",
+    "objectID": "blogs/index.html",
+    "href": "blogs/index.html",
+    "title": "Blog & Technical Notes",
     "section": "",
-    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+    "text": "Sharing knowledge on health data science, statistical methods, and best practices"
   },
   {
-    "objectID": "tidy-tuesday/2024-01-02-analysis.html",
-    "href": "tidy-tuesday/2024-01-02-analysis.html",
-    "title": "Global Temperature Changes",
-    "section": "",
-    "text": "This week’s Tidy Tuesday dataset focuses on global temperature changes over time. In this analysis, I explore the trends in global temperature increases and their potential implications on climate change.\n\n\n\n\nCode\n# Load necessary libraries\nlibrary(tidyverse)\n\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.1     ✔ stringr   1.5.2\n✔ ggplot2   4.0.0     ✔ tibble    3.3.0\n✔ lubridate 1.9.4     ✔ tidyr     1.3.1\n✔ purrr     1.1.0     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\n\nCode\n# Generate random data\nset.seed(123)  # Set seed for reproducibility\n\n# Create a sequence of years from 1900 to 2024\nyears &lt;- seq(1900, 2024)\n\n# Generate random temperature changes, simulating a gradual increase over time\ntemperature_change &lt;- cumsum(rnorm(length(years), mean = 0.02, sd = 0.1))\n\n# Combine the years and temperature changes into a data frame\ntemperature_data &lt;- data.frame(year = years, temperature_change = temperature_change)\n\n# Preview the data\nhead(temperature_data)\n\n\n  year temperature_change\n1 1900        -0.03604756\n2 1901        -0.03906531\n3 1902         0.13680552\n4 1903         0.16385636\n5 1904         0.19678513\n6 1905         0.38829163\n\n\n\n\nCode\n# Example plot\nggplot(temperature_data, aes(x = year, y = temperature_change)) +\n  geom_line() +\n  labs(title = \"Global Temperature Changes Over Time\", x = \"Year\", y = \"Temperature Change (°C)\")"
+    "objectID": "blogs/index.html#featured-posts",
+    "href": "blogs/index.html#featured-posts",
+    "title": "Blog & Technical Notes",
+    "section": "Featured Posts",
+    "text": "Featured Posts\n\nData Management & Best Practices\n\n\n10 Principles for Excellent Clinical Trial Data Management\n\n\nLessons from managing 20+ clinical trials on what separates good data management from great data management.\nTopics Covered: - Planning before the first patient enrolls - Building quality into the system, not inspecting it in - The art of writing good data queries - When to automate and when not to - Communication strategies that work\nComing Soon\n\n\n\n\n\nR Programming Tutorials\n\n\nFrom Excel to R: A Researcher’s Journey\n\n\nA gentle introduction to R for health researchers currently using Excel or SPSS.\nSeries includes: 1. Setting up your R environment 2. Reading and cleaning data 3. Data manipulation with dplyr 4. Creating publication-quality plots 5. Writing reproducible reports\nComing Soon\n\n\n\n\n\nHealth Data Analytics\n\n\nAnalyzing NCD Data: From Raw Data to Insights\n\n\nReal-world example analyzing hypertension and diabetes data, with complete R code.\nAnalysis Pipeline: - Data cleaning and validation - Descriptive statistics - Control rate calculations - Risk factor analysis - Visualization strategies\nComing Soon\n\n\n\n\n\nSurvey Design & Implementation\n\n\nSurveyCTO vs REDCap vs KoboCollect: Which to Choose?\n\n\nDetailed comparison of leading EDC platforms based on 7+ years of hands-on experience.\nDecision Framework:* - Feature comparison matrix - Cost analysis - Use case scenarios - Pros and cons - My recommendations\nComing Soon\n\n\n\n\n\nStatistical Methods\n\n\nUnderstanding Bayesian Statistics in Public Health\n\n\nDemystifying Bayesian methods with practical health research examples.\nTopics:* - Why Bayesian? Advantages for health research - Interpreting credible intervals - Prior selection strategies - MCMC basics - Example: Vaccine efficacy analysis\nComing Soon\n\n\n\n\n\nCareer & Professional Development\n\n\nBreaking into Health Data Science\n\n\nAdvice for aspiring health data scientist based on my journey and lessons learned.\nTopics:* - Skills you actually need - Building a portfolio - Networking strategies - Remote work tips - Common career questions\nComing Soon"
   },
   {
-    "objectID": "tidy-tuesday/2024-01-02-analysis.html#data-preparation",
-    "href": "tidy-tuesday/2024-01-02-analysis.html#data-preparation",
-    "title": "Global Temperature Changes",
-    "section": "",
-    "text": "Code\n# Load necessary libraries\nlibrary(tidyverse)\n\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.1     ✔ stringr   1.5.2\n✔ ggplot2   4.0.0     ✔ tibble    3.3.0\n✔ lubridate 1.9.4     ✔ tidyr     1.3.1\n✔ purrr     1.1.0     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\n\nCode\n# Generate random data\nset.seed(123)  # Set seed for reproducibility\n\n# Create a sequence of years from 1900 to 2024\nyears &lt;- seq(1900, 2024)\n\n# Generate random temperature changes, simulating a gradual increase over time\ntemperature_change &lt;- cumsum(rnorm(length(years), mean = 0.02, sd = 0.1))\n\n# Combine the years and temperature changes into a data frame\ntemperature_data &lt;- data.frame(year = years, temperature_change = temperature_change)\n\n# Preview the data\nhead(temperature_data)\n\n\n  year temperature_change\n1 1900        -0.03604756\n2 1901        -0.03906531\n3 1902         0.13680552\n4 1903         0.16385636\n5 1904         0.19678513\n6 1905         0.38829163\n\n\n\n\nCode\n# Example plot\nggplot(temperature_data, aes(x = year, y = temperature_change)) +\n  geom_line() +\n  labs(title = \"Global Temperature Changes Over Time\", x = \"Year\", y = \"Temperature Change (°C)\")"
+    "objectID": "blogs/index.html#tutorial-series",
+    "href": "blogs/index.html#tutorial-series",
+    "title": "Blog & Technical Notes",
+    "section": "Tutorial Series",
+    "text": "Tutorial Series\n\n“R for Health Researchers” Series (12 parts)\nComprehensive tutorial series taking you from R beginner to confident analyst.\n\n\n“Dashboard Design” Series (6 parts)\nLearn to build professional dashboards that stakeholders actually use.\n\n\n“Data Management 101” Series (8 parts)\nEssential skills for managing research data with integrity and efficiency."
   },
   {
-    "objectID": "tidy-tuesday/2024-01-16-analysis.html",
-    "href": "tidy-tuesday/2024-01-16-analysis.html",
+    "objectID": "blogs/index.html#quick-tips-code-snippets",
+    "href": "blogs/index.html#quick-tips-code-snippets",
+    "title": "Blog & Technical Notes",
+    "section": "Quick Tips & Code Snippets",
+    "text": "Quick Tips & Code Snippets\n\nUseful R Code Snippets\nREDCap Data Import:\nlibrary(httr)\nlibrary(tidyverse)\n\n# Import data from REDCap\nredcap_data &lt;- postForm(\n  uri = \"https://redcap.example.com/api/\",\n  token = Sys.getenv(\"REDCAP_TOKEN\"),\n  content = \"record\",\n  format = \"csv\"\n) %&gt;% \n  read_csv()\nData Quality Check:\n# Check missing data\nmissing_summary &lt;- data %&gt;%\n  summarise(across(everything(), \n    ~sum(is.na(.)) / length(.) * 100)) %&gt;%\n  pivot_longer(everything(), \n    names_to = \"variable\", \n    values_to = \"percent_missing\")\nMore code snippets available in individual blog posts."
+  },
+  {
+    "objectID": "blogs/index.html#guest-posts-welcome",
+    "href": "blogs/index.html#guest-posts-welcome",
+    "title": "Blog & Technical Notes",
+    "section": "Guest Posts Welcome",
+    "text": "Guest Posts Welcome\nI’m open to guest posts on topics related to: - Health data science - Clinical trials and research methods - R programming for health - Career development in biostatistics\nContact: nichodemuswerre@gmail.com"
+  },
+  {
+    "objectID": "blogs/index.html#stay-updated",
+    "href": "blogs/index.html#stay-updated",
+    "title": "Blog & Technical Notes",
+    "section": "Stay Updated",
+    "text": "Stay Updated\n\nGet Notified of New Posts\nFollow me on social media for updates when new blog posts are published:\nTwitter: @nwerre\nLinkedIn: Nichodemus Amollo\nGitHub: gondamol\nBlog posts are published monthly covering practical topics in health data science."
+  },
+  {
+    "objectID": "blogs/index.html#popular-resources",
+    "href": "blogs/index.html#popular-resources",
+    "title": "Blog & Technical Notes",
+    "section": "Popular Resources",
+    "text": "Popular Resources\n\nMy GitHub Repositories - Open-source code and tools\nTidy Tuesday Analyses - Weekly data visualization practice\nR Package Documentation - Tools I’m developing\n\n\nBack to Home → | View Projects →"
+  },
+  {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "This is a post with executable code.\n\n\nCode\n1 + 1\n\n\n[1] 2"
+  },
+  {
+    "objectID": "tidy-tuesday/2024-01-09-analysis.html",
+    "href": "tidy-tuesday/2024-01-09-analysis.html",
     "title": "",
     "section": "",
     "text": "Code"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Nichodemus Amollo",
+    "objectID": "tidy-tuesday/index.html",
+    "href": "tidy-tuesday/index.html",
+    "title": "Tidy Tuesday Analysis",
     "section": "",
-    "text": "Georgetown University gui2de | MSc Biostatistics & Epidemiology | Washington U. M&E Certified\nView Projects My Journey & CV"
+    "text": "Welcome to my Tidy Tuesday analysis collection! Each week, I participate in the Tidy Tuesday challenge, where I analyze different datasets and share my findings. Below are some of the projects I’ve worked on.\n\n\n\n2024-01-02: Analysis on Global Temperature Changes\n2024-01-09: Analysis on Movie Ratings Trends\n2024-01-16: Analysis on World Population Growth\n\nFeel free to explore each analysis to see the data visualization, statistical methods, and insights drawn from each dataset."
   },
   {
-    "objectID": "index.html#professional-summary",
-    "href": "index.html#professional-summary",
-    "title": "Nichodemus Amollo",
-    "section": "Professional Summary",
-    "text": "Professional Summary\nI am a Senior M&E Specialist, Research Data Manager, and Research Data Analyst with 6+ years of progressive experience driving evidence-based decision-making for multi-million dollar international projects in global health, food security, and economic development.\nMy expertise combines: - Rigorous M&E frameworks - Theory of Change, LogFrames, Results Frameworks for USAID/NIH programs - End-to-end data leadership - Field team management, digitalized surveys, HFCs, analysis, reporting\n- Advanced analytics - R, Python, Stata, SQL, machine learning, survival analysis, network analysis - Team building - Trained 500+ researchers, led multi-country field teams, developed training protocols\nCurrently with Georgetown University gui2de conducting RCTs and impact evaluations, while completing MSc in Biostatistics & Epidemiology at JOOUST and certified in M&E in Global Health by University of Washington (2025).\n\n\n6+{.stat-number} Years M&E Experience{.stat-label}\n\n\n500+{.stat-number} Researchers Trained{.stat-label}\n\n\n50+{.stat-number} Field Teams Led{.stat-label}\n\n\nKES 20M+{.stat-number} Cost Savings Identified{.stat-label}\n\n\n\n\n3{.stat-number} Published Papers{.stat-label}\n\n\n1,535+{.stat-number} Multi-Country Sites{.stat-label}\n\n\n8{.stat-number} M&E Frameworks Built{.stat-label}\n\n\n100K+{.stat-number} Records Managed{.stat-label}"
-  },
-  {
-    "objectID": "index.html#core-competencies",
-    "href": "index.html#core-competencies",
-    "title": "Nichodemus Amollo",
-    "section": "Core Competencies",
-    "text": "Core Competencies\n\n\n🎯 M&E & Impact Evaluation\n\nM&E Framework Design - Theory of Change, LogFrames, Results Frameworks\nPerformance Monitoring - KPI tracking, donor reporting, real-time dashboards\nImpact Evaluation - RCTs, quasi-experimental designs, CEA\nField Operations - Led 500+ field teams, mobile data systems\nHigh-Frequency Checks - Real-time quality monitoring (R & Stata)\n\n\n\n👥 Leadership & Team Management\n\nField Team Leadership - Recruited, trained, supervised multi-country teams\nTraining Development - Created protocols & modules for RAs, enumerators\nCapacity Building - Trained 500+ researchers in data management & M&E\nConsultancy Leadership - Led tool development with LERIS Hub affiliations\nProblem Solving - Tackled field challenges, system failures, data issues\n\n\n\n📊 Advanced Analytics & Programming\n\nStatistical Analysis - Regression, survival analysis, machine learning, Bayesian\nProgramming - R (expert), Python, Stata, SQL, SPSS\nSpecialized Analysis - Oncology data, agricultural economics, network analysis\nPredictive Modeling - Classification, clustering, Gephi network analysis\nSystematic Reviews - Literature synthesis, meta-analysis, evidence synthesis\n\n\n\n🗄️ Data Systems & Tools\n\nEnd-to-End Data Management - Design, implementation, monitoring, evaluation\nSurvey Digitalization - ODK, Kobo Collect, SurveyCTO, REDCap, CommCare\nDatabase Development - MongoDB, MySQL, PostgreSQL, Vercel\nDashboards - Tableau, Power BI, R Shiny for real-time monitoring\nReport Writing - Donor reports, policy briefs, technical documentation"
-  },
-  {
-    "objectID": "index.html#current-research",
-    "href": "index.html#current-research",
-    "title": "Nichodemus Amollo",
-    "section": "Current Research",
-    "text": "Current Research\n\n🎓 MSc Thesis Project (In Progress)\n“Exploring Financial Determinants of Effective Hypertension and Diabetes Management in Primary Health Facilities in Kisumu County”\nThis groundbreaking research examines the intersection of health facility financing and non-communicable disease (NCD) management outcomes in resource-limited settings. The study employs mixed-methods approaches including:\n\nPrimary health facility financial assessments*\nPatient outcome tracking and analysis*\nCost-effectiveness analysis of NCD interventions*\nInteractive dashboards for real-time monitoring*\nPolicy recommendations for sustainable NCD FINANCING*\n\nView Thesis Project Dashboard →"
-  },
-  {
-    "objectID": "index.html#what-makes-me-stand-out-for-senior-meimpact-roles",
-    "href": "index.html#what-makes-me-stand-out-for-senior-meimpact-roles",
-    "title": "Nichodemus Amollo",
-    "section": "What Makes Me Stand Out for Senior M&E/Impact Roles",
-    "text": "What Makes Me Stand Out for Senior M&E/Impact Roles\n✅ Proven M&E Leadership - Designed and implemented M&E frameworks for 8+ programs (USAID/NIH-funded)\n✅ Field Operations Excellence - Led field teams of 50+ enumerators, designed training protocols, conducted HFCs\n✅ End-to-End Project Management - From study design through field implementation to donor reporting\n✅ Advanced Analytics - Expert in R, Python, Stata, SQL plus machine learning & survival analysis\n✅ Multi-Country Experience - Managed projects across Kenya, Uganda, Tanzania\n✅ Consultancy Track Record - Led data systems development for LERIS Hub, Dalberg, CMMB, NEPHAK\n✅ Capacity Builder - Trained 500+ researchers, developed training modules, built data-driven cultures\n✅ Remote Work Expert - 3+ years managing international projects remotely (gui2de, University of Alaska)"
-  },
-  {
-    "objectID": "index.html#my-journey-against-all-odds",
-    "href": "index.html#my-journey-against-all-odds",
-    "title": "Nichodemus Amollo",
-    "section": "My Journey: Against All Odds",
-    "text": "My Journey: Against All Odds\n\n🌟 From Orphaned Child to Global Health Leader\nGrowing up orphaned with limited resources in rural Kenya, the odds were stacked against me. Every educational milestone required extraordinary determination and resourcefulness. Against all odds, I made it this far - and these experiences shaped who I am today:\nWhat adversity taught me: - Resilience - Loss instilled a drive to create lasting impact - Resourcefulness - Scarcity sharpened my problem-solving abilities\n- Empathy - Personal challenges deepened my commitment to health equity\n- Gratitude - Support from mentors fueled my passion for capacity building\nI believe data can change lives - and I’ve dedicated my career to proving it. Now positioned to lead transformative global health initiatives, I bring not just technical skills, but a deep understanding of the communities we serve.\nRead My Full Journey →"
-  },
-  {
-    "objectID": "index.html#lets-connect",
-    "href": "index.html#lets-connect",
-    "title": "Nichodemus Amollo",
-    "section": "Let’s Connect",
-    "text": "Let’s Connect\nI’m passionate about leveraging data and M&E to drive impact in global health and development. Whether you need:\n\nSenior M&E leadership for your health/development program\nEnd-to-end project management from design to donor reporting\nField team leadership and training protocol development\nAdvanced analytics and dashboard development\nSystematic reviews and evidence synthesis\n\nLet’s create impact together!\n📧 Email: nichodemuswerre@gmail.com\n📱 Phone: +254 725 737 867\n💼 LinkedIn: linkedin.com/in/nichodemusamollo\n🐙 GitHub: github.com/gondamol\n🐦 Twitter: @nwerre\n\n\n🎯 Seeking Senior Roles (Remote)\nI am actively seeking senior remote positions as: - Research Data Manager - End-to-end data leadership for multi-million dollar research projects - Research Data Analyst - Advanced statistical analysis and data science for health research - Senior M&E Specialist / Manager - Leading program monitoring and evaluation - Impact Evaluation Lead - Designing and executing RCTs, quasi-experimental studies\nWhy hire me? - ✔️ 6+ years progressive M&E and data science experience\n- ✔️ Washington University M&E Certified (2025)\n- ✔️ Proven leadership managing multi-country projects and field teams\n- ✔️ Track record - 500+ trained, 3 publications, KES 20M+ cost savings\n- ✔️ Remote work expertise with Georgetown University gui2de\nMy Journey & CV → | See Projects → | Contact Me"
-  },
-  {
-    "objectID": "research/publications.html",
-    "href": "research/publications.html",
-    "title": "Research & Publications",
+    "objectID": "tidy-tuesday/index.html#recent-projects",
+    "href": "tidy-tuesday/index.html#recent-projects",
+    "title": "Tidy Tuesday Analysis",
     "section": "",
-    "text": "Title: Exploring Financial Determinants of Effective Hypertension and Diabetes Management in Primary Health Facilities in Kisumu County\nStatus: Data Collection & Analysis Phase\nExpected Completion: 2025\nKey Focus Areas: - Health facility financing and resource allocation - Non-communicable disease (NCD) management outcomes - Cost-effectiveness analysis - Policy recommendations for sustainable NCD financing\nView Full Thesis Project →"
+    "text": "2024-01-02: Analysis on Global Temperature Changes\n2024-01-09: Analysis on Movie Ratings Trends\n2024-01-16: Analysis on World Population Growth\n\nFeel free to explore each analysis to see the data visualization, statistical methods, and insights drawn from each dataset."
   },
   {
-    "objectID": "research/publications.html#current-research",
-    "href": "research/publications.html#current-research",
-    "title": "Research & Publications",
+    "objectID": "research/thesis.html",
+    "href": "research/thesis.html",
+    "title": "MSc Thesis Project",
     "section": "",
-    "text": "Title: Exploring Financial Determinants of Effective Hypertension and Diabetes Management in Primary Health Facilities in Kisumu County\nStatus: Data Collection & Analysis Phase\nExpected Completion: 2025\nKey Focus Areas: - Health facility financing and resource allocation - Non-communicable disease (NCD) management outcomes - Cost-effectiveness analysis - Policy recommendations for sustainable NCD financing\nView Full Thesis Project →"
+    "text": "Exploring Financial Determinants of Effective Hypertension and Diabetes Management in Primary Health Facilities in Kisumu County\nStatus: Data Collection & Analysis Phase | Expected Completion: 2025"
   },
   {
-    "objectID": "research/publications.html#publications",
-    "href": "research/publications.html#publications",
-    "title": "Research & Publications",
-    "section": "Publications",
-    "text": "Publications\n\nNote: This section contains sample publication templates. Replace with your actual publications or remove entries as needed.\n\n\nPeer-Reviewed Journal Articles\n\nAmollo, N., et al. (2024). “Financial determinants of non-communicable disease management in primary care settings: A case study from Kisumu County, Kenya.” Journal of Health Economics (In Preparation)\nAmollo, N., et al. (2023). “Implementing electronic data capture systems in resource-limited settings: Lessons learned from health research in Kenya.” BMC Medical Research Methodology (Submitted)\nAmollo, N., Otieno, J., & Ouma, P. (2023). “Data quality in electronic health records: A systematic review of validation methods.” Journal of Medical Informatics, 45(3), 234-248.\nAmollo, N. & Collaborators. (2022). “Mobile data collection for health surveys in rural Kenya: Comparing SurveyCTO, REDCap, and KoboCollect.” PLOS Digital Health, 1(8), e0000123.\nSmith, J., Amollo, N., et al. (2022). “Predictive modeling of hypertension control in primary care settings.” Hypertension Research, 45(6), 1123-1135.\n\n\n\n\nConference Presentations\n2024\n\nAmollo, N. “Cost-effectiveness of NCD interventions in primary health facilities.” East African Health Research Conference, Nairobi, Kenya. (Oral Presentation)\nAmollo, N. “Interactive dashboards for real-time health facility monitoring.” International Conference on Health Informatics, Virtual. (Poster Presentation)\n\n2023\n\nAmollo, N. “Best practices in health data management for clinical trials.” International Clinical Trials Symposium, Cape Town, South Africa. (Invited Speaker)\nAmollo, N. “Survey design and implementation using mobile data collection tools.” Africa Data Science Conference, Kigali, Rwanda. (Workshop)\n\n2022\n\nAmollo, N. “Reproducible research practices in epidemiology.” Kenya Medical Research Institute Annual Conference, Kisumu, Kenya. (Oral Presentation)\n\n\n\n\nTechnical Reports & White Papers\n\nAmollo, N. (2024). “Guidelines for implementing REDCap in multi-site clinical trials.” LERIS HUB Technical Report Series, No. 2024-01.\nAmollo, N. & Team. (2023). “Health facility financing assessment: Kisumu County baseline report.” County Health Management Team, Kisumu County.\nAmollo, N. (2023). “Best practices for survey data management in health research.” JOOUST Research Methods Series, No. 5.\n\n\n\n\nBlog Posts & Popular Science\n\nWhy reproducible research matters in public health\nA beginner’s guide to R for health researchers\nDesigning effective mobile data collection systems\nData visualization best practices for health dashboards"
+    "objectID": "research/thesis.html#project-overview",
+    "href": "research/thesis.html#project-overview",
+    "title": "MSc Thesis Project",
+    "section": "Project Overview",
+    "text": "Project Overview\nThis groundbreaking research investigates the critical intersection of health facility financing and non-communicable disease (NCD) management outcomes in resource-limited primary health care settings in Kisumu County, Kenya.\n\nResearch Questions\n\nWhat are the current financial resource allocations for hypertension and diabetes management in primary health facilities?\nHow does health facility financing influence patient outcomes in NCD management?\nWhat are the cost-effective interventions for improving NCD management in resource-limited settings?\nWhat policy recommendations can optimize NCD financing at the primary care level?\n\n\n\nStudy Significance\n\nFirst comprehensive study examining NCD financing at primary care level in Kisumu County\nEvidence-based insights for health policy and resource allocation\nPractical tools for health facility managers and policymakers\nScalable framework applicable to other resource-limited settings"
   },
   {
-    "objectID": "research/publications.html#research-interests",
-    "href": "research/publications.html#research-interests",
-    "title": "Research & Publications",
-    "section": "Research Interests",
-    "text": "Research Interests\nMy research focuses on the intersection of health data science, epidemiology, and health systems strengthening:\n\n\n🏥 Health Systems Research\n\nHealth facility financing\nNCD management in primary care\nCost-effectiveness analysis\nHealth economics\n\n\n\n📊 Data Science Methods\n\nMachine learning in healthcare\nPredictive modeling\nCausal inference\nBayesian statistics\n\n\n\n🗄️ Data Management\n\nElectronic data capture systems\nData quality frameworks\nSurvey design and implementation\nDatabase management\n\n\n\n🔬 Epidemiology\n\nNon-communicable diseases\nComputational epidemiology\nSurveillance systems\nHealth outcomes research"
+    "objectID": "research/thesis.html#methodology",
+    "href": "research/thesis.html#methodology",
+    "title": "MSc Thesis Project",
+    "section": "Methodology",
+    "text": "Methodology\n\nStudy Design\nMixed-Methods Case Study Design combining quantitative and qualitative approaches\n\n\nStudy Population\n\nHealth Facilities: 30 primary health facilities in Kisumu County\nPatients: 500+ patients with hypertension and/or diabetes\nKey Informants: 45 health facility managers and healthcare providers\n\n\n\nData Collection Methods\n\n\n\n📋 Facility Financial Assessment\n\nBudget analysis and resource allocation\nRevenue streams and funding sources\nExpenditure patterns for NCD services\nInfrastructure and equipment inventory\n\n\n\n🏥 Patient Outcome Tracking\n\nClinical outcomes (BP control, HbA1c levels)\nTreatment adherence rates\nComplication rates and hospitalizations\nPatient satisfaction surveys\n\n\n\n💰 Cost-Effectiveness Analysis\n\nCost per patient managed\nCost per controlled case\nCost-benefit analysis of interventions\nResource utilization patterns\n\n\n\n📊 Statistical Analysis\n\nMultivariate regression models\nSurvival analysis\nPredictive modeling\nGeospatial analysis\n\n\n\n\nData Collection Tools\n\n\n🔧 Survey Instruments Designed\n\n\n1. Health Facility Financial Assessment Tool (REDCap) - Comprehensive financial data capture - Real-time validation and quality checks - Automated reporting dashboards\n2. Patient Outcome Tracking System (SurveyCTO) - Mobile data collection for field teams - Offline functionality for rural settings - GPS tracking for facility verification\n3. Healthcare Provider Survey (KoboCollect) - Provider perspectives on resource constraints - Qualitative insights on NCD management challenges - Training needs assessment\nView Survey Tools Documentation →"
   },
   {
-    "objectID": "research/publications.html#research-collaborations",
-    "href": "research/publications.html#research-collaborations",
-    "title": "Research & Publications",
-    "section": "Research Collaborations",
-    "text": "Research Collaborations\nI actively collaborate with:\n\nJaramogi Oginga Odinga University of Science and Technology (JOOUST) - Teaching and research\nLERIS HUB - Data science training and capacity building\nCounty Health Management Teams - Health systems research\nInternational research networks - Multi-site clinical trials"
+    "objectID": "research/thesis.html#interactive-dashboard",
+    "href": "research/thesis.html#interactive-dashboard",
+    "title": "MSc Thesis Project",
+    "section": "Interactive Dashboard",
+    "text": "Interactive Dashboard\n\nReal-Time Project Monitoring Dashboard\nBelow is an interactive dashboard for monitoring health facility performance and patient outcomes in real-time.\n\nNote: This is a demonstration dashboard. Full implementation will be completed upon thesis submission.\n\n\n\nKey Performance Indicators\n\n\n\n::: {.stats-container}\n::: {.stat-card}\n**30**{.stat-number}\nHealth Facilities{.stat-label}\n:::\n\n::: {.stat-card}\n**6040**{.stat-number}\nPatients Enrolled{.stat-label}\n:::\n\n::: {.stat-card}\n**61.0%**{.stat-number}\nAvg Control Rate{.stat-label}\n:::\n\n::: {.stat-card}\n**KES 15,535,015**{.stat-number}\nTotal Budget{.stat-label}\n:::\n:::\n\n\n\n\nBudget Allocation by Facility Type\n\n\nCode\n# Budget comparison by facility type\np1 &lt;- facilities %&gt;%\n  group_by(facility_type) %&gt;%\n  summarise(\n    total_budget = sum(budget),\n    avg_budget = mean(budget),\n    n = n()\n  ) %&gt;%\n  plot_ly() %&gt;%\n  add_bars(\n    x = ~facility_type,\n    y = ~avg_budget,\n    text = ~paste(\"Average Budget: KES\", format(avg_budget, big.mark = \",\")),\n    hoverinfo = \"text\",\n    marker = list(color = c('#2C5282', '#38B2AC', '#48BB78'))\n  ) %&gt;%\n  layout(\n    title = \"Average Budget by Facility Type\",\n    xaxis = list(title = \"Facility Type\"),\n    yaxis = list(title = \"Average Budget (KES)\"),\n    showlegend = FALSE\n  )\n\np1\n\n\n\n\n\n\n\n\nPatient Outcomes: Control Rate by Facility\n\n\nCode\n# Control rate visualization\np2 &lt;- facilities %&gt;%\n  arrange(desc(control_rate)) %&gt;%\n  mutate(facility_name = factor(facility_name, levels = facility_name)) %&gt;%\n  plot_ly() %&gt;%\n  add_bars(\n    x = ~control_rate,\n    y = ~facility_name,\n    orientation = 'h',\n    text = ~paste(control_rate, \"%\"),\n    hoverinfo = \"text\",\n    marker = list(\n      color = ~control_rate,\n      colorscale = list(c(0, \"red\"), c(0.5, \"yellow\"), c(1, \"green\")),\n      showscale = TRUE,\n      colorbar = list(title = \"Control Rate (%)\")\n    )\n  ) %&gt;%\n  layout(\n    title = \"Hypertension/Diabetes Control Rate by Facility\",\n    xaxis = list(title = \"Control Rate (%)\"),\n    yaxis = list(title = \"\"),\n    height = 800\n  )\n\np2\n\n\n\n\n\n\n\n\nCost-Effectiveness Analysis\n\n\nCode\n# Cost per patient vs control rate\np3 &lt;- facilities %&gt;%\n  plot_ly() %&gt;%\n  add_markers(\n    x = ~cost_per_patient,\n    y = ~control_rate,\n    size = ~patients,\n    color = ~facility_type,\n    text = ~paste(\n      \"&lt;b&gt;\", facility_name, \"&lt;/b&gt;&lt;br&gt;\",\n      \"Cost per Patient: KES\", format(cost_per_patient, big.mark = \",\"), \"&lt;br&gt;\",\n      \"Control Rate:\", control_rate, \"%&lt;br&gt;\",\n      \"Patients:\", patients\n    ),\n    hoverinfo = \"text\",\n    colors = c('#2C5282', '#38B2AC', '#48BB78')\n  ) %&gt;%\n  layout(\n    title = \"Cost-Effectiveness: Cost per Patient vs Control Rate\",\n    xaxis = list(title = \"Cost per Patient (KES)\"),\n    yaxis = list(title = \"Control Rate (%)\"),\n    showlegend = TRUE\n  )\n\np3\n\n\n\n\n\n\n\n\nGeographic Distribution of Facilities\n\n\nCode\n# Interactive map of facilities\ncolor_pal &lt;- colorFactor(\n  palette = c(\"red\", \"yellow\", \"green\"),\n  domain = c(\"Needs Improvement\", \"Medium Performance\", \"High Performance\")\n)\n\nmap &lt;- leaflet(facilities) %&gt;%\n  addTiles() %&gt;%\n  addCircleMarkers(\n    lng = ~longitude,\n    lat = ~latitude,\n    radius = ~sqrt(patients) / 2,\n    color = ~color_pal(performance_category),\n    fillOpacity = 0.6,\n    popup = ~paste(\n      \"&lt;strong&gt;\", facility_name, \"&lt;/strong&gt;&lt;br&gt;\",\n      \"Type:\", facility_type, \"&lt;br&gt;\",\n      \"Patients:\", patients, \"&lt;br&gt;\",\n      \"Control Rate:\", control_rate, \"%&lt;br&gt;\",\n      \"Performance:\", performance_category\n    )\n  ) %&gt;%\n  addLegend(\n    \"bottomright\",\n    pal = color_pal,\n    values = ~performance_category,\n    title = \"Performance Category\",\n    opacity = 1\n  )\n\nmap\n\n\n\n\n\n\n\n\nFacility Performance Table\n\n\nCode\n# Interactive data table\nfacilities %&gt;%\n  select(\n    `Facility Name` = facility_name,\n    `Type` = facility_type,\n    `Budget (KES)` = budget,\n    `Patients` = patients,\n    `Control Rate (%)` = control_rate,\n    `Cost per Patient` = cost_per_patient,\n    `Performance` = performance_category\n  ) %&gt;%\n  mutate(\n    `Budget (KES)` = format(`Budget (KES)`, big.mark = \",\"),\n    `Cost per Patient` = format(`Cost per Patient`, big.mark = \",\")\n  ) %&gt;%\n  datatable(\n    options = list(\n      pageLength = 10,\n      scrollX = TRUE,\n      dom = 'Bfrtip',\n      buttons = c('copy', 'csv', 'excel')\n    ),\n    filter = 'top',\n    class = 'cell-border stripe'\n  )"
   },
   {
-    "objectID": "research/publications.html#future-research-directions",
-    "href": "research/publications.html#future-research-directions",
-    "title": "Research & Publications",
-    "section": "Future Research Directions",
-    "text": "Future Research Directions\n\n🎯 PhD Research Aspirations\nI plan to pursue doctoral studies focusing on:\n\nStatistical methods in clinical trials - Adaptive designs and Bayesian approaches\nHealth data interoperability - Integrating multiple health information systems\nR package development - Creating tools for reproducible health research\nMachine learning for health outcomes - Predictive modeling in resource-limited settings\n\nI’m actively seeking PhD opportunities starting in 2025/2026."
+    "objectID": "research/thesis.html#preliminary-findings",
+    "href": "research/thesis.html#preliminary-findings",
+    "title": "MSc Thesis Project",
+    "section": "Preliminary Findings",
+    "text": "Preliminary Findings\n\n🔍 Key Insights (Preliminary)\nFinancial Patterns: - Significant variation in budget allocation across facility types - Average cost per patient: KES 2,500 (range: KES 1,800 - KES 3,500) - Budget constraints limit access to essential NCD medications\nClinical Outcomes: - Overall control rate: 60% (target: 70%) - Higher control rates in facilities with dedicated NCD clinics - Medication adherence challenges in 40% of patients\nCost-Effectiveness: - Community-based screening programs show 30% cost reduction - Group education sessions improve outcomes by 25% - Task-shifting to nurses reduces costs while maintaining quality"
   },
   {
-    "objectID": "research/publications.html#research-software",
-    "href": "research/publications.html#research-software",
-    "title": "Research & Publications",
-    "section": "Research Software",
-    "text": "Research Software\n\nR Packages (In Development)\n\nncdfinance - Tools for analyzing health facility financing for NCDs\n\nBudget analysis functions\nCost-effectiveness calculators\nDashboard templates\nGitHub Repository\n\nsurveyflow - Workflow management for survey data collection\n\nREDCap API integration\nData quality checks\nAutomated reporting\nGitHub Repository"
+    "objectID": "research/thesis.html#expected-deliverables",
+    "href": "research/thesis.html#expected-deliverables",
+    "title": "MSc Thesis Project",
+    "section": "Expected Deliverables",
+    "text": "Expected Deliverables\n\nResearch Thesis - Comprehensive dissertation (expected 2025)\nInteractive Dashboard - Real-time facility monitoring system\nPolicy Briefs - Evidence-based recommendations for stakeholders\nR Package - Open-source tools for NCD financing analysis\nTraining Materials - Capacity building resources for health managers\nPublications - Peer-reviewed journal articles (3-4 papers)"
   },
   {
-    "objectID": "research/publications.html#peer-review-editorial-activities",
-    "href": "research/publications.html#peer-review-editorial-activities",
-    "title": "Research & Publications",
-    "section": "Peer Review & Editorial Activities",
-    "text": "Peer Review & Editorial Activities\nJournals Reviewed For: - BMC Public Health - PLOS ONE - African Journal of Health Sciences - East African Medical Journal\nReview Count: 12+ manuscripts reviewed (2022-2024)"
+    "objectID": "research/thesis.html#technology-stack",
+    "href": "research/thesis.html#technology-stack",
+    "title": "MSc Thesis Project",
+    "section": "Technology Stack",
+    "text": "Technology Stack\n\n\n🛠️ Tools & Technologies\n\n\nData Collection: - REDCap for facility financial assessments - SurveyCTO for mobile patient tracking - KoboCollect for provider surveys\nData Management: - R (tidyverse, data.table) for data cleaning - PostgreSQL for database management - Git/GitHub for version control\nAnalysis: - R (tidyverse, caret, survival) for statistical analysis - Python (scikit-learn) for machine learning - Stata for sensitivity analyses\nVisualization: - R Shiny for interactive dashboards - ggplot2 and plotly for graphics - Leaflet for geospatial visualization - Quarto for reproducible reports\nReporting: - Quarto for dynamic documents - R Markdown for automated reports - LaTeX for thesis writing"
   },
   {
-    "objectID": "research/publications.html#research-funding",
-    "href": "research/publications.html#research-funding",
-    "title": "Research & Publications",
-    "section": "Research Funding",
-    "text": "Research Funding\n\nGrants & Awards\n\nMSc Research Grant, JOOUST Research Fund (2024) - KES 300,000\nBest Student Presentation Award, East African Health Research Conference (2024)\nDataCamp Scholarship, Full access to data science courses (2023)"
+    "objectID": "research/thesis.html#reproducible-research-approach",
+    "href": "research/thesis.html#reproducible-research-approach",
+    "title": "MSc Thesis Project",
+    "section": "Reproducible Research Approach",
+    "text": "Reproducible Research Approach\nThis project follows best practices in reproducible research:\n✅ Open Data - Anonymized data will be shared in public repositories\n✅ Open Code - All analysis scripts available on GitHub\n✅ Open Methods - Detailed methodology documentation\n✅ Transparent Reporting - Adherence to STROBE guidelines\n✅ Version Control - All changes tracked with Git\nView GitHub Repository →"
   },
   {
-    "objectID": "research/publications.html#lets-collaborate",
-    "href": "research/publications.html#lets-collaborate",
-    "title": "Research & Publications",
-    "section": "Let’s Collaborate!",
-    "text": "Let’s Collaborate!\nI’m always interested in new research collaborations. If you’re working on:\n✅ Health systems research in Africa\n✅ Non-communicable disease management\n✅ Health data analytics and dashboards\n✅ Electronic data capture systems\n✅ Reproducible research practices\nLet’s connect! 📧 nichodemuswerre@gmail.com\n\nView Thesis Dashboard → | See All Projects → | Back to Home →"
+    "objectID": "research/thesis.html#impact-dissemination",
+    "href": "research/thesis.html#impact-dissemination",
+    "title": "MSc Thesis Project",
+    "section": "Impact & Dissemination",
+    "text": "Impact & Dissemination\n\nTarget Audiences\n\nPolicymakers - Ministry of Health, County Health Management Teams\nHealth Facility Managers - Resource allocation guidance\nResearchers - Methodological contributions\nDonors & NGOs - Evidence for funding decisions\n\n\n\nDissemination Strategy\n\nAcademic Publications - 3-4 peer-reviewed papers\nPolicy Briefs - Accessible summaries for decision-makers\nStakeholder Workshops - Presentation to county health officials\nConference Presentations - Regional and international forums\nSocial Media - Twitter threads and LinkedIn posts\nBlog Posts - Accessible explanations of findings"
+  },
+  {
+    "objectID": "research/thesis.html#project-timeline",
+    "href": "research/thesis.html#project-timeline",
+    "title": "MSc Thesis Project",
+    "section": "Project Timeline",
+    "text": "Project Timeline"
+  },
+  {
+    "objectID": "research/thesis.html#collaboration-opportunities",
+    "href": "research/thesis.html#collaboration-opportunities",
+    "title": "MSc Thesis Project",
+    "section": "Collaboration Opportunities",
+    "text": "Collaboration Opportunities\nInterested in collaborating on this research? I’m open to:\n\nCo-authorship on publications\nData sharing agreements for secondary analysis\nTool adaptation for other settings\nCapacity building workshops\nPolicy engagement activities\n\nContact: nichodemuswerre@gmail.com\n\n\n📢 Follow This Project\nStay updated on the latest findings and developments:\n🐦 Twitter: @nwerre\n💼 LinkedIn: Nichodemus Amollo\n🐙 GitHub: gondamol\nShare this project to help spread awareness about NCD financing in resource-limited settings!\n\n\n← Back to Research | View All Projects →"
   },
   {
     "objectID": "cv/index.html#the-beginning-rising-from-adversity",
@@ -518,158 +525,214 @@
     "text": "References\nDr. Japheth Ogol\nSenior Lecturer, JOOUST\njapheth.ogol@jooust.ac.ke\nErick Owino\nDirector, Research & Innovation, LERIS Hub\neowino@lerishub.com\nAdditional references available upon request\n\n\n🎯 Ready for Senior Research & M&E Roles\nI am actively seeking senior remote positions as: - ✅ Research Data Manager - Leading data management for multi-site studies - ✅ Research Data Analyst - Advanced statistical analysis and data science - ✅ Senior M&E Specialist / Manager - Program monitoring and evaluation - ✅ Impact Evaluation Lead - RCTs and quasi-experimental designs - ✅ Biostatistician - Clinical trials and epidemiological studies\nWhy hire me? - ✔️ 6+ years progressive M&E and data science experience - ✔️ Proven leadership managing multi-country projects and field teams - ✔️ Technical excellence in R, Python, Stata, SQL, and all major survey platforms - ✔️ Washington University M&E certified (2025) - ✔️ Remote work expertise with gui2de, University of Alaska Fairbanks - ✔️ Track record of impact - 500+ trained, 3 publications, KES 20M+ cost savings identified\nContact Me View Projects LinkedIn\nLast Updated: September 2025\n\n\nLet’s create impact together. Reach out at nichodemuswerre@gmail.com or +254 725 737 867"
   },
   {
-    "objectID": "research/thesis.html",
-    "href": "research/thesis.html",
-    "title": "MSc Thesis Project",
+    "objectID": "research/publications.html",
+    "href": "research/publications.html",
+    "title": "Research & Publications",
     "section": "",
-    "text": "Exploring Financial Determinants of Effective Hypertension and Diabetes Management in Primary Health Facilities in Kisumu County\nStatus: Data Collection & Analysis Phase | Expected Completion: 2025"
+    "text": "Title: Exploring Financial Determinants of Effective Hypertension and Diabetes Management in Primary Health Facilities in Kisumu County\nStatus: Data Collection & Analysis Phase\nExpected Completion: 2025\nKey Focus Areas: - Health facility financing and resource allocation - Non-communicable disease (NCD) management outcomes - Cost-effectiveness analysis - Policy recommendations for sustainable NCD financing\nView Full Thesis Project →"
   },
   {
-    "objectID": "research/thesis.html#project-overview",
-    "href": "research/thesis.html#project-overview",
-    "title": "MSc Thesis Project",
-    "section": "Project Overview",
-    "text": "Project Overview\nThis groundbreaking research investigates the critical intersection of health facility financing and non-communicable disease (NCD) management outcomes in resource-limited primary health care settings in Kisumu County, Kenya.\n\nResearch Questions\n\nWhat are the current financial resource allocations for hypertension and diabetes management in primary health facilities?\nHow does health facility financing influence patient outcomes in NCD management?\nWhat are the cost-effective interventions for improving NCD management in resource-limited settings?\nWhat policy recommendations can optimize NCD financing at the primary care level?\n\n\n\nStudy Significance\n\nFirst comprehensive study examining NCD financing at primary care level in Kisumu County\nEvidence-based insights for health policy and resource allocation\nPractical tools for health facility managers and policymakers\nScalable framework applicable to other resource-limited settings"
-  },
-  {
-    "objectID": "research/thesis.html#methodology",
-    "href": "research/thesis.html#methodology",
-    "title": "MSc Thesis Project",
-    "section": "Methodology",
-    "text": "Methodology\n\nStudy Design\nMixed-Methods Case Study Design combining quantitative and qualitative approaches\n\n\nStudy Population\n\nHealth Facilities: 30 primary health facilities in Kisumu County\nPatients: 500+ patients with hypertension and/or diabetes\nKey Informants: 45 health facility managers and healthcare providers\n\n\n\nData Collection Methods\n\n\n\n📋 Facility Financial Assessment\n\nBudget analysis and resource allocation\nRevenue streams and funding sources\nExpenditure patterns for NCD services\nInfrastructure and equipment inventory\n\n\n\n🏥 Patient Outcome Tracking\n\nClinical outcomes (BP control, HbA1c levels)\nTreatment adherence rates\nComplication rates and hospitalizations\nPatient satisfaction surveys\n\n\n\n💰 Cost-Effectiveness Analysis\n\nCost per patient managed\nCost per controlled case\nCost-benefit analysis of interventions\nResource utilization patterns\n\n\n\n📊 Statistical Analysis\n\nMultivariate regression models\nSurvival analysis\nPredictive modeling\nGeospatial analysis\n\n\n\n\nData Collection Tools\n\n\n🔧 Survey Instruments Designed\n\n\n1. Health Facility Financial Assessment Tool (REDCap) - Comprehensive financial data capture - Real-time validation and quality checks - Automated reporting dashboards\n2. Patient Outcome Tracking System (SurveyCTO) - Mobile data collection for field teams - Offline functionality for rural settings - GPS tracking for facility verification\n3. Healthcare Provider Survey (KoboCollect) - Provider perspectives on resource constraints - Qualitative insights on NCD management challenges - Training needs assessment\nView Survey Tools Documentation →"
-  },
-  {
-    "objectID": "research/thesis.html#interactive-dashboard",
-    "href": "research/thesis.html#interactive-dashboard",
-    "title": "MSc Thesis Project",
-    "section": "Interactive Dashboard",
-    "text": "Interactive Dashboard\n\nReal-Time Project Monitoring Dashboard\nBelow is an interactive dashboard for monitoring health facility performance and patient outcomes in real-time.\n\nNote: This is a demonstration dashboard. Full implementation will be completed upon thesis submission.\n\n\n\nKey Performance Indicators\n\n\n\n::: {.stats-container}\n::: {.stat-card}\n**30**{.stat-number}\nHealth Facilities{.stat-label}\n:::\n\n::: {.stat-card}\n**6040**{.stat-number}\nPatients Enrolled{.stat-label}\n:::\n\n::: {.stat-card}\n**61.0%**{.stat-number}\nAvg Control Rate{.stat-label}\n:::\n\n::: {.stat-card}\n**KES 15,535,015**{.stat-number}\nTotal Budget{.stat-label}\n:::\n:::\n\n\n\n\nBudget Allocation by Facility Type\n\n\nCode\n# Budget comparison by facility type\np1 &lt;- facilities %&gt;%\n  group_by(facility_type) %&gt;%\n  summarise(\n    total_budget = sum(budget),\n    avg_budget = mean(budget),\n    n = n()\n  ) %&gt;%\n  plot_ly() %&gt;%\n  add_bars(\n    x = ~facility_type,\n    y = ~avg_budget,\n    text = ~paste(\"Average Budget: KES\", format(avg_budget, big.mark = \",\")),\n    hoverinfo = \"text\",\n    marker = list(color = c('#2C5282', '#38B2AC', '#48BB78'))\n  ) %&gt;%\n  layout(\n    title = \"Average Budget by Facility Type\",\n    xaxis = list(title = \"Facility Type\"),\n    yaxis = list(title = \"Average Budget (KES)\"),\n    showlegend = FALSE\n  )\n\np1\n\n\n\n\n\n\n\n\nPatient Outcomes: Control Rate by Facility\n\n\nCode\n# Control rate visualization\np2 &lt;- facilities %&gt;%\n  arrange(desc(control_rate)) %&gt;%\n  mutate(facility_name = factor(facility_name, levels = facility_name)) %&gt;%\n  plot_ly() %&gt;%\n  add_bars(\n    x = ~control_rate,\n    y = ~facility_name,\n    orientation = 'h',\n    text = ~paste(control_rate, \"%\"),\n    hoverinfo = \"text\",\n    marker = list(\n      color = ~control_rate,\n      colorscale = list(c(0, \"red\"), c(0.5, \"yellow\"), c(1, \"green\")),\n      showscale = TRUE,\n      colorbar = list(title = \"Control Rate (%)\")\n    )\n  ) %&gt;%\n  layout(\n    title = \"Hypertension/Diabetes Control Rate by Facility\",\n    xaxis = list(title = \"Control Rate (%)\"),\n    yaxis = list(title = \"\"),\n    height = 800\n  )\n\np2\n\n\n\n\n\n\n\n\nCost-Effectiveness Analysis\n\n\nCode\n# Cost per patient vs control rate\np3 &lt;- facilities %&gt;%\n  plot_ly() %&gt;%\n  add_markers(\n    x = ~cost_per_patient,\n    y = ~control_rate,\n    size = ~patients,\n    color = ~facility_type,\n    text = ~paste(\n      \"&lt;b&gt;\", facility_name, \"&lt;/b&gt;&lt;br&gt;\",\n      \"Cost per Patient: KES\", format(cost_per_patient, big.mark = \",\"), \"&lt;br&gt;\",\n      \"Control Rate:\", control_rate, \"%&lt;br&gt;\",\n      \"Patients:\", patients\n    ),\n    hoverinfo = \"text\",\n    colors = c('#2C5282', '#38B2AC', '#48BB78')\n  ) %&gt;%\n  layout(\n    title = \"Cost-Effectiveness: Cost per Patient vs Control Rate\",\n    xaxis = list(title = \"Cost per Patient (KES)\"),\n    yaxis = list(title = \"Control Rate (%)\"),\n    showlegend = TRUE\n  )\n\np3\n\n\n\n\n\n\n\n\nGeographic Distribution of Facilities\n\n\nCode\n# Interactive map of facilities\ncolor_pal &lt;- colorFactor(\n  palette = c(\"red\", \"yellow\", \"green\"),\n  domain = c(\"Needs Improvement\", \"Medium Performance\", \"High Performance\")\n)\n\nmap &lt;- leaflet(facilities) %&gt;%\n  addTiles() %&gt;%\n  addCircleMarkers(\n    lng = ~longitude,\n    lat = ~latitude,\n    radius = ~sqrt(patients) / 2,\n    color = ~color_pal(performance_category),\n    fillOpacity = 0.6,\n    popup = ~paste(\n      \"&lt;strong&gt;\", facility_name, \"&lt;/strong&gt;&lt;br&gt;\",\n      \"Type:\", facility_type, \"&lt;br&gt;\",\n      \"Patients:\", patients, \"&lt;br&gt;\",\n      \"Control Rate:\", control_rate, \"%&lt;br&gt;\",\n      \"Performance:\", performance_category\n    )\n  ) %&gt;%\n  addLegend(\n    \"bottomright\",\n    pal = color_pal,\n    values = ~performance_category,\n    title = \"Performance Category\",\n    opacity = 1\n  )\n\nmap\n\n\n\n\n\n\n\n\nFacility Performance Table\n\n\nCode\n# Interactive data table\nfacilities %&gt;%\n  select(\n    `Facility Name` = facility_name,\n    `Type` = facility_type,\n    `Budget (KES)` = budget,\n    `Patients` = patients,\n    `Control Rate (%)` = control_rate,\n    `Cost per Patient` = cost_per_patient,\n    `Performance` = performance_category\n  ) %&gt;%\n  mutate(\n    `Budget (KES)` = format(`Budget (KES)`, big.mark = \",\"),\n    `Cost per Patient` = format(`Cost per Patient`, big.mark = \",\")\n  ) %&gt;%\n  datatable(\n    options = list(\n      pageLength = 10,\n      scrollX = TRUE,\n      dom = 'Bfrtip',\n      buttons = c('copy', 'csv', 'excel')\n    ),\n    filter = 'top',\n    class = 'cell-border stripe'\n  )"
-  },
-  {
-    "objectID": "research/thesis.html#preliminary-findings",
-    "href": "research/thesis.html#preliminary-findings",
-    "title": "MSc Thesis Project",
-    "section": "Preliminary Findings",
-    "text": "Preliminary Findings\n\n🔍 Key Insights (Preliminary)\nFinancial Patterns: - Significant variation in budget allocation across facility types - Average cost per patient: KES 2,500 (range: KES 1,800 - KES 3,500) - Budget constraints limit access to essential NCD medications\nClinical Outcomes: - Overall control rate: 60% (target: 70%) - Higher control rates in facilities with dedicated NCD clinics - Medication adherence challenges in 40% of patients\nCost-Effectiveness: - Community-based screening programs show 30% cost reduction - Group education sessions improve outcomes by 25% - Task-shifting to nurses reduces costs while maintaining quality"
-  },
-  {
-    "objectID": "research/thesis.html#expected-deliverables",
-    "href": "research/thesis.html#expected-deliverables",
-    "title": "MSc Thesis Project",
-    "section": "Expected Deliverables",
-    "text": "Expected Deliverables\n\nResearch Thesis - Comprehensive dissertation (expected 2025)\nInteractive Dashboard - Real-time facility monitoring system\nPolicy Briefs - Evidence-based recommendations for stakeholders\nR Package - Open-source tools for NCD financing analysis\nTraining Materials - Capacity building resources for health managers\nPublications - Peer-reviewed journal articles (3-4 papers)"
-  },
-  {
-    "objectID": "research/thesis.html#technology-stack",
-    "href": "research/thesis.html#technology-stack",
-    "title": "MSc Thesis Project",
-    "section": "Technology Stack",
-    "text": "Technology Stack\n\n\n🛠️ Tools & Technologies\n\n\nData Collection: - REDCap for facility financial assessments - SurveyCTO for mobile patient tracking - KoboCollect for provider surveys\nData Management: - R (tidyverse, data.table) for data cleaning - PostgreSQL for database management - Git/GitHub for version control\nAnalysis: - R (tidyverse, caret, survival) for statistical analysis - Python (scikit-learn) for machine learning - Stata for sensitivity analyses\nVisualization: - R Shiny for interactive dashboards - ggplot2 and plotly for graphics - Leaflet for geospatial visualization - Quarto for reproducible reports\nReporting: - Quarto for dynamic documents - R Markdown for automated reports - LaTeX for thesis writing"
-  },
-  {
-    "objectID": "research/thesis.html#reproducible-research-approach",
-    "href": "research/thesis.html#reproducible-research-approach",
-    "title": "MSc Thesis Project",
-    "section": "Reproducible Research Approach",
-    "text": "Reproducible Research Approach\nThis project follows best practices in reproducible research:\n✅ Open Data - Anonymized data will be shared in public repositories\n✅ Open Code - All analysis scripts available on GitHub\n✅ Open Methods - Detailed methodology documentation\n✅ Transparent Reporting - Adherence to STROBE guidelines\n✅ Version Control - All changes tracked with Git\nView GitHub Repository →"
-  },
-  {
-    "objectID": "research/thesis.html#impact-dissemination",
-    "href": "research/thesis.html#impact-dissemination",
-    "title": "MSc Thesis Project",
-    "section": "Impact & Dissemination",
-    "text": "Impact & Dissemination\n\nTarget Audiences\n\nPolicymakers - Ministry of Health, County Health Management Teams\nHealth Facility Managers - Resource allocation guidance\nResearchers - Methodological contributions\nDonors & NGOs - Evidence for funding decisions\n\n\n\nDissemination Strategy\n\nAcademic Publications - 3-4 peer-reviewed papers\nPolicy Briefs - Accessible summaries for decision-makers\nStakeholder Workshops - Presentation to county health officials\nConference Presentations - Regional and international forums\nSocial Media - Twitter threads and LinkedIn posts\nBlog Posts - Accessible explanations of findings"
-  },
-  {
-    "objectID": "research/thesis.html#project-timeline",
-    "href": "research/thesis.html#project-timeline",
-    "title": "MSc Thesis Project",
-    "section": "Project Timeline",
-    "text": "Project Timeline"
-  },
-  {
-    "objectID": "research/thesis.html#collaboration-opportunities",
-    "href": "research/thesis.html#collaboration-opportunities",
-    "title": "MSc Thesis Project",
-    "section": "Collaboration Opportunities",
-    "text": "Collaboration Opportunities\nInterested in collaborating on this research? I’m open to:\n\nCo-authorship on publications\nData sharing agreements for secondary analysis\nTool adaptation for other settings\nCapacity building workshops\nPolicy engagement activities\n\nContact: nichodemuswerre@gmail.com\n\n\n📢 Follow This Project\nStay updated on the latest findings and developments:\n🐦 Twitter: @nwerre\n💼 LinkedIn: Nichodemus Amollo\n🐙 GitHub: gondamol\nShare this project to help spread awareness about NCD financing in resource-limited settings!\n\n\n← Back to Research | View All Projects →"
-  },
-  {
-    "objectID": "tidy-tuesday/index.html",
-    "href": "tidy-tuesday/index.html",
-    "title": "Tidy Tuesday Analysis",
+    "objectID": "research/publications.html#current-research",
+    "href": "research/publications.html#current-research",
+    "title": "Research & Publications",
     "section": "",
-    "text": "Welcome to my Tidy Tuesday analysis collection! Each week, I participate in the Tidy Tuesday challenge, where I analyze different datasets and share my findings. Below are some of the projects I’ve worked on.\n\n\n\n2024-01-02: Analysis on Global Temperature Changes\n2024-01-09: Analysis on Movie Ratings Trends\n2024-01-16: Analysis on World Population Growth\n\nFeel free to explore each analysis to see the data visualization, statistical methods, and insights drawn from each dataset."
+    "text": "Title: Exploring Financial Determinants of Effective Hypertension and Diabetes Management in Primary Health Facilities in Kisumu County\nStatus: Data Collection & Analysis Phase\nExpected Completion: 2025\nKey Focus Areas: - Health facility financing and resource allocation - Non-communicable disease (NCD) management outcomes - Cost-effectiveness analysis - Policy recommendations for sustainable NCD financing\nView Full Thesis Project →"
   },
   {
-    "objectID": "tidy-tuesday/index.html#recent-projects",
-    "href": "tidy-tuesday/index.html#recent-projects",
-    "title": "Tidy Tuesday Analysis",
+    "objectID": "research/publications.html#publications",
+    "href": "research/publications.html#publications",
+    "title": "Research & Publications",
+    "section": "Publications",
+    "text": "Publications\n\nNote: This section contains sample publication templates. Replace with your actual publications or remove entries as needed.\n\n\nPeer-Reviewed Journal Articles\n\nAmollo, N., et al. (2024). “Financial determinants of non-communicable disease management in primary care settings: A case study from Kisumu County, Kenya.” Journal of Health Economics (In Preparation)\nAmollo, N., et al. (2023). “Implementing electronic data capture systems in resource-limited settings: Lessons learned from health research in Kenya.” BMC Medical Research Methodology (Submitted)\nAmollo, N., Otieno, J., & Ouma, P. (2023). “Data quality in electronic health records: A systematic review of validation methods.” Journal of Medical Informatics, 45(3), 234-248.\nAmollo, N. & Collaborators. (2022). “Mobile data collection for health surveys in rural Kenya: Comparing SurveyCTO, REDCap, and KoboCollect.” PLOS Digital Health, 1(8), e0000123.\nSmith, J., Amollo, N., et al. (2022). “Predictive modeling of hypertension control in primary care settings.” Hypertension Research, 45(6), 1123-1135.\n\n\n\n\nConference Presentations\n2024\n\nAmollo, N. “Cost-effectiveness of NCD interventions in primary health facilities.” East African Health Research Conference, Nairobi, Kenya. (Oral Presentation)\nAmollo, N. “Interactive dashboards for real-time health facility monitoring.” International Conference on Health Informatics, Virtual. (Poster Presentation)\n\n2023\n\nAmollo, N. “Best practices in health data management for clinical trials.” International Clinical Trials Symposium, Cape Town, South Africa. (Invited Speaker)\nAmollo, N. “Survey design and implementation using mobile data collection tools.” Africa Data Science Conference, Kigali, Rwanda. (Workshop)\n\n2022\n\nAmollo, N. “Reproducible research practices in epidemiology.” Kenya Medical Research Institute Annual Conference, Kisumu, Kenya. (Oral Presentation)\n\n\n\n\nTechnical Reports & White Papers\n\nAmollo, N. (2024). “Guidelines for implementing REDCap in multi-site clinical trials.” LERIS HUB Technical Report Series, No. 2024-01.\nAmollo, N. & Team. (2023). “Health facility financing assessment: Kisumu County baseline report.” County Health Management Team, Kisumu County.\nAmollo, N. (2023). “Best practices for survey data management in health research.” JOOUST Research Methods Series, No. 5.\n\n\n\n\nBlog Posts & Popular Science\n\nWhy reproducible research matters in public health\nA beginner’s guide to R for health researchers\nDesigning effective mobile data collection systems\nData visualization best practices for health dashboards"
+  },
+  {
+    "objectID": "research/publications.html#research-interests",
+    "href": "research/publications.html#research-interests",
+    "title": "Research & Publications",
+    "section": "Research Interests",
+    "text": "Research Interests\nMy research focuses on the intersection of health data science, epidemiology, and health systems strengthening:\n\n\n🏥 Health Systems Research\n\nHealth facility financing\nNCD management in primary care\nCost-effectiveness analysis\nHealth economics\n\n\n\n📊 Data Science Methods\n\nMachine learning in healthcare\nPredictive modeling\nCausal inference\nBayesian statistics\n\n\n\n🗄️ Data Management\n\nElectronic data capture systems\nData quality frameworks\nSurvey design and implementation\nDatabase management\n\n\n\n🔬 Epidemiology\n\nNon-communicable diseases\nComputational epidemiology\nSurveillance systems\nHealth outcomes research"
+  },
+  {
+    "objectID": "research/publications.html#research-collaborations",
+    "href": "research/publications.html#research-collaborations",
+    "title": "Research & Publications",
+    "section": "Research Collaborations",
+    "text": "Research Collaborations\nI actively collaborate with:\n\nJaramogi Oginga Odinga University of Science and Technology (JOOUST) - Teaching and research\nLERIS HUB - Data science training and capacity building\nCounty Health Management Teams - Health systems research\nInternational research networks - Multi-site clinical trials"
+  },
+  {
+    "objectID": "research/publications.html#future-research-directions",
+    "href": "research/publications.html#future-research-directions",
+    "title": "Research & Publications",
+    "section": "Future Research Directions",
+    "text": "Future Research Directions\n\n🎯 PhD Research Aspirations\nI plan to pursue doctoral studies focusing on:\n\nStatistical methods in clinical trials - Adaptive designs and Bayesian approaches\nHealth data interoperability - Integrating multiple health information systems\nR package development - Creating tools for reproducible health research\nMachine learning for health outcomes - Predictive modeling in resource-limited settings\n\nI’m actively seeking PhD opportunities starting in 2025/2026."
+  },
+  {
+    "objectID": "research/publications.html#research-software",
+    "href": "research/publications.html#research-software",
+    "title": "Research & Publications",
+    "section": "Research Software",
+    "text": "Research Software\n\nR Packages (In Development)\n\nncdfinance - Tools for analyzing health facility financing for NCDs\n\nBudget analysis functions\nCost-effectiveness calculators\nDashboard templates\nGitHub Repository\n\nsurveyflow - Workflow management for survey data collection\n\nREDCap API integration\nData quality checks\nAutomated reporting\nGitHub Repository"
+  },
+  {
+    "objectID": "research/publications.html#peer-review-editorial-activities",
+    "href": "research/publications.html#peer-review-editorial-activities",
+    "title": "Research & Publications",
+    "section": "Peer Review & Editorial Activities",
+    "text": "Peer Review & Editorial Activities\nJournals Reviewed For: - BMC Public Health - PLOS ONE - African Journal of Health Sciences - East African Medical Journal\nReview Count: 12+ manuscripts reviewed (2022-2024)"
+  },
+  {
+    "objectID": "research/publications.html#research-funding",
+    "href": "research/publications.html#research-funding",
+    "title": "Research & Publications",
+    "section": "Research Funding",
+    "text": "Research Funding\n\nGrants & Awards\n\nMSc Research Grant, JOOUST Research Fund (2024) - KES 300,000\nBest Student Presentation Award, East African Health Research Conference (2024)\nDataCamp Scholarship, Full access to data science courses (2023)"
+  },
+  {
+    "objectID": "research/publications.html#lets-collaborate",
+    "href": "research/publications.html#lets-collaborate",
+    "title": "Research & Publications",
+    "section": "Let’s Collaborate!",
+    "text": "Let’s Collaborate!\nI’m always interested in new research collaborations. If you’re working on:\n✅ Health systems research in Africa\n✅ Non-communicable disease management\n✅ Health data analytics and dashboards\n✅ Electronic data capture systems\n✅ Reproducible research practices\nLet’s connect! 📧 nichodemuswerre@gmail.com\n\nView Thesis Dashboard → | See All Projects → | Back to Home →"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Nichodemus Amollo",
     "section": "",
-    "text": "2024-01-02: Analysis on Global Temperature Changes\n2024-01-09: Analysis on Movie Ratings Trends\n2024-01-16: Analysis on World Population Growth\n\nFeel free to explore each analysis to see the data visualization, statistical methods, and insights drawn from each dataset."
+    "text": "Georgetown University gui2de | MSc Biostatistics & Epidemiology | Washington U. M&E Certified\nView Projects My Journey & CV"
   },
   {
-    "objectID": "tidy-tuesday/2024-01-09-analysis.html",
-    "href": "tidy-tuesday/2024-01-09-analysis.html",
+    "objectID": "index.html#professional-summary",
+    "href": "index.html#professional-summary",
+    "title": "Nichodemus Amollo",
+    "section": "Professional Summary",
+    "text": "Professional Summary\nI am a Senior M&E Specialist, Research Data Manager, and Research Data Analyst with 6+ years of progressive experience driving evidence-based decision-making for multi-million dollar international projects in global health, food security, and economic development.\nMy expertise combines: - Rigorous M&E frameworks - Theory of Change, LogFrames, Results Frameworks for USAID/NIH programs - End-to-end data leadership - Field team management, digitalized surveys, HFCs, analysis, reporting\n- Advanced analytics - R, Python, Stata, SQL, machine learning, survival analysis, network analysis - Team building - Trained 500+ researchers, led multi-country field teams, developed training protocols\nCurrently with Georgetown University gui2de conducting RCTs and impact evaluations, while completing MSc in Biostatistics & Epidemiology at JOOUST and certified in M&E in Global Health by University of Washington (2025).\n\n\n6+{.stat-number} Years M&E Experience{.stat-label}\n\n\n500+{.stat-number} Researchers Trained{.stat-label}\n\n\n50+{.stat-number} Field Teams Led{.stat-label}\n\n\nKES 20M+{.stat-number} Cost Savings Identified{.stat-label}\n\n\n\n\n3{.stat-number} Published Papers{.stat-label}\n\n\n1,535+{.stat-number} Multi-Country Sites{.stat-label}\n\n\n8{.stat-number} M&E Frameworks Built{.stat-label}\n\n\n100K+{.stat-number} Records Managed{.stat-label}"
+  },
+  {
+    "objectID": "index.html#core-competencies",
+    "href": "index.html#core-competencies",
+    "title": "Nichodemus Amollo",
+    "section": "Core Competencies",
+    "text": "Core Competencies\n\n\n🎯 M&E & Impact Evaluation\n\nM&E Framework Design - Theory of Change, LogFrames, Results Frameworks\nPerformance Monitoring - KPI tracking, donor reporting, real-time dashboards\nImpact Evaluation - RCTs, quasi-experimental designs, CEA\nField Operations - Led 500+ field teams, mobile data systems\nHigh-Frequency Checks - Real-time quality monitoring (R & Stata)\n\n\n\n👥 Leadership & Team Management\n\nField Team Leadership - Recruited, trained, supervised multi-country teams\nTraining Development - Created protocols & modules for RAs, enumerators\nCapacity Building - Trained 500+ researchers in data management & M&E\nConsultancy Leadership - Led tool development with LERIS Hub affiliations\nProblem Solving - Tackled field challenges, system failures, data issues\n\n\n\n📊 Advanced Analytics & Programming\n\nStatistical Analysis - Regression, survival analysis, machine learning, Bayesian\nProgramming - R (expert), Python, Stata, SQL, SPSS\nSpecialized Analysis - Oncology data, agricultural economics, network analysis\nPredictive Modeling - Classification, clustering, Gephi network analysis\nSystematic Reviews - Literature synthesis, meta-analysis, evidence synthesis\n\n\n\n🗄️ Data Systems & Tools\n\nEnd-to-End Data Management - Design, implementation, monitoring, evaluation\nSurvey Digitalization - ODK, Kobo Collect, SurveyCTO, REDCap, CommCare\nDatabase Development - MongoDB, MySQL, PostgreSQL, Vercel\nDashboards - Tableau, Power BI, R Shiny for real-time monitoring\nReport Writing - Donor reports, policy briefs, technical documentation"
+  },
+  {
+    "objectID": "index.html#current-research",
+    "href": "index.html#current-research",
+    "title": "Nichodemus Amollo",
+    "section": "Current Research",
+    "text": "Current Research\n\n🎓 MSc Thesis Project (In Progress)\n“Exploring Financial Determinants of Effective Hypertension and Diabetes Management in Primary Health Facilities in Kisumu County”\nThis groundbreaking research examines the intersection of health facility financing and non-communicable disease (NCD) management outcomes in resource-limited settings. The study employs mixed-methods approaches including:\n\nPrimary health facility financial assessments*\nPatient outcome tracking and analysis*\nCost-effectiveness analysis of NCD interventions*\nInteractive dashboards for real-time monitoring*\nPolicy recommendations for sustainable NCD FINANCING*\n\nView Thesis Project Dashboard →"
+  },
+  {
+    "objectID": "index.html#what-makes-me-stand-out-for-senior-meimpact-roles",
+    "href": "index.html#what-makes-me-stand-out-for-senior-meimpact-roles",
+    "title": "Nichodemus Amollo",
+    "section": "What Makes Me Stand Out for Senior M&E/Impact Roles",
+    "text": "What Makes Me Stand Out for Senior M&E/Impact Roles\n✅ Proven M&E Leadership - Designed and implemented M&E frameworks for 8+ programs (USAID/NIH-funded)\n✅ Field Operations Excellence - Led field teams of 50+ enumerators, designed training protocols, conducted HFCs\n✅ End-to-End Project Management - From study design through field implementation to donor reporting\n✅ Advanced Analytics - Expert in R, Python, Stata, SQL plus machine learning & survival analysis\n✅ Multi-Country Experience - Managed projects across Kenya, Uganda, Tanzania\n✅ Consultancy Track Record - Led data systems development for LERIS Hub, Dalberg, CMMB, NEPHAK\n✅ Capacity Builder - Trained 500+ researchers, developed training modules, built data-driven cultures\n✅ Remote Work Expert - 3+ years managing international projects remotely (gui2de, University of Alaska)"
+  },
+  {
+    "objectID": "index.html#my-journey-against-all-odds",
+    "href": "index.html#my-journey-against-all-odds",
+    "title": "Nichodemus Amollo",
+    "section": "My Journey: Against All Odds",
+    "text": "My Journey: Against All Odds\n\n🌟 From Orphaned Child to Global Health Leader\nGrowing up orphaned with limited resources in rural Kenya, the odds were stacked against me. Every educational milestone required extraordinary determination and resourcefulness. Against all odds, I made it this far - and these experiences shaped who I am today:\nWhat adversity taught me: - Resilience - Loss instilled a drive to create lasting impact - Resourcefulness - Scarcity sharpened my problem-solving abilities\n- Empathy - Personal challenges deepened my commitment to health equity\n- Gratitude - Support from mentors fueled my passion for capacity building\nI believe data can change lives - and I’ve dedicated my career to proving it. Now positioned to lead transformative global health initiatives, I bring not just technical skills, but a deep understanding of the communities we serve.\nRead My Full Journey →"
+  },
+  {
+    "objectID": "index.html#lets-connect",
+    "href": "index.html#lets-connect",
+    "title": "Nichodemus Amollo",
+    "section": "Let’s Connect",
+    "text": "Let’s Connect\nI’m passionate about leveraging data and M&E to drive impact in global health and development. Whether you need:\n\nSenior M&E leadership for your health/development program\nEnd-to-end project management from design to donor reporting\nField team leadership and training protocol development\nAdvanced analytics and dashboard development\nSystematic reviews and evidence synthesis\n\nLet’s create impact together!\n📧 Email: nichodemuswerre@gmail.com\n📱 Phone: +254 725 737 867\n💼 LinkedIn: linkedin.com/in/nichodemusamollo\n🐙 GitHub: github.com/gondamol\n🐦 Twitter: @nwerre\n\n\n🎯 Seeking Senior Roles (Remote)\nI am actively seeking senior remote positions as: - Research Data Manager - End-to-end data leadership for multi-million dollar research projects - Research Data Analyst - Advanced statistical analysis and data science for health research - Senior M&E Specialist / Manager - Leading program monitoring and evaluation - Impact Evaluation Lead - Designing and executing RCTs, quasi-experimental studies\nWhy hire me? - ✔️ 6+ years progressive M&E and data science experience\n- ✔️ Washington University M&E Certified (2025)\n- ✔️ Proven leadership managing multi-country projects and field teams\n- ✔️ Track record - 500+ trained, 3 publications, KES 20M+ cost savings\n- ✔️ Remote work expertise with Georgetown University gui2de\nMy Journey & CV → | See Projects → | Contact Me"
+  },
+  {
+    "objectID": "tidy-tuesday/2024-01-16-analysis.html",
+    "href": "tidy-tuesday/2024-01-16-analysis.html",
     "title": "",
     "section": "",
     "text": "Code"
   },
   {
-    "objectID": "posts/post-with-code/index.html",
-    "href": "posts/post-with-code/index.html",
-    "title": "Post With Code",
+    "objectID": "tidy-tuesday/2024-01-02-analysis.html",
+    "href": "tidy-tuesday/2024-01-02-analysis.html",
+    "title": "Global Temperature Changes",
     "section": "",
-    "text": "This is a post with executable code.\n\n\nCode\n1 + 1\n\n\n[1] 2"
+    "text": "This week’s Tidy Tuesday dataset focuses on global temperature changes over time. In this analysis, I explore the trends in global temperature increases and their potential implications on climate change.\n\n\n\n\nCode\n# Load necessary libraries\nlibrary(tidyverse)\n\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.1     ✔ stringr   1.5.2\n✔ ggplot2   4.0.0     ✔ tibble    3.3.0\n✔ lubridate 1.9.4     ✔ tidyr     1.3.1\n✔ purrr     1.1.0     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\n\nCode\n# Generate random data\nset.seed(123)  # Set seed for reproducibility\n\n# Create a sequence of years from 1900 to 2024\nyears &lt;- seq(1900, 2024)\n\n# Generate random temperature changes, simulating a gradual increase over time\ntemperature_change &lt;- cumsum(rnorm(length(years), mean = 0.02, sd = 0.1))\n\n# Combine the years and temperature changes into a data frame\ntemperature_data &lt;- data.frame(year = years, temperature_change = temperature_change)\n\n# Preview the data\nhead(temperature_data)\n\n\n  year temperature_change\n1 1900        -0.03604756\n2 1901        -0.03906531\n3 1902         0.13680552\n4 1903         0.16385636\n5 1904         0.19678513\n6 1905         0.38829163\n\n\n\n\nCode\n# Example plot\nggplot(temperature_data, aes(x = year, y = temperature_change)) +\n  geom_line() +\n  labs(title = \"Global Temperature Changes Over Time\", x = \"Year\", y = \"Temperature Change (°C)\")"
   },
   {
-    "objectID": "blogs/index.html",
-    "href": "blogs/index.html",
-    "title": "Blog & Technical Notes",
+    "objectID": "tidy-tuesday/2024-01-02-analysis.html#data-preparation",
+    "href": "tidy-tuesday/2024-01-02-analysis.html#data-preparation",
+    "title": "Global Temperature Changes",
     "section": "",
-    "text": "Sharing knowledge on health data science, statistical methods, and best practices"
+    "text": "Code\n# Load necessary libraries\nlibrary(tidyverse)\n\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.1     ✔ stringr   1.5.2\n✔ ggplot2   4.0.0     ✔ tibble    3.3.0\n✔ lubridate 1.9.4     ✔ tidyr     1.3.1\n✔ purrr     1.1.0     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\n\nCode\n# Generate random data\nset.seed(123)  # Set seed for reproducibility\n\n# Create a sequence of years from 1900 to 2024\nyears &lt;- seq(1900, 2024)\n\n# Generate random temperature changes, simulating a gradual increase over time\ntemperature_change &lt;- cumsum(rnorm(length(years), mean = 0.02, sd = 0.1))\n\n# Combine the years and temperature changes into a data frame\ntemperature_data &lt;- data.frame(year = years, temperature_change = temperature_change)\n\n# Preview the data\nhead(temperature_data)\n\n\n  year temperature_change\n1 1900        -0.03604756\n2 1901        -0.03906531\n3 1902         0.13680552\n4 1903         0.16385636\n5 1904         0.19678513\n6 1905         0.38829163\n\n\n\n\nCode\n# Example plot\nggplot(temperature_data, aes(x = year, y = temperature_change)) +\n  geom_line() +\n  labs(title = \"Global Temperature Changes Over Time\", x = \"Year\", y = \"Temperature Change (°C)\")"
   },
   {
-    "objectID": "blogs/index.html#featured-posts",
-    "href": "blogs/index.html#featured-posts",
-    "title": "Blog & Technical Notes",
-    "section": "Featured Posts",
-    "text": "Featured Posts\n\nData Management & Best Practices\n\n\n10 Principles for Excellent Clinical Trial Data Management\n\n\nLessons from managing 20+ clinical trials on what separates good data management from great data management.\nTopics Covered: - Planning before the first patient enrolls - Building quality into the system, not inspecting it in - The art of writing good data queries - When to automate and when not to - Communication strategies that work\nComing Soon\n\n\n\n\n\nR Programming Tutorials\n\n\nFrom Excel to R: A Researcher’s Journey\n\n\nA gentle introduction to R for health researchers currently using Excel or SPSS.\nSeries includes: 1. Setting up your R environment 2. Reading and cleaning data 3. Data manipulation with dplyr 4. Creating publication-quality plots 5. Writing reproducible reports\nComing Soon\n\n\n\n\n\nHealth Data Analytics\n\n\nAnalyzing NCD Data: From Raw Data to Insights\n\n\nReal-world example analyzing hypertension and diabetes data, with complete R code.\nAnalysis Pipeline: - Data cleaning and validation - Descriptive statistics - Control rate calculations - Risk factor analysis - Visualization strategies\nComing Soon\n\n\n\n\n\nSurvey Design & Implementation\n\n\nSurveyCTO vs REDCap vs KoboCollect: Which to Choose?\n\n\nDetailed comparison of leading EDC platforms based on 7+ years of hands-on experience.\nDecision Framework:* - Feature comparison matrix - Cost analysis - Use case scenarios - Pros and cons - My recommendations\nComing Soon\n\n\n\n\n\nStatistical Methods\n\n\nUnderstanding Bayesian Statistics in Public Health\n\n\nDemystifying Bayesian methods with practical health research examples.\nTopics:* - Why Bayesian? Advantages for health research - Interpreting credible intervals - Prior selection strategies - MCMC basics - Example: Vaccine efficacy analysis\nComing Soon\n\n\n\n\n\nCareer & Professional Development\n\n\nBreaking into Health Data Science\n\n\nAdvice for aspiring health data scientist based on my journey and lessons learned.\nTopics:* - Skills you actually need - Building a portfolio - Networking strategies - Remote work tips - Common career questions\nComing Soon"
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
   },
   {
-    "objectID": "blogs/index.html#tutorial-series",
-    "href": "blogs/index.html#tutorial-series",
-    "title": "Blog & Technical Notes",
-    "section": "Tutorial Series",
-    "text": "Tutorial Series\n\n“R for Health Researchers” Series (12 parts)\nComprehensive tutorial series taking you from R beginner to confident analyst.\n\n\n“Dashboard Design” Series (6 parts)\nLearn to build professional dashboards that stakeholders actually use.\n\n\n“Data Management 101” Series (8 parts)\nEssential skills for managing research data with integrity and efficiency."
+    "objectID": "QUICK_DEPLOY.html",
+    "href": "QUICK_DEPLOY.html",
+    "title": "",
+    "section": "",
+    "text": "Code"
   },
   {
-    "objectID": "blogs/index.html#quick-tips-code-snippets",
-    "href": "blogs/index.html#quick-tips-code-snippets",
-    "title": "Blog & Technical Notes",
-    "section": "Quick Tips & Code Snippets",
-    "text": "Quick Tips & Code Snippets\n\nUseful R Code Snippets\nREDCap Data Import:\nlibrary(httr)\nlibrary(tidyverse)\n\n# Import data from REDCap\nredcap_data &lt;- postForm(\n  uri = \"https://redcap.example.com/api/\",\n  token = Sys.getenv(\"REDCAP_TOKEN\"),\n  content = \"record\",\n  format = \"csv\"\n) %&gt;% \n  read_csv()\nData Quality Check:\n# Check missing data\nmissing_summary &lt;- data %&gt;%\n  summarise(across(everything(), \n    ~sum(is.na(.)) / length(.) * 100)) %&gt;%\n  pivot_longer(everything(), \n    names_to = \"variable\", \n    values_to = \"percent_missing\")\nMore code snippets available in individual blog posts."
+    "objectID": "QUICK_DEPLOY.html#option-1-automated-script-recommended",
+    "href": "QUICK_DEPLOY.html#option-1-automated-script-recommended",
+    "title": "",
+    "section": "Option 1: Automated Script (Recommended)",
+    "text": "Option 1: Automated Script (Recommended)\n./deploy.sh\nThis script will: 1. ✅ Check for changes 2. ✅ Show what will be committed\n3. ✅ Ask for commit message 4. ✅ Stage only source files (ignores _site/) 5. ✅ Commit changes 6. ✅ Push to GitHub main branch 7. ✅ Ask if you want to publish to GitHub Pages"
   },
   {
-    "objectID": "blogs/index.html#guest-posts-welcome",
-    "href": "blogs/index.html#guest-posts-welcome",
-    "title": "Blog & Technical Notes",
-    "section": "Guest Posts Welcome",
-    "text": "Guest Posts Welcome\nI’m open to guest posts on topics related to: - Health data science - Clinical trials and research methods - R programming for health - Career development in biostatistics\nContact: nichodemuswerre@gmail.com"
+    "objectID": "QUICK_DEPLOY.html#option-2-manual-deployment",
+    "href": "QUICK_DEPLOY.html#option-2-manual-deployment",
+    "title": "",
+    "section": "Option 2: Manual Deployment",
+    "text": "Option 2: Manual Deployment\n\nStep 1: Stage Source Files Only\ngit add index.qmd\ngit add about/index.qmd\ngit add cv/index.qmd\ngit add skills/index.qmd\ngit add _quarto.yml\n# Add other modified .qmd files as needed\n\n\nStep 2: Commit with Good Message\ngit commit -m \"Brief description of changes\n\n- Key change 1\n- Key change 2\n- Key change 3\"\n\n\nStep 3: Push to GitHub\ngit push origin main\n\n\nStep 4: Publish to GitHub Pages\nquarto publish gh-pages"
   },
   {
-    "objectID": "blogs/index.html#stay-updated",
-    "href": "blogs/index.html#stay-updated",
-    "title": "Blog & Technical Notes",
-    "section": "Stay Updated",
-    "text": "Stay Updated\n\nGet Notified of New Posts\nFollow me on social media for updates when new blog posts are published:\nTwitter: @nwerre\nLinkedIn: Nichodemus Amollo\nGitHub: gondamol\nBlog posts are published monthly covering practical topics in health data science."
+    "objectID": "QUICK_DEPLOY.html#commit-message-best-practices",
+    "href": "QUICK_DEPLOY.html#commit-message-best-practices",
+    "title": "",
+    "section": "📝 Commit Message Best Practices",
+    "text": "📝 Commit Message Best Practices\n\nGood Examples:\ngit commit -m \"Add new project showcase for KEMRI cancer dashboard\"\n\ngit commit -m \"Update CV with recent publications and certifications\"\n\ngit commit -m \"Enhance homepage hero section and statistics\"\n\ngit commit -m \"Fix typos in about page and update contact information\"\n\n\nBad Examples:\ngit commit -m \"update\"\ngit commit -m \"changes\"\ngit commit -m \"fix\""
   },
   {
-    "objectID": "blogs/index.html#popular-resources",
-    "href": "blogs/index.html#popular-resources",
-    "title": "Blog & Technical Notes",
-    "section": "Popular Resources",
-    "text": "Popular Resources\n\nMy GitHub Repositories - Open-source code and tools\nTidy Tuesday Analyses - Weekly data visualization practice\nR Package Documentation - Tools I’m developing\n\n\nBack to Home → | View Projects →"
+    "objectID": "QUICK_DEPLOY.html#useful-git-commands",
+    "href": "QUICK_DEPLOY.html#useful-git-commands",
+    "title": "",
+    "section": "🔍 Useful Git Commands",
+    "text": "🔍 Useful Git Commands\n\nCheck what changed:\ngit status\ngit diff\n\n\nSee commit history:\ngit log --oneline -10\n\n\nUndo last commit (keep changes):\ngit reset --soft HEAD~1\n\n\nDiscard uncommitted changes:\ngit restore &lt;filename&gt;"
+  },
+  {
+    "objectID": "QUICK_DEPLOY.html#files-to-always-commit",
+    "href": "QUICK_DEPLOY.html#files-to-always-commit",
+    "title": "",
+    "section": "🎯 Files to ALWAYS Commit",
+    "text": "🎯 Files to ALWAYS Commit\n✅ Source Files (.qmd) - index.qmd - about/index.qmd - cv/index.qmd - skills/index.qmd - projects/*.qmd\n✅ Configuration - _quarto.yml - styles.scss - custom.scss\n✅ Documentation - README.md - Any .md files"
+  },
+  {
+    "objectID": "QUICK_DEPLOY.html#files-to-never-commit",
+    "href": "QUICK_DEPLOY.html#files-to-never-commit",
+    "title": "",
+    "section": "❌ Files to NEVER Commit",
+    "text": "❌ Files to NEVER Commit\n❌ Generated Files - _site/* (auto-deleted from main branch) - .quarto/* (already in .gitignore)\n❌ Temporary Files - .Rproj.user - .Rhistory - .RData"
+  },
+  {
+    "objectID": "QUICK_DEPLOY.html#after-publishing",
+    "href": "QUICK_DEPLOY.html#after-publishing",
+    "title": "",
+    "section": "🌐 After Publishing",
+    "text": "🌐 After Publishing\nYour site updates live at: https://gondamol.github.io\n⏰ Wait 1-2 minutes for GitHub Pages to rebuild\n🔄 Force refresh your browser: Ctrl+Shift+R (Windows/Linux) or Cmd+Shift+R (Mac)"
+  },
+  {
+    "objectID": "QUICK_DEPLOY.html#troubleshooting",
+    "href": "QUICK_DEPLOY.html#troubleshooting",
+    "title": "",
+    "section": "🆘 Troubleshooting",
+    "text": "🆘 Troubleshooting\n\nProblem: “_site/ files showing in git status”\ngit rm -r --cached _site/\ngit commit -m \"Remove _site/ from git tracking\"\ngit push origin main\n\n\nProblem: “Merge conflict”\n# Pull latest changes first\ngit pull origin main\n\n# Resolve conflicts in your editor\n# Then commit and push\ngit add .\ngit commit -m \"Resolve merge conflicts\"\ngit push origin main\n\n\nProblem: “Site not updating on GitHub Pages”\n\nWait 2-3 minutes\nCheck GitHub Actions tab in your repo\nTry force refresh in browser\nRun quarto publish gh-pages again\n\n\nPro Tip: Run ./deploy.sh after every significant change to keep your live site up-to-date! 🎉"
   },
   {
     "objectID": "projects/index.html",
