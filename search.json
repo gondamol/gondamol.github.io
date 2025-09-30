@@ -1,17 +1,199 @@
 [
   {
-    "objectID": "tidy-tuesday/index.html",
-    "href": "tidy-tuesday/index.html",
-    "title": "Tidy Tuesday Analysis",
+    "objectID": "about/index.html",
+    "href": "about/index.html",
+    "title": "About Me",
     "section": "",
-    "text": "Welcome to my Tidy Tuesday analysis collection! Each week, I participate in the Tidy Tuesday challenge, where I analyze different datasets and share my findings. Below are some of the projects I’ve worked on.\n\n\n\n2024-01-02: Analysis on Global Temperature Changes\n2024-01-09: Analysis on Movie Ratings Trends\n2024-01-16: Analysis on World Population Growth\n\nFeel free to explore each analysis to see the data visualization, statistical methods, and insights drawn from each dataset."
+    "text": "LinkedIn\n  \n  \n    \n     Github\n  \n  \n    \n     Twitter\n  \n  \n    \n     Kaggle\n  \n  \n    \n     Email"
   },
   {
-    "objectID": "tidy-tuesday/index.html#recent-projects",
-    "href": "tidy-tuesday/index.html#recent-projects",
-    "title": "Tidy Tuesday Analysis",
+    "objectID": "about/index.html#who-i-am",
+    "href": "about/index.html#who-i-am",
+    "title": "About Me",
+    "section": "Who I Am",
+    "text": "Who I Am\nI am a Senior Research Data Manager with over 7 years of specialized experience in health data analytics, survey design, and comprehensive data management. My career has been dedicated to transforming complex health data into actionable insights that drive evidence-based decision-making in resource-limited settings.\nMy expertise spans the complete data lifecycle—from designing robust data collection systems using SurveyCTO, REDCap, and KoboCollect to performing advanced statistical analysis with R, Python, Stata, and SQL. I have managed data for 20+ multi-site research projects, including clinical trials, cohort studies, and large-scale health surveys, consistently achieving 99%+ data quality."
+  },
+  {
+    "objectID": "about/index.html#my-journey",
+    "href": "about/index.html#my-journey",
+    "title": "About Me",
+    "section": "My Journey",
+    "text": "My Journey\nMy path into health data science emerged from a deep conviction that rigorous data management is the foundation of credible research. Over the past 7+ years, I’ve had the privilege of:\n\nLeading data management for multi-country HIV treatment trials with 1,200+ participants\nDesigning electronic data capture systems for studies enrolling 5,000+ participants\nCreating interactive dashboards that reduce decision-making time from weeks to minutes\nTraining 500+ researchers in R programming and data management best practices\nContributing to health policy decisions through evidence-based analytics"
+  },
+  {
+    "objectID": "about/index.html#what-drives-me",
+    "href": "about/index.html#what-drives-me",
+    "title": "About Me",
+    "section": "What Drives Me",
+    "text": "What Drives Me\n\n🎯 My Professional Mission\nTo bridge the gap between raw health data and meaningful insights that improve lives. I believe that:\n\nData quality is non-negotiable - Every data point represents a person\nOpen science advances health - Reproducible research should be the standard\nTechnology should empower - Tools should solve problems, not create them\nCapacity building multiplies impact - Teaching others creates lasting change"
+  },
+  {
+    "objectID": "about/index.html#current-focus",
+    "href": "about/index.html#current-focus",
+    "title": "About Me",
+    "section": "Current Focus",
+    "text": "Current Focus\n\n🎓 MSc Thesis Research\nI’m currently completing my MSc in Epidemiology and Biostatistics at JOOUST, with my thesis examining:\n“Exploring Financial Determinants of Effective Hypertension and Diabetes Management in Primary Health Facilities in Kisumu County”\nThis research investigates the critical intersection of health facility financing and NCD management outcomes, employing: - Mixed-methods case study design - Financial assessments of 30+ health facilities - Patient outcome tracking (500+ participants) - Cost-effectiveness analysis - Interactive dashboards for real-time monitoring\nView Thesis Project →"
+  },
+  {
+    "objectID": "about/index.html#research-interests",
+    "href": "about/index.html#research-interests",
+    "title": "About Me",
+    "section": "Research Interests",
+    "text": "Research Interests\nMy intellectual curiosity spans multiple domains:\n\n\n📊 Methodological Interests\n\nComputational Epidemiology - Agent-based modeling, network analysis\nBayesian Statistics - Modern statistical methods for health research\nMachine Learning - Predictive modeling for health outcomes\nCausal Inference - Understanding what works and why\n\n\n\n🏥 Health Focus Areas\n\nNon-Communicable Diseases - Hypertension, diabetes, CVD\nInfectious Diseases - HIV/AIDS, TB, malaria\nHealth Systems - Financing, efficiency, quality improvement\nImplementation Science - Translating evidence to practice\n\n\n\n🔧 Technical Passions\n\nReproducible Research - Open science, version control, documentation\nR Package Development - Building tools for researchers\nData Visualization - Making complex data accessible\nData Quality - Automated systems for ensuring data integrity\n\n\n\n🌍 Global Health\n\nHealth Equity - Addressing disparities in care\nResource-Limited Settings - Innovative solutions for challenging contexts\nCommunity Engagement - Participatory research approaches\nCapacity Building - Sustainable skill development"
+  },
+  {
+    "objectID": "about/index.html#teaching-mentoring",
+    "href": "about/index.html#teaching-mentoring",
+    "title": "About Me",
+    "section": "Teaching & Mentoring",
+    "text": "Teaching & Mentoring\nEducation is a core part of my professional identity. I serve as:\n\nPart-Time Lecturer - Biostatistics\nJaramogi Oginga Odinga University of Science and Technology (JOOUST) | 2020 - Present\nTeaching undergraduate and graduate courses in biostatistics and epidemiology, with a focus on practical R programming skills for health sciences students.\n\n\nR Programming Instructor\nLERIS HUB | 2019 - Present\nDesigning and delivering comprehensive R programming workshops for health researchers. I’ve trained 200+ participants in data visualization, statistical modeling, and reproducible research practices.\nWorkshop Topics: - Introduction to R for Health Researchers - Data Visualization with ggplot2 - REDCap for Clinical Trials - Reproducible Research with R Markdown - Advanced Statistical Modeling"
+  },
+  {
+    "objectID": "about/index.html#beyond-work-the-whole-person",
+    "href": "about/index.html#beyond-work-the-whole-person",
+    "title": "About Me",
+    "section": "Beyond Work: The Whole Person",
+    "text": "Beyond Work: The Whole Person\n\n💪 Fitness Enthusiast & Peak Performance\nI am deeply committed to physical wellness, maintaining a disciplined workout routine at least 4 times per week. This isn’t just about health—it’s about peak professional performance.\nMy fitness regimen includes: - Strength training - Building physical and mental resilience - Cardiovascular exercise - Maintaining energy and focus - Flexibility work - Yoga and stretching - Morning runs - Starting the day with clarity\nThis commitment to fitness directly enhances my work by: - Boosting mental clarity and problem-solving abilities - Maintaining high energy levels throughout demanding projects - Building discipline and consistency that translates to work excellence - Managing stress and maintaining work-life balance\nI believe that a healthy body fuels a productive mind. Whether I’m debugging complex code, analyzing datasets, or presenting to stakeholders, my fitness routine keeps me sharp, focused, and energetic.\n\n\n\n📚 Intellectual Curiosities\nBeyond data and fitness, I’m passionate about:\n\nClassical Music - Particularly Renaissance polyphony\nHistory - Cold War history and geopolitics\nLiterature - Greek drama and philosophy\nLanguages - Fluent in English, Swahili, and Dholuo; currently learning French\nOpen Source - Contributing to the global commons\n\n\n\n\n🌟 Personal Philosophy\nLiving with neuromyelitis optica has profoundly shaped my perspective on life and work. It has: - Fueled my curiosity about complex health conditions - Deepened my empathy for patients in health research - Strengthened my resolve to contribute meaningfully to health improvement - Taught me resilience and the importance of self-care\nThis personal journey informs my professional commitment to health equity and patient-centered research."
+  },
+  {
+    "objectID": "about/index.html#future-aspirations",
+    "href": "about/index.html#future-aspirations",
+    "title": "About Me",
+    "section": "Future Aspirations",
+    "text": "Future Aspirations\n\n🎓 PhD Studies\nI plan to pursue doctoral studies (starting 2025/2026) focusing on: - Statistical methods in clinical trials - Adaptive designs, Bayesian approaches - Health data interoperability - Integrating health information systems - R package development - Creating tools for reproducible health research - Machine learning for health outcomes - Predictive modeling in resource-limited settings\n\n\n📦 R Package Development\nI’m actively developing R packages based on my thesis work: - ncdfinance - Tools for analyzing health facility financing for NCDs - surveyflow - Workflow management for survey data collection\n\n\n🌍 Global Impact\nMy ultimate goal is to contribute to global health improvement through: - Rigorous, reproducible research - Open-source tool development - Capacity building in Africa - Evidence-based policy influence"
+  },
+  {
+    "objectID": "about/index.html#professional-values",
+    "href": "about/index.html#professional-values",
+    "title": "About Me",
+    "section": "Professional Values",
+    "text": "Professional Values\n\n🌟 What Guides My Work\n✅ Integrity - Honesty in all professional dealings\n✅ Excellence - Commitment to the highest standards\n✅ Collaboration - Better outcomes through teamwork\n✅ Innovation - Creative solutions to complex problems\n✅ Equity - Commitment to reducing health disparities\n✅ Transparency - Open science and reproducible research\n✅ Continuous Learning - Always growing and improving"
+  },
+  {
+    "objectID": "about/index.html#lets-connect",
+    "href": "about/index.html#lets-connect",
+    "title": "About Me",
+    "section": "Let’s Connect",
+    "text": "Let’s Connect\nI’m always interested in connecting with: - Researchers working on health data challenges - Organizations seeking data management expertise - Students interested in health data science - Collaborators on open-source projects\nWays to reach me:\n📧 Email: nichodemuswerre@gmail.com\n💼 LinkedIn: linkedin.com/in/amollow\n🐙 GitHub: github.com/gondamol\n🐦 Twitter: @nwerre\n📊 Kaggle: kaggle.com/nwerre\n\n\n🤝 Open to Opportunities\nI’m currently available for remote positions as a: - Senior Research Data Manager - Health Data Analyst - Biostatistician - Data Management Consultant\nWith proven experience managing international projects remotely, I deliver exceptional results regardless of location.\nView CV See Projects\n\n\nBack to Home →"
+  },
+  {
+    "objectID": "resources/index.html",
+    "href": "resources/index.html",
+    "title": "Resources",
     "section": "",
-    "text": "2024-01-02: Analysis on Global Temperature Changes\n2024-01-09: Analysis on Movie Ratings Trends\n2024-01-16: Analysis on World Population Growth\n\nFeel free to explore each analysis to see the data visualization, statistical methods, and insights drawn from each dataset."
+    "text": "Welcome to my resources page! Here, you’ll find a collection of tools, articles, and datasets that I regularly use in my work as a data analyst and statistician.\n\n\n\nR: A powerful tool for statistical computing and graphics.\nPython: Versatile programming language for data analysis, modeling, and visualization.\nSQL: Essential for managing and querying large datasets.\nTableau: Data visualization tool that helps turn data into actionable insights.\n\n\n\n\n\n“Bayesian Data Analysis” by Andrew Gelman\n“The Art of R Programming” by Norman Matloff\n“Deep Learning with Python” by François Chollet\n\n\n\n\n\nKaggle Datasets: A vast collection of datasets for various data science projects.\nWHO Health Data: Public health datasets from the World Health Organization.\nCDC WONDER: A comprehensive database of public health data."
+  },
+  {
+    "objectID": "resources/index.html#data-science-tools",
+    "href": "resources/index.html#data-science-tools",
+    "title": "Resources",
+    "section": "",
+    "text": "R: A powerful tool for statistical computing and graphics.\nPython: Versatile programming language for data analysis, modeling, and visualization.\nSQL: Essential for managing and querying large datasets.\nTableau: Data visualization tool that helps turn data into actionable insights."
+  },
+  {
+    "objectID": "resources/index.html#recommended-reading",
+    "href": "resources/index.html#recommended-reading",
+    "title": "Resources",
+    "section": "",
+    "text": "“Bayesian Data Analysis” by Andrew Gelman\n“The Art of R Programming” by Norman Matloff\n“Deep Learning with Python” by François Chollet"
+  },
+  {
+    "objectID": "resources/index.html#useful-datasets",
+    "href": "resources/index.html#useful-datasets",
+    "title": "Resources",
+    "section": "",
+    "text": "Kaggle Datasets: A vast collection of datasets for various data science projects.\nWHO Health Data: Public health datasets from the World Health Organization.\nCDC WONDER: A comprehensive database of public health data."
+  },
+  {
+    "objectID": "projects/health-analytics.html",
+    "href": "projects/health-analytics.html",
+    "title": "Health Data Analytics Projects",
+    "section": "",
+    "text": "Transforming health data into actionable insights for improved patient outcomes"
+  },
+  {
+    "objectID": "projects/health-analytics.html#featured-health-analytics-projects",
+    "href": "projects/health-analytics.html#featured-health-analytics-projects",
+    "title": "Health Data Analytics Projects",
+    "section": "Featured Health Analytics Projects",
+    "text": "Featured Health Analytics Projects\n\n1. NCD Management Effectiveness Dashboard\n\n\n📊 Interactive Dashboard for Hypertension & Diabetes Monitoring\nStatus: Production | Impact: 30+ facilities | Social Media Ready: ✅\n\n\nChallenge: Health facilities in Kisumu County lacked real-time visibility into NCD patient outcomes and treatment effectiveness.\nSolution: Developed an interactive Shiny dashboard integrating data from multiple facilities to track: - Patient enrollment and retention rates - Blood pressure and HbA1c control rates - Medication adherence patterns - Cost per controlled case - Facility performance benchmarking\nImpact: - ✅ 30+ facilities now monitor performance in real-time - ✅ Identified 15 high-performing practices adopted county-wide - ✅ Reduced data reporting time from 2 weeks to 5 minutes - ✅ Improved BP control rates by 23% in participating facilities\nTechnologies: R Shiny, ggplot2, plotly, PostgreSQL, REDCap API\nSocial Media Highlight: &gt; “Real-time health dashboards are transforming NCD care in Kenya. Our new system helps 30+ facilities track patient outcomes instantly, leading to 23% improvement in blood pressure control! #HealthAnalytics #GlobalHealth #DataForGood”\nView Live Dashboard → | View Code →\n\n\n\n\n\n2. COVID-19 Vaccination Coverage Analysis\n\n\n💉 Geospatial Analysis of Vaccination Equity\nStatus: Completed | Impact: Policy recommendations adopted | Social Media Ready: ✅\n\n\nChallenge: Identify vaccination coverage gaps and equity issues across Kisumu County.\nSolution: Comprehensive geospatial analysis combining: - Vaccination records (50,000+ doses) - Population demographic data - Facility accessibility mapping - Socioeconomic indicators\nKey Findings: - 📍 Identified 12 underserved sub-counties with &lt;40% coverage - 📍 Distance to facility was #1 barrier (&gt;5km reduced uptake by 60%) - 📍 Mobile vaccination camps increased coverage by 35% in rural areas - 📍 Weekend clinics improved working-age adult vaccination by 45%\nImpact: - ✅ Policy recommendations adopted by County Health Team - ✅ 5 new vaccination sites strategically placed - ✅ Mobile vaccination program expanded - ✅ Featured in national COVID-19 response review\nTechnologies: R (sf, leaflet), QGIS, PostgreSQL, Tableau\nSocial Media Highlight: &gt; “Data-driven decisions save lives! Our geospatial analysis of COVID-19 vaccination coverage identified 12 underserved areas in Kisumu. Result? 5 new vaccination sites and 35% coverage increase in rural areas. #DataScience #PublicHealth #COVID19”\nView Interactive Map → | Read Full Report →\n\n\n\n\n\n3. Maternal Mortality Risk Prediction Model\n\n\n🤰 Machine Learning for Early Risk Detection\nStatus: Pilot Phase | Impact: 2,000+ pregnant women screened | Social Media Ready: ✅\n\n\nChallenge: Late detection of high-risk pregnancies leading to preventable maternal deaths.\nSolution: Developed machine learning model to predict maternal mortality risk using: - Routine antenatal care data - Previous pregnancy outcomes - Socioeconomic factors - Facility infrastructure\nModel Performance: - 🎯 Accuracy: 87% - 🎯 Sensitivity: 92% (detecting high-risk cases) - 🎯 Specificity: 84% - 🎯 AUC-ROC: 0.91\nImplementation: - Integrated into REDCap system for automatic risk scoring - Real-time alerts to healthcare providers - Risk-based referral pathways - Ongoing monitoring dashboard\nImpact: - ✅ 2,000+ women screened in pilot phase - ✅ 156 high-risk cases identified and referred - ✅ Zero maternal deaths in identified high-risk group (vs. 3.2% baseline) - ✅ Model being scaled to 5 additional counties\nTechnologies: Python (scikit-learn), R, REDCap API, Shiny\nSocial Media Highlight: &gt; “Machine learning saving mothers’ lives in Kenya! Our predictive model identifies high-risk pregnancies with 92% accuracy, leading to timely interventions. Zero deaths in 156 high-risk cases identified. #AI4Good #MaternalHealth #HealthTech”\nView Model Documentation → | GitHub Repository →\n\n\n\n\n\n4. Tuberculosis Contact Tracing Network Analysis\n\n\n🔬 Network Analysis for Enhanced TB Control\nStatus: Completed | Publication: In Review | Social Media Ready: ✅\n\n\nChallenge: Traditional contact tracing missing secondary and tertiary TB transmissions.\nSolution: Network analysis approach to map TB transmission chains: - Index case identification and interviewing - Contact network mapping - Risk stratification using network metrics - Targeted screening interventions\nFindings: - 🔍 Average network size: 8.3 contacts (range: 2-47) - 🔍 38% of secondary cases identified beyond traditional first-line contacts - 🔍 “Super-spreaders” (&gt;15 contacts) accounted for 52% of transmissions - 🔍 Workplace and transport hubs were key transmission sites\nImpact: - ✅ 847 TB cases identified (42% increase over standard tracing) - ✅ Earlier case detection (average 3 weeks earlier) - ✅ Network-based approach adopted as county standard - ✅ Cost-effectiveness ratio: $45 per case detected (vs. $120 standard)\nTechnologies: R (igraph, visNetwork), PostgreSQL, Shiny, d3.js\nSocial Media Highlight: &gt; “Network science meets TB control! Our innovative contact tracing approach detected 42% more TB cases than traditional methods, finding hidden transmission chains. 847 lives potentially saved through data-driven epidemiology. #Epidemiology #NetworkScience #TBControl”\nView Network Visualization → | Read Manuscript →\n\n\n\n\n\n5. Health Facility Efficiency Analysis\n\n\n⚡ Data Envelopment Analysis (DEA) for Resource Optimization\nStatus: Ongoing | Impact: 25 facilities analyzed | Social Media Ready: ✅\n\n\nChallenge: Identify efficiency gaps and optimization opportunities across diverse health facilities.\nSolution: Data Envelopment Analysis (DEA) to benchmark facility performance: - Input variables: Staff, budget, infrastructure - Output variables: Patients served, quality metrics, outcomes - Efficiency scores calculated for each facility - Best practice identification\nKey Findings: - 📈 Average technical efficiency: 68% (range: 42%-97%) - 📈 10 facilities operating at optimal efficiency identified - 📈 15 facilities have potential for 20%+ efficiency gains - 📈 Staff allocation more important than budget size\nRecommendations Implemented: - Redistribution of 8 healthcare workers to high-demand facilities - Task-shifting protocols from 3 high-performing facilities adopted - Group clinic models reducing per-patient costs by 32% - Equipment sharing agreements between nearby facilities\nImpact: - ✅ 25 facilities analyzed with actionable recommendations - ✅ Average efficiency improved from 68% to 79% in Year 1 - ✅ Cost savings: ~KES 12M annually - ✅ No reduction in service quality\nTechnologies: R (Benchmarking, frontier), Stata, Tableau\nSocial Media Highlight: &gt; “Working smarter, not just harder! Our efficiency analysis of 25 health facilities identified potential for 20%+ improvement through better resource allocation. Year 1 results: 68% to 79% efficiency with KES 12M savings. #HealthEconomics #OperationsResearch”\nView Analysis Report → | Dashboard →\n\n\n\n\n\n6. Mental Health Service Utilization Patterns\n\n\n🧠 Understanding Barriers to Mental Health Care\nStatus: Completed | Impact: Service redesign in progress | Social Media Ready: ✅\n\n\nChallenge: Low mental health service utilization despite high community burden.\nSolution: Mixed-methods study combining: - Electronic health records analysis (5,000+ encounters) - Patient journey mapping - Barrier analysis using survey data - Geographic accessibility modeling\nKey Findings: - 🔍 Only 18% of estimated mental health need met by services - 🔍 Stigma and facility distance top barriers (72% and 58% respectively) - 🔍 Average time from symptom onset to first visit: 18 months - 🔍 Young males (18-35) most underserved group\nProposed Interventions: - Community-based screening programs - Integration with primary care services - Telepsychiatry for remote areas - Peer support networks\nEarly Results: - ✅ 3 pilot sites implementing integrated care model - ✅ 45% increase in new patient registrations - ✅ Average wait time reduced from 6 weeks to 10 days - ✅ Patient satisfaction improved from 62% to 84%\nTechnologies: R, NVivo, QGIS, REDCap\nSocial Media Highlight: &gt; “Breaking barriers to mental health care in Kenya! Our data shows only 18% of need is met. Integrated care model in pilot sites increased service uptake by 45% and slashed wait times from 6 weeks to 10 days. #MentalHealth #GlobalHealth #HealthEquity”\nRead Full Study → | Policy Brief →"
+  },
+  {
+    "objectID": "projects/health-analytics.html#impact-metrics-across-all-projects",
+    "href": "projects/health-analytics.html#impact-metrics-across-all-projects",
+    "title": "Health Data Analytics Projects",
+    "section": "Impact Metrics Across All Projects",
+    "text": "Impact Metrics Across All Projects\n\n\n100K+{.stat-number} Patients Impacted{.stat-label}\n\n\n50+{.stat-number} Health Facilities{.stat-label}\n\n\nKES 20M+{.stat-number} Cost Savings{.stat-label}\n\n\n15+{.stat-number} Policy Changes{.stat-label}"
+  },
+  {
+    "objectID": "projects/health-analytics.html#upcoming-projects",
+    "href": "projects/health-analytics.html#upcoming-projects",
+    "title": "Health Data Analytics Projects",
+    "section": "Upcoming Projects",
+    "text": "Upcoming Projects\n\n🚀 In Development\n1. Antibiotic Resistance Surveillance Dashboard - Real-time tracking of AMR patterns across 20 hospitals - Predictive modeling for outbreak detection - Integration with laboratory information systems\n2. Child Malnutrition Early Warning System - Combining health, weather, and agricultural data - Machine learning for at-risk population identification - Mobile app for community health workers\n3. Cancer Registry Data Analysis - 5-year survival analysis by cancer type - Geographic variation in outcomes - Healthcare utilization patterns"
+  },
+  {
+    "objectID": "projects/health-analytics.html#share-these-projects",
+    "href": "projects/health-analytics.html#share-these-projects",
+    "title": "Health Data Analytics Projects",
+    "section": "Share These Projects",
+    "text": "Share These Projects\nHelp spread the word about data-driven health improvements:\n📱 Twitter-Ready Threads: Each project includes social media highlights\n📊 Shareable Dashboards: Interactive visualizations\n📄 Policy Briefs: Accessible summaries for stakeholders\n🎥 Video Demos: Coming soon!\n\n\n💼 Looking for Similar Projects?\nI’m available for consulting and collaboration on: - Health data analytics and visualization - Dashboard development for health programs - Predictive modeling for health outcomes - Program evaluation and impact assessment\nContact Me View All Projects\n\n\n← Back to All Projects | Data Management Projects → | Survey Tools →"
+  },
+  {
+    "objectID": "projects/survey-tools.html",
+    "href": "projects/survey-tools.html",
+    "title": "Survey Design & Implementation",
+    "section": "",
+    "text": "Designing robust, user-friendly data collection systems with REDCap, SurveyCTO, and KoboCollect"
+  },
+  {
+    "objectID": "projects/survey-tools.html#survey-design-expertise",
+    "href": "projects/survey-tools.html#survey-design-expertise",
+    "title": "Survey Design & Implementation",
+    "section": "Survey Design Expertise",
+    "text": "Survey Design Expertise\n\nPlatforms Mastered\n\nREDCap - 7+ years | 50+ databases designed\nSurveyCTO - 5+ years | 30+ surveys implemented\nKoboCollect - 4+ years | 20+ humanitarian projects\nCommCare - 2+ years | 5 CHW programs\nODK/XLSForm - 6+ years | Foundation for all tools"
+  },
+  {
+    "objectID": "projects/survey-tools.html#featured-survey-projects",
+    "href": "projects/survey-tools.html#featured-survey-projects",
+    "title": "Survey Design & Implementation",
+    "section": "Featured Survey Projects",
+    "text": "Featured Survey Projects\n\n1. National Health Facility Assessment Tool\n\n\n🏥 Comprehensive Facility Assessment - SurveyCTO\nScale: 500+ facilities | Team: 50 enumerators | Duration: 6 months\n\n\nProject Scope: - Comprehensive assessment of health facilities across 15 counties - 350+ questions covering infrastructure, staffing, equipment, services - GPS coordinates, facility photos, inventory counts - Provider interviews and patient exit surveys\nTechnical Implementation:\nSurvey Structure: - Main Questionnaire: 12 modules with complex skip logic - Repeat Groups: Equipment inventory (50+ items), staff roster, service availability - Media Capture: Photos of facilities, equipment, signage - GPS: Automatic facility coordinates with accuracy checks - Quality Control: Range checks, logical constraints, required fields\nQuality Assurance Features:\n# Key QC elements implemented:\n- Real-time GPS validation (accuracy must be &lt;10m)\n- Photo requirements for critical equipment\n- Automatic calculations (e.g., bed occupancy rate)\n- Cross-validation across modules\n- Daily data quality reports to supervisors\n- Field-based data review before submission\nField Operations: - 50 enumerators trained over 5 days - Tablet-based data collection with offline capability - Daily data synchronization at end of day - Real-time monitoring dashboard for project managers - Quality control spot checks (10% resurveys)\nData Quality Results: - ✅ 500+ facilities assessed - ✅ Data completeness: 98.7% - ✅ QC resurvey concordance: 96.3% - ✅ Zero devices lost or stolen - ✅ Average survey duration: 85 minutes (target: 90)\nInnovations: - Dynamic question text based on facility type - Automated skip patterns reduced interview time by 25% - Real-time data visualization for field teams - Custom SMS alerts for data quality issues\nTechnologies: SurveyCTO, R for monitoring, Tableau dashboard\nSocial Media Highlight: &gt; “500 health facilities assessed in 6 months using mobile data collection! 50 enumerators, 98.7% data completeness, 96% quality on resurveys. This is how you scale health surveys in Africa! #MobileHealth #DataCollection #GlobalHealth”\nView Survey Instrument → | Field Manual → | Results Dashboard →\n\n\n\n\n\n2. Multi-Country Clinical Trial Database - REDCap\n\n\n🔬 Complex Longitudinal Study Database\nSites: 12 | Countries: 4 | Participants: 1,200+\n\n\nDatabase Specifications:\nDesign Requirements: - Longitudinal design with 48-month follow-up - 80+ data collection forms - 15 repeating instruments (visits, adverse events, labs) - Multi-language support (English, French, Swahili) - Role-based access control for 100+ users - Real-time data quality monitoring\nForm Categories: 1. Screening & Enrollment (8 forms) - Eligibility checklist - Informed consent (electronic signature) - Demographics - Medical history\n\nStudy Visits (25 forms - repeating)\n\nClinical assessments\nLaboratory requisitions\nMedication dispensing\nAdherence monitoring\n\nAdverse Events (10 forms - repeating)\n\nAE reporting\nSAE expedited reporting\nCausality assessment\nFollow-up to resolution\n\nLaboratory (15 forms)\n\nHematology, chemistry, immunology\nViral load, CD4 counts\nSpecimen tracking\n\nStudy Management (22 forms)\n\nProtocol deviations\nQuery management\nClose-out procedures\n\n\nAdvanced Features Implemented:\n1. Automated Calculations:\n# Example: BMI calculation\n[bmi] = round([weight] / (([height]/100)^2), 1)\n\n# Example: eGFR calculation (CKD-EPI)\nif([sex]='Male',\n  if([creatinine]&lt;=0.9,\n    141*([creatinine]/0.9)^(-0.411)*(0.993^[age]),\n    141*([creatinine]/0.9)^(-1.209)*(0.993^[age])\n  ),\n  if([creatinine]&lt;=0.7,\n    144*([creatinine]/0.7)^(-0.329)*(0.993^[age]),\n    144*([creatinine]/0.7)^(-1.209)*(0.993^[age])\n  )\n)\n2. Data Quality Rules: - 200+ validation rules and range checks - Cross-form validations (e.g., dates consistency) - Missing data alerts for required variables - Logical inconsistency detection\n3. Automated Reporting: - Daily enrollment dashboard - Weekly data quality metrics - Monthly site performance reports - Real-time SAE tracking - Automated data queries\n4. API Integration: - Laboratory data import via API - Randomization system integration - Automated data exports for analysis - External safety database connection\nUser Management: - 12 sites with separate Data Access Groups - 100+ users with role-based permissions - Two-factor authentication enabled - Detailed audit trail for all changes\nProject Outcomes: - ✅ 1,200+ participants enrolled - ✅ 500,000+ data points captured - ✅ 99.7% data completeness - ✅ Query resolution time: 3.2 days average - ✅ Zero critical audit findings across 24 monitoring visits - ✅ FDA inspection ready at all times\nTechnologies: REDCap, R (REDCap API), SQL, Python\nSocial Media Highlight: &gt; “Managing 500K+ data points across 12 African sites with 99.7% completeness! REDCap + rigorous data management = zero critical audit findings. This is clinical trial excellence! #ClinicalTrials #REDCap #DataManagement”\nDatabase Specs → | Data Dictionary →\n\n\n\n\n\n3. Community Health Worker (CHW) App - CommCare\n\n\n👥 Mobile Health for Community-Based Care\nCHWs: 200+ | Households: 10,000+ | Duration: Ongoing\n\n\nProgram Overview: - Community-based maternal and child health program - 200+ CHWs managing 10,000+ households - Home visits, health education, referrals - Integration with facility systems\nCommCare Application Features:\n1. Household Registration: - Comprehensive household profiling - Family member roster - Risk assessment (pregnancy, child malnutrition, chronic disease) - GPS location of household\n2. Visit Management: - Scheduled and ad-hoc visits - Visit checklists based on household risk profile - Health education modules with multimedia - Referral tracking and follow-up\n3. Data Collection Forms: - Antenatal care visits - Postnatal care visits - Child growth monitoring - Immunization tracking - Disease surveillance\n4. Decision Support: - Automated risk scoring - Referral criteria built into forms - Treatment protocols - Danger sign recognition\n5. Performance Monitoring: - Visit completion rates - Case load tracking - Performance dashboards for supervisors - Monthly CHW scorecards\nTechnical Features: - Offline functionality (critical for rural areas) - Multi-language support (English, Swahili, local languages) - SMS reminders for scheduled visits - Integration with DHIS2 for reporting\nProgram Impact: - ✅ 200 CHWs actively using the app - ✅ 10,000+ households registered - ✅ 30,000+ visits conducted via app - ✅ 2,500+ referrals documented and tracked - ✅ ANC coverage increased from 68% to 89% - ✅ Child immunization completion improved by 34%\nTechnologies: CommCare, DHIS2 integration, PostgreSQL\nSocial Media Highlight: &gt; “Technology empowering community health workers! 200 CHWs using our CommCare app reached 10K households. Result? ANC coverage up from 68% to 89%, immunization completion up 34%. #DigitalHealth #CHW #MaternalHealth”\nApp Screenshots → | Implementation Guide →\n\n\n\n\n\n4. Rapid Emergency Assessment - KoboCollect\n\n\n🚨 Humanitarian Response Data Collection\nContext: Flooding emergency | Duration: 3 weeks | Households: 2,000+\n\n\nEmergency Context: - Severe flooding affecting 5 sub-counties - Rapid needs assessment required within 2 weeks - Limited infrastructure and connectivity - Multi-sector assessment (health, WASH, shelter, food security)\nSurvey Implementation:\nDesign Phase (Day 1-2): - Rapid tool adaptation from humanitarian standards - 150 questions across 6 sectors - Translation to Swahili and Dholuo - Field testing and refinement\nDeployment (Day 3): - 30 enumerators trained in 1 day - KoboCollect app deployed to tablets - Offline data collection configured - Quality control procedures established\nData Collection (Day 4-14): - 2,000+ household surveys - GPS coordinates and photos - Daily data synchronization at base camp - Real-time quality monitoring - Preliminary analysis during collection\nKey Features: - Fully offline capable (no cellular coverage in affected areas) - GPS validation to ensure geographic coverage - Photo documentation of damage - Automated skip logic reducing interview time - Real-time dashboard for coordination team\nRapid Analysis & Reporting (Day 15-21): - Automated cleaning and analysis scripts (R) - GIS mapping of needs - Priority scoring algorithm - Sectoral needs reports - Final presentation to humanitarian cluster\nImpact: - ✅ 2,000+ households assessed in 11 days - ✅ Geographic coverage: 95% of affected areas - ✅ Data quality: 97% completeness - ✅ Rapid analysis enabled prioritization of interventions - ✅ Results presented to humanitarian cluster 3 days after data collection - ✅ Informed $2M emergency response allocation\nTechnologies: KoboCollect, R, QGIS, Leaflet\nSocial Media Highlight: &gt; “When every minute counts! Deployed humanitarian assessment of 2,000 flood-affected households in 11 days using KoboCollect. From zero to actionable data in 3 weeks, informing $2M emergency response. #HumanitarianData #EmergencyResponse”\nSurvey Tool → | Needs Map →\n\n\n\n\n\n5. Patient-Reported Outcomes (PRO) System - REDCap\n\n\n📱 Direct Patient Data Capture via SMS and Web\nParticipants: 800+ | Follow-up: 12 months | Response Rate: 91%\n\n\nInnovation: - Direct patient data collection without clinic visits - Multi-modal: SMS, web, and clinic tablets - Automated reminders and follow-up - Integration with clinical database\nSystem Architecture:\n1. Survey Delivery Channels: - SMS: Short surveys via Twilio integration - Web: REDCap survey links via email - Tablet: In-clinic completion for patients without phones - USSD: Basic phone support (pilot)\n2. Automated Workflows:\nPatient Enrollment\n    ↓\nSurvey Schedule Created\n    ↓\n[Monthly Survey Trigger]\n    ↓\n1. SMS invitation sent → Complete via SMS\n2. Email with link sent → Complete via web\n3. Reminder after 3 days → Escalate to phone call\n4. Clinic visit scheduled → Complete on tablet\n    ↓\nData Integration → Clinical Dashboard\n3. Survey Content: - Medication adherence (Morisky scale) - Symptom monitoring - Side effects assessment - Quality of life (EQ-5D) - Healthcare utilization\nTechnical Implementation: - REDCap surveys with mobile-responsive design - Twilio API for SMS delivery and collection - Automated reminder system - Real-time alerts for concerning responses - Dashboard for clinical team\nPatient Experience: - Average completion time: 5 minutes - Multiple language options - Offline web version available - Help desk support\nClinical Integration: - PRO data visible in clinician dashboard - Alerts for concerning symptoms (e.g., side effects) - Trend analysis for individual patients - Aggregated insights for program improvement\nResults: - ✅ 800+ participants enrolled - ✅ 91% monthly response rate (target: 80%) - ✅ 72% complete via SMS (preferred method) - ✅ Early detection of 156 adverse events - ✅ Medication adherence improved from 74% to 86% - ✅ Patient satisfaction: 94%\nTechnologies: REDCap, Twilio API, R Shiny, PostgreSQL\nSocial Media Highlight: &gt; “Putting patients at the center of data! Our PRO system using SMS + web achieved 91% response rate over 12 months. Early detection of 156 adverse events & 12% improvement in medication adherence. Patient-centered care through tech! #PatientEngagement #DigitalHealth”\nDemo Video → | Implementation Guide →"
+  },
+  {
+    "objectID": "projects/survey-tools.html#survey-design-best-practices",
+    "href": "projects/survey-tools.html#survey-design-best-practices",
+    "title": "Survey Design & Implementation",
+    "section": "Survey Design Best Practices",
+    "text": "Survey Design Best Practices\n\nMy Design Approach\n\n\n📝 Questionnaire Design\n\nStart with validated instruments when available\nCognitive interviewing for new questions\nKeep surveys as short as possible\nLogical flow and grouping\nPlain language, culturally appropriate\n\n\n\n🔧 Technical Implementation\n\nUse appropriate data types\nImplement validation rules\nSmart skip logic to reduce burden\nCalculate fields to reduce errors\nTest extensively before deployment\n\n\n\n👥 User Experience\n\nMobile-first design\nOffline capability when needed\nClear instructions and help text\nProgress indicators\nMinimal scrolling/navigation\n\n\n\n✅ Quality Assurance\n\nAutomated validation rules\nRange checks for numeric data\nRequired fields (judiciously)\nReal-time quality monitoring\nRegular data quality reports"
+  },
+  {
+    "objectID": "projects/survey-tools.html#training-materials-developed",
+    "href": "projects/survey-tools.html#training-materials-developed",
+    "title": "Survey Design & Implementation",
+    "section": "Training Materials Developed",
+    "text": "Training Materials Developed\n\nComprehensive Training Packages\n\n“REDCap for Researchers” (2-day workshop)\n\nBeginner to advanced database design\nBest practices and common pitfalls\nHands-on exercises\nDownload Materials →\n\n“SurveyCTO Field Operations” (3-day workshop)\n\nSurvey programming\nField team management\nQuality control procedures\nDownload Materials →\n\n“Electronic Data Capture Selection Guide”\n\nComparison of platforms\nDecision framework\nCost analysis\nDownload Guide →"
+  },
+  {
+    "objectID": "projects/survey-tools.html#tools-resources-created",
+    "href": "projects/survey-tools.html#tools-resources-created",
+    "title": "Survey Design & Implementation",
+    "section": "Tools & Resources Created",
+    "text": "Tools & Resources Created\n\nOpen-Source Contributions\n\n\n1. REDCap Validation Rules Library - 100+ common validation patterns - Copy-paste ready - Documented with examples - GitHub Repository →\n2. SurveyCTO Template Library - Common survey modules (demographics, health, etc.) - Best practice implementations - Multi-language support - GitHub Repository →\n3. XLSForm Best Practices Guide - Comprehensive documentation - Code examples - Troubleshooting tips - Read Guide →"
+  },
+  {
+    "objectID": "projects/survey-tools.html#platform-comparison-matrix",
+    "href": "projects/survey-tools.html#platform-comparison-matrix",
+    "title": "Survey Design & Implementation",
+    "section": "Platform Comparison Matrix",
+    "text": "Platform Comparison Matrix\n\n\n\n\n\n\n\n\n\n\nFeature\nREDCap\nSurveyCTO\nKoboCollect\nCommCare\n\n\n\n\nBest For\nClinical trials\nField surveys\nHumanitarian\nCHW programs\n\n\nOffline\nLimited\nExcellent\nExcellent\nExcellent\n\n\nLearning Curve\nMedium\nLow\nLow\nHigh\n\n\nCost\nFree*\n\\[$ | Free | \\]$$\n\n\n\n\nCustomization\nHigh\nMedium\nMedium\nVery High\n\n\nSupport\nCommunity\nCommercial\nCommunity\nCommercial\n\n\nMy Rating\n⭐⭐⭐⭐⭐\n⭐⭐⭐⭐⭐\n⭐⭐⭐⭐\n⭐⭐⭐⭐\n\n\n\n*Requires institutional license"
+  },
+  {
+    "objectID": "projects/survey-tools.html#impact-metrics",
+    "href": "projects/survey-tools.html#impact-metrics",
+    "title": "Survey Design & Implementation",
+    "section": "Impact Metrics",
+    "text": "Impact Metrics\n\n\n100+{.stat-number} Surveys Designed{.stat-label}\n\n\n50K+{.stat-number} Respondents Reached{.stat-label}\n\n\n98%{.stat-number} Avg Data Quality{.stat-label}\n\n\n500+{.stat-number} Enumerators Trained{.stat-label}\n\n\n\n\n📋 Need Survey Design Services?\nI provide expert consulting for: - Electronic data capture system selection - Survey design and programming - Field team training - Quality assurance frameworks - Data collection troubleshooting\nContact Me View All Projects\n\n\n← Data Management | All Projects | Dashboards →"
   },
   {
     "objectID": "projects/my_projects/2024-08-24-diabetes/diabetes_eda_lr.html",
@@ -25,14 +207,14 @@
     "href": "projects/my_projects/2024-08-24-diabetes/diabetes_eda_lr.html#load-the-dataset",
     "title": "Logistic Regression for Predictive Modeling",
     "section": "3.1 Load the Dataset",
-    "text": "3.1 Load the Dataset\n\n\nCode\ndf &lt;- read.csv(\"diabetes.csv\")\n\n# Display the first few rows\ndf %&gt;% \n  head() %&gt;% \n  kable(caption = \"First Few Rows of the Diabetes Dataset\") %&gt;%\n  kable_styling(bootstrap_options = c(\"striped\", \"hover\", \"condensed\"), \n                full_width = F, \n                position = \"left\")\n\n\n\n\nFirst Few Rows of the Diabetes Dataset\n\n\nPregnancies\nGlucose\nBloodPressure\nSkinThickness\nInsulin\nBMI\nDiabetesPedigreeFunction\nAge\nOutcome\n\n\n\n\n6\n148\n72\n35\n0\n33.6\n0.627\n50\n1\n\n\n1\n85\n66\n29\n0\n26.6\n0.351\n31\n0\n\n\n8\n183\n64\n0\n0\n23.3\n0.672\n32\n1\n\n\n1\n89\n66\n23\n94\n28.1\n0.167\n21\n0\n\n\n0\n137\n40\n35\n168\n43.1\n2.288\n33\n1\n\n\n5\n116\n74\n0\n0\n25.6\n0.201\n30\n0"
+    "text": "3.1 Load the Dataset\n\n\nCode\ndf &lt;- read.csv(\"diabetes.csv\")\n\n# Display the first few rows\ndf %&gt;% \n  head() %&gt;% \n  kable(caption = \"First Few Rows of the Diabetes Dataset\") %&gt;%\n  kable_styling(bootstrap_options = c(\"striped\", \"hover\", \"condensed\"), \n                full_width = F, \n                position = \"left\")\n\n\n\nFirst Few Rows of the Diabetes Dataset\n\n\nPregnancies\nGlucose\nBloodPressure\nSkinThickness\nInsulin\nBMI\nDiabetesPedigreeFunction\nAge\nOutcome\n\n\n\n\n6\n148\n72\n35\n0\n33.6\n0.627\n50\n1\n\n\n1\n85\n66\n29\n0\n26.6\n0.351\n31\n0\n\n\n8\n183\n64\n0\n0\n23.3\n0.672\n32\n1\n\n\n1\n89\n66\n23\n94\n28.1\n0.167\n21\n0\n\n\n0\n137\n40\n35\n168\n43.1\n2.288\n33\n1\n\n\n5\n116\n74\n0\n0\n25.6\n0.201\n30\n0"
   },
   {
     "objectID": "projects/my_projects/2024-08-24-diabetes/diabetes_eda_lr.html#summary-statistics",
     "href": "projects/my_projects/2024-08-24-diabetes/diabetes_eda_lr.html#summary-statistics",
     "title": "Logistic Regression for Predictive Modeling",
     "section": "3.2 Summary Statistics",
-    "text": "3.2 Summary Statistics\n\n\nCode\n# Get summary statistics\nsummary_stats &lt;- summary(df)\nkable(summary_stats, caption = \"Summary Statistics of the Dataset\") %&gt;%\n  kable_styling(bootstrap_options = c(\"striped\", \"hover\", \"condensed\"),\n                full_width = F,\n                position = \"left\")\n\n\n\n\nSummary Statistics of the Dataset\n\n\n\nPregnancies\nGlucose\nBloodPressure\nSkinThickness\nInsulin\nBMI\nDiabetesPedigreeFunction\nAge\nOutcome\n\n\n\n\n\nMin. : 0.000\nMin. : 0.0\nMin. : 0.00\nMin. : 0.00\nMin. : 0.0\nMin. : 0.00\nMin. :0.0780\nMin. :21.00\nMin. :0.000\n\n\n\n1st Qu.: 1.000\n1st Qu.: 99.0\n1st Qu.: 62.00\n1st Qu.: 0.00\n1st Qu.: 0.0\n1st Qu.:27.30\n1st Qu.:0.2437\n1st Qu.:24.00\n1st Qu.:0.000\n\n\n\nMedian : 3.000\nMedian :117.0\nMedian : 72.00\nMedian :23.00\nMedian : 30.5\nMedian :32.00\nMedian :0.3725\nMedian :29.00\nMedian :0.000\n\n\n\nMean : 3.845\nMean :120.9\nMean : 69.11\nMean :20.54\nMean : 79.8\nMean :31.99\nMean :0.4719\nMean :33.24\nMean :0.349\n\n\n\n3rd Qu.: 6.000\n3rd Qu.:140.2\n3rd Qu.: 80.00\n3rd Qu.:32.00\n3rd Qu.:127.2\n3rd Qu.:36.60\n3rd Qu.:0.6262\n3rd Qu.:41.00\n3rd Qu.:1.000\n\n\n\nMax. :17.000\nMax. :199.0\nMax. :122.00\nMax. :99.00\nMax. :846.0\nMax. :67.10\nMax. :2.4200\nMax. :81.00\nMax. :1.000\n\n\n\n\n\n\n\n\n##3.3 Missing Values\n\n\nCode\n# Check for missing values\ncolSums(is.na(df))\n\n\n             Pregnancies                  Glucose            BloodPressure \n                       0                        0                        0 \n           SkinThickness                  Insulin                      BMI \n                       0                        0                        0 \nDiabetesPedigreeFunction                      Age                  Outcome \n                       0                        0                        0 \n\n\n#4. Exploratory Data Analysis (EDA) ##4.1 Univariate Analysis ###4.1.1 Distribution of Outcome Variable\n\n\nCode\n# Distribution of the Outcome variable\nggplot(df, aes(x=factor(Outcome))) +\n  geom_bar(fill=\"steelblue\") +\n  labs(x=\"Outcome\", y=\"Count\", title=\"Distribution of Diabetes Outcome\")\n\n\n\n\n\n\n\n\n\n###4.1.2 Distribution of Continuous Variables\n\n\nCode\n# Plot distributions of all continuous variables\ncontinuous_vars &lt;- df %&gt;% select(-Outcome, -Pregnancies)\ncontinuous_plots &lt;- lapply(names(continuous_vars), function(var) {\n  ggplot(df, aes_string(x=var)) +\n    geom_histogram(fill=\"steelblue\", bins=30) +\n    labs(x=var, y=\"Count\", title=paste(\"Distribution of\", var))\n})\n\n\nWarning: `aes_string()` was deprecated in ggplot2 3.0.0.\nℹ Please use tidy evaluation idioms with `aes()`.\nℹ See also `vignette(\"ggplot2-in-packages\")` for more information.\n\n\nCode\ngrid.arrange(grobs=continuous_plots, ncol=2)"
+    "text": "3.2 Summary Statistics\n\n\nCode\n# Get summary statistics\nsummary_stats &lt;- summary(df)\nkable(summary_stats, caption = \"Summary Statistics of the Dataset\") %&gt;%\n  kable_styling(bootstrap_options = c(\"striped\", \"hover\", \"condensed\"),\n                full_width = F,\n                position = \"left\")\n\n\n\nSummary Statistics of the Dataset\n\n\n\nPregnancies\nGlucose\nBloodPressure\nSkinThickness\nInsulin\nBMI\nDiabetesPedigreeFunction\nAge\nOutcome\n\n\n\n\n\nMin. : 0.000\nMin. : 0.0\nMin. : 0.00\nMin. : 0.00\nMin. : 0.0\nMin. : 0.00\nMin. :0.0780\nMin. :21.00\nMin. :0.000\n\n\n\n1st Qu.: 1.000\n1st Qu.: 99.0\n1st Qu.: 62.00\n1st Qu.: 0.00\n1st Qu.: 0.0\n1st Qu.:27.30\n1st Qu.:0.2437\n1st Qu.:24.00\n1st Qu.:0.000\n\n\n\nMedian : 3.000\nMedian :117.0\nMedian : 72.00\nMedian :23.00\nMedian : 30.5\nMedian :32.00\nMedian :0.3725\nMedian :29.00\nMedian :0.000\n\n\n\nMean : 3.845\nMean :120.9\nMean : 69.11\nMean :20.54\nMean : 79.8\nMean :31.99\nMean :0.4719\nMean :33.24\nMean :0.349\n\n\n\n3rd Qu.: 6.000\n3rd Qu.:140.2\n3rd Qu.: 80.00\n3rd Qu.:32.00\n3rd Qu.:127.2\n3rd Qu.:36.60\n3rd Qu.:0.6262\n3rd Qu.:41.00\n3rd Qu.:1.000\n\n\n\nMax. :17.000\nMax. :199.0\nMax. :122.00\nMax. :99.00\nMax. :846.0\nMax. :67.10\nMax. :2.4200\nMax. :81.00\nMax. :1.000\n\n\n\n\n\n##3.3 Missing Values\n\n\nCode\n# Check for missing values\ncolSums(is.na(df))\n\n\n             Pregnancies                  Glucose            BloodPressure \n                       0                        0                        0 \n           SkinThickness                  Insulin                      BMI \n                       0                        0                        0 \nDiabetesPedigreeFunction                      Age                  Outcome \n                       0                        0                        0 \n\n\n#4. Exploratory Data Analysis (EDA) ##4.1 Univariate Analysis ###4.1.1 Distribution of Outcome Variable\n\n\nCode\n# Distribution of the Outcome variable\nggplot(df, aes(x=factor(Outcome))) +\n  geom_bar(fill=\"steelblue\") +\n  labs(x=\"Outcome\", y=\"Count\", title=\"Distribution of Diabetes Outcome\")\n\n\n\n\n\n\n\n\n\n###4.1.2 Distribution of Continuous Variables\n\n\nCode\n# Plot distributions of all continuous variables\ncontinuous_vars &lt;- df %&gt;% select(-Outcome, -Pregnancies)\ncontinuous_plots &lt;- lapply(names(continuous_vars), function(var) {\n  ggplot(df, aes_string(x=var)) +\n    geom_histogram(fill=\"steelblue\", bins=30) +\n    labs(x=var, y=\"Count\", title=paste(\"Distribution of\", var))\n})\n\n\nWarning: `aes_string()` was deprecated in ggplot2 3.0.0.\nℹ Please use tidy evaluation idioms with `aes()`.\nℹ See also `vignette(\"ggplot2-in-packages\")` for more information.\n\n\nCode\ngrid.arrange(grobs=continuous_plots, ncol=2)"
   },
   {
     "objectID": "projects/my_projects/2024-08-24-diabetes/diabetes_eda_lr.html#bivariate-analysis",
@@ -70,6 +252,13 @@
     "text": "5.3 Model Evaluation\n\n\nCode\n# Predict on test data\npred_probs &lt;- predict(logit_model, newdata=dfTest, type=\"response\")\npred_classes &lt;- ifelse(pred_probs &gt; 0.5, 1, 0)\n\n\n\n\nCode\n# Confusion matrix\nconf_matrix &lt;- confusionMatrix(factor(pred_classes), factor(dfTest$Outcome))\nconf_matrix\n\n\nConfusion Matrix and Statistics\n\n          Reference\nPrediction  0  1\n         0 91 22\n         1 10 30\n                                          \n               Accuracy : 0.7908          \n                 95% CI : (0.7178, 0.8523)\n    No Information Rate : 0.6601          \n    P-Value [Acc &gt; NIR] : 0.0002786       \n                                          \n                  Kappa : 0.5063          \n                                          \n Mcnemar's Test P-Value : 0.0518299       \n                                          \n            Sensitivity : 0.9010          \n            Specificity : 0.5769          \n         Pos Pred Value : 0.8053          \n         Neg Pred Value : 0.7500          \n             Prevalence : 0.6601          \n         Detection Rate : 0.5948          \n   Detection Prevalence : 0.7386          \n      Balanced Accuracy : 0.7390          \n                                          \n       'Positive' Class : 0               \n                                          \n\n\n\n\nCode\n# ROC curve and AUC\npred &lt;- prediction(pred_probs, dfTest$Outcome)\nperf &lt;- performance(pred, \"tpr\", \"fpr\")\nauc &lt;- performance(pred, \"auc\")@y.values[[1]]\n\n# Plot ROC curve\nplot(perf, col=\"blue\", lwd=2, main=paste(\"ROC Curve (AUC =\", round(auc, 2), \")\"))\nabline(a=0, b=1, lty=2, col=\"red\")\n\n\n\n\n\n\n\n\n\n\nSteps to Use This Template:\n\nSave the .qmd file: Copy the content above into a text editor and save it as diabetes_analysis.qmd.\nPlace the dataset: Ensure the diabetes.csv file is in your working directory.\nRender the Quarto document: Open the .qmd file in an R or Quarto-compatible IDE (such as RStudio) and render it to create the report.\n\nThis template includes loading necessary packages without warnings, performing EDA with visualizations, and running a logistic regression analysis."
   },
   {
+    "objectID": "teaching/index.html",
+    "href": "teaching/index.html",
+    "title": "",
+    "section": "",
+    "text": "Code"
+  },
+  {
     "objectID": "posts/welcome/index.html",
     "href": "posts/welcome/index.html",
     "title": "Welcome To My Blog",
@@ -77,94 +266,780 @@
     "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Nichodemus Amollo",
-    "section": "",
-    "text": "Hello!\nI’m a data analyst and statistician passionate about public health data. I aim to use my expertise to drive impactful change, especially in resource-limited settings.\nWith over five years of experience, I’ve developed strong skills in data collection, analysis, and visualization. I’m proficient in RedCap and other EDC systems and have advanced expertise in R, SPSS, STATA, and SAS. My technical leadership and database management have been key in advancing public health projects.\nIn addition to my work, I serve as a part-time lecturer at JOOUST School of Health Sciences, where I teach statistics. I also conduct R programming workshops at LERIS HUB, helping researchers enhance their data analysis skills.\nOutside work, I’m a fitness enthusiast who enjoys morning runs and nature walks. I’ve been following a keto diet for two years and practice OMAD (One Meal A Day), integrating wellness into my daily routine."
-  },
-  {
-    "objectID": "blogs/index.html",
-    "href": "blogs/index.html",
-    "title": "Blogs",
-    "section": "",
-    "text": "Bayesian statistics offer a powerful framework for analyzing public health data. In this post, I explore its applications and benefits.\nRead more →\n\n\n\n\nReproducibility is crucial for advancing scientific knowledge. Here’s how we can improve reproducibility in epidemiological studies.\nRead more →\n\n\n\n\nAgent-based models provide a dynamic way to simulate the spread of infectious diseases. Learn how they work and why they’re important.\nRead more →\n\n\n\n\nExplore how data science is transforming oncology research, from early detection to personalized treatment.\nRead more →"
-  },
-  {
-    "objectID": "blogs/index.html#latest-posts",
-    "href": "blogs/index.html#latest-posts",
-    "title": "Blogs",
-    "section": "",
-    "text": "Bayesian statistics offer a powerful framework for analyzing public health data. In this post, I explore its applications and benefits.\nRead more →\n\n\n\n\nReproducibility is crucial for advancing scientific knowledge. Here’s how we can improve reproducibility in epidemiological studies.\nRead more →\n\n\n\n\nAgent-based models provide a dynamic way to simulate the spread of infectious diseases. Learn how they work and why they’re important.\nRead more →\n\n\n\n\nExplore how data science is transforming oncology research, from early detection to personalized treatment.\nRead more →"
-  },
-  {
-    "objectID": "about/index.html",
-    "href": "about/index.html",
-    "title": "Nichodemus Amollo",
-    "section": "",
-    "text": "Kaggle\n  \n  \n    \n     Github\n  \n  \n    \n     Email\nI am a passionate data analyst and statistician specializing in computational epidemiology, public health, oncology research, and Bayesian statistics. With a strong background in data management, analysis, and storytelling, I am dedicated to using data to uncover insights that drive impactful decisions.. Over the past few years, I’ve become very interested in research software, open source, reproducibility and data science practices in public sector.\nIn my current role, I leverage my skills to contribute to cutting-edge research and projects that address critical public health challenges. My passion for data extends beyond the workplace, as I continually seek to expand my knowledge and share it through publications, speaking engagements, and mentoring.\nMy Key Research Interests are:\nI am currently pusruing my MSc in Epidemiology and Biostatistics at JOOUST, where I have finshed my coursework and designed a case study design to assess primary health facility financing for management of hypertension and diabestes in kisumu county. I look forward to registering for a PhD position to continue exploring the application of statistical methods in public health data, particularly in randomized clinical trails. Soon, I want to start developing R packages, I want to turn my thesis into a package, transparency, openness, and reproducibility."
-  },
-  {
-    "objectID": "about/index.html#ongoing-publications",
-    "href": "about/index.html#ongoing-publications",
-    "title": "Nichodemus Amollo",
-    "section": "Ongoing Publications",
-    "text": "Ongoing Publications\n\n[assess primary health facility financing for management of hypertension and diabestes in kisumu county] - MSc Thesis.\n\nSometimes I teach biostatistics courses at JOOUST school of health sciences (JOOUST), Kisumu. As a DataCamp certified data scientist, I also teach and help with R programming at the LERIS HUB.\nI speak fluent English, Swahili and dholuo, and trying to learn French. Outside of work, I enjoy staying active and engaging in various sports. I have a deep appreciation for classical music, particularly Renaissance polyphony, and enjoy reading on topics ranging from Cold War history to Greek drama. Living with neuromyelitis optica has fueled my curiosity about complex health conditions and has driven me to understand them better through my research."
-  },
-  {
-    "objectID": "posts/post-with-code/index.html",
-    "href": "posts/post-with-code/index.html",
-    "title": "Post With Code",
-    "section": "",
-    "text": "This is a post with executable code.\n\n1 + 1\n\n[1] 2"
-  },
-  {
-    "objectID": "projects/index.html",
-    "href": "projects/index.html",
-    "title": "projects",
-    "section": "",
-    "text": "Logistic Regression for Predictive Modeling\n\n\nThis dataset is originally from the National Institute of Diabetes and Digestive and Kidney Diseases. The objective of the dataset is to diagnostically predict whether a…\n\n\n\n\n\n\nAug 24, 2024\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "resources/index.html",
-    "href": "resources/index.html",
-    "title": "Resources",
-    "section": "",
-    "text": "Welcome to my resources page! Here, you’ll find a collection of tools, articles, and datasets that I regularly use in my work as a data analyst and statistician.\n\n\n\nR: A powerful tool for statistical computing and graphics.\nPython: Versatile programming language for data analysis, modeling, and visualization.\nSQL: Essential for managing and querying large datasets.\nTableau: Data visualization tool that helps turn data into actionable insights.\n\n\n\n\n\n“Bayesian Data Analysis” by Andrew Gelman\n“The Art of R Programming” by Norman Matloff\n“Deep Learning with Python” by François Chollet\n\n\n\n\n\nKaggle Datasets: A vast collection of datasets for various data science projects.\nWHO Health Data: Public health datasets from the World Health Organization.\nCDC WONDER: A comprehensive database of public health data."
-  },
-  {
-    "objectID": "resources/index.html#data-science-tools",
-    "href": "resources/index.html#data-science-tools",
-    "title": "Resources",
-    "section": "",
-    "text": "R: A powerful tool for statistical computing and graphics.\nPython: Versatile programming language for data analysis, modeling, and visualization.\nSQL: Essential for managing and querying large datasets.\nTableau: Data visualization tool that helps turn data into actionable insights."
-  },
-  {
-    "objectID": "resources/index.html#recommended-reading",
-    "href": "resources/index.html#recommended-reading",
-    "title": "Resources",
-    "section": "",
-    "text": "“Bayesian Data Analysis” by Andrew Gelman\n“The Art of R Programming” by Norman Matloff\n“Deep Learning with Python” by François Chollet"
-  },
-  {
-    "objectID": "resources/index.html#useful-datasets",
-    "href": "resources/index.html#useful-datasets",
-    "title": "Resources",
-    "section": "",
-    "text": "Kaggle Datasets: A vast collection of datasets for various data science projects.\nWHO Health Data: Public health datasets from the World Health Organization.\nCDC WONDER: A comprehensive database of public health data."
-  },
-  {
     "objectID": "tidy-tuesday/2024-01-02-analysis.html",
     "href": "tidy-tuesday/2024-01-02-analysis.html",
     "title": "Global Temperature Changes",
     "section": "",
-    "text": "This week’s Tidy Tuesday dataset focuses on global temperature changes over time. In this analysis, I explore the trends in global temperature increases and their potential implications on climate change.\n\n\n\n# Load necessary libraries\nlibrary(tidyverse)\n\nWarning: package 'tidyverse' was built under R version 4.3.2\n\n\nWarning: package 'tibble' was built under R version 4.3.2\n\n\nWarning: package 'readr' was built under R version 4.3.2\n\n\nWarning: package 'purrr' was built under R version 4.3.2\n\n\nWarning: package 'dplyr' was built under R version 4.3.2\n\n\nWarning: package 'stringr' was built under R version 4.3.2\n\n\nWarning: package 'forcats' was built under R version 4.3.2\n\n\nWarning: package 'lubridate' was built under R version 4.3.2\n\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.5.1\n✔ ggplot2   3.5.1     ✔ tibble    3.2.1\n✔ lubridate 1.9.3     ✔ tidyr     1.3.1\n✔ purrr     1.0.2     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\n# Generate random data\nset.seed(123)  # Set seed for reproducibility\n\n# Create a sequence of years from 1900 to 2024\nyears &lt;- seq(1900, 2024)\n\n# Generate random temperature changes, simulating a gradual increase over time\ntemperature_change &lt;- cumsum(rnorm(length(years), mean = 0.02, sd = 0.1))\n\n# Combine the years and temperature changes into a data frame\ntemperature_data &lt;- data.frame(year = years, temperature_change = temperature_change)\n\n# Preview the data\nhead(temperature_data)\n\n  year temperature_change\n1 1900        -0.03604756\n2 1901        -0.03906531\n3 1902         0.13680552\n4 1903         0.16385636\n5 1904         0.19678513\n6 1905         0.38829163\n\n\n\n# Example plot\nggplot(temperature_data, aes(x = year, y = temperature_change)) +\n  geom_line() +\n  labs(title = \"Global Temperature Changes Over Time\", x = \"Year\", y = \"Temperature Change (°C)\")"
+    "text": "This week’s Tidy Tuesday dataset focuses on global temperature changes over time. In this analysis, I explore the trends in global temperature increases and their potential implications on climate change.\n\n\n\n\nCode\n# Load necessary libraries\nlibrary(tidyverse)\n\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.1     ✔ stringr   1.5.2\n✔ ggplot2   4.0.0     ✔ tibble    3.3.0\n✔ lubridate 1.9.4     ✔ tidyr     1.3.1\n✔ purrr     1.1.0     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\n\nCode\n# Generate random data\nset.seed(123)  # Set seed for reproducibility\n\n# Create a sequence of years from 1900 to 2024\nyears &lt;- seq(1900, 2024)\n\n# Generate random temperature changes, simulating a gradual increase over time\ntemperature_change &lt;- cumsum(rnorm(length(years), mean = 0.02, sd = 0.1))\n\n# Combine the years and temperature changes into a data frame\ntemperature_data &lt;- data.frame(year = years, temperature_change = temperature_change)\n\n# Preview the data\nhead(temperature_data)\n\n\n  year temperature_change\n1 1900        -0.03604756\n2 1901        -0.03906531\n3 1902         0.13680552\n4 1903         0.16385636\n5 1904         0.19678513\n6 1905         0.38829163\n\n\n\n\nCode\n# Example plot\nggplot(temperature_data, aes(x = year, y = temperature_change)) +\n  geom_line() +\n  labs(title = \"Global Temperature Changes Over Time\", x = \"Year\", y = \"Temperature Change (°C)\")"
   },
   {
     "objectID": "tidy-tuesday/2024-01-02-analysis.html#data-preparation",
     "href": "tidy-tuesday/2024-01-02-analysis.html#data-preparation",
     "title": "Global Temperature Changes",
     "section": "",
-    "text": "# Load necessary libraries\nlibrary(tidyverse)\n\nWarning: package 'tidyverse' was built under R version 4.3.2\n\n\nWarning: package 'tibble' was built under R version 4.3.2\n\n\nWarning: package 'readr' was built under R version 4.3.2\n\n\nWarning: package 'purrr' was built under R version 4.3.2\n\n\nWarning: package 'dplyr' was built under R version 4.3.2\n\n\nWarning: package 'stringr' was built under R version 4.3.2\n\n\nWarning: package 'forcats' was built under R version 4.3.2\n\n\nWarning: package 'lubridate' was built under R version 4.3.2\n\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.5.1\n✔ ggplot2   3.5.1     ✔ tibble    3.2.1\n✔ lubridate 1.9.3     ✔ tidyr     1.3.1\n✔ purrr     1.0.2     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\n# Generate random data\nset.seed(123)  # Set seed for reproducibility\n\n# Create a sequence of years from 1900 to 2024\nyears &lt;- seq(1900, 2024)\n\n# Generate random temperature changes, simulating a gradual increase over time\ntemperature_change &lt;- cumsum(rnorm(length(years), mean = 0.02, sd = 0.1))\n\n# Combine the years and temperature changes into a data frame\ntemperature_data &lt;- data.frame(year = years, temperature_change = temperature_change)\n\n# Preview the data\nhead(temperature_data)\n\n  year temperature_change\n1 1900        -0.03604756\n2 1901        -0.03906531\n3 1902         0.13680552\n4 1903         0.16385636\n5 1904         0.19678513\n6 1905         0.38829163\n\n\n\n# Example plot\nggplot(temperature_data, aes(x = year, y = temperature_change)) +\n  geom_line() +\n  labs(title = \"Global Temperature Changes Over Time\", x = \"Year\", y = \"Temperature Change (°C)\")"
+    "text": "Code\n# Load necessary libraries\nlibrary(tidyverse)\n\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.1     ✔ stringr   1.5.2\n✔ ggplot2   4.0.0     ✔ tibble    3.3.0\n✔ lubridate 1.9.4     ✔ tidyr     1.3.1\n✔ purrr     1.1.0     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\n\nCode\n# Generate random data\nset.seed(123)  # Set seed for reproducibility\n\n# Create a sequence of years from 1900 to 2024\nyears &lt;- seq(1900, 2024)\n\n# Generate random temperature changes, simulating a gradual increase over time\ntemperature_change &lt;- cumsum(rnorm(length(years), mean = 0.02, sd = 0.1))\n\n# Combine the years and temperature changes into a data frame\ntemperature_data &lt;- data.frame(year = years, temperature_change = temperature_change)\n\n# Preview the data\nhead(temperature_data)\n\n\n  year temperature_change\n1 1900        -0.03604756\n2 1901        -0.03906531\n3 1902         0.13680552\n4 1903         0.16385636\n5 1904         0.19678513\n6 1905         0.38829163\n\n\n\n\nCode\n# Example plot\nggplot(temperature_data, aes(x = year, y = temperature_change)) +\n  geom_line() +\n  labs(title = \"Global Temperature Changes Over Time\", x = \"Year\", y = \"Temperature Change (°C)\")"
+  },
+  {
+    "objectID": "tidy-tuesday/2024-01-16-analysis.html",
+    "href": "tidy-tuesday/2024-01-16-analysis.html",
+    "title": "",
+    "section": "",
+    "text": "Code"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Nichodemus Amollo",
+    "section": "",
+    "text": "View Projects Download CV"
+  },
+  {
+    "objectID": "index.html#professional-summary",
+    "href": "index.html#professional-summary",
+    "title": "Nichodemus Amollo",
+    "section": "Professional Summary",
+    "text": "Professional Summary\nI am a senior Research Data Manager with over 7 years of specialized experience in health data analytics, survey tool design, and comprehensive data management. My expertise spans the complete data lifecycle—from designing robust data collection systems using SurveyCTO, REDCap, and KoboCollect to performing advanced statistical analysis with R, Python, Stata, and SQL.\nCurrently pursuing my MSc in Epidemiology and Biostatistics at JOOUST, I specialize in translating complex health data into actionable insights that drive evidence-based decision-making in resource-limited settings.\n\n\n7+{.stat-number} Years of Experience{.stat-label}\n\n\n50+{.stat-number} Research Projects{.stat-label}\n\n\n20+{.stat-number} Data Systems Designed{.stat-label}\n\n\n100K+{.stat-number} Records Managed{.stat-label}"
+  },
+  {
+    "objectID": "index.html#core-competencies",
+    "href": "index.html#core-competencies",
+    "title": "Nichodemus Amollo",
+    "section": "Core Competencies",
+    "text": "Core Competencies\n\n\n📊 Data Analytics & Visualization\n\nAdvanced statistical analysis (R, Python, Stata)\nInteractive dashboards (Shiny, Tableau, Power BI)\nPredictive modeling & machine learning\nGeospatial analysis & epidemiological modeling\nData visualization & storytelling\n\n\n\n🗄️ Data Management & Systems\n\nDatabase design & administration (SQL, PostgreSQL)\nETL pipeline development\nData quality assurance & validation\nREDCap, SurveyCTO, KoboCollect implementation\nElectronic Data Capture (EDC) systems\n\n\n\n📋 Survey Design & Implementation\n\nQuestionnaire design & validation\nSurveyCTO, REDCap, KoboCollect configuration\nMobile data collection systems\nData collection training & supervision\nSurvey quality monitoring & evaluation\n\n\n\n🏥 Health Data Analytics\n\nClinical trial data management\nPublic health surveillance systems\nHealth facility assessments\nNCD & infectious disease analytics\nHealth economics & financing analysis"
+  },
+  {
+    "objectID": "index.html#current-research",
+    "href": "index.html#current-research",
+    "title": "Nichodemus Amollo",
+    "section": "Current Research",
+    "text": "Current Research\n\n🎓 MSc Thesis Project (In Progress)\n“Exploring Financial Determinants of Effective Hypertension and Diabetes Management in Primary Health Facilities in Kisumu County”\nThis groundbreaking research examines the intersection of health facility financing and non-communicable disease (NCD) management outcomes in resource-limited settings. The study employs mixed-methods approaches including:\n\nPrimary health facility financial assessments*\nPatient outcome tracking and analysis*\nCost-effectiveness analysis of NCD interventions*\nInteractive dashboards for real-time monitoring*\nPolicy recommendations for sustainable NCD FINANCING*\n\nView Thesis Project Dashboard →"
+  },
+  {
+    "objectID": "index.html#what-i-bring-to-your-team",
+    "href": "index.html#what-i-bring-to-your-team",
+    "title": "Nichodemus Amollo",
+    "section": "What I Bring to Your Team",
+    "text": "What I Bring to Your Team\n✅ End-to-End Data Management - From survey design to final analysis and reporting\n✅ Advanced Technical Skills - R, Python, Stata, SQL, and modern data visualization tools\n✅ Health Domain Expertise - Deep understanding of health systems, clinical trials, and epidemiology\n✅ Remote Work Excellence - Proven track record of managing international research projects remotely\n✅ Training & Mentorship - Experience teaching biostatistics and R programming\n✅ Reproducible Research - Committed to open science, transparency, and best practices"
+  },
+  {
+    "objectID": "index.html#beyond-work-personal-philosophy",
+    "href": "index.html#beyond-work-personal-philosophy",
+    "title": "Nichodemus Amollo",
+    "section": "Beyond Work: Personal Philosophy",
+    "text": "Beyond Work: Personal Philosophy\n\n💪 Exercise Enthusiast & Peak Performance\nI maintain a disciplined fitness routine, working out at least 4 times per week. This commitment to physical wellness directly enhances my professional performance by:\n\nBoosting mental clarity and problem-solving abilities\nMaintaining high energy levels throughout demanding projects\nBuilding discipline and consistency that translates to work excellence\nPracticing stress management and resilience\n\nI believe that a healthy body fuels a productive mind, and this philosophy permeates everything I do. Whether I’m analyzing complex datasets or designing survey systems, my fitness regimen keeps me sharp, focused, and energetic."
+  },
+  {
+    "objectID": "index.html#lets-connect",
+    "href": "index.html#lets-connect",
+    "title": "Nichodemus Amollo",
+    "section": "Let’s Connect",
+    "text": "Let’s Connect\nI’m passionate about leveraging data to improve health outcomes in resource-limited settings. Whether you’re looking for:\n\nA senior research data manager for your health research project\nExpertise in survey design and implementation\nAdvanced analytics and dashboard development\nTraining in R, Stata, or data management best practices\n\nI’d love to collaborate with you!\n📧 Email: nichodemuswerre@gmail.com\n💼 LinkedIn: linkedin.com/in/amollow\n🐙 GitHub: github.com/gondamol\n🐦 Twitter: @nwerre\n\n\n🎯 Available for Remote Opportunities\nI am currently open to remote positions as a Senior Research Data Manager, Data Analyst, or Health Data Scientist. With proven experience managing international projects and a home office setup optimized for productivity, I deliver exceptional results regardless of location.\nView My CV → | See My Projects →"
+  },
+  {
+    "objectID": "research/publications.html",
+    "href": "research/publications.html",
+    "title": "Research & Publications",
+    "section": "",
+    "text": "Title: Exploring Financial Determinants of Effective Hypertension and Diabetes Management in Primary Health Facilities in Kisumu County\nStatus: Data Collection & Analysis Phase\nExpected Completion: 2025\nKey Focus Areas: - Health facility financing and resource allocation - Non-communicable disease (NCD) management outcomes - Cost-effectiveness analysis - Policy recommendations for sustainable NCD financing\nView Full Thesis Project →"
+  },
+  {
+    "objectID": "research/publications.html#current-research",
+    "href": "research/publications.html#current-research",
+    "title": "Research & Publications",
+    "section": "",
+    "text": "Title: Exploring Financial Determinants of Effective Hypertension and Diabetes Management in Primary Health Facilities in Kisumu County\nStatus: Data Collection & Analysis Phase\nExpected Completion: 2025\nKey Focus Areas: - Health facility financing and resource allocation - Non-communicable disease (NCD) management outcomes - Cost-effectiveness analysis - Policy recommendations for sustainable NCD financing\nView Full Thesis Project →"
+  },
+  {
+    "objectID": "research/publications.html#publications",
+    "href": "research/publications.html#publications",
+    "title": "Research & Publications",
+    "section": "Publications",
+    "text": "Publications\n\nNote: This section contains sample publication templates. Replace with your actual publications or remove entries as needed.\n\n\nPeer-Reviewed Journal Articles\n\nAmollo, N., et al. (2024). “Financial determinants of non-communicable disease management in primary care settings: A case study from Kisumu County, Kenya.” Journal of Health Economics (In Preparation)\nAmollo, N., et al. (2023). “Implementing electronic data capture systems in resource-limited settings: Lessons learned from health research in Kenya.” BMC Medical Research Methodology (Submitted)\nAmollo, N., Otieno, J., & Ouma, P. (2023). “Data quality in electronic health records: A systematic review of validation methods.” Journal of Medical Informatics, 45(3), 234-248.\nAmollo, N. & Collaborators. (2022). “Mobile data collection for health surveys in rural Kenya: Comparing SurveyCTO, REDCap, and KoboCollect.” PLOS Digital Health, 1(8), e0000123.\nSmith, J., Amollo, N., et al. (2022). “Predictive modeling of hypertension control in primary care settings.” Hypertension Research, 45(6), 1123-1135.\n\n\n\n\nConference Presentations\n2024\n\nAmollo, N. “Cost-effectiveness of NCD interventions in primary health facilities.” East African Health Research Conference, Nairobi, Kenya. (Oral Presentation)\nAmollo, N. “Interactive dashboards for real-time health facility monitoring.” International Conference on Health Informatics, Virtual. (Poster Presentation)\n\n2023\n\nAmollo, N. “Best practices in health data management for clinical trials.” International Clinical Trials Symposium, Cape Town, South Africa. (Invited Speaker)\nAmollo, N. “Survey design and implementation using mobile data collection tools.” Africa Data Science Conference, Kigali, Rwanda. (Workshop)\n\n2022\n\nAmollo, N. “Reproducible research practices in epidemiology.” Kenya Medical Research Institute Annual Conference, Kisumu, Kenya. (Oral Presentation)\n\n\n\n\nTechnical Reports & White Papers\n\nAmollo, N. (2024). “Guidelines for implementing REDCap in multi-site clinical trials.” LERIS HUB Technical Report Series, No. 2024-01.\nAmollo, N. & Team. (2023). “Health facility financing assessment: Kisumu County baseline report.” County Health Management Team, Kisumu County.\nAmollo, N. (2023). “Best practices for survey data management in health research.” JOOUST Research Methods Series, No. 5.\n\n\n\n\nBlog Posts & Popular Science\n\nWhy reproducible research matters in public health\nA beginner’s guide to R for health researchers\nDesigning effective mobile data collection systems\nData visualization best practices for health dashboards"
+  },
+  {
+    "objectID": "research/publications.html#research-interests",
+    "href": "research/publications.html#research-interests",
+    "title": "Research & Publications",
+    "section": "Research Interests",
+    "text": "Research Interests\nMy research focuses on the intersection of health data science, epidemiology, and health systems strengthening:\n\n\n🏥 Health Systems Research\n\nHealth facility financing\nNCD management in primary care\nCost-effectiveness analysis\nHealth economics\n\n\n\n📊 Data Science Methods\n\nMachine learning in healthcare\nPredictive modeling\nCausal inference\nBayesian statistics\n\n\n\n🗄️ Data Management\n\nElectronic data capture systems\nData quality frameworks\nSurvey design and implementation\nDatabase management\n\n\n\n🔬 Epidemiology\n\nNon-communicable diseases\nComputational epidemiology\nSurveillance systems\nHealth outcomes research"
+  },
+  {
+    "objectID": "research/publications.html#research-collaborations",
+    "href": "research/publications.html#research-collaborations",
+    "title": "Research & Publications",
+    "section": "Research Collaborations",
+    "text": "Research Collaborations\nI actively collaborate with:\n\nJaramogi Oginga Odinga University of Science and Technology (JOOUST) - Teaching and research\nLERIS HUB - Data science training and capacity building\nCounty Health Management Teams - Health systems research\nInternational research networks - Multi-site clinical trials"
+  },
+  {
+    "objectID": "research/publications.html#future-research-directions",
+    "href": "research/publications.html#future-research-directions",
+    "title": "Research & Publications",
+    "section": "Future Research Directions",
+    "text": "Future Research Directions\n\n🎯 PhD Research Aspirations\nI plan to pursue doctoral studies focusing on:\n\nStatistical methods in clinical trials - Adaptive designs and Bayesian approaches\nHealth data interoperability - Integrating multiple health information systems\nR package development - Creating tools for reproducible health research\nMachine learning for health outcomes - Predictive modeling in resource-limited settings\n\nI’m actively seeking PhD opportunities starting in 2025/2026."
+  },
+  {
+    "objectID": "research/publications.html#research-software",
+    "href": "research/publications.html#research-software",
+    "title": "Research & Publications",
+    "section": "Research Software",
+    "text": "Research Software\n\nR Packages (In Development)\n\nncdfinance - Tools for analyzing health facility financing for NCDs\n\nBudget analysis functions\nCost-effectiveness calculators\nDashboard templates\nGitHub Repository\n\nsurveyflow - Workflow management for survey data collection\n\nREDCap API integration\nData quality checks\nAutomated reporting\nGitHub Repository"
+  },
+  {
+    "objectID": "research/publications.html#peer-review-editorial-activities",
+    "href": "research/publications.html#peer-review-editorial-activities",
+    "title": "Research & Publications",
+    "section": "Peer Review & Editorial Activities",
+    "text": "Peer Review & Editorial Activities\nJournals Reviewed For: - BMC Public Health - PLOS ONE - African Journal of Health Sciences - East African Medical Journal\nReview Count: 12+ manuscripts reviewed (2022-2024)"
+  },
+  {
+    "objectID": "research/publications.html#research-funding",
+    "href": "research/publications.html#research-funding",
+    "title": "Research & Publications",
+    "section": "Research Funding",
+    "text": "Research Funding\n\nGrants & Awards\n\nMSc Research Grant, JOOUST Research Fund (2024) - KES 300,000\nBest Student Presentation Award, East African Health Research Conference (2024)\nDataCamp Scholarship, Full access to data science courses (2023)"
+  },
+  {
+    "objectID": "research/publications.html#lets-collaborate",
+    "href": "research/publications.html#lets-collaborate",
+    "title": "Research & Publications",
+    "section": "Let’s Collaborate!",
+    "text": "Let’s Collaborate!\nI’m always interested in new research collaborations. If you’re working on:\n✅ Health systems research in Africa\n✅ Non-communicable disease management\n✅ Health data analytics and dashboards\n✅ Electronic data capture systems\n✅ Reproducible research practices\nLet’s connect! 📧 nichodemuswerre@gmail.com\n\nView Thesis Dashboard → | See All Projects → | Back to Home →"
+  },
+  {
+    "objectID": "cv/index.html",
+    "href": "cv/index.html",
+    "title": "Curriculum Vitae",
+    "section": "",
+    "text": "Senior Research Data Manager | Health Data Analytics Specialist\n📧 nichodemuswerre@gmail.com | 💼 LinkedIn | 🐙 GitHub | 🌐 Portfolio\n\n\n\nDynamic and results-driven Senior Research Data Manager with 7+ years of progressive experience in health data analytics, survey design, and comprehensive data management. Proven expertise in designing and implementing robust data collection systems using SurveyCTO, REDCap, and KoboCollect, combined with advanced statistical analysis capabilities in R, Python, Stata, and SQL. Recognized for transforming complex health data into actionable insights that drive evidence-based decision-making in resource-limited settings.\n\n\n\n\n\nData Management & Systems - Electronic Data Capture (EDC) Systems - Database Design & Administration - Data Quality Assurance & Validation - ETL Pipeline Development - REDCap, SurveyCTO, KoboCollect\nStatistical Analysis - Advanced Statistical Modeling - Predictive Analytics & Machine Learning - Survival Analysis & Cox Regression - Bayesian Statistics - Epidemiological Modeling\nProgramming & Tools - R (tidyverse, ggplot2, shiny, rmarkdown) - Python (pandas, numpy, scikit-learn) - Stata, SPSS, SAS - SQL, PostgreSQL - Git/GitHub\nData Visualization - Interactive Dashboards (Shiny, Tableau) - ggplot2, plotly - Power BI - Geospatial Visualization (sf, leaflet)\n\n\n\n\n\n\n\nVarious Health Research Projects | 2017 - Present\n\n\n\n\n\n\nKey Responsibilities:\n\nLead end-to-end data management for 15+ multi-site health research projects with budgets exceeding $2M\nDesign and implement electronic data capture systems using REDCap, SurveyCTO, and KoboCollect for studies enrolling 5,000+ participants\nDevelop and maintain SQL databases managing 100,000+ health records with 99.9% data quality\nCreate automated data validation pipelines reducing data cleaning time by 60%\nPerform advanced statistical analyses using R, Python, and Stata for clinical trials and observational studies\nDevelop interactive dashboards using Shiny and Tableau for real-time monitoring and stakeholder reporting\nTrain and supervise teams of 10+ data collectors and junior data managers\nEnsure compliance with GCP, HIPAA, and local data protection regulations\n\nNotable Achievements:\n\nReduced data entry errors by 75% through implementation of real-time validation systems\nDesigned innovative mobile data collection system adopted by 5 partner organizations\nPublished 8+ peer-reviewed articles on health data analytics and epidemiology\nMentored 15+ junior researchers in R programming and data management best practices\n\n\n\n\n\n\n\nPublic Health Research Projects | 2017 - 2020\n\n\n\n\n\n\nKey Responsibilities:\n\nManaged data collection and analysis for HIV/AIDS, tuberculosis, and NCD surveillance studies\nDeveloped REDCap databases for longitudinal cohort studies tracking 2,000+ patients\nConducted statistical analyses including survival analysis, logistic regression, and mixed-effects models\nCreated automated reporting systems using R Markdown\nCollaborated with international research teams across 4 countries\n\nNotable Achievements:\n\nStreamlined data management workflows reducing project timelines by 30%\nDeveloped reusable R packages for common data management tasks\nPresented findings at 5+ international conferences\n\n\n\n\n\n\n\nJaramogi Oginga Odinga University of Science and Technology (JOOUST) | 2020 - Present\n\nTeach undergraduate and graduate courses in biostatistics and epidemiology\nDevelop practical R programming curriculum for health sciences students\nSupervise student research projects and theses\nConduct faculty workshops on modern statistical methods and reproducible research\n\n\n\n\nLERIS HUB | 2019 - Present\n\nDesign and deliver comprehensive R programming workshops for researchers\nTeach data visualization, statistical modeling, and reproducible research practices\nMentor 50+ researchers in transitioning from SPSS/Excel to R\nDevelop training materials and online resources\n\n\n\n\n\n\n\n\nJaramogi Oginga Odinga University of Science and Technology (JOOUST) | Expected 2025\nThesis: “Exploring Financial Determinants of Effective Hypertension and Diabetes Management in Primary Health Facilities in Kisumu County”\n\nCoursework completed with distinction\nFocus on health economics, advanced biostatistics, and epidemiological methods\n\n\n\n\nRelevant University | 2013 - 2017\n\nFirst Class Honours\nSpecialized in public health statistics and computational methods\n\n\n\n\n\n\n\n\nTitle: Exploring Financial Determinants of Effective Hypertension and Diabetes Management in Primary Health Facilities in Kisumu County\nObjectives: - Assess financial resources allocation for NCD management in primary health facilities - Evaluate the relationship between health facility financing and patient outcomes - Develop predictive models for resource optimization - Create interactive dashboards for real-time facility performance monitoring\nMethodology: - Mixed-methods case study design - Primary data collection from 30+ health facilities - Patient outcome tracking (n=500+) - Financial data analysis - Cost-effectiveness analysis\nExpected Impact: - Evidence-based policy recommendations for NCD financing - Scalable framework for facility performance monitoring - Open-source analytical tools and dashboards\n\n\n\n\n\n\n\nInteractive Shiny Application\nReal-time monitoring dashboard for tracking health facility financial performance and NCD management outcomes. Features include: - Budget tracking and visualization - Patient outcome metrics - Cost-effectiveness analysis - Predictive analytics for resource allocation\nTechnologies: R Shiny, ggplot2, plotly, PostgreSQL\n\n\n\nREDCap & R Integration\nAutomated data management pipeline for multi-site clinical trials: - Real-time data validation - Automated quality control reports - Data export and transformation - Statistical analysis integration\nTechnologies: REDCap API, R, tidyverse, rmarkdown\n\n\n\nPostgreSQL Database & Shiny Dashboard\nComprehensive disease surveillance system with: - Automated data ingestion from multiple sources - Real-time alert system for outbreak detection - Geospatial visualization of disease patterns - Automated weekly/monthly reporting\nTechnologies: PostgreSQL, R Shiny, leaflet, SQL\n\n\n\n\n\n(Sample - Populate with your actual publications)\n\nAmollo, N. et al. (2024). “Financial determinants of NCD management in primary care settings.” Journal of Health Economics (In Preparation)\nAmollo, N. et al. (2023). “Implementing electronic data capture systems in resource-limited settings: Lessons learned.” BMC Medical Research Methodology\nAmollo, N. (2023). “Best practices in health data management for clinical trials.” Presented at International Clinical Trials Symposium\nAmollo, N. et al. (2022). “Data quality in electronic health records: A systematic review.” Journal of Medical Informatics\n\n\n\n\n\n\nDataCamp Certified Data Scientist | 2023\nGood Clinical Practice (GCP) Certification | 2022\nREDCap Administrator Certification | 2021\nSurveyCTO Advanced Training | 2021\nR Shiny Development Certification | 2020\nHIPAA Compliance Training | 2020\n\n\n\n\n\n\n\n\nAdvanced Bayesian Statistics Workshop, 2024\nMachine Learning in Healthcare, 2023\nGeospatial Analysis for Public Health, 2023\nAdvanced R Programming and Package Development, 2022\nClinical Trials Data Management Best Practices, 2021\n\n\n\n\n\n“Introduction to R for Health Researchers” - 10+ workshops, 200+ participants\n“REDCap for Clinical Trials” - 5 workshops\n“Data Visualization with ggplot2” - 8 workshops\n“Reproducible Research with R Markdown” - 6 workshops\n\n\n\n\n\n\n\nInternational Biometric Society (IBS)\nAmerican Statistical Association (ASA)\nSociety for Clinical Data Management (SCDM)\nKenya Medical Research Institute (KEMRI) - Collaborating Researcher\n\n\n\n\n\n\n\n\nR: Expert (8+ years) - tidyverse, data.table, ggplot2, shiny, rmarkdown, survival, caret\nPython: Advanced (5+ years) - pandas, numpy, scikit-learn, matplotlib, seaborn\nStata: Advanced (7+ years) - Data management, statistical modeling\nSPSS: Proficient (5+ years)\nSAS: Intermediate (3+ years)\n\n\n\n\n\nSQL: Advanced - PostgreSQL, MySQL, SQLite\nREDCap: Expert - Database design, API integration\nSurveyCTO: Expert - Form design, quality control\nKoboCollect: Advanced - Mobile data collection\n\n\n\n\n\nR: ggplot2, plotly, leaflet, shiny\nTableau: Advanced\nPower BI: Intermediate\nD3.js: Basic\n\n\n\n\n\nGit/GitHub: Advanced\nRStudio Server: Administration\nQuarto/R Markdown: Expert\n\n\n\n\n\n\n\nEnglish: Fluent (Professional Working Proficiency)\nSwahili: Fluent (Native)\nDholuo: Fluent (Native)\nFrench: Basic (Currently Learning)\n\n\n\n\n\n\n\nA dedicated exercise enthusiast, I maintain a consistent workout routine 4+ times per week. This commitment includes: - Strength training and cardiovascular exercises - Morning runs and nature walks - Yoga and flexibility training\nThis disciplined approach to fitness enhances my professional performance by maintaining high energy levels, mental clarity, and resilience under pressure.\n\n\n\n\nReading on Cold War history and Greek drama\nClassical music, particularly Renaissance polyphony\nOpen-source software development\nMentoring young data scientists\n\n\n\n\n\n\nAvailable upon request\n\n\n\nDownload PDF Version\nLast Updated: September 2024\n\n\nReady to collaborate? Contact me or view my projects to see my work in action."
+  },
+  {
+    "objectID": "cv/index.html#professional-summary",
+    "href": "cv/index.html#professional-summary",
+    "title": "Curriculum Vitae",
+    "section": "",
+    "text": "Dynamic and results-driven Senior Research Data Manager with 7+ years of progressive experience in health data analytics, survey design, and comprehensive data management. Proven expertise in designing and implementing robust data collection systems using SurveyCTO, REDCap, and KoboCollect, combined with advanced statistical analysis capabilities in R, Python, Stata, and SQL. Recognized for transforming complex health data into actionable insights that drive evidence-based decision-making in resource-limited settings."
+  },
+  {
+    "objectID": "cv/index.html#core-competencies",
+    "href": "cv/index.html#core-competencies",
+    "title": "Curriculum Vitae",
+    "section": "",
+    "text": "Data Management & Systems - Electronic Data Capture (EDC) Systems - Database Design & Administration - Data Quality Assurance & Validation - ETL Pipeline Development - REDCap, SurveyCTO, KoboCollect\nStatistical Analysis - Advanced Statistical Modeling - Predictive Analytics & Machine Learning - Survival Analysis & Cox Regression - Bayesian Statistics - Epidemiological Modeling\nProgramming & Tools - R (tidyverse, ggplot2, shiny, rmarkdown) - Python (pandas, numpy, scikit-learn) - Stata, SPSS, SAS - SQL, PostgreSQL - Git/GitHub\nData Visualization - Interactive Dashboards (Shiny, Tableau) - ggplot2, plotly - Power BI - Geospatial Visualization (sf, leaflet)"
+  },
+  {
+    "objectID": "cv/index.html#professional-experience",
+    "href": "cv/index.html#professional-experience",
+    "title": "Curriculum Vitae",
+    "section": "",
+    "text": "Various Health Research Projects | 2017 - Present\n\n\n\n\n\n\nKey Responsibilities:\n\nLead end-to-end data management for 15+ multi-site health research projects with budgets exceeding $2M\nDesign and implement electronic data capture systems using REDCap, SurveyCTO, and KoboCollect for studies enrolling 5,000+ participants\nDevelop and maintain SQL databases managing 100,000+ health records with 99.9% data quality\nCreate automated data validation pipelines reducing data cleaning time by 60%\nPerform advanced statistical analyses using R, Python, and Stata for clinical trials and observational studies\nDevelop interactive dashboards using Shiny and Tableau for real-time monitoring and stakeholder reporting\nTrain and supervise teams of 10+ data collectors and junior data managers\nEnsure compliance with GCP, HIPAA, and local data protection regulations\n\nNotable Achievements:\n\nReduced data entry errors by 75% through implementation of real-time validation systems\nDesigned innovative mobile data collection system adopted by 5 partner organizations\nPublished 8+ peer-reviewed articles on health data analytics and epidemiology\nMentored 15+ junior researchers in R programming and data management best practices\n\n\n\n\n\n\n\nPublic Health Research Projects | 2017 - 2020\n\n\n\n\n\n\nKey Responsibilities:\n\nManaged data collection and analysis for HIV/AIDS, tuberculosis, and NCD surveillance studies\nDeveloped REDCap databases for longitudinal cohort studies tracking 2,000+ patients\nConducted statistical analyses including survival analysis, logistic regression, and mixed-effects models\nCreated automated reporting systems using R Markdown\nCollaborated with international research teams across 4 countries\n\nNotable Achievements:\n\nStreamlined data management workflows reducing project timelines by 30%\nDeveloped reusable R packages for common data management tasks\nPresented findings at 5+ international conferences\n\n\n\n\n\n\n\nJaramogi Oginga Odinga University of Science and Technology (JOOUST) | 2020 - Present\n\nTeach undergraduate and graduate courses in biostatistics and epidemiology\nDevelop practical R programming curriculum for health sciences students\nSupervise student research projects and theses\nConduct faculty workshops on modern statistical methods and reproducible research\n\n\n\n\nLERIS HUB | 2019 - Present\n\nDesign and deliver comprehensive R programming workshops for researchers\nTeach data visualization, statistical modeling, and reproducible research practices\nMentor 50+ researchers in transitioning from SPSS/Excel to R\nDevelop training materials and online resources"
+  },
+  {
+    "objectID": "cv/index.html#education",
+    "href": "cv/index.html#education",
+    "title": "Curriculum Vitae",
+    "section": "",
+    "text": "Jaramogi Oginga Odinga University of Science and Technology (JOOUST) | Expected 2025\nThesis: “Exploring Financial Determinants of Effective Hypertension and Diabetes Management in Primary Health Facilities in Kisumu County”\n\nCoursework completed with distinction\nFocus on health economics, advanced biostatistics, and epidemiological methods\n\n\n\n\nRelevant University | 2013 - 2017\n\nFirst Class Honours\nSpecialized in public health statistics and computational methods"
+  },
+  {
+    "objectID": "cv/index.html#current-research",
+    "href": "cv/index.html#current-research",
+    "title": "Curriculum Vitae",
+    "section": "",
+    "text": "Title: Exploring Financial Determinants of Effective Hypertension and Diabetes Management in Primary Health Facilities in Kisumu County\nObjectives: - Assess financial resources allocation for NCD management in primary health facilities - Evaluate the relationship between health facility financing and patient outcomes - Develop predictive models for resource optimization - Create interactive dashboards for real-time facility performance monitoring\nMethodology: - Mixed-methods case study design - Primary data collection from 30+ health facilities - Patient outcome tracking (n=500+) - Financial data analysis - Cost-effectiveness analysis\nExpected Impact: - Evidence-based policy recommendations for NCD financing - Scalable framework for facility performance monitoring - Open-source analytical tools and dashboards"
+  },
+  {
+    "objectID": "cv/index.html#technical-projects-portfolio",
+    "href": "cv/index.html#technical-projects-portfolio",
+    "title": "Curriculum Vitae",
+    "section": "",
+    "text": "Interactive Shiny Application\nReal-time monitoring dashboard for tracking health facility financial performance and NCD management outcomes. Features include: - Budget tracking and visualization - Patient outcome metrics - Cost-effectiveness analysis - Predictive analytics for resource allocation\nTechnologies: R Shiny, ggplot2, plotly, PostgreSQL\n\n\n\nREDCap & R Integration\nAutomated data management pipeline for multi-site clinical trials: - Real-time data validation - Automated quality control reports - Data export and transformation - Statistical analysis integration\nTechnologies: REDCap API, R, tidyverse, rmarkdown\n\n\n\nPostgreSQL Database & Shiny Dashboard\nComprehensive disease surveillance system with: - Automated data ingestion from multiple sources - Real-time alert system for outbreak detection - Geospatial visualization of disease patterns - Automated weekly/monthly reporting\nTechnologies: PostgreSQL, R Shiny, leaflet, SQL"
+  },
+  {
+    "objectID": "cv/index.html#publications-presentations",
+    "href": "cv/index.html#publications-presentations",
+    "title": "Curriculum Vitae",
+    "section": "",
+    "text": "(Sample - Populate with your actual publications)\n\nAmollo, N. et al. (2024). “Financial determinants of NCD management in primary care settings.” Journal of Health Economics (In Preparation)\nAmollo, N. et al. (2023). “Implementing electronic data capture systems in resource-limited settings: Lessons learned.” BMC Medical Research Methodology\nAmollo, N. (2023). “Best practices in health data management for clinical trials.” Presented at International Clinical Trials Symposium\nAmollo, N. et al. (2022). “Data quality in electronic health records: A systematic review.” Journal of Medical Informatics"
+  },
+  {
+    "objectID": "cv/index.html#certifications-training",
+    "href": "cv/index.html#certifications-training",
+    "title": "Curriculum Vitae",
+    "section": "",
+    "text": "DataCamp Certified Data Scientist | 2023\nGood Clinical Practice (GCP) Certification | 2022\nREDCap Administrator Certification | 2021\nSurveyCTO Advanced Training | 2021\nR Shiny Development Certification | 2020\nHIPAA Compliance Training | 2020"
+  },
+  {
+    "objectID": "cv/index.html#professional-development",
+    "href": "cv/index.html#professional-development",
+    "title": "Curriculum Vitae",
+    "section": "",
+    "text": "Advanced Bayesian Statistics Workshop, 2024\nMachine Learning in Healthcare, 2023\nGeospatial Analysis for Public Health, 2023\nAdvanced R Programming and Package Development, 2022\nClinical Trials Data Management Best Practices, 2021\n\n\n\n\n\n“Introduction to R for Health Researchers” - 10+ workshops, 200+ participants\n“REDCap for Clinical Trials” - 5 workshops\n“Data Visualization with ggplot2” - 8 workshops\n“Reproducible Research with R Markdown” - 6 workshops"
+  },
+  {
+    "objectID": "cv/index.html#professional-affiliations",
+    "href": "cv/index.html#professional-affiliations",
+    "title": "Curriculum Vitae",
+    "section": "",
+    "text": "International Biometric Society (IBS)\nAmerican Statistical Association (ASA)\nSociety for Clinical Data Management (SCDM)\nKenya Medical Research Institute (KEMRI) - Collaborating Researcher"
+  },
+  {
+    "objectID": "cv/index.html#technical-skills-summary",
+    "href": "cv/index.html#technical-skills-summary",
+    "title": "Curriculum Vitae",
+    "section": "",
+    "text": "R: Expert (8+ years) - tidyverse, data.table, ggplot2, shiny, rmarkdown, survival, caret\nPython: Advanced (5+ years) - pandas, numpy, scikit-learn, matplotlib, seaborn\nStata: Advanced (7+ years) - Data management, statistical modeling\nSPSS: Proficient (5+ years)\nSAS: Intermediate (3+ years)\n\n\n\n\n\nSQL: Advanced - PostgreSQL, MySQL, SQLite\nREDCap: Expert - Database design, API integration\nSurveyCTO: Expert - Form design, quality control\nKoboCollect: Advanced - Mobile data collection\n\n\n\n\n\nR: ggplot2, plotly, leaflet, shiny\nTableau: Advanced\nPower BI: Intermediate\nD3.js: Basic\n\n\n\n\n\nGit/GitHub: Advanced\nRStudio Server: Administration\nQuarto/R Markdown: Expert"
+  },
+  {
+    "objectID": "cv/index.html#languages",
+    "href": "cv/index.html#languages",
+    "title": "Curriculum Vitae",
+    "section": "",
+    "text": "English: Fluent (Professional Working Proficiency)\nSwahili: Fluent (Native)\nDholuo: Fluent (Native)\nFrench: Basic (Currently Learning)"
+  },
+  {
+    "objectID": "cv/index.html#personal-interests-hobbies",
+    "href": "cv/index.html#personal-interests-hobbies",
+    "title": "Curriculum Vitae",
+    "section": "",
+    "text": "A dedicated exercise enthusiast, I maintain a consistent workout routine 4+ times per week. This commitment includes: - Strength training and cardiovascular exercises - Morning runs and nature walks - Yoga and flexibility training\nThis disciplined approach to fitness enhances my professional performance by maintaining high energy levels, mental clarity, and resilience under pressure.\n\n\n\n\nReading on Cold War history and Greek drama\nClassical music, particularly Renaissance polyphony\nOpen-source software development\nMentoring young data scientists"
+  },
+  {
+    "objectID": "cv/index.html#references",
+    "href": "cv/index.html#references",
+    "title": "Curriculum Vitae",
+    "section": "",
+    "text": "Available upon request\n\n\n\nDownload PDF Version\nLast Updated: September 2024\n\n\nReady to collaborate? Contact me or view my projects to see my work in action."
+  },
+  {
+    "objectID": "research/thesis.html",
+    "href": "research/thesis.html",
+    "title": "MSc Thesis Project",
+    "section": "",
+    "text": "Exploring Financial Determinants of Effective Hypertension and Diabetes Management in Primary Health Facilities in Kisumu County\nStatus: Data Collection & Analysis Phase | Expected Completion: 2025"
+  },
+  {
+    "objectID": "research/thesis.html#project-overview",
+    "href": "research/thesis.html#project-overview",
+    "title": "MSc Thesis Project",
+    "section": "Project Overview",
+    "text": "Project Overview\nThis groundbreaking research investigates the critical intersection of health facility financing and non-communicable disease (NCD) management outcomes in resource-limited primary health care settings in Kisumu County, Kenya.\n\nResearch Questions\n\nWhat are the current financial resource allocations for hypertension and diabetes management in primary health facilities?\nHow does health facility financing influence patient outcomes in NCD management?\nWhat are the cost-effective interventions for improving NCD management in resource-limited settings?\nWhat policy recommendations can optimize NCD financing at the primary care level?\n\n\n\nStudy Significance\n\nFirst comprehensive study examining NCD financing at primary care level in Kisumu County\nEvidence-based insights for health policy and resource allocation\nPractical tools for health facility managers and policymakers\nScalable framework applicable to other resource-limited settings"
+  },
+  {
+    "objectID": "research/thesis.html#methodology",
+    "href": "research/thesis.html#methodology",
+    "title": "MSc Thesis Project",
+    "section": "Methodology",
+    "text": "Methodology\n\nStudy Design\nMixed-Methods Case Study Design combining quantitative and qualitative approaches\n\n\nStudy Population\n\nHealth Facilities: 30 primary health facilities in Kisumu County\nPatients: 500+ patients with hypertension and/or diabetes\nKey Informants: 45 health facility managers and healthcare providers\n\n\n\nData Collection Methods\n\n\n\n📋 Facility Financial Assessment\n\nBudget analysis and resource allocation\nRevenue streams and funding sources\nExpenditure patterns for NCD services\nInfrastructure and equipment inventory\n\n\n\n🏥 Patient Outcome Tracking\n\nClinical outcomes (BP control, HbA1c levels)\nTreatment adherence rates\nComplication rates and hospitalizations\nPatient satisfaction surveys\n\n\n\n💰 Cost-Effectiveness Analysis\n\nCost per patient managed\nCost per controlled case\nCost-benefit analysis of interventions\nResource utilization patterns\n\n\n\n📊 Statistical Analysis\n\nMultivariate regression models\nSurvival analysis\nPredictive modeling\nGeospatial analysis\n\n\n\n\nData Collection Tools\n\n\n🔧 Survey Instruments Designed\n\n\n1. Health Facility Financial Assessment Tool (REDCap) - Comprehensive financial data capture - Real-time validation and quality checks - Automated reporting dashboards\n2. Patient Outcome Tracking System (SurveyCTO) - Mobile data collection for field teams - Offline functionality for rural settings - GPS tracking for facility verification\n3. Healthcare Provider Survey (KoboCollect) - Provider perspectives on resource constraints - Qualitative insights on NCD management challenges - Training needs assessment\nView Survey Tools Documentation →"
+  },
+  {
+    "objectID": "research/thesis.html#interactive-dashboard",
+    "href": "research/thesis.html#interactive-dashboard",
+    "title": "MSc Thesis Project",
+    "section": "Interactive Dashboard",
+    "text": "Interactive Dashboard\n\nReal-Time Project Monitoring Dashboard\nBelow is an interactive dashboard for monitoring health facility performance and patient outcomes in real-time.\n\nNote: This is a demonstration dashboard. Full implementation will be completed upon thesis submission.\n\n\n\nKey Performance Indicators\n\n\n\n::: {.stats-container}\n::: {.stat-card}\n**30**{.stat-number}\nHealth Facilities{.stat-label}\n:::\n\n::: {.stat-card}\n**6040**{.stat-number}\nPatients Enrolled{.stat-label}\n:::\n\n::: {.stat-card}\n**61.0%**{.stat-number}\nAvg Control Rate{.stat-label}\n:::\n\n::: {.stat-card}\n**KES 15,535,015**{.stat-number}\nTotal Budget{.stat-label}\n:::\n:::\n\n\n\n\nBudget Allocation by Facility Type\n\n\nCode\n# Budget comparison by facility type\np1 &lt;- facilities %&gt;%\n  group_by(facility_type) %&gt;%\n  summarise(\n    total_budget = sum(budget),\n    avg_budget = mean(budget),\n    n = n()\n  ) %&gt;%\n  plot_ly() %&gt;%\n  add_bars(\n    x = ~facility_type,\n    y = ~avg_budget,\n    text = ~paste(\"Average Budget: KES\", format(avg_budget, big.mark = \",\")),\n    hoverinfo = \"text\",\n    marker = list(color = c('#2C5282', '#38B2AC', '#48BB78'))\n  ) %&gt;%\n  layout(\n    title = \"Average Budget by Facility Type\",\n    xaxis = list(title = \"Facility Type\"),\n    yaxis = list(title = \"Average Budget (KES)\"),\n    showlegend = FALSE\n  )\n\np1\n\n\n\n\n\n\n\n\nPatient Outcomes: Control Rate by Facility\n\n\nCode\n# Control rate visualization\np2 &lt;- facilities %&gt;%\n  arrange(desc(control_rate)) %&gt;%\n  mutate(facility_name = factor(facility_name, levels = facility_name)) %&gt;%\n  plot_ly() %&gt;%\n  add_bars(\n    x = ~control_rate,\n    y = ~facility_name,\n    orientation = 'h',\n    text = ~paste(control_rate, \"%\"),\n    hoverinfo = \"text\",\n    marker = list(\n      color = ~control_rate,\n      colorscale = list(c(0, \"red\"), c(0.5, \"yellow\"), c(1, \"green\")),\n      showscale = TRUE,\n      colorbar = list(title = \"Control Rate (%)\")\n    )\n  ) %&gt;%\n  layout(\n    title = \"Hypertension/Diabetes Control Rate by Facility\",\n    xaxis = list(title = \"Control Rate (%)\"),\n    yaxis = list(title = \"\"),\n    height = 800\n  )\n\np2\n\n\n\n\n\n\n\n\nCost-Effectiveness Analysis\n\n\nCode\n# Cost per patient vs control rate\np3 &lt;- facilities %&gt;%\n  plot_ly() %&gt;%\n  add_markers(\n    x = ~cost_per_patient,\n    y = ~control_rate,\n    size = ~patients,\n    color = ~facility_type,\n    text = ~paste(\n      \"&lt;b&gt;\", facility_name, \"&lt;/b&gt;&lt;br&gt;\",\n      \"Cost per Patient: KES\", format(cost_per_patient, big.mark = \",\"), \"&lt;br&gt;\",\n      \"Control Rate:\", control_rate, \"%&lt;br&gt;\",\n      \"Patients:\", patients\n    ),\n    hoverinfo = \"text\",\n    colors = c('#2C5282', '#38B2AC', '#48BB78')\n  ) %&gt;%\n  layout(\n    title = \"Cost-Effectiveness: Cost per Patient vs Control Rate\",\n    xaxis = list(title = \"Cost per Patient (KES)\"),\n    yaxis = list(title = \"Control Rate (%)\"),\n    showlegend = TRUE\n  )\n\np3\n\n\n\n\n\n\n\n\nGeographic Distribution of Facilities\n\n\nCode\n# Interactive map of facilities\ncolor_pal &lt;- colorFactor(\n  palette = c(\"red\", \"yellow\", \"green\"),\n  domain = c(\"Needs Improvement\", \"Medium Performance\", \"High Performance\")\n)\n\nmap &lt;- leaflet(facilities) %&gt;%\n  addTiles() %&gt;%\n  addCircleMarkers(\n    lng = ~longitude,\n    lat = ~latitude,\n    radius = ~sqrt(patients) / 2,\n    color = ~color_pal(performance_category),\n    fillOpacity = 0.6,\n    popup = ~paste(\n      \"&lt;strong&gt;\", facility_name, \"&lt;/strong&gt;&lt;br&gt;\",\n      \"Type:\", facility_type, \"&lt;br&gt;\",\n      \"Patients:\", patients, \"&lt;br&gt;\",\n      \"Control Rate:\", control_rate, \"%&lt;br&gt;\",\n      \"Performance:\", performance_category\n    )\n  ) %&gt;%\n  addLegend(\n    \"bottomright\",\n    pal = color_pal,\n    values = ~performance_category,\n    title = \"Performance Category\",\n    opacity = 1\n  )\n\nmap\n\n\n\n\n\n\n\n\nFacility Performance Table\n\n\nCode\n# Interactive data table\nfacilities %&gt;%\n  select(\n    `Facility Name` = facility_name,\n    `Type` = facility_type,\n    `Budget (KES)` = budget,\n    `Patients` = patients,\n    `Control Rate (%)` = control_rate,\n    `Cost per Patient` = cost_per_patient,\n    `Performance` = performance_category\n  ) %&gt;%\n  mutate(\n    `Budget (KES)` = format(`Budget (KES)`, big.mark = \",\"),\n    `Cost per Patient` = format(`Cost per Patient`, big.mark = \",\")\n  ) %&gt;%\n  datatable(\n    options = list(\n      pageLength = 10,\n      scrollX = TRUE,\n      dom = 'Bfrtip',\n      buttons = c('copy', 'csv', 'excel')\n    ),\n    filter = 'top',\n    class = 'cell-border stripe'\n  )"
+  },
+  {
+    "objectID": "research/thesis.html#preliminary-findings",
+    "href": "research/thesis.html#preliminary-findings",
+    "title": "MSc Thesis Project",
+    "section": "Preliminary Findings",
+    "text": "Preliminary Findings\n\n🔍 Key Insights (Preliminary)\nFinancial Patterns: - Significant variation in budget allocation across facility types - Average cost per patient: KES 2,500 (range: KES 1,800 - KES 3,500) - Budget constraints limit access to essential NCD medications\nClinical Outcomes: - Overall control rate: 60% (target: 70%) - Higher control rates in facilities with dedicated NCD clinics - Medication adherence challenges in 40% of patients\nCost-Effectiveness: - Community-based screening programs show 30% cost reduction - Group education sessions improve outcomes by 25% - Task-shifting to nurses reduces costs while maintaining quality"
+  },
+  {
+    "objectID": "research/thesis.html#expected-deliverables",
+    "href": "research/thesis.html#expected-deliverables",
+    "title": "MSc Thesis Project",
+    "section": "Expected Deliverables",
+    "text": "Expected Deliverables\n\nResearch Thesis - Comprehensive dissertation (expected 2025)\nInteractive Dashboard - Real-time facility monitoring system\nPolicy Briefs - Evidence-based recommendations for stakeholders\nR Package - Open-source tools for NCD financing analysis\nTraining Materials - Capacity building resources for health managers\nPublications - Peer-reviewed journal articles (3-4 papers)"
+  },
+  {
+    "objectID": "research/thesis.html#technology-stack",
+    "href": "research/thesis.html#technology-stack",
+    "title": "MSc Thesis Project",
+    "section": "Technology Stack",
+    "text": "Technology Stack\n\n\n🛠️ Tools & Technologies\n\n\nData Collection: - REDCap for facility financial assessments - SurveyCTO for mobile patient tracking - KoboCollect for provider surveys\nData Management: - R (tidyverse, data.table) for data cleaning - PostgreSQL for database management - Git/GitHub for version control\nAnalysis: - R (tidyverse, caret, survival) for statistical analysis - Python (scikit-learn) for machine learning - Stata for sensitivity analyses\nVisualization: - R Shiny for interactive dashboards - ggplot2 and plotly for graphics - Leaflet for geospatial visualization - Quarto for reproducible reports\nReporting: - Quarto for dynamic documents - R Markdown for automated reports - LaTeX for thesis writing"
+  },
+  {
+    "objectID": "research/thesis.html#reproducible-research-approach",
+    "href": "research/thesis.html#reproducible-research-approach",
+    "title": "MSc Thesis Project",
+    "section": "Reproducible Research Approach",
+    "text": "Reproducible Research Approach\nThis project follows best practices in reproducible research:\n✅ Open Data - Anonymized data will be shared in public repositories\n✅ Open Code - All analysis scripts available on GitHub\n✅ Open Methods - Detailed methodology documentation\n✅ Transparent Reporting - Adherence to STROBE guidelines\n✅ Version Control - All changes tracked with Git\nView GitHub Repository →"
+  },
+  {
+    "objectID": "research/thesis.html#impact-dissemination",
+    "href": "research/thesis.html#impact-dissemination",
+    "title": "MSc Thesis Project",
+    "section": "Impact & Dissemination",
+    "text": "Impact & Dissemination\n\nTarget Audiences\n\nPolicymakers - Ministry of Health, County Health Management Teams\nHealth Facility Managers - Resource allocation guidance\nResearchers - Methodological contributions\nDonors & NGOs - Evidence for funding decisions\n\n\n\nDissemination Strategy\n\nAcademic Publications - 3-4 peer-reviewed papers\nPolicy Briefs - Accessible summaries for decision-makers\nStakeholder Workshops - Presentation to county health officials\nConference Presentations - Regional and international forums\nSocial Media - Twitter threads and LinkedIn posts\nBlog Posts - Accessible explanations of findings"
+  },
+  {
+    "objectID": "research/thesis.html#project-timeline",
+    "href": "research/thesis.html#project-timeline",
+    "title": "MSc Thesis Project",
+    "section": "Project Timeline",
+    "text": "Project Timeline"
+  },
+  {
+    "objectID": "research/thesis.html#collaboration-opportunities",
+    "href": "research/thesis.html#collaboration-opportunities",
+    "title": "MSc Thesis Project",
+    "section": "Collaboration Opportunities",
+    "text": "Collaboration Opportunities\nInterested in collaborating on this research? I’m open to:\n\nCo-authorship on publications\nData sharing agreements for secondary analysis\nTool adaptation for other settings\nCapacity building workshops\nPolicy engagement activities\n\nContact: nichodemuswerre@gmail.com\n\n\n📢 Follow This Project\nStay updated on the latest findings and developments:\n🐦 Twitter: @nwerre\n💼 LinkedIn: Nichodemus Amollo\n🐙 GitHub: gondamol\nShare this project to help spread awareness about NCD financing in resource-limited settings!\n\n\n← Back to Research | View All Projects →"
+  },
+  {
+    "objectID": "tidy-tuesday/index.html",
+    "href": "tidy-tuesday/index.html",
+    "title": "Tidy Tuesday Analysis",
+    "section": "",
+    "text": "Welcome to my Tidy Tuesday analysis collection! Each week, I participate in the Tidy Tuesday challenge, where I analyze different datasets and share my findings. Below are some of the projects I’ve worked on.\n\n\n\n2024-01-02: Analysis on Global Temperature Changes\n2024-01-09: Analysis on Movie Ratings Trends\n2024-01-16: Analysis on World Population Growth\n\nFeel free to explore each analysis to see the data visualization, statistical methods, and insights drawn from each dataset."
+  },
+  {
+    "objectID": "tidy-tuesday/index.html#recent-projects",
+    "href": "tidy-tuesday/index.html#recent-projects",
+    "title": "Tidy Tuesday Analysis",
+    "section": "",
+    "text": "2024-01-02: Analysis on Global Temperature Changes\n2024-01-09: Analysis on Movie Ratings Trends\n2024-01-16: Analysis on World Population Growth\n\nFeel free to explore each analysis to see the data visualization, statistical methods, and insights drawn from each dataset."
+  },
+  {
+    "objectID": "tidy-tuesday/2024-01-09-analysis.html",
+    "href": "tidy-tuesday/2024-01-09-analysis.html",
+    "title": "",
+    "section": "",
+    "text": "Code"
+  },
+  {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "This is a post with executable code.\n\n\nCode\n1 + 1\n\n\n[1] 2"
+  },
+  {
+    "objectID": "blogs/index.html",
+    "href": "blogs/index.html",
+    "title": "Blog & Technical Notes",
+    "section": "",
+    "text": "Sharing knowledge on health data science, statistical methods, and best practices"
+  },
+  {
+    "objectID": "blogs/index.html#featured-posts",
+    "href": "blogs/index.html#featured-posts",
+    "title": "Blog & Technical Notes",
+    "section": "Featured Posts",
+    "text": "Featured Posts\n\nData Management & Best Practices\n\n\n10 Principles for Excellent Clinical Trial Data Management\n\n\nLessons from managing 20+ clinical trials on what separates good data management from great data management.\nTopics Covered: - Planning before the first patient enrolls - Building quality into the system, not inspecting it in - The art of writing good data queries - When to automate and when not to - Communication strategies that work\nComing Soon\n\n\n\n\n\nR Programming Tutorials\n\n\nFrom Excel to R: A Researcher’s Journey\n\n\nA gentle introduction to R for health researchers currently using Excel or SPSS.\nSeries includes: 1. Setting up your R environment 2. Reading and cleaning data 3. Data manipulation with dplyr 4. Creating publication-quality plots 5. Writing reproducible reports\nComing Soon\n\n\n\n\n\nHealth Data Analytics\n\n\nAnalyzing NCD Data: From Raw Data to Insights\n\n\nReal-world example analyzing hypertension and diabetes data, with complete R code.\nAnalysis Pipeline: - Data cleaning and validation - Descriptive statistics - Control rate calculations - Risk factor analysis - Visualization strategies\nComing Soon\n\n\n\n\n\nSurvey Design & Implementation\n\n\nSurveyCTO vs REDCap vs KoboCollect: Which to Choose?\n\n\nDetailed comparison of leading EDC platforms based on 7+ years of hands-on experience.\nDecision Framework:* - Feature comparison matrix - Cost analysis - Use case scenarios - Pros and cons - My recommendations\nComing Soon\n\n\n\n\n\nStatistical Methods\n\n\nUnderstanding Bayesian Statistics in Public Health\n\n\nDemystifying Bayesian methods with practical health research examples.\nTopics:* - Why Bayesian? Advantages for health research - Interpreting credible intervals - Prior selection strategies - MCMC basics - Example: Vaccine efficacy analysis\nComing Soon\n\n\n\n\n\nCareer & Professional Development\n\n\nBreaking into Health Data Science\n\n\nAdvice for aspiring health data scientist based on my journey and lessons learned.\nTopics:* - Skills you actually need - Building a portfolio - Networking strategies - Remote work tips - Common career questions\nComing Soon"
+  },
+  {
+    "objectID": "blogs/index.html#tutorial-series",
+    "href": "blogs/index.html#tutorial-series",
+    "title": "Blog & Technical Notes",
+    "section": "Tutorial Series",
+    "text": "Tutorial Series\n\n“R for Health Researchers” Series (12 parts)\nComprehensive tutorial series taking you from R beginner to confident analyst.\n\n\n“Dashboard Design” Series (6 parts)\nLearn to build professional dashboards that stakeholders actually use.\n\n\n“Data Management 101” Series (8 parts)\nEssential skills for managing research data with integrity and efficiency."
+  },
+  {
+    "objectID": "blogs/index.html#quick-tips-code-snippets",
+    "href": "blogs/index.html#quick-tips-code-snippets",
+    "title": "Blog & Technical Notes",
+    "section": "Quick Tips & Code Snippets",
+    "text": "Quick Tips & Code Snippets\n\nUseful R Code Snippets\nREDCap Data Import:\nlibrary(httr)\nlibrary(tidyverse)\n\n# Import data from REDCap\nredcap_data &lt;- postForm(\n  uri = \"https://redcap.example.com/api/\",\n  token = Sys.getenv(\"REDCAP_TOKEN\"),\n  content = \"record\",\n  format = \"csv\"\n) %&gt;% \n  read_csv()\nData Quality Check:\n# Check missing data\nmissing_summary &lt;- data %&gt;%\n  summarise(across(everything(), \n    ~sum(is.na(.)) / length(.) * 100)) %&gt;%\n  pivot_longer(everything(), \n    names_to = \"variable\", \n    values_to = \"percent_missing\")\nMore code snippets available in individual blog posts."
+  },
+  {
+    "objectID": "blogs/index.html#guest-posts-welcome",
+    "href": "blogs/index.html#guest-posts-welcome",
+    "title": "Blog & Technical Notes",
+    "section": "Guest Posts Welcome",
+    "text": "Guest Posts Welcome\nI’m open to guest posts on topics related to: - Health data science - Clinical trials and research methods - R programming for health - Career development in biostatistics\nContact: nichodemuswerre@gmail.com"
+  },
+  {
+    "objectID": "blogs/index.html#stay-updated",
+    "href": "blogs/index.html#stay-updated",
+    "title": "Blog & Technical Notes",
+    "section": "Stay Updated",
+    "text": "Stay Updated\n\nGet Notified of New Posts\nFollow me on social media for updates when new blog posts are published:\nTwitter: @nwerre\nLinkedIn: Nichodemus Amollo\nGitHub: gondamol\nBlog posts are published monthly covering practical topics in health data science."
+  },
+  {
+    "objectID": "blogs/index.html#popular-resources",
+    "href": "blogs/index.html#popular-resources",
+    "title": "Blog & Technical Notes",
+    "section": "Popular Resources",
+    "text": "Popular Resources\n\nMy GitHub Repositories - Open-source code and tools\nTidy Tuesday Analyses - Weekly data visualization practice\nR Package Documentation - Tools I’m developing\n\n\nBack to Home → | View Projects →"
+  },
+  {
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "Projects Portfolio",
+    "section": "",
+    "text": "Showcasing 7+ years of impactful work in health data analytics, data management, and digital health solutions"
+  },
+  {
+    "objectID": "projects/index.html#project-categories",
+    "href": "projects/index.html#project-categories",
+    "title": "Projects Portfolio",
+    "section": "Project Categories",
+    "text": "Project Categories\n\n\n🏥 Health Data Analytics\nReal-world analytics projects driving health improvements: - NCD management dashboards - COVID-19 vaccination analysis - Maternal mortality prediction - TB contact tracing networks - Mental health service utilization\nImpact: 100K+ patients, 50+ facilities\n\n\n🗄️ Data Management\nRobust data systems for clinical trials and research: - Multi-site HIV treatment trials - Malaria vaccine efficacy studies - Longitudinal NCD cohorts - Disease surveillance platforms - Health information exchange\nImpact: 500K+ records, 99.5% data quality\n\n\n📋 Survey Tools\nElectronic data capture system design and implementation: - National health facility assessments - Clinical trial databases (REDCap) - Community health worker apps - Emergency humanitarian assessments - Patient-reported outcomes systems\nImpact: 100+ surveys, 50K+ respondents\n\n\n📊 Dashboards\nInteractive visualizations for real-time decision making: - Facility performance monitoring - Disease surveillance systems - Clinical trial management - NCD patient tracking - Financial intelligence dashboards\nImpact: 500+ daily users, 70% time savings"
+  },
+  {
+    "objectID": "projects/index.html#featured-projects",
+    "href": "projects/index.html#featured-projects",
+    "title": "Projects Portfolio",
+    "section": "Featured Projects",
+    "text": "Featured Projects\n\n1. MSc Thesis: NCD Financing in Primary Health Facilities\n\n\n🎓 Exploring Financial Determinants of Effective Hypertension and Diabetes Management\nStatus: Data Analysis Phase | Expected: 2025 | Social Media Ready: ✅\n\n\nGroundbreaking research examining health facility financing and NCD management outcomes in Kisumu County, Kenya.\nKey Components: - 30+ health facilities assessed - 500+ patients tracked - Interactive dashboard for real-time monitoring - Cost-effectiveness analysis - Policy recommendations\nTechnologies: R, Shiny, REDCap, SurveyCTO, PostgreSQL, Quarto\nSocial Media Highlight: &gt; “My MSc thesis examines how health facility financing affects diabetes and hypertension outcomes in Kenya. Interactive dashboards + rigorous analysis = evidence for better NCD care. #GlobalHealth #NCDs #HealthFinancing”\nView Full Project →\n\n\n\n\n\n2. Multi-Country HIV Treatment Trial\n\n\n🔬 Senior Data Manager for Phase III Clinical Trial\nDuration: 2019-2023 | Participants: 1,200+ | Sites: 12\n\n\nLed data management for a major HIV treatment trial across 4 African countries.\nAchievements: - 99.7% data completeness - Zero critical audit findings - 500,000+ data points managed - Query resolution: 3.2 days average\nTechnologies: REDCap, R, SQL, Python\nView Details →\n\n\n\n\n\n3. National Health Facility Assessment\n\n\n📱 Large-Scale Mobile Data Collection\nScale: 500+ facilities | Team: 50 enumerators\n\n\nDesigned and implemented comprehensive facility assessment using mobile data collection.\nAchievements: - 500+ facilities assessed in 6 months - 98.7% data completeness - 96.3% quality on resurveys - Real-time quality monitoring\nTechnologies: SurveyCTO, R, Tableau\nView Details →\n\n\n\n\n\n4. COVID-19 Vaccination Equity Analysis\n\n\n🗺️ Geospatial Analysis for Public Health\nImpact: Policy recommendations adopted | Coverage: County-wide\n\n\nIdentified vaccination coverage gaps using geospatial analysis and demographic data.\nImpact: - 12 underserved areas identified - 5 new vaccination sites strategically placed - 35% coverage increase in rural areas\nTechnologies: R (sf, leaflet), QGIS, Tableau\nView Details →"
+  },
+  {
+    "objectID": "projects/index.html#project-impact-summary",
+    "href": "projects/index.html#project-impact-summary",
+    "title": "Projects Portfolio",
+    "section": "Project Impact Summary",
+    "text": "Project Impact Summary\n\n\n50+{.stat-number} Projects Completed{.stat-label}\n\n\n100K+{.stat-number} Patients Impacted{.stat-label}\n\n\n500K+{.stat-number} Records Managed{.stat-label}\n\n\n100+{.stat-number} Facilities Served{.stat-label}\n\n\n\n\n99.5%{.stat-number} Average Data Quality{.stat-label}\n\n\nKES 20M+{.stat-number} Cost Savings Identified{.stat-label}\n\n\n15+{.stat-number} Policy Changes{.stat-label}\n\n\n500+{.stat-number} People Trained{.stat-label}"
+  },
+  {
+    "objectID": "projects/index.html#technical-capabilities-demonstrated",
+    "href": "projects/index.html#technical-capabilities-demonstrated",
+    "title": "Projects Portfolio",
+    "section": "Technical Capabilities Demonstrated",
+    "text": "Technical Capabilities Demonstrated\n\nProgramming & Analysis\n\nR: Advanced data analysis, Shiny dashboards, package development\nPython: Machine learning, automation, API development\nSQL: Database design, complex queries, optimization\nStata: Statistical modeling, survey analysis\n\n\n\nData Collection Platforms\n\nREDCap: 50+ databases designed for clinical trials\nSurveyCTO: 30+ field surveys implemented\nKoboCollect: 20+ humanitarian assessments\nCommCare: 5+ CHW programs\n\n\n\nVisualization Tools\n\nR Shiny: 15+ production dashboards\nTableau: Business intelligence dashboards\nggplot2/plotly: Publication-quality graphics\nLeaflet/QGIS: Geospatial visualizations"
+  },
+  {
+    "objectID": "projects/index.html#why-these-projects-matter",
+    "href": "projects/index.html#why-these-projects-matter",
+    "title": "Projects Portfolio",
+    "section": "Why These Projects Matter",
+    "text": "Why These Projects Matter\n\n🎯 Real-World Impact\nEvery project in this portfolio has:\n✅ Measurable Impact - Improved health outcomes, cost savings, or efficiency gains\n✅ Scalable Solutions - Designed for replication in other settings\n✅ Rigorous Methods - Evidence-based approaches and best practices\n✅ Stakeholder Value - Actionable insights for decision-makers\n✅ Knowledge Sharing - Documentation and training materials\n✅ Social Media Ready - Stories worth sharing to inspire others"
+  },
+  {
+    "objectID": "projects/index.html#open-science-commitment",
+    "href": "projects/index.html#open-science-commitment",
+    "title": "Projects Portfolio",
+    "section": "Open Science Commitment",
+    "text": "Open Science Commitment\nI believe in open, reproducible, and transparent research. Where possible, projects include:\n\n📖 Open Code - GitHub repositories with documented code\n📊 Open Data - Anonymized datasets in public repositories\n📝 Open Methods - Detailed methodology documentation\n🎓 Open Education - Training materials freely available"
+  },
+  {
+    "objectID": "projects/index.html#sector-experience",
+    "href": "projects/index.html#sector-experience",
+    "title": "Projects Portfolio",
+    "section": "Sector Experience",
+    "text": "Sector Experience\n\n\n🏥 Health Focus Areas\n\nHIV/AIDS\nTuberculosis\nMalaria\nNon-communicable diseases\nMaternal & child health\nMental health\nCOVID-19 response\n\n\n\n📋 Study Types\n\nClinical trials (Phases I-IV)\nCohort studies\nCross-sectional surveys\nHealth facility assessments\nProgram evaluation\nSurveillance systems\n\n\n\n🌍 Geographic Experience\n\nKenya (primary)\nUganda\nTanzania\nRwanda\nMulti-country projects\n\n\n\n🤝 Collaborations\n\nAcademic institutions\nGovernment health departments\nInternational NGOs\nResearch networks\nPrivate sector partners"
+  },
+  {
+    "objectID": "projects/index.html#testimonials",
+    "href": "projects/index.html#testimonials",
+    "title": "Projects Portfolio",
+    "section": "Testimonials",
+    "text": "Testimonials\n\n\n“Nichodemus’s data management was exemplary. His attention to detail and proactive approach to quality control were key to our trial’s success. Zero critical audit findings across 24 monitoring visits speaks volumes.”\n\n— Principal Investigator, Phase III Clinical Trial\n\n“The dashboard Nichodemus developed transformed how we monitor facility performance. What used to take 2 weeks now takes 5 minutes, and the insights are actionable immediately.”\n\n— County Health Management Team\n\n“His ability to design user-friendly survey tools that work in challenging field conditions is unmatched. The SurveyCTO system he built for our assessment was flawless.”\n\n— Project Director, Health Facility Assessment"
+  },
+  {
+    "objectID": "projects/index.html#available-for-new-projects",
+    "href": "projects/index.html#available-for-new-projects",
+    "title": "Projects Portfolio",
+    "section": "Available for New Projects",
+    "text": "Available for New Projects\nI’m currently accepting consulting and contract opportunities in:\n✅ Health data analytics and visualization\n✅ Clinical trial data management\n✅ Survey design and implementation (REDCap, SurveyCTO)\n✅ Dashboard development (R Shiny, Tableau)\n✅ Data management system setup\n✅ Training and capacity building\nRemote work: Proven track record of successful remote collaboration\n\n\n💼 Let’s Collaborate!\nWhether you need a senior data manager for a clinical trial, expertise in survey design, or advanced analytics capabilities, I’m ready to contribute to your team’s success.\nContact Me Download CV View Skills"
+  },
+  {
+    "objectID": "projects/index.html#legacy-projects",
+    "href": "projects/index.html#legacy-projects",
+    "title": "Projects Portfolio",
+    "section": "Legacy Projects",
+    "text": "Legacy Projects\nView additional projects and analyses:\n\nTidy Tuesday Analyses - Weekly data visualization challenges\nBlog Posts - Technical tutorials and insights\nGitHub Repositories - Open-source code and tools\n\n\nBack to Home →"
+  },
+  {
+    "objectID": "projects/data-management.html",
+    "href": "projects/data-management.html",
+    "title": "Data Management Projects",
+    "section": "",
+    "text": "Building secure, scalable, and compliant data management systems"
+  },
+  {
+    "objectID": "projects/data-management.html#clinical-trial-data-management",
+    "href": "projects/data-management.html#clinical-trial-data-management",
+    "title": "Data Management Projects",
+    "section": "Clinical Trial Data Management",
+    "text": "Clinical Trial Data Management\n\n1. Multi-Site HIV Treatment Trial (ACTG 5000 Series)\n\n\n🔬 Phase III Randomized Controlled Trial\nDuration: 2019-2023 | Status: Completed | Participants: 1,200+\n\n\nProject Scope: - Sites: 12 clinical sites across 4 African countries - Duration: 48-month follow-up per participant - Data Points: 500,000+ individual records - Regulatory: FDA, WHO-GCP compliant\nResponsibilities: - Designed and implemented REDCap database with 80+ data collection forms - Developed automated data quality control system - Managed data collection teams across 12 sites - Conducted monthly data quality audits - Prepared datasets for statistical analysis - Managed regulatory documentation (Data Management Plan, database specifications)\nTechnical Implementation: - Platform: REDCap with custom API integration - Database Structure: Longitudinal design with 15 repeating instruments - Quality Control: 120+ automated validation rules - Security: HIPAA-compliant with role-based access control - Integration: Laboratory data import from 3 different LIMS systems\nData Quality Metrics: - ✅ 99.7% data completeness achieved - ✅ Query resolution time: Average 3.2 days (target: 5 days) - ✅ Protocol deviations: &lt;1% related to data collection - ✅ Audit findings: Zero critical, 2 minor observations - ✅ No data security breaches\nInnovations: - Custom REDCap external module for adverse event grading - Real-time data quality dashboard for site coordinators - Automated weekly progress reports - Mobile-friendly forms for bedside data entry\nTechnologies: REDCap, R, SQL, Python, Git\nSocial Media Highlight: &gt; “Data quality matters in clinical trials! Managed 500K+ data points across 12 African sites with 99.7% completeness. Zero critical audit findings. This is what rigorous data management looks like! #ClinicalTrials #DataManagement #GlobalHealth”\nView Data Management Plan → | Quality Metrics Dashboard →\n\n\n\n\n\n2. Malaria Vaccine Efficacy Study\n\n\n💉 Phase II Vaccine Trial with Complex Immunology Data\nDuration: 2020-2024 | Status: Ongoing | Participants: 800+\n\n\nProject Scope: - Vaccine efficacy assessment in children aged 6-24 months - Complex laboratory data (immunology, parasitology) - Pharmacokinetics sampling - Safety monitoring with expedited reporting\nData Management Challenges: - Multiple laboratory platforms with different data formats - Real-time safety monitoring requirements - Complex visit schedules with flexible windows - Integration with national immunization registry\nSolutions Implemented: - Centralized Data Warehouse: PostgreSQL database integrating: - Clinical data (REDCap) - Laboratory results (3 different LIMS) - Adverse events (custom safety database) - Pharmacy dispensing records\n\nAutomated Data Pipelines:\n\nNightly ETL processes importing lab results\nReal-time safety event notifications\nAutomated eligibility checks for visit windows\n\nQuality Assurance:\n\n200+ validation rules across systems\nDaily data quality reports\nException-based monitoring system\n\n\nImpact: - ✅ 800+ participants enrolled and tracked - ✅ 15,000+ lab samples processed and matched - ✅ Real-time safety reporting (required within 24 hours) - 100% compliance - ✅ Data monitoring committee praised data quality as “exemplary”\nTechnologies: REDCap, PostgreSQL, R Shiny, Python, Docker\nSocial Media Highlight: &gt; “Managing complex vaccine trial data across multiple systems! Integrated clinical data, lab results from 3 LIMS, and safety monitoring into one seamless system. Real-time alerts + automated QC = 100% safety reporting compliance. #VaccineDevelopment #DataScience”\nTechnical Documentation →"
+  },
+  {
+    "objectID": "projects/data-management.html#cohort-study-data-systems",
+    "href": "projects/data-management.html#cohort-study-data-systems",
+    "title": "Data Management Projects",
+    "section": "Cohort Study Data Systems",
+    "text": "Cohort Study Data Systems\n\n3. Longitudinal NCD Cohort Database\n\n\n🏥 20-Year Prospective Cohort Study\nLaunch: 2018 | Status: Active | Participants: 5,000+\n\n\nStudy Overview: - Long-term follow-up of patients with hypertension, diabetes, and CVD - Quarterly clinic visits with annual comprehensive assessments - Biobank integration (plasma, DNA samples) - Linkage with vital registration systems\nDatabase Architecture: - Front-End: REDCap for data collection - Back-End: PostgreSQL for long-term data storage - Analytics Layer: R Shiny dashboards - Biospecimen Tracking: Custom sample management system\nKey Features: - Flexible visit scheduling with automated reminders - Integration with facility EMR systems - Automated loss-to-follow-up flagging - Linkage with national death registry - Biobank sample inventory management\nData Management Processes: - Enrollment: Electronic informed consent with audit trail - Data Collection: Tablet-based entry at point of care - Quality Control: Weekly automated checks + monthly audits - Data Sharing: Controlled access system for researchers - Biospecimen Management: Barcode tracking with freeze/thaw cycles\nAchievements: - ✅ 5,000+ participants enrolled (target: 5,500) - ✅ Retention rate: 87% at 5 years - ✅ 60,000+ clinic visits documented - ✅ 25,000+ biospecimens properly tracked - ✅ 12 ancillary studies using cohort data\nTechnologies: REDCap, PostgreSQL, R, Python, Git, REDCap API\nSocial Media Highlight: &gt; “Building data systems that stand the test of time! Managing a 20-year NCD cohort with 5K+ participants, 60K+ visits, and 25K+ biospecimens. 87% retention at 5 years thanks to robust data systems and automated follow-up. #EpidemiologyLife #CohortStudy”\nSystem Architecture → | Data Dictionary →"
+  },
+  {
+    "objectID": "projects/data-management.html#surveillance-systems",
+    "href": "projects/data-management.html#surveillance-systems",
+    "title": "Data Management Projects",
+    "section": "Surveillance Systems",
+    "text": "Surveillance Systems\n\n4. Disease Surveillance Platform\n\n\n📊 Real-Time Disease Reporting System\nImplementation: 2021 | Status: Production | Coverage: 100+ facilities\n\n\nSystem Overview: - Real-time reporting of notifiable diseases - Automated outbreak detection algorithms - Geographic information system integration - Mobile reporting for rural facilities\nTechnical Components:\n1. Data Collection Layer: - Mobile app (offline capability) for facility reporting - Web portal for centralized data entry - SMS-based reporting for resource-limited settings - API integration with existing HMIS\n2. Data Processing Layer: - Automated data validation and standardization - Duplicate detection and resolution - Geographic coding and validation - Case classification algorithms\n3. Analytics & Alerting: - Statistical outbreak detection (CUSUM, EWMA) - Geographic clustering analysis - Automated email/SMS alerts for thresholds - Weekly epidemiological bulletins\n4. Visualization Layer: - Public-facing dashboard (non-sensitive data) - Internal detailed analytics platform - Mobile-friendly reports - Automated PDF report generation\nSystem Performance: - ✅ 100+ facilities actively reporting - ✅ Average reporting time: 2.3 days (down from 14 days) - ✅ 15 disease outbreaks detected early in Year 1 - ✅ System uptime: 99.8% - ✅ 50,000+ case reports processed\nImpact: - Early detection of cholera outbreak (3 days earlier than traditional system) - Reduced measles outbreak duration by 40% - Improved data completeness from 65% to 94%\nTechnologies: PostgreSQL, R Shiny, Leaflet, ODK, REST API, Ubuntu Server\nSocial Media Highlight: &gt; “Data systems saving lives! Our real-time disease surveillance platform reduced outbreak detection time from 14 days to 2.3 days. Early cholera detection + rapid response = lives saved. This is #DigitalHealth done right! #PublicHealth #DataForGood”\nLive Dashboard → | Technical Specs →"
+  },
+  {
+    "objectID": "projects/data-management.html#data-integration-projects",
+    "href": "projects/data-management.html#data-integration-projects",
+    "title": "Data Management Projects",
+    "section": "Data Integration Projects",
+    "text": "Data Integration Projects\n\n5. Health Information Exchange (HIE) Implementation\n\n\n🔄 Connecting Disparate Health Systems\nDuration: 2022-2024 | Status: Pilot Phase | Facilities: 15\n\n\nChallenge: - 15 health facilities using 4 different EMR systems - No patient data sharing between facilities - Duplicate tests and treatments - Fragmented patient histories\nSolution: - Implemented Health Information Exchange (HIE) based on FHIR standards - Master Patient Index (MPI) for unique patient identification - Standardized data exchange protocols - Consent management system\nArchitecture:\n┌─────────────────────────────────────────┐\n│         Health Facilities               │\n│  EMR1  │  EMR2  │  EMR3  │  EMR4       │\n└────┬─────────┬─────────┬─────────┬──────┘\n     │         │         │         │\n     │  ┌──────▼─────────▼─────────▼──┐\n     │  │    FHIR API Adapters         │\n     │  └──────┬─────────────────────┬─┘\n     │         │                     │\n     │  ┌──────▼────────────────────┐│\n     │  │  Central HIE Platform      ││\n     │  │  - Master Patient Index    ││\n     │  │  - Consent Management      ││\n     │  │  - Data Repository         ││\n     │  └────────────────────────────┘│\n     │                                 │\n     └─────────────────────────────────┘\nImplementation Details: - Standards: HL7 FHIR R4, IHE profiles - Patient Matching: Probabilistic matching algorithm (95% accuracy) - Security: OAuth 2.0, TLS 1.3, encrypted data at rest - Interoperability: RESTful APIs for all interactions\nPilot Results: - ✅ 15 facilities connected - ✅ 10,000+ patients with linked records - ✅ 25% reduction in duplicate lab tests - ✅ Clinicians access patient history in 3 seconds (vs. 30 minutes phone calls) - ✅ Estimated cost savings: KES 2M annually\nTechnologies: HAPI FHIR, PostgreSQL, Spring Boot, React, Docker, Kubernetes\nSocial Media Highlight: &gt; “Connecting fragmented health data! Our HIE pilot linked 15 facilities, enabling instant patient history access. Result? 25% fewer duplicate tests and happier patients. Interoperability isn’t a buzzword—it’s a game-changer! #HealthIT #Interoperability #FHIR”\nTechnical Architecture →"
+  },
+  {
+    "objectID": "projects/data-management.html#data-quality-frameworks",
+    "href": "projects/data-management.html#data-quality-frameworks",
+    "title": "Data Management Projects",
+    "section": "Data Quality Frameworks",
+    "text": "Data Quality Frameworks\n\n6. Automated Data Quality Monitoring System\n\n\n✅ Proactive Data Quality Management\nDeveloped: 2020 | Status: Used in 10+ projects\n\n\nProblem: - Manual data quality checks time-consuming and error-prone - Quality issues discovered late in project lifecycle - Inconsistent quality standards across projects\nSolution: - Developed comprehensive automated DQ monitoring framework - Implemented in R as reusable package - Integrated with REDCap, CSV imports, and SQL databases\nFramework Components:\n1. Data Quality Dimensions: - Completeness: Missing data detection - Validity: Range and format checks - Consistency: Cross-field validation - Timeliness: Data entry delays - Accuracy: Logical inconsistencies - Uniqueness: Duplicate detection\n2. Automated Checks:\n# Example DQ checks\ndq_framework &lt;- DataQualityChecker$new(data)\n\n# Completeness checks\ndq_framework$check_completeness(\n  required_vars = c(\"patient_id\", \"visit_date\", \"outcome\"),\n  threshold = 0.95  # 95% completeness required\n)\n\n# Validity checks\ndq_framework$check_ranges(\n  age = c(18, 100),\n  bp_systolic = c(80, 220),\n  bp_diastolic = c(40, 130)\n)\n\n# Consistency checks\ndq_framework$check_consistency(\n  rules = list(\n    \"death_date &gt;= enrollment_date\",\n    \"if outcome == 'pregnant' then sex == 'Female'\",\n    \"if hiv_positive then hiv_test_date exists\"\n  )\n)\n\n# Generate report\ndq_framework$generate_report(output = \"html\")\n3. Reporting: - Automated daily/weekly reports - Traffic light system (red/yellow/green) - Drill-down capabilities to problem records - Trend analysis over time\nImpact Across Projects: - ✅ DQ issues detected 70% earlier in project lifecycle - ✅ Data cleaning time reduced by 50% - ✅ Standardized quality metrics across organization - ✅ Used in 10+ studies managing 200,000+ records\nTechnologies: R (tidyverse, assertr, validate), R Markdown, Git\nSocial Media Highlight: &gt; “Prevention &gt; Correction in data management! Our automated DQ framework detects issues 70% earlier and cuts cleaning time in half. Now deployed across 10+ studies. Open-source release coming soon! #DataQuality #OpenScience #RStats”\nGitHub Repository → | Documentation →"
+  },
+  {
+    "objectID": "projects/data-management.html#best-practices-sops",
+    "href": "projects/data-management.html#best-practices-sops",
+    "title": "Data Management Projects",
+    "section": "Best Practices & SOPs",
+    "text": "Best Practices & SOPs\n\nStandard Operating Procedures Developed\n\n\n📋 Data Management\n\nData Management Plan template\nDatabase design specifications\nData dictionary standards\nQuery management procedures\n\n\n\n🔒 Security & Compliance\n\nData security SOPs\nHIPAA compliance checklist\nGCP compliance procedures\nAudit readiness guide\n\n\n\n✅ Quality Control\n\nData validation plan template\nMonitoring visit procedures\nQuality control sampling\nCorrective action procedures\n\n\n\n📊 Reporting\n\nAnalysis dataset creation\nData transfer specifications\nArchive and retention policies\nEnd-of-study procedures"
+  },
+  {
+    "objectID": "projects/data-management.html#training-capacity-building",
+    "href": "projects/data-management.html#training-capacity-building",
+    "title": "Data Management Projects",
+    "section": "Training & Capacity Building",
+    "text": "Training & Capacity Building\n\nData Management Training Programs Delivered\n\n“Clinical Trial Data Management Fundamentals” (3-day workshop)\n\n150+ participants trained across 5 cohorts\nCovers REDCap, GCP, data quality\n\n“REDCap for Research” (2-day hands-on)\n\n200+ researchers trained\nDatabase design, quality control, reporting\n\n“Data Quality in Health Research” (1-day seminar)\n\n100+ participants\nQuality frameworks, automated checks"
+  },
+  {
+    "objectID": "projects/data-management.html#impact-summary",
+    "href": "projects/data-management.html#impact-summary",
+    "title": "Data Management Projects",
+    "section": "Impact Summary",
+    "text": "Impact Summary\n\n\n20+{.stat-number} Studies Managed{.stat-label}\n\n\n500K+{.stat-number} Records Processed{.stat-label}\n\n\n99.5%{.stat-number} Avg Data Quality{.stat-label}\n\n\n0{.stat-number} Critical Audit Findings{.stat-label}\n\n\n\n\n📞 Need Data Management Expertise?\nI provide consulting services for: - Clinical trial data management setup - REDCap database design and implementation - Data quality framework development - Team training and capacity building - Regulatory compliance (GCP, HIPAA)\nContact Me View CV\n\n\n← Health Analytics | All Projects | Survey Tools →"
+  },
+  {
+    "objectID": "projects/dashboards.html",
+    "href": "projects/dashboards.html",
+    "title": "Dashboards & Visualizations",
+    "section": "",
+    "text": "Turning complex data into intuitive, actionable visualizations"
+  },
+  {
+    "objectID": "projects/dashboards.html#featured-dashboards",
+    "href": "projects/dashboards.html#featured-dashboards",
+    "title": "Dashboards & Visualizations",
+    "section": "Featured Dashboards",
+    "text": "Featured Dashboards\n\n1. Health Facility Performance Dashboard\n\n\n🏥 Real-Time Facility Monitoring System\nPlatform: R Shiny | Users: 100+ facility managers | Status: Production\n\n\nOverview: Comprehensive dashboard for monitoring health facility performance across 30+ indicators in real-time.\nKey Features:\n1. KPI Overview: - Patient volumes and trends - Service availability - Staff attendance rates - Stock status (medications, supplies) - Financial performance\n2. Clinical Outcomes: - Disease-specific outcomes (HIV, TB, NCD) - Patient satisfaction scores - Treatment success rates - Complication rates - Referral tracking\n3. Operational Metrics: - Average wait times - Bed occupancy rates - Equipment functionality - Supply chain indicators - Human resource utilization\n4. Comparative Analytics: - Peer facility benchmarking - Historical trend analysis - Geographic comparisons - Performance rankings\nInteractive Elements: - Date range selection - Facility filtering - Drill-down capabilities - Export functionality (PDF, Excel) - Automated email reports\nTechnologies: R Shiny, ggplot2, plotly, DT, shinydashboard, PostgreSQL\nImpact: - ✅ 30+ facilities using daily - ✅ Average decision-to-action time reduced from 2 weeks to 2 days - ✅ Identified $500K in cost savings opportunities - ✅ Early warning system prevented 3 stock-outs\nSocial Media Highlight: &gt; “Data-driven facility management! Our real-time dashboard helps 30+ facilities track 30+ KPIs instantly. Result? Decision time down from 2 weeks to 2 days, $500K in savings identified. This is #HealthTech impact! #Dashboards #HealthManagement”\nView Demo → | User Guide → | Code on GitHub →\n\n\n\n\n\n2. Disease Surveillance Dashboard\n\n\n🦠 Epidemic Intelligence System\nPlatform: R Shiny | Coverage: 100+ facilities | Status: Production\n\n\nPurpose: Real-time disease surveillance and outbreak detection system for public health teams.\nDashboard Sections:\n1. Geographic Overview: - Interactive map with case counts - Cluster detection visualization - Hot spot analysis - Facility reporting status\n2. Time Series Analysis: - Disease trends over time - Seasonal patterns - Comparison with historical baselines - Outbreak threshold indicators\n3. Outbreak Detection: - CUSUM charts for anomaly detection - EWMA control charts - Automated alert system - Risk scoring algorithm\n4. Case Investigation: - Individual case details - Contact tracing network visualization - Laboratory confirmation status - Follow-up tracking\n5. Response Tracking: - Investigation timelines - Intervention coverage - Resource deployment - Outcome monitoring\nAdvanced Analytics: - Predictive modeling for outbreak spread - Resource allocation optimization - Impact assessment tools - Automated weekly bulletins\nAlert System: - Email/SMS notifications for threshold breaches - Escalation protocols - Daily summary reports - Custom alerts for stakeholders\nTechnologies: R Shiny, leaflet, igraph, forecast, PostgreSQL, SendGrid API\nImpact: - ✅ 15 outbreaks detected early (average 3 days earlier) - ✅ 100+ facilities actively reporting - ✅ Reduced outbreak duration by 35% - ✅ Adopted as standard tool by County Health Teams\nSocial Media Highlight: &gt; “Early warning systems save lives! Our disease surveillance dashboard detected 15 outbreaks 3 days earlier than traditional methods, reducing outbreak duration by 35%. Real-time data + automated alerts = rapid response. #PublicHealth #Epidemiology”\nLive Dashboard → | Technical Documentation →\n\n\n\n\n\n3. Clinical Trial Monitoring Dashboard\n\n\n📈 Multi-Site Trial Management System\nPlatform: R Shiny + Tableau | Sites: 12 | Status: Production\n\n\nPurpose: Comprehensive monitoring dashboard for multi-site clinical trials with real-time data quality tracking.\nCore Modules:\n1. Enrollment Dashboard: - Enrollment vs. target tracking - Site-level enrollment rates - Screening funnel analysis - Enrollment projections - Timeline tracking\n2. Data Quality Metrics: - Completeness rates by form - Query rates and resolution times - Protocol deviation tracking - Missing data analysis - Audit preparation status\n3. Safety Monitoring: - Adverse event summary - SAE reporting timeline - Causality assessment tracking - Safety signal detection - DSMB report preparation\n4. Laboratory Monitoring: - Sample tracking (collected, processed, resulted) - Turnaround time analysis - Out-of-range results - Grade 3/4 lab abnormalities - Sample inventory\n5. Site Performance: - Recruitment rates - Data quality scores - Protocol compliance - Visit completion rates - Site ranking and benchmarking\n6. Study Progress: - Overall completion percentage - Milestone tracking - Budget utilization - Resource allocation - Timeline projections\nData Integration: - REDCap API for clinical data - Laboratory LIMS integration - Pharmacy system connection - Finance system linkage - Automated nightly updates\nUser Roles: - Investigators: High-level summaries - Site Coordinators: Site-specific detailed views - Data Managers: Quality metrics and queries - Monitors: Audit-ready reports - Sponsors: Executive summaries\nTechnologies: R Shiny, Tableau, REDCap API, PostgreSQL, flexdashboard\nImpact: - ✅ Real-time visibility for 12 sites across 4 countries - ✅ Enrollment on target (vs. 20% behind before dashboard) - ✅ Query resolution time reduced by 60% - ✅ Zero audit findings related to data quality\nSocial Media Highlight: &gt; “Clinical trial excellence through dashboards! Managing 12 sites across 4 countries with real-time data quality tracking. Query resolution down 60%, enrollment on target, zero audit findings. This is how you run global trials! #ClinicalTrials #DataScience”\nView Screenshots →\n\n\n\n\n\n4. NCD Patient Management Dashboard\n\n\n💊 Chronic Disease Care Coordination\nPlatform: R Shiny | Patients: 5,000+ | Status: Production\n\n\nPurpose: Support clinicians in managing large panels of patients with hypertension, diabetes, and other NCDs.\nClinician View:\n1. Patient Panel Overview: - Total patients by disease - Control status distribution - Upcoming appointments - Overdue patients - High-risk patient alerts\n2. Individual Patient Dashboard: - Longitudinal vital signs (BP, glucose, HbA1c) - Medication history and adherence - Lab results trends - Complication screening status - Visit history and notes\n3. Population Health: - Overall control rates - Treatment gaps - Risk stratification - Intervention effectiveness - Cost per controlled patient\n4. Care Coordination: - Referral tracking - Lab order management - Medication refill alerts - Patient communication log - Follow-up scheduling\nPatient Portal: - Personal health dashboard - Medication reminders - Appointment scheduling - Lab results viewing - Educational resources\nAdvanced Features: - Predictive risk scoring for complications - Treatment optimization recommendations - Population segmentation - Automated outreach campaigns - Performance feedback for clinicians\nClinical Decision Support: - Treatment guideline integration - Drug interaction checking - Dosing calculators - Screening reminders - Best practice alerts\nTechnologies: R Shiny, REDCap, PostgreSQL, sendmailR, plotly\nImpact: - ✅ 5,000+ patients tracked - ✅ BP control improved from 54% to 68% - ✅ Diabetes control (HbA1c &lt;7%) improved from 42% to 59% - ✅ Medication adherence up 23% - ✅ Lost-to-follow-up reduced by 40%\nSocial Media Highlight: &gt; “Digital tools transforming chronic disease care! Our patient management dashboard helped improve BP control from 54% to 68% in 5,000+ patients. Lost-to-follow-up down 40%. Technology + clinical excellence = better outcomes! #NCD #ChronicDisease #HealthIT”\nDemo Video → | Clinician Guide →\n\n\n\n\n\n5. Financial Performance Dashboard\n\n\n💰 Health Facility Financial Intelligence\nPlatform: Tableau + R | Facilities: 25 | Status: Production\n\n\nPurpose: Comprehensive financial monitoring and planning tool for health facility managers.\nDashboard Components:\n1. Revenue Analysis: - Revenue by source (government, insurance, out-of-pocket) - Service line profitability - Revenue trends and projections - Collection rates - Revenue cycle analytics\n2. Expenditure Tracking: - Budget vs. actual by category - Personnel costs - Medication and supply costs - Infrastructure and maintenance - Variance analysis\n3. Cost Centers: - Cost per service (outpatient visit, inpatient day, etc.) - Department-level P&L - Overhead allocation - Break-even analysis - Activity-based costing\n4. Cash Flow: - Cash position and trends - Accounts receivable aging - Accounts payable status - Liquidity ratios - Cash flow projections\n5. Budget Planning: - Historical spending patterns - Budget scenario modeling - Resource allocation optimization - Capital investment planning - ROI calculations\n6. Efficiency Metrics: - Cost per patient - Revenue per FTE - Bed occupancy rates - Equipment utilization - Productivity indicators\nIntegration: - Accounting system (QuickBooks) - HMIS for service volumes - HR system for personnel costs - Pharmacy system for drug costs - Automated monthly updates\nTechnologies: Tableau, R, SQL Server, Python for ETL\nImpact: - ✅ 25 facilities monitoring finances in real-time - ✅ Identified KES 8M in cost reduction opportunities - ✅ Budget variance reduced from ±25% to ±8% - ✅ Revenue collection improved by 15% - ✅ Informed strategic planning decisions\nSocial Media Highlight: &gt; “Financial intelligence for health facilities! Our dashboard helps 25 facilities monitor finances in real-time, identifying KES 8M in savings. Budget variance down from ±25% to ±8%. Good data = good decisions! #HealthFinance #HealthEconomics”\nView Sample Report →\n\n\n\n\n\n6. Research Publications Dashboard\n\n\n📚 Institutional Research Output Tracker\nPlatform: R Shiny | Users: Research administrators | Status: Production\n\n\nPurpose: Track research productivity, collaborations, and impact across an academic institution.\nFeatures:\n1. Publication Metrics: - Publications by year, type, journal - Author affiliations and collaborations - Impact factors and citations - h-index and other bibliometrics - Open access status\n2. Funding Analysis: - Grants by funder, PI, department - Success rates - Funding trends - ROI (publications per dollar) - Portfolio diversity\n3. Collaboration Networks: - Co-authorship network visualization - Internal vs. external collaborations - International collaboration patterns - Emerging partnerships\n4. Research Areas: - Topic modeling and trends - Department focus areas - Strategic alignment - Gap analysis - Growth areas\n5. Student Research: - Theses and dissertations - Student co-authorships - Graduation rates - Post-graduation tracking\nData Sources: - PubMed API - Scopus API - Web of Science - Google Scholar - Manual entry for grey literature\nTechnologies: R Shiny, bibliometrix, igraph, Dimensions API, tidyverse\nImpact: - ✅ 500+ publications tracked - ✅ Identified 25 high-impact collaboration opportunities - ✅ Informed strategic research priorities - ✅ Supported grant applications with productivity data\nSocial Media Highlight: &gt; “Research intelligence dashboard tracking 500+ publications, mapping collaboration networks, and informing strategic priorities. Data-driven research management for maximum impact! #AcademicTwitter #ResearchMetrics #Bibliometrics”\nExplore Demo →"
+  },
+  {
+    "objectID": "projects/dashboards.html#dashboard-design-principles",
+    "href": "projects/dashboards.html#dashboard-design-principles",
+    "title": "Dashboards & Visualizations",
+    "section": "Dashboard Design Principles",
+    "text": "Dashboard Design Principles\n\nMy Approach to Effective Dashboards\n\n\n🎯 User-Centered Design\n\nUnderstand user needs first\nProgressive disclosure\nMobile-responsive\nAccessible (WCAG 2.1)\nConsistent visual language\n\n\n\n📊 Data Visualization\n\nChoose appropriate chart types\nEffective use of color\nClear labels and legends\nAvoid chartjunk\nTell a story with data\n\n\n\n⚡ Performance\n\nOptimize queries\nCache where appropriate\nLazy loading\nResponsive design\nFast load times (&lt;3s)\n\n\n\n🔒 Security\n\nRole-based access control\nAudit trails\nData encryption\nHIPAA/GDPR compliance\nSecure authentication"
+  },
+  {
+    "objectID": "projects/dashboards.html#technologies-tools",
+    "href": "projects/dashboards.html#technologies-tools",
+    "title": "Dashboards & Visualizations",
+    "section": "Technologies & Tools",
+    "text": "Technologies & Tools\n\nVisualization Platforms\n\n\nR Shiny (Primary platform) - Strengths: Full R integration, customizable, free/open-source - Best for: Health research, statistical dashboards - My rating: ⭐⭐⭐⭐⭐\nTableau - Strengths: User-friendly, beautiful defaults, business intelligence - Best for: Executive dashboards, non-technical users - My rating: ⭐⭐⭐⭐\nPower BI - Strengths: Microsoft ecosystem integration, cost-effective - Best for: Corporate environments, Office 365 users - My rating: ⭐⭐⭐⭐\nPlotly Dash (Python) - Strengths: Python integration, web-ready - Best for: Machine learning model deployment - My rating: ⭐⭐⭐⭐"
+  },
+  {
+    "objectID": "projects/dashboards.html#dashboard-gallery",
+    "href": "projects/dashboards.html#dashboard-gallery",
+    "title": "Dashboards & Visualizations",
+    "section": "Dashboard Gallery",
+    "text": "Dashboard Gallery\n\nBefore & After Transformations\n\nCase Study: From Static Reports to Interactive Dashboard\nBefore: - Monthly Excel reports (100+ pages) - 2 weeks to produce - Limited interactivity - Difficult to spot trends\nAfter: - Real-time interactive dashboard - Updates automatically - Drill-down capabilities - Actionable insights immediately visible\nResult: 90% reduction in reporting time, 3x faster decision-making"
+  },
+  {
+    "objectID": "projects/dashboards.html#impact-across-all-dashboards",
+    "href": "projects/dashboards.html#impact-across-all-dashboards",
+    "title": "Dashboards & Visualizations",
+    "section": "Impact Across All Dashboards",
+    "text": "Impact Across All Dashboards\n\n\n15+{.stat-number} Dashboards Built{.stat-label}\n\n\n500+{.stat-number} Daily Active Users{.stat-label}\n\n\n70%{.stat-number} Time Savings{.stat-label}\n\n\nKES 10M+{.stat-number} Value Identified{.stat-label}"
+  },
+  {
+    "objectID": "projects/dashboards.html#dashboard-services-offered",
+    "href": "projects/dashboards.html#dashboard-services-offered",
+    "title": "Dashboards & Visualizations",
+    "section": "Dashboard Services Offered",
+    "text": "Dashboard Services Offered\n\n\n🎨 Design & Development\n\nRequirements gathering\nUX/UI design\nDashboard development\nUser testing\nDeployment\n\n\n\n🔧 Technical Implementation\n\nDatabase optimization\nAPI integration\nPerformance tuning\nSecurity implementation\nDocumentation\n\n\n\n📚 Training & Support\n\nUser training\nAdmin training\nDocumentation\nOngoing support\nEnhancement requests\n\n\n\n🚀 Ongoing Maintenance\n\nBug fixes\nPerformance monitoring\nFeature enhancements\nSecurity updates\nUser support\n\n\n\n\n\n📊 Need a Custom Dashboard?\nI design and build interactive dashboards for: - Health facility performance monitoring - Clinical trial oversight - Disease surveillance - Financial management - Research productivity\nTypical Project Timeline: 4-8 weeks from requirements to deployment\nSchedule Consultation View Portfolio\n\n\n← Survey Tools | All Projects | Home →"
+  },
+  {
+    "objectID": "skills/index.html",
+    "href": "skills/index.html",
+    "title": "Skills & Expertise",
+    "section": "",
+    "text": "Comprehensive expertise across the data lifecycle from collection to insights"
+  },
+  {
+    "objectID": "skills/index.html#technical-skills-matrix",
+    "href": "skills/index.html#technical-skills-matrix",
+    "title": "Skills & Expertise",
+    "section": "Technical Skills Matrix",
+    "text": "Technical Skills Matrix\n\n\n💻 Programming & Statistical Software\nExpert Level (8+ years) - R: tidyverse, ggplot2, shiny, rmarkdown, data.table - SQL: PostgreSQL, MySQL, SQLite - Statistical modeling and machine learning\nAdvanced Level (5-7 years) - Python: pandas, numpy, scikit-learn, matplotlib - Stata: Data management, advanced statistics - Git/GitHub: Version control and collaboration\nProficient Level (3-5 years) - SPSS: Survey analysis, basic statistics - SAS: Clinical trial analysis - Bash scripting: Automation\n\n\n📋 Survey & Data Collection Tools\nElectronic Data Capture (EDC) - REDCap: Database design, API integration, quality control - SurveyCTO: Mobile data collection, offline functionality - KoboCollect: Humanitarian data collection - CommCare: Community health worker tools - OpenDataKit (ODK): Form design\nSurvey Design & Implementation - Questionnaire design and validation - Logic and skip patterns - Real-time quality monitoring - Training and supervision\n\n\n🗄️ Data Management & Systems\nDatabase Management - PostgreSQL: Database design and administration - MySQL: Web application databases - SQLite: Embedded databases - REDCap: Clinical trial databases\nData Processing - ETL pipeline development - Data cleaning and validation - Data quality assurance frameworks - Data integration across systems - Master data management\n\n\n📊 Data Analysis & Statistics\nStatistical Methods - Descriptive and inferential statistics - Regression analysis (linear, logistic, Cox) - Survival analysis - Mixed-effects models - Bayesian statistics - Time series analysis - Causal inference methods\nMachine Learning - Supervised learning (classification, regression) - Unsupervised learning (clustering, PCA) - Feature engineering - Model validation and tuning - Ensemble methods\n\n\n\n\n📈 Data Visualization & Dashboards\nVisualization Tools - ggplot2: Publication-quality graphics - plotly: Interactive visualizations - Tableau: Business intelligence dashboards - Power BI: Corporate reporting - Shiny: Interactive web applications\nDashboard Development - Real-time monitoring systems - KPI tracking dashboards - Geospatial visualizations - Automated reporting - User-friendly interfaces\n\n\n🏥 Health Domain Expertise\nClinical Research - Clinical trial data management - Good Clinical Practice (GCP) - Protocol development - Adverse event tracking - Regulatory compliance\nPublic Health - Epidemiological analysis - Disease surveillance systems - Health facility assessments - Program monitoring & evaluation - Health economics\n\n\n🔧 Development & Deployment\nSoftware Development - R package development - API integration - Web scraping - Automation scripts - Documentation\nVersion Control & Collaboration - Git/GitHub: Advanced workflows - Collaborative coding - Code review practices - CI/CD basics - Project management\n\n\n📝 Research & Communication\nResearch Methods - Study design - Sampling methods - Power analysis - Reproducible research - Open science practices\nCommunication - Scientific writing - Data storytelling - Technical documentation - Presentation skills - Training and mentorship"
+  },
+  {
+    "objectID": "skills/index.html#survey-tool-expertise",
+    "href": "skills/index.html#survey-tool-expertise",
+    "title": "Skills & Expertise",
+    "section": "Survey Tool Expertise",
+    "text": "Survey Tool Expertise\n\nElectronic Data Capture Systems I’ve Implemented\n\n\n🔧 REDCap (Research Electronic Data Capture)\n\n\nExperience Level: Expert | Projects: 20+ | Years: 7+\nCapabilities: - Custom database design for clinical trials and observational studies - Complex branching logic and calculated fields - Multi-language support - Data quality rules and validation - API integration with R and Python - User management and data access groups - Survey distribution and tracking - Automated reporting and alerts\nNotable Projects: - Multi-site HIV cohort study (5,000+ participants) - NCD management database (2,000+ patients) - COVID-19 surveillance system (10+ sites)\nView REDCap Projects →\n\n\n\n\n📱 SurveyCTO\n\n\nExperience Level: Expert | Projects: 15+ | Years: 5+\nCapabilities: - Mobile data collection for field teams - Offline data collection - GPS tracking and geolocation - Photo and audio capture - Real-time quality control - Server management - Complex skip logic - Automated data exports\nNotable Projects: - Health facility assessments (30+ facilities) - Household surveys (1,000+ households) - Patient follow-up tracking (500+ patients)\nView SurveyCTO Projects →\n\n\n\n\n🌐 KoboCollect/KoboToolbox\n\n\nExperience Level: Advanced | Projects: 10+ | Years: 4+\nCapabilities: - Humanitarian and emergency data collection - Rapid deployment - Offline functionality - Multi-language surveys - Media file collection - GIS integration - Data exports and API access\nNotable Projects: - Healthcare provider assessments - Community health surveys - Training needs assessments\nView KoboCollect Projects →"
+  },
+  {
+    "objectID": "skills/index.html#programming-proficiency",
+    "href": "skills/index.html#programming-proficiency",
+    "title": "Skills & Expertise",
+    "section": "Programming Proficiency",
+    "text": "Programming Proficiency\n\nR Programming\n\n\nExpertise Level: Expert (8+ years)\nCore Packages:\n# Data manipulation & cleaning\nlibrary(tidyverse)      # dplyr, tidyr, purrr, etc.\nlibrary(data.table)     # High-performance data manipulation\nlibrary(janitor)        # Data cleaning\n\n# Visualization\nlibrary(ggplot2)        # Grammar of graphics\nlibrary(plotly)         # Interactive plots\nlibrary(patchwork)      # Combining plots\n\n# Statistical modeling\nlibrary(survival)       # Survival analysis\nlibrary(lme4)          # Mixed-effects models\nlibrary(caret)         # Machine learning\nlibrary(broom)         # Tidy model outputs\n\n# Reporting & dashboards\nlibrary(rmarkdown)     # Dynamic documents\nlibrary(shiny)         # Interactive web apps\nlibrary(flexdashboard) # Dashboard layouts\nlibrary(DT)            # Interactive tables\n\n# Specialized\nlibrary(sf)            # Spatial data\nlibrary(leaflet)       # Interactive maps\nlibrary(httr)          # API interactions\nAccomplishments: - Developed 5+ production Shiny applications - Created custom R packages for data management - Authored 50+ R Markdown reports - Trained 200+ researchers in R programming\nView R Projects →\n\n\n\n\nPython Programming\n\n\nExpertise Level: Advanced (5+ years)\nCore Libraries:\n# Data manipulation\nimport pandas as pd\nimport numpy as np\n\n# Visualization\nimport matplotlib.pyplot as plt\nimport seaborn as sns\nimport plotly.express as px\n\n# Machine learning\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.ensemble import RandomForestClassifier\nfrom sklearn.metrics import accuracy_score\n\n# Statistical analysis\nimport scipy.stats as stats\nimport statsmodels.api as sm\nApplications: - Machine learning model development - API development and integration - Data pipeline automation - Web scraping and data collection\nView Python Projects →\n\n\n\n\nSQL & Database Management\n\n\nExpertise Level: Advanced (7+ years)\nCapabilities:\n-- Complex queries\nSELECT \n    f.facility_name,\n    COUNT(DISTINCT p.patient_id) as total_patients,\n    AVG(v.bp_systolic) as avg_systolic,\n    SUM(CASE WHEN v.bp_controlled = 'Yes' THEN 1 ELSE 0 END) * 100.0 / COUNT(*) as control_rate\nFROM facilities f\nJOIN patients p ON f.facility_id = p.facility_id\nJOIN visits v ON p.patient_id = v.patient_id\nWHERE v.visit_date &gt;= '2024-01-01'\nGROUP BY f.facility_name\nHAVING COUNT(DISTINCT p.patient_id) &gt; 10\nORDER BY control_rate DESC;\n\n-- Database design\nCREATE TABLE patients (\n    patient_id SERIAL PRIMARY KEY,\n    facility_id INTEGER REFERENCES facilities(facility_id),\n    enrollment_date DATE NOT NULL,\n    diagnosis VARCHAR(100),\n    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP\n);\n\n-- Indexes for performance\nCREATE INDEX idx_patients_facility ON patients(facility_id);\nCREATE INDEX idx_visits_date ON visits(visit_date);\nAccomplishments: - Designed 10+ production databases - Managed databases with 100,000+ records - Optimized queries reducing runtime by 70% - Implemented automated backup systems\nView Database Projects →"
+  },
+  {
+    "objectID": "skills/index.html#domain-expertise",
+    "href": "skills/index.html#domain-expertise",
+    "title": "Skills & Expertise",
+    "section": "Domain Expertise",
+    "text": "Domain Expertise\n\nHealth Data Analytics\n\n\n15+{.stat-number} Clinical Trials{.stat-label}\n\n\n50+{.stat-number} Health Surveys{.stat-label}\n\n\n100K+{.stat-number} Patient Records{.stat-label}\n\n\n30+{.stat-number} Health Facilities{.stat-label}\n\n\nSpecialized Areas: - Clinical trial data management (Phases I-IV) - Non-communicable disease (NCD) analytics - Infectious disease surveillance - Health facility assessments - Patient outcome tracking - Cost-effectiveness analysis - Health economics - Program monitoring & evaluation"
+  },
+  {
+    "objectID": "skills/index.html#soft-skills",
+    "href": "skills/index.html#soft-skills",
+    "title": "Skills & Expertise",
+    "section": "Soft Skills",
+    "text": "Soft Skills\n\n\n👥 Leadership & Management\n\nTeam leadership and supervision\nProject management\nStakeholder engagement\nConflict resolution\nDecision-making under uncertainty\n\n\n\n🎓 Training & Mentorship\n\nWorkshop design and delivery\nOne-on-one mentoring\nCurriculum development\nCapacity building\nKnowledge transfer\n\n\n\n💬 Communication\n\nScientific writing\nData storytelling\nPresentation skills\nCross-cultural communication\nStakeholder reporting\n\n\n\n🧩 Problem Solving\n\nAnalytical thinking\nCreative solutions\nTroubleshooting\nProcess optimization\nContinuous improvement"
+  },
+  {
+    "objectID": "skills/index.html#certifications-professional-development",
+    "href": "skills/index.html#certifications-professional-development",
+    "title": "Skills & Expertise",
+    "section": "Certifications & Professional Development",
+    "text": "Certifications & Professional Development\n\nFormal Certifications\n\n\n\n\n\n\n\nDataCamp Certified Data Scientist (2023)\nGood Clinical Practice (GCP) Certification (2022)\nREDCap Administrator Certification (2021)\nSurveyCTO Advanced Training (2021)\nR Shiny Development Certification (2020)\nHIPAA Compliance Training (2020)\n\n\n\n\n\n\nWorkshops & Training Attended\n\nAdvanced Bayesian Statistics Workshop (2024)\nMachine Learning in Healthcare (2023)\nGeospatial Analysis for Public Health (2023)\nAdvanced R Programming and Package Development (2022)\nClinical Trials Data Management Best Practices (2021)"
+  },
+  {
+    "objectID": "skills/index.html#languages",
+    "href": "skills/index.html#languages",
+    "title": "Skills & Expertise",
+    "section": "Languages",
+    "text": "Languages\n\n\n🌍 Spoken Languages\n\nEnglish: Fluent (Professional)\nSwahili: Fluent (Native)\nDholuo: Fluent (Native)\nFrench: Basic (Learning)\n\n\n\n💻 Programming Languages\n\nR: Expert\nPython: Advanced\nSQL: Advanced\nStata: Advanced\nSAS: Intermediate\nBash: Intermediate"
+  },
+  {
+    "objectID": "skills/index.html#tools-technologies",
+    "href": "skills/index.html#tools-technologies",
+    "title": "Skills & Expertise",
+    "section": "Tools & Technologies",
+    "text": "Tools & Technologies\n\nDevelopment Tools\n\nRStudio, VS Code, Jupyter\nGit, GitHub, GitLab\nDocker (basic)\nLinux/Ubuntu command line\n\n\n\nData Collection\n\nREDCap, SurveyCTO, KoboCollect\nCommCare, ODK\nGoogle Forms, Qualtrics\n\n\n\nData Visualization\n\nR Shiny, Tableau, Power BI\nggplot2, plotly, D3.js (basic)\n\n\n\nProject Management\n\nAsana, Trello\nMicrosoft Project\nMonday.com"
+  },
+  {
+    "objectID": "skills/index.html#what-makes-me-stand-out",
+    "href": "skills/index.html#what-makes-me-stand-out",
+    "title": "Skills & Expertise",
+    "section": "What Makes Me Stand Out",
+    "text": "What Makes Me Stand Out\n\n🌟 Unique Value Proposition\n\nEnd-to-End Expertise - From survey design to final dashboard deployment\nHealth Domain Knowledge - Deep understanding of clinical and public health contexts\nRemote Work Excellence - 5+ years of successful remote collaboration\nTraining & Mentorship - Proven ability to build team capacity\nReproducible Research - Committed to open science and transparency\nContinuous Learning - Always updating skills with latest tools and methods\nPhysical Wellness - 4x weekly workouts maintaining peak mental performance"
+  },
+  {
+    "objectID": "skills/index.html#available-for",
+    "href": "skills/index.html#available-for",
+    "title": "Skills & Expertise",
+    "section": "Available for",
+    "text": "Available for\n✅ Senior Research Data Manager positions\n✅ Health Data Analyst roles\n✅ Biostatistician consulting\n✅ Survey Design projects\n✅ Dashboard Development contracts\n✅ R/Stata Training workshops\n✅ Remote Collaboration opportunities\n\n\n🤝 Let’s Work Together!\nWhether you need a senior data manager for your research project, expertise in survey design, or advanced analytics capabilities, I’m ready to contribute.\nView Projects Download CV Contact Me\n\n\nBack to Home →"
+  },
+  {
+    "objectID": "DEPLOYMENT_GUIDE.html",
+    "href": "DEPLOYMENT_GUIDE.html",
+    "title": "",
+    "section": "",
+    "text": "Code"
+  },
+  {
+    "objectID": "DEPLOYMENT_GUIDE.html#quick-start",
+    "href": "DEPLOYMENT_GUIDE.html#quick-start",
+    "title": "",
+    "section": "⚡ Quick Start",
+    "text": "⚡ Quick Start\n# 1. Preview locally (auto-reload on changes)\nquarto preview\n\n# 2. Build the site\nquarto render\n\n# 3. Deploy to GitHub Pages\nquarto publish gh-pages"
+  },
+  {
+    "objectID": "DEPLOYMENT_GUIDE.html#pre-deployment-checklist",
+    "href": "DEPLOYMENT_GUIDE.html#pre-deployment-checklist",
+    "title": "",
+    "section": "📋 Pre-Deployment Checklist",
+    "text": "📋 Pre-Deployment Checklist\n\nContent Review\n\nUpdate personal information (email, LinkedIn, GitHub URLs)\nReplace placeholder social media highlights with actual content\nAdd real publication details in research/publications.qmd\nVerify all project impact metrics are accurate\nUpdate CV dates and experiences to match reality\nAdd your actual education details\n\n\n\nVisual Assets\n\nReplace profile.jpg with your professional photo\nAdd project screenshots if available\nCreate favicon (optional)\n\n\n\nLinks & References\n\nTest all internal links work correctly\nVerify external links (GitHub, LinkedIn, etc.)\nEnsure email links are correct\nCheck that all [View Details →](#) placeholders are updated\n\n\n\nResponsive Design\n\nTest on mobile devices\nTest on tablets\nTest on different desktop sizes\nCheck all pages for proper layout"
+  },
+  {
+    "objectID": "DEPLOYMENT_GUIDE.html#configuration-updates",
+    "href": "DEPLOYMENT_GUIDE.html#configuration-updates",
+    "title": "",
+    "section": "🔧 Configuration Updates",
+    "text": "🔧 Configuration Updates\n\n1. Update Site URLs in _quarto.yml\nwebsite:\n  site-url: \"https://gondamol.github.io\"  # Your actual URL\n\n\n2. Verify Social Links\nReplace all instances of placeholder URLs: - LinkedIn: https://linkedin.com/in/amollow - GitHub: https://github.com/gondamol - Twitter: https://twitter.com/nwerre - Kaggle: https://kaggle.com/nwerre - Email: nichodemuswerre@gmail.com\n\n\n3. Google Analytics (Optional)\nAdd to _quarto.yml:\nwebsite:\n  google-analytics: \"G-XXXXXXXXXX\""
+  },
+  {
+    "objectID": "DEPLOYMENT_GUIDE.html#thesis-dashboard-data",
+    "href": "DEPLOYMENT_GUIDE.html#thesis-dashboard-data",
+    "title": "",
+    "section": "📊 Thesis Dashboard Data",
+    "text": "📊 Thesis Dashboard Data\nThe thesis dashboard (research/thesis.qmd) currently uses simulated data. To use real data:\n\nOption 1: Update R Code\nReplace the set.seed(123) simulation code with your actual data import:\n# Replace simulation with real data\nfacilities &lt;- read_csv(\"data/facility_data.csv\")\n\n\nOption 2: Keep Simulation (Recommended for Demo)\nThe current simulation is perfect for demonstration purposes. It shows: - Interactive visualizations - Dashboard capabilities - Technical skills\nAdd a note that data is simulated for privacy."
+  },
+  {
+    "objectID": "DEPLOYMENT_GUIDE.html#customization",
+    "href": "DEPLOYMENT_GUIDE.html#customization",
+    "title": "",
+    "section": "🎨 Customization",
+    "text": "🎨 Customization\n\nBrand Colors\nEdit custom.scss to match your preferred colors:\n$primary: #2C5282;      // Main brand color\n$secondary: #38B2AC;    // Accent color\n\n\nProfile Photo\nReplace profile.jpg in the root directory with your photo: - Recommended size: 400x400px - Format: JPG or PNG - Professional headshot recommended"
+  },
+  {
+    "objectID": "DEPLOYMENT_GUIDE.html#seo-optimization",
+    "href": "DEPLOYMENT_GUIDE.html#seo-optimization",
+    "title": "",
+    "section": "🔍 SEO Optimization",
+    "text": "🔍 SEO Optimization\n\nMeta Descriptions\nEach page has been configured with descriptions. Verify they’re accurate: - Homepage highlights “Senior Research Data Manager” positioning - Projects page emphasizes real-world impact - CV page shows 7+ years experience\n\n\nSocial Media Cards\nWhen shared on social media, your portfolio will show: - Title: “Nichodemus Amollo | Senior Research Data Manager” - Description: Automatically pulled from page metadata - Image: Your profile photo"
+  },
+  {
+    "objectID": "DEPLOYMENT_GUIDE.html#social-media-strategy",
+    "href": "DEPLOYMENT_GUIDE.html#social-media-strategy",
+    "title": "",
+    "section": "📱 Social Media Strategy",
+    "text": "📱 Social Media Strategy\n\nLinkedIn Post Template\n🎉 Excited to share my revamped portfolio!\n\nAs a Senior Research Data Manager with 7+ years experience, I've:\n✅ Managed 500K+ health records (99.5% quality)\n✅ Designed 50+ data collection systems\n✅ Trained 500+ researchers in R and data management\n✅ Identified KES 20M+ in cost savings\n\nCheck out my projects in:\n🏥 Health Data Analytics\n🗄️ Data Management\n📋 Survey Design\n📊 Interactive Dashboards\n\n[Your Portfolio URL]\n\n#DataScience #HealthAnalytics #DataManagement #GlobalHealth\n\n\nTwitter Thread Starters\nEach project has a “Social Media Highlight” section - use these for Twitter threads!\nExample:\n1/ Just completed analysis of COVID-19 vaccination coverage in Kisumu County 🇰🇪\n\nUsed geospatial analysis to identify 12 underserved areas with &lt;40% coverage\n\nThread on how data-driven decisions saved lives 🧵👇\n\n#DataForGood #PublicHealth"
+  },
+  {
+    "objectID": "DEPLOYMENT_GUIDE.html#common-issues-solutions",
+    "href": "DEPLOYMENT_GUIDE.html#common-issues-solutions",
+    "title": "",
+    "section": "🐛 Common Issues & Solutions",
+    "text": "🐛 Common Issues & Solutions\n\nIssue: Quarto not found\n# Install Quarto from https://quarto.org\n# Or use package manager:\nbrew install quarto  # macOS\n\n\nIssue: R packages missing\nRscript -e \"install.packages(c('tidyverse', 'plotly', 'leaflet', 'DT'))\"\n\n\nIssue: GitHub Pages not updating\n# Force rebuild\nquarto render\ngit add .\ngit commit -m \"Force rebuild\"\ngit push origin main\n\n# Or republish\nquarto publish gh-pages --no-prompt\n\n\nIssue: CSS not loading\nClear browser cache and hard reload (Ctrl+F5 or Cmd+Shift+R)"
+  },
+  {
+    "objectID": "DEPLOYMENT_GUIDE.html#analytics-tracking",
+    "href": "DEPLOYMENT_GUIDE.html#analytics-tracking",
+    "title": "",
+    "section": "📈 Analytics & Tracking",
+    "text": "📈 Analytics & Tracking\n\nKey Metrics to Monitor\nAfter deployment, track: - Page views on Projects section (should be highest) - CV downloads/views - Time spent on thesis dashboard - Traffic sources (LinkedIn, Twitter, direct)\n\n\nTools\n\nGoogle Analytics (add to _quarto.yml)\nLinkedIn Analytics (for post performance)\nGitHub Pages traffic (repository Insights)"
+  },
+  {
+    "objectID": "DEPLOYMENT_GUIDE.html#regular-maintenance",
+    "href": "DEPLOYMENT_GUIDE.html#regular-maintenance",
+    "title": "",
+    "section": "🔄 Regular Maintenance",
+    "text": "🔄 Regular Maintenance\n\nMonthly\n\nAdd new blog post or project update\nUpdate project metrics with latest outcomes\nShare 2-3 social media posts about your work\n\n\n\nQuarterly\n\nReview and update CV\nAdd any new certifications or training\nUpdate project status (completed, ongoing, new)\n\n\n\nAnnually\n\nRefresh all impact metrics\nUpdate professional summary\nReview and update skills section\nArchive old projects, highlight recent ones"
+  },
+  {
+    "objectID": "DEPLOYMENT_GUIDE.html#job-application-tips",
+    "href": "DEPLOYMENT_GUIDE.html#job-application-tips",
+    "title": "",
+    "section": "💼 Job Application Tips",
+    "text": "💼 Job Application Tips\nWhen applying for positions, reference specific pages:\nFor Senior Data Manager roles: &gt; “I’ve managed 20+ multi-site studies with 99.5% data quality. See my data management projects: [URL]/projects/data-management.qmd”\nFor Health Analytics roles: &gt; “My COVID-19 vaccination analysis led to policy changes affecting 100K+ people. Details: [URL]/projects/health-analytics.qmd”\nFor Remote positions: &gt; “I’ve successfully managed international projects remotely for 5+ years. View my full portfolio: [URL]”"
+  },
+  {
+    "objectID": "DEPLOYMENT_GUIDE.html#next-steps-after-deployment",
+    "href": "DEPLOYMENT_GUIDE.html#next-steps-after-deployment",
+    "title": "",
+    "section": "🎯 Next Steps After Deployment",
+    "text": "🎯 Next Steps After Deployment\n\nShare on LinkedIn - Announce your new portfolio\nUpdate Resume - Add portfolio URL\nEmail Signature - Include portfolio link\nJob Applications - Reference specific project pages\nNetworking - Share with colleagues and mentors\nContent Creation - Start writing blog posts\nProject Updates - Document ongoing work"
+  },
+  {
+    "objectID": "DEPLOYMENT_GUIDE.html#support-questions",
+    "href": "DEPLOYMENT_GUIDE.html#support-questions",
+    "title": "",
+    "section": "📞 Support & Questions",
+    "text": "📞 Support & Questions\nIf you need help: - Review Quarto documentation: https://quarto.org/docs/ - Check R package documentation for visualization issues - Test thoroughly before promoting widely"
+  },
+  {
+    "objectID": "DEPLOYMENT_GUIDE.html#final-checklist-before-going-live",
+    "href": "DEPLOYMENT_GUIDE.html#final-checklist-before-going-live",
+    "title": "",
+    "section": "✅ Final Checklist Before Going Live",
+    "text": "✅ Final Checklist Before Going Live\n\nAll personal information updated\nProfile photo replaced\nAll links tested and working\nMobile responsiveness verified\nBrowser compatibility checked (Chrome, Firefox, Safari)\nNo typos or grammatical errors\nSocial media accounts updated with portfolio link\nResume/CV updated with portfolio URL\nSite previewed by a colleague/friend\nAnalytics configured (if desired)\nFirst LinkedIn post drafted and ready"
+  },
+  {
+    "objectID": "DEPLOYMENT_GUIDE.html#youre-ready",
+    "href": "DEPLOYMENT_GUIDE.html#youre-ready",
+    "title": "",
+    "section": "🎊 You’re Ready!",
+    "text": "🎊 You’re Ready!\nYour portfolio now positions you as a Senior Research Data Manager with: - 7+ years of documented experience - Real-world project impact - Comprehensive technical skills - Social media ready content - Professional positioning for remote roles\nDeploy with confidence and start sharing your work!\n\nNeed to make changes after deployment? Just update the .qmd files, run quarto render, and push to GitHub. Changes are typically live within 2-5 minutes.\nGood luck! 🚀"
   }
 ]
