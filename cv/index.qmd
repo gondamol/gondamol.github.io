@@ -1,149 +1,217 @@
 ---
-title: "Curriculum Vitae"
-subtitle: "Nichodemus Amollo | Senior Research Data Manager"
+title: "My Journey & Curriculum Vitae"
+subtitle: "From Limited Resources to Leading Global Health Data Science"
 format:
   html:
     toc: true
     toc-depth: 3
 page-layout: article
+css: ../custom.scss
 ---
 
-# **Nichodemus Amollo**
+::: {.hero-banner}
+# **Against All Odds: A Journey of Resilience**
+:::
 
-**Senior Research Data Manager | Health Data Analytics Specialist**
+## **The Beginning: Rising from Adversity**
 
-📧 nichodemuswerre@gmail.com | 💼 [LinkedIn](https://linkedin.com/in/amollow) | 🐙 [GitHub](https://github.com/gondamol) | 🌐 [Portfolio](https://gondamol.github.io)
+Growing up as an **orphaned child with limited resources** in rural Kenya, the odds were stacked against me. Without the safety net that many take for granted, every educational milestone required extraordinary determination, resourcefulness, and an unwavering belief that **data and education could change lives**.
+
+::: {.highlight-box}
+### 🌟 From Struggle to Strength
+
+**What shaped me:**
+- **Loss taught me resilience** - Losing parents early instilled a drive to create lasting impact
+- **Scarcity taught me resourcefulness** - Limited resources sharpened my problem-solving abilities  
+- **Adversity taught me empathy** - Personal challenges deepened my commitment to health equity  
+- **Community taught me collaboration** - Support from mentors fueled my passion for capacity building
+
+**Against all odds, I made it this far** - and now I'm positioned to lead transformative global health initiatives.
+:::
+
+---
+
+# **Nichodemus Werre Amollo**
+
+**Research Data Manager | Research Data Analyst | M&E Specialist | MSc. Biostatistics & Epidemiology**
+
+📧 nichodemuswerre@gmail.com | 📱 +254 725 737 867 | 📍 Nairobi, Kenya  
+💼 [LinkedIn](https://linkedin.com/in/nichodemusamollo) | 🐙 [GitHub](https://github.com/gondamol) | 🌐 [Portfolio](https://gondamol.github.io)
 
 ---
 
 ## **Professional Summary**
 
-Dynamic and results-driven **Senior Research Data Manager** with **7+ years of progressive experience** in health data analytics, survey design, and comprehensive data management. Proven expertise in designing and implementing robust data collection systems using SurveyCTO, REDCap, and KoboCollect, combined with advanced statistical analysis capabilities in R, Python, Stata, and SQL. Recognized for transforming complex health data into actionable insights that drive evidence-based decision-making in resource-limited settings.
+**Research Data Manager, Research Data Analyst, and M&E Specialist** with **6+ years of progressive experience** driving evidence-based decision-making in global health, agriculture, food security, and economic development. Expert in **end-to-end data management**, **advanced statistical analysis**, and **robust M&E frameworks** for multi-million dollar international projects. 
+
+**Specialized expertise:**  
+✅ Leading field teams & training protocols for multi-site studies  
+✅ Designing digitalized survey tools for mobile data collection  
+✅ Conducting high-frequency checks (HFCs) using Stata & R  
+✅ Systematic reviews & evidence synthesis  
+✅ Building complex databases (MongoDB, MySQL, PostgreSQL)  
+✅ Oncology data management & cancer epidemiology  
+✅ Consultancy leadership with LERIS Hub affiliations
+
+**Currently pursuing MSc in Biostatistics & Epidemiology** at JOOUST with **Washington University M&E Certification** (2025), positioned to lead senior Research Data Management, Research Data Analysis, and M&E roles remotely for international organizations.
 
 ---
 
 ## **Core Competencies**
 
 ::: {.skills-grid}
-**Data Management & Systems**
-- Electronic Data Capture (EDC) Systems
-- Database Design & Administration
-- Data Quality Assurance & Validation
-- ETL Pipeline Development
-- REDCap, SurveyCTO, KoboCollect
+::: {.skill-category}
+### 📊 M&E & Impact Evaluation
+- **M&E Framework Design** - Theory of Change, LogFrames, Results Frameworks
+- **Performance Monitoring** - KPI tracking, real-time dashboards, donor reporting
+- **Impact Evaluation** - RCTs, quasi-experimental designs, cost-effectiveness analysis
+- **Field Data Collection** - Led 500+ field teams, mobile data systems
+- **High-Frequency Checks (HFCs)** - Real-time quality monitoring using R & Stata
+:::
 
-**Statistical Analysis**
-- Advanced Statistical Modeling
-- Predictive Analytics & Machine Learning
-- Survival Analysis & Cox Regression
-- Bayesian Statistics
-- Epidemiological Modeling
+::: {.skill-category}
+### 🗄️ Data Management Excellence
+- **End-to-End Data Systems** - Design, implementation, monitoring, evaluation
+- **Database Development** - MongoDB, MySQL, PostgreSQL, Vercel, REDCap
+- **Survey Tool Digitalization** - ODK, Kobo Collect, SurveyCTO, CommCare
+- **Data Quality Protocols** - Validation rules, automated checks, cleaning workflows
+- **Team Leadership** - Trained 500+ researchers, led multi-site teams
+:::
 
-**Programming & Tools**
-- R (tidyverse, ggplot2, shiny, rmarkdown)
-- Python (pandas, numpy, scikit-learn)
-- Stata, SPSS, SAS
-- SQL, PostgreSQL
-- Git/GitHub
+::: {.skill-category}
+### 🔬 Advanced Analytics
+- **Statistical Modeling** - Regression, survival analysis, machine learning, Bayesian methods
+- **Programming** - R (expert), Python, Stata, SQL, SPSS
+- **Predictive Analytics** - Classification, clustering, network analysis (Gephi)
+- **Specialized Analysis** - Oncology data, agricultural economics, health systems
+- **Systematic Reviews** - Literature synthesis, meta-analysis
+:::
 
-**Data Visualization**
-- Interactive Dashboards (Shiny, Tableau)
-- ggplot2, plotly
-- Power BI
-- Geospatial Visualization (sf, leaflet)
+::: {.skill-category}
+### 👥 Leadership & Capacity Building
+- **Field Team Management** - Recruited, trained, supervised field researchers
+- **Training Protocol Development** - Designed modules for RAs, enumerators, analysts
+- **Consultancy Leadership** - Led tool development, data systems for LERIS Hub clients
+- **Report Writing** - Donor reports, policy briefs, technical documentation
+- **Problem Solving** - Tackled field challenges, data discrepancies, system failures
+:::
 :::
 
 ---
 
 ## **Professional Experience**
 
-### **Senior Research Data Manager**
-**Various Health Research Projects** | *2017 - Present*
+### **Research Data Analyst**
+**Georgetown University Initiative on Innovation, Development and Evaluation (gui2de)** | *Apr 2025 - Present*  
+📍 Nairobi, Kenya (On-site)
 
-::: {.timeline}
-::: {.timeline-item}
-::: {.timeline-marker}
-:::
-::: {.timeline-content}
-**Key Responsibilities:**
+- Lead data management for **RCTs and impact evaluation studies** in health and development
+- Design **survey systems and statistical analysis pipelines** for large-scale evaluations
+- Conduct statistical analyses (primarily STATA) and develop data visualizations for stakeholder decision-making
+- Collaborate with investigators and field researchers to monitor **data quality**, correct discrepancies, maintain research protocols
+- Support database management, instrument updates, and queries ensuring timely software deployment by field teams
+- Contribute to research outputs including **reports, presentations, and public datasets** informing health policy and practice
 
-- Lead end-to-end data management for 15+ multi-site health research projects with budgets exceeding $2M
-- Design and implement electronic data capture systems using REDCap, SurveyCTO, and KoboCollect for studies enrolling 5,000+ participants
-- Develop and maintain SQL databases managing 100,000+ health records with 99.9% data quality
-- Create automated data validation pipelines reducing data cleaning time by 60%
-- Perform advanced statistical analyses using R, Python, and Stata for clinical trials and observational studies
-- Develop interactive dashboards using Shiny and Tableau for real-time monitoring and stakeholder reporting
-- Train and supervise teams of 10+ data collectors and junior data managers
-- Ensure compliance with GCP, HIPAA, and local data protection regulations
+---
 
-**Notable Achievements:**
+### **Oncology Data Analyst**
+**Kenya Medical Research Institute (KEMRI)** | *Aug 2023 - Jul 2025* (Contract)  
+📍 Kisumu, Kenya (Hybrid)
 
-- Reduced data entry errors by 75% through implementation of real-time validation systems
-- Designed innovative mobile data collection system adopted by 5 partner organizations
-- Published 8+ peer-reviewed articles on health data analytics and epidemiology
-- Mentored 15+ junior researchers in R programming and data management best practices
-:::
-:::
-:::
+**Led data science initiatives for large-scale oncology studies, transforming clinical data into actionable insights:**
 
-### **Data Manager & Biostatistician**
-**Public Health Research Projects** | *2017 - 2020*
+**Key Achievements:**
+- Designed and implemented **statistically rigorous public health research studies** with representative sampling across diverse populations
+- Developed **interactive dashboards** (Tableau, R Shiny, Quarto) improving reporting efficiency by **60%** and empowering stakeholders with real-time tools
+- Applied **advanced statistical models** including survival analysis, machine learning algorithms, and cost-effectiveness analysis (CEA) to assess program impacts
+- Provided **mentorship and capacity building** on data governance, advanced analytics, and M&E frameworks to multidisciplinary teams
+- **Co-authored 2 cancer epidemiology publications** analyzing 10-year mortality patterns in esophageal and cervical cancer patients
 
-::: {.timeline}
-::: {.timeline-item}
-::: {.timeline-marker}
-:::
-::: {.timeline-content}
-**Key Responsibilities:**
+---
 
-- Managed data collection and analysis for HIV/AIDS, tuberculosis, and NCD surveillance studies
-- Developed REDCap databases for longitudinal cohort studies tracking 2,000+ patients
-- Conducted statistical analyses including survival analysis, logistic regression, and mixed-effects models
-- Created automated reporting systems using R Markdown
-- Collaborated with international research teams across 4 countries
+### **Graduate Research Assistant**
+**University of Alaska Fairbanks** | *Oct 2024 - Jun 2025* (Part-time, Remote)
 
-**Notable Achievements:**
+- Conducted **advanced statistical analysis** for cancer studies as part of Master's in Statistics and Data Science
+- Contributed to research design, data interpretation, and manuscript preparation
 
-- Streamlined data management workflows reducing project timelines by 30%
-- Developed reusable R packages for common data management tasks
-- Presented findings at 5+ international conferences
-:::
-:::
-:::
+---
 
-### **Part-Time Lecturer - Biostatistics**
-**Jaramogi Oginga Odinga University of Science and Technology (JOOUST)** | *2020 - Present*
+### **Research Data Manager (VLIR-UOS SP3 Project)**
+**JOOUST + VLIR-UOS SP3 Initiative** | *Nov 2021 - Aug 2023* (Contract)  
+📍 Kisumu, Kenya (Hybrid) | **East Africa Multi-Country Initiative**
 
-- Teach undergraduate and graduate courses in biostatistics and epidemiology
-- Develop practical R programming curriculum for health sciences students
-- Supervise student research projects and theses
-- Conduct faculty workshops on modern statistical methods and reproducible research
+**Led end-to-end data management for health systems studies across Kenya, Uganda, and Tanzania:**
 
-### **R Programming Instructor**
-**LERIS HUB** | *2019 - Present*
+- Managed **survey tool development and digitalization** (ODK, Kobo Collect) ensuring efficient and accurate data collection from **1,535 participants/sites**
+- Conducted **comprehensive literature reviews** to inform robust survey tool design and research methodology
+- Developed **monitoring frameworks and data quality protocols** for multi-site coordination
+- Analyzed large datasets using **advanced statistical methods** (regression, ANOVA, R) deriving actionable insights for project findings and reports
 
-- Design and deliver comprehensive R programming workshops for researchers
-- Teach data visualization, statistical modeling, and reproducible research practices
-- Mentor 50+ researchers in transitioning from SPSS/Excel to R
-- Develop training materials and online resources
+---
+
+### **M&E Consultant (Multiple Organizations)**
+
+#### **Epidemiology Research Consultant | Dalberg Research**  
+*Apr - May 2024* | Nairobi, Kenya
+- Designed and analyzed **survey data on malaria treatment uptake** in Sub-Saharan Africa
+- Synthesized complex datasets from WHO guidelines and peer-reviewed literature identifying critical intervention gaps
+- Developed **strategic recommendations** to enhance rectal artesunate suppository uptake
+
+#### **Monitoring & Data Visualization Consultant | Catholic Medical Mission Board (CMMB)**  
+*Jan - Feb 2024* | Nairobi, Kenya
+- Evaluated **HIV prevention programs** using rigorous M&E frameworks
+- Developed **donor reporting dashboards** visualizing program impact and outcomes
+
+#### **Communications & Evaluation Analyst | NEPHAK**  
+*Mar 2024* | Nairobi, Kenya
+- Conducted **survey analysis** for national HIV advocacy network
+- Authored **community health briefs** translating data insights for stakeholders
+
+---
+
+### **Monitoring & Evaluation Associate III**
+**Leadership Excellence for Research and Synergy (LERIS) Hub** | *Mar 2019 - May 2021*  
+📍 Kisumu, Kenya (Hybrid)
+
+**Developed and implemented robust M&E frameworks for health and environmental programs:**
+
+- Designed and implemented **comprehensive M&E frameworks and strategies** for 8 health programs ensuring alignment with organizational goals and donor requirements (USAID, NIH)
+- Refined **performance indicators, targets, and data collection tools** (surveys, interviews) enabling effective measurement of project progress
+- Conducted **in-depth data analysis** using advanced statistical techniques (SPSS, Stata) providing actionable insights for strategic decision-making
+- Prepared **detailed M&E reports and presentations** for diverse stakeholders utilizing data visualization for clarity
+- Led **capacity-building initiatives** in M&E for project staff and partners, enhancing data collection, analysis, and reporting skills
+- Conducted **econometric and mixed-methods analyses** for health and environmental projects
+- **Led consultancies** affiliated with LERIS Hub including tool development, training protocols, and field team management
+
+---
+
+### **Statistician (Healthcare & Epidemiology)**
+**Homabay County Government** | *Aug 2018 - Mar 2019*  
+📍 Homabay, Kenya
+
+- Designed **sampling methodologies** for county-wide public health projects
+- Applied **GIS analyses** for disease mapping and health facility planning
+- Developed **data reporting systems** for county health management teams
 
 ---
 
 ## **Education**
 
-### **MSc in Epidemiology and Biostatistics**
-**Jaramogi Oginga Odinga University of Science and Technology (JOOUST)** | *Expected 2025*
+### **MSc in Biostatistics & Epidemiology**
+**Jaramogi Oginga Odinga University of Science and Technology (JOOUST), Kenya** | *Aug 2023 - Expected Dec 2026*
 
-**Thesis:** "Exploring Financial Determinants of Effective Hypertension and Diabetes Management in Primary Health Facilities in Kisumu County"
+**Thesis:** "Exploring Financial Determinants of Effective Management of Diabetes and Hypertension in Primary Health Facilities in Seme Sub-County, Kisumu"
 
-- Coursework completed with distinction
-- Focus on health economics, advanced biostatistics, and epidemiological methods
+**Coursework:** Econometrics, Epidemiological Methods, Advanced Statistics, Data Analytics & Visualization, Research Methodology, Demography and Population Health, Bioethics
 
-### **BSc in Biostatistics**
-**Relevant University** | *2013 - 2017*
+---
 
-- First Class Honours
-- Specialized in public health statistics and computational methods
+### **BSc in Statistics (Honours)**
+**University of Nairobi, Kenya** | *2012 - 2016*
+
+- **GPA:** ~3.6/4.0 (Upper Second Class, **top quartile of class**)
+- Specialized in statistical methods, computational statistics, and data science
 
 ---
 
@@ -173,84 +241,121 @@ Dynamic and results-driven **Senior Research Data Manager** with **7+ years of p
 
 ---
 
-## **Technical Projects & Portfolio**
+## **Key Projects & Impact**
 
-### **Health Facility Financing Dashboard**
-*Interactive Shiny Application*
+### **Kisumu County Cancer Epidemiology Dashboard**
+**Kenya Medical Research Institute (KEMRI)** | *Nov 2023 - Feb 2025*
 
-Real-time monitoring dashboard for tracking health facility financial performance and NCD management outcomes. Features include:
-- Budget tracking and visualization
-- Patient outcome metrics
-- Cost-effectiveness analysis
-- Predictive analytics for resource allocation
+::: {.highlight-box}
+**Groundbreaking data-driven tool transforming cancer care in Western Kenya**
 
-**Technologies:** R Shiny, ggplot2, plotly, PostgreSQL
+Developed following a 10-year retrospective study at JOOTRH revealing **59% of cancer patients lost to follow-up (LTFU)** within first year.
 
-### **Survey Data Management System**
-*REDCap & R Integration*
+**My Leadership:**
+- Designed and implemented **full data management pipeline** from raw health records to clean, analyzable datasets
+- **Trained research assistants** in high-quality data collection procedures
+- Conducted rigorous **data cleaning, validation, and quality checks** ensuring accurate analytics
+- Built **interactive analytics dashboard** visualizing patient journeys, risk factors, diagnosis stages, and treatment outcomes using real-time data
+- Provided **actionable insights** informing program interventions, policymaking, and resource allocation
 
-Automated data management pipeline for multi-site clinical trials:
-- Real-time data validation
-- Automated quality control reports
-- Data export and transformation
-- Statistical analysis integration
+**Impact:**  
+✅ Officially launched by **Kisumu Governor Prof. Anyang' Nyong'o** at 8th Kenya International Cancer Conference (2024)  
+✅ Now in use across Kisumu County improving oncology outcomes  
+✅ Positioned Kisumu as **national model** for technology-driven cancer care  
+✅ Set benchmark for similar health data innovations in Sub-Saharan Africa
 
-**Technologies:** REDCap API, R, tidyverse, rmarkdown
-
-### **Epidemiological Surveillance System**
-*PostgreSQL Database & Shiny Dashboard*
-
-Comprehensive disease surveillance system with:
-- Automated data ingestion from multiple sources
-- Real-time alert system for outbreak detection
-- Geospatial visualization of disease patterns
-- Automated weekly/monthly reporting
-
-**Technologies:** PostgreSQL, R Shiny, leaflet, SQL
+**Technologies:** R, Shiny, Quarto, Tableau, REDCap, Statistical Modeling
+:::
 
 ---
 
-## **Publications & Presentations**
+### **Malaria Venture (MMV) Study**
+**LERIS Hub (Dalberg Research Consultancy)** | *Apr - Jul 2024*
 
-*(Sample - Populate with your actual publications)*
-
-1. **Amollo, N.** et al. (2024). "Financial determinants of NCD management in primary care settings." *Journal of Health Economics* (In Preparation)
-
-2. **Amollo, N.** et al. (2023). "Implementing electronic data capture systems in resource-limited settings: Lessons learned." *BMC Medical Research Methodology*
-
-3. **Amollo, N.** (2023). "Best practices in health data management for clinical trials." *Presented at International Clinical Trials Symposium*
-
-4. **Amollo, N.** et al. (2022). "Data quality in electronic health records: A systematic review." *Journal of Medical Informatics*
+**Led comprehensive malaria research study** evaluating rectal artesunate suppository uptake drivers across Sub-Saharan Africa:
+- Managed entire project from conceptualization through data synthesis
+- Synthesized complex datasets from WHO guidelines and peer-reviewed literature
+- Identified critical gaps in current interventions
+- Developed **strategic recommendations** enhancing uptake and improving public health outcomes
 
 ---
 
-## **Certifications & Training**
+### **VLIR-UOS SP3 Multi-Country Health Systems Study**
+**JOOUST + VLIR-UOS** | *Nov 2021 - Aug 2023*
 
-- **DataCamp Certified Data Scientist** | 2023
-- **Good Clinical Practice (GCP) Certification** | 2022
-- **REDCap Administrator Certification** | 2021
-- **SurveyCTO Advanced Training** | 2021
-- **R Shiny Development Certification** | 2020
-- **HIPAA Compliance Training** | 2020
+**End-to-end data management for health systems research across Kenya, Uganda, and Tanzania:**
+- Coordinated data collection from **1,535 participants/sites**
+- Designed and digitalized survey tools (ODK, Kobo Collect)
+- Developed **comprehensive M&E frameworks**
+- Led **systematic literature reviews** informing methodology
+- Conducted **advanced statistical analysis** generating evidence for policy recommendations
 
 ---
 
-## **Professional Development**
+## **Publications**
 
-### **Workshops & Trainings Attended**
+1. **Mangale, D. I., Adhiambo, H., Adagi, P. A., Nyandieka, E., Abente, B., Achieng, S., … Amollo, N. W., & Odeny, T. A.** (2025). Characteristics and mortality risk among esophageal cancer patients with varied HIV status seeking care in western Kenya: A 10-year analysis. *[In Press]*  
+   **Role:** Data manager and analyst
 
-- Advanced Bayesian Statistics Workshop, 2024
-- Machine Learning in Healthcare, 2023
-- Geospatial Analysis for Public Health, 2023
-- Advanced R Programming and Package Development, 2022
-- Clinical Trials Data Management Best Practices, 2021
+2. **Odeny, T. A., Adhiambo, H. F., Mangale, D. I., Were, N. A., Nyandieka, E., Adagi, P. A., … Amollo, N. W., & Atieno, D.** (2025). Survival disparities in cervical cancer patients with and without HIV at Jaramogi Oginga Odinga Teaching and Referral Hospital (JOOTRH). *[In Press]*  
+   **Role:** Data manager and analyst
 
-### **Workshops & Trainings Delivered**
+3. **Ouma, O. J., Omondi, D., Akinyi, I., Amollo, N. W., Ogutu, S., Obinge, E., … van Olmen, J.** (2025). Addressing priority gaps in access and quality of NCD services in primary care settings in rural Kenya: A participatory approach to intervention development. *[In Press]*  
+   **Role:** Conceptualization, data collection, management, analysis, and co-writing results & discussion
 
-- "Introduction to R for Health Researchers" - 10+ workshops, 200+ participants
-- "REDCap for Clinical Trials" - 5 workshops
-- "Data Visualization with ggplot2" - 8 workshops
-- "Reproducible Research with R Markdown" - 6 workshops
+---
+
+## **Certifications & Professional Training**
+
+::: {.info-box}
+### Featured Certification
+**Monitoring & Evaluation in Global Health**  
+**University of Washington School of Public Health** | *Issued May 2025*  
+Comprehensive training in M&E frameworks, performance monitoring, impact evaluation, and donor reporting for global health programs.
+:::
+
+**Additional Certifications:**
+- **Social-Behavioral-Educational Human Subject Protection (SBE) Comprehensive** - CITI Program (Aug 2025, Expires Aug 2028)
+- **Biomedical Research Ethics** - CITI Program (2024)
+- **Certified Data Science Professional** - DataCamp (2023)
+- **Google Data Analytics Certificate** - Coursera (2021)
+- **Good Clinical Practice (GCP)** - Multiple renewals (2020-2024)
+- **REDCap Administrator Certification** (2021)
+
+---
+
+## **Training & Capacity Building**
+
+### **Training Programs Delivered (500+ Researchers Trained)**
+
+::: {.skills-grid}
+::: {.skill-category}
+**Data Management & Analytics**
+- Introduction to R for Health Researchers (10+ workshops)
+- Advanced Data Analysis with R & Stata (8 workshops)
+- REDCap for Clinical Trials (5 workshops)
+- Data Visualization with ggplot2 (8 workshops)
+- Reproducible Research with R Markdown (6 workshops)
+:::
+
+::: {.skill-category}
+**M&E & Field Operations**
+- Survey Tool Design & Implementation
+- Mobile Data Collection (ODK, Kobo, SurveyCTO)
+- High-Frequency Checks (HFCs) Protocols
+- Field Team Training & Supervision
+- Data Quality Assurance Frameworks
+:::
+:::
+
+### **Professional Development Completed**
+
+- Monitoring & Evaluation in Global Health - University of Washington (2025)
+- Advanced Bayesian Statistics Workshop (2024)
+- Machine Learning in Healthcare (2023)
+- Geospatial Analysis for Public Health (2023)
+- Advanced R Programming and Package Development (2022)
+- Clinical Trials Data Management Best Practices (2021)
 
 ---
 
@@ -265,73 +370,149 @@ Comprehensive disease surveillance system with:
 
 ## **Technical Skills Summary**
 
-### **Statistical Software**
-- **R**: Expert (8+ years) - tidyverse, data.table, ggplot2, shiny, rmarkdown, survival, caret
-- **Python**: Advanced (5+ years) - pandas, numpy, scikit-learn, matplotlib, seaborn
-- **Stata**: Advanced (7+ years) - Data management, statistical modeling
-- **SPSS**: Proficient (5+ years)
-- **SAS**: Intermediate (3+ years)
+::: {.skills-grid}
+::: {.skill-category}
+### Programming & Statistical Analysis
+**Expert Level:**
+- **R** - tidyverse, ggplot2, shiny, rmarkdown, data.table, survival, caret, machine learning
+- **Stata** - Data management, advanced statistics, HFCs, survey analysis
+- **SQL** - PostgreSQL, MySQL, MongoDB, database design
 
-### **Database Management**
-- **SQL**: Advanced - PostgreSQL, MySQL, SQLite
-- **REDCap**: Expert - Database design, API integration
-- **SurveyCTO**: Expert - Form design, quality control
-- **KoboCollect**: Advanced - Mobile data collection
+**Advanced Level:**
+- **Python** - pandas, numpy, scikit-learn, matplotlib, Gephi (network analysis)
+- **SPSS** - Survey analysis, descriptive/inferential statistics
+:::
 
-### **Data Visualization**
-- **R**: ggplot2, plotly, leaflet, shiny
-- **Tableau**: Advanced
-- **Power BI**: Intermediate
-- **D3.js**: Basic
+::: {.skill-category}
+### Survey & Data Collection Tools
+**Expert Level:**
+- **ODK/Kobo Toolbox** - Form design, mobile collection, offline functionality
+- **REDCap** - Database design, API integration, quality control
+- **SurveyCTO** - Complex surveys, geo-tracking, media capture
 
-### **Version Control & Collaboration**
-- **Git/GitHub**: Advanced
-- **RStudio Server**: Administration
-- **Quarto/R Markdown**: Expert
+**Advanced:**
+- **CommCare** - Community health worker tools
+:::
+
+::: {.skill-category}
+### Data Visualization & BI
+- **Tableau** - Interactive dashboards, business intelligence
+- **Power BI** - Corporate reporting, KPI tracking
+- **R Shiny** - Custom web applications, real-time monitoring
+- **ggplot2/plotly** - Publication-quality graphics
+:::
+
+::: {.skill-category}
+### Documentation & Collaboration
+- **LaTeX** - Academic writing, technical documentation
+- **MS Office** - Advanced Excel, Word, PowerPoint
+- **Git/GitHub** - Version control, collaborative coding
+- **Quarto/R Markdown** - Reproducible research, automated reporting
+:::
+:::
 
 ---
 
 ## **Languages**
 
-- **English**: Fluent (Professional Working Proficiency)
-- **Swahili**: Fluent (Native)
+- **English**: Fluent (Professional)
+- **Kiswahili**: Fluent (Native)
 - **Dholuo**: Fluent (Native)
-- **French**: Basic (Currently Learning)
+- **French**: Basic
 
 ---
 
-## **Personal Interests & Hobbies**
+## **What Sets Me Apart**
 
-### **Fitness & Wellness**
-A dedicated **exercise enthusiast**, I maintain a consistent workout routine **4+ times per week**. This commitment includes:
-- Strength training and cardiovascular exercises
-- Morning runs and nature walks
-- Yoga and flexibility training
+::: {.highlight-box}
+### 🎯 Unique Value Proposition for Senior M&E/Impact Roles
 
-This disciplined approach to fitness enhances my professional performance by maintaining high energy levels, mental clarity, and resilience under pressure.
+**End-to-End Project Leadership:**
+- From study design through field implementation to final reporting
+- Led field teams of 50+ enumerators across multiple countries
+- Designed training protocols and modules for research assistants
+- Developed digitalized mobile data collection systems
+- Conducted real-time HFCs catching errors before they cascade
 
-### **Other Interests**
-- Reading on Cold War history and Greek drama
-- Classical music, particularly Renaissance polyphony
-- Open-source software development
-- Mentoring young data scientists
+**Proven M&E Excellence:**
+- Established M&E frameworks for 8+ health programs (USAID, NIH-funded)
+- Expertise in Theory of Change, LogFrames, Results Frameworks
+- Donor reporting for international organizations (CMMB, Dalberg, gui2de)
+- Impact evaluation using RCTs and quasi-experimental designs
+
+**Strong Analytical & Problem-Solving Skills:**
+- Advanced statistical modeling (survival analysis, machine learning, CEA)
+- Systematic reviews and evidence synthesis
+- Tackled complex field challenges ensuring data quality
+- Network analysis using Gephi for agricultural/food security research
+
+**Team Management & Capacity Building:**
+- Trained 500+ researchers in R, Stata, data management, M&E
+- Supervised multi-country research teams
+- Built data-driven cultures within organizations
+- Mentored junior analysts advancing their careers
+
+**Remote Work Excellence:**
+- 3+ years managing international projects remotely
+- Proven track record with Georgetown University gui2de (remote role)
+- Home office optimized for productivity and collaboration
+:::
+
+---
+
+## **Personal Philosophy**
+
+::: {.info-box}
+### 💪 Resilience Through Adversity
+
+Growing up orphaned with limited resources taught me that **challenges are opportunities in disguise**. Every obstacle I've overcome has sharpened my:
+- **Problem-solving abilities** - Finding creative solutions with scarce resources
+- **Empathy for vulnerable populations** - Personal experience drives my commitment to health equity
+- **Work ethic and determination** - Nothing worth having comes easy
+- **Gratitude and giving back** - Training others multiplies impact
+
+I believe **data can change lives** - and I've dedicated my career to proving it.
+:::
 
 ---
 
 ## **References**
 
-Available upon request
+**Dr. Japheth Ogol**  
+Senior Lecturer, JOOUST  
+japheth.ogol@jooust.ac.ke
+
+**Erick Owino**  
+Director, Research & Innovation, LERIS Hub  
+eowino@lerishub.com
+
+**Additional references available upon request**
 
 ---
 
 ::: {.success-box}
-### 📥 Download CV
+### 🎯 Ready for Senior Research & M&E Roles
 
-[Download PDF Version](cv-nichodemus-amollo.pdf){.cta-button}
+I am actively seeking **senior remote positions** as:
+- ✅ **Research Data Manager** - Leading data management for multi-site studies
+- ✅ **Research Data Analyst** - Advanced statistical analysis and data science
+- ✅ **Senior M&E Specialist / Manager** - Program monitoring and evaluation
+- ✅ **Impact Evaluation Lead** - RCTs and quasi-experimental designs
+- ✅ **Biostatistician** - Clinical trials and epidemiological studies
 
-*Last Updated: September 2024*
+**Why hire me?**
+- ✔️ **6+ years** progressive M&E and data science experience
+- ✔️ **Proven leadership** managing multi-country projects and field teams
+- ✔️ **Technical excellence** in R, Python, Stata, SQL, and all major survey platforms
+- ✔️ **Washington University M&E certified** (2025)
+- ✔️ **Remote work expertise** with gui2de, University of Alaska Fairbanks
+- ✔️ **Track record** of impact - 500+ trained, 3 publications, KES 20M+ cost savings identified
+
+[Contact Me](mailto:nichodemuswerre@gmail.com){.cta-button} [View Projects](../projects/index.qmd){.cta-button} [LinkedIn](https://linkedin.com/in/nichodemusamollo){.cta-button}
+
+*Last Updated: September 2025*
 :::
 
 ---
 
-**Ready to collaborate?** [Contact me](mailto:nichodemuswerre@gmail.com) or [view my projects](../projects/index.qmd) to see my work in action.
+**Let's create impact together.** Reach out at **nichodemuswerre@gmail.com** or **+254 725 737 867**

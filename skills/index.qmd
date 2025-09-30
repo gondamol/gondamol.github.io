@@ -1,35 +1,70 @@
 ---
 title: "Skills & Expertise"
-subtitle: "Technical Competencies & Professional Capabilities"
+subtitle: "Research Data Management | Advanced Analytics | M&E Leadership | Field Operations"
 page-layout: full
 ---
 
 ::: {.hero-banner}
-# **7+ Years of Technical Excellence**
+# **6+ Years Research Data Management & M&E Excellence**
 
-Comprehensive expertise across the data lifecycle from collection to insights
+From data system design to advanced analytics to M&E frameworks - comprehensive expertise across the research data lifecycle
 :::
 
-## **Technical Skills Matrix**
+## **Core Competencies for Research Data Management, Analysis & M&E Roles**
 
 ::: {.skills-grid}
 ::: {.skill-category}
+### 🎯 M&E & Impact Evaluation
+
+**M&E Framework Design:**
+- Theory of Change, LogFrames, Results Frameworks
+- Performance indicators & targets
+- M&E plans for USAID/NIH-funded programs
+
+**Impact Evaluation:**
+- RCTs and quasi-experimental designs
+- Cost-effectiveness analysis (CEA)
+- Difference-in-differences, regression discontinuity
+
+**Performance Monitoring:**
+- KPI tracking and real-time dashboards
+- High-frequency checks (HFCs) using R & Stata
+- Donor reporting (USAID, NIH, foundations)
+:::
+
+::: {.skill-category}
+### 👥 Leadership & Field Operations
+
+**Field Team Management:**
+- Recruited, trained, supervised 50+ field teams
+- Multi-country coordination (Kenya, Uganda, Tanzania)
+- Training protocol development for RAs
+
+**Capacity Building:**
+- Trained 500+ researchers in R, Stata, M&E
+- Developed training modules & SOPs
+- Built data-driven cultures in organizations
+
+**Problem Solving:**
+- Tackled field challenges ensuring data quality
+- Real-time troubleshooting during data collection
+- System failures and data discrepancy resolution
+:::
+
+::: {.skill-category}
 ### 💻 Programming & Statistical Software
 
-**Expert Level (8+ years)**
-- R: tidyverse, ggplot2, shiny, rmarkdown, data.table
-- SQL: PostgreSQL, MySQL, SQLite
-- Statistical modeling and machine learning
+**Expert Level:**
+- **R** - tidyverse, ggplot2, shiny, rmarkdown, data.table, survival, caret
+- **Stata** - Data management, HFCs, survey analysis, advanced statistics
+- **SQL** - PostgreSQL, MySQL, MongoDB, database design
 
-**Advanced Level (5-7 years)**
-- Python: pandas, numpy, scikit-learn, matplotlib
-- Stata: Data management, advanced statistics
-- Git/GitHub: Version control and collaboration
+**Advanced Level:**
+- **Python** - pandas, numpy, scikit-learn, matplotlib, Gephi network analysis
+- **SPSS** - Survey analysis, descriptive/inferential statistics
 
-**Proficient Level (3-5 years)**
-- SPSS: Survey analysis, basic statistics
-- SAS: Clinical trial analysis
-- Bash scripting: Automation
+**Tools:**
+- Git/GitHub, LaTeX, Quarto, MS Office Suite
 :::
 
 ::: {.skill-category}
@@ -542,28 +577,30 @@ Health Facilities{.stat-label}
 ## **What Makes Me Stand Out**
 
 ::: {.highlight-box}
-### 🌟 Unique Value Proposition
+### 🌟 Unique Value Proposition for Research Data Management, Analysis & M&E Roles
 
-1. **End-to-End Expertise** - From survey design to final dashboard deployment
-2. **Health Domain Knowledge** - Deep understanding of clinical and public health contexts
-3. **Remote Work Excellence** - 5+ years of successful remote collaboration
-4. **Training & Mentorship** - Proven ability to build team capacity
-5. **Reproducible Research** - Committed to open science and transparency
-6. **Continuous Learning** - Always updating skills with latest tools and methods
-7. **Physical Wellness** - 4x weekly workouts maintaining peak mental performance
+1. **End-to-End Data Management** - From database design through data collection, cleaning, analysis to reporting
+2. **Advanced Analytics** - Expert in R, Stata, Python, SQL for statistical modeling and machine learning
+3. **M&E Leadership** - Designed and implemented M&E frameworks for 8+ programs (USAID/NIH-funded)
+4. **Field Operations Excellence** - Led 50+ field teams, designed training protocols, conducted real-time HFCs
+5. **Survey Systems Expert** - REDCap, ODK, SurveyCTO, Kobo - all major platforms for mobile/web data collection
+6. **Multi-Country Experience** - Managed projects across Kenya, Uganda, Tanzania (1,535+ sites)
+7. **Proven Impact** - 500+ trained, 3 publications, KES 20M+ cost savings identified, 99.9% data quality
+8. **Remote Work Expert** - 3+ years managing international projects remotely (gui2de, University of Alaska)
+9. **Personal Journey** - Overcame adversity as orphaned child, bringing resilience & empathy to every project
 :::
 
 ---
 
-## **Available for**
+## **Available for Senior Remote Roles**
 
-✅ **Senior Research Data Manager** positions  
-✅ **Health Data Analyst** roles  
-✅ **Biostatistician** consulting  
-✅ **Survey Design** projects  
-✅ **Dashboard Development** contracts  
-✅ **R/Stata Training** workshops  
-✅ **Remote Collaboration** opportunities  
+✅ **Research Data Manager** - End-to-end data leadership for multi-site research projects  
+✅ **Research Data Analyst** - Advanced statistical analysis and data science for health research  
+✅ **Senior M&E Specialist / Manager** - Leading program M&E for global health/development  
+✅ **Biostatistician** - Clinical trials and epidemiological studies  
+✅ **Impact Evaluation Lead** - Designing and executing RCTs, quasi-experimental studies  
+✅ **Data Management Consultant** - Database design, quality assurance, training  
+✅ **Field Operations Lead** - Training protocols, team management, HFCs  
 
 ---
 

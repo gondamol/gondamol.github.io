@@ -27,34 +27,64 @@ about:
 
 ::: {.hero-banner}
 ::: {.hero-content}
-# **Transforming Health Data into Actionable Insights**
+# **Driving Impact Through Data & M&E Excellence**
 
-### Senior Research Data Manager with 7+ Years of Excellence in Health Data Analytics, Survey Design & Data Management
+### Senior M&E Specialist | Research Data Manager | Research Data Analyst | 6+ Years Leading Global Health Projects
 
-[View Projects](projects/index.qmd){.cta-button} [Download CV](cv/index.qmd){.cta-button}
+**Georgetown University gui2de** | MSc Biostatistics & Epidemiology | **Washington U. M&E Certified**
+
+[View Projects](projects/index.qmd){.cta-button} [My Journey & CV](cv/index.qmd){.cta-button}
 :::
 :::
 
 ## **Professional Summary**
 
-I am a **senior Research Data Manager** with over **7 years of specialized experience** in health data analytics, survey tool design, and comprehensive data management. My expertise spans the complete data lifecycle—from designing robust data collection systems using **SurveyCTO, REDCap, and KoboCollect** to performing advanced statistical analysis with **R, Python, Stata, and SQL**.
+I am a **Senior M&E Specialist, Research Data Manager, and Research Data Analyst** with **6+ years of progressive experience** driving evidence-based decision-making for multi-million dollar international projects in **global health, food security, and economic development**. 
 
-Currently pursuing my **MSc in Epidemiology and Biostatistics** at JOOUST, I specialize in translating complex health data into actionable insights that drive evidence-based decision-making in resource-limited settings.
+**My expertise combines:**
+- **Rigorous M&E frameworks** - Theory of Change, LogFrames, Results Frameworks for USAID/NIH programs
+- **End-to-end data leadership** - Field team management, digitalized surveys, HFCs, analysis, reporting  
+- **Advanced analytics** - R, Python, Stata, SQL, machine learning, survival analysis, network analysis
+- **Team building** - Trained **500+ researchers**, led multi-country field teams, developed training protocols
+
+Currently with **Georgetown University gui2de** conducting RCTs and impact evaluations, while completing **MSc in Biostatistics & Epidemiology** at JOOUST and certified in **M&E in Global Health** by University of Washington (2025).
 
 ::: {.stats-container}
 ::: {.stat-card}
-**7+**{.stat-number}
-Years of Experience{.stat-label}
+**6+**{.stat-number}
+Years M&E Experience{.stat-label}
+:::
+
+::: {.stat-card}
+**500+**{.stat-number}
+Researchers Trained{.stat-label}
 :::
 
 ::: {.stat-card}
 **50+**{.stat-number}
-Research Projects{.stat-label}
+Field Teams Led{.stat-label}
 :::
 
 ::: {.stat-card}
-**20+**{.stat-number}
-Data Systems Designed{.stat-label}
+**KES 20M+**{.stat-number}
+Cost Savings Identified{.stat-label}
+:::
+:::
+
+::: {.stats-container}
+::: {.stat-card}
+**3**{.stat-number}
+Published Papers{.stat-label}
+:::
+
+::: {.stat-card}
+**1,535+**{.stat-number}
+Multi-Country Sites{.stat-label}
+:::
+
+::: {.stat-card}
+**8**{.stat-number}
+M&E Frameworks Built{.stat-label}
 :::
 
 ::: {.stat-card}
@@ -67,39 +97,39 @@ Records Managed{.stat-label}
 
 ::: {.skills-grid}
 ::: {.skill-category}
-### 📊 Data Analytics & Visualization
-- Advanced statistical analysis (R, Python, Stata)
-- Interactive dashboards (Shiny, Tableau, Power BI)
-- Predictive modeling & machine learning
-- Geospatial analysis & epidemiological modeling
-- Data visualization & storytelling
+### 🎯 M&E & Impact Evaluation
+- **M&E Framework Design** - Theory of Change, LogFrames, Results Frameworks
+- **Performance Monitoring** - KPI tracking, donor reporting, real-time dashboards
+- **Impact Evaluation** - RCTs, quasi-experimental designs, CEA
+- **Field Operations** - Led 500+ field teams, mobile data systems
+- **High-Frequency Checks** - Real-time quality monitoring (R & Stata)
 :::
 
 ::: {.skill-category}
-### 🗄️ Data Management & Systems
-- Database design & administration (SQL, PostgreSQL)
-- ETL pipeline development
-- Data quality assurance & validation
-- REDCap, SurveyCTO, KoboCollect implementation
-- Electronic Data Capture (EDC) systems
+### 👥 Leadership & Team Management
+- **Field Team Leadership** - Recruited, trained, supervised multi-country teams
+- **Training Development** - Created protocols & modules for RAs, enumerators
+- **Capacity Building** - Trained 500+ researchers in data management & M&E
+- **Consultancy Leadership** - Led tool development with LERIS Hub affiliations
+- **Problem Solving** - Tackled field challenges, system failures, data issues
 :::
 
 ::: {.skill-category}
-### 📋 Survey Design & Implementation
-- Questionnaire design & validation
-- SurveyCTO, REDCap, KoboCollect configuration
-- Mobile data collection systems
-- Data collection training & supervision
-- Survey quality monitoring & evaluation
+### 📊 Advanced Analytics & Programming
+- **Statistical Analysis** - Regression, survival analysis, machine learning, Bayesian
+- **Programming** - R (expert), Python, Stata, SQL, SPSS
+- **Specialized Analysis** - Oncology data, agricultural economics, network analysis
+- **Predictive Modeling** - Classification, clustering, Gephi network analysis
+- **Systematic Reviews** - Literature synthesis, meta-analysis, evidence synthesis
 :::
 
 ::: {.skill-category}
-### 🏥 Health Data Analytics
-- Clinical trial data management
-- Public health surveillance systems
-- Health facility assessments
-- NCD & infectious disease analytics
-- Health economics & financing analysis
+### 🗄️ Data Systems & Tools
+- **End-to-End Data Management** - Design, implementation, monitoring, evaluation
+- **Survey Digitalization** - ODK, Kobo Collect, SurveyCTO, REDCap, CommCare
+- **Database Development** - MongoDB, MySQL, PostgreSQL, Vercel
+- **Dashboards** - Tableau, Power BI, R Shiny for real-time monitoring
+- **Report Writing** - Donor reports, policy briefs, technical documentation
 :::
 :::
 
@@ -121,52 +151,70 @@ This groundbreaking research examines the intersection of health facility financ
 [View Thesis Project Dashboard →](research/thesis.qmd)
 :::
 
-## **What I Bring to Your Team**
+## **What Makes Me Stand Out for Senior M&E/Impact Roles**
 
-✅ **End-to-End Data Management** - From survey design to final analysis and reporting  
-✅ **Advanced Technical Skills** - R, Python, Stata, SQL, and modern data visualization tools  
-✅ **Health Domain Expertise** - Deep understanding of health systems, clinical trials, and epidemiology  
-✅ **Remote Work Excellence** - Proven track record of managing international research projects remotely  
-✅ **Training & Mentorship** - Experience teaching biostatistics and R programming  
-✅ **Reproducible Research** - Committed to open science, transparency, and best practices  
+✅ **Proven M&E Leadership** - Designed and implemented M&E frameworks for 8+ programs (USAID/NIH-funded)  
+✅ **Field Operations Excellence** - Led field teams of 50+ enumerators, designed training protocols, conducted HFCs  
+✅ **End-to-End Project Management** - From study design through field implementation to donor reporting  
+✅ **Advanced Analytics** - Expert in R, Python, Stata, SQL plus machine learning & survival analysis  
+✅ **Multi-Country Experience** - Managed projects across Kenya, Uganda, Tanzania  
+✅ **Consultancy Track Record** - Led data systems development for LERIS Hub, Dalberg, CMMB, NEPHAK  
+✅ **Capacity Builder** - Trained 500+ researchers, developed training modules, built data-driven cultures  
+✅ **Remote Work Expert** - 3+ years managing international projects remotely (gui2de, University of Alaska)  
 
-## **Beyond Work: Personal Philosophy**
+## **My Journey: Against All Odds**
 
-::: {.info-box}
-### 💪 Exercise Enthusiast & Peak Performance
+::: {.highlight-box}
+### 🌟 From Orphaned Child to Global Health Leader
 
-I maintain a disciplined fitness routine, working out **at least 4 times per week**. This commitment to physical wellness directly enhances my professional performance by:
+Growing up **orphaned with limited resources** in rural Kenya, the odds were stacked against me. Every educational milestone required extraordinary determination and resourcefulness. **Against all odds, I made it this far** - and these experiences shaped who I am today:
 
-- Boosting mental clarity and problem-solving abilities
-- Maintaining high energy levels throughout demanding projects
-- Building discipline and consistency that translates to work excellence
-- Practicing stress management and resilience
+**What adversity taught me:**
+- **Resilience** - Loss instilled a drive to create lasting impact
+- **Resourcefulness** - Scarcity sharpened my problem-solving abilities  
+- **Empathy** - Personal challenges deepened my commitment to health equity  
+- **Gratitude** - Support from mentors fueled my passion for capacity building
 
-I believe that **a healthy body fuels a productive mind**, and this philosophy permeates everything I do. Whether I'm analyzing complex datasets or designing survey systems, my fitness regimen keeps me sharp, focused, and energetic.
+**I believe data can change lives** - and I've dedicated my career to proving it. Now positioned to lead transformative global health initiatives, I bring not just technical skills, but a deep understanding of the communities we serve.
+
+[Read My Full Journey →](cv/index.qmd)
 :::
 
 ## **Let's Connect**
 
-I'm passionate about leveraging data to improve health outcomes in resource-limited settings. Whether you're looking for:
+I'm passionate about leveraging data and M&E to drive impact in global health and development. Whether you need:
 
-- A senior research data manager for your health research project
-- Expertise in survey design and implementation
-- Advanced analytics and dashboard development
-- Training in R, Stata, or data management best practices
+- **Senior M&E leadership** for your health/development program
+- **End-to-end project management** from design to donor reporting
+- **Field team leadership** and training protocol development
+- **Advanced analytics** and dashboard development
+- **Systematic reviews** and evidence synthesis
 
-**I'd love to collaborate with you!**
+**Let's create impact together!**
 
 📧 **Email:** [nichodemuswerre@gmail.com](mailto:nichodemuswerre@gmail.com)  
-💼 **LinkedIn:** [linkedin.com/in/amollow](https://linkedin.com/in/amollow)  
+📱 **Phone:** +254 725 737 867  
+💼 **LinkedIn:** [linkedin.com/in/nichodemusamollo](https://linkedin.com/in/nichodemusamollo)  
 🐙 **GitHub:** [github.com/gondamol](https://github.com/gondamol)  
 🐦 **Twitter:** [@nwerre](https://twitter.com/nwerre)
 
 ---
 
 ::: {.success-box}
-### 🎯 Available for Remote Opportunities
+### 🎯 Seeking Senior Roles (Remote)
 
-I am currently **open to remote positions** as a Senior Research Data Manager, Data Analyst, or Health Data Scientist. With proven experience managing international projects and a home office setup optimized for productivity, I deliver exceptional results regardless of location.
+I am actively seeking **senior remote positions** as:
+- **Research Data Manager** - End-to-end data leadership for multi-million dollar research projects
+- **Research Data Analyst** - Advanced statistical analysis and data science for health research
+- **Senior M&E Specialist / Manager** - Leading program monitoring and evaluation
+- **Impact Evaluation Lead** - Designing and executing RCTs, quasi-experimental studies
 
-[View My CV →](cv/index.qmd) | [See My Projects →](projects/index.qmd)
+**Why hire me?**
+- ✔️ **6+ years** progressive M&E and data science experience  
+- ✔️ **Washington University M&E Certified** (2025)  
+- ✔️ **Proven leadership** managing multi-country projects and field teams  
+- ✔️ **Track record** - 500+ trained, 3 publications, KES 20M+ cost savings  
+- ✔️ **Remote work expertise** with Georgetown University gui2de
+
+[My Journey & CV →](cv/index.qmd) | [See Projects →](projects/index.qmd) | [Contact Me](mailto:nichodemuswerre@gmail.com){.cta-button}
 :::

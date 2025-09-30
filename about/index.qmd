@@ -1,6 +1,6 @@
 ---
 title: "About Me"
-subtitle: "Senior Research Data Manager | Health Data Analytics Specialist"
+subtitle: "Research Data Manager | Research Data Analyst | M&E Specialist | Washington U. M&E Certified"
 image: ../profile.jpg
 page-layout: article
 format: 
@@ -33,21 +33,42 @@ about:
 
 ## **Who I Am**
 
-I am a **Senior Research Data Manager** with over **7 years of specialized experience** in health data analytics, survey design, and comprehensive data management. My career has been dedicated to transforming complex health data into actionable insights that drive evidence-based decision-making in resource-limited settings.
+I am a **Research Data Manager, Research Data Analyst, and M&E Specialist** with **6+ years of progressive experience** driving evidence-based decision-making for multi-million dollar international projects in **global health, food security, and economic development**.
 
-My expertise spans the complete data lifecycle—from designing robust data collection systems using **SurveyCTO, REDCap, and KoboCollect** to performing advanced statistical analysis with **R, Python, Stata, and SQL**. I have managed data for 20+ multi-site research projects, including clinical trials, cohort studies, and large-scale health surveys, consistently achieving 99%+ data quality.
+My career combines **end-to-end data management**, **advanced statistical analysis**, **rigorous M&E frameworks**, **field operations leadership**, and **capacity building**. Currently with **Georgetown University gui2de** conducting RCTs and impact evaluations, I specialize in transforming complex data into actionable insights that drive program success and policy change.
+
+**What makes me different:** I've led the complete project lifecycle—from designing M&E frameworks and training field teams of 50+ enumerators, to conducting high-frequency checks (HFCs) in R & Stata, to delivering compelling donor reports. With **Washington University M&E Certification** (2025) and 3 published papers, I bring both academic rigor and practical field experience.
 
 ---
 
-## **My Journey**
+## **My Journey: Against All Odds**
 
-My path into health data science emerged from a deep conviction that **rigorous data management is the foundation of credible research**. Over the past 7+ years, I've had the privilege of:
+::: {.highlight-box}
+### 🌟 From Orphaned Child to Global Health Leader
 
-- Leading data management for **multi-country HIV treatment trials** with 1,200+ participants
-- Designing **electronic data capture systems** for studies enrolling 5,000+ participants
-- Creating **interactive dashboards** that reduce decision-making time from weeks to minutes
-- Training **500+ researchers** in R programming and data management best practices
-- Contributing to **health policy decisions** through evidence-based analytics
+Growing up **orphaned with limited resources** in rural Kenya, the odds were stacked against me. Without the safety net many take for granted, every educational milestone—from primary school to earning my BSc (Honours) at University of Nairobi (top quartile)—required extraordinary determination.
+
+**Against all odds, I made it this far.** These experiences didn't just shape my character; they became my greatest professional assets:
+
+**What adversity taught me:**
+- **Resilience** - Loss instilled an unshakeable drive to create lasting impact
+- **Resourcefulness** - Scarcity sharpened my problem-solving and innovation skills
+- **Empathy** - Personal struggles deepened my commitment to health equity
+- **Gratitude** - Mentors' support fueled my passion for capacity building
+- **Team spirit** - Community taught me that collaboration multiplies impact
+
+**I believe data can change lives**—and I've dedicated my career to proving it.
+:::
+
+### **Career Highlights:**
+
+- **Georgetown University gui2de** - Leading RCTs and impact evaluations for health/development programs
+- **KEMRI** - Transformed oncology data into policy-driving cancer epidemiology dashboards
+- **LERIS Hub** - Built M&E frameworks for 8 health programs, led consultancies
+- **Multi-country projects** - Coordinated data across Kenya, Uganda, Tanzania (1,535+ sites)
+- **500+ researchers trained** - Capacity building in R, Stata, M&E, data management
+- **3 publications** - Cancer epidemiology (data manager & analyst)
+- **KES 20M+ cost savings** identified through rigorous analytics
 
 ---
 
@@ -150,23 +171,22 @@ Designing and delivering comprehensive R programming workshops for health resear
 
 ## **Beyond Work: The Whole Person**
 
-### 💪 Fitness Enthusiast & Peak Performance
+### 💪 Resilience & Peak Performance
 
-I am deeply committed to physical wellness, maintaining a disciplined workout routine **at least 4 times per week**. This isn't just about health—it's about **peak professional performance**.
+My life experiences taught me that **sustainable impact requires sustainable energy**. I maintain a disciplined approach to wellness—physically, mentally, and professionally:
 
-My fitness regimen includes:
-- **Strength training** - Building physical and mental resilience
-- **Cardiovascular exercise** - Maintaining energy and focus
-- **Flexibility work** - Yoga and stretching
-- **Morning runs** - Starting the day with clarity
+**Physical Fitness:**
+- Workout routine maintaining high energy for demanding projects
+- Mental clarity for complex problem-solving
+- Stress management and work-life balance
 
-This commitment to fitness directly enhances my work by:
-- Boosting mental clarity and problem-solving abilities
-- Maintaining high energy levels throughout demanding projects
-- Building discipline and consistency that translates to work excellence
-- Managing stress and maintaining work-life balance
+**Professional Excellence:**
+- Rigorous attention to detail in M&E frameworks
+- Proactive problem-solving in field operations
+- Commitment to capacity building and mentorship
+- Data-driven decision-making at every level
 
-**I believe that a healthy body fuels a productive mind.** Whether I'm debugging complex code, analyzing datasets, or presenting to stakeholders, my fitness routine keeps me sharp, focused, and energetic.
+Whether I'm conducting HFCs in the field, building dashboards for donors, or training research assistants, **I bring 100% focus and energy** to drive project success.
 
 ---
 
@@ -255,19 +275,18 @@ I'm always interested in connecting with:
 ---
 
 ::: {.success-box}
-### 🤝 Open to Opportunities
+### Open to Opportunities
 
-I'm currently **available for remote positions** as a:
-- Senior Research Data Manager
-- Health Data Analyst
-- Biostatistician
-- Data Management Consultant
+I am currently **available for remote positions** as a:
+- **Research Data Manager** - End-to-end data leadership
+- **Research Data Analyst** - Advanced statistical analysis
+- **Senior M&E Specialist** - Program monitoring & evaluation
+- **Biostatistician** - Clinical trials & epidemiological studies
 
 With proven experience managing international projects remotely, I deliver exceptional results regardless of location.
 
 [View CV](../cv/index.qmd){.cta-button} [See Projects](../projects/index.qmd){.cta-button}
 :::
-
 ---
 
 [Back to Home →](../index.qmd)
