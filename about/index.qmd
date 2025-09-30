@@ -1,63 +1,276 @@
 ---
-title: "Nichodemus Amollo"
-image: mount.jpeg
+title: "About Me"
+subtitle: "Senior Research Data Manager | Health Data Analytics Specialist"
+image: ../profile.jpg
 page-layout: article
 format: 
   html:
     linestretch: 1.7
 about:
   id: hero-heading
-  template: jolla
+  template: solana
   image-shape: round
   links:
-    - icon: kaggle
-      text: Kaggle
-      url: https://www.kaggle.com/
-      #- icon: linkedin
-       # text: LinkedIn
-       # url: https://www.linkedin.com/in/
-      #- icon: twitter
-      #  text: Twitter
-       # url: https://twitter.com/
+    - icon: linkedin
+      text: LinkedIn
+      url: https://linkedin.com/in/amollow
     - icon: github
       text: Github
-      url: https://github.com/
+      url: https://github.com/gondamol
+    - icon: twitter
+      text: Twitter
+      url: https://twitter.com/nwerre
+    - icon: kaggle
+      text: Kaggle
+      url: https://kaggle.com/nwerre
     - icon: envelope
       text: Email
       href: mailto:nichodemuswerre@gmail.com
-  #    - text: "{{< ai orcid >}} ORCID"
 ---
 
 ::: {#hero-heading}
-
 :::
 
-I am a passionate data analyst and statistician specializing in computational epidemiology, public health, oncology research, and Bayesian statistics. With a strong background in data management, analysis, and storytelling, I am dedicated to using data to uncover insights that drive impactful decisions.. Over the past few years, I've become very interested in **research software, open source, reproducibility** and **data science** practices in public sector.
+## **Who I Am**
 
+I am a **Senior Research Data Manager** with over **7 years of specialized experience** in health data analytics, survey design, and comprehensive data management. My career has been dedicated to transforming complex health data into actionable insights that drive evidence-based decision-making in resource-limited settings.
 
-In my current role, I leverage my skills to contribute to cutting-edge research and projects that address critical public health challenges. My passion for data extends beyond the workplace, as I continually seek to expand my knowledge and share it through publications, speaking engagements, and mentoring.
+My expertise spans the complete data lifecycle—from designing robust data collection systems using **SurveyCTO, REDCap, and KoboCollect** to performing advanced statistical analysis with **R, Python, Stata, and SQL**. I have managed data for 20+ multi-site research projects, including clinical trials, cohort studies, and large-scale health surveys, consistently achieving 99%+ data quality.
 
-My **Key Research Interests** are: 
+---
 
-- **Computational Epidemiology:** Agent-based modeling, geospatial analysis, and dynamic networks in the context of infectious diseases.
-- **Public Health:** Evidence-based public health policy, health systems improvement, and public health ethics.
-- **Oncology Research:** Investigating cancer epidemiology and improving cancer treatment outcomes.
-- **Non-Communicable Diseases:** Focusing on chronic disease prevention and control.
-- **Bayesian Statistics:** Application of Bayesian methods in epidemiology and biostatistics.
-- **Reproducibility:** Promoting reproducible research practices in public health and epidemiology. Statistical software development in public health and clinical research
+## **My Journey**
 
-I am currently pusruing my MSc in Epidemiology and Biostatistics at JOOUST, where I have finshed my coursework and designed a case study design to **assess primary health facility financing for management of hypertension and diabestes in kisumu county**. I look forward to registering for a PhD position to continue exploring the application of statistical methods in public health data, particularly in randomized clinical trails. Soon, I want to start developing R packages, I want to turn my thesis into a package, transparency, openness, and reproducibility. 
+My path into health data science emerged from a deep conviction that **rigorous data management is the foundation of credible research**. Over the past 7+ years, I've had the privilege of:
 
-## Ongoing Publications
+- Leading data management for **multi-country HIV treatment trials** with 1,200+ participants
+- Designing **electronic data capture systems** for studies enrolling 5,000+ participants
+- Creating **interactive dashboards** that reduce decision-making time from weeks to minutes
+- Training **500+ researchers** in R programming and data management best practices
+- Contributing to **health policy decisions** through evidence-based analytics
 
-- **[assess primary health facility financing for management of hypertension and diabestes in kisumu county]** - MSc Thesis.
+---
 
+## **What Drives Me**
 
-Sometimes I teach **biostatistics** courses at JOOUST school of health sciences ([JOOUST](https://www.jooust.ac.ke/)), Kisumu. As a DataCamp certified data scientist, I also teach and help with **R programming** at the [LERIS HUB](https://lerishub.com/). 
+::: {.highlight-box}
+### 🎯 My Professional Mission
 
+To bridge the gap between raw health data and meaningful insights that improve lives. I believe that:
 
+- **Data quality is non-negotiable** - Every data point represents a person
+- **Open science advances health** - Reproducible research should be the standard
+- **Technology should empower** - Tools should solve problems, not create them
+- **Capacity building multiplies impact** - Teaching others creates lasting change
+:::
 
-I speak fluent English, Swahili and dholuo, and trying to learn French. Outside of work, I enjoy staying active and engaging in various sports. I have a deep appreciation for classical music, particularly Renaissance polyphony, and enjoy reading on topics ranging from Cold War history to Greek drama. Living with neuromyelitis optica has fueled my curiosity about complex health conditions and has driven me to understand them better through my research.
+---
+
+## **Current Focus**
+
+### 🎓 MSc Thesis Research
+
+I'm currently completing my **MSc in Epidemiology and Biostatistics** at JOOUST, with my thesis examining:
+
+**"Exploring Financial Determinants of Effective Hypertension and Diabetes Management in Primary Health Facilities in Kisumu County"**
+
+This research investigates the critical intersection of health facility financing and NCD management outcomes, employing:
+- Mixed-methods case study design
+- Financial assessments of 30+ health facilities
+- Patient outcome tracking (500+ participants)
+- Cost-effectiveness analysis
+- Interactive dashboards for real-time monitoring
+
+[View Thesis Project →](../research/thesis.qmd)
+
+---
+
+## **Research Interests**
+
+My intellectual curiosity spans multiple domains:
+
+::: {.skills-grid}
+::: {.skill-category}
+### 📊 Methodological Interests
+- **Computational Epidemiology** - Agent-based modeling, network analysis
+- **Bayesian Statistics** - Modern statistical methods for health research
+- **Machine Learning** - Predictive modeling for health outcomes
+- **Causal Inference** - Understanding what works and why
+:::
+
+::: {.skill-category}
+### 🏥 Health Focus Areas
+- **Non-Communicable Diseases** - Hypertension, diabetes, CVD
+- **Infectious Diseases** - HIV/AIDS, TB, malaria
+- **Health Systems** - Financing, efficiency, quality improvement
+- **Implementation Science** - Translating evidence to practice
+:::
+
+::: {.skill-category}
+### 🔧 Technical Passions
+- **Reproducible Research** - Open science, version control, documentation
+- **R Package Development** - Building tools for researchers
+- **Data Visualization** - Making complex data accessible
+- **Data Quality** - Automated systems for ensuring data integrity
+:::
+
+::: {.skill-category}
+### 🌍 Global Health
+- **Health Equity** - Addressing disparities in care
+- **Resource-Limited Settings** - Innovative solutions for challenging contexts
+- **Community Engagement** - Participatory research approaches
+- **Capacity Building** - Sustainable skill development
+:::
+:::
+
+---
+
+## **Teaching & Mentoring**
+
+Education is a core part of my professional identity. I serve as:
+
+### **Part-Time Lecturer - Biostatistics**
+**Jaramogi Oginga Odinga University of Science and Technology (JOOUST)** | 2020 - Present
+
+Teaching undergraduate and graduate courses in biostatistics and epidemiology, with a focus on practical R programming skills for health sciences students.
+
+### **R Programming Instructor**
+**LERIS HUB** | 2019 - Present
+
+Designing and delivering comprehensive R programming workshops for health researchers. I've trained 200+ participants in data visualization, statistical modeling, and reproducible research practices.
+
+**Workshop Topics:**
+- Introduction to R for Health Researchers
+- Data Visualization with ggplot2
+- REDCap for Clinical Trials
+- Reproducible Research with R Markdown
+- Advanced Statistical Modeling
+
+---
+
+## **Beyond Work: The Whole Person**
+
+### 💪 Fitness Enthusiast & Peak Performance
+
+I am deeply committed to physical wellness, maintaining a disciplined workout routine **at least 4 times per week**. This isn't just about health—it's about **peak professional performance**.
+
+My fitness regimen includes:
+- **Strength training** - Building physical and mental resilience
+- **Cardiovascular exercise** - Maintaining energy and focus
+- **Flexibility work** - Yoga and stretching
+- **Morning runs** - Starting the day with clarity
+
+This commitment to fitness directly enhances my work by:
+- Boosting mental clarity and problem-solving abilities
+- Maintaining high energy levels throughout demanding projects
+- Building discipline and consistency that translates to work excellence
+- Managing stress and maintaining work-life balance
+
+**I believe that a healthy body fuels a productive mind.** Whether I'm debugging complex code, analyzing datasets, or presenting to stakeholders, my fitness routine keeps me sharp, focused, and energetic.
+
+---
+
+### 📚 Intellectual Curiosities
+
+Beyond data and fitness, I'm passionate about:
+
+- **Classical Music** - Particularly Renaissance polyphony
+- **History** - Cold War history and geopolitics
+- **Literature** - Greek drama and philosophy
+- **Languages** - Fluent in English, Swahili, and Dholuo; currently learning French
+- **Open Source** - Contributing to the global commons
+
+---
+
+### 🌟 Personal Philosophy
+
+Living with neuromyelitis optica has profoundly shaped my perspective on life and work. It has:
+- Fueled my curiosity about complex health conditions
+- Deepened my empathy for patients in health research
+- Strengthened my resolve to contribute meaningfully to health improvement
+- Taught me resilience and the importance of self-care
+
+This personal journey informs my professional commitment to health equity and patient-centered research.
+
+---
+
+## **Future Aspirations**
+
+### 🎓 PhD Studies
+
+I plan to pursue doctoral studies (starting 2025/2026) focusing on:
+- **Statistical methods in clinical trials** - Adaptive designs, Bayesian approaches
+- **Health data interoperability** - Integrating health information systems
+- **R package development** - Creating tools for reproducible health research
+- **Machine learning for health outcomes** - Predictive modeling in resource-limited settings
+
+### 📦 R Package Development
+
+I'm actively developing R packages based on my thesis work:
+- **`ncdfinance`** - Tools for analyzing health facility financing for NCDs
+- **`surveyflow`** - Workflow management for survey data collection
+
+### 🌍 Global Impact
+
+My ultimate goal is to contribute to **global health improvement** through:
+- Rigorous, reproducible research
+- Open-source tool development
+- Capacity building in Africa
+- Evidence-based policy influence
+
+---
+
+## **Professional Values**
+
+::: {.info-box}
+### 🌟 What Guides My Work
+
+✅ **Integrity** - Honesty in all professional dealings  
+✅ **Excellence** - Commitment to the highest standards  
+✅ **Collaboration** - Better outcomes through teamwork  
+✅ **Innovation** - Creative solutions to complex problems  
+✅ **Equity** - Commitment to reducing health disparities  
+✅ **Transparency** - Open science and reproducible research  
+✅ **Continuous Learning** - Always growing and improving  
+:::
+
+---
+
+## **Let's Connect**
+
+I'm always interested in connecting with:
+- Researchers working on health data challenges
+- Organizations seeking data management expertise
+- Students interested in health data science
+- Collaborators on open-source projects
+
+**Ways to reach me:**
+
+📧 **Email:** [nichodemuswerre@gmail.com](mailto:nichodemuswerre@gmail.com)  
+💼 **LinkedIn:** [linkedin.com/in/amollow](https://linkedin.com/in/amollow)  
+🐙 **GitHub:** [github.com/gondamol](https://github.com/gondamol)  
+🐦 **Twitter:** [@nwerre](https://twitter.com/nwerre)  
+📊 **Kaggle:** [kaggle.com/nwerre](https://kaggle.com/nwerre)
+
+---
+
+::: {.success-box}
+### 🤝 Open to Opportunities
+
+I'm currently **available for remote positions** as a:
+- Senior Research Data Manager
+- Health Data Analyst
+- Biostatistician
+- Data Management Consultant
+
+With proven experience managing international projects remotely, I deliver exceptional results regardless of location.
+
+[View CV](../cv/index.qmd){.cta-button} [See Projects](../projects/index.qmd){.cta-button}
+:::
+
+---
+
+[Back to Home →](../index.qmd)
 
 
 

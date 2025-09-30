@@ -1,0 +1,656 @@
+---
+title: "Dashboards & Visualizations"
+subtitle: "Interactive data visualization for real-time decision making"
+page-layout: full
+---
+
+::: {.hero-banner}
+# 📊 Interactive Dashboards
+
+Turning complex data into intuitive, actionable visualizations
+:::
+
+## **Featured Dashboards**
+
+### **1. Health Facility Performance Dashboard**
+
+::: {.project-card}
+::: {.project-header}
+#### 🏥 Real-Time Facility Monitoring System
+**Platform:** R Shiny | **Users:** 100+ facility managers | **Status:** Production
+:::
+
+::: {.project-body}
+**Overview:**
+Comprehensive dashboard for monitoring health facility performance across 30+ indicators in real-time.
+
+**Key Features:**
+
+**1. KPI Overview:**
+- Patient volumes and trends
+- Service availability
+- Staff attendance rates
+- Stock status (medications, supplies)
+- Financial performance
+
+**2. Clinical Outcomes:**
+- Disease-specific outcomes (HIV, TB, NCD)
+- Patient satisfaction scores
+- Treatment success rates
+- Complication rates
+- Referral tracking
+
+**3. Operational Metrics:**
+- Average wait times
+- Bed occupancy rates
+- Equipment functionality
+- Supply chain indicators
+- Human resource utilization
+
+**4. Comparative Analytics:**
+- Peer facility benchmarking
+- Historical trend analysis
+- Geographic comparisons
+- Performance rankings
+
+**Interactive Elements:**
+- Date range selection
+- Facility filtering
+- Drill-down capabilities
+- Export functionality (PDF, Excel)
+- Automated email reports
+
+**Technologies:** R Shiny, ggplot2, plotly, DT, shinydashboard, PostgreSQL
+
+**Impact:**
+- ✅ 30+ facilities using daily
+- ✅ Average decision-to-action time reduced from 2 weeks to 2 days
+- ✅ Identified $500K in cost savings opportunities
+- ✅ Early warning system prevented 3 stock-outs
+
+**Social Media Highlight:**
+> "Data-driven facility management! Our real-time dashboard helps 30+ facilities track 30+ KPIs instantly. Result? Decision time down from 2 weeks to 2 days, $500K in savings identified. This is #HealthTech impact! #Dashboards #HealthManagement"
+
+[View Demo →](#) | [User Guide →](#) | [Code on GitHub →](https://github.com/gondamol/facility-dashboard)
+:::
+:::
+
+---
+
+### **2. Disease Surveillance Dashboard**
+
+::: {.project-card}
+::: {.project-header}
+#### 🦠 Epidemic Intelligence System
+**Platform:** R Shiny | **Coverage:** 100+ facilities | **Status:** Production
+:::
+
+::: {.project-body}
+**Purpose:**
+Real-time disease surveillance and outbreak detection system for public health teams.
+
+**Dashboard Sections:**
+
+**1. Geographic Overview:**
+- Interactive map with case counts
+- Cluster detection visualization
+- Hot spot analysis
+- Facility reporting status
+
+**2. Time Series Analysis:**
+- Disease trends over time
+- Seasonal patterns
+- Comparison with historical baselines
+- Outbreak threshold indicators
+
+**3. Outbreak Detection:**
+- CUSUM charts for anomaly detection
+- EWMA control charts
+- Automated alert system
+- Risk scoring algorithm
+
+**4. Case Investigation:**
+- Individual case details
+- Contact tracing network visualization
+- Laboratory confirmation status
+- Follow-up tracking
+
+**5. Response Tracking:**
+- Investigation timelines
+- Intervention coverage
+- Resource deployment
+- Outcome monitoring
+
+**Advanced Analytics:**
+- Predictive modeling for outbreak spread
+- Resource allocation optimization
+- Impact assessment tools
+- Automated weekly bulletins
+
+**Alert System:**
+- Email/SMS notifications for threshold breaches
+- Escalation protocols
+- Daily summary reports
+- Custom alerts for stakeholders
+
+**Technologies:** R Shiny, leaflet, igraph, forecast, PostgreSQL, SendGrid API
+
+**Impact:**
+- ✅ 15 outbreaks detected early (average 3 days earlier)
+- ✅ 100+ facilities actively reporting
+- ✅ Reduced outbreak duration by 35%
+- ✅ Adopted as standard tool by County Health Teams
+
+**Social Media Highlight:**
+> "Early warning systems save lives! Our disease surveillance dashboard detected 15 outbreaks 3 days earlier than traditional methods, reducing outbreak duration by 35%. Real-time data + automated alerts = rapid response. #PublicHealth #Epidemiology"
+
+[Live Dashboard →](#) | [Technical Documentation →](#)
+:::
+:::
+
+---
+
+### **3. Clinical Trial Monitoring Dashboard**
+
+::: {.project-card}
+::: {.project-header}
+#### 📈 Multi-Site Trial Management System
+**Platform:** R Shiny + Tableau | **Sites:** 12 | **Status:** Production
+:::
+
+::: {.project-body}
+**Purpose:**
+Comprehensive monitoring dashboard for multi-site clinical trials with real-time data quality tracking.
+
+**Core Modules:**
+
+**1. Enrollment Dashboard:**
+- Enrollment vs. target tracking
+- Site-level enrollment rates
+- Screening funnel analysis
+- Enrollment projections
+- Timeline tracking
+
+**2. Data Quality Metrics:**
+- Completeness rates by form
+- Query rates and resolution times
+- Protocol deviation tracking
+- Missing data analysis
+- Audit preparation status
+
+**3. Safety Monitoring:**
+- Adverse event summary
+- SAE reporting timeline
+- Causality assessment tracking
+- Safety signal detection
+- DSMB report preparation
+
+**4. Laboratory Monitoring:**
+- Sample tracking (collected, processed, resulted)
+- Turnaround time analysis
+- Out-of-range results
+- Grade 3/4 lab abnormalities
+- Sample inventory
+
+**5. Site Performance:**
+- Recruitment rates
+- Data quality scores
+- Protocol compliance
+- Visit completion rates
+- Site ranking and benchmarking
+
+**6. Study Progress:**
+- Overall completion percentage
+- Milestone tracking
+- Budget utilization
+- Resource allocation
+- Timeline projections
+
+**Data Integration:**
+- REDCap API for clinical data
+- Laboratory LIMS integration
+- Pharmacy system connection
+- Finance system linkage
+- Automated nightly updates
+
+**User Roles:**
+- **Investigators:** High-level summaries
+- **Site Coordinators:** Site-specific detailed views
+- **Data Managers:** Quality metrics and queries
+- **Monitors:** Audit-ready reports
+- **Sponsors:** Executive summaries
+
+**Technologies:** R Shiny, Tableau, REDCap API, PostgreSQL, flexdashboard
+
+**Impact:**
+- ✅ Real-time visibility for 12 sites across 4 countries
+- ✅ Enrollment on target (vs. 20% behind before dashboard)
+- ✅ Query resolution time reduced by 60%
+- ✅ Zero audit findings related to data quality
+
+**Social Media Highlight:**
+> "Clinical trial excellence through dashboards! Managing 12 sites across 4 countries with real-time data quality tracking. Query resolution down 60%, enrollment on target, zero audit findings. This is how you run global trials! #ClinicalTrials #DataScience"
+
+[View Screenshots →](#)
+:::
+:::
+
+---
+
+### **4. NCD Patient Management Dashboard**
+
+::: {.project-card}
+::: {.project-header}
+#### 💊 Chronic Disease Care Coordination
+**Platform:** R Shiny | **Patients:** 5,000+ | **Status:** Production
+:::
+
+::: {.project-body}
+**Purpose:**
+Support clinicians in managing large panels of patients with hypertension, diabetes, and other NCDs.
+
+**Clinician View:**
+
+**1. Patient Panel Overview:**
+- Total patients by disease
+- Control status distribution
+- Upcoming appointments
+- Overdue patients
+- High-risk patient alerts
+
+**2. Individual Patient Dashboard:**
+- Longitudinal vital signs (BP, glucose, HbA1c)
+- Medication history and adherence
+- Lab results trends
+- Complication screening status
+- Visit history and notes
+
+**3. Population Health:**
+- Overall control rates
+- Treatment gaps
+- Risk stratification
+- Intervention effectiveness
+- Cost per controlled patient
+
+**4. Care Coordination:**
+- Referral tracking
+- Lab order management
+- Medication refill alerts
+- Patient communication log
+- Follow-up scheduling
+
+**Patient Portal:**
+- Personal health dashboard
+- Medication reminders
+- Appointment scheduling
+- Lab results viewing
+- Educational resources
+
+**Advanced Features:**
+- Predictive risk scoring for complications
+- Treatment optimization recommendations
+- Population segmentation
+- Automated outreach campaigns
+- Performance feedback for clinicians
+
+**Clinical Decision Support:**
+- Treatment guideline integration
+- Drug interaction checking
+- Dosing calculators
+- Screening reminders
+- Best practice alerts
+
+**Technologies:** R Shiny, REDCap, PostgreSQL, sendmailR, plotly
+
+**Impact:**
+- ✅ 5,000+ patients tracked
+- ✅ BP control improved from 54% to 68%
+- ✅ Diabetes control (HbA1c <7%) improved from 42% to 59%
+- ✅ Medication adherence up 23%
+- ✅ Lost-to-follow-up reduced by 40%
+
+**Social Media Highlight:**
+> "Digital tools transforming chronic disease care! Our patient management dashboard helped improve BP control from 54% to 68% in 5,000+ patients. Lost-to-follow-up down 40%. Technology + clinical excellence = better outcomes! #NCD #ChronicDisease #HealthIT"
+
+[Demo Video →](#) | [Clinician Guide →](#)
+:::
+:::
+
+---
+
+### **5. Financial Performance Dashboard**
+
+::: {.project-card}
+::: {.project-header}
+#### 💰 Health Facility Financial Intelligence
+**Platform:** Tableau + R | **Facilities:** 25 | **Status:** Production
+:::
+
+::: {.project-body}
+**Purpose:**
+Comprehensive financial monitoring and planning tool for health facility managers.
+
+**Dashboard Components:**
+
+**1. Revenue Analysis:**
+- Revenue by source (government, insurance, out-of-pocket)
+- Service line profitability
+- Revenue trends and projections
+- Collection rates
+- Revenue cycle analytics
+
+**2. Expenditure Tracking:**
+- Budget vs. actual by category
+- Personnel costs
+- Medication and supply costs
+- Infrastructure and maintenance
+- Variance analysis
+
+**3. Cost Centers:**
+- Cost per service (outpatient visit, inpatient day, etc.)
+- Department-level P&L
+- Overhead allocation
+- Break-even analysis
+- Activity-based costing
+
+**4. Cash Flow:**
+- Cash position and trends
+- Accounts receivable aging
+- Accounts payable status
+- Liquidity ratios
+- Cash flow projections
+
+**5. Budget Planning:**
+- Historical spending patterns
+- Budget scenario modeling
+- Resource allocation optimization
+- Capital investment planning
+- ROI calculations
+
+**6. Efficiency Metrics:**
+- Cost per patient
+- Revenue per FTE
+- Bed occupancy rates
+- Equipment utilization
+- Productivity indicators
+
+**Integration:**
+- Accounting system (QuickBooks)
+- HMIS for service volumes
+- HR system for personnel costs
+- Pharmacy system for drug costs
+- Automated monthly updates
+
+**Technologies:** Tableau, R, SQL Server, Python for ETL
+
+**Impact:**
+- ✅ 25 facilities monitoring finances in real-time
+- ✅ Identified KES 8M in cost reduction opportunities
+- ✅ Budget variance reduced from ±25% to ±8%
+- ✅ Revenue collection improved by 15%
+- ✅ Informed strategic planning decisions
+
+**Social Media Highlight:**
+> "Financial intelligence for health facilities! Our dashboard helps 25 facilities monitor finances in real-time, identifying KES 8M in savings. Budget variance down from ±25% to ±8%. Good data = good decisions! #HealthFinance #HealthEconomics"
+
+[View Sample Report →](#)
+:::
+:::
+
+---
+
+### **6. Research Publications Dashboard**
+
+::: {.project-card}
+::: {.project-header}
+#### 📚 Institutional Research Output Tracker
+**Platform:** R Shiny | **Users:** Research administrators | **Status:** Production
+:::
+
+::: {.project-body}
+**Purpose:**
+Track research productivity, collaborations, and impact across an academic institution.
+
+**Features:**
+
+**1. Publication Metrics:**
+- Publications by year, type, journal
+- Author affiliations and collaborations
+- Impact factors and citations
+- h-index and other bibliometrics
+- Open access status
+
+**2. Funding Analysis:**
+- Grants by funder, PI, department
+- Success rates
+- Funding trends
+- ROI (publications per dollar)
+- Portfolio diversity
+
+**3. Collaboration Networks:**
+- Co-authorship network visualization
+- Internal vs. external collaborations
+- International collaboration patterns
+- Emerging partnerships
+
+**4. Research Areas:**
+- Topic modeling and trends
+- Department focus areas
+- Strategic alignment
+- Gap analysis
+- Growth areas
+
+**5. Student Research:**
+- Theses and dissertations
+- Student co-authorships
+- Graduation rates
+- Post-graduation tracking
+
+**Data Sources:**
+- PubMed API
+- Scopus API
+- Web of Science
+- Google Scholar
+- Manual entry for grey literature
+
+**Technologies:** R Shiny, bibliometrix, igraph, Dimensions API, tidyverse
+
+**Impact:**
+- ✅ 500+ publications tracked
+- ✅ Identified 25 high-impact collaboration opportunities
+- ✅ Informed strategic research priorities
+- ✅ Supported grant applications with productivity data
+
+**Social Media Highlight:**
+> "Research intelligence dashboard tracking 500+ publications, mapping collaboration networks, and informing strategic priorities. Data-driven research management for maximum impact! #AcademicTwitter #ResearchMetrics #Bibliometrics"
+
+[Explore Demo →](#)
+:::
+:::
+
+---
+
+## **Dashboard Design Principles**
+
+### **My Approach to Effective Dashboards**
+
+::: {.skills-grid}
+::: {.skill-category}
+#### 🎯 User-Centered Design
+- Understand user needs first
+- Progressive disclosure
+- Mobile-responsive
+- Accessible (WCAG 2.1)
+- Consistent visual language
+:::
+
+::: {.skill-category}
+#### 📊 Data Visualization
+- Choose appropriate chart types
+- Effective use of color
+- Clear labels and legends
+- Avoid chartjunk
+- Tell a story with data
+:::
+
+::: {.skill-category}
+#### ⚡ Performance
+- Optimize queries
+- Cache where appropriate
+- Lazy loading
+- Responsive design
+- Fast load times (<3s)
+:::
+
+::: {.skill-category}
+#### 🔒 Security
+- Role-based access control
+- Audit trails
+- Data encryption
+- HIPAA/GDPR compliance
+- Secure authentication
+:::
+:::
+
+---
+
+## **Technologies & Tools**
+
+### **Visualization Platforms**
+
+::: {.project-card}
+::: {.project-body}
+**R Shiny** (Primary platform)
+- Strengths: Full R integration, customizable, free/open-source
+- Best for: Health research, statistical dashboards
+- My rating: ⭐⭐⭐⭐⭐
+
+**Tableau**
+- Strengths: User-friendly, beautiful defaults, business intelligence
+- Best for: Executive dashboards, non-technical users
+- My rating: ⭐⭐⭐⭐
+
+**Power BI**
+- Strengths: Microsoft ecosystem integration, cost-effective
+- Best for: Corporate environments, Office 365 users
+- My rating: ⭐⭐⭐⭐
+
+**Plotly Dash** (Python)
+- Strengths: Python integration, web-ready
+- Best for: Machine learning model deployment
+- My rating: ⭐⭐⭐⭐
+:::
+:::
+
+---
+
+## **Dashboard Gallery**
+
+### **Before & After Transformations**
+
+::: {.highlight-box}
+**Case Study: From Static Reports to Interactive Dashboard**
+
+**Before:**
+- Monthly Excel reports (100+ pages)
+- 2 weeks to produce
+- Limited interactivity
+- Difficult to spot trends
+
+**After:**
+- Real-time interactive dashboard
+- Updates automatically
+- Drill-down capabilities
+- Actionable insights immediately visible
+
+**Result:** 90% reduction in reporting time, 3x faster decision-making
+:::
+
+---
+
+## **Impact Across All Dashboards**
+
+::: {.stats-container}
+::: {.stat-card}
+**15+**{.stat-number}
+Dashboards Built{.stat-label}
+:::
+
+::: {.stat-card}
+**500+**{.stat-number}
+Daily Active Users{.stat-label}
+:::
+
+::: {.stat-card}
+**70%**{.stat-number}
+Time Savings{.stat-label}
+:::
+
+::: {.stat-card}
+**KES 10M+**{.stat-number}
+Value Identified{.stat-label}
+:::
+:::
+
+---
+
+## **Dashboard Services Offered**
+
+::: {.skills-grid}
+::: {.skill-category}
+### 🎨 Design & Development
+- Requirements gathering
+- UX/UI design
+- Dashboard development
+- User testing
+- Deployment
+:::
+
+::: {.skill-category}
+### 🔧 Technical Implementation
+- Database optimization
+- API integration
+- Performance tuning
+- Security implementation
+- Documentation
+:::
+
+::: {.skill-category}
+### 📚 Training & Support
+- User training
+- Admin training
+- Documentation
+- Ongoing support
+- Enhancement requests
+:::
+
+::: {.skill-category}
+### 🚀 Ongoing Maintenance
+- Bug fixes
+- Performance monitoring
+- Feature enhancements
+- Security updates
+- User support
+:::
+:::
+
+---
+
+::: {.success-box}
+### 📊 Need a Custom Dashboard?
+
+I design and build interactive dashboards for:
+- Health facility performance monitoring
+- Clinical trial oversight
+- Disease surveillance
+- Financial management
+- Research productivity
+
+**Typical Project Timeline:** 4-8 weeks from requirements to deployment
+
+[Schedule Consultation](mailto:nichodemuswerre@gmail.com){.cta-button} [View Portfolio](index.qmd){.cta-button}
+:::
+
+---
+
+[← Survey Tools](survey-tools.qmd) | [All Projects](index.qmd) | [Home →](../index.qmd)

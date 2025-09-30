@@ -1,0 +1,1769 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.31">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Data Management Projects – Nichodemus Amollo | Senior Research Data Manager</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-8ef56b68f8fa1e9d2ba328e99e439f80.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-c1c83d622a7027c5e41b58cb58caf96d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-054434b5b991db6c4165cc8a8a770c28.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-c1c83d622a7027c5e41b58cb58caf96d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+<link rel="stylesheet" href="../styles.scss">
+</head>
+
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Nichodemus Amollo | Senior Research Data Manager</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../about/index.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-projects" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Projects</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-projects">    
+        <li>
+    <a class="dropdown-item" href="../projects/index.html">
+ <span class="dropdown-text">All Projects</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../projects/health-analytics.html">
+ <span class="dropdown-text">Health Data Analytics</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../projects/data-management.html">
+ <span class="dropdown-text">Data Management</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../projects/survey-tools.html">
+ <span class="dropdown-text">Survey Design &amp; Implementation</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../projects/dashboards.html">
+ <span class="dropdown-text">Dashboards &amp; Visualization</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-research" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Research</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-research">    
+        <li>
+    <a class="dropdown-item" href="../research/thesis.html">
+ <span class="dropdown-text">Current Thesis</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../research/publications.html">
+ <span class="dropdown-text">Publications</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../skills/index.html"> 
+<span class="menu-text">Skills &amp; Tools</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../blogs/index.html"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../cv/index.html"> 
+<span class="menu-text">CV</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/gondamol"> <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://linkedin.com/in/amollow"> <i class="bi bi-linkedin" role="img" aria-label="LinkedIn">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/nwerre"> <i class="bi bi-twitter" role="img" aria-label="Twitter">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://kaggle.com/nwerre"> <i class="bi bi-kaggle" role="img" aria-label="Kaggle">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#data-management-excellence" id="toc-data-management-excellence" class="nav-link active" data-scroll-target="#data-management-excellence">🗄️ Data Management Excellence</a></li>
+  <li><a href="#clinical-trial-data-management" id="toc-clinical-trial-data-management" class="nav-link" data-scroll-target="#clinical-trial-data-management"><strong>Clinical Trial Data Management</strong></a>
+  <ul class="collapse">
+  <li><a href="#multi-site-hiv-treatment-trial-actg-5000-series" id="toc-multi-site-hiv-treatment-trial-actg-5000-series" class="nav-link" data-scroll-target="#multi-site-hiv-treatment-trial-actg-5000-series"><strong>1. Multi-Site HIV Treatment Trial (ACTG 5000 Series)</strong></a></li>
+  <li><a href="#malaria-vaccine-efficacy-study" id="toc-malaria-vaccine-efficacy-study" class="nav-link" data-scroll-target="#malaria-vaccine-efficacy-study"><strong>2. Malaria Vaccine Efficacy Study</strong></a></li>
+  </ul></li>
+  <li><a href="#cohort-study-data-systems" id="toc-cohort-study-data-systems" class="nav-link" data-scroll-target="#cohort-study-data-systems"><strong>Cohort Study Data Systems</strong></a>
+  <ul class="collapse">
+  <li><a href="#longitudinal-ncd-cohort-database" id="toc-longitudinal-ncd-cohort-database" class="nav-link" data-scroll-target="#longitudinal-ncd-cohort-database"><strong>3. Longitudinal NCD Cohort Database</strong></a></li>
+  </ul></li>
+  <li><a href="#surveillance-systems" id="toc-surveillance-systems" class="nav-link" data-scroll-target="#surveillance-systems"><strong>Surveillance Systems</strong></a>
+  <ul class="collapse">
+  <li><a href="#disease-surveillance-platform" id="toc-disease-surveillance-platform" class="nav-link" data-scroll-target="#disease-surveillance-platform"><strong>4. Disease Surveillance Platform</strong></a></li>
+  </ul></li>
+  <li><a href="#data-integration-projects" id="toc-data-integration-projects" class="nav-link" data-scroll-target="#data-integration-projects"><strong>Data Integration Projects</strong></a>
+  <ul class="collapse">
+  <li><a href="#health-information-exchange-hie-implementation" id="toc-health-information-exchange-hie-implementation" class="nav-link" data-scroll-target="#health-information-exchange-hie-implementation"><strong>5. Health Information Exchange (HIE) Implementation</strong></a></li>
+  </ul></li>
+  <li><a href="#data-quality-frameworks" id="toc-data-quality-frameworks" class="nav-link" data-scroll-target="#data-quality-frameworks"><strong>Data Quality Frameworks</strong></a>
+  <ul class="collapse">
+  <li><a href="#automated-data-quality-monitoring-system" id="toc-automated-data-quality-monitoring-system" class="nav-link" data-scroll-target="#automated-data-quality-monitoring-system"><strong>6. Automated Data Quality Monitoring System</strong></a></li>
+  </ul></li>
+  <li><a href="#best-practices-sops" id="toc-best-practices-sops" class="nav-link" data-scroll-target="#best-practices-sops"><strong>Best Practices &amp; SOPs</strong></a>
+  <ul class="collapse">
+  <li><a href="#standard-operating-procedures-developed" id="toc-standard-operating-procedures-developed" class="nav-link" data-scroll-target="#standard-operating-procedures-developed"><strong>Standard Operating Procedures Developed</strong></a></li>
+  </ul></li>
+  <li><a href="#training-capacity-building" id="toc-training-capacity-building" class="nav-link" data-scroll-target="#training-capacity-building"><strong>Training &amp; Capacity Building</strong></a>
+  <ul class="collapse">
+  <li><a href="#data-management-training-programs-delivered" id="toc-data-management-training-programs-delivered" class="nav-link" data-scroll-target="#data-management-training-programs-delivered"><strong>Data Management Training Programs Delivered</strong></a></li>
+  </ul></li>
+  <li><a href="#impact-summary" id="toc-impact-summary" class="nav-link" data-scroll-target="#impact-summary"><strong>Impact Summary</strong></a>
+  <ul class="collapse">
+  <li><a href="#need-data-management-expertise" id="toc-need-data-management-expertise" class="nav-link" data-scroll-target="#need-data-management-expertise">📞 Need Data Management Expertise?</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content column-page-left" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<div class="quarto-title-block"><div><h1 class="title">Data Management Projects</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<p class="subtitle lead">Robust data systems for clinical trials and research studies</p>
+</div>
+
+
+
+<div class="quarto-title-meta column-page-left">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="data-management-excellence" class="level1 hero-banner">
+<h1>🗄️ Data Management Excellence</h1>
+<p>Building secure, scalable, and compliant data management systems</p>
+</section>
+<section id="clinical-trial-data-management" class="level2">
+<h2 class="anchored" data-anchor-id="clinical-trial-data-management"><strong>Clinical Trial Data Management</strong></h2>
+<section id="multi-site-hiv-treatment-trial-actg-5000-series" class="level3">
+<h3 class="anchored" data-anchor-id="multi-site-hiv-treatment-trial-actg-5000-series"><strong>1. Multi-Site HIV Treatment Trial (ACTG 5000 Series)</strong></h3>
+<div class="project-card">
+<section id="phase-iii-randomized-controlled-trial" class="level4 project-header">
+<h4 class="anchored" data-anchor-id="phase-iii-randomized-controlled-trial">🔬 Phase III Randomized Controlled Trial</h4>
+<p><strong>Duration:</strong> 2019-2023 | <strong>Status:</strong> Completed | <strong>Participants:</strong> 1,200+</p>
+</section>
+<div class="project-body">
+<p><strong>Project Scope:</strong> - <strong>Sites:</strong> 12 clinical sites across 4 African countries - <strong>Duration:</strong> 48-month follow-up per participant - <strong>Data Points:</strong> 500,000+ individual records - <strong>Regulatory:</strong> FDA, WHO-GCP compliant</p>
+<p><strong>Responsibilities:</strong> - Designed and implemented REDCap database with 80+ data collection forms - Developed automated data quality control system - Managed data collection teams across 12 sites - Conducted monthly data quality audits - Prepared datasets for statistical analysis - Managed regulatory documentation (Data Management Plan, database specifications)</p>
+<p><strong>Technical Implementation:</strong> - <strong>Platform:</strong> REDCap with custom API integration - <strong>Database Structure:</strong> Longitudinal design with 15 repeating instruments - <strong>Quality Control:</strong> 120+ automated validation rules - <strong>Security:</strong> HIPAA-compliant with role-based access control - <strong>Integration:</strong> Laboratory data import from 3 different LIMS systems</p>
+<p><strong>Data Quality Metrics:</strong> - ✅ 99.7% data completeness achieved - ✅ Query resolution time: Average 3.2 days (target: 5 days) - ✅ Protocol deviations: &lt;1% related to data collection - ✅ Audit findings: Zero critical, 2 minor observations - ✅ No data security breaches</p>
+<p><strong>Innovations:</strong> - Custom REDCap external module for adverse event grading - Real-time data quality dashboard for site coordinators - Automated weekly progress reports - Mobile-friendly forms for bedside data entry</p>
+<p><strong>Technologies:</strong> REDCap, R, SQL, Python, Git</p>
+<p><strong>Social Media Highlight:</strong> &gt; “Data quality matters in clinical trials! Managed 500K+ data points across 12 African sites with 99.7% completeness. Zero critical audit findings. This is what rigorous data management looks like! #ClinicalTrials #DataManagement #GlobalHealth”</p>
+<p><a href="#">View Data Management Plan →</a> | <a href="#">Quality Metrics Dashboard →</a></p>
+</div>
+</div>
+<hr>
+</section>
+<section id="malaria-vaccine-efficacy-study" class="level3">
+<h3 class="anchored" data-anchor-id="malaria-vaccine-efficacy-study"><strong>2. Malaria Vaccine Efficacy Study</strong></h3>
+<div class="project-card">
+<section id="phase-ii-vaccine-trial-with-complex-immunology-data" class="level4 project-header">
+<h4 class="anchored" data-anchor-id="phase-ii-vaccine-trial-with-complex-immunology-data">💉 Phase II Vaccine Trial with Complex Immunology Data</h4>
+<p><strong>Duration:</strong> 2020-2024 | <strong>Status:</strong> Ongoing | <strong>Participants:</strong> 800+</p>
+</section>
+<div class="project-body">
+<p><strong>Project Scope:</strong> - Vaccine efficacy assessment in children aged 6-24 months - Complex laboratory data (immunology, parasitology) - Pharmacokinetics sampling - Safety monitoring with expedited reporting</p>
+<p><strong>Data Management Challenges:</strong> - Multiple laboratory platforms with different data formats - Real-time safety monitoring requirements - Complex visit schedules with flexible windows - Integration with national immunization registry</p>
+<p><strong>Solutions Implemented:</strong> - <strong>Centralized Data Warehouse:</strong> PostgreSQL database integrating: - Clinical data (REDCap) - Laboratory results (3 different LIMS) - Adverse events (custom safety database) - Pharmacy dispensing records</p>
+<ul>
+<li><strong>Automated Data Pipelines:</strong>
+<ul>
+<li>Nightly ETL processes importing lab results</li>
+<li>Real-time safety event notifications</li>
+<li>Automated eligibility checks for visit windows</li>
+</ul></li>
+<li><strong>Quality Assurance:</strong>
+<ul>
+<li>200+ validation rules across systems</li>
+<li>Daily data quality reports</li>
+<li>Exception-based monitoring system</li>
+</ul></li>
+</ul>
+<p><strong>Impact:</strong> - ✅ 800+ participants enrolled and tracked - ✅ 15,000+ lab samples processed and matched - ✅ Real-time safety reporting (required within 24 hours) - 100% compliance - ✅ Data monitoring committee praised data quality as “exemplary”</p>
+<p><strong>Technologies:</strong> REDCap, PostgreSQL, R Shiny, Python, Docker</p>
+<p><strong>Social Media Highlight:</strong> &gt; “Managing complex vaccine trial data across multiple systems! Integrated clinical data, lab results from 3 LIMS, and safety monitoring into one seamless system. Real-time alerts + automated QC = 100% safety reporting compliance. #VaccineDevelopment #DataScience”</p>
+<p><a href="#">Technical Documentation →</a></p>
+</div>
+</div>
+<hr>
+</section>
+</section>
+<section id="cohort-study-data-systems" class="level2">
+<h2 class="anchored" data-anchor-id="cohort-study-data-systems"><strong>Cohort Study Data Systems</strong></h2>
+<section id="longitudinal-ncd-cohort-database" class="level3">
+<h3 class="anchored" data-anchor-id="longitudinal-ncd-cohort-database"><strong>3. Longitudinal NCD Cohort Database</strong></h3>
+<div class="project-card">
+<section id="year-prospective-cohort-study" class="level4 project-header">
+<h4 class="anchored" data-anchor-id="year-prospective-cohort-study">🏥 20-Year Prospective Cohort Study</h4>
+<p><strong>Launch:</strong> 2018 | <strong>Status:</strong> Active | <strong>Participants:</strong> 5,000+</p>
+</section>
+<div class="project-body">
+<p><strong>Study Overview:</strong> - Long-term follow-up of patients with hypertension, diabetes, and CVD - Quarterly clinic visits with annual comprehensive assessments - Biobank integration (plasma, DNA samples) - Linkage with vital registration systems</p>
+<p><strong>Database Architecture:</strong> - <strong>Front-End:</strong> REDCap for data collection - <strong>Back-End:</strong> PostgreSQL for long-term data storage - <strong>Analytics Layer:</strong> R Shiny dashboards - <strong>Biospecimen Tracking:</strong> Custom sample management system</p>
+<p><strong>Key Features:</strong> - Flexible visit scheduling with automated reminders - Integration with facility EMR systems - Automated loss-to-follow-up flagging - Linkage with national death registry - Biobank sample inventory management</p>
+<p><strong>Data Management Processes:</strong> - <strong>Enrollment:</strong> Electronic informed consent with audit trail - <strong>Data Collection:</strong> Tablet-based entry at point of care - <strong>Quality Control:</strong> Weekly automated checks + monthly audits - <strong>Data Sharing:</strong> Controlled access system for researchers - <strong>Biospecimen Management:</strong> Barcode tracking with freeze/thaw cycles</p>
+<p><strong>Achievements:</strong> - ✅ 5,000+ participants enrolled (target: 5,500) - ✅ Retention rate: 87% at 5 years - ✅ 60,000+ clinic visits documented - ✅ 25,000+ biospecimens properly tracked - ✅ 12 ancillary studies using cohort data</p>
+<p><strong>Technologies:</strong> REDCap, PostgreSQL, R, Python, Git, REDCap API</p>
+<p><strong>Social Media Highlight:</strong> &gt; “Building data systems that stand the test of time! Managing a 20-year NCD cohort with 5K+ participants, 60K+ visits, and 25K+ biospecimens. 87% retention at 5 years thanks to robust data systems and automated follow-up. #EpidemiologyLife #CohortStudy”</p>
+<p><a href="#">System Architecture →</a> | <a href="#">Data Dictionary →</a></p>
+</div>
+</div>
+<hr>
+</section>
+</section>
+<section id="surveillance-systems" class="level2">
+<h2 class="anchored" data-anchor-id="surveillance-systems"><strong>Surveillance Systems</strong></h2>
+<section id="disease-surveillance-platform" class="level3">
+<h3 class="anchored" data-anchor-id="disease-surveillance-platform"><strong>4. Disease Surveillance Platform</strong></h3>
+<div class="project-card">
+<section id="real-time-disease-reporting-system" class="level4 project-header">
+<h4 class="anchored" data-anchor-id="real-time-disease-reporting-system">📊 Real-Time Disease Reporting System</h4>
+<p><strong>Implementation:</strong> 2021 | <strong>Status:</strong> Production | <strong>Coverage:</strong> 100+ facilities</p>
+</section>
+<div class="project-body">
+<p><strong>System Overview:</strong> - Real-time reporting of notifiable diseases - Automated outbreak detection algorithms - Geographic information system integration - Mobile reporting for rural facilities</p>
+<p><strong>Technical Components:</strong></p>
+<p><strong>1. Data Collection Layer:</strong> - Mobile app (offline capability) for facility reporting - Web portal for centralized data entry - SMS-based reporting for resource-limited settings - API integration with existing HMIS</p>
+<p><strong>2. Data Processing Layer:</strong> - Automated data validation and standardization - Duplicate detection and resolution - Geographic coding and validation - Case classification algorithms</p>
+<p><strong>3. Analytics &amp; Alerting:</strong> - Statistical outbreak detection (CUSUM, EWMA) - Geographic clustering analysis - Automated email/SMS alerts for thresholds - Weekly epidemiological bulletins</p>
+<p><strong>4. Visualization Layer:</strong> - Public-facing dashboard (non-sensitive data) - Internal detailed analytics platform - Mobile-friendly reports - Automated PDF report generation</p>
+<p><strong>System Performance:</strong> - ✅ 100+ facilities actively reporting - ✅ Average reporting time: 2.3 days (down from 14 days) - ✅ 15 disease outbreaks detected early in Year 1 - ✅ System uptime: 99.8% - ✅ 50,000+ case reports processed</p>
+<p><strong>Impact:</strong> - Early detection of cholera outbreak (3 days earlier than traditional system) - Reduced measles outbreak duration by 40% - Improved data completeness from 65% to 94%</p>
+<p><strong>Technologies:</strong> PostgreSQL, R Shiny, Leaflet, ODK, REST API, Ubuntu Server</p>
+<p><strong>Social Media Highlight:</strong> &gt; “Data systems saving lives! Our real-time disease surveillance platform reduced outbreak detection time from 14 days to 2.3 days. Early cholera detection + rapid response = lives saved. This is #DigitalHealth done right! #PublicHealth #DataForGood”</p>
+<p><a href="#">Live Dashboard →</a> | <a href="#">Technical Specs →</a></p>
+</div>
+</div>
+<hr>
+</section>
+</section>
+<section id="data-integration-projects" class="level2">
+<h2 class="anchored" data-anchor-id="data-integration-projects"><strong>Data Integration Projects</strong></h2>
+<section id="health-information-exchange-hie-implementation" class="level3">
+<h3 class="anchored" data-anchor-id="health-information-exchange-hie-implementation"><strong>5. Health Information Exchange (HIE) Implementation</strong></h3>
+<div class="project-card">
+<section id="connecting-disparate-health-systems" class="level4 project-header">
+<h4 class="anchored" data-anchor-id="connecting-disparate-health-systems">🔄 Connecting Disparate Health Systems</h4>
+<p><strong>Duration:</strong> 2022-2024 | <strong>Status:</strong> Pilot Phase | <strong>Facilities:</strong> 15</p>
+</section>
+<div class="project-body">
+<p><strong>Challenge:</strong> - 15 health facilities using 4 different EMR systems - No patient data sharing between facilities - Duplicate tests and treatments - Fragmented patient histories</p>
+<p><strong>Solution:</strong> - Implemented Health Information Exchange (HIE) based on FHIR standards - Master Patient Index (MPI) for unique patient identification - Standardized data exchange protocols - Consent management system</p>
+<p><strong>Architecture:</strong></p>
+<pre><code>┌─────────────────────────────────────────┐
+│         Health Facilities               │
+│  EMR1  │  EMR2  │  EMR3  │  EMR4       │
+└────┬─────────┬─────────┬─────────┬──────┘
+     │         │         │         │
+     │  ┌──────▼─────────▼─────────▼──┐
+     │  │    FHIR API Adapters         │
+     │  └──────┬─────────────────────┬─┘
+     │         │                     │
+     │  ┌──────▼────────────────────┐│
+     │  │  Central HIE Platform      ││
+     │  │  - Master Patient Index    ││
+     │  │  - Consent Management      ││
+     │  │  - Data Repository         ││
+     │  └────────────────────────────┘│
+     │                                 │
+     └─────────────────────────────────┘</code></pre>
+<p><strong>Implementation Details:</strong> - <strong>Standards:</strong> HL7 FHIR R4, IHE profiles - <strong>Patient Matching:</strong> Probabilistic matching algorithm (95% accuracy) - <strong>Security:</strong> OAuth 2.0, TLS 1.3, encrypted data at rest - <strong>Interoperability:</strong> RESTful APIs for all interactions</p>
+<p><strong>Pilot Results:</strong> - ✅ 15 facilities connected - ✅ 10,000+ patients with linked records - ✅ 25% reduction in duplicate lab tests - ✅ Clinicians access patient history in 3 seconds (vs.&nbsp;30 minutes phone calls) - ✅ Estimated cost savings: KES 2M annually</p>
+<p><strong>Technologies:</strong> HAPI FHIR, PostgreSQL, Spring Boot, React, Docker, Kubernetes</p>
+<p><strong>Social Media Highlight:</strong> &gt; “Connecting fragmented health data! Our HIE pilot linked 15 facilities, enabling instant patient history access. Result? 25% fewer duplicate tests and happier patients. Interoperability isn’t a buzzword—it’s a game-changer! #HealthIT #Interoperability #FHIR”</p>
+<p><a href="#">Technical Architecture →</a></p>
+</div>
+</div>
+<hr>
+</section>
+</section>
+<section id="data-quality-frameworks" class="level2">
+<h2 class="anchored" data-anchor-id="data-quality-frameworks"><strong>Data Quality Frameworks</strong></h2>
+<section id="automated-data-quality-monitoring-system" class="level3">
+<h3 class="anchored" data-anchor-id="automated-data-quality-monitoring-system"><strong>6. Automated Data Quality Monitoring System</strong></h3>
+<div class="project-card">
+<section id="proactive-data-quality-management" class="level4 project-header">
+<h4 class="anchored" data-anchor-id="proactive-data-quality-management">✅ Proactive Data Quality Management</h4>
+<p><strong>Developed:</strong> 2020 | <strong>Status:</strong> Used in 10+ projects</p>
+</section>
+<div class="project-body">
+<p><strong>Problem:</strong> - Manual data quality checks time-consuming and error-prone - Quality issues discovered late in project lifecycle - Inconsistent quality standards across projects</p>
+<p><strong>Solution:</strong> - Developed comprehensive automated DQ monitoring framework - Implemented in R as reusable package - Integrated with REDCap, CSV imports, and SQL databases</p>
+<p><strong>Framework Components:</strong></p>
+<p><strong>1. Data Quality Dimensions:</strong> - <strong>Completeness:</strong> Missing data detection - <strong>Validity:</strong> Range and format checks - <strong>Consistency:</strong> Cross-field validation - <strong>Timeliness:</strong> Data entry delays - <strong>Accuracy:</strong> Logical inconsistencies - <strong>Uniqueness:</strong> Duplicate detection</p>
+<p><strong>2. Automated Checks:</strong></p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Example DQ checks</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>dq_framework <span class="ot">&lt;-</span> DataQualityChecker<span class="sc">$</span><span class="fu">new</span>(data)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Completeness checks</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>dq_framework<span class="sc">$</span><span class="fu">check_completeness</span>(</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">required_vars =</span> <span class="fu">c</span>(<span class="st">"patient_id"</span>, <span class="st">"visit_date"</span>, <span class="st">"outcome"</span>),</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">threshold =</span> <span class="fl">0.95</span>  <span class="co"># 95% completeness required</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Validity checks</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>dq_framework<span class="sc">$</span><span class="fu">check_ranges</span>(</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>  <span class="at">age =</span> <span class="fu">c</span>(<span class="dv">18</span>, <span class="dv">100</span>),</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>  <span class="at">bp_systolic =</span> <span class="fu">c</span>(<span class="dv">80</span>, <span class="dv">220</span>),</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>  <span class="at">bp_diastolic =</span> <span class="fu">c</span>(<span class="dv">40</span>, <span class="dv">130</span>)</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Consistency checks</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>dq_framework<span class="sc">$</span><span class="fu">check_consistency</span>(</span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>  <span class="at">rules =</span> <span class="fu">list</span>(</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>    <span class="st">"death_date &gt;= enrollment_date"</span>,</span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>    <span class="st">"if outcome == 'pregnant' then sex == 'Female'"</span>,</span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>    <span class="st">"if hiv_positive then hiv_test_date exists"</span></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate report</span></span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>dq_framework<span class="sc">$</span><span class="fu">generate_report</span>(<span class="at">output =</span> <span class="st">"html"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>3. Reporting:</strong> - Automated daily/weekly reports - Traffic light system (red/yellow/green) - Drill-down capabilities to problem records - Trend analysis over time</p>
+<p><strong>Impact Across Projects:</strong> - ✅ DQ issues detected 70% earlier in project lifecycle - ✅ Data cleaning time reduced by 50% - ✅ Standardized quality metrics across organization - ✅ Used in 10+ studies managing 200,000+ records</p>
+<p><strong>Technologies:</strong> R (tidyverse, assertr, validate), R Markdown, Git</p>
+<p><strong>Social Media Highlight:</strong> &gt; “Prevention &gt; Correction in data management! Our automated DQ framework detects issues 70% earlier and cuts cleaning time in half. Now deployed across 10+ studies. Open-source release coming soon! #DataQuality #OpenScience #RStats”</p>
+<p><a href="https://github.com/gondamol/dqframework">GitHub Repository →</a> | <a href="#">Documentation →</a></p>
+</div>
+</div>
+<hr>
+</section>
+</section>
+<section id="best-practices-sops" class="level2">
+<h2 class="anchored" data-anchor-id="best-practices-sops"><strong>Best Practices &amp; SOPs</strong></h2>
+<section id="standard-operating-procedures-developed" class="level3">
+<h3 class="anchored" data-anchor-id="standard-operating-procedures-developed"><strong>Standard Operating Procedures Developed</strong></h3>
+<div class="skills-grid">
+<section id="data-management" class="level4 skill-category">
+<h4 class="anchored" data-anchor-id="data-management">📋 Data Management</h4>
+<ul>
+<li>Data Management Plan template</li>
+<li>Database design specifications</li>
+<li>Data dictionary standards</li>
+<li>Query management procedures</li>
+</ul>
+</section>
+<section id="security-compliance" class="level4 skill-category">
+<h4 class="anchored" data-anchor-id="security-compliance">🔒 Security &amp; Compliance</h4>
+<ul>
+<li>Data security SOPs</li>
+<li>HIPAA compliance checklist</li>
+<li>GCP compliance procedures</li>
+<li>Audit readiness guide</li>
+</ul>
+</section>
+<section id="quality-control" class="level4 skill-category">
+<h4 class="anchored" data-anchor-id="quality-control">✅ Quality Control</h4>
+<ul>
+<li>Data validation plan template</li>
+<li>Monitoring visit procedures</li>
+<li>Quality control sampling</li>
+<li>Corrective action procedures</li>
+</ul>
+</section>
+<section id="reporting" class="level4 skill-category">
+<h4 class="anchored" data-anchor-id="reporting">📊 Reporting</h4>
+<ul>
+<li>Analysis dataset creation</li>
+<li>Data transfer specifications</li>
+<li>Archive and retention policies</li>
+<li>End-of-study procedures</li>
+</ul>
+</section>
+</div>
+<hr>
+</section>
+</section>
+<section id="training-capacity-building" class="level2">
+<h2 class="anchored" data-anchor-id="training-capacity-building"><strong>Training &amp; Capacity Building</strong></h2>
+<section id="data-management-training-programs-delivered" class="level3">
+<h3 class="anchored" data-anchor-id="data-management-training-programs-delivered"><strong>Data Management Training Programs Delivered</strong></h3>
+<ol type="1">
+<li><strong>“Clinical Trial Data Management Fundamentals”</strong> (3-day workshop)
+<ul>
+<li>150+ participants trained across 5 cohorts</li>
+<li>Covers REDCap, GCP, data quality</li>
+</ul></li>
+<li><strong>“REDCap for Research”</strong> (2-day hands-on)
+<ul>
+<li>200+ researchers trained</li>
+<li>Database design, quality control, reporting</li>
+</ul></li>
+<li><strong>“Data Quality in Health Research”</strong> (1-day seminar)
+<ul>
+<li>100+ participants</li>
+<li>Quality frameworks, automated checks</li>
+</ul></li>
+</ol>
+<hr>
+</section>
+</section>
+<section id="impact-summary" class="level2">
+<h2 class="anchored" data-anchor-id="impact-summary"><strong>Impact Summary</strong></h2>
+<div class="stats-container">
+<div class="stat-card">
+<p><strong>20+</strong>{.stat-number} Studies Managed{.stat-label}</p>
+</div>
+<div class="stat-card">
+<p><strong>500K+</strong>{.stat-number} Records Processed{.stat-label}</p>
+</div>
+<div class="stat-card">
+<p><strong>99.5%</strong>{.stat-number} Avg Data Quality{.stat-label}</p>
+</div>
+<div class="stat-card">
+<p><strong>0</strong>{.stat-number} Critical Audit Findings{.stat-label}</p>
+</div>
+</div>
+<hr>
+<section id="need-data-management-expertise" class="level3 success-box">
+<h3 class="anchored" data-anchor-id="need-data-management-expertise">📞 Need Data Management Expertise?</h3>
+<p>I provide consulting services for: - Clinical trial data management setup - REDCap database design and implementation - Data quality framework development - Team training and capacity building - Regulatory compliance (GCP, HIPAA)</p>
+<p><a href="mailto:nichodemuswerre@gmail.com" class="cta-button">Contact Me</a> <a href="../cv/index.html" class="cta-button">View CV</a></p>
+</section>
+<hr>
+<p><a href="../projects/health-analytics.html">← Health Analytics</a> | <a href="../projects/index.html">All Projects</a> | <a href="../projects/survey-tools.html">Survey Tools →</a></p>
+
+
+<!-- -->
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+    const viewSource = window.document.getElementById('quarto-view-source') ||
+                       window.document.getElementById('quarto-code-tools-source');
+    if (viewSource) {
+      const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+      viewSource.addEventListener("click", function(e) {
+        if (sourceUrl) {
+          // rstudio viewer pane
+          if (/\bcapabilities=\b/.test(window.location)) {
+            window.open(sourceUrl);
+          } else {
+            window.location.href = sourceUrl;
+          }
+        } else {
+          const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+          modal.show();
+        }
+        return false;
+      });
+    }
+    function toggleCodeHandler(show) {
+      return function(e) {
+        const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+        for (let i=0; i<detailsSrc.length; i++) {
+          const details = detailsSrc[i].parentElement;
+          if (show) {
+            details.open = true;
+          } else {
+            details.removeAttribute("open");
+          }
+        }
+        const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+        const fromCls = show ? "hidden" : "unhidden";
+        const toCls = show ? "unhidden" : "hidden";
+        for (let i=0; i<cellCodeDivs.length; i++) {
+          const codeDiv = cellCodeDivs[i];
+          if (codeDiv.classList.contains(fromCls)) {
+            codeDiv.classList.remove(fromCls);
+            codeDiv.classList.add(toCls);
+          } 
+        }
+        return false;
+      }
+    }
+    const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+    if (hideAllCode) {
+      hideAllCode.addEventListener("click", toggleCodeHandler(false));
+    }
+    const showAllCode = window.document.getElementById("quarto-show-all-code");
+    if (showAllCode) {
+      showAllCode.addEventListener("click", toggleCodeHandler(true));
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+            // default icon
+            link.classList.add("external");
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="sourceCode" id="cb3" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Data Management Projects"</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="an">subtitle:</span><span class="co"> "Robust data systems for clinical trials and research studies"</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="an">page-layout:</span><span class="co"> full</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>::: {.hero-banner}</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="fu"># 🗄️ Data Management Excellence</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>Building secure, scalable, and compliant data management systems</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="fu">## **Clinical Trial Data Management**</span></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="fu">### **1. Multi-Site HIV Treatment Trial (ACTG 5000 Series)**</span></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>::: {.project-card}</span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>::: {.project-header}</span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a><span class="fu">#### 🔬 Phase III Randomized Controlled Trial</span></span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>**Duration:** 2019-2023 | **Status:** Completed | **Participants:** 1,200+</span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>::: {.project-body}</span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a>**Project Scope:**</span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Sites:** 12 clinical sites across 4 African countries</span>
+<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Duration:** 48-month follow-up per participant</span>
+<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Data Points:** 500,000+ individual records</span>
+<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Regulatory:** FDA, WHO-GCP compliant</span>
+<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a>**Responsibilities:**</span>
+<span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Designed and implemented REDCap database with 80+ data collection forms</span>
+<span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Developed automated data quality control system</span>
+<span id="cb3-33"><a href="#cb3-33" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Managed data collection teams across 12 sites</span>
+<span id="cb3-34"><a href="#cb3-34" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Conducted monthly data quality audits</span>
+<span id="cb3-35"><a href="#cb3-35" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Prepared datasets for statistical analysis</span>
+<span id="cb3-36"><a href="#cb3-36" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Managed regulatory documentation (Data Management Plan, database specifications)</span>
+<span id="cb3-37"><a href="#cb3-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-38"><a href="#cb3-38" aria-hidden="true" tabindex="-1"></a>**Technical Implementation:**</span>
+<span id="cb3-39"><a href="#cb3-39" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Platform:** REDCap with custom API integration</span>
+<span id="cb3-40"><a href="#cb3-40" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Database Structure:** Longitudinal design with 15 repeating instruments</span>
+<span id="cb3-41"><a href="#cb3-41" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Quality Control:** 120+ automated validation rules</span>
+<span id="cb3-42"><a href="#cb3-42" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Security:** HIPAA-compliant with role-based access control</span>
+<span id="cb3-43"><a href="#cb3-43" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Integration:** Laboratory data import from 3 different LIMS systems</span>
+<span id="cb3-44"><a href="#cb3-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-45"><a href="#cb3-45" aria-hidden="true" tabindex="-1"></a>**Data Quality Metrics:**</span>
+<span id="cb3-46"><a href="#cb3-46" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>✅ 99.7% data completeness achieved</span>
+<span id="cb3-47"><a href="#cb3-47" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>✅ Query resolution time: Average 3.2 days (target: 5 days)</span>
+<span id="cb3-48"><a href="#cb3-48" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>✅ Protocol deviations: &lt;1% related to data collection</span>
+<span id="cb3-49"><a href="#cb3-49" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>✅ Audit findings: Zero critical, 2 minor observations</span>
+<span id="cb3-50"><a href="#cb3-50" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>✅ No data security breaches</span>
+<span id="cb3-51"><a href="#cb3-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-52"><a href="#cb3-52" aria-hidden="true" tabindex="-1"></a>**Innovations:**</span>
+<span id="cb3-53"><a href="#cb3-53" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Custom REDCap external module for adverse event grading</span>
+<span id="cb3-54"><a href="#cb3-54" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Real-time data quality dashboard for site coordinators</span>
+<span id="cb3-55"><a href="#cb3-55" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Automated weekly progress reports</span>
+<span id="cb3-56"><a href="#cb3-56" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Mobile-friendly forms for bedside data entry</span>
+<span id="cb3-57"><a href="#cb3-57" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-58"><a href="#cb3-58" aria-hidden="true" tabindex="-1"></a>**Technologies:** REDCap, R, SQL, Python, Git</span>
+<span id="cb3-59"><a href="#cb3-59" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-60"><a href="#cb3-60" aria-hidden="true" tabindex="-1"></a>**Social Media Highlight:**</span>
+<span id="cb3-61"><a href="#cb3-61" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; "Data quality matters in clinical trials! Managed 500K+ data points across 12 African sites with 99.7% completeness. Zero critical audit findings. This is what rigorous data management looks like! #ClinicalTrials #DataManagement #GlobalHealth"</span></span>
+<span id="cb3-62"><a href="#cb3-62" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-63"><a href="#cb3-63" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">View Data Management Plan →</span><span class="co">](#)</span> | <span class="co">[</span><span class="ot">Quality Metrics Dashboard →</span><span class="co">](#)</span></span>
+<span id="cb3-64"><a href="#cb3-64" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb3-65"><a href="#cb3-65" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb3-66"><a href="#cb3-66" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-67"><a href="#cb3-67" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb3-68"><a href="#cb3-68" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-69"><a href="#cb3-69" aria-hidden="true" tabindex="-1"></a><span class="fu">### **2. Malaria Vaccine Efficacy Study**</span></span>
+<span id="cb3-70"><a href="#cb3-70" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-71"><a href="#cb3-71" aria-hidden="true" tabindex="-1"></a>::: {.project-card}</span>
+<span id="cb3-72"><a href="#cb3-72" aria-hidden="true" tabindex="-1"></a>::: {.project-header}</span>
+<span id="cb3-73"><a href="#cb3-73" aria-hidden="true" tabindex="-1"></a><span class="fu">#### 💉 Phase II Vaccine Trial with Complex Immunology Data</span></span>
+<span id="cb3-74"><a href="#cb3-74" aria-hidden="true" tabindex="-1"></a>**Duration:** 2020-2024 | **Status:** Ongoing | **Participants:** 800+</span>
+<span id="cb3-75"><a href="#cb3-75" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb3-76"><a href="#cb3-76" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-77"><a href="#cb3-77" aria-hidden="true" tabindex="-1"></a>::: {.project-body}</span>
+<span id="cb3-78"><a href="#cb3-78" aria-hidden="true" tabindex="-1"></a>**Project Scope:**</span>
+<span id="cb3-79"><a href="#cb3-79" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Vaccine efficacy assessment in children aged 6-24 months</span>
+<span id="cb3-80"><a href="#cb3-80" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Complex laboratory data (immunology, parasitology)</span>
+<span id="cb3-81"><a href="#cb3-81" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Pharmacokinetics sampling</span>
+<span id="cb3-82"><a href="#cb3-82" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Safety monitoring with expedited reporting</span>
+<span id="cb3-83"><a href="#cb3-83" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-84"><a href="#cb3-84" aria-hidden="true" tabindex="-1"></a>**Data Management Challenges:**</span>
+<span id="cb3-85"><a href="#cb3-85" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Multiple laboratory platforms with different data formats</span>
+<span id="cb3-86"><a href="#cb3-86" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Real-time safety monitoring requirements</span>
+<span id="cb3-87"><a href="#cb3-87" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Complex visit schedules with flexible windows</span>
+<span id="cb3-88"><a href="#cb3-88" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Integration with national immunization registry</span>
+<span id="cb3-89"><a href="#cb3-89" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-90"><a href="#cb3-90" aria-hidden="true" tabindex="-1"></a>**Solutions Implemented:**</span>
+<span id="cb3-91"><a href="#cb3-91" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Centralized Data Warehouse:** PostgreSQL database integrating:</span>
+<span id="cb3-92"><a href="#cb3-92" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Clinical data (REDCap)</span>
+<span id="cb3-93"><a href="#cb3-93" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Laboratory results (3 different LIMS)</span>
+<span id="cb3-94"><a href="#cb3-94" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Adverse events (custom safety database)</span>
+<span id="cb3-95"><a href="#cb3-95" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Pharmacy dispensing records</span>
+<span id="cb3-96"><a href="#cb3-96" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb3-97"><a href="#cb3-97" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Automated Data Pipelines:**</span>
+<span id="cb3-98"><a href="#cb3-98" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Nightly ETL processes importing lab results</span>
+<span id="cb3-99"><a href="#cb3-99" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Real-time safety event notifications</span>
+<span id="cb3-100"><a href="#cb3-100" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Automated eligibility checks for visit windows</span>
+<span id="cb3-101"><a href="#cb3-101" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb3-102"><a href="#cb3-102" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Quality Assurance:**</span>
+<span id="cb3-103"><a href="#cb3-103" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>200+ validation rules across systems</span>
+<span id="cb3-104"><a href="#cb3-104" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Daily data quality reports</span>
+<span id="cb3-105"><a href="#cb3-105" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Exception-based monitoring system</span>
+<span id="cb3-106"><a href="#cb3-106" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-107"><a href="#cb3-107" aria-hidden="true" tabindex="-1"></a>**Impact:**</span>
+<span id="cb3-108"><a href="#cb3-108" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>✅ 800+ participants enrolled and tracked</span>
+<span id="cb3-109"><a href="#cb3-109" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>✅ 15,000+ lab samples processed and matched</span>
+<span id="cb3-110"><a href="#cb3-110" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>✅ Real-time safety reporting (required within 24 hours) - 100% compliance</span>
+<span id="cb3-111"><a href="#cb3-111" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>✅ Data monitoring committee praised data quality as "exemplary"</span>
+<span id="cb3-112"><a href="#cb3-112" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-113"><a href="#cb3-113" aria-hidden="true" tabindex="-1"></a>**Technologies:** REDCap, PostgreSQL, R Shiny, Python, Docker</span>
+<span id="cb3-114"><a href="#cb3-114" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-115"><a href="#cb3-115" aria-hidden="true" tabindex="-1"></a>**Social Media Highlight:**</span>
+<span id="cb3-116"><a href="#cb3-116" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; "Managing complex vaccine trial data across multiple systems! Integrated clinical data, lab results from 3 LIMS, and safety monitoring into one seamless system. Real-time alerts + automated QC = 100% safety reporting compliance. #VaccineDevelopment #DataScience"</span></span>
+<span id="cb3-117"><a href="#cb3-117" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-118"><a href="#cb3-118" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Technical Documentation →</span><span class="co">](#)</span></span>
+<span id="cb3-119"><a href="#cb3-119" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb3-120"><a href="#cb3-120" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb3-121"><a href="#cb3-121" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-122"><a href="#cb3-122" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb3-123"><a href="#cb3-123" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-124"><a href="#cb3-124" aria-hidden="true" tabindex="-1"></a><span class="fu">## **Cohort Study Data Systems**</span></span>
+<span id="cb3-125"><a href="#cb3-125" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-126"><a href="#cb3-126" aria-hidden="true" tabindex="-1"></a><span class="fu">### **3. Longitudinal NCD Cohort Database**</span></span>
+<span id="cb3-127"><a href="#cb3-127" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-128"><a href="#cb3-128" aria-hidden="true" tabindex="-1"></a>::: {.project-card}</span>
+<span id="cb3-129"><a href="#cb3-129" aria-hidden="true" tabindex="-1"></a>::: {.project-header}</span>
+<span id="cb3-130"><a href="#cb3-130" aria-hidden="true" tabindex="-1"></a><span class="fu">#### 🏥 20-Year Prospective Cohort Study</span></span>
+<span id="cb3-131"><a href="#cb3-131" aria-hidden="true" tabindex="-1"></a>**Launch:** 2018 | **Status:** Active | **Participants:** 5,000+</span>
+<span id="cb3-132"><a href="#cb3-132" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb3-133"><a href="#cb3-133" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-134"><a href="#cb3-134" aria-hidden="true" tabindex="-1"></a>::: {.project-body}</span>
+<span id="cb3-135"><a href="#cb3-135" aria-hidden="true" tabindex="-1"></a>**Study Overview:**</span>
+<span id="cb3-136"><a href="#cb3-136" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Long-term follow-up of patients with hypertension, diabetes, and CVD</span>
+<span id="cb3-137"><a href="#cb3-137" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Quarterly clinic visits with annual comprehensive assessments</span>
+<span id="cb3-138"><a href="#cb3-138" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Biobank integration (plasma, DNA samples)</span>
+<span id="cb3-139"><a href="#cb3-139" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Linkage with vital registration systems</span>
+<span id="cb3-140"><a href="#cb3-140" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-141"><a href="#cb3-141" aria-hidden="true" tabindex="-1"></a>**Database Architecture:**</span>
+<span id="cb3-142"><a href="#cb3-142" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Front-End:** REDCap for data collection</span>
+<span id="cb3-143"><a href="#cb3-143" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Back-End:** PostgreSQL for long-term data storage</span>
+<span id="cb3-144"><a href="#cb3-144" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Analytics Layer:** R Shiny dashboards</span>
+<span id="cb3-145"><a href="#cb3-145" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Biospecimen Tracking:** Custom sample management system</span>
+<span id="cb3-146"><a href="#cb3-146" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-147"><a href="#cb3-147" aria-hidden="true" tabindex="-1"></a>**Key Features:**</span>
+<span id="cb3-148"><a href="#cb3-148" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Flexible visit scheduling with automated reminders</span>
+<span id="cb3-149"><a href="#cb3-149" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Integration with facility EMR systems</span>
+<span id="cb3-150"><a href="#cb3-150" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Automated loss-to-follow-up flagging</span>
+<span id="cb3-151"><a href="#cb3-151" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Linkage with national death registry</span>
+<span id="cb3-152"><a href="#cb3-152" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Biobank sample inventory management</span>
+<span id="cb3-153"><a href="#cb3-153" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-154"><a href="#cb3-154" aria-hidden="true" tabindex="-1"></a>**Data Management Processes:**</span>
+<span id="cb3-155"><a href="#cb3-155" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Enrollment:** Electronic informed consent with audit trail</span>
+<span id="cb3-156"><a href="#cb3-156" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Data Collection:** Tablet-based entry at point of care</span>
+<span id="cb3-157"><a href="#cb3-157" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Quality Control:** Weekly automated checks + monthly audits</span>
+<span id="cb3-158"><a href="#cb3-158" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Data Sharing:** Controlled access system for researchers</span>
+<span id="cb3-159"><a href="#cb3-159" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Biospecimen Management:** Barcode tracking with freeze/thaw cycles</span>
+<span id="cb3-160"><a href="#cb3-160" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-161"><a href="#cb3-161" aria-hidden="true" tabindex="-1"></a>**Achievements:**</span>
+<span id="cb3-162"><a href="#cb3-162" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>✅ 5,000+ participants enrolled (target: 5,500)</span>
+<span id="cb3-163"><a href="#cb3-163" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>✅ Retention rate: 87% at 5 years</span>
+<span id="cb3-164"><a href="#cb3-164" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>✅ 60,000+ clinic visits documented</span>
+<span id="cb3-165"><a href="#cb3-165" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>✅ 25,000+ biospecimens properly tracked</span>
+<span id="cb3-166"><a href="#cb3-166" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>✅ 12 ancillary studies using cohort data</span>
+<span id="cb3-167"><a href="#cb3-167" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-168"><a href="#cb3-168" aria-hidden="true" tabindex="-1"></a>**Technologies:** REDCap, PostgreSQL, R, Python, Git, REDCap API</span>
+<span id="cb3-169"><a href="#cb3-169" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-170"><a href="#cb3-170" aria-hidden="true" tabindex="-1"></a>**Social Media Highlight:**</span>
+<span id="cb3-171"><a href="#cb3-171" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; "Building data systems that stand the test of time! Managing a 20-year NCD cohort with 5K+ participants, 60K+ visits, and 25K+ biospecimens. 87% retention at 5 years thanks to robust data systems and automated follow-up. #EpidemiologyLife #CohortStudy"</span></span>
+<span id="cb3-172"><a href="#cb3-172" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-173"><a href="#cb3-173" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">System Architecture →</span><span class="co">](#)</span> | <span class="co">[</span><span class="ot">Data Dictionary →</span><span class="co">](#)</span></span>
+<span id="cb3-174"><a href="#cb3-174" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb3-175"><a href="#cb3-175" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb3-176"><a href="#cb3-176" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-177"><a href="#cb3-177" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb3-178"><a href="#cb3-178" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-179"><a href="#cb3-179" aria-hidden="true" tabindex="-1"></a><span class="fu">## **Surveillance Systems**</span></span>
+<span id="cb3-180"><a href="#cb3-180" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-181"><a href="#cb3-181" aria-hidden="true" tabindex="-1"></a><span class="fu">### **4. Disease Surveillance Platform**</span></span>
+<span id="cb3-182"><a href="#cb3-182" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-183"><a href="#cb3-183" aria-hidden="true" tabindex="-1"></a>::: {.project-card}</span>
+<span id="cb3-184"><a href="#cb3-184" aria-hidden="true" tabindex="-1"></a>::: {.project-header}</span>
+<span id="cb3-185"><a href="#cb3-185" aria-hidden="true" tabindex="-1"></a><span class="fu">#### 📊 Real-Time Disease Reporting System</span></span>
+<span id="cb3-186"><a href="#cb3-186" aria-hidden="true" tabindex="-1"></a>**Implementation:** 2021 | **Status:** Production | **Coverage:** 100+ facilities</span>
+<span id="cb3-187"><a href="#cb3-187" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb3-188"><a href="#cb3-188" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-189"><a href="#cb3-189" aria-hidden="true" tabindex="-1"></a>::: {.project-body}</span>
+<span id="cb3-190"><a href="#cb3-190" aria-hidden="true" tabindex="-1"></a>**System Overview:**</span>
+<span id="cb3-191"><a href="#cb3-191" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Real-time reporting of notifiable diseases</span>
+<span id="cb3-192"><a href="#cb3-192" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Automated outbreak detection algorithms</span>
+<span id="cb3-193"><a href="#cb3-193" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Geographic information system integration</span>
+<span id="cb3-194"><a href="#cb3-194" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Mobile reporting for rural facilities</span>
+<span id="cb3-195"><a href="#cb3-195" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-196"><a href="#cb3-196" aria-hidden="true" tabindex="-1"></a>**Technical Components:**</span>
+<span id="cb3-197"><a href="#cb3-197" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-198"><a href="#cb3-198" aria-hidden="true" tabindex="-1"></a>**1. Data Collection Layer:**</span>
+<span id="cb3-199"><a href="#cb3-199" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Mobile app (offline capability) for facility reporting</span>
+<span id="cb3-200"><a href="#cb3-200" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Web portal for centralized data entry</span>
+<span id="cb3-201"><a href="#cb3-201" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>SMS-based reporting for resource-limited settings</span>
+<span id="cb3-202"><a href="#cb3-202" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>API integration with existing HMIS</span>
+<span id="cb3-203"><a href="#cb3-203" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-204"><a href="#cb3-204" aria-hidden="true" tabindex="-1"></a>**2. Data Processing Layer:**</span>
+<span id="cb3-205"><a href="#cb3-205" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Automated data validation and standardization</span>
+<span id="cb3-206"><a href="#cb3-206" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Duplicate detection and resolution</span>
+<span id="cb3-207"><a href="#cb3-207" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Geographic coding and validation</span>
+<span id="cb3-208"><a href="#cb3-208" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Case classification algorithms</span>
+<span id="cb3-209"><a href="#cb3-209" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-210"><a href="#cb3-210" aria-hidden="true" tabindex="-1"></a>**3. Analytics &amp; Alerting:**</span>
+<span id="cb3-211"><a href="#cb3-211" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Statistical outbreak detection (CUSUM, EWMA)</span>
+<span id="cb3-212"><a href="#cb3-212" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Geographic clustering analysis</span>
+<span id="cb3-213"><a href="#cb3-213" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Automated email/SMS alerts for thresholds</span>
+<span id="cb3-214"><a href="#cb3-214" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Weekly epidemiological bulletins</span>
+<span id="cb3-215"><a href="#cb3-215" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-216"><a href="#cb3-216" aria-hidden="true" tabindex="-1"></a>**4. Visualization Layer:**</span>
+<span id="cb3-217"><a href="#cb3-217" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Public-facing dashboard (non-sensitive data)</span>
+<span id="cb3-218"><a href="#cb3-218" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Internal detailed analytics platform</span>
+<span id="cb3-219"><a href="#cb3-219" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Mobile-friendly reports</span>
+<span id="cb3-220"><a href="#cb3-220" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Automated PDF report generation</span>
+<span id="cb3-221"><a href="#cb3-221" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-222"><a href="#cb3-222" aria-hidden="true" tabindex="-1"></a>**System Performance:**</span>
+<span id="cb3-223"><a href="#cb3-223" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>✅ 100+ facilities actively reporting</span>
+<span id="cb3-224"><a href="#cb3-224" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>✅ Average reporting time: 2.3 days (down from 14 days)</span>
+<span id="cb3-225"><a href="#cb3-225" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>✅ 15 disease outbreaks detected early in Year 1</span>
+<span id="cb3-226"><a href="#cb3-226" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>✅ System uptime: 99.8%</span>
+<span id="cb3-227"><a href="#cb3-227" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>✅ 50,000+ case reports processed</span>
+<span id="cb3-228"><a href="#cb3-228" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-229"><a href="#cb3-229" aria-hidden="true" tabindex="-1"></a>**Impact:**</span>
+<span id="cb3-230"><a href="#cb3-230" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Early detection of cholera outbreak (3 days earlier than traditional system)</span>
+<span id="cb3-231"><a href="#cb3-231" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Reduced measles outbreak duration by 40%</span>
+<span id="cb3-232"><a href="#cb3-232" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Improved data completeness from 65% to 94%</span>
+<span id="cb3-233"><a href="#cb3-233" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-234"><a href="#cb3-234" aria-hidden="true" tabindex="-1"></a>**Technologies:** PostgreSQL, R Shiny, Leaflet, ODK, REST API, Ubuntu Server</span>
+<span id="cb3-235"><a href="#cb3-235" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-236"><a href="#cb3-236" aria-hidden="true" tabindex="-1"></a>**Social Media Highlight:**</span>
+<span id="cb3-237"><a href="#cb3-237" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; "Data systems saving lives! Our real-time disease surveillance platform reduced outbreak detection time from 14 days to 2.3 days. Early cholera detection + rapid response = lives saved. This is #DigitalHealth done right! #PublicHealth #DataForGood"</span></span>
+<span id="cb3-238"><a href="#cb3-238" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-239"><a href="#cb3-239" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Live Dashboard →</span><span class="co">](#)</span> | <span class="co">[</span><span class="ot">Technical Specs →</span><span class="co">](#)</span></span>
+<span id="cb3-240"><a href="#cb3-240" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb3-241"><a href="#cb3-241" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb3-242"><a href="#cb3-242" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-243"><a href="#cb3-243" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb3-244"><a href="#cb3-244" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-245"><a href="#cb3-245" aria-hidden="true" tabindex="-1"></a><span class="fu">## **Data Integration Projects**</span></span>
+<span id="cb3-246"><a href="#cb3-246" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-247"><a href="#cb3-247" aria-hidden="true" tabindex="-1"></a><span class="fu">### **5. Health Information Exchange (HIE) Implementation**</span></span>
+<span id="cb3-248"><a href="#cb3-248" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-249"><a href="#cb3-249" aria-hidden="true" tabindex="-1"></a>::: {.project-card}</span>
+<span id="cb3-250"><a href="#cb3-250" aria-hidden="true" tabindex="-1"></a>::: {.project-header}</span>
+<span id="cb3-251"><a href="#cb3-251" aria-hidden="true" tabindex="-1"></a><span class="fu">#### 🔄 Connecting Disparate Health Systems</span></span>
+<span id="cb3-252"><a href="#cb3-252" aria-hidden="true" tabindex="-1"></a>**Duration:** 2022-2024 | **Status:** Pilot Phase | **Facilities:** 15</span>
+<span id="cb3-253"><a href="#cb3-253" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb3-254"><a href="#cb3-254" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-255"><a href="#cb3-255" aria-hidden="true" tabindex="-1"></a>::: {.project-body}</span>
+<span id="cb3-256"><a href="#cb3-256" aria-hidden="true" tabindex="-1"></a>**Challenge:**</span>
+<span id="cb3-257"><a href="#cb3-257" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>15 health facilities using 4 different EMR systems</span>
+<span id="cb3-258"><a href="#cb3-258" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>No patient data sharing between facilities</span>
+<span id="cb3-259"><a href="#cb3-259" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Duplicate tests and treatments</span>
+<span id="cb3-260"><a href="#cb3-260" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Fragmented patient histories</span>
+<span id="cb3-261"><a href="#cb3-261" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-262"><a href="#cb3-262" aria-hidden="true" tabindex="-1"></a>**Solution:**</span>
+<span id="cb3-263"><a href="#cb3-263" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Implemented Health Information Exchange (HIE) based on FHIR standards</span>
+<span id="cb3-264"><a href="#cb3-264" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Master Patient Index (MPI) for unique patient identification</span>
+<span id="cb3-265"><a href="#cb3-265" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Standardized data exchange protocols</span>
+<span id="cb3-266"><a href="#cb3-266" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Consent management system</span>
+<span id="cb3-267"><a href="#cb3-267" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-268"><a href="#cb3-268" aria-hidden="true" tabindex="-1"></a>**Architecture:**</span>
+<span id="cb3-269"><a href="#cb3-269" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb3-270"><a href="#cb3-270" aria-hidden="true" tabindex="-1"></a><span class="in">┌─────────────────────────────────────────┐</span></span>
+<span id="cb3-271"><a href="#cb3-271" aria-hidden="true" tabindex="-1"></a><span class="in">│         Health Facilities               │</span></span>
+<span id="cb3-272"><a href="#cb3-272" aria-hidden="true" tabindex="-1"></a><span class="in">│  EMR1  │  EMR2  │  EMR3  │  EMR4       │</span></span>
+<span id="cb3-273"><a href="#cb3-273" aria-hidden="true" tabindex="-1"></a><span class="in">└────┬─────────┬─────────┬─────────┬──────┘</span></span>
+<span id="cb3-274"><a href="#cb3-274" aria-hidden="true" tabindex="-1"></a><span class="in">     │         │         │         │</span></span>
+<span id="cb3-275"><a href="#cb3-275" aria-hidden="true" tabindex="-1"></a><span class="in">     │  ┌──────▼─────────▼─────────▼──┐</span></span>
+<span id="cb3-276"><a href="#cb3-276" aria-hidden="true" tabindex="-1"></a><span class="in">     │  │    FHIR API Adapters         │</span></span>
+<span id="cb3-277"><a href="#cb3-277" aria-hidden="true" tabindex="-1"></a><span class="in">     │  └──────┬─────────────────────┬─┘</span></span>
+<span id="cb3-278"><a href="#cb3-278" aria-hidden="true" tabindex="-1"></a><span class="in">     │         │                     │</span></span>
+<span id="cb3-279"><a href="#cb3-279" aria-hidden="true" tabindex="-1"></a><span class="in">     │  ┌──────▼────────────────────┐│</span></span>
+<span id="cb3-280"><a href="#cb3-280" aria-hidden="true" tabindex="-1"></a><span class="in">     │  │  Central HIE Platform      ││</span></span>
+<span id="cb3-281"><a href="#cb3-281" aria-hidden="true" tabindex="-1"></a><span class="in">     │  │  - Master Patient Index    ││</span></span>
+<span id="cb3-282"><a href="#cb3-282" aria-hidden="true" tabindex="-1"></a><span class="in">     │  │  - Consent Management      ││</span></span>
+<span id="cb3-283"><a href="#cb3-283" aria-hidden="true" tabindex="-1"></a><span class="in">     │  │  - Data Repository         ││</span></span>
+<span id="cb3-284"><a href="#cb3-284" aria-hidden="true" tabindex="-1"></a><span class="in">     │  └────────────────────────────┘│</span></span>
+<span id="cb3-285"><a href="#cb3-285" aria-hidden="true" tabindex="-1"></a><span class="in">     │                                 │</span></span>
+<span id="cb3-286"><a href="#cb3-286" aria-hidden="true" tabindex="-1"></a><span class="in">     └─────────────────────────────────┘</span></span>
+<span id="cb3-287"><a href="#cb3-287" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb3-288"><a href="#cb3-288" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-289"><a href="#cb3-289" aria-hidden="true" tabindex="-1"></a>**Implementation Details:**</span>
+<span id="cb3-290"><a href="#cb3-290" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Standards:** HL7 FHIR R4, IHE profiles</span>
+<span id="cb3-291"><a href="#cb3-291" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Patient Matching:** Probabilistic matching algorithm (95% accuracy)</span>
+<span id="cb3-292"><a href="#cb3-292" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Security:** OAuth 2.0, TLS 1.3, encrypted data at rest</span>
+<span id="cb3-293"><a href="#cb3-293" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Interoperability:** RESTful APIs for all interactions</span>
+<span id="cb3-294"><a href="#cb3-294" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-295"><a href="#cb3-295" aria-hidden="true" tabindex="-1"></a>**Pilot Results:**</span>
+<span id="cb3-296"><a href="#cb3-296" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>✅ 15 facilities connected</span>
+<span id="cb3-297"><a href="#cb3-297" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>✅ 10,000+ patients with linked records</span>
+<span id="cb3-298"><a href="#cb3-298" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>✅ 25% reduction in duplicate lab tests</span>
+<span id="cb3-299"><a href="#cb3-299" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>✅ Clinicians access patient history in 3 seconds (vs. 30 minutes phone calls)</span>
+<span id="cb3-300"><a href="#cb3-300" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>✅ Estimated cost savings: KES 2M annually</span>
+<span id="cb3-301"><a href="#cb3-301" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-302"><a href="#cb3-302" aria-hidden="true" tabindex="-1"></a>**Technologies:** HAPI FHIR, PostgreSQL, Spring Boot, React, Docker, Kubernetes</span>
+<span id="cb3-303"><a href="#cb3-303" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-304"><a href="#cb3-304" aria-hidden="true" tabindex="-1"></a>**Social Media Highlight:**</span>
+<span id="cb3-305"><a href="#cb3-305" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; "Connecting fragmented health data! Our HIE pilot linked 15 facilities, enabling instant patient history access. Result? 25% fewer duplicate tests and happier patients. Interoperability isn't a buzzword—it's a game-changer! #HealthIT #Interoperability #FHIR"</span></span>
+<span id="cb3-306"><a href="#cb3-306" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-307"><a href="#cb3-307" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Technical Architecture →</span><span class="co">](#)</span></span>
+<span id="cb3-308"><a href="#cb3-308" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb3-309"><a href="#cb3-309" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb3-310"><a href="#cb3-310" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-311"><a href="#cb3-311" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb3-312"><a href="#cb3-312" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-313"><a href="#cb3-313" aria-hidden="true" tabindex="-1"></a><span class="fu">## **Data Quality Frameworks**</span></span>
+<span id="cb3-314"><a href="#cb3-314" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-315"><a href="#cb3-315" aria-hidden="true" tabindex="-1"></a><span class="fu">### **6. Automated Data Quality Monitoring System**</span></span>
+<span id="cb3-316"><a href="#cb3-316" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-317"><a href="#cb3-317" aria-hidden="true" tabindex="-1"></a>::: {.project-card}</span>
+<span id="cb3-318"><a href="#cb3-318" aria-hidden="true" tabindex="-1"></a>::: {.project-header}</span>
+<span id="cb3-319"><a href="#cb3-319" aria-hidden="true" tabindex="-1"></a><span class="fu">#### ✅ Proactive Data Quality Management</span></span>
+<span id="cb3-320"><a href="#cb3-320" aria-hidden="true" tabindex="-1"></a>**Developed:** 2020 | **Status:** Used in 10+ projects</span>
+<span id="cb3-321"><a href="#cb3-321" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb3-322"><a href="#cb3-322" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-323"><a href="#cb3-323" aria-hidden="true" tabindex="-1"></a>::: {.project-body}</span>
+<span id="cb3-324"><a href="#cb3-324" aria-hidden="true" tabindex="-1"></a>**Problem:**</span>
+<span id="cb3-325"><a href="#cb3-325" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Manual data quality checks time-consuming and error-prone</span>
+<span id="cb3-326"><a href="#cb3-326" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Quality issues discovered late in project lifecycle</span>
+<span id="cb3-327"><a href="#cb3-327" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Inconsistent quality standards across projects</span>
+<span id="cb3-328"><a href="#cb3-328" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-329"><a href="#cb3-329" aria-hidden="true" tabindex="-1"></a>**Solution:**</span>
+<span id="cb3-330"><a href="#cb3-330" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Developed comprehensive automated DQ monitoring framework</span>
+<span id="cb3-331"><a href="#cb3-331" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Implemented in R as reusable package</span>
+<span id="cb3-332"><a href="#cb3-332" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Integrated with REDCap, CSV imports, and SQL databases</span>
+<span id="cb3-333"><a href="#cb3-333" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-334"><a href="#cb3-334" aria-hidden="true" tabindex="-1"></a>**Framework Components:**</span>
+<span id="cb3-335"><a href="#cb3-335" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-336"><a href="#cb3-336" aria-hidden="true" tabindex="-1"></a>**1. Data Quality Dimensions:**</span>
+<span id="cb3-337"><a href="#cb3-337" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Completeness:** Missing data detection</span>
+<span id="cb3-338"><a href="#cb3-338" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Validity:** Range and format checks</span>
+<span id="cb3-339"><a href="#cb3-339" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Consistency:** Cross-field validation</span>
+<span id="cb3-340"><a href="#cb3-340" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Timeliness:** Data entry delays</span>
+<span id="cb3-341"><a href="#cb3-341" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Accuracy:** Logical inconsistencies</span>
+<span id="cb3-342"><a href="#cb3-342" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Uniqueness:** Duplicate detection</span>
+<span id="cb3-343"><a href="#cb3-343" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-344"><a href="#cb3-344" aria-hidden="true" tabindex="-1"></a>**2. Automated Checks:**</span>
+<span id="cb3-345"><a href="#cb3-345" aria-hidden="true" tabindex="-1"></a><span class="in">```r</span></span>
+<span id="cb3-346"><a href="#cb3-346" aria-hidden="true" tabindex="-1"></a><span class="co"># Example DQ checks</span></span>
+<span id="cb3-347"><a href="#cb3-347" aria-hidden="true" tabindex="-1"></a>dq_framework <span class="ot">&lt;-</span> DataQualityChecker<span class="sc">$</span><span class="fu">new</span>(data)</span>
+<span id="cb3-348"><a href="#cb3-348" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-349"><a href="#cb3-349" aria-hidden="true" tabindex="-1"></a><span class="co"># Completeness checks</span></span>
+<span id="cb3-350"><a href="#cb3-350" aria-hidden="true" tabindex="-1"></a>dq_framework<span class="sc">$</span><span class="fu">check_completeness</span>(</span>
+<span id="cb3-351"><a href="#cb3-351" aria-hidden="true" tabindex="-1"></a>  <span class="at">required_vars =</span> <span class="fu">c</span>(<span class="st">"patient_id"</span>, <span class="st">"visit_date"</span>, <span class="st">"outcome"</span>),</span>
+<span id="cb3-352"><a href="#cb3-352" aria-hidden="true" tabindex="-1"></a>  <span class="at">threshold =</span> <span class="fl">0.95</span>  <span class="co"># 95% completeness required</span></span>
+<span id="cb3-353"><a href="#cb3-353" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb3-354"><a href="#cb3-354" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-355"><a href="#cb3-355" aria-hidden="true" tabindex="-1"></a><span class="co"># Validity checks</span></span>
+<span id="cb3-356"><a href="#cb3-356" aria-hidden="true" tabindex="-1"></a>dq_framework<span class="sc">$</span><span class="fu">check_ranges</span>(</span>
+<span id="cb3-357"><a href="#cb3-357" aria-hidden="true" tabindex="-1"></a>  <span class="at">age =</span> <span class="fu">c</span>(<span class="dv">18</span>, <span class="dv">100</span>),</span>
+<span id="cb3-358"><a href="#cb3-358" aria-hidden="true" tabindex="-1"></a>  <span class="at">bp_systolic =</span> <span class="fu">c</span>(<span class="dv">80</span>, <span class="dv">220</span>),</span>
+<span id="cb3-359"><a href="#cb3-359" aria-hidden="true" tabindex="-1"></a>  <span class="at">bp_diastolic =</span> <span class="fu">c</span>(<span class="dv">40</span>, <span class="dv">130</span>)</span>
+<span id="cb3-360"><a href="#cb3-360" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb3-361"><a href="#cb3-361" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-362"><a href="#cb3-362" aria-hidden="true" tabindex="-1"></a><span class="co"># Consistency checks</span></span>
+<span id="cb3-363"><a href="#cb3-363" aria-hidden="true" tabindex="-1"></a>dq_framework<span class="sc">$</span><span class="fu">check_consistency</span>(</span>
+<span id="cb3-364"><a href="#cb3-364" aria-hidden="true" tabindex="-1"></a>  <span class="at">rules =</span> <span class="fu">list</span>(</span>
+<span id="cb3-365"><a href="#cb3-365" aria-hidden="true" tabindex="-1"></a>    <span class="st">"death_date &gt;= enrollment_date"</span>,</span>
+<span id="cb3-366"><a href="#cb3-366" aria-hidden="true" tabindex="-1"></a>    <span class="st">"if outcome == 'pregnant' then sex == 'Female'"</span>,</span>
+<span id="cb3-367"><a href="#cb3-367" aria-hidden="true" tabindex="-1"></a>    <span class="st">"if hiv_positive then hiv_test_date exists"</span></span>
+<span id="cb3-368"><a href="#cb3-368" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb3-369"><a href="#cb3-369" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb3-370"><a href="#cb3-370" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-371"><a href="#cb3-371" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate report</span></span>
+<span id="cb3-372"><a href="#cb3-372" aria-hidden="true" tabindex="-1"></a>dq_framework<span class="sc">$</span><span class="fu">generate_report</span>(<span class="at">output =</span> <span class="st">"html"</span>)</span>
+<span id="cb3-373"><a href="#cb3-373" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb3-374"><a href="#cb3-374" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-375"><a href="#cb3-375" aria-hidden="true" tabindex="-1"></a>**3. Reporting:**</span>
+<span id="cb3-376"><a href="#cb3-376" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Automated daily/weekly reports</span>
+<span id="cb3-377"><a href="#cb3-377" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Traffic light system (red/yellow/green)</span>
+<span id="cb3-378"><a href="#cb3-378" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Drill-down capabilities to problem records</span>
+<span id="cb3-379"><a href="#cb3-379" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Trend analysis over time</span>
+<span id="cb3-380"><a href="#cb3-380" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-381"><a href="#cb3-381" aria-hidden="true" tabindex="-1"></a>**Impact Across Projects:**</span>
+<span id="cb3-382"><a href="#cb3-382" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>✅ DQ issues detected 70% earlier in project lifecycle</span>
+<span id="cb3-383"><a href="#cb3-383" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>✅ Data cleaning time reduced by 50%</span>
+<span id="cb3-384"><a href="#cb3-384" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>✅ Standardized quality metrics across organization</span>
+<span id="cb3-385"><a href="#cb3-385" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>✅ Used in 10+ studies managing 200,000+ records</span>
+<span id="cb3-386"><a href="#cb3-386" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-387"><a href="#cb3-387" aria-hidden="true" tabindex="-1"></a>**Technologies:** R (tidyverse, assertr, validate), R Markdown, Git</span>
+<span id="cb3-388"><a href="#cb3-388" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-389"><a href="#cb3-389" aria-hidden="true" tabindex="-1"></a>**Social Media Highlight:**</span>
+<span id="cb3-390"><a href="#cb3-390" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; "Prevention &gt; Correction in data management! Our automated DQ framework detects issues 70% earlier and cuts cleaning time in half. Now deployed across 10+ studies. Open-source release coming soon! #DataQuality #OpenScience #RStats"</span></span>
+<span id="cb3-391"><a href="#cb3-391" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-392"><a href="#cb3-392" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">GitHub Repository →</span><span class="co">](https://github.com/gondamol/dqframework)</span> | <span class="co">[</span><span class="ot">Documentation →</span><span class="co">](#)</span></span>
+<span id="cb3-393"><a href="#cb3-393" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb3-394"><a href="#cb3-394" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb3-395"><a href="#cb3-395" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-396"><a href="#cb3-396" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb3-397"><a href="#cb3-397" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-398"><a href="#cb3-398" aria-hidden="true" tabindex="-1"></a><span class="fu">## **Best Practices &amp; SOPs**</span></span>
+<span id="cb3-399"><a href="#cb3-399" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-400"><a href="#cb3-400" aria-hidden="true" tabindex="-1"></a><span class="fu">### **Standard Operating Procedures Developed**</span></span>
+<span id="cb3-401"><a href="#cb3-401" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-402"><a href="#cb3-402" aria-hidden="true" tabindex="-1"></a>::: {.skills-grid}</span>
+<span id="cb3-403"><a href="#cb3-403" aria-hidden="true" tabindex="-1"></a>::: {.skill-category}</span>
+<span id="cb3-404"><a href="#cb3-404" aria-hidden="true" tabindex="-1"></a><span class="fu">#### 📋 Data Management</span></span>
+<span id="cb3-405"><a href="#cb3-405" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Data Management Plan template</span>
+<span id="cb3-406"><a href="#cb3-406" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Database design specifications</span>
+<span id="cb3-407"><a href="#cb3-407" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Data dictionary standards</span>
+<span id="cb3-408"><a href="#cb3-408" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Query management procedures</span>
+<span id="cb3-409"><a href="#cb3-409" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb3-410"><a href="#cb3-410" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-411"><a href="#cb3-411" aria-hidden="true" tabindex="-1"></a>::: {.skill-category}</span>
+<span id="cb3-412"><a href="#cb3-412" aria-hidden="true" tabindex="-1"></a><span class="fu">#### 🔒 Security &amp; Compliance</span></span>
+<span id="cb3-413"><a href="#cb3-413" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Data security SOPs</span>
+<span id="cb3-414"><a href="#cb3-414" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>HIPAA compliance checklist</span>
+<span id="cb3-415"><a href="#cb3-415" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>GCP compliance procedures</span>
+<span id="cb3-416"><a href="#cb3-416" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Audit readiness guide</span>
+<span id="cb3-417"><a href="#cb3-417" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb3-418"><a href="#cb3-418" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-419"><a href="#cb3-419" aria-hidden="true" tabindex="-1"></a>::: {.skill-category}</span>
+<span id="cb3-420"><a href="#cb3-420" aria-hidden="true" tabindex="-1"></a><span class="fu">#### ✅ Quality Control</span></span>
+<span id="cb3-421"><a href="#cb3-421" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Data validation plan template</span>
+<span id="cb3-422"><a href="#cb3-422" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Monitoring visit procedures</span>
+<span id="cb3-423"><a href="#cb3-423" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Quality control sampling</span>
+<span id="cb3-424"><a href="#cb3-424" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Corrective action procedures</span>
+<span id="cb3-425"><a href="#cb3-425" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb3-426"><a href="#cb3-426" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-427"><a href="#cb3-427" aria-hidden="true" tabindex="-1"></a>::: {.skill-category}</span>
+<span id="cb3-428"><a href="#cb3-428" aria-hidden="true" tabindex="-1"></a><span class="fu">#### 📊 Reporting</span></span>
+<span id="cb3-429"><a href="#cb3-429" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Analysis dataset creation</span>
+<span id="cb3-430"><a href="#cb3-430" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Data transfer specifications</span>
+<span id="cb3-431"><a href="#cb3-431" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Archive and retention policies</span>
+<span id="cb3-432"><a href="#cb3-432" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>End-of-study procedures</span>
+<span id="cb3-433"><a href="#cb3-433" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb3-434"><a href="#cb3-434" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb3-435"><a href="#cb3-435" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-436"><a href="#cb3-436" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb3-437"><a href="#cb3-437" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-438"><a href="#cb3-438" aria-hidden="true" tabindex="-1"></a><span class="fu">## **Training &amp; Capacity Building**</span></span>
+<span id="cb3-439"><a href="#cb3-439" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-440"><a href="#cb3-440" aria-hidden="true" tabindex="-1"></a><span class="fu">### **Data Management Training Programs Delivered**</span></span>
+<span id="cb3-441"><a href="#cb3-441" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-442"><a href="#cb3-442" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**"Clinical Trial Data Management Fundamentals"** (3-day workshop)</span>
+<span id="cb3-443"><a href="#cb3-443" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>150+ participants trained across 5 cohorts</span>
+<span id="cb3-444"><a href="#cb3-444" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Covers REDCap, GCP, data quality</span>
+<span id="cb3-445"><a href="#cb3-445" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-446"><a href="#cb3-446" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**"REDCap for Research"** (2-day hands-on)</span>
+<span id="cb3-447"><a href="#cb3-447" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>200+ researchers trained</span>
+<span id="cb3-448"><a href="#cb3-448" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Database design, quality control, reporting</span>
+<span id="cb3-449"><a href="#cb3-449" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-450"><a href="#cb3-450" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**"Data Quality in Health Research"** (1-day seminar)</span>
+<span id="cb3-451"><a href="#cb3-451" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>100+ participants</span>
+<span id="cb3-452"><a href="#cb3-452" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Quality frameworks, automated checks</span>
+<span id="cb3-453"><a href="#cb3-453" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-454"><a href="#cb3-454" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb3-455"><a href="#cb3-455" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-456"><a href="#cb3-456" aria-hidden="true" tabindex="-1"></a><span class="fu">## **Impact Summary**</span></span>
+<span id="cb3-457"><a href="#cb3-457" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-458"><a href="#cb3-458" aria-hidden="true" tabindex="-1"></a>::: {.stats-container}</span>
+<span id="cb3-459"><a href="#cb3-459" aria-hidden="true" tabindex="-1"></a>::: {.stat-card}</span>
+<span id="cb3-460"><a href="#cb3-460" aria-hidden="true" tabindex="-1"></a>**20+**{.stat-number}</span>
+<span id="cb3-461"><a href="#cb3-461" aria-hidden="true" tabindex="-1"></a>Studies Managed{.stat-label}</span>
+<span id="cb3-462"><a href="#cb3-462" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb3-463"><a href="#cb3-463" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-464"><a href="#cb3-464" aria-hidden="true" tabindex="-1"></a>::: {.stat-card}</span>
+<span id="cb3-465"><a href="#cb3-465" aria-hidden="true" tabindex="-1"></a>**500K+**{.stat-number}</span>
+<span id="cb3-466"><a href="#cb3-466" aria-hidden="true" tabindex="-1"></a>Records Processed{.stat-label}</span>
+<span id="cb3-467"><a href="#cb3-467" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb3-468"><a href="#cb3-468" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-469"><a href="#cb3-469" aria-hidden="true" tabindex="-1"></a>::: {.stat-card}</span>
+<span id="cb3-470"><a href="#cb3-470" aria-hidden="true" tabindex="-1"></a>**99.5%**{.stat-number}</span>
+<span id="cb3-471"><a href="#cb3-471" aria-hidden="true" tabindex="-1"></a>Avg Data Quality{.stat-label}</span>
+<span id="cb3-472"><a href="#cb3-472" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb3-473"><a href="#cb3-473" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-474"><a href="#cb3-474" aria-hidden="true" tabindex="-1"></a>::: {.stat-card}</span>
+<span id="cb3-475"><a href="#cb3-475" aria-hidden="true" tabindex="-1"></a>**0**{.stat-number}</span>
+<span id="cb3-476"><a href="#cb3-476" aria-hidden="true" tabindex="-1"></a>Critical Audit Findings{.stat-label}</span>
+<span id="cb3-477"><a href="#cb3-477" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb3-478"><a href="#cb3-478" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb3-479"><a href="#cb3-479" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-480"><a href="#cb3-480" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb3-481"><a href="#cb3-481" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-482"><a href="#cb3-482" aria-hidden="true" tabindex="-1"></a>::: {.success-box}</span>
+<span id="cb3-483"><a href="#cb3-483" aria-hidden="true" tabindex="-1"></a><span class="fu">### 📞 Need Data Management Expertise?</span></span>
+<span id="cb3-484"><a href="#cb3-484" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-485"><a href="#cb3-485" aria-hidden="true" tabindex="-1"></a>I provide consulting services for:</span>
+<span id="cb3-486"><a href="#cb3-486" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Clinical trial data management setup</span>
+<span id="cb3-487"><a href="#cb3-487" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>REDCap database design and implementation</span>
+<span id="cb3-488"><a href="#cb3-488" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Data quality framework development</span>
+<span id="cb3-489"><a href="#cb3-489" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Team training and capacity building</span>
+<span id="cb3-490"><a href="#cb3-490" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Regulatory compliance (GCP, HIPAA)</span>
+<span id="cb3-491"><a href="#cb3-491" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-492"><a href="#cb3-492" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Contact Me</span><span class="co">](mailto:nichodemuswerre@gmail.com)</span>{.cta-button} <span class="co">[</span><span class="ot">View CV</span><span class="co">](../cv/index.qmd)</span>{.cta-button}</span>
+<span id="cb3-493"><a href="#cb3-493" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb3-494"><a href="#cb3-494" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-495"><a href="#cb3-495" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb3-496"><a href="#cb3-496" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-497"><a href="#cb3-497" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">← Health Analytics</span><span class="co">](health-analytics.qmd)</span> | <span class="co">[</span><span class="ot">All Projects</span><span class="co">](index.qmd)</span> | <span class="co">[</span><span class="ot">Survey Tools →</span><span class="co">](survey-tools.qmd)</span></span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+</div></div></div></div></div>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2024 Nichodemus Amollo | Senior Research Data Manager<br> Health Data Analytics • Survey Design • Data Management</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/gondamol">
+      <i class="bi bi-github" role="img" aria-label="GitHub Profile">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://linkedin.com/in/amollow">
+      <i class="bi bi-linkedin" role="img" aria-label="LinkedIn Profile">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/nwerre">
+      <i class="bi bi-twitter" role="img" aria-label="Twitter Profile">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://kaggle.com/nwerre">
+      <i class="bi bi-kaggle" role="img" aria-label="Kaggle Profile">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

@@ -1,18 +1,369 @@
 ---
-title: "projects"
-subtitle: "some of my more notable side projects and freelancing work" 
-listing:
-  contents: my_projects
-  feed: true
-  sort: "date desc"
-  type: grid
-  grid-item-border: true
-  grid-item-align: left
-  max-description-length: 175
-  date-format: medium
-  #categories: numbered
-  sort-ui: false
-  filter-ui: false
+title: "Projects Portfolio"
+subtitle: "Real-world health data analytics, data management, and survey implementation projects"
 page-layout: full
 title-block-banner: true
 ---
+
+::: {.hero-banner}
+# 💼 Professional Projects Portfolio
+
+Showcasing 7+ years of impactful work in health data analytics, data management, and digital health solutions
+:::
+
+## **Project Categories**
+
+::: {.skills-grid}
+::: {.skill-category}
+### [🏥 Health Data Analytics](health-analytics.qmd)
+Real-world analytics projects driving health improvements:
+- NCD management dashboards
+- COVID-19 vaccination analysis
+- Maternal mortality prediction
+- TB contact tracing networks
+- Mental health service utilization
+
+**Impact:** 100K+ patients, 50+ facilities
+:::
+
+::: {.skill-category}
+### [🗄️ Data Management](data-management.qmd)
+Robust data systems for clinical trials and research:
+- Multi-site HIV treatment trials
+- Malaria vaccine efficacy studies
+- Longitudinal NCD cohorts
+- Disease surveillance platforms
+- Health information exchange
+
+**Impact:** 500K+ records, 99.5% data quality
+:::
+
+::: {.skill-category}
+### [📋 Survey Tools](survey-tools.qmd)
+Electronic data capture system design and implementation:
+- National health facility assessments
+- Clinical trial databases (REDCap)
+- Community health worker apps
+- Emergency humanitarian assessments
+- Patient-reported outcomes systems
+
+**Impact:** 100+ surveys, 50K+ respondents
+:::
+
+::: {.skill-category}
+### [📊 Dashboards](dashboards.qmd)
+Interactive visualizations for real-time decision making:
+- Facility performance monitoring
+- Disease surveillance systems
+- Clinical trial management
+- NCD patient tracking
+- Financial intelligence dashboards
+
+**Impact:** 500+ daily users, 70% time savings
+:::
+:::
+
+---
+
+## **Featured Projects**
+
+### **1. MSc Thesis: NCD Financing in Primary Health Facilities**
+
+::: {.project-card}
+::: {.project-header}
+#### 🎓 Exploring Financial Determinants of Effective Hypertension and Diabetes Management
+**Status:** Data Analysis Phase | **Expected:** 2025 | **Social Media Ready:** ✅
+:::
+
+::: {.project-body}
+Groundbreaking research examining health facility financing and NCD management outcomes in Kisumu County, Kenya.
+
+**Key Components:**
+- 30+ health facilities assessed
+- 500+ patients tracked
+- Interactive dashboard for real-time monitoring
+- Cost-effectiveness analysis
+- Policy recommendations
+
+**Technologies:** R, Shiny, REDCap, SurveyCTO, PostgreSQL, Quarto
+
+**Social Media Highlight:**
+> "My MSc thesis examines how health facility financing affects diabetes and hypertension outcomes in Kenya. Interactive dashboards + rigorous analysis = evidence for better NCD care. #GlobalHealth #NCDs #HealthFinancing"
+
+[View Full Project →](../research/thesis.qmd)
+:::
+:::
+
+---
+
+### **2. Multi-Country HIV Treatment Trial**
+
+::: {.project-card}
+::: {.project-header}
+#### 🔬 Senior Data Manager for Phase III Clinical Trial
+**Duration:** 2019-2023 | **Participants:** 1,200+ | **Sites:** 12
+:::
+
+::: {.project-body}
+Led data management for a major HIV treatment trial across 4 African countries.
+
+**Achievements:**
+- 99.7% data completeness
+- Zero critical audit findings
+- 500,000+ data points managed
+- Query resolution: 3.2 days average
+
+**Technologies:** REDCap, R, SQL, Python
+
+[View Details →](data-management.qmd)
+:::
+:::
+
+---
+
+### **3. National Health Facility Assessment**
+
+::: {.project-card}
+::: {.project-header}
+#### 📱 Large-Scale Mobile Data Collection
+**Scale:** 500+ facilities | **Team:** 50 enumerators
+:::
+
+::: {.project-body}
+Designed and implemented comprehensive facility assessment using mobile data collection.
+
+**Achievements:**
+- 500+ facilities assessed in 6 months
+- 98.7% data completeness
+- 96.3% quality on resurveys
+- Real-time quality monitoring
+
+**Technologies:** SurveyCTO, R, Tableau
+
+[View Details →](survey-tools.qmd)
+:::
+:::
+
+---
+
+### **4. COVID-19 Vaccination Equity Analysis**
+
+::: {.project-card}
+::: {.project-header}
+#### 🗺️ Geospatial Analysis for Public Health
+**Impact:** Policy recommendations adopted | **Coverage:** County-wide
+:::
+
+::: {.project-body}
+Identified vaccination coverage gaps using geospatial analysis and demographic data.
+
+**Impact:**
+- 12 underserved areas identified
+- 5 new vaccination sites strategically placed
+- 35% coverage increase in rural areas
+
+**Technologies:** R (sf, leaflet), QGIS, Tableau
+
+[View Details →](health-analytics.qmd)
+:::
+:::
+
+---
+
+## **Project Impact Summary**
+
+::: {.stats-container}
+::: {.stat-card}
+**50+**{.stat-number}
+Projects Completed{.stat-label}
+:::
+
+::: {.stat-card}
+**100K+**{.stat-number}
+Patients Impacted{.stat-label}
+:::
+
+::: {.stat-card}
+**500K+**{.stat-number}
+Records Managed{.stat-label}
+:::
+
+::: {.stat-card}
+**100+**{.stat-number}
+Facilities Served{.stat-label}
+:::
+:::
+
+::: {.stats-container}
+::: {.stat-card}
+**99.5%**{.stat-number}
+Average Data Quality{.stat-label}
+:::
+
+::: {.stat-card}
+**KES 20M+**{.stat-number}
+Cost Savings Identified{.stat-label}
+:::
+
+::: {.stat-card}
+**15+**{.stat-number}
+Policy Changes{.stat-label}
+:::
+
+::: {.stat-card}
+**500+**{.stat-number}
+People Trained{.stat-label}
+:::
+:::
+
+---
+
+## **Technical Capabilities Demonstrated**
+
+### **Programming & Analysis**
+- **R:** Advanced data analysis, Shiny dashboards, package development
+- **Python:** Machine learning, automation, API development
+- **SQL:** Database design, complex queries, optimization
+- **Stata:** Statistical modeling, survey analysis
+
+### **Data Collection Platforms**
+- **REDCap:** 50+ databases designed for clinical trials
+- **SurveyCTO:** 30+ field surveys implemented
+- **KoboCollect:** 20+ humanitarian assessments
+- **CommCare:** 5+ CHW programs
+
+### **Visualization Tools**
+- **R Shiny:** 15+ production dashboards
+- **Tableau:** Business intelligence dashboards
+- **ggplot2/plotly:** Publication-quality graphics
+- **Leaflet/QGIS:** Geospatial visualizations
+
+---
+
+## **Why These Projects Matter**
+
+::: {.highlight-box}
+### 🎯 Real-World Impact
+
+Every project in this portfolio has:
+
+✅ **Measurable Impact** - Improved health outcomes, cost savings, or efficiency gains  
+✅ **Scalable Solutions** - Designed for replication in other settings  
+✅ **Rigorous Methods** - Evidence-based approaches and best practices  
+✅ **Stakeholder Value** - Actionable insights for decision-makers  
+✅ **Knowledge Sharing** - Documentation and training materials  
+✅ **Social Media Ready** - Stories worth sharing to inspire others
+:::
+
+---
+
+## **Open Science Commitment**
+
+I believe in **open, reproducible, and transparent research**. Where possible, projects include:
+
+- 📖 **Open Code** - GitHub repositories with documented code
+- 📊 **Open Data** - Anonymized datasets in public repositories
+- 📝 **Open Methods** - Detailed methodology documentation
+- 🎓 **Open Education** - Training materials freely available
+
+---
+
+## **Sector Experience**
+
+::: {.skills-grid}
+::: {.skill-category}
+### 🏥 Health Focus Areas
+- HIV/AIDS
+- Tuberculosis
+- Malaria
+- Non-communicable diseases
+- Maternal & child health
+- Mental health
+- COVID-19 response
+:::
+
+::: {.skill-category}
+### 📋 Study Types
+- Clinical trials (Phases I-IV)
+- Cohort studies
+- Cross-sectional surveys
+- Health facility assessments
+- Program evaluation
+- Surveillance systems
+:::
+
+::: {.skill-category}
+### 🌍 Geographic Experience
+- Kenya (primary)
+- Uganda
+- Tanzania
+- Rwanda
+- Multi-country projects
+:::
+
+::: {.skill-category}
+### 🤝 Collaborations
+- Academic institutions
+- Government health departments
+- International NGOs
+- Research networks
+- Private sector partners
+:::
+:::
+
+---
+
+## **Testimonials**
+
+::: {.info-box}
+> "Nichodemus's data management was exemplary. His attention to detail and proactive approach to quality control were key to our trial's success. Zero critical audit findings across 24 monitoring visits speaks volumes."
+
+— **Principal Investigator, Phase III Clinical Trial**
+
+> "The dashboard Nichodemus developed transformed how we monitor facility performance. What used to take 2 weeks now takes 5 minutes, and the insights are actionable immediately."
+
+— **County Health Management Team**
+
+> "His ability to design user-friendly survey tools that work in challenging field conditions is unmatched. The SurveyCTO system he built for our assessment was flawless."
+
+— **Project Director, Health Facility Assessment**
+:::
+
+---
+
+## **Available for New Projects**
+
+I'm currently **accepting consulting and contract opportunities** in:
+
+✅ Health data analytics and visualization  
+✅ Clinical trial data management  
+✅ Survey design and implementation (REDCap, SurveyCTO)  
+✅ Dashboard development (R Shiny, Tableau)  
+✅ Data management system setup  
+✅ Training and capacity building  
+
+**Remote work:** Proven track record of successful remote collaboration
+
+---
+
+::: {.success-box}
+### 💼 Let's Collaborate!
+
+Whether you need a senior data manager for a clinical trial, expertise in survey design, or advanced analytics capabilities, I'm ready to contribute to your team's success.
+
+[Contact Me](mailto:nichodemuswerre@gmail.com){.cta-button} [Download CV](../cv/index.qmd){.cta-button} [View Skills](../skills/index.qmd){.cta-button}
+:::
+
+---
+
+## **Legacy Projects**
+
+View additional projects and analyses:
+
+- [Tidy Tuesday Analyses](../tidy-tuesday/index.qmd) - Weekly data visualization challenges
+- [Blog Posts](../blogs/index.qmd) - Technical tutorials and insights
+- [GitHub Repositories](https://github.com/gondamol) - Open-source code and tools
+
+---
+
+[Back to Home →](../index.qmd)

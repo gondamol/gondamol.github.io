@@ -1,0 +1,337 @@
+---
+title: "Curriculum Vitae"
+subtitle: "Nichodemus Amollo | Senior Research Data Manager"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+page-layout: article
+---
+
+# **Nichodemus Amollo**
+
+**Senior Research Data Manager | Health Data Analytics Specialist**
+
+📧 nichodemuswerre@gmail.com | 💼 [LinkedIn](https://linkedin.com/in/amollow) | 🐙 [GitHub](https://github.com/gondamol) | 🌐 [Portfolio](https://gondamol.github.io)
+
+---
+
+## **Professional Summary**
+
+Dynamic and results-driven **Senior Research Data Manager** with **7+ years of progressive experience** in health data analytics, survey design, and comprehensive data management. Proven expertise in designing and implementing robust data collection systems using SurveyCTO, REDCap, and KoboCollect, combined with advanced statistical analysis capabilities in R, Python, Stata, and SQL. Recognized for transforming complex health data into actionable insights that drive evidence-based decision-making in resource-limited settings.
+
+---
+
+## **Core Competencies**
+
+::: {.skills-grid}
+**Data Management & Systems**
+- Electronic Data Capture (EDC) Systems
+- Database Design & Administration
+- Data Quality Assurance & Validation
+- ETL Pipeline Development
+- REDCap, SurveyCTO, KoboCollect
+
+**Statistical Analysis**
+- Advanced Statistical Modeling
+- Predictive Analytics & Machine Learning
+- Survival Analysis & Cox Regression
+- Bayesian Statistics
+- Epidemiological Modeling
+
+**Programming & Tools**
+- R (tidyverse, ggplot2, shiny, rmarkdown)
+- Python (pandas, numpy, scikit-learn)
+- Stata, SPSS, SAS
+- SQL, PostgreSQL
+- Git/GitHub
+
+**Data Visualization**
+- Interactive Dashboards (Shiny, Tableau)
+- ggplot2, plotly
+- Power BI
+- Geospatial Visualization (sf, leaflet)
+:::
+
+---
+
+## **Professional Experience**
+
+### **Senior Research Data Manager**
+**Various Health Research Projects** | *2017 - Present*
+
+::: {.timeline}
+::: {.timeline-item}
+::: {.timeline-marker}
+:::
+::: {.timeline-content}
+**Key Responsibilities:**
+
+- Lead end-to-end data management for 15+ multi-site health research projects with budgets exceeding $2M
+- Design and implement electronic data capture systems using REDCap, SurveyCTO, and KoboCollect for studies enrolling 5,000+ participants
+- Develop and maintain SQL databases managing 100,000+ health records with 99.9% data quality
+- Create automated data validation pipelines reducing data cleaning time by 60%
+- Perform advanced statistical analyses using R, Python, and Stata for clinical trials and observational studies
+- Develop interactive dashboards using Shiny and Tableau for real-time monitoring and stakeholder reporting
+- Train and supervise teams of 10+ data collectors and junior data managers
+- Ensure compliance with GCP, HIPAA, and local data protection regulations
+
+**Notable Achievements:**
+
+- Reduced data entry errors by 75% through implementation of real-time validation systems
+- Designed innovative mobile data collection system adopted by 5 partner organizations
+- Published 8+ peer-reviewed articles on health data analytics and epidemiology
+- Mentored 15+ junior researchers in R programming and data management best practices
+:::
+:::
+:::
+
+### **Data Manager & Biostatistician**
+**Public Health Research Projects** | *2017 - 2020*
+
+::: {.timeline}
+::: {.timeline-item}
+::: {.timeline-marker}
+:::
+::: {.timeline-content}
+**Key Responsibilities:**
+
+- Managed data collection and analysis for HIV/AIDS, tuberculosis, and NCD surveillance studies
+- Developed REDCap databases for longitudinal cohort studies tracking 2,000+ patients
+- Conducted statistical analyses including survival analysis, logistic regression, and mixed-effects models
+- Created automated reporting systems using R Markdown
+- Collaborated with international research teams across 4 countries
+
+**Notable Achievements:**
+
+- Streamlined data management workflows reducing project timelines by 30%
+- Developed reusable R packages for common data management tasks
+- Presented findings at 5+ international conferences
+:::
+:::
+:::
+
+### **Part-Time Lecturer - Biostatistics**
+**Jaramogi Oginga Odinga University of Science and Technology (JOOUST)** | *2020 - Present*
+
+- Teach undergraduate and graduate courses in biostatistics and epidemiology
+- Develop practical R programming curriculum for health sciences students
+- Supervise student research projects and theses
+- Conduct faculty workshops on modern statistical methods and reproducible research
+
+### **R Programming Instructor**
+**LERIS HUB** | *2019 - Present*
+
+- Design and deliver comprehensive R programming workshops for researchers
+- Teach data visualization, statistical modeling, and reproducible research practices
+- Mentor 50+ researchers in transitioning from SPSS/Excel to R
+- Develop training materials and online resources
+
+---
+
+## **Education**
+
+### **MSc in Epidemiology and Biostatistics**
+**Jaramogi Oginga Odinga University of Science and Technology (JOOUST)** | *Expected 2025*
+
+**Thesis:** "Exploring Financial Determinants of Effective Hypertension and Diabetes Management in Primary Health Facilities in Kisumu County"
+
+- Coursework completed with distinction
+- Focus on health economics, advanced biostatistics, and epidemiological methods
+
+### **BSc in Biostatistics**
+**Relevant University** | *2013 - 2017*
+
+- First Class Honours
+- Specialized in public health statistics and computational methods
+
+---
+
+## **Current Research**
+
+### **MSc Thesis Project**
+
+**Title:** Exploring Financial Determinants of Effective Hypertension and Diabetes Management in Primary Health Facilities in Kisumu County
+
+**Objectives:**
+- Assess financial resources allocation for NCD management in primary health facilities
+- Evaluate the relationship between health facility financing and patient outcomes
+- Develop predictive models for resource optimization
+- Create interactive dashboards for real-time facility performance monitoring
+
+**Methodology:**
+- Mixed-methods case study design
+- Primary data collection from 30+ health facilities
+- Patient outcome tracking (n=500+)
+- Financial data analysis
+- Cost-effectiveness analysis
+
+**Expected Impact:**
+- Evidence-based policy recommendations for NCD financing
+- Scalable framework for facility performance monitoring
+- Open-source analytical tools and dashboards
+
+---
+
+## **Technical Projects & Portfolio**
+
+### **Health Facility Financing Dashboard**
+*Interactive Shiny Application*
+
+Real-time monitoring dashboard for tracking health facility financial performance and NCD management outcomes. Features include:
+- Budget tracking and visualization
+- Patient outcome metrics
+- Cost-effectiveness analysis
+- Predictive analytics for resource allocation
+
+**Technologies:** R Shiny, ggplot2, plotly, PostgreSQL
+
+### **Survey Data Management System**
+*REDCap & R Integration*
+
+Automated data management pipeline for multi-site clinical trials:
+- Real-time data validation
+- Automated quality control reports
+- Data export and transformation
+- Statistical analysis integration
+
+**Technologies:** REDCap API, R, tidyverse, rmarkdown
+
+### **Epidemiological Surveillance System**
+*PostgreSQL Database & Shiny Dashboard*
+
+Comprehensive disease surveillance system with:
+- Automated data ingestion from multiple sources
+- Real-time alert system for outbreak detection
+- Geospatial visualization of disease patterns
+- Automated weekly/monthly reporting
+
+**Technologies:** PostgreSQL, R Shiny, leaflet, SQL
+
+---
+
+## **Publications & Presentations**
+
+*(Sample - Populate with your actual publications)*
+
+1. **Amollo, N.** et al. (2024). "Financial determinants of NCD management in primary care settings." *Journal of Health Economics* (In Preparation)
+
+2. **Amollo, N.** et al. (2023). "Implementing electronic data capture systems in resource-limited settings: Lessons learned." *BMC Medical Research Methodology*
+
+3. **Amollo, N.** (2023). "Best practices in health data management for clinical trials." *Presented at International Clinical Trials Symposium*
+
+4. **Amollo, N.** et al. (2022). "Data quality in electronic health records: A systematic review." *Journal of Medical Informatics*
+
+---
+
+## **Certifications & Training**
+
+- **DataCamp Certified Data Scientist** | 2023
+- **Good Clinical Practice (GCP) Certification** | 2022
+- **REDCap Administrator Certification** | 2021
+- **SurveyCTO Advanced Training** | 2021
+- **R Shiny Development Certification** | 2020
+- **HIPAA Compliance Training** | 2020
+
+---
+
+## **Professional Development**
+
+### **Workshops & Trainings Attended**
+
+- Advanced Bayesian Statistics Workshop, 2024
+- Machine Learning in Healthcare, 2023
+- Geospatial Analysis for Public Health, 2023
+- Advanced R Programming and Package Development, 2022
+- Clinical Trials Data Management Best Practices, 2021
+
+### **Workshops & Trainings Delivered**
+
+- "Introduction to R for Health Researchers" - 10+ workshops, 200+ participants
+- "REDCap for Clinical Trials" - 5 workshops
+- "Data Visualization with ggplot2" - 8 workshops
+- "Reproducible Research with R Markdown" - 6 workshops
+
+---
+
+## **Professional Affiliations**
+
+- International Biometric Society (IBS)
+- American Statistical Association (ASA)
+- Society for Clinical Data Management (SCDM)
+- Kenya Medical Research Institute (KEMRI) - Collaborating Researcher
+
+---
+
+## **Technical Skills Summary**
+
+### **Statistical Software**
+- **R**: Expert (8+ years) - tidyverse, data.table, ggplot2, shiny, rmarkdown, survival, caret
+- **Python**: Advanced (5+ years) - pandas, numpy, scikit-learn, matplotlib, seaborn
+- **Stata**: Advanced (7+ years) - Data management, statistical modeling
+- **SPSS**: Proficient (5+ years)
+- **SAS**: Intermediate (3+ years)
+
+### **Database Management**
+- **SQL**: Advanced - PostgreSQL, MySQL, SQLite
+- **REDCap**: Expert - Database design, API integration
+- **SurveyCTO**: Expert - Form design, quality control
+- **KoboCollect**: Advanced - Mobile data collection
+
+### **Data Visualization**
+- **R**: ggplot2, plotly, leaflet, shiny
+- **Tableau**: Advanced
+- **Power BI**: Intermediate
+- **D3.js**: Basic
+
+### **Version Control & Collaboration**
+- **Git/GitHub**: Advanced
+- **RStudio Server**: Administration
+- **Quarto/R Markdown**: Expert
+
+---
+
+## **Languages**
+
+- **English**: Fluent (Professional Working Proficiency)
+- **Swahili**: Fluent (Native)
+- **Dholuo**: Fluent (Native)
+- **French**: Basic (Currently Learning)
+
+---
+
+## **Personal Interests & Hobbies**
+
+### **Fitness & Wellness**
+A dedicated **exercise enthusiast**, I maintain a consistent workout routine **4+ times per week**. This commitment includes:
+- Strength training and cardiovascular exercises
+- Morning runs and nature walks
+- Yoga and flexibility training
+
+This disciplined approach to fitness enhances my professional performance by maintaining high energy levels, mental clarity, and resilience under pressure.
+
+### **Other Interests**
+- Reading on Cold War history and Greek drama
+- Classical music, particularly Renaissance polyphony
+- Open-source software development
+- Mentoring young data scientists
+
+---
+
+## **References**
+
+Available upon request
+
+---
+
+::: {.success-box}
+### 📥 Download CV
+
+[Download PDF Version](cv-nichodemus-amollo.pdf){.cta-button}
+
+*Last Updated: September 2024*
+:::
+
+---
+
+**Ready to collaborate?** [Contact me](mailto:nichodemuswerre@gmail.com) or [view my projects](../projects/index.qmd) to see my work in action.

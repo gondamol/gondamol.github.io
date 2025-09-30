@@ -1,52 +1,96 @@
 project:
   type: website
+  output-dir: _site
 
 website:
   page-navigation: true
-  title: "Hi, I'm Amollo"
+  title: "Nichodemus Amollo | Senior Research Data Manager"
+  description: "Portfolio of a Senior Research Data Manager specializing in health data analytics, survey design, and data management with 7+ years of experience"
   
   page-footer: 
-    left: "Copyright 2024, Nichodemus Amollo" 
+    left: |
+      © 2024 Nichodemus Amollo | Senior Research Data Manager<br>
+      Health Data Analytics • Survey Design • Data Management
     right: 
       - icon: github
         href: https://github.com/gondamol
+        aria-label: GitHub Profile
+      - icon: linkedin
+        href: https://linkedin.com/in/amollow
+        aria-label: LinkedIn Profile
       - icon: twitter 
-        href: https://twitter.com/nwerre 
+        href: https://twitter.com/nwerre
+        aria-label: Twitter Profile
       - icon: kaggle
         href: https://kaggle.com/nwerre
+        aria-label: Kaggle Profile
         
   navbar:
+    background: primary
+    search: true
+    pinned: true
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "About"
+        href: about/index.qmd
+      - text: "Projects"
+        menu:
+          - text: "All Projects"
+            href: projects/index.qmd
+          - text: "---"
+          - text: "Health Data Analytics"
+            href: projects/health-analytics.qmd
+          - text: "Data Management"
+            href: projects/data-management.qmd
+          - text: "Survey Design & Implementation"
+            href: projects/survey-tools.qmd
+          - text: "Dashboards & Visualization"
+            href: projects/dashboards.qmd
+      - text: "Research"
+        menu:
+          - text: "Current Thesis"
+            href: research/thesis.qmd
+          - text: "Publications"
+            href: research/publications.qmd
+      - text: "Skills & Tools"
+        href: skills/index.qmd
+      - text: "Blog"
+        href: blogs/index.qmd
+      - text: "CV"
+        href: cv/index.qmd
     right:
-    #center:
-      - href: about/index.qmd
-        text: About
-      - href: tidy-tuesday/index.qmd
-        text: Tidy Tuesday
-      - href: projects/index.qmd
-        text: Projects
-      - href: teaching/index.qmd
-        text: Teaching
-      - href: blogs/index.qmd
-        text: Blogs/Notes
-      - href: cv/index.qmd
-        text: CV
-      #- href: resources/index.qmd
-       # text: Resources
       - icon: github
         href: https://github.com/gondamol
+        aria-label: GitHub
       - icon: linkedin
-        href: https://linkedin.com/in/amollow  
+        href: https://linkedin.com/in/amollow
+        aria-label: LinkedIn
       - icon: twitter
-        href: https://twitter.com/nwerre  
+        href: https://twitter.com/nwerre
+        aria-label: Twitter
       - icon: kaggle
-        href: https://kaggle.com/nwerre 
-
-
+        href: https://kaggle.com/nwerre
+        aria-label: Kaggle
 
 format:
   html:
-    theme: Yeti
+    theme: 
+      light: [cosmo, custom.scss]
+      dark: [darkly, custom.scss]
     css: styles.scss
+    toc: true
+    toc-depth: 3
+    code-fold: true
+    code-tools: true
+    code-copy: true
+    link-external-newwindow: true
+    link-external-icon: true
+    smooth-scroll: true
+    grid:
+      sidebar-width: 250px
+      body-width: 900px
+      margin-width: 250px
 
 editor: source
 

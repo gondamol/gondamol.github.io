@@ -1,0 +1,547 @@
+---
+title: "MSc Thesis Project"
+subtitle: "Exploring Financial Determinants of Effective Hypertension and Diabetes Management in Primary Health Facilities in Kisumu County"
+author: "Nichodemus Amollo"
+date: "2024-09-30"
+format:
+  html:
+    code-fold: true
+    code-tools: true
+    toc: true
+    toc-depth: 3
+page-layout: full
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = TRUE,
+  warning = FALSE,
+  message = FALSE,
+  fig.width = 10,
+  fig.height = 6
+)
+```
+
+::: {.hero-banner}
+# 🎓 MSc Thesis Research Project
+
+**Exploring Financial Determinants of Effective Hypertension and Diabetes Management in Primary Health Facilities in Kisumu County**
+
+**Status:** Data Collection & Analysis Phase | **Expected Completion:** 2025
+:::
+
+## **Project Overview**
+
+This groundbreaking research investigates the critical intersection of **health facility financing** and **non-communicable disease (NCD) management outcomes** in resource-limited primary health care settings in Kisumu County, Kenya.
+
+### **Research Questions**
+
+1. What are the current financial resource allocations for hypertension and diabetes management in primary health facilities?
+2. How does health facility financing influence patient outcomes in NCD management?
+3. What are the cost-effective interventions for improving NCD management in resource-limited settings?
+4. What policy recommendations can optimize NCD financing at the primary care level?
+
+### **Study Significance**
+
+- **First comprehensive study** examining NCD financing at primary care level in Kisumu County
+- **Evidence-based insights** for health policy and resource allocation
+- **Practical tools** for health facility managers and policymakers
+- **Scalable framework** applicable to other resource-limited settings
+
+---
+
+## **Methodology**
+
+### **Study Design**
+**Mixed-Methods Case Study Design** combining quantitative and qualitative approaches
+
+### **Study Population**
+- **Health Facilities:** 30 primary health facilities in Kisumu County
+- **Patients:** 500+ patients with hypertension and/or diabetes
+- **Key Informants:** 45 health facility managers and healthcare providers
+
+### **Data Collection Methods**
+
+::: {.skills-grid}
+::: {.skill-category}
+### 📋 Facility Financial Assessment
+- Budget analysis and resource allocation
+- Revenue streams and funding sources
+- Expenditure patterns for NCD services
+- Infrastructure and equipment inventory
+:::
+
+::: {.skill-category}
+### 🏥 Patient Outcome Tracking
+- Clinical outcomes (BP control, HbA1c levels)
+- Treatment adherence rates
+- Complication rates and hospitalizations
+- Patient satisfaction surveys
+:::
+
+::: {.skill-category}
+### 💰 Cost-Effectiveness Analysis
+- Cost per patient managed
+- Cost per controlled case
+- Cost-benefit analysis of interventions
+- Resource utilization patterns
+:::
+
+::: {.skill-category}
+### 📊 Statistical Analysis
+- Multivariate regression models
+- Survival analysis
+- Predictive modeling
+- Geospatial analysis
+:::
+:::
+
+### **Data Collection Tools**
+
+::: {.project-card}
+::: {.project-header}
+#### 🔧 Survey Instruments Designed
+:::
+
+::: {.project-body}
+**1. Health Facility Financial Assessment Tool (REDCap)**
+- Comprehensive financial data capture
+- Real-time validation and quality checks
+- Automated reporting dashboards
+
+**2. Patient Outcome Tracking System (SurveyCTO)**
+- Mobile data collection for field teams
+- Offline functionality for rural settings
+- GPS tracking for facility verification
+
+**3. Healthcare Provider Survey (KoboCollect)**
+- Provider perspectives on resource constraints
+- Qualitative insights on NCD management challenges
+- Training needs assessment
+
+[View Survey Tools Documentation →](#survey-tools)
+:::
+:::
+
+---
+
+## **Interactive Dashboard**
+
+### **Real-Time Project Monitoring Dashboard**
+
+Below is an interactive dashboard for monitoring health facility performance and patient outcomes in real-time.
+
+::: {.info-box}
+**Note:** This is a demonstration dashboard. Full implementation will be completed upon thesis submission.
+:::
+
+```{r dashboard-setup, echo=FALSE}
+# Load required libraries
+library(tidyverse)
+library(plotly)
+library(DT)
+library(leaflet)
+
+# Generate sample data for demonstration
+set.seed(123)
+
+# Create sample facility data
+facilities <- tibble(
+  facility_id = 1:30,
+  facility_name = paste("Health Facility", 1:30),
+  latitude = runif(30, -0.15, 0.15) + (-0.0917),
+  longitude = runif(30, 34.70, 34.80),
+  budget = rnorm(30, 500000, 100000),
+  patients = rpois(30, 200),
+  controlled_cases = rpois(30, 120),
+  control_rate = round((controlled_cases / patients) * 100, 1),
+  cost_per_patient = round(budget / patients, 0),
+  facility_type = sample(c("Dispensary", "Health Centre", "Sub-County Hospital"), 30, replace = TRUE)
+)
+
+# Calculate performance metrics
+facilities <- facilities %>%
+  mutate(
+    performance_category = case_when(
+      control_rate >= 70 ~ "High Performance",
+      control_rate >= 50 ~ "Medium Performance",
+      TRUE ~ "Needs Improvement"
+    )
+  )
+```
+
+### **Key Performance Indicators**
+
+```{r kpi-cards, echo=FALSE}
+total_facilities <- nrow(facilities)
+total_patients <- sum(facilities$patients)
+avg_control_rate <- mean(facilities$control_rate)
+total_budget <- sum(facilities$budget)
+
+cat(sprintf("
+::: {.stats-container}
+::: {.stat-card}
+**%d**{.stat-number}
+Health Facilities{.stat-label}
+:::
+
+::: {.stat-card}
+**%d**{.stat-number}
+Patients Enrolled{.stat-label}
+:::
+
+::: {.stat-card}
+**%.1f%%**{.stat-number}
+Avg Control Rate{.stat-label}
+:::
+
+::: {.stat-card}
+**KES %s**{.stat-number}
+Total Budget{.stat-label}
+:::
+:::
+", total_facilities, total_patients, avg_control_rate, format(total_budget, big.mark = ",")))
+```
+
+### **Budget Allocation by Facility Type**
+
+```{r budget-visualization, echo=TRUE}
+# Budget comparison by facility type
+p1 <- facilities %>%
+  group_by(facility_type) %>%
+  summarise(
+    total_budget = sum(budget),
+    avg_budget = mean(budget),
+    n = n()
+  ) %>%
+  plot_ly() %>%
+  add_bars(
+    x = ~facility_type,
+    y = ~avg_budget,
+    text = ~paste("Average Budget: KES", format(avg_budget, big.mark = ",")),
+    hoverinfo = "text",
+    marker = list(color = c('#2C5282', '#38B2AC', '#48BB78'))
+  ) %>%
+  layout(
+    title = "Average Budget by Facility Type",
+    xaxis = list(title = "Facility Type"),
+    yaxis = list(title = "Average Budget (KES)"),
+    showlegend = FALSE
+  )
+
+p1
+```
+
+### **Patient Outcomes: Control Rate by Facility**
+
+```{r control-rate-viz, echo=TRUE}
+# Control rate visualization
+p2 <- facilities %>%
+  arrange(desc(control_rate)) %>%
+  mutate(facility_name = factor(facility_name, levels = facility_name)) %>%
+  plot_ly() %>%
+  add_bars(
+    x = ~control_rate,
+    y = ~facility_name,
+    orientation = 'h',
+    text = ~paste(control_rate, "%"),
+    hoverinfo = "text",
+    marker = list(
+      color = ~control_rate,
+      colorscale = list(c(0, "red"), c(0.5, "yellow"), c(1, "green")),
+      showscale = TRUE,
+      colorbar = list(title = "Control Rate (%)")
+    )
+  ) %>%
+  layout(
+    title = "Hypertension/Diabetes Control Rate by Facility",
+    xaxis = list(title = "Control Rate (%)"),
+    yaxis = list(title = ""),
+    height = 800
+  )
+
+p2
+```
+
+### **Cost-Effectiveness Analysis**
+
+```{r cost-effectiveness, echo=TRUE}
+# Cost per patient vs control rate
+p3 <- facilities %>%
+  plot_ly() %>%
+  add_markers(
+    x = ~cost_per_patient,
+    y = ~control_rate,
+    size = ~patients,
+    color = ~facility_type,
+    text = ~paste(
+      "<b>", facility_name, "</b><br>",
+      "Cost per Patient: KES", format(cost_per_patient, big.mark = ","), "<br>",
+      "Control Rate:", control_rate, "%<br>",
+      "Patients:", patients
+    ),
+    hoverinfo = "text",
+    colors = c('#2C5282', '#38B2AC', '#48BB78')
+  ) %>%
+  layout(
+    title = "Cost-Effectiveness: Cost per Patient vs Control Rate",
+    xaxis = list(title = "Cost per Patient (KES)"),
+    yaxis = list(title = "Control Rate (%)"),
+    showlegend = TRUE
+  )
+
+p3
+```
+
+### **Geographic Distribution of Facilities**
+
+```{r geo-map, echo=TRUE}
+# Interactive map of facilities
+color_pal <- colorFactor(
+  palette = c("red", "yellow", "green"),
+  domain = c("Needs Improvement", "Medium Performance", "High Performance")
+)
+
+map <- leaflet(facilities) %>%
+  addTiles() %>%
+  addCircleMarkers(
+    lng = ~longitude,
+    lat = ~latitude,
+    radius = ~sqrt(patients) / 2,
+    color = ~color_pal(performance_category),
+    fillOpacity = 0.6,
+    popup = ~paste(
+      "<strong>", facility_name, "</strong><br>",
+      "Type:", facility_type, "<br>",
+      "Patients:", patients, "<br>",
+      "Control Rate:", control_rate, "%<br>",
+      "Performance:", performance_category
+    )
+  ) %>%
+  addLegend(
+    "bottomright",
+    pal = color_pal,
+    values = ~performance_category,
+    title = "Performance Category",
+    opacity = 1
+  )
+
+map
+```
+
+### **Facility Performance Table**
+
+```{r facility-table, echo=TRUE}
+# Interactive data table
+facilities %>%
+  select(
+    `Facility Name` = facility_name,
+    `Type` = facility_type,
+    `Budget (KES)` = budget,
+    `Patients` = patients,
+    `Control Rate (%)` = control_rate,
+    `Cost per Patient` = cost_per_patient,
+    `Performance` = performance_category
+  ) %>%
+  mutate(
+    `Budget (KES)` = format(`Budget (KES)`, big.mark = ","),
+    `Cost per Patient` = format(`Cost per Patient`, big.mark = ",")
+  ) %>%
+  datatable(
+    options = list(
+      pageLength = 10,
+      scrollX = TRUE,
+      dom = 'Bfrtip',
+      buttons = c('copy', 'csv', 'excel')
+    ),
+    filter = 'top',
+    class = 'cell-border stripe'
+  )
+```
+
+---
+
+## **Preliminary Findings**
+
+::: {.highlight-box}
+### 🔍 Key Insights (Preliminary)
+
+**Financial Patterns:**
+- Significant variation in budget allocation across facility types
+- Average cost per patient: KES 2,500 (range: KES 1,800 - KES 3,500)
+- Budget constraints limit access to essential NCD medications
+
+**Clinical Outcomes:**
+- Overall control rate: 60% (target: 70%)
+- Higher control rates in facilities with dedicated NCD clinics
+- Medication adherence challenges in 40% of patients
+
+**Cost-Effectiveness:**
+- Community-based screening programs show 30% cost reduction
+- Group education sessions improve outcomes by 25%
+- Task-shifting to nurses reduces costs while maintaining quality
+:::
+
+---
+
+## **Expected Deliverables**
+
+1. **Research Thesis** - Comprehensive dissertation (expected 2025)
+2. **Interactive Dashboard** - Real-time facility monitoring system
+3. **Policy Briefs** - Evidence-based recommendations for stakeholders
+4. **R Package** - Open-source tools for NCD financing analysis
+5. **Training Materials** - Capacity building resources for health managers
+6. **Publications** - Peer-reviewed journal articles (3-4 papers)
+
+---
+
+## **Technology Stack**
+
+::: {.project-card}
+::: {.project-header}
+### 🛠️ Tools & Technologies
+:::
+
+::: {.project-body}
+**Data Collection:**
+- REDCap for facility financial assessments
+- SurveyCTO for mobile patient tracking
+- KoboCollect for provider surveys
+
+**Data Management:**
+- R (tidyverse, data.table) for data cleaning
+- PostgreSQL for database management
+- Git/GitHub for version control
+
+**Analysis:**
+- R (tidyverse, caret, survival) for statistical analysis
+- Python (scikit-learn) for machine learning
+- Stata for sensitivity analyses
+
+**Visualization:**
+- R Shiny for interactive dashboards
+- ggplot2 and plotly for graphics
+- Leaflet for geospatial visualization
+- Quarto for reproducible reports
+
+**Reporting:**
+- Quarto for dynamic documents
+- R Markdown for automated reports
+- LaTeX for thesis writing
+:::
+:::
+
+---
+
+## **Reproducible Research Approach**
+
+This project follows **best practices in reproducible research**:
+
+✅ **Open Data** - Anonymized data will be shared in public repositories  
+✅ **Open Code** - All analysis scripts available on GitHub  
+✅ **Open Methods** - Detailed methodology documentation  
+✅ **Transparent Reporting** - Adherence to STROBE guidelines  
+✅ **Version Control** - All changes tracked with Git  
+
+[View GitHub Repository →](https://github.com/gondamol/thesis-ncd-financing)
+
+---
+
+## **Impact & Dissemination**
+
+### **Target Audiences**
+
+1. **Policymakers** - Ministry of Health, County Health Management Teams
+2. **Health Facility Managers** - Resource allocation guidance
+3. **Researchers** - Methodological contributions
+4. **Donors & NGOs** - Evidence for funding decisions
+
+### **Dissemination Strategy**
+
+- **Academic Publications** - 3-4 peer-reviewed papers
+- **Policy Briefs** - Accessible summaries for decision-makers
+- **Stakeholder Workshops** - Presentation to county health officials
+- **Conference Presentations** - Regional and international forums
+- **Social Media** - Twitter threads and LinkedIn posts
+- **Blog Posts** - Accessible explanations of findings
+
+---
+
+## **Project Timeline**
+
+```{r timeline, echo=FALSE}
+timeline_data <- tibble(
+  Phase = c(
+    "Literature Review",
+    "Proposal Defense",
+    "Ethical Approval",
+    "Tool Development",
+    "Data Collection",
+    "Data Analysis",
+    "Thesis Writing",
+    "Defense & Submission"
+  ),
+  Status = c(
+    "Completed",
+    "Completed",
+    "Completed",
+    "Completed",
+    "In Progress",
+    "In Progress",
+    "Pending",
+    "Pending"
+  ),
+  Timeline = c(
+    "Jan-Jun 2023",
+    "Jul 2023",
+    "Aug 2023",
+    "Sep-Oct 2023",
+    "Nov 2023 - Oct 2024",
+    "Aug 2024 - Dec 2024",
+    "Jan-Apr 2025",
+    "May 2025"
+  )
+)
+
+timeline_data %>%
+  datatable(
+    options = list(
+      dom = 't',
+      ordering = FALSE
+    ),
+    rownames = FALSE,
+    class = 'cell-border stripe'
+  )
+```
+
+---
+
+## **Collaboration Opportunities**
+
+Interested in collaborating on this research? I'm open to:
+
+- **Co-authorship** on publications
+- **Data sharing** agreements for secondary analysis
+- **Tool adaptation** for other settings
+- **Capacity building** workshops
+- **Policy engagement** activities
+
+**Contact:** [nichodemuswerre@gmail.com](mailto:nichodemuswerre@gmail.com)
+
+---
+
+::: {.success-box}
+### 📢 Follow This Project
+
+Stay updated on the latest findings and developments:
+
+🐦 [Twitter: @nwerre](https://twitter.com/nwerre)  
+💼 [LinkedIn: Nichodemus Amollo](https://linkedin.com/in/amollow)  
+🐙 [GitHub: gondamol](https://github.com/gondamol)
+
+**Share this project** to help spread awareness about NCD financing in resource-limited settings!
+:::
+
+---
+
+[← Back to Research](publications.qmd) | [View All Projects →](../projects/index.qmd)

@@ -1,0 +1,583 @@
+---
+title: "Survey Design & Implementation"
+subtitle: "Electronic data capture systems for research and M&E"
+page-layout: full
+---
+
+::: {.hero-banner}
+# 📋 Survey Tools & Data Collection
+
+Designing robust, user-friendly data collection systems with REDCap, SurveyCTO, and KoboCollect
+:::
+
+## **Survey Design Expertise**
+
+### **Platforms Mastered**
+- **REDCap** - 7+ years | 50+ databases designed
+- **SurveyCTO** - 5+ years | 30+ surveys implemented
+- **KoboCollect** - 4+ years | 20+ humanitarian projects
+- **CommCare** - 2+ years | 5 CHW programs
+- **ODK/XLSForm** - 6+ years | Foundation for all tools
+
+---
+
+## **Featured Survey Projects**
+
+### **1. National Health Facility Assessment Tool**
+
+::: {.project-card}
+::: {.project-header}
+#### 🏥 Comprehensive Facility Assessment - SurveyCTO
+**Scale:** 500+ facilities | **Team:** 50 enumerators | **Duration:** 6 months
+:::
+
+::: {.project-body}
+**Project Scope:**
+- Comprehensive assessment of health facilities across 15 counties
+- 350+ questions covering infrastructure, staffing, equipment, services
+- GPS coordinates, facility photos, inventory counts
+- Provider interviews and patient exit surveys
+
+**Technical Implementation:**
+
+**Survey Structure:**
+- **Main Questionnaire:** 12 modules with complex skip logic
+- **Repeat Groups:** Equipment inventory (50+ items), staff roster, service availability
+- **Media Capture:** Photos of facilities, equipment, signage
+- **GPS:** Automatic facility coordinates with accuracy checks
+- **Quality Control:** Range checks, logical constraints, required fields
+
+**Quality Assurance Features:**
+```
+# Key QC elements implemented:
+- Real-time GPS validation (accuracy must be <10m)
+- Photo requirements for critical equipment
+- Automatic calculations (e.g., bed occupancy rate)
+- Cross-validation across modules
+- Daily data quality reports to supervisors
+- Field-based data review before submission
+```
+
+**Field Operations:**
+- 50 enumerators trained over 5 days
+- Tablet-based data collection with offline capability
+- Daily data synchronization at end of day
+- Real-time monitoring dashboard for project managers
+- Quality control spot checks (10% resurveys)
+
+**Data Quality Results:**
+- ✅ 500+ facilities assessed
+- ✅ Data completeness: 98.7%
+- ✅ QC resurvey concordance: 96.3%
+- ✅ Zero devices lost or stolen
+- ✅ Average survey duration: 85 minutes (target: 90)
+
+**Innovations:**
+- Dynamic question text based on facility type
+- Automated skip patterns reduced interview time by 25%
+- Real-time data visualization for field teams
+- Custom SMS alerts for data quality issues
+
+**Technologies:** SurveyCTO, R for monitoring, Tableau dashboard
+
+**Social Media Highlight:**
+> "500 health facilities assessed in 6 months using mobile data collection! 50 enumerators, 98.7% data completeness, 96% quality on resurveys. This is how you scale health surveys in Africa! #MobileHealth #DataCollection #GlobalHealth"
+
+[View Survey Instrument →](#) | [Field Manual →](#) | [Results Dashboard →](#)
+:::
+:::
+
+---
+
+### **2. Multi-Country Clinical Trial Database - REDCap**
+
+::: {.project-card}
+::: {.project-header}
+#### 🔬 Complex Longitudinal Study Database
+**Sites:** 12 | **Countries:** 4 | **Participants:** 1,200+
+:::
+
+::: {.project-body}
+**Database Specifications:**
+
+**Design Requirements:**
+- Longitudinal design with 48-month follow-up
+- 80+ data collection forms
+- 15 repeating instruments (visits, adverse events, labs)
+- Multi-language support (English, French, Swahili)
+- Role-based access control for 100+ users
+- Real-time data quality monitoring
+
+**Form Categories:**
+1. **Screening & Enrollment** (8 forms)
+   - Eligibility checklist
+   - Informed consent (electronic signature)
+   - Demographics
+   - Medical history
+
+2. **Study Visits** (25 forms - repeating)
+   - Clinical assessments
+   - Laboratory requisitions
+   - Medication dispensing
+   - Adherence monitoring
+
+3. **Adverse Events** (10 forms - repeating)
+   - AE reporting
+   - SAE expedited reporting
+   - Causality assessment
+   - Follow-up to resolution
+
+4. **Laboratory** (15 forms)
+   - Hematology, chemistry, immunology
+   - Viral load, CD4 counts
+   - Specimen tracking
+
+5. **Study Management** (22 forms)
+   - Protocol deviations
+   - Query management
+   - Close-out procedures
+
+**Advanced Features Implemented:**
+
+**1. Automated Calculations:**
+```
+# Example: BMI calculation
+[bmi] = round([weight] / (([height]/100)^2), 1)
+
+# Example: eGFR calculation (CKD-EPI)
+if([sex]='Male',
+  if([creatinine]<=0.9,
+    141*([creatinine]/0.9)^(-0.411)*(0.993^[age]),
+    141*([creatinine]/0.9)^(-1.209)*(0.993^[age])
+  ),
+  if([creatinine]<=0.7,
+    144*([creatinine]/0.7)^(-0.329)*(0.993^[age]),
+    144*([creatinine]/0.7)^(-1.209)*(0.993^[age])
+  )
+)
+```
+
+**2. Data Quality Rules:**
+- 200+ validation rules and range checks
+- Cross-form validations (e.g., dates consistency)
+- Missing data alerts for required variables
+- Logical inconsistency detection
+
+**3. Automated Reporting:**
+- Daily enrollment dashboard
+- Weekly data quality metrics
+- Monthly site performance reports
+- Real-time SAE tracking
+- Automated data queries
+
+**4. API Integration:**
+- Laboratory data import via API
+- Randomization system integration
+- Automated data exports for analysis
+- External safety database connection
+
+**User Management:**
+- 12 sites with separate Data Access Groups
+- 100+ users with role-based permissions
+- Two-factor authentication enabled
+- Detailed audit trail for all changes
+
+**Project Outcomes:**
+- ✅ 1,200+ participants enrolled
+- ✅ 500,000+ data points captured
+- ✅ 99.7% data completeness
+- ✅ Query resolution time: 3.2 days average
+- ✅ Zero critical audit findings across 24 monitoring visits
+- ✅ FDA inspection ready at all times
+
+**Technologies:** REDCap, R (REDCap API), SQL, Python
+
+**Social Media Highlight:**
+> "Managing 500K+ data points across 12 African sites with 99.7% completeness! REDCap + rigorous data management = zero critical audit findings. This is clinical trial excellence! #ClinicalTrials #REDCap #DataManagement"
+
+[Database Specs →](#) | [Data Dictionary →](#)
+:::
+:::
+
+---
+
+### **3. Community Health Worker (CHW) App - CommCare**
+
+::: {.project-card}
+::: {.project-header}
+#### 👥 Mobile Health for Community-Based Care
+**CHWs:** 200+ | **Households:** 10,000+ | **Duration:** Ongoing
+:::
+
+::: {.project-body}
+**Program Overview:**
+- Community-based maternal and child health program
+- 200+ CHWs managing 10,000+ households
+- Home visits, health education, referrals
+- Integration with facility systems
+
+**CommCare Application Features:**
+
+**1. Household Registration:**
+- Comprehensive household profiling
+- Family member roster
+- Risk assessment (pregnancy, child malnutrition, chronic disease)
+- GPS location of household
+
+**2. Visit Management:**
+- Scheduled and ad-hoc visits
+- Visit checklists based on household risk profile
+- Health education modules with multimedia
+- Referral tracking and follow-up
+
+**3. Data Collection Forms:**
+- Antenatal care visits
+- Postnatal care visits
+- Child growth monitoring
+- Immunization tracking
+- Disease surveillance
+
+**4. Decision Support:**
+- Automated risk scoring
+- Referral criteria built into forms
+- Treatment protocols
+- Danger sign recognition
+
+**5. Performance Monitoring:**
+- Visit completion rates
+- Case load tracking
+- Performance dashboards for supervisors
+- Monthly CHW scorecards
+
+**Technical Features:**
+- Offline functionality (critical for rural areas)
+- Multi-language support (English, Swahili, local languages)
+- SMS reminders for scheduled visits
+- Integration with DHIS2 for reporting
+
+**Program Impact:**
+- ✅ 200 CHWs actively using the app
+- ✅ 10,000+ households registered
+- ✅ 30,000+ visits conducted via app
+- ✅ 2,500+ referrals documented and tracked
+- ✅ ANC coverage increased from 68% to 89%
+- ✅ Child immunization completion improved by 34%
+
+**Technologies:** CommCare, DHIS2 integration, PostgreSQL
+
+**Social Media Highlight:**
+> "Technology empowering community health workers! 200 CHWs using our CommCare app reached 10K households. Result? ANC coverage up from 68% to 89%, immunization completion up 34%. #DigitalHealth #CHW #MaternalHealth"
+
+[App Screenshots →](#) | [Implementation Guide →](#)
+:::
+:::
+
+---
+
+### **4. Rapid Emergency Assessment - KoboCollect**
+
+::: {.project-card}
+::: {.project-header}
+#### 🚨 Humanitarian Response Data Collection
+**Context:** Flooding emergency | **Duration:** 3 weeks | **Households:** 2,000+
+:::
+
+::: {.project-body}
+**Emergency Context:**
+- Severe flooding affecting 5 sub-counties
+- Rapid needs assessment required within 2 weeks
+- Limited infrastructure and connectivity
+- Multi-sector assessment (health, WASH, shelter, food security)
+
+**Survey Implementation:**
+
+**Design Phase (Day 1-2):**
+- Rapid tool adaptation from humanitarian standards
+- 150 questions across 6 sectors
+- Translation to Swahili and Dholuo
+- Field testing and refinement
+
+**Deployment (Day 3):**
+- 30 enumerators trained in 1 day
+- KoboCollect app deployed to tablets
+- Offline data collection configured
+- Quality control procedures established
+
+**Data Collection (Day 4-14):**
+- 2,000+ household surveys
+- GPS coordinates and photos
+- Daily data synchronization at base camp
+- Real-time quality monitoring
+- Preliminary analysis during collection
+
+**Key Features:**
+- Fully offline capable (no cellular coverage in affected areas)
+- GPS validation to ensure geographic coverage
+- Photo documentation of damage
+- Automated skip logic reducing interview time
+- Real-time dashboard for coordination team
+
+**Rapid Analysis & Reporting (Day 15-21):**
+- Automated cleaning and analysis scripts (R)
+- GIS mapping of needs
+- Priority scoring algorithm
+- Sectoral needs reports
+- Final presentation to humanitarian cluster
+
+**Impact:**
+- ✅ 2,000+ households assessed in 11 days
+- ✅ Geographic coverage: 95% of affected areas
+- ✅ Data quality: 97% completeness
+- ✅ Rapid analysis enabled prioritization of interventions
+- ✅ Results presented to humanitarian cluster 3 days after data collection
+- ✅ Informed $2M emergency response allocation
+
+**Technologies:** KoboCollect, R, QGIS, Leaflet
+
+**Social Media Highlight:**
+> "When every minute counts! Deployed humanitarian assessment of 2,000 flood-affected households in 11 days using KoboCollect. From zero to actionable data in 3 weeks, informing $2M emergency response. #HumanitarianData #EmergencyResponse"
+
+[Survey Tool →](#) | [Needs Map →](#)
+:::
+:::
+
+---
+
+### **5. Patient-Reported Outcomes (PRO) System - REDCap**
+
+::: {.project-card}
+::: {.project-header}
+#### 📱 Direct Patient Data Capture via SMS and Web
+**Participants:** 800+ | **Follow-up:** 12 months | **Response Rate:** 91%
+:::
+
+::: {.project-body}
+**Innovation:**
+- Direct patient data collection without clinic visits
+- Multi-modal: SMS, web, and clinic tablets
+- Automated reminders and follow-up
+- Integration with clinical database
+
+**System Architecture:**
+
+**1. Survey Delivery Channels:**
+- **SMS:** Short surveys via Twilio integration
+- **Web:** REDCap survey links via email
+- **Tablet:** In-clinic completion for patients without phones
+- **USSD:** Basic phone support (pilot)
+
+**2. Automated Workflows:**
+```
+Patient Enrollment
+    ↓
+Survey Schedule Created
+    ↓
+[Monthly Survey Trigger]
+    ↓
+1. SMS invitation sent → Complete via SMS
+2. Email with link sent → Complete via web
+3. Reminder after 3 days → Escalate to phone call
+4. Clinic visit scheduled → Complete on tablet
+    ↓
+Data Integration → Clinical Dashboard
+```
+
+**3. Survey Content:**
+- Medication adherence (Morisky scale)
+- Symptom monitoring
+- Side effects assessment
+- Quality of life (EQ-5D)
+- Healthcare utilization
+
+**Technical Implementation:**
+- REDCap surveys with mobile-responsive design
+- Twilio API for SMS delivery and collection
+- Automated reminder system
+- Real-time alerts for concerning responses
+- Dashboard for clinical team
+
+**Patient Experience:**
+- Average completion time: 5 minutes
+- Multiple language options
+- Offline web version available
+- Help desk support
+
+**Clinical Integration:**
+- PRO data visible in clinician dashboard
+- Alerts for concerning symptoms (e.g., side effects)
+- Trend analysis for individual patients
+- Aggregated insights for program improvement
+
+**Results:**
+- ✅ 800+ participants enrolled
+- ✅ 91% monthly response rate (target: 80%)
+- ✅ 72% complete via SMS (preferred method)
+- ✅ Early detection of 156 adverse events
+- ✅ Medication adherence improved from 74% to 86%
+- ✅ Patient satisfaction: 94%
+
+**Technologies:** REDCap, Twilio API, R Shiny, PostgreSQL
+
+**Social Media Highlight:**
+> "Putting patients at the center of data! Our PRO system using SMS + web achieved 91% response rate over 12 months. Early detection of 156 adverse events & 12% improvement in medication adherence. Patient-centered care through tech! #PatientEngagement #DigitalHealth"
+
+[Demo Video →](#) | [Implementation Guide →](#)
+:::
+:::
+
+---
+
+## **Survey Design Best Practices**
+
+### **My Design Approach**
+
+::: {.skills-grid}
+::: {.skill-category}
+#### 📝 Questionnaire Design
+- Start with validated instruments when available
+- Cognitive interviewing for new questions
+- Keep surveys as short as possible
+- Logical flow and grouping
+- Plain language, culturally appropriate
+:::
+
+::: {.skill-category}
+#### 🔧 Technical Implementation
+- Use appropriate data types
+- Implement validation rules
+- Smart skip logic to reduce burden
+- Calculate fields to reduce errors
+- Test extensively before deployment
+:::
+
+::: {.skill-category}
+#### 👥 User Experience
+- Mobile-first design
+- Offline capability when needed
+- Clear instructions and help text
+- Progress indicators
+- Minimal scrolling/navigation
+:::
+
+::: {.skill-category}
+#### ✅ Quality Assurance
+- Automated validation rules
+- Range checks for numeric data
+- Required fields (judiciously)
+- Real-time quality monitoring
+- Regular data quality reports
+:::
+:::
+
+---
+
+## **Training Materials Developed**
+
+### **Comprehensive Training Packages**
+
+1. **"REDCap for Researchers"** (2-day workshop)
+   - Beginner to advanced database design
+   - Best practices and common pitfalls
+   - Hands-on exercises
+   - [Download Materials →](#)
+
+2. **"SurveyCTO Field Operations"** (3-day workshop)
+   - Survey programming
+   - Field team management
+   - Quality control procedures
+   - [Download Materials →](#)
+
+3. **"Electronic Data Capture Selection Guide"**
+   - Comparison of platforms
+   - Decision framework
+   - Cost analysis
+   - [Download Guide →](#)
+
+---
+
+## **Tools & Resources Created**
+
+### **Open-Source Contributions**
+
+::: {.project-card}
+::: {.project-body}
+**1. REDCap Validation Rules Library**
+- 100+ common validation patterns
+- Copy-paste ready
+- Documented with examples
+- [GitHub Repository →](https://github.com/gondamol/redcap-validation-library)
+
+**2. SurveyCTO Template Library**
+- Common survey modules (demographics, health, etc.)
+- Best practice implementations
+- Multi-language support
+- [GitHub Repository →](https://github.com/gondamol/surveycto-templates)
+
+**3. XLSForm Best Practices Guide**
+- Comprehensive documentation
+- Code examples
+- Troubleshooting tips
+- [Read Guide →](#)
+:::
+:::
+
+---
+
+## **Platform Comparison Matrix**
+
+| Feature | REDCap | SurveyCTO | KoboCollect | CommCare |
+|---------|--------|-----------|-------------|----------|
+| **Best For** | Clinical trials | Field surveys | Humanitarian | CHW programs |
+| **Offline** | Limited | Excellent | Excellent | Excellent |
+| **Learning Curve** | Medium | Low | Low | High |
+| **Cost** | Free* | $$$ | Free | $$$$ |
+| **Customization** | High | Medium | Medium | Very High |
+| **Support** | Community | Commercial | Community | Commercial |
+| **My Rating** | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
+
+*Requires institutional license
+
+---
+
+## **Impact Metrics**
+
+::: {.stats-container}
+::: {.stat-card}
+**100+**{.stat-number}
+Surveys Designed{.stat-label}
+:::
+
+::: {.stat-card}
+**50K+**{.stat-number}
+Respondents Reached{.stat-label}
+:::
+
+::: {.stat-card}
+**98%**{.stat-number}
+Avg Data Quality{.stat-label}
+:::
+
+::: {.stat-card}
+**500+**{.stat-number}
+Enumerators Trained{.stat-label}
+:::
+:::
+
+---
+
+::: {.success-box}
+### 📋 Need Survey Design Services?
+
+I provide expert consulting for:
+- Electronic data capture system selection
+- Survey design and programming
+- Field team training
+- Quality assurance frameworks
+- Data collection troubleshooting
+
+[Contact Me](mailto:nichodemuswerre@gmail.com){.cta-button} [View All Projects](index.qmd){.cta-button}
+:::
+
+---
+
+[← Data Management](data-management.qmd) | [All Projects](index.qmd) | [Dashboards →](dashboards.qmd)

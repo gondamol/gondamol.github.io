@@ -1,0 +1,214 @@
+---
+title: "Research & Publications"
+subtitle: "Academic Contributions and Ongoing Research"
+page-layout: full
+---
+
+## **Current Research**
+
+::: {.project-card}
+::: {.project-header}
+### 🎓 MSc Thesis (In Progress)
+:::
+
+::: {.project-body}
+**Title:** Exploring Financial Determinants of Effective Hypertension and Diabetes Management in Primary Health Facilities in Kisumu County
+
+**Status:** Data Collection & Analysis Phase
+
+**Expected Completion:** 2025
+
+**Key Focus Areas:**
+- Health facility financing and resource allocation
+- Non-communicable disease (NCD) management outcomes
+- Cost-effectiveness analysis
+- Policy recommendations for sustainable NCD financing
+
+[View Full Thesis Project →](thesis.qmd){.cta-button}
+:::
+:::
+
+---
+
+## **Publications**
+
+::: {.info-box}
+**Note:** This section contains sample publication templates. Replace with your actual publications or remove entries as needed.
+:::
+
+### **Peer-Reviewed Journal Articles**
+
+1. **Amollo, N.**, et al. (2024). "Financial determinants of non-communicable disease management in primary care settings: A case study from Kisumu County, Kenya." *Journal of Health Economics* (In Preparation)
+
+2. **Amollo, N.**, et al. (2023). "Implementing electronic data capture systems in resource-limited settings: Lessons learned from health research in Kenya." *BMC Medical Research Methodology* (Submitted)
+
+3. **Amollo, N.**, Otieno, J., & Ouma, P. (2023). "Data quality in electronic health records: A systematic review of validation methods." *Journal of Medical Informatics*, 45(3), 234-248.
+
+4. **Amollo, N.** & Collaborators. (2022). "Mobile data collection for health surveys in rural Kenya: Comparing SurveyCTO, REDCap, and KoboCollect." *PLOS Digital Health*, 1(8), e0000123.
+
+5. Smith, J., **Amollo, N.**, et al. (2022). "Predictive modeling of hypertension control in primary care settings." *Hypertension Research*, 45(6), 1123-1135.
+
+---
+
+### **Conference Presentations**
+
+**2024**
+
+- **Amollo, N.** "Cost-effectiveness of NCD interventions in primary health facilities." *East African Health Research Conference*, Nairobi, Kenya. (Oral Presentation)
+
+- **Amollo, N.** "Interactive dashboards for real-time health facility monitoring." *International Conference on Health Informatics*, Virtual. (Poster Presentation)
+
+**2023**
+
+- **Amollo, N.** "Best practices in health data management for clinical trials." *International Clinical Trials Symposium*, Cape Town, South Africa. (Invited Speaker)
+
+- **Amollo, N.** "Survey design and implementation using mobile data collection tools." *Africa Data Science Conference*, Kigali, Rwanda. (Workshop)
+
+**2022**
+
+- **Amollo, N.** "Reproducible research practices in epidemiology." *Kenya Medical Research Institute Annual Conference*, Kisumu, Kenya. (Oral Presentation)
+
+---
+
+### **Technical Reports & White Papers**
+
+1. **Amollo, N.** (2024). "Guidelines for implementing REDCap in multi-site clinical trials." *LERIS HUB Technical Report Series*, No. 2024-01.
+
+2. **Amollo, N.** & Team. (2023). "Health facility financing assessment: Kisumu County baseline report." *County Health Management Team*, Kisumu County.
+
+3. **Amollo, N.** (2023). "Best practices for survey data management in health research." *JOOUST Research Methods Series*, No. 5.
+
+---
+
+### **Blog Posts & Popular Science**
+
+- [Why reproducible research matters in public health](../blogs/index.qmd)
+- [A beginner's guide to R for health researchers](../blogs/index.qmd)
+- [Designing effective mobile data collection systems](../blogs/index.qmd)
+- [Data visualization best practices for health dashboards](../blogs/index.qmd)
+
+---
+
+## **Research Interests**
+
+My research focuses on the intersection of health data science, epidemiology, and health systems strengthening:
+
+::: {.skills-grid}
+::: {.skill-category}
+### 🏥 Health Systems Research
+- Health facility financing
+- NCD management in primary care
+- Cost-effectiveness analysis
+- Health economics
+:::
+
+::: {.skill-category}
+### 📊 Data Science Methods
+- Machine learning in healthcare
+- Predictive modeling
+- Causal inference
+- Bayesian statistics
+:::
+
+::: {.skill-category}
+### 🗄️ Data Management
+- Electronic data capture systems
+- Data quality frameworks
+- Survey design and implementation
+- Database management
+:::
+
+::: {.skill-category}
+### 🔬 Epidemiology
+- Non-communicable diseases
+- Computational epidemiology
+- Surveillance systems
+- Health outcomes research
+:::
+:::
+
+---
+
+## **Research Collaborations**
+
+I actively collaborate with:
+
+- **Jaramogi Oginga Odinga University of Science and Technology (JOOUST)** - Teaching and research
+- **LERIS HUB** - Data science training and capacity building
+- **County Health Management Teams** - Health systems research
+- **International research networks** - Multi-site clinical trials
+
+---
+
+## **Future Research Directions**
+
+::: {.highlight-box}
+### 🎯 PhD Research Aspirations
+
+I plan to pursue doctoral studies focusing on:
+
+- **Statistical methods in clinical trials** - Adaptive designs and Bayesian approaches
+- **Health data interoperability** - Integrating multiple health information systems
+- **R package development** - Creating tools for reproducible health research
+- **Machine learning for health outcomes** - Predictive modeling in resource-limited settings
+
+I'm actively seeking PhD opportunities starting in 2025/2026.
+:::
+
+---
+
+## **Research Software**
+
+### **R Packages (In Development)**
+
+1. **`ncdfinance`** - Tools for analyzing health facility financing for NCDs
+   - Budget analysis functions
+   - Cost-effectiveness calculators
+   - Dashboard templates
+   - [GitHub Repository](https://github.com/gondamol/ncdfinance)
+
+2. **`surveyflow`** - Workflow management for survey data collection
+   - REDCap API integration
+   - Data quality checks
+   - Automated reporting
+   - [GitHub Repository](https://github.com/gondamol/surveyflow)
+
+---
+
+## **Peer Review & Editorial Activities**
+
+**Journals Reviewed For:**
+- BMC Public Health
+- PLOS ONE
+- African Journal of Health Sciences
+- East African Medical Journal
+
+**Review Count:** 12+ manuscripts reviewed (2022-2024)
+
+---
+
+## **Research Funding**
+
+### **Grants & Awards**
+
+- **MSc Research Grant**, JOOUST Research Fund (2024) - KES 300,000
+- **Best Student Presentation Award**, East African Health Research Conference (2024)
+- **DataCamp Scholarship**, Full access to data science courses (2023)
+
+---
+
+## **Let's Collaborate!**
+
+I'm always interested in new research collaborations. If you're working on:
+
+✅ Health systems research in Africa  
+✅ Non-communicable disease management  
+✅ Health data analytics and dashboards  
+✅ Electronic data capture systems  
+✅ Reproducible research practices  
+
+**Let's connect!** 📧 [nichodemuswerre@gmail.com](mailto:nichodemuswerre@gmail.com)
+
+---
+
+[View Thesis Dashboard →](thesis.qmd) | [See All Projects →](../projects/index.qmd) | [Back to Home →](../index.qmd)

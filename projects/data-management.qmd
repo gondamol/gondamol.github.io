@@ -1,0 +1,497 @@
+---
+title: "Data Management Projects"
+subtitle: "Robust data systems for clinical trials and research studies"
+page-layout: full
+---
+
+::: {.hero-banner}
+# 🗄️ Data Management Excellence
+
+Building secure, scalable, and compliant data management systems
+:::
+
+## **Clinical Trial Data Management**
+
+### **1. Multi-Site HIV Treatment Trial (ACTG 5000 Series)**
+
+::: {.project-card}
+::: {.project-header}
+#### 🔬 Phase III Randomized Controlled Trial
+**Duration:** 2019-2023 | **Status:** Completed | **Participants:** 1,200+
+:::
+
+::: {.project-body}
+**Project Scope:**
+- **Sites:** 12 clinical sites across 4 African countries
+- **Duration:** 48-month follow-up per participant
+- **Data Points:** 500,000+ individual records
+- **Regulatory:** FDA, WHO-GCP compliant
+
+**Responsibilities:**
+- Designed and implemented REDCap database with 80+ data collection forms
+- Developed automated data quality control system
+- Managed data collection teams across 12 sites
+- Conducted monthly data quality audits
+- Prepared datasets for statistical analysis
+- Managed regulatory documentation (Data Management Plan, database specifications)
+
+**Technical Implementation:**
+- **Platform:** REDCap with custom API integration
+- **Database Structure:** Longitudinal design with 15 repeating instruments
+- **Quality Control:** 120+ automated validation rules
+- **Security:** HIPAA-compliant with role-based access control
+- **Integration:** Laboratory data import from 3 different LIMS systems
+
+**Data Quality Metrics:**
+- ✅ 99.7% data completeness achieved
+- ✅ Query resolution time: Average 3.2 days (target: 5 days)
+- ✅ Protocol deviations: <1% related to data collection
+- ✅ Audit findings: Zero critical, 2 minor observations
+- ✅ No data security breaches
+
+**Innovations:**
+- Custom REDCap external module for adverse event grading
+- Real-time data quality dashboard for site coordinators
+- Automated weekly progress reports
+- Mobile-friendly forms for bedside data entry
+
+**Technologies:** REDCap, R, SQL, Python, Git
+
+**Social Media Highlight:**
+> "Data quality matters in clinical trials! Managed 500K+ data points across 12 African sites with 99.7% completeness. Zero critical audit findings. This is what rigorous data management looks like! #ClinicalTrials #DataManagement #GlobalHealth"
+
+[View Data Management Plan →](#) | [Quality Metrics Dashboard →](#)
+:::
+:::
+
+---
+
+### **2. Malaria Vaccine Efficacy Study**
+
+::: {.project-card}
+::: {.project-header}
+#### 💉 Phase II Vaccine Trial with Complex Immunology Data
+**Duration:** 2020-2024 | **Status:** Ongoing | **Participants:** 800+
+:::
+
+::: {.project-body}
+**Project Scope:**
+- Vaccine efficacy assessment in children aged 6-24 months
+- Complex laboratory data (immunology, parasitology)
+- Pharmacokinetics sampling
+- Safety monitoring with expedited reporting
+
+**Data Management Challenges:**
+- Multiple laboratory platforms with different data formats
+- Real-time safety monitoring requirements
+- Complex visit schedules with flexible windows
+- Integration with national immunization registry
+
+**Solutions Implemented:**
+- **Centralized Data Warehouse:** PostgreSQL database integrating:
+  - Clinical data (REDCap)
+  - Laboratory results (3 different LIMS)
+  - Adverse events (custom safety database)
+  - Pharmacy dispensing records
+  
+- **Automated Data Pipelines:**
+  - Nightly ETL processes importing lab results
+  - Real-time safety event notifications
+  - Automated eligibility checks for visit windows
+  
+- **Quality Assurance:**
+  - 200+ validation rules across systems
+  - Daily data quality reports
+  - Exception-based monitoring system
+
+**Impact:**
+- ✅ 800+ participants enrolled and tracked
+- ✅ 15,000+ lab samples processed and matched
+- ✅ Real-time safety reporting (required within 24 hours) - 100% compliance
+- ✅ Data monitoring committee praised data quality as "exemplary"
+
+**Technologies:** REDCap, PostgreSQL, R Shiny, Python, Docker
+
+**Social Media Highlight:**
+> "Managing complex vaccine trial data across multiple systems! Integrated clinical data, lab results from 3 LIMS, and safety monitoring into one seamless system. Real-time alerts + automated QC = 100% safety reporting compliance. #VaccineDevelopment #DataScience"
+
+[Technical Documentation →](#)
+:::
+:::
+
+---
+
+## **Cohort Study Data Systems**
+
+### **3. Longitudinal NCD Cohort Database**
+
+::: {.project-card}
+::: {.project-header}
+#### 🏥 20-Year Prospective Cohort Study
+**Launch:** 2018 | **Status:** Active | **Participants:** 5,000+
+:::
+
+::: {.project-body}
+**Study Overview:**
+- Long-term follow-up of patients with hypertension, diabetes, and CVD
+- Quarterly clinic visits with annual comprehensive assessments
+- Biobank integration (plasma, DNA samples)
+- Linkage with vital registration systems
+
+**Database Architecture:**
+- **Front-End:** REDCap for data collection
+- **Back-End:** PostgreSQL for long-term data storage
+- **Analytics Layer:** R Shiny dashboards
+- **Biospecimen Tracking:** Custom sample management system
+
+**Key Features:**
+- Flexible visit scheduling with automated reminders
+- Integration with facility EMR systems
+- Automated loss-to-follow-up flagging
+- Linkage with national death registry
+- Biobank sample inventory management
+
+**Data Management Processes:**
+- **Enrollment:** Electronic informed consent with audit trail
+- **Data Collection:** Tablet-based entry at point of care
+- **Quality Control:** Weekly automated checks + monthly audits
+- **Data Sharing:** Controlled access system for researchers
+- **Biospecimen Management:** Barcode tracking with freeze/thaw cycles
+
+**Achievements:**
+- ✅ 5,000+ participants enrolled (target: 5,500)
+- ✅ Retention rate: 87% at 5 years
+- ✅ 60,000+ clinic visits documented
+- ✅ 25,000+ biospecimens properly tracked
+- ✅ 12 ancillary studies using cohort data
+
+**Technologies:** REDCap, PostgreSQL, R, Python, Git, REDCap API
+
+**Social Media Highlight:**
+> "Building data systems that stand the test of time! Managing a 20-year NCD cohort with 5K+ participants, 60K+ visits, and 25K+ biospecimens. 87% retention at 5 years thanks to robust data systems and automated follow-up. #EpidemiologyLife #CohortStudy"
+
+[System Architecture →](#) | [Data Dictionary →](#)
+:::
+:::
+
+---
+
+## **Surveillance Systems**
+
+### **4. Disease Surveillance Platform**
+
+::: {.project-card}
+::: {.project-header}
+#### 📊 Real-Time Disease Reporting System
+**Implementation:** 2021 | **Status:** Production | **Coverage:** 100+ facilities
+:::
+
+::: {.project-body}
+**System Overview:**
+- Real-time reporting of notifiable diseases
+- Automated outbreak detection algorithms
+- Geographic information system integration
+- Mobile reporting for rural facilities
+
+**Technical Components:**
+
+**1. Data Collection Layer:**
+- Mobile app (offline capability) for facility reporting
+- Web portal for centralized data entry
+- SMS-based reporting for resource-limited settings
+- API integration with existing HMIS
+
+**2. Data Processing Layer:**
+- Automated data validation and standardization
+- Duplicate detection and resolution
+- Geographic coding and validation
+- Case classification algorithms
+
+**3. Analytics & Alerting:**
+- Statistical outbreak detection (CUSUM, EWMA)
+- Geographic clustering analysis
+- Automated email/SMS alerts for thresholds
+- Weekly epidemiological bulletins
+
+**4. Visualization Layer:**
+- Public-facing dashboard (non-sensitive data)
+- Internal detailed analytics platform
+- Mobile-friendly reports
+- Automated PDF report generation
+
+**System Performance:**
+- ✅ 100+ facilities actively reporting
+- ✅ Average reporting time: 2.3 days (down from 14 days)
+- ✅ 15 disease outbreaks detected early in Year 1
+- ✅ System uptime: 99.8%
+- ✅ 50,000+ case reports processed
+
+**Impact:**
+- Early detection of cholera outbreak (3 days earlier than traditional system)
+- Reduced measles outbreak duration by 40%
+- Improved data completeness from 65% to 94%
+
+**Technologies:** PostgreSQL, R Shiny, Leaflet, ODK, REST API, Ubuntu Server
+
+**Social Media Highlight:**
+> "Data systems saving lives! Our real-time disease surveillance platform reduced outbreak detection time from 14 days to 2.3 days. Early cholera detection + rapid response = lives saved. This is #DigitalHealth done right! #PublicHealth #DataForGood"
+
+[Live Dashboard →](#) | [Technical Specs →](#)
+:::
+:::
+
+---
+
+## **Data Integration Projects**
+
+### **5. Health Information Exchange (HIE) Implementation**
+
+::: {.project-card}
+::: {.project-header}
+#### 🔄 Connecting Disparate Health Systems
+**Duration:** 2022-2024 | **Status:** Pilot Phase | **Facilities:** 15
+:::
+
+::: {.project-body}
+**Challenge:**
+- 15 health facilities using 4 different EMR systems
+- No patient data sharing between facilities
+- Duplicate tests and treatments
+- Fragmented patient histories
+
+**Solution:**
+- Implemented Health Information Exchange (HIE) based on FHIR standards
+- Master Patient Index (MPI) for unique patient identification
+- Standardized data exchange protocols
+- Consent management system
+
+**Architecture:**
+```
+┌─────────────────────────────────────────┐
+│         Health Facilities               │
+│  EMR1  │  EMR2  │  EMR3  │  EMR4       │
+└────┬─────────┬─────────┬─────────┬──────┘
+     │         │         │         │
+     │  ┌──────▼─────────▼─────────▼──┐
+     │  │    FHIR API Adapters         │
+     │  └──────┬─────────────────────┬─┘
+     │         │                     │
+     │  ┌──────▼────────────────────┐│
+     │  │  Central HIE Platform      ││
+     │  │  - Master Patient Index    ││
+     │  │  - Consent Management      ││
+     │  │  - Data Repository         ││
+     │  └────────────────────────────┘│
+     │                                 │
+     └─────────────────────────────────┘
+```
+
+**Implementation Details:**
+- **Standards:** HL7 FHIR R4, IHE profiles
+- **Patient Matching:** Probabilistic matching algorithm (95% accuracy)
+- **Security:** OAuth 2.0, TLS 1.3, encrypted data at rest
+- **Interoperability:** RESTful APIs for all interactions
+
+**Pilot Results:**
+- ✅ 15 facilities connected
+- ✅ 10,000+ patients with linked records
+- ✅ 25% reduction in duplicate lab tests
+- ✅ Clinicians access patient history in 3 seconds (vs. 30 minutes phone calls)
+- ✅ Estimated cost savings: KES 2M annually
+
+**Technologies:** HAPI FHIR, PostgreSQL, Spring Boot, React, Docker, Kubernetes
+
+**Social Media Highlight:**
+> "Connecting fragmented health data! Our HIE pilot linked 15 facilities, enabling instant patient history access. Result? 25% fewer duplicate tests and happier patients. Interoperability isn't a buzzword—it's a game-changer! #HealthIT #Interoperability #FHIR"
+
+[Technical Architecture →](#)
+:::
+:::
+
+---
+
+## **Data Quality Frameworks**
+
+### **6. Automated Data Quality Monitoring System**
+
+::: {.project-card}
+::: {.project-header}
+#### ✅ Proactive Data Quality Management
+**Developed:** 2020 | **Status:** Used in 10+ projects
+:::
+
+::: {.project-body}
+**Problem:**
+- Manual data quality checks time-consuming and error-prone
+- Quality issues discovered late in project lifecycle
+- Inconsistent quality standards across projects
+
+**Solution:**
+- Developed comprehensive automated DQ monitoring framework
+- Implemented in R as reusable package
+- Integrated with REDCap, CSV imports, and SQL databases
+
+**Framework Components:**
+
+**1. Data Quality Dimensions:**
+- **Completeness:** Missing data detection
+- **Validity:** Range and format checks
+- **Consistency:** Cross-field validation
+- **Timeliness:** Data entry delays
+- **Accuracy:** Logical inconsistencies
+- **Uniqueness:** Duplicate detection
+
+**2. Automated Checks:**
+```r
+# Example DQ checks
+dq_framework <- DataQualityChecker$new(data)
+
+# Completeness checks
+dq_framework$check_completeness(
+  required_vars = c("patient_id", "visit_date", "outcome"),
+  threshold = 0.95  # 95% completeness required
+)
+
+# Validity checks
+dq_framework$check_ranges(
+  age = c(18, 100),
+  bp_systolic = c(80, 220),
+  bp_diastolic = c(40, 130)
+)
+
+# Consistency checks
+dq_framework$check_consistency(
+  rules = list(
+    "death_date >= enrollment_date",
+    "if outcome == 'pregnant' then sex == 'Female'",
+    "if hiv_positive then hiv_test_date exists"
+  )
+)
+
+# Generate report
+dq_framework$generate_report(output = "html")
+```
+
+**3. Reporting:**
+- Automated daily/weekly reports
+- Traffic light system (red/yellow/green)
+- Drill-down capabilities to problem records
+- Trend analysis over time
+
+**Impact Across Projects:**
+- ✅ DQ issues detected 70% earlier in project lifecycle
+- ✅ Data cleaning time reduced by 50%
+- ✅ Standardized quality metrics across organization
+- ✅ Used in 10+ studies managing 200,000+ records
+
+**Technologies:** R (tidyverse, assertr, validate), R Markdown, Git
+
+**Social Media Highlight:**
+> "Prevention > Correction in data management! Our automated DQ framework detects issues 70% earlier and cuts cleaning time in half. Now deployed across 10+ studies. Open-source release coming soon! #DataQuality #OpenScience #RStats"
+
+[GitHub Repository →](https://github.com/gondamol/dqframework) | [Documentation →](#)
+:::
+:::
+
+---
+
+## **Best Practices & SOPs**
+
+### **Standard Operating Procedures Developed**
+
+::: {.skills-grid}
+::: {.skill-category}
+#### 📋 Data Management
+- Data Management Plan template
+- Database design specifications
+- Data dictionary standards
+- Query management procedures
+:::
+
+::: {.skill-category}
+#### 🔒 Security & Compliance
+- Data security SOPs
+- HIPAA compliance checklist
+- GCP compliance procedures
+- Audit readiness guide
+:::
+
+::: {.skill-category}
+#### ✅ Quality Control
+- Data validation plan template
+- Monitoring visit procedures
+- Quality control sampling
+- Corrective action procedures
+:::
+
+::: {.skill-category}
+#### 📊 Reporting
+- Analysis dataset creation
+- Data transfer specifications
+- Archive and retention policies
+- End-of-study procedures
+:::
+:::
+
+---
+
+## **Training & Capacity Building**
+
+### **Data Management Training Programs Delivered**
+
+1. **"Clinical Trial Data Management Fundamentals"** (3-day workshop)
+   - 150+ participants trained across 5 cohorts
+   - Covers REDCap, GCP, data quality
+
+2. **"REDCap for Research"** (2-day hands-on)
+   - 200+ researchers trained
+   - Database design, quality control, reporting
+
+3. **"Data Quality in Health Research"** (1-day seminar)
+   - 100+ participants
+   - Quality frameworks, automated checks
+
+---
+
+## **Impact Summary**
+
+::: {.stats-container}
+::: {.stat-card}
+**20+**{.stat-number}
+Studies Managed{.stat-label}
+:::
+
+::: {.stat-card}
+**500K+**{.stat-number}
+Records Processed{.stat-label}
+:::
+
+::: {.stat-card}
+**99.5%**{.stat-number}
+Avg Data Quality{.stat-label}
+:::
+
+::: {.stat-card}
+**0**{.stat-number}
+Critical Audit Findings{.stat-label}
+:::
+:::
+
+---
+
+::: {.success-box}
+### 📞 Need Data Management Expertise?
+
+I provide consulting services for:
+- Clinical trial data management setup
+- REDCap database design and implementation
+- Data quality framework development
+- Team training and capacity building
+- Regulatory compliance (GCP, HIPAA)
+
+[Contact Me](mailto:nichodemuswerre@gmail.com){.cta-button} [View CV](../cv/index.qmd){.cta-button}
+:::
+
+---
+
+[← Health Analytics](health-analytics.qmd) | [All Projects](index.qmd) | [Survey Tools →](survey-tools.qmd)
