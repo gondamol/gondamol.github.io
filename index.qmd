@@ -1,7 +1,7 @@
 ---
 title: "Nichodemus Amollo"
 subtitle: "Senior Research Data Manager | Health Data Analytics Specialist"
-image: profile.jpg
+image: profile.jpeg
 page-layout: full
 about:
   template: solana
@@ -29,7 +29,7 @@ about:
 ::: {.hero-content}
 # **Driving Impact Through Data & M&E Excellence**
 
-### Senior M&E Specialist | Research Data Manager | Research Data Analyst | 6+ Years Leading Global Health Projects
+### Senior M&E Specialist | Research Data Manager | Research Data Analyst | 8+ Years Leading Global Health Projects
 
 **Georgetown University gui2de** | MSc Biostatistics & Epidemiology | **Washington U. M&E Certified**
 
@@ -39,57 +39,59 @@ about:
 
 ## **Professional Summary**
 
-I am a **Senior M&E Specialist, Research Data Manager, and Research Data Analyst** with **6+ years of progressive experience** driving evidence-based decision-making for multi-million dollar international projects in **global health, food security, and economic development**. 
+I am a **Senior M&E Specialist, Research Data Manager, and Research Data Analyst** with **8+ years of progressive experience** driving evidence-based decision-making for multi-million dollar international projects in **global health, food security, and economic development**. 
 
 **My expertise combines:**
-- **Rigorous M&E frameworks** - Theory of Change, LogFrames, Results Frameworks for USAID/NIH programs
-- **End-to-end data leadership** - Field team management, digitalized surveys, HFCs, analysis, reporting  
-- **Advanced analytics** - R, Python, Stata, SQL, machine learning, survival analysis, network analysis
-- **Team building** - Trained **500+ researchers**, led multi-country field teams, developed training protocols
+
+- **Rigorous M&E frameworks** — Theory of Change, LogFrames, Results Frameworks for USAID/NIH programs  
+- **End-to-end data leadership** — Field team management, digitalized surveys, HFCs, analysis, reporting  
+- **Advanced analytics** — R, Python, Stata, SQL, machine learning, survival analysis, network analysis  
+- **Team building** — Trained **500+ researchers**, led multi-country field teams, developed training protocols
+
 
 Currently with **Georgetown University gui2de** conducting RCTs and impact evaluations, while completing **MSc in Biostatistics & Epidemiology** at JOOUST and certified in **M&E in Global Health** by University of Washington (2025).
 
 ::: {.stats-container}
 ::: {.stat-card}
-**6+**{.stat-number}
-Years M&E Experience{.stat-label}
+**8+** 
+Years M&E Experience
 :::
 
 ::: {.stat-card}
-**500+**{.stat-number}
-Researchers Trained{.stat-label}
+**500+**
+Researchers Trained
 :::
 
 ::: {.stat-card}
-**50+**{.stat-number}
-Field Teams Led{.stat-label}
+**50+**
+Field Teams Led
 :::
 
 ::: {.stat-card}
-**KES 20M+**{.stat-number}
-Cost Savings Identified{.stat-label}
+**KES 20M+**
+Cost Savings Identified
 :::
 :::
 
 ::: {.stats-container}
 ::: {.stat-card}
-**3**{.stat-number}
-Published Papers{.stat-label}
+**3**
+Published Papers
 :::
 
 ::: {.stat-card}
-**1,535+**{.stat-number}
-Multi-Country Sites{.stat-label}
+**1,535+**
+Multi-Country Sites
 :::
 
 ::: {.stat-card}
-**8**{.stat-number}
-M&E Frameworks Built{.stat-label}
+**8**
+M&E Frameworks Built
 :::
 
 ::: {.stat-card}
-**100K+**{.stat-number}
-Records Managed{.stat-label}
+**100K+**
+Records Managed
 :::
 :::
 
@@ -210,7 +212,7 @@ I am actively seeking **senior remote positions** as:
 - **Impact Evaluation Lead** - Designing and executing RCTs, quasi-experimental studies
 
 **Why hire me?**
-- ✔️ **6+ years** progressive M&E and data science experience  
+- ✔️ **8+ years** progressive M&E and data science experience  
 - ✔️ **Washington University M&E Certified** (2025)  
 - ✔️ **Proven leadership** managing multi-country projects and field teams  
 - ✔️ **Track record** - 500+ trained, 3 publications, KES 20M+ cost savings  

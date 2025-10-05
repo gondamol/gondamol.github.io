@@ -21,9 +21,13 @@ Growing up as an **orphaned child with limited resources** in rural Kenya, the o
 ### 🌟 From Struggle to Strength
 
 **What shaped me:**
+
 - **Loss taught me resilience** - Losing parents early instilled a drive to create lasting impact
+
 - **Scarcity taught me resourcefulness** - Limited resources sharpened my problem-solving abilities  
+
 - **Adversity taught me empathy** - Personal challenges deepened my commitment to health equity  
+
 - **Community taught me collaboration** - Support from mentors fueled my passion for capacity building
 
 **Against all odds, I made it this far** - and now I'm positioned to lead transformative global health initiatives.
@@ -31,18 +35,14 @@ Growing up as an **orphaned child with limited resources** in rural Kenya, the o
 
 ---
 
-# **Nichodemus Werre Amollo**
+# **Nic's Pofessional Profile**
 
 **Research Data Manager | Research Data Analyst | M&E Specialist | MSc. Biostatistics & Epidemiology**
-
-📧 nichodemuswerre@gmail.com | 📱 +254 725 737 867 | 📍 Nairobi, Kenya  
-💼 [LinkedIn](https://linkedin.com/in/nichodemusamollo) | 🐙 [GitHub](https://github.com/gondamol) | 🌐 [Portfolio](https://gondamol.github.io)
-
 ---
 
 ## **Professional Summary**
 
-**Research Data Manager, Research Data Analyst, and M&E Specialist** with **6+ years of progressive experience** driving evidence-based decision-making in global health, agriculture, food security, and economic development. Expert in **end-to-end data management**, **advanced statistical analysis**, and **robust M&E frameworks** for multi-million dollar international projects. 
+**Research Data Manager, Research Data Analyst, and M&E Specialist** with **8+ years of progressive experience** driving evidence-based decision-making in global health, agriculture, food security, and economic development. Expert in **end-to-end data management**, **advanced statistical analysis**, and **robust M&E frameworks** for multi-million dollar international projects. 
 
 **Specialized expertise:**  
 ✅ Leading field teams & training protocols for multi-site studies  
@@ -121,6 +121,7 @@ Growing up as an **orphaned child with limited resources** in rural Kenya, the o
 **Led data science initiatives for large-scale oncology studies, transforming clinical data into actionable insights:**
 
 **Key Achievements:**
+
 - Designed and implemented **statistically rigorous public health research studies** with representative sampling across diverse populations
 - Developed **interactive dashboards** (Tableau, R Shiny, Quarto) improving reporting efficiency by **60%** and empowering stakeholders with real-time tools
 - Applied **advanced statistical models** including survival analysis, machine learning algorithms, and cost-effectiveness analysis (CEA) to assess program impacts
@@ -154,17 +155,21 @@ Growing up as an **orphaned child with limited resources** in rural Kenya, the o
 
 #### **Epidemiology Research Consultant | Dalberg Research**  
 *Apr - May 2024* | Nairobi, Kenya
+
 - Designed and analyzed **survey data on malaria treatment uptake** in Sub-Saharan Africa
 - Synthesized complex datasets from WHO guidelines and peer-reviewed literature identifying critical intervention gaps
 - Developed **strategic recommendations** to enhance rectal artesunate suppository uptake
 
+
 #### **Monitoring & Data Visualization Consultant | Catholic Medical Mission Board (CMMB)**  
 *Jan - Feb 2024* | Nairobi, Kenya
+
 - Evaluated **HIV prevention programs** using rigorous M&E frameworks
 - Developed **donor reporting dashboards** visualizing program impact and outcomes
 
 #### **Communications & Evaluation Analyst | NEPHAK**  
 *Mar 2024* | Nairobi, Kenya
+
 - Conducted **survey analysis** for national HIV advocacy network
 - Authored **community health briefs** translating data insights for stakeholders
 
@@ -501,7 +506,7 @@ I am actively seeking **senior remote positions** as:
 - ✅ **Biostatistician** - Clinical trials and epidemiological studies
 
 **Why hire me?**
-- ✔️ **6+ years** progressive M&E and data science experience
+- ✔️ **8+ years** progressive M&E and data science experience
 - ✔️ **Proven leadership** managing multi-country projects and field teams
 - ✔️ **Technical excellence** in R, Python, Stata, SQL, and all major survey platforms
 - ✔️ **Washington University M&E certified** (2025)
