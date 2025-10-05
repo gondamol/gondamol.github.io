@@ -172,9 +172,10 @@ This groundbreaking research examines the intersection of health facility financ
 Growing up **orphaned with limited resources** in rural Kenya, the odds were stacked against me. Every educational milestone required extraordinary determination and resourcefulness. **Against all odds, I made it this far** - and these experiences shaped who I am today:
 
 **What adversity taught me:**
+
 - **Resilience** - Loss instilled a drive to create lasting impact
-- **Resourcefulness** - Scarcity sharpened my problem-solving abilities  
-- **Empathy** - Personal challenges deepened my commitment to health equity  
+- **Resourcefulness** - Scarcity sharpened my problem-solving abilities
+- **Empathy** - Personal challenges deepened my commitment to health equity
 - **Gratitude** - Support from mentors fueled my passion for capacity building
 
 **I believe data can change lives** - and I've dedicated my career to proving it. Now positioned to lead transformative global health initiatives, I bring not just technical skills, but a deep understanding of the communities we serve.
@@ -206,12 +207,14 @@ I'm passionate about leveraging data and M&E to drive impact in global health an
 ### 🎯 Seeking Senior Roles (Remote)
 
 I am actively seeking **senior remote positions** as:
+
 - **Research Data Manager** - End-to-end data leadership for multi-million dollar research projects
 - **Research Data Analyst** - Advanced statistical analysis and data science for health research
 - **Senior M&E Specialist / Manager** - Leading program monitoring and evaluation
 - **Impact Evaluation Lead** - Designing and executing RCTs, quasi-experimental studies
 
 **Why hire me?**
+
 - ✔️ **8+ years** progressive M&E and data science experience  
 - ✔️ **Washington University M&E Certified** (2025)  
 - ✔️ **Proven leadership** managing multi-country projects and field teams  
