@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Nichodemus Amollo">
+<meta name="dcterms.date" content="2025-10-19">
 
-<title>Tidy Tuesday Analysis – Hi, I’m Nic. A Research Data Manager</title>
+<title>TidyTuesday: Data for Good – Hi, I’m Nic. A Research Data Manager</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -75,9 +77,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-c1c83d622a7027c5e41b58cb58caf96d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-054434b5b991db6c4165cc8a8a770c28.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-c1c83d622a7027c5e41b58cb58caf96d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-427c83fc661955fce308694e1c641b80.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-75ab9135cc7a8960ebf47f7963e1d4aa.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-427c83fc661955fce308694e1c641b80.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -342,6 +344,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </ul>
   </li>
   <li class="nav-item">
+    <a class="nav-link active" href="../tidy-tuesday/index.html" aria-current="page"> 
+<span class="menu-text">TidyTuesday</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="../skills/index.html"> 
 <span class="menu-text">Skills &amp; Tools</span></a>
   </li>  
@@ -391,11 +397,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
-  <ul>
-  <li><a href="#tidy-tuesday-projects" id="toc-tidy-tuesday-projects" class="nav-link active" data-scroll-target="#tidy-tuesday-projects">Tidy Tuesday Projects</a>
   <ul class="collapse">
-  <li><a href="#recent-projects" id="toc-recent-projects" class="nav-link" data-scroll-target="#recent-projects">Recent Projects</a></li>
-  </ul></li>
+  <li><a href="#tidytuesday-projects" id="toc-tidytuesday-projects" class="nav-link active" data-scroll-target="#tidytuesday-projects">📊 TidyTuesday Projects</a></li>
+  <li><a href="#research-focus" id="toc-research-focus" class="nav-link" data-scroll-target="#research-focus">🔬 Research Focus</a></li>
+  <li><a href="#featured-projects-by-theme" id="toc-featured-projects-by-theme" class="nav-link" data-scroll-target="#featured-projects-by-theme">🌍 Featured Projects by Theme</a></li>
+  <li><a href="#tools-technologies" id="toc-tools-technologies" class="nav-link" data-scroll-target="#tools-technologies">🛠️ Tools &amp; Technologies</a></li>
+  <li><a href="#what-is-tidytuesday" id="toc-what-is-tidytuesday" class="nav-link" data-scroll-target="#what-is-tidytuesday">📈 What is TidyTuesday?</a></li>
+  <li><a href="#connect-collaborate" id="toc-connect-collaborate" class="nav-link" data-scroll-target="#connect-collaborate">🔗 Connect &amp; Collaborate</a></li>
   </ul>
 </nav>
     </div>
@@ -405,14 +413,27 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">Tidy Tuesday Analysis</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<div class="quarto-title-block"><div><h1 class="title">TidyTuesday: Data for Good</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<p class="subtitle lead">Weekly data visualization projects aligned with UN Sustainable Development Goals</p>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Nichodemus Amollo </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">October 19, 2025</p>
+    </div>
+  </div>
   
     
   </div>
@@ -422,22 +443,213 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="tidy-tuesday-projects" class="level1">
-<h1>Tidy Tuesday Projects</h1>
-<p>Welcome to my Tidy Tuesday analysis collection! Each week, I participate in the Tidy Tuesday challenge, where I analyze different datasets and share my findings. Below are some of the projects I’ve worked on.</p>
-<section id="recent-projects" class="level2">
-<h2 class="anchored" data-anchor-id="recent-projects">Recent Projects</h2>
+<section id="tidytuesday-projects" class="level1 hero-banner">
+<h1>📊 TidyTuesday Projects</h1>
+<p>Welcome to my TidyTuesday collection! Here, I explore datasets focused on <strong>health economics</strong>, <strong>inequalities</strong>, <strong>global health</strong>, <strong>development</strong>, and <strong>climate change</strong> - all aligned with the <strong>UN Sustainable Development Goals (SDGs)</strong>.</p>
+<p>My analyses emphasize <strong>health financing</strong>, <strong>economic inequalities</strong>, <strong>labor markets</strong>, and their impact on health access in <strong>low- and middle-income countries</strong>, particularly in <strong>Sub-Saharan Africa</strong>. Each project demonstrates rigorous data analysis, visualization, and policy-relevant insights.</p>
+</section>
+<hr>
+<hr>
+<section id="research-focus" class="level2">
+<h2 class="anchored" data-anchor-id="research-focus">🔬 Research Focus</h2>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+My Research Interests
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>My work lies at the intersection of <strong>health economics</strong>, <strong>epidemiology</strong>, and <strong>policy</strong> in low- and middle-income countries. I am particularly interested in:</p>
 <ul>
-<li><a href="../tidy-tuesday/2024-01-02-analysis.html">2024-01-02: Analysis on Global Temperature Changes</a></li>
-<li><a href="../tidy-tuesday/2024-01-09-analysis.html">2024-01-09: Analysis on Movie Ratings Trends</a></li>
-<li><a href="../tidy-tuesday/2024-01-16-analysis.html">2024-01-16: Analysis on World Population Growth</a></li>
+<li><strong>Health Care Financing</strong> &amp; Universal Health Coverage (UHC)</li>
+<li><strong>Economic Inequalities</strong> and Health Disparities</li>
+<li><strong>Behavioral Economics</strong> in Health Decision-Making</li>
+<li><strong>Labor Markets</strong> and Health Outcomes</li>
+<li><strong>Household-Level Health Economics</strong></li>
 </ul>
-<p>Feel free to explore each analysis to see the data visualization, statistical methods, and insights drawn from each dataset.</p>
+<p>Drawing on my background in <strong>epidemiology and biostatistics</strong> (MSc, University of Nairobi), I aim to conduct <strong>household-level analyses</strong> that examine the complex relationships between <strong>employment status</strong>, <strong>income security</strong>, and <strong>health-seeking behavior</strong>. My goal is to generate <strong>actionable evidence</strong> for policymakers working toward <strong>universal health coverage</strong> and <strong>financial protection</strong> in resource-constrained settings, with a focus on <strong>Kenya</strong> and <strong>East Africa</strong>.</p>
+</div>
+</div>
+<hr>
+</section>
+<section id="featured-projects-by-theme" class="level2">
+<h2 class="anchored" data-anchor-id="featured-projects-by-theme">🌍 Featured Projects by Theme</h2>
+<section id="health-economics-financing" class="level3">
+<h3 class="anchored" data-anchor-id="health-economics-financing">💊 Health Economics &amp; Financing</h3>
+</section>
+<div class="tile-grid">
+<div class="tile-card">
+<section id="health-financing-uhc-2018" class="level3 tile-card-header">
+<h3 class="anchored" data-anchor-id="health-financing-uhc-2018">Health Financing &amp; UHC (2018)</h3>
+<p>WHO Life Expectancy</p>
+</section>
+<div class="tile-body">
+<p>Spending patterns, outcomes, UHC progress.</p>
+<p><a href="../tidy-tuesday/2018-health-financing-uhc.html" class="tile-link">Open →</a></p>
+</div>
+</div>
+<div class="tile-card">
+<section id="economic-inequality-health-2021" class="level3 tile-card-header">
+<h3 class="anchored" data-anchor-id="economic-inequality-health-2021">Economic Inequality &amp; Health (2021)</h3>
+<p>Wealth &amp; Income</p>
+</section>
+<div class="tile-body">
+<p>Income distribution and health access.</p>
+<p><a href="../tidy-tuesday/2021-income-inequality-health.html" class="tile-link">Open →</a></p>
+</div>
+</div>
+<div class="tile-card">
+<section id="employment-labor-markets-health-2021" class="level3 tile-card-header">
+<h3 class="anchored" data-anchor-id="employment-labor-markets-health-2021">Employment, Labor Markets &amp; Health (2021)</h3>
+<p>Labor Markets</p>
+</section>
+<div class="tile-body">
+<p>Insurance gaps in the informal sector.</p>
+<p><a href="../tidy-tuesday/2021-employment-health.html" class="tile-link">Open →</a></p>
+</div>
+</div>
+</div>
+<hr>
+<section id="sdg-3-good-health-and-well-being" class="level3">
+<h3 class="anchored" data-anchor-id="sdg-3-good-health-and-well-being">🏥 SDG 3: Good Health and Well-being</h3>
+</section>
+<div class="tile-grid">
+<div class="tile-card">
+<section id="mental-health-in-tech-industry-2016" class="level3 tile-card-header">
+<h3 class="anchored" data-anchor-id="mental-health-in-tech-industry-2016">Mental Health in Tech Industry (2016)</h3>
+<p>OSMI Tech Survey</p>
+</section>
+<div class="tile-body">
+<p>Attitudes, treatment-seeking, workplace support.</p>
+<p><a href="../tidy-tuesday/2023-mental-health.html" class="tile-link">Open →</a></p>
+</div>
+</div>
+<div class="tile-card">
+<section id="global-mortality-analysis-2018" class="level3 tile-card-header">
+<h3 class="anchored" data-anchor-id="global-mortality-analysis-2018">Global Mortality Analysis (2018)</h3>
+<p>IHME GBD</p>
+</section>
+<div class="tile-body">
+<p>Regional disparities, SDG 3.1 progress.</p>
+<p><a href="../tidy-tuesday/2024-maternal-mortality.html" class="tile-link">Open →</a></p>
+</div>
+</div>
+</div>
+<hr>
+<section id="sdg-13-climate-action" class="level3">
+<h3 class="anchored" data-anchor-id="sdg-13-climate-action">🌱 SDG 13: Climate Action</h3>
+</section>
+<div class="tile-grid">
+<div class="tile-card">
+<section id="global-temperature-anomalies-2023" class="level3 tile-card-header">
+<h3 class="anchored" data-anchor-id="global-temperature-anomalies-2023">Global Temperature Anomalies (2023)</h3>
+<p>NASA GISS</p>
+</section>
+<div class="tile-body">
+<p>Historical anomalies; 1.5°C threshold.</p>
+<p><a href="../tidy-tuesday/2024-01-02-analysis.html" class="tile-link">Open →</a></p>
+</div>
+</div>
+<div class="tile-card">
+<section id="global-energy-co2-emissions-2023" class="level3 tile-card-header">
+<h3 class="anchored" data-anchor-id="global-energy-co2-emissions-2023">Global Energy &amp; CO2 Emissions (2023)</h3>
+<p>OWID Energy</p>
+</section>
+<div class="tile-body">
+<p>Renewable transition and emissions.</p>
+<p><a href="../tidy-tuesday/2023-co2-emissions.html" class="tile-link">Open →</a></p>
+</div>
+</div>
+</div>
+<hr>
+<section id="sdg-1-no-poverty" class="level3">
+<h3 class="anchored" data-anchor-id="sdg-1-no-poverty">💰 SDG 1: No Poverty</h3>
+</section>
+<div class="tile-grid">
+<div class="tile-card">
+<section id="human-development-trends-2018" class="level3 tile-card-header">
+<h3 class="anchored" data-anchor-id="human-development-trends-2018">Human Development Trends (2018)</h3>
+<p>UNDP HDI</p>
+</section>
+<div class="tile-body">
+<p>Development as a poverty proxy.</p>
+<p><a href="../tidy-tuesday/2023-poverty-trends.html" class="tile-link">Open →</a></p>
+</div>
+</div>
+</div>
+<hr>
+<section id="sdg-4-quality-education" class="level3">
+<h3 class="anchored" data-anchor-id="sdg-4-quality-education">🎓 SDG 4: Quality Education</h3>
+</section>
+<div class="tile-grid">
+<div class="tile-card">
+<section id="global-education-access-2019" class="level3 tile-card-header">
+<h3 class="anchored" data-anchor-id="global-education-access-2019">Global Education Access (2019)</h3>
+<p>UNESCO Student-Teacher Ratios</p>
+</section>
+<div class="tile-body">
+<p>Education quality indicators and access.</p>
+<p><a href="../tidy-tuesday/2024-education-gender.html" class="tile-link">Open →</a></p>
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="tools-technologies" class="level2">
+<h2 class="anchored" data-anchor-id="tools-technologies">🛠️ Tools &amp; Technologies</h2>
+<p>All analyses use:</p>
+<ul>
+<li><strong>R</strong> (4.3+) and <strong>RStudio</strong></li>
+<li><strong>Tidyverse</strong> ecosystem (<code>dplyr</code>, <code>ggplot2</code>, <code>tidyr</code>, <code>readr</code>)</li>
+<li><strong>Visualization</strong>: <code>ggplot2</code>, <code>plotly</code>, <code>gganimate</code>, <code>patchwork</code></li>
+<li><strong>Spatial data</strong>: <code>sf</code>, <code>rnaturalearth</code>, <code>leaflet</code></li>
+<li><strong>Reproducibility</strong>: <code>renv</code>, <code>here</code>, <code>quarto</code></li>
+</ul>
+<hr>
+</section>
+<section id="what-is-tidytuesday" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-tidytuesday">📈 What is TidyTuesday?</h2>
+<p><a href="https://github.com/rfordatascience/tidytuesday">TidyTuesday</a> is a weekly data project in R from the R4DS Online Learning Community. Each Tuesday, a new dataset is released for the community to explore, analyze, and visualize.</p>
+<p><strong>My focus</strong>: Using data analysis and visualization to examine <strong>health economics</strong> and <strong>inequalities</strong> in low-income countries, contributing to <strong>evidence-based policy</strong> for achieving <strong>universal health coverage</strong> and the UN SDGs.</p>
+<p><strong>Research Approach</strong>: I apply <strong>econometric methods</strong>, <strong>causal inference thinking</strong>, and <strong>household-level analysis</strong> to understand how <strong>economic factors</strong> shape health access and outcomes in resource-constrained settings.</p>
+<hr>
+</section>
+<section id="connect-collaborate" class="level2">
+<h2 class="anchored" data-anchor-id="connect-collaborate">🔗 Connect &amp; Collaborate</h2>
+<ul>
+<li>📧 <strong>Email</strong>: <a href="mailto:nichodemuswerre@gmail.com">nichodemuswerre@gmail.com</a></li>
+<li>💼 <strong>LinkedIn</strong>: <a href="https://linkedin.com/in/amollow">linkedin.com/in/amollow</a></li>
+<li>🐙 <strong>GitHub</strong>: <a href="https://github.com/gondamol">github.com/gondamol</a></li>
+<li>🐦 <strong>Twitter</strong>: <a href="https://twitter.com/nwerre"><span class="citation" data-cites="nwerre">@nwerre</span></a></li>
+</ul>
+<hr>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+📚 Resources
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><a href="https://github.com/rfordatascience/tidytuesday">TidyTuesday GitHub Repository</a></li>
+<li><a href="https://sdgs.un.org/goals">UN Sustainable Development Goals</a></li>
+<li><a href="https://r4ds.hadley.nz/">R for Data Science (2e)</a></li>
+<li><a href="https://ggplot2.tidyverse.org/">ggplot2 Documentation</a></li>
+</ul>
+</div>
+</div>
+<hr>
+<p><a href="../index.html">⬅️ Back to Home</a></p>
 
 
 <!-- -->
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -912,20 +1124,230 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   });
   </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
 <div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Tidy Tuesday Analysis"</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu"># Tidy Tuesday Projects</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>Welcome to my Tidy Tuesday analysis collection! Each week, I participate in the Tidy Tuesday challenge, where I analyze different datasets and share my findings. Below are some of the projects I've worked on.</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">## Recent Projects</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">2024-01-02: Analysis on Global Temperature Changes</span><span class="co">](2024-01-02-analysis.qmd)</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">2024-01-09: Analysis on Movie Ratings Trends</span><span class="co">](2024-01-09-analysis.qmd)</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">2024-01-16: Analysis on World Population Growth</span><span class="co">](2024-01-16-analysis.qmd)</span></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>Feel free to explore each analysis to see the data visualization, statistical methods, and insights drawn from each dataset.</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "TidyTuesday: Data for Good"</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">subtitle:</span><span class="co"> "Weekly data visualization projects aligned with UN Sustainable Development Goals"</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "Nichodemus Amollo"</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> "October 19, 2025"</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">  html:</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">    toc: true</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co">    toc-depth: 2</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co">    code-fold: false</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>::: {.hero-banner}</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="fu"># 📊 TidyTuesday Projects</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>Welcome to my TidyTuesday collection! Here, I explore datasets focused on **health economics**, **inequalities**, **global health**, **development**, and **climate change** - all aligned with the **UN Sustainable Development Goals (SDGs)**.</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>My analyses emphasize **health financing**, **economic inequalities**, **labor markets**, and their impact on health access in **low- and middle-income countries**, particularly in **Sub-Saharan Africa**. Each project demonstrates rigorous data analysis, visualization, and policy-relevant insights.</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="fu">## 🔬 Research Focus</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip}</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="fu">## My Research Interests</span></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>My work lies at the intersection of **health economics**, **epidemiology**, and **policy** in low- and middle-income countries. I am particularly interested in:</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Health Care Financing** &amp; Universal Health Coverage (UHC)</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Economic Inequalities** and Health Disparities</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Behavioral Economics** in Health Decision-Making</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Labor Markets** and Health Outcomes</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Household-Level Health Economics**</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>Drawing on my background in **epidemiology and biostatistics** (MSc, University of Nairobi), I aim to conduct **household-level analyses** that examine the complex relationships between **employment status**, **income security**, and **health-seeking behavior**. My goal is to generate **actionable evidence** for policymakers working toward **universal health coverage** and **financial protection** in resource-constrained settings, with a focus on **Kenya** and **East Africa**.</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="fu">## 🌍 Featured Projects by Theme</span></span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="fu">### 💊 Health Economics &amp; Financing</span></span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>::: {.tile-grid}</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>::: {.tile-card}</span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>::: {.tile-card-header}</span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a><span class="fu">### Health Financing &amp; UHC (2018)</span></span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>WHO Life Expectancy</span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>::: {.tile-body}</span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>Spending patterns, outcomes, UHC progress.</span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Open →</span><span class="co">](2018-health-financing-uhc.qmd)</span>{.tile-link}</span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a>::: {.tile-card}</span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a>::: {.tile-card-header}</span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a><span class="fu">### Economic Inequality &amp; Health (2021)</span></span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a>Wealth &amp; Income</span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a>::: {.tile-body}</span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a>Income distribution and health access.</span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Open →</span><span class="co">](2021-income-inequality-health.qmd)</span>{.tile-link}</span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a>::: {.tile-card}</span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a>::: {.tile-card-header}</span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a><span class="fu">### Employment, Labor Markets &amp; Health (2021)</span></span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a>Labor Markets</span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a>::: {.tile-body}</span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a>Insurance gaps in the informal sector.</span>
+<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Open →</span><span class="co">](2021-employment-health.qmd)</span>{.tile-link}</span>
+<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a><span class="fu">### 🏥 SDG 3: Good Health and Well-being</span></span>
+<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a>::: {.tile-grid}</span>
+<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a>::: {.tile-card}</span>
+<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a>::: {.tile-card-header}</span>
+<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a><span class="fu">### Mental Health in Tech Industry (2016)</span></span>
+<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a>OSMI Tech Survey</span>
+<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a>::: {.tile-body}</span>
+<span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a>Attitudes, treatment-seeking, workplace support.</span>
+<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Open →</span><span class="co">](2023-mental-health.qmd)</span>{.tile-link}</span>
+<span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-101"><a href="#cb1-101" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-102"><a href="#cb1-102" aria-hidden="true" tabindex="-1"></a>::: {.tile-card}</span>
+<span id="cb1-103"><a href="#cb1-103" aria-hidden="true" tabindex="-1"></a>::: {.tile-card-header}</span>
+<span id="cb1-104"><a href="#cb1-104" aria-hidden="true" tabindex="-1"></a><span class="fu">### Global Mortality Analysis (2018)</span></span>
+<span id="cb1-105"><a href="#cb1-105" aria-hidden="true" tabindex="-1"></a>IHME GBD</span>
+<span id="cb1-106"><a href="#cb1-106" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-107"><a href="#cb1-107" aria-hidden="true" tabindex="-1"></a>::: {.tile-body}</span>
+<span id="cb1-108"><a href="#cb1-108" aria-hidden="true" tabindex="-1"></a>Regional disparities, SDG 3.1 progress.</span>
+<span id="cb1-109"><a href="#cb1-109" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-110"><a href="#cb1-110" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Open →</span><span class="co">](2024-maternal-mortality.qmd)</span>{.tile-link}</span>
+<span id="cb1-111"><a href="#cb1-111" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-112"><a href="#cb1-112" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-113"><a href="#cb1-113" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-114"><a href="#cb1-114" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-115"><a href="#cb1-115" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-116"><a href="#cb1-116" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-117"><a href="#cb1-117" aria-hidden="true" tabindex="-1"></a><span class="fu">### 🌱 SDG 13: Climate Action</span></span>
+<span id="cb1-118"><a href="#cb1-118" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-119"><a href="#cb1-119" aria-hidden="true" tabindex="-1"></a>::: {.tile-grid}</span>
+<span id="cb1-120"><a href="#cb1-120" aria-hidden="true" tabindex="-1"></a>::: {.tile-card}</span>
+<span id="cb1-121"><a href="#cb1-121" aria-hidden="true" tabindex="-1"></a>::: {.tile-card-header}</span>
+<span id="cb1-122"><a href="#cb1-122" aria-hidden="true" tabindex="-1"></a><span class="fu">### Global Temperature Anomalies (2023)</span></span>
+<span id="cb1-123"><a href="#cb1-123" aria-hidden="true" tabindex="-1"></a>NASA GISS</span>
+<span id="cb1-124"><a href="#cb1-124" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-125"><a href="#cb1-125" aria-hidden="true" tabindex="-1"></a>::: {.tile-body}</span>
+<span id="cb1-126"><a href="#cb1-126" aria-hidden="true" tabindex="-1"></a>Historical anomalies; 1.5°C threshold.</span>
+<span id="cb1-127"><a href="#cb1-127" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-128"><a href="#cb1-128" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Open →</span><span class="co">](2024-01-02-analysis.qmd)</span>{.tile-link}</span>
+<span id="cb1-129"><a href="#cb1-129" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-130"><a href="#cb1-130" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-131"><a href="#cb1-131" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-132"><a href="#cb1-132" aria-hidden="true" tabindex="-1"></a>::: {.tile-card}</span>
+<span id="cb1-133"><a href="#cb1-133" aria-hidden="true" tabindex="-1"></a>::: {.tile-card-header}</span>
+<span id="cb1-134"><a href="#cb1-134" aria-hidden="true" tabindex="-1"></a><span class="fu">### Global Energy &amp; CO2 Emissions (2023)</span></span>
+<span id="cb1-135"><a href="#cb1-135" aria-hidden="true" tabindex="-1"></a>OWID Energy</span>
+<span id="cb1-136"><a href="#cb1-136" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-137"><a href="#cb1-137" aria-hidden="true" tabindex="-1"></a>::: {.tile-body}</span>
+<span id="cb1-138"><a href="#cb1-138" aria-hidden="true" tabindex="-1"></a>Renewable transition and emissions.</span>
+<span id="cb1-139"><a href="#cb1-139" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-140"><a href="#cb1-140" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Open →</span><span class="co">](2023-co2-emissions.qmd)</span>{.tile-link}</span>
+<span id="cb1-141"><a href="#cb1-141" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-142"><a href="#cb1-142" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-143"><a href="#cb1-143" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-144"><a href="#cb1-144" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-145"><a href="#cb1-145" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-146"><a href="#cb1-146" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-147"><a href="#cb1-147" aria-hidden="true" tabindex="-1"></a><span class="fu">### 💰 SDG 1: No Poverty</span></span>
+<span id="cb1-148"><a href="#cb1-148" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-149"><a href="#cb1-149" aria-hidden="true" tabindex="-1"></a>::: {.tile-grid}</span>
+<span id="cb1-150"><a href="#cb1-150" aria-hidden="true" tabindex="-1"></a>::: {.tile-card}</span>
+<span id="cb1-151"><a href="#cb1-151" aria-hidden="true" tabindex="-1"></a>::: {.tile-card-header}</span>
+<span id="cb1-152"><a href="#cb1-152" aria-hidden="true" tabindex="-1"></a><span class="fu">### Human Development Trends (2018)</span></span>
+<span id="cb1-153"><a href="#cb1-153" aria-hidden="true" tabindex="-1"></a>UNDP HDI</span>
+<span id="cb1-154"><a href="#cb1-154" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-155"><a href="#cb1-155" aria-hidden="true" tabindex="-1"></a>::: {.tile-body}</span>
+<span id="cb1-156"><a href="#cb1-156" aria-hidden="true" tabindex="-1"></a>Development as a poverty proxy.</span>
+<span id="cb1-157"><a href="#cb1-157" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-158"><a href="#cb1-158" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Open →</span><span class="co">](2023-poverty-trends.qmd)</span>{.tile-link}</span>
+<span id="cb1-159"><a href="#cb1-159" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-160"><a href="#cb1-160" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-161"><a href="#cb1-161" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-162"><a href="#cb1-162" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-163"><a href="#cb1-163" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-164"><a href="#cb1-164" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-165"><a href="#cb1-165" aria-hidden="true" tabindex="-1"></a><span class="fu">### 🎓 SDG 4: Quality Education</span></span>
+<span id="cb1-166"><a href="#cb1-166" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-167"><a href="#cb1-167" aria-hidden="true" tabindex="-1"></a>::: {.tile-grid}</span>
+<span id="cb1-168"><a href="#cb1-168" aria-hidden="true" tabindex="-1"></a>::: {.tile-card}</span>
+<span id="cb1-169"><a href="#cb1-169" aria-hidden="true" tabindex="-1"></a>::: {.tile-card-header}</span>
+<span id="cb1-170"><a href="#cb1-170" aria-hidden="true" tabindex="-1"></a><span class="fu">### Global Education Access (2019)</span></span>
+<span id="cb1-171"><a href="#cb1-171" aria-hidden="true" tabindex="-1"></a>UNESCO Student-Teacher Ratios</span>
+<span id="cb1-172"><a href="#cb1-172" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-173"><a href="#cb1-173" aria-hidden="true" tabindex="-1"></a>::: {.tile-body}</span>
+<span id="cb1-174"><a href="#cb1-174" aria-hidden="true" tabindex="-1"></a>Education quality indicators and access.</span>
+<span id="cb1-175"><a href="#cb1-175" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-176"><a href="#cb1-176" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Open →</span><span class="co">](2024-education-gender.qmd)</span>{.tile-link}</span>
+<span id="cb1-177"><a href="#cb1-177" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-178"><a href="#cb1-178" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-179"><a href="#cb1-179" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-180"><a href="#cb1-180" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-181"><a href="#cb1-181" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-182"><a href="#cb1-182" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-183"><a href="#cb1-183" aria-hidden="true" tabindex="-1"></a><span class="fu">## 🛠️ Tools &amp; Technologies</span></span>
+<span id="cb1-184"><a href="#cb1-184" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-185"><a href="#cb1-185" aria-hidden="true" tabindex="-1"></a>All analyses use:</span>
+<span id="cb1-186"><a href="#cb1-186" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-187"><a href="#cb1-187" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**R** (4.3+) and **RStudio**</span>
+<span id="cb1-188"><a href="#cb1-188" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Tidyverse** ecosystem (<span class="in">`dplyr`</span>, <span class="in">`ggplot2`</span>, <span class="in">`tidyr`</span>, <span class="in">`readr`</span>)</span>
+<span id="cb1-189"><a href="#cb1-189" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Visualization**: <span class="in">`ggplot2`</span>, <span class="in">`plotly`</span>, <span class="in">`gganimate`</span>, <span class="in">`patchwork`</span></span>
+<span id="cb1-190"><a href="#cb1-190" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Spatial data**: <span class="in">`sf`</span>, <span class="in">`rnaturalearth`</span>, <span class="in">`leaflet`</span></span>
+<span id="cb1-191"><a href="#cb1-191" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Reproducibility**: <span class="in">`renv`</span>, <span class="in">`here`</span>, <span class="in">`quarto`</span></span>
+<span id="cb1-192"><a href="#cb1-192" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-193"><a href="#cb1-193" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-194"><a href="#cb1-194" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-195"><a href="#cb1-195" aria-hidden="true" tabindex="-1"></a><span class="fu">## 📈 What is TidyTuesday?</span></span>
+<span id="cb1-196"><a href="#cb1-196" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-197"><a href="#cb1-197" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">TidyTuesday</span><span class="co">](https://github.com/rfordatascience/tidytuesday)</span> is a weekly data project in R from the R4DS Online Learning Community. Each Tuesday, a new dataset is released for the community to explore, analyze, and visualize.</span>
+<span id="cb1-198"><a href="#cb1-198" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-199"><a href="#cb1-199" aria-hidden="true" tabindex="-1"></a>**My focus**: Using data analysis and visualization to examine **health economics** and **inequalities** in low-income countries, contributing to **evidence-based policy** for achieving **universal health coverage** and the UN SDGs.</span>
+<span id="cb1-200"><a href="#cb1-200" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-201"><a href="#cb1-201" aria-hidden="true" tabindex="-1"></a>**Research Approach**: I apply **econometric methods**, **causal inference thinking**, and **household-level analysis** to understand how **economic factors** shape health access and outcomes in resource-constrained settings.</span>
+<span id="cb1-202"><a href="#cb1-202" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-203"><a href="#cb1-203" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-204"><a href="#cb1-204" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-205"><a href="#cb1-205" aria-hidden="true" tabindex="-1"></a><span class="fu">## 🔗 Connect &amp; Collaborate</span></span>
+<span id="cb1-206"><a href="#cb1-206" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-207"><a href="#cb1-207" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>📧 **Email**: <span class="co">[</span><span class="ot">nichodemuswerre@gmail.com</span><span class="co">](mailto:nichodemuswerre@gmail.com)</span></span>
+<span id="cb1-208"><a href="#cb1-208" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>💼 **LinkedIn**: <span class="co">[</span><span class="ot">linkedin.com/in/amollow</span><span class="co">](https://linkedin.com/in/amollow)</span></span>
+<span id="cb1-209"><a href="#cb1-209" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>🐙 **GitHub**: <span class="co">[</span><span class="ot">github.com/gondamol</span><span class="co">](https://github.com/gondamol)</span></span>
+<span id="cb1-210"><a href="#cb1-210" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>🐦 **Twitter**: <span class="co">[</span><span class="ot">@nwerre</span><span class="co">](https://twitter.com/nwerre)</span></span>
+<span id="cb1-211"><a href="#cb1-211" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-212"><a href="#cb1-212" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-213"><a href="#cb1-213" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-214"><a href="#cb1-214" aria-hidden="true" tabindex="-1"></a>::: {.callout-note}</span>
+<span id="cb1-215"><a href="#cb1-215" aria-hidden="true" tabindex="-1"></a><span class="fu">## 📚 Resources</span></span>
+<span id="cb1-216"><a href="#cb1-216" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-217"><a href="#cb1-217" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">TidyTuesday GitHub Repository</span><span class="co">](https://github.com/rfordatascience/tidytuesday)</span></span>
+<span id="cb1-218"><a href="#cb1-218" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">UN Sustainable Development Goals</span><span class="co">](https://sdgs.un.org/goals)</span></span>
+<span id="cb1-219"><a href="#cb1-219" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">R for Data Science (2e)</span><span class="co">](https://r4ds.hadley.nz/)</span></span>
+<span id="cb1-220"><a href="#cb1-220" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">ggplot2 Documentation</span><span class="co">](https://ggplot2.tidyverse.org/)</span></span>
+<span id="cb1-221"><a href="#cb1-221" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-222"><a href="#cb1-222" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-223"><a href="#cb1-223" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-224"><a href="#cb1-224" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-225"><a href="#cb1-225" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">⬅️ Back to Home</span><span class="co">](../index.qmd)</span></span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">
