@@ -1,0 +1,6 @@
+docs/
+data/
+*.R
+*-OLD.qmd
+*-BACKUP.qmd
+*.qmd.backup

@@ -53,6 +53,8 @@ website:
             href: research/thesis.qmd
           - text: "Publications"
             href: research/publications.qmd
+      - text: "TidyTuesday"
+        href: tidy-tuesday/index.qmd
       - text: "Skills & Tools"
         href: skills/index.qmd
       - text: "Blog"

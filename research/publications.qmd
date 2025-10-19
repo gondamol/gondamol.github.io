@@ -32,41 +32,22 @@ page-layout: full
 
 ## **Publications**
 
-::: {.info-box}
-**Note:** This section contains sample publication templates. Replace with your actual publications or remove entries as needed.
-:::
-
 ### **Peer-Reviewed Journal Articles**
 
-1. **Amollo, N.**, et al. (2024). "Financial determinants of non-communicable disease management in primary care settings: A case study from Kisumu County, Kenya." *Journal of Health Economics* (In Preparation)
+1. Mangale, D. I., Adhiambo, H., Adagi, P. A., Nyandieka, E., Abente, B., Achieng, S., … **Amollo, N. W.**, & Odeny, T. A. (2025). Characteristics and mortality risk among esophageal cancer patients with varied HIV status seeking care in western Kenya: A 10-year analysis. [In Press]
+   - Role: Data manager and analyst
 
-2. **Amollo, N.**, et al. (2023). "Implementing electronic data capture systems in resource-limited settings: Lessons learned from health research in Kenya." *BMC Medical Research Methodology* (Submitted)
+2. Odeny, T. A., Adhiambo, H. F., Mangale, D. I., Were, N. A., Nyandieka, E., Adagi, P. A., … **Amollo, N. W.**, & Atieno, D. (2025). Survival disparities in cervical cancer patients with and without HIV at Jaramogi Oginga Odinga Teaching and Referral Hospital (JOOTRH). [In Press]
+   - Role: Data manager and analyst
 
-3. **Amollo, N.**, Otieno, J., & Ouma, P. (2023). "Data quality in electronic health records: A systematic review of validation methods." *Journal of Medical Informatics*, 45(3), 234-248.
-
-4. **Amollo, N.** & Collaborators. (2022). "Mobile data collection for health surveys in rural Kenya: Comparing SurveyCTO, REDCap, and KoboCollect." *PLOS Digital Health*, 1(8), e0000123.
-
-5. Smith, J., **Amollo, N.**, et al. (2022). "Predictive modeling of hypertension control in primary care settings." *Hypertension Research*, 45(6), 1123-1135.
+3. Ouma, O. J., Omondi, D., Akinyi, I., **Amollo, N. W.**, Ogutu, S., Obinge, E., … van Olmen, J. (2025). Addressing priority gaps in access and quality of NCD services in primary care settings in rural Kenya: A participatory approach to intervention development. [In Press]
+   - Role: Conceptualization, data collection, management, analysis, and co-writing results & discussion
 
 ---
 
-### **Conference Presentations**
+### **Conference Papers**
 
-**2024**
-
-- **Amollo, N.** "Cost-effectiveness of NCD interventions in primary health facilities." *East African Health Research Conference*, Nairobi, Kenya. (Oral Presentation)
-
-- **Amollo, N.** "Interactive dashboards for real-time health facility monitoring." *International Conference on Health Informatics*, Virtual. (Poster Presentation)
-
-**2023**
-
-- **Amollo, N.** "Best practices in health data management for clinical trials." *International Clinical Trials Symposium*, Cape Town, South Africa. (Invited Speaker)
-
-- **Amollo, N.** "Survey design and implementation using mobile data collection tools." *Africa Data Science Conference*, Kigali, Rwanda. (Workshop)
-
-**2022**
-
-- **Amollo, N.** "Reproducible research practices in epidemiology." *Kenya Medical Research Institute Annual Conference*, Kisumu, Kenya. (Oral Presentation)
+- Characterization of the Top 10 Cancers in the JOOTRH Oncology Database. [Conference paper]
 
 ---
 

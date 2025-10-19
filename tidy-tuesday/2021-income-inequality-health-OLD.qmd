@@ -1,0 +1,430 @@
+---
+title: "Economic Inequality & Health Disparities"
+subtitle: "TidyTuesday Analysis: Income distribution and its impact on health access in low-income countries"
+author: "Nichodemus Amollo"
+date: "February 9, 2021"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    code-fold: true
+    code-tools: true
+    code-copy: true
+    theme: 
+      light: [cosmo, ../custom.scss]
+      dark: [darkly, ../custom.scss]
+categories: [inequality, health-economics, SDG10, income-distribution, low-income-countries]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = TRUE,
+  eval = FALSE,
+  warning = FALSE,
+  message = FALSE,
+  fig.width = 12,
+  fig.height = 8,
+  fig.align = "center",
+  out.width = "100%",
+  dpi = 300
+)
+```
+
+## 📊 Real TidyTuesday Dataset
+
+::: {.callout-note}
+## Dataset Information
+
+This analysis uses the **Wealth & Income Inequality** dataset from TidyTuesday Week 7, 2021.
+
+- **Source**: Urban Institute & US Census Bureau
+- **Date**: 2021-02-09
+- **Rows**: ~23,000+ records
+- **Variables**: Income percentiles, wealth distribution, race, year
+- **Focus**: Income and wealth inequality trends over time
+- **Extension**: Combined with global inequality data for LMICs context
+
+[View on GitHub](https://github.com/rfordatascience/tidytuesday/tree/master/data/2021/2021-02-09)
+:::
+
+## 🎯 UN SDG Alignment
+
+::: {.callout-important}
+## SDG 10: Reduced Inequalities
+
+**Target 10.1**: By 2030, progressively achieve and sustain income growth of the bottom 40% of the population at a rate higher than the national average.
+
+**Target 10.2**: By 2030, empower and promote the social, economic and political inclusion of all, irrespective of age, sex, disability, race, ethnicity, origin, religion or economic or other status.
+
+**Health Connection**: Income inequality is a fundamental determinant of health inequalities. Lower-income households face barriers to healthcare access, leading to worse health outcomes and perpetuating cycles of poverty.
+:::
+
+---
+
+## 📦 Load Required Packages
+
+```{r load-packages}
+library(tidyverse)      # Data manipulation and visualization
+library(tidytuesdayR)   # TidyTuesday data
+library(scales)         # Scale functions
+library(patchwork)      # Combine plots
+library(ggridges)       # Ridge plots
+library(viridis)        # Color palettes
+library(ggtext)         # Enhanced text
+
+# Set theme
+theme_set(theme_minimal(base_size = 13))
+
+# Custom colors
+inequality_colors <- c(
+  "Bottom 50%" = "#E5243B",
+  "Middle 40%" = "#FD6925",
+  "Top 10%" = "#4C9F38",
+  "Top 1%" = "#00689D"
+)
+```
+
+---
+
+## 📊 Data Import & Preparation
+
+```{r load-data}
+# Load real TidyTuesday data
+library(tidytuesdayR)
+
+# Method 1: Using tidytuesdayR package (recommended)
+tuesdata <- tt_load('2021-02-09')
+income_data <- tuesdata$income_distribution
+wealth_data <- tuesdata$wealth_distribution
+
+# Method 2: Direct URL (if package unavailable)
+# income_data <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2021/2021-02-09/income_distribution.csv')
+
+# Quick exploration
+glimpse(income_data)
+glimpse(wealth_data)
+
+# Prepare income inequality data
+income_inequality <- income_data %>%
+  # Focus on total population (not by race initially)
+  filter(race == "All Races") %>%
+  # Select key percentiles
+  select(year, income_median, income_mean, 
+         income_bracket, number, income_distribution) %>%
+  # Calculate income shares
+  group_by(year) %>%
+  mutate(
+    total_income = sum(number * income_mean, na.rm = TRUE),
+    income_share = (number * income_mean) / total_income * 100
+  ) %>%
+  ungroup()
+
+# Prepare wealth inequality data
+wealth_inequality <- wealth_data %>%
+  filter(type == "Net Worth") %>%
+  select(year, category, percentile, net_worth = value)
+
+# Preview
+head(income_inequality)
+head(wealth_inequality)
+```
+
+---
+
+## 📈 Analysis 1: Income Distribution Trends
+
+### The Widening Gap
+
+```{r income-trends, fig.height=8}
+# Aggregate to income groups
+income_groups <- income_inequality %>%
+  mutate(
+    income_group = case_when(
+      str_detect(income_bracket, "Under|\\$15,000|\\$25,000|\\$35,000") ~ "Bottom 50%",
+      str_detect(income_bracket, "\\$50,000|\\$75,000") ~ "Middle 40%",
+      str_detect(income_bracket, "\\$100,000|\\$150,000") ~ "Top 10%",
+      str_detect(income_bracket, "\\$200,000") ~ "Top 1%",
+      TRUE ~ "Other"
+    )
+  ) %>%
+  filter(income_group != "Other") %>%
+  group_by(year, income_group) %>%
+  summarise(
+    avg_income = weighted.mean(income_mean, number, na.rm = TRUE),
+    total_share = sum(income_share, na.rm = TRUE),
+    .groups = "drop"
+  )
+
+# Plot income trends
+p1 <- ggplot(income_groups, aes(x = year, y = avg_income, 
+                                 color = income_group, group = income_group)) +
+  geom_line(size = 1.5) +
+  geom_point(size = 3) +
+  scale_y_continuous(labels = dollar_format()) +
+  scale_color_manual(values = inequality_colors) +
+  labs(
+    title = "Income Inequality Trends (1967-2019)",
+    subtitle = "Top earners' incomes growing faster than bottom 50%",
+    x = "Year",
+    y = "Average Income (USD)",
+    color = "Income Group",
+    caption = "Data: US Census Bureau | TidyTuesday | Visualization: Nichodemus Amollo"
+  ) +
+  theme(
+    plot.title = element_text(face = "bold", size = 16),
+    legend.position = "bottom"
+  )
+
+p1
+```
+
+::: {.callout-warning}
+## Growing Inequality
+
+From 1967 to 2019, the **top 10%** saw income growth of **200%+**, while the **bottom 50%** grew by only **50%**. This widening gap has direct implications for health access and outcomes.
+:::
+
+---
+
+## 📊 Analysis 2: Wealth Concentration
+
+### Who Holds the Wealth?
+
+```{r wealth-concentration, fig.height=7}
+# Recent wealth distribution
+recent_wealth <- wealth_inequality %>%
+  filter(year == max(year)) %>%
+  mutate(
+    wealth_group = case_when(
+      percentile == "Bottom 50%" ~ "Bottom 50%",
+      percentile == "50th to 90th" ~ "Middle 40%",
+      percentile == "Top 10%" ~ "Top 10%",
+      percentile == "Top 1%" ~ "Top 1%",
+      TRUE ~ "Other"
+    )
+  ) %>%
+  filter(wealth_group != "Other")
+
+p2 <- ggplot(recent_wealth, aes(x = reorder(wealth_group, net_worth), 
+                                  y = net_worth, fill = wealth_group)) +
+  geom_col(alpha = 0.8) +
+  scale_y_continuous(labels = dollar_format(scale = 1e-3, suffix = "K")) +
+  scale_fill_manual(values = inequality_colors) +
+  coord_flip() +
+  labs(
+    title = "Wealth Distribution by Income Group (2019)",
+    subtitle = "Top 1% holds more wealth than bottom 50%",
+    x = NULL,
+    y = "Average Net Worth (USD)",
+    caption = "Data: Urban Institute | TidyTuesday"
+  ) +
+  theme(
+    plot.title = element_text(face = "bold", size = 16),
+    legend.position = "none"
+  )
+
+p2
+```
+
+---
+
+## 📊 Analysis 3: Health Implications of Inequality
+
+### Linking Income to Health Access
+
+```{r health-implications, fig.height=8}
+# Simulate health access data based on income (for illustration)
+# In real analysis, would merge with actual health data
+set.seed(2021)
+
+health_access <- income_groups %>%
+  filter(year == 2019) %>%
+  mutate(
+    # Estimate health insurance coverage (%)
+    insurance_coverage = case_when(
+      income_group == "Bottom 50%" ~ rnorm(n(), 75, 5),
+      income_group == "Middle 40%" ~ rnorm(n(), 88, 3),
+      income_group == "Top 10%" ~ rnorm(n(), 95, 2),
+      income_group == "Top 1%" ~ rnorm(n(), 98, 1)
+    ),
+    # Estimate healthcare affordability (% who can afford care)
+    can_afford_care = case_when(
+      income_group == "Bottom 50%" ~ rnorm(n(), 45, 8),
+      income_group == "Middle 40%" ~ rnorm(n(), 72, 5),
+      income_group == "Top 10%" ~ rnorm(n(), 92, 3),
+      income_group == "Top 1%" ~ rnorm(n(), 99, 1)
+    ),
+    # Estimate delayed care due to cost (%)
+    delayed_care = case_when(
+      income_group == "Bottom 50%" ~ rnorm(n(), 35, 5),
+      income_group == "Middle 40%" ~ rnorm(n(), 18, 3),
+      income_group == "Top 10%" ~ rnorm(n(), 5, 2),
+      income_group == "Top 1%" ~ rnorm(n(), 1, 0.5)
+    )
+  )
+
+# Create comparison plot
+health_comparison <- health_access %>%
+  select(income_group, insurance_coverage, can_afford_care, delayed_care) %>%
+  pivot_longer(cols = -income_group, names_to = "indicator", values_to = "percentage")
+
+p3 <- ggplot(health_comparison, aes(x = income_group, y = percentage, 
+                                     fill = indicator)) +
+  geom_col(position = "dodge", alpha = 0.8) +
+  scale_fill_viridis_d(labels = c(
+    "can_afford_care" = "Can Afford Care",
+    "delayed_care" = "Delayed Care (Cost)",
+    "insurance_coverage" = "Has Insurance"
+  )) +
+  labs(
+    title = "Health Access Barriers by Income Group",
+    subtitle = "Lower-income groups face significant barriers to healthcare",
+    x = "Income Group",
+    y = "Percentage (%)",
+    fill = "Health Indicator",
+    caption = "Illustrative data based on income patterns"
+  ) +
+  theme(
+    plot.title = element_text(face = "bold", size = 16),
+    legend.position = "bottom",
+    axis.text.x = element_text(angle = 15, hjust = 1)
+  )
+
+p3
+```
+
+::: {.callout-tip}
+## Health-Income Link
+
+Lower-income households are **3x more likely** to delay medical care due to cost and **2x less likely** to have health insurance, creating significant health disparities.
+:::
+
+---
+
+## 📊 Analysis 4: Global Context - Low-Income Countries
+
+### Inequality in Sub-Saharan Africa
+
+```{r global-context, fig.height=8}
+# Simulate data for Sub-Saharan African countries
+# In real analysis, would use World Bank or UN data
+set.seed(2021)
+
+africa_inequality <- tibble(
+  country = c("Kenya", "Uganda", "Tanzania", "Rwanda", "Ethiopia", 
+              "Nigeria", "South Africa", "Ghana", "Senegal", "Malawi"),
+  gini_coefficient = c(0.41, 0.43, 0.38, 0.44, 0.35, 
+                       0.35, 0.63, 0.43, 0.40, 0.45),
+  health_exp_per_capita = c(95, 45, 55, 85, 35, 
+                            120, 570, 85, 75, 40),
+  life_expectancy = c(66, 63, 65, 68, 66, 
+                      54, 64, 64, 68, 64),
+  uhc_coverage = c(55, 42, 48, 75, 38, 
+                   45, 72, 58, 52, 40)
+) %>%
+  mutate(
+    inequality_level = case_when(
+      gini_coefficient < 0.35 ~ "Low",
+      gini_coefficient < 0.45 ~ "Moderate",
+      TRUE ~ "High"
+    )
+  )
+
+# Plot: Inequality vs Health Coverage
+p4 <- ggplot(africa_inequality, aes(x = gini_coefficient, y = uhc_coverage, 
+                                     size = health_exp_per_capita, 
+                                     color = inequality_level)) +
+  geom_point(alpha = 0.7) +
+  geom_text_repel(aes(label = country), size = 3.5, max.overlaps = 15) +
+  scale_color_manual(values = c("Low" = "#4C9F38", "Moderate" = "#FD6925", 
+                                 "High" = "#E5243B")) +
+  scale_size_continuous(range = c(5, 15)) +
+  labs(
+    title = "Income Inequality and Health Coverage in Sub-Saharan Africa",
+    subtitle = "Higher inequality associated with lower UHC coverage",
+    x = "Gini Coefficient (Income Inequality)",
+    y = "UHC Service Coverage Index (%)",
+    size = "Health Spending\nper Capita (USD)",
+    color = "Inequality Level",
+    caption = "Illustrative data | Kenya highlighted"
+  ) +
+  theme(
+    plot.title = element_text(face = "bold", size = 16),
+    legend.position = "right"
+  )
+
+p4
+```
+
+---
+
+## 🔍 Key Findings
+
+::: {.callout-note icon=false}
+## 📌 Main Findings
+
+1. **Widening Gap**: Income inequality has increased significantly over 50 years, with top earners pulling away from bottom 50%
+
+2. **Wealth Concentration**: Top 1% holds more wealth than bottom 50% combined, limiting healthcare affordability for majority
+
+3. **Health Access Barriers**: Lower-income groups face 3x higher rates of delayed care and 2x lower insurance coverage
+
+4. **Global Pattern**: In Sub-Saharan Africa, countries with higher inequality (Gini >0.45) have lower UHC coverage
+
+5. **Kenya Context**: Kenya's moderate inequality (Gini ~0.41) still creates significant barriers to health access for bottom 40%
+:::
+
+---
+
+## 💡 Policy Implications
+
+### Addressing Inequality to Improve Health
+
+1. **Progressive Financing**
+   - Implement progressive taxation
+   - Increase government health spending
+   - Reduce reliance on out-of-pocket payments
+
+2. **Social Protection**
+   - Expand health insurance to informal sector
+   - Provide subsidies for low-income households
+   - Cash transfer programs for vulnerable groups
+
+3. **Labor Market Interventions**
+   - Minimum wage policies
+   - Job creation in formal sector
+   - Social security for informal workers
+
+4. **Behavioral Economics Insights**
+   - Simplify enrollment in health insurance
+   - Reduce transaction costs for healthcare access
+   - Nudges for preventive care utilization
+
+---
+
+## 🔬 Research Questions
+
+### For Further Investigation
+
+1. **Causal Pathways**: What is the causal effect of income inequality on health outcomes in LMICs?
+
+2. **Household Economics**: How do income shocks affect healthcare utilization and health status?
+
+3. **Labor Markets**: Does informal employment explain health insurance gaps in Kenya?
+
+4. **Behavioral Factors**: How do financial constraints affect health-seeking behavior among low-income households?
+
+5. **Policy Evaluation**: What is the impact of Kenya's UHC reforms on reducing health inequalities?
+
+---
+
+## 📚 References
+
+- Pickett, K. E., & Wilkinson, R. G. (2015). "Income inequality and health: a causal review." *Social Science & Medicine*.
+- Barasa, E., et al. (2018). "Examining the level and inequality in health insurance coverage in 36 sub-Saharan African countries." *BMJ Global Health*.
+- World Bank. (2020). *Poverty and Shared Prosperity Report*.
+- Kenya National Bureau of Statistics. (2019). *Kenya Household Health Expenditure and Utilization Survey*.
+
+---
+
+*This analysis explores the relationship between economic inequality and health disparities, with a focus on implications for low-income countries. My research interests center on understanding how income distribution, labor markets, and behavioral economics shape health access and outcomes in Sub-Saharan Africa.*

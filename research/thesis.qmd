@@ -172,35 +172,13 @@ facilities <- facilities %>%
 
 ### **Key Performance Indicators**
 
-```{r kpi-cards, echo=FALSE}
+```{r kpi-cards, echo=FALSE, results='asis'}
 total_facilities <- nrow(facilities)
 total_patients <- sum(facilities$patients)
 avg_control_rate <- mean(facilities$control_rate)
 total_budget <- sum(facilities$budget)
 
-cat(sprintf("
-::: {.stats-container}
-::: {.stat-card}
-**%d**{.stat-number}
-Health Facilities{.stat-label}
-:::
-
-::: {.stat-card}
-**%d**{.stat-number}
-Patients Enrolled{.stat-label}
-:::
-
-::: {.stat-card}
-**%.1f%%**{.stat-number}
-Avg Control Rate{.stat-label}
-:::
-
-::: {.stat-card}
-**KES %s**{.stat-number}
-Total Budget{.stat-label}
-:::
-:::
-", total_facilities, total_patients, avg_control_rate, format(total_budget, big.mark = ",")))
+cat(sprintf("\n::: {.stats-container}\n::: {.stat-card}\n<span class=\"stat-number\">%d</span>\n<span class=\"stat-label\">Health Facilities</span>\n:::\n\n::: {.stat-card}\n<span class=\"stat-number\">%d</span>\n<span class=\"stat-label\">Patients Enrolled</span>\n:::\n\n::: {.stat-card}\n<span class=\"stat-number\">%.1f%%</span>\n<span class=\"stat-label\">Avg Control Rate</span>\n:::\n\n::: {.stat-card}\n<span class=\"stat-number\">KES %s</span>\n<span class=\"stat-label\">Total Budget</span>\n:::\n:::\n\n", total_facilities, total_patients, avg_control_rate, format(total_budget, big.mark = ",")))
 ```
 
 ### **Budget Allocation by Facility Type**

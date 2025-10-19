@@ -1,16 +1,226 @@
 ---
-title: "Tidy Tuesday Analysis"
+title: "TidyTuesday: Data for Good"
+subtitle: "Weekly data visualization projects aligned with UN Sustainable Development Goals"
+author: "Nichodemus Amollo"
+date: "October 19, 2025"
+format:
+  html:
+    toc: true
+    toc-depth: 2
+    code-fold: false
 ---
 
-# Tidy Tuesday Projects
+::: {.hero-banner}
+# 📊 TidyTuesday Projects
 
-Welcome to my Tidy Tuesday analysis collection! Each week, I participate in the Tidy Tuesday challenge, where I analyze different datasets and share my findings. Below are some of the projects I've worked on.
+Welcome to my TidyTuesday collection! Here, I explore datasets focused on **health economics**, **inequalities**, **global health**, **development**, and **climate change** - all aligned with the **UN Sustainable Development Goals (SDGs)**.
 
-## Recent Projects
+My analyses emphasize **health financing**, **economic inequalities**, **labor markets**, and their impact on health access in **low- and middle-income countries**, particularly in **Sub-Saharan Africa**. Each project demonstrates rigorous data analysis, visualization, and policy-relevant insights.
+:::
 
-- [2024-01-02: Analysis on Global Temperature Changes](2024-01-02-analysis.qmd)
-- [2024-01-09: Analysis on Movie Ratings Trends](2024-01-09-analysis.qmd)
-- [2024-01-16: Analysis on World Population Growth](2024-01-16-analysis.qmd)
+---
 
-Feel free to explore each analysis to see the data visualization, statistical methods, and insights drawn from each dataset.
+---
+
+## 🔬 Research Focus
+
+::: {.callout-tip}
+## My Research Interests
+
+My work lies at the intersection of **health economics**, **epidemiology**, and **policy** in low- and middle-income countries. I am particularly interested in:
+
+- **Health Care Financing** & Universal Health Coverage (UHC)
+- **Economic Inequalities** and Health Disparities
+- **Behavioral Economics** in Health Decision-Making
+- **Labor Markets** and Health Outcomes
+- **Household-Level Health Economics**
+
+Drawing on my background in **epidemiology and biostatistics** (MSc, University of Nairobi), I aim to conduct **household-level analyses** that examine the complex relationships between **employment status**, **income security**, and **health-seeking behavior**. My goal is to generate **actionable evidence** for policymakers working toward **universal health coverage** and **financial protection** in resource-constrained settings, with a focus on **Kenya** and **East Africa**.
+:::
+
+---
+
+## 🌍 Featured Projects by Theme
+
+### 💊 Health Economics & Financing
+
+::: {.tile-grid}
+::: {.tile-card}
+::: {.tile-card-header}
+### Health Financing & UHC (2018)
+WHO Life Expectancy
+:::
+::: {.tile-body}
+Spending patterns, outcomes, UHC progress.
+
+[Open →](2018-health-financing-uhc.qmd){.tile-link}
+:::
+:::
+
+::: {.tile-card}
+::: {.tile-card-header}
+### Economic Inequality & Health (2021)
+Wealth & Income
+:::
+::: {.tile-body}
+Income distribution and health access.
+
+[Open →](2021-income-inequality-health.qmd){.tile-link}
+:::
+:::
+
+::: {.tile-card}
+::: {.tile-card-header}
+### Employment, Labor Markets & Health (2021)
+Labor Markets
+:::
+::: {.tile-body}
+Insurance gaps in the informal sector.
+
+[Open →](2021-employment-health.qmd){.tile-link}
+:::
+:::
+:::
+
+---
+
+### 🏥 SDG 3: Good Health and Well-being
+
+::: {.tile-grid}
+::: {.tile-card}
+::: {.tile-card-header}
+### Mental Health in Tech Industry (2016)
+OSMI Tech Survey
+:::
+::: {.tile-body}
+Attitudes, treatment-seeking, workplace support.
+
+[Open →](2023-mental-health.qmd){.tile-link}
+:::
+:::
+
+::: {.tile-card}
+::: {.tile-card-header}
+### Global Mortality Analysis (2018)
+IHME GBD
+:::
+::: {.tile-body}
+Regional disparities, SDG 3.1 progress.
+
+[Open →](2024-maternal-mortality.qmd){.tile-link}
+:::
+:::
+:::
+
+---
+
+### 🌱 SDG 13: Climate Action
+
+::: {.tile-grid}
+::: {.tile-card}
+::: {.tile-card-header}
+### Global Temperature Anomalies (2023)
+NASA GISS
+:::
+::: {.tile-body}
+Historical anomalies; 1.5°C threshold.
+
+[Open →](2024-01-02-analysis.qmd){.tile-link}
+:::
+:::
+
+::: {.tile-card}
+::: {.tile-card-header}
+### Global Energy & CO2 Emissions (2023)
+OWID Energy
+:::
+::: {.tile-body}
+Renewable transition and emissions.
+
+[Open →](2023-co2-emissions.qmd){.tile-link}
+:::
+:::
+:::
+
+---
+
+### 💰 SDG 1: No Poverty
+
+::: {.tile-grid}
+::: {.tile-card}
+::: {.tile-card-header}
+### Human Development Trends (2018)
+UNDP HDI
+:::
+::: {.tile-body}
+Development as a poverty proxy.
+
+[Open →](2023-poverty-trends.qmd){.tile-link}
+:::
+:::
+:::
+
+---
+
+### 🎓 SDG 4: Quality Education
+
+::: {.tile-grid}
+::: {.tile-card}
+::: {.tile-card-header}
+### Global Education Access (2019)
+UNESCO Student-Teacher Ratios
+:::
+::: {.tile-body}
+Education quality indicators and access.
+
+[Open →](2024-education-gender.qmd){.tile-link}
+:::
+:::
+:::
+
+---
+
+## 🛠️ Tools & Technologies
+
+All analyses use:
+
+- **R** (4.3+) and **RStudio**
+- **Tidyverse** ecosystem (`dplyr`, `ggplot2`, `tidyr`, `readr`)
+- **Visualization**: `ggplot2`, `plotly`, `gganimate`, `patchwork`
+- **Spatial data**: `sf`, `rnaturalearth`, `leaflet`
+- **Reproducibility**: `renv`, `here`, `quarto`
+
+---
+
+## 📈 What is TidyTuesday?
+
+[TidyTuesday](https://github.com/rfordatascience/tidytuesday) is a weekly data project in R from the R4DS Online Learning Community. Each Tuesday, a new dataset is released for the community to explore, analyze, and visualize.
+
+**My focus**: Using data analysis and visualization to examine **health economics** and **inequalities** in low-income countries, contributing to **evidence-based policy** for achieving **universal health coverage** and the UN SDGs.
+
+**Research Approach**: I apply **econometric methods**, **causal inference thinking**, and **household-level analysis** to understand how **economic factors** shape health access and outcomes in resource-constrained settings.
+
+---
+
+## 🔗 Connect & Collaborate
+
+- 📧 **Email**: [nichodemuswerre@gmail.com](mailto:nichodemuswerre@gmail.com)
+- 💼 **LinkedIn**: [linkedin.com/in/amollow](https://linkedin.com/in/amollow)
+- 🐙 **GitHub**: [github.com/gondamol](https://github.com/gondamol)
+- 🐦 **Twitter**: [@nwerre](https://twitter.com/nwerre)
+
+---
+
+::: {.callout-note}
+## 📚 Resources
+
+- [TidyTuesday GitHub Repository](https://github.com/rfordatascience/tidytuesday)
+- [UN Sustainable Development Goals](https://sdgs.un.org/goals)
+- [R for Data Science (2e)](https://r4ds.hadley.nz/)
+- [ggplot2 Documentation](https://ggplot2.tidyverse.org/)
+:::
+
+---
+
+[⬅️ Back to Home](../index.qmd)
 

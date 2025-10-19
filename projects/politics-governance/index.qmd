@@ -1,0 +1,134 @@
+---
+title: "Politics & Governance Analytics"
+description: "Elections, governance quality, spending, and participation with Kenya focus and SSA comparisons"
+date: "2025-10-19"
+image: images/politics-governance-preview.jpg
+categories: ["politics", "governance", "kenya", "policy", "economics"]
+execute:
+  enabled: true
+  freeze: auto
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    code-tools: true
+    code-copy: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE, fig.width = 10, fig.height = 6)
+library(tidyverse)
+library(plotly)
+library(DT)
+# optional APIs; fall back to simulated data if unavailable
+wdi_ok <- requireNamespace("WDI", quietly = TRUE)
+```
+
+## 🏛️ Project Overview
+
+This project explores politics and governance indicators with a Kenya focus:
+
+- Elections and civic participation
+- Government spending and public finance
+- Governance quality (Worldwide Governance Indicators)
+- SSA comparisons for context
+
+## 📚 Data Sources
+
+- World Bank: Worldwide Governance Indicators (WGI), Government expenditure
+- V-Dem (Varieties of Democracy): Democratic institutions
+- Afrobarometer: Public opinion and participation
+- Kenya Open Data / IEBC: Elections & turnout
+- TidyTuesday topics: elections, politicians, campaign finance (assorted weeks)
+
+> When live APIs aren’t available during render, this page uses small simulated datasets so the visuals still display.
+
+## 🌍 Governance Indicators (WGI)
+
+```{r wgi}
+if (wdi_ok) {
+  library(WDI)
+  countries <- c("KEN","UGA","TZA","RWA","ETH")
+  wgi_codes <- c(rule_of_law = "RL.EST", gov_eff = "GE.EST", voice = "VA.EST")
+  wgi <- map_dfr(names(wgi_codes), function(nm){
+    code <- wgi_codes[[nm]]
+    WDI(country = countries, indicator = code, start = 2005, end = 2023) %>%
+      as_tibble() %>% mutate(ind = nm)
+  }) %>% rename(value = 3)
+} else {
+  set.seed(1)
+  wgi <- expand.grid(country = c("KEN","UGA","TZA","RWA","ETH"), year = 2005:2023, ind = c("rule_of_law","gov_eff","voice")) %>%
+    as_tibble() %>% mutate(value = rnorm(n(), 0, 0.6))
+}
+
+p <- wgi %>%
+  filter(ind == "gov_eff") %>%
+  mutate(country = factor(country, levels = c("KEN","UGA","TZA","RWA","ETH"))) %>%
+  plot_ly(x = ~year, y = ~value, color = ~country, type = 'scatter', mode = 'lines') %>%
+  layout(title = 'Government Effectiveness (WGI): Kenya vs Region', yaxis = list(title = 'Estimate (Std)'), xaxis = list(title = 'Year'))
+
+p
+```
+
+## 💰 Government Spending
+
+```{r spending}
+if (wdi_ok) {
+  library(WDI)
+  ge <- WDI(country = c("KEN","UGA","TZA","RWA","ETH"), indicator = "NE.CON.GOVT.ZS", start = 2005, end = 2023) %>%
+    as_tibble() %>% rename(gov_spend_gdp = NE.CON.GOVT.ZS)
+} else {
+  set.seed(2)
+  ge <- expand.grid(country = c("KEN","UGA","TZA","RWA","ETH"), year = 2005:2023) %>%
+    as_tibble() %>% mutate(gov_spend_gdp = runif(n(), 10, 30))
+}
+
+plot_ly(ge, x = ~year, y = ~gov_spend_gdp, color = ~country, type = 'scatter', mode = 'lines') %>%
+  layout(title = 'General Government Final Consumption (% of GDP)', yaxis = list(title = '% of GDP'), xaxis = list(title = 'Year'))
+```
+
+## 🧭 V-Dem Democracy Index
+
+```{r vdem}
+# If you place a CSV at projects/politics-governance/data/vdem_kenya_region.csv
+# with columns: country, year, vdem_index (0-1), we'll load it. Otherwise simulate.
+local_path <- 'projects/politics-governance/data/vdem_kenya_region.csv'
+if (file.exists(local_path)) {
+  vdem <- readr::read_csv(local_path, show_col_types = FALSE)
+} else {
+  set.seed(4)
+  vdem <- expand.grid(country = c('KEN','UGA','TZA','RWA','ETH'), year = 1995:2023) %>%
+    as_tibble() %>% mutate(vdem_index = pmax(0, pmin(1, 0.55 + 0.02*(country=='KEN') + 0.003*(year-2005) + rnorm(n(),0,0.06))))
+}
+
+plot_ly(vdem %>% filter(country %in% c('KEN','UGA','TZA','RWA','ETH')),
+        x = ~year, y = ~vdem_index, color = ~country,
+        type = 'scatter', mode = 'lines') %>%
+  layout(title = 'V-Dem Democracy Index: Kenya vs Region',
+         yaxis = list(title = 'Index (0-1)', rangemode = 'tozero'),
+         xaxis = list(title = 'Year'))
+```
+
+## 🗳️ Participation Snapshot (Simulated Example)
+
+```{r participation}
+set.seed(3)
+participation <- tibble(
+  county = c('Nairobi','Kisumu','Kakamega','Mombasa','Homabay','Siaya','Bungoma','Kisii'),
+  turnout_pct = round(runif(8, 45, 80), 1),
+  youth_share = round(runif(8, 30, 60), 1)
+)
+
+DT::datatable(participation, caption = 'Illustrative County Participation Metrics (placeholder)')
+```
+
+## 📌 Next Steps
+
+- Ingest IEBC/Open Data turnout results by county and year
+- Add Budget vs Outcomes: spending vs education/health outcomes
+- Integrate Afrobarometer trust-in-institutions for Kenya vs region
+- Elections timeline with notable events and turnout shifts
+
+---
+
+*Have a dataset you want included here? Send a link and I’ll wire it in.*

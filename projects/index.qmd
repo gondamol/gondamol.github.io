@@ -39,6 +39,18 @@ Robust data systems for clinical trials and research:
 :::
 
 ::: {.skill-category}
+### [🌾 Agriculture & Agribusiness](agriculture/)
+Data-driven agricultural investment analysis:
+- Goat farming economics (Homabay County)
+- Crop viability analysis (Ndhiwa)
+- Climate-resilient agriculture
+- Poultry farming economics
+- Food security analysis
+
+**Focus:** Evidence-based farming in Kenya
+:::
+
+::: {.skill-category}
 ### [📋 Survey Tools](survey-tools.qmd)
 Electronic data capture system design and implementation:
 - National health facility assessments
@@ -48,6 +60,17 @@ Electronic data capture system design and implementation:
 - Patient-reported outcomes systems
 
 **Impact:** 100+ surveys, 50K+ respondents
+:::
+
+::: {.skill-category}
+### [🏛️ Politics & Governance](politics-governance/index.qmd)
+Data and analytics on governance and public policy:
+- Elections and turnout
+- Government spending and budgets
+- Civic engagement & representation
+- Kenya focus with SSA comparisons
+
+**Impact:** Context breadth for policy analysis
 :::
 
 ::: {.skill-category}
@@ -67,104 +90,65 @@ Interactive visualizations for real-time decision making:
 
 ## **Featured Projects**
 
-### **1. MSc Thesis: NCD Financing in Primary Health Facilities**
-
-::: {.project-card}
-::: {.project-header}
-#### 🎓 Exploring Financial Determinants of Effective Hypertension and Diabetes Management
-**Status:** Data Analysis Phase | **Expected:** 2025 | **Social Media Ready:** ✅
+::: {.tile-grid}
+::: {.tile-card}
+::: {.tile-card-header}
+### 🎓 MSc Thesis
+NCD Financing in Primary Care
 :::
+::: {.tile-body}
+30+ facilities, 500+ patients, dashboards & cost-effectiveness.
 
-::: {.project-body}
-Groundbreaking research examining health facility financing and NCD management outcomes in Kisumu County, Kenya.
-
-**Key Components:**
-- 30+ health facilities assessed
-- 500+ patients tracked
-- Interactive dashboard for real-time monitoring
-- Cost-effectiveness analysis
-- Policy recommendations
-
-**Technologies:** R, Shiny, REDCap, SurveyCTO, PostgreSQL, Quarto
-
-**Social Media Highlight:**
-> "My MSc thesis examines how health facility financing affects diabetes and hypertension outcomes in Kenya. Interactive dashboards + rigorous analysis = evidence for better NCD care. #GlobalHealth #NCDs #HealthFinancing"
-
-[View Full Project →](../research/thesis.qmd)
+[View Project →](../research/thesis.qmd){.tile-link}
 :::
 :::
 
----
-
-### **2. Multi-Country HIV Treatment Trial**
-
-::: {.project-card}
-::: {.project-header}
-#### 🔬 Senior Data Manager for Phase III Clinical Trial
-**Duration:** 2019-2023 | **Participants:** 1,200+ | **Sites:** 12
+::: {.tile-card}
+::: {.tile-card-header}
+### 🔬 HIV Treatment Trial
+Senior Data Manager
 :::
+::: {.tile-body}
+1,200+ participants across 12 sites; 99.7% completeness.
 
-::: {.project-body}
-Led data management for a major HIV treatment trial across 4 African countries.
-
-**Achievements:**
-- 99.7% data completeness
-- Zero critical audit findings
-- 500,000+ data points managed
-- Query resolution: 3.2 days average
-
-**Technologies:** REDCap, R, SQL, Python
-
-[View Details →](data-management.qmd)
+[Details →](data-management.qmd){.tile-link}
 :::
 :::
 
----
-
-### **3. National Health Facility Assessment**
-
-::: {.project-card}
-::: {.project-header}
-#### 📱 Large-Scale Mobile Data Collection
-**Scale:** 500+ facilities | **Team:** 50 enumerators
+::: {.tile-card}
+::: {.tile-card-header}
+### 📱 Facility Assessment
+National Health Facilities
 :::
+::: {.tile-body}
+500+ facilities, real-time QC, SurveyCTO workflows.
 
-::: {.project-body}
-Designed and implemented comprehensive facility assessment using mobile data collection.
-
-**Achievements:**
-- 500+ facilities assessed in 6 months
-- 98.7% data completeness
-- 96.3% quality on resurveys
-- Real-time quality monitoring
-
-**Technologies:** SurveyCTO, R, Tableau
-
-[View Details →](survey-tools.qmd)
+[Details →](survey-tools.qmd){.tile-link}
 :::
 :::
 
----
+::: {.tile-card}
+::: {.tile-card-header}
+### 🗺️ Vaccination Equity
+Geospatial Analysis
+:::
+::: {.tile-body}
+Coverage gaps; 35% rural increase via targeted siting.
 
-### **4. COVID-19 Vaccination Equity Analysis**
-
-::: {.project-card}
-::: {.project-header}
-#### 🗺️ Geospatial Analysis for Public Health
-**Impact:** Policy recommendations adopted | **Coverage:** County-wide
+[Details →](health-analytics.qmd){.tile-link}
+:::
 :::
 
-::: {.project-body}
-Identified vaccination coverage gaps using geospatial analysis and demographic data.
+::: {.tile-card}
+::: {.tile-card-header}
+### 🎗️ Cancer Survival (KEMRI)
+KM, CIF, HR, LTFU
+:::
+::: {.tile-body}
+Esophageal & HIV-related cancers; interventions & insights.
 
-**Impact:**
-- 12 underserved areas identified
-- 5 new vaccination sites strategically placed
-- 35% coverage increase in rural areas
-
-**Technologies:** R (sf, leaflet), QGIS, Tableau
-
-[View Details →](health-analytics.qmd)
+[View Analysis →](cancer-survival-analysis/index.qmd){.tile-link}
+:::
 :::
 :::
 
@@ -174,45 +158,45 @@ Identified vaccination coverage gaps using geospatial analysis and demographic d
 
 ::: {.stats-container}
 ::: {.stat-card}
-**50+**{.stat-number}
-Projects Completed{.stat-label}
+<span class="stat-number">50+</span>
+<span class="stat-label">Projects Completed</span>
 :::
 
 ::: {.stat-card}
-**100K+**{.stat-number}
-Patients Impacted{.stat-label}
+<span class="stat-number">100K+</span>
+<span class="stat-label">Patients Impacted</span>
 :::
 
 ::: {.stat-card}
-**500K+**{.stat-number}
-Records Managed{.stat-label}
+<span class="stat-number">500K+</span>
+<span class="stat-label">Records Managed</span>
 :::
 
 ::: {.stat-card}
-**100+**{.stat-number}
-Facilities Served{.stat-label}
+<span class="stat-number">100+</span>
+<span class="stat-label">Facilities Served</span>
 :::
 :::
 
 ::: {.stats-container}
 ::: {.stat-card}
-**99.5%**{.stat-number}
-Average Data Quality{.stat-label}
+<span class="stat-number">99.5%</span>
+<span class="stat-label">Average Data Quality</span>
 :::
 
 ::: {.stat-card}
-**KES 20M+**{.stat-number}
-Cost Savings Identified{.stat-label}
+<span class="stat-number">KES 20M+</span>
+<span class="stat-label">Cost Savings Identified</span>
 :::
 
 ::: {.stat-card}
-**15+**{.stat-number}
-Policy Changes{.stat-label}
+<span class="stat-number">15+</span>
+<span class="stat-label">Policy Changes</span>
 :::
 
 ::: {.stat-card}
-**500+**{.stat-number}
-People Trained{.stat-label}
+<span class="stat-number">500+</span>
+<span class="stat-label">People Trained</span>
 :::
 :::
 

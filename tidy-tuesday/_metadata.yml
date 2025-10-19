@@ -1,0 +1,5 @@
+render:
+  - "*.qmd"
+  - "!docs/"
+  - "!data/"
+  - "!*.R"
