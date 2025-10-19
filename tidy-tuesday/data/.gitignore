@@ -1,0 +1,18 @@
+# Ignore all data files by default
+*.csv
+*.xlsx
+*.xls
+*.rds
+*.rda
+*.RData
+
+# Ignore large files
+*.zip
+*.tar.gz
+
+# But keep README files
+!README.md
+!*/README.md
+
+# Keep small example datasets (optional)
+# !example.csv
