@@ -51,6 +51,7 @@ Growing up **orphaned with limited resources** in rural Kenya, the odds were sta
 **Against all odds, I made it this far.** These experiences didn't just shape my character; they became my greatest professional assets:
 
 **What adversity taught me:**
+
 - **Resilience** - Loss instilled an unshakeable drive to create lasting impact
 - **Resourcefulness** - Scarcity sharpened my problem-solving and innovation skills
 - **Empathy** - Personal struggles deepened my commitment to health equity
@@ -96,6 +97,7 @@ I'm currently completing my **MSc in Epidemiology and Biostatistics** at JOOUST,
 **"Exploring Financial Determinants of Effective Hypertension and Diabetes Management in Primary Health Facilities in Kisumu County"**
 
 This research investigates the critical intersection of health facility financing and NCD management outcomes, employing:
+
 - Mixed-methods case study design
 - Financial assessments of 30+ health facilities
 - Patient outcome tracking (500+ participants)
@@ -161,6 +163,7 @@ Teaching undergraduate and graduate courses in biostatistics and epidemiology, w
 Designing and delivering comprehensive R programming workshops for health researchers. I've trained 200+ participants in data visualization, statistical modeling, and reproducible research practices.
 
 **Workshop Topics:**
+
 - Introduction to R for Health Researchers
 - Data Visualization with ggplot2
 - REDCap for Clinical Trials
@@ -176,11 +179,13 @@ Designing and delivering comprehensive R programming workshops for health resear
 My life experiences taught me that **sustainable impact requires sustainable energy**. I maintain a disciplined approach to wellness—physically, mentally, and professionally:
 
 **Physical Fitness:**
+
 - Workout routine maintaining high energy for demanding projects
 - Mental clarity for complex problem-solving
 - Stress management and work-life balance
 
 **Professional Excellence:**
+
 - Rigorous attention to detail in M&E frameworks
 - Proactive problem-solving in field operations
 - Commitment to capacity building and mentorship
@@ -205,6 +210,7 @@ Beyond data and fitness, I'm passionate about:
 ### 🌟 Personal Philosophy
 
 Living with neuromyelitis optica has profoundly shaped my perspective on life and work. It has:
+
 - Fueled my curiosity about complex health conditions
 - Deepened my empathy for patients in health research
 - Strengthened my resolve to contribute meaningfully to health improvement
@@ -219,6 +225,7 @@ This personal journey informs my professional commitment to health equity and pa
 ### 🎓 PhD Studies
 
 I plan to pursue doctoral studies (starting 2025/2026) focusing on:
+
 - **Statistical methods in clinical trials** - Adaptive designs, Bayesian approaches
 - **Health data interoperability** - Integrating health information systems
 - **R package development** - Creating tools for reproducible health research
@@ -227,12 +234,14 @@ I plan to pursue doctoral studies (starting 2025/2026) focusing on:
 ### 📦 R Package Development
 
 I'm actively developing R packages based on my thesis work:
+
 - **`ncdfinance`** - Tools for analyzing health facility financing for NCDs
 - **`surveyflow`** - Workflow management for survey data collection
 
 ### 🌍 Global Impact
 
 My ultimate goal is to contribute to **global health improvement** through:
+
 - Rigorous, reproducible research
 - Open-source tool development
 - Capacity building in Africa
@@ -259,6 +268,7 @@ My ultimate goal is to contribute to **global health improvement** through:
 ## **Let's Connect**
 
 I'm always interested in connecting with:
+
 - Researchers working on health data challenges
 - Organizations seeking data management expertise
 - Students interested in health data science
@@ -278,6 +288,7 @@ I'm always interested in connecting with:
 ### Open to Opportunities
 
 I am currently **available for remote positions** as a:
+
 - **Research Data Manager** - End-to-end data leadership
 - **Research Data Analyst** - Advanced statistical analysis
 - **Senior M&E Specialist** - Program monitoring & evaluation
