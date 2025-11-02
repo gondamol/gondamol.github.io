@@ -1,0 +1,225 @@
+/*-- scss:defaults --*/
+
+// Color palette
+$primary-color: #2c5282;
+$secondary-color: #667eea;
+$accent-color: #48bb78;
+$warning-color: #ed8936;
+$danger-color: #e53e3e;
+
+$background-color: #ffffff;
+$text-color: #2d3748;
+$heading-color: $primary-color;
+
+// Fonts
+$font-family-sans-serif: 'Inter', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+$presentation-heading-font: 'Poppins', $font-family-sans-serif;
+$presentation-font-size-root: 32px;
+
+/*-- scss:rules --*/
+
+// Overall styling
+.reveal {
+  font-family: $font-family-sans-serif;
+  color: $text-color;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4 {
+  font-family: $presentation-heading-font;
+  color: $heading-color;
+  font-weight: 600;
+}
+
+.reveal h1 {
+  font-size: 2.5em;
+  text-transform: none;
+  margin-bottom: 0.5em;
+}
+
+.reveal h2 {
+  font-size: 1.8em;
+  margin-bottom: 0.3em;
+}
+
+.reveal h3 {
+  font-size: 1.3em;
+  color: $secondary-color;
+}
+
+// Custom callout boxes
+.callout-important {
+  background: linear-gradient(135deg, #fff5f5 0%, #fed7d7 100%);
+  border-left: 5px solid $danger-color;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+  font-size: 1.1em;
+}
+
+.callout-warning {
+  background: linear-gradient(135deg, #fffaf0 0%, #feebc8 100%);
+  border-left: 5px solid $warning-color;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+  font-size: 1.1em;
+}
+
+.callout-success {
+  background: linear-gradient(135deg, #f0fff4 0%, #c6f6d5 100%);
+  border-left: 5px solid $accent-color;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+}
+
+// Tables
+.reveal table {
+  border-collapse: collapse;
+  font-size: 0.8em;
+  margin: 1rem auto;
+}
+
+.reveal table th {
+  background: $secondary-color;
+  color: white;
+  padding: 0.8rem;
+  font-weight: 600;
+}
+
+.reveal table td {
+  padding: 0.6rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.reveal table tr:nth-child(even) {
+  background-color: #f7fafc;
+}
+
+.reveal table tr:hover {
+  background-color: #edf2f7;
+}
+
+// Fragments and animations
+.reveal .fragment.highlight-current-blue.visible {
+  color: $secondary-color;
+  font-weight: 600;
+}
+
+// Columns
+.reveal .columns {
+  display: flex;
+  gap: 2rem;
+}
+
+.reveal .column {
+  flex: 1;
+}
+
+// Lists
+.reveal ul,
+.reveal ol {
+  margin-left: 1.5rem;
+}
+
+.reveal li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+// Code blocks
+.reveal pre {
+  background: #2d3748;
+  border-radius: 8px;
+  padding: 1rem;
+  font-size: 0.7em;
+}
+
+.reveal code {
+  background: #edf2f7;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  color: $danger-color;
+}
+
+// Progress bar
+.reveal .progress {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.reveal .progress span {
+  background: $secondary-color;
+}
+
+// Slide backgrounds
+.reveal section[data-background-color="#f7fafc"] {
+  color: $text-color;
+}
+
+// Links
+.reveal a {
+  color: $secondary-color;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.reveal a:hover {
+  color: $primary-color;
+  text-decoration: underline;
+}
+
+// Footer
+.reveal .footer {
+  font-size: 0.6em;
+  color: #718096;
+}
+
+// Slide numbers
+.reveal .slide-number {
+  background-color: $secondary-color;
+  color: white;
+  font-weight: 600;
+}
+
+// Custom highlight colors
+.highlight-primary {
+  color: $primary-color;
+  font-weight: 600;
+}
+
+.highlight-danger {
+  color: $danger-color;
+  font-weight: 600;
+}
+
+.highlight-success {
+  color: $accent-color;
+  font-weight: 600;
+}
+
+// Smaller text class
+.smaller {
+  font-size: 0.85em;
+}
+
+.smallest {
+  font-size: 0.7em;
+}
+
+// Panel tabs
+.reveal .panel-tabset {
+  margin: 1rem 0;
+}
+
+.reveal .panel-tabset .tab-content {
+  padding: 1rem;
+  background: #f7fafc;
+  border-radius: 0 8px 8px 8px;
+}
+
+
+
+

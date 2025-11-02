@@ -1,0 +1,213 @@
+---
+title: "🚀 Your Ultimate 100-Day Data Analytics Roadmap (FREE Resources Inside!)"
+subtitle: "From Zero to Job-Ready in Just 100 Days - No Prior Experience Required"
+author: "Nichodemus Amollo"
+date: "2025-10-25"
+categories: [Career, Roadmap, Beginners, Data Analytics]
+image: "roadmap.jpg"
+---
+
+## Why Data Analytics? The Career That's Taking Over
+
+Data analytics is one of the **fastest-growing careers** in 2025, with over **2.7 million job openings** globally and an average salary of $75,000-$120,000. Companies are desperate for people who can turn data into decisions.
+
+**The best part?** You don't need a degree in mathematics or computer science to break in!
+
+## Your 100-Day Transformation Plan
+
+### **Days 1-20: Foundation Building** 📚
+
+#### Week 1-2: Excel Mastery
+- **Learn:** Data cleaning, pivot tables, VLOOKUP, conditional formatting
+- **FREE Resources:**
+  - [Microsoft Excel Fundamentals](https://support.microsoft.com/en-us/excel) - Official tutorials
+  - [ExcelJet: 500+ Free Excel Tips](https://exceljet.net/) 
+  - [Chandoo.org Excel School](https://chandoo.org/wp/excel-school/) - Comprehensive free course
+  - [Coursera: Excel Skills for Business](https://www.coursera.org/specializations/excel) - Free to audit
+
+#### Week 3-4: SQL Basics
+- **Learn:** SELECT, WHERE, JOIN, GROUP BY, aggregate functions
+- **FREE Resources:**
+  - [SQLBolt](https://sqlbolt.com/) - Interactive SQL lessons
+  - [W3Schools SQL Tutorial](https://www.w3schools.com/sql/)
+  - [Mode Analytics SQL Tutorial](https://mode.com/sql-tutorial/)
+  - [Khan Academy: Intro to SQL](https://www.khanacademy.org/computing/computer-programming/sql)
+  - [HackerRank SQL Practice](https://www.hackerrank.com/domains/sql)
+
+**💡 Mini Project:** Analyze a sales dataset in Excel, then import it to SQLite and practice queries.
+
+---
+
+### **Days 21-50: Core Analytics Tools** 🛠️
+
+#### Week 5-7: Python for Data Analysis
+- **Learn:** Pandas, NumPy, data cleaning, exploratory data analysis
+- **FREE Resources:**
+  - [Python.org Official Tutorial](https://docs.python.org/3/tutorial/)
+  - [Kaggle Python Course](https://www.kaggle.com/learn/python)
+  - [freeCodeCamp: Data Analysis with Python](https://www.freecodecamp.org/learn/data-analysis-with-python/)
+  - [DataCamp: Intro to Python (Free Chapter)](https://www.datacamp.com/courses/intro-to-python-for-data-science)
+  - [Real Python Tutorials](https://realpython.com/)
+  - [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/) - Free book
+
+#### Week 8-10: Statistics Fundamentals
+- **Learn:** Descriptive stats, probability, hypothesis testing, correlation
+- **FREE Resources:**
+  - [Khan Academy: Statistics & Probability](https://www.khanacademy.org/math/statistics-probability)
+  - [StatQuest with Josh Starmer](https://www.youtube.com/c/joshstarmer) - YouTube
+  - [Statistics by Jim](https://statisticsbyjim.com/) - Blog with clear explanations
+  - [Seeing Theory](https://seeing-theory.brown.edu/) - Visual statistics
+  - [OpenIntro Statistics (Free Textbook)](https://www.openintro.org/book/os/)
+
+**💡 Project:** Build a Python script that analyzes COVID-19 data trends.
+
+---
+
+### **Days 51-70: Data Visualization** 📊
+
+#### Week 11-12: Tableau/Power BI
+- **Learn:** Creating dashboards, charts, maps, storytelling with data
+- **FREE Resources:**
+  - [Tableau Public Free Edition](https://public.tableau.com/en-us/s/)
+  - [Tableau Training Videos](https://www.tableau.com/learn/training)
+  - [Microsoft Power BI Desktop (Free)](https://powerbi.microsoft.com/en-us/desktop/)
+  - [Power BI Guided Learning](https://docs.microsoft.com/en-us/power-bi/guided-learning/)
+  - [Guy in a Cube YouTube](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w)
+
+#### Week 13-14: Python Visualization (Matplotlib, Seaborn)
+- **Learn:** Creating publication-quality visualizations
+- **FREE Resources:**
+  - [Matplotlib Tutorials](https://matplotlib.org/stable/tutorials/index.html)
+  - [Seaborn Tutorial](https://seaborn.pydata.org/tutorial.html)
+  - [Python Graph Gallery](https://python-graph-gallery.com/)
+  - [Plotly Graphing Library](https://plotly.com/python/)
+
+**💡 Project:** Create an interactive dashboard analyzing e-commerce sales data.
+
+---
+
+### **Days 71-85: Advanced Skills** 🎯
+
+#### Week 15-16: Advanced SQL & Database Design
+- **Learn:** Window functions, CTEs, subqueries, optimization
+- **FREE Resources:**
+  - [SQL Window Functions Tutorial](https://mode.com/sql-tutorial/sql-window-functions/)
+  - [PostgreSQL Tutorial](https://www.postgresqltutorial.com/)
+  - [LeetCode Database Questions](https://leetcode.com/problemset/database/)
+  - [Advanced SQL on DataCamp (Free trial)](https://www.datacamp.com/)
+
+#### Week 17: Introduction to Machine Learning
+- **Learn:** Regression, classification basics, model evaluation
+- **FREE Resources:**
+  - [Google's Machine Learning Crash Course](https://developers.google.com/machine-learning/crash-course)
+  - [Scikit-learn Documentation](https://scikit-learn.org/stable/tutorial/index.html)
+  - [Andrew Ng's Machine Learning Course (Coursera)](https://www.coursera.org/learn/machine-learning) - Free to audit
+  - [Fast.ai Practical Deep Learning](https://course.fast.ai/)
+
+**💡 Project:** Build a predictive model for customer churn.
+
+---
+
+### **Days 86-100: Portfolio & Job Prep** 💼
+
+#### Week 18-19: Build Your Portfolio
+- **Create 3-5 End-to-End Projects:**
+  1. Sales Analysis Dashboard
+  2. Customer Segmentation Study
+  3. A/B Testing Analysis
+  4. Predictive Model Project
+  5. Social Media Analytics Project
+
+- **Portfolio Hosting:**
+  - [GitHub Pages](https://pages.github.com/) - Free hosting
+  - [Kaggle Notebooks](https://www.kaggle.com/) - Show your work
+  - [Tableau Public](https://public.tableau.com/) - Share dashboards
+  - [Medium](https://medium.com/) - Write about your projects
+
+#### Week 20: Interview Preparation
+- **Resources:**
+  - [StrataScratch](https://www.stratascratch.com/) - Practice SQL/Python interviews
+  - [Glassdoor Interview Questions](https://www.glassdoor.com/)
+  - [LeetCode](https://leetcode.com/) - Coding practice
+  - [DataLemur](https://datalemur.com/) - Data analytics interview prep
+  - [Interview Query](https://www.interviewquery.com/) - Practice problems
+
+**💡 Final Project:** Create a capstone project that showcases all your skills.
+
+---
+
+## Essential Free Datasets for Practice
+
+1. **[Kaggle Datasets](https://www.kaggle.com/datasets)** - Thousands of real-world datasets
+2. **[UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/index.php)** - Classic datasets
+3. **[Data.gov](https://www.data.gov/)** - US government data
+4. **[Google Dataset Search](https://datasetsearch.research.google.com/)** - Find any dataset
+5. **[FiveThirtyEight Data](https://data.fivethirtyeight.com/)** - Fun, newsworthy datasets
+6. **[World Bank Open Data](https://data.worldbank.org/)** - Global development data
+7. **[Our World in Data](https://ourworldindata.org/)** - Research and data
+8. **[TidyTuesday](https://github.com/rfordatascience/tidytuesday)** - Weekly data challenges
+
+---
+
+## Daily Study Schedule
+
+**Weekdays (2-3 hours/day):**
+- 1 hour: Learning (videos, reading, tutorials)
+- 1-2 hours: Hands-on practice (coding, analysis)
+
+**Weekends (4-5 hours/day):**
+- Project work and portfolio building
+
+**Total Time Investment:** 200-250 hours over 100 days
+
+---
+
+## Free Communities to Join
+
+1. **[r/dataanalysis](https://www.reddit.com/r/dataanalysis/)** - Reddit community
+2. **[Kaggle Forums](https://www.kaggle.com/discussions)** - Active data science community
+3. **[DataTalks.Club](https://datatalks.club/)** - Free bootcamps and projects
+4. **[LinkedIn Groups](https://www.linkedin.com/)** - Search for "Data Analytics"
+5. **[Discord Communities](https://discord.com/)** - Search for data analytics servers
+6. **[Data Science Stack Exchange](https://datascience.stackexchange.com/)** - Q&A
+
+---
+
+## Success Tips from Someone Who Made It 🎯
+
+1. **Consistency > Intensity:** 2 hours daily beats 14 hours on Sunday
+2. **Project-First Learning:** Learn by building, not just watching
+3. **Document Everything:** Write blog posts about what you learn
+4. **Network Actively:** Comment, contribute, connect
+5. **Don't Get Stuck:** If you're stuck for 30+ minutes, ask for help
+6. **Apply Early:** Don't wait to be "ready" - apply at day 80
+
+---
+
+## Next Steps
+
+🔗 **[Download the Full 100-Day Excel Tracker](https://github.com/gondamol)** - Track your progress daily
+
+📧 **Join my weekly newsletter** for more free resources and job opportunities
+
+🎯 **[Check out my portfolio projects](../projects/)** for inspiration
+
+---
+
+## Final Motivation
+
+I started exactly where you are. No CS degree, no math background, just curiosity and determination. Today, I manage multi-million dollar research projects and lead data teams.
+
+**Your 100 days start TODAY. Not tomorrow. TODAY.**
+
+Comment below with "I'm starting!" to commit publicly. Studies show public commitments increase success rates by 65%.
+
+---
+
+**Related Posts:**
+- [Master SQL in 30 Days](#) _(Coming Soon)_
+- [Build Your First Dashboard](#) _(Coming Soon)_
+- [Data Analytics Portfolio Examples](#) _(Coming Soon)_
+
+**Tags:** #DataAnalytics #Career #Python #SQL #Tableau #FreeResources #100DaysOfCode
+

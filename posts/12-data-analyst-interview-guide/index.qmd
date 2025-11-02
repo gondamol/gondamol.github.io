@@ -1,0 +1,418 @@
+---
+title: "Ace Your Data Analyst Interview: 50+ Questions with Perfect Answers"
+subtitle: "Everything You Need to Land Your First (or Next) Data Analyst Role"
+author: "Nichodemus Amollo"
+date: "2025-10-14"
+categories: [Interview, Career, Guide]
+image: "interview.jpg"
+---
+
+## The 4 Types of Data Analyst Interview Questions
+
+1. **Technical Skills** (SQL, Python, Statistics)
+2. **Business Acumen** (Understanding metrics, making decisions)
+3. **Behavioral** (Past experiences, teamwork)
+4. **Case Studies** (Live problem-solving)
+
+---
+
+## SQL Interview Questions
+
+### **Q1: What's the difference between WHERE and HAVING?**
+
+**Answer:**
+- **WHERE:** Filters rows BEFORE grouping
+- **HAVING:** Filters groups AFTER aggregation
+
+**Example:**
+```sql
+-- WHERE filters individual rows
+SELECT department, AVG(salary)
+FROM employees
+WHERE salary > 50000  -- Filter individuals
+GROUP BY department;
+
+-- HAVING filters aggregated results
+SELECT department, AVG(salary) as avg_salary
+FROM employees
+GROUP BY department
+HAVING AVG(salary) > 70000;  -- Filter groups
+```
+
+---
+
+### **Q2: Explain different types of JOINs**
+
+**Answer:**
+- **INNER JOIN:** Only matching rows from both tables
+- **LEFT JOIN:** All from left table + matches from right
+- **RIGHT JOIN:** All from right table + matches from left  
+- **FULL OUTER JOIN:** All rows from both tables
+
+**When to use:**
+- INNER: Find customers who placed orders
+- LEFT: Find all customers (including those with no orders)
+- FULL OUTER: Rarely used, mostly for data audits
+
+---
+
+### **Q3: Write a query to find the 2nd highest salary**
+
+**Answer:**
+```sql
+-- Method 1: Using LIMIT/OFFSET
+SELECT DISTINCT salary
+FROM employees
+ORDER BY salary DESC
+LIMIT 1 OFFSET 1;
+
+-- Method 2: Using subquery
+SELECT MAX(salary)
+FROM employees
+WHERE salary < (SELECT MAX(salary) FROM employees);
+
+-- Method 3: Using window function (best)
+SELECT DISTINCT salary
+FROM (
+    SELECT salary, DENSE_RANK() OVER (ORDER BY salary DESC) as rnk
+    FROM employees
+) ranked
+WHERE rnk = 2;
+```
+
+---
+
+## Python Interview Questions
+
+### **Q4: What's the difference between a list and a tuple?**
+
+**Answer:**
+- **List:** Mutable (can change), uses `[]`
+- **Tuple:** Immutable (cannot change), uses `()`
+
+**Example:**
+```python
+# List - can modify
+my_list = [1, 2, 3]
+my_list[0] = 10  # Works
+
+# Tuple - cannot modify  
+my_tuple = (1, 2, 3)
+my_tuple[0] = 10  # Error!
+
+# When to use tuple:
+# - Fixed data (days of week, coordinates)
+# - Dictionary keys (must be immutable)
+# - Faster than lists
+```
+
+---
+
+### **Q5: Explain how you would remove duplicates from a pandas DataFrame**
+
+**Answer:**
+```python
+import pandas as pd
+
+# Remove all duplicates
+df_clean = df.drop_duplicates()
+
+# Remove duplicates based on specific columns
+df_clean = df.drop_duplicates(subset=['customer_id'])
+
+# Keep last occurrence instead of first
+df_clean = df.drop_duplicates(keep='last')
+
+# Before removal, check how many
+print(f"Duplicates: {df.duplicated().sum()}")
+```
+
+---
+
+## Statistics Interview Questions
+
+### **Q6: Explain p-value in simple terms**
+
+**Answer:**
+"A p-value is the probability of observing results at least as extreme as what we got, if there really is no effect.
+
+Example: We test a new ad campaign. P-value = 0.03 means there's only a 3% chance these results happened by random luck if the campaign doesn't actually work.
+
+Since 3% is less than our threshold (usually 5%), we conclude the campaign likely does work."
+
+---
+
+### **Q7: When would you use median instead of mean?**
+
+**Answer:**
+"Use median when data is skewed or has outliers, because median isn't affected by extreme values.
+
+**Example:**
+House prices in a neighborhood:
+- $200K, $210K, $205K, $215K, $5M (celebrity's house)
+- Mean: $967K (misleading!)
+- Median: $210K (representative)
+
+**Use cases:** Salaries, house prices, customer spending"
+
+---
+
+### **Q8: What's the difference between Type I and Type II error?**
+
+**Answer:**
+- **Type I (False Positive):** Saying there's an effect when there isn't
+- **Type II (False Negative):** Missing a real effect
+
+**Medical Test Analogy:**
+- Type I: Test says you're sick, but you're healthy
+- Type II: Test says you're healthy, but you're sick
+
+**Business Example:**
+- Type I: Launching a useless feature thinking it's good
+- Type II: Rejecting a good feature thinking it's useless"
+
+---
+
+## Business/Product Questions
+
+### **Q9: How would you measure the success of Facebook's News Feed?**
+
+**Answer structure:**
+1. **Clarify goal:** User engagement, revenue, user growth?
+2. **Define metrics:**
+   - **Primary:** Daily Active Users (DAU), Time Spent
+   - **Secondary:** Posts viewed, likes, comments, shares
+   - **Guardrail:** User retention, complaints
+3. **Tradeoffs:** More engagement vs. user well-being
+4. **How to measure:** A/B testing, user surveys
+
+---
+
+### **Q10: Our website traffic is down 20% this week. How would you investigate?**
+
+**Answer (systematic approach):**
+
+**1. Validate the data:**
+- Is tracking working correctly?
+- Any recent code changes?
+- Compare multiple data sources
+
+**2. Segment the drop:**
+- Which pages?
+- Which traffic sources (organic, paid, direct)?
+- Which devices (mobile, desktop)?
+- Which countries/regions?
+
+**3. Check external factors:**
+- Holidays or weekends?
+- Competitor campaigns?
+- Industry trends?
+- Technical issues (site speed, downtime)?
+
+**4. Correlate with changes:**
+- Recent marketing campaigns ended?
+- SEO ranking changes?
+- Price changes?
+- Site redesign?
+
+**5. Recommend action** based on findings
+
+---
+
+## Technical Case Study
+
+### **Q11: Design a dashboard for an e-commerce company**
+
+**Answer structure:**
+
+**1. Understand stakeholders:**
+- CEO: Revenue, growth metrics
+- Marketing: Traffic, conversion, CAC
+- Operations: Orders, inventory, fulfillment
+
+**2. Key metrics:**
+- **Revenue metrics:** Total revenue, AOV, revenue by category
+- **Traffic metrics:** Visits, unique visitors, traffic sources
+- **Conversion:** Conversion rate, cart abandonment
+- **Customer:** New vs. returning, LTV, retention
+
+**3. Dashboard design:**
+```
++------------------+------------------+
+|  Total Revenue   |  Total Orders    |
+|   $1.2M          |    15,234        |
++------------------+------------------+
+|    Revenue Trend Over Time          |
+|         (Line chart)                |
++-------------------------------------+
+| Top Products     | Traffic Sources  |
+| (Bar chart)      | (Pie chart)      |
++------------------+------------------+
+```
+
+**4. Interactivity:**
+- Date range filter
+- Category selector
+- Drill-down capabilities
+
+---
+
+## Behavioral Questions
+
+### **Q12: Tell me about a time you made a mistake in your analysis**
+
+**Answer using STAR method:**
+
+**Situation:** "In my previous role, I was analyzing customer churn..."
+
+**Task:** "I needed to calculate monthly retention rate..."
+
+**Action:** "I initially calculated retention incorrectly by [specific error]. When my manager questioned the numbers, I realized my mistake. I immediately:
+1. Acknowledged the error
+2. Redid the analysis correctly
+3. Documented the issue to prevent future mistakes
+4. Created a checklist for similar analyses"
+
+**Result:** "The correct analysis showed retention was actually 5% lower than reported, which led to earlier intervention and prevented further losses. I learned to always have someone peer-review my work and to create validation checks."
+
+---
+
+### **Q13: Describe a time you had to explain technical results to non-technical stakeholders**
+
+**Answer:**
+"I once needed to present a machine learning model's churn prediction to the CEO.
+
+**Challenge:** CEO wanted to know 'how it works' but had no ML background.
+
+**Approach:**
+1. Used analogy: 'Like how Netflix recommends shows based on similar users, our model predicts churn based on patterns from past churners'
+2. Showed business impact first: '85% accuracy means we can save $500K annually'
+3. Used visualizations instead of math
+4. Prepared for 'what if' questions with interactive dashboard
+
+**Result:** Got approval to implement, and CEO became advocate for data-driven decisions."
+
+---
+
+## Live Case Study Tips
+
+### **Q14: You're given a dataset and asked to find insights (30 minutes)**
+
+**Approach (spend time wisely):**
+
+**Minutes 0-5: Understand the data**
+```python
+import pandas as pd
+
+df = pd.read_csv('data.csv')
+
+# Quick checks
+print(df.info())
+print(df.describe())
+print(df.head())
+print(df.isnull().sum())
+```
+
+**Minutes 5-10: Clean data**
+```python
+# Handle missing values
+# Remove duplicates
+# Fix data types
+```
+
+**Minutes 10-20: Explore & visualize**
+```python
+# Key distributions
+# Correlations
+# Trends over time
+# Comparisons across categories
+```
+
+**Minutes 20-25: Find 3 insights**
+- Make them specific and actionable
+- Quantify the impact
+
+**Minutes 25-30: Prepare presentation**
+- 1 slide per insight
+- Visualization + interpretation + recommendation
+
+---
+
+## Questions to Ask the Interviewer
+
+**About the Role:**
+1. "What does a typical day look like?"
+2. "What tools and tech stack does the team use?"
+3. "What are the biggest data challenges you're facing?"
+4. "How do you measure success for this role?"
+
+**About the Team:**
+5. "How large is the data team?"
+6. "What's the team's background (technical vs. business)?"
+7. "How does the team collaborate with other departments?"
+
+**About Growth:**
+8. "What opportunities are there for professional development?"
+9. "What skills should I develop to advance?"
+
+**About the Company:**
+10. "How does the company use data to make decisions?"
+11. "What's the company's biggest priority right now?"
+
+---
+
+## Interview Preparation Checklist
+
+**1 Week Before:**
+- [ ] Research company (products, mission, recent news)
+- [ ] Review job description
+- [ ] Prepare STAR stories (5-7 examples)
+- [ ] Practice SQL on [StrataScratch](https://www.stratascratch.com/)
+- [ ] Refresh statistics concepts
+- [ ] Review your portfolio projects
+
+**1 Day Before:**
+- [ ] Review common interview questions
+- [ ] Prepare questions to ask
+- [ ] Test tech setup (if remote)
+- [ ] Prepare notebook and pen
+
+**Day Of:**
+- [ ] Arrive 10 minutes early
+- [ ] Bring copies of resume
+- [ ] Bring portfolio (printed or tablet)
+
+---
+
+## FREE Interview Prep Resources
+
+1. **[StrataScratch](https://www.stratascratch.com/)** - Real interview questions
+2. **[DataLemur](https://datalemur.com/)** - Company-specific SQL questions
+3. **[Interview Query](https://www.interviewquery.com/)** - Practice problems
+4. **[Glassdoor](https://www.glassdoor.com/)** - Company interview reviews
+5. **[LeetCode Database](https://leetcode.com/problemset/database/)** - SQL practice
+
+---
+
+## Mock Interview (Do This!)
+
+**Find a partner or use [Pramp](https://www.pramp.com/):**
+1. Take turns being interviewer
+2. Practice answering out loud
+3. Time yourself
+4. Get feedback
+
+**Record yourself:**
+- Video yourself answering questions
+- Watch for nervous habits
+- Improve clarity and confidence
+
+---
+
+**Related Posts:**
+- [Build a Portfolio That Gets You Hired](../06-portfolio-that-gets-hired/)
+- [Master SQL in 30 Days](../03-sql-mastery/)
+- [Statistics for Data Analysts](../07-statistics-for-analysts/)
+
+**Tags:** #Interview #Career #DataAnalyst #JobSearch #Preparation #SQL
+

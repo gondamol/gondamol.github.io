@@ -1,8 +1,40 @@
+# Quarto
+/.quarto/
+/_site/
+/_freeze/
+
+# R
 .Rproj.user
 .Rhistory
 .RData
 .Ruserdata
+renv/library/
+renv/staging/
 
-/.quarto/
-/_site/
-.github-pages-refresh
+# Documentation files (keep local only)
+AUTHENTIC_PROJECT_DETAILS.md
+DEPLOYMENT_GUIDE.md
+FINAL_SESSION_SUMMARY.md
+PORTFOLIO_EXPANSION_PLAN.md
+PROGRESS_REPORT_OCT19.md
+QUICK_DEPLOY.md
+QUICK_START_CHECKLIST.md
+SESSION_SUMMARY_OCT19.md
+
+# Backup files
+*.backup
+*.bak
+*-OLD.*
+*-BACKUP.*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.log

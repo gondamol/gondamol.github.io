@@ -1,0 +1,258 @@
+---
+title: "Your First 90 Days as a Data Analyst: Survival Guide (From Someone Who's Been There)"
+subtitle: "What They Don't Tell You About Your First Data Analytics Job"
+author: "Nichodemus Amollo"
+date: "2025-10-06"
+categories: [Career, First Job, Advice]
+image: "first-job.jpg"
+---
+
+## The Reality Check
+
+**What you expected:**
+- Building cool ML models
+- Creating beautiful dashboards
+- Impressing everyone with insights
+
+**The reality:**
+- 60% cleaning messy data
+- 30% meetings and explaining basic concepts
+- 10% actual analysis
+
+**And that's okay!** Every data analyst goes through this.
+
+---
+
+## Week 1-2: Onboarding
+
+**Your mission:** Learn the business, not just the tools.
+
+**Do this:**
+- [ ] Schedule 1:1s with key stakeholders
+- [ ] Ask for access to all data sources
+- [ ] Review past reports and dashboards
+- [ ] Document everything in a personal wiki
+- [ ] Ask "stupid" questions (no question is stupid)
+
+**Don't do this:**
+- ❌ Try to impress with complex analysis immediately
+- ❌ Criticize existing work
+- ❌ Say "this is easy" about anything
+
+**Key questions to ask:**
+1. "What are our top 3 business metrics?"
+2. "What data sources do we use?"
+3. "Who are the main stakeholders?"
+4. "What are the biggest data challenges?"
+5. "What does success look like in this role?"
+
+---
+
+## Week 3-4: Quick Wins
+
+**Find one small problem and solve it well.**
+
+**Good first projects:**
+- Automate a manual report
+- Fix a broken dashboard
+- Clean up a messy dataset
+- Document an undocumented process
+
+**Bad first projects:**
+- Rebuild entire data warehouse
+- Implement ML from scratch
+- Question executive strategy
+
+---
+
+## Month 2-3: Build Relationships
+
+**Success in data = 50% technical + 50% relationships**
+
+**Build alliances with:**
+- Business stakeholders (understand their pain)
+- Engineers (they control data access)
+- Other analysts (learn from them)
+- Your manager (set clear expectations)
+
+**How to build trust:**
+1. Deliver on time, every time
+2. Communicate proactively
+3. Admit when you don't know
+4. Show business impact, not just technical prowess
+5. Make others look good
+
+---
+
+## Common Mistakes (Avoid These!)
+
+### **Mistake 1: Perfectionism**
+**Bad:** Spending 2 weeks on perfect analysis  
+**Good:** Ship 80% solution in 3 days, iterate
+
+### **Mistake 2: Jargon Overload**
+**Bad:** "The multivariate regression shows heteroscedasticity"  
+**Good:** "Sales are more unpredictable in certain regions"
+
+### **Mistake 3: Analysis Paralysis**
+**Bad:** "I need more data before deciding"  
+**Good:** "Based on what we have, here's my recommendation"
+
+### **Mistake 4: Not Asking for Help**
+**Bad:** Struggling alone for days  
+**Good:** Ask after 30 minutes of trying
+
+### **Mistake 5: Over-promising**
+**Bad:** "I can have this done by tomorrow"  
+**Good:** "I'll need 3 days, but can give you preliminary findings tomorrow"
+
+---
+
+## Essential Skills for First 90 Days
+
+**Technical (you probably know these):**
+- SQL
+- Excel
+- Python/R
+- Tableau/Power BI
+
+**Soft skills (you probably underestimate these):**
+- Translating business questions into data questions
+- Presenting to non-technical audiences
+- Managing stakeholder expectations
+- Prioritizing requests
+- Saying "no" diplomatically
+
+---
+
+## How to Handle Common Situations
+
+### **"Can you pull this data real quick?"**
+**Don't:** Drop everything and do it  
+**Do:** "I can get this to you by [realistic time]. Is that okay? I'm currently working on [priority task]."
+
+### **"Why don't we have this data?"**
+**Don't:** Blame IT/engineering  
+**Do:** "Great question! Let me look into what it would take to collect this. In the meantime, here's similar data we do have..."
+
+### **"This dashboard is wrong!"**
+**Don't:** Get defensive  
+**Do:** "Thanks for catching this! Can you show me what you're seeing? Let me investigate and get back to you by [time]."
+
+### **"Make the numbers look better"**
+**Don't:** Manipulate data  
+**Do:** "I can show different views of the data, but the underlying numbers are what they are. Here are some positive angles we can highlight..."
+
+---
+
+## Your 30-60-90 Day Goals
+
+**Day 30:**
+- [ ] Understand business and key metrics
+- [ ] Complete 2-3 small projects
+- [ ] Built relationships with key stakeholders
+- [ ] Documented common processes
+
+**Day 60:**
+- [ ] Delivered one impactful project
+- [ ] Proactive analysis (not just reactive)
+- [ ] Identified process improvements
+- [ ] Comfortable with all data sources
+
+**Day 90:**
+- [ ] Seen as reliable team member
+- [ ] Driving 1-2 strategic initiatives
+- [ ] Mentoring newer team members
+- [ ] Planning next career step
+
+---
+
+## What Good Performance Looks Like
+
+**Your manager cares about:**
+1. **Reliability:** Do you deliver on time?
+2. **Quality:** Is your work accurate?
+3. **Communication:** Do stakeholders understand you?
+4. **Initiative:** Do you find problems to solve?
+5. **Growth:** Are you learning and improving?
+
+**NOT:**
+- How many models you built
+- How complex your code is
+- How many tools you know
+
+---
+
+## Red Flags to Watch For
+
+**Company red flags:**
+- No clear data strategy
+- Analysts treated as report monkeys
+- Data quality is terrible and nobody cares
+- No investment in tools/training
+- Stakeholders ignore all analysis
+
+**If you see these, start planning exit in 12-18 months**
+
+---
+
+## Resources for Success
+
+**Read these books:**
+1. "The First 90 Days" - Michael Watkins
+2. "Storytelling with Data" - Cole Nussbaumer Knaflic
+3. "How to Win Friends and Influence People" - Dale Carnegie
+
+**Follow these communities:**
+- r/datascience
+- r/businessintelligence
+- DataTalks.Club Slack
+
+**Find a mentor:**
+- Internal: Senior analyst on your team
+- External: LinkedIn connections, online communities
+
+---
+
+## Take Care of Yourself
+
+**Avoid burnout:**
+- Set boundaries (no 10pm Slack messages)
+- Take lunch breaks
+- Use your PTO
+- Exercise and sleep
+- Have life outside work
+
+**Remember:** This is a marathon, not a sprint.
+
+---
+
+## Final Advice
+
+**From someone 8 years in:**
+
+1. **You'll feel like an impostor.** Everyone does. It goes away after ~6 months.
+
+2. **Business context > technical skills.** Understanding why matters more than how.
+
+3. **Your value is insights, not code.** Nobody cares about your beautiful code if it doesn't drive decisions.
+
+4. **Build relationships early.** They'll save you later.
+
+5. **Document everything.** Your future self will thank you.
+
+6. **Be patient with yourself.** You're learning a job AND a business.
+
+**You've got this!** 
+
+Welcome to the data analytics family. 🎉
+
+---
+
+**Related Posts:**
+- [Ace Your Data Analyst Interview](../12-data-analyst-interview-guide/)
+- [Land a Remote Data Analyst Job](../13-remote-data-analyst-jobs/)
+- [LinkedIn for Data Analysts](../18-linkedin-for-data-analysts/)
+
+**Tags:** #Career #FirstJob #DataAnalyst #Advice #NewGrad #CareerDevelopment
+

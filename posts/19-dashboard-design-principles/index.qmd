@@ -1,0 +1,75 @@
+---
+title: "Dashboard Design: 10 Principles That Separate Amateur from Professional"
+subtitle: "Stop Making Dashboards Nobody Uses - Design for Impact"
+author: "Nichodemus Amollo"
+date: "2025-10-07"
+categories: [Dashboard, Design, Best Practices]
+image: "dashboard.jpg"
+---
+
+## The 10 Principles
+
+### **1. Most Important Metric Top-Left**
+Western readers scan top-left first. Put your key metric there.
+
+### **2. Maximum 5-7 Visuals**
+More = cognitive overload. If you need more, create multiple pages.
+
+### **3. Tell a Story**
+Don't just show data. Guide users through insights.
+
+### **4. Use Consistent Colors**
+- Green = positive/up
+- Red = negative/down
+- Blue = neutral
+- Gray = reference
+
+### **5. Direct Labels > Legends**
+Label your data points directly instead of forcing users to look at legends.
+
+### **6. Remove Chartjunk**
+Delete gridlines, borders, and unnecessary decorations.
+
+### **7. Make It Actionable**
+Every dashboard should answer "So what should I do?"
+
+### **8. Design for Your Audience**
+- CEO: High-level KPIs only
+- Manager: Trends and comparisons
+- Analyst: Drill-down capabilities
+
+### **9. Test on Mobile**
+60% of dashboards are viewed on tablets/phones.
+
+### **10. Update Data Automatically**
+Manual updates = dashboard death.
+
+---
+
+## Dashboard Structure Template
+
+```
++---------------------------+
+|     KEY METRIC            |
+|    (Big Number)           |
++---------------------------+
+|                           |
+|    Main Trend Chart       |
+|    (Line/Bar)             |
+|                           |
++------------+--------------+
+| Supporting | Supporting   |
+| Visual 1   | Visual 2     |
++------------+--------------+
+| Filter Panel              |
++---------------------------+
+```
+
+---
+
+**Related Posts:**
+- [Data Visualization Mastery](../04-data-visualization-guide/)
+- [Tableau vs Power BI](../14-tableau-vs-power-bi/)
+
+**Tags:** #Dashboard #Design #DataVisualization #BestPractices #UX
+

@@ -1,0 +1,348 @@
+---
+title: "Software & Package Development"
+subtitle: "Building Tools for Data Collection & Analysis"
+page-layout: article
+---
+
+::: {.hero-banner}
+# **Open Source Contributions & Package Development**
+
+Creating tools that make data collection and analysis more accessible, especially for researchers in Africa.
+:::
+
+---
+
+## **🚀 Current Projects**
+
+### **surveyKE: Advanced Survey Tools for Kenya & Africa** {.highlight-box}
+
+::: {style="margin: 2rem 0;"}
+**Status:** 🔨 In Development  
+**GitHub:** [github.com/gondamol/surveyKE](https://github.com/gondamol/surveyKE) *(Coming Soon)*  
+**License:** MIT
+
+**Inspired by:** [surveydown](https://github.com/surveydown-dev/surveydown) - but designed specifically for African research contexts
+:::
+
+#### **The Vision**
+
+surveyKE is an R package designed to simplify survey design, implementation, and data management for researchers working in Kenya and across Africa. It addresses unique challenges faced in low-resource settings.
+
+#### **Key Features** {.info-box}
+
+**1. Advanced Skip Logic**
+- Complex conditional branching
+- Nested logic without coding complexity
+- Visual logic builder for non-programmers
+- Support for multi-level household surveys
+
+**2. Robust Validation**
+- Real-time data validation
+- Context-aware checks (e.g., Kenya ID validation)
+- Geographic validation (county, sub-county codes)
+- Mobile number formats (Safaricom, Airtel, etc.)
+- M-PESA transaction validation
+
+**3. Offline-First Design**
+- Works without internet connection
+- Auto-sync when connectivity returns
+- Local data storage with encryption
+- Ideal for rural field work
+
+**4. Multi-Language Support**
+- English, Swahili, and local languages
+- Easy translation workflow
+- Language switching mid-survey
+- Audio questions for low-literacy contexts
+
+**5. Mobile-Optimized**
+- Responsive design for all devices
+- Touch-friendly interfaces
+- Low data consumption
+- Works on basic smartphones
+
+**6. Integration with Popular Tools**
+- Export to ODK, SurveyCTO, REDCap
+- Direct connection to R analysis pipelines
+- Shiny dashboard generation
+- Automated reporting
+
+#### **Why surveyKE?** {.success-box}
+
+**Existing tools like surveydown are excellent but:**
+- Often require strong internet connectivity
+- May not handle African context validations (ID formats, phone numbers, geographic codes)
+- Can be complex for teams with limited programming experience
+- Don't always work well offline
+
+**surveyKE aims to be:**
+- **Simpler** - Drag-and-drop interface with code export
+- **Context-aware** - Built for African data collection realities
+- **Robust** - Advanced validation and error handling
+- **Offline-capable** - Essential for rural field work
+- **Cost-effective** - Open source, no licensing fees
+
+---
+
+## **Technical Specifications**
+
+### **Core Technologies**
+
+::: {style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin: 2rem 0;"}
+
+::: {.project-card}
+**Backend**
+- R (shiny, golem framework)
+- SQLite/PostgreSQL
+- RESTful API design
+:::
+
+::: {.project-card}
+**Frontend**
+- JavaScript (ES6+)
+- Bootstrap 5
+- Progressive Web App (PWA)
+:::
+
+::: {.project-card}
+**Validation**
+- Custom R validation engine
+- JSON schema validation
+- Geographic lookup tables
+:::
+
+::: {.project-card}
+**Data Storage**
+- Encrypted local storage
+- Cloud sync (optional)
+- Export formats: CSV, SPSS, Stata
+:::
+
+:::
+
+---
+
+## **Example Use Cases**
+
+### **1. Health Financial Diaries** {.project-card}
+
+```r
+library(surveyKE)
+
+# Create a financial diary survey with automatic skip logic
+diary <- survey_ke(
+  title = "Health Financial Diary",
+  language = c("en", "sw"),
+  offline = TRUE
+) %>%
+  add_section("Daily Income",
+    questions = list(
+      q_income("income_today", "How much did you earn today?"),
+      q_source("income_source", "What was the source?", 
+               skip_if = "income_today == 0")
+    )
+  ) %>%
+  add_section("Health Expenditure",
+    questions = list(
+      q_health_spend("health_cost", "Any health spending today?"),
+      q_reason("health_reason", "What was it for?",
+               skip_if = "health_cost == 0"),
+      q_coping("coping_strategy", "How did you pay?",
+               show_if = "health_cost > 1000")
+    )
+  ) %>%
+  add_validation(
+    check_daily_balance(),
+    flag_unusual_spending(),
+    validate_dates()
+  )
+
+# Deploy to mobile devices
+deploy_survey(diary, mode = "mobile", offline = TRUE)
+```
+
+### **2. RCT Baseline Survey with Complex Logic** {.project-card}
+
+```r
+baseline <- survey_ke(
+  title = "Hypertension Management RCT - Baseline",
+  id_validation = "kenya_national_id"
+) %>%
+  add_demographics() %>%  # Pre-built module
+  add_section("Clinical History",
+    questions = list(
+      q_diagnosis("hypertension", "Diagnosed with hypertension?"),
+      q_date("diagnosis_date", "When were you diagnosed?",
+             show_if = "hypertension == 'Yes'"),
+      q_medication("current_meds", "Current medications",
+                   show_if = "hypertension == 'Yes'",
+                   validate = validate_kenya_medications())
+    )
+  ) %>%
+  add_household_roster() %>%  # Another pre-built module
+  add_consent_form(
+    require_signature = TRUE,
+    language = c("en", "sw", "luo")
+  )
+```
+
+---
+
+## **Development Roadmap**
+
+::: {.timeline-container}
+
+### **Phase 1: Core Features** *(Q1 2025)* {.timeline-item}
+- ✅ Basic survey creation
+- ✅ Skip logic engine
+- ✅ Mobile-responsive design
+- 🔨 Kenya-specific validations
+- 🔨 Offline functionality
+
+### **Phase 2: Advanced Features** *(Q2 2025)* {.timeline-item}
+- 📋 Visual logic builder
+- 📋 Multi-language interface
+- 📋 Pre-built survey modules (demographics, health, finance)
+- 📋 Audio questions
+- 📋 Photo capture with geotagging
+
+### **Phase 3: Integration & Deployment** *(Q3 2025)* {.timeline-item}
+- 📋 ODK/SurveyCTO integration
+- 📋 REDCap export
+- 📋 Automated dashboard generation
+- 📋 Real-time monitoring tools
+- 📋 Field team management features
+
+### **Phase 4: Community & Scale** *(Q4 2025)* {.timeline-item}
+- 📋 Documentation website
+- 📋 Tutorial videos
+- 📋 Community forum
+- 📋 Package on CRAN
+- 📋 Training workshops
+
+:::
+
+**Legend:** ✅ Complete | 🔨 In Progress | 📋 Planned
+
+---
+
+## **Contributing**
+
+surveyKE is open source and welcomes contributions!
+
+**Ways to contribute:**
+- 🐛 Report bugs and issues
+- 💡 Suggest features
+- 📝 Improve documentation
+- 🌍 Add translations
+- 💻 Submit pull requests
+- 🧪 Beta testing
+
+**Get involved:**  
+📧 Email: [nichodemuswerre@gmail.com](mailto:nichodemuswerre@gmail.com)  
+💬 GitHub Discussions: *(Coming Soon)*
+
+---
+
+## **Other R Packages**
+
+### **healthFinanceDiary** *(Planned)* {.project-card}
+
+Specialized package for implementing health financial diary studies.
+
+**Features:**
+- Pre-configured daily diary surveys
+- Automated high-frequency checks
+- Financial flow analysis tools
+- Reporting templates
+- Cost-effectiveness calculators
+
+### **kenyanStats** *(Planned)* {.project-card}
+
+Collection of statistical tools for Kenyan health research.
+
+**Features:**
+- Kenya-specific survey weights
+- County/sub-county population data
+- Health facility databases
+- Disease prevalence estimators
+- Epidemiological calculators
+
+---
+
+## **Publications & Presentations**
+
+1. **Amollo, N.** (2025). "surveyKE: Simplifying Survey Design for African Research." *(In Preparation)*
+
+2. Conference talk: "Open Source Tools for Data Collection in Low-Resource Settings" - *African R Users Conference 2025* *(Submitted)*
+
+---
+
+## **Collaborations Welcome**
+
+Looking for research collaborations involving:
+- Large-scale survey implementations
+- RCTs and impact evaluations
+- Health economics studies
+- Custom data collection tools
+- Training and capacity building
+
+**Contact me to discuss:**
+- Custom tool development
+- Survey design consultation
+- Data management systems
+- Training workshops
+- Research collaborations
+
+---
+
+## **Why Open Source?**
+
+::: {.highlight-box}
+**My philosophy:**
+
+Research tools should be **accessible to everyone**, especially in low-resource settings. Open source software:
+
+- **Reduces costs** for African researchers and organizations
+- **Builds capacity** through transparent code
+- **Encourages collaboration** across institutions
+- **Improves quality** through community review
+- **Creates sustainability** beyond individual projects
+
+*"Good tools multiply the impact of good research."*
+:::
+
+---
+
+## **Support the Project**
+
+surveyKE is developed in my spare time. Support helps:
+- Faster development
+- Better documentation
+- Community workshops
+- Server costs for testing
+
+**Ways to support:**
+- ⭐ Star the GitHub repo
+- 📢 Share with your network
+- 🤝 Collaborate on features
+- 💼 Hire for consulting
+- ☕ [Buy me coffee](https://buymeacoffee.com/gondamol) *(Coming Soon)*
+
+---
+
+<div style="text-align: center; margin: 3rem 0;">
+
+### **Stay Updated**
+
+Get notified when surveyKE launches:
+
+📧 [Join the mailing list](#) *(Coming Soon)*  
+🐙 [Watch on GitHub](#) *(Repo launching Q1 2025)*  
+🐦 [Follow on Twitter](https://twitter.com/nwerre)
+
+</div>
+
+
+
+

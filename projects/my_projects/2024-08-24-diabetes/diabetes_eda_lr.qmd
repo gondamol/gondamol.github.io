@@ -13,6 +13,7 @@ format:
     code-fold: true
 execute:
   echo: true
+  eval: false
 ---
 
 # 1. Introduction

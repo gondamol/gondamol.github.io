@@ -1,0 +1,196 @@
+---
+title: "Real-Time Analytics Engineering Projects"
+subtitle: "End-to-end automation solving real-world problems"
+page-layout: full
+title-block-banner: true
+---
+
+::: {.hero-banner}
+# 🚀 Real-Time Analytics Engineering
+
+Building automation tools that solve actual problems through web scraping, stream processing, and intelligent dashboards
+:::
+
+## **What Makes These Projects Different**
+
+Instead of theoretical case studies with synthetic data, these are **real automation systems** that:
+
+✅ **Solve actual pain points** - Job search inefficiency, price opacity, supply chain gaps  
+✅ **Process live data** - Web scraping, API integration, real-time pipelines  
+✅ **Serve real users** - Practical tools people can actually use  
+✅ **Demonstrate full-stack skills** - Backend, frontend, ML, infrastructure  
+✅ **Show business impact** - Quantified ROI and user value
+
+---
+
+## **The 5 Real-Time Automation Projects**
+
+::: {.project-grid}
+
+::: {.project-card}
+### 🎯 [Job Market Intelligence Platform](job-market-intelligence/)
+
+**Status:** 🔨 In Development | **Priority:** 1 (Pilot Project)
+
+**The Problem:** Job seekers waste 20+ hours/week manually searching multiple platforms
+
+**The Solution:** Automated multi-platform scraping + NLP + smart notifications
+
+**Tech Stack:** Python (Scrapy/Selenium) + PostgreSQL + Airflow + Streamlit + NLP (spaCy) + Telegram Bot
+
+**Real-time Features:**
+- Hourly scraping: LinkedIn, Indeed, Glassdoor, AngelList, Fuzu, BrighterMonday
+- NLP skill extraction from job descriptions
+- Automated job matching & alerts (Email/Telegram)
+- Salary trend analysis & market intelligence
+- Application tracking workflow
+
+**Impact:** Save 15+ hours/week, 40% faster job finding
+
+[View Project Details →](job-market-intelligence/)
+:::
+
+::: {.project-card}
+### 🛒 [E-commerce Price Intelligence](ecommerce-price-intelligence/)
+
+**Status:** 📋 Planned | **Priority:** 2
+
+**The Problem:** Businesses lack competitive pricing data; consumers overpay 20-30%
+
+**The Solution:** Real-time price tracking across Jumia Kenya, Kilimall, Amazon, eBay, AliExpress
+
+**Tech Stack:** Python (Scrapy) + MongoDB + Apache Kafka + Plotly Dash + ML (price forecasting)
+
+**Real-time Features:**
+- Daily tracking of 10,000+ products
+- Price change detection & alerts
+- Review sentiment analysis (fake review detection)
+- Price forecasting ML model
+- Dual dashboards: Business Intelligence + Consumer Deal Finder
+
+**Impact:** Businesses: 10-15% revenue increase; Consumers: 20% average savings
+
+[View Project Details →](ecommerce-price-intelligence/)
+:::
+
+::: {.project-card}
+### 📱 [Real-Time Social Media Analytics](social-media-analytics/)
+
+**Status:** 📋 Planned | **Priority:** 3
+
+**The Problem:** Brands miss viral trends and PR crises (slow response = reputation damage)
+
+**The Solution:** Real-time brand monitoring + sentiment analysis + crisis detection
+
+**Tech Stack:** Python + Kafka + Spark Streaming + NLP (BERT) + React + D3.js + Redis
+
+**Real-time Features:**
+- Stream processing (millions of posts/day)
+- Sentiment analysis (BERT/transformers)
+- Influencer identification & tracking
+- Crisis detection with automated alerts
+- Competitor benchmarking
+
+**Impact:** 60% faster crisis response, 35% sentiment improvement
+
+[View Project Details →](social-media-analytics/)
+:::
+
+::: {.project-card}
+### 🏥 [Healthcare - Patient Readmission Risk](healthcare-readmission/)
+
+**Status:** 📋 Planned | **Priority:** 4 (Maintain Health Expertise)
+
+**The Problem:** $17B lost annually to 30-day hospital readmissions
+
+**The Solution:** Real-time ML pipeline for discharge risk scoring
+
+**Tech Stack:** Python + SQL + R Shiny + Flexdashboard + ML (XGBoost)
+
+**Real-time Features:**
+- Continuous EHR data ingestion
+- Real-time risk scoring at patient discharge
+- Automated high-risk alerts to care teams
+- Resource allocation optimization
+
+**Impact:** 25% readmission reduction, $4.5M savings per 1,000 beds
+
+[View Project Details →](healthcare-readmission/)
+:::
+
+::: {.project-card}
+### 🚚 [Supply Chain & Logistics Tracker](supply-chain-tracker/)
+
+**Status:** 📋 Planned | **Priority:** 5
+
+**The Problem:** $1.1T lost globally to supply chain visibility gaps
+
+**The Solution:** Real-time shipment tracking + ML delay prediction
+
+**Tech Stack:** Python + PostgreSQL + Airflow + Vue.js + Plotly.js + ML (time series)
+
+**Real-time Features:**
+- Unified tracking across DHL, FedEx, UPS, Kenya carriers
+- Delay prediction ML model (2-3 days advance warning)
+- Automated customer notifications
+- Route optimization recommendations
+- Inventory forecasting from shipment data
+
+**Impact:** 30% stockout reduction, 20% faster delivery, 15% cost savings
+
+[View Project Details →](supply-chain-tracker/)
+:::
+
+:::
+
+---
+
+## **Technical Capabilities Demonstrated**
+
+### **Data Engineering & Automation**
+::: {.skills-grid}
+- **Web Scraping:** Scrapy, Selenium, BeautifulSoup, rotating proxies, rate limiting
+- **Stream Processing:** Apache Kafka, Spark Streaming, real-time event handling
+- **Workflow Orchestration:** Apache Airflow, Prefect, Celery, scheduled pipelines
+- **Databases:** PostgreSQL, MongoDB, Redis (relational, document, cache)
+:::
+
+### **Machine Learning & NLP**
+::: {.skills-grid}
+- **NLP:** spaCy (entity extraction), BERT/transformers (sentiment analysis)
+- **ML Models:** scikit-learn, XGBoost (classification, regression)
+- **Time Series:** Prophet (forecasting), ARIMA models
+- **Deployment:** Real-time inference, model serving, feature engineering
+:::
+
+### **Dashboards & Visualization**
+::: {.skills-grid}
+- **Python:** Streamlit, Plotly Dash (interactive dashboards)
+- **R:** Shiny, Flexdashboard (healthcare analytics)
+- **JavaScript:** React + D3.js, Vue.js + Plotly.js (modern web apps)
+- **Real-time:** WebSockets, live data updates, dynamic filtering
+:::
+
+### **Infrastructure & DevOps**
+::: {.skills-grid}
+- **Containerization:** Docker, docker-compose
+- **Deployment:** Heroku, Render, AWS EC2, Streamlit Cloud
+- **Notifications:** Telegram Bot API, SendGrid, Twilio, Slack webhooks
+- **Monitoring:** Logging, error tracking, performance metrics
+:::
+
+---
+
+## **Get Started**
+
+Explore each project to see live demos, source code, and implementation details.
+
+**Questions or want to collaborate?**
+- 📧 [Contact me](mailto:nichodemuswerre@gmail.com)
+- 💼 [LinkedIn](https://linkedin.com/in/amollow)
+- 🐙 [GitHub](https://github.com/gondamol)
+
+---
+
+[Back to All Projects →](../index.qmd)
+

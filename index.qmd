@@ -1,225 +1,172 @@
 ---
 title: "Nichodemus Amollo"
-subtitle: "Senior Research Data Manager | Health Data Analytics Specialist"
-image: profile.jpeg
+subtitle: "Health Financial Diaries | Data Science & ML | Impact Evaluation | Health Economics"
 page-layout: full
-about:
-  template: solana
-  image-width: 15em
-  image-shape: round
-  links:
-    - icon: linkedin
-      text: LinkedIn
-      url: https://linkedin.com/in/amollow
-    - icon: github
-      text: GitHub
-      url: https://github.com/gondamol
-    - icon: twitter
-      text: Twitter
-      url: https://twitter.com/nwerre
-    - icon: kaggle
-      text: Kaggle
-      url: https://kaggle.com/nwerre
-    - icon: envelope
-      text: Email
-      href: mailto:nichodemuswerre@gmail.com
 ---
 
-::: {.hero-banner}
-::: {.hero-content}
-# **Driving Impact Through Data & M&E Excellence**
+::: {style="text-align: center; margin-bottom: 2rem; position: relative;"}
+![Profile Photo](profile.jpeg){width=250px style="border-radius: 50%; box-shadow: 0 8px 24px rgba(0,0,0,0.2); margin-top: 2rem; border: 4px solid #fff; position: relative; z-index: 1;" class="floating"}
 
-### Senior M&E Specialist | Research Data Manager | Research Data Analyst | 8+ Years Leading Global Health Projects
-
-**Georgetown University gui2de** | MSc Biostatistics & Epidemiology | **Washington U. M&E Certified**
-
-[View Projects](projects/index.qmd){.cta-button} [My Journey & CV](cv/index.qmd){.cta-button}
+::: {style="margin-top: 1.5rem; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;"}
+[<i class="fab fa-linkedin"></i> LinkedIn](https://linkedin.com/in/amollow){.btn .btn-primary style="margin: 0.25rem;"}
+[<i class="fab fa-github"></i> GitHub](https://github.com/gondamol){.btn .btn-primary style="margin: 0.25rem;"}
+[<i class="fab fa-twitter"></i> Twitter](https://twitter.com/nwerre){.btn .btn-primary style="margin: 0.25rem;"}
+[<i class="fab fa-kaggle"></i> Kaggle](https://kaggle.com/nwerre){.btn .btn-primary style="margin: 0.25rem;"}
+[<i class="fas fa-envelope"></i> Email](mailto:nichodemuswerre@gmail.com){.btn .btn-primary style="margin: 0.25rem;"}
 :::
 :::
 
-## **Professional Summary**
+::: {.hero-banner style="position: relative; z-index: 1;"}
+# **<i class="fas fa-brain icon-bounce"></i> Research Data Manager | Data Scientist | M&E Specialist**
 
-I am a **Senior M&E Specialist, Research Data Manager, and Research Data Analyst** with **8+ years of progressive experience** driving evidence-based decision-making for multi-million dollar international projects in **global health, food security, and economic development**. 
+From orphaned child in rural Kenya to leading global health data science initiatives.
 
-**My expertise combines:**
+**<i class="fas fa-chart-line"></i> 8+ years** driving impact through data | **<i class="fas fa-users"></i> 500+ researchers** trained | **<i class="fas fa-university"></i> Georgetown University gui2de**
 
-- **Rigorous M&E frameworks** — Theory of Change, LogFrames, Results Frameworks for USAID/NIH programs  
-- **End-to-end data leadership** — Field team management, digitalized surveys, HFCs, analysis, reporting  
-- **Advanced analytics** — R, Python, Stata, SQL, machine learning, survival analysis, network analysis  
-- **Team building** — Trained **500+ researchers**, led multi-country field teams, developed training protocols
+[<i class="fas fa-book-open"></i> Read My Story](about/index.qmd){.cta-button} [<i class="fas fa-project-diagram"></i> View Projects](projects/index.qmd){.cta-button} [<i class="fas fa-file-alt"></i> See CV](cv/index.qmd){.cta-button}
+:::
 
+---
 
-Currently with **Georgetown University gui2de** conducting RCTs and impact evaluations, while completing **MSc in Biostatistics & Epidemiology** at JOOUST and certified in **M&E in Global Health** by University of Washington (2025).
+## **<i class="fas fa-rocket"></i> Impact at a Glance**
 
 ::: {.stats-container}
 ::: {.stat-card}
-**8+** 
-Years M&E Experience
+<div class="stat-number">8+</div>
+<div class="stat-label"><i class="fas fa-calendar-alt"></i> Years Experience</div>
 :::
 
 ::: {.stat-card}
-**500+**
-Researchers Trained
+<div class="stat-number">500+</div>
+<div class="stat-label"><i class="fas fa-graduation-cap"></i> Researchers Trained</div>
 :::
 
 ::: {.stat-card}
-**50+**
-Field Teams Led
+<div class="stat-number">50+</div>
+<div class="stat-label"><i class="fas fa-users-cog"></i> Field Teams Led</div>
 :::
 
 ::: {.stat-card}
-**KES 20M+**
-Cost Savings Identified
+<div class="stat-number">3</div>
+<div class="stat-label"><i class="fas fa-file-alt"></i> Publications</div>
 :::
 :::
 
-::: {.stats-container}
-::: {.stat-card}
-**3**
-Published Papers
-:::
+---
 
-::: {.stat-card}
-**1,535+**
-Multi-Country Sites
-:::
-
-::: {.stat-card}
-**8**
-M&E Frameworks Built
-:::
-
-::: {.stat-card}
-**100K+**
-Records Managed
-:::
-:::
-
-## **Core Competencies**
+## **<i class="fas fa-code"></i> Core Expertise**
 
 ::: {.skills-grid}
 ::: {.skill-category}
-### 🎯 M&E & Impact Evaluation
-- **M&E Framework Design** - Theory of Change, LogFrames, Results Frameworks
-- **Performance Monitoring** - KPI tracking, donor reporting, real-time dashboards
-- **Impact Evaluation** - RCTs, quasi-experimental designs, CEA
-- **Field Operations** - Led 500+ field teams, mobile data systems
-- **High-Frequency Checks** - Real-time quality monitoring (R & Stata)
+### <i class="fas fa-chart-bar"></i> Data Science & Analytics
+
+- <i class="fas fa-robot"></i> Machine Learning & Statistical Modeling
+- <i class="fab fa-r-project"></i> R, Python, Stata, SQL
+- <i class="fas fa-money-bill-wave"></i> Health Financial Diaries
+- <i class="fas fa-project-diagram"></i> Survival & Network Analysis
 :::
 
 ::: {.skill-category}
-### 👥 Leadership & Team Management
-- **Field Team Leadership** - Recruited, trained, supervised multi-country teams
-- **Training Development** - Created protocols & modules for RAs, enumerators
-- **Capacity Building** - Trained 500+ researchers in data management & M&E
-- **Consultancy Leadership** - Led tool development with LERIS Hub affiliations
-- **Problem Solving** - Tackled field challenges, system failures, data issues
+### <i class="fas fa-bullseye"></i> M&E & Impact Evaluation
+
+- <i class="fas fa-vial"></i> RCTs & Quasi-Experimental Designs
+- <i class="fas fa-sitemap"></i> Theory of Change & LogFrames
+- <i class="fas fa-dollar-sign"></i> Cost-Effectiveness Analysis
+- <i class="fas fa-tachometer-alt"></i> Real-Time Dashboards
 :::
 
 ::: {.skill-category}
-### 📊 Advanced Analytics & Programming
-- **Statistical Analysis** - Regression, survival analysis, machine learning, Bayesian
-- **Programming** - R (expert), Python, Stata, SQL, SPSS
-- **Specialized Analysis** - Oncology data, agricultural economics, network analysis
-- **Predictive Modeling** - Classification, clustering, Gephi network analysis
-- **Systematic Reviews** - Literature synthesis, meta-analysis, evidence synthesis
+### <i class="fas fa-briefcase"></i> Research Leadership
+
+- <i class="fas fa-globe-africa"></i> Multi-Country Project Management
+- <i class="fas fa-chalkboard-teacher"></i> Field Team Training & Supervision
+- <i class="fas fa-check-circle"></i> Data Quality Assurance
+- <i class="fas fa-file-contract"></i> Donor Reporting
 :::
 
 ::: {.skill-category}
-### 🗄️ Data Systems & Tools
-- **End-to-End Data Management** - Design, implementation, monitoring, evaluation
-- **Survey Digitalization** - ODK, Kobo Collect, SurveyCTO, REDCap, CommCare
-- **Database Development** - MongoDB, MySQL, PostgreSQL, Vercel
-- **Dashboards** - Tableau, Power BI, R Shiny for real-time monitoring
-- **Report Writing** - Donor reports, policy briefs, technical documentation
-:::
-:::
+### <i class="fas fa-database"></i> Data Systems
 
-## **Current Research**
-
-::: {.highlight-box}
-### 🎓 MSc Thesis Project (In Progress)
-
-**"Exploring Financial Determinants of Effective Hypertension and Diabetes Management in Primary Health Facilities in Kisumu County"**
-
-This groundbreaking research examines the intersection of health facility financing and non-communicable disease (NCD) management outcomes in resource-limited settings. The study employs mixed-methods approaches including:
-
-- **Primary health facility financial assessments***
-- **Patient outcome tracking and analysis***
-- **Cost-effectiveness analysis of NCD interventions***
-- **Interactive dashboards for real-time monitoring***
-- **Policy recommendations for sustainable NCD FINANCING***
-
-[View Thesis Project Dashboard →](research/thesis.qmd)
+- <i class="fas fa-clipboard-list"></i> Survey Design (ODK, SurveyCTO, REDCap)
+- <i class="fas fa-server"></i> Database Management (MongoDB, PostgreSQL)
+- <i class="fas fa-chart-pie"></i> Dashboard Development (Tableau, Shiny)
+- <i class="fas fa-sync-alt"></i> High-Frequency Checks
 :::
 
-## **What Makes Me Stand Out for Senior M&E/Impact Roles**
+::: {.skill-category}
+### <i class="fas fa-book"></i> Capacity Building
 
-✅ **Proven M&E Leadership** - Designed and implemented M&E frameworks for 8+ programs (USAID/NIH-funded)  
-✅ **Field Operations Excellence** - Led field teams of 50+ enumerators, designed training protocols, conducted HFCs  
-✅ **End-to-End Project Management** - From study design through field implementation to donor reporting  
-✅ **Advanced Analytics** - Expert in R, Python, Stata, SQL plus machine learning & survival analysis  
-✅ **Multi-Country Experience** - Managed projects across Kenya, Uganda, Tanzania  
-✅ **Consultancy Track Record** - Led data systems development for LERIS Hub, Dalberg, CMMB, NEPHAK  
-✅ **Capacity Builder** - Trained 500+ researchers, developed training modules, built data-driven cultures  
-✅ **Remote Work Expert** - 3+ years managing international projects remotely (gui2de, University of Alaska)  
-
-## **My Journey: Against All Odds**
-
-::: {.highlight-box}
-### 🌟 From Orphaned Child to Global Health Leader
-
-Growing up **orphaned with limited resources** in rural Kenya, the odds were stacked against me. Every educational milestone required extraordinary determination and resourcefulness. **Against all odds, I made it this far** - and these experiences shaped who I am today:
-
-**What adversity taught me:**
-
-- **Resilience** - Loss instilled a drive to create lasting impact
-- **Resourcefulness** - Scarcity sharpened my problem-solving abilities
-- **Empathy** - Personal challenges deepened my commitment to health equity
-- **Gratitude** - Support from mentors fueled my passion for capacity building
-
-**I believe data can change lives** - and I've dedicated my career to proving it. Now positioned to lead transformative global health initiatives, I bring not just technical skills, but a deep understanding of the communities we serve.
-
-[Read My Full Journey →](cv/index.qmd)
+- <i class="fas fa-user-graduate"></i> Trained 500+ Researchers
+- <i class="fas fa-laptop-code"></i> R, Stata & M&E Training Programs
+- <i class="fas fa-clipboard-check"></i> Curriculum Development
+- <i class="fas fa-hands-helping"></i> Mentorship & Coaching
 :::
 
-## **Let's Connect**
+::: {.skill-category}
+### <i class="fas fa-hospital"></i> Health Economics
 
-I'm passionate about leveraging data and M&E to drive impact in global health and development. Whether you need:
-
-- **Senior M&E leadership** for your health/development program
-- **End-to-end project management** from design to donor reporting
-- **Field team leadership** and training protocol development
-- **Advanced analytics** and dashboard development
-- **Systematic reviews** and evidence synthesis
-
-**Let's create impact together!**
-
-📧 **Email:** [nichodemuswerre@gmail.com](mailto:nichodemuswerre@gmail.com)  
-📱 **Phone:** +254 725 737 867  
-💼 **LinkedIn:** [linkedin.com/in/nichodemusamollo](https://linkedin.com/in/nichodemusamollo)  
-🐙 **GitHub:** [github.com/gondamol](https://github.com/gondamol)  
-🐦 **Twitter:** [@nwerre](https://twitter.com/nwerre)
+- <i class="fas fa-wallet"></i> Financial Diaries Research
+- <i class="fas fa-home"></i> Household Economic Behavior
+- <i class="fas fa-money-check-alt"></i> Health Financing Analysis
+- <i class="fas fa-hand-holding-usd"></i> Low-Income Population Studies
+:::
+:::
 
 ---
 
-::: {.success-box}
-### 🎯 Seeking Senior Roles (Remote)
+## **<i class="fas fa-star"></i> Featured Work**
 
-I am actively seeking **senior remote positions** as:
+::: {.project-card class="glow-effect"}
+::: {.project-header}
+### <i class="fas fa-microscope"></i> MSc Thesis: Financial Determinants of NCD Management
+:::
+::: {.project-body}
+Investigating how health financing impacts hypertension and diabetes outcomes in Kisumu County, Kenya. Mixed-methods study with 30+ facilities, 500+ patients.
 
-- **Research Data Manager** - End-to-end data leadership for multi-million dollar research projects
-- **Research Data Analyst** - Advanced statistical analysis and data science for health research
-- **Senior M&E Specialist / Manager** - Leading program monitoring and evaluation
-- **Impact Evaluation Lead** - Designing and executing RCTs, quasi-experimental studies
+[<i class="fas fa-arrow-right"></i> View Research Dashboard →](research/thesis.qmd){.cta-button style="margin-top: 1rem;"}
+:::
+:::
 
-**Why hire me?**
+::: {.project-card class="glow-effect"}
+::: {.project-header}
+### <i class="fas fa-code-branch"></i> surveyKE: Open Source Survey Tools for Africa
+:::
+::: {.project-body}
+Building advanced survey software with offline capabilities, Kenya-specific validations, and multi-language support for African research contexts.
 
-- ✔️ **8+ years** progressive M&E and data science experience  
-- ✔️ **Washington University M&E Certified** (2025)  
-- ✔️ **Proven leadership** managing multi-country projects and field teams  
-- ✔️ **Track record** - 500+ trained, 3 publications, KES 20M+ cost savings  
-- ✔️ **Remote work expertise** with Georgetown University gui2de
+[<i class="fas fa-arrow-right"></i> Explore Project →](software/index.qmd){.cta-button style="margin-top: 1rem;"}
+:::
+:::
 
-[My Journey & CV →](cv/index.qmd) | [See Projects →](projects/index.qmd) | [Contact Me](mailto:nichodemuswerre@gmail.com){.cta-button}
+---
+
+## **<i class="fas fa-hourglass-half"></i> Currently**
+
+::: {.highlight-box}
+**<i class="fas fa-briefcase"></i> Research Data Manager** @ Georgetown University gui2de (Remote)
+
+**<i class="fas fa-graduation-cap"></i> MSc Candidate** in Biostatistics & Epidemiology @ JOOUST
+
+**<i class="fas fa-certificate"></i> M&E Certification** @ University of Washington (2025)
+
+**<i class="fas fa-chalkboard"></i> Part-Time Lecturer** in Biostatistics @ JOOUST
+:::
+
+---
+
+## **<i class="fas fa-handshake"></i> Let's Collaborate**
+
+Open to opportunities in:
+
+- <i class="fas fa-chart-line"></i> Senior M&E & Impact Evaluation roles
+- <i class="fas fa-heartbeat"></i> Health economics research collaborations
+- <i class="fas fa-laptop-code"></i> Data science consulting
+- <i class="fas fa-code"></i> Open source project partnerships
+
+[<i class="fas fa-paper-plane"></i> Get in Touch](mailto:nichodemuswerre@gmail.com){.cta-button .pulse} [<i class="fas fa-download"></i> Download CV](cv/index.qmd){.cta-button}
+
+---
+
+::: {style="text-align: center; font-style: italic; color: #666; margin: 2rem 0; padding: 2rem; background: linear-gradient(135deg, #f5f7fa 0%, #e2e8f0 100%); border-radius: 12px;"}
+**<i class="fas fa-quote-left"></i>** "Against all odds, I made it this far - now positioned to drive transformative impact in global health data science." **<i class="fas fa-quote-right"></i>**
 :::

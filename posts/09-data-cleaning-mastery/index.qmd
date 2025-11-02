@@ -1,0 +1,552 @@
+---
+title: "Data Cleaning: The Unsexy Skill That Will Make You Invaluable (80% of the Job)"
+subtitle: "Master the Art of Turning Messy Data into Analysis-Ready Gold"
+author: "Nichodemus Amollo"
+date: "2025-10-17"
+categories: [Data Cleaning, Python, Pandas, Tutorial]
+image: "cleaning.jpg"
+---
+
+## The Truth Nobody Tells You
+
+**80% of data analysis is cleaning data.**
+
+Only 20% is the "fun" stuff - modeling, visualization, insights.
+
+Yet most courses skip data cleaning or treat it as a footnote.
+
+**This is why beginners struggle with real-world data.**
+
+This post covers the data cleaning skills that make you invaluable.
+
+---
+
+## The 7 Types of Messy Data (And How to Fix Each)
+
+### **1. Missing Values**
+
+**The Problem:**
+```python
+   Name    Age    Salary    Department
+0  John    32     50000.0   Sales
+1  Jane    NaN    65000.0   Marketing
+2  Bob     28     NaN       Sales
+3  Alice   45     75000.0   NaN
+```
+
+**Solutions:**
+
+**Option A: Remove Rows** (if < 5% missing)
+```python
+# Remove rows with any missing values
+df_clean = df.dropna()
+
+# Remove rows with missing in specific columns
+df_clean = df.dropna(subset=['Age', 'Salary'])
+```
+
+**Option B: Impute** (fill with calculated value)
+```python
+# Fill with mean
+df['Age'].fillna(df['Age'].mean(), inplace=True)
+
+# Fill with median (better for skewed data)
+df['Salary'].fillna(df['Salary'].median(), inplace=True)
+
+# Fill with mode (categorical)
+df['Department'].fillna(df['Department'].mode()[0], inplace=True)
+
+# Forward fill (time series)
+df['Sales'].fillna(method='ffill', inplace=True)
+
+# Custom logic
+df['Age'].fillna(df.groupby('Department')['Age'].transform('mean'), inplace=True)
+```
+
+**Option C: Flag as Missing** (create indicator column)
+```python
+df['Age_missing'] = df['Age'].isnull().astype(int)
+df['Age'].fillna(df['Age'].median(), inplace=True)
+```
+
+**FREE Resources:**
+- [Pandas Missing Data](https://pandas.pydata.org/docs/user_guide/missing_data.html)
+- [How to Handle Missing Data (Article)](https://towardsdatascience.com/how-to-handle-missing-data-8646b18db0d4)
+
+---
+
+### **2. Duplicate Records**
+
+**The Problem:**
+```python
+   CustomerID    Name     Email                Order
+0  1001         John     john@email.com       100
+1  1001         John     john@email.com       100
+2  1002         Jane     jane@email.com       150
+```
+
+**Solutions:**
+
+**Find Duplicates:**
+```python
+# Check for duplicates
+duplicates = df[df.duplicated()]
+print(f"Found {len(duplicates)} duplicates")
+
+# Check specific columns
+duplicates = df[df.duplicated(subset=['CustomerID', 'Email'])]
+```
+
+**Remove Duplicates:**
+```python
+# Remove all duplicates (keep first occurrence)
+df_clean = df.drop_duplicates()
+
+# Keep last occurrence
+df_clean = df.drop_duplicates(keep='last')
+
+# Remove based on specific columns
+df_clean = df.drop_duplicates(subset=['CustomerID'], keep='first')
+```
+
+---
+
+### **3. Inconsistent Text Data**
+
+**The Problem:**
+```python
+   Product        Category
+0  iPhone 13     Electronics
+1  iphone 13     electronics  
+2  IPHONE 13     ELECTRONICS
+3  iPhone  13    Electronics 
+```
+
+**Solutions:**
+
+**Standardize Case:**
+```python
+# Convert to lowercase
+df['Product'] = df['Product'].str.lower()
+df['Category'] = df['Category'].str.lower()
+
+# Or title case
+df['Name'] = df['Name'].str.title()
+
+# Or uppercase
+df['State'] = df['State'].str.upper()
+```
+
+**Remove Extra Spaces:**
+```python
+# Strip leading/trailing spaces
+df['Product'] = df['Product'].str.strip()
+
+# Remove extra spaces between words
+df['Product'] = df['Product'].str.replace('\\s+', ' ', regex=True)
+```
+
+**Find and Replace:**
+```python
+# Simple replacement
+df['Category'] = df['Category'].str.replace('electronics', 'Electronics')
+
+# Multiple replacements
+replacements = {
+    'elec': 'Electronics',
+    'cloth': 'Clothing',
+    'food': 'Food & Beverage'
+}
+df['Category'] = df['Category'].replace(replacements)
+
+# Regex replacement
+df['Phone'] = df['Phone'].str.replace(r'[^0-9]', '', regex=True)
+```
+
+---
+
+### **4. Wrong Data Types**
+
+**The Problem:**
+```python
+df.dtypes
+# Date        object   # Should be datetime
+# Age         object   # Should be numeric
+# Price       object   # Should be float
+# Quantity    float    # Should be int
+```
+
+**Solutions:**
+
+**Convert Types:**
+```python
+# String to numeric
+df['Age'] = pd.to_numeric(df['Age'], errors='coerce')  # Invalid → NaN
+df['Price'] = df['Price'].astype(float)
+
+# String to datetime
+df['Date'] = pd.to_datetime(df['Date'])
+df['Date'] = pd.to_datetime(df['Date'], format='%Y-%m-%d')
+
+# Float to int (handle NaN first!)
+df['Quantity'] = df['Quantity'].fillna(0).astype(int)
+
+# String to categorical (saves memory)
+df['Category'] = df['Category'].astype('category')
+```
+
+**Handle Parsing Errors:**
+```python
+# Identify problematic values
+pd.to_numeric(df['Age'], errors='coerce').isna().sum()
+
+# See which values failed
+mask = pd.to_numeric(df['Age'], errors='coerce').isna()
+print(df.loc[mask, 'Age'].unique())
+
+# Clean before converting
+df['Age'] = df['Age'].str.extract('(\\d+)')[0]  # Extract digits
+df['Age'] = pd.to_numeric(df['Age'])
+```
+
+---
+
+### **5. Outliers**
+
+**The Problem:**
+```python
+# Salary column has some extreme values
+print(df['Salary'].describe())
+# mean:   75,000
+# std:    50,000
+# max:    9,999,999  # Obviously wrong!
+```
+
+**Detection Methods:**
+
+**Method 1: IQR (Interquartile Range)**
+```python
+Q1 = df['Salary'].quantile(0.25)
+Q3 = df['Salary'].quantile(0.75)
+IQR = Q3 - Q1
+
+lower_bound = Q1 - 1.5 * IQR
+upper_bound = Q3 + 1.5 * IQR
+
+# Flag outliers
+outliers = df[(df['Salary'] < lower_bound) | (df['Salary'] > upper_bound)]
+
+# Remove outliers
+df_clean = df[(df['Salary'] >= lower_bound) & (df['Salary'] <= upper_bound)]
+```
+
+**Method 2: Z-Score**
+```python
+from scipy import stats
+
+# Calculate z-scores
+z_scores = np.abs(stats.zscore(df['Salary']))
+
+# Remove data points with |z| > 3
+df_clean = df[z_scores < 3]
+```
+
+**Method 3: Domain Knowledge**
+```python
+# Age should be 18-100
+df_clean = df[(df['Age'] >= 18) & (df['Age'] <= 100)]
+
+# Salary should be 20K-500K for this role
+df_clean = df[(df['Salary'] >= 20000) & (df['Salary'] <= 500000)]
+```
+
+**FREE Resources:**
+- [Detecting Outliers (Medium)](https://towardsdatascience.com/ways-to-detect-and-remove-the-outliers-404d16608dba)
+
+---
+
+### **6. Inconsistent Formatting**
+
+**The Problem:**
+```python
+# Dates in multiple formats
+0    2024-01-15
+1    01/15/2024
+2    15-Jan-2024
+3    Jan 15, 2024
+
+# Phone numbers
+0    (123) 456-7890
+1    123-456-7890
+2    1234567890
+3    +1 123 456 7890
+```
+
+**Solutions:**
+
+**Dates:**
+```python
+# Let pandas infer format
+df['Date'] = pd.to_datetime(df['Date'], infer_datetime_format=True)
+
+# Or specify format explicitly
+df['Date'] = pd.to_datetime(df['Date'], format='%Y-%m-%d', errors='coerce')
+
+# For mixed formats, process separately
+mask = df['Date'].str.contains('/')
+df.loc[mask, 'Date'] = pd.to_datetime(df.loc[mask, 'Date'], format='%m/%d/%Y')
+df.loc[~mask, 'Date'] = pd.to_datetime(df.loc[~mask, 'Date'], format='%Y-%m-%d')
+```
+
+**Phone Numbers:**
+```python
+# Extract only digits
+df['Phone'] = df['Phone'].str.replace(r'[^0-9]', '', regex=True)
+
+# Standardize format
+df['Phone'] = df['Phone'].str.replace(r'(\\d{3})(\\d{3})(\\d{4})', r'(\\1) \\2-\\3', regex=True)
+```
+
+**Currency:**
+```python
+# Remove currency symbols and commas
+df['Price'] = df['Price'].str.replace('[$,]', '', regex=True).astype(float)
+```
+
+---
+
+### **7. Incorrect Values**
+
+**The Problem:**
+```python
+# Logic errors
+Age: -5, 150  # Negative or impossible ages
+Date: 2025-13-45  # Invalid date
+Gender: M, F, Male, Female, m, f  # Inconsistent categories
+```
+
+**Solutions:**
+
+**Range Validation:**
+```python
+# Flag impossible values
+df.loc[df['Age'] < 0, 'Age'] = np.nan
+df.loc[df['Age'] > 120, 'Age'] = np.nan
+
+# Or remove
+df = df[(df['Age'] >= 0) & (df['Age'] <= 120)]
+```
+
+**Categorical Standardization:**
+```python
+# Map variations to standard values
+gender_map = {
+    'M': 'Male',
+    'm': 'Male', 
+    'Male': 'Male',
+    'F': 'Female',
+    'f': 'Female',
+    'Female': 'Female'
+}
+df['Gender'] = df['Gender'].map(gender_map)
+
+# Or use replace
+df['Status'] = df['Status'].replace({
+    'active': 'Active',
+    'inactive': 'Inactive',
+    'pending': 'Pending'
+})
+```
+
+**Constraint Validation:**
+```python
+# Ensure related fields are consistent
+# e.g., EndDate should be after StartDate
+invalid = df[df['EndDate'] < df['StartDate']]
+print(f"{len(invalid)} records with EndDate before StartDate")
+
+# Fix or flag
+df.loc[df['EndDate'] < df['StartDate'], 'EndDate'] = np.nan
+```
+
+---
+
+## The Complete Data Cleaning Workflow
+
+```python
+import pandas as pd
+import numpy as np
+from scipy import stats
+
+def clean_data(df):
+    """
+    Complete data cleaning pipeline
+    """
+    print(f"Starting with {len(df)} rows")
+    
+    # 1. INSPECT
+    print("\\n=== DATA OVERVIEW ===")
+    print(df.info())
+    print(df.describe())
+    print(df.head())
+    
+    # 2. REMOVE DUPLICATES
+    print("\\n=== REMOVING DUPLICATES ===")
+    before = len(df)
+    df = df.drop_duplicates()
+    print(f"Removed {before - len(df)} duplicates")
+    
+    # 3. FIX DATA TYPES
+    print("\\n=== FIXING DATA TYPES ===")
+    # Date columns
+    date_cols = ['order_date', 'ship_date']
+    for col in date_cols:
+        if col in df.columns:
+            df[col] = pd.to_datetime(df[col], errors='coerce')
+    
+    # Numeric columns
+    numeric_cols = ['age', 'salary', 'price']
+    for col in numeric_cols:
+        if col in df.columns:
+            df[col] = pd.to_numeric(df[col], errors='coerce')
+    
+    # 4. HANDLE MISSING VALUES
+    print("\\n=== HANDLING MISSING VALUES ===")
+    missing = df.isnull().sum()
+    missing_pct = 100 * missing / len(df)
+    missing_df = pd.DataFrame({
+        'Missing': missing,
+        'Percent': missing_pct
+    })
+    print(missing_df[missing_df['Missing'] > 0])
+    
+    # Remove columns with >50% missing
+    cols_to_drop = missing_df[missing_df['Percent'] > 50].index
+    df = df.drop(columns=cols_to_drop)
+    print(f"Dropped columns: {list(cols_to_drop)}")
+    
+    # Impute remaining
+    for col in df.select_dtypes(include=[np.number]).columns:
+        if df[col].isnull().sum() > 0:
+            df[col].fillna(df[col].median(), inplace=True)
+    
+    for col in df.select_dtypes(include=['object']).columns:
+        if df[col].isnull().sum() > 0:
+            df[col].fillna(df[col].mode()[0], inplace=True)
+    
+    # 5. STANDARDIZE TEXT
+    print("\\n=== STANDARDIZING TEXT ===")
+    text_cols = df.select_dtypes(include=['object']).columns
+    for col in text_cols:
+        df[col] = df[col].str.strip()
+        df[col] = df[col].str.replace('\\s+', ' ', regex=True)
+    
+    # 6. REMOVE OUTLIERS
+    print("\\n=== REMOVING OUTLIERS ===")
+    numeric_cols = df.select_dtypes(include=[np.number]).columns
+    for col in numeric_cols:
+        Q1 = df[col].quantile(0.25)
+        Q3 = df[col].quantile(0.75)
+        IQR = Q3 - Q1
+        lower = Q1 - 1.5 * IQR
+        upper = Q3 + 1.5 * IQR
+        
+        outliers = df[(df[col] < lower) | (df[col] > upper)]
+        if len(outliers) > 0:
+            print(f"{col}: {len(outliers)} outliers removed")
+            df = df[(df[col] >= lower) & (df[col] <= upper)]
+    
+    # 7. VALIDATE
+    print("\\n=== VALIDATION ===")
+    print(f"Final dataset: {len(df)} rows, {len(df.columns)} columns")
+    print(f"Missing values: {df.isnull().sum().sum()}")
+    
+    return df
+
+# Usage
+df_clean = clean_data(df)
+```
+
+---
+
+## FREE Tools for Data Cleaning
+
+### **Python Libraries:**
+1. **[pandas](https://pandas.pydata.org/)** - Core data manipulation
+2. **[numpy](https://numpy.org/)** - Numerical operations
+3. **[pandas-profiling](https://github.com/ydataai/pandas-profiling)** - Automated EDA
+4. **[missingno](https://github.com/ResidentMario/missingno)** - Visualize missing data
+5. **[ftfy](https://github.com/rspeer/python-ftfy)** - Fix Unicode text
+6. **[dateparser](https://github.com/scrapinghub/dateparser)** - Parse dates
+
+### **R Libraries:**
+1. **[tidyr](https://tidyr.tidyverse.org/)** - Tidy messy data
+2. **[janitor](https://github.com/sfirke/janitor)** - Clean column names
+3. **[visdat](https://github.com/ropensci/visdat)** - Visualize missing data
+4. **[naniar](https://github.com/njtierney/naniar)** - Missing data tools
+
+### **GUI Tools (No Coding):**
+1. **[OpenRefine](https://openrefine.org/)** - Powerful, free, local
+2. **[Trifacta Wrangler](https://www.trifacta.com/products/wrangler/)** - Free tier
+3. **Excel Power Query** - Built into Excel
+4. **[DataWrangler (Tableau Prep)](https://www.tableau.com/products/prep)** - Free trial
+
+---
+
+## Practice Datasets (Messy on Purpose)
+
+1. **[Data Cleaning Practice (Kaggle)](https://www.kaggle.com/rtatman/data-cleaning-challenge-scale-and-normalize-data)**
+2. **[Messy Data (GitHub)](https://github.com/jsgoller1/data-cleaning-exercises)**
+3. **[Real-World Messy Data (Data.gov)](https://www.data.gov/)** - Download any dataset
+4. **[Quandl Financial Data](https://www.quandl.com/)** - Often needs cleaning
+
+---
+
+## Data Cleaning Interview Questions
+
+**Be ready to answer:**
+
+1. "How do you handle missing data?"
+2. "How do you detect outliers?"
+3. "Walk me through your data cleaning process"
+4. "How do you deal with duplicate records?"
+5. "What would you do with a column that has 60% missing values?"
+6. "How do you validate data quality?"
+
+---
+
+## Data Quality Checklist
+
+Before ANY analysis, verify:
+
+- [ ] **No duplicates** (or explained)
+- [ ] **Missing values handled** (<5% ideal)
+- [ ] **Correct data types** (dates, numbers, categories)
+- [ ] **No outliers** (or flagged)
+- [ ] **Consistent formatting** (dates, phone, currency)
+- [ ] **Valid values** (within expected ranges)
+- [ ] **Standardized text** (case, spelling, categories)
+- [ ] **Logical consistency** (end > start, etc.)
+
+---
+
+## Take Action Today (1 Hour)
+
+1. Download a messy dataset from Kaggle
+2. Run `df.info()` and `df.describe()`
+3. Find missing values with `df.isnull().sum()`
+4. Remove duplicates
+5. Impute or remove missing values
+6. Document what you did and why
+
+**Post your cleaned dataset on Kaggle or GitHub!**
+
+---
+
+**Related Posts:**
+- [Master SQL in 30 Days](../03-sql-mastery/)
+- [Python vs R for Data Analytics](../02-python-vs-r/)
+- [Build a Portfolio That Gets You Hired](../06-portfolio-that-gets-hired/)
+
+**Tags:** #DataCleaning #Pandas #Python #DataQuality #Tutorial #DataScience
+

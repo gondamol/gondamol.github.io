@@ -1,0 +1,66 @@
+---
+title: "Real-Time Social Media Analytics"
+subtitle: "Stream processing + sentiment analysis + crisis detection"
+page-layout: article
+---
+
+## Overview
+
+Real-time social media monitoring and analytics platform for brand tracking and crisis detection.
+
+### Problem Solved
+Brands need instant awareness of social media mentions, sentiment shifts, and potential PR crises.
+
+### Solution
+- **Stream processing** of social media data
+- **Sentiment analysis** in real-time
+- **Crisis detection** algorithms
+- **Automated alerts** for critical events
+- **Trend identification**
+
+## Tech Stack
+
+- **Stream Processing:** Apache Kafka, Redis
+- **NLP:** spaCy, BERT, VADER
+- **Database:** PostgreSQL + MongoDB
+- **Dashboard:** Streamlit + D3.js
+- **APIs:** Twitter API v2, Reddit API
+
+## Features
+
+### 1. Real-Time Monitoring
+- Twitter mentions tracking
+- Reddit discussion monitoring
+- Hashtag tracking
+- Competitor analysis
+
+### 2. Sentiment Analysis
+- Real-time sentiment scoring
+- Emotion detection
+- Trend analysis
+- Geographic sentiment mapping
+
+### 3. Crisis Detection
+- Sudden negative sentiment spikes
+- Viral content detection
+- Automated escalation
+- Response time tracking
+
+### 4. Reporting
+- Daily/Weekly summaries
+- Sentiment trends
+- Top mentions & influencers
+- Custom alerts
+
+## Live Demo
+
+🔨 **Status:** In Development
+
+---
+
+[Back to Analytics Engineering →](../)
+
+
+
+
+

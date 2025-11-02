@@ -1,0 +1,171 @@
+---
+title: "Data Visualizations"
+subtitle: "Interactive dashboards, charts, and visual analytics"
+page-layout: article
+---
+
+::: {.hero-banner}
+# **<i class="fas fa-chart-line"></i> Data Visualizations & Dashboards**
+
+Explore interactive visualizations, dashboards, and data storytelling projects showcasing health economics, research findings, and analytics insights.
+:::
+
+---
+
+## **<i class="fas fa-star"></i> Featured Visualizations**
+
+### **<i class="fas fa-heartbeat"></i> Health Economics Dashboard**
+
+::: {.project-card class="glow-effect"}
+::: {.project-header}
+#### Health Financing & Universal Health Coverage Analysis
+:::
+::: {.project-body}
+Interactive dashboard analyzing health spending patterns, life expectancy correlations, and immunization coverage trends across multiple countries. Features animated time series, interactive scatter plots, and regional comparisons.
+
+**Technologies:** R, Plotly, Shiny, DT
+
+[<i class="fas fa-external-link-alt"></i> View Interactive Dashboard](tidy-tuesday/2018-health-financing-uhc.qmd){.cta-button style="margin-top: 1rem;"}
+:::
+:::
+
+### **<i class="fas fa-chart-bar"></i> Income Inequality & Health Disparities**
+
+::: {.project-card class="glow-effect"}
+::: {.project-header}
+#### Animated Analysis of Economic Inequality Impact on Health
+:::
+::: {.project-body}
+Animated line charts showing income inequality trends from 1980-2020 with interactive tooltips, heatmaps, and bubble charts. Includes correlation analysis and downloadable datasets.
+
+**Technologies:** R, Plotly (with animations), DT
+
+[<i class="fas fa-external-link-alt"></i> Explore Visualization](tidy-tuesday/2021-income-inequality-health.qmd){.cta-button style="margin-top: 1rem;"}
+:::
+:::
+
+### **<i class="fas fa-briefcase"></i> Employment & Labor Market Health Analysis**
+
+::: {.project-card class="glow-effect"}
+::: {.project-header}
+#### Labor Market Dynamics and Health Outcomes
+:::
+::: {.project-body}
+Comprehensive analysis of employment patterns, labor market indicators, and their relationship with health outcomes. Features interactive bar charts, line graphs, and statistical summaries.
+
+**Technologies:** R, Plotly, ggplot2
+
+[<i class="fas fa-external-link-alt"></i> View Analysis](tidy-tuesday/2021-employment-health.qmd){.cta-button style="margin-top: 1rem;"}
+:::
+:::
+
+---
+
+## **<i class="fas fa-project-diagram"></i> All Visualization Projects**
+
+### **TidyTuesday Series**
+
+Explore my weekly TidyTuesday data visualization challenges:
+
+::: {.tile-grid}
+::: {.tile-card}
+::: {.tile-card-header}
+<div class="tile-title"><i class="fas fa-calendar-alt"></i> 2024 Visualizations</div>
+:::
+<div class="tile-body">
+Latest interactive visualizations from TidyTuesday challenges
+</div>
+[View 2024 →](tidy-tuesday/index.qmd){.tile-link}
+:::
+
+::: {.tile-card}
+::: {.tile-card-header}
+<div class="tile-title"><i class="fas fa-heart"></i> Health Economics</div>
+:::
+<div class="tile-body">
+Health financing, inequality, and economic analysis
+</div>
+[Explore →](tidy-tuesday/2018-health-financing-uhc.qmd){.tile-link}
+:::
+
+::: {.tile-card}
+::: {.tile-card-header}
+<div class="tile-title"><i class="fas fa-chart-pie"></i> Interactive Dashboards</div>
+:::
+<div class="tile-body">
+Shiny apps and interactive Tableau dashboards
+</div>
+[View Dashboards →](projects/dashboards.qmd){.tile-link}
+:::
+:::
+
+---
+
+## **<i class="fas fa-tools"></i> Visualization Tools & Technologies**
+
+::: {.skills-grid}
+::: {.skill-category}
+### <i class="fab fa-r-project"></i> R Visualization Stack
+
+- <i class="fas fa-chart-bar"></i> **ggplot2** - Grammar of graphics
+- <i class="fas fa-magic"></i> **Plotly** - Interactive charts
+- <i class="fas fa-table"></i> **DT** - Interactive tables
+- <i class="fas fa-globe"></i> **Leaflet** - Interactive maps
+- <i class="fas fa-desktop"></i> **Shiny** - Web dashboards
+:::
+
+::: {.skill-category}
+### <i class="fab fa-python"></i> Python Visualization
+
+- <i class="fas fa-chart-line"></i> **Matplotlib** - Plotting library
+- <i class="fas fa-chart-area"></i> **Seaborn** - Statistical viz
+- <i class="fas fa-project-diagram"></i> **Plotly Python** - Interactive charts
+:::
+
+::: {.skill-category}
+### <i class="fas fa-chart-pie"></i> Business Intelligence
+
+- <i class="fas fa-table"></i> **Tableau** - Professional dashboards
+- <i class="fas fa-chart-bar"></i> **Power BI** - Microsoft analytics
+- <i class="fas fa-window-maximize"></i> **Flexdashboard** - R dashboards
+:::
+:::
+
+---
+
+## **<i class="fas fa-book"></i> Data Visualization Blog Posts**
+
+Learn about data visualization best practices and techniques:
+
+- [The Complete Data Visualization Guide](posts/04-data-visualization-guide/index.qmd)
+- [Dashboard Design Principles](posts/19-dashboard-design-principles/index.qmd)
+- [Health Dashboard Visualization](posts/25-health-dashboard-visualization/index.qmd)
+
+---
+
+## **<i class="fas fa-code"></i> Interactive R Packages Used**
+
+```r
+# Core visualization packages
+library(plotly)      # Interactive plots
+library(ggplot2)     # Grammar of graphics
+library(DT)          # Interactive tables
+library(leaflet)     # Interactive maps
+library(shiny)        # Web applications
+library(flexdashboard) # Dashboard layouts
+library(patchwork)    # Combining plots
+library(scales)       # Formatting scales
+```
+
+---
+
+::: {.highlight-box}
+### <i class="fas fa-lightbulb"></i> Visualization Philosophy
+
+I believe data visualization should be both beautiful and functional. Every chart tells a story, and interactive elements help viewers explore the narrative at their own pace. Whether it's animated time series, interactive maps, or responsive dashboards, the goal is always to make data accessible and insights actionable.
+:::
+
+---
+
+[<i class="fas fa-arrow-left"></i> Back to Home](index.qmd) | [<i class="fas fa-arrow-right"></i> View All Projects](projects/index.qmd)
+

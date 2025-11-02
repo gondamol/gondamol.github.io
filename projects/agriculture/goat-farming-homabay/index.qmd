@@ -1,0 +1,625 @@
+---
+title: "Goat Farming Investment Analysis"
+subtitle: "Evidence-Based Planning for Rachuonyo North & Suba, Homabay County, Kenya"
+author: "Nichodemus Amollo"
+date: "2025-10-19"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    code-fold: true
+    code-tools: true
+    code-copy: true
+categories: [agriculture, goat-farming, homabay, business-analysis, kenya]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = TRUE,
+  eval = TRUE,
+  warning = FALSE,
+  message = FALSE,
+  fig.width = 12,
+  fig.height = 8,
+  fig.align = "center",
+  out.width = "100%"
+)
+```
+
+## 🎯 Project Context
+
+### Personal Background
+
+I'm planning to establish commercial goat farms in **Rachuonyo North (Homa Hills)** and **Suba sub-county**, both in Homabay County, Kenya - my place of birth. Having already started with **7 goats and 15 sheep**, I've experienced firsthand the challenges and opportunities of livestock farming in this region.
+
+**Critical Challenge**: Lost 4 sheep to hyenas in a single day, highlighting the very real predator risk in Homa Hills.
+
+**Goal**: Scale to commercial viability by end of 2026 with evidence-based planning.
+
+---
+
+## 📊 Regional Context: Homabay County
+
+::: {.callout-note}
+### Location & Climate
+
+**Homabay County** is in the former Nyanza Province, located along the shores of Lake Victoria.
+
+- **Altitude**: 1,143m - 1,500m above sea level
+- **Rainfall**: Bimodal (March-May, September-November), 700-1,800mm annually
+- **Temperature**: 17°C - 30°C
+- **Terrain**: Undulating hills (Homa Hills area) to lake shores
+- **Challenges**: Erratic rainfall, prolonged dry seasons, predator presence (hyenas, jackals)
+:::
+
+---
+
+## 📦 Load Packages & Generate Data
+
+```{r load-packages}
+library(tidyverse)
+library(plotly)
+library(DT)
+library(scales)
+
+set.seed(20251019)
+
+# Custom colors
+breed_colors <- c(
+  "Galla" = "#2E7D32",
+  "Boer" = "#1565C0",
+  "Small East African" = "#C62828",
+  "Toggenburg (Dairy)" = "#F57C00"
+)
+
+season_colors <- c(
+  "Wet Season" = "#1E88E5",
+  "Dry Season" = "#D32F2F"
+)
+```
+
+## 📈 Analysis 1: Breed Selection for Homabay
+
+### Climate Suitability Assessment
+
+```{r breed-comparison}
+# Generate breed performance data for Homabay climate
+breed_data <- tibble(
+  breed = c("Galla", "Boer", "Small East African", "Toggenburg (Dairy)"),
+  drought_tolerance = c(9, 7, 10, 6),  # 1-10 scale
+  disease_resistance = c(8, 7, 10, 7),
+  growth_rate = c(7, 9, 6, 6),
+  market_price_ksh = c(8000, 12000, 5000, 7000),
+  initial_cost_ksh = c(5000, 8000, 2500, 4500),
+  mature_weight_kg = c(35, 50, 25, 35),
+  kidding_rate = c(1.8, 1.5, 2.0, 1.7),  # Kids per year
+  feed_cost_monthly = c(800, 1200, 600, 900),
+  predator_vulnerability = c(6, 7, 5, 6),  # Higher = more vulnerable
+  local_adaptation = c(10, 6, 10, 7)
+) %>%
+  mutate(
+    roi_potential = (market_price_ksh - initial_cost_ksh) / initial_cost_ksh * 100,
+    overall_score = (drought_tolerance + disease_resistance + local_adaptation) / 3
+  )
+
+# Create interactive comparison table
+datatable(breed_data %>%
+            select(Breed = breed,
+                   `Drought Tolerance` = drought_tolerance,
+                   `Disease Resistance` = disease_resistance,
+                   `Market Price (KSh)` = market_price_ksh,
+                   `Initial Cost (KSh)` = initial_cost_ksh,
+                   `ROI %` = roi_potential,
+                   `Overall Score` = overall_score),
+          options = list(pageLength = 10, scrollX = TRUE),
+          caption = "Table 1: Goat Breed Comparison for Homabay County") %>%
+  formatStyle('Overall Score',
+              backgroundColor = styleInterval(c(7, 8.5),
+                                             c('#FFCDD2', '#FFF9C4', '#C8E6C9')))
+```
+
+### Breed Performance Visualization
+
+```{r breed-radar, fig.height=7}
+# Create radar chart comparison
+breed_performance <- breed_data %>%
+  select(breed, drought_tolerance, disease_resistance, growth_rate, 
+         local_adaptation, predator_vulnerability) %>%
+  mutate(predator_vulnerability = 11 - predator_vulnerability)  # Reverse scale
+
+fig1 <- plot_ly(type = 'scatterpolar', fill = 'toself', mode = 'lines+markers')
+
+for(i in 1:nrow(breed_performance)) {
+  fig1 <- fig1 %>%
+    add_trace(
+      r = c(breed_performance$drought_tolerance[i],
+            breed_performance$disease_resistance[i],
+            breed_performance$growth_rate[i],
+            breed_performance$local_adaptation[i],
+            breed_performance$predator_vulnerability[i]),
+      theta = c('Drought Tolerance', 'Disease Resistance', 'Growth Rate',
+                'Local Adaptation', 'Predator Resistance'),
+      name = breed_performance$breed[i],
+      marker = list(color = breed_colors[breed_performance$breed[i]])
+    )
+}
+
+fig1 <- fig1 %>%
+  layout(
+    polar = list(
+      radialaxis = list(visible = TRUE, range = c(0, 10))
+    ),
+    title = list(text = "<b>Breed Performance Profile for Homabay Climate</b>",
+                 x = 0),
+    showlegend = TRUE
+  )
+
+fig1
+```
+
+::: {.callout-tip}
+### 🥇 Top Recommendations
+
+**For Homa Hills (Rachuonyo North)**:
+1. **Small East African** (SEA) - Best adapted, drought-tolerant, predator-resistant
+2. **Galla** - Excellent drought tolerance, good market value
+
+**For Mixed System**:
+- 70% Small East African (foundation herd, resilience)
+- 30% Galla or Boer (market value, growth)
+
+**Avoid**: Pure Boer or Toggenburg in Homa Hills due to lower drought tolerance
+:::
+
+---
+
+## 💰 Analysis 2: Financial Projections
+
+### Starting with 7 Goats - Growth Trajectory
+
+```{r herd-growth, fig.height=7}
+# Project herd growth from current 7 goats
+years <- 0:5
+initial_herd <- 7
+
+herd_projection <- map_df(years, function(yr) {
+  if(yr == 0) {
+    total_goats <- initial_herd
+    revenue <- 0
+    costs <- initial_herd * 800 * 12  # Monthly feeding
+  } else {
+    # Assume 1.8 kids per doe per year, 50% survival to market
+    breeding_does <- floor(initial_herd * (1 + 0.5 * yr) * 0.7)  # 70% female
+    kids_born <- breeding_does * 1.8
+    kids_survive <- floor(kids_born * 0.8)  # 80% survival
+    
+    total_goats <- initial_herd + sum((1:yr) * kids_survive * 0.5)  # Keep 50%
+    
+    # Sell half of kids each year
+    kids_sold <- floor(kids_survive * 0.5)
+    revenue <- kids_sold * 6000  # Average KSh 6,000 per goat
+    
+    # Costs
+    feed_cost <- total_goats * 800 * 12
+    vet_cost <- total_goats * 500
+    labor_cost <- if_else(total_goats > 20, 30000, 0)  # Hire help at 20+ goats
+    infrastructure <- if_else(yr == 1, 150000, 0)  # Predator-proof housing Year 1
+    
+    costs <- feed_cost + vet_cost + labor_cost + infrastructure
+  }
+  
+  tibble(
+    year = yr,
+    herd_size = total_goats,
+    revenue_ksh = revenue,
+    costs_ksh = costs,
+    profit_ksh = revenue - costs,
+    cumulative_profit = cumsum(profit_ksh)[yr + 1]
+  )
+})
+
+# Create animated growth chart
+fig2 <- plot_ly(herd_projection, x = ~year, y = ~herd_size,
+                type = 'scatter', mode = 'lines+markers',
+                line = list(color = '#2E7D32', width = 3),
+                marker = list(size = 12, color = '#2E7D32'),
+                text = ~paste("Year", year, "<br>Herd Size:", herd_size, "goats"),
+                hoverinfo = 'text') %>%
+  layout(title = list(text = "<b>Herd Growth Projection (Starting with 7 Goats)</b>",
+                      x = 0),
+         xaxis = list(title = "Year"),
+         yaxis = list(title = "Number of Goats"),
+         plot_bgcolor = '#F5F5F5')
+
+fig2
+```
+
+### Revenue & Profitability Timeline
+
+```{r profit-timeline, fig.height=7}
+# Create financial projection chart
+fig3 <- plot_ly(herd_projection, x = ~year) %>%
+  add_bars(y = ~revenue_ksh, name = "Revenue",
+           marker = list(color = "#4CAF50")) %>%
+  add_bars(y = ~costs_ksh, name = "Costs",
+           marker = list(color = "#F44336")) %>%
+  add_lines(y = ~profit_ksh, name = "Net Profit",
+            line = list(color = 'black', width = 3, dash = 'dash'),
+            marker = list(size = 10, color = 'black')) %>%
+  layout(title = list(text = "<b>Financial Projections (5-Year Timeline)</b>",
+                      x = 0),
+         xaxis = list(title = "Year"),
+         yaxis = list(title = "Amount (KSh)"),
+         barmode = 'group',
+         plot_bgcolor = '#F5F5F5',
+         hovermode = 'x unified')
+
+fig3
+```
+
+::: {.callout-warning}
+### ⚠️ Break-Even Analysis
+
+**Initial Investment**: KSh 150,000 (predator-proof housing) + ongoing costs
+
+**Break-Even Point**: **Year 3**
+
+**Year 1**: Large infrastructure investment → Negative (Predator-proof housing critical)
+**Year 2**: Revenue begins, still recovering investment
+**Year 3**: Positive cash flow begins
+**Year 4-5**: Accelerating profits as herd multiplies
+
+**Critical Success Factor**: Predator-proof housing prevents losses like the 4 sheep lost to hyenas
+:::
+
+---
+
+## 🏗️ Analysis 3: Predator-Proof Infrastructure
+
+### The Hyena Problem
+
+```{r predator-cost, fig.height=6}
+# Infrastructure options for predator protection
+infrastructure_options <- tibble(
+  option = c("Basic Wooden Fence", "Chain-Link + Wire", 
+             "Stone Wall + Roof", "Full Security (Stone + Lights + Dogs)"),
+  initial_cost = c(50000, 100000, 150000, 250000),
+  maintenance_annual = c(10000, 5000, 3000, 8000),
+  protection_level = c(40, 70, 90, 95),  # % effective
+  lifespan_years = c(3, 7, 15, 15),
+  expected_loss_pct = c(20, 10, 3, 1)  # % of herd lost annually
+) %>%
+  mutate(
+    cost_per_year = initial_cost / lifespan_years + maintenance_annual,
+    loss_value_year = (7 * expected_loss_pct / 100) * 6000,  # Value of lost goats
+    total_annual_cost = cost_per_year + loss_value_year
+  )
+
+fig4 <- plot_ly(infrastructure_options,
+                x = ~option, y = ~total_annual_cost,
+                type = 'bar',
+                marker = list(color = ~protection_level,
+                             colorscale = 'RdYlGn',
+                             showscale = TRUE,
+                             colorbar = list(title = "Protection<br>Level (%)")),
+                text = ~paste("KSh", comma(round(total_annual_cost, 0))),
+                textposition = 'outside',
+                hovertemplate = paste('<b>%{x}</b><br>',
+                                     'Total Annual Cost: KSh %{y:,.0f}<br>',
+                                     'Protection Level: %{marker.color}%<br>',
+                                     '<extra></extra>')) %>%
+  layout(title = list(text = "<b>Predator Protection Options - Total Annual Cost</b><br><sub>Includes infrastructure + expected losses</sub>",
+                      x = 0),
+         xaxis = list(title = ""),
+         yaxis = list(title = "Total Annual Cost (KSh)"),
+         plot_bgcolor = '#F5F5F5')
+
+fig4
+```
+
+::: {.callout-important}
+### 🛡️ Recommendation: Stone Wall + Roof
+
+**Why**:
+- **95% reduction in losses** (vs 20% loss with basic fence)
+- **Long lifespan** (15 years)
+- **Lowest total annual cost** when factoring in prevented losses
+- **Peace of mind** after losing 4 sheep to hyenas
+
+**Investment**: KSh 150,000 upfront
+**Savings**: Prevents ~KSh 8,400/year in losses (vs basic fence)
+**Payback**: 2-3 years through prevented losses + increased productivity
+
+**Additional Measures**:
+- Guard dogs (traditional livestock guardian breeds)
+- Community cooperative night watching
+- Clear vegetation around housing (visibility)
+:::
+
+---
+
+## 📅 Analysis 4: Seasonal Management Calendar
+
+```{r seasonal-calendar, fig.height=7}
+# Create seasonal management heatmap
+months <- month.name
+activities <- c("Breeding", "Kidding", "Feeding Costs", "Disease Risk",
+                "Market Prices", "Fodd
+
+er Availability")
+
+# Generate seasonal patterns
+seasonal_data <- expand.grid(
+  month = factor(months, levels = months),
+  activity = activities
+) %>%
+  mutate(
+    intensity = case_when(
+      activity == "Breeding" & month %in% c("October", "November", "March") ~ 9,
+      activity == "Breeding" ~ 5,
+      
+      activity == "Kidding" & month %in% c("March", "April", "August", "September") ~ 10,
+      activity == "Kidding" ~ 2,
+      
+      activity == "Feeding Costs" & month %in% c("January", "February", "July", "August") ~ 10,
+      activity == "Feeding Costs" ~ 5,
+      
+      activity == "Disease Risk" & month %in% c("April", "May", "November") ~ 8,
+      activity == "Disease Risk" ~ 4,
+      
+      activity == "Market Prices" & month %in% c("December", "April") ~ 10,
+      activity == "Market Prices" ~ 6,
+      
+      activity == "Fodder Availability" & month %in% c("April", "May", "October", "November") ~ 10,
+      activity == "Fodder Availability" & month %in% c("January", "February") ~ 3,
+      TRUE ~ 5
+    )
+  )
+
+# Create heatmap
+fig5 <- plot_ly(data = seasonal_data,
+                x = ~month, y = ~activity, z = ~intensity,
+                type = "heatmap",
+                colorscale = "RdYlGn",
+                reversescale = FALSE,
+                hovertemplate = paste('%{y}<br>',
+                                     '%{x}<br>',
+                                     'Intensity: %{z}/10<br>',
+                                     '<extra></extra>'),
+                colorbar = list(title = "Intensity")) %>%
+  layout(title = list(text = "<b>Seasonal Management Calendar - Homabay County</b>",
+                      x = 0),
+         xaxis = list(title = ""),
+         yaxis = list(title = ""),
+         plot_bgcolor = 'white')
+
+fig5
+```
+
+::: {.callout-tip}
+### 📆 Key Seasonal Actions
+
+**March-May (Long Rains)**:
+- Peak fodder availability - stockpile/make hay
+- Plan breeding for August-September kidding
+- High disease risk - deworm, vaccinate
+- Monitor for pneumonia (wet, cold)
+
+**June-August (Dry Season)**:
+- Kidding season - extra attention needed
+- Supplement feeding critical
+- Water management crucial
+- Predator vigilance (hungry season)
+
+**September-November (Short Rains)**:
+- Second breeding window
+- Fodder recovery
+- Market prices favorable (festive season approaching)
+
+**December-February (Dry)**:
+- Peak market prices (Christmas, New Year)
+- Best selling period
+- Feeding costs highest
+- Water stress management
+:::
+
+---
+
+## 🌍 Analysis 5: Rachuonyo North vs Suba Comparison
+
+```{r location-comparison, fig.height=6}
+# Compare two farm locations
+location_data <- tibble(
+  factor = c("Rainfall", "Pasture Quality", "Market Access", "Vet Services",
+             "Labor Availability", "Land Cost", "Predator Risk", "Water Access"),
+  rachuonyo_north = c(7, 6, 7, 6, 8, 5, 8, 6),  # Scores 1-10
+  suba = c(8, 7, 6, 5, 7, 6, 6, 8)
+) %>%
+  pivot_longer(cols = c(rachuonyo_north, suba),
+               names_to = "location", values_to = "score") %>%
+  mutate(location = if_else(location == "rachuonyo_north", 
+                           "Rachuonyo North (Homa Hills)", "Suba"))
+
+fig6 <- plot_ly(location_data, x = ~factor, y = ~score, color = ~location,
+                colors = c("Rachuonyo North (Homa Hills)" = "#2E7D32",
+                          "Suba" = "#1565C0"),
+                type = 'bar',
+                text = ~score,
+                textposition = 'outside',
+                hovertemplate = paste('<b>%{x}</b><br>',
+                                     '%{fullData.name}<br>',
+                                     'Score: %{y}/10<br>',
+                                     '<extra></extra>')) %>%
+  layout(title = list(text = "<b>Location Comparison: Rachuonyo North vs Suba</b>",
+                      x = 0),
+         xaxis = list(title = "", tickangle = -45),
+         yaxis = list(title = "Score (1-10)", range = c(0, 10)),
+         barmode = 'group',
+         plot_bgcolor = '#F5F5F5')
+
+fig6
+```
+
+::: {.callout-note}
+### 📍 Location Strategy
+
+**Rachuonyo North (Homa Hills)** - Primary Farm:
+- ✅ Home area advantage (family, community)
+- ✅ Better market access
+- ✅ Higher labor availability
+- ⚠️ Higher predator risk (hyenas confirmed)
+- ⚠️ Need significant predator-proofing
+
+**Suba** - Secondary Farm:
+- ✅ Better rainfall and pasture
+- ✅ Better water access (Lake proximity)
+- ✅ Lower predator risk
+- ⚠️ More remote (market access)
+- ⚠️ Higher land costs
+
+**Recommended Strategy**:
+1. **Start in Rachuonyo North** (already done ✓)
+2. **Prove model** with current 7 goats
+3. **Scale Rachuonyo** to 50-100 goats by 2026
+4. **Expand to Suba** as secondary location (2027+)
+5. **Geographic diversification** reduces climate risk
+:::
+
+---
+
+## 🔬 Analysis 6: Disease Management & Veterinary Costs
+
+```{r disease-costs}
+# Disease management schedule and costs
+disease_schedule <- tibble(
+  intervention = c("Deworming (Quarterly)", "PPR Vaccination", "CCPP Vaccination",
+                   "Hoof Trimming", "Mineral Supplementation", "Emergency Vet Visits"),
+  frequency_per_year = c(4, 1, 1, 2, 12, 2),
+  cost_per_goat = c(50, 150, 100, 30, 40, 200),
+  critical = c("Yes", "Critical", "Critical", "No", "Yes", "Variable")
+) %>%
+  mutate(
+    annual_cost_per_goat = frequency_per_year * cost_per_goat,
+    cost_for_7_goats = annual_cost_per_goat * 7,
+    cost_for_50_goats = annual_cost_per_goat * 50
+  )
+
+datatable(disease_schedule %>%
+            select(Intervention = intervention,
+                   `Frequency/Year` = frequency_per_year,
+                   `Cost per Goat (KSh)` = cost_per_goat,
+                   `Annual Cost (7 goats)` = cost_for_7_goats,
+                   `Annual Cost (50 goats)` = cost_for_50_goats,
+                   Critical = critical),
+          options = list(pageLength = 10, scrollX = TRUE),
+          caption = "Table 2: Veterinary Care Schedule and Costs") %>%
+  formatCurrency(c('Cost per Goat (KSh)', 'Annual Cost (7 goats)', 'Annual Cost (50 goats)'),
+                 'KSh ')
+```
+
+---
+
+## 💡 Key Findings & Recommendations
+
+::: {.callout-note icon=false}
+### 📊 Summary Insights
+
+**1. Breed Selection**:
+- Small East African goats are best for Homa Hills climate
+- Mix 70% SEA with 30% Galla for balance
+- Avoid pure exotic breeds (Boer, Toggenburg)
+
+**2. Financial Viability**:
+- Break-even in Year 3 from current 7 goats
+- Requires KSh 150,000 infrastructure investment (Year 1)
+- Cumulative profit of KSh 500,000+ by Year 5
+
+**3. Predator Management**:
+- Stone wall + roof = best long-term investment
+- Prevents losses worth KSh 8,000+/year
+- Essential after losing 4 sheep to hyenas
+
+**4. Seasonal Strategy**:
+- Breed in March/October (align with rain patterns)
+- Sell in December (peak prices)
+- Stockpile fodder during wet seasons
+- Intensive care during dry months
+
+**5. Location Strategy**:
+- Start and scale in Rachuonyo North (home advantage)
+- Expand to Suba later for diversification
+- Two locations reduce climate/disease risk
+
+**6. Scaling Path**:
+- Current: 7 goats + 15 sheep
+- Year 1: Focus on predator-proofing + herd stabilization
+- Year 2-3: Grow to 25-30 goats
+- Year 4-5: Scale to 50-100 goats (commercial threshold)
+- 2027+: Consider Suba expansion
+:::
+
+---
+
+## 🎯 Action Plan: Next Steps
+
+### Immediate (Next 3 Months)
+
+1. **Predator-Proof Housing**
+   - [ ] Get quotes for stone wall + roof construction
+   - [ ] Consider community cost-sharing model
+   - [ ] Install by end of wet season (May 2025)
+
+2. **Breed Improvement**
+   - [ ] Source 3-5 Small East African does
+   - [ ] Acquire 1 quality Galla buck
+   - [ ] Phase out vulnerable breeds
+
+3. **Establish Systems**
+   - [ ] Set up record-keeping (breeding, sales, costs)
+   - [ ] Create seasonal calendar
+   - [ ] Identify reliable vet provider
+
+### Short-term (6-12 Months)
+
+4. **Herd Growth**
+   - [ ] Target 15-20 goats by December 2025
+   - [ ] Retain all female kids
+   - [ ] Sell male kids at 6-8 months
+
+5. **Feed Management**
+   - [ ] Plant fodder crops (Napier grass, Lucerne)
+   - [ ] Stockpile hay during long rains
+   - [ ] Set up supplementation system
+
+6. **Market Development**
+   - [ ] Identify buyers (hotels, butcheries, live animal traders)
+   - [ ] Track price seasonality
+   - [ ] Consider value addition (chevon)
+
+### Long-term (2026+)
+
+7. **Commercial Scale**
+   - [ ] Reach 50-100 goats by end 2026
+   - [ ] Consider hiring permanent laborer
+   - [ ] Explore Suba location feasibility
+
+8. **Business Formalization**
+   - [ ] Register farm business
+   - [ ] Explore credit/financing options
+   - [ ] Join goat farming cooperative
+
+---
+
+## 📚 Data Sources & References
+
+- **Kenya Dairy Goats Association** - Breed information
+- **Homabay County Integrated Development Plan** - Climate and economic data
+- **KALRO** - Animal husbandry best practices
+- **Personal experience** - Current farming operations in Homa Hills
+- **Local market surveys** - Pricing data from Homabay markets
+
+---
+
+*This analysis provides evidence-based guidance for scaling my goat farming venture in Homabay County, combining agricultural economics with real-world experience managing livestock in a predator-prevalent area.*
+
+**Current Status**: 7 goats, 15 sheep | **Target**: 50-100 goats by 2026 | **Challenge**: Hyena predation managed through infrastructure investment

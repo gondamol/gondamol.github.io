@@ -1,0 +1,81 @@
+---
+title: "Job Market Intelligence Platform"
+subtitle: "Real-time job scraping + NLP + automated alerts"
+page-layout: article
+---
+
+## Overview
+
+Automated platform that scrapes job postings from multiple boards, extracts key information using NLP, and sends intelligent alerts.
+
+### Problem Solved
+Job seekers waste 20+ hours/week manually searching LinkedIn, Indeed, Glassdoor, and other platforms.
+
+### Solution
+- **Hourly scraping** of 6+ job boards
+- **NLP skill extraction** from job descriptions
+- **Smart matching** based on your profile
+- **Instant alerts** via Telegram/Email
+- **Market intelligence** dashboard
+
+## Tech Stack
+
+- **Backend:** Python (Scrapy, Selenium, BeautifulSoup)
+- **Database:** PostgreSQL (Heroku)
+- **NLP:** spaCy
+- **Dashboard:** Streamlit
+- **Orchestration:** Apache Airflow
+- **Notifications:** Telegram Bot API
+
+## Features
+
+### 1. Multi-Platform Scraping
+- LinkedIn
+- Indeed
+- Glassdoor
+- AngelList
+- Fuzu (Kenya)
+- BrighterMonday (Kenya)
+
+### 2. Intelligent Analysis
+- Skill extraction (Python, R, SQL, etc.)
+- Salary range identification
+- Experience level parsing
+- Company information enrichment
+
+### 3. Smart Alerts
+- Job matching based on your criteria
+- Telegram/Email notifications
+- Daily digest of new matches
+
+### 4. Market Dashboard
+- Job trends by skill
+- Salary insights
+- Geographic distribution
+- Application tracker
+
+## Live Demo
+
+🔨 **Status:** In Development
+
+**Coming Soon:**
+- Live Streamlit dashboard
+- Public API endpoint
+- Source code on GitHub
+
+## Impact
+
+**For Job Seekers:**
+- Save 15+ hours/week
+- Never miss relevant opportunities
+- Data-driven salary negotiations
+
+**Technical Showcase:**
+- Real-time data pipeline
+- NLP in production
+- Full-stack automation
+
+---
+
+[Back to Analytics Engineering →](../)
+

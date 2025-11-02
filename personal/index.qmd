@@ -1,0 +1,388 @@
+---
+title: "Beyond Data: The Whole Person"
+subtitle: "Philosophy, Practice, & Purpose"
+page-layout: article
+---
+
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+::: {.hero-banner}
+# **The Human Behind the Data**
+
+*"He who has a why to live can bear almost any how."* - Friedrich Nietzsche
+:::
+
+---
+
+## **🏛️ Philosophy & Spiritual Practice** {data-aos="fade-up"}
+
+### Stoic Discipline
+
+I practice **Stoic philosophy religiously**. Not as an intellectual exercise, but as a daily framework for living with:
+
+- **Emotional resilience** when facing life's inevitable challenges
+- **Rational thinking** in decision-making and problem-solving
+- **Virtue ethics** guiding every action
+- ***Memento mori*** - remembering mortality to live fully present
+
+::: {.info-box}
+**Daily Practice:**
+
+- Morning reading of *Meditations* by Marcus Aurelius
+- Evening reflection on Stoic principles
+- Journaling on virtue, wisdom, justice, courage
+- Applying philosophical wisdom to modern data work
+:::
+
+### Integrated Spirituality
+
+My spiritual life honors multiple traditions:
+
+::: {.highlight-box}
+**Ancestral Reverence** - I honor the **gods of my ancestors** (African traditional spirituality), staying connected to my roots and cultural heritage.
+
+**Christian Faith** - I follow **Christ Jesus**, finding profound wisdom in His teachings on compassion, service, and love.
+
+**Buddhist Morality** - I deeply respect **Buddhist approaches to morality** - mindfulness, compassion, non-attachment. *I would call myself a Buddha* in the sense of seeking enlightenment through daily practice and ethical living.
+
+**"The religions of my ancestors, the teachings of Christ, and the wisdom of the Buddha all point toward the same truth: live with integrity, serve others, cultivate inner peace."**
+:::
+
+---
+
+## **📚 Reading & Intellectual Life** {data-aos="fade-up"}
+
+### Currently Reading
+
+::: {.success-box}
+**📖 Meditations** by Marcus Aurelius
+
+My constant companion. I read this daily, returning to its wisdom for guidance on resilience, duty, and rational living. Every page reminds me that obstacles are opportunities, that we control only our responses, not external events.
+:::
+
+### Stoic Classics
+
+1. **Meditations** by Marcus Aurelius - *Daily practice*
+2. **Letters from a Stoic** by Seneca - *Practical wisdom for daily life*
+3. **Discourses and Enchiridion** by Epictetus - *The foundation of Stoic ethics*
+4. **The Obstacle Is the Way** by Ryan Holiday - *Modern Stoicism*
+5. **A Guide to the Good Life** by William B. Irvine - *Practical Stoic techniques*
+6. **The Daily Stoic** by Ryan Holiday - *365 days of wisdom*
+7. **Stoicism and the Art of Happiness** by Donald Robertson - *Psychological insights*
+
+### Nietzsche's Provocations
+
+Friedrich Nietzsche challenges my thinking and strengthens my philosophical foundations:
+
+1. **Thus Spoke Zarathustra** - *The eternal recurrence and Übermensch*
+2. **Beyond Good and Evil** - *Questioning morality itself*
+3. **The Gay Science** - *"God is dead" and life-affirming philosophy*
+4. **On the Genealogy of Morals** - *The origin of moral concepts*
+5. **Twilight of the Idols** - *Philosophical hammer blows*
+6. **Ecce Homo** - *Nietzsche's bold autobiography*
+7. **The Birth of Tragedy** - *Apollonian and Dionysian forces*
+
+### Buddhist Wisdom
+
+1. **The Heart of the Buddha's Teaching** by Thich Nhat Hanh
+2. **When Things Fall Apart** by Pema Chödrön
+3. **Zen Mind, Beginner's Mind** by Shunryu Suzuki
+4. **The Art of Happiness** by Dalai Lama
+
+---
+
+## **🐄 Farm Life & Nature** {data-aos="fade-up"}
+
+The farm is my sanctuary - where philosophical principles meet practical living.
+
+::: {.highlight-box}
+**Why farming matters:**
+
+- **Grounding** - Connects me to ancestral traditions and the earth
+- **Stoic practice** - Accepting what nature provides, working with seasons
+- **Mindfulness** - Present moment awareness while tending animals
+- **Simplicity** - Finding joy in watching goats eat grass 🐐
+- **Resilience** - Learning from crop failures and livestock challenges
+:::
+
+---
+
+## **💪 Physical Discipline** {data-aos="fade-up"}
+
+### Fitness Practice
+
+A strong body supports a disciplined mind:
+
+::: {.info-box}
+**Training Regimen:**
+
+- **Morning workouts** (5-6 days/week) - Start each day with physical discipline
+- **Strength training** - Building resilience through progressive overload
+- **Running** - Meditative movement, connecting mind and body
+- **Yoga/stretching** - Flexibility, balance, presence
+
+**Philosophy:** *"No citizen has a right to be an amateur in the matter of physical training. What a disgrace it is for a man to grow old without ever seeing the beauty and strength of which his body is capable."* - Socrates
+:::
+
+### Hydration Discipline
+
+**Water is essential.** I drink significant amounts daily:
+
+- 💧 **3-4 liters** minimum per day
+- Mental clarity during long coding sessions
+- Physical performance optimization
+- Health maintenance
+- *Simple, foundational, non-negotiable*
+
+---
+
+## **💻 Building for Impact: Learning to Vibe Code** {data-aos="fade-up"}
+
+I'm currently learning **AI-assisted development** (vibe coding) to build software that serves humanity:
+
+::: {.project-card}
+::: {.project-header}
+### 🏥 Health
+:::
+::: {.project-body}
+**surveyKE** - Simplifying health data collection across Africa
+
+**Health Monitoring Apps** - Tools for rural community health workers
+
+**Telemedicine Platforms** - Bridging healthcare access gaps
+:::
+:::
+
+::: {.project-card}
+::: {.project-header}
+### 🌍 Climate Change
+:::
+::: {.project-body}
+**Agricultural Climate Adaptation** - Helping farmers respond to changing patterns
+
+**Environmental Data Viz** - Making climate data accessible
+
+**Carbon Tracking** - Tools for smallholder farm sustainability
+:::
+:::
+
+::: {.project-card}
+::: {.project-header}
+### 🌱 Personal Growth
+:::
+::: {.project-body}
+**Stoic Daily** - Daily philosophical reflection app (Meditations-inspired)
+
+**Habit Tracker** - Built on Stoic principles of discipline
+
+**Mindfulness Tools** - Integrating Buddhist practices
+:::
+:::
+
+::: {.project-card}
+::: {.project-header}
+### 🗳️ Democracy & Civic Engagement
+:::
+::: {.project-body}
+**Open Government Dashboards** - Transparency through data
+
+**Civic Participation Tools** - Lowering barriers to democratic engagement
+
+**Public Accountability Platforms** - Data-driven governance monitoring
+:::
+:::
+
+::: {.project-card}
+::: {.project-header}
+### 🌾 Agriculture & Social Development
+:::
+::: {.project-body}
+**Farm Management Systems** - Designed for smallholder farmers
+
+**Market Linkage Platforms** - Connecting producers to buyers
+
+**Community Data Tools** - Empowering local agricultural cooperatives
+:::
+:::
+
+**Open to collaboration on any of these!** Building in public, all open source.
+
+---
+
+## **⚖️ Core Values** {data-aos="fade-up"}
+
+### Integrity & Truthfulness
+
+::: {.success-box}
+**Truth above comfort.**
+
+I speak honestly even when it's difficult. Research demands truthfulness - in data, in reporting, in acknowledging limitations. This extends to every area of life.
+
+- Transparent about mistakes and learnings
+- Honest in all professional dealings
+- Authentic voice, not performative
+- *"The truth will set you free"* - living this daily
+:::
+
+### Civic Engagement
+
+::: {.info-box}
+**Data for the public good.**
+
+My work serves communities:
+
+- Research on **low-income household financial behavior** → informs policy
+- Building **open source tools** → reduces barriers in African research
+- Training **500+ researchers** → multiplies impact through capacity building
+- **Democratic participation** → using data for transparent governance
+- **Community projects** → direct service to vulnerable populations
+
+*Not just talking about impact - creating it through action.*
+:::
+
+---
+
+## **🤝 The Collaborative Builder** {data-aos="fade-up"}
+
+My work demonstrates team-player qualities through action:
+
+### Multi-Country Research Coordination
+
+- Led data collection across **Kenya, Uganda, Tanzania**
+- Coordinated teams at **1,535+ sites**
+- Managed **cross-functional partnerships** (Georgetown gui2de, University of Alaska)
+
+### Capacity Building at Scale
+
+- **Trained 500+ researchers** in data management and M&E
+- Developed **training protocols** used across institutions
+- **Mentored** aspiring data scientists and analysts
+
+### Field Team Leadership
+
+- Recruited, trained, and supervised **50+ field enumerators**
+- Created **collaborative field cultures**
+- Problem-solved together through challenges
+
+### Open Source Contribution
+
+- Building **surveyKE** as open collaboration
+- Sharing **code on GitHub**
+- Inviting **community participation**
+
+*These actions speak louder than any claim of "being a team player."*
+
+---
+
+## **🎯 Finding Balance** {data-aos="fade-up"}
+
+### Daily Rhythm
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
+
+<div class="tile-card">
+<div class="tile-card-header">
+<h4 class="tile-title">Morning (5:30 AM)</h4>
+</div>
+<div class="tile-body">
+• Read <em>Meditations</em><br>
+• Workout/Run<br>
+• Farm check<br>
+• Water (1L)
+</div>
+</div>
+
+<div class="tile-card">
+<div class="tile-card-header">
+<h4 class="tile-title">Deep Work (7:30 AM - 1 PM)</h4>
+</div>
+<div class="tile-body">
+• Research & analysis<br>
+• Coding & building<br>
+• Writing & reporting<br>
+• Water throughout
+</div>
+</div>
+
+<div class="tile-card">
+<div class="tile-card-header">
+<h4 class="tile-title">Afternoon</h4>
+</div>
+<div class="tile-body">
+• Meetings & collaboration<br>
+• Learning & reading<br>
+• Farm work<br>
+• Physical activity
+</div>
+</div>
+
+<div class="tile-card">
+<div class="tile-card-header">
+<h4 class="tile-title">Evening</h4>
+</div>
+<div class="tile-body">
+• Stoic reflection<br>
+• Reading (Nietzsche, philosophy)<br>
+• Family time<br>
+• Prepare for tomorrow
+</div>
+</div>
+
+</div>
+
+---
+
+## **🌟 Why This Matters** {data-aos="fade-up"}
+
+::: {.warning-box}
+**Philosophy isn't abstract - it's lived.**
+
+Every line of code I write, every dataset I analyze, every person I train - it's all guided by:
+
+- **Stoic discipline** → Resilience through challenges
+- **Ancestral wisdom** → Staying grounded in identity
+- **Christian compassion** → Service to others
+- **Buddhist mindfulness** → Present, intentional action
+- **Nietzschean strength** → Creating meaning, becoming who I am
+
+This is who I am. Not just a data scientist, but a philosopher-practitioner building tools that serve humanity while living with integrity, discipline, and purpose.
+:::
+
+---
+
+## **📬 Connect on Shared Values** {data-aos="zoom-in"}
+
+::: {style="text-align: center; margin: 2rem 0;"}
+
+Interested in discussing:
+
+- **Stoic philosophy** and daily practice
+- **Collaborative projects** in health, climate, democracy
+- **Vibe coding** and AI-assisted development
+- **Farming & sustainable living**
+- **Building tools that matter**
+
+**Open to meaningful collaboration with others who share these values.**
+
+[LinkedIn](https://linkedin.com/in/nichodemusamollo){.btn .btn-primary style="margin: 0.5rem;"}
+[GitHub](https://github.com/gondamol){.btn .btn-primary style="margin: 0.5rem;"}
+[Email](mailto:nichodemuswerre@gmail.com){.btn .btn-primary style="margin: 0.5rem;"}
+
+:::
+
+---
+
+<div style="text-align: center; font-style: italic; color: #666; margin: 3rem 0;">
+*"The impediment to action advances action. What stands in the way becomes the way."*  
+- Marcus Aurelius, <em>Meditations</em>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    easing: 'ease-in-out',
+    once: true,
+    offset: 100
+  });
+</script>

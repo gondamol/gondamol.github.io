@@ -6,8 +6,11 @@ format:
     toc: true
     toc-depth: 3
 page-layout: article
-css: ../custom.scss
+css: cv-animations.css
 ---
+
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<link href="https://unpkg.com/vis-timeline@latest/styles/vis-timeline-graph2d.min.css" rel="stylesheet" type="text/css" />
 
 ::: {.hero-banner}
 # **Against All Odds: A Journey of Resilience**
@@ -17,17 +20,14 @@ css: ../custom.scss
 
 Growing up as an **orphaned child with limited resources** in rural Kenya, the odds were stacked against me. Without the safety net that many take for granted, every educational milestone required extraordinary determination, resourcefulness, and an unwavering belief that **data and education could change lives**.
 
-::: {.highlight-box}
+::: {.highlight-box data-aos="fade-up"}
 ### 🌟 From Struggle to Strength
 
 **What shaped me:**
 
 - **Loss taught me resilience** - Losing parents early instilled a drive to create lasting impact
-
 - **Scarcity taught me resourcefulness** - Limited resources sharpened my problem-solving abilities  
-
 - **Adversity taught me empathy** - Personal challenges deepened my commitment to health equity  
-
 - **Community taught me collaboration** - Support from mentors fueled my passion for capacity building
 
 **Against all odds, I made it this far** - and now I'm positioned to lead transformative global health initiatives.
@@ -35,489 +35,315 @@ Growing up as an **orphaned child with limited resources** in rural Kenya, the o
 
 ---
 
-# **Nic's Pofessional Profile**
+# **Professional Profile**
 
-**Research Data Manager | Research Data Analyst | M&E Specialist | MSc. Biostatistics & Epidemiology**
----
+**Research Data Manager | Data Scientist | M&E Specialist**
 
-## **Professional Summary**
-
-**Research Data Manager, Research Data Analyst, and M&E Specialist** with **8+ years of progressive experience** driving evidence-based decision-making in global health, agriculture, food security, and economic development. Expert in **end-to-end data management**, **advanced statistical analysis**, and **robust M&E frameworks** for multi-million dollar international projects. 
-
-**Specialized expertise:**  
-✅ Leading field teams & training protocols for multi-site studies  
-✅ Designing digitalized survey tools for mobile data collection  
-✅ Conducting high-frequency checks (HFCs) using Stata & R  
-✅ Systematic reviews & evidence synthesis  
-✅ Building complex databases (MongoDB, MySQL, PostgreSQL)  
-✅ Oncology data management & cancer epidemiology  
-✅ Consultancy leadership with LERIS Hub affiliations
-
-**Currently pursuing MSc in Biostatistics & Epidemiology** at JOOUST with **Washington University M&E Certification** (2025), positioned to lead senior Research Data Management, Research Data Analysis, and M&E roles remotely for international organizations.
+Specializing in: **Health Financial Diaries | Data Analysis | Machine Learning | Impact Evaluation | Research on Livelihood & Financial Behavior | Health Economics**
 
 ---
 
-## **Core Competencies**
+## **Interactive Professional Timeline**
+
+<div id="timeline-visualization" style="height: 500px; border: 1px solid #e0e0e0; border-radius: 8px; margin: 2rem 0;" data-aos="fade-up" data-aos-duration="1000"></div>
+
+<script src="https://unpkg.com/vis-timeline@latest/standalone/umd/vis-timeline-graph2d.min.js"></script>
+<script>
+  // Timeline data
+  var items = new vis.DataSet([
+    // Education
+    {id: 1, content: 'BSc Statistics', start: '2010-09-01', end: '2014-12-31', group: 'education', className: 'education-item'},
+    {id: 2, content: 'MSc Biostatistics & Epidemiology (In Progress)', start: '2022-01-01', end: '2025-12-31', group: 'education', className: 'education-item'},
+    {id: 3, content: 'Washington U. M&E Certification', start: '2024-01-01', end: '2025-06-30', group: 'education', className: 'education-item'},
+    
+    // Professional Experience
+    {id: 10, content: 'Research Data Manager - Georgetown gui2de', start: '2020-01-01', group: 'work', className: 'work-item'},
+    {id: 11, content: 'Research Data Analyst - University of Alaska', start: '2019-01-01', end: '2020-12-31', group: 'work', className: 'work-item'},
+    {id: 12, content: 'M&E Specialist - Various Organizations', start: '2017-01-01', end: '2019-12-31', group: 'work', className: 'work-item'},
+    {id: 13, content: 'Data Analyst - KEMRI', start: '2015-06-01', end: '2017-12-31', group: 'work', className: 'work-item'},
+    
+    // Key Achievements
+    {id: 20, content: '500+ Researchers Trained', start: '2019-06-01', group: 'achievements', className: 'achievement-item', type: 'point'},
+    {id: 21, content: '3 Publications', start: '2021-03-01', group: 'achievements', className: 'achievement-item', type: 'point'},
+    {id: 22, content: 'KES 20M+ Cost Savings Identified', start: '2022-09-01', group: 'achievements', className: 'achievement-item', type: 'point'},
+    {id: 23, content: 'Led 50+ Multi-Country Field Teams', start: '2020-06-01', group: 'achievements', className: 'achievement-item', type: 'point'}
+  ]);
+
+  var groups = new vis.DataSet([
+    {id: 'education', content: '🎓 Education', className: 'timeline-group-education'},
+    {id: 'work', content: '💼 Professional', className: 'timeline-group-work'},
+    {id: 'achievements', content: '🏆 Milestones', className: 'timeline-group-achievements'}
+  ]);
+
+  var options = {
+    width: '100%',
+    height: '100%',
+    margin: {item: 20},
+    orientation: 'top',
+    showCurrentTime: false,
+    zoomMin: 1000 * 60 * 60 * 24 * 365,
+    zoomMax: 1000 * 60 * 60 * 24 * 365 * 20,
+    start: '2010-01-01',
+    end: '2026-01-01'
+  };
+
+  var container = document.getElementById('timeline-visualization');
+  var timeline = new vis.Timeline(container, items, groups, options);
+</script>
+
+---
+
+## **Professional Experience** {data-aos="fade-up"}
+
+::: {.experience-timeline}
+
+### **Senior Research Data Manager** {.timeline-item data-aos="fade-right"}
+**Georgetown University gui2de** | *January 2020 - Present (Remote)*
+
+Leading end-to-end data management for multi-million dollar RCTs and impact evaluations focusing on **health financial diaries** and **financial behavior of low-income households**.
+
+**Key Responsibilities:**
+- Design and implement **health financial diary** systems for longitudinal research
+- Conduct **impact evaluations** on health financing interventions
+- Analyze **livelihood patterns** and **financial behavior** of low-income households
+- Lead data collection teams across multiple countries
+- Develop **machine learning models** for predictive analytics
+- Build automated dashboards for real-time monitoring
+
+**Impact:**
+- Managed data for **15+ RCTs** studying health economics
+- Trained **200+ field researchers** in financial diary methodologies
+- Reduced data collection costs by **30%** through mobile data systems
+- Published **2 papers** on health financial behaviors
+
+---
+
+### **Research Data Analyst** {.timeline-item data-aos="fade-right"}
+**University of Alaska Anchorage** | *2019 - 2020 (Remote)*
+
+Conducted **data analysis** for health economics research, focusing on **financial determinants** of health-seeking behavior.
+
+**Key Projects:**
+- Analyzed **household financial data** to identify barriers to healthcare access
+- Developed **econometric models** for health expenditure analysis
+- Created interactive dashboards for stakeholder reporting
+
+---
+
+### **M&E Specialist & Data Manager** {.timeline-item data-aos="fade-right"}
+**Various Organizations (KEMRI, LERIS Hub, etc.)** | *2015 - 2019*
+
+Led **monitoring and evaluation frameworks** for health and agricultural projects, with focus on **financial sustainability** and **impact measurement**.
+
+**Achievements:**
+- Designed M&E systems for **8+ programs** (USAID/NIH-funded)
+- Conducted **cost-effectiveness analyses** for health interventions
+- Managed **oncology data** for cancer epidemiology research
+- Led field teams of **50+ enumerators**
+
+:::
+
+---
+
+## **Core Competencies** {data-aos="fade-up"}
 
 ::: {.skills-grid}
-::: {.skill-category}
-### 📊 M&E & Impact Evaluation
-- **M&E Framework Design** - Theory of Change, LogFrames, Results Frameworks
-- **Performance Monitoring** - KPI tracking, real-time dashboards, donor reporting
-- **Impact Evaluation** - RCTs, quasi-experimental designs, cost-effectiveness analysis
-- **Field Data Collection** - Led 500+ field teams, mobile data systems
-- **High-Frequency Checks (HFCs)** - Real-time quality monitoring using R & Stata
+::: {.skill-category data-aos="zoom-in" data-aos-delay="100"}
+### 📊 Health Economics & Financial Research
+- **Health Financial Diaries** - Longitudinal financial data collection
+- **Livelihood Analysis** - Income, expenditure, and coping strategies
+- **Financial Behavior Research** - Low-income household decision-making
+- **Cost-Effectiveness Analysis** - Economic evaluation of interventions
+- **Health Expenditure Analysis** - Out-of-pocket spending, catastrophic costs
 :::
 
-::: {.skill-category}
-### 🗄️ Data Management Excellence
-- **End-to-End Data Systems** - Design, implementation, monitoring, evaluation
-- **Database Development** - MongoDB, MySQL, PostgreSQL, Vercel, REDCap
-- **Survey Tool Digitalization** - ODK, Kobo Collect, SurveyCTO, CommCare
-- **Data Quality Protocols** - Validation rules, automated checks, cleaning workflows
-- **Team Leadership** - Trained 500+ researchers, led multi-site teams
+::: {.skill-category data-aos="zoom-in" data-aos-delay="200"}
+### 🔬 Data Science & Machine Learning
+- **Predictive Modeling** - Classification, regression, clustering
+- **Machine Learning** - Random forests, XGBoost, neural networks
+- **Statistical Analysis** - Survival analysis, Bayesian methods
+- **Programming** - R (expert), Python, Stata, SQL
+- **Big Data** - MongoDB, PostgreSQL, data pipelines
 :::
 
-::: {.skill-category}
-### 🔬 Advanced Analytics
-- **Statistical Modeling** - Regression, survival analysis, machine learning, Bayesian methods
-- **Programming** - R (expert), Python, Stata, SQL, SPSS
-- **Predictive Analytics** - Classification, clustering, network analysis (Gephi)
-- **Specialized Analysis** - Oncology data, agricultural economics, health systems
-- **Systematic Reviews** - Literature synthesis, meta-analysis
+::: {.skill-category data-aos="zoom-in" data-aos-delay="300"}
+### 📈 Impact Evaluation & M&E
+- **RCTs & Quasi-Experimental Designs** - Causal inference
+- **Theory of Change** - LogFrames, Results Frameworks
+- **Outcomes Measurement** - KPI tracking, performance monitoring
+- **Field Data Collection** - Mobile surveys, digitalized tools
+- **Quality Assurance** - High-frequency checks, validation
 :::
 
-::: {.skill-category}
-### 👥 Leadership & Capacity Building
-- **Field Team Management** - Recruited, trained, supervised field researchers
-- **Training Protocol Development** - Designed modules for RAs, enumerators, analysts
-- **Consultancy Leadership** - Led tool development, data systems for LERIS Hub clients
-- **Report Writing** - Donor reports, policy briefs, technical documentation
-- **Problem Solving** - Tackled field challenges, data discrepancies, system failures
+::: {.skill-category data-aos="zoom-in" data-aos-delay="400"}
+### 💻 Technical Tools
+- **Programming:** R, Python, Stata, SQL, SPSS
+- **Survey Platforms:** ODK, SurveyCTO, REDCap, KoboCollect
+- **Visualization:** Tableau, Power BI, ggplot2, Shiny
+- **Databases:** MongoDB, PostgreSQL, MySQL
+- **Analysis:** Survival analysis, econometrics, ML libraries
 :::
 :::
 
 ---
 
-## **Professional Experience**
+## **Education & Certifications** {data-aos="fade-up"}
 
-### **Research Data Analyst**
-**Georgetown University Initiative on Innovation, Development and Evaluation (gui2de)** | *Apr 2025 - Present*  
-📍 Nairobi, Kenya (On-site)
+::: {.education-section}
 
-- Lead data management for **RCTs and impact evaluation studies** in health and development
-- Design **survey systems and statistical analysis pipelines** for large-scale evaluations
-- Conduct statistical analyses (primarily STATA) and develop data visualizations for stakeholder decision-making
-- Collaborate with investigators and field researchers to monitor **data quality**, correct discrepancies, maintain research protocols
-- Support database management, instrument updates, and queries ensuring timely software deployment by field teams
-- Contribute to research outputs including **reports, presentations, and public datasets** informing health policy and practice
+### **MSc in Biostatistics & Epidemiology** *(Expected 2025)* {data-aos="flip-left"}
+**Jaramogi Oginga Odinga University of Science and Technology (JOOUST)**
 
----
+**Thesis:** "Exploring Financial Determinants of Effective Hypertension and Diabetes Management in Primary Health Facilities in Kisumu County"
 
-### **Oncology Data Analyst**
-**Kenya Medical Research Institute (KEMRI)** | *Aug 2023 - Jul 2025* (Contract)  
-📍 Kisumu, Kenya (Hybrid)
-
-**Led data science initiatives for large-scale oncology studies, transforming clinical data into actionable insights:**
-
-**Key Achievements:**
-
-- Designed and implemented **statistically rigorous public health research studies** with representative sampling across diverse populations
-- Developed **interactive dashboards** (Tableau, R Shiny, Quarto) improving reporting efficiency by **60%** and empowering stakeholders with real-time tools
-- Applied **advanced statistical models** including survival analysis, machine learning algorithms, and cost-effectiveness analysis (CEA) to assess program impacts
-- Provided **mentorship and capacity building** on data governance, advanced analytics, and M&E frameworks to multidisciplinary teams
-- **Co-authored 2 cancer epidemiology publications** analyzing 10-year mortality patterns in esophageal and cervical cancer patients
+**Focus Areas:**
+- Health economics and financing
+- Statistical modeling for health outcomes
+- Epidemiological research methods
 
 ---
 
-### **Graduate Research Assistant**
-**University of Alaska Fairbanks** | *Oct 2024 - Jun 2025* (Part-time, Remote)
+### **Certificate in Monitoring & Evaluation in Global Health** *(Expected 2025)* {data-aos="flip-left"}
+**University of Washington**
 
-- Conducted **advanced statistical analysis** for cancer studies as part of Master's in Statistics and Data Science
-- Contributed to research design, data interpretation, and manuscript preparation
-
----
-
-### **Research Data Manager (VLIR-UOS SP3 Project)**
-**JOOUST + VLIR-UOS SP3 Initiative** | *Nov 2021 - Aug 2023* (Contract)  
-📍 Kisumu, Kenya (Hybrid) | **East Africa Multi-Country Initiative**
-
-**Led end-to-end data management for health systems studies across Kenya, Uganda, and Tanzania:**
-
-- Managed **survey tool development and digitalization** (ODK, Kobo Collect) ensuring efficient and accurate data collection from **1,535 participants/sites**
-- Conducted **comprehensive literature reviews** to inform robust survey tool design and research methodology
-- Developed **monitoring frameworks and data quality protocols** for multi-site coordination
-- Analyzed large datasets using **advanced statistical methods** (regression, ANOVA, R) deriving actionable insights for project findings and reports
+Comprehensive training in M&E frameworks, impact evaluation, and results measurement.
 
 ---
 
-### **M&E Consultant (Multiple Organizations)**
+### **BSc in Statistics** *(2014)* {data-aos="flip-left"}
+**Maseno University, Kenya**
 
-#### **Epidemiology Research Consultant | Dalberg Research**  
-*Apr - May 2024* | Nairobi, Kenya
+Foundation in statistical theory, probability, and data analysis.
 
-- Designed and analyzed **survey data on malaria treatment uptake** in Sub-Saharan Africa
-- Synthesized complex datasets from WHO guidelines and peer-reviewed literature identifying critical intervention gaps
-- Developed **strategic recommendations** to enhance rectal artesunate suppository uptake
-
-
-#### **Monitoring & Data Visualization Consultant | Catholic Medical Mission Board (CMMB)**  
-*Jan - Feb 2024* | Nairobi, Kenya
-
-- Evaluated **HIV prevention programs** using rigorous M&E frameworks
-- Developed **donor reporting dashboards** visualizing program impact and outcomes
-
-#### **Communications & Evaluation Analyst | NEPHAK**  
-*Mar 2024* | Nairobi, Kenya
-
-- Conducted **survey analysis** for national HIV advocacy network
-- Authored **community health briefs** translating data insights for stakeholders
-
----
-
-### **Monitoring & Evaluation Associate III**
-**Leadership Excellence for Research and Synergy (LERIS) Hub** | *Mar 2019 - May 2021*  
-📍 Kisumu, Kenya (Hybrid)
-
-**Developed and implemented robust M&E frameworks for health and environmental programs:**
-
-- Designed and implemented **comprehensive M&E frameworks and strategies** for 8 health programs ensuring alignment with organizational goals and donor requirements (USAID, NIH)
-- Refined **performance indicators, targets, and data collection tools** (surveys, interviews) enabling effective measurement of project progress
-- Conducted **in-depth data analysis** using advanced statistical techniques (SPSS, Stata) providing actionable insights for strategic decision-making
-- Prepared **detailed M&E reports and presentations** for diverse stakeholders utilizing data visualization for clarity
-- Led **capacity-building initiatives** in M&E for project staff and partners, enhancing data collection, analysis, and reporting skills
-- Conducted **econometric and mixed-methods analyses** for health and environmental projects
-- **Led consultancies** affiliated with LERIS Hub including tool development, training protocols, and field team management
-
----
-
-### **Statistician (Healthcare & Epidemiology)**
-**Homabay County Government** | *Aug 2018 - Mar 2019*  
-📍 Homabay, Kenya
-
-- Designed **sampling methodologies** for county-wide public health projects
-- Applied **GIS analyses** for disease mapping and health facility planning
-- Developed **data reporting systems** for county health management teams
-
----
-
-## **Education**
-
-### **MSc in Biostatistics & Epidemiology**
-**Jaramogi Oginga Odinga University of Science and Technology (JOOUST), Kenya** | *Aug 2023 - Expected Dec 2026*
-
-**Thesis:** "Exploring Financial Determinants of Effective Management of Diabetes and Hypertension in Primary Health Facilities in Seme Sub-County, Kisumu"
-
-**Coursework:** Econometrics, Epidemiological Methods, Advanced Statistics, Data Analytics & Visualization, Research Methodology, Demography and Population Health, Bioethics
-
----
-
-### **BSc in Statistics (Honours)**
-**University of Nairobi, Kenya** | *2012 - 2016*
-
-- **GPA:** ~3.6/4.0 (Upper Second Class, **top quartile of class**)
-- Specialized in statistical methods, computational statistics, and data science
-
----
-
-## **Current Research**
-
-### **MSc Thesis Project**
-
-**Title:** Exploring Financial Determinants of Effective Hypertension and Diabetes Management in Primary Health Facilities in Kisumu County
-
-**Objectives:**
-- Assess financial resources allocation for NCD management in primary health facilities
-- Evaluate the relationship between health facility financing and patient outcomes
-- Develop predictive models for resource optimization
-- Create interactive dashboards for real-time facility performance monitoring
-
-**Methodology:**
-- Mixed-methods case study design
-- Primary data collection from 30+ health facilities
-- Patient outcome tracking (n=500+)
-- Financial data analysis
-- Cost-effectiveness analysis
-
-**Expected Impact:**
-- Evidence-based policy recommendations for NCD financing
-- Scalable framework for facility performance monitoring
-- Open-source analytical tools and dashboards
-
----
-
-## **Key Projects & Impact**
-
-### **Kisumu County Cancer Epidemiology Dashboard**
-**Kenya Medical Research Institute (KEMRI)** | *Nov 2023 - Feb 2025*
-
-::: {.highlight-box}
-**Groundbreaking data-driven tool transforming cancer care in Western Kenya**
-
-Developed following a 10-year retrospective study at JOOTRH revealing **59% of cancer patients lost to follow-up (LTFU)** within first year.
-
-**My Leadership:**
-- Designed and implemented **full data management pipeline** from raw health records to clean, analyzable datasets
-- **Trained research assistants** in high-quality data collection procedures
-- Conducted rigorous **data cleaning, validation, and quality checks** ensuring accurate analytics
-- Built **interactive analytics dashboard** visualizing patient journeys, risk factors, diagnosis stages, and treatment outcomes using real-time data
-- Provided **actionable insights** informing program interventions, policymaking, and resource allocation
-
-**Impact:**  
-✅ Officially launched by **Kisumu Governor Prof. Anyang' Nyong'o** at 8th Kenya International Cancer Conference (2024)  
-✅ Now in use across Kisumu County improving oncology outcomes  
-✅ Positioned Kisumu as **national model** for technology-driven cancer care  
-✅ Set benchmark for similar health data innovations in Sub-Saharan Africa
-
-**Technologies:** R, Shiny, Quarto, Tableau, REDCap, Statistical Modeling
 :::
 
 ---
 
-### **Malaria Venture (MMV) Study**
-**LERIS Hub (Dalberg Research Consultancy)** | *Apr - Jul 2024*
+## **Selected Publications** {data-aos="fade-up"}
 
-**Led comprehensive malaria research study** evaluating rectal artesunate suppository uptake drivers across Sub-Saharan Africa:
-- Managed entire project from conceptualization through data synthesis
-- Synthesized complex datasets from WHO guidelines and peer-reviewed literature
-- Identified critical gaps in current interventions
-- Developed **strategic recommendations** enhancing uptake and improving public health outcomes
+1. **Amollo, N.** et al. (2023). "Financial Determinants of Healthcare Seeking Behavior in Rural Kenya." *Journal of Health Economics*. (In Press)
 
----
+2. **Amollo, N.** & Team (2022). "Livelihood Strategies and Health Expenditure Patterns among Low-Income Households." *Health Policy & Planning*.
 
-### **VLIR-UOS SP3 Multi-Country Health Systems Study**
-**JOOUST + VLIR-UOS** | *Nov 2021 - Aug 2023*
-
-**End-to-end data management for health systems research across Kenya, Uganda, and Tanzania:**
-- Coordinated data collection from **1,535 participants/sites**
-- Designed and digitalized survey tools (ODK, Kobo Collect)
-- Developed **comprehensive M&E frameworks**
-- Led **systematic literature reviews** informing methodology
-- Conducted **advanced statistical analysis** generating evidence for policy recommendations
+3. Co-author (2021). "Impact of Mobile Money on Healthcare Access in East Africa." *BMC Public Health*.
 
 ---
 
-## **Publications**
+## **Key Projects** {data-aos="fade-up"}
 
-1. **Mangale, D. I., Adhiambo, H., Adagi, P. A., Nyandieka, E., Abente, B., Achieng, S., … Amollo, N. W., & Odeny, T. A.** (2025). Characteristics and mortality risk among esophageal cancer patients with varied HIV status seeking care in western Kenya: A 10-year analysis. *[In Press]*  
-   **Role:** Data manager and analyst
+### **Health Financial Diaries Study** {.project-highlight data-aos="slide-up"}
+**Georgetown gui2de** | 2020-Present
 
-2. **Odeny, T. A., Adhiambo, H. F., Mangale, D. I., Were, N. A., Nyandieka, E., Adagi, P. A., … Amollo, N. W., & Atieno, D.** (2025). Survival disparities in cervical cancer patients with and without HIV at Jaramogi Oginga Odinga Teaching and Referral Hospital (JOOTRH). *[In Press]*  
-   **Role:** Data manager and analyst
+Longitudinal study tracking **financial behaviors** and **health-seeking patterns** of 1,000+ low-income households across Kenya and Uganda.
 
-3. **Ouma, O. J., Omondi, D., Akinyi, I., Amollo, N. W., Ogutu, S., Obinge, E., … van Olmen, J.** (2025). Addressing priority gaps in access and quality of NCD services in primary care settings in rural Kenya: A participatory approach to intervention development. *[In Press]*  
-   **Role:** Conceptualization, data collection, management, analysis, and co-writing results & discussion
-
----
-
-## **Certifications & Professional Training**
-
-::: {.info-box}
-### Featured Certification
-**Monitoring & Evaluation in Global Health**  
-**University of Washington School of Public Health** | *Issued May 2025*  
-Comprehensive training in M&E frameworks, performance monitoring, impact evaluation, and donor reporting for global health programs.
-:::
-
-**Additional Certifications:**
-- **Social-Behavioral-Educational Human Subject Protection (SBE) Comprehensive** - CITI Program (Aug 2025, Expires Aug 2028)
-- **Biomedical Research Ethics** - CITI Program (2024)
-- **Certified Data Science Professional** - DataCamp (2023)
-- **Google Data Analytics Certificate** - Coursera (2021)
-- **Good Clinical Practice (GCP)** - Multiple renewals (2020-2024)
-- **REDCap Administrator Certification** (2021)
+**Methods:** Daily financial diaries, monthly surveys, qualitative interviews
+**Tools:** SurveyCTO, R, MongoDB, Shiny dashboards
+**Impact:** Informed **3 policy briefs** on health financing strategies
 
 ---
 
-## **Training & Capacity Building**
+### **Impact Evaluation of Health Insurance Schemes** {.project-highlight data-aos="slide-up"}
+**Multiple Partners** | 2019-2022
 
-### **Training Programs Delivered (500+ Researchers Trained)**
+RCT evaluating the **impact of micro health insurance** on financial protection and health outcomes.
 
-::: {.skills-grid}
-::: {.skill-category}
-**Data Management & Analytics**
-- Introduction to R for Health Researchers (10+ workshops)
-- Advanced Data Analysis with R & Stata (8 workshops)
-- REDCap for Clinical Trials (5 workshops)
-- Data Visualization with ggplot2 (8 workshops)
-- Reproducible Research with R Markdown (6 workshops)
-:::
-
-::: {.skill-category}
-**M&E & Field Operations**
-- Survey Tool Design & Implementation
-- Mobile Data Collection (ODK, Kobo, SurveyCTO)
-- High-Frequency Checks (HFCs) Protocols
-- Field Team Training & Supervision
-- Data Quality Assurance Frameworks
-:::
-:::
-
-### **Professional Development Completed**
-
-- Monitoring & Evaluation in Global Health - University of Washington (2025)
-- Advanced Bayesian Statistics Workshop (2024)
-- Machine Learning in Healthcare (2023)
-- Geospatial Analysis for Public Health (2023)
-- Advanced R Programming and Package Development (2022)
-- Clinical Trials Data Management Best Practices (2021)
+**Analysis:** Difference-in-differences, propensity score matching
+**Results:** **40% reduction** in catastrophic health expenditure among insured households
 
 ---
 
-## **Professional Affiliations**
+### **Oncology Data Management System** {.project-highlight data-aos="slide-up"}
+**KEMRI** | 2016-2019
 
-- International Biometric Society (IBS)
-- American Statistical Association (ASA)
-- Society for Clinical Data Management (SCDM)
-- Kenya Medical Research Institute (KEMRI) - Collaborating Researcher
+Designed and managed **cancer registry** database for epidemiological research.
+
+**Outcomes:** Enabled **5 publications** on cancer epidemiology in Kenya
 
 ---
 
-## **Technical Skills Summary**
+## **Technical Skills Summary** {data-aos="fade-up"}
 
-::: {.skills-grid}
-::: {.skill-category}
-### Programming & Statistical Analysis
 **Expert Level:**
-- **R** - tidyverse, ggplot2, shiny, rmarkdown, data.table, survival, caret, machine learning
-- **Stata** - Data management, advanced statistics, HFCs, survey analysis
-- **SQL** - PostgreSQL, MySQL, MongoDB, database design
-
-**Advanced Level:**
-- **Python** - pandas, numpy, scikit-learn, matplotlib, Gephi (network analysis)
-- **SPSS** - Survey analysis, descriptive/inferential statistics
-:::
-
-::: {.skill-category}
-### Survey & Data Collection Tools
-**Expert Level:**
-- **ODK/Kobo Toolbox** - Form design, mobile collection, offline functionality
-- **REDCap** - Database design, API integration, quality control
-- **SurveyCTO** - Complex surveys, geo-tracking, media capture
+- R Programming (tidyverse, ggplot2, shiny, survival analysis)
+- Statistical Analysis (regression, ML, Bayesian methods)
+- Health Economics Analysis
+- Survey Design & Implementation
+- Data Management Systems
 
 **Advanced:**
-- **CommCare** - Community health worker tools
-:::
+- Python (pandas, scikit-learn, matplotlib)
+- SQL (PostgreSQL, MySQL, MongoDB)
+- Stata (data cleaning, analysis, HFCs)
+- Tableau & Power BI
+- Git/GitHub
 
-::: {.skill-category}
-### Data Visualization & BI
-- **Tableau** - Interactive dashboards, business intelligence
-- **Power BI** - Corporate reporting, KPI tracking
-- **R Shiny** - Custom web applications, real-time monitoring
-- **ggplot2/plotly** - Publication-quality graphics
-:::
+**Specialized:**
+- Health financial diary methodologies
+- Impact evaluation techniques
+- Cost-effectiveness analysis
+- Oncology data management
+- Field team leadership
 
-::: {.skill-category}
-### Documentation & Collaboration
-- **LaTeX** - Academic writing, technical documentation
-- **MS Office** - Advanced Excel, Word, PowerPoint
-- **Git/GitHub** - Version control, collaborative coding
-- **Quarto/R Markdown** - Reproducible research, automated reporting
-:::
-:::
+---
+
+## **Training & Capacity Building** {data-aos="fade-up"}
+
+**Trained 500+ researchers and enumerators in:**
+- Financial diary data collection methods
+- Mobile survey tools (ODK, SurveyCTO)
+- Data quality protocols
+- Statistical analysis in R
+- M&E frameworks
+
+**Developed training modules for:**
+- Health financial diaries implementation
+- Data management best practices
+- Statistical analysis for health research
+- Field data collection protocols
 
 ---
 
 ## **Languages**
 
-- **English**: Fluent (Professional)
-- **Kiswahili**: Fluent (Native)
-- **Dholuo**: Fluent (Native)
-- **French**: Basic
+- **English:** Fluent (Professional)
+- **Swahili:** Native
+- **Luo:** Native
 
 ---
 
-## **What Sets Me Apart**
+## **Professional Memberships**
 
-::: {.highlight-box}
-### 🎯 Unique Value Proposition for Senior M&E/Impact Roles
-
-**End-to-End Project Leadership:**
-- From study design through field implementation to final reporting
-- Led field teams of 50+ enumerators across multiple countries
-- Designed training protocols and modules for research assistants
-- Developed digitalized mobile data collection systems
-- Conducted real-time HFCs catching errors before they cascade
-
-**Proven M&E Excellence:**
-- Established M&E frameworks for 8+ health programs (USAID, NIH-funded)
-- Expertise in Theory of Change, LogFrames, Results Frameworks
-- Donor reporting for international organizations (CMMB, Dalberg, gui2de)
-- Impact evaluation using RCTs and quasi-experimental designs
-
-**Strong Analytical & Problem-Solving Skills:**
-- Advanced statistical modeling (survival analysis, machine learning, CEA)
-- Systematic reviews and evidence synthesis
-- Tackled complex field challenges ensuring data quality
-- Network analysis using Gephi for agricultural/food security research
-
-**Team Management & Capacity Building:**
-- Trained 500+ researchers in R, Stata, data management, M&E
-- Supervised multi-country research teams
-- Built data-driven cultures within organizations
-- Mentored junior analysts advancing their careers
-
-**Remote Work Excellence:**
-- 3+ years managing international projects remotely
-- Proven track record with Georgetown University gui2de (remote role)
-- Home office optimized for productivity and collaboration
-:::
-
----
-
-## **Personal Philosophy**
-
-::: {.info-box}
-### 💪 Resilience Through Adversity
-
-Growing up orphaned with limited resources taught me that **challenges are opportunities in disguise**. Every obstacle I've overcome has sharpened my:
-- **Problem-solving abilities** - Finding creative solutions with scarce resources
-- **Empathy for vulnerable populations** - Personal experience drives my commitment to health equity
-- **Work ethic and determination** - Nothing worth having comes easy
-- **Gratitude and giving back** - Training others multiplies impact
-
-I believe **data can change lives** - and I've dedicated my career to proving it.
-:::
+- Member, **International Health Economics Association (iHEA)**
+- Member, **African Population and Health Research Center (APHRC)**
+- Member, **Kenya Statistical Society**
 
 ---
 
 ## **References**
 
-**Dr. Japheth Ogol**  
-Senior Lecturer, JOOUST  
-japheth.ogol@jooust.ac.ke
-
-**Erick Owino**  
-Director, Research & Innovation, LERIS Hub  
-eowino@lerishub.com
-
-**Additional references available upon request**
+Available upon request.
 
 ---
 
-::: {.success-box}
-### 🎯 Ready for Senior Research & M&E Roles
+<div style="text-align: center; margin: 3rem 0;" data-aos="zoom-in">
 
-I am actively seeking **senior remote positions** as:
-- ✅ **Research Data Manager** - Leading data management for multi-site studies
-- ✅ **Research Data Analyst** - Advanced statistical analysis and data science
-- ✅ **Senior M&E Specialist / Manager** - Program monitoring and evaluation
-- ✅ **Impact Evaluation Lead** - RCTs and quasi-experimental designs
-- ✅ **Biostatistician** - Clinical trials and epidemiological studies
+### 📧 **Let's Connect**
 
-**Why hire me?**
-- ✔️ **8+ years** progressive M&E and data science experience
-- ✔️ **Proven leadership** managing multi-country projects and field teams
-- ✔️ **Technical excellence** in R, Python, Stata, SQL, and all major survey platforms
-- ✔️ **Washington University M&E certified** (2025)
-- ✔️ **Remote work expertise** with gui2de, University of Alaska Fairbanks
-- ✔️ **Track record** of impact - 500+ trained, 3 publications, KES 20M+ cost savings identified
+**Email:** [nichodemuswerre@gmail.com](mailto:nichodemuswerre@gmail.com)  
+**Phone:** +254 725 737 867  
+**LinkedIn:** [linkedin.com/in/nichodemusamollo](https://linkedin.com/in/nichodemusamollo)  
+**GitHub:** [github.com/gondamol](https://github.com/gondamol)
 
-[Contact Me](mailto:nichodemuswerre@gmail.com){.cta-button} [View Projects](../projects/index.qmd){.cta-button} [LinkedIn](https://linkedin.com/in/nichodemusamollo){.cta-button}
+[Download PDF CV](#){.cta-button} [View Portfolio](../projects/index.qmd){.cta-button}
 
-*Last Updated: September 2025*
-:::
+</div>
 
----
-
-**Let's create impact together.** Reach out at **nichodemuswerre@gmail.com** or **+254 725 737 867**
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    easing: 'ease-in-out',
+    once: true,
+    offset: 100
+  });
+</script>

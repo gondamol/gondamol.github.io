@@ -1,28 +1,457 @@
 ---
-title: "Resources"
+title: "Resources & Learning Materials"
+subtitle: "Curated collection of data science tools, courses, and resources"
+page-layout: article
 ---
 
-# Resources
+::: {.hero-banner}
+# **Data Analytics & Research Resources**
 
-Welcome to my resources page! Here, you'll find a collection of tools, articles, and datasets that I regularly use in my work as a data analyst and statistician.
+A comprehensive collection of free and paid resources for aspiring and practicing data analysts, researchers, and health economists.
+:::
 
-## Data Science Tools
+---
 
-- **R:** A powerful tool for statistical computing and graphics.
-- **Python:** Versatile programming language for data analysis, modeling, and visualization.
-- **SQL:** Essential for managing and querying large datasets.
-- **Tableau:** Data visualization tool that helps turn data into actionable insights.
+## **📊 Data Analytics Tools**
 
-## Recommended Reading
+### **R Programming** {.project-card}
 
-- **"Bayesian Data Analysis" by Andrew Gelman**
-- **"The Art of R Programming" by Norman Matloff**
-- **"Deep Learning with Python" by François Chollet**
+**Essential Packages:**
 
-## Useful Datasets
+- [tidyverse](https://www.tidyverse.org/) - Data manipulation and visualization ecosystem
+- [ggplot2](https://ggplot2.tidyverse.org/) - Advanced data visualization
+- [dplyr](https://dplyr.tidyverse.org/) - Data manipulation
+- [tidyr](https://tidyr.tidyverse.org/) - Data tidying
+- [readr](https://readr.tidyverse.org/) - Data import
+- [shiny](https://shiny.rstudio.com/) - Interactive web applications
+- [rmarkdown](https://rmarkdown.rstudio.com/) - Dynamic documents
+- [caret](https://topepo.github.io/caret/) - Machine learning workflows
+- [survival](https://cran.r-project.org/web/packages/survival/) - Survival analysis
+- [data.table](https://rdatatable.gitlab.io/data.table/) - High-performance data manipulation
 
-- **[Kaggle Datasets](https://www.kaggle.com/datasets):** A vast collection of datasets for various data science projects.
-- **[WHO Health Data](https://www.who.int/data):** Public health datasets from the World Health Organization.
-- **[CDC WONDER](https://wonder.cdc.gov/):** A comprehensive database of public health data.
+**Development Tools:**
 
+- [RStudio](https://posit.co/products/open-source/rstudio/) - IDE for R (FREE)
+- [Posit Cloud](https://posit.cloud/) - Cloud-based RStudio
+- [GitHub](https://github.com/) - Version control
 
+### **Python for Data Science** {.project-card}
+
+**Core Libraries:**
+
+- [pandas](https://pandas.pydata.org/) - Data manipulation
+- [numpy](https://numpy.org/) - Numerical computing
+- [matplotlib](https://matplotlib.org/) - Plotting library
+- [seaborn](https://seaborn.pydata.org/) - Statistical visualization
+- [scikit-learn](https://scikit-learn.org/) - Machine learning
+- [statsmodels](https://www.statsmodels.org/) - Statistical modeling
+- [plotly](https://plotly.com/python/) - Interactive visualizations
+- [jupyter](https://jupyter.org/) - Interactive notebooks
+
+**IDEs & Platforms:**
+
+- [Anaconda](https://www.anaconda.com/) - Python distribution for data science (FREE)
+- [VS Code](https://code.visualstudio.com/) - Versatile code editor (FREE)
+- [Google Colab](https://colab.research.google.com/) - Cloud-based Jupyter (FREE)
+- [Kaggle Notebooks](https://www.kaggle.com/code) - Cloud computing + datasets (FREE)
+
+### **Statistical Software** {.project-card}
+
+- [Stata](https://www.stata.com/) - Comprehensive statistical package (Paid)
+- [SPSS](https://www.ibm.com/products/spss-statistics) - User-friendly statistics (Paid)
+- [SAS](https://www.sas.com/) - Enterprise analytics (Paid)
+- [JASP](https://jasp-stats.org/) - Open-source alternative to SPSS (FREE)
+- [jamovi](https://www.jamovi.org/) - Free statistical software (FREE)
+
+### **Survey Tools** {.project-card}
+
+**Mobile Data Collection:**
+
+- [ODK (Open Data Kit)](https://getodk.org/) - Free & open source (FREE)
+- [KoboToolbox](https://www.kobotoolbox.org/) - Humanitarian data collection (FREE)
+- [SurveyCTO](https://www.surveycto.com/) - Professional survey platform (Paid)
+- [REDCap](https://www.project-redcap.org/) - Research data capture (FREE for academic)
+- [CommCare](https://www.dimagi.com/commcare/) - Mobile data collection (Freemium)
+
+**Online Surveys:**
+
+- [Google Forms](https://www.google.com/forms/) - Simple surveys (FREE)
+- [Qualtrics](https://www.qualtrics.com/) - Advanced survey platform (Paid)
+- [SurveyMonkey](https://www.surveymonkey.com/) - Popular survey tool (Freemium)
+- [Typeform](https://www.typeform.com/) - Beautiful surveys (Freemium)
+
+### **Visualization Tools** {.project-card}
+
+**Business Intelligence:**
+
+- [Tableau Public](https://public.tableau.com/) - Free version (FREE)
+- [Tableau Desktop](https://www.tableau.com/) - Professional BI (Paid, student discount)
+- [Power BI](https://powerbi.microsoft.com/) - Microsoft's BI platform (Freemium)
+- [Looker Studio (Google Data Studio)](https://datastudio.google.com/) - Free BI tool (FREE)
+
+**Specialized Visualization:**
+
+- [D3.js](https://d3js.org/) - JavaScript visualization library (FREE)
+- [Plotly](https://plotly.com/) - Interactive graphs (Freemium)
+- [Flourish](https://flourish.studio/) - Data storytelling (Freemium)
+- [RAWGraphs](https://www.rawgraphs.io/) - Vector-based visualizations (FREE)
+
+### **Databases** {.project-card}
+
+**Relational Databases:**
+
+- [PostgreSQL](https://www.postgresql.org/) - Powerful open-source DB (FREE)
+- [MySQL](https://www.mysql.com/) - Popular open-source DB (FREE)
+- [SQLite](https://www.sqlite.org/) - Lightweight database (FREE)
+- [Microsoft SQL Server](https://www.microsoft.com/en-us/sql-server/) - Enterprise DB (Paid)
+
+**NoSQL Databases:**
+
+- [MongoDB](https://www.mongodb.com/) - Document database (Freemium)
+- [Redis](https://redis.io/) - In-memory database (FREE)
+- [Firebase](https://firebase.google.com/) - Google's backend platform (Freemium)
+
+---
+
+## **🎓 Learning Resources**
+
+### **Free Online Courses** {.success-box}
+
+**Data Analytics Fundamentals:**
+
+1. [Google Data Analytics Certificate](https://www.coursera.org/professional-certificates/google-data-analytics) - Coursera (FREE audit)
+2. [IBM Data Analyst Certificate](https://www.coursera.org/professional-certificates/ibm-data-analyst) - Coursera (FREE audit)
+3. [Microsoft: Data Science for Beginners](https://github.com/microsoft/Data-Science-For-Beginners) - GitHub curriculum (FREE)
+4. [freeCodeCamp: Data Analysis with Python](https://www.freecodecamp.org/learn/data-analysis-with-python/) - Comprehensive course (FREE)
+
+**R Programming:**
+
+1. [R for Data Science (Online Book)](https://r4ds.hadley.nz/) - Hadley Wickham (FREE)
+2. [Swirl](https://swirlstats.com/) - Learn R interactively in R console (FREE)
+3. [R-bloggers](https://www.r-bloggers.com/) - Community tutorials (FREE)
+4. [DataCamp: Introduction to R](https://www.datacamp.com/courses/free-introduction-to-r) - First chapter free (FREE)
+
+**Python for Data Science:**
+
+1. [Python for Everybody](https://www.py4e.com/) - Dr. Chuck (FREE)
+2. [Kaggle Learn](https://www.kaggle.com/learn) - Micro-courses (FREE)
+3. [DataCamp: Intro to Python](https://www.datacamp.com/courses/intro-to-python-for-data-science) - First chapter (FREE)
+4. [Harvard CS109: Data Science](https://cs109.github.io/2015/) - Full course materials (FREE)
+
+**SQL:**
+
+1. [SQLBolt](https://sqlbolt.com/) - Interactive SQL lessons (FREE)
+2. [Mode SQL Tutorial](https://mode.com/sql-tutorial/) - Comprehensive guide (FREE)
+3. [W3Schools SQL](https://www.w3schools.com/sql/) - Reference and practice (FREE)
+4. [Khan Academy: Intro to SQL](https://www.khanacademy.org/computing/computer-programming/sql) - Video lessons (FREE)
+
+**Statistics:**
+
+1. [Khan Academy Statistics](https://www.khanacademy.org/math/statistics-probability) - Comprehensive stats course (FREE)
+2. [Stat110 Harvard](https://projects.iq.harvard.edu/stat110/home) - Probability course (FREE)
+3. [Penn State STAT 500](https://online.stat.psu.edu/stat500/) - Applied statistics (FREE)
+4. [Statistics with R (Duke)](https://www.coursera.org/specializations/statistics) - Coursera (FREE audit)
+
+**Machine Learning:**
+
+1. [Andrew Ng's Machine Learning](https://www.coursera.org/learn/machine-learning) - Coursera classic (FREE audit)
+2. [Fast.ai](https://www.fast.ai/) - Practical deep learning (FREE)
+3. [Google's Machine Learning Crash Course](https://developers.google.com/machine-learning/crash-course) - With TensorFlow (FREE)
+4. [Elements of AI](https://www.elementsofai.com/) - AI basics (FREE)
+
+### **YouTube Channels** {.info-box}
+
+**General Data Science:**
+
+- [StatQuest with Josh Starmer](https://www.youtube.com/@statquest) - Best statistics explanations
+- [3Blue1Brown](https://www.youtube.com/@3blue1brown) - Math visualizations
+- [freeCodeCamp.org](https://www.youtube.com/@freecodecamp) - Full courses
+- [Data School](https://www.youtube.com/@dataschool) - Python & R tutorials
+- [Ken Jee](https://www.youtube.com/@KenJee_ds) - Data science career advice
+
+**R Programming:**
+
+- [David Robinson](https://www.youtube.com/@safe4democracy) - Tidy Tuesday screencasts
+- [Andrew Couch](https://www.youtube.com/@andrewcouch) - R tutorials
+- [Business Science](https://www.youtube.com/@business-science) - R for business
+
+**Python:**
+
+- [Corey Schafer](https://www.youtube.com/@coreyms) - Python fundamentals
+- [Keith Galli](https://www.youtube.com/@KeithGalli) - Data science with Python
+- [Krish Naik](https://www.youtube.com/@krishnaik06) - ML & AI
+
+**Health Data Science:**
+
+- [Mike Marin](https://www.youtube.com/@mikemarinstats) - Biostatistics
+- [MarinStatsLectures](https://www.youtube.com/@marinstatlectures) - R & statistics
+
+### **Books (Free & Paid)** {.project-card}
+
+**Free Online Books:**
+
+1. [R for Data Science](https://r4ds.hadley.nz/) - Hadley Wickham & Garrett Grolemund
+2. [Introduction to Statistical Learning (ISLR)](https://www.statlearning.com/) - With R examples
+3. [Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/) - Jake VanderPlas
+4. [Forecasting: Principles and Practice](https://otexts.com/fpp3/) - Rob Hyndman
+5. [The Effect: An Introduction to Research Design and Causality](https://theeffectbook.net/) - Nick Huntington-Klein
+6. [Causal Inference: The Mixtape](https://mixtape.scunning.com/) - Scott Cunningham
+7. [Advanced R](https://adv-r.hadley.nz/) - Hadley Wickham
+8. [R Packages](https://r-pkgs.org/) - Hadley Wickham & Jenny Bryan
+
+**Worth Buying:**
+
+1. **The Art of Statistics** - David Spiegelhalter
+2. **Storytelling with Data** - Cole Nussbaumer Knaflic
+3. **Naked Statistics** - Charles Wheelan
+4. **Data Science for Business** - Foster Provost & Tom Fawcett
+5. **Practical Statistics for Data Scientists** - Peter Bruce & Andrew Bruce
+
+---
+
+## **🏥 Health Economics & Research**
+
+### **Key Journals** {.project-card}
+
+**Health Economics:**
+
+- [Health Economics](https://onlinelibrary.wiley.com/journal/10991050)
+- [Health Affairs](https://www.healthaffairs.org/)
+- [Social Science & Medicine](https://www.journals.elsevier.com/social-science-and-medicine)
+- [The Lancet Global Health](https://www.thelancet.com/journals/langlo/home)
+- [BMC Health Services Research](https://bmchealthservres.biomedcentral.com/)
+- [PLoS Medicine](https://journals.plos.org/plosmedicine/) - Open access (FREE)
+
+**Public Health:**
+
+- [American Journal of Public Health](https://ajph.aphapublications.org/)
+- [BMC Public Health](https://bmcpublichealth.biomedcentral.com/) - Open access (FREE)
+- [Global Health Action](https://www.tandfonline.com/journals/zgha20) - Open access (FREE)
+
+**Methods:**
+
+- [Journal of Clinical Epidemiology](https://www.jclinepi.com/)
+- [Epidemiology](https://journals.lww.com/epidem/pages/default.aspx)
+- [Statistics in Medicine](https://onlinelibrary.wiley.com/journal/10970258)
+
+### **Data Sources** {.success-box}
+
+**Global Health Data:**
+
+1. [DHS Program](https://dhsprogram.com/) - Demographic & Health Surveys (FREE)
+2. [World Bank Open Data](https://data.worldbank.org/) - Development indicators (FREE)
+3. [WHO Global Health Observatory](https://www.who.int/data/gho) - Health statistics (FREE)
+4. [IHME GBD](http://www.healthdata.org/gbd) - Global Burden of Disease (FREE)
+5. [UN Data](http://data.un.org/) - United Nations statistics (FREE)
+6. [Gapminder](https://www.gapminder.org/data/) - Development data (FREE)
+
+**Kenya-Specific:**
+
+1. [Kenya National Bureau of Statistics (KNBS)](https://www.knbs.or.ke/) - National data
+2. [Kenya Open Data](https://www.opendata.go.ke/) - Government open data (FREE)
+3. [Kenya Health Information System (KHIS)](https://hiskenya.org/) - Health data
+4. [APHRC Data](https://aphrc.org/data/) - Population & health research (FREE)
+
+**Research Repositories:**
+
+1. [Harvard Dataverse](https://dataverse.harvard.edu/) - Research data (FREE)
+2. [Figshare](https://figshare.com/) - Research outputs (FREE)
+3. [Zenodo](https://zenodo.org/) - Research data repository (FREE)
+4. [Open ICPSR](https://www.openicpsr.org/) - Social science data (FREE)
+
+### **Health Economics Tools** {.project-card}
+
+**Cost-Effectiveness Analysis:**
+
+- [CHEERS Checklist](https://www.equator-network.org/reporting-guidelines/cheers/) - Reporting guidelines
+- [iDSI Reference Case](https://www.idsihealth.org/resource-items/idsi-reference-case/) - HTA guidelines
+- [WHO-CHOICE](https://www.who.int/teams/health-systems-governance-and-financing/economic-analysis/who-choice) - Cost-effectiveness
+
+**Software:**
+
+- [TreeAge Pro](https://www.treeage.com/) - Decision tree analysis (Paid)
+- [R package: heemod](https://cran.r-project.org/web/packages/heemod/) - Health economic modeling (FREE)
+- [R package: dampack](https://cran.r-project.org/web/packages/dampack/) - Decision-analytic modeling (FREE)
+
+---
+
+## **💻 Software Development**
+
+### **Version Control** {.project-card}
+
+- [Git Documentation](https://git-scm.com/doc) - Official docs (FREE)
+- [GitHub Guides](https://guides.github.com/) - Learning resources (FREE)
+- [Pro Git Book](https://git-scm.com/book/en/v2) - Free online book (FREE)
+- [GitHub Desktop](https://desktop.github.com/) - GUI for Git (FREE)
+- [GitKraken](https://www.gitkraken.com/) - Git client (Freemium)
+
+**Learn Git:**
+
+1. [Learn Git Branching](https://learngitbranching.js.org/) - Interactive tutorial (FREE)
+2. [Git Immersion](https://gitimmersion.com/) - Guided tour (FREE)
+3. [GitHub Skills](https://skills.github.com/) - Interactive courses (FREE)
+
+### **Package Development** {.project-card}
+
+**R Packages:**
+
+- [R Packages Book](https://r-pkgs.org/) - Hadley Wickham (FREE)
+- [Writing R Extensions](https://cran.r-project.org/doc/manuals/r-release/R-exts.html) - Official guide (FREE)
+- [usethis package](https://usethis.r-lib.org/) - Package development workflow (FREE)
+- [devtools package](https://devtools.r-lib.org/) - Development tools (FREE)
+
+**Python Packages:**
+
+- [Python Packaging Guide](https://packaging.python.org/) - Official guide (FREE)
+- [Real Python: Publishing Package](https://realpython.com/pypi-publish-python-package/) - Tutorial (FREE)
+
+---
+
+## **🌐 Communities & Networks**
+
+### **Online Communities** {.info-box}
+
+**Forums & Q&A:**
+
+- [Stack Overflow](https://stackoverflow.com/) - Programming Q&A (FREE)
+- [Cross Validated](https://stats.stackexchange.com/) - Statistics Q&A (FREE)
+- [RStudio Community](https://community.rstudio.com/) - R help (FREE)
+- [Reddit r/datascience](https://www.reddit.com/r/datascience/) - Data science community (FREE)
+- [Reddit r/rstats](https://www.reddit.com/r/rstats/) - R community (FREE)
+
+**Social Learning:**
+
+- [Kaggle](https://www.kaggle.com/) - Competitions & datasets (FREE)
+- [DataCamp Community](https://www.datacamp.com/community) - Tutorials (FREE)
+- [Towards Data Science](https://towardsdatascience.com/) - Medium publication (FREE)
+- [Analytics Vidhya](https://www.analyticsvidhya.com/) - Data science blog (FREE)
+
+**African Data Science:**
+
+- [Africa R Users](https://africa-r.org/) - R users in Africa (FREE)
+- [Data Science Africa](http://www.datascienceafrica.org/) - DSA community (FREE)
+- [AfroCHI](https://afrochi.org/) - African HCI community (FREE)
+
+### **Professional Organizations** {.project-card}
+
+**Statistics & Data Science:**
+
+- [American Statistical Association (ASA)](https://www.amstat.org/)
+- [Royal Statistical Society (RSS)](https://rss.org.uk/)
+- [International Statistical Institute (ISI)](https://www.isi-web.org/)
+- [Kenya Statistical Society](https://www.kas.or.ke/)
+
+**Health Economics:**
+
+- [International Health Economics Association (iHEA)](https://healtheconomics.org/)
+- [African Health Economics and Policy Association (AfHEA)](https://www.afhea.org/)
+- [Health Economics Research Unit (HERU)](https://www.abdn.ac.uk/heru/)
+
+**Research:**
+
+- [African Population and Health Research Center (APHRC)](https://aphrc.org/)
+- [African Economic Research Consortium (AERC)](https://aercafrica.org/)
+
+---
+
+## **🚀 Career Development**
+
+### **Job Boards** {.success-box}
+
+**General Data Science:**
+
+- [LinkedIn Jobs](https://www.linkedin.com/jobs/) - Professional network
+- [Indeed](https://www.indeed.com/) - Job aggregator
+- [Glassdoor](https://www.glassdoor.com/) - Jobs + reviews
+- [AngelList](https://angel.co/) - Startup jobs
+
+**Data-Specific:**
+
+- [Kaggle Jobs](https://www.kaggle.com/jobs) - Data science roles
+- [DataJobs](https://datajobs.com/) - Data careers
+- [iHire Data Science](https://www.ihiredatascience.com/) - Specialized board
+- [Remote OK](https://remoteok.com/remote-data-jobs) - Remote data jobs
+
+**Africa/Kenya:**
+
+- [BrighterMonday Kenya](https://www.brightermonday.co.ke/) - Kenyan jobs
+- [FuZu](https://www.fuzu.com/) - East African jobs
+- [Devex](https://www.devex.com/jobs) - Development sector jobs
+- [ReliefWeb](https://reliefweb.int/jobs) - Humanitarian jobs
+
+### **Freelancing Platforms** {.project-card}
+
+- [Upwork](https://www.upwork.com/) - General freelancing
+- [Toptal](https://www.toptal.com/) - Top 3% freelancers
+- [Fiverr](https://www.fiverr.com/) - Gig marketplace
+- [Freelancer](https://www.freelancer.com/) - Project bidding
+- [Kolabtree](https://www.kolabtree.com/) - Scientific freelancing
+
+### **Portfolio Building** {.info-box}
+
+**Showcase Platforms:**
+
+- [GitHub](https://github.com/) - Code repository (FREE)
+- [Kaggle](https://www.kaggle.com/) - Competitions + notebooks (FREE)
+- [Tableau Public](https://public.tableau.com/) - Dashboards (FREE)
+- [Observable](https://observablehq.com/) - JavaScript notebooks (FREE)
+- [RStudio Connect](https://www.rstudio.com/products/connect/) - App hosting (Paid)
+- [Shinyapps.io](https://www.shinyapps.io/) - Shiny hosting (Freemium)
+
+---
+
+## **📖 My Recommendations**
+
+::: {.highlight-box}
+### **If I were starting over in data analytics, here's what I'd focus on:**
+
+**Months 1-3: Foundations**
+1. Learn SQL (SQLBolt + Mode tutorials)
+2. Pick ONE language: R OR Python
+3. Master Excel/Google Sheets
+4. Learn basic statistics (Khan Academy)
+5. Build 3 simple projects
+
+**Months 4-6: Intermediate Skills**
+1. Data visualization (ggplot2 or matplotlib)
+2. Exploratory data analysis
+3. Statistical inference
+4. Git & GitHub basics
+5. Build portfolio website
+6. Complete 2-3 Kaggle competitions
+
+**Months 7-9: Specialization**
+1. Choose domain (health, finance, marketing)
+2. Learn domain-specific tools
+3. Machine learning basics
+4. Dashboard building (Tableau/Power BI)
+5. Write 5 blog posts explaining projects
+
+**Months 10-12: Job Ready**
+1. Advanced analytics projects
+2. Real-world datasets (not just tutorials)
+3. Practice interviews (technical + behavioral)
+4. Network on LinkedIn
+5. Apply to entry-level roles
+6. Consider freelancing for experience
+
+**Key principle:** **Build projects, not just skills. Employers hire problem-solvers.**
+:::
+
+---
+
+## **🤝 Connect & Collaborate**
+
+Have resources to recommend? Want to collaborate on learning materials?
+
+📧 **Email:** [nichodemuswerre@gmail.com](mailto:nichodemuswerre@gmail.com)  
+💼 **LinkedIn:** [linkedin.com/in/nichodemusamollo](https://linkedin.com/in/nichodemusamollo)  
+🐙 **GitHub:** [github.com/gondamol](https://github.com/gondamol)  
+🐦 **Twitter:** [@nwerre](https://twitter.com/nwerre)
+
+---
+
+<div style="text-align: center; font-style: italic; color: #666; margin: 2rem 0;">
+*This resource list is continually updated. Last update: October 2025*  
+*Bookmark this page and check back regularly for new additions!*
+</div>

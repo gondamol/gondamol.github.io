@@ -1,0 +1,200 @@
+---
+title: "Agriculture & Agribusiness Analytics"
+subtitle: "Data-driven investment analysis for farming ventures in Homabay County, Kenya"
+page-layout: full
+---
+
+## 🌾 Overview
+
+Applying data science and economic analysis to agricultural investment decisions in Homabay County, Kenya. These projects combine statistical analysis, financial modeling, and local agricultural knowledge to support evidence-based farming ventures.
+
+### Personal Context
+
+I'm planning commercial farming operations in **Rachuonyo North (Homa Hills)**, **Suba**, and **Ndhiwa** sub-counties in Homabay County - my place of birth. These analyses inform real investment decisions for livestock and crop farming.
+
+**Current Operations**: 7 goats + 15 sheep | **Target**: Commercial scale by 2026
+
+---
+
+## 📊 Featured Projects
+
+### 🐐 [Goat Farming Investment Analysis](goat-farming-homabay/)
+
+**Evidence-based planning for Rachuonyo North & Suba farms**
+
+Comprehensive business analysis covering:
+- Breed selection for Homabay climate
+- Financial projections (7 goats → 50-100 by 2026)
+- Predator-proof infrastructure (addressing hyena threat)
+- Break-even analysis (Year 3)
+- Seasonal management calendar
+- Location comparison (Rachuonyo North vs Suba)
+
+**Real-World Challenge**: Lost 4 sheep to hyenas in one day - analysis addresses this critical risk
+
+**Status**: ✅ Complete
+
+[View Full Analysis →](goat-farming-homabay/)
+
+---
+
+### 🌽 Crop Farming Viability - Ndhiwa
+
+**Which crops for maximum ROI in Ndhiwa sub-county?**
+
+Coming soon:
+- Climate suitability analysis
+- Rainfall reliability assessment
+- Market price trends & forecasting
+- Input cost-benefit analysis
+- Crop calendar optimization
+
+**Status**: In Development
+
+---
+
+### 🐔 Poultry Farming Economics
+
+**Layers vs broilers economic comparison for Homabay**
+
+Coming soon:
+- Breed performance analysis
+- Feed cost optimization
+- Disease risk by season
+- Market price seasonality
+- Break-even calculations
+
+**Status**: Planned
+
+---
+
+### 🌦️ Climate-Resilient Agriculture Dashboard
+
+**Adaptation strategies for changing climate patterns**
+
+Coming soon:
+- Historical climate trends (1990-2024)
+- Climate projections (2025-2050)
+- Drought risk assessment
+- Water harvesting ROI
+- Adaptive farming strategies
+
+**Status**: Planned
+
+---
+
+### 🍚 Food Security Analysis - Lake Victoria Basin
+
+**Food insecurity patterns in Homabay and neighboring counties**
+
+Coming soon:
+- Seasonal hunger analysis
+- Market access mapping
+- Fish vs farming contributions
+- Nutrition outcomes by livelihood
+
+**Status**: Planned
+
+---
+
+## 🎯 Why Data-Driven Agriculture?
+
+### The Challenge
+
+Traditional farming in Western Kenya faces:
+- ❌ Erratic rainfall patterns
+- ❌ Predator threats (hyenas, jackals)
+- ❌ Market price volatility
+- ❌ Limited access to financing
+- ❌ Climate change impacts
+
+### The Solution
+
+Evidence-based decision making through:
+- ✅ Climate data analysis
+- ✅ Financial modeling & projections
+- ✅ Risk assessment & mitigation
+- ✅ Market trend forecasting
+- ✅ Comparative analysis of options
+
+---
+
+## 📍 Focus Areas
+
+### Rachuonyo North (Homa Hills)
+- **Current**: Primary goat farming location
+- **Challenge**: High predator risk (hyenas)
+- **Advantage**: Home area, family support, market access
+
+### Suba
+- **Plan**: Secondary goat farming location
+- **Advantage**: Better rainfall, lower predator risk
+- **Challenge**: More remote location
+
+### Ndhiwa
+- **Plan**: Crop farming operations
+- **Focus**: Cash crops & food security crops
+- **Analysis**: Climate suitability & market viability
+
+---
+
+## 💡 Skills Demonstrated
+
+These agriculture projects showcase:
+
+**1. Financial Analysis**
+- ROI calculations
+- Break-even analysis
+- Sensitivity analysis
+- Risk assessment
+
+**2. Data Visualization**
+- Interactive Plotly charts
+- Financial projections
+- Seasonal calendars
+- Comparative analysis
+
+**3. Research & Analysis**
+- Literature review
+- Data synthesis
+- Evidence-based recommendations
+- Policy awareness
+
+**4. Domain Knowledge**
+- Local agricultural context
+- Climate patterns
+- Market dynamics
+- Cultural practices
+
+---
+
+## 🔗 Connections to Health Economics
+
+Agriculture and health are deeply connected:
+
+- **Food Security** → Nutrition → Health outcomes
+- **Economic Stability** → Healthcare access
+- **Climate Adaptation** → Disease patterns
+- **Livelihood Security** → Mental health
+
+My background in health economics and epidemiology informs these agricultural analyses, particularly around:
+- Household-level economic decision-making
+- Risk mitigation strategies
+- Resource allocation optimization
+- Evidence-based policy recommendations
+
+---
+
+## 📚 Data Sources
+
+- **KALRO** (Kenya Agricultural & Livestock Research Organization)
+- **KNBS** (Kenya National Bureau of Statistics) - Agricultural census
+- **FAO** - Crop suitability data
+- **Kenya Met Department** - Climate data
+- **Homabay County CIDP** - County development plans
+- **Local market surveys** - Price data
+- **Personal experience** - Current farming operations
+
+---
+
+[← Back to Projects](../index.qmd) | [View TidyTuesday Analytics →](../../tidy-tuesday/index.qmd)

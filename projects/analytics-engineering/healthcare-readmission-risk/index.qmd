@@ -1,0 +1,64 @@
+---
+title: "Healthcare Readmission Risk Prediction"
+subtitle: "ML pipeline + real-time scoring + clinical decision support"
+page-layout: article
+---
+
+## Overview
+
+Real-time ML system for predicting patient readmission risk using EHR data.
+
+### Problem Solved
+Healthcare facilities need to identify high-risk patients to prevent costly readmissions.
+
+### Solution
+- **Real-time ML pipeline**
+- **Risk scoring** on admission/discharge
+- **Automated clinical alerts**
+- **Intervention recommendations**
+- **Performance monitoring**
+
+## Tech Stack
+
+- **ML:** XGBoost, scikit-learn, SHAP
+- **Backend:** Python, FastAPI
+- **Database:** PostgreSQL
+- **Dashboard:** Quarto Dashboard + Plotly
+- **Monitoring:** MLflow
+
+## Features
+
+### 1. Risk Prediction
+- 30-day readmission probability
+- Risk factor identification
+- Patient stratification
+- Confidence intervals
+
+### 2. Clinical Decision Support
+- Intervention recommendations
+- Care pathway optimization
+- Resource allocation guidance
+
+### 3. Model Monitoring
+- Performance tracking
+- Data drift detection
+- Model retraining alerts
+
+### 4. Dashboard
+- Real-time risk scores
+- Historical trends
+- Model explainability (SHAP)
+- ROI calculation
+
+## Live Demo
+
+🔨 **Status:** In Development
+
+---
+
+[Back to Analytics Engineering →](../)
+
+
+
+
+

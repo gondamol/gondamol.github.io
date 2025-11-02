@@ -1,0 +1,759 @@
+---
+title: "A Beginner's Guide to R for Health Researchers"
+subtitle: "From Clinical Data to Statistical Insights: Your Complete Roadmap to R Programming"
+author: "Nichodemus Amollo"
+date: "2025-10-26"
+categories: [R Programming, Health Research, Statistics, Tutorial, Beginners]
+---
+
+## Why R for Health Research?
+
+R has become the **gold standard** for statistical analysis in health sciences. Here's why:
+
+✅ **Free and open source** - No licensing costs
+✅ **Powerful statistics** - Built by statisticians, for statisticians
+✅ **Reproducible research** - Document analysis with code
+✅ **Rich ecosystem** - 19,000+ packages for every need
+✅ **Beautiful visualizations** - Publication-ready graphics
+✅ **Active community** - Help always available
+
+**Fun Fact:** Over **60% of biostatistics papers** now use R!
+
+---
+
+## Setting Up Your R Environment
+
+### Step 1: Install R
+
+Download from [CRAN](https://cran.r-project.org/):
+- **Windows:** Click "Download R for Windows"
+- **Mac:** Click "Download R for macOS"
+- **Linux:** Use your package manager
+
+### Step 2: Install RStudio
+
+Download [RStudio Desktop](https://posit.co/download/rstudio-desktop/) (FREE)
+
+**Why RStudio?**
+- Integrated console, editor, and plots
+- Project management
+- Git integration
+- Package management
+- Markdown support
+
+### Step 3: Customize Your Setup
+
+```r
+# Install essential packages
+install.packages(c(
+  "tidyverse",    # Data manipulation & viz
+  "readxl",       # Read Excel files
+  "janitor",      # Clean data
+  "gtsummary",    # Publication tables
+  "survival",     # Survival analysis
+  "epiR",         # Epidemiology tools
+  "broom",        # Tidy model outputs
+  "here"          # File paths
+))
+```
+
+---
+
+## R Basics for Health Researchers
+
+### Your First R Script
+
+```r
+# This is a comment in R
+
+# Basic arithmetic
+2 + 2
+10 - 3
+5 * 4
+20 / 4
+
+# Variables
+age <- 25
+weight_kg <- 70
+height_m <- 1.75
+
+# Calculate BMI
+bmi <- weight_kg / (height_m^2)
+print(bmi)
+```
+
+### Understanding R Objects
+
+```r
+# Vectors (most common)
+ages <- c(23, 45, 67, 34, 56)
+names <- c("Alice", "Bob", "Charlie", "Diana", "Eve")
+
+# Calculate mean age
+mean(ages)
+
+# Data frames (like Excel tables)
+patients <- data.frame(
+  id = 1:5,
+  name = names,
+  age = ages,
+  diabetes = c(FALSE, TRUE, TRUE, FALSE, TRUE)
+)
+
+# View the data
+print(patients)
+```
+
+---
+
+## Working with Health Data
+
+### Reading Data
+
+```r
+library(tidyverse)
+library(readxl)
+
+# CSV files
+patient_data <- read_csv("data/patients.csv")
+
+# Excel files
+survey_data <- read_excel("data/survey.xlsx", sheet = "Sheet1")
+
+# SPSS files
+library(haven)
+clinic_data <- read_sav("data/clinic.sav")
+
+# View first few rows
+head(patient_data)
+
+# Get structure
+str(patient_data)
+
+# Summary statistics
+summary(patient_data)
+```
+
+### Data Cleaning with tidyverse
+
+```r
+library(tidyverse)
+library(janitor)
+
+# Clean column names
+clean_data <- patient_data %>%
+  clean_names()
+
+# Select specific columns
+selected <- clean_data %>%
+  select(patient_id, age, gender, diagnosis, treatment)
+
+# Filter rows
+adults <- clean_data %>%
+  filter(age >= 18)
+
+# Create new variables
+clean_data <- clean_data %>%
+  mutate(
+    age_group = case_when(
+      age < 18 ~ "Child",
+      age < 65 ~ "Adult",
+      TRUE ~ "Senior"
+    ),
+    bmi_category = case_when(
+      bmi < 18.5 ~ "Underweight",
+      bmi < 25 ~ "Normal",
+      bmi < 30 ~ "Overweight",
+      TRUE ~ "Obese"
+    )
+  )
+
+# Remove missing values
+complete_data <- clean_data %>%
+  drop_na(age, gender, treatment)
+```
+
+### Data Manipulation
+
+```r
+# Group by and summarize
+summary_stats <- clean_data %>%
+  group_by(treatment) %>%
+  summarize(
+    n = n(),
+    mean_age = mean(age, na.rm = TRUE),
+    sd_age = sd(age, na.rm = TRUE),
+    median_age = median(age, na.rm = TRUE)
+  )
+
+# Pivot tables
+cross_tab <- clean_data %>%
+  count(treatment, outcome) %>%
+  pivot_wider(names_from = outcome, values_from = n)
+
+# Join datasets
+merged_data <- left_join(
+  patient_data,
+  lab_results,
+  by = "patient_id"
+)
+```
+
+---
+
+## Statistical Analysis for Health Research
+
+### Descriptive Statistics
+
+```r
+library(gtsummary)
+
+# Create Table 1 (demographics)
+clean_data %>%
+  select(age, gender, treatment, bmi, hypertension) %>%
+  tbl_summary(
+    by = treatment,
+    statistic = list(
+      all_continuous() ~ "{mean} ({sd})",
+      all_categorical() ~ "{n} ({p}%)"
+    ),
+    label = list(
+      age ~ "Age (years)",
+      gender ~ "Gender",
+      bmi ~ "BMI (kg/m²)",
+      hypertension ~ "Hypertension"
+    )
+  ) %>%
+  add_p() %>%           # Add p-values
+  add_overall() %>%     # Add overall column
+  bold_labels()
+```
+
+### T-tests and ANOVA
+
+```r
+# Independent t-test
+t.test(weight ~ gender, data = clean_data)
+
+# Paired t-test
+t.test(weight_before, weight_after, paired = TRUE)
+
+# One-way ANOVA
+anova_result <- aov(cholesterol ~ treatment, data = clean_data)
+summary(anova_result)
+
+# Post-hoc tests
+TukeyHSD(anova_result)
+```
+
+### Chi-square Tests
+
+```r
+# Create contingency table
+table <- table(clean_data$treatment, clean_data$outcome)
+
+# Chi-square test
+chisq.test(table)
+
+# Fisher's exact test (for small samples)
+fisher.test(table)
+```
+
+### Linear Regression
+
+```r
+# Simple linear regression
+model1 <- lm(systolic_bp ~ age, data = clean_data)
+summary(model1)
+
+# Multiple linear regression
+model2 <- lm(systolic_bp ~ age + bmi + gender + smoking, 
+             data = clean_data)
+summary(model2)
+
+# Get tidy results
+library(broom)
+tidy(model2, conf.int = TRUE)
+
+# Check assumptions
+par(mfrow = c(2, 2))
+plot(model2)
+```
+
+### Logistic Regression
+
+```r
+# Binary outcome
+logit_model <- glm(diabetes ~ age + bmi + family_history,
+                   data = clean_data,
+                   family = binomial)
+
+summary(logit_model)
+
+# Odds ratios with confidence intervals
+exp(coef(logit_model))
+exp(confint(logit_model))
+
+# Or use broom
+tidy(logit_model, exponentiate = TRUE, conf.int = TRUE)
+```
+
+### Survival Analysis
+
+```r
+library(survival)
+library(survminer)
+
+# Create survival object
+surv_obj <- Surv(time = clean_data$follow_up_months,
+                 event = clean_data$died)
+
+# Kaplan-Meier curves
+km_fit <- survfit(surv_obj ~ treatment, data = clean_data)
+
+# Plot
+ggsurvplot(km_fit,
+           data = clean_data,
+           pval = TRUE,
+           conf.int = TRUE,
+           risk.table = TRUE,
+           xlab = "Time (months)",
+           ylab = "Survival Probability")
+
+# Cox proportional hazards
+cox_model <- coxph(surv_obj ~ age + gender + treatment,
+                   data = clean_data)
+summary(cox_model)
+```
+
+---
+
+## Data Visualization
+
+### Basic Plots
+
+```r
+library(ggplot2)
+
+# Histogram
+ggplot(clean_data, aes(x = age)) +
+  geom_histogram(binwidth = 5, fill = "steelblue", color = "white") +
+  labs(title = "Age Distribution",
+       x = "Age (years)",
+       y = "Count") +
+  theme_minimal()
+
+# Box plot
+ggplot(clean_data, aes(x = treatment, y = cholesterol, fill = treatment)) +
+  geom_boxplot() +
+  labs(title = "Cholesterol Levels by Treatment",
+       x = "Treatment Group",
+       y = "Cholesterol (mg/dL)") +
+  theme_minimal()
+
+# Scatter plot with trend line
+ggplot(clean_data, aes(x = age, y = systolic_bp)) +
+  geom_point(alpha = 0.5) +
+  geom_smooth(method = "lm", color = "red") +
+  labs(title = "Blood Pressure vs Age",
+       x = "Age (years)",
+       y = "Systolic BP (mmHg)") +
+  theme_minimal()
+```
+
+### Publication-Ready Graphics
+
+```r
+# Bar chart with error bars
+summary_data <- clean_data %>%
+  group_by(treatment) %>%
+  summarize(
+    mean_bp = mean(systolic_bp, na.rm = TRUE),
+    se_bp = sd(systolic_bp, na.rm = TRUE) / sqrt(n())
+  )
+
+ggplot(summary_data, aes(x = treatment, y = mean_bp, fill = treatment)) +
+  geom_col() +
+  geom_errorbar(aes(ymin = mean_bp - se_bp, ymax = mean_bp + se_bp),
+                width = 0.2) +
+  labs(title = "Mean Systolic Blood Pressure by Treatment",
+       subtitle = "Error bars represent standard error",
+       x = "Treatment",
+       y = "Systolic BP (mmHg)") +
+  theme_classic() +
+  theme(legend.position = "none")
+
+# Save the plot
+ggsave("figures/bp_by_treatment.png", width = 8, height = 6, dpi = 300)
+```
+
+### Forest Plots
+
+```r
+library(forestplot)
+
+# Prepare data
+results <- data.frame(
+  study = c("Study 1", "Study 2", "Study 3", "Pooled"),
+  OR = c(1.5, 1.8, 1.3, 1.5),
+  lower = c(1.2, 1.4, 1.0, 1.3),
+  upper = c(1.9, 2.3, 1.7, 1.8)
+)
+
+# Create forest plot
+forestplot(
+  labeltext = results$study,
+  mean = results$OR,
+  lower = results$lower,
+  upper = results$upper,
+  xlab = "Odds Ratio",
+  title = "Meta-analysis of Treatment Effect"
+)
+```
+
+---
+
+## Epidemiology with R
+
+### Calculate Disease Measures
+
+```r
+library(epiR)
+
+# 2x2 table
+table_data <- matrix(c(
+  50, 200,    # Exposed: diseased, not diseased
+  25, 225     # Not exposed: diseased, not diseased
+), nrow = 2, byrow = TRUE)
+
+# Calculate measures
+epi_measures <- epi.2by2(table_data, method = "cohort.count")
+
+# View results
+print(epi_measures)
+
+# Extract specific measures
+# Relative Risk
+epi_measures$massoc.detail$RR.strata.wald
+
+# Attributable Risk
+epi_measures$massoc.detail$AR.strata.wald
+```
+
+### Sample Size Calculation
+
+```r
+# Sample size for comparing two proportions
+library(pwr)
+
+pwr.2p.test(
+  h = ES.h(p1 = 0.30, p2 = 0.45),  # Effect size
+  sig.level = 0.05,                 # Alpha
+  power = 0.80,                     # Power
+  alternative = "two.sided"
+)
+
+# Sample size for t-test
+pwr.t.test(
+  d = 0.5,              # Effect size (Cohen's d)
+  sig.level = 0.05,
+  power = 0.80,
+  type = "two.sample"
+)
+```
+
+---
+
+## Reproducible Reports with R Markdown
+
+### Create an R Markdown Document
+
+````markdown
+---
+title: "Clinical Trial Analysis Report"
+author: "Your Name"
+date: "`r Sys.Date()`"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+## Introduction
+
+This report analyzes data from the clinical trial...
+
+## Data Import
+
+```{{r}}
+library(tidyverse)
+data <- read_csv("data/trial_data.csv")
+```
+
+## Descriptive Statistics
+
+```{{r}}
+data %>%
+  group_by(treatment) %>%
+  summarize(
+    n = n(),
+    mean_age = mean(age),
+    sd_age = sd(age)
+  )
+```
+
+## Results
+
+The mean age was `r round(mean(data$age), 1)` years.
+
+```{{r}}
+ggplot(data, aes(x = treatment, y = outcome)) +
+  geom_boxplot()
+```
+
+## Conclusion
+
+Our analysis shows...
+````
+
+---
+
+## Common Health Research Workflows
+
+### Clinical Trial Analysis
+
+```r
+# Load data
+trial_data <- read_csv("data/trial.csv")
+
+# Clean and prepare
+trial_clean <- trial_data %>%
+  filter(eligible == TRUE) %>%
+  mutate(
+    treatment_group = factor(treatment_group,
+                             levels = c("Placebo", "Drug A", "Drug B")),
+    response = factor(response, levels = c("No", "Yes"))
+  )
+
+# Baseline characteristics
+baseline_table <- trial_clean %>%
+  select(treatment_group, age, gender, baseline_severity) %>%
+  tbl_summary(by = treatment_group) %>%
+  add_p()
+
+# Primary outcome analysis
+primary_model <- glm(response ~ treatment_group + age + gender,
+                     data = trial_clean,
+                     family = binomial)
+
+# Create results table
+tbl_regression(primary_model, exponentiate = TRUE)
+```
+
+### Cohort Study Analysis
+
+```r
+# Load cohort data
+cohort <- read_csv("data/cohort.csv")
+
+# Calculate person-time
+cohort <- cohort %>%
+  mutate(
+    person_years = follow_up_days / 365.25,
+    incidence_rate = cases / person_years * 1000
+  )
+
+# Incidence rates by exposure
+incidence_table <- cohort %>%
+  group_by(exposure) %>%
+  summarize(
+    cases = sum(cases),
+    person_years = sum(person_years),
+    rate_per_1000 = cases / person_years * 1000,
+    ci_lower = (qchisq(0.025, 2 * cases) / 2) / person_years * 1000,
+    ci_upper = (qchisq(0.975, 2 * (cases + 1)) / 2) / person_years * 1000
+  )
+```
+
+### Survey Data Analysis
+
+```r
+library(survey)
+
+# Create survey design object
+survey_design <- svydesign(
+  ids = ~cluster_id,
+  strata = ~strata,
+  weights = ~sampling_weight,
+  data = survey_data
+)
+
+# Weighted means
+svymean(~age, survey_design)
+
+# Weighted proportions
+svytable(~diabetes + gender, survey_design)
+
+# Weighted regression
+svy_model <- svyglm(diabetes ~ age + bmi + gender,
+                    design = survey_design,
+                    family = binomial)
+summary(svy_model)
+```
+
+---
+
+## Tips for Success
+
+### 1. **Use Projects** 📁
+
+Always work in RStudio Projects:
+```r
+# Create new project: File > New Project > New Directory
+# Benefits:
+# - Organized file structure
+# - Portable paths
+# - Version control integration
+```
+
+### 2. **Comment Your Code** 💬
+
+```r
+# Good commenting
+# Calculate age-adjusted mortality rate per 100,000
+mortality_rate <- (deaths / population) * 100000
+
+# Bad commenting
+x <- (y / z) * 100000  # calculate rate
+```
+
+### 3. **Use the Pipe %>%** 🔗
+
+```r
+# Without pipe (hard to read)
+summarize(group_by(filter(data, age > 18), treatment), mean_age = mean(age))
+
+# With pipe (easy to read)
+data %>%
+  filter(age > 18) %>%
+  group_by(treatment) %>%
+  summarize(mean_age = mean(age))
+```
+
+### 4. **Handle Missing Data** ❓
+
+```r
+# Check for missing
+sum(is.na(data$age))
+colSums(is.na(data))
+
+# Visualize missing patterns
+library(naniar)
+vis_miss(data)
+
+# Handle missing in analysis
+mean(data$age, na.rm = TRUE)  # Remove NA
+```
+
+### 5. **Save Your Work** 💾
+
+```r
+# Save cleaned data
+write_csv(clean_data, "data/clean/patients_clean.csv")
+
+# Save R objects
+saveRDS(model, "outputs/final_model.rds")
+
+# Load R objects
+model <- readRDS("outputs/final_model.rds")
+```
+
+---
+
+## Common Mistakes to Avoid
+
+❌ **Using `attach()`** - Use `data %>%` instead
+❌ **Not setting working directory** - Use RStudio Projects
+❌ **Overwriting original data** - Always create new objects
+❌ **Not checking assumptions** - Use diagnostic plots
+❌ **Ignoring warnings** - They're there for a reason!
+
+---
+
+## Learning Resources
+
+### Free Online Courses
+
+1. **[R for Data Science](https://r4ds.hadley.nz/)** - Free online book
+2. **[Coursera: R Programming](https://www.coursera.org/learn/r-programming)** - Johns Hopkins
+3. **[DataCamp: Introduction to R](https://www.datacamp.com/courses/free-introduction-to-r)** - Free chapter
+4. **[Swirl](https://swirlstats.com/)** - Learn R in R
+
+### Health-Specific Resources
+
+1. **[Statistical Tools for High-throughput Data Analysis](http://www.sthda.com/)**
+2. **[Modern Statistics for Modern Biology](https://www.huber.embl.de/msmb/)**
+3. **[R for Epidemiology](https://www.r4epi.com/)**
+4. **[Introduction to R for Public Health](https://www.coursera.org/learn/intro-r-public-health)**
+
+### Communities
+
+1. **[RStudio Community](https://community.rstudio.com/)**
+2. **[Stack Overflow R Tag](https://stackoverflow.com/questions/tagged/r)**
+3. **[R-Ladies](https://rladies.org/)** - Global organization promoting gender diversity
+4. **[#rstats on Twitter](https://twitter.com/search?q=%23rstats)**
+
+---
+
+## Your 30-Day R Learning Plan
+
+### Week 1: Basics
+- Day 1-2: Install R and RStudio, learn basic syntax
+- Day 3-4: Data types and structures
+- Day 5-7: Import and explore data
+
+### Week 2: Data Manipulation
+- Day 8-10: Learn dplyr verbs (select, filter, mutate, etc.)
+- Day 11-12: Grouping and summarizing
+- Day 13-14: Joining datasets
+
+### Week 3: Visualization & Statistics
+- Day 15-17: ggplot2 basics
+- Day 18-20: Basic statistical tests
+- Day 21: Practice project
+
+### Week 4: Advanced Topics
+- Day 22-24: Linear and logistic regression
+- Day 25-26: R Markdown reports
+- Day 27-28: Your own health data project
+- Day 29-30: Share your work!
+
+---
+
+## Conclusion
+
+R is a powerful tool that will transform how you analyze health data. Start small, practice daily, and don't be afraid to make mistakes—that's how you learn!
+
+**Remember:**
+- Use RStudio Projects
+- Comment your code
+- Save your work frequently
+- Ask for help when stuck
+- Share your knowledge
+
+**Your journey to R mastery starts today!** 🚀
+
+---
+
+**Related Posts:**
+- [Why Reproducible Research Matters in Public Health](#)
+- [Data Visualization Best Practices for Health Dashboards](#)
+- [Statistics for Data Analysts](../07-statistics-for-analysts/)
+
+**Tags:** #RProgramming #HealthResearch #Statistics #DataScience #Tutorial
+
+---
+
+*Questions about R for health research? Drop them in the comments!*
+
+

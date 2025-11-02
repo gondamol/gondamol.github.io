@@ -43,12 +43,30 @@ library(cmprsk)         # Competing risks
 library(prodlim)        # Product limit estimator
 ```
 
+::: {.highlight-box}
+### 🎯 Featured Blog Post: The Kisumu Cancer Dashboard Story
+
+This survival analysis was the foundation for **East Africa's first Cancer Epidemiology Dashboard**, launched by Governor Anyang' Nyong'o in November 2024.
+
+As **Research Data Manager** for this KEMRI project, I led:
+- REDCap database design & implementation
+- Research assistant training & supervision
+- Chart abstraction across 3,438 patients
+- Quality checks using Python, R, and Stata
+- Survival analysis & epidemiological insights
+- Interactive Tableau dashboard development
+
+**Read the full story:** [Transforming Cancer Care: Building East Africa's First Cancer Epidemiology Dashboard →](../../posts/kisumu-cancer-dashboard/index.qmd)
+
+**Impact:** Real-time patient tracking, 59% first-year LTFU identification, data-driven clinical interventions.
+:::
+
 ## 🔬 Project Overview
 
-This analysis examines cancer survival patterns among patients at KEMRI, with a focus on:
+This analysis examines cancer survival patterns among patients at Jaramogi Oginga Odinga Teaching and Referral Hospital (JOOTRH) in Kisumu County, focusing on:
 
-- **Lost-to-follow-up (LTFU) patterns** (60%+ rate)
-- **Survival outcomes** by cancer type and stage
+- **Lost-to-follow-up (LTFU) patterns** (59% in first year)
+- **Survival outcomes** by cancer type and stage (9% 5-year survival)
 - **Time-to-event analysis** with competing risks
 - **Predictive modeling** of LTFU risk factors
 

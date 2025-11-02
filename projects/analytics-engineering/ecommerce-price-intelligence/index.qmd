@@ -1,0 +1,92 @@
+---
+title: "E-commerce Price Intelligence System"
+subtitle: "Real-time price tracking + sentiment analysis + forecasting"
+page-layout: article
+---
+
+## Overview
+
+Automated price tracking and comparison system for e-commerce platforms in Kenya and globally.
+
+### Problem Solved
+Consumers and businesses need real-time price intelligence across multiple platforms to make informed purchasing decisions.
+
+### Solution
+- **Real-time scraping** of product prices
+- **Historical price tracking** with trend analysis
+- **Automated alerts** for price drops
+- **Review sentiment analysis** using NLP
+- **Price forecasting** using ML
+
+## Tech Stack
+
+- **Backend:** Python (Scrapy, Selenium, BeautifulSoup)
+- **Database:** PostgreSQL (Heroku)
+- **ML:** Prophet (Facebook), scikit-learn
+- **NLP:** TextBlob, VADER Sentiment
+- **Dashboard:** Streamlit + Plotly
+- **Orchestration:** Apache Airflow
+
+## Features
+
+### 1. Multi-Platform Scraping
+- Jumia Kenya
+- Kilimall
+- Amazon (select categories)
+- Local Kenyan e-commerce sites
+
+### 2. Price Intelligence
+- Historical price charts
+- Price drop detection
+- Cross-platform comparison
+- Best deal identification
+
+### 3. Sentiment Analysis
+- Review sentiment scoring
+- Quality indicators
+- Seller ratings analysis
+
+### 4. Price Forecasting
+- 7-30 day price predictions
+- Seasonal trend identification
+- Best time to buy recommendations
+
+### 5. Alerts & Notifications
+- Price drop alerts
+- Target price notifications
+- Daily deals digest
+
+## Live Demo
+
+🔨 **Status:** In Development
+
+**Coming Soon:**
+- Live Streamlit dashboard
+- Public API endpoint
+- Source code on GitHub
+
+## Impact
+
+**For Consumers:**
+- Save money with price tracking
+- Make informed purchasing decisions
+- Never miss a good deal
+
+**For Businesses:**
+- Competitive intelligence
+- Dynamic pricing insights
+- Market trend analysis
+
+**Technical Showcase:**
+- Real-time web scraping at scale
+- Time-series forecasting
+- Sentiment analysis in production
+
+---
+
+[Back to Analytics Engineering →](../)
+
+
+
+
+

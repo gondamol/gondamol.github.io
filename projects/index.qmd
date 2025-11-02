@@ -39,6 +39,18 @@ Robust data systems for clinical trials and research:
 :::
 
 ::: {.skill-category}
+### [🚀 Real-Time Analytics Engineering](analytics-engineering/) **NEW!**
+End-to-end automation projects solving real-world problems:
+- Job Market Intelligence (web scraping + NLP)
+- E-commerce Price Tracker (Jumia, Kilimall, Amazon)
+- Social Media Analytics (sentiment analysis)
+- Supply Chain Intelligence (logistics tracking)
+- Healthcare Readmission Risk (ML prediction)
+
+**Impact:** Live data pipelines, real users, automation at scale
+:::
+
+::: {.skill-category}
 ### [🌾 Agriculture & Agribusiness](agriculture/)
 Data-driven agricultural investment analysis:
 - Goat farming economics (Homabay County)

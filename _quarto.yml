@@ -1,29 +1,40 @@
 project:
   type: website
   output-dir: _site
+  render:
+    - "*.qmd"
+    - "*.md"
+    - "!openspec/"
+    - "!projects/analytics-engineering/**/README.md"
+    - "!projects/analytics-engineering/**/*SUMMARY.md"
+    - "!projects/analytics-engineering/**/*READY.md"
+    - "!projects/analytics-engineering/**/requirements.txt"
+    - "!projects/analytics-engineering/**/pipeline/"
+    - "!projects/analytics-engineering/**/dashboard/"
+    - "!projects/analytics-engineering/**/scripts/"
+    - "!**/*SUMMARY.md"
+    - "!**/*PLACEHOLDERS.md"
+    - "!**/README.md"
+    - "!COMPREHENSIVE_PORTFOLIO_REVAMP_SUMMARY.md"
+    - "!FINAL_20MIN_REVAMP_SUMMARY.md"
+    - "!FINAL_IMPLEMENTATION_STATUS.md"
+    - "!IMPLEMENTATION_COMPLETE.md"
+    - "!PORTFOLIO_IMPROVEMENTS_SUMMARY.md"
+    - "!PROGRESS_REPORT_OCT19.md"
+    - "!SESSION_SUMMARY_OCT19.md"
+    - "!FINAL_SESSION_SUMMARY.md"
+    - "!QUICK_DEPLOY.md"
+    - "!QUICK_START_CHECKLIST.md"
+    - "!DEPLOYMENT_GUIDE.md"
+    - "!PORTFOLIO_EXPANSION_PLAN.md"
+    - "!AUTHENTIC_PROJECT_DETAILS.md"
+    - "!AGENTS.md"
 
 website:
   page-navigation: true
-  title: "Hi, I'm Nic. A Research Data Manager"
-  description: "Portfolio of a Senior Research Data Manager specializing in health data analytics, survey design, and data management with 7+ years of experience"
-  
-  page-footer: 
-    left: |
-      © 2024 Nichodemus Amollo | Senior Research Data Manager<br>
-      Health Data Analytics • Survey Design • Data Management
-    right: 
-      - icon: github
-        href: https://github.com/gondamol
-        aria-label: GitHub Profile
-      - icon: linkedin
-        href: https://linkedin.com/in/amollow
-        aria-label: LinkedIn Profile
-      - icon: twitter 
-        href: https://twitter.com/nwerre
-        aria-label: Twitter Profile
-      - icon: kaggle
-        href: https://kaggle.com/nwerre
-        aria-label: Kaggle Profile
+  title: "Nichodemus Amollo | Health Data Scientist"
+  site-url: "https://gondamol.github.io"
+  description: "Research Data Manager & Data Scientist specializing in Health Financial Diaries, Data Analysis, Machine Learning, and Outcomes & Impact Evaluation - Research on Livelihood and Financial Behavior of Low-Income Households"
         
   navbar:
     background: primary
@@ -39,6 +50,9 @@ website:
           - text: "All Projects"
             href: projects/index.qmd
           - text: "---"
+          - text: "Real-Time Analytics Engineering 🚀 NEW"
+            href: projects/analytics-engineering/index.qmd
+          - text: "---"
           - text: "Health Data Analytics"
             href: projects/health-analytics.qmd
           - text: "Data Management"
@@ -47,20 +61,33 @@ website:
             href: projects/survey-tools.qmd
           - text: "Dashboards & Visualization"
             href: projects/dashboards.qmd
+          - text: "---"
+          - text: "Data Visualizations"
+            href: data-viz/index.qmd
+          - text: "TidyTuesday Challenges"
+            href: tidy-tuesday/index.qmd
       - text: "Research"
         menu:
           - text: "Current Thesis"
             href: research/thesis.qmd
+          - text: "Thesis Presentation"
+            href: research/thesis-presentation.qmd
           - text: "Publications"
             href: research/publications.qmd
-      - text: "TidyTuesday"
-        href: tidy-tuesday/index.qmd
-      - text: "Skills & Tools"
-        href: skills/index.qmd
+      - text: "Resources"
+        menu:
+          - text: "Learning Resources"
+            href: resources/index.qmd
+          - text: "Skills & Tools"
+            href: skills/index.qmd
+          - text: "Software"
+            href: software/index.qmd
       - text: "Blog"
         href: blogs/index.qmd
       - text: "CV"
         href: cv/index.qmd
+      - text: "Personal"
+        href: personal/index.qmd
     right:
       - icon: github
         href: https://github.com/gondamol
@@ -80,7 +107,8 @@ format:
     theme: 
       light: [cosmo, custom.scss]
       dark: [darkly, custom.scss]
-    css: styles.scss
+    css: [styles.scss, _footer.scss]
+    include-after-body: _includes/footer.html
     toc: true
     toc-depth: 3
     code-fold: true

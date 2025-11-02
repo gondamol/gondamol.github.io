@@ -1,0 +1,66 @@
+---
+title: "Supply Chain & Logistics Tracker"
+subtitle: "Real-time tracking + delay prediction + route optimization"
+page-layout: article
+---
+
+## Overview
+
+Real-time logistics tracking system with ML-powered delay prediction and automated notifications.
+
+### Problem Solved
+Businesses and consumers lack visibility into shipment status and proactive delay notifications.
+
+### Solution
+- **Real-time tracking** integration
+- **Delay prediction** using ML
+- **Automated notifications**
+- **Route optimization**
+- **Performance analytics**
+
+## Tech Stack
+
+- **APIs:** DHL, FedEx, UPS, Kenya Post
+- **ML:** Random Forest, XGBoost
+- **Backend:** Python, FastAPI
+- **Database:** PostgreSQL + Redis
+- **Dashboard:** Streamlit
+- **Notifications:** Telegram, SMS
+
+## Features
+
+### 1. Real-Time Tracking
+- Multi-carrier integration
+- Unified tracking interface
+- Location history
+- ETA updates
+
+### 2. Delay Prediction
+- ML-based delay forecasting
+- Risk scoring
+- Proactive notifications
+- Root cause analysis
+
+### 3. Route Optimization
+- Optimal carrier selection
+- Cost-time trade-off analysis
+- Performance comparison
+
+### 4. Analytics
+- Carrier performance
+- On-time delivery rates
+- Cost analysis
+- Trend identification
+
+## Live Demo
+
+🔨 **Status:** In Development
+
+---
+
+[Back to Analytics Engineering →](../)
+
+
+
+
+

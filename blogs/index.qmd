@@ -1,238 +1,37 @@
 ---
 title: "Blog & Technical Notes"
-subtitle: "Insights on health data analytics, R programming, and research methods"
+subtitle: "Insights on data analytics, statistical methods, and career development"
 page-layout: full
+listing:
+  contents: 
+    - "../posts/*/index.qmd"
+  sort: "date desc"
+  type: default
+  categories: true
+  fields: [image, date, title, subtitle, categories, reading-time]
+  max-items: 100
+  feed: true
 ---
 
 ::: {.hero-banner}
-# Blog & Technical Notes
+# 📝 Blog & Technical Notes
 
-Sharing knowledge on health data science, statistical methods, and best practices
+Sharing knowledge on data analytics, statistical methods, career development, and data science tools.
 :::
 
-## **Featured Posts**
+## Welcome to My Blog!
 
-### **Data Management & Best Practices**
+This blog is your resource for:
 
-::: {.project-card}
-::: {.project-header}
-#### 10 Principles for Excellent Clinical Trial Data Management
-:::
-
-::: {.project-body}
-Lessons from managing 20+ clinical trials on what separates good data management from great data management.
-
-**Topics Covered:**
-- Planning before the first patient enrolls
-- Building quality into the system, not inspecting it in
-- The art of writing good data queries
-- When to automate and when not to
-- Communication strategies that work
-
-*Coming Soon*
-:::
-:::
+- **Career roadmaps** for aspiring data analysts
+- **Tool comparisons** (R vs Python, Tableau vs Power BI, etc.)
+- **Technical tutorials** on data cleaning, visualization, and analysis
+- **Free learning resources** for data science
+- **Interview prep** and job search strategies
+- **Real-world insights** from my experience in health data science
 
 ---
 
-### **R Programming Tutorials**
+## Latest Posts
 
-::: {.project-card}
-::: {.project-header}
-#### From Excel to R: A Researcher's Journey
-:::
-
-::: {.project-body}
-A gentle introduction to R for health researchers currently using Excel or SPSS.
-
-**Series includes:**
-1. Setting up your R environment
-2. Reading and cleaning data
-3. Data manipulation with dplyr
-4. Creating publication-quality plots
-5. Writing reproducible reports
-
-*Coming Soon*
-:::
-:::
-
----
-
-### **Health Data Analytics**
-
-::: {.project-card}
-::: {.project-header}
-#### Analyzing NCD Data: From Raw Data to Insights
-:::
-
-::: {.project-body}
-Real-world example analyzing hypertension and diabetes data, with complete R code.
-
-**Analysis Pipeline:**
-- Data cleaning and validation
-- Descriptive statistics
-- Control rate calculations
-- Risk factor analysis
-- Visualization strategies
-
-*Coming Soon*
-:::
-:::
-
----
-
-### **Survey Design & Implementation**
-
-::: {.project-card}
-::: {.project-header}
-#### SurveyCTO vs REDCap vs KoboCollect: Which to Choose?
-:::
-
-::: {.project-body}
-Detailed comparison of leading EDC platforms based on 7+ years of hands-on experience.
-
-**Decision Framework:***
-- Feature comparison matrix
-- Cost analysis
-- Use case scenarios
-- Pros and cons
-- My recommendations
-
-*Coming Soon*
-:::
-:::
-
----
-
-### **Statistical Methods**
-
-::: {.project-card}
-::: {.project-header}
-#### Understanding Bayesian Statistics in Public Health
-:::
-
-::: {.project-body}
-Demystifying Bayesian methods with practical health research examples.
-
-**Topics:***
-- Why Bayesian? Advantages for health research
-- Interpreting credible intervals
-- Prior selection strategies
-- MCMC basics
-- Example: Vaccine efficacy analysis
-
-*Coming Soon*
-:::
-:::
-
----
-
-### **Career & Professional Development**
-
-::: {.project-card}
-::: {.project-header}
-#### Breaking into Health Data Science
-:::
-
-::: {.project-body}
-Advice for aspiring health data scientist based on my journey and lessons learned.
-
-**Topics:***
-- Skills you actually need
-- Building a portfolio
-- Networking strategies
-- Remote work tips
-- Common career questions
-
-*Coming Soon*
-:::
-:::
-
----
-
-## **Tutorial Series**
-
-###  **"R for Health Researchers" Series** (12 parts)
-Comprehensive tutorial series taking you from R beginner to confident analyst.
-
-###  **"Dashboard Design" Series** (6 parts)
-Learn to build professional dashboards that stakeholders actually use.
-
-###  **"Data Management 101" Series** (8 parts)
-Essential skills for managing research data with integrity and efficiency.
-
----
-
-## **Quick Tips & Code Snippets**
-
-::: {.info-box}
-### Useful R Code Snippets
-
-**REDCap Data Import:**
-```r
-library(httr)
-library(tidyverse)
-
-# Import data from REDCap
-redcap_data <- postForm(
-  uri = "https://redcap.example.com/api/",
-  token = Sys.getenv("REDCAP_TOKEN"),
-  content = "record",
-  format = "csv"
-) %>% 
-  read_csv()
-```
-
-**Data Quality Check:**
-```r
-# Check missing data
-missing_summary <- data %>%
-  summarise(across(everything(), 
-    ~sum(is.na(.)) / length(.) * 100)) %>%
-  pivot_longer(everything(), 
-    names_to = "variable", 
-    values_to = "percent_missing")
-```
-
-More code snippets available in individual blog posts.
-:::
-
----
-
-## **Guest Posts Welcome**
-
-I'm open to guest posts on topics related to:
-- Health data science
-- Clinical trials and research methods
-- R programming for health
-- Career development in biostatistics
-
-**Contact:** [nichodemuswerre@gmail.com](mailto:nichodemuswerre@gmail.com)
-
----
-
-## **Stay Updated**
-
-::: {.success-box}
-### Get Notified of New Posts
-
-Follow me on social media for updates when new blog posts are published:
-
-Twitter: @nwerre  
-LinkedIn: Nichodemus Amollo  
-GitHub: gondamol
-
-**Blog posts are published monthly** covering practical topics in health data science.
-:::
-
----
-
-## **Popular Resources**
-
-- [My GitHub Repositories](https://github.com/gondamol) - Open-source code and tools
-- [Tidy Tuesday Analyses](../tidy-tuesday/index.qmd) - Weekly data visualization practice
-- [R Package Documentation](https://github.com/gondamol) - Tools I'm developing
-
----
-
-[Back to Home →](../index.qmd) | [View Projects →](../projects/index.qmd)
+All blog posts are displayed below, sorted by date. Use the search and category filters to find content relevant to your interests.
