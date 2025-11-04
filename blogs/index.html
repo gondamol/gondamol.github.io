@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Blog &amp; Technical Notes – Hi, I’m Nic. A Research Data Manager</title>
+<title>Blog &amp; Technical Notes – Nichodemus Amollo | Health Data Scientist</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -64,6 +64,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -75,9 +77,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-427c83fc661955fce308694e1c641b80.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-75ab9135cc7a8960ebf47f7963e1d4aa.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-427c83fc661955fce308694e1c641b80.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-517cffa2c8662dafa060296b76e40e6f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-e53d22699df9a1c1cccc554c59e33091.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-517cffa2c8662dafa060296b76e40e6f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -105,11 +107,72 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-image','listing-date','listing-title','listing-subtitle','listing-categories','listing-reading-time',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      page: 25,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
+      searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <style>html{ scroll-behavior: smooth; }</style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../styles.scss">
-</head>
+<link rel="stylesheet" href="../_footer.scss">
+<link rel="stylesheet" href="../_newsletter-popup.scss">
+<link rel="alternate" type="application/rss+xml" title="Nichodemus Amollo | Health Data Scientist" href="index.xml" data-external="1"></head>
 
 <body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
@@ -281,7 +344,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">Hi, I’m Nic. A Research Data Manager</span>
+    <span class="navbar-title">Nichodemus Amollo | Health Data Scientist</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -309,6 +372,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>  
         <li><hr class="dropdown-divider"></li>
         <li>
+    <a class="dropdown-item" href="../projects/analytics-engineering/index.html">
+ <span class="dropdown-text">Real-Time Analytics Engineering 🚀 NEW</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
     <a class="dropdown-item" href="../projects/health-analytics.html">
  <span class="dropdown-text">Health Data Analytics</span></a>
   </li>  
@@ -324,6 +392,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <a class="dropdown-item" href="../projects/dashboards.html">
  <span class="dropdown-text">Dashboards &amp; Visualization</span></a>
   </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../visualizations/index.html">
+ <span class="dropdown-text">Visualizations Gallery (50+ Projects)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../tidy-tuesday/index.html">
+ <span class="dropdown-text">TidyTuesday Challenges (100+ Projects)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../data-viz/index.html">
+ <span class="dropdown-text">Data Visualizations</span></a>
+  </li>  
     </ul>
   </li>
   <li class="nav-item dropdown ">
@@ -336,19 +417,39 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="dropdown-text">Current Thesis</span></a>
   </li>  
         <li>
+    <a class="dropdown-item" href="../research/thesis-presentation.html">
+ <span class="dropdown-text">Thesis Presentation</span></a>
+  </li>  
+        <li>
     <a class="dropdown-item" href="../research/publications.html">
  <span class="dropdown-text">Publications</span></a>
   </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../presentations/data-viz-presentation.html">
+ <span class="dropdown-text">Presentations</span></a>
+  </li>  
     </ul>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" href="../tidy-tuesday/index.html"> 
-<span class="menu-text">TidyTuesday</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-resources" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Resources</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-resources">    
+        <li>
+    <a class="dropdown-item" href="../resources/index.html">
+ <span class="dropdown-text">Learning Resources</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../skills/index.html"> 
-<span class="menu-text">Skills &amp; Tools</span></a>
+        <li>
+    <a class="dropdown-item" href="../skills/index.html">
+ <span class="dropdown-text">Skills &amp; Tools</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../software/index.html">
+ <span class="dropdown-text">Software</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item">
     <a class="nav-link active" href="../blogs/index.html" aria-current="page"> 
 <span class="menu-text">Blog</span></a>
@@ -356,6 +457,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li class="nav-item">
     <a class="nav-link" href="../cv/index.html"> 
 <span class="menu-text">CV</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../personal/index.html"> 
+<span class="menu-text">Personal</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -396,35 +501,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#blog-technical-notes" id="toc-blog-technical-notes" class="nav-link active" data-scroll-target="#blog-technical-notes">Blog &amp; Technical Notes</a></li>
-  <li><a href="#featured-posts" id="toc-featured-posts" class="nav-link" data-scroll-target="#featured-posts"><strong>Featured Posts</strong></a>
-  <ul class="collapse">
-  <li><a href="#data-management-best-practices" id="toc-data-management-best-practices" class="nav-link" data-scroll-target="#data-management-best-practices"><strong>Data Management &amp; Best Practices</strong></a></li>
-  <li><a href="#r-programming-tutorials" id="toc-r-programming-tutorials" class="nav-link" data-scroll-target="#r-programming-tutorials"><strong>R Programming Tutorials</strong></a></li>
-  <li><a href="#health-data-analytics" id="toc-health-data-analytics" class="nav-link" data-scroll-target="#health-data-analytics"><strong>Health Data Analytics</strong></a></li>
-  <li><a href="#survey-design-implementation" id="toc-survey-design-implementation" class="nav-link" data-scroll-target="#survey-design-implementation"><strong>Survey Design &amp; Implementation</strong></a></li>
-  <li><a href="#statistical-methods" id="toc-statistical-methods" class="nav-link" data-scroll-target="#statistical-methods"><strong>Statistical Methods</strong></a></li>
-  <li><a href="#career-professional-development" id="toc-career-professional-development" class="nav-link" data-scroll-target="#career-professional-development"><strong>Career &amp; Professional Development</strong></a></li>
-  </ul></li>
-  <li><a href="#tutorial-series" id="toc-tutorial-series" class="nav-link" data-scroll-target="#tutorial-series"><strong>Tutorial Series</strong></a>
-  <ul class="collapse">
-  <li><a href="#r-for-health-researchers-series-12-parts" id="toc-r-for-health-researchers-series-12-parts" class="nav-link" data-scroll-target="#r-for-health-researchers-series-12-parts"><strong>“R for Health Researchers” Series</strong> (12 parts)</a></li>
-  <li><a href="#dashboard-design-series-6-parts" id="toc-dashboard-design-series-6-parts" class="nav-link" data-scroll-target="#dashboard-design-series-6-parts"><strong>“Dashboard Design” Series</strong> (6 parts)</a></li>
-  <li><a href="#data-management-101-series-8-parts" id="toc-data-management-101-series-8-parts" class="nav-link" data-scroll-target="#data-management-101-series-8-parts"><strong>“Data Management 101” Series</strong> (8 parts)</a></li>
-  </ul></li>
-  <li><a href="#quick-tips-code-snippets" id="toc-quick-tips-code-snippets" class="nav-link" data-scroll-target="#quick-tips-code-snippets"><strong>Quick Tips &amp; Code Snippets</strong></a>
-  <ul class="collapse">
-  <li><a href="#useful-r-code-snippets" id="toc-useful-r-code-snippets" class="nav-link" data-scroll-target="#useful-r-code-snippets">Useful R Code Snippets</a></li>
-  </ul></li>
-  <li><a href="#guest-posts-welcome" id="toc-guest-posts-welcome" class="nav-link" data-scroll-target="#guest-posts-welcome"><strong>Guest Posts Welcome</strong></a></li>
-  <li><a href="#stay-updated" id="toc-stay-updated" class="nav-link" data-scroll-target="#stay-updated"><strong>Stay Updated</strong></a>
-  <ul class="collapse">
-  <li><a href="#get-notified-of-new-posts" id="toc-get-notified-of-new-posts" class="nav-link" data-scroll-target="#get-notified-of-new-posts">Get Notified of New Posts</a></li>
-  </ul></li>
-  <li><a href="#popular-resources" id="toc-popular-resources" class="nav-link" data-scroll-target="#popular-resources"><strong>Popular Resources</strong></a></li>
+  <li><a href="#blog-technical-notes" id="toc-blog-technical-notes" class="nav-link active" data-scroll-target="#blog-technical-notes">📝 Blog &amp; Technical Notes</a></li>
+  <li><a href="#welcome-to-my-blog" id="toc-welcome-to-my-blog" class="nav-link" data-scroll-target="#welcome-to-my-blog">Welcome to My Blog!</a></li>
+  <li><a href="#latest-posts" id="toc-latest-posts" class="nav-link" data-scroll-target="#latest-posts">Latest Posts</a></li>
   </ul>
 </nav>
-    </div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(30)</span></div><div class="category" data-category="QUIlMjBUZXN0aW5n">AB Testing <span class="quarto-category-count">(1)</span></div><div class="category" data-category="QWR2aWNl">Advice <span class="quarto-category-count">(1)</span></div><div class="category" data-category="QWdyaWN1bHR1cmU=">Agriculture <span class="quarto-category-count">(1)</span></div><div class="category" data-category="YW5hbHlzaXM=">analysis <span class="quarto-category-count">(1)</span></div><div class="category" data-category="QmVnaW5uZXJz">Beginners <span class="quarto-category-count">(7)</span></div><div class="category" data-category="QmVzdCUyMFByYWN0aWNlcw==">Best Practices <span class="quarto-category-count">(3)</span></div><div class="category" data-category="QnVzaW5lc3M=">Business <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Q2FuY2VyJTIwUmVzZWFyY2g=">Cancer Research <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Q2FyZWVy">Career <span class="quarto-category-count">(8)</span></div><div class="category" data-category="Y29kZQ==">code <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Q29tbXVuaWNhdGlvbg==">Communication <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Q29tcGV0aXRpb24=">Competition <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Q291cnNlcw==">Courses <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RGFzaGJvYXJk">Dashboard <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RGFzaGJvYXJkcw==">Dashboards <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RGF0YSUyMEFuYWx5c2lz">Data Analysis <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RGF0YSUyMEFuYWx5dGljcw==">Data Analytics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RGF0YSUyMENsZWFuaW5n">Data Cleaning <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RGF0YSUyMENvbGxlY3Rpb24=">Data Collection <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RGF0YSUyME1hbmFnZW1lbnQ=">Data Management <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RGF0YSUyMFZpc3VhbGl6YXRpb24=">Data Visualization <span class="quarto-category-count">(2)</span></div><div class="category" data-category="RGF0YWJhc2U=">Database <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RGVzaWdu">Design <span class="quarto-category-count">(3)</span></div><div class="category" data-category="RXhjZWw=">Excel <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RmllbGQlMjBXb3Jr">Field Work <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Rmlyc3QlMjBKb2I=">First Job <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RnJlZSUyMFJlc291cmNlcw==">Free Resources <span class="quarto-category-count">(1)</span></div><div class="category" data-category="R2l0">Git <span class="quarto-category-count">(1)</span></div><div class="category" data-category="R2l0SHVi">GitHub <span class="quarto-category-count">(1)</span></div><div class="category" data-category="R3VpZGU=">Guide <span class="quarto-category-count">(2)</span></div><div class="category" data-category="SGVhbHRoJTIwQW5hbHl0aWNz">Health Analytics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="SGVhbHRoJTIwUmVzZWFyY2g=">Health Research <span class="quarto-category-count">(1)</span></div><div class="category" data-category="SGVhbHRoY2FyZSUyMElubm92YXRpb24=">Healthcare Innovation <span class="quarto-category-count">(1)</span></div><div class="category" data-category="SW50ZXJ2aWV3">Interview <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Sm9iJTIwU2VhcmNo">Job Search <span class="quarto-category-count">(1)</span></div><div class="category" data-category="S2FnZ2xl">Kaggle <span class="quarto-category-count">(2)</span></div><div class="category" data-category="S0VNUkk=">KEMRI <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TGVhcm5pbmc=">Learning <span class="quarto-category-count">(2)</span></div><div class="category" data-category="TGlua2VkSW4=">LinkedIn <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TWF0aA==">Math <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TW9iaWxlJTIwVGVjaG5vbG9neQ==">Mobile Technology <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TmVnb3RpYXRpb24=">Negotiation <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TmV0d29ya2luZw==">Networking <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bmV3cw==">news <span class="quarto-category-count">(2)</span></div><div class="category" data-category="T0RL">ODK <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UGFuZGFz">Pandas <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UGVyc29uYWwlMjBCcmFuZA==">Personal Brand <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UG9ydGZvbGlv">Portfolio <span class="quarto-category-count">(2)</span></div><div class="category" data-category="UG93ZXIlMjBCSQ==">Power BI <span class="quarto-category-count">(2)</span></div><div class="category" data-category="UHJvZHVjdGl2aXR5">Productivity <span class="quarto-category-count">(2)</span></div><div class="category" data-category="UHJvamVjdHM=">Projects <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UHVibGljJTIwSGVhbHRo">Public Health <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UHl0aG9u">Python <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Ug==">R <span class="quarto-category-count">(2)</span></div><div class="category" data-category="UiUyMFByb2dyYW1taW5n">R Programming <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UmVtb3RlJTIwV29yaw==">Remote Work <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UmVwcm9kdWNpYmlsaXR5">Reproducibility <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UmVzZWFyY2glMjBNZXRob2Rz">Research Methods <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Um9hZG1hcA==">Roadmap <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U2FsYXJ5">Salary <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U1FM">SQL <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U3RhdGlzdGljcw==">Statistics <span class="quarto-category-count">(3)</span></div><div class="category" data-category="U3Rvcnl0ZWxsaW5n">Storytelling <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U3VydmV5JTIwRGVzaWdu">Survey Design <span class="quarto-category-count">(1)</span></div><div class="category" data-category="VGFibGVhdQ==">Tableau <span class="quarto-category-count">(3)</span></div><div class="category" data-category="VG9vbHM=">Tools <span class="quarto-category-count">(3)</span></div><div class="category" data-category="VHV0b3JpYWw=">Tutorial <span class="quarto-category-count">(7)</span></div><div class="category" data-category="VmlzdWFsaXphdGlvbg==">Visualization <span class="quarto-category-count">(3)</span></div></div></div>
 <!-- main -->
 <main class="content column-page-left" id="quarto-document-content">
 
@@ -432,7 +514,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <div class="quarto-title-block"><div><h1 class="title">Blog &amp; Technical Notes</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
-<p class="subtitle lead">Insights on health data analytics, R programming, and research methods</p>
+<p class="subtitle lead">Insights on data analytics, statistical methods, and career development</p>
 </div>
 
 
@@ -450,174 +532,1269 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <section id="blog-technical-notes" class="level1 hero-banner">
-<h1>Blog &amp; Technical Notes</h1>
-<p>Sharing knowledge on health data science, statistical methods, and best practices</p>
+<h1>📝 Blog &amp; Technical Notes</h1>
+<p>Sharing knowledge on data analytics, statistical methods, career development, and data science tools.</p>
 </section>
-<section id="featured-posts" class="level2">
-<h2 class="anchored" data-anchor-id="featured-posts"><strong>Featured Posts</strong></h2>
-<section id="data-management-best-practices" class="level3">
-<h3 class="anchored" data-anchor-id="data-management-best-practices"><strong>Data Management &amp; Best Practices</strong></h3>
-<div class="project-card">
-<section id="principles-for-excellent-clinical-trial-data-management" class="level4 project-header">
-<h4 class="anchored" data-anchor-id="principles-for-excellent-clinical-trial-data-management">10 Principles for Excellent Clinical Trial Data Management</h4>
-</section>
-<div class="project-body">
-<p>Lessons from managing 20+ clinical trials on what separates good data management from great data management.</p>
-<p><strong>Topics Covered:</strong> - Planning before the first patient enrolls - Building quality into the system, not inspecting it in - The art of writing good data queries - When to automate and when not to - Communication strategies that work</p>
-<p><em>Coming Soon</em></p>
-</div>
-</div>
-<hr>
-</section>
-<section id="r-programming-tutorials" class="level3">
-<h3 class="anchored" data-anchor-id="r-programming-tutorials"><strong>R Programming Tutorials</strong></h3>
-<div class="project-card">
-<section id="from-excel-to-r-a-researchers-journey" class="level4 project-header">
-<h4 class="anchored" data-anchor-id="from-excel-to-r-a-researchers-journey">From Excel to R: A Researcher’s Journey</h4>
-</section>
-<div class="project-body">
-<p>A gentle introduction to R for health researchers currently using Excel or SPSS.</p>
-<p><strong>Series includes:</strong> 1. Setting up your R environment 2. Reading and cleaning data 3. Data manipulation with dplyr 4. Creating publication-quality plots 5. Writing reproducible reports</p>
-<p><em>Coming Soon</em></p>
-</div>
-</div>
-<hr>
-</section>
-<section id="health-data-analytics" class="level3">
-<h3 class="anchored" data-anchor-id="health-data-analytics"><strong>Health Data Analytics</strong></h3>
-<div class="project-card">
-<section id="analyzing-ncd-data-from-raw-data-to-insights" class="level4 project-header">
-<h4 class="anchored" data-anchor-id="analyzing-ncd-data-from-raw-data-to-insights">Analyzing NCD Data: From Raw Data to Insights</h4>
-</section>
-<div class="project-body">
-<p>Real-world example analyzing hypertension and diabetes data, with complete R code.</p>
-<p><strong>Analysis Pipeline:</strong> - Data cleaning and validation - Descriptive statistics - Control rate calculations - Risk factor analysis - Visualization strategies</p>
-<p><em>Coming Soon</em></p>
-</div>
-</div>
-<hr>
-</section>
-<section id="survey-design-implementation" class="level3">
-<h3 class="anchored" data-anchor-id="survey-design-implementation"><strong>Survey Design &amp; Implementation</strong></h3>
-<div class="project-card">
-<section id="surveycto-vs-redcap-vs-kobocollect-which-to-choose" class="level4 project-header">
-<h4 class="anchored" data-anchor-id="surveycto-vs-redcap-vs-kobocollect-which-to-choose">SurveyCTO vs REDCap vs KoboCollect: Which to Choose?</h4>
-</section>
-<div class="project-body">
-<p>Detailed comparison of leading EDC platforms based on 7+ years of hands-on experience.</p>
-<p><strong>Decision Framework:</strong>* - Feature comparison matrix - Cost analysis - Use case scenarios - Pros and cons - My recommendations</p>
-<p><em>Coming Soon</em></p>
-</div>
-</div>
-<hr>
-</section>
-<section id="statistical-methods" class="level3">
-<h3 class="anchored" data-anchor-id="statistical-methods"><strong>Statistical Methods</strong></h3>
-<div class="project-card">
-<section id="understanding-bayesian-statistics-in-public-health" class="level4 project-header">
-<h4 class="anchored" data-anchor-id="understanding-bayesian-statistics-in-public-health">Understanding Bayesian Statistics in Public Health</h4>
-</section>
-<div class="project-body">
-<p>Demystifying Bayesian methods with practical health research examples.</p>
-<p><strong>Topics:</strong>* - Why Bayesian? Advantages for health research - Interpreting credible intervals - Prior selection strategies - MCMC basics - Example: Vaccine efficacy analysis</p>
-<p><em>Coming Soon</em></p>
-</div>
-</div>
-<hr>
-</section>
-<section id="career-professional-development" class="level3">
-<h3 class="anchored" data-anchor-id="career-professional-development"><strong>Career &amp; Professional Development</strong></h3>
-<div class="project-card">
-<section id="breaking-into-health-data-science" class="level4 project-header">
-<h4 class="anchored" data-anchor-id="breaking-into-health-data-science">Breaking into Health Data Science</h4>
-</section>
-<div class="project-body">
-<p>Advice for aspiring health data scientist based on my journey and lessons learned.</p>
-<p><strong>Topics:</strong>* - Skills you actually need - Building a portfolio - Networking strategies - Remote work tips - Common career questions</p>
-<p><em>Coming Soon</em></p>
-</div>
-</div>
-<hr>
-</section>
-</section>
-<section id="tutorial-series" class="level2">
-<h2 class="anchored" data-anchor-id="tutorial-series"><strong>Tutorial Series</strong></h2>
-<section id="r-for-health-researchers-series-12-parts" class="level3">
-<h3 class="anchored" data-anchor-id="r-for-health-researchers-series-12-parts"><strong>“R for Health Researchers” Series</strong> (12 parts)</h3>
-<p>Comprehensive tutorial series taking you from R beginner to confident analyst.</p>
-</section>
-<section id="dashboard-design-series-6-parts" class="level3">
-<h3 class="anchored" data-anchor-id="dashboard-design-series-6-parts"><strong>“Dashboard Design” Series</strong> (6 parts)</h3>
-<p>Learn to build professional dashboards that stakeholders actually use.</p>
-</section>
-<section id="data-management-101-series-8-parts" class="level3">
-<h3 class="anchored" data-anchor-id="data-management-101-series-8-parts"><strong>“Data Management 101” Series</strong> (8 parts)</h3>
-<p>Essential skills for managing research data with integrity and efficiency.</p>
-<hr>
-</section>
-</section>
-<section id="quick-tips-code-snippets" class="level2">
-<h2 class="anchored" data-anchor-id="quick-tips-code-snippets"><strong>Quick Tips &amp; Code Snippets</strong></h2>
-<section id="useful-r-code-snippets" class="level3 info-box">
-<h3 class="anchored" data-anchor-id="useful-r-code-snippets">Useful R Code Snippets</h3>
-<p><strong>REDCap Data Import:</strong></p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(httr)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Import data from REDCap</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>redcap_data <span class="ot">&lt;-</span> <span class="fu">postForm</span>(</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">uri =</span> <span class="st">"https://redcap.example.com/api/"</span>,</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">token =</span> <span class="fu">Sys.getenv</span>(<span class="st">"REDCAP_TOKEN"</span>),</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">content =</span> <span class="st">"record"</span>,</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">format =</span> <span class="st">"csv"</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>) <span class="sc">%&gt;%</span> </span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">read_csv</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><strong>Data Quality Check:</strong></p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Check missing data</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>missing_summary <span class="ot">&lt;-</span> data <span class="sc">%&gt;%</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="fu">across</span>(<span class="fu">everything</span>(), </span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="sc">~</span><span class="fu">sum</span>(<span class="fu">is.na</span>(.)) <span class="sc">/</span> <span class="fu">length</span>(.) <span class="sc">*</span> <span class="dv">100</span>)) <span class="sc">%&gt;%</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(<span class="fu">everything</span>(), </span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">names_to =</span> <span class="st">"variable"</span>, </span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">values_to =</span> <span class="st">"percent_missing"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>More code snippets available in individual blog posts.</p>
-</section>
-<hr>
-</section>
-<section id="guest-posts-welcome" class="level2">
-<h2 class="anchored" data-anchor-id="guest-posts-welcome"><strong>Guest Posts Welcome</strong></h2>
-<p>I’m open to guest posts on topics related to: - Health data science - Clinical trials and research methods - R programming for health - Career development in biostatistics</p>
-<p><strong>Contact:</strong> <a href="mailto:nichodemuswerre@gmail.com">nichodemuswerre@gmail.com</a></p>
-<hr>
-</section>
-<section id="stay-updated" class="level2">
-<h2 class="anchored" data-anchor-id="stay-updated"><strong>Stay Updated</strong></h2>
-<section id="get-notified-of-new-posts" class="level3 success-box">
-<h3 class="anchored" data-anchor-id="get-notified-of-new-posts">Get Notified of New Posts</h3>
-<p>Follow me on social media for updates when new blog posts are published:</p>
-<p>Twitter: <span class="citation" data-cites="nwerre">@nwerre</span><br>
-LinkedIn: Nichodemus Amollo<br>
-GitHub: gondamol</p>
-<p><strong>Blog posts are published monthly</strong> covering practical topics in health data science.</p>
-</section>
-<hr>
-</section>
-<section id="popular-resources" class="level2">
-<h2 class="anchored" data-anchor-id="popular-resources"><strong>Popular Resources</strong></h2>
+<section id="welcome-to-my-blog" class="level2">
+<h2 class="anchored" data-anchor-id="welcome-to-my-blog">Welcome to My Blog!</h2>
+<p>This blog is your resource for:</p>
 <ul>
-<li><a href="https://github.com/gondamol">My GitHub Repositories</a> - Open-source code and tools</li>
-<li><a href="../tidy-tuesday/index.html">Tidy Tuesday Analyses</a> - Weekly data visualization practice</li>
-<li><a href="https://github.com/gondamol">R Package Documentation</a> - Tools I’m developing</li>
+<li><strong>Career roadmaps</strong> for aspiring data analysts</li>
+<li><strong>Tool comparisons</strong> (R vs Python, Tableau vs Power BI, etc.)</li>
+<li><strong>Technical tutorials</strong> on data cleaning, visualization, and analysis</li>
+<li><strong>Free learning resources</strong> for data science</li>
+<li><strong>Interview prep</strong> and job search strategies</li>
+<li><strong>Real-world insights</strong> from my experience in health data science</li>
 </ul>
 <hr>
-<p><a href="../index.html">Back to Home →</a> | <a href="../projects/index.html">View Projects →</a></p>
+</section>
+<section id="latest-posts" class="level2">
+<h2 class="anchored" data-anchor-id="latest-posts">Latest Posts</h2>
+<p>All blog posts are displayed below, sorted by date. Use the search and category filters to find content relevant to your interests.</p>
+
 
 
 <!-- -->
 
 </section>
 
-</main> <!-- /main -->
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="QWdyaWN1bHR1cmUlMkNEYXRhJTIwQW5hbHlzaXMlMkNLYWdnbGU=" data-listing-date-sort="1762203600000" data-listing-file-modified-sort="1762141687520" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="410">
+<div class="thumbnail"><a href="../posts/agriculture-data-analysis/index.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../posts/agriculture-data-analysis/index.html" class="no-external">Analyzing Agricultural Data from Public Sources</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../posts/agriculture-data-analysis/index.html" class="no-external">Comprehensive guide to sourcing and analyzing agriculture datasets from Kaggle and other public repositories</a>
+</div>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('QWdyaWN1bHR1cmU='); return false;">Agriculture</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMEFuYWx5c2lz'); return false;">Data Analysis</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('S2FnZ2xl'); return false;">Kaggle</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="../posts/agriculture-data-analysis/index.html" class="no-external">
+<div class="listing-date">
+Nov 4, 2025
+</div>
+<div class="listing-reading-time">3 min</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="RGF0YSUyMFZpc3VhbGl6YXRpb24lMkNSJTJDUHl0aG9u" data-listing-date-sort="1762203600000" data-listing-file-modified-sort="1762141687520" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="422">
+<div class="thumbnail"><a href="../posts/data-viz-blog-1/index.html" class="no-external">
+
+<img loading="lazy" src="../posts/img/viz-thumbnail.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../posts/data-viz-blog-1/index.html" class="no-external">Creating Beautiful Data Visualizations with R and Python</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../posts/data-viz-blog-1/index.html" class="no-external">A comprehensive guide to modern data visualization techniques</a>
+</div>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMFZpc3VhbGl6YXRpb24='); return false;">Data Visualization</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">R</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UHl0aG9u'); return false;">Python</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="../posts/data-viz-blog-1/index.html" class="no-external">
+<div class="listing-date">
+Nov 4, 2025
+</div>
+<div class="listing-reading-time">3 min</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-categories="UHVibGljJTIwSGVhbHRoJTJDUmVzZWFyY2glMjBNZXRob2RzJTJDUmVwcm9kdWNpYmlsaXR5JTJDQmVzdCUyMFByYWN0aWNlcw==" data-listing-date-sort="1761426000000" data-listing-file-modified-sort="1761621860743" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1263">
+<div class="thumbnail"><a href="../posts/22-reproducible-research-public-health/index.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../posts/22-reproducible-research-public-health/index.html" class="no-external">Why Reproducible Research Matters in Public Health</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../posts/22-reproducible-research-public-health/index.html" class="no-external">Building Trust Through Transparency: The Critical Role of Reproducibility in Health Sciences</a>
+</div>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('UHVibGljJTIwSGVhbHRo'); return false;">Public Health</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UmVzZWFyY2glMjBNZXRob2Rz'); return false;">Research Methods</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UmVwcm9kdWNpYmlsaXR5'); return false;">Reproducibility</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('QmVzdCUyMFByYWN0aWNlcw=='); return false;">Best Practices</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="../posts/22-reproducible-research-public-health/index.html" class="no-external">
+<div class="listing-date">
+Oct 26, 2025
+</div>
+<div class="listing-reading-time">7 min</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="3" data-categories="UiUyMFByb2dyYW1taW5nJTJDSGVhbHRoJTIwUmVzZWFyY2glMkNTdGF0aXN0aWNzJTJDVHV0b3JpYWwlMkNCZWdpbm5lcnM=" data-listing-date-sort="1761426000000" data-listing-file-modified-sort="1761621860840" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-word-count-sort="2389">
+<div class="thumbnail"><a href="../posts/23-r-for-health-researchers/index.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../posts/23-r-for-health-researchers/index.html" class="no-external">A Beginner’s Guide to R for Health Researchers</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../posts/23-r-for-health-researchers/index.html" class="no-external">From Clinical Data to Statistical Insights: Your Complete Roadmap to R Programming</a>
+</div>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('UiUyMFByb2dyYW1taW5n'); return false;">R Programming</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SGVhbHRoJTIwUmVzZWFyY2g='); return false;">Health Research</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('U3RhdGlzdGljcw=='); return false;">Statistics</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('VHV0b3JpYWw='); return false;">Tutorial</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('QmVnaW5uZXJz'); return false;">Beginners</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="../posts/23-r-for-health-researchers/index.html" class="no-external">
+<div class="listing-date">
+Oct 26, 2025
+</div>
+<div class="listing-reading-time">12 min</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="4" data-categories="RGF0YSUyMENvbGxlY3Rpb24lMkNNb2JpbGUlMjBUZWNobm9sb2d5JTJDT0RLJTJDU3VydmV5JTIwRGVzaWduJTJDRmllbGQlMjBXb3Jr" data-listing-date-sort="1761426000000" data-listing-file-modified-sort="1761621860916" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2151">
+<div class="thumbnail"><a href="../posts/24-mobile-data-collection/index.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../posts/24-mobile-data-collection/index.html" class="no-external">Designing Effective Mobile Data Collection Systems</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../posts/24-mobile-data-collection/index.html" class="no-external">From Paper Forms to Digital Excellence: A Complete Guide to Mobile Data Collection</a>
+</div>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMENvbGxlY3Rpb24='); return false;">Data Collection</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('TW9iaWxlJTIwVGVjaG5vbG9neQ=='); return false;">Mobile Technology</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('T0RL'); return false;">ODK</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('U3VydmV5JTIwRGVzaWdu'); return false;">Survey Design</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('RmllbGQlMjBXb3Jr'); return false;">Field Work</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="../posts/24-mobile-data-collection/index.html" class="no-external">
+<div class="listing-date">
+Oct 26, 2025
+</div>
+<div class="listing-reading-time">11 min</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="5" data-categories="RGF0YSUyMFZpc3VhbGl6YXRpb24lMkNEYXNoYm9hcmRzJTJDSGVhbHRoJTIwQW5hbHl0aWNzJTJDRGVzaWduJTJDQmVzdCUyMFByYWN0aWNlcw==" data-listing-date-sort="1761426000000" data-listing-file-modified-sort="1761621860988" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="17" data-listing-word-count-sort="3310">
+<div class="thumbnail"><a href="../posts/25-health-dashboard-visualization/index.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../posts/25-health-dashboard-visualization/index.html" class="no-external">Data Visualization Best Practices for Health Dashboards</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../posts/25-health-dashboard-visualization/index.html" class="no-external">Design Dashboards That Inform, Engage, and Drive Action in Healthcare Settings</a>
+</div>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMFZpc3VhbGl6YXRpb24='); return false;">Data Visualization</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('RGFzaGJvYXJkcw=='); return false;">Dashboards</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SGVhbHRoJTIwQW5hbHl0aWNz'); return false;">Health Analytics</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('RGVzaWdu'); return false;">Design</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('QmVzdCUyMFByYWN0aWNlcw=='); return false;">Best Practices</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="../posts/25-health-dashboard-visualization/index.html" class="no-external">
+<div class="listing-date">
+Oct 26, 2025
+</div>
+<div class="listing-reading-time">17 min</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="6" data-categories="Q2FyZWVyJTJDUm9hZG1hcCUyQ0JlZ2lubmVycyUyQ0RhdGElMjBBbmFseXRpY3M=" data-listing-date-sort="1761339600000" data-listing-file-modified-sort="1761423307407" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="903">
+<div class="thumbnail"><a href="../posts/01-data-analytics-roadmap/index.html" class="no-external">
+
+<img loading="lazy" src="../posts/01-data-analytics-roadmap/roadmap.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../posts/01-data-analytics-roadmap/index.html" class="no-external">🚀 Your Ultimate 100-Day Data Analytics Roadmap (FREE Resources Inside!)</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../posts/01-data-analytics-roadmap/index.html" class="no-external">From Zero to Job-Ready in Just 100 Days - No Prior Experience Required</a>
+</div>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('Q2FyZWVy'); return false;">Career</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Um9hZG1hcA=='); return false;">Roadmap</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('QmVnaW5uZXJz'); return false;">Beginners</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMEFuYWx5dGljcw=='); return false;">Data Analytics</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="../posts/01-data-analytics-roadmap/index.html" class="no-external">
+<div class="listing-date">
+Oct 25, 2025
+</div>
+<div class="listing-reading-time">5 min</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="7" data-categories="UHl0aG9uJTJDUiUyQ1Rvb2xzJTJDQmVnaW5uZXJz" data-listing-date-sort="1761253200000" data-listing-file-modified-sort="1761423307408" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1169">
+<div class="thumbnail"><a href="../posts/02-python-vs-r/index.html" class="no-external">
+
+<img loading="lazy" src="../posts/02-python-vs-r/python-r.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../posts/02-python-vs-r/index.html" class="no-external">Python vs R for Data Analytics: The TRUTH Nobody Tells You (2025 Edition)</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../posts/02-python-vs-r/index.html" class="no-external">Stop Wasting Time - Here’s Which One You Actually Need to Learn First</a>
+</div>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('UHl0aG9u'); return false;">Python</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">R</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('VG9vbHM='); return false;">Tools</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('QmVnaW5uZXJz'); return false;">Beginners</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="../posts/02-python-vs-r/index.html" class="no-external">
+<div class="listing-date">
+Oct 24, 2025
+</div>
+<div class="listing-reading-time">6 min</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="8" data-categories="U1FMJTJDRGF0YWJhc2UlMkNUdXRvcmlhbCUyQ0JlZ2lubmVycw==" data-listing-date-sort="1761166800000" data-listing-file-modified-sort="1761423307411" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1887">
+<div class="thumbnail"><a href="../posts/03-sql-mastery/index.html" class="no-external">
+
+<img loading="lazy" src="../posts/03-sql-mastery/sql.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../posts/03-sql-mastery/index.html" class="no-external">Master SQL in 30 Days: The Only Tutorial You’ll Ever Need (FREE)</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../posts/03-sql-mastery/index.html" class="no-external">From ’SELECT *’ to Landing Your First Data Job - Complete Roadmap with Practice Problems</a>
+</div>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('U1FM'); return false;">SQL</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('RGF0YWJhc2U='); return false;">Database</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('VHV0b3JpYWw='); return false;">Tutorial</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('QmVnaW5uZXJz'); return false;">Beginners</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="../posts/03-sql-mastery/index.html" class="no-external">
+<div class="listing-date">
+Oct 23, 2025
+</div>
+<div class="listing-reading-time">10 min</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="9" data-categories="VmlzdWFsaXphdGlvbiUyQ1RhYmxlYXUlMkNQb3dlciUyMEJJJTJDRGVzaWdu" data-listing-date-sort="1761080400000" data-listing-file-modified-sort="1761423307412" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1384">
+<div class="thumbnail"><a href="../posts/04-data-visualization-guide/index.html" class="no-external">
+
+<img loading="lazy" src="../posts/04-data-visualization-guide/visualization.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../posts/04-data-visualization-guide/index.html" class="no-external">Data Visualization Mastery: Turn Boring Numbers into Stunning Stories (FREE Tools)</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../posts/04-data-visualization-guide/index.html" class="no-external">The Ultimate Guide to Creating Visuals That Actually Get You Hired</a>
+</div>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('VmlzdWFsaXphdGlvbg=='); return false;">Visualization</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('VGFibGVhdQ=='); return false;">Tableau</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UG93ZXIlMjBCSQ=='); return false;">Power BI</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('RGVzaWdu'); return false;">Design</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="../posts/04-data-visualization-guide/index.html" class="no-external">
+<div class="listing-date">
+Oct 22, 2025
+</div>
+<div class="listing-reading-time">7 min</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="10" data-categories="RXhjZWwlMkNQcm9kdWN0aXZpdHklMkNUdXRvcmlhbCUyQ0JlZ2lubmVycw==" data-listing-date-sort="1760994000000" data-listing-file-modified-sort="1761423307412" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1373">
+<div class="thumbnail"><a href="../posts/05-excel-to-pro/index.html" class="no-external">
+
+<img loading="lazy" src="../posts/05-excel-to-pro/excel.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../posts/05-excel-to-pro/index.html" class="no-external">From Excel Novice to Data Pro: The Skills That Actually Matter in 2025</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../posts/05-excel-to-pro/index.html" class="no-external">Stop Using Excel Like It’s 1995 - Modern Techniques That Will 10X Your Productivity</a>
+</div>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('RXhjZWw='); return false;">Excel</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UHJvZHVjdGl2aXR5'); return false;">Productivity</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('VHV0b3JpYWw='); return false;">Tutorial</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('QmVnaW5uZXJz'); return false;">Beginners</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="../posts/05-excel-to-pro/index.html" class="no-external">
+<div class="listing-date">
+Oct 21, 2025
+</div>
+<div class="listing-reading-time">7 min</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="11" data-categories="UG9ydGZvbGlvJTJDQ2FyZWVyJTJDUHJvamVjdHMlMkNHdWlkZQ==" data-listing-date-sort="1760907600000" data-listing-file-modified-sort="1761423307418" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1910">
+<div class="thumbnail"><a href="../posts/06-portfolio-that-gets-hired/index.html" class="no-external">
+
+<img loading="lazy" src="../posts/06-portfolio-that-gets-hired/portfolio.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../posts/06-portfolio-that-gets-hired/index.html" class="no-external">Build a Data Analytics Portfolio That ACTUALLY Gets You Hired (5 Projects Inside)</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../posts/06-portfolio-that-gets-hired/index.html" class="no-external">I Reviewed 500+ Portfolios - Here’s What Works (And What Gets You Ignored)</a>
+</div>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('UG9ydGZvbGlv'); return false;">Portfolio</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Q2FyZWVy'); return false;">Career</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UHJvamVjdHM='); return false;">Projects</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('R3VpZGU='); return false;">Guide</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="../posts/06-portfolio-that-gets-hired/index.html" class="no-external">
+<div class="listing-date">
+Oct 20, 2025
+</div>
+<div class="listing-reading-time">10 min</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="12" data-categories="U3RhdGlzdGljcyUyQ01hdGglMkNUdXRvcmlhbCUyQ0JlZ2lubmVycw==" data-listing-date-sort="1760821200000" data-listing-file-modified-sort="1761423307418" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1697">
+<div class="thumbnail"><a href="../posts/07-statistics-for-analysts/index.html" class="no-external">
+
+<img loading="lazy" src="../posts/07-statistics-for-analysts/statistics.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../posts/07-statistics-for-analysts/index.html" class="no-external">Statistics for Data Analysts: The Only Concepts You Actually Need (No PhD Required)</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../posts/07-statistics-for-analysts/index.html" class="no-external">Stop Feeling Intimidated - These 15 Concepts Cover 90% of Your Job</a>
+</div>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('U3RhdGlzdGljcw=='); return false;">Statistics</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('TWF0aA=='); return false;">Math</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('VHV0b3JpYWw='); return false;">Tutorial</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('QmVnaW5uZXJz'); return false;">Beginners</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="../posts/07-statistics-for-analysts/index.html" class="no-external">
+<div class="listing-date">
+Oct 19, 2025
+</div>
+<div class="listing-reading-time">9 min</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="13" data-categories="S2FnZ2xlJTJDUG9ydGZvbGlvJTJDQ29tcGV0aXRpb24lMkNCZWdpbm5lcnM=" data-listing-date-sort="1760734800000" data-listing-file-modified-sort="1761423307418" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1434">
+<div class="thumbnail"><a href="../posts/08-kaggle-competitions-guide/index.html" class="no-external">
+
+<img loading="lazy" src="../posts/08-kaggle-competitions-guide/kaggle.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../posts/08-kaggle-competitions-guide/index.html" class="no-external">Kaggle for Beginners: Turn FREE Competitions into Job Offers (Step-by-Step Guide)</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../posts/08-kaggle-competitions-guide/index.html" class="no-external">How I Went From Zero to Top 10% in 90 Days - And How You Can Too</a>
+</div>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('S2FnZ2xl'); return false;">Kaggle</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UG9ydGZvbGlv'); return false;">Portfolio</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Q29tcGV0aXRpb24='); return false;">Competition</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('QmVnaW5uZXJz'); return false;">Beginners</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="../posts/08-kaggle-competitions-guide/index.html" class="no-external">
+<div class="listing-date">
+Oct 18, 2025
+</div>
+<div class="listing-reading-time">8 min</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="14" data-categories="RGF0YSUyMENsZWFuaW5nJTJDUHl0aG9uJTJDUGFuZGFzJTJDVHV0b3JpYWw=" data-listing-date-sort="1760648400000" data-listing-file-modified-sort="1761423307418" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1909">
+<div class="thumbnail"><a href="../posts/09-data-cleaning-mastery/index.html" class="no-external">
+
+<img loading="lazy" src="../posts/09-data-cleaning-mastery/cleaning.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../posts/09-data-cleaning-mastery/index.html" class="no-external">Data Cleaning: The Unsexy Skill That Will Make You Invaluable (80% of the Job)</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../posts/09-data-cleaning-mastery/index.html" class="no-external">Master the Art of Turning Messy Data into Analysis-Ready Gold</a>
+</div>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMENsZWFuaW5n'); return false;">Data Cleaning</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UHl0aG9u'); return false;">Python</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UGFuZGFz'); return false;">Pandas</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('VHV0b3JpYWw='); return false;">Tutorial</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="../posts/09-data-cleaning-mastery/index.html" class="no-external">
+<div class="listing-date">
+Oct 17, 2025
+</div>
+<div class="listing-reading-time">10 min</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="15" data-categories="QUIlMjBUZXN0aW5nJTJDU3RhdGlzdGljcyUyQ1R1dG9yaWFsJTJDQnVzaW5lc3M=" data-listing-date-sort="1760562000000" data-listing-file-modified-sort="1761423307418" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="805">
+<div class="thumbnail"><a href="../posts/10-ab-testing-guide/index.html" class="no-external">
+
+<img loading="lazy" src="../posts/10-ab-testing-guide/abtesting.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../posts/10-ab-testing-guide/index.html" class="no-external">A/B Testing for Beginners: Run Experiments That Actually Drive Business Results</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../posts/10-ab-testing-guide/index.html" class="no-external">The Complete Guide to Testing Ideas and Making Data-Driven Decisions</a>
+</div>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('QUIlMjBUZXN0aW5n'); return false;">AB Testing</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('U3RhdGlzdGljcw=='); return false;">Statistics</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('VHV0b3JpYWw='); return false;">Tutorial</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('QnVzaW5lc3M='); return false;">Business</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="../posts/10-ab-testing-guide/index.html" class="no-external">
+<div class="listing-date">
+Oct 16, 2025
+</div>
+<div class="listing-reading-time">5 min</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="16" data-categories="R2l0JTJDR2l0SHViJTJDVG9vbHMlMkNUdXRvcmlhbA==" data-listing-date-sort="1760475600000" data-listing-file-modified-sort="1761423307418" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1147">
+<div class="thumbnail"><a href="../posts/11-git-github-for-analysts/index.html" class="no-external">
+
+<img loading="lazy" src="../posts/11-git-github-for-analysts/github.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../posts/11-git-github-for-analysts/index.html" class="no-external">Git &amp; GitHub for Data Analysts: Stop Losing Your Work (15-Minute Setup)</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../posts/11-git-github-for-analysts/index.html" class="no-external">The Version Control Skills That Will Save Your Career</a>
+</div>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('R2l0'); return false;">Git</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('R2l0SHVi'); return false;">GitHub</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('VG9vbHM='); return false;">Tools</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('VHV0b3JpYWw='); return false;">Tutorial</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="../posts/11-git-github-for-analysts/index.html" class="no-external">
+<div class="listing-date">
+Oct 15, 2025
+</div>
+<div class="listing-reading-time">6 min</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="17" data-categories="SW50ZXJ2aWV3JTJDQ2FyZWVyJTJDR3VpZGU=" data-listing-date-sort="1760389200000" data-listing-file-modified-sort="1761423307418" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1379">
+<div class="thumbnail"><a href="../posts/12-data-analyst-interview-guide/index.html" class="no-external">
+
+<img loading="lazy" src="../posts/12-data-analyst-interview-guide/interview.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../posts/12-data-analyst-interview-guide/index.html" class="no-external">Ace Your Data Analyst Interview: 50+ Questions with Perfect Answers</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../posts/12-data-analyst-interview-guide/index.html" class="no-external">Everything You Need to Land Your First (or Next) Data Analyst Role</a>
+</div>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('SW50ZXJ2aWV3'); return false;">Interview</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Q2FyZWVy'); return false;">Career</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('R3VpZGU='); return false;">Guide</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="../posts/12-data-analyst-interview-guide/index.html" class="no-external">
+<div class="listing-date">
+Oct 14, 2025
+</div>
+<div class="listing-reading-time">7 min</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="18" data-categories="UmVtb3RlJTIwV29yayUyQ0NhcmVlciUyQ0pvYiUyMFNlYXJjaA==" data-listing-date-sort="1760302800000" data-listing-file-modified-sort="1761423307418" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1240">
+<div class="thumbnail"><a href="../posts/13-remote-data-analyst-jobs/index.html" class="no-external">
+
+<img loading="lazy" src="../posts/13-remote-data-analyst-jobs/remote.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../posts/13-remote-data-analyst-jobs/index.html" class="no-external">Land a Remote Data Analyst Job: Complete Guide (Top Companies + Salary Ranges)</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../posts/13-remote-data-analyst-jobs/index.html" class="no-external">Work From Anywhere - Here’s How to Find and Win Remote Data Roles in 2025</a>
+</div>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('UmVtb3RlJTIwV29yaw=='); return false;">Remote Work</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Q2FyZWVy'); return false;">Career</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Sm9iJTIwU2VhcmNo'); return false;">Job Search</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="../posts/13-remote-data-analyst-jobs/index.html" class="no-external">
+<div class="listing-date">
+Oct 13, 2025
+</div>
+<div class="listing-reading-time">7 min</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="19" data-categories="VGFibGVhdSUyQ1Bvd2VyJTIwQkklMkNUb29scyUyQ1Zpc3VhbGl6YXRpb24=" data-listing-date-sort="1760216400000" data-listing-file-modified-sort="1761423307425" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="921">
+<div class="thumbnail"><a href="../posts/14-tableau-vs-power-bi/index.html" class="no-external">
+
+<img loading="lazy" src="../posts/14-tableau-vs-power-bi/tableau-powerbi.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../posts/14-tableau-vs-power-bi/index.html" class="no-external">Tableau vs Power BI in 2025: Which One Should You Learn? (Honest Comparison)</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../posts/14-tableau-vs-power-bi/index.html" class="no-external">I Used Both for 5+ Years - Here’s My Brutally Honest Take</a>
+</div>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('VGFibGVhdQ=='); return false;">Tableau</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UG93ZXIlMjBCSQ=='); return false;">Power BI</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('VG9vbHM='); return false;">Tools</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('VmlzdWFsaXphdGlvbg=='); return false;">Visualization</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="../posts/14-tableau-vs-power-bi/index.html" class="no-external">
+<div class="listing-date">
+Oct 12, 2025
+</div>
+<div class="listing-reading-time">5 min</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="20" data-categories="U3Rvcnl0ZWxsaW5nJTJDQ29tbXVuaWNhdGlvbiUyQ1Zpc3VhbGl6YXRpb24=" data-listing-date-sort="1760130000000" data-listing-file-modified-sort="1761423307425" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="352">
+<div class="thumbnail"><a href="../posts/15-data-storytelling/index.html" class="no-external">
+
+<img loading="lazy" src="../posts/15-data-storytelling/storytelling.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../posts/15-data-storytelling/index.html" class="no-external">Data Storytelling: Turn Numbers Into Narratives That Drive Action</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../posts/15-data-storytelling/index.html" class="no-external">The Skill That Separates Good Analysts from Great Ones</a>
+</div>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('U3Rvcnl0ZWxsaW5n'); return false;">Storytelling</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Q29tbXVuaWNhdGlvbg=='); return false;">Communication</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('VmlzdWFsaXphdGlvbg=='); return false;">Visualization</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="../posts/15-data-storytelling/index.html" class="no-external">
+<div class="listing-date">
+Oct 11, 2025
+</div>
+<div class="listing-reading-time">2 min</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="21" data-categories="Q291cnNlcyUyQ0ZyZWUlMjBSZXNvdXJjZXMlMkNMZWFybmluZw==" data-listing-date-sort="1760043600000" data-listing-file-modified-sort="1761423307425" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="525">
+<div class="thumbnail"><a href="../posts/16-free-data-courses-2025/index.html" class="no-external">
+
+<img loading="lazy" src="../posts/16-free-data-courses-2025/courses.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../posts/16-free-data-courses-2025/index.html" class="no-external">100% FREE Data Analytics Courses That Are Actually Worth Your Time (2025)</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../posts/16-free-data-courses-2025/index.html" class="no-external">I Tested 50+ Free Courses - Here Are the 15 That Are Better Than Paid Options</a>
+</div>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('Q291cnNlcw=='); return false;">Courses</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('RnJlZSUyMFJlc291cmNlcw=='); return false;">Free Resources</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('TGVhcm5pbmc='); return false;">Learning</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="../posts/16-free-data-courses-2025/index.html" class="no-external">
+<div class="listing-date">
+Oct 10, 2025
+</div>
+<div class="listing-reading-time">3 min</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="22" data-categories="TGVhcm5pbmclMkNDYXJlZXIlMkNQcm9kdWN0aXZpdHk=" data-listing-date-sort="1759957200000" data-listing-file-modified-sort="1761423307425" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="749">
+<div class="thumbnail"><a href="../posts/17-avoid-tutorial-hell/index.html" class="no-external">
+
+<img loading="lazy" src="../posts/17-avoid-tutorial-hell/tutorial-hell.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../posts/17-avoid-tutorial-hell/index.html" class="no-external">Escape Tutorial Hell: Stop Watching, Start Building (Action Plan Inside)</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../posts/17-avoid-tutorial-hell/index.html" class="no-external">Why You’re Stuck in Learning Mode and How to Actually Land a Job</a>
+</div>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('TGVhcm5pbmc='); return false;">Learning</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Q2FyZWVy'); return false;">Career</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UHJvZHVjdGl2aXR5'); return false;">Productivity</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="../posts/17-avoid-tutorial-hell/index.html" class="no-external">
+<div class="listing-date">
+Oct 9, 2025
+</div>
+<div class="listing-reading-time">4 min</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="23" data-categories="TGlua2VkSW4lMkNDYXJlZXIlMkNQZXJzb25hbCUyMEJyYW5kJTJDTmV0d29ya2luZw==" data-listing-date-sort="1759870800000" data-listing-file-modified-sort="1761423307430" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1104">
+<div class="thumbnail"><a href="../posts/18-linkedin-for-data-analysts/index.html" class="no-external">
+
+<img loading="lazy" src="../posts/18-linkedin-for-data-analysts/linkedin.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../posts/18-linkedin-for-data-analysts/index.html" class="no-external">LinkedIn for Data Analysts: Get Recruiter Messages Daily (Profile Optimization Guide)</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../posts/18-linkedin-for-data-analysts/index.html" class="no-external">How I Went from 0 to 50+ Recruiter Messages per Month by Optimizing My LinkedIn</a>
+</div>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('TGlua2VkSW4='); return false;">LinkedIn</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Q2FyZWVy'); return false;">Career</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UGVyc29uYWwlMjBCcmFuZA=='); return false;">Personal Brand</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('TmV0d29ya2luZw=='); return false;">Networking</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="../posts/18-linkedin-for-data-analysts/index.html" class="no-external">
+<div class="listing-date">
+Oct 8, 2025
+</div>
+<div class="listing-reading-time">6 min</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="24" data-categories="RGFzaGJvYXJkJTJDRGVzaWduJTJDQmVzdCUyMFByYWN0aWNlcw==" data-listing-date-sort="1759784400000" data-listing-file-modified-sort="1761423307430" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="295">
+<div class="thumbnail"><a href="../posts/19-dashboard-design-principles/index.html" class="no-external">
+
+<img loading="lazy" src="../posts/19-dashboard-design-principles/dashboard.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../posts/19-dashboard-design-principles/index.html" class="no-external">Dashboard Design: 10 Principles That Separate Amateur from Professional</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../posts/19-dashboard-design-principles/index.html" class="no-external">Stop Making Dashboards Nobody Uses - Design for Impact</a>
+</div>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('RGFzaGJvYXJk'); return false;">Dashboard</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('RGVzaWdu'); return false;">Design</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('QmVzdCUyMFByYWN0aWNlcw=='); return false;">Best Practices</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="../posts/19-dashboard-design-principles/index.html" class="no-external">
+<div class="listing-date">
+Oct 7, 2025
+</div>
+<div class="listing-reading-time">2 min</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="25" data-categories="Q2FyZWVyJTJDRmlyc3QlMjBKb2IlMkNBZHZpY2U=" data-listing-date-sort="1759698000000" data-listing-file-modified-sort="1761423307430" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="874">
+<div class="thumbnail"><a href="../posts/20-first-data-job/index.html" class="no-external">
+
+<img loading="lazy" data-src="../posts/20-first-data-job/first-job.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../posts/20-first-data-job/index.html" class="no-external">Your First 90 Days as a Data Analyst: Survival Guide (From Someone Who’s Been There)</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../posts/20-first-data-job/index.html" class="no-external">What They Don’t Tell You About Your First Data Analytics Job</a>
+</div>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('Q2FyZWVy'); return false;">Career</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Rmlyc3QlMjBKb2I='); return false;">First Job</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('QWR2aWNl'); return false;">Advice</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="../posts/20-first-data-job/index.html" class="no-external">
+<div class="listing-date">
+Oct 6, 2025
+</div>
+<div class="listing-reading-time">5 min</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="26" data-categories="U2FsYXJ5JTJDQ2FyZWVyJTJDTmVnb3RpYXRpb24=" data-listing-date-sort="1759611600000" data-listing-file-modified-sort="1761423307430" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="751">
+<div class="thumbnail"><a href="../posts/21-data-analyst-salary-guide/index.html" class="no-external">
+
+<img loading="lazy" data-src="../posts/21-data-analyst-salary-guide/salary.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../posts/21-data-analyst-salary-guide/index.html" class="no-external">Data Analyst Salary Guide 2025: Real Numbers, Negotiation Tips, and Career Growth</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../posts/21-data-analyst-salary-guide/index.html" class="no-external">What You Can Actually Expect to Earn (By Level, Location, and Industry)</a>
+</div>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('U2FsYXJ5'); return false;">Salary</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Q2FyZWVy'); return false;">Career</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('TmVnb3RpYXRpb24='); return false;">Negotiation</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="../posts/21-data-analyst-salary-guide/index.html" class="no-external">
+<div class="listing-date">
+Oct 5, 2025
+</div>
+<div class="listing-reading-time">4 min</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="27" data-categories="Q2FuY2VyJTIwUmVzZWFyY2glMkNEYXRhJTIwTWFuYWdlbWVudCUyQ0hlYWx0aGNhcmUlMjBJbm5vdmF0aW9uJTJDVGFibGVhdSUyQ0tFTVJJ" data-listing-date-sort="1732568400000" data-listing-file-modified-sort="1762097996938" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2168">
+<div class="thumbnail"><a href="../posts/kisumu-cancer-dashboard/index.html" class="no-external">
+
+<img loading="lazy" data-src="../posts/kisumu-cancer-dashboard/dashboard-launch.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../posts/kisumu-cancer-dashboard/index.html" class="no-external">Transforming Cancer Care: Building East Africa’s First Cancer Epidemiology Dashboard</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../posts/kisumu-cancer-dashboard/index.html" class="no-external">How data science and innovation are saving lives in Kisumu County</a>
+</div>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('Q2FuY2VyJTIwUmVzZWFyY2g='); return false;">Cancer Research</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyME1hbmFnZW1lbnQ='); return false;">Data Management</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SGVhbHRoY2FyZSUyMElubm92YXRpb24='); return false;">Healthcare Innovation</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('VGFibGVhdQ=='); return false;">Tableau</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('S0VNUkk='); return false;">KEMRI</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="../posts/kisumu-cancer-dashboard/index.html" class="no-external">
+<div class="listing-date">
+Nov 26, 2024
+</div>
+<div class="listing-reading-time">11 min</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="28" data-categories="bmV3cyUyQ2NvZGUlMkNhbmFseXNpcw==" data-listing-date-sort="1724360400000" data-listing-file-modified-sort="1724502937000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9">
+<div class="thumbnail"><a href="../posts/post-with-code/index.html" class="no-external">
+
+<img loading="lazy" data-src="../posts/post-with-code/image.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../posts/post-with-code/index.html" class="no-external">Post With Code</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../posts/post-with-code/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('bmV3cw=='); return false;">news</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Y29kZQ=='); return false;">code</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('YW5hbHlzaXM='); return false;">analysis</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="../posts/post-with-code/index.html" class="no-external">
+<div class="listing-date">
+Aug 23, 2024
+</div>
+<div class="listing-reading-time">1 min</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="29" data-categories="bmV3cw==" data-listing-date-sort="1724101200000" data-listing-file-modified-sort="1724502937000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="32">
+<div class="thumbnail"><a href="../posts/welcome/index.html" class="no-external">
+
+<p class="card-img-top"><img data-src="../posts/welcome/thumbnail.jpg"  class="thumbnail-image card-img"/></p>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../posts/welcome/index.html" class="no-external">Welcome To My Blog</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../posts/welcome/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('bmV3cw=='); return false;">news</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="../posts/welcome/index.html" class="no-external">
+<div class="listing-date">
+Aug 20, 2024
+</div>
+<div class="listing-reading-time">1 min</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+<nav id="listing-pagination" class="listing-pagination" aria-label="Page Navigation">
+  <ul class="pagination"></ul>
+</nav>
+</div></main> <!-- /main -->
+<footer class="portfolio-footer">
+  <div class="footer-container">
+    <!-- Main Footer Content -->
+    <div class="footer-content">
+      <!-- Navigation Links -->
+      <div class="footer-section">
+        <h4><i class="fas fa-sitemap"></i> Navigation</h4>
+        <ul>
+          <li><a href="../blogs/index.html"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="about/index.qmd"><i class="fas fa-user"></i> About</a></li>
+          <li><a href="projects/index.qmd"><i class="fas fa-project-diagram"></i> Projects</a></li>
+          <li><a href="research/thesis.qmd"><i class="fas fa-microscope"></i> Research</a></li>
+          <li><a href="data-viz/index.qmd"><i class="fas fa-chart-line"></i> Data Visualizations</a></li>
+          <li><a href="blogs/index.qmd"><i class="fas fa-blog"></i> Blog</a></li>
+          <li><a href="cv/index.qmd"><i class="fas fa-file-alt"></i> CV</a></li>
+          <li><a href="resources/index.qmd"><i class="fas fa-book"></i> Resources</a></li>
+        </ul>
+      </div>
+
+      <!-- Projects & Work -->
+      <div class="footer-section">
+        <h4><i class="fas fa-briefcase"></i> Projects &amp; Work</h4>
+        <ul>
+          <li><a href="projects/health-analytics.qmd"><i class="fas fa-heartbeat"></i> Health Analytics</a></li>
+          <li><a href="projects/data-management.qmd"><i class="fas fa-database"></i> Data Management</a></li>
+          <li><a href="projects/survey-tools.qmd"><i class="fas fa-clipboard-list"></i> Survey Tools</a></li>
+          <li><a href="projects/dashboards.qmd"><i class="fas fa-chart-pie"></i> Dashboards</a></li>
+          <li><a href="projects/analytics-engineering/index.qmd"><i class="fas fa-cogs"></i> Analytics Engineering</a></li>
+          <li><a href="projects/politics-governance/index.qmd"><i class="fas fa-university"></i> Governance &amp; Civic Tech</a></li>
+          <li><a href="projects/agriculture/index.qmd"><i class="fas fa-seedling"></i> Agriculture Projects</a></li>
+          <li><a href="tidy-tuesday/index.qmd"><i class="fas fa-calendar-alt"></i> TidyTuesday</a></li>
+          <li><a href="software/index.qmd"><i class="fas fa-code"></i> Software Development</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact & Social -->
+      <div class="footer-section">
+        <h4><i class="fas fa-envelope"></i> Contact &amp; Social</h4>
+        <ul>
+          <li><a href="tel:+254725737867"><i class="fas fa-phone"></i> +254 725 737 867</a></li>
+          <li><a href="mailto:nichodemuswerre@gmail.com"><i class="fas fa-envelope"></i> Email</a></li>
+          <li><a href="https://linkedin.com/in/amollow" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+          <li><a href="https://github.com/gondamol" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+          <li><a href="https://twitter.com/nwerre" target="_blank"><i class="fab fa-x-twitter"></i> X (Twitter)</a></li>
+          <li><a href="https://kaggle.com/nwerre" target="_blank"><i class="fab fa-kaggle"></i> Kaggle</a></li>
+        </ul>
+        <!-- Newsletter Subscribe Button -->
+        <div class="footer-newsletter">
+          <button onclick="showNewsletterPopup()" class="footer-subscribe-btn">
+            <i class="fas fa-envelope-open-text"></i> Subscribe to Newsletter
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom">
+      <div class="footer-copyright">
+        <p>
+          <i class="fas fa-copyright"></i> 2024 <strong>Nichodemus Amollo</strong> | Research Data Manager &amp; Data Scientist<br>
+          <small>Health Financial Diaries • Data Science &amp; ML • Impact Evaluation • Health Economics</small>
+        </p>
+      </div>
+      <div class="footer-badge">
+        <p>
+          <i class="fas fa-code"></i> Built with <i class="fas fa-heart" style="color: #f56565;"></i> using <strong>Quarto</strong> &amp; <strong>R</strong>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Newsletter Subscription Popup -->
+<div id="newsletter-popup" class="newsletter-popup" style="display: none;">
+  <div class="newsletter-popup-content">
+    <button class="newsletter-close" onclick="closeNewsletterPopup()" aria-label="Close">
+      <i class="fas fa-times"></i>
+    </button>
+    <div class="newsletter-header">
+      <i class="fas fa-envelope-open-text newsletter-icon"></i>
+      <h2>Stay Updated!</h2>
+      <p>Get the latest data science insights, visualization tips, and project updates delivered to your inbox.</p>
+    </div>
+    <form class="newsletter-form" id="newsletter-form" onsubmit="handleNewsletterSubmit(event)">
+      <div class="newsletter-input-group">
+        <i class="fas fa-user"></i>
+        <input type="text" name="name" placeholder="Your Name" required="">
+      </div>
+      <div class="newsletter-input-group">
+        <i class="fas fa-envelope"></i>
+        <input type="email" name="email" placeholder="your.email@example.com" required="">
+      </div>
+      <button type="submit" class="newsletter-submit-btn">
+        <span>Subscribe</span>
+        <i class="fas fa-arrow-right"></i>
+      </button>
+    </form>
+    <div class="newsletter-footer">
+      <small>We respect your privacy. Unsubscribe anytime.</small>
+      <div class="newsletter-social">
+        <a href="https://twitter.com/nwerre" target="_blank" aria-label="Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://linkedin.com/in/amollow" target="_blank" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/gondamol" target="_blank" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// Newsletter Popup Logic
+(function() {
+  // Check if user has dismissed popup within the last 10 minutes
+  function shouldShowPopup() {
+    const dismissedAt = localStorage.getItem('newsletterPopupDismissed');
+    if (!dismissedAt) return true;
+    
+    const dismissedTime = parseInt(dismissedAt, 10);
+    const now = Date.now();
+    const tenMinutes = 10 * 60 * 1000; // 10 minutes in milliseconds
+    
+    // Show again if more than 10 minutes have passed
+    return (now - dismissedTime) > tenMinutes;
+  }
+  
+  // Internal function to show popup (checks timing)
+  function showPopupIfAllowed() {
+    if (!shouldShowPopup()) return;
+    
+    const popup = document.getElementById('newsletter-popup');
+    if (popup) {
+      popup.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+      
+      // Animate in
+      setTimeout(() => {
+        popup.classList.add('show');
+      }, 10);
+    }
+  }
+  
+  // Show after 2 minutes delay (automatic popup)
+  const twoMinutes = 2 * 60 * 1000; // 2 minutes in milliseconds
+  setTimeout(() => {
+    showPopupIfAllowed();
+  }, twoMinutes);
+})();
+
+// Global function to show popup from footer button (bypasses timing check)
+function showNewsletterPopup() {
+  const popup = document.getElementById('newsletter-popup');
+  if (popup) {
+    popup.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+    
+    // Animate in
+    setTimeout(() => {
+      popup.classList.add('show');
+    }, 10);
+  }
+}
+
+// Close popup function
+function closeNewsletterPopup() {
+  const popup = document.getElementById('newsletter-popup');
+  if (popup) {
+    popup.classList.remove('show');
+    setTimeout(() => {
+      popup.style.display = 'none';
+      document.body.style.overflow = '';
+    }, 300);
+    // Store timestamp when dismissed (valid for 10 minutes)
+    localStorage.setItem('newsletterPopupDismissed', Date.now().toString());
+  }
+}
+
+// Handle form submission
+function handleNewsletterSubmit(event) {
+  event.preventDefault();
+  
+  const formData = new FormData(event.target);
+  const data = {
+    name: formData.get('name'),
+    email: formData.get('email')
+  };
+  
+  // Here you would integrate with your email service (Mailchimp, ConvertKit, etc.)
+  // For now, we'll just log and show success message
+  console.log('Newsletter signup:', data);
+  
+  // Show success message
+  const form = event.target;
+  form.innerHTML = `
+    <div class="newsletter-success">
+      <i class="fas fa-check-circle"></i>
+      <h3>Thank you, ${data.name}!</h3>
+      <p>Check your email to confirm your subscription.</p>
+    </div>
+  `;
+  
+  // Close after 2 seconds
+  setTimeout(() => {
+    closeNewsletterPopup();
+    // Mark as subscribed (don't show popup again for this user)
+    localStorage.setItem('newsletterPopupDismissed', Date.now().toString());
+  }, 2000);
+}
+
+// Close on background click
+document.addEventListener('click', (e) => {
+  const popup = document.getElementById('newsletter-popup');
+  if (e.target === popup) {
+    closeNewsletterPopup();
+  }
+});
+
+// Close on ESC key
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    closeNewsletterPopup();
+  }
+});
+</script>
+
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
@@ -754,7 +1931,7 @@ GitHub: gondamol</p>
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/gondamol\.github\.io\/");
+        var filterRegex = new RegExp("https:\/\/gondamol\.github\.io");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -1088,284 +2265,45 @@ GitHub: gondamol</p>
     }
   });
   </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="sourceCode" id="cb3" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Blog &amp; Technical Notes"</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="an">subtitle:</span><span class="co"> "Insights on health data analytics, R programming, and research methods"</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="an">page-layout:</span><span class="co"> full</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>::: {.hero-banner}</span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="fu"># Blog &amp; Technical Notes</span></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>Sharing knowledge on health data science, statistical methods, and best practices</span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="fu">## **Featured Posts**</span></span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="fu">### **Data Management &amp; Best Practices**</span></span>
-<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>::: {.project-card}</span>
-<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>::: {.project-header}</span>
-<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a><span class="fu">#### 10 Principles for Excellent Clinical Trial Data Management</span></span>
-<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>::: {.project-body}</span>
-<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>Lessons from managing 20+ clinical trials on what separates good data management from great data management.</span>
-<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>**Topics Covered:**</span>
-<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Planning before the first patient enrolls</span>
-<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Building quality into the system, not inspecting it in</span>
-<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The art of writing good data queries</span>
-<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>When to automate and when not to</span>
-<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Communication strategies that work</span>
-<span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a>*Coming Soon*</span>
-<span id="cb3-33"><a href="#cb3-33" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb3-34"><a href="#cb3-34" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb3-35"><a href="#cb3-35" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-36"><a href="#cb3-36" aria-hidden="true" tabindex="-1"></a>---</span>
-<span id="cb3-37"><a href="#cb3-37" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-38"><a href="#cb3-38" aria-hidden="true" tabindex="-1"></a><span class="fu">### **R Programming Tutorials**</span></span>
-<span id="cb3-39"><a href="#cb3-39" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-40"><a href="#cb3-40" aria-hidden="true" tabindex="-1"></a>::: {.project-card}</span>
-<span id="cb3-41"><a href="#cb3-41" aria-hidden="true" tabindex="-1"></a>::: {.project-header}</span>
-<span id="cb3-42"><a href="#cb3-42" aria-hidden="true" tabindex="-1"></a><span class="fu">#### From Excel to R: A Researcher's Journey</span></span>
-<span id="cb3-43"><a href="#cb3-43" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb3-44"><a href="#cb3-44" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-45"><a href="#cb3-45" aria-hidden="true" tabindex="-1"></a>::: {.project-body}</span>
-<span id="cb3-46"><a href="#cb3-46" aria-hidden="true" tabindex="-1"></a>A gentle introduction to R for health researchers currently using Excel or SPSS.</span>
-<span id="cb3-47"><a href="#cb3-47" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-48"><a href="#cb3-48" aria-hidden="true" tabindex="-1"></a>**Series includes:**</span>
-<span id="cb3-49"><a href="#cb3-49" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Setting up your R environment</span>
-<span id="cb3-50"><a href="#cb3-50" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Reading and cleaning data</span>
-<span id="cb3-51"><a href="#cb3-51" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Data manipulation with dplyr</span>
-<span id="cb3-52"><a href="#cb3-52" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>Creating publication-quality plots</span>
-<span id="cb3-53"><a href="#cb3-53" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>Writing reproducible reports</span>
-<span id="cb3-54"><a href="#cb3-54" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-55"><a href="#cb3-55" aria-hidden="true" tabindex="-1"></a>*Coming Soon*</span>
-<span id="cb3-56"><a href="#cb3-56" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb3-57"><a href="#cb3-57" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb3-58"><a href="#cb3-58" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-59"><a href="#cb3-59" aria-hidden="true" tabindex="-1"></a>---</span>
-<span id="cb3-60"><a href="#cb3-60" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-61"><a href="#cb3-61" aria-hidden="true" tabindex="-1"></a><span class="fu">### **Health Data Analytics**</span></span>
-<span id="cb3-62"><a href="#cb3-62" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-63"><a href="#cb3-63" aria-hidden="true" tabindex="-1"></a>::: {.project-card}</span>
-<span id="cb3-64"><a href="#cb3-64" aria-hidden="true" tabindex="-1"></a>::: {.project-header}</span>
-<span id="cb3-65"><a href="#cb3-65" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Analyzing NCD Data: From Raw Data to Insights</span></span>
-<span id="cb3-66"><a href="#cb3-66" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb3-67"><a href="#cb3-67" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-68"><a href="#cb3-68" aria-hidden="true" tabindex="-1"></a>::: {.project-body}</span>
-<span id="cb3-69"><a href="#cb3-69" aria-hidden="true" tabindex="-1"></a>Real-world example analyzing hypertension and diabetes data, with complete R code.</span>
-<span id="cb3-70"><a href="#cb3-70" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-71"><a href="#cb3-71" aria-hidden="true" tabindex="-1"></a>**Analysis Pipeline:**</span>
-<span id="cb3-72"><a href="#cb3-72" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Data cleaning and validation</span>
-<span id="cb3-73"><a href="#cb3-73" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Descriptive statistics</span>
-<span id="cb3-74"><a href="#cb3-74" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Control rate calculations</span>
-<span id="cb3-75"><a href="#cb3-75" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Risk factor analysis</span>
-<span id="cb3-76"><a href="#cb3-76" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Visualization strategies</span>
-<span id="cb3-77"><a href="#cb3-77" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-78"><a href="#cb3-78" aria-hidden="true" tabindex="-1"></a>*Coming Soon*</span>
-<span id="cb3-79"><a href="#cb3-79" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb3-80"><a href="#cb3-80" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb3-81"><a href="#cb3-81" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-82"><a href="#cb3-82" aria-hidden="true" tabindex="-1"></a>---</span>
-<span id="cb3-83"><a href="#cb3-83" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-84"><a href="#cb3-84" aria-hidden="true" tabindex="-1"></a><span class="fu">### **Survey Design &amp; Implementation**</span></span>
-<span id="cb3-85"><a href="#cb3-85" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-86"><a href="#cb3-86" aria-hidden="true" tabindex="-1"></a>::: {.project-card}</span>
-<span id="cb3-87"><a href="#cb3-87" aria-hidden="true" tabindex="-1"></a>::: {.project-header}</span>
-<span id="cb3-88"><a href="#cb3-88" aria-hidden="true" tabindex="-1"></a><span class="fu">#### SurveyCTO vs REDCap vs KoboCollect: Which to Choose?</span></span>
-<span id="cb3-89"><a href="#cb3-89" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb3-90"><a href="#cb3-90" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-91"><a href="#cb3-91" aria-hidden="true" tabindex="-1"></a>::: {.project-body}</span>
-<span id="cb3-92"><a href="#cb3-92" aria-hidden="true" tabindex="-1"></a>Detailed comparison of leading EDC platforms based on 7+ years of hands-on experience.</span>
-<span id="cb3-93"><a href="#cb3-93" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-94"><a href="#cb3-94" aria-hidden="true" tabindex="-1"></a>**Decision Framework:***</span>
-<span id="cb3-95"><a href="#cb3-95" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Feature comparison matrix</span>
-<span id="cb3-96"><a href="#cb3-96" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Cost analysis</span>
-<span id="cb3-97"><a href="#cb3-97" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Use case scenarios</span>
-<span id="cb3-98"><a href="#cb3-98" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Pros and cons</span>
-<span id="cb3-99"><a href="#cb3-99" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>My recommendations</span>
-<span id="cb3-100"><a href="#cb3-100" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-101"><a href="#cb3-101" aria-hidden="true" tabindex="-1"></a>*Coming Soon*</span>
-<span id="cb3-102"><a href="#cb3-102" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb3-103"><a href="#cb3-103" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb3-104"><a href="#cb3-104" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-105"><a href="#cb3-105" aria-hidden="true" tabindex="-1"></a>---</span>
-<span id="cb3-106"><a href="#cb3-106" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-107"><a href="#cb3-107" aria-hidden="true" tabindex="-1"></a><span class="fu">### **Statistical Methods**</span></span>
-<span id="cb3-108"><a href="#cb3-108" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-109"><a href="#cb3-109" aria-hidden="true" tabindex="-1"></a>::: {.project-card}</span>
-<span id="cb3-110"><a href="#cb3-110" aria-hidden="true" tabindex="-1"></a>::: {.project-header}</span>
-<span id="cb3-111"><a href="#cb3-111" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Understanding Bayesian Statistics in Public Health</span></span>
-<span id="cb3-112"><a href="#cb3-112" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb3-113"><a href="#cb3-113" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-114"><a href="#cb3-114" aria-hidden="true" tabindex="-1"></a>::: {.project-body}</span>
-<span id="cb3-115"><a href="#cb3-115" aria-hidden="true" tabindex="-1"></a>Demystifying Bayesian methods with practical health research examples.</span>
-<span id="cb3-116"><a href="#cb3-116" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-117"><a href="#cb3-117" aria-hidden="true" tabindex="-1"></a>**Topics:***</span>
-<span id="cb3-118"><a href="#cb3-118" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Why Bayesian? Advantages for health research</span>
-<span id="cb3-119"><a href="#cb3-119" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Interpreting credible intervals</span>
-<span id="cb3-120"><a href="#cb3-120" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Prior selection strategies</span>
-<span id="cb3-121"><a href="#cb3-121" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>MCMC basics</span>
-<span id="cb3-122"><a href="#cb3-122" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Example: Vaccine efficacy analysis</span>
-<span id="cb3-123"><a href="#cb3-123" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-124"><a href="#cb3-124" aria-hidden="true" tabindex="-1"></a>*Coming Soon*</span>
-<span id="cb3-125"><a href="#cb3-125" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb3-126"><a href="#cb3-126" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb3-127"><a href="#cb3-127" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-128"><a href="#cb3-128" aria-hidden="true" tabindex="-1"></a>---</span>
-<span id="cb3-129"><a href="#cb3-129" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-130"><a href="#cb3-130" aria-hidden="true" tabindex="-1"></a><span class="fu">### **Career &amp; Professional Development**</span></span>
-<span id="cb3-131"><a href="#cb3-131" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-132"><a href="#cb3-132" aria-hidden="true" tabindex="-1"></a>::: {.project-card}</span>
-<span id="cb3-133"><a href="#cb3-133" aria-hidden="true" tabindex="-1"></a>::: {.project-header}</span>
-<span id="cb3-134"><a href="#cb3-134" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Breaking into Health Data Science</span></span>
-<span id="cb3-135"><a href="#cb3-135" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb3-136"><a href="#cb3-136" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-137"><a href="#cb3-137" aria-hidden="true" tabindex="-1"></a>::: {.project-body}</span>
-<span id="cb3-138"><a href="#cb3-138" aria-hidden="true" tabindex="-1"></a>Advice for aspiring health data scientist based on my journey and lessons learned.</span>
-<span id="cb3-139"><a href="#cb3-139" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-140"><a href="#cb3-140" aria-hidden="true" tabindex="-1"></a>**Topics:***</span>
-<span id="cb3-141"><a href="#cb3-141" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Skills you actually need</span>
-<span id="cb3-142"><a href="#cb3-142" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Building a portfolio</span>
-<span id="cb3-143"><a href="#cb3-143" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Networking strategies</span>
-<span id="cb3-144"><a href="#cb3-144" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Remote work tips</span>
-<span id="cb3-145"><a href="#cb3-145" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Common career questions</span>
-<span id="cb3-146"><a href="#cb3-146" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-147"><a href="#cb3-147" aria-hidden="true" tabindex="-1"></a>*Coming Soon*</span>
-<span id="cb3-148"><a href="#cb3-148" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb3-149"><a href="#cb3-149" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb3-150"><a href="#cb3-150" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-151"><a href="#cb3-151" aria-hidden="true" tabindex="-1"></a>---</span>
-<span id="cb3-152"><a href="#cb3-152" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-153"><a href="#cb3-153" aria-hidden="true" tabindex="-1"></a><span class="fu">## **Tutorial Series**</span></span>
-<span id="cb3-154"><a href="#cb3-154" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-155"><a href="#cb3-155" aria-hidden="true" tabindex="-1"></a><span class="fu">###  **"R for Health Researchers" Series** (12 parts)</span></span>
-<span id="cb3-156"><a href="#cb3-156" aria-hidden="true" tabindex="-1"></a>Comprehensive tutorial series taking you from R beginner to confident analyst.</span>
-<span id="cb3-157"><a href="#cb3-157" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-158"><a href="#cb3-158" aria-hidden="true" tabindex="-1"></a><span class="fu">###  **"Dashboard Design" Series** (6 parts)</span></span>
-<span id="cb3-159"><a href="#cb3-159" aria-hidden="true" tabindex="-1"></a>Learn to build professional dashboards that stakeholders actually use.</span>
-<span id="cb3-160"><a href="#cb3-160" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-161"><a href="#cb3-161" aria-hidden="true" tabindex="-1"></a><span class="fu">###  **"Data Management 101" Series** (8 parts)</span></span>
-<span id="cb3-162"><a href="#cb3-162" aria-hidden="true" tabindex="-1"></a>Essential skills for managing research data with integrity and efficiency.</span>
-<span id="cb3-163"><a href="#cb3-163" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-164"><a href="#cb3-164" aria-hidden="true" tabindex="-1"></a>---</span>
-<span id="cb3-165"><a href="#cb3-165" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-166"><a href="#cb3-166" aria-hidden="true" tabindex="-1"></a><span class="fu">## **Quick Tips &amp; Code Snippets**</span></span>
-<span id="cb3-167"><a href="#cb3-167" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-168"><a href="#cb3-168" aria-hidden="true" tabindex="-1"></a>::: {.info-box}</span>
-<span id="cb3-169"><a href="#cb3-169" aria-hidden="true" tabindex="-1"></a><span class="fu">### Useful R Code Snippets</span></span>
-<span id="cb3-170"><a href="#cb3-170" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-171"><a href="#cb3-171" aria-hidden="true" tabindex="-1"></a>**REDCap Data Import:**</span>
-<span id="cb3-172"><a href="#cb3-172" aria-hidden="true" tabindex="-1"></a><span class="in">```r</span></span>
-<span id="cb3-173"><a href="#cb3-173" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(httr)</span>
-<span id="cb3-174"><a href="#cb3-174" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb3-175"><a href="#cb3-175" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-176"><a href="#cb3-176" aria-hidden="true" tabindex="-1"></a><span class="co"># Import data from REDCap</span></span>
-<span id="cb3-177"><a href="#cb3-177" aria-hidden="true" tabindex="-1"></a>redcap_data <span class="ot">&lt;-</span> <span class="fu">postForm</span>(</span>
-<span id="cb3-178"><a href="#cb3-178" aria-hidden="true" tabindex="-1"></a>  <span class="at">uri =</span> <span class="st">"https://redcap.example.com/api/"</span>,</span>
-<span id="cb3-179"><a href="#cb3-179" aria-hidden="true" tabindex="-1"></a>  <span class="at">token =</span> <span class="fu">Sys.getenv</span>(<span class="st">"REDCAP_TOKEN"</span>),</span>
-<span id="cb3-180"><a href="#cb3-180" aria-hidden="true" tabindex="-1"></a>  <span class="at">content =</span> <span class="st">"record"</span>,</span>
-<span id="cb3-181"><a href="#cb3-181" aria-hidden="true" tabindex="-1"></a>  <span class="at">format =</span> <span class="st">"csv"</span></span>
-<span id="cb3-182"><a href="#cb3-182" aria-hidden="true" tabindex="-1"></a>) <span class="sc">%&gt;%</span> </span>
-<span id="cb3-183"><a href="#cb3-183" aria-hidden="true" tabindex="-1"></a>  <span class="fu">read_csv</span>()</span>
-<span id="cb3-184"><a href="#cb3-184" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb3-185"><a href="#cb3-185" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-186"><a href="#cb3-186" aria-hidden="true" tabindex="-1"></a>**Data Quality Check:**</span>
-<span id="cb3-187"><a href="#cb3-187" aria-hidden="true" tabindex="-1"></a><span class="in">```r</span></span>
-<span id="cb3-188"><a href="#cb3-188" aria-hidden="true" tabindex="-1"></a><span class="co"># Check missing data</span></span>
-<span id="cb3-189"><a href="#cb3-189" aria-hidden="true" tabindex="-1"></a>missing_summary <span class="ot">&lt;-</span> data <span class="sc">%&gt;%</span></span>
-<span id="cb3-190"><a href="#cb3-190" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="fu">across</span>(<span class="fu">everything</span>(), </span>
-<span id="cb3-191"><a href="#cb3-191" aria-hidden="true" tabindex="-1"></a>    <span class="sc">~</span><span class="fu">sum</span>(<span class="fu">is.na</span>(.)) <span class="sc">/</span> <span class="fu">length</span>(.) <span class="sc">*</span> <span class="dv">100</span>)) <span class="sc">%&gt;%</span></span>
-<span id="cb3-192"><a href="#cb3-192" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(<span class="fu">everything</span>(), </span>
-<span id="cb3-193"><a href="#cb3-193" aria-hidden="true" tabindex="-1"></a>    <span class="at">names_to =</span> <span class="st">"variable"</span>, </span>
-<span id="cb3-194"><a href="#cb3-194" aria-hidden="true" tabindex="-1"></a>    <span class="at">values_to =</span> <span class="st">"percent_missing"</span>)</span>
-<span id="cb3-195"><a href="#cb3-195" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb3-196"><a href="#cb3-196" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-197"><a href="#cb3-197" aria-hidden="true" tabindex="-1"></a>More code snippets available in individual blog posts.</span>
-<span id="cb3-198"><a href="#cb3-198" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb3-199"><a href="#cb3-199" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-200"><a href="#cb3-200" aria-hidden="true" tabindex="-1"></a>---</span>
-<span id="cb3-201"><a href="#cb3-201" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-202"><a href="#cb3-202" aria-hidden="true" tabindex="-1"></a><span class="fu">## **Guest Posts Welcome**</span></span>
-<span id="cb3-203"><a href="#cb3-203" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-204"><a href="#cb3-204" aria-hidden="true" tabindex="-1"></a>I'm open to guest posts on topics related to:</span>
-<span id="cb3-205"><a href="#cb3-205" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Health data science</span>
-<span id="cb3-206"><a href="#cb3-206" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Clinical trials and research methods</span>
-<span id="cb3-207"><a href="#cb3-207" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>R programming for health</span>
-<span id="cb3-208"><a href="#cb3-208" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Career development in biostatistics</span>
-<span id="cb3-209"><a href="#cb3-209" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-210"><a href="#cb3-210" aria-hidden="true" tabindex="-1"></a>**Contact:** <span class="co">[</span><span class="ot">nichodemuswerre@gmail.com</span><span class="co">](mailto:nichodemuswerre@gmail.com)</span></span>
-<span id="cb3-211"><a href="#cb3-211" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-212"><a href="#cb3-212" aria-hidden="true" tabindex="-1"></a>---</span>
-<span id="cb3-213"><a href="#cb3-213" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-214"><a href="#cb3-214" aria-hidden="true" tabindex="-1"></a><span class="fu">## **Stay Updated**</span></span>
-<span id="cb3-215"><a href="#cb3-215" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-216"><a href="#cb3-216" aria-hidden="true" tabindex="-1"></a>::: {.success-box}</span>
-<span id="cb3-217"><a href="#cb3-217" aria-hidden="true" tabindex="-1"></a><span class="fu">### Get Notified of New Posts</span></span>
-<span id="cb3-218"><a href="#cb3-218" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-219"><a href="#cb3-219" aria-hidden="true" tabindex="-1"></a>Follow me on social media for updates when new blog posts are published:</span>
-<span id="cb3-220"><a href="#cb3-220" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-221"><a href="#cb3-221" aria-hidden="true" tabindex="-1"></a>Twitter: @nwerre  </span>
-<span id="cb3-222"><a href="#cb3-222" aria-hidden="true" tabindex="-1"></a>LinkedIn: Nichodemus Amollo  </span>
-<span id="cb3-223"><a href="#cb3-223" aria-hidden="true" tabindex="-1"></a>GitHub: gondamol</span>
-<span id="cb3-224"><a href="#cb3-224" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-225"><a href="#cb3-225" aria-hidden="true" tabindex="-1"></a>**Blog posts are published monthly** covering practical topics in health data science.</span>
-<span id="cb3-226"><a href="#cb3-226" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb3-227"><a href="#cb3-227" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-228"><a href="#cb3-228" aria-hidden="true" tabindex="-1"></a>---</span>
-<span id="cb3-229"><a href="#cb3-229" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-230"><a href="#cb3-230" aria-hidden="true" tabindex="-1"></a><span class="fu">## **Popular Resources**</span></span>
-<span id="cb3-231"><a href="#cb3-231" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-232"><a href="#cb3-232" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">My GitHub Repositories</span><span class="co">](https://github.com/gondamol)</span> - Open-source code and tools</span>
-<span id="cb3-233"><a href="#cb3-233" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Tidy Tuesday Analyses</span><span class="co">](../tidy-tuesday/index.qmd)</span> - Weekly data visualization practice</span>
-<span id="cb3-234"><a href="#cb3-234" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">R Package Documentation</span><span class="co">](https://github.com/gondamol)</span> - Tools I'm developing</span>
-<span id="cb3-235"><a href="#cb3-235" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-236"><a href="#cb3-236" aria-hidden="true" tabindex="-1"></a>---</span>
-<span id="cb3-237"><a href="#cb3-237" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-238"><a href="#cb3-238" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Back to Home →</span><span class="co">](../index.qmd)</span> | <span class="co">[</span><span class="ot">View Projects →</span><span class="co">](../projects/index.qmd)</span></span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Blog &amp; Technical Notes"</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">subtitle:</span><span class="co"> "Insights on data analytics, statistical methods, and career development"</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="an">page-layout:</span><span class="co"> full</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="an">listing:</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">  contents: </span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">    - "../posts/*/index.qmd"</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">  sort: "date desc"</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co">  type: default</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co">  categories: true</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co">  fields: [image, date, title, subtitle, categories, reading-time]</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co">  max-items: 100</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co">  feed: true</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>::: {.hero-banner}</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="fu"># 📝 Blog &amp; Technical Notes</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>Sharing knowledge on data analytics, statistical methods, career development, and data science tools.</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="fu">## Welcome to My Blog!</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>This blog is your resource for:</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Career roadmaps** for aspiring data analysts</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Tool comparisons** (R vs Python, Tableau vs Power BI, etc.)</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Technical tutorials** on data cleaning, visualization, and analysis</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Free learning resources** for data science</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Interview prep** and job search strategies</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Real-world insights** from my experience in health data science</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="fu">## Latest Posts</span></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>All blog posts are displayed below, sorted by date. Use the search and category filters to find content relevant to your interests.</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
-<footer class="footer">
-  <div class="nav-footer">
-    <div class="nav-footer-left">
-<p>© 2024 Nichodemus Amollo | Senior Research Data Manager<br> Health Data Analytics • Survey Design • Data Management</p>
-</div>   
-    <div class="nav-footer-center">
-      &nbsp;
-    </div>
-    <div class="nav-footer-right">
-      <ul class="footer-items list-unstyled">
-    <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/gondamol">
-      <i class="bi bi-github" role="img" aria-label="GitHub Profile">
-</i> 
-    </a>
-  </li>  
-    <li class="nav-item compact">
-    <a class="nav-link" href="https://linkedin.com/in/amollow">
-      <i class="bi bi-linkedin" role="img" aria-label="LinkedIn Profile">
-</i> 
-    </a>
-  </li>  
-    <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com/nwerre">
-      <i class="bi bi-twitter" role="img" aria-label="Twitter Profile">
-</i> 
-    </a>
-  </li>  
-    <li class="nav-item compact">
-    <a class="nav-link" href="https://kaggle.com/nwerre">
-      <i class="bi bi-kaggle" role="img" aria-label="Kaggle Profile">
-</i> 
-    </a>
-  </li>  
-</ul>
-    </div>
-  </div>
-</footer>
 
 
 

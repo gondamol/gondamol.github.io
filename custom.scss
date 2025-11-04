@@ -19,6 +19,7 @@ $spacer: 1rem;
 
 /*-- scss:rules --*/
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
 
 // Navbar enhancements
 .navbar {
@@ -30,14 +31,42 @@ $spacer: 1rem;
   font-size: 1.2rem;
 }
 
-// Hero section styling
+// Hero section styling with animations
 .hero-banner {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+  background-size: 200% 200%;
+  animation: gradientShift 15s ease infinite;
   color: white;
   padding: 4rem 2rem;
   border-radius: 12px;
   margin-bottom: 3rem;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-banner::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+  background-size: 50px 50px;
+  animation: float 20s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes float {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  100% { transform: translate(50px, 50px) rotate(360deg); }
 }
 
 .hero-title {
@@ -63,26 +92,53 @@ $spacer: 1rem;
 }
 
 .stat-card {
-  background: white;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
   padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   border-left: 4px solid $primary;
+  opacity: 0;
+  animation: fadeInUp 0.6s ease forwards;
 }
 
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.stat-card:nth-child(1) { animation-delay: 0.1s; }
+.stat-card:nth-child(2) { animation-delay: 0.2s; }
+.stat-card:nth-child(3) { animation-delay: 0.3s; }
+.stat-card:nth-child(4) { animation-delay: 0.4s; }
+
 .stat-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 12px 24px rgba(44, 82, 130, 0.3);
+  border-left-width: 6px;
 }
 
 .stat-number {
   font-size: 2.5rem;
   font-weight: 700;
-  color: $primary;
+  background: linear-gradient(135deg, $primary 0%, $secondary 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   display: block;
   margin-bottom: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover .stat-number {
+  transform: scale(1.1);
 }
 
 .stat-label {
@@ -104,6 +160,29 @@ $spacer: 1rem;
   padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-category::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+  transition: left 0.5s;
+}
+
+.skill-category:hover::before {
+  left: 100%;
+}
+
+.skill-category:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
 }
 
 .skill-category h3 {
@@ -128,12 +207,36 @@ $spacer: 1rem;
 }
 
 .project-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  transform: translateY(-10px) scale(1.01);
+  box-shadow: 0 16px 32px rgba(44, 82, 130, 0.25);
 }
 
 .project-header { background: linear-gradient(135deg, $primary 0%, $secondary 100%); color: white; padding: 2rem; }
-.project-body { padding: 2rem; }
+.project-body { padding: 2.5rem; }
+
+// Ensure lists in project cards display properly with adequate spacing
+.project-card ul, .project-card ol {
+  list-style-position: outside;
+  padding-left: 2rem;
+  margin: 1.25rem 0;
+  
+  li {
+    margin-bottom: 0.75rem;
+    line-height: 1.7;
+    display: list-item;
+    
+    &::marker {
+      color: $primary;
+    }
+  }
+}
+
+// Nested lists
+.project-card ul ul, .project-card ol ul, .project-card ul ol, .project-card ol ol {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+}
 
 .project-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem; }
 .tag { background: $light; color: $primary; padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.85rem; font-weight: 600; border: 1px solid $primary; }
@@ -152,6 +255,7 @@ $spacer: 1rem;
   .hero-banner { padding: 2rem 1rem; }
   .project-header, .project-body { padding: 1.5rem; }
   .skill-category { padding: 1.5rem; }
+  .project-card ul, .project-card ol { padding-left: 1.5rem; }
 }
 
 // Timeline styling for experience
@@ -177,12 +281,110 @@ $spacer: 1rem;
   transition: all 0.3s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-.cta-button:hover { transform: translateY(-2px); box-shadow: 0 6px 12px rgba(0,0,0,0.15); color: white; }
+.cta-button:hover { 
+  transform: translateY(-3px) scale(1.05); 
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2); 
+  color: white;
+  background: linear-gradient(135deg, lighten($primary, 5%) 0%, lighten($secondary, 5%) 100%);
+}
+
+// Pulse animation for CTA buttons
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+.cta-button.pulse {
+  animation: pulse 2s ease-in-out infinite;
+}
 
 // Highlight boxes
 .highlight-box { background: linear-gradient(135deg, #fff5eb 0%, #ffe8cc 100%); border-left: 4px solid $warning; padding: 1.5rem; border-radius: 8px; margin: 2rem 0; }
 .info-box { background: linear-gradient(135deg, #ebf8ff 0%, #bee3f8 100%); border-left: 4px solid $info; padding: 1.5rem; border-radius: 8px; margin: 2rem 0; }
 .success-box { background: linear-gradient(135deg, #f0fff4 0%, #c6f6d5 100%); border-left: 4px solid $success; padding: 1.5rem; border-radius: 8px; margin: 2rem 0; }
+
+// Ensure lists display properly in custom boxes
+.info-box ul, .highlight-box ul, .success-box ul,
+.info-box ol, .highlight-box ol, .success-box ol {
+  list-style-position: outside;
+  padding-left: 2rem;
+  margin: 1.25rem 0;
+  
+  li {
+    margin-bottom: 0.75rem;
+    line-height: 1.7;
+    display: list-item;
+  }
+}
+
+// Modern animated icons
+.icon-bounce {
+  display: inline-block;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-10px); }
+  60% { transform: translateY(-5px); }
+}
+
+.icon-rotate {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.icon-rotate:hover {
+  transform: rotate(360deg);
+}
+
+// Glow effect for futuristic feel
+.glow-effect {
+  box-shadow: 0 0 20px rgba(56, 178, 172, 0.5);
+  transition: box-shadow 0.3s ease;
+}
+
+.glow-effect:hover {
+  box-shadow: 0 0 30px rgba(56, 178, 172, 0.8);
+}
+
+// Animated background pattern
+.animated-bg {
+  position: relative;
+  overflow: hidden;
+}
+
+.animated-bg::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 10px,
+    rgba(44, 82, 130, 0.03) 10px,
+    rgba(44, 82, 130, 0.03) 20px
+  );
+  animation: slide 20s linear infinite;
+}
+
+@keyframes slide {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(50px, 50px); }
+}
+
+// Floating elements
+.floating {
+  animation: floating 3s ease-in-out infinite;
+}
+
+@keyframes floating {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
 
 // Social proof section
 .social-proof { display: flex; align-items: center; justify-content: center; gap: 2rem; flex-wrap: wrap; padding: 2rem; background: $light; border-radius: 12px; margin: 2rem 0; }

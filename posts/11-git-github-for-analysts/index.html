@@ -1,0 +1,2222 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.31">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Nichodemus Amollo">
+<meta name="dcterms.date" content="2025-10-15">
+
+<title>Git &amp; GitHub for Data Analysts: Stop Losing Your Work (15-Minute Setup) – Nichodemus Amollo | Health Data Scientist</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-8ef56b68f8fa1e9d2ba328e99e439f80.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-517cffa2c8662dafa060296b76e40e6f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-e53d22699df9a1c1cccc554c59e33091.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-517cffa2c8662dafa060296b76e40e6f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+<link rel="stylesheet" href="../../styles.scss">
+<link rel="stylesheet" href="../../_footer.scss">
+<link rel="stylesheet" href="../../_newsletter-popup.scss">
+</head>
+
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Nichodemus Amollo | Health Data Scientist</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../about/index.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-projects" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Projects</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-projects">    
+        <li>
+    <a class="dropdown-item" href="../../projects/index.html">
+ <span class="dropdown-text">All Projects</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../projects/analytics-engineering/index.html">
+ <span class="dropdown-text">Real-Time Analytics Engineering 🚀 NEW</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../projects/health-analytics.html">
+ <span class="dropdown-text">Health Data Analytics</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../projects/data-management.html">
+ <span class="dropdown-text">Data Management</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../projects/survey-tools.html">
+ <span class="dropdown-text">Survey Design &amp; Implementation</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../projects/dashboards.html">
+ <span class="dropdown-text">Dashboards &amp; Visualization</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../visualizations/index.html">
+ <span class="dropdown-text">Visualizations Gallery (50+ Projects)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../tidy-tuesday/index.html">
+ <span class="dropdown-text">TidyTuesday Challenges (100+ Projects)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../data-viz/index.html">
+ <span class="dropdown-text">Data Visualizations</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-research" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Research</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-research">    
+        <li>
+    <a class="dropdown-item" href="../../research/thesis.html">
+ <span class="dropdown-text">Current Thesis</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../research/thesis-presentation.html">
+ <span class="dropdown-text">Thesis Presentation</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../research/publications.html">
+ <span class="dropdown-text">Publications</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../presentations/data-viz-presentation.html">
+ <span class="dropdown-text">Presentations</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-resources" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Resources</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-resources">    
+        <li>
+    <a class="dropdown-item" href="../../resources/index.html">
+ <span class="dropdown-text">Learning Resources</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../skills/index.html">
+ <span class="dropdown-text">Skills &amp; Tools</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../software/index.html">
+ <span class="dropdown-text">Software</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../../blogs/index.html"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../cv/index.html"> 
+<span class="menu-text">CV</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../personal/index.html"> 
+<span class="menu-text">Personal</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/gondamol"> <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://linkedin.com/in/amollow"> <i class="bi bi-linkedin" role="img" aria-label="LinkedIn">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/nwerre"> <i class="bi bi-twitter" role="img" aria-label="Twitter">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://kaggle.com/nwerre"> <i class="bi bi-kaggle" role="img" aria-label="Kaggle">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <div class="quarto-title-block"><div><h1 class="title">Git &amp; GitHub for Data Analysts: Stop Losing Your Work (15-Minute Setup)</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+            <p class="subtitle lead">The Version Control Skills That Will Save Your Career</p>
+                                <div class="quarto-categories">
+                <div class="quarto-category">Git</div>
+                <div class="quarto-category">GitHub</div>
+                <div class="quarto-category">Tools</div>
+                <div class="quarto-category">Tutorial</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Nichodemus Amollo </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">October 15, 2025</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#why-data-analysts-need-git" id="toc-why-data-analysts-need-git" class="nav-link active" data-scroll-target="#why-data-analysts-need-git">Why Data Analysts Need Git</a></li>
+  <li><a href="#what-is-git" id="toc-what-is-git" class="nav-link" data-scroll-target="#what-is-git">What is Git?</a></li>
+  <li><a href="#minute-git-setup" id="toc-minute-git-setup" class="nav-link" data-scroll-target="#minute-git-setup">5-Minute Git Setup</a>
+  <ul class="collapse">
+  <li><a href="#step-1-install-git" id="toc-step-1-install-git" class="nav-link" data-scroll-target="#step-1-install-git"><strong>Step 1: Install Git</strong></a></li>
+  <li><a href="#step-2-configure-git" id="toc-step-2-configure-git" class="nav-link" data-scroll-target="#step-2-configure-git"><strong>Step 2: Configure Git</strong></a></li>
+  <li><a href="#step-3-create-github-account" id="toc-step-3-create-github-account" class="nav-link" data-scroll-target="#step-3-create-github-account"><strong>Step 3: Create GitHub Account</strong></a></li>
+  </ul></li>
+  <li><a href="#the-10-git-commands-youll-use-daily" id="toc-the-10-git-commands-youll-use-daily" class="nav-link" data-scroll-target="#the-10-git-commands-youll-use-daily">The 10 Git Commands You’ll Use Daily</a>
+  <ul class="collapse">
+  <li><a href="#create-a-project" id="toc-create-a-project" class="nav-link" data-scroll-target="#create-a-project"><strong>1. Create a Project</strong></a></li>
+  <li><a href="#check-status" id="toc-check-status" class="nav-link" data-scroll-target="#check-status"><strong>2. Check Status</strong></a></li>
+  <li><a href="#stage-changes" id="toc-stage-changes" class="nav-link" data-scroll-target="#stage-changes"><strong>3. Stage Changes</strong></a></li>
+  <li><a href="#commit-changes" id="toc-commit-changes" class="nav-link" data-scroll-target="#commit-changes"><strong>4. Commit Changes</strong></a></li>
+  <li><a href="#view-history" id="toc-view-history" class="nav-link" data-scroll-target="#view-history"><strong>5. View History</strong></a></li>
+  <li><a href="#create-branch-for-experiments" id="toc-create-branch-for-experiments" class="nav-link" data-scroll-target="#create-branch-for-experiments"><strong>6. Create Branch</strong> (for experiments)</a></li>
+  <li><a href="#merge-branch" id="toc-merge-branch" class="nav-link" data-scroll-target="#merge-branch"><strong>7. Merge Branch</strong></a></li>
+  <li><a href="#push-to-github" id="toc-push-to-github" class="nav-link" data-scroll-target="#push-to-github"><strong>8. Push to GitHub</strong></a></li>
+  <li><a href="#pull-from-github" id="toc-pull-from-github" class="nav-link" data-scroll-target="#pull-from-github"><strong>9. Pull from GitHub</strong></a></li>
+  <li><a href="#clone-repository" id="toc-clone-repository" class="nav-link" data-scroll-target="#clone-repository"><strong>10. Clone Repository</strong></a></li>
+  </ul></li>
+  <li><a href="#the-git-workflow-for-data-analysts" id="toc-the-git-workflow-for-data-analysts" class="nav-link" data-scroll-target="#the-git-workflow-for-data-analysts">The Git Workflow for Data Analysts</a>
+  <ul class="collapse">
+  <li><a href="#daily-workflow" id="toc-daily-workflow" class="nav-link" data-scroll-target="#daily-workflow"><strong>Daily Workflow:</strong></a></li>
+  <li><a href="#branching-workflow" id="toc-branching-workflow" class="nav-link" data-scroll-target="#branching-workflow"><strong>Branching Workflow:</strong></a></li>
+  </ul></li>
+  <li><a href="#github-for-your-portfolio" id="toc-github-for-your-portfolio" class="nav-link" data-scroll-target="#github-for-your-portfolio">GitHub for Your Portfolio</a>
+  <ul class="collapse">
+  <li><a href="#why-github-matters" id="toc-why-github-matters" class="nav-link" data-scroll-target="#why-github-matters"><strong>Why GitHub Matters:</strong></a></li>
+  <li><a href="#what-to-put-on-github" id="toc-what-to-put-on-github" class="nav-link" data-scroll-target="#what-to-put-on-github"><strong>What to Put on GitHub:</strong></a></li>
+  <li><a href="#make-your-github-shine" id="toc-make-your-github-shine" class="nav-link" data-scroll-target="#make-your-github-shine"><strong>Make Your GitHub Shine:</strong></a></li>
+  </ul></li>
+  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results">Results</a></li>
+  <li><a href="#author" id="toc-author" class="nav-link" data-scroll-target="#author">Author</a></li>
+  <li><a href="#dont-commit-these-files" id="toc-dont-commit-these-files" class="nav-link" data-scroll-target="#dont-commit-these-files">Don’t commit these files</a>
+  <ul class="collapse">
+  <li><a href="#problem-2-i-need-to-go-back-to-a-previous-version" id="toc-problem-2-i-need-to-go-back-to-a-previous-version" class="nav-link" data-scroll-target="#problem-2-i-need-to-go-back-to-a-previous-version"><strong>Problem 2: “I need to go back to a previous version!”</strong></a></li>
+  <li><a href="#problem-3-i-accidentally-committed-a-password" id="toc-problem-3-i-accidentally-committed-a-password" class="nav-link" data-scroll-target="#problem-3-i-accidentally-committed-a-password"><strong>Problem 3: “I accidentally committed a password!”</strong></a></li>
+  <li><a href="#problem-4-merge-conflict" id="toc-problem-4-merge-conflict" class="nav-link" data-scroll-target="#problem-4-merge-conflict"><strong>Problem 4: “Merge conflict!”</strong></a></li>
+  <li><a href="#github-features-you-should-use" id="toc-github-features-you-should-use" class="nav-link" data-scroll-target="#github-features-you-should-use">GitHub Features You Should Use</a>
+  <ul class="collapse">
+  <li><a href="#github-issues" id="toc-github-issues" class="nav-link" data-scroll-target="#github-issues"><strong>1. GitHub Issues</strong></a></li>
+  <li><a href="#github-projects" id="toc-github-projects" class="nav-link" data-scroll-target="#github-projects"><strong>2. GitHub Projects</strong></a></li>
+  <li><a href="#github-actions" id="toc-github-actions" class="nav-link" data-scroll-target="#github-actions"><strong>3. GitHub Actions</strong></a></li>
+  <li><a href="#github-pages" id="toc-github-pages" class="nav-link" data-scroll-target="#github-pages"><strong>4. GitHub Pages</strong></a></li>
+  <li><a href="#github-gists" id="toc-github-gists" class="nav-link" data-scroll-target="#github-gists"><strong>5. GitHub Gists</strong></a></li>
+  </ul></li>
+  <li><a href="#free-github-resources" id="toc-free-github-resources" class="nav-link" data-scroll-target="#free-github-resources">FREE GitHub Resources</a>
+  <ul class="collapse">
+  <li><a href="#learning" id="toc-learning" class="nav-link" data-scroll-target="#learning"><strong>Learning:</strong></a></li>
+  <li><a href="#tools" id="toc-tools" class="nav-link" data-scroll-target="#tools"><strong>Tools:</strong></a></li>
+  <li><a href="#practice" id="toc-practice" class="nav-link" data-scroll-target="#practice"><strong>Practice:</strong></a></li>
+  </ul></li>
+  <li><a href="#git-commit-message-best-practices" id="toc-git-commit-message-best-practices" class="nav-link" data-scroll-target="#git-commit-message-best-practices">Git Commit Message Best Practices</a></li>
+  <li><a href="#github-in-your-job-search" id="toc-github-in-your-job-search" class="nav-link" data-scroll-target="#github-in-your-job-search">GitHub in Your Job Search</a>
+  <ul class="collapse">
+  <li><a href="#resume" id="toc-resume" class="nav-link" data-scroll-target="#resume"><strong>Resume:</strong></a></li>
+  <li><a href="#cover-letter" id="toc-cover-letter" class="nav-link" data-scroll-target="#cover-letter"><strong>Cover Letter:</strong></a></li>
+  <li><a href="#linkedin" id="toc-linkedin" class="nav-link" data-scroll-target="#linkedin"><strong>LinkedIn:</strong></a></li>
+  </ul></li>
+  <li><a href="#day-github-challenge" id="toc-day-github-challenge" class="nav-link" data-scroll-target="#day-github-challenge">30-Day GitHub Challenge</a>
+  <ul class="collapse">
+  <li><a href="#week-1" id="toc-week-1" class="nav-link" data-scroll-target="#week-1"><strong>Week 1:</strong></a></li>
+  <li><a href="#week-2" id="toc-week-2" class="nav-link" data-scroll-target="#week-2"><strong>Week 2:</strong></a></li>
+  <li><a href="#week-3" id="toc-week-3" class="nav-link" data-scroll-target="#week-3"><strong>Week 3:</strong></a></li>
+  <li><a href="#week-4" id="toc-week-4" class="nav-link" data-scroll-target="#week-4"><strong>Week 4:</strong></a></li>
+  </ul></li>
+  <li><a href="#take-action-next-30-minutes" id="toc-take-action-next-30-minutes" class="nav-link" data-scroll-target="#take-action-next-30-minutes">Take Action (Next 30 Minutes)</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+
+<section id="why-data-analysts-need-git" class="level2">
+<h2 class="anchored" data-anchor-id="why-data-analysts-need-git">Why Data Analysts Need Git</h2>
+<p><strong>Scenario 1: The Classic Nightmare</strong></p>
+<pre><code>final_analysis.xlsx
+final_analysis_v2.xlsx
+final_analysis_v2_FINAL.xlsx
+final_analysis_v2_FINAL_revised.xlsx
+final_analysis_v2_FINAL_revised_USE_THIS_ONE.xlsx</code></pre>
+<p><strong>Scenario 2: The Code Disaster</strong> You run a script, something breaks, you panic, make changes, break it more, can’t remember what worked…</p>
+<p><strong>Solution: Git</strong></p>
+<hr>
+</section>
+<section id="what-is-git" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-git">What is Git?</h2>
+<p><strong>Git = Time machine for your code/data</strong></p>
+<p>It tracks every change you make, so you can: - Go back to any previous version - See what changed and when - Work on experiments without breaking things - Collaborate without overwriting each other’s work</p>
+<p><strong>GitHub = Cloud storage for Git projects</strong></p>
+<hr>
+</section>
+<section id="minute-git-setup" class="level2">
+<h2 class="anchored" data-anchor-id="minute-git-setup">5-Minute Git Setup</h2>
+<section id="step-1-install-git" class="level3">
+<h3 class="anchored" data-anchor-id="step-1-install-git"><strong>Step 1: Install Git</strong></h3>
+<p><strong>Windows:</strong> - Download: <a href="https://git-scm.com/">git-scm.com</a> - Run installer (default options)</p>
+<p><strong>Mac:</strong></p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Open Terminal and paste:</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> install git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>Linux:</strong></p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt-get install git  <span class="co"># Ubuntu/Debian</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> yum install git      <span class="co"># CentOS/RHEL</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="step-2-configure-git" class="level3">
+<h3 class="anchored" data-anchor-id="step-2-configure-git"><strong>Step 2: Configure Git</strong></h3>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> user.name <span class="st">"Your Name"</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> user.email <span class="st">"your.email@example.com"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="step-3-create-github-account" class="level3">
+<h3 class="anchored" data-anchor-id="step-3-create-github-account"><strong>Step 3: Create GitHub Account</strong></h3>
+<ul>
+<li>Go to <a href="https://github.com/">github.com</a></li>
+<li>Sign up (it’s free!)</li>
+<li>Verify email</li>
+</ul>
+<p><strong>Done! You’re ready.</strong></p>
+<hr>
+</section>
+</section>
+<section id="the-10-git-commands-youll-use-daily" class="level2">
+<h2 class="anchored" data-anchor-id="the-10-git-commands-youll-use-daily">The 10 Git Commands You’ll Use Daily</h2>
+<section id="create-a-project" class="level3">
+<h3 class="anchored" data-anchor-id="create-a-project"><strong>1. Create a Project</strong></h3>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> my-data-project</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> my-data-project</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> init  <span class="co"># Initialize Git</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="check-status" class="level3">
+<h3 class="anchored" data-anchor-id="check-status"><strong>2. Check Status</strong></h3>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status  <span class="co"># See what's changed</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="stage-changes" class="level3">
+<h3 class="anchored" data-anchor-id="stage-changes"><strong>3. Stage Changes</strong></h3>
+<div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add analysis.py  <span class="co"># Stage one file</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .            <span class="co"># Stage all files</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="commit-changes" class="level3">
+<h3 class="anchored" data-anchor-id="commit-changes"><strong>4. Commit Changes</strong></h3>
+<div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Add initial analysis script"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="view-history" class="level3">
+<h3 class="anchored" data-anchor-id="view-history"><strong>5. View History</strong></h3>
+<div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> log  <span class="co"># See all commits</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> log <span class="at">--oneline</span>  <span class="co"># Compact view</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="create-branch-for-experiments" class="level3">
+<h3 class="anchored" data-anchor-id="create-branch-for-experiments"><strong>6. Create Branch</strong> (for experiments)</h3>
+<div class="sourceCode" id="cb10"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> branch feature-new-model  <span class="co"># Create branch</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout feature-new-model  <span class="co"># Switch to it</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Or both in one:</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout <span class="at">-b</span> feature-new-model</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="merge-branch" class="level3">
+<h3 class="anchored" data-anchor-id="merge-branch"><strong>7. Merge Branch</strong></h3>
+<div class="sourceCode" id="cb11"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout main  <span class="co"># Go back to main</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> merge feature-new-model  <span class="co"># Merge changes</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="push-to-github" class="level3">
+<h3 class="anchored" data-anchor-id="push-to-github"><strong>8. Push to GitHub</strong></h3>
+<div class="sourceCode" id="cb12"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote add origin https://github.com/yourusername/repo-name.git</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push <span class="at">-u</span> origin main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="pull-from-github" class="level3">
+<h3 class="anchored" data-anchor-id="pull-from-github"><strong>9. Pull from GitHub</strong></h3>
+<div class="sourceCode" id="cb13"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> pull  <span class="co"># Get latest changes</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="clone-repository" class="level3">
+<h3 class="anchored" data-anchor-id="clone-repository"><strong>10. Clone Repository</strong></h3>
+<div class="sourceCode" id="cb14"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/username/repo-name.git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<hr>
+</section>
+</section>
+<section id="the-git-workflow-for-data-analysts" class="level2">
+<h2 class="anchored" data-anchor-id="the-git-workflow-for-data-analysts">The Git Workflow for Data Analysts</h2>
+<section id="daily-workflow" class="level3">
+<h3 class="anchored" data-anchor-id="daily-workflow"><strong>Daily Workflow:</strong></h3>
+<div class="sourceCode" id="cb15"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Start your day</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> pull  <span class="co"># Get latest changes</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. Work on analysis</span></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a><span class="co"># ... make changes to files ...</span></span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a><span class="co"># 3. Check what changed</span></span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status</span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> diff  <span class="co"># See line-by-line changes</span></span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a><span class="co"># 4. Stage your changes</span></span>
+<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add analysis.py</span>
+<span id="cb15-13"><a href="#cb15-13" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add cleaned_data.csv</span>
+<span id="cb15-14"><a href="#cb15-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-15"><a href="#cb15-15" aria-hidden="true" tabindex="-1"></a><span class="co"># 5. Commit with meaningful message</span></span>
+<span id="cb15-16"><a href="#cb15-16" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Clean customer data and add age segmentation"</span></span>
+<span id="cb15-17"><a href="#cb15-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-18"><a href="#cb15-18" aria-hidden="true" tabindex="-1"></a><span class="co"># 6. Push to GitHub</span></span>
+<span id="cb15-19"><a href="#cb15-19" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push</span>
+<span id="cb15-20"><a href="#cb15-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-21"><a href="#cb15-21" aria-hidden="true" tabindex="-1"></a><span class="co"># 7. Repeat throughout the day</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<hr>
+</section>
+<section id="branching-workflow" class="level3">
+<h3 class="anchored" data-anchor-id="branching-workflow"><strong>Branching Workflow:</strong></h3>
+<div class="sourceCode" id="cb16"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Main branch = production code</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Feature branches = experiments</span></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Create experiment branch</span></span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout <span class="at">-b</span> experiment-new-feature</span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Work on experiment</span></span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a><span class="co"># ... make changes ...</span></span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Commit changes</span></span>
+<span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
+<span id="cb16-12"><a href="#cb16-12" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Test new clustering algorithm"</span></span>
+<span id="cb16-13"><a href="#cb16-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-14"><a href="#cb16-14" aria-hidden="true" tabindex="-1"></a><span class="co"># If it works, merge to main</span></span>
+<span id="cb16-15"><a href="#cb16-15" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout main</span>
+<span id="cb16-16"><a href="#cb16-16" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> merge experiment-new-feature</span>
+<span id="cb16-17"><a href="#cb16-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-18"><a href="#cb16-18" aria-hidden="true" tabindex="-1"></a><span class="co"># If it doesn't work, just delete branch</span></span>
+<span id="cb16-19"><a href="#cb16-19" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> branch <span class="at">-d</span> experiment-new-feature</span>
+<span id="cb16-20"><a href="#cb16-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-21"><a href="#cb16-21" aria-hidden="true" tabindex="-1"></a><span class="co"># No harm done! Main branch is untouched.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<hr>
+</section>
+</section>
+<section id="github-for-your-portfolio" class="level2">
+<h2 class="anchored" data-anchor-id="github-for-your-portfolio">GitHub for Your Portfolio</h2>
+<section id="why-github-matters" class="level3">
+<h3 class="anchored" data-anchor-id="why-github-matters"><strong>Why GitHub Matters:</strong></h3>
+<ol type="1">
+<li><strong>Recruiters search GitHub</strong> for candidates</li>
+<li><strong>Shows your work</strong> is real, not just bullet points</li>
+<li><strong>Demonstrates collaboration</strong> skills</li>
+<li><strong>Proves you write</strong> clean, documented code</li>
+<li><strong>FREE hosting</strong> for websites (GitHub Pages)</li>
+</ol>
+<hr>
+</section>
+<section id="what-to-put-on-github" class="level3">
+<h3 class="anchored" data-anchor-id="what-to-put-on-github"><strong>What to Put on GitHub:</strong></h3>
+<p><strong>✅ Great for GitHub:</strong> - Analysis notebooks (Jupyter, R Markdown) - Data cleaning scripts - Visualization code - Portfolio projects - Tutorials you’ve written - Practice exercises</p>
+<p><strong>❌ Don’t put on GitHub:</strong> - Passwords or API keys - Proprietary company code - Large data files (&gt;100MB) - Sensitive information</p>
+<hr>
+</section>
+<section id="make-your-github-shine" class="level3">
+<h3 class="anchored" data-anchor-id="make-your-github-shine"><strong>Make Your GitHub Shine:</strong></h3>
+<section id="professional-profile" class="level4">
+<h4 class="anchored" data-anchor-id="professional-profile"><strong>1. Professional Profile</strong></h4>
+<div class="sourceCode" id="cb17"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># README.md on your profile repo (username/username)</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="fu"># Hi, I'm [Your Name] 👋</span></span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a><span class="fu">## About Me</span></span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>Data Analyst passionate about turning data into actionable insights. </span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a>Currently learning machine learning and building projects in Python.</span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a><span class="fu">## Skills</span></span>
+<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Languages:** Python, SQL, R</span>
+<span id="cb17-11"><a href="#cb17-11" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Tools:** Pandas, NumPy, Scikit-learn, Tableau</span>
+<span id="cb17-12"><a href="#cb17-12" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Databases:** PostgreSQL, MySQL</span>
+<span id="cb17-13"><a href="#cb17-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-14"><a href="#cb17-14" aria-hidden="true" tabindex="-1"></a><span class="fu">## Featured Projects</span></span>
+<span id="cb17-15"><a href="#cb17-15" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Project 1</span><span class="co">](link)</span> - Description</span>
+<span id="cb17-16"><a href="#cb17-16" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Project 2</span><span class="co">](link)</span> - Description</span>
+<span id="cb17-17"><a href="#cb17-17" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Project 3</span><span class="co">](link)</span> - Description</span>
+<span id="cb17-18"><a href="#cb17-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-19"><a href="#cb17-19" aria-hidden="true" tabindex="-1"></a><span class="fu">## Connect With Me</span></span>
+<span id="cb17-20"><a href="#cb17-20" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>LinkedIn: <span class="co">[</span><span class="ot">link</span><span class="co">]</span></span>
+<span id="cb17-21"><a href="#cb17-21" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Portfolio: <span class="co">[</span><span class="ot">link</span><span class="co">]</span></span>
+<span id="cb17-22"><a href="#cb17-22" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Email: <span class="co">[</span><span class="ot">email</span><span class="co">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="readme-for-each-project" class="level4">
+<h4 class="anchored" data-anchor-id="readme-for-each-project"><strong>2. README for Each Project</strong></h4>
+<div class="sourceCode" id="cb18"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># Project Name</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="fu">## Problem Statement</span></span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>What business problem does this solve?</span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a><span class="fu">## Data</span></span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Source: <span class="co">[</span><span class="ot">link</span><span class="co">]</span></span>
+<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Size: X rows, Y columns</span>
+<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Period: Date range</span>
+<span id="cb18-10"><a href="#cb18-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-11"><a href="#cb18-11" aria-hidden="true" tabindex="-1"></a><span class="fu">## Tools</span></span>
+<span id="cb18-12"><a href="#cb18-12" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Python 3.9</span>
+<span id="cb18-13"><a href="#cb18-13" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>pandas, numpy, matplotlib, seaborn</span>
+<span id="cb18-14"><a href="#cb18-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-15"><a href="#cb18-15" aria-hidden="true" tabindex="-1"></a><span class="fu">## Key Findings</span></span>
+<span id="cb18-16"><a href="#cb18-16" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Finding 1 with impact</span>
+<span id="cb18-17"><a href="#cb18-17" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Finding 2 with impact</span>
+<span id="cb18-18"><a href="#cb18-18" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Finding 3 with impact</span>
+<span id="cb18-19"><a href="#cb18-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-20"><a href="#cb18-20" aria-hidden="true" tabindex="-1"></a><span class="fu">## How to Run</span></span>
+<span id="cb18-21"><a href="#cb18-21" aria-hidden="true" tabindex="-1"></a><span class="in">```bash</span></span>
+<span id="cb18-22"><a href="#cb18-22" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install <span class="at">-r</span> requirements.txt</span>
+<span id="cb18-23"><a href="#cb18-23" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> analysis.py</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
+</section>
+<section id="results" class="level2">
+<h2 class="anchored" data-anchor-id="results">Results</h2>
+<p>[Screenshots or visualizations]</p>
+</section>
+<section id="author" class="level2">
+<h2 class="anchored" data-anchor-id="author">Author</h2>
+<p>[Your name] - <a href="link">LinkedIn</a></p>
+<pre><code>
+#### **3. .gitignore File**</code></pre>
+</section>
+<section id="dont-commit-these-files" class="level1">
+<h1>Don’t commit these files</h1>
+<p><strong>pycache</strong>/ <em>.pyc .env .DS_Store </em>.csv # If data files are large venv/ .vscode/ .idea/</p>
+<pre><code>
+---
+
+## Common Git Problems &amp; Solutions
+
+### **Problem 1: "I committed the wrong file!"**
+```bash
+# Undo last commit (keeps changes)
+git reset --soft HEAD~1
+
+# Or remove specific file
+git reset HEAD file-to-remove</code></pre>
+<section id="problem-2-i-need-to-go-back-to-a-previous-version" class="level3">
+<h3 class="anchored" data-anchor-id="problem-2-i-need-to-go-back-to-a-previous-version"><strong>Problem 2: “I need to go back to a previous version!”</strong></h3>
+<div class="sourceCode" id="cb21"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># See history</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> log <span class="at">--oneline</span></span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Go back to specific commit</span></span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout abc123  <span class="co"># Replace with commit hash</span></span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Or create new branch from old commit</span></span>
+<span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout <span class="at">-b</span> old-version abc123</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="problem-3-i-accidentally-committed-a-password" class="level3">
+<h3 class="anchored" data-anchor-id="problem-3-i-accidentally-committed-a-password"><strong>Problem 3: “I accidentally committed a password!”</strong></h3>
+<div class="sourceCode" id="cb22"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Remove from last commit</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> rm <span class="at">--cached</span> file-with-password</span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">--amend</span></span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a><span class="co"># If already pushed, you MUST change the password immediately</span></span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Then use tools like BFG Repo-Cleaner to remove from history</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="problem-4-merge-conflict" class="level3">
+<h3 class="anchored" data-anchor-id="problem-4-merge-conflict"><strong>Problem 4: “Merge conflict!”</strong></h3>
+<div class="sourceCode" id="cb23"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Open conflicted file, you'll see:</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;&lt;&lt;&lt;&lt;&lt;&lt;</span> HEAD</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a><span class="ex">Your</span> changes</span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a><span class="ex">=======</span></span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a><span class="ex">Their</span> changes</span>
+<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span> branch-name</span>
+<span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-8"><a href="#cb23-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Edit file to keep what you want</span></span>
+<span id="cb23-9"><a href="#cb23-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Then:</span></span>
+<span id="cb23-10"><a href="#cb23-10" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add conflicted-file</span>
+<span id="cb23-11"><a href="#cb23-11" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Resolve merge conflict"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<hr>
+</section>
+<section id="github-features-you-should-use" class="level2">
+<h2 class="anchored" data-anchor-id="github-features-you-should-use">GitHub Features You Should Use</h2>
+<section id="github-issues" class="level3">
+<h3 class="anchored" data-anchor-id="github-issues"><strong>1. GitHub Issues</strong></h3>
+<p>Track TODOs, bugs, ideas</p>
+</section>
+<section id="github-projects" class="level3">
+<h3 class="anchored" data-anchor-id="github-projects"><strong>2. GitHub Projects</strong></h3>
+<p>Kanban board for organizing work</p>
+</section>
+<section id="github-actions" class="level3">
+<h3 class="anchored" data-anchor-id="github-actions"><strong>3. GitHub Actions</strong></h3>
+<p>Automate testing, deployment (advanced)</p>
+</section>
+<section id="github-pages" class="level3">
+<h3 class="anchored" data-anchor-id="github-pages"><strong>4. GitHub Pages</strong></h3>
+<p>FREE website hosting - Your portfolio site - Project documentation</p>
+</section>
+<section id="github-gists" class="level3">
+<h3 class="anchored" data-anchor-id="github-gists"><strong>5. GitHub Gists</strong></h3>
+<p>Share code snippets</p>
+<hr>
+</section>
+</section>
+<section id="free-github-resources" class="level2">
+<h2 class="anchored" data-anchor-id="free-github-resources">FREE GitHub Resources</h2>
+<section id="learning" class="level3">
+<h3 class="anchored" data-anchor-id="learning"><strong>Learning:</strong></h3>
+<ol type="1">
+<li><strong><a href="https://skills.github.com/">GitHub Skills</a></strong> - Interactive tutorials</li>
+<li><strong><a href="https://guides.github.com/introduction/git-handbook/">Git Handbook</a></strong> - Official guide</li>
+<li><strong><a href="https://learngitbranching.js.org/">Learn Git Branching</a></strong> - Visual, interactive</li>
+<li><strong><a href="https://education.github.com/git-cheat-sheet-education.pdf">Git Cheat Sheet</a></strong> - PDF reference</li>
+</ol>
+</section>
+<section id="tools" class="level3">
+<h3 class="anchored" data-anchor-id="tools"><strong>Tools:</strong></h3>
+<ol type="1">
+<li><strong><a href="https://desktop.github.com/">GitHub Desktop</a></strong> - GUI for Git (easier for beginners)</li>
+<li><strong><a href="https://www.gitkraken.com/">GitKraken</a></strong> - Beautiful Git client (free tier)</li>
+<li><strong><a href="https://code.visualstudio.com/">VS Code</a></strong> - Editor with built-in Git support</li>
+</ol>
+</section>
+<section id="practice" class="level3">
+<h3 class="anchored" data-anchor-id="practice"><strong>Practice:</strong></h3>
+<ol type="1">
+<li><strong><a href="https://github.com/firstcontributions/first-contributions">First Contributions</a></strong> - Practice contributing</li>
+<li><strong><a href="https://github.com/MunGell/awesome-for-beginners">Awesome for Beginners</a></strong> - Beginner-friendly projects</li>
+</ol>
+<hr>
+</section>
+</section>
+<section id="git-commit-message-best-practices" class="level2">
+<h2 class="anchored" data-anchor-id="git-commit-message-best-practices">Git Commit Message Best Practices</h2>
+<p><strong>Bad:</strong></p>
+<pre><code>fixed stuff
+updates
+asdfasdf
+final version</code></pre>
+<p><strong>Good:</strong></p>
+<pre><code>Add customer segmentation analysis
+Fix missing value handling in data cleaning
+Update visualization colors for accessibility
+Remove outdated product_sales.py script
+Refactor SQL queries for better performance</code></pre>
+<p><strong>Format:</strong></p>
+<pre><code>[Type] Brief description (50 chars or less)
+
+Optional longer description explaining:
+- Why you made the change
+- What problem it solves
+- Any side effects</code></pre>
+<p><strong>Types:</strong> - <code>feat</code>: New feature - <code>fix</code>: Bug fix - <code>docs</code>: Documentation - <code>style</code>: Formatting - <code>refactor</code>: Code restructuring - <code>test</code>: Adding tests - <code>chore</code>: Maintenance</p>
+<hr>
+</section>
+<section id="github-in-your-job-search" class="level2">
+<h2 class="anchored" data-anchor-id="github-in-your-job-search">GitHub in Your Job Search</h2>
+<section id="resume" class="level3">
+<h3 class="anchored" data-anchor-id="resume"><strong>Resume:</strong></h3>
+<pre><code>TECHNICAL SKILLS
+- Version Control: Git, GitHub (50+ public repositories)
+- Link: github.com/yourname</code></pre>
+</section>
+<section id="cover-letter" class="level3">
+<h3 class="anchored" data-anchor-id="cover-letter"><strong>Cover Letter:</strong></h3>
+<pre><code>"I've built a portfolio of 15+ data analysis projects, 
+all available on my GitHub at github.com/yourname. 
+My most popular project [link] has been forked 50+ times 
+and demonstrates my ability to [skill]."</code></pre>
+</section>
+<section id="linkedin" class="level3">
+<h3 class="anchored" data-anchor-id="linkedin"><strong>LinkedIn:</strong></h3>
+<pre><code># In "Featured" section:
+- Link your best GitHub repos
+- Add screenshots
+
+# In experience:
+"All code available at: github.com/yourname/project-name"</code></pre>
+<hr>
+</section>
+</section>
+<section id="day-github-challenge" class="level2">
+<h2 class="anchored" data-anchor-id="day-github-challenge">30-Day GitHub Challenge</h2>
+<section id="week-1" class="level3">
+<h3 class="anchored" data-anchor-id="week-1"><strong>Week 1:</strong></h3>
+<ul class="task-list">
+<li><label><input type="checkbox">Create GitHub account</label></li>
+<li><label><input type="checkbox">Complete profile</label></li>
+<li><label><input type="checkbox">Upload first project</label></li>
+<li><label><input type="checkbox">Write good README</label></li>
+</ul>
+</section>
+<section id="week-2" class="level3">
+<h3 class="anchored" data-anchor-id="week-2"><strong>Week 2:</strong></h3>
+<ul class="task-list">
+<li><label><input type="checkbox">Create 3 more repositories</label></li>
+<li><label><input type="checkbox">Add .gitignore files</label></li>
+<li><label><input type="checkbox">Practice branching</label></li>
+<li><label><input type="checkbox">Make daily commits</label></li>
+</ul>
+</section>
+<section id="week-3" class="level3">
+<h3 class="anchored" data-anchor-id="week-3"><strong>Week 3:</strong></h3>
+<ul class="task-list">
+<li><label><input type="checkbox">Fork someone’s repo</label></li>
+<li><label><input type="checkbox">Make your first Pull Request</label></li>
+<li><label><input type="checkbox">Star interesting repos</label></li>
+<li><label><input type="checkbox">Follow data science accounts</label></li>
+</ul>
+</section>
+<section id="week-4" class="level3">
+<h3 class="anchored" data-anchor-id="week-4"><strong>Week 4:</strong></h3>
+<ul class="task-list">
+<li><label><input type="checkbox">Polish all READMEs</label></li>
+<li><label><input type="checkbox">Add screenshots to projects</label></li>
+<li><label><input type="checkbox">Create profile README</label></li>
+<li><label><input type="checkbox">Share on LinkedIn/Twitter</label></li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="take-action-next-30-minutes" class="level2">
+<h2 class="anchored" data-anchor-id="take-action-next-30-minutes">Take Action (Next 30 Minutes)</h2>
+<ol type="1">
+<li><strong>Install Git</strong> (10 min)</li>
+<li><strong>Create GitHub account</strong> (5 min)</li>
+<li><strong>Create first repository</strong> (5 min)</li>
+<li><strong>Upload a project</strong> (10 min)</li>
+</ol>
+<p><strong>Don’t overthink it. Just start.</strong></p>
+<hr>
+<p><strong>Related Posts:</strong> - <a href="../06-portfolio-that-gets-hired/">Build a Portfolio That Gets You Hired</a> - <a href="../08-kaggle-competitions-guide/">Kaggle for Beginners</a> - <a href="../01-data-analytics-roadmap/">Your Ultimate 100-Day Roadmap</a></p>
+<p><strong>Tags:</strong> #Git #GitHub #VersionControl #Tools #Portfolio #Career</p>
+
+
+<!-- -->
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<footer class="portfolio-footer">
+  <div class="footer-container">
+    <!-- Main Footer Content -->
+    <div class="footer-content">
+      <!-- Navigation Links -->
+      <div class="footer-section">
+        <h4><i class="fas fa-sitemap"></i> Navigation</h4>
+        <ul>
+          <li><a href="../../posts/11-git-github-for-analysts/index.html"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="about/index.qmd"><i class="fas fa-user"></i> About</a></li>
+          <li><a href="projects/index.qmd"><i class="fas fa-project-diagram"></i> Projects</a></li>
+          <li><a href="research/thesis.qmd"><i class="fas fa-microscope"></i> Research</a></li>
+          <li><a href="data-viz/index.qmd"><i class="fas fa-chart-line"></i> Data Visualizations</a></li>
+          <li><a href="blogs/index.qmd"><i class="fas fa-blog"></i> Blog</a></li>
+          <li><a href="cv/index.qmd"><i class="fas fa-file-alt"></i> CV</a></li>
+          <li><a href="resources/index.qmd"><i class="fas fa-book"></i> Resources</a></li>
+        </ul>
+      </div>
+
+      <!-- Projects & Work -->
+      <div class="footer-section">
+        <h4><i class="fas fa-briefcase"></i> Projects &amp; Work</h4>
+        <ul>
+          <li><a href="projects/health-analytics.qmd"><i class="fas fa-heartbeat"></i> Health Analytics</a></li>
+          <li><a href="projects/data-management.qmd"><i class="fas fa-database"></i> Data Management</a></li>
+          <li><a href="projects/survey-tools.qmd"><i class="fas fa-clipboard-list"></i> Survey Tools</a></li>
+          <li><a href="projects/dashboards.qmd"><i class="fas fa-chart-pie"></i> Dashboards</a></li>
+          <li><a href="projects/analytics-engineering/index.qmd"><i class="fas fa-cogs"></i> Analytics Engineering</a></li>
+          <li><a href="projects/politics-governance/index.qmd"><i class="fas fa-university"></i> Governance &amp; Civic Tech</a></li>
+          <li><a href="projects/agriculture/index.qmd"><i class="fas fa-seedling"></i> Agriculture Projects</a></li>
+          <li><a href="tidy-tuesday/index.qmd"><i class="fas fa-calendar-alt"></i> TidyTuesday</a></li>
+          <li><a href="software/index.qmd"><i class="fas fa-code"></i> Software Development</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact & Social -->
+      <div class="footer-section">
+        <h4><i class="fas fa-envelope"></i> Contact &amp; Social</h4>
+        <ul>
+          <li><a href="tel:+254725737867"><i class="fas fa-phone"></i> +254 725 737 867</a></li>
+          <li><a href="mailto:nichodemuswerre@gmail.com"><i class="fas fa-envelope"></i> Email</a></li>
+          <li><a href="https://linkedin.com/in/amollow" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+          <li><a href="https://github.com/gondamol" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+          <li><a href="https://twitter.com/nwerre" target="_blank"><i class="fab fa-x-twitter"></i> X (Twitter)</a></li>
+          <li><a href="https://kaggle.com/nwerre" target="_blank"><i class="fab fa-kaggle"></i> Kaggle</a></li>
+        </ul>
+        <!-- Newsletter Subscribe Button -->
+        <div class="footer-newsletter">
+          <button onclick="showNewsletterPopup()" class="footer-subscribe-btn">
+            <i class="fas fa-envelope-open-text"></i> Subscribe to Newsletter
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom">
+      <div class="footer-copyright">
+        <p>
+          <i class="fas fa-copyright"></i> 2024 <strong>Nichodemus Amollo</strong> | Research Data Manager &amp; Data Scientist<br>
+          <small>Health Financial Diaries • Data Science &amp; ML • Impact Evaluation • Health Economics</small>
+        </p>
+      </div>
+      <div class="footer-badge">
+        <p>
+          <i class="fas fa-code"></i> Built with <i class="fas fa-heart" style="color: #f56565;"></i> using <strong>Quarto</strong> &amp; <strong>R</strong>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Newsletter Subscription Popup -->
+<div id="newsletter-popup" class="newsletter-popup" style="display: none;">
+  <div class="newsletter-popup-content">
+    <button class="newsletter-close" onclick="closeNewsletterPopup()" aria-label="Close">
+      <i class="fas fa-times"></i>
+    </button>
+    <div class="newsletter-header">
+      <i class="fas fa-envelope-open-text newsletter-icon"></i>
+      <h2>Stay Updated!</h2>
+      <p>Get the latest data science insights, visualization tips, and project updates delivered to your inbox.</p>
+    </div>
+    <form class="newsletter-form" id="newsletter-form" onsubmit="handleNewsletterSubmit(event)">
+      <div class="newsletter-input-group">
+        <i class="fas fa-user"></i>
+        <input type="text" name="name" placeholder="Your Name" required="">
+      </div>
+      <div class="newsletter-input-group">
+        <i class="fas fa-envelope"></i>
+        <input type="email" name="email" placeholder="your.email@example.com" required="">
+      </div>
+      <button type="submit" class="newsletter-submit-btn">
+        <span>Subscribe</span>
+        <i class="fas fa-arrow-right"></i>
+      </button>
+    </form>
+    <div class="newsletter-footer">
+      <small>We respect your privacy. Unsubscribe anytime.</small>
+      <div class="newsletter-social">
+        <a href="https://twitter.com/nwerre" target="_blank" aria-label="Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://linkedin.com/in/amollow" target="_blank" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/gondamol" target="_blank" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// Newsletter Popup Logic
+(function() {
+  // Check if user has dismissed popup within the last 10 minutes
+  function shouldShowPopup() {
+    const dismissedAt = localStorage.getItem('newsletterPopupDismissed');
+    if (!dismissedAt) return true;
+    
+    const dismissedTime = parseInt(dismissedAt, 10);
+    const now = Date.now();
+    const tenMinutes = 10 * 60 * 1000; // 10 minutes in milliseconds
+    
+    // Show again if more than 10 minutes have passed
+    return (now - dismissedTime) > tenMinutes;
+  }
+  
+  // Internal function to show popup (checks timing)
+  function showPopupIfAllowed() {
+    if (!shouldShowPopup()) return;
+    
+    const popup = document.getElementById('newsletter-popup');
+    if (popup) {
+      popup.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+      
+      // Animate in
+      setTimeout(() => {
+        popup.classList.add('show');
+      }, 10);
+    }
+  }
+  
+  // Show after 2 minutes delay (automatic popup)
+  const twoMinutes = 2 * 60 * 1000; // 2 minutes in milliseconds
+  setTimeout(() => {
+    showPopupIfAllowed();
+  }, twoMinutes);
+})();
+
+// Global function to show popup from footer button (bypasses timing check)
+function showNewsletterPopup() {
+  const popup = document.getElementById('newsletter-popup');
+  if (popup) {
+    popup.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+    
+    // Animate in
+    setTimeout(() => {
+      popup.classList.add('show');
+    }, 10);
+  }
+}
+
+// Close popup function
+function closeNewsletterPopup() {
+  const popup = document.getElementById('newsletter-popup');
+  if (popup) {
+    popup.classList.remove('show');
+    setTimeout(() => {
+      popup.style.display = 'none';
+      document.body.style.overflow = '';
+    }, 300);
+    // Store timestamp when dismissed (valid for 10 minutes)
+    localStorage.setItem('newsletterPopupDismissed', Date.now().toString());
+  }
+}
+
+// Handle form submission
+function handleNewsletterSubmit(event) {
+  event.preventDefault();
+  
+  const formData = new FormData(event.target);
+  const data = {
+    name: formData.get('name'),
+    email: formData.get('email')
+  };
+  
+  // Here you would integrate with your email service (Mailchimp, ConvertKit, etc.)
+  // For now, we'll just log and show success message
+  console.log('Newsletter signup:', data);
+  
+  // Show success message
+  const form = event.target;
+  form.innerHTML = `
+    <div class="newsletter-success">
+      <i class="fas fa-check-circle"></i>
+      <h3>Thank you, ${data.name}!</h3>
+      <p>Check your email to confirm your subscription.</p>
+    </div>
+  `;
+  
+  // Close after 2 seconds
+  setTimeout(() => {
+    closeNewsletterPopup();
+    // Mark as subscribed (don't show popup again for this user)
+    localStorage.setItem('newsletterPopupDismissed', Date.now().toString());
+  }, 2000);
+}
+
+// Close on background click
+document.addEventListener('click', (e) => {
+  const popup = document.getElementById('newsletter-popup');
+  if (e.target === popup) {
+    closeNewsletterPopup();
+  }
+});
+
+// Close on ESC key
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    closeNewsletterPopup();
+  }
+});
+</script>
+
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+    const viewSource = window.document.getElementById('quarto-view-source') ||
+                       window.document.getElementById('quarto-code-tools-source');
+    if (viewSource) {
+      const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+      viewSource.addEventListener("click", function(e) {
+        if (sourceUrl) {
+          // rstudio viewer pane
+          if (/\bcapabilities=\b/.test(window.location)) {
+            window.open(sourceUrl);
+          } else {
+            window.location.href = sourceUrl;
+          }
+        } else {
+          const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+          modal.show();
+        }
+        return false;
+      });
+    }
+    function toggleCodeHandler(show) {
+      return function(e) {
+        const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+        for (let i=0; i<detailsSrc.length; i++) {
+          const details = detailsSrc[i].parentElement;
+          if (show) {
+            details.open = true;
+          } else {
+            details.removeAttribute("open");
+          }
+        }
+        const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+        const fromCls = show ? "hidden" : "unhidden";
+        const toCls = show ? "unhidden" : "hidden";
+        for (let i=0; i<cellCodeDivs.length; i++) {
+          const codeDiv = cellCodeDivs[i];
+          if (codeDiv.classList.contains(fromCls)) {
+            codeDiv.classList.remove(fromCls);
+            codeDiv.classList.add(toCls);
+          } 
+        }
+        return false;
+      }
+    }
+    const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+    if (hideAllCode) {
+      hideAllCode.addEventListener("click", toggleCodeHandler(false));
+    }
+    const showAllCode = window.document.getElementById("quarto-show-all-code");
+    if (showAllCode) {
+      showAllCode.addEventListener("click", toggleCodeHandler(true));
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/gondamol\.github\.io");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+            // default icon
+            link.classList.add("external");
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="sourceCode" id="cb30" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Git &amp; GitHub for Data Analysts: Stop Losing Your Work (15-Minute Setup)"</span></span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a><span class="an">subtitle:</span><span class="co"> "The Version Control Skills That Will Save Your Career"</span></span>
+<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "Nichodemus Amollo"</span></span>
+<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> "2025-10-15"</span></span>
+<span id="cb30-6"><a href="#cb30-6" aria-hidden="true" tabindex="-1"></a><span class="an">categories:</span><span class="co"> [Git, GitHub, Tools, Tutorial]</span></span>
+<span id="cb30-7"><a href="#cb30-7" aria-hidden="true" tabindex="-1"></a><span class="an">image:</span><span class="co"> "github.jpg"</span></span>
+<span id="cb30-8"><a href="#cb30-8" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb30-9"><a href="#cb30-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-10"><a href="#cb30-10" aria-hidden="true" tabindex="-1"></a><span class="fu">## Why Data Analysts Need Git</span></span>
+<span id="cb30-11"><a href="#cb30-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-12"><a href="#cb30-12" aria-hidden="true" tabindex="-1"></a>**Scenario 1: The Classic Nightmare**</span>
+<span id="cb30-13"><a href="#cb30-13" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb30-14"><a href="#cb30-14" aria-hidden="true" tabindex="-1"></a><span class="in">final_analysis.xlsx</span></span>
+<span id="cb30-15"><a href="#cb30-15" aria-hidden="true" tabindex="-1"></a><span class="in">final_analysis_v2.xlsx</span></span>
+<span id="cb30-16"><a href="#cb30-16" aria-hidden="true" tabindex="-1"></a><span class="in">final_analysis_v2_FINAL.xlsx</span></span>
+<span id="cb30-17"><a href="#cb30-17" aria-hidden="true" tabindex="-1"></a><span class="in">final_analysis_v2_FINAL_revised.xlsx</span></span>
+<span id="cb30-18"><a href="#cb30-18" aria-hidden="true" tabindex="-1"></a><span class="in">final_analysis_v2_FINAL_revised_USE_THIS_ONE.xlsx</span></span>
+<span id="cb30-19"><a href="#cb30-19" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb30-20"><a href="#cb30-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-21"><a href="#cb30-21" aria-hidden="true" tabindex="-1"></a>**Scenario 2: The Code Disaster**</span>
+<span id="cb30-22"><a href="#cb30-22" aria-hidden="true" tabindex="-1"></a>You run a script, something breaks, you panic, make changes, break it more, can't remember what worked...</span>
+<span id="cb30-23"><a href="#cb30-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-24"><a href="#cb30-24" aria-hidden="true" tabindex="-1"></a>**Solution: Git**</span>
+<span id="cb30-25"><a href="#cb30-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-26"><a href="#cb30-26" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb30-27"><a href="#cb30-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-28"><a href="#cb30-28" aria-hidden="true" tabindex="-1"></a><span class="fu">## What is Git?</span></span>
+<span id="cb30-29"><a href="#cb30-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-30"><a href="#cb30-30" aria-hidden="true" tabindex="-1"></a>**Git = Time machine for your code/data**</span>
+<span id="cb30-31"><a href="#cb30-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-32"><a href="#cb30-32" aria-hidden="true" tabindex="-1"></a>It tracks every change you make, so you can:</span>
+<span id="cb30-33"><a href="#cb30-33" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Go back to any previous version</span>
+<span id="cb30-34"><a href="#cb30-34" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>See what changed and when</span>
+<span id="cb30-35"><a href="#cb30-35" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Work on experiments without breaking things</span>
+<span id="cb30-36"><a href="#cb30-36" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Collaborate without overwriting each other's work</span>
+<span id="cb30-37"><a href="#cb30-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-38"><a href="#cb30-38" aria-hidden="true" tabindex="-1"></a>**GitHub = Cloud storage for Git projects**</span>
+<span id="cb30-39"><a href="#cb30-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-40"><a href="#cb30-40" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb30-41"><a href="#cb30-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-42"><a href="#cb30-42" aria-hidden="true" tabindex="-1"></a><span class="fu">## 5-Minute Git Setup</span></span>
+<span id="cb30-43"><a href="#cb30-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-44"><a href="#cb30-44" aria-hidden="true" tabindex="-1"></a><span class="fu">### **Step 1: Install Git**</span></span>
+<span id="cb30-45"><a href="#cb30-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-46"><a href="#cb30-46" aria-hidden="true" tabindex="-1"></a>**Windows:**</span>
+<span id="cb30-47"><a href="#cb30-47" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Download: <span class="co">[</span><span class="ot">git-scm.com</span><span class="co">](https://git-scm.com/)</span></span>
+<span id="cb30-48"><a href="#cb30-48" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Run installer (default options)</span>
+<span id="cb30-49"><a href="#cb30-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-50"><a href="#cb30-50" aria-hidden="true" tabindex="-1"></a>**Mac:**</span>
+<span id="cb30-51"><a href="#cb30-51" aria-hidden="true" tabindex="-1"></a><span class="in">```bash</span></span>
+<span id="cb30-52"><a href="#cb30-52" aria-hidden="true" tabindex="-1"></a><span class="co"># Open Terminal and paste:</span></span>
+<span id="cb30-53"><a href="#cb30-53" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> install git</span>
+<span id="cb30-54"><a href="#cb30-54" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb30-55"><a href="#cb30-55" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-56"><a href="#cb30-56" aria-hidden="true" tabindex="-1"></a>**Linux:**</span>
+<span id="cb30-57"><a href="#cb30-57" aria-hidden="true" tabindex="-1"></a><span class="in">```bash</span></span>
+<span id="cb30-58"><a href="#cb30-58" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt-get install git  <span class="co"># Ubuntu/Debian</span></span>
+<span id="cb30-59"><a href="#cb30-59" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> yum install git      <span class="co"># CentOS/RHEL</span></span>
+<span id="cb30-60"><a href="#cb30-60" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb30-61"><a href="#cb30-61" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-62"><a href="#cb30-62" aria-hidden="true" tabindex="-1"></a><span class="fu">### **Step 2: Configure Git**</span></span>
+<span id="cb30-63"><a href="#cb30-63" aria-hidden="true" tabindex="-1"></a><span class="in">```bash</span></span>
+<span id="cb30-64"><a href="#cb30-64" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> user.name <span class="st">"Your Name"</span></span>
+<span id="cb30-65"><a href="#cb30-65" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> user.email <span class="st">"your.email@example.com"</span></span>
+<span id="cb30-66"><a href="#cb30-66" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb30-67"><a href="#cb30-67" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-68"><a href="#cb30-68" aria-hidden="true" tabindex="-1"></a><span class="fu">### **Step 3: Create GitHub Account**</span></span>
+<span id="cb30-69"><a href="#cb30-69" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Go to <span class="co">[</span><span class="ot">github.com</span><span class="co">](https://github.com/)</span></span>
+<span id="cb30-70"><a href="#cb30-70" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Sign up (it's free!)</span>
+<span id="cb30-71"><a href="#cb30-71" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Verify email</span>
+<span id="cb30-72"><a href="#cb30-72" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-73"><a href="#cb30-73" aria-hidden="true" tabindex="-1"></a>**Done! You're ready.**</span>
+<span id="cb30-74"><a href="#cb30-74" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-75"><a href="#cb30-75" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb30-76"><a href="#cb30-76" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-77"><a href="#cb30-77" aria-hidden="true" tabindex="-1"></a><span class="fu">## The 10 Git Commands You'll Use Daily</span></span>
+<span id="cb30-78"><a href="#cb30-78" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-79"><a href="#cb30-79" aria-hidden="true" tabindex="-1"></a><span class="fu">### **1. Create a Project**</span></span>
+<span id="cb30-80"><a href="#cb30-80" aria-hidden="true" tabindex="-1"></a><span class="in">```bash</span></span>
+<span id="cb30-81"><a href="#cb30-81" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> my-data-project</span>
+<span id="cb30-82"><a href="#cb30-82" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> my-data-project</span>
+<span id="cb30-83"><a href="#cb30-83" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> init  <span class="co"># Initialize Git</span></span>
+<span id="cb30-84"><a href="#cb30-84" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb30-85"><a href="#cb30-85" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-86"><a href="#cb30-86" aria-hidden="true" tabindex="-1"></a><span class="fu">### **2. Check Status**</span></span>
+<span id="cb30-87"><a href="#cb30-87" aria-hidden="true" tabindex="-1"></a><span class="in">```bash</span></span>
+<span id="cb30-88"><a href="#cb30-88" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status  <span class="co"># See what's changed</span></span>
+<span id="cb30-89"><a href="#cb30-89" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb30-90"><a href="#cb30-90" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-91"><a href="#cb30-91" aria-hidden="true" tabindex="-1"></a><span class="fu">### **3. Stage Changes**</span></span>
+<span id="cb30-92"><a href="#cb30-92" aria-hidden="true" tabindex="-1"></a><span class="in">```bash</span></span>
+<span id="cb30-93"><a href="#cb30-93" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add analysis.py  <span class="co"># Stage one file</span></span>
+<span id="cb30-94"><a href="#cb30-94" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .            <span class="co"># Stage all files</span></span>
+<span id="cb30-95"><a href="#cb30-95" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb30-96"><a href="#cb30-96" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-97"><a href="#cb30-97" aria-hidden="true" tabindex="-1"></a><span class="fu">### **4. Commit Changes**</span></span>
+<span id="cb30-98"><a href="#cb30-98" aria-hidden="true" tabindex="-1"></a><span class="in">```bash</span></span>
+<span id="cb30-99"><a href="#cb30-99" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Add initial analysis script"</span></span>
+<span id="cb30-100"><a href="#cb30-100" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb30-101"><a href="#cb30-101" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-102"><a href="#cb30-102" aria-hidden="true" tabindex="-1"></a><span class="fu">### **5. View History**</span></span>
+<span id="cb30-103"><a href="#cb30-103" aria-hidden="true" tabindex="-1"></a><span class="in">```bash</span></span>
+<span id="cb30-104"><a href="#cb30-104" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> log  <span class="co"># See all commits</span></span>
+<span id="cb30-105"><a href="#cb30-105" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> log <span class="at">--oneline</span>  <span class="co"># Compact view</span></span>
+<span id="cb30-106"><a href="#cb30-106" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb30-107"><a href="#cb30-107" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-108"><a href="#cb30-108" aria-hidden="true" tabindex="-1"></a><span class="fu">### **6. Create Branch** (for experiments)</span></span>
+<span id="cb30-109"><a href="#cb30-109" aria-hidden="true" tabindex="-1"></a><span class="in">```bash</span></span>
+<span id="cb30-110"><a href="#cb30-110" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> branch feature-new-model  <span class="co"># Create branch</span></span>
+<span id="cb30-111"><a href="#cb30-111" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout feature-new-model  <span class="co"># Switch to it</span></span>
+<span id="cb30-112"><a href="#cb30-112" aria-hidden="true" tabindex="-1"></a><span class="co"># Or both in one:</span></span>
+<span id="cb30-113"><a href="#cb30-113" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout <span class="at">-b</span> feature-new-model</span>
+<span id="cb30-114"><a href="#cb30-114" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb30-115"><a href="#cb30-115" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-116"><a href="#cb30-116" aria-hidden="true" tabindex="-1"></a><span class="fu">### **7. Merge Branch**</span></span>
+<span id="cb30-117"><a href="#cb30-117" aria-hidden="true" tabindex="-1"></a><span class="in">```bash</span></span>
+<span id="cb30-118"><a href="#cb30-118" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout main  <span class="co"># Go back to main</span></span>
+<span id="cb30-119"><a href="#cb30-119" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> merge feature-new-model  <span class="co"># Merge changes</span></span>
+<span id="cb30-120"><a href="#cb30-120" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb30-121"><a href="#cb30-121" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-122"><a href="#cb30-122" aria-hidden="true" tabindex="-1"></a><span class="fu">### **8. Push to GitHub**</span></span>
+<span id="cb30-123"><a href="#cb30-123" aria-hidden="true" tabindex="-1"></a><span class="in">```bash</span></span>
+<span id="cb30-124"><a href="#cb30-124" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote add origin https://github.com/yourusername/repo-name.git</span>
+<span id="cb30-125"><a href="#cb30-125" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push <span class="at">-u</span> origin main</span>
+<span id="cb30-126"><a href="#cb30-126" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb30-127"><a href="#cb30-127" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-128"><a href="#cb30-128" aria-hidden="true" tabindex="-1"></a><span class="fu">### **9. Pull from GitHub**</span></span>
+<span id="cb30-129"><a href="#cb30-129" aria-hidden="true" tabindex="-1"></a><span class="in">```bash</span></span>
+<span id="cb30-130"><a href="#cb30-130" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> pull  <span class="co"># Get latest changes</span></span>
+<span id="cb30-131"><a href="#cb30-131" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb30-132"><a href="#cb30-132" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-133"><a href="#cb30-133" aria-hidden="true" tabindex="-1"></a><span class="fu">### **10. Clone Repository**</span></span>
+<span id="cb30-134"><a href="#cb30-134" aria-hidden="true" tabindex="-1"></a><span class="in">```bash</span></span>
+<span id="cb30-135"><a href="#cb30-135" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/username/repo-name.git</span>
+<span id="cb30-136"><a href="#cb30-136" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb30-137"><a href="#cb30-137" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-138"><a href="#cb30-138" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb30-139"><a href="#cb30-139" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-140"><a href="#cb30-140" aria-hidden="true" tabindex="-1"></a><span class="fu">## The Git Workflow for Data Analysts</span></span>
+<span id="cb30-141"><a href="#cb30-141" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-142"><a href="#cb30-142" aria-hidden="true" tabindex="-1"></a><span class="fu">### **Daily Workflow:**</span></span>
+<span id="cb30-143"><a href="#cb30-143" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-144"><a href="#cb30-144" aria-hidden="true" tabindex="-1"></a><span class="in">```bash</span></span>
+<span id="cb30-145"><a href="#cb30-145" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Start your day</span></span>
+<span id="cb30-146"><a href="#cb30-146" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> pull  <span class="co"># Get latest changes</span></span>
+<span id="cb30-147"><a href="#cb30-147" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-148"><a href="#cb30-148" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. Work on analysis</span></span>
+<span id="cb30-149"><a href="#cb30-149" aria-hidden="true" tabindex="-1"></a><span class="co"># ... make changes to files ...</span></span>
+<span id="cb30-150"><a href="#cb30-150" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-151"><a href="#cb30-151" aria-hidden="true" tabindex="-1"></a><span class="co"># 3. Check what changed</span></span>
+<span id="cb30-152"><a href="#cb30-152" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status</span>
+<span id="cb30-153"><a href="#cb30-153" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> diff  <span class="co"># See line-by-line changes</span></span>
+<span id="cb30-154"><a href="#cb30-154" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-155"><a href="#cb30-155" aria-hidden="true" tabindex="-1"></a><span class="co"># 4. Stage your changes</span></span>
+<span id="cb30-156"><a href="#cb30-156" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add analysis.py</span>
+<span id="cb30-157"><a href="#cb30-157" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add cleaned_data.csv</span>
+<span id="cb30-158"><a href="#cb30-158" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-159"><a href="#cb30-159" aria-hidden="true" tabindex="-1"></a><span class="co"># 5. Commit with meaningful message</span></span>
+<span id="cb30-160"><a href="#cb30-160" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Clean customer data and add age segmentation"</span></span>
+<span id="cb30-161"><a href="#cb30-161" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-162"><a href="#cb30-162" aria-hidden="true" tabindex="-1"></a><span class="co"># 6. Push to GitHub</span></span>
+<span id="cb30-163"><a href="#cb30-163" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push</span>
+<span id="cb30-164"><a href="#cb30-164" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-165"><a href="#cb30-165" aria-hidden="true" tabindex="-1"></a><span class="co"># 7. Repeat throughout the day</span></span>
+<span id="cb30-166"><a href="#cb30-166" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb30-167"><a href="#cb30-167" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-168"><a href="#cb30-168" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb30-169"><a href="#cb30-169" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-170"><a href="#cb30-170" aria-hidden="true" tabindex="-1"></a><span class="fu">### **Branching Workflow:**</span></span>
+<span id="cb30-171"><a href="#cb30-171" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-172"><a href="#cb30-172" aria-hidden="true" tabindex="-1"></a><span class="in">```bash</span></span>
+<span id="cb30-173"><a href="#cb30-173" aria-hidden="true" tabindex="-1"></a><span class="co"># Main branch = production code</span></span>
+<span id="cb30-174"><a href="#cb30-174" aria-hidden="true" tabindex="-1"></a><span class="co"># Feature branches = experiments</span></span>
+<span id="cb30-175"><a href="#cb30-175" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-176"><a href="#cb30-176" aria-hidden="true" tabindex="-1"></a><span class="co"># Create experiment branch</span></span>
+<span id="cb30-177"><a href="#cb30-177" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout <span class="at">-b</span> experiment-new-feature</span>
+<span id="cb30-178"><a href="#cb30-178" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-179"><a href="#cb30-179" aria-hidden="true" tabindex="-1"></a><span class="co"># Work on experiment</span></span>
+<span id="cb30-180"><a href="#cb30-180" aria-hidden="true" tabindex="-1"></a><span class="co"># ... make changes ...</span></span>
+<span id="cb30-181"><a href="#cb30-181" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-182"><a href="#cb30-182" aria-hidden="true" tabindex="-1"></a><span class="co"># Commit changes</span></span>
+<span id="cb30-183"><a href="#cb30-183" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
+<span id="cb30-184"><a href="#cb30-184" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Test new clustering algorithm"</span></span>
+<span id="cb30-185"><a href="#cb30-185" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-186"><a href="#cb30-186" aria-hidden="true" tabindex="-1"></a><span class="co"># If it works, merge to main</span></span>
+<span id="cb30-187"><a href="#cb30-187" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout main</span>
+<span id="cb30-188"><a href="#cb30-188" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> merge experiment-new-feature</span>
+<span id="cb30-189"><a href="#cb30-189" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-190"><a href="#cb30-190" aria-hidden="true" tabindex="-1"></a><span class="co"># If it doesn't work, just delete branch</span></span>
+<span id="cb30-191"><a href="#cb30-191" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> branch <span class="at">-d</span> experiment-new-feature</span>
+<span id="cb30-192"><a href="#cb30-192" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-193"><a href="#cb30-193" aria-hidden="true" tabindex="-1"></a><span class="co"># No harm done! Main branch is untouched.</span></span>
+<span id="cb30-194"><a href="#cb30-194" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb30-195"><a href="#cb30-195" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-196"><a href="#cb30-196" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb30-197"><a href="#cb30-197" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-198"><a href="#cb30-198" aria-hidden="true" tabindex="-1"></a><span class="fu">## GitHub for Your Portfolio</span></span>
+<span id="cb30-199"><a href="#cb30-199" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-200"><a href="#cb30-200" aria-hidden="true" tabindex="-1"></a><span class="fu">### **Why GitHub Matters:**</span></span>
+<span id="cb30-201"><a href="#cb30-201" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-202"><a href="#cb30-202" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Recruiters search GitHub** for candidates</span>
+<span id="cb30-203"><a href="#cb30-203" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Shows your work** is real, not just bullet points</span>
+<span id="cb30-204"><a href="#cb30-204" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Demonstrates collaboration** skills</span>
+<span id="cb30-205"><a href="#cb30-205" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**Proves you write** clean, documented code</span>
+<span id="cb30-206"><a href="#cb30-206" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>**FREE hosting** for websites (GitHub Pages)</span>
+<span id="cb30-207"><a href="#cb30-207" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-208"><a href="#cb30-208" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb30-209"><a href="#cb30-209" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-210"><a href="#cb30-210" aria-hidden="true" tabindex="-1"></a><span class="fu">### **What to Put on GitHub:**</span></span>
+<span id="cb30-211"><a href="#cb30-211" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-212"><a href="#cb30-212" aria-hidden="true" tabindex="-1"></a>**✅ Great for GitHub:**</span>
+<span id="cb30-213"><a href="#cb30-213" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Analysis notebooks (Jupyter, R Markdown)</span>
+<span id="cb30-214"><a href="#cb30-214" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Data cleaning scripts</span>
+<span id="cb30-215"><a href="#cb30-215" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Visualization code</span>
+<span id="cb30-216"><a href="#cb30-216" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Portfolio projects</span>
+<span id="cb30-217"><a href="#cb30-217" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Tutorials you've written</span>
+<span id="cb30-218"><a href="#cb30-218" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Practice exercises</span>
+<span id="cb30-219"><a href="#cb30-219" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-220"><a href="#cb30-220" aria-hidden="true" tabindex="-1"></a>**❌ Don't put on GitHub:**</span>
+<span id="cb30-221"><a href="#cb30-221" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Passwords or API keys</span>
+<span id="cb30-222"><a href="#cb30-222" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Proprietary company code</span>
+<span id="cb30-223"><a href="#cb30-223" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Large data files (&gt;100MB)</span>
+<span id="cb30-224"><a href="#cb30-224" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Sensitive information</span>
+<span id="cb30-225"><a href="#cb30-225" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-226"><a href="#cb30-226" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb30-227"><a href="#cb30-227" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-228"><a href="#cb30-228" aria-hidden="true" tabindex="-1"></a><span class="fu">### **Make Your GitHub Shine:**</span></span>
+<span id="cb30-229"><a href="#cb30-229" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-230"><a href="#cb30-230" aria-hidden="true" tabindex="-1"></a><span class="fu">#### **1. Professional Profile**</span></span>
+<span id="cb30-231"><a href="#cb30-231" aria-hidden="true" tabindex="-1"></a><span class="in">```markdown</span></span>
+<span id="cb30-232"><a href="#cb30-232" aria-hidden="true" tabindex="-1"></a><span class="fu"># README.md on your profile repo (username/username)</span></span>
+<span id="cb30-233"><a href="#cb30-233" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-234"><a href="#cb30-234" aria-hidden="true" tabindex="-1"></a><span class="fu"># Hi, I'm [Your Name] 👋</span></span>
+<span id="cb30-235"><a href="#cb30-235" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-236"><a href="#cb30-236" aria-hidden="true" tabindex="-1"></a><span class="fu">## About Me</span></span>
+<span id="cb30-237"><a href="#cb30-237" aria-hidden="true" tabindex="-1"></a>Data Analyst passionate about turning data into actionable insights. </span>
+<span id="cb30-238"><a href="#cb30-238" aria-hidden="true" tabindex="-1"></a>Currently learning machine learning and building projects in Python.</span>
+<span id="cb30-239"><a href="#cb30-239" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-240"><a href="#cb30-240" aria-hidden="true" tabindex="-1"></a><span class="fu">## Skills</span></span>
+<span id="cb30-241"><a href="#cb30-241" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Languages:** Python, SQL, R</span>
+<span id="cb30-242"><a href="#cb30-242" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Tools:** Pandas, NumPy, Scikit-learn, Tableau</span>
+<span id="cb30-243"><a href="#cb30-243" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Databases:** PostgreSQL, MySQL</span>
+<span id="cb30-244"><a href="#cb30-244" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-245"><a href="#cb30-245" aria-hidden="true" tabindex="-1"></a><span class="fu">## Featured Projects</span></span>
+<span id="cb30-246"><a href="#cb30-246" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Project 1</span><span class="co">](link)</span> - Description</span>
+<span id="cb30-247"><a href="#cb30-247" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Project 2</span><span class="co">](link)</span> - Description</span>
+<span id="cb30-248"><a href="#cb30-248" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Project 3</span><span class="co">](link)</span> - Description</span>
+<span id="cb30-249"><a href="#cb30-249" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-250"><a href="#cb30-250" aria-hidden="true" tabindex="-1"></a><span class="fu">## Connect With Me</span></span>
+<span id="cb30-251"><a href="#cb30-251" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>LinkedIn: <span class="co">[</span><span class="ot">link</span><span class="co">]</span></span>
+<span id="cb30-252"><a href="#cb30-252" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Portfolio: <span class="co">[</span><span class="ot">link</span><span class="co">]</span></span>
+<span id="cb30-253"><a href="#cb30-253" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Email: <span class="co">[</span><span class="ot">email</span><span class="co">]</span></span>
+<span id="cb30-254"><a href="#cb30-254" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb30-255"><a href="#cb30-255" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-256"><a href="#cb30-256" aria-hidden="true" tabindex="-1"></a><span class="in">#### **2. README for Each Project**</span></span>
+<span id="cb30-257"><a href="#cb30-257" aria-hidden="true" tabindex="-1"></a><span class="in">```markdown</span></span>
+<span id="cb30-258"><a href="#cb30-258" aria-hidden="true" tabindex="-1"></a><span class="in"># Project Name</span></span>
+<span id="cb30-259"><a href="#cb30-259" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-260"><a href="#cb30-260" aria-hidden="true" tabindex="-1"></a><span class="in">## Problem Statement</span></span>
+<span id="cb30-261"><a href="#cb30-261" aria-hidden="true" tabindex="-1"></a><span class="in">What business problem does this solve?</span></span>
+<span id="cb30-262"><a href="#cb30-262" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-263"><a href="#cb30-263" aria-hidden="true" tabindex="-1"></a><span class="in">## Data</span></span>
+<span id="cb30-264"><a href="#cb30-264" aria-hidden="true" tabindex="-1"></a><span class="in">- Source: [link]</span></span>
+<span id="cb30-265"><a href="#cb30-265" aria-hidden="true" tabindex="-1"></a><span class="in">- Size: X rows, Y columns</span></span>
+<span id="cb30-266"><a href="#cb30-266" aria-hidden="true" tabindex="-1"></a><span class="in">- Period: Date range</span></span>
+<span id="cb30-267"><a href="#cb30-267" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-268"><a href="#cb30-268" aria-hidden="true" tabindex="-1"></a><span class="in">## Tools</span></span>
+<span id="cb30-269"><a href="#cb30-269" aria-hidden="true" tabindex="-1"></a><span class="in">- Python 3.9</span></span>
+<span id="cb30-270"><a href="#cb30-270" aria-hidden="true" tabindex="-1"></a><span class="in">- pandas, numpy, matplotlib, seaborn</span></span>
+<span id="cb30-271"><a href="#cb30-271" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-272"><a href="#cb30-272" aria-hidden="true" tabindex="-1"></a><span class="in">## Key Findings</span></span>
+<span id="cb30-273"><a href="#cb30-273" aria-hidden="true" tabindex="-1"></a><span class="in">1. Finding 1 with impact</span></span>
+<span id="cb30-274"><a href="#cb30-274" aria-hidden="true" tabindex="-1"></a><span class="in">2. Finding 2 with impact</span></span>
+<span id="cb30-275"><a href="#cb30-275" aria-hidden="true" tabindex="-1"></a><span class="in">3. Finding 3 with impact</span></span>
+<span id="cb30-276"><a href="#cb30-276" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-277"><a href="#cb30-277" aria-hidden="true" tabindex="-1"></a><span class="in">## How to Run</span></span>
+<span id="cb30-278"><a href="#cb30-278" aria-hidden="true" tabindex="-1"></a><span class="in">```bash</span></span>
+<span id="cb30-279"><a href="#cb30-279" aria-hidden="true" tabindex="-1"></a><span class="in">pip install -r requirements.txt</span></span>
+<span id="cb30-280"><a href="#cb30-280" aria-hidden="true" tabindex="-1"></a><span class="in">python analysis.py</span></span>
+<span id="cb30-281"><a href="#cb30-281" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb30-282"><a href="#cb30-282" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-283"><a href="#cb30-283" aria-hidden="true" tabindex="-1"></a><span class="fu">## Results</span></span>
+<span id="cb30-284"><a href="#cb30-284" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Screenshots or visualizations</span><span class="co">]</span></span>
+<span id="cb30-285"><a href="#cb30-285" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-286"><a href="#cb30-286" aria-hidden="true" tabindex="-1"></a><span class="fu">## Author</span></span>
+<span id="cb30-287"><a href="#cb30-287" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Your name</span><span class="co">]</span> - <span class="co">[</span><span class="ot">LinkedIn</span><span class="co">](link)</span></span>
+<span id="cb30-288"><a href="#cb30-288" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb30-289"><a href="#cb30-289" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-290"><a href="#cb30-290" aria-hidden="true" tabindex="-1"></a><span class="fu">#### **3. .gitignore File**</span></span>
+<span id="cb30-291"><a href="#cb30-291" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb30-292"><a href="#cb30-292" aria-hidden="true" tabindex="-1"></a><span class="in"># Don't commit these files</span></span>
+<span id="cb30-293"><a href="#cb30-293" aria-hidden="true" tabindex="-1"></a><span class="in">__pycache__/</span></span>
+<span id="cb30-294"><a href="#cb30-294" aria-hidden="true" tabindex="-1"></a><span class="in">*.pyc</span></span>
+<span id="cb30-295"><a href="#cb30-295" aria-hidden="true" tabindex="-1"></a><span class="in">.env</span></span>
+<span id="cb30-296"><a href="#cb30-296" aria-hidden="true" tabindex="-1"></a><span class="in">.DS_Store</span></span>
+<span id="cb30-297"><a href="#cb30-297" aria-hidden="true" tabindex="-1"></a><span class="in">*.csv  # If data files are large</span></span>
+<span id="cb30-298"><a href="#cb30-298" aria-hidden="true" tabindex="-1"></a><span class="in">venv/</span></span>
+<span id="cb30-299"><a href="#cb30-299" aria-hidden="true" tabindex="-1"></a><span class="in">.vscode/</span></span>
+<span id="cb30-300"><a href="#cb30-300" aria-hidden="true" tabindex="-1"></a><span class="in">.idea/</span></span>
+<span id="cb30-301"><a href="#cb30-301" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb30-302"><a href="#cb30-302" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-303"><a href="#cb30-303" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb30-304"><a href="#cb30-304" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-305"><a href="#cb30-305" aria-hidden="true" tabindex="-1"></a><span class="fu">## Common Git Problems &amp; Solutions</span></span>
+<span id="cb30-306"><a href="#cb30-306" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-307"><a href="#cb30-307" aria-hidden="true" tabindex="-1"></a><span class="fu">### **Problem 1: "I committed the wrong file!"**</span></span>
+<span id="cb30-308"><a href="#cb30-308" aria-hidden="true" tabindex="-1"></a><span class="in">```bash</span></span>
+<span id="cb30-309"><a href="#cb30-309" aria-hidden="true" tabindex="-1"></a><span class="co"># Undo last commit (keeps changes)</span></span>
+<span id="cb30-310"><a href="#cb30-310" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> reset <span class="at">--soft</span> HEAD~1</span>
+<span id="cb30-311"><a href="#cb30-311" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-312"><a href="#cb30-312" aria-hidden="true" tabindex="-1"></a><span class="co"># Or remove specific file</span></span>
+<span id="cb30-313"><a href="#cb30-313" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> reset HEAD file-to-remove</span>
+<span id="cb30-314"><a href="#cb30-314" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb30-315"><a href="#cb30-315" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-316"><a href="#cb30-316" aria-hidden="true" tabindex="-1"></a><span class="fu">### **Problem 2: "I need to go back to a previous version!"**</span></span>
+<span id="cb30-317"><a href="#cb30-317" aria-hidden="true" tabindex="-1"></a><span class="in">```bash</span></span>
+<span id="cb30-318"><a href="#cb30-318" aria-hidden="true" tabindex="-1"></a><span class="co"># See history</span></span>
+<span id="cb30-319"><a href="#cb30-319" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> log <span class="at">--oneline</span></span>
+<span id="cb30-320"><a href="#cb30-320" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-321"><a href="#cb30-321" aria-hidden="true" tabindex="-1"></a><span class="co"># Go back to specific commit</span></span>
+<span id="cb30-322"><a href="#cb30-322" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout abc123  <span class="co"># Replace with commit hash</span></span>
+<span id="cb30-323"><a href="#cb30-323" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-324"><a href="#cb30-324" aria-hidden="true" tabindex="-1"></a><span class="co"># Or create new branch from old commit</span></span>
+<span id="cb30-325"><a href="#cb30-325" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout <span class="at">-b</span> old-version abc123</span>
+<span id="cb30-326"><a href="#cb30-326" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb30-327"><a href="#cb30-327" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-328"><a href="#cb30-328" aria-hidden="true" tabindex="-1"></a><span class="fu">### **Problem 3: "I accidentally committed a password!"**</span></span>
+<span id="cb30-329"><a href="#cb30-329" aria-hidden="true" tabindex="-1"></a><span class="in">```bash</span></span>
+<span id="cb30-330"><a href="#cb30-330" aria-hidden="true" tabindex="-1"></a><span class="co"># Remove from last commit</span></span>
+<span id="cb30-331"><a href="#cb30-331" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> rm <span class="at">--cached</span> file-with-password</span>
+<span id="cb30-332"><a href="#cb30-332" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">--amend</span></span>
+<span id="cb30-333"><a href="#cb30-333" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-334"><a href="#cb30-334" aria-hidden="true" tabindex="-1"></a><span class="co"># If already pushed, you MUST change the password immediately</span></span>
+<span id="cb30-335"><a href="#cb30-335" aria-hidden="true" tabindex="-1"></a><span class="co"># Then use tools like BFG Repo-Cleaner to remove from history</span></span>
+<span id="cb30-336"><a href="#cb30-336" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb30-337"><a href="#cb30-337" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-338"><a href="#cb30-338" aria-hidden="true" tabindex="-1"></a><span class="fu">### **Problem 4: "Merge conflict!"**</span></span>
+<span id="cb30-339"><a href="#cb30-339" aria-hidden="true" tabindex="-1"></a><span class="in">```bash</span></span>
+<span id="cb30-340"><a href="#cb30-340" aria-hidden="true" tabindex="-1"></a><span class="co"># Open conflicted file, you'll see:</span></span>
+<span id="cb30-341"><a href="#cb30-341" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;&lt;&lt;&lt;&lt;&lt;&lt;</span> HEAD</span>
+<span id="cb30-342"><a href="#cb30-342" aria-hidden="true" tabindex="-1"></a><span class="ex">Your</span> changes</span>
+<span id="cb30-343"><a href="#cb30-343" aria-hidden="true" tabindex="-1"></a><span class="ex">=======</span></span>
+<span id="cb30-344"><a href="#cb30-344" aria-hidden="true" tabindex="-1"></a><span class="ex">Their</span> changes</span>
+<span id="cb30-345"><a href="#cb30-345" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span> branch-name</span>
+<span id="cb30-346"><a href="#cb30-346" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-347"><a href="#cb30-347" aria-hidden="true" tabindex="-1"></a><span class="co"># Edit file to keep what you want</span></span>
+<span id="cb30-348"><a href="#cb30-348" aria-hidden="true" tabindex="-1"></a><span class="co"># Then:</span></span>
+<span id="cb30-349"><a href="#cb30-349" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add conflicted-file</span>
+<span id="cb30-350"><a href="#cb30-350" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Resolve merge conflict"</span></span>
+<span id="cb30-351"><a href="#cb30-351" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb30-352"><a href="#cb30-352" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-353"><a href="#cb30-353" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb30-354"><a href="#cb30-354" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-355"><a href="#cb30-355" aria-hidden="true" tabindex="-1"></a><span class="fu">## GitHub Features You Should Use</span></span>
+<span id="cb30-356"><a href="#cb30-356" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-357"><a href="#cb30-357" aria-hidden="true" tabindex="-1"></a><span class="fu">### **1. GitHub Issues**</span></span>
+<span id="cb30-358"><a href="#cb30-358" aria-hidden="true" tabindex="-1"></a>Track TODOs, bugs, ideas</span>
+<span id="cb30-359"><a href="#cb30-359" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-360"><a href="#cb30-360" aria-hidden="true" tabindex="-1"></a><span class="fu">### **2. GitHub Projects**</span></span>
+<span id="cb30-361"><a href="#cb30-361" aria-hidden="true" tabindex="-1"></a>Kanban board for organizing work</span>
+<span id="cb30-362"><a href="#cb30-362" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-363"><a href="#cb30-363" aria-hidden="true" tabindex="-1"></a><span class="fu">### **3. GitHub Actions**</span></span>
+<span id="cb30-364"><a href="#cb30-364" aria-hidden="true" tabindex="-1"></a>Automate testing, deployment (advanced)</span>
+<span id="cb30-365"><a href="#cb30-365" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-366"><a href="#cb30-366" aria-hidden="true" tabindex="-1"></a><span class="fu">### **4. GitHub Pages**</span></span>
+<span id="cb30-367"><a href="#cb30-367" aria-hidden="true" tabindex="-1"></a>FREE website hosting</span>
+<span id="cb30-368"><a href="#cb30-368" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Your portfolio site</span>
+<span id="cb30-369"><a href="#cb30-369" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Project documentation</span>
+<span id="cb30-370"><a href="#cb30-370" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-371"><a href="#cb30-371" aria-hidden="true" tabindex="-1"></a><span class="fu">### **5. GitHub Gists**</span></span>
+<span id="cb30-372"><a href="#cb30-372" aria-hidden="true" tabindex="-1"></a>Share code snippets</span>
+<span id="cb30-373"><a href="#cb30-373" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-374"><a href="#cb30-374" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb30-375"><a href="#cb30-375" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-376"><a href="#cb30-376" aria-hidden="true" tabindex="-1"></a><span class="fu">## FREE GitHub Resources</span></span>
+<span id="cb30-377"><a href="#cb30-377" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-378"><a href="#cb30-378" aria-hidden="true" tabindex="-1"></a><span class="fu">### **Learning:**</span></span>
+<span id="cb30-379"><a href="#cb30-379" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**[GitHub Skills](https://skills.github.com/)** - Interactive tutorials</span>
+<span id="cb30-380"><a href="#cb30-380" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**[Git Handbook](https://guides.github.com/introduction/git-handbook/)** - Official guide</span>
+<span id="cb30-381"><a href="#cb30-381" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**[Learn Git Branching](https://learngitbranching.js.org/)** - Visual, interactive</span>
+<span id="cb30-382"><a href="#cb30-382" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**[Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)** - PDF reference</span>
+<span id="cb30-383"><a href="#cb30-383" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-384"><a href="#cb30-384" aria-hidden="true" tabindex="-1"></a><span class="fu">### **Tools:**</span></span>
+<span id="cb30-385"><a href="#cb30-385" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**[GitHub Desktop](https://desktop.github.com/)** - GUI for Git (easier for beginners)</span>
+<span id="cb30-386"><a href="#cb30-386" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**[GitKraken](https://www.gitkraken.com/)** - Beautiful Git client (free tier)</span>
+<span id="cb30-387"><a href="#cb30-387" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**[VS Code](https://code.visualstudio.com/)** - Editor with built-in Git support</span>
+<span id="cb30-388"><a href="#cb30-388" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-389"><a href="#cb30-389" aria-hidden="true" tabindex="-1"></a><span class="fu">### **Practice:**</span></span>
+<span id="cb30-390"><a href="#cb30-390" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**[First Contributions](https://github.com/firstcontributions/first-contributions)** - Practice contributing</span>
+<span id="cb30-391"><a href="#cb30-391" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**[Awesome for Beginners](https://github.com/MunGell/awesome-for-beginners)** - Beginner-friendly projects</span>
+<span id="cb30-392"><a href="#cb30-392" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-393"><a href="#cb30-393" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb30-394"><a href="#cb30-394" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-395"><a href="#cb30-395" aria-hidden="true" tabindex="-1"></a><span class="fu">## Git Commit Message Best Practices</span></span>
+<span id="cb30-396"><a href="#cb30-396" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-397"><a href="#cb30-397" aria-hidden="true" tabindex="-1"></a>**Bad:**</span>
+<span id="cb30-398"><a href="#cb30-398" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb30-399"><a href="#cb30-399" aria-hidden="true" tabindex="-1"></a><span class="in">fixed stuff</span></span>
+<span id="cb30-400"><a href="#cb30-400" aria-hidden="true" tabindex="-1"></a><span class="in">updates</span></span>
+<span id="cb30-401"><a href="#cb30-401" aria-hidden="true" tabindex="-1"></a><span class="in">asdfasdf</span></span>
+<span id="cb30-402"><a href="#cb30-402" aria-hidden="true" tabindex="-1"></a><span class="in">final version</span></span>
+<span id="cb30-403"><a href="#cb30-403" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb30-404"><a href="#cb30-404" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-405"><a href="#cb30-405" aria-hidden="true" tabindex="-1"></a>**Good:**</span>
+<span id="cb30-406"><a href="#cb30-406" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb30-407"><a href="#cb30-407" aria-hidden="true" tabindex="-1"></a><span class="in">Add customer segmentation analysis</span></span>
+<span id="cb30-408"><a href="#cb30-408" aria-hidden="true" tabindex="-1"></a><span class="in">Fix missing value handling in data cleaning</span></span>
+<span id="cb30-409"><a href="#cb30-409" aria-hidden="true" tabindex="-1"></a><span class="in">Update visualization colors for accessibility</span></span>
+<span id="cb30-410"><a href="#cb30-410" aria-hidden="true" tabindex="-1"></a><span class="in">Remove outdated product_sales.py script</span></span>
+<span id="cb30-411"><a href="#cb30-411" aria-hidden="true" tabindex="-1"></a><span class="in">Refactor SQL queries for better performance</span></span>
+<span id="cb30-412"><a href="#cb30-412" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb30-413"><a href="#cb30-413" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-414"><a href="#cb30-414" aria-hidden="true" tabindex="-1"></a>**Format:**</span>
+<span id="cb30-415"><a href="#cb30-415" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb30-416"><a href="#cb30-416" aria-hidden="true" tabindex="-1"></a><span class="in">[Type] Brief description (50 chars or less)</span></span>
+<span id="cb30-417"><a href="#cb30-417" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-418"><a href="#cb30-418" aria-hidden="true" tabindex="-1"></a><span class="in">Optional longer description explaining:</span></span>
+<span id="cb30-419"><a href="#cb30-419" aria-hidden="true" tabindex="-1"></a><span class="in">- Why you made the change</span></span>
+<span id="cb30-420"><a href="#cb30-420" aria-hidden="true" tabindex="-1"></a><span class="in">- What problem it solves</span></span>
+<span id="cb30-421"><a href="#cb30-421" aria-hidden="true" tabindex="-1"></a><span class="in">- Any side effects</span></span>
+<span id="cb30-422"><a href="#cb30-422" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb30-423"><a href="#cb30-423" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-424"><a href="#cb30-424" aria-hidden="true" tabindex="-1"></a>**Types:**</span>
+<span id="cb30-425"><a href="#cb30-425" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`feat`</span>: New feature</span>
+<span id="cb30-426"><a href="#cb30-426" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`fix`</span>: Bug fix</span>
+<span id="cb30-427"><a href="#cb30-427" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`docs`</span>: Documentation</span>
+<span id="cb30-428"><a href="#cb30-428" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`style`</span>: Formatting</span>
+<span id="cb30-429"><a href="#cb30-429" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`refactor`</span>: Code restructuring</span>
+<span id="cb30-430"><a href="#cb30-430" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`test`</span>: Adding tests</span>
+<span id="cb30-431"><a href="#cb30-431" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`chore`</span>: Maintenance</span>
+<span id="cb30-432"><a href="#cb30-432" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-433"><a href="#cb30-433" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb30-434"><a href="#cb30-434" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-435"><a href="#cb30-435" aria-hidden="true" tabindex="-1"></a><span class="fu">## GitHub in Your Job Search</span></span>
+<span id="cb30-436"><a href="#cb30-436" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-437"><a href="#cb30-437" aria-hidden="true" tabindex="-1"></a><span class="fu">### **Resume:**</span></span>
+<span id="cb30-438"><a href="#cb30-438" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb30-439"><a href="#cb30-439" aria-hidden="true" tabindex="-1"></a><span class="in">TECHNICAL SKILLS</span></span>
+<span id="cb30-440"><a href="#cb30-440" aria-hidden="true" tabindex="-1"></a><span class="in">- Version Control: Git, GitHub (50+ public repositories)</span></span>
+<span id="cb30-441"><a href="#cb30-441" aria-hidden="true" tabindex="-1"></a><span class="in">- Link: github.com/yourname</span></span>
+<span id="cb30-442"><a href="#cb30-442" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb30-443"><a href="#cb30-443" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-444"><a href="#cb30-444" aria-hidden="true" tabindex="-1"></a><span class="fu">### **Cover Letter:**</span></span>
+<span id="cb30-445"><a href="#cb30-445" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb30-446"><a href="#cb30-446" aria-hidden="true" tabindex="-1"></a><span class="in">"I've built a portfolio of 15+ data analysis projects, </span></span>
+<span id="cb30-447"><a href="#cb30-447" aria-hidden="true" tabindex="-1"></a><span class="in">all available on my GitHub at github.com/yourname. </span></span>
+<span id="cb30-448"><a href="#cb30-448" aria-hidden="true" tabindex="-1"></a><span class="in">My most popular project [link] has been forked 50+ times </span></span>
+<span id="cb30-449"><a href="#cb30-449" aria-hidden="true" tabindex="-1"></a><span class="in">and demonstrates my ability to [skill]."</span></span>
+<span id="cb30-450"><a href="#cb30-450" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb30-451"><a href="#cb30-451" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-452"><a href="#cb30-452" aria-hidden="true" tabindex="-1"></a><span class="fu">### **LinkedIn:**</span></span>
+<span id="cb30-453"><a href="#cb30-453" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb30-454"><a href="#cb30-454" aria-hidden="true" tabindex="-1"></a><span class="in"># In "Featured" section:</span></span>
+<span id="cb30-455"><a href="#cb30-455" aria-hidden="true" tabindex="-1"></a><span class="in">- Link your best GitHub repos</span></span>
+<span id="cb30-456"><a href="#cb30-456" aria-hidden="true" tabindex="-1"></a><span class="in">- Add screenshots</span></span>
+<span id="cb30-457"><a href="#cb30-457" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-458"><a href="#cb30-458" aria-hidden="true" tabindex="-1"></a><span class="in"># In experience:</span></span>
+<span id="cb30-459"><a href="#cb30-459" aria-hidden="true" tabindex="-1"></a><span class="in">"All code available at: github.com/yourname/project-name"</span></span>
+<span id="cb30-460"><a href="#cb30-460" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb30-461"><a href="#cb30-461" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-462"><a href="#cb30-462" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb30-463"><a href="#cb30-463" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-464"><a href="#cb30-464" aria-hidden="true" tabindex="-1"></a><span class="fu">## 30-Day GitHub Challenge</span></span>
+<span id="cb30-465"><a href="#cb30-465" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-466"><a href="#cb30-466" aria-hidden="true" tabindex="-1"></a><span class="fu">### **Week 1:**</span></span>
+<span id="cb30-467"><a href="#cb30-467" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Create GitHub account</span>
+<span id="cb30-468"><a href="#cb30-468" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Complete profile</span>
+<span id="cb30-469"><a href="#cb30-469" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Upload first project</span>
+<span id="cb30-470"><a href="#cb30-470" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Write good README</span>
+<span id="cb30-471"><a href="#cb30-471" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-472"><a href="#cb30-472" aria-hidden="true" tabindex="-1"></a><span class="fu">### **Week 2:**</span></span>
+<span id="cb30-473"><a href="#cb30-473" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Create 3 more repositories</span>
+<span id="cb30-474"><a href="#cb30-474" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Add .gitignore files</span>
+<span id="cb30-475"><a href="#cb30-475" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Practice branching</span>
+<span id="cb30-476"><a href="#cb30-476" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Make daily commits</span>
+<span id="cb30-477"><a href="#cb30-477" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-478"><a href="#cb30-478" aria-hidden="true" tabindex="-1"></a><span class="fu">### **Week 3:**</span></span>
+<span id="cb30-479"><a href="#cb30-479" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Fork someone's repo</span>
+<span id="cb30-480"><a href="#cb30-480" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Make your first Pull Request</span>
+<span id="cb30-481"><a href="#cb30-481" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Star interesting repos</span>
+<span id="cb30-482"><a href="#cb30-482" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Follow data science accounts</span>
+<span id="cb30-483"><a href="#cb30-483" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-484"><a href="#cb30-484" aria-hidden="true" tabindex="-1"></a><span class="fu">### **Week 4:**</span></span>
+<span id="cb30-485"><a href="#cb30-485" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Polish all READMEs</span>
+<span id="cb30-486"><a href="#cb30-486" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Add screenshots to projects</span>
+<span id="cb30-487"><a href="#cb30-487" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Create profile README</span>
+<span id="cb30-488"><a href="#cb30-488" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Share on LinkedIn/Twitter</span>
+<span id="cb30-489"><a href="#cb30-489" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-490"><a href="#cb30-490" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb30-491"><a href="#cb30-491" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-492"><a href="#cb30-492" aria-hidden="true" tabindex="-1"></a><span class="fu">## Take Action (Next 30 Minutes)</span></span>
+<span id="cb30-493"><a href="#cb30-493" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-494"><a href="#cb30-494" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Install Git** (10 min)</span>
+<span id="cb30-495"><a href="#cb30-495" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Create GitHub account** (5 min)</span>
+<span id="cb30-496"><a href="#cb30-496" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Create first repository** (5 min)</span>
+<span id="cb30-497"><a href="#cb30-497" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**Upload a project** (10 min)</span>
+<span id="cb30-498"><a href="#cb30-498" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-499"><a href="#cb30-499" aria-hidden="true" tabindex="-1"></a>**Don't overthink it. Just start.**</span>
+<span id="cb30-500"><a href="#cb30-500" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-501"><a href="#cb30-501" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb30-502"><a href="#cb30-502" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-503"><a href="#cb30-503" aria-hidden="true" tabindex="-1"></a>**Related Posts:**</span>
+<span id="cb30-504"><a href="#cb30-504" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Build a Portfolio That Gets You Hired</span><span class="co">](../06-portfolio-that-gets-hired/)</span></span>
+<span id="cb30-505"><a href="#cb30-505" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Kaggle for Beginners</span><span class="co">](../08-kaggle-competitions-guide/)</span></span>
+<span id="cb30-506"><a href="#cb30-506" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Your Ultimate 100-Day Roadmap</span><span class="co">](../01-data-analytics-roadmap/)</span></span>
+<span id="cb30-507"><a href="#cb30-507" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-508"><a href="#cb30-508" aria-hidden="true" tabindex="-1"></a>**Tags:** #Git #GitHub #VersionControl #Tools #Portfolio #Career</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+</div></div></div></div></div>
+</div> <!-- /content -->
+
+
+
+
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

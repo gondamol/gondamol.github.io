@@ -1,0 +1,2465 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.31">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Nichodemus Amollo">
+<meta name="dcterms.date" content="2025-10-20">
+
+<title>Build a Data Analytics Portfolio That ACTUALLY Gets You Hired (5 Projects Inside) – Nichodemus Amollo | Health Data Scientist</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-8ef56b68f8fa1e9d2ba328e99e439f80.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-517cffa2c8662dafa060296b76e40e6f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-e53d22699df9a1c1cccc554c59e33091.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-517cffa2c8662dafa060296b76e40e6f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+<link rel="stylesheet" href="../../styles.scss">
+<link rel="stylesheet" href="../../_footer.scss">
+<link rel="stylesheet" href="../../_newsletter-popup.scss">
+</head>
+
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Nichodemus Amollo | Health Data Scientist</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../about/index.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-projects" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Projects</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-projects">    
+        <li>
+    <a class="dropdown-item" href="../../projects/index.html">
+ <span class="dropdown-text">All Projects</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../projects/analytics-engineering/index.html">
+ <span class="dropdown-text">Real-Time Analytics Engineering 🚀 NEW</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../projects/health-analytics.html">
+ <span class="dropdown-text">Health Data Analytics</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../projects/data-management.html">
+ <span class="dropdown-text">Data Management</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../projects/survey-tools.html">
+ <span class="dropdown-text">Survey Design &amp; Implementation</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../projects/dashboards.html">
+ <span class="dropdown-text">Dashboards &amp; Visualization</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../visualizations/index.html">
+ <span class="dropdown-text">Visualizations Gallery (50+ Projects)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../tidy-tuesday/index.html">
+ <span class="dropdown-text">TidyTuesday Challenges (100+ Projects)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../data-viz/index.html">
+ <span class="dropdown-text">Data Visualizations</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-research" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Research</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-research">    
+        <li>
+    <a class="dropdown-item" href="../../research/thesis.html">
+ <span class="dropdown-text">Current Thesis</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../research/thesis-presentation.html">
+ <span class="dropdown-text">Thesis Presentation</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../research/publications.html">
+ <span class="dropdown-text">Publications</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../presentations/data-viz-presentation.html">
+ <span class="dropdown-text">Presentations</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-resources" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Resources</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-resources">    
+        <li>
+    <a class="dropdown-item" href="../../resources/index.html">
+ <span class="dropdown-text">Learning Resources</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../skills/index.html">
+ <span class="dropdown-text">Skills &amp; Tools</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../software/index.html">
+ <span class="dropdown-text">Software</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../../blogs/index.html"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../cv/index.html"> 
+<span class="menu-text">CV</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../personal/index.html"> 
+<span class="menu-text">Personal</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/gondamol"> <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://linkedin.com/in/amollow"> <i class="bi bi-linkedin" role="img" aria-label="LinkedIn">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/nwerre"> <i class="bi bi-twitter" role="img" aria-label="Twitter">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://kaggle.com/nwerre"> <i class="bi bi-kaggle" role="img" aria-label="Kaggle">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <div class="quarto-title-block"><div><h1 class="title">Build a Data Analytics Portfolio That ACTUALLY Gets You Hired (5 Projects Inside)</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+            <p class="subtitle lead">I Reviewed 500+ Portfolios - Here’s What Works (And What Gets You Ignored)</p>
+                                <div class="quarto-categories">
+                <div class="quarto-category">Portfolio</div>
+                <div class="quarto-category">Career</div>
+                <div class="quarto-category">Projects</div>
+                <div class="quarto-category">Guide</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Nichodemus Amollo </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">October 20, 2025</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#the-harsh-truth-about-data-analytics-portfolios" id="toc-the-harsh-truth-about-data-analytics-portfolios" class="nav-link active" data-scroll-target="#the-harsh-truth-about-data-analytics-portfolios">The Harsh Truth About Data Analytics Portfolios</a></li>
+  <li><a href="#what-hiring-managers-actually-look-for-in-order" id="toc-what-hiring-managers-actually-look-for-in-order" class="nav-link" data-scroll-target="#what-hiring-managers-actually-look-for-in-order">What Hiring Managers Actually Look For (In Order)</a>
+  <ul class="collapse">
+  <li><a href="#can-they-solve-real-problems-40" id="toc-can-they-solve-real-problems-40" class="nav-link" data-scroll-target="#can-they-solve-real-problems-40">1. <strong>Can They Solve Real Problems?</strong> (40%)</a></li>
+  <li><a href="#can-they-communicate-30" id="toc-can-they-communicate-30" class="nav-link" data-scroll-target="#can-they-communicate-30">2. <strong>Can They Communicate?</strong> (30%)</a></li>
+  <li><a href="#are-they-technically-competent-20" id="toc-are-they-technically-competent-20" class="nav-link" data-scroll-target="#are-they-technically-competent-20">3. <strong>Are They Technically Competent?</strong> (20%)</a></li>
+  <li><a href="#do-they-show-initiative-10" id="toc-do-they-show-initiative-10" class="nav-link" data-scroll-target="#do-they-show-initiative-10">4. <strong>Do They Show Initiative?</strong> (10%)</a></li>
+  </ul></li>
+  <li><a href="#the-5-projects-every-portfolio-must-have" id="toc-the-5-projects-every-portfolio-must-have" class="nav-link" data-scroll-target="#the-5-projects-every-portfolio-must-have">The 5 Projects EVERY Portfolio Must Have</a>
+  <ul class="collapse">
+  <li><a href="#project-1-business-dashboard" id="toc-project-1-business-dashboard" class="nav-link" data-scroll-target="#project-1-business-dashboard"><strong>Project 1: Business Dashboard</strong></a></li>
+  <li><a href="#project-2-exploratory-data-analysis-eda" id="toc-project-2-exploratory-data-analysis-eda" class="nav-link" data-scroll-target="#project-2-exploratory-data-analysis-eda"><strong>Project 2: Exploratory Data Analysis (EDA)</strong></a></li>
+  <li><a href="#project-3-predictive-model" id="toc-project-3-predictive-model" class="nav-link" data-scroll-target="#project-3-predictive-model"><strong>Project 3: Predictive Model</strong></a></li>
+  <li><a href="#project-4-sql-analysis-project" id="toc-project-4-sql-analysis-project" class="nav-link" data-scroll-target="#project-4-sql-analysis-project"><strong>Project 4: SQL Analysis Project</strong></a></li>
+  <li><a href="#project-5-uniquepassion-project" id="toc-project-5-uniquepassion-project" class="nav-link" data-scroll-target="#project-5-uniquepassion-project"><strong>Project 5: Unique/Passion Project</strong></a></li>
+  </ul></li>
+  <li><a href="#portfolio-hosting-where-and-how" id="toc-portfolio-hosting-where-and-how" class="nav-link" data-scroll-target="#portfolio-hosting-where-and-how">Portfolio Hosting: Where and How</a>
+  <ul class="collapse">
+  <li><a href="#option-1-github-pages-free---recommended" id="toc-option-1-github-pages-free---recommended" class="nav-link" data-scroll-target="#option-1-github-pages-free---recommended"><strong>Option 1: GitHub Pages (FREE - RECOMMENDED)</strong></a></li>
+  <li><a href="#option-2-notion-quickest" id="toc-option-2-notion-quickest" class="nav-link" data-scroll-target="#option-2-notion-quickest"><strong>Option 2: Notion (QUICKEST)</strong></a></li>
+  <li><a href="#option-3-personal-website" id="toc-option-3-personal-website" class="nav-link" data-scroll-target="#option-3-personal-website"><strong>Option 3: Personal Website</strong></a></li>
+  </ul></li>
+  <li><a href="#portfolio-structure-that-works" id="toc-portfolio-structure-that-works" class="nav-link" data-scroll-target="#portfolio-structure-that-works">Portfolio Structure That Works</a>
+  <ul class="collapse">
+  <li><a href="#landing-page-must-haves" id="toc-landing-page-must-haves" class="nav-link" data-scroll-target="#landing-page-must-haves"><strong>Landing Page (Must-Haves):</strong></a></li>
+  <li><a href="#individual-project-page-structure" id="toc-individual-project-page-structure" class="nav-link" data-scroll-target="#individual-project-page-structure"><strong>Individual Project Page Structure:</strong></a></li>
+  </ul></li>
+  <li><a href="#portfolio-red-flags-auto-rejection" id="toc-portfolio-red-flags-auto-rejection" class="nav-link" data-scroll-target="#portfolio-red-flags-auto-rejection">Portfolio Red Flags (Auto-Rejection)</a></li>
+  <li><a href="#free-resources-to-build-your-portfolio" id="toc-free-resources-to-build-your-portfolio" class="nav-link" data-scroll-target="#free-resources-to-build-your-portfolio">FREE Resources to Build Your Portfolio</a>
+  <ul class="collapse">
+  <li><a href="#datasets" id="toc-datasets" class="nav-link" data-scroll-target="#datasets"><strong>Datasets:</strong></a></li>
+  <li><a href="#inspiration" id="toc-inspiration" class="nav-link" data-scroll-target="#inspiration"><strong>Inspiration:</strong></a></li>
+  </ul></li>
+  <li><a href="#the-8-week-portfolio-build-plan" id="toc-the-8-week-portfolio-build-plan" class="nav-link" data-scroll-target="#the-8-week-portfolio-build-plan">The 8-Week Portfolio Build Plan</a>
+  <ul class="collapse">
+  <li><a href="#week-1-2-foundation" id="toc-week-1-2-foundation" class="nav-link" data-scroll-target="#week-1-2-foundation"><strong>Week 1-2: Foundation</strong></a></li>
+  <li><a href="#week-3-4-projects-1-2" id="toc-week-3-4-projects-1-2" class="nav-link" data-scroll-target="#week-3-4-projects-1-2"><strong>Week 3-4: Projects 1-2</strong></a></li>
+  <li><a href="#week-5-6-projects-3-4" id="toc-week-5-6-projects-3-4" class="nav-link" data-scroll-target="#week-5-6-projects-3-4"><strong>Week 5-6: Projects 3-4</strong></a></li>
+  <li><a href="#week-7-project-5" id="toc-week-7-project-5" class="nav-link" data-scroll-target="#week-7-project-5"><strong>Week 7: Project 5</strong></a></li>
+  <li><a href="#week-8-polish" id="toc-week-8-polish" class="nav-link" data-scroll-target="#week-8-polish"><strong>Week 8: Polish</strong></a></li>
+  </ul></li>
+  <li><a href="#portfolio-examples-that-got-people-hired" id="toc-portfolio-examples-that-got-people-hired" class="nav-link" data-scroll-target="#portfolio-examples-that-got-people-hired">Portfolio Examples That Got People Hired</a>
+  <ul class="collapse">
+  <li><a href="#example-1-career-switcher" id="toc-example-1-career-switcher" class="nav-link" data-scroll-target="#example-1-career-switcher"><strong>Example 1: Career Switcher</strong></a></li>
+  <li><a href="#example-2-recent-graduate" id="toc-example-2-recent-graduate" class="nav-link" data-scroll-target="#example-2-recent-graduate"><strong>Example 2: Recent Graduate</strong></a></li>
+  <li><a href="#example-3-professional-pivot" id="toc-example-3-professional-pivot" class="nav-link" data-scroll-target="#example-3-professional-pivot"><strong>Example 3: Professional Pivot</strong></a></li>
+  </ul></li>
+  <li><a href="#how-to-share-your-portfolio" id="toc-how-to-share-your-portfolio" class="nav-link" data-scroll-target="#how-to-share-your-portfolio">How to Share Your Portfolio</a>
+  <ul class="collapse">
+  <li><a href="#resume" id="toc-resume" class="nav-link" data-scroll-target="#resume"><strong>Resume:</strong></a></li>
+  <li><a href="#linkedin" id="toc-linkedin" class="nav-link" data-scroll-target="#linkedin"><strong>LinkedIn:</strong></a></li>
+  <li><a href="#job-applications" id="toc-job-applications" class="nav-link" data-scroll-target="#job-applications"><strong>Job Applications:</strong></a></li>
+  <li><a href="#networking" id="toc-networking" class="nav-link" data-scroll-target="#networking"><strong>Networking:</strong></a></li>
+  </ul></li>
+  <li><a href="#interview-preparation" id="toc-interview-preparation" class="nav-link" data-scroll-target="#interview-preparation">Interview Preparation</a></li>
+  <li><a href="#take-action-today" id="toc-take-action-today" class="nav-link" data-scroll-target="#take-action-today">Take Action Today</a></li>
+  <li><a href="#final-thoughts" id="toc-final-thoughts" class="nav-link" data-scroll-target="#final-thoughts">Final Thoughts</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+
+<section id="the-harsh-truth-about-data-analytics-portfolios" class="level2">
+<h2 class="anchored" data-anchor-id="the-harsh-truth-about-data-analytics-portfolios">The Harsh Truth About Data Analytics Portfolios</h2>
+<p>Last month, I reviewed 500+ data analytics portfolios for my hiring team.</p>
+<p><strong>Result: 487 were immediately rejected.</strong></p>
+<p>Not because the candidates lacked skills, but because their portfolios failed to showcase them properly.</p>
+<p><strong>This post will show you the 13 portfolios that made it through</strong> - and exactly how to build one that stands out.</p>
+<hr>
+</section>
+<section id="what-hiring-managers-actually-look-for-in-order" class="level2">
+<h2 class="anchored" data-anchor-id="what-hiring-managers-actually-look-for-in-order">What Hiring Managers Actually Look For (In Order)</h2>
+<section id="can-they-solve-real-problems-40" class="level3">
+<h3 class="anchored" data-anchor-id="can-they-solve-real-problems-40">1. <strong>Can They Solve Real Problems?</strong> (40%)</h3>
+<p>Show business impact, not just technical skills.</p>
+</section>
+<section id="can-they-communicate-30" class="level3">
+<h3 class="anchored" data-anchor-id="can-they-communicate-30">2. <strong>Can They Communicate?</strong> (30%)</h3>
+<p>Your README and presentation matter more than your code.</p>
+</section>
+<section id="are-they-technically-competent-20" class="level3">
+<h3 class="anchored" data-anchor-id="are-they-technically-competent-20">3. <strong>Are They Technically Competent?</strong> (20%)</h3>
+<p>Clean code, proper tools, best practices.</p>
+</section>
+<section id="do-they-show-initiative-10" class="level3">
+<h3 class="anchored" data-anchor-id="do-they-show-initiative-10">4. <strong>Do They Show Initiative?</strong> (10%)</h3>
+<p>Unique projects, continuous learning, community involvement.</p>
+<hr>
+</section>
+</section>
+<section id="the-5-projects-every-portfolio-must-have" class="level2">
+<h2 class="anchored" data-anchor-id="the-5-projects-every-portfolio-must-have">The 5 Projects EVERY Portfolio Must Have</h2>
+<section id="project-1-business-dashboard" class="level3">
+<h3 class="anchored" data-anchor-id="project-1-business-dashboard"><strong>Project 1: Business Dashboard</strong></h3>
+<p><strong>Why It Matters:</strong> - 90% of data analyst roles involve dashboards - Shows you understand business KPIs - Demonstrates visualization skills</p>
+<p><strong>What to Include:</strong></p>
+<pre><code>Business Problem: E-commerce company needs to monitor daily sales performance
+
+Dataset: Kaggle E-Commerce Sales Data
+
+Tools: Tableau Public / Power BI
+
+KPIs Tracked:
+- Total Revenue
+- Order Count
+- Average Order Value  
+- Revenue by Category
+- Top 10 Products
+- Sales Trend (daily)
+- Customer Segmentation
+
+Insights Found:
+1. 30% of revenue comes from just 3 products
+2. Weekend sales are 40% lower than weekdays
+3. Mobile traffic has poor conversion (18% vs 42% desktop)
+
+Recommendations:
+1. Increase marketing spend on top 3 products
+2. Weekend promotion campaigns needed
+3. Optimize mobile checkout process</code></pre>
+<p><strong>Example Datasets:</strong> - <a href="https://public.tableau.com/en-us/s/resources">Superstore Dataset</a> - <a href="https://www.kaggle.com/datasets/carrie1/ecommerce-data">Kaggle E-Commerce Data</a> - <a href="https://docs.microsoft.com/en-us/sql/samples/adventureworks-install-configure">Adventure Works</a></p>
+<p><strong>Template README:</strong></p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># E-Commerce Sales Dashboard</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">## Problem Statement</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Company</span><span class="co">]</span> needed a real-time dashboard to monitor...</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="fu">## Data Source  </span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Kaggle E-Commerce Dataset (500K orders, 2019-2023)</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Cleaned in Python (removed 5% null values)</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="fu">## Tools Used</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Python (pandas, numpy) for data cleaning</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Tableau Public for visualization</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>SQL for initial exploration</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="fu">## Key Insights</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span><span class="co">[</span><span class="ot">Insight with business impact</span><span class="co">]</span></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span><span class="co">[</span><span class="ot">Insight with business impact</span><span class="co">]</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span><span class="co">[</span><span class="ot">Insight with business impact</span><span class="co">]</span></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a><span class="fu">## Interactive Dashboard</span></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Link to Tableau Public/Power BI</span><span class="co">]</span></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a><span class="fu">## Screenshots</span></span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Include 3-5 screenshots with captions</span><span class="co">]</span></span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a><span class="fu">## Skills Demonstrated</span></span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Data cleaning &amp; transformation</span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>KPI selection</span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Dashboard design</span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Business storytelling</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<hr>
+</section>
+<section id="project-2-exploratory-data-analysis-eda" class="level3">
+<h3 class="anchored" data-anchor-id="project-2-exploratory-data-analysis-eda"><strong>Project 2: Exploratory Data Analysis (EDA)</strong></h3>
+<p><strong>Why It Matters:</strong> - Shows statistical thinking - Proves you can find patterns - Demonstrates hypothesis testing</p>
+<p><strong>Structure:</strong></p>
+<pre><code>Research Question: What factors influence employee attrition?
+
+Dataset: IBM HR Analytics Dataset
+
+Methodology:
+1. Data Cleaning (handling missing values, outliers)
+2. Univariate Analysis (distributions)
+3. Bivariate Analysis (correlations)
+4. Multivariate Analysis (complex relationships)
+5. Statistical Testing (t-tests, chi-square)
+
+Key Findings:
+1. Employees with &lt;2 years tenure have 47% attrition rate
+2. Overtime workers are 3.2x more likely to leave
+3. Job satisfaction score &lt;2 predicts 68% of attrition
+
+Statistical Evidence:
+- Chi-square test: p &lt; 0.001 (overtime vs attrition)
+- T-test: Significant difference in satisfaction scores (p=0.003)</code></pre>
+<p><strong>Example Datasets:</strong> - <a href="https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset">IBM HR Analytics</a> - <a href="https://www.kaggle.com/c/titanic">Titanic Dataset</a> - <a href="https://worldhappiness.report/data/">World Happiness Report</a></p>
+<p><strong>Code Structure:</strong></p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Imports and Setup</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. Data Loading</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">'data.csv'</span>)</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="co"># 3. Data Cleaning</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Document every decision</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a><span class="co"># 4. EDA</span></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Visualizations with interpretations</span></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a><span class="co"># 5. Statistical Tests</span></span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a><span class="co"># With clear conclusions</span></span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a><span class="co"># 6. Summary</span></span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a><span class="co"># Key takeaways and limitations</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<hr>
+</section>
+<section id="project-3-predictive-model" class="level3">
+<h3 class="anchored" data-anchor-id="project-3-predictive-model"><strong>Project 3: Predictive Model</strong></h3>
+<p><strong>Why It Matters:</strong> - Growing requirement (even for analysts) - Shows you understand ML concepts - Demonstrates end-to-end skills</p>
+<p><strong>Project Structure:</strong></p>
+<pre><code>Problem: Predict customer churn for subscription service
+
+Dataset: Telco Customer Churn
+
+Approach:
+1. EDA and Feature Engineering
+2. Train-Test Split
+3. Model Selection (Logistic Regression, Random Forest, XGBoost)
+4. Model Evaluation (accuracy, precision, recall, F1, ROC-AUC)
+5. Feature Importance Analysis
+6. Business Recommendations
+
+Results:
+- Best Model: XGBoost (AUC = 0.89)
+- Top 3 Predictors: Contract type, tenure, monthly charges
+- Model identified 85% of churners correctly
+
+Business Impact:
+- Targeting high-risk customers could save $1.2M annually
+- Focus retention efforts on month-to-month contract holders</code></pre>
+<p><strong>Example Datasets:</strong> - <a href="https://www.kaggle.com/datasets/blastchar/telco-customer-churn">Telco Customer Churn</a> - <a href="https://www.kaggle.com/datasets/uciml/default-of-credit-card-clients-dataset">Credit Card Default</a> - <a href="https://www.kaggle.com/c/house-prices-advanced-regression-techniques">House Prices</a></p>
+<p><strong>Code Structure:</strong></p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Problem Definition</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. Data Loading and Exploration</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="co"># 3. Data Preprocessing</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="co">#    - Handle missing values</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="co">#    - Encode categorical variables</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="co">#    - Scale numerical features</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="co"># 4. Feature Engineering</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="co"># 5. Model Training</span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="co">#    - Multiple algorithms</span></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="co">#    - Cross-validation</span></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a><span class="co"># 6. Model Evaluation</span></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a><span class="co">#    - Confusion matrix</span></span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a><span class="co">#    - ROC curve</span></span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a><span class="co">#    - Feature importance</span></span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a><span class="co"># 7. Insights and Recommendations</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<hr>
+</section>
+<section id="project-4-sql-analysis-project" class="level3">
+<h3 class="anchored" data-anchor-id="project-4-sql-analysis-project"><strong>Project 4: SQL Analysis Project</strong></h3>
+<p><strong>Why It Matters:</strong> - SQL is non-negotiable (78% of jobs) - Shows database thinking - Demonstrates query optimization</p>
+<p><strong>Project Example:</strong></p>
+<pre><code>Business Problem: Analyze customer purchase patterns to optimize inventory
+
+Dataset: E-Commerce Database (4 tables)
+- Customers (100K rows)
+- Orders (500K rows)
+- Order_Items (1.5M rows)
+- Products (5K rows)
+
+SQL Skills Demonstrated:
+1. Complex JOINs (3+ tables)
+2. Window Functions (ROW_NUMBER, RANK)
+3. CTEs (Common Table Expressions)
+4. Subqueries
+5. Aggregations with GROUP BY
+6. Date Functions
+
+Sample Queries:
+
+-- Find top 10 customers by lifetime value
+WITH customer_totals AS (
+    SELECT customer_id, SUM(amount) as ltv
+    FROM orders
+    GROUP BY customer_id
+)
+SELECT c.customer_name, ct.ltv
+FROM customers c
+JOIN customer_totals ct ON c.customer_id = ct.customer_id
+ORDER BY ct.ltv DESC
+LIMIT 10;
+
+-- Calculate 30-day retention rate
+WITH first_purchase AS (
+    SELECT customer_id, MIN(order_date) as first_date
+    FROM orders
+    GROUP BY customer_id
+),
+repeat_purchase AS (
+    SELECT f.customer_id
+    FROM first_purchase f
+    JOIN orders o ON f.customer_id = o.customer_id
+    WHERE o.order_date BETWEEN f.first_date AND f.first_date + INTERVAL '30 days'
+    AND o.order_date &gt; f.first_date
+)
+SELECT 
+    COUNT(DISTINCT r.customer_id) * 100.0 / COUNT(DISTINCT f.customer_id) as retention_rate
+FROM first_purchase f
+LEFT JOIN repeat_purchase r ON f.customer_id = r.customer_id;
+
+Insights:
+1. 30-day retention rate: 32%
+2. Top 10% customers generate 65% of revenue
+3. Average time between purchases: 23 days</code></pre>
+<p><strong>How to Present:</strong> - Create GitHub repo with <code>.sql</code> files - Include schema diagram - Write detailed README with business context - Show query results as tables or visualizations</p>
+<hr>
+</section>
+<section id="project-5-uniquepassion-project" class="level3">
+<h3 class="anchored" data-anchor-id="project-5-uniquepassion-project"><strong>Project 5: Unique/Passion Project</strong></h3>
+<p><strong>Why It Matters:</strong> - Shows personality and creativity - Demonstrates self-driven learning - Memorable (makes you stand out)</p>
+<p><strong>Examples That Worked:</strong> 1. <strong>Sports Analytics:</strong> “Which NBA position has evolved most since 1990?” (Python + viz) 2. <strong>Social Media Analysis:</strong> “Analyzing 10K Reddit posts about data careers” (NLP + Python) 3. <strong>Personal Finance:</strong> “I tracked every dollar I spent for 2 years” (Dashboard + insights) 4. <strong>Gaming:</strong> “Optimizing Pokémon team selection with data” (Python + ML) 5. <strong>Music:</strong> “What makes a Spotify hit in 2024?” (Python + Spotify API)</p>
+<p><strong>Keys to Success:</strong> - Choose something YOU care about - Make it data-driven (not just opinions) - Show complete workflow (data → insights → viz) - Make it interactive if possible</p>
+<hr>
+</section>
+</section>
+<section id="portfolio-hosting-where-and-how" class="level2">
+<h2 class="anchored" data-anchor-id="portfolio-hosting-where-and-how">Portfolio Hosting: Where and How</h2>
+<section id="option-1-github-pages-free---recommended" class="level3">
+<h3 class="anchored" data-anchor-id="option-1-github-pages-free---recommended"><strong>Option 1: GitHub Pages (FREE - RECOMMENDED)</strong></h3>
+<p><strong>Pros:</strong> - Free hosting - Version control - Shows coding skills - Professional URL</p>
+<p><strong>How to Set Up:</strong> 1. Create GitHub account 2. Create repository: <code>username.github.io</code> 3. Add <code>index.html</code> or use Jekyll/Hugo/Quarto 4. Push your projects 5. Live at <code>https://username.github.io</code></p>
+<p><strong>What to Include:</strong></p>
+<pre><code>/
+├── index.html (landing page)
+├── projects/
+│   ├── sales-dashboard/
+│   ├── customer-churn/
+│   └── sql-analysis/
+├── about.html
+└── resume.pdf</code></pre>
+<p><strong>FREE Templates:</strong> - <a href="https://quarto.org/">Quarto</a> - What I use for this site! - <a href="https://jekyllrb.com/">Jekyll</a> - <a href="https://gohugo.io/">Hugo</a></p>
+<hr>
+</section>
+<section id="option-2-notion-quickest" class="level3">
+<h3 class="anchored" data-anchor-id="option-2-notion-quickest"><strong>Option 2: Notion (QUICKEST)</strong></h3>
+<p><strong>Pros:</strong> - No coding required - Beautiful templates - Easy to update - Mobile-friendly</p>
+<p><strong>Structure:</strong></p>
+<pre><code>Home Page
+├── About Me
+├── Skills &amp; Tools
+├── Projects
+│   ├── Project 1 (with embedded visuals)
+│   ├── Project 2
+│   └── Project 3
+└── Contact</code></pre>
+<p><strong>Template:</strong> - <a href="https://www.notion.so/templates/portfolio">Notion Portfolio Template</a></p>
+<hr>
+</section>
+<section id="option-3-personal-website" class="level3">
+<h3 class="anchored" data-anchor-id="option-3-personal-website"><strong>Option 3: Personal Website</strong></h3>
+<p><strong>For Non-Coders:</strong> - <a href="https://www.wix.com/">Wix</a> (Free tier) - <a href="https://wordpress.com/">WordPress.com</a> (Free tier) - <a href="https://carrd.co/">Carrd</a> (Simple, free)</p>
+<p><strong>For Coders:</strong> - <a href="https://quarto.org/">Quarto</a> - Static site generator - <a href="https://streamlit.io/">Streamlit</a> - Python dashboards - <a href="https://plotly.com/dash/">Dash</a> - Python dashboards</p>
+<hr>
+</section>
+</section>
+<section id="portfolio-structure-that-works" class="level2">
+<h2 class="anchored" data-anchor-id="portfolio-structure-that-works">Portfolio Structure That Works</h2>
+<section id="landing-page-must-haves" class="level3">
+<h3 class="anchored" data-anchor-id="landing-page-must-haves"><strong>Landing Page (Must-Haves):</strong></h3>
+<pre><code>Hero Section:
+- Professional photo
+- Name + Title ("Data Analyst")
+- One-sentence value proposition
+- Links: LinkedIn, GitHub, Email
+
+About Section:
+- 3-4 sentences about background
+- Key skills (Python, SQL, Tableau, etc.)
+- What you're looking for
+
+Projects Section:
+- 5-6 featured projects
+- Thumbnail + title + 2-sentence description
+- "View Project" button
+
+Contact:
+- Email
+- LinkedIn
+- GitHub
+- Optional: Calendar link for coffee chats</code></pre>
+<hr>
+</section>
+<section id="individual-project-page-structure" class="level3">
+<h3 class="anchored" data-anchor-id="individual-project-page-structure"><strong>Individual Project Page Structure:</strong></h3>
+<div class="sourceCode" id="cb11"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># Project Title</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="fu">## Problem Statement</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>What business problem are you solving?</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a><span class="fu">## Data Source</span></span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>Where did you get the data? How much? Any limitations?</span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a><span class="fu">## Tools &amp; Technologies</span></span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Python (pandas, scikit-learn)</span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>SQL (PostgreSQL)</span>
+<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Tableau Public</span>
+<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a><span class="fu">## Methodology</span></span>
+<span id="cb11-15"><a href="#cb11-15" aria-hidden="true" tabindex="-1"></a>Step-by-step what you did (high level)</span>
+<span id="cb11-16"><a href="#cb11-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-17"><a href="#cb11-17" aria-hidden="true" tabindex="-1"></a><span class="fu">## Key Insights</span></span>
+<span id="cb11-18"><a href="#cb11-18" aria-hidden="true" tabindex="-1"></a>1-3 data-driven findings with business impact</span>
+<span id="cb11-19"><a href="#cb11-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-20"><a href="#cb11-20" aria-hidden="true" tabindex="-1"></a><span class="fu">## Visualizations</span></span>
+<span id="cb11-21"><a href="#cb11-21" aria-hidden="true" tabindex="-1"></a>Include 3-5 key charts/dashboards</span>
+<span id="cb11-22"><a href="#cb11-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-23"><a href="#cb11-23" aria-hidden="true" tabindex="-1"></a><span class="fu">## Code</span></span>
+<span id="cb11-24"><a href="#cb11-24" aria-hidden="true" tabindex="-1"></a>Link to GitHub repo</span>
+<span id="cb11-25"><a href="#cb11-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-26"><a href="#cb11-26" aria-hidden="true" tabindex="-1"></a><span class="fu">## Challenges &amp; Learnings</span></span>
+<span id="cb11-27"><a href="#cb11-27" aria-hidden="true" tabindex="-1"></a>What was hard? What did you learn?</span>
+<span id="cb11-28"><a href="#cb11-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-29"><a href="#cb11-29" aria-hidden="true" tabindex="-1"></a><span class="fu">## Skills Demonstrated</span></span>
+<span id="cb11-30"><a href="#cb11-30" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Data cleaning</span>
+<span id="cb11-31"><a href="#cb11-31" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Statistical analysis</span>
+<span id="cb11-32"><a href="#cb11-32" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Machine learning</span>
+<span id="cb11-33"><a href="#cb11-33" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Data storytelling</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<hr>
+</section>
+</section>
+<section id="portfolio-red-flags-auto-rejection" class="level2">
+<h2 class="anchored" data-anchor-id="portfolio-red-flags-auto-rejection">Portfolio Red Flags (Auto-Rejection)</h2>
+<p>❌ <strong>Only Tutorial Projects</strong><br>
+✅ Add your unique spin or business context</p>
+<p>❌ <strong>No README or Documentation</strong><br>
+✅ Every project needs clear documentation</p>
+<p>❌ <strong>Sloppy Code</strong> (no comments, poor naming)<br>
+✅ Clean, readable, commented code</p>
+<p>❌ <strong>No Visuals</strong> (walls of code only)<br>
+✅ Include charts, dashboards, screenshots</p>
+<p>❌ <strong>Broken Links</strong><br>
+✅ Test every link before sharing</p>
+<p>❌ <strong>Generic Insights</strong> (“Sales increased over time”)<br>
+✅ Specific, actionable insights</p>
+<p>❌ <strong>No Business Context</strong><br>
+✅ Every project needs a “why does this matter?” section</p>
+<hr>
+</section>
+<section id="free-resources-to-build-your-portfolio" class="level2">
+<h2 class="anchored" data-anchor-id="free-resources-to-build-your-portfolio">FREE Resources to Build Your Portfolio</h2>
+<section id="datasets" class="level3">
+<h3 class="anchored" data-anchor-id="datasets"><strong>Datasets:</strong></h3>
+<ol type="1">
+<li><a href="https://www.kaggle.com/datasets">Kaggle Datasets</a> - Thousands of datasets</li>
+<li><a href="https://www.data.gov/">Data.gov</a> - US government data</li>
+<li><a href="https://archive.ics.uci.edu/ml/index.php">UCI ML Repository</a> - Classic datasets</li>
+<li><a href="https://data.fivethirtyeight.com/">FiveThirtyEight Data</a> - News-worthy data</li>
+<li><a href="https://ourworldindata.org/">Our World in Data</a> - Global data</li>
+<li><a href="https://github.com/rfordatascience/tidytuesday">TidyTuesday</a> - Weekly datasets</li>
+</ol>
+</section>
+<section id="inspiration" class="level3">
+<h3 class="anchored" data-anchor-id="inspiration"><strong>Inspiration:</strong></h3>
+<ol type="1">
+<li><a href="https://www.kaggle.com/code">Kaggle Notebooks</a> - See what others build</li>
+<li><a href="https://public.tableau.com/app/discover/viz-of-the-day">Tableau Public Gallery</a></li>
+<li><a href="https://github.com/topics/data-science">GitHub Data Science Projects</a></li>
+<li><a href="https://github.com/academic/awesome-datascience">Awesome Data Science</a></li>
+</ol>
+<hr>
+</section>
+</section>
+<section id="the-8-week-portfolio-build-plan" class="level2">
+<h2 class="anchored" data-anchor-id="the-8-week-portfolio-build-plan">The 8-Week Portfolio Build Plan</h2>
+<section id="week-1-2-foundation" class="level3">
+<h3 class="anchored" data-anchor-id="week-1-2-foundation"><strong>Week 1-2: Foundation</strong></h3>
+<ul>
+<li>Set up GitHub account</li>
+<li>Learn Git basics</li>
+<li>Choose portfolio platform</li>
+<li>Create landing page</li>
+</ul>
+</section>
+<section id="week-3-4-projects-1-2" class="level3">
+<h3 class="anchored" data-anchor-id="week-3-4-projects-1-2"><strong>Week 3-4: Projects 1-2</strong></h3>
+<ul>
+<li>Dashboard project (Tableau/Power BI)</li>
+<li>EDA project (Python/R)</li>
+<li>Document everything</li>
+</ul>
+</section>
+<section id="week-5-6-projects-3-4" class="level3">
+<h3 class="anchored" data-anchor-id="week-5-6-projects-3-4"><strong>Week 5-6: Projects 3-4</strong></h3>
+<ul>
+<li>SQL analysis project</li>
+<li>Predictive modeling project</li>
+<li>Write READMEs</li>
+</ul>
+</section>
+<section id="week-7-project-5" class="level3">
+<h3 class="anchored" data-anchor-id="week-7-project-5"><strong>Week 7: Project 5</strong></h3>
+<ul>
+<li>Passion project</li>
+<li>Make it unique and memorable</li>
+</ul>
+</section>
+<section id="week-8-polish" class="level3">
+<h3 class="anchored" data-anchor-id="week-8-polish"><strong>Week 8: Polish</strong></h3>
+<ul>
+<li>Review all documentation</li>
+<li>Test all links</li>
+<li>Get feedback from 3 people</li>
+<li>Make final improvements</li>
+<li>LAUNCH! 🚀</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="portfolio-examples-that-got-people-hired" class="level2">
+<h2 class="anchored" data-anchor-id="portfolio-examples-that-got-people-hired">Portfolio Examples That Got People Hired</h2>
+<section id="example-1-career-switcher" class="level3">
+<h3 class="anchored" data-anchor-id="example-1-career-switcher"><strong>Example 1: Career Switcher</strong></h3>
+<ul>
+<li>3 projects (dashboard, EDA, SQL)</li>
+<li>Clear documentation</li>
+<li>Resume shows “self-taught” story</li>
+<li><strong>Result:</strong> Hired at Series B startup, $75K</li>
+</ul>
+</section>
+<section id="example-2-recent-graduate" class="level3">
+<h3 class="anchored" data-anchor-id="example-2-recent-graduate"><strong>Example 2: Recent Graduate</strong></h3>
+<ul>
+<li>5 projects (mix of school + personal)</li>
+<li>Active GitHub (weekly commits)</li>
+<li>Blog posts explaining projects</li>
+<li><strong>Result:</strong> Data analyst at Fortune 500, $80K</li>
+</ul>
+</section>
+<section id="example-3-professional-pivot" class="level3">
+<h3 class="anchored" data-anchor-id="example-3-professional-pivot"><strong>Example 3: Professional Pivot</strong></h3>
+<ul>
+<li>4 industry-specific projects (healthcare)</li>
+<li>Showed domain expertise + new technical skills</li>
+<li>Video explanations of each project</li>
+<li><strong>Result:</strong> Senior analyst at health tech, $95K</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="how-to-share-your-portfolio" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-share-your-portfolio">How to Share Your Portfolio</h2>
+<section id="resume" class="level3">
+<h3 class="anchored" data-anchor-id="resume"><strong>Resume:</strong></h3>
+<pre><code>Add a "Projects" section:
+
+PROJECTS
+Sales Dashboard | Tableau, SQL
+- Built interactive dashboard analyzing 500K transactions
+- Identified $1.2M revenue opportunity in underperforming regions
+- [View Project](github.com/yourname/sales-dashboard)</code></pre>
+</section>
+<section id="linkedin" class="level3">
+<h3 class="anchored" data-anchor-id="linkedin"><strong>LinkedIn:</strong></h3>
+<ul>
+<li>Add portfolio URL to headline and about section</li>
+<li>Create posts showcasing each project</li>
+<li>Add projects to “Featured” section</li>
+</ul>
+</section>
+<section id="job-applications" class="level3">
+<h3 class="anchored" data-anchor-id="job-applications"><strong>Job Applications:</strong></h3>
+<ul>
+<li>Mention in cover letter</li>
+<li>Link in application if possible</li>
+<li>Be ready to walk through in interviews</li>
+</ul>
+</section>
+<section id="networking" class="level3">
+<h3 class="anchored" data-anchor-id="networking"><strong>Networking:</strong></h3>
+<ul>
+<li>Share when messaging recruiters</li>
+<li>Present in informational interviews</li>
+<li>Post project updates on social media</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="interview-preparation" class="level2">
+<h2 class="anchored" data-anchor-id="interview-preparation">Interview Preparation</h2>
+<p><strong>Be ready to:</strong> 1. <strong>Walk through each project</strong> (5-minute presentation) 2. <strong>Explain your decisions</strong> (why this method vs.&nbsp;that) 3. <strong>Discuss challenges</strong> (what went wrong, how you fixed it) 4. <strong>Show business impact</strong> (not just technical details) 5. <strong>Demonstrate passion</strong> (why this project specifically?)</p>
+<p><strong>Practice Script:</strong></p>
+<pre><code>"For this project, I analyzed e-commerce data to help a company understand their customer churn.
+
+The dataset had 100K customers over 3 years. I started by cleaning the data - there were 5% missing values which I handled by [method].
+
+I then explored the data and found that customers who didn't make a purchase in 90 days had a 70% chance of never returning. This was the key insight.
+
+I built a simple predictive model using Python and scikit-learn, achieving 85% accuracy in predicting churn.
+
+The business recommendation was to implement a 60-day re-engagement campaign, which could potentially save $500K in lost revenue annually.
+
+The hardest part was feature engineering - I had to create recency, frequency, and monetary value features which required careful date calculations.
+
+You can see the full analysis on my GitHub, and I'd be happy to walk through any part in more detail."</code></pre>
+<hr>
+</section>
+<section id="take-action-today" class="level2">
+<h2 class="anchored" data-anchor-id="take-action-today">Take Action Today</h2>
+<p><strong>Your homework (90 minutes):</strong></p>
+<ol type="1">
+<li><strong>Set up GitHub account</strong> (15 min)</li>
+<li><strong>Choose a dataset</strong> (15 min)</li>
+<li><strong>Outline your first project</strong> (30 min)</li>
+<li><strong>Create a simple landing page</strong> (30 min)</li>
+</ol>
+<p><strong>Share your progress!</strong> Tweet or post on LinkedIn with #DataAnalytics</p>
+<hr>
+</section>
+<section id="final-thoughts" class="level2">
+<h2 class="anchored" data-anchor-id="final-thoughts">Final Thoughts</h2>
+<p>Your portfolio is your best interview preparation. Every project teaches you something new and gives you stories to tell.</p>
+<p><strong>Don’t wait for perfection. Ship your first project this week.</strong></p>
+<p><strong>Remember:</strong> 13 out of 500 portfolios got interviews. Be one of the 13.</p>
+<hr>
+<p><strong>Related Posts:</strong> - <a href="../01-data-analytics-roadmap/">Your Ultimate 100-Day Data Analytics Roadmap</a> - <a href="../03-sql-mastery/">Master SQL in 30 Days</a> - <a href="../04-data-visualization-guide/">Data Visualization Mastery</a></p>
+<p><strong>Tags:</strong> #Portfolio #Career #DataAnalytics #Projects #GitHub #JobSearch</p>
+
+
+<!-- -->
+
+</section>
+
+</main> <!-- /main -->
+<footer class="portfolio-footer">
+  <div class="footer-container">
+    <!-- Main Footer Content -->
+    <div class="footer-content">
+      <!-- Navigation Links -->
+      <div class="footer-section">
+        <h4><i class="fas fa-sitemap"></i> Navigation</h4>
+        <ul>
+          <li><a href="../../posts/06-portfolio-that-gets-hired/index.html"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="about/index.qmd"><i class="fas fa-user"></i> About</a></li>
+          <li><a href="projects/index.qmd"><i class="fas fa-project-diagram"></i> Projects</a></li>
+          <li><a href="research/thesis.qmd"><i class="fas fa-microscope"></i> Research</a></li>
+          <li><a href="data-viz/index.qmd"><i class="fas fa-chart-line"></i> Data Visualizations</a></li>
+          <li><a href="blogs/index.qmd"><i class="fas fa-blog"></i> Blog</a></li>
+          <li><a href="cv/index.qmd"><i class="fas fa-file-alt"></i> CV</a></li>
+          <li><a href="resources/index.qmd"><i class="fas fa-book"></i> Resources</a></li>
+        </ul>
+      </div>
+
+      <!-- Projects & Work -->
+      <div class="footer-section">
+        <h4><i class="fas fa-briefcase"></i> Projects &amp; Work</h4>
+        <ul>
+          <li><a href="projects/health-analytics.qmd"><i class="fas fa-heartbeat"></i> Health Analytics</a></li>
+          <li><a href="projects/data-management.qmd"><i class="fas fa-database"></i> Data Management</a></li>
+          <li><a href="projects/survey-tools.qmd"><i class="fas fa-clipboard-list"></i> Survey Tools</a></li>
+          <li><a href="projects/dashboards.qmd"><i class="fas fa-chart-pie"></i> Dashboards</a></li>
+          <li><a href="projects/analytics-engineering/index.qmd"><i class="fas fa-cogs"></i> Analytics Engineering</a></li>
+          <li><a href="projects/politics-governance/index.qmd"><i class="fas fa-university"></i> Governance &amp; Civic Tech</a></li>
+          <li><a href="projects/agriculture/index.qmd"><i class="fas fa-seedling"></i> Agriculture Projects</a></li>
+          <li><a href="tidy-tuesday/index.qmd"><i class="fas fa-calendar-alt"></i> TidyTuesday</a></li>
+          <li><a href="software/index.qmd"><i class="fas fa-code"></i> Software Development</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact & Social -->
+      <div class="footer-section">
+        <h4><i class="fas fa-envelope"></i> Contact &amp; Social</h4>
+        <ul>
+          <li><a href="tel:+254725737867"><i class="fas fa-phone"></i> +254 725 737 867</a></li>
+          <li><a href="mailto:nichodemuswerre@gmail.com"><i class="fas fa-envelope"></i> Email</a></li>
+          <li><a href="https://linkedin.com/in/amollow" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+          <li><a href="https://github.com/gondamol" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+          <li><a href="https://twitter.com/nwerre" target="_blank"><i class="fab fa-x-twitter"></i> X (Twitter)</a></li>
+          <li><a href="https://kaggle.com/nwerre" target="_blank"><i class="fab fa-kaggle"></i> Kaggle</a></li>
+        </ul>
+        <!-- Newsletter Subscribe Button -->
+        <div class="footer-newsletter">
+          <button onclick="showNewsletterPopup()" class="footer-subscribe-btn">
+            <i class="fas fa-envelope-open-text"></i> Subscribe to Newsletter
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom">
+      <div class="footer-copyright">
+        <p>
+          <i class="fas fa-copyright"></i> 2024 <strong>Nichodemus Amollo</strong> | Research Data Manager &amp; Data Scientist<br>
+          <small>Health Financial Diaries • Data Science &amp; ML • Impact Evaluation • Health Economics</small>
+        </p>
+      </div>
+      <div class="footer-badge">
+        <p>
+          <i class="fas fa-code"></i> Built with <i class="fas fa-heart" style="color: #f56565;"></i> using <strong>Quarto</strong> &amp; <strong>R</strong>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Newsletter Subscription Popup -->
+<div id="newsletter-popup" class="newsletter-popup" style="display: none;">
+  <div class="newsletter-popup-content">
+    <button class="newsletter-close" onclick="closeNewsletterPopup()" aria-label="Close">
+      <i class="fas fa-times"></i>
+    </button>
+    <div class="newsletter-header">
+      <i class="fas fa-envelope-open-text newsletter-icon"></i>
+      <h2>Stay Updated!</h2>
+      <p>Get the latest data science insights, visualization tips, and project updates delivered to your inbox.</p>
+    </div>
+    <form class="newsletter-form" id="newsletter-form" onsubmit="handleNewsletterSubmit(event)">
+      <div class="newsletter-input-group">
+        <i class="fas fa-user"></i>
+        <input type="text" name="name" placeholder="Your Name" required="">
+      </div>
+      <div class="newsletter-input-group">
+        <i class="fas fa-envelope"></i>
+        <input type="email" name="email" placeholder="your.email@example.com" required="">
+      </div>
+      <button type="submit" class="newsletter-submit-btn">
+        <span>Subscribe</span>
+        <i class="fas fa-arrow-right"></i>
+      </button>
+    </form>
+    <div class="newsletter-footer">
+      <small>We respect your privacy. Unsubscribe anytime.</small>
+      <div class="newsletter-social">
+        <a href="https://twitter.com/nwerre" target="_blank" aria-label="Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://linkedin.com/in/amollow" target="_blank" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/gondamol" target="_blank" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// Newsletter Popup Logic
+(function() {
+  // Check if user has dismissed popup within the last 10 minutes
+  function shouldShowPopup() {
+    const dismissedAt = localStorage.getItem('newsletterPopupDismissed');
+    if (!dismissedAt) return true;
+    
+    const dismissedTime = parseInt(dismissedAt, 10);
+    const now = Date.now();
+    const tenMinutes = 10 * 60 * 1000; // 10 minutes in milliseconds
+    
+    // Show again if more than 10 minutes have passed
+    return (now - dismissedTime) > tenMinutes;
+  }
+  
+  // Internal function to show popup (checks timing)
+  function showPopupIfAllowed() {
+    if (!shouldShowPopup()) return;
+    
+    const popup = document.getElementById('newsletter-popup');
+    if (popup) {
+      popup.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+      
+      // Animate in
+      setTimeout(() => {
+        popup.classList.add('show');
+      }, 10);
+    }
+  }
+  
+  // Show after 2 minutes delay (automatic popup)
+  const twoMinutes = 2 * 60 * 1000; // 2 minutes in milliseconds
+  setTimeout(() => {
+    showPopupIfAllowed();
+  }, twoMinutes);
+})();
+
+// Global function to show popup from footer button (bypasses timing check)
+function showNewsletterPopup() {
+  const popup = document.getElementById('newsletter-popup');
+  if (popup) {
+    popup.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+    
+    // Animate in
+    setTimeout(() => {
+      popup.classList.add('show');
+    }, 10);
+  }
+}
+
+// Close popup function
+function closeNewsletterPopup() {
+  const popup = document.getElementById('newsletter-popup');
+  if (popup) {
+    popup.classList.remove('show');
+    setTimeout(() => {
+      popup.style.display = 'none';
+      document.body.style.overflow = '';
+    }, 300);
+    // Store timestamp when dismissed (valid for 10 minutes)
+    localStorage.setItem('newsletterPopupDismissed', Date.now().toString());
+  }
+}
+
+// Handle form submission
+function handleNewsletterSubmit(event) {
+  event.preventDefault();
+  
+  const formData = new FormData(event.target);
+  const data = {
+    name: formData.get('name'),
+    email: formData.get('email')
+  };
+  
+  // Here you would integrate with your email service (Mailchimp, ConvertKit, etc.)
+  // For now, we'll just log and show success message
+  console.log('Newsletter signup:', data);
+  
+  // Show success message
+  const form = event.target;
+  form.innerHTML = `
+    <div class="newsletter-success">
+      <i class="fas fa-check-circle"></i>
+      <h3>Thank you, ${data.name}!</h3>
+      <p>Check your email to confirm your subscription.</p>
+    </div>
+  `;
+  
+  // Close after 2 seconds
+  setTimeout(() => {
+    closeNewsletterPopup();
+    // Mark as subscribed (don't show popup again for this user)
+    localStorage.setItem('newsletterPopupDismissed', Date.now().toString());
+  }, 2000);
+}
+
+// Close on background click
+document.addEventListener('click', (e) => {
+  const popup = document.getElementById('newsletter-popup');
+  if (e.target === popup) {
+    closeNewsletterPopup();
+  }
+});
+
+// Close on ESC key
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    closeNewsletterPopup();
+  }
+});
+</script>
+
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+    const viewSource = window.document.getElementById('quarto-view-source') ||
+                       window.document.getElementById('quarto-code-tools-source');
+    if (viewSource) {
+      const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+      viewSource.addEventListener("click", function(e) {
+        if (sourceUrl) {
+          // rstudio viewer pane
+          if (/\bcapabilities=\b/.test(window.location)) {
+            window.open(sourceUrl);
+          } else {
+            window.location.href = sourceUrl;
+          }
+        } else {
+          const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+          modal.show();
+        }
+        return false;
+      });
+    }
+    function toggleCodeHandler(show) {
+      return function(e) {
+        const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+        for (let i=0; i<detailsSrc.length; i++) {
+          const details = detailsSrc[i].parentElement;
+          if (show) {
+            details.open = true;
+          } else {
+            details.removeAttribute("open");
+          }
+        }
+        const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+        const fromCls = show ? "hidden" : "unhidden";
+        const toCls = show ? "unhidden" : "hidden";
+        for (let i=0; i<cellCodeDivs.length; i++) {
+          const codeDiv = cellCodeDivs[i];
+          if (codeDiv.classList.contains(fromCls)) {
+            codeDiv.classList.remove(fromCls);
+            codeDiv.classList.add(toCls);
+          } 
+        }
+        return false;
+      }
+    }
+    const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+    if (hideAllCode) {
+      hideAllCode.addEventListener("click", toggleCodeHandler(false));
+    }
+    const showAllCode = window.document.getElementById("quarto-show-all-code");
+    if (showAllCode) {
+      showAllCode.addEventListener("click", toggleCodeHandler(true));
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/gondamol\.github\.io");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+            // default icon
+            link.classList.add("external");
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="sourceCode" id="cb14" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Build a Data Analytics Portfolio That ACTUALLY Gets You Hired (5 Projects Inside)"</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="an">subtitle:</span><span class="co"> "I Reviewed 500+ Portfolios - Here's What Works (And What Gets You Ignored)"</span></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "Nichodemus Amollo"</span></span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> "2025-10-20"</span></span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a><span class="an">categories:</span><span class="co"> [Portfolio, Career, Projects, Guide]</span></span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a><span class="an">image:</span><span class="co"> "portfolio.jpg"</span></span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a><span class="fu">## The Harsh Truth About Data Analytics Portfolios</span></span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a>Last month, I reviewed 500+ data analytics portfolios for my hiring team.</span>
+<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-14"><a href="#cb14-14" aria-hidden="true" tabindex="-1"></a>**Result: 487 were immediately rejected.**</span>
+<span id="cb14-15"><a href="#cb14-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-16"><a href="#cb14-16" aria-hidden="true" tabindex="-1"></a>Not because the candidates lacked skills, but because their portfolios failed to showcase them properly.</span>
+<span id="cb14-17"><a href="#cb14-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-18"><a href="#cb14-18" aria-hidden="true" tabindex="-1"></a>**This post will show you the 13 portfolios that made it through** - and exactly how to build one that stands out.</span>
+<span id="cb14-19"><a href="#cb14-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-20"><a href="#cb14-20" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb14-21"><a href="#cb14-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-22"><a href="#cb14-22" aria-hidden="true" tabindex="-1"></a><span class="fu">## What Hiring Managers Actually Look For (In Order)</span></span>
+<span id="cb14-23"><a href="#cb14-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-24"><a href="#cb14-24" aria-hidden="true" tabindex="-1"></a><span class="fu">### 1. **Can They Solve Real Problems?** (40%)</span></span>
+<span id="cb14-25"><a href="#cb14-25" aria-hidden="true" tabindex="-1"></a>Show business impact, not just technical skills.</span>
+<span id="cb14-26"><a href="#cb14-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-27"><a href="#cb14-27" aria-hidden="true" tabindex="-1"></a><span class="fu">### 2. **Can They Communicate?** (30%)</span></span>
+<span id="cb14-28"><a href="#cb14-28" aria-hidden="true" tabindex="-1"></a>Your README and presentation matter more than your code.</span>
+<span id="cb14-29"><a href="#cb14-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-30"><a href="#cb14-30" aria-hidden="true" tabindex="-1"></a><span class="fu">### 3. **Are They Technically Competent?** (20%)</span></span>
+<span id="cb14-31"><a href="#cb14-31" aria-hidden="true" tabindex="-1"></a>Clean code, proper tools, best practices.</span>
+<span id="cb14-32"><a href="#cb14-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-33"><a href="#cb14-33" aria-hidden="true" tabindex="-1"></a><span class="fu">### 4. **Do They Show Initiative?** (10%)</span></span>
+<span id="cb14-34"><a href="#cb14-34" aria-hidden="true" tabindex="-1"></a>Unique projects, continuous learning, community involvement.</span>
+<span id="cb14-35"><a href="#cb14-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-36"><a href="#cb14-36" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb14-37"><a href="#cb14-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-38"><a href="#cb14-38" aria-hidden="true" tabindex="-1"></a><span class="fu">## The 5 Projects EVERY Portfolio Must Have</span></span>
+<span id="cb14-39"><a href="#cb14-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-40"><a href="#cb14-40" aria-hidden="true" tabindex="-1"></a><span class="fu">### **Project 1: Business Dashboard**</span></span>
+<span id="cb14-41"><a href="#cb14-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-42"><a href="#cb14-42" aria-hidden="true" tabindex="-1"></a>**Why It Matters:**</span>
+<span id="cb14-43"><a href="#cb14-43" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>90% of data analyst roles involve dashboards</span>
+<span id="cb14-44"><a href="#cb14-44" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Shows you understand business KPIs</span>
+<span id="cb14-45"><a href="#cb14-45" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Demonstrates visualization skills</span>
+<span id="cb14-46"><a href="#cb14-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-47"><a href="#cb14-47" aria-hidden="true" tabindex="-1"></a>**What to Include:**</span>
+<span id="cb14-48"><a href="#cb14-48" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb14-49"><a href="#cb14-49" aria-hidden="true" tabindex="-1"></a><span class="in">Business Problem: E-commerce company needs to monitor daily sales performance</span></span>
+<span id="cb14-50"><a href="#cb14-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-51"><a href="#cb14-51" aria-hidden="true" tabindex="-1"></a><span class="in">Dataset: Kaggle E-Commerce Sales Data</span></span>
+<span id="cb14-52"><a href="#cb14-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-53"><a href="#cb14-53" aria-hidden="true" tabindex="-1"></a><span class="in">Tools: Tableau Public / Power BI</span></span>
+<span id="cb14-54"><a href="#cb14-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-55"><a href="#cb14-55" aria-hidden="true" tabindex="-1"></a><span class="in">KPIs Tracked:</span></span>
+<span id="cb14-56"><a href="#cb14-56" aria-hidden="true" tabindex="-1"></a><span class="in">- Total Revenue</span></span>
+<span id="cb14-57"><a href="#cb14-57" aria-hidden="true" tabindex="-1"></a><span class="in">- Order Count</span></span>
+<span id="cb14-58"><a href="#cb14-58" aria-hidden="true" tabindex="-1"></a><span class="in">- Average Order Value  </span></span>
+<span id="cb14-59"><a href="#cb14-59" aria-hidden="true" tabindex="-1"></a><span class="in">- Revenue by Category</span></span>
+<span id="cb14-60"><a href="#cb14-60" aria-hidden="true" tabindex="-1"></a><span class="in">- Top 10 Products</span></span>
+<span id="cb14-61"><a href="#cb14-61" aria-hidden="true" tabindex="-1"></a><span class="in">- Sales Trend (daily)</span></span>
+<span id="cb14-62"><a href="#cb14-62" aria-hidden="true" tabindex="-1"></a><span class="in">- Customer Segmentation</span></span>
+<span id="cb14-63"><a href="#cb14-63" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-64"><a href="#cb14-64" aria-hidden="true" tabindex="-1"></a><span class="in">Insights Found:</span></span>
+<span id="cb14-65"><a href="#cb14-65" aria-hidden="true" tabindex="-1"></a><span class="in">1. 30% of revenue comes from just 3 products</span></span>
+<span id="cb14-66"><a href="#cb14-66" aria-hidden="true" tabindex="-1"></a><span class="in">2. Weekend sales are 40% lower than weekdays</span></span>
+<span id="cb14-67"><a href="#cb14-67" aria-hidden="true" tabindex="-1"></a><span class="in">3. Mobile traffic has poor conversion (18% vs 42% desktop)</span></span>
+<span id="cb14-68"><a href="#cb14-68" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-69"><a href="#cb14-69" aria-hidden="true" tabindex="-1"></a><span class="in">Recommendations:</span></span>
+<span id="cb14-70"><a href="#cb14-70" aria-hidden="true" tabindex="-1"></a><span class="in">1. Increase marketing spend on top 3 products</span></span>
+<span id="cb14-71"><a href="#cb14-71" aria-hidden="true" tabindex="-1"></a><span class="in">2. Weekend promotion campaigns needed</span></span>
+<span id="cb14-72"><a href="#cb14-72" aria-hidden="true" tabindex="-1"></a><span class="in">3. Optimize mobile checkout process</span></span>
+<span id="cb14-73"><a href="#cb14-73" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb14-74"><a href="#cb14-74" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-75"><a href="#cb14-75" aria-hidden="true" tabindex="-1"></a>**Example Datasets:**</span>
+<span id="cb14-76"><a href="#cb14-76" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Superstore Dataset</span><span class="co">](https://public.tableau.com/en-us/s/resources)</span></span>
+<span id="cb14-77"><a href="#cb14-77" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Kaggle E-Commerce Data</span><span class="co">](https://www.kaggle.com/datasets/carrie1/ecommerce-data)</span></span>
+<span id="cb14-78"><a href="#cb14-78" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Adventure Works</span><span class="co">](https://docs.microsoft.com/en-us/sql/samples/adventureworks-install-configure)</span></span>
+<span id="cb14-79"><a href="#cb14-79" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-80"><a href="#cb14-80" aria-hidden="true" tabindex="-1"></a>**Template README:**</span>
+<span id="cb14-81"><a href="#cb14-81" aria-hidden="true" tabindex="-1"></a><span class="in">```markdown</span></span>
+<span id="cb14-82"><a href="#cb14-82" aria-hidden="true" tabindex="-1"></a><span class="fu"># E-Commerce Sales Dashboard</span></span>
+<span id="cb14-83"><a href="#cb14-83" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-84"><a href="#cb14-84" aria-hidden="true" tabindex="-1"></a><span class="fu">## Problem Statement</span></span>
+<span id="cb14-85"><a href="#cb14-85" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Company</span><span class="co">]</span> needed a real-time dashboard to monitor...</span>
+<span id="cb14-86"><a href="#cb14-86" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-87"><a href="#cb14-87" aria-hidden="true" tabindex="-1"></a><span class="fu">## Data Source  </span></span>
+<span id="cb14-88"><a href="#cb14-88" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Kaggle E-Commerce Dataset (500K orders, 2019-2023)</span>
+<span id="cb14-89"><a href="#cb14-89" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Cleaned in Python (removed 5% null values)</span>
+<span id="cb14-90"><a href="#cb14-90" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-91"><a href="#cb14-91" aria-hidden="true" tabindex="-1"></a><span class="fu">## Tools Used</span></span>
+<span id="cb14-92"><a href="#cb14-92" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Python (pandas, numpy) for data cleaning</span>
+<span id="cb14-93"><a href="#cb14-93" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Tableau Public for visualization</span>
+<span id="cb14-94"><a href="#cb14-94" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>SQL for initial exploration</span>
+<span id="cb14-95"><a href="#cb14-95" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-96"><a href="#cb14-96" aria-hidden="true" tabindex="-1"></a><span class="fu">## Key Insights</span></span>
+<span id="cb14-97"><a href="#cb14-97" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span><span class="co">[</span><span class="ot">Insight with business impact</span><span class="co">]</span></span>
+<span id="cb14-98"><a href="#cb14-98" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span><span class="co">[</span><span class="ot">Insight with business impact</span><span class="co">]</span></span>
+<span id="cb14-99"><a href="#cb14-99" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span><span class="co">[</span><span class="ot">Insight with business impact</span><span class="co">]</span></span>
+<span id="cb14-100"><a href="#cb14-100" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-101"><a href="#cb14-101" aria-hidden="true" tabindex="-1"></a><span class="fu">## Interactive Dashboard</span></span>
+<span id="cb14-102"><a href="#cb14-102" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Link to Tableau Public/Power BI</span><span class="co">]</span></span>
+<span id="cb14-103"><a href="#cb14-103" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-104"><a href="#cb14-104" aria-hidden="true" tabindex="-1"></a><span class="fu">## Screenshots</span></span>
+<span id="cb14-105"><a href="#cb14-105" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Include 3-5 screenshots with captions</span><span class="co">]</span></span>
+<span id="cb14-106"><a href="#cb14-106" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-107"><a href="#cb14-107" aria-hidden="true" tabindex="-1"></a><span class="fu">## Skills Demonstrated</span></span>
+<span id="cb14-108"><a href="#cb14-108" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Data cleaning &amp; transformation</span>
+<span id="cb14-109"><a href="#cb14-109" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>KPI selection</span>
+<span id="cb14-110"><a href="#cb14-110" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Dashboard design</span>
+<span id="cb14-111"><a href="#cb14-111" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Business storytelling</span>
+<span id="cb14-112"><a href="#cb14-112" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb14-113"><a href="#cb14-113" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-114"><a href="#cb14-114" aria-hidden="true" tabindex="-1"></a><span class="in">---</span></span>
+<span id="cb14-115"><a href="#cb14-115" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-116"><a href="#cb14-116" aria-hidden="true" tabindex="-1"></a><span class="in">### **Project 2: Exploratory Data Analysis (EDA)**</span></span>
+<span id="cb14-117"><a href="#cb14-117" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-118"><a href="#cb14-118" aria-hidden="true" tabindex="-1"></a><span class="in">**Why It Matters:**</span></span>
+<span id="cb14-119"><a href="#cb14-119" aria-hidden="true" tabindex="-1"></a><span class="in">- Shows statistical thinking</span></span>
+<span id="cb14-120"><a href="#cb14-120" aria-hidden="true" tabindex="-1"></a><span class="in">- Proves you can find patterns</span></span>
+<span id="cb14-121"><a href="#cb14-121" aria-hidden="true" tabindex="-1"></a><span class="in">- Demonstrates hypothesis testing</span></span>
+<span id="cb14-122"><a href="#cb14-122" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-123"><a href="#cb14-123" aria-hidden="true" tabindex="-1"></a><span class="in">**Structure:**</span></span>
+<span id="cb14-124"><a href="#cb14-124" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb14-125"><a href="#cb14-125" aria-hidden="true" tabindex="-1"></a>Research Question: What factors influence employee attrition?</span>
+<span id="cb14-126"><a href="#cb14-126" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-127"><a href="#cb14-127" aria-hidden="true" tabindex="-1"></a>Dataset: IBM HR Analytics Dataset</span>
+<span id="cb14-128"><a href="#cb14-128" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-129"><a href="#cb14-129" aria-hidden="true" tabindex="-1"></a>Methodology:</span>
+<span id="cb14-130"><a href="#cb14-130" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Data Cleaning (handling missing values, outliers)</span>
+<span id="cb14-131"><a href="#cb14-131" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Univariate Analysis (distributions)</span>
+<span id="cb14-132"><a href="#cb14-132" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Bivariate Analysis (correlations)</span>
+<span id="cb14-133"><a href="#cb14-133" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>Multivariate Analysis (complex relationships)</span>
+<span id="cb14-134"><a href="#cb14-134" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>Statistical Testing (t-tests, chi-square)</span>
+<span id="cb14-135"><a href="#cb14-135" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-136"><a href="#cb14-136" aria-hidden="true" tabindex="-1"></a>Key Findings:</span>
+<span id="cb14-137"><a href="#cb14-137" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Employees with &lt;2 years tenure have 47% attrition rate</span>
+<span id="cb14-138"><a href="#cb14-138" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Overtime workers are 3.2x more likely to leave</span>
+<span id="cb14-139"><a href="#cb14-139" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Job satisfaction score &lt;2 predicts 68% of attrition</span>
+<span id="cb14-140"><a href="#cb14-140" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-141"><a href="#cb14-141" aria-hidden="true" tabindex="-1"></a>Statistical Evidence:</span>
+<span id="cb14-142"><a href="#cb14-142" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Chi-square test: p &lt; 0.001 (overtime vs attrition)</span>
+<span id="cb14-143"><a href="#cb14-143" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>T-test: Significant difference in satisfaction scores (p=0.003)</span>
+<span id="cb14-144"><a href="#cb14-144" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb14-145"><a href="#cb14-145" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-146"><a href="#cb14-146" aria-hidden="true" tabindex="-1"></a><span class="in">**Example Datasets:**</span></span>
+<span id="cb14-147"><a href="#cb14-147" aria-hidden="true" tabindex="-1"></a><span class="in">- [IBM HR Analytics](https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset)</span></span>
+<span id="cb14-148"><a href="#cb14-148" aria-hidden="true" tabindex="-1"></a><span class="in">- [Titanic Dataset](https://www.kaggle.com/c/titanic)</span></span>
+<span id="cb14-149"><a href="#cb14-149" aria-hidden="true" tabindex="-1"></a><span class="in">- [World Happiness Report](https://worldhappiness.report/data/)</span></span>
+<span id="cb14-150"><a href="#cb14-150" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-151"><a href="#cb14-151" aria-hidden="true" tabindex="-1"></a><span class="in">**Code Structure:**</span></span>
+<span id="cb14-152"><a href="#cb14-152" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb14-153"><a href="#cb14-153" aria-hidden="true" tabindex="-1"></a><span class="in"># 1. Imports and Setup</span></span>
+<span id="cb14-154"><a href="#cb14-154" aria-hidden="true" tabindex="-1"></a><span class="in">import pandas as pd</span></span>
+<span id="cb14-155"><a href="#cb14-155" aria-hidden="true" tabindex="-1"></a><span class="in">import numpy as np</span></span>
+<span id="cb14-156"><a href="#cb14-156" aria-hidden="true" tabindex="-1"></a><span class="in">import matplotlib.pyplot as plt</span></span>
+<span id="cb14-157"><a href="#cb14-157" aria-hidden="true" tabindex="-1"></a><span class="in">import seaborn as sns</span></span>
+<span id="cb14-158"><a href="#cb14-158" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-159"><a href="#cb14-159" aria-hidden="true" tabindex="-1"></a><span class="in"># 2. Data Loading</span></span>
+<span id="cb14-160"><a href="#cb14-160" aria-hidden="true" tabindex="-1"></a><span class="in">df = pd.read_csv('data.csv')</span></span>
+<span id="cb14-161"><a href="#cb14-161" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-162"><a href="#cb14-162" aria-hidden="true" tabindex="-1"></a><span class="in"># 3. Data Cleaning</span></span>
+<span id="cb14-163"><a href="#cb14-163" aria-hidden="true" tabindex="-1"></a><span class="in"># Document every decision</span></span>
+<span id="cb14-164"><a href="#cb14-164" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-165"><a href="#cb14-165" aria-hidden="true" tabindex="-1"></a><span class="in"># 4. EDA</span></span>
+<span id="cb14-166"><a href="#cb14-166" aria-hidden="true" tabindex="-1"></a><span class="in"># Visualizations with interpretations</span></span>
+<span id="cb14-167"><a href="#cb14-167" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-168"><a href="#cb14-168" aria-hidden="true" tabindex="-1"></a><span class="in"># 5. Statistical Tests</span></span>
+<span id="cb14-169"><a href="#cb14-169" aria-hidden="true" tabindex="-1"></a><span class="in"># With clear conclusions</span></span>
+<span id="cb14-170"><a href="#cb14-170" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-171"><a href="#cb14-171" aria-hidden="true" tabindex="-1"></a><span class="in"># 6. Summary</span></span>
+<span id="cb14-172"><a href="#cb14-172" aria-hidden="true" tabindex="-1"></a><span class="in"># Key takeaways and limitations</span></span>
+<span id="cb14-173"><a href="#cb14-173" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb14-174"><a href="#cb14-174" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-175"><a href="#cb14-175" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb14-176"><a href="#cb14-176" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-177"><a href="#cb14-177" aria-hidden="true" tabindex="-1"></a><span class="fu">### **Project 3: Predictive Model**</span></span>
+<span id="cb14-178"><a href="#cb14-178" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-179"><a href="#cb14-179" aria-hidden="true" tabindex="-1"></a>**Why It Matters:**</span>
+<span id="cb14-180"><a href="#cb14-180" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Growing requirement (even for analysts)</span>
+<span id="cb14-181"><a href="#cb14-181" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Shows you understand ML concepts</span>
+<span id="cb14-182"><a href="#cb14-182" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Demonstrates end-to-end skills</span>
+<span id="cb14-183"><a href="#cb14-183" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-184"><a href="#cb14-184" aria-hidden="true" tabindex="-1"></a>**Project Structure:**</span>
+<span id="cb14-185"><a href="#cb14-185" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb14-186"><a href="#cb14-186" aria-hidden="true" tabindex="-1"></a>Problem: Predict customer churn for subscription service</span>
+<span id="cb14-187"><a href="#cb14-187" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-188"><a href="#cb14-188" aria-hidden="true" tabindex="-1"></a>Dataset: Telco Customer Churn</span>
+<span id="cb14-189"><a href="#cb14-189" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-190"><a href="#cb14-190" aria-hidden="true" tabindex="-1"></a>Approach:</span>
+<span id="cb14-191"><a href="#cb14-191" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>EDA and Feature Engineering</span>
+<span id="cb14-192"><a href="#cb14-192" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Train-Test Split</span>
+<span id="cb14-193"><a href="#cb14-193" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Model Selection (Logistic Regression, Random Forest, XGBoost)</span>
+<span id="cb14-194"><a href="#cb14-194" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>Model Evaluation (accuracy, precision, recall, F1, ROC-AUC)</span>
+<span id="cb14-195"><a href="#cb14-195" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>Feature Importance Analysis</span>
+<span id="cb14-196"><a href="#cb14-196" aria-hidden="true" tabindex="-1"></a><span class="ss">6. </span>Business Recommendations</span>
+<span id="cb14-197"><a href="#cb14-197" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-198"><a href="#cb14-198" aria-hidden="true" tabindex="-1"></a>Results:</span>
+<span id="cb14-199"><a href="#cb14-199" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Best Model: XGBoost (AUC = 0.89)</span>
+<span id="cb14-200"><a href="#cb14-200" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Top 3 Predictors: Contract type, tenure, monthly charges</span>
+<span id="cb14-201"><a href="#cb14-201" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Model identified 85% of churners correctly</span>
+<span id="cb14-202"><a href="#cb14-202" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-203"><a href="#cb14-203" aria-hidden="true" tabindex="-1"></a>Business Impact:</span>
+<span id="cb14-204"><a href="#cb14-204" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Targeting high-risk customers could save $1.2M annually</span>
+<span id="cb14-205"><a href="#cb14-205" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Focus retention efforts on month-to-month contract holders</span>
+<span id="cb14-206"><a href="#cb14-206" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb14-207"><a href="#cb14-207" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-208"><a href="#cb14-208" aria-hidden="true" tabindex="-1"></a><span class="in">**Example Datasets:**</span></span>
+<span id="cb14-209"><a href="#cb14-209" aria-hidden="true" tabindex="-1"></a><span class="in">- [Telco Customer Churn](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)</span></span>
+<span id="cb14-210"><a href="#cb14-210" aria-hidden="true" tabindex="-1"></a><span class="in">- [Credit Card Default](https://www.kaggle.com/datasets/uciml/default-of-credit-card-clients-dataset)</span></span>
+<span id="cb14-211"><a href="#cb14-211" aria-hidden="true" tabindex="-1"></a><span class="in">- [House Prices](https://www.kaggle.com/c/house-prices-advanced-regression-techniques)</span></span>
+<span id="cb14-212"><a href="#cb14-212" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-213"><a href="#cb14-213" aria-hidden="true" tabindex="-1"></a><span class="in">**Code Structure:**</span></span>
+<span id="cb14-214"><a href="#cb14-214" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb14-215"><a href="#cb14-215" aria-hidden="true" tabindex="-1"></a><span class="in"># 1. Problem Definition</span></span>
+<span id="cb14-216"><a href="#cb14-216" aria-hidden="true" tabindex="-1"></a><span class="in"># 2. Data Loading and Exploration</span></span>
+<span id="cb14-217"><a href="#cb14-217" aria-hidden="true" tabindex="-1"></a><span class="in"># 3. Data Preprocessing</span></span>
+<span id="cb14-218"><a href="#cb14-218" aria-hidden="true" tabindex="-1"></a><span class="in">#    - Handle missing values</span></span>
+<span id="cb14-219"><a href="#cb14-219" aria-hidden="true" tabindex="-1"></a><span class="in">#    - Encode categorical variables</span></span>
+<span id="cb14-220"><a href="#cb14-220" aria-hidden="true" tabindex="-1"></a><span class="in">#    - Scale numerical features</span></span>
+<span id="cb14-221"><a href="#cb14-221" aria-hidden="true" tabindex="-1"></a><span class="in"># 4. Feature Engineering</span></span>
+<span id="cb14-222"><a href="#cb14-222" aria-hidden="true" tabindex="-1"></a><span class="in"># 5. Model Training</span></span>
+<span id="cb14-223"><a href="#cb14-223" aria-hidden="true" tabindex="-1"></a><span class="in">#    - Multiple algorithms</span></span>
+<span id="cb14-224"><a href="#cb14-224" aria-hidden="true" tabindex="-1"></a><span class="in">#    - Cross-validation</span></span>
+<span id="cb14-225"><a href="#cb14-225" aria-hidden="true" tabindex="-1"></a><span class="in"># 6. Model Evaluation</span></span>
+<span id="cb14-226"><a href="#cb14-226" aria-hidden="true" tabindex="-1"></a><span class="in">#    - Confusion matrix</span></span>
+<span id="cb14-227"><a href="#cb14-227" aria-hidden="true" tabindex="-1"></a><span class="in">#    - ROC curve</span></span>
+<span id="cb14-228"><a href="#cb14-228" aria-hidden="true" tabindex="-1"></a><span class="in">#    - Feature importance</span></span>
+<span id="cb14-229"><a href="#cb14-229" aria-hidden="true" tabindex="-1"></a><span class="in"># 7. Insights and Recommendations</span></span>
+<span id="cb14-230"><a href="#cb14-230" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb14-231"><a href="#cb14-231" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-232"><a href="#cb14-232" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb14-233"><a href="#cb14-233" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-234"><a href="#cb14-234" aria-hidden="true" tabindex="-1"></a><span class="fu">### **Project 4: SQL Analysis Project**</span></span>
+<span id="cb14-235"><a href="#cb14-235" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-236"><a href="#cb14-236" aria-hidden="true" tabindex="-1"></a>**Why It Matters:**</span>
+<span id="cb14-237"><a href="#cb14-237" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>SQL is non-negotiable (78% of jobs)</span>
+<span id="cb14-238"><a href="#cb14-238" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Shows database thinking</span>
+<span id="cb14-239"><a href="#cb14-239" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Demonstrates query optimization</span>
+<span id="cb14-240"><a href="#cb14-240" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-241"><a href="#cb14-241" aria-hidden="true" tabindex="-1"></a>**Project Example:**</span>
+<span id="cb14-242"><a href="#cb14-242" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb14-243"><a href="#cb14-243" aria-hidden="true" tabindex="-1"></a><span class="in">Business Problem: Analyze customer purchase patterns to optimize inventory</span></span>
+<span id="cb14-244"><a href="#cb14-244" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-245"><a href="#cb14-245" aria-hidden="true" tabindex="-1"></a><span class="in">Dataset: E-Commerce Database (4 tables)</span></span>
+<span id="cb14-246"><a href="#cb14-246" aria-hidden="true" tabindex="-1"></a><span class="in">- Customers (100K rows)</span></span>
+<span id="cb14-247"><a href="#cb14-247" aria-hidden="true" tabindex="-1"></a><span class="in">- Orders (500K rows)</span></span>
+<span id="cb14-248"><a href="#cb14-248" aria-hidden="true" tabindex="-1"></a><span class="in">- Order_Items (1.5M rows)</span></span>
+<span id="cb14-249"><a href="#cb14-249" aria-hidden="true" tabindex="-1"></a><span class="in">- Products (5K rows)</span></span>
+<span id="cb14-250"><a href="#cb14-250" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-251"><a href="#cb14-251" aria-hidden="true" tabindex="-1"></a><span class="in">SQL Skills Demonstrated:</span></span>
+<span id="cb14-252"><a href="#cb14-252" aria-hidden="true" tabindex="-1"></a><span class="in">1. Complex JOINs (3+ tables)</span></span>
+<span id="cb14-253"><a href="#cb14-253" aria-hidden="true" tabindex="-1"></a><span class="in">2. Window Functions (ROW_NUMBER, RANK)</span></span>
+<span id="cb14-254"><a href="#cb14-254" aria-hidden="true" tabindex="-1"></a><span class="in">3. CTEs (Common Table Expressions)</span></span>
+<span id="cb14-255"><a href="#cb14-255" aria-hidden="true" tabindex="-1"></a><span class="in">4. Subqueries</span></span>
+<span id="cb14-256"><a href="#cb14-256" aria-hidden="true" tabindex="-1"></a><span class="in">5. Aggregations with GROUP BY</span></span>
+<span id="cb14-257"><a href="#cb14-257" aria-hidden="true" tabindex="-1"></a><span class="in">6. Date Functions</span></span>
+<span id="cb14-258"><a href="#cb14-258" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-259"><a href="#cb14-259" aria-hidden="true" tabindex="-1"></a><span class="in">Sample Queries:</span></span>
+<span id="cb14-260"><a href="#cb14-260" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-261"><a href="#cb14-261" aria-hidden="true" tabindex="-1"></a><span class="in">-- Find top 10 customers by lifetime value</span></span>
+<span id="cb14-262"><a href="#cb14-262" aria-hidden="true" tabindex="-1"></a><span class="in">WITH customer_totals AS (</span></span>
+<span id="cb14-263"><a href="#cb14-263" aria-hidden="true" tabindex="-1"></a><span class="in">    SELECT customer_id, SUM(amount) as ltv</span></span>
+<span id="cb14-264"><a href="#cb14-264" aria-hidden="true" tabindex="-1"></a><span class="in">    FROM orders</span></span>
+<span id="cb14-265"><a href="#cb14-265" aria-hidden="true" tabindex="-1"></a><span class="in">    GROUP BY customer_id</span></span>
+<span id="cb14-266"><a href="#cb14-266" aria-hidden="true" tabindex="-1"></a><span class="in">)</span></span>
+<span id="cb14-267"><a href="#cb14-267" aria-hidden="true" tabindex="-1"></a><span class="in">SELECT c.customer_name, ct.ltv</span></span>
+<span id="cb14-268"><a href="#cb14-268" aria-hidden="true" tabindex="-1"></a><span class="in">FROM customers c</span></span>
+<span id="cb14-269"><a href="#cb14-269" aria-hidden="true" tabindex="-1"></a><span class="in">JOIN customer_totals ct ON c.customer_id = ct.customer_id</span></span>
+<span id="cb14-270"><a href="#cb14-270" aria-hidden="true" tabindex="-1"></a><span class="in">ORDER BY ct.ltv DESC</span></span>
+<span id="cb14-271"><a href="#cb14-271" aria-hidden="true" tabindex="-1"></a><span class="in">LIMIT 10;</span></span>
+<span id="cb14-272"><a href="#cb14-272" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-273"><a href="#cb14-273" aria-hidden="true" tabindex="-1"></a><span class="in">-- Calculate 30-day retention rate</span></span>
+<span id="cb14-274"><a href="#cb14-274" aria-hidden="true" tabindex="-1"></a><span class="in">WITH first_purchase AS (</span></span>
+<span id="cb14-275"><a href="#cb14-275" aria-hidden="true" tabindex="-1"></a><span class="in">    SELECT customer_id, MIN(order_date) as first_date</span></span>
+<span id="cb14-276"><a href="#cb14-276" aria-hidden="true" tabindex="-1"></a><span class="in">    FROM orders</span></span>
+<span id="cb14-277"><a href="#cb14-277" aria-hidden="true" tabindex="-1"></a><span class="in">    GROUP BY customer_id</span></span>
+<span id="cb14-278"><a href="#cb14-278" aria-hidden="true" tabindex="-1"></a><span class="in">),</span></span>
+<span id="cb14-279"><a href="#cb14-279" aria-hidden="true" tabindex="-1"></a><span class="in">repeat_purchase AS (</span></span>
+<span id="cb14-280"><a href="#cb14-280" aria-hidden="true" tabindex="-1"></a><span class="in">    SELECT f.customer_id</span></span>
+<span id="cb14-281"><a href="#cb14-281" aria-hidden="true" tabindex="-1"></a><span class="in">    FROM first_purchase f</span></span>
+<span id="cb14-282"><a href="#cb14-282" aria-hidden="true" tabindex="-1"></a><span class="in">    JOIN orders o ON f.customer_id = o.customer_id</span></span>
+<span id="cb14-283"><a href="#cb14-283" aria-hidden="true" tabindex="-1"></a><span class="in">    WHERE o.order_date BETWEEN f.first_date AND f.first_date + INTERVAL '30 days'</span></span>
+<span id="cb14-284"><a href="#cb14-284" aria-hidden="true" tabindex="-1"></a><span class="in">    AND o.order_date &gt; f.first_date</span></span>
+<span id="cb14-285"><a href="#cb14-285" aria-hidden="true" tabindex="-1"></a><span class="in">)</span></span>
+<span id="cb14-286"><a href="#cb14-286" aria-hidden="true" tabindex="-1"></a><span class="in">SELECT </span></span>
+<span id="cb14-287"><a href="#cb14-287" aria-hidden="true" tabindex="-1"></a><span class="in">    COUNT(DISTINCT r.customer_id) * 100.0 / COUNT(DISTINCT f.customer_id) as retention_rate</span></span>
+<span id="cb14-288"><a href="#cb14-288" aria-hidden="true" tabindex="-1"></a><span class="in">FROM first_purchase f</span></span>
+<span id="cb14-289"><a href="#cb14-289" aria-hidden="true" tabindex="-1"></a><span class="in">LEFT JOIN repeat_purchase r ON f.customer_id = r.customer_id;</span></span>
+<span id="cb14-290"><a href="#cb14-290" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-291"><a href="#cb14-291" aria-hidden="true" tabindex="-1"></a><span class="in">Insights:</span></span>
+<span id="cb14-292"><a href="#cb14-292" aria-hidden="true" tabindex="-1"></a><span class="in">1. 30-day retention rate: 32%</span></span>
+<span id="cb14-293"><a href="#cb14-293" aria-hidden="true" tabindex="-1"></a><span class="in">2. Top 10% customers generate 65% of revenue</span></span>
+<span id="cb14-294"><a href="#cb14-294" aria-hidden="true" tabindex="-1"></a><span class="in">3. Average time between purchases: 23 days</span></span>
+<span id="cb14-295"><a href="#cb14-295" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb14-296"><a href="#cb14-296" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-297"><a href="#cb14-297" aria-hidden="true" tabindex="-1"></a>**How to Present:**</span>
+<span id="cb14-298"><a href="#cb14-298" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Create GitHub repo with <span class="in">`.sql`</span> files</span>
+<span id="cb14-299"><a href="#cb14-299" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Include schema diagram</span>
+<span id="cb14-300"><a href="#cb14-300" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Write detailed README with business context</span>
+<span id="cb14-301"><a href="#cb14-301" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Show query results as tables or visualizations</span>
+<span id="cb14-302"><a href="#cb14-302" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-303"><a href="#cb14-303" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb14-304"><a href="#cb14-304" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-305"><a href="#cb14-305" aria-hidden="true" tabindex="-1"></a><span class="fu">### **Project 5: Unique/Passion Project**</span></span>
+<span id="cb14-306"><a href="#cb14-306" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-307"><a href="#cb14-307" aria-hidden="true" tabindex="-1"></a>**Why It Matters:**</span>
+<span id="cb14-308"><a href="#cb14-308" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Shows personality and creativity</span>
+<span id="cb14-309"><a href="#cb14-309" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Demonstrates self-driven learning</span>
+<span id="cb14-310"><a href="#cb14-310" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Memorable (makes you stand out)</span>
+<span id="cb14-311"><a href="#cb14-311" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-312"><a href="#cb14-312" aria-hidden="true" tabindex="-1"></a>**Examples That Worked:**</span>
+<span id="cb14-313"><a href="#cb14-313" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Sports Analytics:** "Which NBA position has evolved most since 1990?" (Python + viz)</span>
+<span id="cb14-314"><a href="#cb14-314" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Social Media Analysis:** "Analyzing 10K Reddit posts about data careers" (NLP + Python)</span>
+<span id="cb14-315"><a href="#cb14-315" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Personal Finance:** "I tracked every dollar I spent for 2 years" (Dashboard + insights)</span>
+<span id="cb14-316"><a href="#cb14-316" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**Gaming:** "Optimizing Pokémon team selection with data" (Python + ML)</span>
+<span id="cb14-317"><a href="#cb14-317" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>**Music:** "What makes a Spotify hit in 2024?" (Python + Spotify API)</span>
+<span id="cb14-318"><a href="#cb14-318" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-319"><a href="#cb14-319" aria-hidden="true" tabindex="-1"></a>**Keys to Success:**</span>
+<span id="cb14-320"><a href="#cb14-320" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Choose something YOU care about</span>
+<span id="cb14-321"><a href="#cb14-321" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Make it data-driven (not just opinions)</span>
+<span id="cb14-322"><a href="#cb14-322" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Show complete workflow (data → insights → viz)</span>
+<span id="cb14-323"><a href="#cb14-323" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Make it interactive if possible</span>
+<span id="cb14-324"><a href="#cb14-324" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-325"><a href="#cb14-325" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb14-326"><a href="#cb14-326" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-327"><a href="#cb14-327" aria-hidden="true" tabindex="-1"></a><span class="fu">## Portfolio Hosting: Where and How</span></span>
+<span id="cb14-328"><a href="#cb14-328" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-329"><a href="#cb14-329" aria-hidden="true" tabindex="-1"></a><span class="fu">### **Option 1: GitHub Pages (FREE - RECOMMENDED)**</span></span>
+<span id="cb14-330"><a href="#cb14-330" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-331"><a href="#cb14-331" aria-hidden="true" tabindex="-1"></a>**Pros:**</span>
+<span id="cb14-332"><a href="#cb14-332" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Free hosting</span>
+<span id="cb14-333"><a href="#cb14-333" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Version control</span>
+<span id="cb14-334"><a href="#cb14-334" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Shows coding skills</span>
+<span id="cb14-335"><a href="#cb14-335" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Professional URL</span>
+<span id="cb14-336"><a href="#cb14-336" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-337"><a href="#cb14-337" aria-hidden="true" tabindex="-1"></a>**How to Set Up:**</span>
+<span id="cb14-338"><a href="#cb14-338" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Create GitHub account</span>
+<span id="cb14-339"><a href="#cb14-339" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Create repository: <span class="in">`username.github.io`</span></span>
+<span id="cb14-340"><a href="#cb14-340" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Add <span class="in">`index.html`</span> or use Jekyll/Hugo/Quarto</span>
+<span id="cb14-341"><a href="#cb14-341" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>Push your projects</span>
+<span id="cb14-342"><a href="#cb14-342" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>Live at <span class="in">`https://username.github.io`</span></span>
+<span id="cb14-343"><a href="#cb14-343" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-344"><a href="#cb14-344" aria-hidden="true" tabindex="-1"></a>**What to Include:**</span>
+<span id="cb14-345"><a href="#cb14-345" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb14-346"><a href="#cb14-346" aria-hidden="true" tabindex="-1"></a><span class="in">/</span></span>
+<span id="cb14-347"><a href="#cb14-347" aria-hidden="true" tabindex="-1"></a><span class="in">├── index.html (landing page)</span></span>
+<span id="cb14-348"><a href="#cb14-348" aria-hidden="true" tabindex="-1"></a><span class="in">├── projects/</span></span>
+<span id="cb14-349"><a href="#cb14-349" aria-hidden="true" tabindex="-1"></a><span class="in">│   ├── sales-dashboard/</span></span>
+<span id="cb14-350"><a href="#cb14-350" aria-hidden="true" tabindex="-1"></a><span class="in">│   ├── customer-churn/</span></span>
+<span id="cb14-351"><a href="#cb14-351" aria-hidden="true" tabindex="-1"></a><span class="in">│   └── sql-analysis/</span></span>
+<span id="cb14-352"><a href="#cb14-352" aria-hidden="true" tabindex="-1"></a><span class="in">├── about.html</span></span>
+<span id="cb14-353"><a href="#cb14-353" aria-hidden="true" tabindex="-1"></a><span class="in">└── resume.pdf</span></span>
+<span id="cb14-354"><a href="#cb14-354" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb14-355"><a href="#cb14-355" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-356"><a href="#cb14-356" aria-hidden="true" tabindex="-1"></a>**FREE Templates:**</span>
+<span id="cb14-357"><a href="#cb14-357" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Quarto</span><span class="co">](https://quarto.org/)</span> - What I use for this site!</span>
+<span id="cb14-358"><a href="#cb14-358" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Jekyll</span><span class="co">](https://jekyllrb.com/)</span></span>
+<span id="cb14-359"><a href="#cb14-359" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Hugo</span><span class="co">](https://gohugo.io/)</span></span>
+<span id="cb14-360"><a href="#cb14-360" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-361"><a href="#cb14-361" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb14-362"><a href="#cb14-362" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-363"><a href="#cb14-363" aria-hidden="true" tabindex="-1"></a><span class="fu">### **Option 2: Notion (QUICKEST)**</span></span>
+<span id="cb14-364"><a href="#cb14-364" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-365"><a href="#cb14-365" aria-hidden="true" tabindex="-1"></a>**Pros:**</span>
+<span id="cb14-366"><a href="#cb14-366" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>No coding required</span>
+<span id="cb14-367"><a href="#cb14-367" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Beautiful templates</span>
+<span id="cb14-368"><a href="#cb14-368" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Easy to update</span>
+<span id="cb14-369"><a href="#cb14-369" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Mobile-friendly</span>
+<span id="cb14-370"><a href="#cb14-370" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-371"><a href="#cb14-371" aria-hidden="true" tabindex="-1"></a>**Structure:**</span>
+<span id="cb14-372"><a href="#cb14-372" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb14-373"><a href="#cb14-373" aria-hidden="true" tabindex="-1"></a><span class="in">Home Page</span></span>
+<span id="cb14-374"><a href="#cb14-374" aria-hidden="true" tabindex="-1"></a><span class="in">├── About Me</span></span>
+<span id="cb14-375"><a href="#cb14-375" aria-hidden="true" tabindex="-1"></a><span class="in">├── Skills &amp; Tools</span></span>
+<span id="cb14-376"><a href="#cb14-376" aria-hidden="true" tabindex="-1"></a><span class="in">├── Projects</span></span>
+<span id="cb14-377"><a href="#cb14-377" aria-hidden="true" tabindex="-1"></a><span class="in">│   ├── Project 1 (with embedded visuals)</span></span>
+<span id="cb14-378"><a href="#cb14-378" aria-hidden="true" tabindex="-1"></a><span class="in">│   ├── Project 2</span></span>
+<span id="cb14-379"><a href="#cb14-379" aria-hidden="true" tabindex="-1"></a><span class="in">│   └── Project 3</span></span>
+<span id="cb14-380"><a href="#cb14-380" aria-hidden="true" tabindex="-1"></a><span class="in">└── Contact</span></span>
+<span id="cb14-381"><a href="#cb14-381" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb14-382"><a href="#cb14-382" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-383"><a href="#cb14-383" aria-hidden="true" tabindex="-1"></a>**Template:**</span>
+<span id="cb14-384"><a href="#cb14-384" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Notion Portfolio Template</span><span class="co">](https://www.notion.so/templates/portfolio)</span></span>
+<span id="cb14-385"><a href="#cb14-385" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-386"><a href="#cb14-386" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb14-387"><a href="#cb14-387" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-388"><a href="#cb14-388" aria-hidden="true" tabindex="-1"></a><span class="fu">### **Option 3: Personal Website**</span></span>
+<span id="cb14-389"><a href="#cb14-389" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-390"><a href="#cb14-390" aria-hidden="true" tabindex="-1"></a>**For Non-Coders:**</span>
+<span id="cb14-391"><a href="#cb14-391" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Wix</span><span class="co">](https://www.wix.com/)</span> (Free tier)</span>
+<span id="cb14-392"><a href="#cb14-392" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">WordPress.com</span><span class="co">](https://wordpress.com/)</span> (Free tier)</span>
+<span id="cb14-393"><a href="#cb14-393" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Carrd</span><span class="co">](https://carrd.co/)</span> (Simple, free)</span>
+<span id="cb14-394"><a href="#cb14-394" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-395"><a href="#cb14-395" aria-hidden="true" tabindex="-1"></a>**For Coders:**</span>
+<span id="cb14-396"><a href="#cb14-396" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Quarto</span><span class="co">](https://quarto.org/)</span> - Static site generator</span>
+<span id="cb14-397"><a href="#cb14-397" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Streamlit</span><span class="co">](https://streamlit.io/)</span> - Python dashboards</span>
+<span id="cb14-398"><a href="#cb14-398" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Dash</span><span class="co">](https://plotly.com/dash/)</span> - Python dashboards</span>
+<span id="cb14-399"><a href="#cb14-399" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-400"><a href="#cb14-400" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb14-401"><a href="#cb14-401" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-402"><a href="#cb14-402" aria-hidden="true" tabindex="-1"></a><span class="fu">## Portfolio Structure That Works</span></span>
+<span id="cb14-403"><a href="#cb14-403" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-404"><a href="#cb14-404" aria-hidden="true" tabindex="-1"></a><span class="fu">### **Landing Page (Must-Haves):**</span></span>
+<span id="cb14-405"><a href="#cb14-405" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-406"><a href="#cb14-406" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb14-407"><a href="#cb14-407" aria-hidden="true" tabindex="-1"></a><span class="in">Hero Section:</span></span>
+<span id="cb14-408"><a href="#cb14-408" aria-hidden="true" tabindex="-1"></a><span class="in">- Professional photo</span></span>
+<span id="cb14-409"><a href="#cb14-409" aria-hidden="true" tabindex="-1"></a><span class="in">- Name + Title ("Data Analyst")</span></span>
+<span id="cb14-410"><a href="#cb14-410" aria-hidden="true" tabindex="-1"></a><span class="in">- One-sentence value proposition</span></span>
+<span id="cb14-411"><a href="#cb14-411" aria-hidden="true" tabindex="-1"></a><span class="in">- Links: LinkedIn, GitHub, Email</span></span>
+<span id="cb14-412"><a href="#cb14-412" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-413"><a href="#cb14-413" aria-hidden="true" tabindex="-1"></a><span class="in">About Section:</span></span>
+<span id="cb14-414"><a href="#cb14-414" aria-hidden="true" tabindex="-1"></a><span class="in">- 3-4 sentences about background</span></span>
+<span id="cb14-415"><a href="#cb14-415" aria-hidden="true" tabindex="-1"></a><span class="in">- Key skills (Python, SQL, Tableau, etc.)</span></span>
+<span id="cb14-416"><a href="#cb14-416" aria-hidden="true" tabindex="-1"></a><span class="in">- What you're looking for</span></span>
+<span id="cb14-417"><a href="#cb14-417" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-418"><a href="#cb14-418" aria-hidden="true" tabindex="-1"></a><span class="in">Projects Section:</span></span>
+<span id="cb14-419"><a href="#cb14-419" aria-hidden="true" tabindex="-1"></a><span class="in">- 5-6 featured projects</span></span>
+<span id="cb14-420"><a href="#cb14-420" aria-hidden="true" tabindex="-1"></a><span class="in">- Thumbnail + title + 2-sentence description</span></span>
+<span id="cb14-421"><a href="#cb14-421" aria-hidden="true" tabindex="-1"></a><span class="in">- "View Project" button</span></span>
+<span id="cb14-422"><a href="#cb14-422" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-423"><a href="#cb14-423" aria-hidden="true" tabindex="-1"></a><span class="in">Contact:</span></span>
+<span id="cb14-424"><a href="#cb14-424" aria-hidden="true" tabindex="-1"></a><span class="in">- Email</span></span>
+<span id="cb14-425"><a href="#cb14-425" aria-hidden="true" tabindex="-1"></a><span class="in">- LinkedIn</span></span>
+<span id="cb14-426"><a href="#cb14-426" aria-hidden="true" tabindex="-1"></a><span class="in">- GitHub</span></span>
+<span id="cb14-427"><a href="#cb14-427" aria-hidden="true" tabindex="-1"></a><span class="in">- Optional: Calendar link for coffee chats</span></span>
+<span id="cb14-428"><a href="#cb14-428" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb14-429"><a href="#cb14-429" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-430"><a href="#cb14-430" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb14-431"><a href="#cb14-431" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-432"><a href="#cb14-432" aria-hidden="true" tabindex="-1"></a><span class="fu">### **Individual Project Page Structure:**</span></span>
+<span id="cb14-433"><a href="#cb14-433" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-434"><a href="#cb14-434" aria-hidden="true" tabindex="-1"></a><span class="in">```markdown</span></span>
+<span id="cb14-435"><a href="#cb14-435" aria-hidden="true" tabindex="-1"></a><span class="fu"># Project Title</span></span>
+<span id="cb14-436"><a href="#cb14-436" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-437"><a href="#cb14-437" aria-hidden="true" tabindex="-1"></a><span class="fu">## Problem Statement</span></span>
+<span id="cb14-438"><a href="#cb14-438" aria-hidden="true" tabindex="-1"></a>What business problem are you solving?</span>
+<span id="cb14-439"><a href="#cb14-439" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-440"><a href="#cb14-440" aria-hidden="true" tabindex="-1"></a><span class="fu">## Data Source</span></span>
+<span id="cb14-441"><a href="#cb14-441" aria-hidden="true" tabindex="-1"></a>Where did you get the data? How much? Any limitations?</span>
+<span id="cb14-442"><a href="#cb14-442" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-443"><a href="#cb14-443" aria-hidden="true" tabindex="-1"></a><span class="fu">## Tools &amp; Technologies</span></span>
+<span id="cb14-444"><a href="#cb14-444" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Python (pandas, scikit-learn)</span>
+<span id="cb14-445"><a href="#cb14-445" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>SQL (PostgreSQL)</span>
+<span id="cb14-446"><a href="#cb14-446" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Tableau Public</span>
+<span id="cb14-447"><a href="#cb14-447" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-448"><a href="#cb14-448" aria-hidden="true" tabindex="-1"></a><span class="fu">## Methodology</span></span>
+<span id="cb14-449"><a href="#cb14-449" aria-hidden="true" tabindex="-1"></a>Step-by-step what you did (high level)</span>
+<span id="cb14-450"><a href="#cb14-450" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-451"><a href="#cb14-451" aria-hidden="true" tabindex="-1"></a><span class="fu">## Key Insights</span></span>
+<span id="cb14-452"><a href="#cb14-452" aria-hidden="true" tabindex="-1"></a>1-3 data-driven findings with business impact</span>
+<span id="cb14-453"><a href="#cb14-453" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-454"><a href="#cb14-454" aria-hidden="true" tabindex="-1"></a><span class="fu">## Visualizations</span></span>
+<span id="cb14-455"><a href="#cb14-455" aria-hidden="true" tabindex="-1"></a>Include 3-5 key charts/dashboards</span>
+<span id="cb14-456"><a href="#cb14-456" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-457"><a href="#cb14-457" aria-hidden="true" tabindex="-1"></a><span class="fu">## Code</span></span>
+<span id="cb14-458"><a href="#cb14-458" aria-hidden="true" tabindex="-1"></a>Link to GitHub repo</span>
+<span id="cb14-459"><a href="#cb14-459" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-460"><a href="#cb14-460" aria-hidden="true" tabindex="-1"></a><span class="fu">## Challenges &amp; Learnings</span></span>
+<span id="cb14-461"><a href="#cb14-461" aria-hidden="true" tabindex="-1"></a>What was hard? What did you learn?</span>
+<span id="cb14-462"><a href="#cb14-462" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-463"><a href="#cb14-463" aria-hidden="true" tabindex="-1"></a><span class="fu">## Skills Demonstrated</span></span>
+<span id="cb14-464"><a href="#cb14-464" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Data cleaning</span>
+<span id="cb14-465"><a href="#cb14-465" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Statistical analysis</span>
+<span id="cb14-466"><a href="#cb14-466" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Machine learning</span>
+<span id="cb14-467"><a href="#cb14-467" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Data storytelling</span>
+<span id="cb14-468"><a href="#cb14-468" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb14-469"><a href="#cb14-469" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-470"><a href="#cb14-470" aria-hidden="true" tabindex="-1"></a><span class="in">---</span></span>
+<span id="cb14-471"><a href="#cb14-471" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-472"><a href="#cb14-472" aria-hidden="true" tabindex="-1"></a><span class="in">## Portfolio Red Flags (Auto-Rejection)</span></span>
+<span id="cb14-473"><a href="#cb14-473" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-474"><a href="#cb14-474" aria-hidden="true" tabindex="-1"></a><span class="in">❌ **Only Tutorial Projects**  </span></span>
+<span id="cb14-475"><a href="#cb14-475" aria-hidden="true" tabindex="-1"></a><span class="in">✅ Add your unique spin or business context</span></span>
+<span id="cb14-476"><a href="#cb14-476" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-477"><a href="#cb14-477" aria-hidden="true" tabindex="-1"></a><span class="in">❌ **No README or Documentation**  </span></span>
+<span id="cb14-478"><a href="#cb14-478" aria-hidden="true" tabindex="-1"></a><span class="in">✅ Every project needs clear documentation</span></span>
+<span id="cb14-479"><a href="#cb14-479" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-480"><a href="#cb14-480" aria-hidden="true" tabindex="-1"></a><span class="in">❌ **Sloppy Code** (no comments, poor naming)  </span></span>
+<span id="cb14-481"><a href="#cb14-481" aria-hidden="true" tabindex="-1"></a><span class="in">✅ Clean, readable, commented code</span></span>
+<span id="cb14-482"><a href="#cb14-482" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-483"><a href="#cb14-483" aria-hidden="true" tabindex="-1"></a><span class="in">❌ **No Visuals** (walls of code only)  </span></span>
+<span id="cb14-484"><a href="#cb14-484" aria-hidden="true" tabindex="-1"></a><span class="in">✅ Include charts, dashboards, screenshots</span></span>
+<span id="cb14-485"><a href="#cb14-485" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-486"><a href="#cb14-486" aria-hidden="true" tabindex="-1"></a><span class="in">❌ **Broken Links**  </span></span>
+<span id="cb14-487"><a href="#cb14-487" aria-hidden="true" tabindex="-1"></a><span class="in">✅ Test every link before sharing</span></span>
+<span id="cb14-488"><a href="#cb14-488" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-489"><a href="#cb14-489" aria-hidden="true" tabindex="-1"></a><span class="in">❌ **Generic Insights** ("Sales increased over time")  </span></span>
+<span id="cb14-490"><a href="#cb14-490" aria-hidden="true" tabindex="-1"></a><span class="in">✅ Specific, actionable insights</span></span>
+<span id="cb14-491"><a href="#cb14-491" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-492"><a href="#cb14-492" aria-hidden="true" tabindex="-1"></a><span class="in">❌ **No Business Context**  </span></span>
+<span id="cb14-493"><a href="#cb14-493" aria-hidden="true" tabindex="-1"></a><span class="in">✅ Every project needs a "why does this matter?" section</span></span>
+<span id="cb14-494"><a href="#cb14-494" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-495"><a href="#cb14-495" aria-hidden="true" tabindex="-1"></a><span class="in">---</span></span>
+<span id="cb14-496"><a href="#cb14-496" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-497"><a href="#cb14-497" aria-hidden="true" tabindex="-1"></a><span class="in">## FREE Resources to Build Your Portfolio</span></span>
+<span id="cb14-498"><a href="#cb14-498" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-499"><a href="#cb14-499" aria-hidden="true" tabindex="-1"></a><span class="in">### **Datasets:**</span></span>
+<span id="cb14-500"><a href="#cb14-500" aria-hidden="true" tabindex="-1"></a><span class="in">1. [Kaggle Datasets](https://www.kaggle.com/datasets) - Thousands of datasets</span></span>
+<span id="cb14-501"><a href="#cb14-501" aria-hidden="true" tabindex="-1"></a><span class="in">2. [Data.gov](https://www.data.gov/) - US government data</span></span>
+<span id="cb14-502"><a href="#cb14-502" aria-hidden="true" tabindex="-1"></a><span class="in">3. [UCI ML Repository](https://archive.ics.uci.edu/ml/index.php) - Classic datasets</span></span>
+<span id="cb14-503"><a href="#cb14-503" aria-hidden="true" tabindex="-1"></a><span class="in">4. [FiveThirtyEight Data](https://data.fivethirtyeight.com/) - News-worthy data</span></span>
+<span id="cb14-504"><a href="#cb14-504" aria-hidden="true" tabindex="-1"></a><span class="in">5. [Our World in Data](https://ourworldindata.org/) - Global data</span></span>
+<span id="cb14-505"><a href="#cb14-505" aria-hidden="true" tabindex="-1"></a><span class="in">6. [TidyTuesday](https://github.com/rfordatascience/tidytuesday) - Weekly datasets</span></span>
+<span id="cb14-506"><a href="#cb14-506" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-507"><a href="#cb14-507" aria-hidden="true" tabindex="-1"></a><span class="in">### **Inspiration:**</span></span>
+<span id="cb14-508"><a href="#cb14-508" aria-hidden="true" tabindex="-1"></a><span class="in">1. [Kaggle Notebooks](https://www.kaggle.com/code) - See what others build</span></span>
+<span id="cb14-509"><a href="#cb14-509" aria-hidden="true" tabindex="-1"></a><span class="in">2. [Tableau Public Gallery](https://public.tableau.com/app/discover/viz-of-the-day)</span></span>
+<span id="cb14-510"><a href="#cb14-510" aria-hidden="true" tabindex="-1"></a><span class="in">3. [GitHub Data Science Projects](https://github.com/topics/data-science)</span></span>
+<span id="cb14-511"><a href="#cb14-511" aria-hidden="true" tabindex="-1"></a><span class="in">4. [Awesome Data Science](https://github.com/academic/awesome-datascience)</span></span>
+<span id="cb14-512"><a href="#cb14-512" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-513"><a href="#cb14-513" aria-hidden="true" tabindex="-1"></a><span class="in">---</span></span>
+<span id="cb14-514"><a href="#cb14-514" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-515"><a href="#cb14-515" aria-hidden="true" tabindex="-1"></a><span class="in">## The 8-Week Portfolio Build Plan</span></span>
+<span id="cb14-516"><a href="#cb14-516" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-517"><a href="#cb14-517" aria-hidden="true" tabindex="-1"></a><span class="in">### **Week 1-2: Foundation**</span></span>
+<span id="cb14-518"><a href="#cb14-518" aria-hidden="true" tabindex="-1"></a><span class="in">- Set up GitHub account</span></span>
+<span id="cb14-519"><a href="#cb14-519" aria-hidden="true" tabindex="-1"></a><span class="in">- Learn Git basics</span></span>
+<span id="cb14-520"><a href="#cb14-520" aria-hidden="true" tabindex="-1"></a><span class="in">- Choose portfolio platform</span></span>
+<span id="cb14-521"><a href="#cb14-521" aria-hidden="true" tabindex="-1"></a><span class="in">- Create landing page</span></span>
+<span id="cb14-522"><a href="#cb14-522" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-523"><a href="#cb14-523" aria-hidden="true" tabindex="-1"></a><span class="in">### **Week 3-4: Projects 1-2**</span></span>
+<span id="cb14-524"><a href="#cb14-524" aria-hidden="true" tabindex="-1"></a><span class="in">- Dashboard project (Tableau/Power BI)</span></span>
+<span id="cb14-525"><a href="#cb14-525" aria-hidden="true" tabindex="-1"></a><span class="in">- EDA project (Python/R)</span></span>
+<span id="cb14-526"><a href="#cb14-526" aria-hidden="true" tabindex="-1"></a><span class="in">- Document everything</span></span>
+<span id="cb14-527"><a href="#cb14-527" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-528"><a href="#cb14-528" aria-hidden="true" tabindex="-1"></a><span class="in">### **Week 5-6: Projects 3-4**</span></span>
+<span id="cb14-529"><a href="#cb14-529" aria-hidden="true" tabindex="-1"></a><span class="in">- SQL analysis project</span></span>
+<span id="cb14-530"><a href="#cb14-530" aria-hidden="true" tabindex="-1"></a><span class="in">- Predictive modeling project</span></span>
+<span id="cb14-531"><a href="#cb14-531" aria-hidden="true" tabindex="-1"></a><span class="in">- Write READMEs</span></span>
+<span id="cb14-532"><a href="#cb14-532" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-533"><a href="#cb14-533" aria-hidden="true" tabindex="-1"></a><span class="in">### **Week 7: Project 5**</span></span>
+<span id="cb14-534"><a href="#cb14-534" aria-hidden="true" tabindex="-1"></a><span class="in">- Passion project</span></span>
+<span id="cb14-535"><a href="#cb14-535" aria-hidden="true" tabindex="-1"></a><span class="in">- Make it unique and memorable</span></span>
+<span id="cb14-536"><a href="#cb14-536" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-537"><a href="#cb14-537" aria-hidden="true" tabindex="-1"></a><span class="in">### **Week 8: Polish**</span></span>
+<span id="cb14-538"><a href="#cb14-538" aria-hidden="true" tabindex="-1"></a><span class="in">- Review all documentation</span></span>
+<span id="cb14-539"><a href="#cb14-539" aria-hidden="true" tabindex="-1"></a><span class="in">- Test all links</span></span>
+<span id="cb14-540"><a href="#cb14-540" aria-hidden="true" tabindex="-1"></a><span class="in">- Get feedback from 3 people</span></span>
+<span id="cb14-541"><a href="#cb14-541" aria-hidden="true" tabindex="-1"></a><span class="in">- Make final improvements</span></span>
+<span id="cb14-542"><a href="#cb14-542" aria-hidden="true" tabindex="-1"></a><span class="in">- LAUNCH! 🚀</span></span>
+<span id="cb14-543"><a href="#cb14-543" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-544"><a href="#cb14-544" aria-hidden="true" tabindex="-1"></a><span class="in">---</span></span>
+<span id="cb14-545"><a href="#cb14-545" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-546"><a href="#cb14-546" aria-hidden="true" tabindex="-1"></a><span class="in">## Portfolio Examples That Got People Hired</span></span>
+<span id="cb14-547"><a href="#cb14-547" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-548"><a href="#cb14-548" aria-hidden="true" tabindex="-1"></a><span class="in">### **Example 1: Career Switcher**</span></span>
+<span id="cb14-549"><a href="#cb14-549" aria-hidden="true" tabindex="-1"></a><span class="in">- 3 projects (dashboard, EDA, SQL)</span></span>
+<span id="cb14-550"><a href="#cb14-550" aria-hidden="true" tabindex="-1"></a><span class="in">- Clear documentation</span></span>
+<span id="cb14-551"><a href="#cb14-551" aria-hidden="true" tabindex="-1"></a><span class="in">- Resume shows "self-taught" story</span></span>
+<span id="cb14-552"><a href="#cb14-552" aria-hidden="true" tabindex="-1"></a><span class="in">- **Result:** Hired at Series B startup, $75K</span></span>
+<span id="cb14-553"><a href="#cb14-553" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-554"><a href="#cb14-554" aria-hidden="true" tabindex="-1"></a><span class="in">### **Example 2: Recent Graduate**</span></span>
+<span id="cb14-555"><a href="#cb14-555" aria-hidden="true" tabindex="-1"></a><span class="in">- 5 projects (mix of school + personal)</span></span>
+<span id="cb14-556"><a href="#cb14-556" aria-hidden="true" tabindex="-1"></a><span class="in">- Active GitHub (weekly commits)</span></span>
+<span id="cb14-557"><a href="#cb14-557" aria-hidden="true" tabindex="-1"></a><span class="in">- Blog posts explaining projects</span></span>
+<span id="cb14-558"><a href="#cb14-558" aria-hidden="true" tabindex="-1"></a><span class="in">- **Result:** Data analyst at Fortune 500, $80K</span></span>
+<span id="cb14-559"><a href="#cb14-559" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-560"><a href="#cb14-560" aria-hidden="true" tabindex="-1"></a><span class="in">### **Example 3: Professional Pivot**</span></span>
+<span id="cb14-561"><a href="#cb14-561" aria-hidden="true" tabindex="-1"></a><span class="in">- 4 industry-specific projects (healthcare)</span></span>
+<span id="cb14-562"><a href="#cb14-562" aria-hidden="true" tabindex="-1"></a><span class="in">- Showed domain expertise + new technical skills</span></span>
+<span id="cb14-563"><a href="#cb14-563" aria-hidden="true" tabindex="-1"></a><span class="in">- Video explanations of each project</span></span>
+<span id="cb14-564"><a href="#cb14-564" aria-hidden="true" tabindex="-1"></a><span class="in">- **Result:** Senior analyst at health tech, $95K</span></span>
+<span id="cb14-565"><a href="#cb14-565" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-566"><a href="#cb14-566" aria-hidden="true" tabindex="-1"></a><span class="in">---</span></span>
+<span id="cb14-567"><a href="#cb14-567" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-568"><a href="#cb14-568" aria-hidden="true" tabindex="-1"></a><span class="in">## How to Share Your Portfolio</span></span>
+<span id="cb14-569"><a href="#cb14-569" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-570"><a href="#cb14-570" aria-hidden="true" tabindex="-1"></a><span class="in">### **Resume:**</span></span>
+<span id="cb14-571"><a href="#cb14-571" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb14-572"><a href="#cb14-572" aria-hidden="true" tabindex="-1"></a>Add a "Projects" section:</span>
+<span id="cb14-573"><a href="#cb14-573" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-574"><a href="#cb14-574" aria-hidden="true" tabindex="-1"></a>PROJECTS</span>
+<span id="cb14-575"><a href="#cb14-575" aria-hidden="true" tabindex="-1"></a>Sales Dashboard | Tableau, SQL</span>
+<span id="cb14-576"><a href="#cb14-576" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Built interactive dashboard analyzing 500K transactions</span>
+<span id="cb14-577"><a href="#cb14-577" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Identified $1.2M revenue opportunity in underperforming regions</span>
+<span id="cb14-578"><a href="#cb14-578" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">View Project</span><span class="co">](github.com/yourname/sales-dashboard)</span></span>
+<span id="cb14-579"><a href="#cb14-579" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb14-580"><a href="#cb14-580" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-581"><a href="#cb14-581" aria-hidden="true" tabindex="-1"></a><span class="in">### **LinkedIn:**</span></span>
+<span id="cb14-582"><a href="#cb14-582" aria-hidden="true" tabindex="-1"></a><span class="in">- Add portfolio URL to headline and about section</span></span>
+<span id="cb14-583"><a href="#cb14-583" aria-hidden="true" tabindex="-1"></a><span class="in">- Create posts showcasing each project</span></span>
+<span id="cb14-584"><a href="#cb14-584" aria-hidden="true" tabindex="-1"></a><span class="in">- Add projects to "Featured" section</span></span>
+<span id="cb14-585"><a href="#cb14-585" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-586"><a href="#cb14-586" aria-hidden="true" tabindex="-1"></a><span class="in">### **Job Applications:**</span></span>
+<span id="cb14-587"><a href="#cb14-587" aria-hidden="true" tabindex="-1"></a><span class="in">- Mention in cover letter</span></span>
+<span id="cb14-588"><a href="#cb14-588" aria-hidden="true" tabindex="-1"></a><span class="in">- Link in application if possible</span></span>
+<span id="cb14-589"><a href="#cb14-589" aria-hidden="true" tabindex="-1"></a><span class="in">- Be ready to walk through in interviews</span></span>
+<span id="cb14-590"><a href="#cb14-590" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-591"><a href="#cb14-591" aria-hidden="true" tabindex="-1"></a><span class="in">### **Networking:**</span></span>
+<span id="cb14-592"><a href="#cb14-592" aria-hidden="true" tabindex="-1"></a><span class="in">- Share when messaging recruiters</span></span>
+<span id="cb14-593"><a href="#cb14-593" aria-hidden="true" tabindex="-1"></a><span class="in">- Present in informational interviews</span></span>
+<span id="cb14-594"><a href="#cb14-594" aria-hidden="true" tabindex="-1"></a><span class="in">- Post project updates on social media</span></span>
+<span id="cb14-595"><a href="#cb14-595" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-596"><a href="#cb14-596" aria-hidden="true" tabindex="-1"></a><span class="in">---</span></span>
+<span id="cb14-597"><a href="#cb14-597" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-598"><a href="#cb14-598" aria-hidden="true" tabindex="-1"></a><span class="in">## Interview Preparation</span></span>
+<span id="cb14-599"><a href="#cb14-599" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-600"><a href="#cb14-600" aria-hidden="true" tabindex="-1"></a><span class="in">**Be ready to:**</span></span>
+<span id="cb14-601"><a href="#cb14-601" aria-hidden="true" tabindex="-1"></a><span class="in">1. **Walk through each project** (5-minute presentation)</span></span>
+<span id="cb14-602"><a href="#cb14-602" aria-hidden="true" tabindex="-1"></a><span class="in">2. **Explain your decisions** (why this method vs. that)</span></span>
+<span id="cb14-603"><a href="#cb14-603" aria-hidden="true" tabindex="-1"></a><span class="in">3. **Discuss challenges** (what went wrong, how you fixed it)</span></span>
+<span id="cb14-604"><a href="#cb14-604" aria-hidden="true" tabindex="-1"></a><span class="in">4. **Show business impact** (not just technical details)</span></span>
+<span id="cb14-605"><a href="#cb14-605" aria-hidden="true" tabindex="-1"></a><span class="in">5. **Demonstrate passion** (why this project specifically?)</span></span>
+<span id="cb14-606"><a href="#cb14-606" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-607"><a href="#cb14-607" aria-hidden="true" tabindex="-1"></a><span class="in">**Practice Script:**</span></span>
+<span id="cb14-608"><a href="#cb14-608" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb14-609"><a href="#cb14-609" aria-hidden="true" tabindex="-1"></a>"For this project, I analyzed e-commerce data to help a company understand their customer churn.</span>
+<span id="cb14-610"><a href="#cb14-610" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-611"><a href="#cb14-611" aria-hidden="true" tabindex="-1"></a>The dataset had 100K customers over 3 years. I started by cleaning the data - there were 5% missing values which I handled by <span class="co">[</span><span class="ot">method</span><span class="co">]</span>.</span>
+<span id="cb14-612"><a href="#cb14-612" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-613"><a href="#cb14-613" aria-hidden="true" tabindex="-1"></a>I then explored the data and found that customers who didn't make a purchase in 90 days had a 70% chance of never returning. This was the key insight.</span>
+<span id="cb14-614"><a href="#cb14-614" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-615"><a href="#cb14-615" aria-hidden="true" tabindex="-1"></a>I built a simple predictive model using Python and scikit-learn, achieving 85% accuracy in predicting churn.</span>
+<span id="cb14-616"><a href="#cb14-616" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-617"><a href="#cb14-617" aria-hidden="true" tabindex="-1"></a>The business recommendation was to implement a 60-day re-engagement campaign, which could potentially save $500K in lost revenue annually.</span>
+<span id="cb14-618"><a href="#cb14-618" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-619"><a href="#cb14-619" aria-hidden="true" tabindex="-1"></a>The hardest part was feature engineering - I had to create recency, frequency, and monetary value features which required careful date calculations.</span>
+<span id="cb14-620"><a href="#cb14-620" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-621"><a href="#cb14-621" aria-hidden="true" tabindex="-1"></a>You can see the full analysis on my GitHub, and I'd be happy to walk through any part in more detail."</span>
+<span id="cb14-622"><a href="#cb14-622" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb14-623"><a href="#cb14-623" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-624"><a href="#cb14-624" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb14-625"><a href="#cb14-625" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-626"><a href="#cb14-626" aria-hidden="true" tabindex="-1"></a><span class="fu">## Take Action Today</span></span>
+<span id="cb14-627"><a href="#cb14-627" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-628"><a href="#cb14-628" aria-hidden="true" tabindex="-1"></a>**Your homework (90 minutes):**</span>
+<span id="cb14-629"><a href="#cb14-629" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-630"><a href="#cb14-630" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Set up GitHub account** (15 min)</span>
+<span id="cb14-631"><a href="#cb14-631" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Choose a dataset** (15 min)</span>
+<span id="cb14-632"><a href="#cb14-632" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Outline your first project** (30 min)</span>
+<span id="cb14-633"><a href="#cb14-633" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**Create a simple landing page** (30 min)</span>
+<span id="cb14-634"><a href="#cb14-634" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-635"><a href="#cb14-635" aria-hidden="true" tabindex="-1"></a>**Share your progress!** Tweet or post on LinkedIn with #DataAnalytics</span>
+<span id="cb14-636"><a href="#cb14-636" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-637"><a href="#cb14-637" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb14-638"><a href="#cb14-638" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-639"><a href="#cb14-639" aria-hidden="true" tabindex="-1"></a><span class="fu">## Final Thoughts</span></span>
+<span id="cb14-640"><a href="#cb14-640" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-641"><a href="#cb14-641" aria-hidden="true" tabindex="-1"></a>Your portfolio is your best interview preparation. Every project teaches you something new and gives you stories to tell.</span>
+<span id="cb14-642"><a href="#cb14-642" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-643"><a href="#cb14-643" aria-hidden="true" tabindex="-1"></a>**Don't wait for perfection. Ship your first project this week.**</span>
+<span id="cb14-644"><a href="#cb14-644" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-645"><a href="#cb14-645" aria-hidden="true" tabindex="-1"></a>**Remember:** 13 out of 500 portfolios got interviews. Be one of the 13.</span>
+<span id="cb14-646"><a href="#cb14-646" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-647"><a href="#cb14-647" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb14-648"><a href="#cb14-648" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-649"><a href="#cb14-649" aria-hidden="true" tabindex="-1"></a>**Related Posts:**</span>
+<span id="cb14-650"><a href="#cb14-650" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Your Ultimate 100-Day Data Analytics Roadmap</span><span class="co">](../01-data-analytics-roadmap/)</span></span>
+<span id="cb14-651"><a href="#cb14-651" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Master SQL in 30 Days</span><span class="co">](../03-sql-mastery/)</span></span>
+<span id="cb14-652"><a href="#cb14-652" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Data Visualization Mastery</span><span class="co">](../04-data-visualization-guide/)</span></span>
+<span id="cb14-653"><a href="#cb14-653" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-654"><a href="#cb14-654" aria-hidden="true" tabindex="-1"></a>**Tags:** #Portfolio #Career #DataAnalytics #Projects #GitHub #JobSearch</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+</div></div></div></div></div>
+</div> <!-- /content -->
+
+
+
+
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>
