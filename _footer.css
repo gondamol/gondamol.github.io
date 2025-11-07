@@ -1,18 +1,24 @@
 /* Portfolio Footer Styles */
+/* Hide Quarto's default footer */
+footer.page-footer,
+.page-footer {
+  display: none !important;
+}
 
 .portfolio-footer {
-  background: linear-gradient(135deg, #1a202c 0%, #2d3748 50%, #1a202c 100%);
-  color: #e2e8f0;
-  margin-top: 4rem;
-  padding: 1.5rem 0 0.75rem;
-  border-top: 3px solid #667eea;
-  position: relative;
-  overflow: hidden;
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
-  left: 0;
-  right: 0;
+  background: linear-gradient(135deg, #1a202c 0%, #2d3748 50%, #1a202c 100%) !important;
+  color: #e2e8f0 !important;
+  margin-top: 4rem !important;
+  padding: 1.5rem 0 0.75rem !important;
+  border-top: 3px solid #667eea !important;
+  position: relative !important;
+  overflow: hidden !important;
+  width: 100vw !important;
+  margin-left: calc(50% - 50vw) !important;
+  margin-right: calc(50% - 50vw) !important;
+  left: 0 !important;
+  right: 0 !important;
+  display: block !important;
 }
 
 .portfolio-footer::before {
@@ -27,21 +33,23 @@
 }
 
 .footer-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem;
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  padding: 0 2rem !important;
+  display: block !important;
 }
 
 .footer-content {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1.5rem;
-  margin-bottom: 1rem;
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) !important;
+  gap: 1.5rem !important;
+  margin-bottom: 1rem !important;
 }
 
 .footer-section {
-  animation: fadeInUp 0.6s ease forwards;
-  opacity: 0;
+  animation: fadeInUp 0.6s ease forwards !important;
+  opacity: 1 !important;
+  display: block !important;
 }
 
 .footer-section:nth-child(1) { animation-delay: 0.1s; }
@@ -60,14 +68,14 @@
 }
 
 .footer-section h4 {
-  color: #fff;
-  font-size: 0.95rem;
-  margin-bottom: 0.75rem;
-  padding-bottom: 0.4rem;
-  border-bottom: 2px solid #667eea;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
+  color: #fff !important;
+  font-size: 0.95rem !important;
+  margin-bottom: 0.75rem !important;
+  padding-bottom: 0.4rem !important;
+  border-bottom: 2px solid #667eea !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
 }
 
 .footer-section h4 i {
@@ -75,26 +83,29 @@
 }
 
 .footer-section ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: block !important;
 }
 
 .footer-section ul li {
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.4rem !important;
+  display: list-item !important;
+  list-style: none !important;
 }
 
 .footer-section ul li a {
-  color: #cbd5e0;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  transition: all 0.3s ease;
-  padding: 0.25rem 0;
-  border-radius: 6px;
-  padding-left: 0.5rem;
-  font-size: 0.9rem;
+  color: #cbd5e0 !important;
+  text-decoration: none !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+  transition: all 0.3s ease !important;
+  padding: 0.25rem 0 !important;
+  border-radius: 6px !important;
+  padding-left: 0.5rem !important;
+  font-size: 0.9rem !important;
 }
 
 .footer-section ul li a i {
@@ -232,10 +243,6 @@
   
   .footer-badge {
     text-align: center;
-  }
-  
-  .footer-highlight {
-    padding: 1.5rem;
   }
   
   .footer-subscribe-btn {
