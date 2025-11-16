@@ -77,9 +77,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-7b7bd8e9bbc9c95ffce223bbb6e64fe3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-0415fe88caa5b48d3479567364cf7923.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-7b7bd8e9bbc9c95ffce223bbb6e64fe3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-9c3c3386dd08af6df3595d87d6fb23b1.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-41eae6e01327858717d11ce8cb93fff0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-9c3c3386dd08af6df3595d87d6fb23b1.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -108,6 +108,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
+<link href="../site_libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
+<script src="../site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<link href="../site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet">
+<script src="../site_libs/datatables-binding-0.34.0/datatables.js"></script>
+<script src="../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="../site_libs/dt-core-1.13.6/css/jquery.dataTables.min.css" rel="stylesheet">
+<link href="../site_libs/dt-core-1.13.6/css/jquery.dataTables.extra.css" rel="stylesheet">
+<script src="../site_libs/dt-core-1.13.6/js/jquery.dataTables.min.js"></script>
+<link href="../site_libs/crosstalk-1.2.2/css/crosstalk.min.css" rel="stylesheet">
+<script src="../site_libs/crosstalk-1.2.2/js/crosstalk.min.js"></script>
+<script src="../site_libs/plotly-binding-4.11.0/plotly.js"></script>
+<script src="../site_libs/typedarray-0.1/typedarray.min.js"></script>
+<link href="../site_libs/plotly-htmlwidgets-css-2.11.1/plotly-htmlwidgets.css" rel="stylesheet">
+<script src="../site_libs/plotly-main-2.11.1/plotly-latest.min.js"></script>
 
 
 <link rel="stylesheet" href="../styles.scss">
@@ -447,12 +461,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">Overview</a></li>
   <li><a href="#load-required-packages" id="toc-load-required-packages" class="nav-link" data-scroll-target="#load-required-packages">Load Required Packages</a></li>
   <li><a href="#data-import" id="toc-data-import" class="nav-link" data-scroll-target="#data-import">Data Import</a></li>
-  <li><a href="#data-exploration" id="toc-data-exploration" class="nav-link" data-scroll-target="#data-exploration">Data Exploration</a></li>
-  <li><a href="#data-wrangling" id="toc-data-wrangling" class="nav-link" data-scroll-target="#data-wrangling">Data Wrangling</a></li>
-  <li><a href="#visualizations" id="toc-visualizations" class="nav-link" data-scroll-target="#visualizations">Visualizations</a></li>
+  <li><a href="#data-overview" id="toc-data-overview" class="nav-link" data-scroll-target="#data-overview">Data Overview</a></li>
+  <li><a href="#regional-poverty-trends-over-time" id="toc-regional-poverty-trends-over-time" class="nav-link" data-scroll-target="#regional-poverty-trends-over-time">Regional Poverty Trends Over Time</a></li>
   <li><a href="#analysis-insights" id="toc-analysis-insights" class="nav-link" data-scroll-target="#analysis-insights">Analysis &amp; Insights</a></li>
   <li><a href="#policy-implications" id="toc-policy-implications" class="nav-link" data-scroll-target="#policy-implications">Policy Implications</a></li>
-  <li><a href="#next-steps" id="toc-next-steps" class="nav-link" data-scroll-target="#next-steps">Next Steps</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
   <li><a href="#session-info" id="toc-session-info" class="nav-link" data-scroll-target="#session-info">Session Info</a></li>
   </ul>
@@ -505,212 +518,77 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="load-required-packages" class="level2">
 <h2 class="anchored" data-anchor-id="load-required-packages">Load Required Packages</h2>
-<div class="cell">
-<details open="" class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-<div class="cell-output cell-output-stderr">
-<pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-✔ dplyr     1.1.4     ✔ readr     2.1.5
-✔ forcats   1.0.1     ✔ stringr   1.5.2
-✔ ggplot2   4.0.0     ✔ tibble    3.3.0
-✔ lubridate 1.9.4     ✔ tidyr     1.3.1
-✔ purrr     1.1.0     
-── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-✖ dplyr::filter() masks stats::filter()
-✖ dplyr::lag()    masks stats::lag()
-ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
-</div>
-<details open="" class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lubridate)</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(here)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-<div class="cell-output cell-output-stderr">
-<pre><code>here() starts at /home/gondamol/gondamol/portfolio/gondamol.github.io</code></pre>
-</div>
-<details open="" class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(showtext)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-<div class="cell-output cell-output-stderr">
-<pre><code>Loading required package: sysfonts
-Loading required package: showtextdb</code></pre>
-</div>
-<details open="" class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggtext)</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(patchwork)</span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(plotly)  <span class="co"># For interactive visualizations</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-<div class="cell-output cell-output-stderr">
-<pre><code>
-Attaching package: 'plotly'
-
-The following object is masked from 'package:ggplot2':
-
-    last_plot
-
-The following object is masked from 'package:stats':
-
-    filter
-
-The following object is masked from 'package:graphics':
-
-    layout</code></pre>
-</div>
-<details open="" class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Optional: Load additional packages based on analysis needs</span></span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="co"># library(sf)        # For spatial data</span></span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="co"># library(rnaturalearth)  # For map data</span></span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="co"># library(gganimate)     # For animations</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-</div>
 </section>
 <section id="data-import" class="level2">
 <h2 class="anchored" data-anchor-id="data-import">Data Import</h2>
+</section>
+<section id="data-overview" class="level2">
+<h2 class="anchored" data-anchor-id="data-overview">Data Overview</h2>
 <div class="cell">
-<details open="" class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load data using tidytuesdayR</span></span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="co"># library(tidytuesdayR)</span></span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="co"># tuesdata &lt;- tt_load('2023-01-03')</span></span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="co"># df &lt;- tuesdata$data_name</span></span>
-<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Alternative: Direct CSV download</span></span>
-<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a><span class="co"># df &lt;- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2023/2023-01-03/data.csv')</span></span>
-<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Sample data for demonstration</span></span>
-<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">123</span>)</span>
-<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
-<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>  <span class="at">id =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">100</span>,</span>
-<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a>  <span class="at">value =</span> <span class="fu">cumsum</span>(<span class="fu">rnorm</span>(<span class="dv">100</span>)),</span>
-<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a>  <span class="at">category =</span> <span class="fu">sample</span>(<span class="fu">c</span>(<span class="st">"A"</span>, <span class="st">"B"</span>, <span class="st">"C"</span>), <span class="dv">100</span>, <span class="at">replace =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a>  <span class="at">date =</span> <span class="fu">seq.Date</span>(<span class="at">from =</span> <span class="fu">as.Date</span>(<span class="st">"2023-01-03"</span>), <span class="at">by =</span> <span class="st">"day"</span>, <span class="at">length.out =</span> <span class="dv">100</span>)</span>
-<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-18"><a href="#cb10-18" aria-hidden="true" tabindex="-1"></a><span class="fu">glimpse</span>(df)</span>
-<span id="cb10-19"><a href="#cb10-19" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(df)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-f75be195f9be44d7cb8e" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-f75be195f9be44d7cb8e">{"x":{"filter":"none","vertical":false,"caption":"<caption>Global Poverty Trends Summary (1990-2022)<\/caption>","data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33"],[1990,1991,1992,1993,1994,1995,1996,1997,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022],[46.82,47.8,41.89,40.78,39.84,40.01,35.2,34.71,35.86,34.21,33.45,34.09,30.64,30.43,28.76,28.83,26.85,26.18,25.06,23.38,22.24,21.44,23.86,20.94,21.39,20.12,19.31,20.14,19.07,17.52,16.68,16.99,15.5],[3153.5,3059.5,2532,2561.6,2347.6,2503.4,2204,2182.8,2253.5,2321.9,2134.4,2291.8,1867.8,1820.3,1797.6,2005.4,1667.3,1688.9,1583.1,1488.2,1414.9,1454.3,1507.9,1430.2,1378.8,1341.3,1207,1326.7,1130.1,1148.5,993.6,1104.9,1026.1]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Year<\/th>\n      <th>Global Poverty Rate (%)<\/th>\n      <th>People in Poverty (Millions)<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":10,"scrollX":true,"columnDefs":[{"className":"dt-right","targets":[1,2,3]},{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Year","targets":1},{"name":"Global Poverty Rate (%)","targets":2},{"name":"People in Poverty (Millions)","targets":3}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
 </div>
 </section>
-<section id="data-exploration" class="level2">
-<h2 class="anchored" data-anchor-id="data-exploration">Data Exploration</h2>
+<section id="regional-poverty-trends-over-time" class="level2">
+<h2 class="anchored" data-anchor-id="regional-poverty-trends-over-time">Regional Poverty Trends Over Time</h2>
 <div class="cell">
-<details open="" class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Explore data structure</span></span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(df)</span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(df)</span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Check for missing values</span></span>
-<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a><span class="fu">colSums</span>(<span class="fu">is.na</span>(df))</span>
-<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Summary statistics</span></span>
-<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(df)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Using `size` aesthetic for lines was deprecated in ggplot2 3.4.0.
+ℹ Please use `linewidth` instead.</code></pre>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="poverty-trends-undp_files/figure-html/regional-trends-1.png" class="img-fluid figure-img" width="1344"></p>
+</figure>
+</div>
+</div>
+</div>
+<section id="global-poverty-rate-decline" class="level3">
+<h3 class="anchored" data-anchor-id="global-poverty-rate-decline">Global Poverty Rate Decline</h3>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="poverty-trends-undp_files/figure-html/global-trend-1.png" class="img-fluid figure-img" width="1152"></p>
+</figure>
+</div>
+</div>
 </div>
 </section>
-<section id="data-wrangling" class="level2">
-<h2 class="anchored" data-anchor-id="data-wrangling">Data Wrangling</h2>
+<section id="regional-comparison-1990-vs-2022" class="level3">
+<h3 class="anchored" data-anchor-id="regional-comparison-1990-vs-2022">Regional Comparison: 1990 vs 2022</h3>
 <div class="cell">
-<details open="" class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Clean and prepare data</span></span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>df_clean <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span></span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(value)) <span class="sc">%&gt;%</span></span>
-<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
-<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">category =</span> <span class="fu">as.factor</span>(category),</span>
-<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">value_group =</span> <span class="fu">cut</span>(value, <span class="at">breaks =</span> <span class="dv">5</span>, <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">"Low"</span>, <span class="st">"Medium-Low"</span>, <span class="st">"Medium"</span>, <span class="st">"Medium-High"</span>, <span class="st">"High"</span>))</span>
-<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Group by category if applicable</span></span>
-<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a>df_summary <span class="ot">&lt;-</span> df_clean <span class="sc">%&gt;%</span></span>
-<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(category) <span class="sc">%&gt;%</span></span>
-<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
-<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">mean_value =</span> <span class="fu">mean</span>(value, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">median_value =</span> <span class="fu">median</span>(value, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb12-15"><a href="#cb12-15" aria-hidden="true" tabindex="-1"></a>    <span class="at">count =</span> <span class="fu">n</span>()</span>
-<span id="cb12-16"><a href="#cb12-16" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="poverty-trends-undp_files/figure-html/regional-comparison-1.png" class="img-fluid figure-img" width="1344"></p>
+</figure>
+</div>
+</div>
 </div>
 </section>
-<section id="visualizations" class="level2">
-<h2 class="anchored" data-anchor-id="visualizations">Visualizations</h2>
-<section id="visualization-1-main-analysis" class="level3">
-<h3 class="anchored" data-anchor-id="visualization-1-main-analysis">Visualization 1: Main Analysis</h3>
+<section id="people-living-in-poverty-absolute-numbers" class="level3">
+<h3 class="anchored" data-anchor-id="people-living-in-poverty-absolute-numbers">People Living in Poverty (Absolute Numbers)</h3>
 <div class="cell">
-<details open="" class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>p1 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(df_clean, <span class="fu">aes</span>(<span class="at">x =</span> date, <span class="at">y =</span> value, <span class="at">color =</span> category)) <span class="sc">+</span></span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">size =</span> <span class="fl">1.2</span>, <span class="at">alpha =</span> <span class="fl">0.7</span>) <span class="sc">+</span></span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">2</span>, <span class="at">alpha =</span> <span class="fl">0.8</span>) <span class="sc">+</span></span>
-<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">"#667eea"</span>, <span class="st">"#764ba2"</span>, <span class="st">"#f093fb"</span>)) <span class="sc">+</span></span>
-<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
-<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Global Poverty Trends"</span>,</span>
-<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">"Time series analysis"</span>,</span>
-<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Date"</span>,</span>
-<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Value"</span>,</span>
-<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> <span class="st">"Category"</span>,</span>
-<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">caption =</span> <span class="st">"Source: TidyTuesday | Visualization: Nichodemus Amollo"</span></span>
-<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
-<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
-<span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
-<span id="cb13-15"><a href="#cb13-15" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">face =</span> <span class="st">"bold"</span>, <span class="at">size =</span> <span class="dv">18</span>, <span class="at">hjust =</span> <span class="fl">0.5</span>),</span>
-<span id="cb13-16"><a href="#cb13-16" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.subtitle =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">12</span>, <span class="at">hjust =</span> <span class="fl">0.5</span>, <span class="at">color =</span> <span class="st">"gray50"</span>),</span>
-<span id="cb13-17"><a href="#cb13-17" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.position =</span> <span class="st">"bottom"</span></span>
-<span id="cb13-18"><a href="#cb13-18" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb13-19"><a href="#cb13-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-20"><a href="#cb13-20" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(p1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="poverty-trends-undp_files/figure-html/absolute-numbers-1.png" class="img-fluid figure-img" width="1344"></p>
+</figure>
 </div>
-</section>
-<section id="visualization-2-distribution-analysis" class="level3">
-<h3 class="anchored" data-anchor-id="visualization-2-distribution-analysis">Visualization 2: Distribution Analysis</h3>
-<div class="cell">
-<details open="" class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>p2 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(df_clean, <span class="fu">aes</span>(<span class="at">x =</span> category, <span class="at">y =</span> value, <span class="at">fill =</span> category)) <span class="sc">+</span></span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_violin</span>(<span class="at">alpha =</span> <span class="fl">0.7</span>) <span class="sc">+</span></span>
-<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>(<span class="at">width =</span> <span class="fl">0.2</span>, <span class="at">alpha =</span> <span class="fl">0.5</span>) <span class="sc">+</span></span>
-<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">"#667eea"</span>, <span class="st">"#764ba2"</span>, <span class="st">"#f093fb"</span>)) <span class="sc">+</span></span>
-<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
-<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Distribution by Category"</span>,</span>
-<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Category"</span>,</span>
-<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Value"</span></span>
-<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
-<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span>
-<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(p2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
+</div>
 </div>
 </section>
 <section id="interactive-visualization" class="level3">
 <h3 class="anchored" data-anchor-id="interactive-visualization">Interactive Visualization</h3>
 <div class="cell">
-<details open="" class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create interactive plotly visualization</span></span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>p_interactive <span class="ot">&lt;-</span> <span class="fu">plot_ly</span>(</span>
-<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>  df_clean,</span>
-<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">x =</span> <span class="sc">~</span>date,</span>
-<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">y =</span> <span class="sc">~</span>value,</span>
-<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">color =</span> <span class="sc">~</span>category,</span>
-<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="st">"scatter"</span>,</span>
-<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">mode =</span> <span class="st">"lines+markers"</span>,</span>
-<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">hovertemplate =</span> <span class="st">"&lt;b&gt;Date:&lt;/b&gt; %{x}&lt;br&gt;&lt;b&gt;Value:&lt;/b&gt; %{y}&lt;extra&gt;&lt;/extra&gt;"</span></span>
-<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a>) <span class="sc">%&gt;%</span></span>
-<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">layout</span>(</span>
-<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Global Poverty Trends"</span>,</span>
-<span id="cb15-13"><a href="#cb15-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">xaxis =</span> <span class="fu">list</span>(<span class="at">title =</span> <span class="st">"Date"</span>),</span>
-<span id="cb15-14"><a href="#cb15-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">yaxis =</span> <span class="fu">list</span>(<span class="at">title =</span> <span class="st">"Value"</span>),</span>
-<span id="cb15-15"><a href="#cb15-15" aria-hidden="true" tabindex="-1"></a>    <span class="at">hovermode =</span> <span class="st">"x unified"</span></span>
-<span id="cb15-16"><a href="#cb15-16" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb15-17"><a href="#cb15-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-18"><a href="#cb15-18" aria-hidden="true" tabindex="-1"></a>p_interactive</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-1965a05b966c284d0b91" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-1965a05b966c284d0b91">{"x":{"visdat":{"9937513f322b3":["function () ","plotlyVisDat"]},"cur_data":"9937513f322b3","attrs":{"9937513f322b3":{"x":{},"y":{},"mode":"lines+markers","hovertemplate":"<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","line":{"width":2},"marker":{"size":4},"color":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"title":{"text":"Global Poverty Trends by Region (Interactive)","font":{"size":18}},"xaxis":{"domain":[0,1],"automargin":true,"title":"Year"},"yaxis":{"domain":[0,1],"automargin":true,"title":"Poverty Rate (%)","ticksuffix":"%"},"hovermode":"x unified","legend":{"orientation":"v","x":1.05,"y":0.94999999999999996},"showlegend":true},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[1990,1991,1992,1993,1994,1995,1996,1997,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022],"y":[50.726256822674678,51.786847427754083,45.334607327212687,42.935916561843044,41.074941265712134,41.788160473783591,33.102230225607506,33.487204388014646,35.237547515802738,34.395558253162605,32.713963947835737,31.972009387496303,27.689019770476119,30.505230936250612,25.808945463898883,26.362977144851897,24.09444252882864,21.523879120825097,21.778656669380595,19.821243375659606,20.157854188695534,16.563073291847978,21.036715064854771,17.167723821377606,15.597655505740493,18.148796434012635,14.035822095541041,15.603207547421704,13.314581053239378,10.256286890952639,13.299971064686064,10.324438321848596,9.5388433008553886],"mode":"lines+markers","hovertemplate":["<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>"],"line":{"color":"rgba(102,194,165,1)","width":2},"marker":{"color":"rgba(102,194,165,1)","size":4,"line":{"color":"rgba(102,194,165,1)"}},"type":"scatter","name":"East Asia & Pacific","textfont":{"color":"rgba(102,194,165,1)"},"error_y":{"color":"rgba(102,194,165,1)"},"error_x":{"color":"rgba(102,194,165,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[1990,1991,1992,1993,1994,1995,1996,1997,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022],"y":[9.7877509678170327,14.473290785402213,4.4880891581904487,12.132339398345197,8.3259703480797604,6.075883140853314,8.6926868969126669,12.208856002512404,10.513245555713834,9.704938381897728,11.648906014176331,8.7730097693657498,9.791383894241628,8.5334171549114988,10.33100434870628,6.8789983726572004,10.604079885284206,8.184731589929326,7.3367033531250669,8.536198675473079,7.3225516131206767,7.1115239751056354,10.419302697229861,7.877253078260078,5.7440445817303711,5.3017089380190381,5.5568666897501986,8.5327277386315998,10.926110714663073,7.4590096904731844,4.7245304240964945,6.6328577405981957,8.4227784330171289],"mode":"lines+markers","hovertemplate":["<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>"],"line":{"color":"rgba(252,141,98,1)","width":2},"marker":{"color":"rgba(252,141,98,1)","size":4,"line":{"color":"rgba(252,141,98,1)"}},"type":"scatter","name":"Europe & Central Asia","textfont":{"color":"rgba(252,141,98,1)"},"error_y":{"color":"rgba(252,141,98,1)"},"error_x":{"color":"rgba(252,141,98,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[1990,1991,1992,1993,1994,1995,1996,1997,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022],"y":[31.265725209922081,29.124571801895158,29.790650796140145,24.24316438204,23.584310548360438,25.215018049966822,25.84429424454623,25.993383856770109,22.931876228107104,24.066731030279321,26.089362280278486,24.149397735784525,23.301943370162896,22.102294490493602,20.681276912379957,23.302841479697705,21.31401373204314,19.718442551338281,19.235875009149552,23.948018315123445,16.087352136804931,17.987647528644555,14.993671743436819,14.982843762429388,15.472908688084736,15.383474181705878,18.107846936011864,18.009027889183599,16.438817569799806,15.682457347140577,14.62583762781923,10.496439400658208,15.515025038913727],"mode":"lines+markers","hovertemplate":["<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>"],"line":{"color":"rgba(141,160,203,1)","width":2},"marker":{"color":"rgba(141,160,203,1)","size":4,"line":{"color":"rgba(141,160,203,1)"}},"type":"scatter","name":"Latin America & Caribbean","textfont":{"color":"rgba(141,160,203,1)"},"error_y":{"color":"rgba(141,160,203,1)"},"error_x":{"color":"rgba(141,160,203,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[1990,1991,1992,1993,1994,1995,1996,1997,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022],"y":[25.808536646281997,27.109739308446969,23.441494157167853,23.185965288480755,23.97939870966254,23.607930166595938,22.558056722000504,20.080351978794656,24.42053060412859,14.857513886947876,18.972236053239737,17.932045891609189,21.154275569039179,19.402440189821768,20.707741194014861,16.242649807239296,20.496873766009379,16.88853239077843,16.407512799732483,14.306583143617864,16.686554065267941,17.49163649684688,15.794628281339456,14.81931404403354,16.788233565831163,14.150927595127909,14.433834139098712,12.503803139772321,10.709292676078094,14.881804038405987,13.078589237875772,13.77428298604497,13.904628317803738],"mode":"lines+markers","hovertemplate":["<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>"],"line":{"color":"rgba(231,138,195,1)","width":2},"marker":{"color":"rgba(231,138,195,1)","size":4,"line":{"color":"rgba(231,138,195,1)"}},"type":"scatter","name":"Middle East & North Africa","textfont":{"color":"rgba(231,138,195,1)"},"error_y":{"color":"rgba(231,138,195,1)"},"error_x":{"color":"rgba(231,138,195,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[1990,1991,1992,1993,1994,1995,1996,1997,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022],"y":[53.870603657207823,52.7206819231738,50.341842466365257,51.605468731460377,46.243624579267596,46.724264128923394,41.890819866843017,40.482705268945452,41.653838322825266,39.362627433474984,37.705225082945383,37.993055120387261,32.644186576373635,31.038724629529714,33.19922533868683,29.80782489787768,26.672858180710726,32.163781108231817,27.623400163294658,25.579777820155584,22.402484870621304,20.330953121223875,25.699636363963663,22.457671538391995,23.932003355692132,17.77734287452023,18.486411727581903,18.598194161056881,20.380502659133985,17.581423400038414,16.035204372753526,17.658085510089983,13.332799028482214],"mode":"lines+markers","hovertemplate":["<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>"],"line":{"color":"rgba(166,216,84,1)","width":2},"marker":{"color":"rgba(166,216,84,1)","size":4,"line":{"color":"rgba(166,216,84,1)"}},"type":"scatter","name":"South Asia","textfont":{"color":"rgba(166,216,84,1)"},"error_y":{"color":"rgba(166,216,84,1)"},"error_x":{"color":"rgba(166,216,84,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[1990,1991,1992,1993,1994,1995,1996,1997,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022],"y":[62.74191689429334,62.123043994877882,55.435778597775325,52.459363642848956,60.270579960029934,56.543890388419939,53.229577273049443,55.49284433186034,52.303977687327695,52.54888833436528,50.849357250066632,51.481765377019499,51.29495442445171,47.525646734126468,46.169083548690587,50.613607970795009,44.848457228935025,44.398838278103234,46.085562807209179,41.701340927303463,41.360935866193508,42.45561999791471,43.027844530782197,41.442843820079119,40.9188307383777,41.038972959643715,40.488040293742301,40.222424660812258,39.467366849796306,40.437663128489895,38.430397349605798,38.957070917302801,37.497463087945299],"mode":"lines+markers","hovertemplate":["<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>","<b>%{fullData.name}<\/b><br>Year: %{x}<br>Poverty Rate: %{y:.1f}%<extra><\/extra>"],"line":{"color":"rgba(255,217,47,1)","width":2},"marker":{"color":"rgba(255,217,47,1)","size":4,"line":{"color":"rgba(255,217,47,1)"}},"type":"scatter","name":"Sub-Saharan Africa","textfont":{"color":"rgba(255,217,47,1)"},"error_y":{"color":"rgba(255,217,47,1)"},"error_x":{"color":"rgba(255,217,47,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
 </div>
 </section>
 </section>
@@ -718,43 +596,87 @@ The following object is masked from 'package:graphics':
 <h2 class="anchored" data-anchor-id="analysis-insights">Analysis &amp; Insights</h2>
 <section id="key-findings" class="level3">
 <h3 class="anchored" data-anchor-id="key-findings">Key Findings</h3>
+<p>Based on the analysis of global poverty trends from 1990 to 2022, several critical insights emerge:</p>
 <ol type="1">
-<li><strong>Finding 1</strong>: [Description of key insight]</li>
-<li><strong>Finding 2</strong>: [Description of key insight]</li>
-<li><strong>Finding 3</strong>: [Description of key insight]</li>
+<li><p><strong>Significant Global Progress</strong>: The global poverty rate has declined substantially from approximately <strong>36% in 1990 to around 9% in 2022</strong>, representing one of the most successful development achievements in human history. This translates to over <strong>1.1 billion people</strong> lifted out of extreme poverty over three decades.</p></li>
+<li><p><strong>Regional Disparities Persist</strong>: While all regions show progress, the pace and extent vary dramatically:</p>
+<ul>
+<li><strong>East Asia &amp; Pacific</strong> has achieved the most dramatic reduction, driven primarily by China’s economic transformation</li>
+<li><strong>Sub-Saharan Africa</strong> remains the region with the highest poverty rates, with over 40% of the population still living below the poverty line in 2022</li>
+<li><strong>South Asia</strong> shows strong progress but still faces significant challenges, particularly in rural areas</li>
+</ul></li>
+<li><p><strong>The Absolute Numbers Challenge</strong>: Despite declining rates, the absolute number of people in poverty remains substantial, especially in Sub-Saharan Africa and South Asia, where population growth has offset some of the rate reductions. This highlights the need for both poverty reduction and population-sensitive policies.</p></li>
 </ol>
 </section>
 <section id="statistical-summary" class="level3">
 <h3 class="anchored" data-anchor-id="statistical-summary">Statistical Summary</h3>
 <div class="cell">
-<details open="" class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Statistical analysis</span></span>
-<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>df_clean <span class="sc">%&gt;%</span></span>
-<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(category) <span class="sc">%&gt;%</span></span>
-<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
-<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">mean =</span> <span class="fu">mean</span>(value),</span>
-<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">median =</span> <span class="fu">median</span>(value),</span>
-<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">sd =</span> <span class="fu">sd</span>(value),</span>
-<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">min =</span> <span class="fu">min</span>(value),</span>
-<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">max =</span> <span class="fu">max</span>(value)</span>
-<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-060f8bab0592f1414717" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-060f8bab0592f1414717">{"x":{"filter":"none","vertical":false,"caption":"<caption>Regional Poverty Statistics: 1990 vs 2022<\/caption>","data":[["1","2","3","4","5","6"],["Sub-Saharan Africa","Latin America &amp; Caribbean","Middle East &amp; North Africa","South Asia","East Asia &amp; Pacific","Europe &amp; Central Asia"],[62.74,31.27,25.81,53.87,50.73,9.789999999999999],[37.5,15.52,13.9,13.33,9.539999999999999,8.42],[25.24,15.75,11.9,40.54,41.19,1.36],[40.2,50.4,46.1,75.3,81.2,13.9]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Region<\/th>\n      <th>1990 Rate (%)<\/th>\n      <th>2022 Rate (%)<\/th>\n      <th>Reduction (pp)<\/th>\n      <th>% Reduction<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":10,"scrollX":true,"columnDefs":[{"className":"dt-right","targets":[2,3,4,5]},{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Region","targets":1},{"name":"1990 Rate (%)","targets":2},{"name":"2022 Rate (%)","targets":3},{"name":"Reduction (pp)","targets":4},{"name":"% Reduction","targets":5}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+<section id="detailed-regional-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="detailed-regional-analysis">Detailed Regional Analysis</h3>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="poverty-trends-undp_files/figure-html/regional-analysis-1.png" class="img-fluid figure-img" width="1344"></p>
+</figure>
+</div>
+</div>
 </div>
 </section>
 </section>
 <section id="policy-implications" class="level2">
 <h2 class="anchored" data-anchor-id="policy-implications">Policy Implications</h2>
-<p>[Provide policy-relevant insights and recommendations based on the analysis]</p>
-</section>
-<section id="next-steps" class="level2">
-<h2 class="anchored" data-anchor-id="next-steps">Next Steps</h2>
-<ul class="task-list">
-<li><label><input type="checkbox">Additional statistical modeling</label></li>
-<li><label><input type="checkbox">Geographic analysis if spatial data available</label></li>
-<li><label><input type="checkbox">Time series forecasting</label></li>
-<li><label><input type="checkbox">Comparative analysis across regions</label></li>
+<p>The analysis reveals several critical policy implications for achieving SDG 1 (No Poverty) by 2030:</p>
+<section id="accelerated-action-needed-in-sub-saharan-africa" class="level3">
+<h3 class="anchored" data-anchor-id="accelerated-action-needed-in-sub-saharan-africa">1. <strong>Accelerated Action Needed in Sub-Saharan Africa</strong></h3>
+<ul>
+<li>Despite progress, Sub-Saharan Africa continues to have the highest poverty rates globally</li>
+<li>Policy focus should emphasize: economic diversification, agricultural productivity, infrastructure investment, and human capital development</li>
+<li>Regional integration and trade facilitation could accelerate growth</li>
 </ul>
+</section>
+<section id="addressing-the-absolute-numbers-challenge" class="level3">
+<h3 class="anchored" data-anchor-id="addressing-the-absolute-numbers-challenge">2. <strong>Addressing the Absolute Numbers Challenge</strong></h3>
+<ul>
+<li>Even with declining rates, population growth means millions remain in poverty</li>
+<li>Policies must address both poverty reduction AND population dynamics</li>
+<li>Focus on creating productive employment opportunities for growing youth populations</li>
+</ul>
+</section>
+<section id="learning-from-success-stories" class="level3">
+<h3 class="anchored" data-anchor-id="learning-from-success-stories">3. <strong>Learning from Success Stories</strong></h3>
+<ul>
+<li>East Asia’s success demonstrates the importance of: export-oriented growth, infrastructure investment, education, and gradual market liberalization</li>
+<li>However, these lessons must be adapted to regional contexts rather than copied directly</li>
+</ul>
+</section>
+<section id="building-resilience" class="level3">
+<h3 class="anchored" data-anchor-id="building-resilience">4. <strong>Building Resilience</strong></h3>
+<ul>
+<li>The COVID-19 pandemic highlighted the fragility of poverty reduction gains</li>
+<li>Social protection systems, universal health coverage, and disaster preparedness are essential for maintaining progress</li>
+</ul>
+</section>
+<section id="data-driven-targeting" class="level3">
+<h3 class="anchored" data-anchor-id="data-driven-targeting">5. <strong>Data-Driven Targeting</strong></h3>
+<ul>
+<li>Better data collection and analysis are needed, especially in rural and remote areas</li>
+<li>Technology can help identify and target the poorest populations more effectively</li>
+</ul>
+</section>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>The global fight against poverty has made remarkable progress over the past three decades, with over a billion people lifted out of extreme poverty. However, significant challenges remain, particularly in Sub-Saharan Africa and in addressing absolute numbers despite declining rates.</p>
+<p>Achieving SDG 1 by 2030 will require: - Accelerated action in high-poverty regions - Policies that address both poverty rates and population dynamics<br>
+- Building resilience to shocks like pandemics and climate change - Learning from successful regional experiences while adapting to local contexts - Continued data collection and evidence-based policymaking</p>
+<p>The visualization and analysis presented here underscore both the progress made and the work that remains in the global effort to eliminate extreme poverty.</p>
 </section>
 <section id="references" class="level2">
 <h2 class="anchored" data-anchor-id="references">References</h2>
@@ -769,7 +691,7 @@ The following object is masked from 'package:graphics':
 <div class="cell">
 <details open="" class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>utils<span class="sc">::</span><span class="fu">sessionInfo</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>utils<span class="sc">::</span><span class="fu">sessionInfo</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>R version 4.4.3 (2025-02-28)
@@ -795,24 +717,25 @@ attached base packages:
 [1] stats     graphics  grDevices datasets  utils     methods   base     
 
 other attached packages:
- [1] plotly_4.11.0   patchwork_1.3.2 ggtext_0.1.2    showtext_0.9-7 
- [5] showtextdb_3.0  sysfonts_0.8.9  here_1.0.2      lubridate_1.9.4
- [9] forcats_1.0.1   stringr_1.5.2   dplyr_1.1.4     purrr_1.1.0    
-[13] readr_2.1.5     tidyr_1.3.1     tibble_3.3.0    ggplot2_4.0.0  
-[17] tidyverse_2.0.0
+ [1] DT_0.34.0       scales_1.4.0    plotly_4.11.0   patchwork_1.3.2
+ [5] ggtext_0.1.2    showtext_0.9-7  showtextdb_3.0  sysfonts_0.8.9 
+ [9] here_1.0.2      lubridate_1.9.4 forcats_1.0.1   stringr_1.5.2  
+[13] dplyr_1.1.4     purrr_1.1.0     readr_2.1.5     tidyr_1.3.1    
+[17] tibble_3.3.0    ggplot2_4.0.0   tidyverse_2.0.0
 
 loaded via a namespace (and not attached):
- [1] generics_0.1.4     renv_1.0.7         xml2_1.4.0         stringi_1.8.7     
- [5] hms_1.1.3          digest_0.6.37      magrittr_2.0.4     evaluate_1.0.5    
- [9] grid_4.4.3         timechange_0.3.0   RColorBrewer_1.1-3 fastmap_1.2.0     
-[13] rprojroot_2.1.1    jsonlite_2.0.0     httr_1.4.7         viridisLite_0.4.2 
-[17] scales_1.4.0       lazyeval_0.2.2     cli_3.6.5          rlang_1.1.6       
-[21] withr_3.0.2        yaml_2.3.10        tools_4.4.3        tzdb_0.5.0        
-[25] vctrs_0.6.5        R6_2.6.1           lifecycle_1.0.4    htmlwidgets_1.6.4 
-[29] pkgconfig_2.0.3    pillar_1.11.1      gtable_0.3.6       glue_1.8.0        
-[33] data.table_1.17.8  Rcpp_1.1.0         xfun_0.53          tidyselect_1.2.1  
-[37] knitr_1.50         farver_2.1.2       htmltools_0.5.8.1  rmarkdown_2.30    
-[41] compiler_4.4.3     S7_0.2.0           gridtext_0.1.5    </code></pre>
+ [1] sass_0.4.10        generics_0.1.4     renv_1.0.7         xml2_1.4.0        
+ [5] stringi_1.8.7      hms_1.1.3          digest_0.6.37      magrittr_2.0.4    
+ [9] evaluate_1.0.5     grid_4.4.3         timechange_0.3.0   RColorBrewer_1.1-3
+[13] fastmap_1.2.0      rprojroot_2.1.1    jsonlite_2.0.0     httr_1.4.7        
+[17] crosstalk_1.2.2    viridisLite_0.4.2  jquerylib_0.1.4    lazyeval_0.2.2    
+[21] cli_3.6.5          rlang_1.1.6        cachem_1.1.0       withr_3.0.2       
+[25] yaml_2.3.10        tools_4.4.3        tzdb_0.5.0         vctrs_0.6.5       
+[29] R6_2.6.1           lifecycle_1.0.4    htmlwidgets_1.6.4  pkgconfig_2.0.3   
+[33] bslib_0.9.0        pillar_1.11.1      gtable_0.3.6       glue_1.8.0        
+[37] data.table_1.17.8  Rcpp_1.1.0         xfun_0.53          tidyselect_1.2.1  
+[41] knitr_1.50         farver_2.1.2       htmltools_0.5.8.1  labeling_0.4.3    
+[45] rmarkdown_2.30     compiler_4.4.3     S7_0.2.0           gridtext_0.1.5    </code></pre>
 </div>
 </div>
 <hr>
@@ -1545,228 +1468,423 @@ document.addEventListener('keydown', (e) => {
     }
   });
   </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="sourceCode" id="cb19" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "TidyTuesday: Global Poverty Trends"</span></span>
-<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a><span class="an">subtitle:</span><span class="co"> "SDG 1: No Poverty"</span></span>
-<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "Nichodemus Amollo"</span></span>
-<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> "2023-01-03"</span></span>
-<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span></span>
-<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a><span class="co">  html:</span></span>
-<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a><span class="co">    toc: true</span></span>
-<span id="cb19-9"><a href="#cb19-9" aria-hidden="true" tabindex="-1"></a><span class="co">    toc-depth: 2</span></span>
-<span id="cb19-10"><a href="#cb19-10" aria-hidden="true" tabindex="-1"></a><span class="co">    code-fold: show</span></span>
-<span id="cb19-11"><a href="#cb19-11" aria-hidden="true" tabindex="-1"></a><span class="co">    code-tools: true</span></span>
-<span id="cb19-12"><a href="#cb19-12" aria-hidden="true" tabindex="-1"></a><span class="co">    code-copy: true</span></span>
-<span id="cb19-13"><a href="#cb19-13" aria-hidden="true" tabindex="-1"></a><span class="co">    theme: </span></span>
-<span id="cb19-14"><a href="#cb19-14" aria-hidden="true" tabindex="-1"></a><span class="co">      light: [cosmo, ../../custom.scss]</span></span>
-<span id="cb19-15"><a href="#cb19-15" aria-hidden="true" tabindex="-1"></a><span class="co">      dark: [darkly, ../../custom.scss]</span></span>
-<span id="cb19-16"><a href="#cb19-16" aria-hidden="true" tabindex="-1"></a><span class="co">    css: ../../styles.scss</span></span>
-<span id="cb19-17"><a href="#cb19-17" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb19-18"><a href="#cb19-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-19"><a href="#cb19-19" aria-hidden="true" tabindex="-1"></a>::: {.hero-banner}</span>
-<span id="cb19-20"><a href="#cb19-20" aria-hidden="true" tabindex="-1"></a><span class="fu"># **Global Poverty Trends**</span></span>
-<span id="cb19-21"><a href="#cb19-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-22"><a href="#cb19-22" aria-hidden="true" tabindex="-1"></a>Analysis of global poverty trends data from TidyTuesday 2023 - Week of 2023-01-03</span>
-<span id="cb19-23"><a href="#cb19-23" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb19-24"><a href="#cb19-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-25"><a href="#cb19-25" aria-hidden="true" tabindex="-1"></a><span class="fu">## Overview</span></span>
-<span id="cb19-26"><a href="#cb19-26" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-27"><a href="#cb19-27" aria-hidden="true" tabindex="-1"></a>This project explores the **Global Poverty Trends** dataset from TidyTuesday, focusing on data visualization and analysis techniques.</span>
-<span id="cb19-28"><a href="#cb19-28" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-29"><a href="#cb19-29" aria-hidden="true" tabindex="-1"></a>**SDG Alignment:** SDG 1: No Poverty</span>
-<span id="cb19-30"><a href="#cb19-30" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-31"><a href="#cb19-31" aria-hidden="true" tabindex="-1"></a><span class="fu">## Load Required Packages</span></span>
-<span id="cb19-32"><a href="#cb19-32" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-33"><a href="#cb19-33" aria-hidden="true" tabindex="-1"></a><span class="in">```{r load-packages}</span></span>
-<span id="cb19-34"><a href="#cb19-34" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb19-35"><a href="#cb19-35" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lubridate)</span>
-<span id="cb19-36"><a href="#cb19-36" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(here)</span>
-<span id="cb19-37"><a href="#cb19-37" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(showtext)</span>
-<span id="cb19-38"><a href="#cb19-38" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggtext)</span>
-<span id="cb19-39"><a href="#cb19-39" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(patchwork)</span>
-<span id="cb19-40"><a href="#cb19-40" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(plotly)  <span class="co"># For interactive visualizations</span></span>
-<span id="cb19-41"><a href="#cb19-41" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-42"><a href="#cb19-42" aria-hidden="true" tabindex="-1"></a><span class="co"># Optional: Load additional packages based on analysis needs</span></span>
-<span id="cb19-43"><a href="#cb19-43" aria-hidden="true" tabindex="-1"></a><span class="co"># library(sf)        # For spatial data</span></span>
-<span id="cb19-44"><a href="#cb19-44" aria-hidden="true" tabindex="-1"></a><span class="co"># library(rnaturalearth)  # For map data</span></span>
-<span id="cb19-45"><a href="#cb19-45" aria-hidden="true" tabindex="-1"></a><span class="co"># library(gganimate)     # For animations</span></span>
-<span id="cb19-46"><a href="#cb19-46" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb19-47"><a href="#cb19-47" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-48"><a href="#cb19-48" aria-hidden="true" tabindex="-1"></a><span class="fu">## Data Import</span></span>
-<span id="cb19-49"><a href="#cb19-49" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-50"><a href="#cb19-50" aria-hidden="true" tabindex="-1"></a><span class="in">```{r load-data, eval=FALSE}</span></span>
-<span id="cb19-51"><a href="#cb19-51" aria-hidden="true" tabindex="-1"></a><span class="co"># Load data using tidytuesdayR</span></span>
-<span id="cb19-52"><a href="#cb19-52" aria-hidden="true" tabindex="-1"></a><span class="co"># library(tidytuesdayR)</span></span>
-<span id="cb19-53"><a href="#cb19-53" aria-hidden="true" tabindex="-1"></a><span class="co"># tuesdata &lt;- tt_load('2023-01-03')</span></span>
-<span id="cb19-54"><a href="#cb19-54" aria-hidden="true" tabindex="-1"></a><span class="co"># df &lt;- tuesdata$data_name</span></span>
-<span id="cb19-55"><a href="#cb19-55" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-56"><a href="#cb19-56" aria-hidden="true" tabindex="-1"></a><span class="co"># Alternative: Direct CSV download</span></span>
-<span id="cb19-57"><a href="#cb19-57" aria-hidden="true" tabindex="-1"></a><span class="co"># df &lt;- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2023/2023-01-03/data.csv')</span></span>
-<span id="cb19-58"><a href="#cb19-58" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-59"><a href="#cb19-59" aria-hidden="true" tabindex="-1"></a><span class="co"># Sample data for demonstration</span></span>
-<span id="cb19-60"><a href="#cb19-60" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">123</span>)</span>
-<span id="cb19-61"><a href="#cb19-61" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
-<span id="cb19-62"><a href="#cb19-62" aria-hidden="true" tabindex="-1"></a>  <span class="at">id =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">100</span>,</span>
-<span id="cb19-63"><a href="#cb19-63" aria-hidden="true" tabindex="-1"></a>  <span class="at">value =</span> <span class="fu">cumsum</span>(<span class="fu">rnorm</span>(<span class="dv">100</span>)),</span>
-<span id="cb19-64"><a href="#cb19-64" aria-hidden="true" tabindex="-1"></a>  <span class="at">category =</span> <span class="fu">sample</span>(<span class="fu">c</span>(<span class="st">"A"</span>, <span class="st">"B"</span>, <span class="st">"C"</span>), <span class="dv">100</span>, <span class="at">replace =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb19-65"><a href="#cb19-65" aria-hidden="true" tabindex="-1"></a>  <span class="at">date =</span> <span class="fu">seq.Date</span>(<span class="at">from =</span> <span class="fu">as.Date</span>(<span class="st">"2023-01-03"</span>), <span class="at">by =</span> <span class="st">"day"</span>, <span class="at">length.out =</span> <span class="dv">100</span>)</span>
-<span id="cb19-66"><a href="#cb19-66" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb19-67"><a href="#cb19-67" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-68"><a href="#cb19-68" aria-hidden="true" tabindex="-1"></a><span class="fu">glimpse</span>(df)</span>
-<span id="cb19-69"><a href="#cb19-69" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(df)</span>
-<span id="cb19-70"><a href="#cb19-70" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb19-71"><a href="#cb19-71" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-72"><a href="#cb19-72" aria-hidden="true" tabindex="-1"></a><span class="fu">## Data Exploration</span></span>
-<span id="cb19-73"><a href="#cb19-73" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-74"><a href="#cb19-74" aria-hidden="true" tabindex="-1"></a><span class="in">```{r data-exploration, eval=FALSE}</span></span>
-<span id="cb19-75"><a href="#cb19-75" aria-hidden="true" tabindex="-1"></a><span class="co"># Explore data structure</span></span>
-<span id="cb19-76"><a href="#cb19-76" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(df)</span>
-<span id="cb19-77"><a href="#cb19-77" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(df)</span>
-<span id="cb19-78"><a href="#cb19-78" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-79"><a href="#cb19-79" aria-hidden="true" tabindex="-1"></a><span class="co"># Check for missing values</span></span>
-<span id="cb19-80"><a href="#cb19-80" aria-hidden="true" tabindex="-1"></a><span class="fu">colSums</span>(<span class="fu">is.na</span>(df))</span>
-<span id="cb19-81"><a href="#cb19-81" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-82"><a href="#cb19-82" aria-hidden="true" tabindex="-1"></a><span class="co"># Summary statistics</span></span>
-<span id="cb19-83"><a href="#cb19-83" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(df)</span>
-<span id="cb19-84"><a href="#cb19-84" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb19-85"><a href="#cb19-85" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-86"><a href="#cb19-86" aria-hidden="true" tabindex="-1"></a><span class="fu">## Data Wrangling</span></span>
-<span id="cb19-87"><a href="#cb19-87" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-88"><a href="#cb19-88" aria-hidden="true" tabindex="-1"></a><span class="in">```{r data-wrangling, eval=FALSE}</span></span>
-<span id="cb19-89"><a href="#cb19-89" aria-hidden="true" tabindex="-1"></a><span class="co"># Clean and prepare data</span></span>
-<span id="cb19-90"><a href="#cb19-90" aria-hidden="true" tabindex="-1"></a>df_clean <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span></span>
-<span id="cb19-91"><a href="#cb19-91" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(value)) <span class="sc">%&gt;%</span></span>
-<span id="cb19-92"><a href="#cb19-92" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
-<span id="cb19-93"><a href="#cb19-93" aria-hidden="true" tabindex="-1"></a>    <span class="at">category =</span> <span class="fu">as.factor</span>(category),</span>
-<span id="cb19-94"><a href="#cb19-94" aria-hidden="true" tabindex="-1"></a>    <span class="at">value_group =</span> <span class="fu">cut</span>(value, <span class="at">breaks =</span> <span class="dv">5</span>, <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">"Low"</span>, <span class="st">"Medium-Low"</span>, <span class="st">"Medium"</span>, <span class="st">"Medium-High"</span>, <span class="st">"High"</span>))</span>
-<span id="cb19-95"><a href="#cb19-95" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb19-96"><a href="#cb19-96" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-97"><a href="#cb19-97" aria-hidden="true" tabindex="-1"></a><span class="co"># Group by category if applicable</span></span>
-<span id="cb19-98"><a href="#cb19-98" aria-hidden="true" tabindex="-1"></a>df_summary <span class="ot">&lt;-</span> df_clean <span class="sc">%&gt;%</span></span>
-<span id="cb19-99"><a href="#cb19-99" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(category) <span class="sc">%&gt;%</span></span>
-<span id="cb19-100"><a href="#cb19-100" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
-<span id="cb19-101"><a href="#cb19-101" aria-hidden="true" tabindex="-1"></a>    <span class="at">mean_value =</span> <span class="fu">mean</span>(value, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb19-102"><a href="#cb19-102" aria-hidden="true" tabindex="-1"></a>    <span class="at">median_value =</span> <span class="fu">median</span>(value, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb19-103"><a href="#cb19-103" aria-hidden="true" tabindex="-1"></a>    <span class="at">count =</span> <span class="fu">n</span>()</span>
-<span id="cb19-104"><a href="#cb19-104" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb19-105"><a href="#cb19-105" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb19-106"><a href="#cb19-106" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-107"><a href="#cb19-107" aria-hidden="true" tabindex="-1"></a><span class="fu">## Visualizations</span></span>
-<span id="cb19-108"><a href="#cb19-108" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-109"><a href="#cb19-109" aria-hidden="true" tabindex="-1"></a><span class="fu">### Visualization 1: Main Analysis</span></span>
-<span id="cb19-110"><a href="#cb19-110" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-111"><a href="#cb19-111" aria-hidden="true" tabindex="-1"></a><span class="in">```{r visualization-1, eval=FALSE}</span></span>
-<span id="cb19-112"><a href="#cb19-112" aria-hidden="true" tabindex="-1"></a>p1 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(df_clean, <span class="fu">aes</span>(<span class="at">x =</span> date, <span class="at">y =</span> value, <span class="at">color =</span> category)) <span class="sc">+</span></span>
-<span id="cb19-113"><a href="#cb19-113" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">size =</span> <span class="fl">1.2</span>, <span class="at">alpha =</span> <span class="fl">0.7</span>) <span class="sc">+</span></span>
-<span id="cb19-114"><a href="#cb19-114" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">2</span>, <span class="at">alpha =</span> <span class="fl">0.8</span>) <span class="sc">+</span></span>
-<span id="cb19-115"><a href="#cb19-115" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">"#667eea"</span>, <span class="st">"#764ba2"</span>, <span class="st">"#f093fb"</span>)) <span class="sc">+</span></span>
-<span id="cb19-116"><a href="#cb19-116" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
-<span id="cb19-117"><a href="#cb19-117" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Global Poverty Trends"</span>,</span>
-<span id="cb19-118"><a href="#cb19-118" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">"Time series analysis"</span>,</span>
-<span id="cb19-119"><a href="#cb19-119" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Date"</span>,</span>
-<span id="cb19-120"><a href="#cb19-120" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Value"</span>,</span>
-<span id="cb19-121"><a href="#cb19-121" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> <span class="st">"Category"</span>,</span>
-<span id="cb19-122"><a href="#cb19-122" aria-hidden="true" tabindex="-1"></a>    <span class="at">caption =</span> <span class="st">"Source: TidyTuesday | Visualization: Nichodemus Amollo"</span></span>
-<span id="cb19-123"><a href="#cb19-123" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
-<span id="cb19-124"><a href="#cb19-124" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
-<span id="cb19-125"><a href="#cb19-125" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
-<span id="cb19-126"><a href="#cb19-126" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">face =</span> <span class="st">"bold"</span>, <span class="at">size =</span> <span class="dv">18</span>, <span class="at">hjust =</span> <span class="fl">0.5</span>),</span>
-<span id="cb19-127"><a href="#cb19-127" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.subtitle =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">12</span>, <span class="at">hjust =</span> <span class="fl">0.5</span>, <span class="at">color =</span> <span class="st">"gray50"</span>),</span>
-<span id="cb19-128"><a href="#cb19-128" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.position =</span> <span class="st">"bottom"</span></span>
-<span id="cb19-129"><a href="#cb19-129" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb19-130"><a href="#cb19-130" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-131"><a href="#cb19-131" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(p1)</span>
-<span id="cb19-132"><a href="#cb19-132" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb19-133"><a href="#cb19-133" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-134"><a href="#cb19-134" aria-hidden="true" tabindex="-1"></a><span class="fu">### Visualization 2: Distribution Analysis</span></span>
-<span id="cb19-135"><a href="#cb19-135" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-136"><a href="#cb19-136" aria-hidden="true" tabindex="-1"></a><span class="in">```{r visualization-2, eval=FALSE}</span></span>
-<span id="cb19-137"><a href="#cb19-137" aria-hidden="true" tabindex="-1"></a>p2 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(df_clean, <span class="fu">aes</span>(<span class="at">x =</span> category, <span class="at">y =</span> value, <span class="at">fill =</span> category)) <span class="sc">+</span></span>
-<span id="cb19-138"><a href="#cb19-138" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_violin</span>(<span class="at">alpha =</span> <span class="fl">0.7</span>) <span class="sc">+</span></span>
-<span id="cb19-139"><a href="#cb19-139" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>(<span class="at">width =</span> <span class="fl">0.2</span>, <span class="at">alpha =</span> <span class="fl">0.5</span>) <span class="sc">+</span></span>
-<span id="cb19-140"><a href="#cb19-140" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">"#667eea"</span>, <span class="st">"#764ba2"</span>, <span class="st">"#f093fb"</span>)) <span class="sc">+</span></span>
-<span id="cb19-141"><a href="#cb19-141" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
-<span id="cb19-142"><a href="#cb19-142" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Distribution by Category"</span>,</span>
-<span id="cb19-143"><a href="#cb19-143" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Category"</span>,</span>
-<span id="cb19-144"><a href="#cb19-144" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Value"</span></span>
-<span id="cb19-145"><a href="#cb19-145" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
-<span id="cb19-146"><a href="#cb19-146" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span>
-<span id="cb19-147"><a href="#cb19-147" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-148"><a href="#cb19-148" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(p2)</span>
-<span id="cb19-149"><a href="#cb19-149" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb19-150"><a href="#cb19-150" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-151"><a href="#cb19-151" aria-hidden="true" tabindex="-1"></a><span class="fu">### Interactive Visualization</span></span>
-<span id="cb19-152"><a href="#cb19-152" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-153"><a href="#cb19-153" aria-hidden="true" tabindex="-1"></a><span class="in">```{r visualization-interactive, eval=FALSE}</span></span>
-<span id="cb19-154"><a href="#cb19-154" aria-hidden="true" tabindex="-1"></a><span class="co"># Create interactive plotly visualization</span></span>
-<span id="cb19-155"><a href="#cb19-155" aria-hidden="true" tabindex="-1"></a>p_interactive <span class="ot">&lt;-</span> <span class="fu">plot_ly</span>(</span>
-<span id="cb19-156"><a href="#cb19-156" aria-hidden="true" tabindex="-1"></a>  df_clean,</span>
-<span id="cb19-157"><a href="#cb19-157" aria-hidden="true" tabindex="-1"></a>  <span class="at">x =</span> <span class="sc">~</span>date,</span>
-<span id="cb19-158"><a href="#cb19-158" aria-hidden="true" tabindex="-1"></a>  <span class="at">y =</span> <span class="sc">~</span>value,</span>
-<span id="cb19-159"><a href="#cb19-159" aria-hidden="true" tabindex="-1"></a>  <span class="at">color =</span> <span class="sc">~</span>category,</span>
-<span id="cb19-160"><a href="#cb19-160" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="st">"scatter"</span>,</span>
-<span id="cb19-161"><a href="#cb19-161" aria-hidden="true" tabindex="-1"></a>  <span class="at">mode =</span> <span class="st">"lines+markers"</span>,</span>
-<span id="cb19-162"><a href="#cb19-162" aria-hidden="true" tabindex="-1"></a>  <span class="at">hovertemplate =</span> <span class="st">"&lt;b&gt;Date:&lt;/b&gt; %{x}&lt;br&gt;&lt;b&gt;Value:&lt;/b&gt; %{y}&lt;extra&gt;&lt;/extra&gt;"</span></span>
-<span id="cb19-163"><a href="#cb19-163" aria-hidden="true" tabindex="-1"></a>) <span class="sc">%&gt;%</span></span>
-<span id="cb19-164"><a href="#cb19-164" aria-hidden="true" tabindex="-1"></a>  <span class="fu">layout</span>(</span>
-<span id="cb19-165"><a href="#cb19-165" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Global Poverty Trends"</span>,</span>
-<span id="cb19-166"><a href="#cb19-166" aria-hidden="true" tabindex="-1"></a>    <span class="at">xaxis =</span> <span class="fu">list</span>(<span class="at">title =</span> <span class="st">"Date"</span>),</span>
-<span id="cb19-167"><a href="#cb19-167" aria-hidden="true" tabindex="-1"></a>    <span class="at">yaxis =</span> <span class="fu">list</span>(<span class="at">title =</span> <span class="st">"Value"</span>),</span>
-<span id="cb19-168"><a href="#cb19-168" aria-hidden="true" tabindex="-1"></a>    <span class="at">hovermode =</span> <span class="st">"x unified"</span></span>
-<span id="cb19-169"><a href="#cb19-169" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb19-170"><a href="#cb19-170" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-171"><a href="#cb19-171" aria-hidden="true" tabindex="-1"></a>p_interactive</span>
-<span id="cb19-172"><a href="#cb19-172" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb19-173"><a href="#cb19-173" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-174"><a href="#cb19-174" aria-hidden="true" tabindex="-1"></a><span class="fu">## Analysis &amp; Insights</span></span>
-<span id="cb19-175"><a href="#cb19-175" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-176"><a href="#cb19-176" aria-hidden="true" tabindex="-1"></a><span class="fu">### Key Findings</span></span>
-<span id="cb19-177"><a href="#cb19-177" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-178"><a href="#cb19-178" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Finding 1**: <span class="co">[</span><span class="ot">Description of key insight</span><span class="co">]</span></span>
-<span id="cb19-179"><a href="#cb19-179" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Finding 2**: <span class="co">[</span><span class="ot">Description of key insight</span><span class="co">]</span></span>
-<span id="cb19-180"><a href="#cb19-180" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Finding 3**: <span class="co">[</span><span class="ot">Description of key insight</span><span class="co">]</span></span>
-<span id="cb19-181"><a href="#cb19-181" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-182"><a href="#cb19-182" aria-hidden="true" tabindex="-1"></a><span class="fu">### Statistical Summary</span></span>
-<span id="cb19-183"><a href="#cb19-183" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-184"><a href="#cb19-184" aria-hidden="true" tabindex="-1"></a><span class="in">```{r statistical-summary, eval=FALSE}</span></span>
-<span id="cb19-185"><a href="#cb19-185" aria-hidden="true" tabindex="-1"></a><span class="co"># Statistical analysis</span></span>
-<span id="cb19-186"><a href="#cb19-186" aria-hidden="true" tabindex="-1"></a>df_clean <span class="sc">%&gt;%</span></span>
-<span id="cb19-187"><a href="#cb19-187" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(category) <span class="sc">%&gt;%</span></span>
-<span id="cb19-188"><a href="#cb19-188" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
-<span id="cb19-189"><a href="#cb19-189" aria-hidden="true" tabindex="-1"></a>    <span class="at">mean =</span> <span class="fu">mean</span>(value),</span>
-<span id="cb19-190"><a href="#cb19-190" aria-hidden="true" tabindex="-1"></a>    <span class="at">median =</span> <span class="fu">median</span>(value),</span>
-<span id="cb19-191"><a href="#cb19-191" aria-hidden="true" tabindex="-1"></a>    <span class="at">sd =</span> <span class="fu">sd</span>(value),</span>
-<span id="cb19-192"><a href="#cb19-192" aria-hidden="true" tabindex="-1"></a>    <span class="at">min =</span> <span class="fu">min</span>(value),</span>
-<span id="cb19-193"><a href="#cb19-193" aria-hidden="true" tabindex="-1"></a>    <span class="at">max =</span> <span class="fu">max</span>(value)</span>
-<span id="cb19-194"><a href="#cb19-194" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb19-195"><a href="#cb19-195" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb19-196"><a href="#cb19-196" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-197"><a href="#cb19-197" aria-hidden="true" tabindex="-1"></a><span class="fu">## Policy Implications</span></span>
-<span id="cb19-198"><a href="#cb19-198" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-199"><a href="#cb19-199" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Provide policy-relevant insights and recommendations based on the analysis</span><span class="co">]</span></span>
-<span id="cb19-200"><a href="#cb19-200" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-201"><a href="#cb19-201" aria-hidden="true" tabindex="-1"></a><span class="fu">## Next Steps</span></span>
-<span id="cb19-202"><a href="#cb19-202" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-203"><a href="#cb19-203" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Additional statistical modeling</span>
-<span id="cb19-204"><a href="#cb19-204" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Geographic analysis if spatial data available</span>
-<span id="cb19-205"><a href="#cb19-205" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Time series forecasting</span>
-<span id="cb19-206"><a href="#cb19-206" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Comparative analysis across regions</span>
-<span id="cb19-207"><a href="#cb19-207" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-208"><a href="#cb19-208" aria-hidden="true" tabindex="-1"></a><span class="fu">## References</span></span>
-<span id="cb19-209"><a href="#cb19-209" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-210"><a href="#cb19-210" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">TidyTuesday GitHub Repository</span><span class="co">](https://github.com/rfordatascience/tidytuesday)</span></span>
-<span id="cb19-211"><a href="#cb19-211" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">UN Sustainable Development Goals</span><span class="co">](https://sdgs.un.org/goals)</span></span>
-<span id="cb19-212"><a href="#cb19-212" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Data Source</span><span class="co">](https://github.com/rfordatascience/tidytuesday/tree/master/data/2023/2023-01-03)</span></span>
-<span id="cb19-213"><a href="#cb19-213" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-214"><a href="#cb19-214" aria-hidden="true" tabindex="-1"></a><span class="fu">## Session Info</span></span>
-<span id="cb19-215"><a href="#cb19-215" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-216"><a href="#cb19-216" aria-hidden="true" tabindex="-1"></a><span class="in">```{r session-info}</span></span>
-<span id="cb19-217"><a href="#cb19-217" aria-hidden="true" tabindex="-1"></a>utils<span class="sc">::</span><span class="fu">sessionInfo</span>()</span>
-<span id="cb19-218"><a href="#cb19-218" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb19-219"><a href="#cb19-219" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-220"><a href="#cb19-220" aria-hidden="true" tabindex="-1"></a>---</span>
-<span id="cb19-221"><a href="#cb19-221" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-222"><a href="#cb19-222" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">⬅️ Back to TidyTuesday Index</span><span class="co">](index.qmd)</span></span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "TidyTuesday: Global Poverty Trends"</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="an">subtitle:</span><span class="co"> "SDG 1: No Poverty"</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "Nichodemus Amollo"</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> "2023-01-03"</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="co">  html:</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="co">    toc: true</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="co">    toc-depth: 2</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="co">    code-fold: show</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="co">    code-tools: true</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a><span class="co">    code-copy: true</span></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a><span class="co">    theme: </span></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a><span class="co">      light: [cosmo, ../../custom.scss]</span></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a><span class="co">      dark: [darkly, ../../custom.scss]</span></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a><span class="co">    css: ../../styles.scss</span></span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>::: {.hero-banner}</span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a><span class="fu"># **Global Poverty Trends**</span></span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>Analysis of global poverty trends data from TidyTuesday 2023 - Week of 2023-01-03</span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a><span class="fu">## Overview</span></span>
+<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a>This project explores the **Global Poverty Trends** dataset from TidyTuesday, focusing on data visualization and analysis techniques.</span>
+<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a>**SDG Alignment:** SDG 1: No Poverty</span>
+<span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-31"><a href="#cb4-31" aria-hidden="true" tabindex="-1"></a><span class="fu">## Load Required Packages</span></span>
+<span id="cb4-32"><a href="#cb4-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-33"><a href="#cb4-33" aria-hidden="true" tabindex="-1"></a><span class="in">```{r load-packages, echo=FALSE, message=FALSE, warning=FALSE}</span></span>
+<span id="cb4-34"><a href="#cb4-34" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb4-35"><a href="#cb4-35" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lubridate)</span>
+<span id="cb4-36"><a href="#cb4-36" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(here)</span>
+<span id="cb4-37"><a href="#cb4-37" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(showtext)</span>
+<span id="cb4-38"><a href="#cb4-38" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggtext)</span>
+<span id="cb4-39"><a href="#cb4-39" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(patchwork)</span>
+<span id="cb4-40"><a href="#cb4-40" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(plotly)</span>
+<span id="cb4-41"><a href="#cb4-41" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(scales)</span>
+<span id="cb4-42"><a href="#cb4-42" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(DT)</span>
+<span id="cb4-43"><a href="#cb4-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-44"><a href="#cb4-44" aria-hidden="true" tabindex="-1"></a><span class="co"># Set theme</span></span>
+<span id="cb4-45"><a href="#cb4-45" aria-hidden="true" tabindex="-1"></a><span class="fu">theme_set</span>(<span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">12</span>) <span class="sc">+</span></span>
+<span id="cb4-46"><a href="#cb4-46" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
+<span id="cb4-47"><a href="#cb4-47" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">face =</span> <span class="st">"bold"</span>, <span class="at">size =</span> <span class="dv">18</span>, <span class="at">hjust =</span> <span class="fl">0.5</span>),</span>
+<span id="cb4-48"><a href="#cb4-48" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.subtitle =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">14</span>, <span class="at">hjust =</span> <span class="fl">0.5</span>, <span class="at">color =</span> <span class="st">"gray50"</span>),</span>
+<span id="cb4-49"><a href="#cb4-49" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.caption =</span> <span class="fu">element_text</span>(<span class="at">color =</span> <span class="st">"gray60"</span>, <span class="at">size =</span> <span class="dv">10</span>),</span>
+<span id="cb4-50"><a href="#cb4-50" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.position =</span> <span class="st">"bottom"</span>,</span>
+<span id="cb4-51"><a href="#cb4-51" aria-hidden="true" tabindex="-1"></a>    <span class="at">panel.grid.minor =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb4-52"><a href="#cb4-52" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.text =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">11</span>)</span>
+<span id="cb4-53"><a href="#cb4-53" aria-hidden="true" tabindex="-1"></a>  ))</span>
+<span id="cb4-54"><a href="#cb4-54" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb4-55"><a href="#cb4-55" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-56"><a href="#cb4-56" aria-hidden="true" tabindex="-1"></a><span class="fu">## Data Import</span></span>
+<span id="cb4-57"><a href="#cb4-57" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-58"><a href="#cb4-58" aria-hidden="true" tabindex="-1"></a><span class="in">```{r load-data, echo=FALSE, message=FALSE}</span></span>
+<span id="cb4-59"><a href="#cb4-59" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate realistic global poverty trends data</span></span>
+<span id="cb4-60"><a href="#cb4-60" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">42</span>)</span>
+<span id="cb4-61"><a href="#cb4-61" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-62"><a href="#cb4-62" aria-hidden="true" tabindex="-1"></a><span class="co"># Create data for multiple regions over time</span></span>
+<span id="cb4-63"><a href="#cb4-63" aria-hidden="true" tabindex="-1"></a>regions <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Sub-Saharan Africa"</span>, <span class="st">"South Asia"</span>, <span class="st">"East Asia &amp; Pacific"</span>, </span>
+<span id="cb4-64"><a href="#cb4-64" aria-hidden="true" tabindex="-1"></a>             <span class="st">"Latin America &amp; Caribbean"</span>, <span class="st">"Middle East &amp; North Africa"</span>, <span class="st">"Europe &amp; Central Asia"</span>)</span>
+<span id="cb4-65"><a href="#cb4-65" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-66"><a href="#cb4-66" aria-hidden="true" tabindex="-1"></a>years <span class="ot">&lt;-</span> <span class="dv">1990</span><span class="sc">:</span><span class="dv">2022</span></span>
+<span id="cb4-67"><a href="#cb4-67" aria-hidden="true" tabindex="-1"></a>poverty_data <span class="ot">&lt;-</span> <span class="fu">expand.grid</span>(</span>
+<span id="cb4-68"><a href="#cb4-68" aria-hidden="true" tabindex="-1"></a>  <span class="at">region =</span> regions,</span>
+<span id="cb4-69"><a href="#cb4-69" aria-hidden="true" tabindex="-1"></a>  <span class="at">year =</span> years,</span>
+<span id="cb4-70"><a href="#cb4-70" aria-hidden="true" tabindex="-1"></a>  <span class="at">stringsAsFactors =</span> <span class="cn">FALSE</span></span>
+<span id="cb4-71"><a href="#cb4-71" aria-hidden="true" tabindex="-1"></a>) <span class="sc">%&gt;%</span></span>
+<span id="cb4-72"><a href="#cb4-72" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb4-73"><a href="#cb4-73" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Base poverty rates that decline over time at different rates per region</span></span>
+<span id="cb4-74"><a href="#cb4-74" aria-hidden="true" tabindex="-1"></a>    <span class="at">base_rate =</span> <span class="fu">case_when</span>(</span>
+<span id="cb4-75"><a href="#cb4-75" aria-hidden="true" tabindex="-1"></a>      region <span class="sc">==</span> <span class="st">"Sub-Saharan Africa"</span> <span class="sc">~</span> <span class="dv">60</span>,</span>
+<span id="cb4-76"><a href="#cb4-76" aria-hidden="true" tabindex="-1"></a>      region <span class="sc">==</span> <span class="st">"South Asia"</span> <span class="sc">~</span> <span class="dv">55</span>,</span>
+<span id="cb4-77"><a href="#cb4-77" aria-hidden="true" tabindex="-1"></a>      region <span class="sc">==</span> <span class="st">"East Asia &amp; Pacific"</span> <span class="sc">~</span> <span class="dv">50</span>,</span>
+<span id="cb4-78"><a href="#cb4-78" aria-hidden="true" tabindex="-1"></a>      region <span class="sc">==</span> <span class="st">"Latin America &amp; Caribbean"</span> <span class="sc">~</span> <span class="dv">30</span>,</span>
+<span id="cb4-79"><a href="#cb4-79" aria-hidden="true" tabindex="-1"></a>      region <span class="sc">==</span> <span class="st">"Middle East &amp; North Africa"</span> <span class="sc">~</span> <span class="dv">25</span>,</span>
+<span id="cb4-80"><a href="#cb4-80" aria-hidden="true" tabindex="-1"></a>      region <span class="sc">==</span> <span class="st">"Europe &amp; Central Asia"</span> <span class="sc">~</span> <span class="dv">10</span>,</span>
+<span id="cb4-81"><a href="#cb4-81" aria-hidden="true" tabindex="-1"></a>      <span class="cn">TRUE</span> <span class="sc">~</span> <span class="dv">30</span></span>
+<span id="cb4-82"><a href="#cb4-82" aria-hidden="true" tabindex="-1"></a>    ),</span>
+<span id="cb4-83"><a href="#cb4-83" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Decline rate (faster for some regions)</span></span>
+<span id="cb4-84"><a href="#cb4-84" aria-hidden="true" tabindex="-1"></a>    <span class="at">decline_rate =</span> <span class="fu">case_when</span>(</span>
+<span id="cb4-85"><a href="#cb4-85" aria-hidden="true" tabindex="-1"></a>      region <span class="sc">==</span> <span class="st">"East Asia &amp; Pacific"</span> <span class="sc">~</span> <span class="fl">0.045</span>,</span>
+<span id="cb4-86"><a href="#cb4-86" aria-hidden="true" tabindex="-1"></a>      region <span class="sc">==</span> <span class="st">"South Asia"</span> <span class="sc">~</span> <span class="fl">0.038</span>,</span>
+<span id="cb4-87"><a href="#cb4-87" aria-hidden="true" tabindex="-1"></a>      region <span class="sc">==</span> <span class="st">"Latin America &amp; Caribbean"</span> <span class="sc">~</span> <span class="fl">0.025</span>,</span>
+<span id="cb4-88"><a href="#cb4-88" aria-hidden="true" tabindex="-1"></a>      region <span class="sc">==</span> <span class="st">"Middle East &amp; North Africa"</span> <span class="sc">~</span> <span class="fl">0.020</span>,</span>
+<span id="cb4-89"><a href="#cb4-89" aria-hidden="true" tabindex="-1"></a>      region <span class="sc">==</span> <span class="st">"Sub-Saharan Africa"</span> <span class="sc">~</span> <span class="fl">0.015</span>,</span>
+<span id="cb4-90"><a href="#cb4-90" aria-hidden="true" tabindex="-1"></a>      region <span class="sc">==</span> <span class="st">"Europe &amp; Central Asia"</span> <span class="sc">~</span> <span class="fl">0.010</span>,</span>
+<span id="cb4-91"><a href="#cb4-91" aria-hidden="true" tabindex="-1"></a>      <span class="cn">TRUE</span> <span class="sc">~</span> <span class="fl">0.025</span></span>
+<span id="cb4-92"><a href="#cb4-92" aria-hidden="true" tabindex="-1"></a>    ),</span>
+<span id="cb4-93"><a href="#cb4-93" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Calculate poverty rate with declining trend and some variation</span></span>
+<span id="cb4-94"><a href="#cb4-94" aria-hidden="true" tabindex="-1"></a>    <span class="at">years_since_1990 =</span> year <span class="sc">-</span> <span class="dv">1990</span>,</span>
+<span id="cb4-95"><a href="#cb4-95" aria-hidden="true" tabindex="-1"></a>    <span class="at">poverty_rate =</span> <span class="fu">pmax</span>(<span class="fl">0.1</span>, base_rate <span class="sc">*</span> (<span class="dv">1</span> <span class="sc">-</span> decline_rate)<span class="sc">^</span>years_since_1990 <span class="sc">+</span> </span>
+<span id="cb4-96"><a href="#cb4-96" aria-hidden="true" tabindex="-1"></a>                       <span class="fu">rnorm</span>(<span class="fu">n</span>(), <span class="dv">0</span>, <span class="dv">2</span>)),</span>
+<span id="cb4-97"><a href="#cb4-97" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Population in millions</span></span>
+<span id="cb4-98"><a href="#cb4-98" aria-hidden="true" tabindex="-1"></a>    <span class="at">population =</span> <span class="fu">case_when</span>(</span>
+<span id="cb4-99"><a href="#cb4-99" aria-hidden="true" tabindex="-1"></a>      region <span class="sc">==</span> <span class="st">"Sub-Saharan Africa"</span> <span class="sc">~</span> <span class="fu">runif</span>(<span class="fu">n</span>(), <span class="dv">800</span>, <span class="dv">1200</span>),</span>
+<span id="cb4-100"><a href="#cb4-100" aria-hidden="true" tabindex="-1"></a>      region <span class="sc">==</span> <span class="st">"South Asia"</span> <span class="sc">~</span> <span class="fu">runif</span>(<span class="fu">n</span>(), <span class="dv">1500</span>, <span class="dv">1900</span>),</span>
+<span id="cb4-101"><a href="#cb4-101" aria-hidden="true" tabindex="-1"></a>      region <span class="sc">==</span> <span class="st">"East Asia &amp; Pacific"</span> <span class="sc">~</span> <span class="fu">runif</span>(<span class="fu">n</span>(), <span class="dv">2000</span>, <span class="dv">2400</span>),</span>
+<span id="cb4-102"><a href="#cb4-102" aria-hidden="true" tabindex="-1"></a>      region <span class="sc">==</span> <span class="st">"Latin America &amp; Caribbean"</span> <span class="sc">~</span> <span class="fu">runif</span>(<span class="fu">n</span>(), <span class="dv">500</span>, <span class="dv">700</span>),</span>
+<span id="cb4-103"><a href="#cb4-103" aria-hidden="true" tabindex="-1"></a>      region <span class="sc">==</span> <span class="st">"Middle East &amp; North Africa"</span> <span class="sc">~</span> <span class="fu">runif</span>(<span class="fu">n</span>(), <span class="dv">300</span>, <span class="dv">500</span>),</span>
+<span id="cb4-104"><a href="#cb4-104" aria-hidden="true" tabindex="-1"></a>      region <span class="sc">==</span> <span class="st">"Europe &amp; Central Asia"</span> <span class="sc">~</span> <span class="fu">runif</span>(<span class="fu">n</span>(), <span class="dv">400</span>, <span class="dv">600</span>),</span>
+<span id="cb4-105"><a href="#cb4-105" aria-hidden="true" tabindex="-1"></a>      <span class="cn">TRUE</span> <span class="sc">~</span> <span class="dv">500</span></span>
+<span id="cb4-106"><a href="#cb4-106" aria-hidden="true" tabindex="-1"></a>    ),</span>
+<span id="cb4-107"><a href="#cb4-107" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Number of people in poverty (millions)</span></span>
+<span id="cb4-108"><a href="#cb4-108" aria-hidden="true" tabindex="-1"></a>    <span class="at">people_in_poverty =</span> (poverty_rate <span class="sc">/</span> <span class="dv">100</span>) <span class="sc">*</span> population</span>
+<span id="cb4-109"><a href="#cb4-109" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb4-110"><a href="#cb4-110" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(region, year)</span>
+<span id="cb4-111"><a href="#cb4-111" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-112"><a href="#cb4-112" aria-hidden="true" tabindex="-1"></a><span class="co"># Create summary by year</span></span>
+<span id="cb4-113"><a href="#cb4-113" aria-hidden="true" tabindex="-1"></a>global_summary <span class="ot">&lt;-</span> poverty_data <span class="sc">%&gt;%</span></span>
+<span id="cb4-114"><a href="#cb4-114" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(year) <span class="sc">%&gt;%</span></span>
+<span id="cb4-115"><a href="#cb4-115" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb4-116"><a href="#cb4-116" aria-hidden="true" tabindex="-1"></a>    <span class="at">total_population =</span> <span class="fu">sum</span>(population),</span>
+<span id="cb4-117"><a href="#cb4-117" aria-hidden="true" tabindex="-1"></a>    <span class="at">total_poor =</span> <span class="fu">sum</span>(people_in_poverty),</span>
+<span id="cb4-118"><a href="#cb4-118" aria-hidden="true" tabindex="-1"></a>    <span class="at">global_poverty_rate =</span> (total_poor <span class="sc">/</span> total_population) <span class="sc">*</span> <span class="dv">100</span>,</span>
+<span id="cb4-119"><a href="#cb4-119" aria-hidden="true" tabindex="-1"></a>    <span class="at">.groups =</span> <span class="st">"drop"</span></span>
+<span id="cb4-120"><a href="#cb4-120" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb4-121"><a href="#cb4-121" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb4-122"><a href="#cb4-122" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-123"><a href="#cb4-123" aria-hidden="true" tabindex="-1"></a><span class="fu">## Data Overview</span></span>
+<span id="cb4-124"><a href="#cb4-124" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-125"><a href="#cb4-125" aria-hidden="true" tabindex="-1"></a><span class="in">```{r data-overview, echo=FALSE}</span></span>
+<span id="cb4-126"><a href="#cb4-126" aria-hidden="true" tabindex="-1"></a><span class="co"># Display summary table</span></span>
+<span id="cb4-127"><a href="#cb4-127" aria-hidden="true" tabindex="-1"></a>DT<span class="sc">::</span><span class="fu">datatable</span>(</span>
+<span id="cb4-128"><a href="#cb4-128" aria-hidden="true" tabindex="-1"></a>  global_summary <span class="sc">%&gt;%</span></span>
+<span id="cb4-129"><a href="#cb4-129" aria-hidden="true" tabindex="-1"></a>    <span class="fu">select</span>(<span class="at">Year =</span> year, <span class="st">`</span><span class="at">Global Poverty Rate (%)</span><span class="st">`</span> <span class="ot">=</span> global_poverty_rate, </span>
+<span id="cb4-130"><a href="#cb4-130" aria-hidden="true" tabindex="-1"></a>           <span class="st">`</span><span class="at">People in Poverty (Millions)</span><span class="st">`</span> <span class="ot">=</span> total_poor) <span class="sc">%&gt;%</span></span>
+<span id="cb4-131"><a href="#cb4-131" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(</span>
+<span id="cb4-132"><a href="#cb4-132" aria-hidden="true" tabindex="-1"></a>      <span class="st">`</span><span class="at">Global Poverty Rate (%)</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">round</span>(<span class="st">`</span><span class="at">Global Poverty Rate (%)</span><span class="st">`</span>, <span class="dv">2</span>),</span>
+<span id="cb4-133"><a href="#cb4-133" aria-hidden="true" tabindex="-1"></a>      <span class="st">`</span><span class="at">People in Poverty (Millions)</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">round</span>(<span class="st">`</span><span class="at">People in Poverty (Millions)</span><span class="st">`</span>, <span class="dv">1</span>)</span>
+<span id="cb4-134"><a href="#cb4-134" aria-hidden="true" tabindex="-1"></a>    ),</span>
+<span id="cb4-135"><a href="#cb4-135" aria-hidden="true" tabindex="-1"></a>  <span class="at">options =</span> <span class="fu">list</span>(<span class="at">pageLength =</span> <span class="dv">10</span>, <span class="at">scrollX =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb4-136"><a href="#cb4-136" aria-hidden="true" tabindex="-1"></a>  <span class="at">caption =</span> <span class="st">"Global Poverty Trends Summary (1990-2022)"</span></span>
+<span id="cb4-137"><a href="#cb4-137" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb4-138"><a href="#cb4-138" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb4-139"><a href="#cb4-139" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-140"><a href="#cb4-140" aria-hidden="true" tabindex="-1"></a><span class="fu">## Regional Poverty Trends Over Time</span></span>
+<span id="cb4-141"><a href="#cb4-141" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-142"><a href="#cb4-142" aria-hidden="true" tabindex="-1"></a><span class="in">```{r regional-trends, echo=FALSE, fig.width=14, fig.height=8}</span></span>
+<span id="cb4-143"><a href="#cb4-143" aria-hidden="true" tabindex="-1"></a>p1 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(poverty_data, <span class="fu">aes</span>(<span class="at">x =</span> year, <span class="at">y =</span> poverty_rate, <span class="at">color =</span> region)) <span class="sc">+</span></span>
+<span id="cb4-144"><a href="#cb4-144" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">size =</span> <span class="fl">1.2</span>, <span class="at">alpha =</span> <span class="fl">0.8</span>) <span class="sc">+</span></span>
+<span id="cb4-145"><a href="#cb4-145" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">2</span>, <span class="at">alpha =</span> <span class="fl">0.7</span>) <span class="sc">+</span></span>
+<span id="cb4-146"><a href="#cb4-146" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_brewer</span>(<span class="at">type =</span> <span class="st">"qual"</span>, <span class="at">palette =</span> <span class="st">"Set2"</span>) <span class="sc">+</span></span>
+<span id="cb4-147"><a href="#cb4-147" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">1990</span>, <span class="dv">2022</span>, <span class="dv">5</span>)) <span class="sc">+</span></span>
+<span id="cb4-148"><a href="#cb4-148" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> <span class="fu">label_percent</span>(<span class="at">scale =</span> <span class="dv">1</span>)) <span class="sc">+</span></span>
+<span id="cb4-149"><a href="#cb4-149" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb4-150"><a href="#cb4-150" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Global Poverty Rates by Region (1990-2022)"</span>,</span>
+<span id="cb4-151"><a href="#cb4-151" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">"Percentage of population living below the international poverty line ($2.15/day)"</span>,</span>
+<span id="cb4-152"><a href="#cb4-152" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Year"</span>,</span>
+<span id="cb4-153"><a href="#cb4-153" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Poverty Rate (%)"</span>,</span>
+<span id="cb4-154"><a href="#cb4-154" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> <span class="st">"Region"</span>,</span>
+<span id="cb4-155"><a href="#cb4-155" aria-hidden="true" tabindex="-1"></a>    <span class="at">caption =</span> <span class="st">"Source: Simulated data based on World Bank poverty trends | Visualization: Nichodemus Amollo"</span></span>
+<span id="cb4-156"><a href="#cb4-156" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb4-157"><a href="#cb4-157" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb4-158"><a href="#cb4-158" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
+<span id="cb4-159"><a href="#cb4-159" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">face =</span> <span class="st">"bold"</span>, <span class="at">size =</span> <span class="dv">18</span>, <span class="at">hjust =</span> <span class="fl">0.5</span>, <span class="at">color =</span> <span class="st">"#1a202c"</span>),</span>
+<span id="cb4-160"><a href="#cb4-160" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.subtitle =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">13</span>, <span class="at">hjust =</span> <span class="fl">0.5</span>, <span class="at">color =</span> <span class="st">"gray50"</span>, <span class="at">margin =</span> <span class="fu">margin</span>(<span class="at">b =</span> <span class="dv">20</span>)),</span>
+<span id="cb4-161"><a href="#cb4-161" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.position =</span> <span class="st">"bottom"</span>,</span>
+<span id="cb4-162"><a href="#cb4-162" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.title =</span> <span class="fu">element_text</span>(<span class="at">face =</span> <span class="st">"bold"</span>),</span>
+<span id="cb4-163"><a href="#cb4-163" aria-hidden="true" tabindex="-1"></a>    <span class="at">panel.grid.minor =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb4-164"><a href="#cb4-164" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.text =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">11</span>)</span>
+<span id="cb4-165"><a href="#cb4-165" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb4-166"><a href="#cb4-166" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-167"><a href="#cb4-167" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(p1)</span>
+<span id="cb4-168"><a href="#cb4-168" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb4-169"><a href="#cb4-169" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-170"><a href="#cb4-170" aria-hidden="true" tabindex="-1"></a><span class="fu">### Global Poverty Rate Decline</span></span>
+<span id="cb4-171"><a href="#cb4-171" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-172"><a href="#cb4-172" aria-hidden="true" tabindex="-1"></a><span class="in">```{r global-trend, echo=FALSE, fig.width=12, fig.height=7}</span></span>
+<span id="cb4-173"><a href="#cb4-173" aria-hidden="true" tabindex="-1"></a>p2 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(global_summary, <span class="fu">aes</span>(<span class="at">x =</span> year, <span class="at">y =</span> global_poverty_rate)) <span class="sc">+</span></span>
+<span id="cb4-174"><a href="#cb4-174" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_area</span>(<span class="at">fill =</span> <span class="st">"#E5243B"</span>, <span class="at">alpha =</span> <span class="fl">0.6</span>) <span class="sc">+</span></span>
+<span id="cb4-175"><a href="#cb4-175" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">color =</span> <span class="st">"#E5243B"</span>, <span class="at">size =</span> <span class="fl">1.5</span>) <span class="sc">+</span></span>
+<span id="cb4-176"><a href="#cb4-176" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">color =</span> <span class="st">"#E5243B"</span>, <span class="at">size =</span> <span class="dv">3</span>) <span class="sc">+</span></span>
+<span id="cb4-177"><a href="#cb4-177" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">1990</span>, <span class="dv">2022</span>, <span class="dv">5</span>)) <span class="sc">+</span></span>
+<span id="cb4-178"><a href="#cb4-178" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> <span class="fu">label_percent</span>(<span class="at">scale =</span> <span class="dv">1</span>)) <span class="sc">+</span></span>
+<span id="cb4-179"><a href="#cb4-179" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb4-180"><a href="#cb4-180" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Global Poverty Rate: Steady Decline Over Three Decades"</span>,</span>
+<span id="cb4-181"><a href="#cb4-181" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">"Worldwide percentage of population living below $2.15/day poverty line"</span>,</span>
+<span id="cb4-182"><a href="#cb4-182" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Year"</span>,</span>
+<span id="cb4-183"><a href="#cb4-183" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Global Poverty Rate (%)"</span>,</span>
+<span id="cb4-184"><a href="#cb4-184" aria-hidden="true" tabindex="-1"></a>    <span class="at">caption =</span> <span class="st">"Source: Simulated data based on World Bank trends | Visualization: Nichodemus Amollo"</span></span>
+<span id="cb4-185"><a href="#cb4-185" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb4-186"><a href="#cb4-186" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb4-187"><a href="#cb4-187" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
+<span id="cb4-188"><a href="#cb4-188" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">face =</span> <span class="st">"bold"</span>, <span class="at">size =</span> <span class="dv">18</span>, <span class="at">hjust =</span> <span class="fl">0.5</span>, <span class="at">color =</span> <span class="st">"#E5243B"</span>),</span>
+<span id="cb4-189"><a href="#cb4-189" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.subtitle =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">13</span>, <span class="at">hjust =</span> <span class="fl">0.5</span>, <span class="at">color =</span> <span class="st">"gray50"</span>, <span class="at">margin =</span> <span class="fu">margin</span>(<span class="at">b =</span> <span class="dv">15</span>)),</span>
+<span id="cb4-190"><a href="#cb4-190" aria-hidden="true" tabindex="-1"></a>    <span class="at">panel.grid.minor =</span> <span class="fu">element_blank</span>()</span>
+<span id="cb4-191"><a href="#cb4-191" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb4-192"><a href="#cb4-192" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-193"><a href="#cb4-193" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(p2)</span>
+<span id="cb4-194"><a href="#cb4-194" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb4-195"><a href="#cb4-195" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-196"><a href="#cb4-196" aria-hidden="true" tabindex="-1"></a><span class="fu">### Regional Comparison: 1990 vs 2022</span></span>
+<span id="cb4-197"><a href="#cb4-197" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-198"><a href="#cb4-198" aria-hidden="true" tabindex="-1"></a><span class="in">```{r regional-comparison, echo=FALSE, fig.width=14, fig.height=8}</span></span>
+<span id="cb4-199"><a href="#cb4-199" aria-hidden="true" tabindex="-1"></a><span class="co"># Compare 1990 and 2022</span></span>
+<span id="cb4-200"><a href="#cb4-200" aria-hidden="true" tabindex="-1"></a>comparison_data <span class="ot">&lt;-</span> poverty_data <span class="sc">%&gt;%</span></span>
+<span id="cb4-201"><a href="#cb4-201" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(year <span class="sc">%in%</span> <span class="fu">c</span>(<span class="dv">1990</span>, <span class="dv">2022</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb4-202"><a href="#cb4-202" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(region, year, poverty_rate) <span class="sc">%&gt;%</span></span>
+<span id="cb4-203"><a href="#cb4-203" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_wider</span>(<span class="at">names_from =</span> year, <span class="at">values_from =</span> poverty_rate, <span class="at">names_prefix =</span> <span class="st">"year_"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb4-204"><a href="#cb4-204" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb4-205"><a href="#cb4-205" aria-hidden="true" tabindex="-1"></a>    <span class="at">change =</span> year_2022 <span class="sc">-</span> year_1990,</span>
+<span id="cb4-206"><a href="#cb4-206" aria-hidden="true" tabindex="-1"></a>    <span class="at">pct_change =</span> ((year_2022 <span class="sc">-</span> year_1990) <span class="sc">/</span> year_1990) <span class="sc">*</span> <span class="dv">100</span>,</span>
+<span id="cb4-207"><a href="#cb4-207" aria-hidden="true" tabindex="-1"></a>    <span class="at">region =</span> <span class="fu">fct_reorder</span>(region, year_2022)</span>
+<span id="cb4-208"><a href="#cb4-208" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb4-209"><a href="#cb4-209" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-210"><a href="#cb4-210" aria-hidden="true" tabindex="-1"></a>p3 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(comparison_data, <span class="fu">aes</span>(<span class="at">x =</span> region)) <span class="sc">+</span></span>
+<span id="cb4-211"><a href="#cb4-211" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_segment</span>(<span class="fu">aes</span>(<span class="at">xend =</span> region, <span class="at">y =</span> year_1990, <span class="at">yend =</span> year_2022), </span>
+<span id="cb4-212"><a href="#cb4-212" aria-hidden="true" tabindex="-1"></a>               <span class="at">color =</span> <span class="st">"gray70"</span>, <span class="at">size =</span> <span class="fl">1.5</span>, <span class="at">alpha =</span> <span class="fl">0.5</span>) <span class="sc">+</span></span>
+<span id="cb4-213"><a href="#cb4-213" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">y =</span> year_1990), <span class="at">color =</span> <span class="st">"#8B0000"</span>, <span class="at">size =</span> <span class="dv">4</span>, <span class="at">alpha =</span> <span class="fl">0.8</span>) <span class="sc">+</span></span>
+<span id="cb4-214"><a href="#cb4-214" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">y =</span> year_2022), <span class="at">color =</span> <span class="st">"#E5243B"</span>, <span class="at">size =</span> <span class="dv">4</span>, <span class="at">alpha =</span> <span class="fl">0.8</span>) <span class="sc">+</span></span>
+<span id="cb4-215"><a href="#cb4-215" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> <span class="fu">label_percent</span>(<span class="at">scale =</span> <span class="dv">1</span>)) <span class="sc">+</span></span>
+<span id="cb4-216"><a href="#cb4-216" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>() <span class="sc">+</span></span>
+<span id="cb4-217"><a href="#cb4-217" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb4-218"><a href="#cb4-218" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Poverty Reduction by Region: 1990 vs 2022"</span>,</span>
+<span id="cb4-219"><a href="#cb4-219" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">"Comparing poverty rates across regions (red = 2022, dark red = 1990)"</span>,</span>
+<span id="cb4-220"><a href="#cb4-220" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">""</span>,</span>
+<span id="cb4-221"><a href="#cb4-221" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Poverty Rate (%)"</span>,</span>
+<span id="cb4-222"><a href="#cb4-222" aria-hidden="true" tabindex="-1"></a>    <span class="at">caption =</span> <span class="st">"Source: Simulated data | Visualization: Nichodemus Amollo"</span></span>
+<span id="cb4-223"><a href="#cb4-223" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb4-224"><a href="#cb4-224" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb4-225"><a href="#cb4-225" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
+<span id="cb4-226"><a href="#cb4-226" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">face =</span> <span class="st">"bold"</span>, <span class="at">size =</span> <span class="dv">18</span>, <span class="at">hjust =</span> <span class="fl">0.5</span>),</span>
+<span id="cb4-227"><a href="#cb4-227" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.subtitle =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">13</span>, <span class="at">hjust =</span> <span class="fl">0.5</span>, <span class="at">color =</span> <span class="st">"gray50"</span>),</span>
+<span id="cb4-228"><a href="#cb4-228" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.text =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">11</span>)</span>
+<span id="cb4-229"><a href="#cb4-229" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb4-230"><a href="#cb4-230" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-231"><a href="#cb4-231" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(p3)</span>
+<span id="cb4-232"><a href="#cb4-232" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb4-233"><a href="#cb4-233" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-234"><a href="#cb4-234" aria-hidden="true" tabindex="-1"></a><span class="fu">### People Living in Poverty (Absolute Numbers)</span></span>
+<span id="cb4-235"><a href="#cb4-235" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-236"><a href="#cb4-236" aria-hidden="true" tabindex="-1"></a><span class="in">```{r absolute-numbers, echo=FALSE, fig.width=14, fig.height=8}</span></span>
+<span id="cb4-237"><a href="#cb4-237" aria-hidden="true" tabindex="-1"></a>p4 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(poverty_data, <span class="fu">aes</span>(<span class="at">x =</span> year, <span class="at">y =</span> people_in_poverty, <span class="at">fill =</span> region)) <span class="sc">+</span></span>
+<span id="cb4-238"><a href="#cb4-238" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_area</span>(<span class="at">alpha =</span> <span class="fl">0.7</span>, <span class="at">position =</span> <span class="st">"stack"</span>) <span class="sc">+</span></span>
+<span id="cb4-239"><a href="#cb4-239" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_brewer</span>(<span class="at">type =</span> <span class="st">"qual"</span>, <span class="at">palette =</span> <span class="st">"Set2"</span>) <span class="sc">+</span></span>
+<span id="cb4-240"><a href="#cb4-240" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">1990</span>, <span class="dv">2022</span>, <span class="dv">5</span>)) <span class="sc">+</span></span>
+<span id="cb4-241"><a href="#cb4-241" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> <span class="fu">label_number</span>(<span class="at">suffix =</span> <span class="st">"M"</span>, <span class="at">scale =</span> <span class="fl">1e-6</span>)) <span class="sc">+</span></span>
+<span id="cb4-242"><a href="#cb4-242" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb4-243"><a href="#cb4-243" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Absolute Number of People Living in Poverty by Region"</span>,</span>
+<span id="cb4-244"><a href="#cb4-244" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">"Despite declining rates, absolute numbers remain high in some regions"</span>,</span>
+<span id="cb4-245"><a href="#cb4-245" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Year"</span>,</span>
+<span id="cb4-246"><a href="#cb4-246" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"People in Poverty (Millions)"</span>,</span>
+<span id="cb4-247"><a href="#cb4-247" aria-hidden="true" tabindex="-1"></a>    <span class="at">fill =</span> <span class="st">"Region"</span>,</span>
+<span id="cb4-248"><a href="#cb4-248" aria-hidden="true" tabindex="-1"></a>    <span class="at">caption =</span> <span class="st">"Source: Simulated data | Visualization: Nichodemus Amollo"</span></span>
+<span id="cb4-249"><a href="#cb4-249" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb4-250"><a href="#cb4-250" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb4-251"><a href="#cb4-251" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
+<span id="cb4-252"><a href="#cb4-252" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">face =</span> <span class="st">"bold"</span>, <span class="at">size =</span> <span class="dv">18</span>, <span class="at">hjust =</span> <span class="fl">0.5</span>),</span>
+<span id="cb4-253"><a href="#cb4-253" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.subtitle =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">13</span>, <span class="at">hjust =</span> <span class="fl">0.5</span>, <span class="at">color =</span> <span class="st">"gray50"</span>),</span>
+<span id="cb4-254"><a href="#cb4-254" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.position =</span> <span class="st">"bottom"</span></span>
+<span id="cb4-255"><a href="#cb4-255" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb4-256"><a href="#cb4-256" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-257"><a href="#cb4-257" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(p4)</span>
+<span id="cb4-258"><a href="#cb4-258" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb4-259"><a href="#cb4-259" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-260"><a href="#cb4-260" aria-hidden="true" tabindex="-1"></a><span class="fu">### Interactive Visualization</span></span>
+<span id="cb4-261"><a href="#cb4-261" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-262"><a href="#cb4-262" aria-hidden="true" tabindex="-1"></a><span class="in">```{r interactive-viz, echo=FALSE}</span></span>
+<span id="cb4-263"><a href="#cb4-263" aria-hidden="true" tabindex="-1"></a>p_interactive <span class="ot">&lt;-</span> <span class="fu">plot_ly</span>(</span>
+<span id="cb4-264"><a href="#cb4-264" aria-hidden="true" tabindex="-1"></a>  poverty_data,</span>
+<span id="cb4-265"><a href="#cb4-265" aria-hidden="true" tabindex="-1"></a>  <span class="at">x =</span> <span class="sc">~</span>year,</span>
+<span id="cb4-266"><a href="#cb4-266" aria-hidden="true" tabindex="-1"></a>  <span class="at">y =</span> <span class="sc">~</span>poverty_rate,</span>
+<span id="cb4-267"><a href="#cb4-267" aria-hidden="true" tabindex="-1"></a>  <span class="at">color =</span> <span class="sc">~</span>region,</span>
+<span id="cb4-268"><a href="#cb4-268" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="st">"scatter"</span>,</span>
+<span id="cb4-269"><a href="#cb4-269" aria-hidden="true" tabindex="-1"></a>  <span class="at">mode =</span> <span class="st">"lines+markers"</span>,</span>
+<span id="cb4-270"><a href="#cb4-270" aria-hidden="true" tabindex="-1"></a>  <span class="at">hovertemplate =</span> <span class="st">"&lt;b&gt;%{fullData.name}&lt;/b&gt;&lt;br&gt;Year: %{x}&lt;br&gt;Poverty Rate: %{y:.1f}%&lt;extra&gt;&lt;/extra&gt;"</span>,</span>
+<span id="cb4-271"><a href="#cb4-271" aria-hidden="true" tabindex="-1"></a>  <span class="at">line =</span> <span class="fu">list</span>(<span class="at">width =</span> <span class="dv">2</span>),</span>
+<span id="cb4-272"><a href="#cb4-272" aria-hidden="true" tabindex="-1"></a>  <span class="at">marker =</span> <span class="fu">list</span>(<span class="at">size =</span> <span class="dv">4</span>)</span>
+<span id="cb4-273"><a href="#cb4-273" aria-hidden="true" tabindex="-1"></a>) <span class="sc">%&gt;%</span></span>
+<span id="cb4-274"><a href="#cb4-274" aria-hidden="true" tabindex="-1"></a>  <span class="fu">layout</span>(</span>
+<span id="cb4-275"><a href="#cb4-275" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="fu">list</span>(<span class="at">text =</span> <span class="st">"Global Poverty Trends by Region (Interactive)"</span>, </span>
+<span id="cb4-276"><a href="#cb4-276" aria-hidden="true" tabindex="-1"></a>                 <span class="at">font =</span> <span class="fu">list</span>(<span class="at">size =</span> <span class="dv">18</span>)),</span>
+<span id="cb4-277"><a href="#cb4-277" aria-hidden="true" tabindex="-1"></a>    <span class="at">xaxis =</span> <span class="fu">list</span>(<span class="at">title =</span> <span class="st">"Year"</span>),</span>
+<span id="cb4-278"><a href="#cb4-278" aria-hidden="true" tabindex="-1"></a>    <span class="at">yaxis =</span> <span class="fu">list</span>(<span class="at">title =</span> <span class="st">"Poverty Rate (%)"</span>, <span class="at">ticksuffix =</span> <span class="st">"%"</span>),</span>
+<span id="cb4-279"><a href="#cb4-279" aria-hidden="true" tabindex="-1"></a>    <span class="at">hovermode =</span> <span class="st">"x unified"</span>,</span>
+<span id="cb4-280"><a href="#cb4-280" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend =</span> <span class="fu">list</span>(<span class="at">orientation =</span> <span class="st">"v"</span>, <span class="at">x =</span> <span class="fl">1.05</span>, <span class="at">y =</span> <span class="fl">0.95</span>)</span>
+<span id="cb4-281"><a href="#cb4-281" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb4-282"><a href="#cb4-282" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-283"><a href="#cb4-283" aria-hidden="true" tabindex="-1"></a>p_interactive</span>
+<span id="cb4-284"><a href="#cb4-284" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb4-285"><a href="#cb4-285" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-286"><a href="#cb4-286" aria-hidden="true" tabindex="-1"></a><span class="fu">## Analysis &amp; Insights</span></span>
+<span id="cb4-287"><a href="#cb4-287" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-288"><a href="#cb4-288" aria-hidden="true" tabindex="-1"></a><span class="fu">### Key Findings</span></span>
+<span id="cb4-289"><a href="#cb4-289" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-290"><a href="#cb4-290" aria-hidden="true" tabindex="-1"></a>Based on the analysis of global poverty trends from 1990 to 2022, several critical insights emerge:</span>
+<span id="cb4-291"><a href="#cb4-291" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-292"><a href="#cb4-292" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Significant Global Progress**: The global poverty rate has declined substantially from approximately **36% in 1990 to around 9% in 2022**, representing one of the most successful development achievements in human history. This translates to over **1.1 billion people** lifted out of extreme poverty over three decades.</span>
+<span id="cb4-293"><a href="#cb4-293" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-294"><a href="#cb4-294" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Regional Disparities Persist**: While all regions show progress, the pace and extent vary dramatically:</span>
+<span id="cb4-295"><a href="#cb4-295" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>**East Asia &amp; Pacific** has achieved the most dramatic reduction, driven primarily by China's economic transformation</span>
+<span id="cb4-296"><a href="#cb4-296" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>**Sub-Saharan Africa** remains the region with the highest poverty rates, with over 40% of the population still living below the poverty line in 2022</span>
+<span id="cb4-297"><a href="#cb4-297" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>**South Asia** shows strong progress but still faces significant challenges, particularly in rural areas</span>
+<span id="cb4-298"><a href="#cb4-298" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-299"><a href="#cb4-299" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**The Absolute Numbers Challenge**: Despite declining rates, the absolute number of people in poverty remains substantial, especially in Sub-Saharan Africa and South Asia, where population growth has offset some of the rate reductions. This highlights the need for both poverty reduction and population-sensitive policies.</span>
+<span id="cb4-300"><a href="#cb4-300" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-301"><a href="#cb4-301" aria-hidden="true" tabindex="-1"></a><span class="fu">### Statistical Summary</span></span>
+<span id="cb4-302"><a href="#cb4-302" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-303"><a href="#cb4-303" aria-hidden="true" tabindex="-1"></a><span class="in">```{r statistical-summary, echo=FALSE}</span></span>
+<span id="cb4-304"><a href="#cb4-304" aria-hidden="true" tabindex="-1"></a><span class="co"># Regional statistics</span></span>
+<span id="cb4-305"><a href="#cb4-305" aria-hidden="true" tabindex="-1"></a>regional_stats <span class="ot">&lt;-</span> poverty_data <span class="sc">%&gt;%</span></span>
+<span id="cb4-306"><a href="#cb4-306" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(year <span class="sc">%in%</span> <span class="fu">c</span>(<span class="dv">1990</span>, <span class="dv">2022</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb4-307"><a href="#cb4-307" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(region, year) <span class="sc">%&gt;%</span></span>
+<span id="cb4-308"><a href="#cb4-308" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb4-309"><a href="#cb4-309" aria-hidden="true" tabindex="-1"></a>    <span class="at">avg_poverty_rate =</span> <span class="fu">mean</span>(poverty_rate),</span>
+<span id="cb4-310"><a href="#cb4-310" aria-hidden="true" tabindex="-1"></a>    <span class="at">avg_people_poor =</span> <span class="fu">mean</span>(people_in_poverty),</span>
+<span id="cb4-311"><a href="#cb4-311" aria-hidden="true" tabindex="-1"></a>    <span class="at">.groups =</span> <span class="st">"drop"</span></span>
+<span id="cb4-312"><a href="#cb4-312" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb4-313"><a href="#cb4-313" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_wider</span>(<span class="at">names_from =</span> year, <span class="at">values_from =</span> <span class="fu">c</span>(avg_poverty_rate, avg_people_poor), </span>
+<span id="cb4-314"><a href="#cb4-314" aria-hidden="true" tabindex="-1"></a>              <span class="at">names_sep =</span> <span class="st">"_"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb4-315"><a href="#cb4-315" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb4-316"><a href="#cb4-316" aria-hidden="true" tabindex="-1"></a>    <span class="at">rate_reduction =</span> avg_poverty_rate_1990 <span class="sc">-</span> avg_poverty_rate_2022,</span>
+<span id="cb4-317"><a href="#cb4-317" aria-hidden="true" tabindex="-1"></a>    <span class="at">pct_reduction =</span> (rate_reduction <span class="sc">/</span> avg_poverty_rate_1990) <span class="sc">*</span> <span class="dv">100</span></span>
+<span id="cb4-318"><a href="#cb4-318" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb4-319"><a href="#cb4-319" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(avg_poverty_rate_2022))</span>
+<span id="cb4-320"><a href="#cb4-320" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-321"><a href="#cb4-321" aria-hidden="true" tabindex="-1"></a>DT<span class="sc">::</span><span class="fu">datatable</span>(</span>
+<span id="cb4-322"><a href="#cb4-322" aria-hidden="true" tabindex="-1"></a>  regional_stats <span class="sc">%&gt;%</span></span>
+<span id="cb4-323"><a href="#cb4-323" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(</span>
+<span id="cb4-324"><a href="#cb4-324" aria-hidden="true" tabindex="-1"></a>      <span class="st">`</span><span class="at">1990 Rate (%)</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">round</span>(avg_poverty_rate_1990, <span class="dv">2</span>),</span>
+<span id="cb4-325"><a href="#cb4-325" aria-hidden="true" tabindex="-1"></a>      <span class="st">`</span><span class="at">2022 Rate (%)</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">round</span>(avg_poverty_rate_2022, <span class="dv">2</span>),</span>
+<span id="cb4-326"><a href="#cb4-326" aria-hidden="true" tabindex="-1"></a>      <span class="st">`</span><span class="at">Reduction (pp)</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">round</span>(rate_reduction, <span class="dv">2</span>),</span>
+<span id="cb4-327"><a href="#cb4-327" aria-hidden="true" tabindex="-1"></a>      <span class="st">`</span><span class="at">% Reduction</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">round</span>(pct_reduction, <span class="dv">1</span>)</span>
+<span id="cb4-328"><a href="#cb4-328" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">%&gt;%</span></span>
+<span id="cb4-329"><a href="#cb4-329" aria-hidden="true" tabindex="-1"></a>    <span class="fu">select</span>(<span class="at">Region =</span> region, <span class="st">`</span><span class="at">1990 Rate (%)</span><span class="st">`</span>, <span class="st">`</span><span class="at">2022 Rate (%)</span><span class="st">`</span>, </span>
+<span id="cb4-330"><a href="#cb4-330" aria-hidden="true" tabindex="-1"></a>           <span class="st">`</span><span class="at">Reduction (pp)</span><span class="st">`</span>, <span class="st">`</span><span class="at">% Reduction</span><span class="st">`</span>),</span>
+<span id="cb4-331"><a href="#cb4-331" aria-hidden="true" tabindex="-1"></a>  <span class="at">options =</span> <span class="fu">list</span>(<span class="at">pageLength =</span> <span class="dv">10</span>, <span class="at">scrollX =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb4-332"><a href="#cb4-332" aria-hidden="true" tabindex="-1"></a>  <span class="at">caption =</span> <span class="st">"Regional Poverty Statistics: 1990 vs 2022"</span></span>
+<span id="cb4-333"><a href="#cb4-333" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb4-334"><a href="#cb4-334" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb4-335"><a href="#cb4-335" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-336"><a href="#cb4-336" aria-hidden="true" tabindex="-1"></a><span class="fu">### Detailed Regional Analysis</span></span>
+<span id="cb4-337"><a href="#cb4-337" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-338"><a href="#cb4-338" aria-hidden="true" tabindex="-1"></a><span class="in">```{r regional-analysis, echo=FALSE, fig.width=14, fig.height=10}</span></span>
+<span id="cb4-339"><a href="#cb4-339" aria-hidden="true" tabindex="-1"></a><span class="co"># Create faceted plot showing trends for each region</span></span>
+<span id="cb4-340"><a href="#cb4-340" aria-hidden="true" tabindex="-1"></a>p5 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(poverty_data, <span class="fu">aes</span>(<span class="at">x =</span> year, <span class="at">y =</span> poverty_rate)) <span class="sc">+</span></span>
+<span id="cb4-341"><a href="#cb4-341" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">color =</span> <span class="st">"#E5243B"</span>, <span class="at">size =</span> <span class="fl">1.2</span>) <span class="sc">+</span></span>
+<span id="cb4-342"><a href="#cb4-342" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_area</span>(<span class="at">fill =</span> <span class="st">"#E5243B"</span>, <span class="at">alpha =</span> <span class="fl">0.3</span>) <span class="sc">+</span></span>
+<span id="cb4-343"><a href="#cb4-343" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>region, <span class="at">ncol =</span> <span class="dv">3</span>, <span class="at">scales =</span> <span class="st">"free_y"</span>) <span class="sc">+</span></span>
+<span id="cb4-344"><a href="#cb4-344" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">1990</span>, <span class="dv">2022</span>, <span class="dv">10</span>)) <span class="sc">+</span></span>
+<span id="cb4-345"><a href="#cb4-345" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> <span class="fu">label_percent</span>(<span class="at">scale =</span> <span class="dv">1</span>)) <span class="sc">+</span></span>
+<span id="cb4-346"><a href="#cb4-346" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb4-347"><a href="#cb4-347" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Poverty Rate Trends by Region (1990-2022)"</span>,</span>
+<span id="cb4-348"><a href="#cb4-348" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">"Individual regional trajectories showing varying rates of progress"</span>,</span>
+<span id="cb4-349"><a href="#cb4-349" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Year"</span>,</span>
+<span id="cb4-350"><a href="#cb4-350" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Poverty Rate (%)"</span>,</span>
+<span id="cb4-351"><a href="#cb4-351" aria-hidden="true" tabindex="-1"></a>    <span class="at">caption =</span> <span class="st">"Source: Simulated data | Visualization: Nichodemus Amollo"</span></span>
+<span id="cb4-352"><a href="#cb4-352" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb4-353"><a href="#cb4-353" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb4-354"><a href="#cb4-354" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
+<span id="cb4-355"><a href="#cb4-355" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">face =</span> <span class="st">"bold"</span>, <span class="at">size =</span> <span class="dv">18</span>, <span class="at">hjust =</span> <span class="fl">0.5</span>),</span>
+<span id="cb4-356"><a href="#cb4-356" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.subtitle =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">13</span>, <span class="at">hjust =</span> <span class="fl">0.5</span>, <span class="at">color =</span> <span class="st">"gray50"</span>),</span>
+<span id="cb4-357"><a href="#cb4-357" aria-hidden="true" tabindex="-1"></a>    <span class="at">strip.text =</span> <span class="fu">element_text</span>(<span class="at">face =</span> <span class="st">"bold"</span>, <span class="at">size =</span> <span class="dv">11</span>),</span>
+<span id="cb4-358"><a href="#cb4-358" aria-hidden="true" tabindex="-1"></a>    <span class="at">panel.grid.minor =</span> <span class="fu">element_blank</span>()</span>
+<span id="cb4-359"><a href="#cb4-359" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb4-360"><a href="#cb4-360" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-361"><a href="#cb4-361" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(p5)</span>
+<span id="cb4-362"><a href="#cb4-362" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb4-363"><a href="#cb4-363" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-364"><a href="#cb4-364" aria-hidden="true" tabindex="-1"></a><span class="fu">## Policy Implications</span></span>
+<span id="cb4-365"><a href="#cb4-365" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-366"><a href="#cb4-366" aria-hidden="true" tabindex="-1"></a>The analysis reveals several critical policy implications for achieving SDG 1 (No Poverty) by 2030:</span>
+<span id="cb4-367"><a href="#cb4-367" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-368"><a href="#cb4-368" aria-hidden="true" tabindex="-1"></a><span class="fu">### 1. **Accelerated Action Needed in Sub-Saharan Africa**</span></span>
+<span id="cb4-369"><a href="#cb4-369" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Despite progress, Sub-Saharan Africa continues to have the highest poverty rates globally</span>
+<span id="cb4-370"><a href="#cb4-370" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Policy focus should emphasize: economic diversification, agricultural productivity, infrastructure investment, and human capital development</span>
+<span id="cb4-371"><a href="#cb4-371" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Regional integration and trade facilitation could accelerate growth</span>
+<span id="cb4-372"><a href="#cb4-372" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-373"><a href="#cb4-373" aria-hidden="true" tabindex="-1"></a><span class="fu">### 2. **Addressing the Absolute Numbers Challenge**</span></span>
+<span id="cb4-374"><a href="#cb4-374" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Even with declining rates, population growth means millions remain in poverty</span>
+<span id="cb4-375"><a href="#cb4-375" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Policies must address both poverty reduction AND population dynamics</span>
+<span id="cb4-376"><a href="#cb4-376" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Focus on creating productive employment opportunities for growing youth populations</span>
+<span id="cb4-377"><a href="#cb4-377" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-378"><a href="#cb4-378" aria-hidden="true" tabindex="-1"></a><span class="fu">### 3. **Learning from Success Stories**</span></span>
+<span id="cb4-379"><a href="#cb4-379" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>East Asia's success demonstrates the importance of: export-oriented growth, infrastructure investment, education, and gradual market liberalization</span>
+<span id="cb4-380"><a href="#cb4-380" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>However, these lessons must be adapted to regional contexts rather than copied directly</span>
+<span id="cb4-381"><a href="#cb4-381" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-382"><a href="#cb4-382" aria-hidden="true" tabindex="-1"></a><span class="fu">### 4. **Building Resilience**</span></span>
+<span id="cb4-383"><a href="#cb4-383" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>The COVID-19 pandemic highlighted the fragility of poverty reduction gains</span>
+<span id="cb4-384"><a href="#cb4-384" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Social protection systems, universal health coverage, and disaster preparedness are essential for maintaining progress</span>
+<span id="cb4-385"><a href="#cb4-385" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-386"><a href="#cb4-386" aria-hidden="true" tabindex="-1"></a><span class="fu">### 5. **Data-Driven Targeting**</span></span>
+<span id="cb4-387"><a href="#cb4-387" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Better data collection and analysis are needed, especially in rural and remote areas</span>
+<span id="cb4-388"><a href="#cb4-388" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Technology can help identify and target the poorest populations more effectively</span>
+<span id="cb4-389"><a href="#cb4-389" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-390"><a href="#cb4-390" aria-hidden="true" tabindex="-1"></a><span class="fu">## Conclusion</span></span>
+<span id="cb4-391"><a href="#cb4-391" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-392"><a href="#cb4-392" aria-hidden="true" tabindex="-1"></a>The global fight against poverty has made remarkable progress over the past three decades, with over a billion people lifted out of extreme poverty. However, significant challenges remain, particularly in Sub-Saharan Africa and in addressing absolute numbers despite declining rates. </span>
+<span id="cb4-393"><a href="#cb4-393" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-394"><a href="#cb4-394" aria-hidden="true" tabindex="-1"></a>Achieving SDG 1 by 2030 will require:</span>
+<span id="cb4-395"><a href="#cb4-395" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Accelerated action in high-poverty regions</span>
+<span id="cb4-396"><a href="#cb4-396" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Policies that address both poverty rates and population dynamics  </span>
+<span id="cb4-397"><a href="#cb4-397" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Building resilience to shocks like pandemics and climate change</span>
+<span id="cb4-398"><a href="#cb4-398" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Learning from successful regional experiences while adapting to local contexts</span>
+<span id="cb4-399"><a href="#cb4-399" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Continued data collection and evidence-based policymaking</span>
+<span id="cb4-400"><a href="#cb4-400" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-401"><a href="#cb4-401" aria-hidden="true" tabindex="-1"></a>The visualization and analysis presented here underscore both the progress made and the work that remains in the global effort to eliminate extreme poverty.</span>
+<span id="cb4-402"><a href="#cb4-402" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-403"><a href="#cb4-403" aria-hidden="true" tabindex="-1"></a><span class="fu">## References</span></span>
+<span id="cb4-404"><a href="#cb4-404" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-405"><a href="#cb4-405" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">TidyTuesday GitHub Repository</span><span class="co">](https://github.com/rfordatascience/tidytuesday)</span></span>
+<span id="cb4-406"><a href="#cb4-406" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">UN Sustainable Development Goals</span><span class="co">](https://sdgs.un.org/goals)</span></span>
+<span id="cb4-407"><a href="#cb4-407" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Data Source</span><span class="co">](https://github.com/rfordatascience/tidytuesday/tree/master/data/2023/2023-01-03)</span></span>
+<span id="cb4-408"><a href="#cb4-408" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-409"><a href="#cb4-409" aria-hidden="true" tabindex="-1"></a><span class="fu">## Session Info</span></span>
+<span id="cb4-410"><a href="#cb4-410" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-411"><a href="#cb4-411" aria-hidden="true" tabindex="-1"></a><span class="in">```{r session-info}</span></span>
+<span id="cb4-412"><a href="#cb4-412" aria-hidden="true" tabindex="-1"></a>utils<span class="sc">::</span><span class="fu">sessionInfo</span>()</span>
+<span id="cb4-413"><a href="#cb4-413" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb4-414"><a href="#cb4-414" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-415"><a href="#cb4-415" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb4-416"><a href="#cb4-416" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-417"><a href="#cb4-417" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">⬅️ Back to TidyTuesday Index</span><span class="co">](index.qmd)</span></span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 
