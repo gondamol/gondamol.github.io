@@ -4,26 +4,30 @@ subtitle: "Health Financial Diaries | Data Science & ML | Impact Evaluation | He
 page-layout: full
 ---
 
-::: {style="text-align: center; margin-bottom: 2rem; position: relative;"}
-![Profile Photo](profile.jpeg){width=250px style="border-radius: 50%; box-shadow: 0 8px 24px rgba(0,0,0,0.2); margin-top: 2rem; border: 4px solid #fff; position: relative; z-index: 1;" class="floating"}
+::: {.text-center .no-frame style="margin-bottom: 2rem;"}
+![Profile Photo](profile.jpeg){width=250px class="profile-photo floating" style="margin-top: 2rem;"}
 
-::: {style="margin-top: 1.5rem; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;"}
-[<i class="fab fa-linkedin"></i> LinkedIn](https://linkedin.com/in/amollow){.btn .btn-primary style="margin: 0.25rem;"}
-[<i class="fab fa-github"></i> GitHub](https://github.com/gondamol){.btn .btn-primary style="margin: 0.25rem;"}
-[<i class="fab fa-twitter"></i> Twitter](https://twitter.com/nwerre){.btn .btn-primary style="margin: 0.25rem;"}
-[<i class="fab fa-kaggle"></i> Kaggle](https://kaggle.com/nwerre){.btn .btn-primary style="margin: 0.25rem;"}
-[<i class="fas fa-envelope"></i> Email](mailto:nichodemuswerre@gmail.com){.btn .btn-primary style="margin: 0.25rem;"}
+::: {.social-links .no-frame}
+[<i class="fab fa-linkedin"></i> LinkedIn](https://linkedin.com/in/amollow){.btn .btn-primary}
+[<i class="fab fa-github"></i> GitHub](https://github.com/gondamol){.btn .btn-primary}
+[<i class="fab fa-twitter"></i> Twitter](https://twitter.com/nwerre){.btn .btn-primary}
+[<i class="fab fa-kaggle"></i> Kaggle](https://kaggle.com/nwerre){.btn .btn-primary}
+[<i class="fas fa-envelope"></i> Email](mailto:nichodemuswerre@gmail.com){.btn .btn-primary}
 :::
 :::
 
-::: {.hero-banner style="position: relative; z-index: 1;"}
+::: {.hero-banner}
 # **<i class="fas fa-brain icon-bounce"></i> Research Data Manager | Data Scientist | M&E Specialist**
 
 From orphaned child in rural Kenya to leading global health data science initiatives.
 
 **<i class="fas fa-chart-line"></i> 8+ years** driving impact through data | **<i class="fas fa-users"></i> 500+ researchers** trained | **<i class="fas fa-university"></i> Georgetown University gui2de**
 
-[<i class="fas fa-book-open"></i> Read My Story](about/index.qmd){.cta-button} [<i class="fas fa-project-diagram"></i> View Projects](projects/index.qmd){.cta-button} [<i class="fas fa-file-alt"></i> See CV](cv/index.qmd){.cta-button}
+::: {.hero-cta}
+[<i class="fas fa-book-open"></i> Read My Story](about/index.qmd){.cta-button}
+[<i class="fas fa-project-diagram"></i> View Projects](projects/index.qmd){.cta-button}
+[<i class="fas fa-file-alt"></i> See CV](cv/index.qmd){.cta-button}
+:::
 :::
 
 ---
@@ -123,7 +127,9 @@ From orphaned child in rural Kenya to leading global health data science initiat
 ::: {.project-body}
 Investigating how health financing impacts hypertension and diabetes outcomes in Kisumu County, Kenya. Mixed-methods study with 30+ facilities, 500+ patients.
 
-[<i class="fas fa-arrow-right"></i> View Research Dashboard →](research/thesis.qmd){.cta-button style="margin-top: 1rem;"}
+::: {.cta-stack}
+[<i class="fas fa-arrow-right"></i> View Research Dashboard →](research/thesis.qmd){.cta-button}
+:::
 :::
 :::
 
@@ -134,7 +140,9 @@ Investigating how health financing impacts hypertension and diabetes outcomes in
 ::: {.project-body}
 Building advanced survey software with offline capabilities, Kenya-specific validations, and multi-language support for African research contexts.
 
-[<i class="fas fa-arrow-right"></i> Explore Project →](software/index.qmd){.cta-button style="margin-top: 1rem;"}
+::: {.cta-stack}
+[<i class="fas fa-arrow-right"></i> Explore Project →](software/index.qmd){.cta-button}
+:::
 :::
 :::
 
@@ -167,6 +175,6 @@ Open to opportunities in:
 
 ---
 
-::: {style="text-align: center; font-style: italic; color: #666; margin: 2rem 0; padding: 2rem; background: linear-gradient(135deg, #f5f7fa 0%, #e2e8f0 100%); border-radius: 12px;"}
+::: {.brutal-quote}
 **<i class="fas fa-quote-left"></i>** "Against all odds, I made it this far - now positioned to drive transformative impact in global health data science." **<i class="fas fa-quote-right"></i>**
 :::

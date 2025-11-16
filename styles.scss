@@ -1,44 +1,125 @@
-/* css styles */
+/* Additional styling helpers for the neobrutalist system */
 
-/* Container to arrange cards in a grid */
 .stats-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    justify-content: center;
-    margin: 2rem 0;
-  }
-  
-  /* Each stat card */
-  .stat-card {
-    flex: 1 1 220px;
-    background: #ffffff;
-    border-radius: 16px;
-    padding: 1.5rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    text-align: center;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-  }
-  
-  /* Hover effect */
-  .stat-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-  }
-  
-  /* Big number */
-  .stat-number {
-    display: block;
-    font-size: 2rem;
-    font-weight: 700;
-    color: #1a3e72; /* Dark blue for emphasis */
-    margin-bottom: 0.5rem;
-  }
-  
-  /* Label below number */
-  .stat-label {
-    display: block;
-    font-size: 1rem;
-    color: #555;
-  }
-  
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.stat-card {
+  border: 3px solid #111;
+  background: #fff;
+  box-shadow: 12px 12px 0 rgba(0, 0, 0, 0.9);
+  padding: 1.75rem;
+  text-align: left;
+}
+
+.stat-number {
+  font-size: 2.8rem;
+  font-weight: 900;
+  font-family: "Space Mono", monospace;
+  color: #ff5a5f;
+}
+
+.stat-label {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #111;
+}
+
+.skill-category {
+  border: 3px solid #111;
+  box-shadow: 12px 12px 0 rgba(0, 0, 0, 0.9);
+}
+
+.project-card,
+.blog-card,
+.highlight-box,
+.info-box,
+.success-box {
+  border-width: 3px;
+  border-radius: 0;
+}
+
+.tile-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+}
+
+.tile-card {
+  border: 3px solid #111;
+  box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.85);
+  border-radius: 0;
+  padding: 1rem 1.25rem;
+  background: #fff;
+}
+
+.inline-pill {
+  display: inline-block;
+  padding: 0.35rem 0.85rem;
+  border: 3px solid #111;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.brutal-divider {
+  height: 3px;
+  width: 100%;
+  background: repeating-linear-gradient(90deg, #111, #111 12px, transparent 12px, transparent 24px);
+  margin: 2rem 0;
+}
+
+.badge-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.badge-stack .badge {
+  border-radius: 0;
+  border: 3px solid #111;
+  background: #fff;
+  padding: 0.35rem 0.9rem;
+  font-weight: 700;
+}
+
+.zigzag-border {
+  border: 3px solid #111;
+  position: relative;
+}
+
+.zigzag-border::after {
+  content: "";
+  position: absolute;
+  left: -3px;
+  right: -3px;
+  bottom: -12px;
+  height: 12px;
+  background: repeating-linear-gradient(135deg, #111 0 8px, transparent 8px 16px);
+}
+
+.brutal-card {
+  border: 3px solid #111;
+  background: #fff;
+  padding: 1.5rem;
+  box-shadow: 12px 12px 0 rgba(0, 0, 0, 0.9);
+}
+
+.accent-note {
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.monochrome-list {
+  list-style: none;
+  padding: 0;
+}
+
+.monochrome-list li {
+  padding: 0.45rem 0;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+}
