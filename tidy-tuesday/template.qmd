@@ -136,5 +136,5 @@ ggplot(df, aes(x = date, y = value)) +
 ## Session Info
 
 ```{r session-info}
-sessioninfo::session_info()
+utils::sessionInfo()
 ```

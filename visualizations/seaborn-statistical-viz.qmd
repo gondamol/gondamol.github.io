@@ -1,0 +1,11 @@
+---
+title: "Statistical Visualizations with Seaborn"
+subtitle: "Statistical plotting with Seaborn"
+format:
+  html:
+    toc: true
+    code-fold: show
+---
+
+## Overview
+Using Seaborn for statistical plotting including regression analysis and distribution plots.

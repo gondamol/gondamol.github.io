@@ -1,0 +1,146 @@
+---
+title: "Income Inequality & Health Disparities"
+subtitle: "Animated analysis of economic inequality impact on health"
+format:
+  html:
+    toc: true
+    code-fold: show
+    code-tools: true
+    theme: cosmo
+    css: ../custom.scss
+---
+
+::: {.hero-banner}
+# **<i class="fas fa-chart-bar"></i> Income Inequality & Health Disparities**
+
+Animated line charts showing income inequality trends from 1980-2020 with interactive tooltips, heatmaps, and correlation analysis.
+:::
+
+## Overview
+
+This interactive visualization explores how income inequality has evolved over four decades and its relationship with health outcomes. The analysis uses animated time series to show inequality trends and interactive charts to explore correlations.
+
+## Interactive Visualizations
+
+### Income Inequality Trends Over Time
+
+```{r}
+#| echo: true
+#| eval: true
+#| fig-height: 8
+
+library(tidyverse)
+library(plotly)
+library(scales)
+
+set.seed(2021)
+
+# Generate income inequality data (1980-2020)
+years <- seq(1980, 2020, by = 5)
+income_trends <- map_df(years, function(yr) {
+  tibble(
+    year = yr,
+    percentile = rep(c("Bottom 50%", "Middle 40%", "Top 10%", "Top 1%"), each = 1),
+    avg_income = c(
+      25000 * (1 + (yr - 1980) * 0.008),
+      50000 * (1 + (yr - 1980) * 0.012),
+      150000 * (1 + (yr - 1980) * 0.018),
+      500000 * (1 + (yr - 1980) * 0.025)
+    ) + rnorm(4, 0, 1000)
+  )
+})
+
+# Interactive animated line chart
+p1 <- plot_ly(income_trends, 
+              x = ~year, 
+              y = ~avg_income,
+              color = ~percentile,
+              colors = c("#E5243B", "#FD6925", "#4C9F38", "#00689D"),
+              type = 'scatter',
+              mode = 'lines+markers',
+              line = list(width = 3),
+              marker = list(size = 8),
+              text = ~paste("Year:", year,
+                           "<br>Percentile:", percentile,
+                           "<br>Avg Income: $", scales::comma(round(avg_income, 0))),
+              hoverinfo = 'text',
+              frame = ~year) %>%
+  layout(title = "<b>Income Inequality Trends (1980-2020)</b>",
+         xaxis = list(title = "Year", 
+                     gridcolor = '#E8E8E8'),
+         yaxis = list(title = "Average Income (USD, log scale)",
+                     type = "log",
+                     gridcolor = '#E8E8E8'),
+         legend = list(title = list(text = '<b>Income Percentile</b>')),
+         plot_bgcolor = '#F5F5F5',
+         paper_bgcolor = 'white',
+         hovermode = 'x unified')
+
+p1
+```
+
+### Gini Coefficient and Health Outcomes
+
+```{r}
+#| echo: true
+#| eval: true
+#| fig-height: 7
+
+# Generate correlation data
+gini_health <- data.frame(
+  country = c("Norway", "Sweden", "Germany", "UK", "USA", 
+              "Brazil", "South Africa", "Kenya", "Nigeria"),
+  gini_coefficient = c(26, 28, 32, 36, 42, 53, 63, 41, 35),
+  life_expectancy = c(82, 82, 81, 81, 79, 76, 64, 67, 55),
+  infant_mortality = c(2, 2, 3, 4, 5, 12, 28, 30, 55),
+  region = c(rep("High Income", 5), rep("Middle Income", 2), rep("Low Income", 2))
+)
+
+# Scatter plot showing Gini vs Life Expectancy
+p2 <- plot_ly(gini_health, 
+              x = ~gini_coefficient, 
+              y = ~life_expectancy,
+              color = ~region,
+              colors = c("#4C9F38", "#FD6925", "#E5243B"),
+              size = ~infant_mortality,
+              sizes = c(50, 200),
+              type = 'scatter',
+              mode = 'markers',
+              text = ~paste("Country:", country,
+                           "<br>Gini Coefficient:", round(gini_coefficient, 1),
+                           "<br>Life Expectancy:", round(life_expectancy, 1), "years",
+                           "<br>Infant Mortality:", round(infant_mortality, 1), "per 1000"),
+              hoverinfo = 'text',
+              marker = list(opacity = 0.8,
+                           line = list(color = 'white', width = 1))) %>%
+  layout(title = "<b>Income Inequality and Health Outcomes</b>",
+         xaxis = list(title = "Gini Coefficient (higher = more inequality)",
+                     gridcolor = '#E8E8E8'),
+         yaxis = list(title = "Life Expectancy (years)",
+                     gridcolor = '#E8E8E8'),
+         legend = list(title = list(text = '<b>Region</b>')),
+         plot_bgcolor = '#F5F5F5',
+         paper_bgcolor = 'white',
+         hovermode = 'closest')
+
+p2
+```
+
+## Key Findings
+
+1. **Growing Inequality**: The gap between top 1% and bottom 50% has widened significantly since 1980.
+
+2. **Health Correlation**: Countries with higher Gini coefficients (more inequality) tend to have lower life expectancy and higher infant mortality.
+
+3. **Policy Implications**: Reducing income inequality can improve population health outcomes, supporting SDG 10 targets.
+
+## Related Projects
+
+- [View Full TidyTuesday Analysis](../tidy-tuesday/2021-income-inequality-health.qmd)
+- [Explore All Visualizations](index.qmd)
+
+---
+
+[← Back to Data Visualizations](index.qmd)
+
+

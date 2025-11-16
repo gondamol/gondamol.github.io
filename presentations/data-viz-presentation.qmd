@@ -1,0 +1,108 @@
+---
+title: "Data Visualization Techniques"
+subtitle: "Advanced Visualization Methods"
+author: "Nichodemus Amollo"
+format:
+  revealjs:
+    theme: default
+    transition: slide
+    slide-number: true
+    preview-links: auto
+    logo: ../img/profile.jpeg
+---
+
+## Introduction {.r-fit-text}
+
+# Data Visualization Techniques
+
+From Basic Charts to Interactive Dashboards
+
+---
+
+## Agenda
+
+1. **Visualization Fundamentals**
+2. **R Visualization Stack**
+3. **Python Visualization Tools**
+4. **Interactive Web Visualizations**
+5. **Best Practices**
+
+---
+
+## Visualization Fundamentals
+
+### The Grammar of Graphics
+
+- **Data**: What you're visualizing
+- **Aesthetics**: How variables map to visual properties
+- **Geoms**: Visual marks (points, lines, bars)
+- **Scales**: How data maps to aesthetics
+- **Facets**: Multiple plots in one
+
+---
+
+## R Visualization Stack
+
+```{r}
+#| echo: true
+#| eval: false
+
+library(ggplot2)
+library(plotly)
+
+# Create basic plot
+p <- ggplot(mtcars, aes(x = mpg, y = hp)) +
+  geom_point() +
+  theme_minimal()
+
+# Make it interactive
+ggplotly(p)
+```
+
+---
+
+## Python Visualization Tools
+
+- **Matplotlib**: Publication-quality static plots
+- **Seaborn**: Statistical visualizations
+- **Plotly**: Interactive web visualizations
+- **Bokeh**: Modern browser visualizations
+
+---
+
+## Interactive Web Visualizations
+
+### D3.js Example
+
+Creating interactive visualizations with JavaScript and D3.js
+
+---
+
+## Best Practices
+
+1. **Choose the right chart type**
+2. **Use color wisely**
+3. **Make it accessible**
+4. **Tell a story**
+5. **Keep it simple**
+
+---
+
+## Conclusion
+
+### Key Takeaways
+
+- Visualization is a powerful tool for communication
+- Choose tools based on your needs
+- Always consider your audience
+
+**Questions?**
+
+---
+
+## Thank You!
+
+**Contact**: nichodemuswerre@gmail.com
+
+[Portfolio](https://gondamol.github.io) | [GitHub](https://github.com/gondamol)
+

@@ -1,0 +1,11 @@
+---
+title: "Advanced ggplot2 Patterns & Techniques"
+subtitle: "Exploring advanced ggplot2 techniques"
+format:
+  html:
+    toc: true
+    code-fold: show
+---
+
+## Overview
+Advanced ggplot2 techniques including faceting, custom themes, and statistical transformations.

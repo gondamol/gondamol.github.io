@@ -1,0 +1,19 @@
+---
+title: "Visualization Project 27"
+subtitle: "Advanced data visualization techniques"
+format:
+  html:
+    toc: true
+    code-fold: show
+---
+
+## Overview
+
+This project demonstrates advanced visualization techniques.
+
+## Example Code
+
+```r
+library(ggplot2)
+ggplot(data, aes(x = x, y = y)) + geom_point()
+```

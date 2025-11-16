@@ -1,0 +1,11 @@
+---
+title: "Interactive Charts with Plotly"
+subtitle: "Creating interactive dashboards with Plotly"
+format:
+  html:
+    toc: true
+    code-fold: show
+---
+
+## Overview
+Interactive dashboards and charts using plotly for web-based data exploration.

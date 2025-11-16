@@ -1,0 +1,124 @@
+---
+title: "Analyzing Agricultural Data from Public Sources"
+subtitle: "Comprehensive guide to sourcing and analyzing agriculture datasets from Kaggle and other public repositories"
+author: "Nichodemus Amollo"
+date: today
+categories: [Agriculture, Data Analysis, Kaggle]
+format:
+  html:
+    toc: true
+    code-fold: show
+    theme: cosmo
+    css: ../../custom.scss
+---
+
+::: {.hero-banner}
+# **Analyzing Agricultural Data**
+
+A comprehensive guide to sourcing, cleaning, and analyzing agriculture datasets from Kaggle and other public sources
+:::
+
+## Introduction
+
+Agricultural data analysis is crucial for understanding food security, crop productivity, and farming economics. In this post, we'll explore how to source, clean, and analyze agriculture datasets from Kaggle and other public repositories.
+
+## Data Sources
+
+### Kaggle Datasets
+
+1. **Crop Production Data**
+   - Global crop yields
+   - Regional production statistics
+   - Climate impact on agriculture
+
+2. **Farm Economics**
+   - Cost of production
+   - Market prices
+   - Profitability analysis
+
+3. **Agricultural Trade**
+   - Export/import statistics
+   - Trade flows
+   - Market trends
+
+### Other Public Sources
+
+- FAO Statistics
+- World Bank Agricultural Data
+- USDA Datasets
+- Open Government Data Portals
+
+## Example Analysis
+
+```{r}
+#| echo: true
+#| eval: false
+#| fig-width: 12
+#| fig-height: 8
+
+library(tidyverse)
+library(ggplot2)
+library(plotly)
+
+# Load sample agriculture data
+# In practice, you would load from Kaggle or other source
+set.seed(123)
+ag_data <- data.frame(
+  year = rep(2015:2024, each = 4),
+  crop = rep(c("Maize", "Wheat", "Rice", "Beans"), 10),
+  yield = c(
+    rnorm(10, 3.5, 0.5),  # Maize
+    rnorm(10, 2.8, 0.4),  # Wheat
+    rnorm(10, 4.2, 0.6),  # Rice
+    rnorm(10, 1.8, 0.3)   # Beans
+  ),
+  region = rep(c("North", "South", "East", "West"), 10)
+)
+
+# Create visualization
+p <- ggplot(ag_data, aes(x = year, y = yield, color = crop)) +
+  geom_line(size = 1.2, alpha = 0.7) +
+  geom_point(size = 2) +
+  facet_wrap(~region, ncol = 2) +
+  scale_color_manual(values = c("#667eea", "#764ba2", "#f093fb", "#4facfe")) +
+  labs(
+    title = "Crop Yield Trends by Region (2015-2024)",
+    subtitle = "Analysis of major crops across different regions",
+    x = "Year",
+    y = "Yield (tons/ha)",
+    color = "Crop",
+    caption = "Source: Public Agriculture Dataset | Analysis: Nichodemus Amollo"
+  ) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(face = "bold", size = 16),
+    strip.text = element_text(face = "bold")
+  )
+
+print(p)
+```
+
+## Key Insights
+
+1. **Yield Trends**: Analyze productivity over time
+2. **Regional Variations**: Compare performance across regions
+3. **Crop Comparison**: Identify most productive crops
+4. **Seasonal Patterns**: Understand temporal trends
+
+## Applications
+
+- **Policy Making**: Evidence-based agricultural policies
+- **Farm Planning**: Data-driven crop selection
+- **Market Analysis**: Price and demand forecasting
+- **Research**: Academic research on food security
+
+## Resources
+
+- [Kaggle Agriculture Datasets](https://www.kaggle.com/datasets?tags=13207-Agriculture)
+- [FAO Statistics](http://www.fao.org/faostat/en/)
+- [World Bank Agriculture Data](https://data.worldbank.org/topic/agriculture-and-rural-development)
+
+---
+
+[← Back to Blog](../index.qmd) | [View Agriculture Projects](../../projects/agriculture/index.qmd)
+

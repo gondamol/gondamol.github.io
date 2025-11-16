@@ -1,0 +1,152 @@
+---
+title: "Health Financing & Universal Health Coverage Dashboard"
+subtitle: "Interactive visualization of health expenditure patterns and outcomes"
+format:
+  html:
+    toc: true
+    code-fold: show
+    code-tools: true
+    theme: cosmo
+    css: ../custom.scss
+---
+
+::: {.hero-banner}
+# **<i class="fas fa-heartbeat"></i> Health Financing & Universal Health Coverage**
+
+Interactive dashboard analyzing health spending patterns, life expectancy correlations, and immunization coverage trends across multiple countries.
+:::
+
+## Overview
+
+This interactive dashboard explores the relationship between health expenditure and health outcomes across different income groups, with a focus on low- and middle-income countries. The visualizations demonstrate how health financing impacts life expectancy, immunization coverage, and progress toward Universal Health Coverage (UHC).
+
+## Interactive Visualizations
+
+### Health Spending vs Life Expectancy
+
+```{r}
+#| echo: true
+#| eval: true
+#| fig-height: 8
+
+library(tidyverse)
+library(plotly)
+library(DT)
+
+set.seed(2018)
+
+# Generate health financing data
+countries <- data.frame(
+  country = c("Ethiopia", "Uganda", "Rwanda", "Kenya", "Tanzania", 
+              "Nigeria", "Ghana", "South Africa", "Brazil", "India",
+              "China", "USA", "Germany", "UK"),
+  income_group = c(rep("Low income", 3), rep("Lower middle income", 4),
+                   rep("Upper middle income", 2), rep("High income", 5)),
+  health_exp_per_capita = c(30, 50, 45, 80, 90, 95, 120, 450,
+                             600, 75, 350, 9500, 5000, 4000),
+  life_expectancy = c(66, 63, 69, 67, 65, 55, 64, 64,
+                      76, 69, 77, 79, 81, 81),
+  immunization_coverage = c(75, 78, 95, 82, 88, 65, 92, 85,
+                            95, 88, 99, 95, 96, 94),
+  population = c(115, 46, 13, 54, 60, 206, 31, 60,
+                 214, 1380, 1400, 330, 83, 67) * 1e6
+)
+
+# Interactive scatter plot
+p1 <- plot_ly(countries, 
+              x = ~health_exp_per_capita, 
+              y = ~life_expectancy,
+              color = ~income_group,
+              colors = c("#E5243B", "#FD6925", "#4C9F38", "#00689D"),
+              size = ~population,
+              sizes = c(50, 500),
+              type = 'scatter',
+              mode = 'markers',
+              text = ~paste("Country:", country,
+                           "<br>Health Spending: $", round(health_exp_per_capita, 0),
+                           "<br>Life Expectancy:", round(life_expectancy, 1), "years",
+                           "<br>Population:", scales::comma(population)),
+              hoverinfo = 'text',
+              marker = list(opacity = 0.7,
+                           line = list(color = 'white', width = 1))) %>%
+  layout(title = list(text = "<b>Health Expenditure and Life Expectancy by Income Group</b>",
+                      x = 0),
+         xaxis = list(title = "Health Expenditure per Capita (USD, log scale)",
+                     type = "log",
+                     gridcolor = '#E8E8E8'),
+         yaxis = list(title = "Life Expectancy (years)",
+                     gridcolor = '#E8E8E8'),
+         legend = list(title = list(text = '<b>Income Group</b>')),
+         plot_bgcolor = '#F5F5F5',
+         paper_bgcolor = 'white',
+         hovermode = 'closest')
+
+p1
+```
+
+### Immunization Coverage by Income Group
+
+```{r}
+#| echo: true
+#| eval: true
+#| fig-height: 7
+
+# Box plot showing immunization coverage distribution
+p2 <- plot_ly(countries, 
+              y = ~immunization_coverage, 
+              color = ~income_group,
+              colors = c("#E5243B", "#FD6925", "#4C9F38", "#00689D"),
+              type = 'box',
+              boxmean = 'sd',
+              text = ~paste("Country:", country,
+                           "<br>Coverage:", round(immunization_coverage, 1), "%"),
+              hoverinfo = 'text') %>%
+  layout(title = "Immunization Coverage Distribution by Income Group",
+         xaxis = list(title = "Income Group"),
+         yaxis = list(title = "Immunization Coverage (%)",
+                     range = c(0, 100)),
+         plot_bgcolor = '#F5F5F5',
+         paper_bgcolor = 'white')
+
+p2
+```
+
+### Data Table
+
+```{r}
+#| echo: true
+#| eval: true
+
+datatable(countries %>% 
+            mutate(across(where(is.numeric), ~round(., 1))) %>%
+            select(country, income_group, health_exp_per_capita, 
+                   life_expectancy, immunization_coverage),
+          options = list(pageLength = 10, scrollX = TRUE, 
+                         dom = 'Bfrtip',
+                         buttons = c('copy', 'csv', 'excel')),
+          extensions = 'Buttons',
+          caption = "Table: Health Financing Indicators by Country",
+          filter = 'top')
+```
+
+## Key Insights
+
+1. **Health Financing Gap**: Low-income countries spend less than $100 per capita on health, compared to $4,000+ in high-income countries—a 40-fold gap.
+
+2. **Life Expectancy Impact**: This spending gap translates to a 15–20 year difference in life expectancy between income groups.
+
+3. **Immunization Success**: Some low-income countries (like Rwanda with 95% coverage) demonstrate that effective health systems can achieve high coverage despite limited resources.
+
+4. **UHC Progress**: Universal Health Coverage requires both adequate financing and efficient health system delivery.
+
+## Related Projects
+
+- [View Full TidyTuesday Analysis](../tidy-tuesday/2018-health-financing-uhc.qmd)
+- [Explore All Health Visualizations](index.qmd)
+- [View TidyTuesday Projects](../tidy-tuesday/index.qmd)
+
+---
+
+[← Back to Data Visualizations](index.qmd)
+
+

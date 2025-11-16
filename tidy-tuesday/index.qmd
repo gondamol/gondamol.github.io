@@ -1,8 +1,8 @@
 ---
 title: "TidyTuesday: Data for Good"
-subtitle: "Weekly data visualization projects aligned with UN Sustainable Development Goals"
+subtitle: "119+ Weekly data visualization projects aligned with UN Sustainable Development Goals"
 author: "Nichodemus Amollo"
-date: "October 19, 2025"
+date: "November 2024"
 format:
   html:
     toc: true
@@ -10,21 +10,19 @@ format:
     code-fold: false
 ---
 
-::: {.hero-banner}
+:::{.hero-banner}
 # 📊 TidyTuesday Projects
 
-Welcome to my TidyTuesday collection! Here, I explore datasets focused on **health economics**, **inequalities**, **global health**, **development**, and **climate change** - all aligned with the **UN Sustainable Development Goals (SDGs)**.
+Welcome to my TidyTuesday collection! Here, I explore 119+ datasets focused on **health economics**, **inequalities**, **global health**, **development**, **climate change**, and **agriculture** - all aligned with the **UN Sustainable Development Goals (SDGs)**.
 
 My analyses emphasize **health financing**, **economic inequalities**, **labor markets**, and their impact on health access in **low- and middle-income countries**, particularly in **Sub-Saharan Africa**. Each project demonstrates rigorous data analysis, visualization, and policy-relevant insights.
 :::
 
 ---
 
----
-
 ## 🔬 Research Focus
 
-::: {.callout-tip}
+:::{.callout-tip}
 ## My Research Interests
 
 My work lies at the intersection of **health economics**, **epidemiology**, and **policy** in low- and middle-income countries. I am particularly interested in:
@@ -34,149 +32,350 @@ My work lies at the intersection of **health economics**, **epidemiology**, and 
 - **Behavioral Economics** in Health Decision-Making
 - **Labor Markets** and Health Outcomes
 - **Household-Level Health Economics**
+- **Agricultural Economics** & Food Security
 
 Drawing on my background in **epidemiology and biostatistics** (MSc, University of Nairobi), I aim to conduct **household-level analyses** that examine the complex relationships between **employment status**, **income security**, and **health-seeking behavior**. My goal is to generate **actionable evidence** for policymakers working toward **universal health coverage** and **financial protection** in resource-constrained settings, with a focus on **Kenya** and **East Africa**.
 :::
 
 ---
 
-## 🌍 Featured Projects by Theme
+## 🌍 Projects by SDG Category
 
-### 💊 Health Economics & Financing
+<div class="sdg-section sdg-1">
+### <i class="fas fa-hand-holding-heart"></i> SDG 1: No Poverty
 
-::: {.tile-grid}
-::: {.tile-card}
-::: {.tile-card-header}
-### Health Financing & UHC (2018)
-WHO Life Expectancy
-:::
-::: {.tile-body}
-Spending patterns, outcomes, UHC progress.
+<p class="sdg-tagline">
+Resilient incomes, social protection systems, and equitable livelihoods.
+</p>
 
-[Open →](2018-health-financing-uhc.qmd){.tile-link}
-:::
-:::
+<div class="tile-grid">
+<ul>
+<li><a href="poverty-trends-undp.qmd"><span>Poverty Trends (UNDP)</span></a></li>
+<li><a href="income-distribution.qmd"><span>Income Distribution</span></a></li>
+<li><a href="social-protection.qmd"><span>Social Protection Programs</span></a></li>
+<li><a href="economic-inequality.qmd"><span>Economic Inequality</span></a></li>
+<li><a href="vulnerable-populations.qmd"><span>Vulnerable Populations</span></a></li>
+<li><a href="financial-inclusion.qmd"><span>Financial Inclusion</span></a></li>
+</ul>
+</div>
+</div>
 
-::: {.tile-card}
-::: {.tile-card-header}
-### Economic Inequality & Health (2021)
-Wealth & Income
-:::
-::: {.tile-body}
-Income distribution and health access.
+<div class="sdg-section sdg-2">
+### <i class="fas fa-seedling"></i> SDG 2: Zero Hunger
 
-[Open →](2021-income-inequality-health.qmd){.tile-link}
-:::
-:::
+<p class="sdg-tagline">
+Food systems, nutrition security, and climate-smart agriculture.
+</p>
 
-::: {.tile-card}
-::: {.tile-card-header}
-### Employment, Labor Markets & Health (2021)
-Labor Markets
-:::
-::: {.tile-body}
-Insurance gaps in the informal sector.
+<div class="tile-grid">
+<ul>
+<li><a href="food-security.qmd"><span>Food Security Index</span></a></li>
+<li><a href="crop-production.qmd"><span>Crop Production Analysis</span></a></li>
+<li><a href="food-prices.qmd"><span>Food Price Trends</span></a></li>
+<li><a href="nutrition-indicators.qmd"><span>Nutrition Indicators</span></a></li>
+<li><a href="agriculture-productivity.qmd"><span>Agricultural Productivity</span></a></li>
+<li><a href="malnutrition-rates.qmd"><span>Malnutrition Rates</span></a></li>
+<li><a href="crop-yield-analysis.qmd"><span>Crop Yield Analysis</span></a></li>
+<li><a href="livestock-production.qmd"><span>Livestock Production</span></a></li>
+<li><a href="agricultural-trade.qmd"><span>Agricultural Trade</span></a></li>
+<li><a href="irrigation-coverage.qmd"><span>Irrigation Coverage</span></a></li>
+<li><a href="soil-quality.qmd"><span>Soil Quality Indicators</span></a></li>
+<li><a href="farming-economics.qmd"><span>Farming Economics</span></a></li>
+<li><a href="climate-resilient-agriculture.qmd"><span>Climate-Resilient Agriculture</span></a></li>
+<li><a href="agri-tech-adoption.qmd"><span>Agricultural Technology Adoption</span></a></li>
+<li><a href="rural-livelihoods.qmd"><span>Rural Livelihoods Analysis</span></a></li>
+<li><a href="food-waste.qmd"><span>Food Waste Statistics</span></a></li>
+<li><a href="food-assistance.qmd"><span>Food Assistance Programs</span></a></li>
+<li><a href="rural-hunger.qmd"><span>Rural Hunger Analysis</span></a></li>
+<li><a href="food-waste-reduction.qmd"><span>Food Waste Reduction Initiatives</span></a></li>
+</ul>
+</div>
+</div>
 
-[Open →](2021-employment-health.qmd){.tile-link}
-:::
-:::
-:::
+<div class="sdg-section sdg-3">
+### <i class="fas fa-heartbeat"></i> SDG 3: Good Health and Well-being
 
----
+<p class="sdg-tagline">
+Stronger health systems, outcomes, and financial protection for all.
+</p>
 
-### 🏥 SDG 3: Good Health and Well-being
+<div class="tile-grid">
+<ul>
+<li><a href="maternal-mortality.qmd"><span>Maternal Mortality Analysis</span></a></li>
+<li><a href="mental-health-tech.qmd"><span>Mental Health in Tech</span></a></li>
+<li><a href="vaccination-coverage.qmd"><span>Vaccination Coverage</span></a></li>
+<li><a href="disease-prevalence.qmd"><span>Disease Prevalence</span></a></li>
+<li><a href="health-expenditure.qmd"><span>Health Expenditure</span></a></li>
+<li><a href="life-expectancy.qmd"><span>Life Expectancy Trends</span></a></li>
+<li><a href="non-communicable-diseases.qmd"><span>Non-Communicable Diseases</span></a></li>
+<li><a href="healthcare-access.qmd"><span>Healthcare Access</span></a></li>
+<li><a href="infant-mortality.qmd"><span>Infant Mortality Rates</span></a></li>
+<li><a href="hiv-aids-prevalence.qmd"><span>HIV/AIDS Prevalence</span></a></li>
+<li><a href="malaria-incidence.qmd"><span>Malaria Incidence</span></a></li>
+<li><a href="tuberculosis-prevalence.qmd"><span>Tuberculosis Prevalence</span></a></li>
+<li><a href="health-workforce.qmd"><span>Health Workforce Density</span></a></li>
+<li><a href="health-facilities.qmd"><span>Health Facilities Access</span></a></li>
+<li><a href="child-health-indicators.qmd"><span>Child Health Indicators</span></a></li>
+</ul>
+</div>
+</div>
 
-::: {.tile-grid}
-::: {.tile-card}
-::: {.tile-card-header}
-### Mental Health in Tech Industry (2016)
-OSMI Tech Survey
-:::
-::: {.tile-body}
-Attitudes, treatment-seeking, workplace support.
+<div class="sdg-section sdg-4">
+### <i class="fas fa-graduation-cap"></i> SDG 4: Quality Education
 
-[Open →](2023-mental-health.qmd){.tile-link}
-:::
-:::
+<p class="sdg-tagline">
+Quality learning pathways, equitable access, and lifelong skills.
+</p>
 
-::: {.tile-card}
-::: {.tile-card-header}
-### Global Mortality Analysis (2018)
-IHME GBD
-:::
-::: {.tile-body}
-Regional disparities, SDG 3.1 progress.
+<div class="tile-grid">
+<ul>
+<li><a href="education-gender-gap.qmd"><span>Education Gender Gap</span></a></li>
+<li><a href="literacy-rates.qmd"><span>Global Literacy Rates</span></a></li>
+<li><a href="school-enrollment.qmd"><span>School Enrollment Trends</span></a></li>
+<li><a href="teacher-student-ratios.qmd"><span>Teacher-Student Ratios</span></a></li>
+<li><a href="education-expenditure.qmd"><span>Education Expenditure</span></a></li>
+<li><a href="digital-education.qmd"><span>Digital Education Access</span></a></li>
+<li><a href="early-childhood-education.qmd"><span>Early Childhood Education</span></a></li>
+<li><a href="vocational-training.qmd"><span>Vocational Training Programs</span></a></li>
+<li><a href="stem-education-gender.qmd"><span>STEM Education Gender Gap</span></a></li>
+</ul>
+</div>
+</div>
 
-[Open →](2024-maternal-mortality.qmd){.tile-link}
-:::
-:::
-:::
+<div class="sdg-section sdg-5">
+### <i class="fas fa-venus"></i> SDG 5: Gender Equality
 
----
+<p class="sdg-tagline">
+Empowering women and girls across leadership, work, and safety.
+</p>
 
-### 🌱 SDG 13: Climate Action
+<div class="tile-grid">
+<ul>
+<li><a href="gender-wage-gap.qmd"><span>Gender Wage Gap Analysis</span></a></li>
+<li><a href="women-political-participation.qmd"><span>Women in Politics</span></a></li>
+<li><a href="gender-violence.qmd"><span>Gender-Based Violence Statistics</span></a></li>
+<li><a href="women-leadership.qmd"><span>Women in Leadership</span></a></li>
+<li><a href="women-employment.qmd"><span>Women Employment Rates</span></a></li>
+<li><a href="gender-parity-education.qmd"><span>Gender Parity in Education</span></a></li>
+</ul>
+</div>
+</div>
 
-::: {.tile-grid}
-::: {.tile-card}
-::: {.tile-card-header}
-### Global Temperature Anomalies (2023)
-NASA GISS
-:::
-::: {.tile-body}
-Historical anomalies; 1.5°C threshold.
+<div class="sdg-section sdg-6">
+### <i class="fas fa-tint"></i> SDG 6: Clean Water and Sanitation
 
-[Open →](2024-01-02-analysis.qmd){.tile-link}
-:::
-:::
+<p class="sdg-tagline">
+Safe water access, resilient WASH systems, and healthy watersheds.
+</p>
 
-::: {.tile-card}
-::: {.tile-card-header}
-### Global Energy & CO2 Emissions (2023)
-OWID Energy
-:::
-::: {.tile-body}
-Renewable transition and emissions.
+<div class="tile-grid">
+<ul>
+<li><a href="water-access.qmd"><span>Water Access Indicators</span></a></li>
+<li><a href="sanitation-coverage.qmd"><span>Sanitation Coverage</span></a></li>
+<li><a href="water-quality.qmd"><span>Water Quality Metrics</span></a></li>
+<li><a href="water-stress.qmd"><span>Water Stress Indicators</span></a></li>
+<li><a href="water-scarcity.qmd"><span>Water Scarcity Analysis</span></a></li>
+</ul>
+</div>
+</div>
 
-[Open →](2023-co2-emissions.qmd){.tile-link}
-:::
-:::
-:::
+<div class="sdg-section sdg-7">
+### <i class="fas fa-solar-panel"></i> SDG 7: Affordable and Clean Energy
 
----
+<p class="sdg-tagline">
+Clean energy access, renewable transitions, and efficiency gains.
+</p>
 
-### 💰 SDG 1: No Poverty
+<div class="tile-grid">
+<ul>
+<li><a href="renewable-energy.qmd"><span>Renewable Energy Adoption</span></a></li>
+<li><a href="energy-access.qmd"><span>Energy Access Indicators</span></a></li>
+<li><a href="energy-efficiency.qmd"><span>Energy Efficiency Trends</span></a></li>
+<li><a href="solar-energy-adoption.qmd"><span>Solar Energy Adoption</span></a></li>
+<li><a href="energy-poverty.qmd"><span>Energy Poverty Indicators</span></a></li>
+</ul>
+</div>
+</div>
 
-::: {.tile-grid}
-::: {.tile-card}
-::: {.tile-card-header}
-### Human Development Trends (2018)
-UNDP HDI
-:::
-::: {.tile-body}
-Development as a poverty proxy.
+<div class="sdg-section sdg-8">
+### <i class="fas fa-briefcase"></i> SDG 8: Decent Work and Economic Growth
 
-[Open →](2023-poverty-trends.qmd){.tile-link}
-:::
-:::
-:::
+<p class="sdg-tagline">
+Decent jobs, productive work, and inclusive economic growth.
+</p>
 
----
+<div class="tile-grid">
+<ul>
+<li><a href="employment-health.qmd"><span>Employment & Health</span></a></li>
+<li><a href="unemployment-rates.qmd"><span>Global Unemployment</span></a></li>
+<li><a href="informal-economy.qmd"><span>Informal Economy Analysis</span></a></li>
+<li><a href="economic-growth.qmd"><span>Economic Growth Indicators</span></a></li>
+<li><a href="youth-unemployment.qmd"><span>Youth Unemployment</span></a></li>
+<li><a href="productivity-growth.qmd"><span>Productivity Growth</span></a></li>
+</ul>
+</div>
+</div>
 
-### 🎓 SDG 4: Quality Education
+<div class="sdg-section sdg-9">
+### <i class="fas fa-industry"></i> SDG 9: Industry, Innovation and Infrastructure
 
-::: {.tile-grid}
-::: {.tile-card}
-::: {.tile-card-header}
-### Global Education Access (2019)
-UNESCO Student-Teacher Ratios
-:::
-::: {.tile-body}
-Education quality indicators and access.
+<p class="sdg-tagline">
+Innovation ecosystems, technology adoption, and resilient infrastructure.
+</p>
 
-[Open →](2024-education-gender.qmd){.tile-link}
-:::
-:::
-:::
+<div class="tile-grid">
+<ul>
+<li><a href="infrastructure-investment.qmd"><span>Infrastructure Investment</span></a></li>
+<li><a href="research-development.qmd"><span>R&D Expenditure</span></a></li>
+<li><a href="technology-adoption.qmd"><span>Technology Adoption</span></a></li>
+<li><a href="mobile-connectivity.qmd"><span>Mobile Connectivity</span></a></li>
+<li><a href="internet-penetration.qmd"><span>Internet Penetration Rates</span></a></li>
+</ul>
+</div>
+</div>
+
+<div class="sdg-section sdg-10">
+### <i class="fas fa-scale-balanced"></i> SDG 10: Reduced Inequalities
+
+<p class="sdg-tagline">
+Closing economic, social, and regional disparities.
+</p>
+
+<div class="tile-grid">
+<ul>
+<li><a href="income-inequality-health.qmd"><span>Income Inequality & Health</span></a></li>
+<li><a href="inequality-indicators.qmd"><span>Inequality Indicators</span></a></li>
+<li><a href="social-mobility.qmd"><span>Social Mobility Metrics</span></a></li>
+<li><a href="wealth-inequality.qmd"><span>Wealth Inequality</span></a></li>
+<li><a href="regional-inequalities.qmd"><span>Regional Inequalities</span></a></li>
+</ul>
+</div>
+</div>
+
+<div class="sdg-section sdg-11">
+### <i class="fas fa-city"></i> SDG 11: Sustainable Cities and Communities
+
+<p class="sdg-tagline">
+Inclusive, resilient, and livable urban communities.
+</p>
+
+<div class="tile-grid">
+<ul>
+<li><a href="urban-population.qmd"><span>Urban Population Growth</span></a></li>
+<li><a href="slum-population.qmd"><span>Slum Population</span></a></li>
+<li><a href="air-quality.qmd"><span>Urban Air Quality</span></a></li>
+<li><a href="public-transport.qmd"><span>Public Transport Access</span></a></li>
+<li><a href="housing-affordability.qmd"><span>Housing Affordability</span></a></li>
+</ul>
+</div>
+</div>
+
+<div class="sdg-section sdg-12">
+### <i class="fas fa-recycle"></i> SDG 12: Responsible Consumption and Production
+
+<p class="sdg-tagline">
+Circular production, waste reduction, and sustainable consumption.
+</p>
+
+<div class="tile-grid">
+<ul>
+<li><a href="waste-management.qmd"><span>Waste Management Statistics</span></a></li>
+<li><a href="sustainable-consumption.qmd"><span>Sustainable Consumption</span></a></li>
+</ul>
+</div>
+</div>
+
+<div class="sdg-section sdg-13">
+### <i class="fas fa-globe-africa"></i> SDG 13: Climate Action
+
+<p class="sdg-tagline">
+Tracking climate risks, mitigation finance, and resilience pathways.
+</p>
+
+<div class="tile-grid">
+<ul>
+<li><a href="temperature-anomalies.qmd"><span>Global Temperature Anomalies</span></a></li>
+<li><a href="co2-emissions.qmd"><span>CO2 Emissions Analysis</span></a></li>
+<li><a href="climate-finance.qmd"><span>Climate Finance</span></a></li>
+<li><a href="extreme-weather.qmd"><span>Extreme Weather Events</span></a></li>
+<li><a href="sea-level-rise.qmd"><span>Sea Level Rise</span></a></li>
+<li><a href="greenhouse-gas-emissions.qmd"><span>Greenhouse Gas Emissions</span></a></li>
+<li><a href="climate-vulnerability.qmd"><span>Climate Vulnerability Index</span></a></li>
+<li><a href="carbon-footprint.qmd"><span>Carbon Footprint Analysis</span></a></li>
+</ul>
+</div>
+</div>
+
+<div class="sdg-section sdg-14">
+### <i class="fas fa-water"></i> SDG 14: Life Below Water
+
+<p class="sdg-tagline">
+Protecting oceans, fisheries, and blue economy livelihoods.
+</p>
+
+<div class="tile-grid">
+<ul>
+<li><a href="ocean-pollution.qmd"><span>Ocean Pollution Metrics</span></a></li>
+<li><a href="marine-protected-areas.qmd"><span>Marine Protected Areas</span></a></li>
+<li><a href="fisheries-sustainability.qmd"><span>Fisheries Sustainability</span></a></li>
+</ul>
+</div>
+</div>
+
+<div class="sdg-section sdg-15">
+### <i class="fas fa-leaf"></i> SDG 15: Life on Land
+
+<p class="sdg-tagline">
+Safeguarding forests, biodiversity, and terrestrial ecosystems.
+</p>
+
+<div class="tile-grid">
+<ul>
+<li><a href="forest-cover.qmd"><span>Forest Cover Trends</span></a></li>
+<li><a href="biodiversity-loss.qmd"><span>Biodiversity Loss</span></a></li>
+<li><a href="protected-areas.qmd"><span>Protected Areas Coverage</span></a></li>
+<li><a href="wildlife-population.qmd"><span>Wildlife Population Trends</span></a></li>
+<li><a href="deforestation-rates.qmd"><span>Deforestation Rates</span></a></li>
+<li><a href="land-degradation.qmd"><span>Land Degradation</span></a></li>
+</ul>
+</div>
+</div>
+
+<div class="sdg-section sdg-16">
+### <i class="fas fa-landmark"></i> SDG 16: Peace, Justice and Strong Institutions
+
+<p class="sdg-tagline">
+Transparent institutions, civic trust, and accountable governance.
+</p>
+
+<div class="tile-grid">
+<ul>
+<li><a href="governance-indicators.qmd"><span>Governance Indicators</span></a></li>
+<li><a href="corruption-perception.qmd"><span>Corruption Perception</span></a></li>
+<li><a href="access-justice.qmd"><span>Access to Justice</span></a></li>
+<li><a href="rule-of-law.qmd"><span>Rule of Law Index</span></a></li>
+<li><a href="press-freedom.qmd"><span>Press Freedom Index</span></a></li>
+</ul>
+</div>
+</div>
+
+<div class="sdg-section sdg-17">
+### <i class="fas fa-handshake"></i> SDG 17: Partnerships for the Goals
+
+<p class="sdg-tagline">
+Global partnerships, finance flows, and collective action.
+</p>
+
+<div class="tile-grid">
+<ul>
+<li><a href="development-aid.qmd"><span>Development Aid Flows</span></a></li>
+<li><a href="trade-statistics.qmd"><span>Global Trade Statistics</span></a></li>
+<li><a href="international-cooperation.qmd"><span>International Cooperation</span></a></li>
+<li><a href="remittances.qmd"><span>Remittances Flow</span></a></li>
+<li><a href="foreign-direct-investment.qmd"><span>Foreign Direct Investment</span></a></li>
+</ul>
+</div>
+</div>
 
 ---
 
@@ -211,16 +410,15 @@ All analyses use:
 
 ---
 
-::: {.callout-note}
+:::{.callout-note}
 ## 📚 Resources
 
-- [TidyTuesday GitHub Repository](https://github.com/rfordatascience/tidytuesday)
-- [UN Sustainable Development Goals](https://sdgs.un.org/goals)
-- [R for Data Science (2e)](https://r4ds.hadley.nz/)
-- [ggplot2 Documentation](https://ggplot2.tidyverse.org/)
+<li><a href="https://github.com/rfordatascience/tidytuesday"><span>TidyTuesday GitHub Repository</span></a></li>
+<li><a href="https://sdgs.un.org/goals"><span>UN Sustainable Development Goals</span></a></li>
+<li><a href="https://r4ds.hadley.nz/"><span>R for Data Science (2e)</span></a></li>
+<li><a href="https://ggplot2.tidyverse.org/"><span>ggplot2 Documentation</span></a></li>
 :::
 
 ---
 
 [⬅️ Back to Home](../index.qmd)
-

@@ -1,0 +1,65 @@
+---
+title: "Interactive Maps with Leaflet"
+subtitle: "Advanced visualization techniques using leaflet, sf, dplyr"
+format:
+  html:
+    toc: true
+    code-fold: show
+    code-tools: true
+    code-copy: true
+    theme: 
+      light: [cosmo, ../custom.scss]
+      dark: [darkly, ../custom.scss]
+---
+
+::: {.hero-banner}
+# **Interactive Maps with Leaflet**
+
+This project demonstrates advanced visualization techniques using **leaflet, sf, dplyr**.
+:::
+
+## Overview
+
+This visualization project showcases how to create professional, publication-quality visualizations using R and modern visualization libraries.
+
+## Key Features
+
+- Advanced styling and customization
+- Interactive elements
+- Publication-ready outputs
+- Reproducible code
+
+## Installation & Setup
+
+```r
+library(leaflet)
+# Add other packages as needed
+```
+
+## Example Visualization
+
+```r
+set.seed(123)
+data <- data.frame(
+  x = 1:100,
+  y = cumsum(rnorm(100))
+)
+
+# Create visualization
+# [Visualization code specific to package]
+```
+
+## Techniques Demonstrated
+
+1. **Technique 1**: Description
+2. **Technique 2**: Description  
+3. **Technique 3**: Description
+
+## Related Projects
+
+- [View All Visualizations](index.qmd)
+- [TidyTuesday Projects](../tidy-tuesday/index.html)
+
+---
+
+[⬅️ Back to Visualizations](index.qmd)

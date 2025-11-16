@@ -339,15 +339,18 @@ Designing and delivering comprehensive R programming workshops for health resear
 My commitment to **open governance** and **digital civic tools** was born during my time as a junior officer with **Homa Bay County Government**. This experience opened my eyes to both the potential and challenges of public service.
 
 **What I learned:**
+
 - <i class="fas fa-eye"></i> Citizens need transparent access to government data and decision-making processes
 - <i class="fas fa-users"></i> Digital tools can bridge the gap between government and citizens
 - <i class="fas fa-gavel"></i> Accountability mechanisms are essential for trust in public institutions
 - <i class="fas fa-hand-holding-heart"></i> Governments should be designed around people's needs, not bureaucratic convenience
 
 **Why I left public service:**
+
 While I deeply valued the opportunity to serve, I realized I wasn't in a position to make the transformative changes I envisioned. The constraints of the system limited my ability to build the digital civic tools and transparency mechanisms I believed were necessary.
 
 **My ongoing commitment:**
+
 I continue to work on tools and projects that advance open governance and civic engagement. My goal is to one day contribute to policies and platforms that:
 
 - <i class="fas fa-unlock"></i> Make government data more accessible and understandable

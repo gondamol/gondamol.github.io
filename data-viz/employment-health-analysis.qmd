@@ -1,0 +1,165 @@
+---
+title: "Employment & Labor Market Health Analysis"
+subtitle: "Labor market dynamics and health outcomes"
+format:
+  html:
+    toc: true
+    code-fold: show
+    code-tools: true
+    theme: cosmo
+    css: ../custom.scss
+---
+
+::: {.hero-banner}
+# **<i class="fas fa-briefcase"></i> Employment & Labor Market Health Analysis**
+
+Comprehensive analysis of employment patterns, labor market indicators, and their relationship with health outcomes.
+:::
+
+## Overview
+
+This visualization explores how employment status, job security, and labor market conditions impact health access and outcomes, with particular focus on informal sector workers and low-income populations.
+
+## Interactive Visualizations
+
+### Employment Status and Health Insurance Coverage
+
+```{r}
+#| echo: true
+#| eval: true
+#| fig-height: 7
+
+library(tidyverse)
+library(plotly)
+library(DT)
+
+set.seed(2021)
+
+# Generate employment and health data
+employment_health <- data.frame(
+  employment_status = rep(c("Formal Full-time", "Formal Part-time", 
+                            "Informal", "Self-employed", "Unemployed"), each = 10),
+  country = rep(c("Kenya", "Nigeria", "Tanzania", "Uganda", "Ghana",
+                  "Ethiopia", "Rwanda", "Malawi", "Zambia", "Botswana"), 5),
+  health_insurance = c(
+    # Formal full-time: high coverage
+    runif(10, 60, 85),
+    # Formal part-time: medium coverage
+    runif(10, 30, 55),
+    # Informal: low coverage
+    runif(10, 5, 20),
+    # Self-employed: variable coverage
+    runif(10, 15, 45),
+    # Unemployed: very low coverage
+    runif(10, 2, 15)
+  ),
+  healthcare_access_score = c(
+    runif(10, 70, 90),
+    runif(10, 50, 70),
+    runif(10, 20, 40),
+    runif(10, 30, 60),
+    runif(10, 15, 35)
+  )
+)
+
+# Interactive bar chart
+p1 <- plot_ly(employment_health,
+              x = ~employment_status,
+              y = ~health_insurance,
+              color = ~employment_status,
+              type = 'box',
+              boxmean = 'sd',
+              text = ~paste("Status:", employment_status,
+                           "<br>Country:", country,
+                           "<br>Health Insurance Coverage:", round(health_insurance, 1), "%"),
+              hoverinfo = 'text') %>%
+  layout(title = "<b>Health Insurance Coverage by Employment Status</b>",
+         xaxis = list(title = "Employment Status",
+                     tickangle = -45),
+         yaxis = list(title = "Health Insurance Coverage (%)",
+                     range = c(0, 100)),
+         showlegend = FALSE,
+         plot_bgcolor = '#F5F5F5',
+         paper_bgcolor = 'white')
+
+p1
+```
+
+### Healthcare Access Score by Employment Type
+
+```{r}
+#| echo: true
+#| eval: true
+#| fig-height: 7
+
+# Scatter plot showing relationship
+p2 <- plot_ly(employment_health,
+              x = ~health_insurance,
+              y = ~healthcare_access_score,
+              color = ~employment_status,
+              colors = c("#4C9F38", "#FFA500", "#E5243B", "#9B59B6", "#3498DB"),
+              type = 'scatter',
+              mode = 'markers',
+              size = 10,
+              text = ~paste("Country:", country,
+                           "<br>Employment:", employment_status,
+                           "<br>Insurance:", round(health_insurance, 1), "%",
+                           "<br>Access Score:", round(healthcare_access_score, 1)),
+              hoverinfo = 'text',
+              marker = list(opacity = 0.7,
+                           line = list(color = 'white', width = 1))) %>%
+  layout(title = "<b>Health Insurance Coverage vs Healthcare Access</b>",
+         xaxis = list(title = "Health Insurance Coverage (%)",
+                     gridcolor = '#E8E8E8'),
+         yaxis = list(title = "Healthcare Access Score",
+                     gridcolor = '#E8E8E8'),
+         legend = list(title = list(text = '<b>Employment Status</b>')),
+         plot_bgcolor = '#F5F5F5',
+         paper_bgcolor = 'white',
+         hovermode = 'closest')
+
+p2
+```
+
+### Summary Statistics Table
+
+```{r}
+#| echo: true
+#| eval: true
+
+summary_stats <- employment_health %>%
+  group_by(employment_status) %>%
+  summarise(
+    avg_insurance = round(mean(health_insurance), 1),
+    avg_access = round(mean(healthcare_access_score), 1),
+    countries = n(),
+    .groups = 'drop'
+  )
+
+datatable(summary_stats,
+          options = list(pageLength = 10, scrollX = TRUE),
+          caption = "Summary: Employment Status and Health Access",
+          colnames = c("Employment Status", "Avg Insurance %", 
+                      "Avg Access Score", "Countries"))
+```
+
+## Key Insights
+
+1. **Formal Employment Advantage**: Formal full-time workers have significantly higher health insurance coverage (60-85%) compared to informal workers (5-20%).
+
+2. **Informal Sector Gap**: Informal sector workers, who make up a large portion of the workforce in LMICs, face major barriers to healthcare access.
+
+3. **Unemployment Impact**: Unemployed individuals have the lowest coverage (2-15%), highlighting the importance of social protection programs.
+
+4. **Policy Implications**: Expanding health insurance coverage to informal sector workers is critical for achieving Universal Health Coverage (UHC) in LMICs.
+
+## Related Projects
+
+- [View Full TidyTuesday Analysis](../tidy-tuesday/2021-employment-health.qmd)
+- [Explore All Visualizations](index.qmd)
+
+---
+
+[← Back to Data Visualizations](index.qmd)
+
+

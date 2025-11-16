@@ -1,0 +1,11 @@
+---
+title: "Animated Time Series with gganimate"
+subtitle: "Creating animated visualizations over time"
+format:
+  html:
+    toc: true
+    code-fold: show
+---
+
+## Overview
+Animated visualizations showing data evolution over time.

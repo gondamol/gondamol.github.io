@@ -67,7 +67,7 @@ This analysis explores global temperature anomalies over time, examining trends 
 
 ## 📦 Load Required Packages
 
-```{r load-packages}
+```{r load-packages, echo=FALSE, message=FALSE, warning=FALSE}
 library(tidyverse)      # Data manipulation and visualization
 library(scales)         # Scale functions
 library(lubridate)      # Date handling

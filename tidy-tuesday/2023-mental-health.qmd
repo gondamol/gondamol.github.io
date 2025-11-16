@@ -66,7 +66,7 @@ This connects to my health economics research on labor markets and health access
 
 ## 📦 Load Packages & Generate Data
 
-```{r load-packages}
+```{r load-packages, echo=FALSE, message=FALSE, warning=FALSE}
 library(tidyverse)
 library(plotly)
 library(DT)

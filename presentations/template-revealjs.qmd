@@ -1,0 +1,72 @@
+---
+title: "Quarto Reveal.js Presentation Template"
+subtitle: "Beautiful presentations with Quarto"
+format:
+  revealjs:
+    theme: default
+    transition: slide
+    navigation: frame
+    highlight-style: github
+    logo: ../img/profile.jpeg
+    footer: "Nichodemus Amollo | Data Scientist"
+---
+
+## Welcome {.r-fit-text}
+
+# Quarto Presentation
+
+Create beautiful presentations with Quarto and Reveal.js
+
+---
+
+## Slide 2
+
+### Key Features
+
+- **Markdown-based**: Write in Markdown, get beautiful slides
+- **Code execution**: Run R, Python, or other languages directly
+- **Interactive**: Add interactive visualizations
+- **Export options**: HTML, PDF, PowerPoint
+
+---
+
+## Slide 3
+
+### Creating Interactive Visualizations
+
+```{r}
+#| echo: false
+#| fig-width: 10
+#| fig-height: 6
+
+library(ggplot2)
+
+ggplot(mtcars, aes(x = mpg, y = hp, color = factor(cyl))) +
+  geom_point(size = 3) +
+  theme_minimal() +
+  labs(title = "Interactive Car Performance",
+       x = "Miles per Gallon",
+       y = "Horsepower")
+```
+
+---
+
+## Slide 4 {.auto-animate}
+
+### Progress Over Time
+
+1. Started with basic charts
+2. Learned advanced techniques
+3. Built interactive dashboards
+4. Created production systems
+
+---
+
+## Conclusion
+
+Thank you for viewing!
+
+**Contact**: nichodemuswerre@gmail.com
+
+**Portfolio**: [gondamol.github.io](https://gondamol.github.io)
+

@@ -1,0 +1,11 @@
+---
+title: "Advanced Matplotlib Visualizations"
+subtitle: "Publication-quality plots with Matplotlib"
+format:
+  html:
+    toc: true
+    code-fold: show
+---
+
+## Overview
+Creating publication-quality plots with Matplotlib including subplots and custom styling.

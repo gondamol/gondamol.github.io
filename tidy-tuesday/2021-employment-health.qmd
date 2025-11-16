@@ -62,7 +62,7 @@ This analysis uses the **Employment and Earnings** dataset from TidyTuesday Week
 
 ## 📦 Load Packages & Generate Data
 
-```{r load-packages}
+```{r load-packages, echo=FALSE, message=FALSE, warning=FALSE}
 library(tidyverse)
 library(plotly)
 library(DT)

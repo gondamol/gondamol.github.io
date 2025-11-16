@@ -1,0 +1,11 @@
+---
+title: "Interactive Dashboards with Plotly Python"
+subtitle: "Building interactive web dashboards"
+format:
+  html:
+    toc: true
+    code-fold: show
+---
+
+## Overview
+Building interactive web dashboards using Plotly and Dash for Python.

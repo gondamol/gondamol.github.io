@@ -1,0 +1,11 @@
+---
+title: "Interactive Maps with Leaflet"
+subtitle: "Building interactive maps with spatial data"
+format:
+  html:
+    toc: true
+    code-fold: show
+---
+
+## Overview
+Interactive maps showing spatial data with custom markers, popups, and layers.

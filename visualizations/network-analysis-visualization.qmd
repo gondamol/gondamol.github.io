@@ -1,0 +1,11 @@
+---
+title: "Network Analysis & Visualization"
+subtitle: "Visualizing networks and relationships"
+format:
+  html:
+    toc: true
+    code-fold: show
+---
+
+## Overview
+Visualizing networks and relationships using igraph and ggraph packages.

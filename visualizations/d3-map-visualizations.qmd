@@ -1,0 +1,11 @@
+---
+title: "D3.js Geographic Visualizations"
+subtitle: "Mapping with D3.js and GeoJSON"
+format:
+  html:
+    toc: true
+    code-fold: show
+---
+
+## Overview
+Mapping and geographic data visualization using D3.js and GeoJSON.

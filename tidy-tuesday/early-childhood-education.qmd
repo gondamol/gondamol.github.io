@@ -1,0 +1,81 @@
+---
+title: "TidyTuesday: Early Childhood Education"
+subtitle: "SDG 4: Quality Education"
+author: "Nichodemus Amollo"
+date: "2024-03-19"
+format:
+  html:
+    toc: true
+    toc-depth: 2
+    code-fold: show
+    code-tools: true
+    code-copy: true
+    theme: 
+      light: [cosmo, ../../custom.scss]
+      dark: [darkly, ../../custom.scss]
+    css: ../../styles.scss
+---
+
+::: {.hero-banner}
+# **Early Childhood Education**
+
+Analysis of early childhood education data from TidyTuesday 2024 - Week of 2024-03-19
+:::
+
+## Overview
+
+This project explores the **Early Childhood Education** dataset from TidyTuesday, focusing on data visualization and analysis techniques aligned with **SDG 4: Quality Education**.
+
+## Load Required Packages
+
+```{r load-packages, echo=FALSE, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(lubridate)
+library(here)
+library(showtext)
+library(ggtext)
+library(patchwork)
+library(plotly)
+```
+
+## Data Import
+
+```{r load-data, echo=FALSE}
+# Load data using tidytuesdayR
+# library(tidytuesdayR)
+# tuesdata <- tt_load('2024-03-19')
+# df <- tuesdata$data_name
+
+# Sample data for demonstration
+set.seed(123)
+df <- data.frame(
+  id = 1:100,
+  value = cumsum(rnorm(100)),
+  category = sample(c("A", "B", "C"), 100, replace = TRUE),
+  date = seq.Date(from = as.Date("2024-03-19"), by = "day", length.out = 100)
+)
+
+glimpse(df)
+```
+
+## Visualizations
+
+```{r visualization, echo=FALSE}
+ggplot(df, aes(x = date, y = value, color = category)) +
+  geom_line(size = 1.2, alpha = 0.7) +
+  labs(title = "Early Childhood Education") +
+  theme_minimal()
+```
+
+## Analysis & Insights
+
+[Analysis content here]
+
+## References
+
+- [TidyTuesday GitHub](https://github.com/rfordatascience/tidytuesday)
+- [UN SDGs](https://sdgs.un.org/goals)
+
+---
+
+[⬅️ Back to TidyTuesday Index](index.qmd)

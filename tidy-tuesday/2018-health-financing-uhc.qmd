@@ -65,7 +65,7 @@ This analysis examines health financing patterns in LMICs, focusing on the relat
 
 ## 📦 Load Packages & Generate Data
 
-```{r load-packages}
+```{r load-packages, echo=FALSE, message=FALSE, warning=FALSE}
 library(tidyverse)
 library(plotly)
 library(DT)

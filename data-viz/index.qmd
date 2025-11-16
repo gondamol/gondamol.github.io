@@ -25,7 +25,7 @@ Interactive dashboard analyzing health spending patterns, life expectancy correl
 
 **Technologies:** R, Plotly, Shiny, DT
 
-[<i class="fas fa-external-link-alt"></i> View Interactive Dashboard](tidy-tuesday/2018-health-financing-uhc.qmd){.cta-button style="margin-top: 1rem;"}
+[<i class="fas fa-external-link-alt"></i> View Interactive Dashboard](health-financing-dashboard.qmd){.cta-button style="margin-top: 1rem;"}
 :::
 :::
 
@@ -40,7 +40,7 @@ Animated line charts showing income inequality trends from 1980-2020 with intera
 
 **Technologies:** R, Plotly (with animations), DT
 
-[<i class="fas fa-external-link-alt"></i> Explore Visualization](tidy-tuesday/2021-income-inequality-health.qmd){.cta-button style="margin-top: 1rem;"}
+[<i class="fas fa-external-link-alt"></i> Explore Visualization](income-inequality-analysis.qmd){.cta-button style="margin-top: 1rem;"}
 :::
 :::
 
@@ -55,7 +55,7 @@ Comprehensive analysis of employment patterns, labor market indicators, and thei
 
 **Technologies:** R, Plotly, ggplot2
 
-[<i class="fas fa-external-link-alt"></i> View Analysis](tidy-tuesday/2021-employment-health.qmd){.cta-button style="margin-top: 1rem;"}
+[<i class="fas fa-external-link-alt"></i> View Analysis](employment-health-analysis.qmd){.cta-button style="margin-top: 1rem;"}
 :::
 :::
 
@@ -75,7 +75,7 @@ Explore my weekly TidyTuesday data visualization challenges:
 <div class="tile-body">
 Latest interactive visualizations from TidyTuesday challenges
 </div>
-[View 2024 →](tidy-tuesday/index.qmd){.tile-link}
+[View 2024 →](../tidy-tuesday/index.qmd){.tile-link}
 :::
 
 ::: {.tile-card}
@@ -85,7 +85,7 @@ Latest interactive visualizations from TidyTuesday challenges
 <div class="tile-body">
 Health financing, inequality, and economic analysis
 </div>
-[Explore →](tidy-tuesday/2018-health-financing-uhc.qmd){.tile-link}
+[Explore →](../tidy-tuesday/2018-health-financing-uhc.qmd){.tile-link}
 :::
 
 ::: {.tile-card}
@@ -95,7 +95,7 @@ Health financing, inequality, and economic analysis
 <div class="tile-body">
 Shiny apps and interactive Tableau dashboards
 </div>
-[View Dashboards →](projects/dashboards.qmd){.tile-link}
+[View Dashboards →](../projects/dashboards.qmd){.tile-link}
 :::
 :::
 
@@ -167,5 +167,5 @@ I believe data visualization should be both beautiful and functional. Every char
 
 ---
 
-[<i class="fas fa-arrow-left"></i> Back to Home](index.qmd) | [<i class="fas fa-arrow-right"></i> View All Projects](projects/index.qmd)
+[<i class="fas fa-arrow-left"></i> Back to Home](../index.qmd) | [<i class="fas fa-arrow-right"></i> View All Projects](../projects/index.qmd)
 

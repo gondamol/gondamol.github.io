@@ -1,0 +1,11 @@
+---
+title: "Interactive Visualizations with Bokeh"
+subtitle: "Creating interactive visualizations for web browsers"
+format:
+  html:
+    toc: true
+    code-fold: show
+---
+
+## Overview
+Creating interactive visualizations for modern web browsers using Bokeh.

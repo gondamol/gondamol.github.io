@@ -55,7 +55,7 @@ knitr::opts_chunk$set(echo = TRUE, eval = TRUE, warning = FALSE, message = FALSE
 
 ## 📦 Setup
 
-```{r load-packages}
+```{r load-packages, echo=FALSE, message=FALSE, warning=FALSE}
 library(tidyverse); library(plotly); library(DT); library(scales)
 set.seed(20230711)
 ```
