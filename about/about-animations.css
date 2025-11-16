@@ -334,20 +334,39 @@
 }
 
 .governance-section ul {
+  list-style-type: disc;
   list-style-position: outside;
   padding-left: 2rem;
   margin: 1.5rem 0;
+  display: block;
 }
 
-.governance-section li {
+.governance-section ul li {
   margin-bottom: 1rem;
   line-height: 1.8;
   color: #4a5568;
+  display: list-item;
+  list-style-type: disc;
 }
 
-.governance-section li i {
+.governance-section ul li i {
   color: #667eea;
   margin-right: 0.5rem;
+}
+
+/* Ensure markdown lists are displayed properly */
+.governance-section p + ul,
+.governance-section strong + ul {
+  margin-top: 1rem;
+  list-style-type: disc;
+  padding-left: 2rem;
+}
+
+.governance-section p + ul li,
+.governance-section strong + ul li {
+  display: list-item;
+  list-style-type: disc;
+  margin-bottom: 0.75rem;
 }
 
 /* Personal Section */

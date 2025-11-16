@@ -1,0 +1,157 @@
+<!-- Newsletter Subscription Popup -->
+<div id="newsletter-popup" class="newsletter-popup" style="display: none;">
+  <div class="newsletter-popup-content">
+    <button class="newsletter-close" onclick="closeNewsletterPopup()" aria-label="Close">
+      <i class="fas fa-times"></i>
+    </button>
+    <div class="newsletter-header">
+      <i class="fas fa-envelope-open-text newsletter-icon"></i>
+      <h2>Stay Updated!</h2>
+      <p>Get the latest data science insights, visualization tips, and project updates delivered to your inbox.</p>
+    </div>
+    <form class="newsletter-form" id="newsletter-form" onsubmit="handleNewsletterSubmit(event)">
+      <div class="newsletter-input-group">
+        <i class="fas fa-user"></i>
+        <input type="text" name="name" placeholder="Your Name" required>
+      </div>
+      <div class="newsletter-input-group">
+        <i class="fas fa-envelope"></i>
+        <input type="email" name="email" placeholder="your.email@example.com" required>
+      </div>
+      <button type="submit" class="newsletter-submit-btn">
+        <span>Subscribe</span>
+        <i class="fas fa-arrow-right"></i>
+      </button>
+    </form>
+    <div class="newsletter-footer">
+      <small>We respect your privacy. Unsubscribe anytime.</small>
+      <div class="newsletter-social">
+        <a href="https://twitter.com/nwerre" target="_blank" aria-label="Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://linkedin.com/in/amollow" target="_blank" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/gondamol" target="_blank" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// Newsletter Popup Logic
+(function() {
+  // Check if user has dismissed popup within the last 10 minutes
+  function shouldShowPopup() {
+    const dismissedAt = localStorage.getItem('newsletterPopupDismissed');
+    if (!dismissedAt) return true;
+    
+    const dismissedTime = parseInt(dismissedAt, 10);
+    const now = Date.now();
+    const tenMinutes = 10 * 60 * 1000; // 10 minutes in milliseconds
+    
+    // Show again if more than 10 minutes have passed
+    return (now - dismissedTime) > tenMinutes;
+  }
+  
+  // Internal function to show popup (checks timing)
+  function showPopupIfAllowed() {
+    if (!shouldShowPopup()) return;
+    
+    const popup = document.getElementById('newsletter-popup');
+    if (popup) {
+      popup.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+      
+      // Animate in
+      setTimeout(() => {
+        popup.classList.add('show');
+      }, 10);
+    }
+  }
+  
+  // Show after 2 minutes delay (automatic popup)
+  const twoMinutes = 2 * 60 * 1000; // 2 minutes in milliseconds
+  setTimeout(() => {
+    showPopupIfAllowed();
+  }, twoMinutes);
+})();
+
+// Global function to show popup from footer button (bypasses timing check)
+function showNewsletterPopup() {
+  const popup = document.getElementById('newsletter-popup');
+  if (popup) {
+    popup.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+    
+    // Animate in
+    setTimeout(() => {
+      popup.classList.add('show');
+    }, 10);
+  }
+}
+
+// Close popup function
+function closeNewsletterPopup() {
+  const popup = document.getElementById('newsletter-popup');
+  if (popup) {
+    popup.classList.remove('show');
+    setTimeout(() => {
+      popup.style.display = 'none';
+      document.body.style.overflow = '';
+    }, 300);
+    // Store timestamp when dismissed (valid for 10 minutes)
+    localStorage.setItem('newsletterPopupDismissed', Date.now().toString());
+  }
+}
+
+// Handle form submission
+function handleNewsletterSubmit(event) {
+  event.preventDefault();
+  
+  const formData = new FormData(event.target);
+  const data = {
+    name: formData.get('name'),
+    email: formData.get('email')
+  };
+  
+  // Here you would integrate with your email service (Mailchimp, ConvertKit, etc.)
+  // For now, we'll just log and show success message
+  console.log('Newsletter signup:', data);
+  
+  // Show success message
+  const form = event.target;
+  form.innerHTML = `
+    <div class="newsletter-success">
+      <i class="fas fa-check-circle"></i>
+      <h3>Thank you, ${data.name}!</h3>
+      <p>Check your email to confirm your subscription.</p>
+    </div>
+  `;
+  
+  // Close after 2 seconds
+  setTimeout(() => {
+    closeNewsletterPopup();
+    // Mark as subscribed (don't show popup again for this user)
+    localStorage.setItem('newsletterPopupDismissed', Date.now().toString());
+  }, 2000);
+}
+
+// Close on background click
+document.addEventListener('click', (e) => {
+  const popup = document.getElementById('newsletter-popup');
+  if (e.target === popup) {
+    closeNewsletterPopup();
+  }
+});
+
+// Close on ESC key
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    closeNewsletterPopup();
+  }
+});
+</script>
+
