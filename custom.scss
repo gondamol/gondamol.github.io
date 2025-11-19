@@ -156,7 +156,7 @@ code, pre {
 }
 
 .hero-subtitle {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   max-width: 55ch;
 }
 
@@ -406,6 +406,17 @@ footer.footer {
 
 .social-links .btn {
   margin: 0;
+}
+
+.hero-social-links .btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.95rem;
+}
+
+.hero-social-links .btn i {
+  font-size: 1.05rem;
 }
 
 .brutal-quote {

@@ -13,17 +13,18 @@ format:
 ::: {.hero-banner style="position: relative; z-index: 1;"}
 # **<i class="fas fa-mountain"></i> Against All Odds: A Journey of Resilience**
 
-<div style="font-size: 1.3rem; margin-top: 1rem; opacity: 0.95;" data-aos="fade-up" data-aos-delay="200">
-From orphaned child in rural Kenya to leading global health data science initiatives
+<div style="font-size: 1.6rem; margin-top: 1rem; opacity: 0.95;" data-aos="fade-up" data-aos-delay="200">
+“Just as a blazing fire makes flame and brightness out of everything that is thrown into it.” — Marcus Aurelius<br>
+From rural Kenya to global health data science, I turn obstacles into fuel for service.
 </div>
 
-<div style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
-[<i class="fab fa-linkedin"></i> LinkedIn](https://linkedin.com/in/amollow){.btn .btn-primary style="background: rgba(255,255,255,0.2); border: 2px solid white; margin: 0.25rem;"}
-[<i class="fab fa-github"></i> GitHub](https://github.com/gondamol){.btn .btn-primary style="background: rgba(255,255,255,0.2); border: 2px solid white; margin: 0.25rem;"}
-[<i class="fab fa-twitter"></i> Twitter](https://twitter.com/nwerre){.btn .btn-primary style="background: rgba(255,255,255,0.2); border: 2px solid white; margin: 0.25rem;"}
-[<i class="fab fa-kaggle"></i> Kaggle](https://kaggle.com/nwerre){.btn .btn-primary style="background: rgba(255,255,255,0.2); border: 2px solid white; margin: 0.25rem;"}
-[<i class="fas fa-envelope"></i> Email](mailto:nichodemuswerre@gmail.com){.btn .btn-primary style="background: rgba(255,255,255,0.2); border: 2px solid white; margin: 0.25rem;"}
-</div>
+::: {.social-links .hero-social-links}
+[<i class="fab fa-linkedin"></i> LinkedIn](https://linkedin.com/in/amollow){.btn .btn-primary}
+[<i class="fab fa-github"></i> GitHub](https://github.com/gondamol){.btn .btn-primary}
+[<i class="fab fa-twitter"></i> Twitter](https://twitter.com/nwerre){.btn .btn-primary}
+[<i class="fab fa-kaggle"></i> Kaggle](https://kaggle.com/nwerre){.btn .btn-primary}
+[<i class="fas fa-envelope"></i> Email](mailto:nichodemuswerre@gmail.com){.btn .btn-primary}
+:::
 :::
 
 ---

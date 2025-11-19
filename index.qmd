@@ -19,7 +19,10 @@ page-layout: full
 ::: {.hero-banner}
 # **<i class="fas fa-brain icon-bounce"></i> Research Data Manager | Data Scientist | M&E Specialist**
 
-From orphaned child in rural Kenya to leading global health data science initiatives.
+<div class="hero-subtitle">
+“Just as a blazing fire makes flame and brightness out of everything that is thrown into it.” — Marcus Aurelius  
+From rural Kenya to global health data science, I turn obstacles into fuel for service.
+</div>
 
 **<i class="fas fa-chart-line"></i> 8+ years** driving impact through data | **<i class="fas fa-users"></i> 500+ researchers** trained | **<i class="fas fa-university"></i> Georgetown University gui2de**
 
