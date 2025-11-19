@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="grad-eng" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#111111;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#33a8c7;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#grad-eng)" />
+  <g transform="translate(140,180)" stroke="#fef7e0" stroke-width="4" fill="none">
+    <rect x="0" y="0" width="260" height="180" rx="16"/>
+    <rect x="320" y="0" width="260" height="180" rx="16"/>
+    <rect x="640" y="0" width="260" height="180" rx="16"/>
+    <line x1="260" y1="90" x2="320" y2="90"/>
+    <line x1="580" y1="90" x2="640" y2="90"/>
+  </g>
+  <text x="140" y="140" font-family="Space Grotesk, system-ui, sans-serif" font-size="48" fill="#fef7e0" font-weight="700">
+    Data Engineering
+  </text>
+  <text x="140" y="520" font-family="Space Grotesk, system-ui, sans-serif" font-size="32" fill="#fef7e0" font-weight="500">
+    Pipelines • ETL • Warehouses • Analytics Engineering
+  </text>
+</svg>
+

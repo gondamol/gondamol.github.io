@@ -1,32 +1,5 @@
 /* Additional styling helpers for the neobrutalist system */
 
-.stats-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.5rem;
-}
-
-.stat-card {
-  border: 3px solid #111;
-  background: #fff;
-  box-shadow: 12px 12px 0 rgba(0, 0, 0, 0.9);
-  padding: 1.75rem;
-  text-align: left;
-}
-
-.stat-number {
-  font-size: 2.8rem;
-  font-weight: 900;
-  font-family: "Space Mono", monospace;
-  color: #ff5a5f;
-}
-
-.stat-label {
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: #111;
-}
-
 .skill-category {
   border: 3px solid #111;
   box-shadow: 12px 12px 0 rgba(0, 0, 0, 0.9);
@@ -41,10 +14,154 @@
   border-radius: 0;
 }
 
-.tile-grid {
+/* SDG section layout on TidyTuesday page */
+.sdg-section {
+  --sdg-accent: #111111;
+  margin-bottom: 3rem;
+  padding: 1.75rem 1.75rem 2rem;
+  border: 3px solid var(--sdg-accent);
+  box-shadow: 12px 12px 0 rgba(0, 0, 0, 0.9);
+  background: #fffdf3;
+}
+
+.sdg-section h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.4rem;
+}
+
+.sdg-section h3 i {
+  font-size: 1.4rem;
+}
+
+.sdg-tagline {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 1.4rem;
+  color: var(--sdg-accent);
+}
+
+.tile-grid ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.1rem;
+}
+
+.tile-grid li {
+  border: 3px solid var(--sdg-accent);
+  box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.85);
+  background: #ffffff;
+  padding: 0.9rem 1rem;
+  transition: transform 0.1s ease-out, box-shadow 0.1s ease-out, background 0.1s ease-out;
+}
+
+.tile-grid li:hover {
+  transform: translate(-4px, -4px);
+  box-shadow: 12px 12px 0 rgba(0, 0, 0, 0.95);
+  background: #ffeaa7;
+}
+
+.tile-grid a {
+  display: block;
+  border-bottom: none;
+  text-transform: none;
+  font-weight: 700;
+  color: inherit;
+}
+
+.tile-grid a span {
+  display: block;
+}
+
+/* SDG-specific accent colors */
+.sdg-section.sdg-1 {
+  --sdg-accent: #e5243b;
+  background: #fff1f4;
+}
+
+.sdg-section.sdg-2 {
+  --sdg-accent: #dda63a;
+  background: #fff7e6;
+}
+
+.sdg-section.sdg-3 {
+  --sdg-accent: #4c9f38;
+  background: #f1fbf4;
+}
+
+.sdg-section.sdg-4 {
+  --sdg-accent: #c5192d;
+  background: #fff0f2;
+}
+
+.sdg-section.sdg-5 {
+  --sdg-accent: #ff3a21;
+  background: #fff2ec;
+}
+
+.sdg-section.sdg-6 {
+  --sdg-accent: #26bde2;
+  background: #eef9ff;
+}
+
+.sdg-section.sdg-7 {
+  --sdg-accent: #fcc30b;
+  background: #fff9e5;
+}
+
+.sdg-section.sdg-8 {
+  --sdg-accent: #a21942;
+  background: #fff0f5;
+}
+
+.sdg-section.sdg-9 {
+  --sdg-accent: #fd6925;
+  background: #fff3e9;
+}
+
+.sdg-section.sdg-10 {
+  --sdg-accent: #dd1367;
+  background: #fff0f7;
+}
+
+.sdg-section.sdg-11 {
+  --sdg-accent: #fd9d24;
+  background: #fff7ea;
+}
+
+.sdg-section.sdg-12 {
+  --sdg-accent: #bf8b2e;
+  background: #fff6e6;
+}
+
+.sdg-section.sdg-13 {
+  --sdg-accent: #3f7e44;
+  background: #f0faf1;
+}
+
+.sdg-section.sdg-14 {
+  --sdg-accent: #0a97d9;
+  background: #eaf6ff;
+}
+
+.sdg-section.sdg-15 {
+  --sdg-accent: #56c02b;
+  background: #f1fbf1;
+}
+
+.sdg-section.sdg-16 {
+  --sdg-accent: #00689d;
+  background: #e9f3fb;
+}
+
+.sdg-section.sdg-17 {
+  --sdg-accent: #19486a;
+  background: #edf2f7;
 }
 
 .tile-card {

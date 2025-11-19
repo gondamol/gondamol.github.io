@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="grad-health" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#ec4899;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#grad-health)" />
+  <polyline points="140,420 260,300 380,340 500,240 620,280 740,200 860,260" fill="none" stroke="#fefce8" stroke-width="8"/>
+  <circle cx="260" cy="300" r="10" fill="#fefce8"/>
+  <circle cx="500" cy="240" r="10" fill="#fefce8"/>
+  <circle cx="740" cy="200" r="10" fill="#fefce8"/>
+  <text x="140" y="140" font-family="Space Grotesk, system-ui, sans-serif" font-size="48" fill="#fefce8" font-weight="700">
+    Health Data &amp; Evaluation
+  </text>
+  <text x="140" y="200" font-family="Space Grotesk, system-ui, sans-serif" font-size="32" fill="#fefce8" font-weight="500">
+    Financial Diaries • Outcomes • Dashboards • RCTs
+  </text>
+</svg>
+

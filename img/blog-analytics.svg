@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="grad-analytics" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff5a5f;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#ffc857;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#grad-analytics)" />
+  <g transform="translate(140,140)">
+    <rect x="0" y="160" width="160" height="220" fill="#111111" opacity="0.9"/>
+    <rect x="200" y="120" width="160" height="260" fill="#111111" opacity="0.9"/>
+    <rect x="400" y="80" width="160" height="300" fill="#111111" opacity="0.9"/>
+    <rect x="600" y="40" width="160" height="340" fill="#111111" opacity="0.9"/>
+  </g>
+  <text x="140" y="120" font-family="Space Grotesk, system-ui, sans-serif" font-size="48" fill="#111111" font-weight="700">
+    Data Analytics
+  </text>
+  <text x="140" y="180" font-family="Space Grotesk, system-ui, sans-serif" font-size="32" fill="#111111" font-weight="500">
+    Roadmaps • SQL • Dashboards • Career
+  </text>
+</svg>
+
