@@ -48,6 +48,7 @@ If you're short on time, start with these flagship TidyTuesday projects that bes
 - [CO2 Emissions Analysis](co2-emissions.qmd) — emissions, growth, and energy transitions with a focus on climate and development trade-offs.
 - [Poverty Trends (UNDP)](poverty-trends-undp.qmd) — HDI, poverty, and inequality trends, linking SDG 1 (No Poverty) with health and livelihoods.
 - [Temperature Anomalies & Climate](2024-temperature-anomalies.qmd) — long-run temperature anomalies and climate risks for agriculture and health.
+- [Ten Mini Cross-SDG Analyses](ten-datasets-quick-insights.qmd) — 10 compact TidyTuesday projects using curated datasets across health, labour, inequality, climate, and education.
 
 ---
 
