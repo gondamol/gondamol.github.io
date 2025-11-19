@@ -1,0 +1,83 @@
+---
+title: "From Field Enumerator to Data Analyst: A Realistic Transition Plan"
+subtitle: "How to turn your field experience into a data career without starting from zero"
+author: "Nichodemus Amollo"
+date: "2025-11-01"
+categories: [Career, Data Analytics, Monitoring & Evaluation]
+image: "/img/blog-analytics.svg"
+---
+
+## Why Enumerators Make Great Analysts
+
+If you've worked as a field enumerator, you already understand:
+
+- What questions confuse respondents
+- How skip patterns work in real life
+- What “bad data” looks like on the ground
+
+That perspective is **gold** for data teams—if you can add technical skills on top.
+
+---
+
+## Step 1: Own the Tools You Already Use
+
+If you’ve used:
+
+- ODK / SurveyCTO / Kobo / REDCap
+
+Learn the **back end**:
+
+- How forms are designed
+- How data is stored
+- How exports are structured
+
+Ask for:
+
+- Access to **practice datasets**
+- A chance to help with basic cleaning in Excel or R
+
+---
+
+## Step 2: Learn the Core Data Stack
+
+You don’t need 10 tools. Start with:
+
+- Excel:
+  - Filters, pivot tables, VLOOKUP/XLOOKUP
+- R or Python:
+  - Import CSVs
+  - Clean and transform
+  - Create summary tables and charts
+- SQL:
+  - SELECT, WHERE, GROUP BY, JOIN
+
+Build portfolio pieces using **realistic survey data** (anonymized or public).
+
+---
+
+## Step 3: Volunteer for Hybrid Tasks
+
+In your next assignment:
+
+- Volunteer to:
+  - Run basic data checks at the end of each day
+  - Help prepare summary tables for supervisors
+  - Document field challenges that explain data patterns
+
+You become the bridge between **field teams and analysts**—and that’s often how you get promoted.
+
+---
+
+## Step 4: Package Your Story for Recruiters
+
+On your CV and LinkedIn:
+
+- Highlight:
+  - “Collected data from X participants across Y sites”
+  - “Supported daily data quality review and feedback”
+  - “Helped design or refine digital survey tools”
+- Add:
+  - 2–3 small data projects (cleaning + analysis + charts)
+
+You’re not “just an enumerator.” You’re someone who **understands data at its source** and is learning to drive insights.
+

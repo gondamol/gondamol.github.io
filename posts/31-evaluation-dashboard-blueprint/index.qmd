@@ -1,0 +1,77 @@
+---
+title: "Evaluation Dashboards That Donors Actually Use: A Practical Blueprint"
+subtitle: "Stop building pretty dashboards nobody opens—start shipping tools that drive funding decisions"
+author: "Nichodemus Amollo"
+date: "2025-10-31"
+categories: [Dashboards, Monitoring & Evaluation, Data Visualization]
+image: "/img/blog-analytics.svg"
+---
+
+## Why Most Evaluation Dashboards Fail
+
+Common dashboard problems:
+
+- Try to show **everything** instead of answering a few key questions
+- Use fancy visuals but **hide the core indicators**
+- Are built for data people, not for **program managers or donors**
+
+Good dashboards:
+
+- Start from **decisions** and work backward
+- Focus on **5–10 critical indicators**
+- Have **clear structure**: Overview → Drill-down → Details
+
+---
+
+## A Simple Layout for an M&amp;E Dashboard
+
+1. **Header**
+   - Project name, geography, timeline
+   - Last update date
+2. **Top-line Results**
+   - 3–5 big metrics:
+     - Coverage
+     - Quality
+     - Equity
+3. **Trends Over Time**
+   - Time-series for core indicators
+4. **Disaggregation**
+   - By county/district, sex, age group, facility type
+5. **Data Quality & Notes**
+   - Missingness
+   - Known caveats
+
+---
+
+## Building This with R + Quarto (Conceptually)
+
+You can:
+
+- Use R to:
+  - Load cleaned data from a database or CSV
+  - Compute indicators and disaggregations
+  - Generate plots with `ggplot2`
+- Use Quarto to:
+  - Create a parameterized report per region or partner
+  - Schedule automated updates
+
+Portfolio idea:
+
+- Build a static evaluation dashboard for:
+  - Maternal health
+  - Immunization
+  - NCD outcomes
+- Host it via GitHub Pages or Quarto Publish.
+
+---
+
+## Checklist for Donor-Ready Dashboards
+
+- [ ] The first screen answers “Are we on track?”
+- [ ] Indicators match the logframe / results framework
+- [ ] Disaggregations align with equity priorities
+- [ ] Definitions and caveats are documented
+- [ ] Data refresh schedule is clear
+
+Make the dashboard feel like a **decision tool**, not a portfolio decoration.
+

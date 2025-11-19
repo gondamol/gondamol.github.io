@@ -1,0 +1,72 @@
+---
+title: "Statistical Power for Evaluators: Stop Running Underpowered Studies"
+subtitle: "A plain-language guide to sample size, detectable effect, and trade-offs in impact evaluations"
+author: "Nichodemus Amollo"
+date: "2025-11-07"
+categories: [Statistics, Impact Evaluation, Monitoring & Evaluation]
+image: "/img/blog-mande.svg"
+---
+
+## Why Power Matters More Than P-Values
+
+A beautifully designed evaluation is useless if:
+
+- There aren’t enough units (patients, schools, facilities)
+- The expected effect is too small to detect
+
+Underpowered studies:
+
+- Waste money
+- Exhaust field teams
+- Provide inconclusive evidence
+
+---
+
+## The Three Levers of Power
+
+1. **Sample Size**
+2. **Size of Effect You Care About**
+3. **Variation in the Outcome**
+
+Constraints:
+
+- Budget and logistics limit sample size
+- Programs can’t always produce huge effects
+
+Your job: Be explicit about these trade-offs **before** data collection.
+
+---
+
+## A Simple Way to Explain Power
+
+To non-statisticians:
+
+> “Given our sample size and variability, this study can reliably detect at least a X% change in outcome. Smaller changes might be real but will be hard to confirm statistically.”
+
+This shifts expectations from:
+
+- “Will we see a significant result?”
+to
+- “What size of effect can this study realistically pick up?”
+
+---
+
+## What Beginners Can Do with R
+
+You don’t need advanced math:
+
+- Use simple functions or packages (e.g., `pwr` in R)
+- Simulate:
+  - Different sample sizes
+  - Different effect sizes
+  - Varying levels of noise
+
+Plot how **power changes** across these scenarios and include it in:
+
+- Protocols
+- Funding proposals
+- Limitations sections
+
+Power analysis is not a formality—it’s part of honest evaluation design.
+
+

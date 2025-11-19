@@ -4,7 +4,6 @@ subtitle: "What You Can Actually Expect to Earn (By Level, Location, and Industr
 author: "Nichodemus Amollo"
 date: "2025-10-05"
 categories: [Salary, Career, Negotiation]
-image: "salary.jpg"
 ---
 
 ## Average Data Analyst Salaries (USA, 2025)

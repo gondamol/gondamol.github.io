@@ -4,7 +4,6 @@ subtitle: "I Reviewed 500+ Portfolios - Here's What Works (And What Gets You Ign
 author: "Nichodemus Amollo"
 date: "2025-10-20"
 categories: [Portfolio, Career, Projects, Guide]
-image: "portfolio.jpg"
 ---
 
 ## The Harsh Truth About Data Analytics Portfolios

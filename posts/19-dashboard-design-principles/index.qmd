@@ -4,7 +4,6 @@ subtitle: "Stop Making Dashboards Nobody Uses - Design for Impact"
 author: "Nichodemus Amollo"
 date: "2025-10-07"
 categories: [Dashboard, Design, Best Practices]
-image: "dashboard.jpg"
 ---
 
 ## The 10 Principles

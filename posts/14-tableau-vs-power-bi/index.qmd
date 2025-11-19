@@ -4,7 +4,6 @@ subtitle: "I Used Both for 5+ Years - Here's My Brutally Honest Take"
 author: "Nichodemus Amollo"
 date: "2025-10-12"
 categories: [Tableau, Power BI, Tools, Visualization]
-image: "tableau-powerbi.jpg"
 ---
 
 ## The Short Answer

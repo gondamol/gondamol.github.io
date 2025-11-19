@@ -1,0 +1,80 @@
+---
+title: "Land Remote Data Roles from the Global South: A No-BS Guide"
+subtitle: "How to get noticed by international teams even if you’re not in the US or Europe"
+author: "Nichodemus Amollo"
+date: "2025-11-06"
+categories: [Career, Remote Work, Data Analytics]
+image: "/img/blog-analytics.svg"
+---
+
+## The Reality of Remote Data Work
+
+Remote roles are competitive—but it’s not impossible from the Global South.
+
+Challenges:
+
+- Time zones
+- Payment logistics
+- Perception gaps about universities and institutions
+
+Advantages:
+
+- You understand **low- and middle-income contexts** better than most
+- You can work with **local data and international methods**
+
+---
+
+## What International Teams Actually Look For
+
+- Reliable communication
+- Documentation and reproducible work
+- Ability to work with messy, real-world data
+- Some overlap in working hours
+
+Stack doesn’t need to be fancy:
+
+- SQL + R/Python + one BI tool
+- GitHub for code and portfolio
+
+---
+
+## How to Be Discoverable
+
+- Fix your LinkedIn:
+  - Headline: “Health Data Analyst | M&amp;E | R + SQL”
+  - About: 3–4 bullet points focusing on outcomes you’ve driven
+  - Featured: link to 2–3 portfolio projects
+- Use GitHub:
+  - Host small, polished projects
+  - Add READMEs that explain context and methods
+
+---
+
+## Where to Look for Remote Roles
+
+- International NGOs and research labs
+- Remote-first companies (analytics consultancies, SaaS)
+- Fellowships and fellow-like roles
+
+Look for:
+
+- “Anywhere” or “Global” location tags
+- Strong emphasis on writing and async collaboration
+
+---
+
+## How to Pitch Yourself
+
+Instead of:
+
+> “I’m a data analyst from [country], looking for opportunities.”
+
+Try:
+
+> “I design and automate data workflows for health and evaluation projects in low-resource settings. I’ve built dashboards used by X facilities and helped reduce reporting time by Y%.”
+
+Your location is not a weakness if you pair it with a **strong, context-aware portfolio**.
+
+---
+
+

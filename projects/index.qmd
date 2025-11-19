@@ -8,7 +8,7 @@ title-block-banner: true
 ::: {.hero-banner}
 # 💼 Professional Projects Portfolio
 
-Showcasing 7+ years of impactful work in health data analytics, data management, and digital health solutions
+Showcasing 7+ years of impactful work in health data analytics, data management, and digital health solutions — with a special focus on health financial diaries, health economics, and rigorous impact evaluation.
 :::
 
 ## **Project Categories**

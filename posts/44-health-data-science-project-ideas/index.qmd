@@ -1,0 +1,59 @@
+---
+title: "20 Health Data Science Project Ideas That Go Beyond Kaggle"
+subtitle: "Real-world projects in NCDs, health financing, and service delivery that impress hiring managers"
+author: "Nichodemus Amollo"
+date: "2025-11-13"
+categories: [Health Data, Projects, Portfolio]
+image: "/img/blog-health.svg"
+---
+
+## Why You Need Health-Specific Projects
+
+Generic projects:
+
+- Titanic survival
+- MNIST digits
+
+…don’t show that you understand **health systems, patients, and financing**.
+
+Health-specific projects do.
+
+---
+
+## 5 Themes with Project Ideas
+
+1. **Non-Communicable Diseases (NCDs)**
+   - Blood pressure control dashboard
+   - Diabetes retention analysis
+
+2. **Maternal & Child Health**
+   - ANC coverage inequalities
+   - Facility delivery vs home delivery patterns
+
+3. **Health Financing**
+   - Out-of-pocket burden by quintile
+   - Financial diary simulations
+
+4. **Service Delivery & Readiness**
+   - Facility readiness index
+   - Service availability and readiness mapping
+
+5. **Human Resources for Health**
+   - Health worker distribution and workload
+   - Attrition and retention analysis
+
+---
+
+## How to Make These Projects Credible
+
+- Use real or realistic data
+- Ground them in:
+  - WHO frameworks
+  - Your country’s health policies
+- Include:
+  - Clear data limitations
+  - Equity and access discussion
+
+This turns your portfolio into a **signal of real-world understanding**, not just coding practice.
+
+

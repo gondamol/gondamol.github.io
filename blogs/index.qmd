@@ -16,7 +16,7 @@ listing:
 ::: {.hero-banner}
 # 📝 Blog & Technical Notes
 
-Sharing knowledge on data analytics, statistical methods, career development, and data science tools.
+Sharing knowledge on data analytics, statistical methods, career development, and data science tools — with a focus on health data, impact evaluation, and building a career from low-resource beginnings.
 :::
 
 ## Welcome to My Blog!

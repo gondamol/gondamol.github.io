@@ -1,19 +1,17 @@
 ---
 title: "My Journey & Curriculum Vitae"
-subtitle: "From Limited Resources to Leading Global Health Data Science"
+subtitle: "Resilient beginnings, rigorous science, global health impact"
 format:
   html:
     toc: true
     toc-depth: 3
+    include-after-body: _includes/aos-vis.html
 page-layout: article
 css: cv-animations.css
 ---
 
-<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-<link href="https://unpkg.com/vis-timeline@latest/styles/vis-timeline-graph2d.min.css" rel="stylesheet" type="text/css" />
-
 ::: {.hero-banner}
-# **Against All Odds: A Journey of Resilience**
+# **Resilience to Impact: A Data-Driven Journey**
 :::
 
 ## **The Beginning: Rising from Adversity**
@@ -30,7 +28,7 @@ Growing up as an **orphaned child with limited resources** in rural Kenya, the o
 - **Adversity taught me empathy** - Personal challenges deepened my commitment to health equity  
 - **Community taught me collaboration** - Support from mentors fueled my passion for capacity building
 
-**Against all odds, I made it this far** - and now I'm positioned to lead transformative global health initiatives.
+From a childhood of scarcity to a career in global health, I've learned to treat every obstacle as raw material for wiser, more impactful work.
 :::
 
 ---

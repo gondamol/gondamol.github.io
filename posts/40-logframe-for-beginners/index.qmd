@@ -1,0 +1,58 @@
+---
+title: "Logframes for Beginners: How to Stop Faking It in M&E Meetings"
+subtitle: "A no-jargon guide to understanding and using logical frameworks that donors love"
+author: "Nichodemus Amollo"
+date: "2025-11-09"
+categories: [Monitoring & Evaluation, Logframe, Project Design]
+image: "/img/blog-mande.svg"
+---
+
+## What a Logframe Really Is
+
+A logical framework is just a **structured way to tell the story**:
+
+- What do we do?
+- What do we produce?
+- What changes do we expect?
+
+Columns:
+
+- Narrative summary
+- Indicators
+- Means of verification
+- Assumptions/risks
+
+Rows:
+
+- Goal / Impact
+- Outcomes
+- Outputs
+- Activities
+
+---
+
+## How to Read a Logframe Like a Pro
+
+Ask:
+
+- Are outputs sufficient to plausibly lead to outcomes?
+- Are indicators measurable with available data systems?
+- Are assumptions vaguely inspirational or actually testable?
+
+As a data person, you can add a lot by:
+
+- Suggesting **measurable, realistic indicators**
+- Challenging vague assumptions
+
+---
+
+## Quick Exercise
+
+Take any project concept note and:
+
+- Sketch a 4x4 logframe
+- Define 1–2 indicators per level
+- Identify 3–4 key risks
+
+You’ve done more logical thinking than many “formal” project designs.
+

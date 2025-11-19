@@ -4,7 +4,6 @@ subtitle: "Stop Using Excel Like It's 1995 - Modern Techniques That Will 10X You
 author: "Nichodemus Amollo"
 date: "2025-10-21"
 categories: [Excel, Productivity, Tutorial, Beginners]
-image: "excel.jpg"
 ---
 
 ## The Inconvenient Truth About Excel

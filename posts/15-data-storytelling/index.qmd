@@ -4,7 +4,6 @@ subtitle: "The Skill That Separates Good Analysts from Great Ones"
 author: "Nichodemus Amollo"
 date: "2025-10-11"
 categories: [Storytelling, Communication, Visualization]
-image: "storytelling.jpg"
 ---
 
 ## Why Data Storytelling Matters

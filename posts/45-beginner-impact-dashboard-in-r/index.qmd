@@ -1,0 +1,54 @@
+---
+title: "Build Your First Impact Dashboard in R (Even If You’ve Never Shipped a Shiny App)"
+subtitle: "A low-friction path to a working dashboard that shows real program results"
+author: "Nichodemus Amollo"
+date: "2025-11-14"
+categories: [Dashboards, R, Monitoring & Evaluation]
+image: "/img/blog-analytics.svg"
+---
+
+## Why Start with a Simple Dashboard
+
+You don’t need a complex app:
+
+- 2–3 tabs
+- 5–7 key indicators
+- Clear filters (date, geography, facility)
+
+Your goal is to:
+
+- Show **you can move from static charts to interactive tools**
+- Give program teams something they can actually use
+
+---
+
+## A Minimal Architecture
+
+- Data:
+  - A clean table of events/visits
+  - A lookup table for facilities/geographies
+- R:
+  - `shiny` or `flexdashboard`
+  - `dplyr` + `ggplot2`
+
+Tabs:
+
+1. Overview
+2. Trends
+3. Disaggregation
+
+---
+
+## Portfolio Tip
+
+Host your dashboard:
+
+- On shinyapps.io (free tier)
+- Or publish screenshots + code on GitHub
+
+Include in your CV:
+
+> “Built and deployed an interactive dashboard showing X indicators across Y facilities, used by Z stakeholders for quarterly review.”
+
+This single project can dramatically elevate your profile as a junior analyst or M&amp;E specialist.
+

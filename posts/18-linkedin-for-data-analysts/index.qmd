@@ -4,7 +4,6 @@ subtitle: "How I Went from 0 to 50+ Recruiter Messages per Month by Optimizing M
 author: "Nichodemus Amollo"
 date: "2025-10-08"
 categories: [LinkedIn, Career, Personal Brand, Networking]
-image: "linkedin.jpg"
 ---
 
 ## Why LinkedIn Matters for Data Analysts

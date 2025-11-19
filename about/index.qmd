@@ -6,14 +6,13 @@ format:
   html:
     linestretch: 1.7
     css: about-animations.css
+    include-after-body: _includes/aos-vis.html
 ---
 
-<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-
 ::: {.hero-banner style="position: relative; z-index: 1;"}
-# **<i class="fas fa-mountain"></i> Against All Odds: A Journey of Resilience**
+# **<i class="fas fa-mountain" aria-hidden="true"></i> Resilience to Impact: A Data-Driven Journey**
 
-<div style="font-size: 1.6rem; margin-top: 1rem; opacity: 0.95;" data-aos="fade-up" data-aos-delay="200">
+<div class="about-hero-quote" data-aos="fade-up" data-aos-delay="200">
 “Just as a blazing fire makes flame and brightness out of everything that is thrown into it.” — Marcus Aurelius<br>
 From rural Kenya to global health data science, I turn obstacles into fuel for service.
 </div>

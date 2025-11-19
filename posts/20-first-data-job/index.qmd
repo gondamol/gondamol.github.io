@@ -4,7 +4,6 @@ subtitle: "What They Don't Tell You About Your First Data Analytics Job"
 author: "Nichodemus Amollo"
 date: "2025-10-06"
 categories: [Career, First Job, Advice]
-image: "first-job.jpg"
 ---
 
 ## The Reality Check

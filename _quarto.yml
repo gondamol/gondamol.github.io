@@ -32,7 +32,7 @@ project:
 
 website:
   page-navigation: true
-  title: "Nichodemus Amollo | Health Data Scientist"
+  title: "Nic|Data"
   site-url: "https://gondamol.github.io"
   description: "Research Data Manager & Data Scientist specializing in Health Financial Diaries, Data Analysis, Machine Learning, and Outcomes & Impact Evaluation - Research on Livelihood and Financial Behavior of Low-Income Households"
         
@@ -128,4 +128,3 @@ format:
       margin-width: 250px
 
 editor: source
-

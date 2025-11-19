@@ -4,7 +4,6 @@ subtitle: "Why You're Stuck in Learning Mode and How to Actually Land a Job"
 author: "Nichodemus Amollo"
 date: "2025-10-09"
 categories: [Learning, Career, Productivity]
-image: "tutorial-hell.jpg"
 ---
 
 ## What Is Tutorial Hell?

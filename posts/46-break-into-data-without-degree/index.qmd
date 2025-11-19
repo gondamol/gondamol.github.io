@@ -1,0 +1,124 @@
+---
+title: "No Degree? No Problem. Break Into Data in 6 Months (Without Lying on Your CV)"
+subtitle: "A brutally honest roadmap for getting your first data job when you’re starting from zero"
+author: "Nichodemus Amollo"
+date: "2025-11-15"
+categories: [Career, Data Analytics, Data Science, Beginners]
+image: "/img/blog-analytics.svg"
+---
+
+## The Truth: Degrees Help, Portfolios Hire
+
+Do degrees help? Sure.  
+Do you *need* one to get into data analytics or data science? **Not anymore.**
+
+What hiring managers really care about:
+
+- Can you work with **real, messy data**?
+- Can you communicate **insights clearly**?
+- Can you take feedback and **iterate quickly**?
+
+You can prove all three without a traditional degree.
+
+---
+
+## Step 1: Pick a Lane (So You Don’t Drown in Tutorials)
+
+Instead of trying to “learn data,” pick one of these lanes for your first job:
+
+- **Data Analyst** – dashboards, SQL, Excel, business questions
+- **Monitoring & Evaluation Analyst** – surveys, indicators, impact
+- **Junior Data Scientist** – modeling, experiments, ML basics
+- **Analytics Engineer** – data pipelines, SQL, BI models
+
+Pick **one** lane and let it guide:
+
+- Which tools you learn first
+- What projects you build
+- Which roles you apply for
+
+---
+
+## Step 2: Learn the 3 Core Tools (Deep, Not Wide)
+
+For most entry roles, you need:
+
+1. **SQL** – join, filter, aggregate, window functions  
+2. **One analysis language** – R or Python (not both at first)  
+3. **One visualization tool** – Power BI, Tableau, or Quarto dashboards  
+
+Your 6-month focus:
+
+- 60%: Practicing these tools on real datasets  
+- 30%: Turning outputs into **portfolio projects**  
+- 10%: LinkedIn, CV, networking  
+
+---
+
+## Step 3: Build 3 End-to-End Projects (Not 30 Mini Ones)
+
+Aim for **three** strong projects that show:
+
+1. **Data Cleaning & Quality**
+   - Take a messy public dataset
+   - Clean it and document issues
+
+2. **Analysis & Storytelling**
+   - Answer 2–3 real questions (e.g., “Which regions are under-served?”)
+   - Use charts + plain-language explanations
+
+3. **Dashboard or Reproducible Report**
+   - Build something someone could use every month
+   - Host it (GitHub Pages, shinyapps, or screenshots + repo)
+
+Each project should live in a **GitHub repo** with:
+
+- A clear README
+- Screenshots or rendered reports
+- A short story: problem → method → insights → recommendation
+
+---
+
+## Step 4: Package Your Story for Recruiters (Without a Degree)
+
+On your CV:
+
+- Education:
+  - List short, focused courses (not every YouTube video)
+- Projects:
+  - Highlight 3–5 strong portfolio pieces with links
+- Skills:
+  - Group by lane (e.g., “Analytics: SQL, Power BI, R”)
+
+On LinkedIn:
+
+- Headline example:
+  - “Entry-Level Data Analyst | SQL • Power BI • R | Built 3 End-to-End Analytics Projects”
+- About section:
+  - 3–4 bullets with outcomes (e.g., “Built a health dashboard used by X people”)
+
+You’re not selling a **degree**—you’re selling **evidence**.
+
+---
+
+## Step 5: Apply Strategically (Not to 300 Jobs)
+
+Target:
+
+- Roles with:
+  - “Junior”, “Analyst”, “Assistant”, “Associate”
+  - Remote-friendly or flexible on degrees
+- Organizations where:
+  - Data is important but teams are still small (NGOs, startups, research labs)
+
+For each application:
+
+- Mention **one** of your projects that matches their domain
+- Link a dashboard or report that feels relevant
+
+Instead of sending 300 generic applications, send **50 thoughtful ones** with a clear signal:
+
+> “Even without a degree, I’ve done the kind of work you need.”
+
+That’s how you turn “no degree” from a weakness into a **story of initiative and self-learning**.
+

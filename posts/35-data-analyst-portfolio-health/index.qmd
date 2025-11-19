@@ -1,0 +1,60 @@
+---
+title: "Data Analyst Portfolio for Health & Development: 5 Projects That Get You Hired"
+subtitle: "Stand out with projects that speak the language of donors, NGOs, and research teams"
+author: "Nichodemus Amollo"
+date: "2025-11-04"
+categories: [Portfolio, Health Data, Monitoring & Evaluation]
+image: "/img/blog-health.svg"
+---
+
+## Why Generic Portfolios Don’t Work in Global Health
+
+Most beginner portfolios show:
+
+- Sales dashboards
+- Generic e-commerce datasets
+- Kaggle competitions with no context
+
+Health & development recruiters want to see:
+
+- Impact metrics
+- Facility or patient flows
+- Equity and access questions
+
+---
+
+## 5 Portfolio Projects That Translate
+
+1. **Immunization Coverage Dashboard**
+   - By district, facility, age group
+   - Includes data quality flags
+
+2. **Maternal Health Outcomes Analysis**
+   - ANC visits, delivery outcomes, post-natal follow-up
+   - Trends and disparities by geography
+
+3. **Financial Protection Study**
+   - Out-of-pocket health expenditures
+   - Catastrophic spending and coping mechanisms
+
+4. **Facility Readiness Scorecard**
+   - Essential services, equipment, staffing
+   - Simple composite index + ranking
+
+5. **Survey Data Quality Report**
+   - Non-response, inconsistent answers, timing patterns
+
+---
+
+## How to Make Each Project Recruiter-Friendly
+
+- Provide:
+  - Short context (what problem are we solving?)
+  - Plain-language summary of findings
+  - 3–5 clear visuals
+- Highlight:
+  - Data limitations
+  - How you would improve the study if you had more resources
+
+By using **health & development contexts**, you show that you can think beyond numbers and connect to real-world impact.
+

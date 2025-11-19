@@ -4,7 +4,6 @@ subtitle: "The Ultimate Guide to Creating Visuals That Actually Get You Hired"
 author: "Nichodemus Amollo"
 date: "2025-10-22"
 categories: [Visualization, Tableau, Power BI, Design]
-image: "visualization.jpg"
 ---
 
 ## Why 90% of Data Analysts Suck at Visualization (And How to Be Different)

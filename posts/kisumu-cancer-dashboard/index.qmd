@@ -4,7 +4,6 @@ subtitle: "How data science and innovation are saving lives in Kisumu County"
 author: "Nichodemus Amollo"
 date: "2024-11-26"
 categories: [Cancer Research, Data Management, Healthcare Innovation, Tableau, KEMRI]
-image: "dashboard-launch.jpg"
 ---
 
 ## A Dashboard That Changes Lives

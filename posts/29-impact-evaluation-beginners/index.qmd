@@ -1,0 +1,91 @@
+---
+title: "Impact Evaluation for Beginners: RCTs vs Quasi-Experimental Designs Explained Simply"
+subtitle: "How to understand and explain impact methods without drowning in jargon"
+author: "Nichodemus Amollo"
+date: "2025-10-29"
+categories: [Impact Evaluation, Causal Inference, Monitoring & Evaluation]
+image: "/img/blog-mande.svg"
+---
+
+## What Is Impact Evaluation Really Asking?
+
+Impact evaluation asks a simple but hard question:
+
+> **What would have happened to these people or places if the program never existed?**
+
+Because we can’t see the “alternate universe,” we build designs that **approximate** it.
+
+---
+
+## RCTs in Plain Language
+
+Randomized Controlled Trials (RCTs):
+
+- Randomly assign units (people, facilities, communities) to:
+  - Treatment group (gets the program)
+  - Control group (does not)
+- Because assignment is random:
+  - Groups are *similar on average* at baseline
+  - Differences at follow-up can be attributed to the program
+
+When to use RCTs:
+
+- When randomization is ethical and feasible
+- When you have clear units of assignment
+- When funders or policymakers need strong causal evidence
+
+---
+
+## When You Can’t Randomize: Quasi-Experimental Designs
+
+Quasi-experimental designs help when:
+
+- The program was rolled out based on policy decisions
+- You can’t control assignment, but you **can** observe:
+  - Timing
+  - Eligibility rules
+  - Other patterns
+
+Common designs:
+
+- **Difference-in-Differences (DiD):**
+  - Compare change over time in treated vs comparison groups
+- **Regression Discontinuity (RD):**
+  - Use a cutoff (score, income, age) that decides who gets treatment
+- **Propensity Score Matching (PSM):**
+  - Match treated units to “similar” untreated ones based on observed characteristics
+
+---
+
+## How to Explain This to Non-Technical Stakeholders
+
+Avoid jargon like “average treatment effect.” Instead say:
+
+- “We compared similar groups over time to see if the program made a difference.”
+- “The only systematic difference between these groups is the program.”
+- “Our design tries to isolate the impact of the program from other changes happening in the country.”
+
+Use visuals:
+
+- Simple before/after charts
+- Timeline diagrams
+- clear labels: “Comparison Group” vs “Program Group”
+
+---
+
+## Where Beginners Can Start
+
+- Read:
+  - World Bank “Impact Evaluation in Practice”
+  - JPAL and IPA evaluation summaries
+- Practice:
+  - Simulate simple RCTs in R
+  - Recreate difference-in-differences with public panel data
+- Portfolio idea:
+  - Write a 2–3 page “evaluation design note” for a hypothetical health program, with:
+    - Research question
+    - Indicators
+    - Design choice (RCT or quasi-experimental) and why
+
+If you can explain impact evaluation **without** jargon, you’ll be rare—and extremely useful to real projects.
+

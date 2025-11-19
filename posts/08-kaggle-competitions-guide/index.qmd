@@ -4,7 +4,6 @@ subtitle: "How I Went From Zero to Top 10% in 90 Days - And How You Can Too"
 author: "Nichodemus Amollo"
 date: "2025-10-18"
 categories: [Kaggle, Portfolio, Competition, Beginners]
-image: "kaggle.jpg"
 ---
 
 ## Why Kaggle is Your Secret Weapon

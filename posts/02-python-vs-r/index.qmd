@@ -4,7 +4,6 @@ subtitle: "Stop Wasting Time - Here's Which One You Actually Need to Learn First
 author: "Nichodemus Amollo"
 date: "2025-10-24"
 categories: [Python, R, Tools, Beginners]
-image: "python-r.jpg"
 ---
 
 ## The Most Asked Question in Data Analytics
@@ -281,4 +280,3 @@ Most senior data professionals know both. Here's the optimal learning path:
 - [Building Your First Data Project](#) _(Coming Soon)_
 
 **Tags:** #Python #R #DataAnalytics #Programming #CareerAdvice #Tools
-

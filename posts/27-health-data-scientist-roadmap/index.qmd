@@ -1,0 +1,116 @@
+---
+title: "Health Data Scientist Roadmap: From Excel to Global Health Impact in 12 Months"
+subtitle: "A practical, beginner-friendly path to become a health data scientist even if you're outside the US & Europe"
+author: "Nichodemus Amollo"
+date: "2025-10-27"
+categories: [Health Data, Data Science, Career, Roadmap]
+image: "/img/blog-health.svg"
+---
+
+## Why Health Data Science Is Different
+
+Health data science is not just about models—it’s about **patients, facilities, financing, and policy**.
+
+- Your analyses influence:
+  - Who gets enrolled into a program
+  - Which facilities receive resources
+  - Whether a donor continues funding a life-saving intervention
+- That means:
+  - You must respect **ethics, equity, and context**
+  - You need both **statistical rigor** and **domain understanding**
+
+---
+
+## The 4 Pillars of Health Data Science
+
+1. **Data Foundations**
+   - Data types: patient-level, facility-level, claims, survey, registry
+   - Common formats: CSV, REDCap exports, Kobo/ODK, DHIS2
+   - Data quality: duplicates, missingness, inconsistent IDs
+
+2. **Stats & Methods**
+   - Descriptive stats, confidence intervals, regression
+   - Survival analysis for time-to-event outcomes
+   - Longitudinal analysis for repeated measures
+
+3. **Tools**
+   - R (tidyverse, survival, ggplot2)
+   - SQL for querying large tables
+   - Quarto/R Markdown for reproducible reports
+
+4. **Communication**
+   - One-page briefs for program leads
+   - Visual dashboards for non-technical stakeholders
+   - Clean, annotated code for other analysts
+
+---
+
+## 12-Month Roadmap (While Working or Studying)
+
+### Months 1–3: Strengthen Foundations
+
+- Excel + basic statistics
+- Learn R basics:
+  - Import, clean, transform, visualize
+- Build 2–3 small projects:
+  - Vaccination coverage trends
+  - Facility readiness scores
+
+### Months 4–6: Health-Focused Analysis
+
+- Learn:
+  - Regression (linear, logistic)
+  - Survival analysis for outcomes like time-to-default
+  - Intro to causal diagrams (DAGs)
+- Projects:
+  - Malaria incidence trend analysis
+  - Health worker density vs outcomes
+
+### Months 7–9: Reproducible Research & Dashboards
+
+- Learn:
+  - Quarto for automated reports
+  - Shiny or basic dashboards (or Power BI if your team uses it)
+- Build:
+  - A reproducible health facility dashboard
+  - A quarterly report pipeline (data → R → HTML/PDF)
+
+### Months 10–12: Real-World Projects
+
+- Volunteer:
+  - Support a university department, NGO, or clinic with data cleaning and simple dashboards
+- Build:
+  - 2–3 end-to-end case studies you can show employers
+
+---
+
+## Portfolio Ideas for Health Data Scientists
+
+You can stand out with a portfolio that includes:
+
+- A dashboard showing **hypertension control rates** across facilities
+- A survival curve analysis for **time-to-default** among patients
+- A simulation exploring how **health financing changes** affect out-of-pocket costs
+
+Each project should include:
+
+- Data description and limitations
+- Methods, clearly explained
+- 2–4 key charts
+- 3–5 actionable recommendations
+
+---
+
+## Where to Look for Your First Role
+
+- Research Assistant / Data Analyst roles in:
+  - Universities (schools of public health, epidemiology, biostatistics)
+  - NGOs running health programs
+  - Monitoring & Evaluation teams
+- Keywords to search:
+  - “Health data analyst”
+  - “Biostatistics assistant”
+  - “Monitoring & Evaluation analyst”
+
+You don’t need to start in a “Data Scientist” title. If you **own the data pipeline and deliver insights that change decisions**, your title will catch up.
+

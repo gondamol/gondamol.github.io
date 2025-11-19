@@ -1,0 +1,69 @@
+---
+title: "R vs Python for Monitoring & Evaluation: Which One Should You Actually Learn First?"
+subtitle: "Honest trade-offs for evaluators who care about surveys, indicators, and impact—not fancy deep learning"
+author: "Nichodemus Amollo"
+date: "2025-11-11"
+categories: [R, Python, Monitoring & Evaluation, Tools]
+image: "/img/blog-mande.svg"
+---
+
+## The Real Question for M&amp;E Professionals
+
+It’s not:
+
+> “Which language is better?”
+
+It’s:
+
+> “Which language gets me from raw survey data to validated indicators and reports **faster and more reliably**?”
+
+---
+
+## When R Wins
+
+Best for:
+
+- Heavy survey work
+- Complex statistics
+- Reproducible reports (Quarto, R Markdown)
+
+Pros:
+
+- Massive ecosystem for stats and survey analysis
+- Great integration with RStudio
+- Natural fit for many global health workflows
+
+---
+
+## When Python Wins
+
+Best for:
+
+- ML, NLP, integration with production systems
+- When your team already uses Python for engineering
+
+Pros:
+
+- Huge general-purpose ecosystem
+- Great for scraping, APIs, and automation
+
+---
+
+## My Recommendation for M&amp;E & Health Evaluation
+
+- If your main work is:
+  - Surveys
+  - Monitoring indicators
+  - Regressions and impact analysis
+
+➡️ **Start with R.**
+
+- If you later:
+  - Need to integrate with production systems
+  - Want to do more ML/engineering
+
+➡️ Add Python on top.
+
+You don’t need to pick a side forever—**you need a tool that helps you ship evaluations now**.
+
+

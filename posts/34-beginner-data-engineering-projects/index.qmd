@@ -1,0 +1,62 @@
+---
+title: "7 Beginner Data Engineering Projects for Analysts (With Real-World Flavor)"
+subtitle: "Practical, resume-ready projects you can build without cloud admin access"
+author: "Nichodemus Amollo"
+date: "2025-11-03"
+categories: [Data Engineering, Projects, Portfolio]
+image: "/img/blog-engineering.svg"
+---
+
+## Why You Need Projects, Not Just Courses
+
+Courses teach you **what tools exist**.
+
+Projects show:
+
+- You can connect tools together
+- You understand data lifecycle
+- You can ship something useful
+
+---
+
+## 7 Project Ideas
+
+1. **Survey Data Pipeline**
+   - Ingest XLSForm/CSV exports
+   - Clean and load into a SQLite/PostgreSQL database
+
+2. **Public Health API Ingestion**
+   - Pull daily COVID-19 or vaccination data
+   - Store and aggregate for dashboarding
+
+3. **Job Market Scraper**
+   - Collect job postings for data roles
+   - Analyze skills demand over time
+
+4. **Data Quality Monitor**
+   - Check incoming survey batches
+   - Flag outliers and unusual patterns
+
+5. **Simple Data Warehouse**
+   - Model fact and dimension tables for a small NGO
+
+6. **Dashboard Data Feed**
+   - Build a pipeline that refreshes dashboard tables weekly
+
+7. **ETL for an Evaluation Study**
+   - Merge baseline, midline, and endline datasets
+   - Produce analysis-ready panel data
+
+---
+
+## How to Present These Projects
+
+For each project:
+
+- 1–2 paragraphs: Problem & context
+- Diagram: Source → Transform → Store → Use
+- Screenshots: Logs, tables, dashboards
+- Key learning points and “what I’d improve next”
+
+Recruiters care less about buzzwords and more about proof that you can **get data from A to B reliably**.
+

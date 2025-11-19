@@ -1,0 +1,102 @@
+---
+title: "Monitoring & Evaluation Career Roadmap: From Beginner to Senior Specialist in 18 Months"
+subtitle: "A practical, step-by-step plan to go from zero to delivering donor-ready impact evaluations"
+author: "Nichodemus Amollo"
+date: "2025-10-26"
+categories: [Monitoring & Evaluation, Impact Evaluation, Career, Beginners]
+image: "/img/blog-mande.svg"
+---
+
+## Why Monitoring & Evaluation Is a Powerful Career Path
+
+Monitoring & Evaluation (M&amp;E) is where **data, field realities, and decision-making** meet. If you care about impact, evidence, and accountability, M&amp;E is one of the most rewarding careers in global health and development.
+
+- Every program wants to know: **"Is this working? For whom? At what cost?"**
+- M&amp;E professionals answer these questions using **data, surveys, and rigorous methods**.
+- The best part: you don't need a PhD to start—you need a strong **foundation in measurement, ethics, and thinking clearly about cause and effect**.
+
+---
+
+## 3 Stages to Becoming an M&amp;E Professional
+
+### Stage 1: Foundations (0–3 Months)
+
+Focus on understanding key concepts and language:
+
+- Learn M&amp;E basics:
+  - Results chains, logframes, TOCs (Theory of Change)
+  - Inputs → Activities → Outputs → Outcomes → Impact
+- Take 1–2 free courses:
+  - World Bank M&amp;E fundamentals
+  - UNICEF or USAID M&amp;E introductions
+- Practice:
+  - Rewrite an NGO project description as a simplified logframe
+  - Define 3–5 indicators for outputs and outcomes
+
+### Stage 2: Tools & Data Skills (3–9 Months)
+
+Build skills that let you **own the data** end-to-end:
+
+- Data tools:
+  - Excel + basic statistics
+  - R or Stata for analysis
+  - Mobile data collection (ODK, Kobo, SurveyCTO, REDCap)
+- Practice:
+  - Build a small household survey in ODK
+  - Analyze pre/post data in Excel or R
+  - Create 1–2 basic dashboards
+
+### Stage 3: Real Projects & Specialization (9–18 Months)
+
+Now focus on **doing real work**:
+
+- Volunteer or intern on:
+  - A health or education project with surveys
+  - A local NGO doing baseline/endline studies
+- Start a portfolio:
+  - 2–3 mini-evaluation projects
+  - 1 impact-focused dashboard
+  - 1 learning brief written for a non-technical audience
+
+---
+
+## Where You Can Add Value as a Beginner
+
+Even as a junior, you can:
+
+- Clean messy survey data and create **analysis-ready datasets**
+- Automate basic indicator calculations in R or Excel
+- Support data quality checks and field team feedback loops
+- Turn tables into **simple, clear charts for program teams**
+
+Focus on being the person who **makes data useful**—not just collected.
+
+---
+
+## Action Plan: 60 Days to Your First M&amp;E Project
+
+1. Pick a sector: **health, education, agriculture, or livelihoods**
+2. Draft a logframe for a simple intervention (e.g., maternal health SMS reminders)
+3. Design a 20–30 question baseline survey in ODK/Kobo
+4. Invent a small dataset or use an open one (DHS, World Bank)
+5. Analyze 3–5 key indicators in R or Excel
+6. Build a 1-page dashboard or data story in Quarto/Power BI
+
+Once you have that, you're not just "interested in M&amp;E"—you’ve **actually delivered an evaluation artifact**.
+
+---
+
+## Next Steps
+
+- Add this project to your portfolio with:
+  - Problem statement
+  - Indicators
+  - Methods
+  - Key charts
+  - 3–5 bullet recommendations
+- Then start applying for:
+  - M&amp;E Assistant / Officer roles
+  - Research Assistant roles on impact evaluations
+
+M&amp;E is a career where **curiosity, discipline, and empathy** matter as much as code. If you can connect data back to people’s lives, you’ll stand out.
+

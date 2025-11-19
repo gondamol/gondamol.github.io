@@ -1,0 +1,56 @@
+---
+title: "Quarto for Evaluators: Turn Your Analysis into Auto-Updated Donor Reports"
+subtitle: "Stop copy-pasting tables into Word—generate clean, consistent reports on demand"
+author: "Nichodemus Amollo"
+date: "2025-11-12"
+categories: [Quarto, R, Reporting, Monitoring & Evaluation]
+image: "/img/blog-mande.svg"
+---
+
+## Why Quarto Is a Game-Changer
+
+Typical M&amp;E reporting workflow:
+
+- Do analysis in R/Excel
+- Copy charts into Word
+- Manually update every quarter
+
+Quarto lets you:
+
+- Keep analysis and report in the **same place**
+- Regenerate everything when new data arrives
+- Output HTML, PDF, and PowerPoint from one source
+
+---
+
+## What a Quarto Workflow Looks Like
+
+1. Import and clean data in R/Python
+2. Calculate indicators
+3. Create charts and tables
+4. Write interpretation text
+5. Render to:
+   - `index.html`
+   - `report.pdf`
+   - `slides.html` (presentations)
+
+You change the data and **press render**—the report updates.
+
+---
+
+## Portfolio Idea
+
+Build a Quarto report that:
+
+- Summarizes key indicators for a programme
+- Includes:
+  - Data quality section
+  - Trends over time
+  - Equity breakdowns
+- Renders as:
+  - HTML for the web
+  - PDF for donors
+
+This shows that you understand **both analysis and communication**, which is exactly what evaluators need.
+
+

@@ -1,0 +1,48 @@
+---
+title: "10 Survey Design Mistakes That Will Destroy Your Data (And How to Avoid Them)"
+subtitle: "From leading questions to broken skip logic—fix these before you go to the field"
+author: "Nichodemus Amollo"
+date: "2025-11-08"
+categories: [Survey Design, Data Quality, Monitoring & Evaluation]
+image: "/img/blog-mande.svg"
+---
+
+## Why Survey Design Is Underrated
+
+Bad survey instruments:
+
+- Confuse respondents
+- Overwork enumerators
+- Produce data that’s hard to analyze—or impossible to trust
+
+As a data person, you should care deeply about **questionnaire design**.
+
+---
+
+## 10 Common Mistakes
+
+1. Double-barreled questions  
+2. Leading or loaded wording  
+3. Too many open-ended questions  
+4. Inconsistent response scales  
+5. Missing “Don’t know / Refuse” options  
+6. Overlapping ranges  
+7. Broken skip logic  
+8. Asking for unrealistic recall periods  
+9. Using internal jargon or acronyms  
+10. Ignoring translation and cultural context  
+
+---
+
+## How to Improve Quickly
+
+- Pilot with:
+  - A few respondents
+  - At least one experienced enumerator
+- Debrief:
+  - Ask enumerators which questions confused people
+  - Look at early data for strange patterns
+
+Small investments in instrument design can save **weeks of pain** in cleaning and analysis.
+
+

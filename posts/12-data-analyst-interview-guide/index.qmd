@@ -4,7 +4,6 @@ subtitle: "Everything You Need to Land Your First (or Next) Data Analyst Role"
 author: "Nichodemus Amollo"
 date: "2025-10-14"
 categories: [Interview, Career, Guide]
-image: "interview.jpg"
 ---
 
 ## The 4 Types of Data Analyst Interview Questions

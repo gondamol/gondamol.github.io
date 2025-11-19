@@ -1,0 +1,106 @@
+---
+title: "Data Engineering for Analysts: The Skills That Actually Matter (No CS Degree Required)"
+subtitle: "A beginner’s guide to building reliable data pipelines without becoming a full-time backend engineer"
+author: "Nichodemus Amollo"
+date: "2025-10-28"
+categories: [Data Engineering, Analytics Engineering, SQL, Career]
+image: "/img/blog-engineering.svg"
+---
+
+## Why Analysts Need Data Engineering Skills
+
+If you're constantly:
+
+- Waiting for someone to send you “the latest extract”
+- Copy-pasting CSVs into Excel every week
+- Fixing the **same data errors** again and again
+
+…you don’t just have an analysis problem—you have a **data engineering problem**.
+
+You don't need to become a full-time engineer, but you *do* need enough skills to:
+
+- Automate routine data pulls
+- Clean and standardize datasets
+- Build simple but reliable pipelines and views
+
+---
+
+## The Core Skills (80/20 View)
+
+### 1. SQL as Your Superpower
+
+- Learn:
+  - Joins, aggregations, window functions
+  - Common table expressions (CTEs)
+  - Basic performance thinking (indexes, filtering early)
+
+### 2. File & Table Organization
+
+- Design:
+  - Clear folder structures (raw, staging, analytics)
+  - Consistent table naming and column conventions
+
+### 3. Simple Orchestration
+
+- Use:
+  - Cron jobs, R scripts, or simple Python scripts
+  - Cloud notebooks (Kaggle, Colab) + scheduled jobs where possible
+
+### 4. Documentation
+
+- Document:
+  - Where data comes from
+  - How it’s transformed
+  - Known limitations and caveats
+
+---
+
+## A Simple Analytics Pipeline You Can Build This Month
+
+**Goal:** A weekly-updated dataset for a dashboard (e.g., facility visits, survey responses).
+
+Steps:
+
+1. **Ingestion:**
+   - Pull CSV/Excel exports from Kobo/ODK/REDCap
+   - Save into `data/raw/` with date stamps
+2. **Cleaning:**
+   - Use R or Python to:
+     - Fix variable types
+     - Normalize codes (facility IDs, districts)
+     - Remove duplicates
+   - Save into `data/clean/`
+3. **Modeling:**
+   - Use SQL to build:
+     - A clean “fact” table (visits/events)
+     - Dimension tables (facilities, patients)
+   - Create an analytics view used by your dashboard
+4. **Automation:**
+   - Wrap steps in a single script
+   - Schedule weekly using cron, Task Scheduler, or a simple CI job
+
+---
+
+## Tools You Can Start With (No Big Infra)
+
+- Local:
+  - PostgreSQL or SQLite database
+  - R + `dbplyr` or Python + `sqlalchemy`
+- Cloud-ish:
+  - Google BigQuery sandbox (for small datasets)
+  - DuckDB in local files
+
+Focus on learning **one** stack end-to-end instead of chasing every shiny tool.
+
+---
+
+## Turning These Skills Into a Career Edge
+
+When applying for roles, highlight:
+
+- “Designed and automated a pipeline that updates X dashboard weekly without manual effort.”
+- “Reduced time-to-insight from 3 days to 30 minutes by standardizing and modeling datasets.”
+- “Implemented basic data quality checks and documentation for repeatable analysis.”
+
+Even if your title is “Data Analyst,” this is the work of an **Analytics Engineer**—and it makes you much more valuable.
+

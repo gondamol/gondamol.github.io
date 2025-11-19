@@ -1,0 +1,51 @@
+---
+title: "Data Quality for Beginners: 7 Checks Every Analyst Should Automate"
+subtitle: "Stop trusting dirty spreadsheets—learn how to catch problems before they hit your models"
+author: "Nichodemus Amollo"
+date: "2025-11-10"
+categories: [Data Quality, Data Cleaning, Monitoring & Evaluation]
+image: "/img/blog-analytics.svg"
+---
+
+## Why Data Quality Is Your Real Job
+
+If your data is trash, your:
+
+- Models are misleading
+- Dashboards tell the wrong story
+- Policy recommendations can hurt people
+
+Data quality is not “extra” work—it’s core to being a serious analyst.
+
+---
+
+## 7 Checks to Automate on Every Dataset
+
+1. **Missingness patterns** by variable and group  
+2. **Uniqueness** of IDs  
+3. **Range checks** for numeric variables  
+4. **Category consistency** for factors/coded responses  
+5. **Cross-field logic** (e.g., age vs date of birth, pregnancy vs sex)  
+6. **Duplicates** and near-duplicates  
+7. **Date/time sanity** (ordering, impossible dates)  
+
+Automate these in:
+
+- R (with tidyverse/janitor)
+- Python (with pandas)
+
+---
+
+## How to Turn This Into a Portfolio Project
+
+- Take any public health or development dataset
+- Build:
+  - A script that runs all 7 checks
+  - A short report or dashboard summarizing issues
+- Include:
+  - A “recommended data cleaning plan”
+  - Examples of how findings explain weird results
+
+Great analysts are **paranoid about data quality**—and employers love that.
+
+

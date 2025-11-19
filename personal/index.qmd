@@ -9,7 +9,8 @@ page-layout: article
 ::: {.hero-banner}
 # **The Human Behind the Data**
 
-*"He who has a why to live can bear almost any how."* - Friedrich Nietzsche
+*"He who has a why to live can bear almost any how."* - Friedrich Nietzsche  
+These are the habits, philosophies, and practices that sustain my work in health data science, impact evaluation, and long-term research.
 :::
 
 ---

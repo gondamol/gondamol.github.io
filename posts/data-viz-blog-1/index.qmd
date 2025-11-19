@@ -4,7 +4,6 @@ subtitle: "A comprehensive guide to modern data visualization techniques"
 author: "Nichodemus Amollo"
 date: today
 categories: [Data Visualization, R, Python]
-image: ../img/viz-thumbnail.jpg
 format:
   html:
     toc: true

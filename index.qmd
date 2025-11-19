@@ -5,7 +5,7 @@ page-layout: full
 ---
 
 ::: {.text-center .no-frame style="margin-bottom: 2rem;"}
-![Profile Photo](profile.jpeg){width=250px class="profile-photo floating" style="margin-top: 2rem;"}
+![Portrait of Nichodemus Amollo](profile.jpeg){width=250px class="profile-photo floating" style="margin-top: 2rem;"}
 
 ::: {.social-links .no-frame}
 [<i class="fab fa-linkedin"></i> LinkedIn](https://linkedin.com/in/amollow){.btn .btn-primary}
@@ -17,7 +17,7 @@ page-layout: full
 :::
 
 ::: {.hero-banner}
-# **<i class="fas fa-brain icon-bounce"></i> Research Data Manager | Data Scientist | M&E Specialist**
+# **<i class="fas fa-brain icon-bounce" aria-hidden="true"></i> Research Data Manager | Data Scientist | M&E Specialist**
 
 <div class="hero-subtitle">
 “Just as a blazing fire makes flame and brightness out of everything that is thrown into it.” — Marcus Aurelius  
@@ -179,5 +179,5 @@ Open to opportunities in:
 ---
 
 ::: {.brutal-quote}
-**<i class="fas fa-quote-left"></i>** "Against all odds, I made it this far - now positioned to drive transformative impact in global health data science." **<i class="fas fa-quote-right"></i>**
+**<i class="fas fa-quote-left" aria-hidden="true"></i>** “Obstacles are fuel; the work is service.” **<i class="fas fa-quote-right" aria-hidden="true"></i>**
 :::

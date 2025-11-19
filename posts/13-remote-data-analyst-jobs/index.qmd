@@ -4,7 +4,6 @@ subtitle: "Work From Anywhere - Here's How to Find and Win Remote Data Roles in 
 author: "Nichodemus Amollo"
 date: "2025-10-13"
 categories: [Remote Work, Career, Job Search]
-image: "remote.jpg"
 ---
 
 ## Why Remote Data Analyst Jobs Are Perfect

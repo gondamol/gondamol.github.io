@@ -4,7 +4,6 @@ subtitle: "The Version Control Skills That Will Save Your Career"
 author: "Nichodemus Amollo"
 date: "2025-10-15"
 categories: [Git, GitHub, Tools, Tutorial]
-image: "github.jpg"
 ---
 
 ## Why Data Analysts Need Git

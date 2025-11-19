@@ -7,7 +7,7 @@ page-layout: article
 ::: {.hero-banner}
 # **Open Source Contributions & Package Development**
 
-Creating tools that make data collection and analysis more accessible, especially for researchers in Africa.
+Creating tools that make health and development data collection and analysis more accessible, especially for researchers in Africa working with health financial diaries and impact evaluations.
 :::
 
 ---
@@ -342,7 +342,6 @@ Get notified when surveyKE launches:
 🐦 [Follow on Twitter](https://twitter.com/nwerre)
 
 </div>
-
 
 
 

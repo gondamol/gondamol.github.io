@@ -1,0 +1,80 @@
+---
+title: "R for Monitoring & Evaluation: 7 Workflows That Will Change Your Life"
+subtitle: "From cleaning survey data to automating donor reports with a single script"
+author: "Nichodemus Amollo"
+date: "2025-11-02"
+categories: [R, Monitoring & Evaluation, Automation]
+image: "/img/blog-mande.svg"
+---
+
+## Why R Is a Secret Weapon for M&amp;E
+
+Most M&amp;E teams live in:
+
+- Excel
+- SPSS or Stata
+- Manually updated Word/PDF reports
+
+R lets you:
+
+- Clean data reproducibly
+- Reuse scripts across projects
+- Generate entire reports with **one command**
+
+---
+
+## 7 High-Impact Workflows
+
+1. **Automated Cleaning of Survey Data**
+   - Handle missing values
+   - Recode factors
+   - Detect outliers
+
+2. **Indicator Calculation**
+   - Coverage, quality, equity indicators
+   - By district/facility/age/sex
+
+3. **Data Quality Dashboards**
+   - Missingness, duplicates, logical checks
+
+4. **Monitoring Dashboards**
+   - Monthly or quarterly indicator updates
+
+5. **Impact Analysis**
+   - Before/after comparisons
+   - Difference-in-differences
+
+6. **Reproducible Reports**
+   - Quarto reports by country/partner
+
+7. **Small Simulation Studies**
+   - Sample size sensitivity
+   - Scenario planning
+
+---
+
+## Example: From Kobo Export to Clean Dataset
+
+Conceptually:
+
+1. Read raw CSV from Kobo into R
+2. Clean variable names and types
+3. Recode key variables (e.g., facility IDs, districts)
+4. Save a versioned clean file into `data/clean/`
+
+If you can turn **messy raw exports into clean analysis-ready data** with one script, you become extremely valuable.
+
+---
+
+## How to Learn R for M&amp;E Quickly
+
+- Start with:
+  - `tidyverse` for data wrangling
+  - `janitor` for quick cleaning
+  - `readr` for imports
+- Practice on:
+  - DHS, MICS, or other public health datasets
+  - Your own anonymized program data (if allowed)
+
+Focus on **real workflows**, not isolated functions.
+

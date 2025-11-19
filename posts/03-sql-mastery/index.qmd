@@ -4,7 +4,6 @@ subtitle: "From 'SELECT *' to Landing Your First Data Job - Complete Roadmap wit
 author: "Nichodemus Amollo"
 date: "2025-10-23"
 categories: [SQL, Database, Tutorial, Beginners]
-image: "sql.jpg"
 ---
 
 ## Why SQL is Your Golden Ticket to Data Analytics
@@ -551,4 +550,3 @@ Comment below with your progress! What day are you on?
 - [Building Your First Data Project](#) _(Coming Soon)_
 
 **Tags:** #SQL #DataAnalytics #Tutorial #Database #Career #FreeResources
-

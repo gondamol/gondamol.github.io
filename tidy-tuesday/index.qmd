@@ -39,6 +39,18 @@ Drawing on my background in **epidemiology and biostatistics** (MSc, Jaramogi Og
 
 ---
 
+## ⭐ Featured SDG Analyses
+
+If you're short on time, start with these flagship TidyTuesday projects that best illustrate my focus on health, equity, and climate:
+
+- [Maternal Mortality Analysis](maternal-mortality.qmd) — choropleth maps and time trends exploring global progress on maternal health and SDG 3.1.
+- [Mental Health in Tech](mental-health-tech.qmd) — attitudes, treatment, and workplace policies visualized for SDG 3 (Good Health and Well-Being).
+- [CO2 Emissions Analysis](co2-emissions.qmd) — emissions, growth, and energy transitions with a focus on climate and development trade-offs.
+- [Poverty Trends (UNDP)](poverty-trends-undp.qmd) — HDI, poverty, and inequality trends, linking SDG 1 (No Poverty) with health and livelihoods.
+- [Temperature Anomalies & Climate](2024-temperature-anomalies.qmd) — long-run temperature anomalies and climate risks for agriculture and health.
+
+---
+
 ## 🌍 Projects by SDG Category
 
 <div class="sdg-section sdg-1">

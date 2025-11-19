@@ -4,7 +4,6 @@ subtitle: "Stop Feeling Intimidated - These 15 Concepts Cover 90% of Your Job"
 author: "Nichodemus Amollo"
 date: "2025-10-19"
 categories: [Statistics, Math, Tutorial, Beginners]
-image: "statistics.jpg"
 ---
 
 ## The Truth About Statistics in Data Analytics

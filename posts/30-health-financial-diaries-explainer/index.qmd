@@ -1,0 +1,91 @@
+---
+title: "Health Financial Diaries: The Most Underrated Tool in Health Economics"
+subtitle: "How daily financial tracking reveals what household surveys miss about healthcare costs"
+author: "Nichodemus Amollo"
+date: "2025-10-30"
+categories: [Health Economics, Financial Diaries, Health Financing]
+image: "/img/blog-health.svg"
+---
+
+## Why Traditional Surveys Miss the Real Story
+
+Standard household surveys often ask:
+
+- “How much did you spend on health in the last month/3 months/12 months?”
+
+But real life is messy:
+
+- People forget small but frequent expenses
+- Lump-sum costs (e.g., hospitalization) distort recall
+- Informal payments and borrowing are underreported
+
+That’s where **health financial diaries** come in.
+
+---
+
+## What Are Health Financial Diaries?
+
+Health financial diaries:
+
+- Track **daily or weekly** health-related financial flows, such as:
+  - Clinic fees
+  - Drugs and diagnostics
+  - Transport to facilities
+  - Lost income due to illness
+  - Borrowing, gifts, and asset sales to pay for care
+- Used over weeks or months to:
+  - Capture volatility
+  - Understand coping strategies
+  - Reveal hidden burdens of illness
+
+---
+
+## What They Let You Analyze
+
+With diaries, you can:
+
+- Map **cash flow shocks** due to health events
+- Estimate **catastrophic health expenditure** more accurately
+- Understand **borrowing patterns and informal insurance**
+- Link episodes of illness to:
+  - **Treatment choices**
+  - **Facility types**
+  - **Delays and drop-outs**
+
+---
+
+## Challenges (And How to Design Around Them)
+
+- Participant fatigue:
+  - Keep instruments short and focused
+  - Use prompts (SMS, phone, in-person visits)
+- Data quality:
+  - Train enumerators well
+  - Use high-frequency checks to catch inconsistencies
+- Ethics and burden:
+  - Compensate fairly
+  - Respect privacy and sensitivity around finances
+
+---
+
+## Portfolio Idea: A Mini Financial Diaries Simulation
+
+Even without field data, you can:
+
+- Simulate 50–100 households with:
+  - Daily income
+  - Random health shocks
+  - Different coping strategies
+- Use R to:
+  - Plot daily cash flows
+  - Identify “catastrophic” events
+  - Compare “with insurance” vs “without insurance” scenarios
+
+Publish:
+
+- A small dashboard or Quarto report with:
+  - Key charts
+  - A short interpretation section
+
+This shows you understand **health financing at the household level**, not just at the macro budget level.
+

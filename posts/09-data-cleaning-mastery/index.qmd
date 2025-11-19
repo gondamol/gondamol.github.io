@@ -4,7 +4,6 @@ subtitle: "Master the Art of Turning Messy Data into Analysis-Ready Gold"
 author: "Nichodemus Amollo"
 date: "2025-10-17"
 categories: [Data Cleaning, Python, Pandas, Tutorial]
-image: "cleaning.jpg"
 ---
 
 ## The Truth Nobody Tells You

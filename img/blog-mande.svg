@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="grad-mande" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f766e;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#22c55e;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#grad-mande)" />
+  <circle cx="220" cy="330" r="120" fill="none" stroke="#ecfdf5" stroke-width="10"/>
+  <line x1="220" y1="210" x2="220" y2="450" stroke="#ecfdf5" stroke-width="6" stroke-dasharray="8,10"/>
+  <text x="380" y="260" font-family="Space Grotesk, system-ui, sans-serif" font-size="52" fill="#ecfdf5" font-weight="700">
+    Monitoring &amp; Evaluation
+  </text>
+  <text x="380" y="320" font-family="Space Grotesk, system-ui, sans-serif" font-size="32" fill="#ecfdf5" font-weight="500">
+    Impact • Logframes • Indicators • Learning
+  </text>
+</svg>
+

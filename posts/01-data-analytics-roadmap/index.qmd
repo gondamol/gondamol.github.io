@@ -4,7 +4,6 @@ subtitle: "From Zero to Job-Ready in Just 100 Days - No Prior Experience Require
 author: "Nichodemus Amollo"
 date: "2025-10-25"
 categories: [Career, Roadmap, Beginners, Data Analytics]
-image: "roadmap.jpg"
 ---
 
 ## Why Data Analytics? The Career That's Taking Over
@@ -210,4 +209,3 @@ Comment below with "I'm starting!" to commit publicly. Studies show public commi
 - [Data Analytics Portfolio Examples](#) _(Coming Soon)_
 
 **Tags:** #DataAnalytics #Career #Python #SQL #Tableau #FreeResources #100DaysOfCode
-

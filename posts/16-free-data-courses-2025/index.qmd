@@ -4,7 +4,6 @@ subtitle: "I Tested 50+ Free Courses - Here Are the 15 That Are Better Than Paid
 author: "Nichodemus Amollo"
 date: "2025-10-10"
 categories: [Courses, Free Resources, Learning]
-image: "courses.jpg"
 ---
 
 ## The Best FREE Data Analytics Courses (2025)

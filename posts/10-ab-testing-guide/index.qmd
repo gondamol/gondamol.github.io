@@ -4,7 +4,6 @@ subtitle: "The Complete Guide to Testing Ideas and Making Data-Driven Decisions"
 author: "Nichodemus Amollo"
 date: "2025-10-16"
 categories: [AB Testing, Statistics, Tutorial, Business]
-image: "abtesting.jpg"
 ---
 
 ## What is A/B Testing?

@@ -1,0 +1,72 @@
+---
+title: "A/B Testing for Health Programs: Can We Borrow from Tech Without Harming Patients?"
+subtitle: "A plain-language guide to experimentation in public health and development programs"
+author: "Nichodemus Amollo"
+date: "2025-11-05"
+categories: [A/B Testing, Impact Evaluation, Health Programs]
+image: "/img/blog-health.svg"
+---
+
+## Why Tech Loves A/B Tests (And What Health Can Learn)
+
+In tech:
+
+- A/B testing is used to:
+  - Optimize click-through rates
+  - Test new features
+  - Improve revenue
+
+In health and development:
+
+- Stakes are different:
+  - We’re dealing with well-being, safety, and sometimes life-or-death
+
+But we *can* borrow experimentation ideas carefully.
+
+---
+
+## What A/B Testing Looks Like in Health
+
+Examples:
+
+- Testing two reminder messages for clinic appointments
+- Comparing two formats of health education materials
+- Evaluating two outreach strategies for vaccination
+
+Key safeguards:
+
+- Ethical review and approvals
+- Informed consent where appropriate
+- Clear principle: **no group is offered worse than current standard of care**
+
+---
+
+## How This Relates to RCTs
+
+A/B tests are, in essence:
+
+- Simple randomized controlled trials with:
+  - A small number of arms
+  - Large samples
+  - Clear short-term outcomes
+
+Differences:
+
+- In tech: outcomes are often clicks and purchases
+- In health: outcomes are attendance, adherence, health status, equity
+
+---
+
+## How a Junior Analyst Can Contribute
+
+- Help design:
+  - Outcome measures
+  - Randomization procedures
+- Help implement:
+  - Data collection tools
+  - Analysis pipelines
+- Help interpret:
+  - Not just “did it work?” but “for whom?” and “why?”
+
+Experimentation in health requires both **rigor and humility**. If you can bring both, you’ll be a huge asset.
+

@@ -96,6 +96,12 @@
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
 }
+/* About page hero quote styling (moved from inline) */
+.about-hero-quote {
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  opacity: 0.95;
+}
 
 .journey-step:nth-child(odd) .journey-content {
   border-left: 4px solid #667eea;
@@ -615,18 +621,26 @@
 
 /* Opportunity Box */
 .opportunity-box {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
+  background: #111111 !important;
+  color: #ffffff !important;
+  border: none !important;
+  box-shadow: none !important;
   padding: 3rem;
   border-radius: 16px;
   margin: 3rem 0;
-  box-shadow: 0 12px 32px rgba(102, 126, 234, 0.3);
   text-align: center;
 }
 
 .opportunity-box h3 {
-  color: white;
+  color: #ffffff !important;
   margin-top: 0;
+}
+
+.opportunity-box p,
+.opportunity-box li,
+.opportunity-box strong {
+  color: #ffffff !important;
+  font-size: 1.05rem;
 }
 
 .opportunity-box ul {
@@ -639,7 +653,7 @@
 
 .opportunity-box li {
   padding: 0.75rem 0;
-  border-bottom: 1px solid rgba(255,255,255,0.2);
+  border-bottom: 1px solid rgba(249,250,251,0.2);
 }
 
 .opportunity-box li:last-child {
@@ -713,4 +727,3 @@
     color: #FDE68A;
   }
 }
-
