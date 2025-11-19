@@ -14,10 +14,67 @@
   border-radius: 0;
 }
 
-.tile-grid {
+/* SDG section layout on TidyTuesday page */
+.sdg-section {
+  margin-bottom: 3rem;
+  padding: 1.75rem 1.75rem 2rem;
+  border: 3px solid #111;
+  box-shadow: 12px 12px 0 rgba(0, 0, 0, 0.9);
+  background: #fffdf3;
+}
+
+.sdg-section h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.4rem;
+}
+
+.sdg-section h3 i {
+  font-size: 1.4rem;
+}
+
+.sdg-tagline {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 1.4rem;
+  color: #444;
+}
+
+.tile-grid ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.1rem;
+}
+
+.tile-grid li {
+  border: 3px solid #111;
+  box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.85);
+  background: #ffffff;
+  padding: 0.9rem 1rem;
+  transition: transform 0.1s ease-out, box-shadow 0.1s ease-out, background 0.1s ease-out;
+}
+
+.tile-grid li:hover {
+  transform: translate(-4px, -4px);
+  box-shadow: 12px 12px 0 rgba(0, 0, 0, 0.95);
+  background: #ffeaa7;
+}
+
+.tile-grid a {
+  display: block;
+  border-bottom: none;
+  text-transform: none;
+  font-weight: 700;
+  color: inherit;
+}
+
+.tile-grid a span {
+  display: block;
 }
 
 .tile-card {
