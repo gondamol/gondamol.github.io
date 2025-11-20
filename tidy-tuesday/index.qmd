@@ -61,7 +61,7 @@ If you're short on time, start with these flagship TidyTuesday projects that bes
 Resilient incomes, social protection systems, and equitable livelihoods.
 </p>
 
-<div class="tile-grid">
+<div class="tile-grid sdg-tile-grid">
 <ul>
 <li><a href="poverty-trends-undp.qmd"><span>Poverty Trends (UNDP)</span></a></li>
 <li><a href="income-distribution.qmd"><span>Income Distribution</span></a></li>
@@ -80,7 +80,7 @@ Resilient incomes, social protection systems, and equitable livelihoods.
 Food systems, nutrition security, and climate-smart agriculture.
 </p>
 
-<div class="tile-grid">
+<div class="tile-grid sdg-tile-grid">
 <ul>
 <li><a href="food-security.qmd"><span>Food Security Index</span></a></li>
 <li><a href="crop-production.qmd"><span>Crop Production Analysis</span></a></li>
@@ -112,7 +112,7 @@ Food systems, nutrition security, and climate-smart agriculture.
 Stronger health systems, outcomes, and financial protection for all.
 </p>
 
-<div class="tile-grid">
+<div class="tile-grid sdg-tile-grid">
 <ul>
 <li><a href="maternal-mortality.qmd"><span>Maternal Mortality Analysis</span></a></li>
 <li><a href="mental-health-tech.qmd"><span>Mental Health in Tech</span></a></li>
@@ -140,7 +140,7 @@ Stronger health systems, outcomes, and financial protection for all.
 Quality learning pathways, equitable access, and lifelong skills.
 </p>
 
-<div class="tile-grid">
+<div class="tile-grid sdg-tile-grid">
 <ul>
 <li><a href="education-gender-gap.qmd"><span>Education Gender Gap</span></a></li>
 <li><a href="literacy-rates.qmd"><span>Global Literacy Rates</span></a></li>
@@ -162,7 +162,7 @@ Quality learning pathways, equitable access, and lifelong skills.
 Empowering women and girls across leadership, work, and safety.
 </p>
 
-<div class="tile-grid">
+<div class="tile-grid sdg-tile-grid">
 <ul>
 <li><a href="gender-wage-gap.qmd"><span>Gender Wage Gap Analysis</span></a></li>
 <li><a href="women-political-participation.qmd"><span>Women in Politics</span></a></li>
@@ -181,7 +181,7 @@ Empowering women and girls across leadership, work, and safety.
 Safe water access, resilient WASH systems, and healthy watersheds.
 </p>
 
-<div class="tile-grid">
+<div class="tile-grid sdg-tile-grid">
 <ul>
 <li><a href="water-access.qmd"><span>Water Access Indicators</span></a></li>
 <li><a href="sanitation-coverage.qmd"><span>Sanitation Coverage</span></a></li>
@@ -199,7 +199,7 @@ Safe water access, resilient WASH systems, and healthy watersheds.
 Clean energy access, renewable transitions, and efficiency gains.
 </p>
 
-<div class="tile-grid">
+<div class="tile-grid sdg-tile-grid">
 <ul>
 <li><a href="renewable-energy.qmd"><span>Renewable Energy Adoption</span></a></li>
 <li><a href="energy-access.qmd"><span>Energy Access Indicators</span></a></li>
@@ -217,7 +217,7 @@ Clean energy access, renewable transitions, and efficiency gains.
 Decent jobs, productive work, and inclusive economic growth.
 </p>
 
-<div class="tile-grid">
+<div class="tile-grid sdg-tile-grid">
 <ul>
 <li><a href="employment-health.qmd"><span>Employment & Health</span></a></li>
 <li><a href="unemployment-rates.qmd"><span>Global Unemployment</span></a></li>
@@ -236,7 +236,7 @@ Decent jobs, productive work, and inclusive economic growth.
 Innovation ecosystems, technology adoption, and resilient infrastructure.
 </p>
 
-<div class="tile-grid">
+<div class="tile-grid sdg-tile-grid">
 <ul>
 <li><a href="infrastructure-investment.qmd"><span>Infrastructure Investment</span></a></li>
 <li><a href="research-development.qmd"><span>R&D Expenditure</span></a></li>
@@ -254,7 +254,7 @@ Innovation ecosystems, technology adoption, and resilient infrastructure.
 Closing economic, social, and regional disparities.
 </p>
 
-<div class="tile-grid">
+<div class="tile-grid sdg-tile-grid">
 <ul>
 <li><a href="income-inequality-health.qmd"><span>Income Inequality & Health</span></a></li>
 <li><a href="inequality-indicators.qmd"><span>Inequality Indicators</span></a></li>
@@ -272,7 +272,7 @@ Closing economic, social, and regional disparities.
 Inclusive, resilient, and livable urban communities.
 </p>
 
-<div class="tile-grid">
+<div class="tile-grid sdg-tile-grid">
 <ul>
 <li><a href="urban-population.qmd"><span>Urban Population Growth</span></a></li>
 <li><a href="slum-population.qmd"><span>Slum Population</span></a></li>
@@ -290,7 +290,7 @@ Inclusive, resilient, and livable urban communities.
 Circular production, waste reduction, and sustainable consumption.
 </p>
 
-<div class="tile-grid">
+<div class="tile-grid sdg-tile-grid">
 <ul>
 <li><a href="waste-management.qmd"><span>Waste Management Statistics</span></a></li>
 <li><a href="sustainable-consumption.qmd"><span>Sustainable Consumption</span></a></li>
@@ -305,7 +305,7 @@ Circular production, waste reduction, and sustainable consumption.
 Tracking climate risks, mitigation finance, and resilience pathways.
 </p>
 
-<div class="tile-grid">
+<div class="tile-grid sdg-tile-grid">
 <ul>
 <li><a href="temperature-anomalies.qmd"><span>Global Temperature Anomalies</span></a></li>
 <li><a href="co2-emissions.qmd"><span>CO2 Emissions Analysis</span></a></li>
@@ -326,7 +326,7 @@ Tracking climate risks, mitigation finance, and resilience pathways.
 Protecting oceans, fisheries, and blue economy livelihoods.
 </p>
 
-<div class="tile-grid">
+<div class="tile-grid sdg-tile-grid">
 <ul>
 <li><a href="ocean-pollution.qmd"><span>Ocean Pollution Metrics</span></a></li>
 <li><a href="marine-protected-areas.qmd"><span>Marine Protected Areas</span></a></li>
@@ -342,7 +342,7 @@ Protecting oceans, fisheries, and blue economy livelihoods.
 Safeguarding forests, biodiversity, and terrestrial ecosystems.
 </p>
 
-<div class="tile-grid">
+<div class="tile-grid sdg-tile-grid">
 <ul>
 <li><a href="forest-cover.qmd"><span>Forest Cover Trends</span></a></li>
 <li><a href="biodiversity-loss.qmd"><span>Biodiversity Loss</span></a></li>
@@ -361,7 +361,7 @@ Safeguarding forests, biodiversity, and terrestrial ecosystems.
 Transparent institutions, civic trust, and accountable governance.
 </p>
 
-<div class="tile-grid">
+<div class="tile-grid sdg-tile-grid">
 <ul>
 <li><a href="governance-indicators.qmd"><span>Governance Indicators</span></a></li>
 <li><a href="corruption-perception.qmd"><span>Corruption Perception</span></a></li>
@@ -379,7 +379,7 @@ Transparent institutions, civic trust, and accountable governance.
 Global partnerships, finance flows, and collective action.
 </p>
 
-<div class="tile-grid">
+<div class="tile-grid sdg-tile-grid">
 <ul>
 <li><a href="development-aid.qmd"><span>Development Aid Flows</span></a></li>
 <li><a href="trade-statistics.qmd"><span>Global Trade Statistics</span></a></li>
