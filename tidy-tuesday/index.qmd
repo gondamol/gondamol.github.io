@@ -114,21 +114,96 @@ Stronger health systems, outcomes, and financial protection for all.
 
 <div class="tile-grid sdg-tile-grid">
 <ul>
-<li><a href="maternal-mortality.qmd"><span>Maternal Mortality Analysis</span></a></li>
-<li><a href="mental-health-tech.qmd"><span>Mental Health in Tech</span></a></li>
-<li><a href="vaccination-coverage.qmd"><span>Vaccination Coverage</span></a></li>
-<li><a href="disease-prevalence.qmd"><span>Disease Prevalence</span></a></li>
-<li><a href="health-expenditure.qmd"><span>Health Expenditure</span></a></li>
-<li><a href="life-expectancy.qmd"><span>Life Expectancy Trends</span></a></li>
-<li><a href="non-communicable-diseases.qmd"><span>Non-Communicable Diseases</span></a></li>
-<li><a href="healthcare-access.qmd"><span>Healthcare Access</span></a></li>
-<li><a href="infant-mortality.qmd"><span>Infant Mortality Rates</span></a></li>
-<li><a href="hiv-aids-prevalence.qmd"><span>HIV/AIDS Prevalence</span></a></li>
-<li><a href="malaria-incidence.qmd"><span>Malaria Incidence</span></a></li>
-<li><a href="tuberculosis-prevalence.qmd"><span>Tuberculosis Prevalence</span></a></li>
-<li><a href="health-workforce.qmd"><span>Health Workforce Density</span></a></li>
-<li><a href="health-facilities.qmd"><span>Health Facilities Access</span></a></li>
-<li><a href="child-health-indicators.qmd"><span>Child Health Indicators</span></a></li>
+<li>
+  <a href="maternal-mortality.qmd">
+    <span class="sdg-item-title">Maternal Mortality Analysis</span>
+    <span class="sdg-item-meta">SDG 3.1 progress • regional gaps</span>
+  </a>
+</li>
+<li>
+  <a href="mental-health-tech.qmd">
+    <span class="sdg-item-title">Mental Health in Tech</span>
+    <span class="sdg-item-meta">Workplace stigma, treatment-seeking, employer policies</span>
+  </a>
+</li>
+<li>
+  <a href="vaccination-coverage.qmd">
+    <span class="sdg-item-title">Vaccination Coverage</span>
+    <span class="sdg-item-meta">Immunisation gaps and missed communities</span>
+  </a>
+</li>
+<li>
+  <a href="disease-prevalence.qmd">
+    <span class="sdg-item-title">Disease Prevalence</span>
+    <span class="sdg-item-meta">Burden of major communicable diseases</span>
+  </a>
+</li>
+<li>
+  <a href="health-expenditure.qmd">
+    <span class="sdg-item-title">Health Expenditure</span>
+    <span class="sdg-item-meta">Spending patterns, UHC and financial protection</span>
+  </a>
+</li>
+<li>
+  <a href="life-expectancy.qmd">
+    <span class="sdg-item-title">Life Expectancy Trends</span>
+    <span class="sdg-item-meta">Longevity and survival inequalities</span>
+  </a>
+</li>
+<li>
+  <a href="non-communicable-diseases.qmd">
+    <span class="sdg-item-title">Non-Communicable Diseases</span>
+    <span class="sdg-item-meta">Chronic disease burden and risk factors</span>
+  </a>
+</li>
+<li>
+  <a href="healthcare-access.qmd">
+    <span class="sdg-item-title">Healthcare Access</span>
+    <span class="sdg-item-meta">Coverage, service availability and utilisation</span>
+  </a>
+</li>
+<li>
+  <a href="infant-mortality.qmd">
+    <span class="sdg-item-title">Infant Mortality Rates</span>
+    <span class="sdg-item-meta">Under-5 survival and neonatal risks</span>
+  </a>
+</li>
+<li>
+  <a href="hiv-aids-prevalence.qmd">
+    <span class="sdg-item-title">HIV/AIDS Prevalence</span>
+    <span class="sdg-item-meta">HIV burden and treatment scale-up</span>
+  </a>
+</li>
+<li>
+  <a href="malaria-incidence.qmd">
+    <span class="sdg-item-title">Malaria Incidence</span>
+    <span class="sdg-item-meta">Vector-borne disease hotspots</span>
+  </a>
+</li>
+<li>
+  <a href="tuberculosis-prevalence.qmd">
+    <span class="sdg-item-title">Tuberculosis Prevalence</span>
+    <span class="sdg-item-meta">TB burden and treatment gaps</span>
+  </a>
+</li>
+<li>
+  <a href="health-workforce.qmd">
+    <span class="sdg-item-title">Health Workforce Density</span>
+    <span class="sdg-item-meta">Doctors, nurses and community health workers</span>
+  </a>
+</li>
+<li>
+  <a href="health-facilities.qmd">
+    <span class="sdg-item-title">Health Facilities Access</span>
+    <span class="sdg-item-meta">Facility distribution, travel time and distance</span>
+  </a>
+</li>
+<li>
+  <a href="child-health-indicators.qmd">
+    <span class="sdg-item-title">Child Health Indicators</span>
+    <span class="sdg-item-meta">Nutrition, vaccination and child outcomes</span>
+  </a>
+</li>
 </ul>
 </div>
 </div>
