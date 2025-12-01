@@ -10,7 +10,7 @@
 <atom:link href="https://gondamol.github.io/blogs/index.xml" rel="self" type="application/rss+xml"/>
 <description>Research Data Manager &amp; Data Scientist specializing in Health Financial Diaries, Data Analysis, Machine Learning, and Outcomes &amp; Impact Evaluation - Research on Livelihood and Financial Behavior of Low-Income Households</description>
 <generator>quarto-1.7.31</generator>
-<lastBuildDate>Wed, 19 Nov 2025 21:00:00 GMT</lastBuildDate>
+<lastBuildDate>Sun, 30 Nov 2025 21:00:00 GMT</lastBuildDate>
 <item>
   <title>Analyzing Agricultural Data from Public Sources</title>
   <dc:creator>Nichodemus Amollo</dc:creator>
@@ -376,7 +376,7 @@ font-style: inherit;">print</span>(p)</span></code></pre></div>
   <category>Data Analysis</category>
   <category>Kaggle</category>
   <guid>https://gondamol.github.io/posts/agriculture-data-analysis/</guid>
-  <pubDate>Wed, 19 Nov 2025 21:00:00 GMT</pubDate>
+  <pubDate>Sun, 30 Nov 2025 21:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Creating Beautiful Data Visualizations with R and Python</title>
@@ -784,7 +784,7 @@ Note
   <category>R</category>
   <category>Python</category>
   <guid>https://gondamol.github.io/posts/data-viz-blog-1/</guid>
-  <pubDate>Wed, 19 Nov 2025 21:00:00 GMT</pubDate>
+  <pubDate>Sun, 30 Nov 2025 21:00:00 GMT</pubDate>
 </item>
 <item>
   <title>No Degree? No Problem. Break Into Data in 6 Months (Without Lying on Your CV)</title>

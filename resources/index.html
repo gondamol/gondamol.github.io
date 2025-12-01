@@ -460,6 +460,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul class="collapse">
   <li><a href="#key-journals" id="toc-key-journals" class="nav-link" data-scroll-target="#key-journals"><strong>Key Journals</strong></a></li>
   <li><a href="#data-sources" id="toc-data-sources" class="nav-link" data-scroll-target="#data-sources"><strong>Data Sources</strong></a></li>
+  <li><a href="#sample-project-ideas-r-python-sql-in-quarto" id="toc-sample-project-ideas-r-python-sql-in-quarto" class="nav-link" data-scroll-target="#sample-project-ideas-r-python-sql-in-quarto"><strong>Sample Project Ideas (R, Python, SQL in Quarto)</strong></a></li>
   <li><a href="#health-economics-tools" id="toc-health-economics-tools" class="nav-link" data-scroll-target="#health-economics-tools"><strong>Health Economics Tools</strong></a></li>
   </ul></li>
   <li><a href="#software-development" id="toc-software-development" class="nav-link" data-scroll-target="#software-development"><strong>💻 Software Development</strong></a>
@@ -772,6 +773,45 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><a href="https://figshare.com/">Figshare</a> - Research outputs (FREE)</li>
 <li><a href="https://zenodo.org/">Zenodo</a> - Research data repository (FREE)</li>
 <li><a href="https://www.openicpsr.org/">Open ICPSR</a> - Social science data (FREE)</li>
+</ol>
+<p><strong>Survey &amp; Microdata:</strong></p>
+<ol type="1">
+<li><a href="https://microdata.worldbank.org/index.php/catalog/5911/get-microdata">World Bank Microdata Library (catalog 5911 example)</a> - Household and health survey microdata (FREE with registration)</li>
+<li><a href="https://github.com/DHSProgram/DHS-Indicators-Stata">DHS Program: Stata Indicator Library</a> - Stata code templates for DHS survey indicators (FREE)</li>
+<li><a href="https://www.idhsdata.org/idhs/">IPUMS DHS</a> - Harmonized DHS microdata (FREE with registration)</li>
+<li><a href="https://mics.unicef.org/surveys">UNICEF MICS Microdata</a> - Multiple Indicator Cluster Surveys (FREE with registration)</li>
+</ol>
+<p><strong>Streaming &amp; Real-Time Data:</strong></p>
+<ol type="1">
+<li><a href="https://github.com/bytewax/awesome-public-real-time-datasets">Awesome Public Real-Time Datasets</a> - Curated feeds for streaming and pipeline projects (FREE)</li>
+<li><a href="https://opensky-network.org/apidoc/">OpenSky Network API</a> - Live air traffic data (FREE)</li>
+<li><a href="https://earthquake.usgs.gov/fdsnws/event/1/">USGS Earthquake API</a> - Near real-time seismic data (FREE)</li>
+<li><a href="https://api.tfl.gov.uk/">Transport for London Unified API</a> - Live transport status (FREE with key)</li>
+</ol>
+<p><strong>Setup notes (real-time feeds):</strong></p>
+<ul>
+<li>Quarto can mix R and Python chunks; use <code>httr2</code>/<code>jsonlite</code> in R or <code>requests</code> in Python for GET calls.</li>
+<li>Most APIs return JSON; wrap responses into <code>tibble::as_tibble()</code> or <code>pandas.DataFrame</code> for quick plotting.</li>
+<li>OpenSky and USGS require no keys for basic use; TfL needs a free app key (register, set as env var <code>TFL_APP_KEY</code>).</li>
+<li>For streaming experiments, pair the Bytewax list with <code>websocket</code>/<code>httpuv</code> in R or <code>websockets</code>/<code>asyncio</code> in Python.</li>
+</ul>
+<p><strong>Open Practice Datasets:</strong></p>
+<ol type="1">
+<li><a href="https://www.kaggle.com/datasets">Kaggle Datasets</a> - Community datasets for modeling and dashboards (FREE)</li>
+<li><a href="https://datasetsearch.research.google.com/">Google Dataset Search</a> - Search engine for open datasets (FREE)</li>
+<li><a href="https://catalog.data.gov/dataset">Data.gov</a> - US government open data (FREE)</li>
+<li><a href="https://data.europa.eu/en">data.europa.eu</a> - European Union open data portal (FREE)</li>
+<li><a href="https://registry.opendata.aws/">Registry of Open Data on AWS</a> - Ready-to-use public datasets in the cloud (FREE)</li>
+</ol>
+</section>
+<section id="sample-project-ideas-r-python-sql-in-quarto" class="level3 project-card">
+<h3 class="project-card anchored" data-anchor-id="sample-project-ideas-r-python-sql-in-quarto"><strong>Sample Project Ideas (R, Python, SQL in Quarto)</strong></h3>
+<ol type="1">
+<li><strong>Flight traffic monitor (OpenSky API + R/Python):</strong> Pull live flights every 60 seconds, cache to SQLite with <code>DBI::dbWriteTable()</code> or <code>pandas.to_sql()</code>, then map routes with <code>leaflet</code> (R) or <code>plotly</code> (Python).</li>
+<li><strong>Earthquake alert map (USGS + R):</strong> Fetch last 24h quakes, bucket magnitudes in dplyr, visualize with <code>ggplot2</code>/<code>geom_point()</code> and annotate cities; add a SQL chunk to aggregate by country from SQLite.</li>
+<li><strong>Transit reliability dashboard (TfL + SQL):</strong> Collect bus arrival predictions to a Postgres/SQLite table, compute headway irregularity via SQL window functions, chart peak-hour gaps with <code>ggplot2</code> or <code>seaborn</code>.</li>
+<li><strong>Streaming sentiment mini-pipeline (Bytewax list + Python):</strong> Pick any public websocket feed, stream into DuckDB using <code>duckdb</code> Python API, run live SQL for hourly aggregates, and render in a Quarto page.</li>
+<li><strong>Household survey microdata cleaner (DHS/MICS + R + SQL):</strong> Use DHS Stata templates for indicator definitions, import microdata with <code>haven</code>, stage to DuckDB via <code>dbplyr</code>, and build a reproducible ETL Quarto doc with R/Python chunks side by side.</li>
 </ol>
 </section>
 <section id="health-economics-tools" class="level3 project-card">
@@ -1937,202 +1977,239 @@ document.addEventListener('keydown', (e) => {
 <span id="cb1-259"><a href="#cb1-259" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span><span class="co">[</span><span class="ot">Zenodo</span><span class="co">](https://zenodo.org/)</span> - Research data repository (FREE)</span>
 <span id="cb1-260"><a href="#cb1-260" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span><span class="co">[</span><span class="ot">Open ICPSR</span><span class="co">](https://www.openicpsr.org/)</span> - Social science data (FREE)</span>
 <span id="cb1-261"><a href="#cb1-261" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-262"><a href="#cb1-262" aria-hidden="true" tabindex="-1"></a><span class="fu">### **Health Economics Tools** {.project-card}</span></span>
+<span id="cb1-262"><a href="#cb1-262" aria-hidden="true" tabindex="-1"></a>**Survey &amp; Microdata:**</span>
 <span id="cb1-263"><a href="#cb1-263" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-264"><a href="#cb1-264" aria-hidden="true" tabindex="-1"></a>**Cost-Effectiveness Analysis:**</span>
-<span id="cb1-265"><a href="#cb1-265" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-266"><a href="#cb1-266" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">CHEERS Checklist</span><span class="co">](https://www.equator-network.org/reporting-guidelines/cheers/)</span> - Reporting guidelines</span>
-<span id="cb1-267"><a href="#cb1-267" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">iDSI Reference Case</span><span class="co">](https://www.idsihealth.org/resource-items/idsi-reference-case/)</span> - HTA guidelines</span>
-<span id="cb1-268"><a href="#cb1-268" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">WHO-CHOICE</span><span class="co">](https://www.who.int/teams/health-systems-governance-and-financing/economic-analysis/who-choice)</span> - Cost-effectiveness</span>
-<span id="cb1-269"><a href="#cb1-269" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-270"><a href="#cb1-270" aria-hidden="true" tabindex="-1"></a>**Software:**</span>
-<span id="cb1-271"><a href="#cb1-271" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-272"><a href="#cb1-272" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">TreeAge Pro</span><span class="co">](https://www.treeage.com/)</span> - Decision tree analysis (Paid)</span>
-<span id="cb1-273"><a href="#cb1-273" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">R package: heemod</span><span class="co">](https://cran.r-project.org/web/packages/heemod/)</span> - Health economic modeling (FREE)</span>
-<span id="cb1-274"><a href="#cb1-274" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">R package: dampack</span><span class="co">](https://cran.r-project.org/web/packages/dampack/)</span> - Decision-analytic modeling (FREE)</span>
+<span id="cb1-264"><a href="#cb1-264" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span><span class="co">[</span><span class="ot">World Bank Microdata Library (catalog 5911 example)</span><span class="co">](https://microdata.worldbank.org/index.php/catalog/5911/get-microdata)</span> - Household and health survey microdata (FREE with registration)</span>
+<span id="cb1-265"><a href="#cb1-265" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span><span class="co">[</span><span class="ot">DHS Program: Stata Indicator Library</span><span class="co">](https://github.com/DHSProgram/DHS-Indicators-Stata)</span> - Stata code templates for DHS survey indicators (FREE)</span>
+<span id="cb1-266"><a href="#cb1-266" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span><span class="co">[</span><span class="ot">IPUMS DHS</span><span class="co">](https://www.idhsdata.org/idhs/)</span> - Harmonized DHS microdata (FREE with registration)</span>
+<span id="cb1-267"><a href="#cb1-267" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span><span class="co">[</span><span class="ot">UNICEF MICS Microdata</span><span class="co">](https://mics.unicef.org/surveys)</span> - Multiple Indicator Cluster Surveys (FREE with registration)</span>
+<span id="cb1-268"><a href="#cb1-268" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-269"><a href="#cb1-269" aria-hidden="true" tabindex="-1"></a>**Streaming &amp; Real-Time Data:**</span>
+<span id="cb1-270"><a href="#cb1-270" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-271"><a href="#cb1-271" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span><span class="co">[</span><span class="ot">Awesome Public Real-Time Datasets</span><span class="co">](https://github.com/bytewax/awesome-public-real-time-datasets)</span> - Curated feeds for streaming and pipeline projects (FREE)</span>
+<span id="cb1-272"><a href="#cb1-272" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span><span class="co">[</span><span class="ot">OpenSky Network API</span><span class="co">](https://opensky-network.org/apidoc/)</span> - Live air traffic data (FREE)</span>
+<span id="cb1-273"><a href="#cb1-273" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span><span class="co">[</span><span class="ot">USGS Earthquake API</span><span class="co">](https://earthquake.usgs.gov/fdsnws/event/1/)</span> - Near real-time seismic data (FREE)</span>
+<span id="cb1-274"><a href="#cb1-274" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span><span class="co">[</span><span class="ot">Transport for London Unified API</span><span class="co">](https://api.tfl.gov.uk/)</span> - Live transport status (FREE with key)</span>
 <span id="cb1-275"><a href="#cb1-275" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-276"><a href="#cb1-276" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-276"><a href="#cb1-276" aria-hidden="true" tabindex="-1"></a>**Setup notes (real-time feeds):**</span>
 <span id="cb1-277"><a href="#cb1-277" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-278"><a href="#cb1-278" aria-hidden="true" tabindex="-1"></a><span class="fu">## **💻 Software Development**</span></span>
-<span id="cb1-279"><a href="#cb1-279" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-280"><a href="#cb1-280" aria-hidden="true" tabindex="-1"></a><span class="fu">### **Version Control** {.project-card}</span></span>
-<span id="cb1-281"><a href="#cb1-281" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-282"><a href="#cb1-282" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Git Documentation</span><span class="co">](https://git-scm.com/doc)</span> - Official docs (FREE)</span>
-<span id="cb1-283"><a href="#cb1-283" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">GitHub Guides</span><span class="co">](https://guides.github.com/)</span> - Learning resources (FREE)</span>
-<span id="cb1-284"><a href="#cb1-284" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Pro Git Book</span><span class="co">](https://git-scm.com/book/en/v2)</span> - Free online book (FREE)</span>
-<span id="cb1-285"><a href="#cb1-285" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">GitHub Desktop</span><span class="co">](https://desktop.github.com/)</span> - GUI for Git (FREE)</span>
-<span id="cb1-286"><a href="#cb1-286" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">GitKraken</span><span class="co">](https://www.gitkraken.com/)</span> - Git client (Freemium)</span>
-<span id="cb1-287"><a href="#cb1-287" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-288"><a href="#cb1-288" aria-hidden="true" tabindex="-1"></a>**Learn Git:**</span>
-<span id="cb1-289"><a href="#cb1-289" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-290"><a href="#cb1-290" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span><span class="co">[</span><span class="ot">Learn Git Branching</span><span class="co">](https://learngitbranching.js.org/)</span> - Interactive tutorial (FREE)</span>
-<span id="cb1-291"><a href="#cb1-291" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span><span class="co">[</span><span class="ot">Git Immersion</span><span class="co">](https://gitimmersion.com/)</span> - Guided tour (FREE)</span>
-<span id="cb1-292"><a href="#cb1-292" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span><span class="co">[</span><span class="ot">GitHub Skills</span><span class="co">](https://skills.github.com/)</span> - Interactive courses (FREE)</span>
-<span id="cb1-293"><a href="#cb1-293" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-294"><a href="#cb1-294" aria-hidden="true" tabindex="-1"></a><span class="fu">### **Package Development** {.project-card}</span></span>
-<span id="cb1-295"><a href="#cb1-295" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-296"><a href="#cb1-296" aria-hidden="true" tabindex="-1"></a>**R Packages:**</span>
-<span id="cb1-297"><a href="#cb1-297" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-298"><a href="#cb1-298" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">R Packages Book</span><span class="co">](https://r-pkgs.org/)</span> - Hadley Wickham (FREE)</span>
-<span id="cb1-299"><a href="#cb1-299" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Writing R Extensions</span><span class="co">](https://cran.r-project.org/doc/manuals/r-release/R-exts.html)</span> - Official guide (FREE)</span>
-<span id="cb1-300"><a href="#cb1-300" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">usethis package</span><span class="co">](https://usethis.r-lib.org/)</span> - Package development workflow (FREE)</span>
-<span id="cb1-301"><a href="#cb1-301" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">devtools package</span><span class="co">](https://devtools.r-lib.org/)</span> - Development tools (FREE)</span>
+<span id="cb1-278"><a href="#cb1-278" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Quarto can mix R and Python chunks; use <span class="in">`httr2`</span>/<span class="in">`jsonlite`</span> in R or <span class="in">`requests`</span> in Python for GET calls.</span>
+<span id="cb1-279"><a href="#cb1-279" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Most APIs return JSON; wrap responses into <span class="in">`tibble::as_tibble()`</span> or <span class="in">`pandas.DataFrame`</span> for quick plotting.</span>
+<span id="cb1-280"><a href="#cb1-280" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>OpenSky and USGS require no keys for basic use; TfL needs a free app key (register, set as env var <span class="in">`TFL_APP_KEY`</span>).</span>
+<span id="cb1-281"><a href="#cb1-281" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>For streaming experiments, pair the Bytewax list with <span class="in">`websocket`</span>/<span class="in">`httpuv`</span> in R or <span class="in">`websockets`</span>/<span class="in">`asyncio`</span> in Python.</span>
+<span id="cb1-282"><a href="#cb1-282" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-283"><a href="#cb1-283" aria-hidden="true" tabindex="-1"></a>**Open Practice Datasets:**</span>
+<span id="cb1-284"><a href="#cb1-284" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-285"><a href="#cb1-285" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span><span class="co">[</span><span class="ot">Kaggle Datasets</span><span class="co">](https://www.kaggle.com/datasets)</span> - Community datasets for modeling and dashboards (FREE)</span>
+<span id="cb1-286"><a href="#cb1-286" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span><span class="co">[</span><span class="ot">Google Dataset Search</span><span class="co">](https://datasetsearch.research.google.com/)</span> - Search engine for open datasets (FREE)</span>
+<span id="cb1-287"><a href="#cb1-287" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span><span class="co">[</span><span class="ot">Data.gov</span><span class="co">](https://catalog.data.gov/dataset)</span> - US government open data (FREE)</span>
+<span id="cb1-288"><a href="#cb1-288" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span><span class="co">[</span><span class="ot">data.europa.eu</span><span class="co">](https://data.europa.eu/en)</span> - European Union open data portal (FREE)</span>
+<span id="cb1-289"><a href="#cb1-289" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span><span class="co">[</span><span class="ot">Registry of Open Data on AWS</span><span class="co">](https://registry.opendata.aws/)</span> - Ready-to-use public datasets in the cloud (FREE)</span>
+<span id="cb1-290"><a href="#cb1-290" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-291"><a href="#cb1-291" aria-hidden="true" tabindex="-1"></a><span class="fu">### **Sample Project Ideas (R, Python, SQL in Quarto)** {.project-card}</span></span>
+<span id="cb1-292"><a href="#cb1-292" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-293"><a href="#cb1-293" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Flight traffic monitor (OpenSky API + R/Python):** Pull live flights every 60 seconds, cache to SQLite with <span class="in">`DBI::dbWriteTable()`</span> or <span class="in">`pandas.to_sql()`</span>, then map routes with <span class="in">`leaflet`</span> (R) or <span class="in">`plotly`</span> (Python).</span>
+<span id="cb1-294"><a href="#cb1-294" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Earthquake alert map (USGS + R):** Fetch last 24h quakes, bucket magnitudes in dplyr, visualize with <span class="in">`ggplot2`</span>/<span class="in">`geom_point()`</span> and annotate cities; add a SQL chunk to aggregate by country from SQLite.</span>
+<span id="cb1-295"><a href="#cb1-295" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Transit reliability dashboard (TfL + SQL):** Collect bus arrival predictions to a Postgres/SQLite table, compute headway irregularity via SQL window functions, chart peak-hour gaps with <span class="in">`ggplot2`</span> or <span class="in">`seaborn`</span>.</span>
+<span id="cb1-296"><a href="#cb1-296" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**Streaming sentiment mini-pipeline (Bytewax list + Python):** Pick any public websocket feed, stream into DuckDB using <span class="in">`duckdb`</span> Python API, run live SQL for hourly aggregates, and render in a Quarto page.</span>
+<span id="cb1-297"><a href="#cb1-297" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>**Household survey microdata cleaner (DHS/MICS + R + SQL):** Use DHS Stata templates for indicator definitions, import microdata with <span class="in">`haven`</span>, stage to DuckDB via <span class="in">`dbplyr`</span>, and build a reproducible ETL Quarto doc with R/Python chunks side by side.</span>
+<span id="cb1-298"><a href="#cb1-298" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-299"><a href="#cb1-299" aria-hidden="true" tabindex="-1"></a><span class="fu">### **Health Economics Tools** {.project-card}</span></span>
+<span id="cb1-300"><a href="#cb1-300" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-301"><a href="#cb1-301" aria-hidden="true" tabindex="-1"></a>**Cost-Effectiveness Analysis:**</span>
 <span id="cb1-302"><a href="#cb1-302" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-303"><a href="#cb1-303" aria-hidden="true" tabindex="-1"></a>**Python Packages:**</span>
-<span id="cb1-304"><a href="#cb1-304" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-305"><a href="#cb1-305" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Python Packaging Guide</span><span class="co">](https://packaging.python.org/)</span> - Official guide (FREE)</span>
-<span id="cb1-306"><a href="#cb1-306" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Real Python: Publishing Package</span><span class="co">](https://realpython.com/pypi-publish-python-package/)</span> - Tutorial (FREE)</span>
-<span id="cb1-307"><a href="#cb1-307" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-308"><a href="#cb1-308" aria-hidden="true" tabindex="-1"></a>---</span>
-<span id="cb1-309"><a href="#cb1-309" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-310"><a href="#cb1-310" aria-hidden="true" tabindex="-1"></a><span class="fu">## **🌐 Communities &amp; Networks**</span></span>
-<span id="cb1-311"><a href="#cb1-311" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-312"><a href="#cb1-312" aria-hidden="true" tabindex="-1"></a><span class="fu">### **Online Communities** {.info-box}</span></span>
-<span id="cb1-313"><a href="#cb1-313" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-314"><a href="#cb1-314" aria-hidden="true" tabindex="-1"></a>**Forums &amp; Q&amp;A:**</span>
-<span id="cb1-315"><a href="#cb1-315" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-316"><a href="#cb1-316" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Stack Overflow</span><span class="co">](https://stackoverflow.com/)</span> - Programming Q&amp;A (FREE)</span>
-<span id="cb1-317"><a href="#cb1-317" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Cross Validated</span><span class="co">](https://stats.stackexchange.com/)</span> - Statistics Q&amp;A (FREE)</span>
-<span id="cb1-318"><a href="#cb1-318" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">RStudio Community</span><span class="co">](https://community.rstudio.com/)</span> - R help (FREE)</span>
-<span id="cb1-319"><a href="#cb1-319" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Reddit r/datascience</span><span class="co">](https://www.reddit.com/r/datascience/)</span> - Data science community (FREE)</span>
-<span id="cb1-320"><a href="#cb1-320" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Reddit r/rstats</span><span class="co">](https://www.reddit.com/r/rstats/)</span> - R community (FREE)</span>
-<span id="cb1-321"><a href="#cb1-321" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-322"><a href="#cb1-322" aria-hidden="true" tabindex="-1"></a>**Social Learning:**</span>
-<span id="cb1-323"><a href="#cb1-323" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-324"><a href="#cb1-324" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Kaggle</span><span class="co">](https://www.kaggle.com/)</span> - Competitions &amp; datasets (FREE)</span>
-<span id="cb1-325"><a href="#cb1-325" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">DataCamp Community</span><span class="co">](https://www.datacamp.com/community)</span> - Tutorials (FREE)</span>
-<span id="cb1-326"><a href="#cb1-326" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Towards Data Science</span><span class="co">](https://towardsdatascience.com/)</span> - Medium publication (FREE)</span>
-<span id="cb1-327"><a href="#cb1-327" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Analytics Vidhya</span><span class="co">](https://www.analyticsvidhya.com/)</span> - Data science blog (FREE)</span>
-<span id="cb1-328"><a href="#cb1-328" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-329"><a href="#cb1-329" aria-hidden="true" tabindex="-1"></a>**African Data Science:**</span>
+<span id="cb1-303"><a href="#cb1-303" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">CHEERS Checklist</span><span class="co">](https://www.equator-network.org/reporting-guidelines/cheers/)</span> - Reporting guidelines</span>
+<span id="cb1-304"><a href="#cb1-304" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">iDSI Reference Case</span><span class="co">](https://www.idsihealth.org/resource-items/idsi-reference-case/)</span> - HTA guidelines</span>
+<span id="cb1-305"><a href="#cb1-305" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">WHO-CHOICE</span><span class="co">](https://www.who.int/teams/health-systems-governance-and-financing/economic-analysis/who-choice)</span> - Cost-effectiveness</span>
+<span id="cb1-306"><a href="#cb1-306" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-307"><a href="#cb1-307" aria-hidden="true" tabindex="-1"></a>**Software:**</span>
+<span id="cb1-308"><a href="#cb1-308" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-309"><a href="#cb1-309" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">TreeAge Pro</span><span class="co">](https://www.treeage.com/)</span> - Decision tree analysis (Paid)</span>
+<span id="cb1-310"><a href="#cb1-310" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">R package: heemod</span><span class="co">](https://cran.r-project.org/web/packages/heemod/)</span> - Health economic modeling (FREE)</span>
+<span id="cb1-311"><a href="#cb1-311" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">R package: dampack</span><span class="co">](https://cran.r-project.org/web/packages/dampack/)</span> - Decision-analytic modeling (FREE)</span>
+<span id="cb1-312"><a href="#cb1-312" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-313"><a href="#cb1-313" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-314"><a href="#cb1-314" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-315"><a href="#cb1-315" aria-hidden="true" tabindex="-1"></a><span class="fu">## **💻 Software Development**</span></span>
+<span id="cb1-316"><a href="#cb1-316" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-317"><a href="#cb1-317" aria-hidden="true" tabindex="-1"></a><span class="fu">### **Version Control** {.project-card}</span></span>
+<span id="cb1-318"><a href="#cb1-318" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-319"><a href="#cb1-319" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Git Documentation</span><span class="co">](https://git-scm.com/doc)</span> - Official docs (FREE)</span>
+<span id="cb1-320"><a href="#cb1-320" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">GitHub Guides</span><span class="co">](https://guides.github.com/)</span> - Learning resources (FREE)</span>
+<span id="cb1-321"><a href="#cb1-321" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Pro Git Book</span><span class="co">](https://git-scm.com/book/en/v2)</span> - Free online book (FREE)</span>
+<span id="cb1-322"><a href="#cb1-322" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">GitHub Desktop</span><span class="co">](https://desktop.github.com/)</span> - GUI for Git (FREE)</span>
+<span id="cb1-323"><a href="#cb1-323" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">GitKraken</span><span class="co">](https://www.gitkraken.com/)</span> - Git client (Freemium)</span>
+<span id="cb1-324"><a href="#cb1-324" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-325"><a href="#cb1-325" aria-hidden="true" tabindex="-1"></a>**Learn Git:**</span>
+<span id="cb1-326"><a href="#cb1-326" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-327"><a href="#cb1-327" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span><span class="co">[</span><span class="ot">Learn Git Branching</span><span class="co">](https://learngitbranching.js.org/)</span> - Interactive tutorial (FREE)</span>
+<span id="cb1-328"><a href="#cb1-328" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span><span class="co">[</span><span class="ot">Git Immersion</span><span class="co">](https://gitimmersion.com/)</span> - Guided tour (FREE)</span>
+<span id="cb1-329"><a href="#cb1-329" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span><span class="co">[</span><span class="ot">GitHub Skills</span><span class="co">](https://skills.github.com/)</span> - Interactive courses (FREE)</span>
 <span id="cb1-330"><a href="#cb1-330" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-331"><a href="#cb1-331" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Africa R Users</span><span class="co">](https://africa-r.org/)</span> - R users in Africa (FREE)</span>
-<span id="cb1-332"><a href="#cb1-332" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Data Science Africa</span><span class="co">](http://www.datascienceafrica.org/)</span> - DSA community (FREE)</span>
-<span id="cb1-333"><a href="#cb1-333" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">AfroCHI</span><span class="co">](https://afrochi.org/)</span> - African HCI community (FREE)</span>
+<span id="cb1-331"><a href="#cb1-331" aria-hidden="true" tabindex="-1"></a><span class="fu">### **Package Development** {.project-card}</span></span>
+<span id="cb1-332"><a href="#cb1-332" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-333"><a href="#cb1-333" aria-hidden="true" tabindex="-1"></a>**R Packages:**</span>
 <span id="cb1-334"><a href="#cb1-334" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-335"><a href="#cb1-335" aria-hidden="true" tabindex="-1"></a><span class="fu">### **Professional Organizations** {.project-card}</span></span>
-<span id="cb1-336"><a href="#cb1-336" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-337"><a href="#cb1-337" aria-hidden="true" tabindex="-1"></a>**Statistics &amp; Data Science:**</span>
-<span id="cb1-338"><a href="#cb1-338" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-339"><a href="#cb1-339" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">American Statistical Association (ASA)</span><span class="co">](https://www.amstat.org/)</span></span>
-<span id="cb1-340"><a href="#cb1-340" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Royal Statistical Society (RSS)</span><span class="co">](https://rss.org.uk/)</span></span>
-<span id="cb1-341"><a href="#cb1-341" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">International Statistical Institute (ISI)</span><span class="co">](https://www.isi-web.org/)</span></span>
-<span id="cb1-342"><a href="#cb1-342" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Kenya Statistical Society</span><span class="co">](https://www.kas.or.ke/)</span></span>
-<span id="cb1-343"><a href="#cb1-343" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-344"><a href="#cb1-344" aria-hidden="true" tabindex="-1"></a>**Health Economics:**</span>
-<span id="cb1-345"><a href="#cb1-345" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-346"><a href="#cb1-346" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">International Health Economics Association (iHEA)</span><span class="co">](https://healtheconomics.org/)</span></span>
-<span id="cb1-347"><a href="#cb1-347" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">African Health Economics and Policy Association (AfHEA)</span><span class="co">](https://www.afhea.org/)</span></span>
-<span id="cb1-348"><a href="#cb1-348" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Health Economics Research Unit (HERU)</span><span class="co">](https://www.abdn.ac.uk/heru/)</span></span>
-<span id="cb1-349"><a href="#cb1-349" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-350"><a href="#cb1-350" aria-hidden="true" tabindex="-1"></a>**Research:**</span>
-<span id="cb1-351"><a href="#cb1-351" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-352"><a href="#cb1-352" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">African Population and Health Research Center (APHRC)</span><span class="co">](https://aphrc.org/)</span></span>
-<span id="cb1-353"><a href="#cb1-353" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">African Economic Research Consortium (AERC)</span><span class="co">](https://aercafrica.org/)</span></span>
-<span id="cb1-354"><a href="#cb1-354" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-355"><a href="#cb1-355" aria-hidden="true" tabindex="-1"></a>---</span>
-<span id="cb1-356"><a href="#cb1-356" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-357"><a href="#cb1-357" aria-hidden="true" tabindex="-1"></a><span class="fu">## **🚀 Career Development**</span></span>
+<span id="cb1-335"><a href="#cb1-335" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">R Packages Book</span><span class="co">](https://r-pkgs.org/)</span> - Hadley Wickham (FREE)</span>
+<span id="cb1-336"><a href="#cb1-336" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Writing R Extensions</span><span class="co">](https://cran.r-project.org/doc/manuals/r-release/R-exts.html)</span> - Official guide (FREE)</span>
+<span id="cb1-337"><a href="#cb1-337" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">usethis package</span><span class="co">](https://usethis.r-lib.org/)</span> - Package development workflow (FREE)</span>
+<span id="cb1-338"><a href="#cb1-338" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">devtools package</span><span class="co">](https://devtools.r-lib.org/)</span> - Development tools (FREE)</span>
+<span id="cb1-339"><a href="#cb1-339" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-340"><a href="#cb1-340" aria-hidden="true" tabindex="-1"></a>**Python Packages:**</span>
+<span id="cb1-341"><a href="#cb1-341" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-342"><a href="#cb1-342" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Python Packaging Guide</span><span class="co">](https://packaging.python.org/)</span> - Official guide (FREE)</span>
+<span id="cb1-343"><a href="#cb1-343" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Real Python: Publishing Package</span><span class="co">](https://realpython.com/pypi-publish-python-package/)</span> - Tutorial (FREE)</span>
+<span id="cb1-344"><a href="#cb1-344" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-345"><a href="#cb1-345" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-346"><a href="#cb1-346" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-347"><a href="#cb1-347" aria-hidden="true" tabindex="-1"></a><span class="fu">## **🌐 Communities &amp; Networks**</span></span>
+<span id="cb1-348"><a href="#cb1-348" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-349"><a href="#cb1-349" aria-hidden="true" tabindex="-1"></a><span class="fu">### **Online Communities** {.info-box}</span></span>
+<span id="cb1-350"><a href="#cb1-350" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-351"><a href="#cb1-351" aria-hidden="true" tabindex="-1"></a>**Forums &amp; Q&amp;A:**</span>
+<span id="cb1-352"><a href="#cb1-352" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-353"><a href="#cb1-353" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Stack Overflow</span><span class="co">](https://stackoverflow.com/)</span> - Programming Q&amp;A (FREE)</span>
+<span id="cb1-354"><a href="#cb1-354" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Cross Validated</span><span class="co">](https://stats.stackexchange.com/)</span> - Statistics Q&amp;A (FREE)</span>
+<span id="cb1-355"><a href="#cb1-355" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">RStudio Community</span><span class="co">](https://community.rstudio.com/)</span> - R help (FREE)</span>
+<span id="cb1-356"><a href="#cb1-356" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Reddit r/datascience</span><span class="co">](https://www.reddit.com/r/datascience/)</span> - Data science community (FREE)</span>
+<span id="cb1-357"><a href="#cb1-357" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Reddit r/rstats</span><span class="co">](https://www.reddit.com/r/rstats/)</span> - R community (FREE)</span>
 <span id="cb1-358"><a href="#cb1-358" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-359"><a href="#cb1-359" aria-hidden="true" tabindex="-1"></a><span class="fu">### **Job Boards** {.success-box}</span></span>
+<span id="cb1-359"><a href="#cb1-359" aria-hidden="true" tabindex="-1"></a>**Social Learning:**</span>
 <span id="cb1-360"><a href="#cb1-360" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-361"><a href="#cb1-361" aria-hidden="true" tabindex="-1"></a>**General Data Science:**</span>
-<span id="cb1-362"><a href="#cb1-362" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-363"><a href="#cb1-363" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">LinkedIn Jobs</span><span class="co">](https://www.linkedin.com/jobs/)</span> - Professional network</span>
-<span id="cb1-364"><a href="#cb1-364" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Indeed</span><span class="co">](https://www.indeed.com/)</span> - Job aggregator</span>
-<span id="cb1-365"><a href="#cb1-365" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Glassdoor</span><span class="co">](https://www.glassdoor.com/)</span> - Jobs + reviews</span>
-<span id="cb1-366"><a href="#cb1-366" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">AngelList</span><span class="co">](https://angel.co/)</span> - Startup jobs</span>
+<span id="cb1-361"><a href="#cb1-361" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Kaggle</span><span class="co">](https://www.kaggle.com/)</span> - Competitions &amp; datasets (FREE)</span>
+<span id="cb1-362"><a href="#cb1-362" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">DataCamp Community</span><span class="co">](https://www.datacamp.com/community)</span> - Tutorials (FREE)</span>
+<span id="cb1-363"><a href="#cb1-363" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Towards Data Science</span><span class="co">](https://towardsdatascience.com/)</span> - Medium publication (FREE)</span>
+<span id="cb1-364"><a href="#cb1-364" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Analytics Vidhya</span><span class="co">](https://www.analyticsvidhya.com/)</span> - Data science blog (FREE)</span>
+<span id="cb1-365"><a href="#cb1-365" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-366"><a href="#cb1-366" aria-hidden="true" tabindex="-1"></a>**African Data Science:**</span>
 <span id="cb1-367"><a href="#cb1-367" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-368"><a href="#cb1-368" aria-hidden="true" tabindex="-1"></a>**Data-Specific:**</span>
-<span id="cb1-369"><a href="#cb1-369" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-370"><a href="#cb1-370" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Kaggle Jobs</span><span class="co">](https://www.kaggle.com/jobs)</span> - Data science roles</span>
-<span id="cb1-371"><a href="#cb1-371" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">DataJobs</span><span class="co">](https://datajobs.com/)</span> - Data careers</span>
-<span id="cb1-372"><a href="#cb1-372" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">iHire Data Science</span><span class="co">](https://www.ihiredatascience.com/)</span> - Specialized board</span>
-<span id="cb1-373"><a href="#cb1-373" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Remote OK</span><span class="co">](https://remoteok.com/remote-data-jobs)</span> - Remote data jobs</span>
-<span id="cb1-374"><a href="#cb1-374" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-375"><a href="#cb1-375" aria-hidden="true" tabindex="-1"></a>**Africa/Kenya:**</span>
-<span id="cb1-376"><a href="#cb1-376" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-377"><a href="#cb1-377" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">BrighterMonday Kenya</span><span class="co">](https://www.brightermonday.co.ke/)</span> - Kenyan jobs</span>
-<span id="cb1-378"><a href="#cb1-378" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">FuZu</span><span class="co">](https://www.fuzu.com/)</span> - East African jobs</span>
-<span id="cb1-379"><a href="#cb1-379" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Devex</span><span class="co">](https://www.devex.com/jobs)</span> - Development sector jobs</span>
-<span id="cb1-380"><a href="#cb1-380" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">ReliefWeb</span><span class="co">](https://reliefweb.int/jobs)</span> - Humanitarian jobs</span>
-<span id="cb1-381"><a href="#cb1-381" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-382"><a href="#cb1-382" aria-hidden="true" tabindex="-1"></a><span class="fu">### **Freelancing Platforms** {.project-card}</span></span>
-<span id="cb1-383"><a href="#cb1-383" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-384"><a href="#cb1-384" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Upwork</span><span class="co">](https://www.upwork.com/)</span> - General freelancing</span>
-<span id="cb1-385"><a href="#cb1-385" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Toptal</span><span class="co">](https://www.toptal.com/)</span> - Top 3% freelancers</span>
-<span id="cb1-386"><a href="#cb1-386" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Fiverr</span><span class="co">](https://www.fiverr.com/)</span> - Gig marketplace</span>
-<span id="cb1-387"><a href="#cb1-387" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Freelancer</span><span class="co">](https://www.freelancer.com/)</span> - Project bidding</span>
-<span id="cb1-388"><a href="#cb1-388" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Kolabtree</span><span class="co">](https://www.kolabtree.com/)</span> - Scientific freelancing</span>
-<span id="cb1-389"><a href="#cb1-389" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-390"><a href="#cb1-390" aria-hidden="true" tabindex="-1"></a><span class="fu">### **Portfolio Building** {.info-box}</span></span>
+<span id="cb1-368"><a href="#cb1-368" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Africa R Users</span><span class="co">](https://africa-r.org/)</span> - R users in Africa (FREE)</span>
+<span id="cb1-369"><a href="#cb1-369" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Data Science Africa</span><span class="co">](http://www.datascienceafrica.org/)</span> - DSA community (FREE)</span>
+<span id="cb1-370"><a href="#cb1-370" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">AfroCHI</span><span class="co">](https://afrochi.org/)</span> - African HCI community (FREE)</span>
+<span id="cb1-371"><a href="#cb1-371" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-372"><a href="#cb1-372" aria-hidden="true" tabindex="-1"></a><span class="fu">### **Professional Organizations** {.project-card}</span></span>
+<span id="cb1-373"><a href="#cb1-373" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-374"><a href="#cb1-374" aria-hidden="true" tabindex="-1"></a>**Statistics &amp; Data Science:**</span>
+<span id="cb1-375"><a href="#cb1-375" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-376"><a href="#cb1-376" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">American Statistical Association (ASA)</span><span class="co">](https://www.amstat.org/)</span></span>
+<span id="cb1-377"><a href="#cb1-377" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Royal Statistical Society (RSS)</span><span class="co">](https://rss.org.uk/)</span></span>
+<span id="cb1-378"><a href="#cb1-378" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">International Statistical Institute (ISI)</span><span class="co">](https://www.isi-web.org/)</span></span>
+<span id="cb1-379"><a href="#cb1-379" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Kenya Statistical Society</span><span class="co">](https://www.kas.or.ke/)</span></span>
+<span id="cb1-380"><a href="#cb1-380" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-381"><a href="#cb1-381" aria-hidden="true" tabindex="-1"></a>**Health Economics:**</span>
+<span id="cb1-382"><a href="#cb1-382" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-383"><a href="#cb1-383" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">International Health Economics Association (iHEA)</span><span class="co">](https://healtheconomics.org/)</span></span>
+<span id="cb1-384"><a href="#cb1-384" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">African Health Economics and Policy Association (AfHEA)</span><span class="co">](https://www.afhea.org/)</span></span>
+<span id="cb1-385"><a href="#cb1-385" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Health Economics Research Unit (HERU)</span><span class="co">](https://www.abdn.ac.uk/heru/)</span></span>
+<span id="cb1-386"><a href="#cb1-386" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-387"><a href="#cb1-387" aria-hidden="true" tabindex="-1"></a>**Research:**</span>
+<span id="cb1-388"><a href="#cb1-388" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-389"><a href="#cb1-389" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">African Population and Health Research Center (APHRC)</span><span class="co">](https://aphrc.org/)</span></span>
+<span id="cb1-390"><a href="#cb1-390" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">African Economic Research Consortium (AERC)</span><span class="co">](https://aercafrica.org/)</span></span>
 <span id="cb1-391"><a href="#cb1-391" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-392"><a href="#cb1-392" aria-hidden="true" tabindex="-1"></a>**Showcase Platforms:**</span>
+<span id="cb1-392"><a href="#cb1-392" aria-hidden="true" tabindex="-1"></a>---</span>
 <span id="cb1-393"><a href="#cb1-393" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-394"><a href="#cb1-394" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">GitHub</span><span class="co">](https://github.com/)</span> - Code repository (FREE)</span>
-<span id="cb1-395"><a href="#cb1-395" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Kaggle</span><span class="co">](https://www.kaggle.com/)</span> - Competitions + notebooks (FREE)</span>
-<span id="cb1-396"><a href="#cb1-396" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Tableau Public</span><span class="co">](https://public.tableau.com/)</span> - Dashboards (FREE)</span>
-<span id="cb1-397"><a href="#cb1-397" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Observable</span><span class="co">](https://observablehq.com/)</span> - JavaScript notebooks (FREE)</span>
-<span id="cb1-398"><a href="#cb1-398" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">RStudio Connect</span><span class="co">](https://www.rstudio.com/products/connect/)</span> - App hosting (Paid)</span>
-<span id="cb1-399"><a href="#cb1-399" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Shinyapps.io</span><span class="co">](https://www.shinyapps.io/)</span> - Shiny hosting (Freemium)</span>
-<span id="cb1-400"><a href="#cb1-400" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-401"><a href="#cb1-401" aria-hidden="true" tabindex="-1"></a>---</span>
-<span id="cb1-402"><a href="#cb1-402" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-403"><a href="#cb1-403" aria-hidden="true" tabindex="-1"></a><span class="fu">## **📖 My Recommendations**</span></span>
+<span id="cb1-394"><a href="#cb1-394" aria-hidden="true" tabindex="-1"></a><span class="fu">## **🚀 Career Development**</span></span>
+<span id="cb1-395"><a href="#cb1-395" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-396"><a href="#cb1-396" aria-hidden="true" tabindex="-1"></a><span class="fu">### **Job Boards** {.success-box}</span></span>
+<span id="cb1-397"><a href="#cb1-397" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-398"><a href="#cb1-398" aria-hidden="true" tabindex="-1"></a>**General Data Science:**</span>
+<span id="cb1-399"><a href="#cb1-399" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-400"><a href="#cb1-400" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">LinkedIn Jobs</span><span class="co">](https://www.linkedin.com/jobs/)</span> - Professional network</span>
+<span id="cb1-401"><a href="#cb1-401" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Indeed</span><span class="co">](https://www.indeed.com/)</span> - Job aggregator</span>
+<span id="cb1-402"><a href="#cb1-402" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Glassdoor</span><span class="co">](https://www.glassdoor.com/)</span> - Jobs + reviews</span>
+<span id="cb1-403"><a href="#cb1-403" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">AngelList</span><span class="co">](https://angel.co/)</span> - Startup jobs</span>
 <span id="cb1-404"><a href="#cb1-404" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-405"><a href="#cb1-405" aria-hidden="true" tabindex="-1"></a>::: {.highlight-box}</span>
-<span id="cb1-406"><a href="#cb1-406" aria-hidden="true" tabindex="-1"></a><span class="fu">### **If I were starting over in data analytics, here's what I'd focus on:**</span></span>
-<span id="cb1-407"><a href="#cb1-407" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-408"><a href="#cb1-408" aria-hidden="true" tabindex="-1"></a>**Months 1-3: Foundations**</span>
-<span id="cb1-409"><a href="#cb1-409" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Learn SQL (SQLBolt + Mode tutorials)</span>
-<span id="cb1-410"><a href="#cb1-410" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Pick ONE language: R OR Python</span>
-<span id="cb1-411"><a href="#cb1-411" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Master Excel/Google Sheets</span>
-<span id="cb1-412"><a href="#cb1-412" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>Learn basic statistics (Khan Academy)</span>
-<span id="cb1-413"><a href="#cb1-413" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>Build 3 simple projects</span>
-<span id="cb1-414"><a href="#cb1-414" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-415"><a href="#cb1-415" aria-hidden="true" tabindex="-1"></a>**Months 4-6: Intermediate Skills**</span>
-<span id="cb1-416"><a href="#cb1-416" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Data visualization (ggplot2 or matplotlib)</span>
-<span id="cb1-417"><a href="#cb1-417" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Exploratory data analysis</span>
-<span id="cb1-418"><a href="#cb1-418" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Statistical inference</span>
-<span id="cb1-419"><a href="#cb1-419" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>Git &amp; GitHub basics</span>
-<span id="cb1-420"><a href="#cb1-420" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>Build portfolio website</span>
-<span id="cb1-421"><a href="#cb1-421" aria-hidden="true" tabindex="-1"></a><span class="ss">6. </span>Complete 2-3 Kaggle competitions</span>
-<span id="cb1-422"><a href="#cb1-422" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-423"><a href="#cb1-423" aria-hidden="true" tabindex="-1"></a>**Months 7-9: Specialization**</span>
-<span id="cb1-424"><a href="#cb1-424" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Choose domain (health, finance, marketing)</span>
-<span id="cb1-425"><a href="#cb1-425" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Learn domain-specific tools</span>
-<span id="cb1-426"><a href="#cb1-426" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Machine learning basics</span>
-<span id="cb1-427"><a href="#cb1-427" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>Dashboard building (Tableau/Power BI)</span>
-<span id="cb1-428"><a href="#cb1-428" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>Write 5 blog posts explaining projects</span>
-<span id="cb1-429"><a href="#cb1-429" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-430"><a href="#cb1-430" aria-hidden="true" tabindex="-1"></a>**Months 10-12: Job Ready**</span>
-<span id="cb1-431"><a href="#cb1-431" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Advanced analytics projects</span>
-<span id="cb1-432"><a href="#cb1-432" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Real-world datasets (not just tutorials)</span>
-<span id="cb1-433"><a href="#cb1-433" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Practice interviews (technical + behavioral)</span>
-<span id="cb1-434"><a href="#cb1-434" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>Network on LinkedIn</span>
-<span id="cb1-435"><a href="#cb1-435" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>Apply to entry-level roles</span>
-<span id="cb1-436"><a href="#cb1-436" aria-hidden="true" tabindex="-1"></a><span class="ss">6. </span>Consider freelancing for experience</span>
+<span id="cb1-405"><a href="#cb1-405" aria-hidden="true" tabindex="-1"></a>**Data-Specific:**</span>
+<span id="cb1-406"><a href="#cb1-406" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-407"><a href="#cb1-407" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Kaggle Jobs</span><span class="co">](https://www.kaggle.com/jobs)</span> - Data science roles</span>
+<span id="cb1-408"><a href="#cb1-408" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">DataJobs</span><span class="co">](https://datajobs.com/)</span> - Data careers</span>
+<span id="cb1-409"><a href="#cb1-409" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">iHire Data Science</span><span class="co">](https://www.ihiredatascience.com/)</span> - Specialized board</span>
+<span id="cb1-410"><a href="#cb1-410" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Remote OK</span><span class="co">](https://remoteok.com/remote-data-jobs)</span> - Remote data jobs</span>
+<span id="cb1-411"><a href="#cb1-411" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-412"><a href="#cb1-412" aria-hidden="true" tabindex="-1"></a>**Africa/Kenya:**</span>
+<span id="cb1-413"><a href="#cb1-413" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-414"><a href="#cb1-414" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">BrighterMonday Kenya</span><span class="co">](https://www.brightermonday.co.ke/)</span> - Kenyan jobs</span>
+<span id="cb1-415"><a href="#cb1-415" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">FuZu</span><span class="co">](https://www.fuzu.com/)</span> - East African jobs</span>
+<span id="cb1-416"><a href="#cb1-416" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Devex</span><span class="co">](https://www.devex.com/jobs)</span> - Development sector jobs</span>
+<span id="cb1-417"><a href="#cb1-417" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">ReliefWeb</span><span class="co">](https://reliefweb.int/jobs)</span> - Humanitarian jobs</span>
+<span id="cb1-418"><a href="#cb1-418" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-419"><a href="#cb1-419" aria-hidden="true" tabindex="-1"></a><span class="fu">### **Freelancing Platforms** {.project-card}</span></span>
+<span id="cb1-420"><a href="#cb1-420" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-421"><a href="#cb1-421" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Upwork</span><span class="co">](https://www.upwork.com/)</span> - General freelancing</span>
+<span id="cb1-422"><a href="#cb1-422" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Toptal</span><span class="co">](https://www.toptal.com/)</span> - Top 3% freelancers</span>
+<span id="cb1-423"><a href="#cb1-423" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Fiverr</span><span class="co">](https://www.fiverr.com/)</span> - Gig marketplace</span>
+<span id="cb1-424"><a href="#cb1-424" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Freelancer</span><span class="co">](https://www.freelancer.com/)</span> - Project bidding</span>
+<span id="cb1-425"><a href="#cb1-425" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Kolabtree</span><span class="co">](https://www.kolabtree.com/)</span> - Scientific freelancing</span>
+<span id="cb1-426"><a href="#cb1-426" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-427"><a href="#cb1-427" aria-hidden="true" tabindex="-1"></a><span class="fu">### **Portfolio Building** {.info-box}</span></span>
+<span id="cb1-428"><a href="#cb1-428" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-429"><a href="#cb1-429" aria-hidden="true" tabindex="-1"></a>**Showcase Platforms:**</span>
+<span id="cb1-430"><a href="#cb1-430" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-431"><a href="#cb1-431" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">GitHub</span><span class="co">](https://github.com/)</span> - Code repository (FREE)</span>
+<span id="cb1-432"><a href="#cb1-432" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Kaggle</span><span class="co">](https://www.kaggle.com/)</span> - Competitions + notebooks (FREE)</span>
+<span id="cb1-433"><a href="#cb1-433" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Tableau Public</span><span class="co">](https://public.tableau.com/)</span> - Dashboards (FREE)</span>
+<span id="cb1-434"><a href="#cb1-434" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Observable</span><span class="co">](https://observablehq.com/)</span> - JavaScript notebooks (FREE)</span>
+<span id="cb1-435"><a href="#cb1-435" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">RStudio Connect</span><span class="co">](https://www.rstudio.com/products/connect/)</span> - App hosting (Paid)</span>
+<span id="cb1-436"><a href="#cb1-436" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Shinyapps.io</span><span class="co">](https://www.shinyapps.io/)</span> - Shiny hosting (Freemium)</span>
 <span id="cb1-437"><a href="#cb1-437" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-438"><a href="#cb1-438" aria-hidden="true" tabindex="-1"></a>**Key principle:** **Build projects, not just skills. Employers hire problem-solvers.**</span>
-<span id="cb1-439"><a href="#cb1-439" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-440"><a href="#cb1-440" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-441"><a href="#cb1-441" aria-hidden="true" tabindex="-1"></a>---</span>
-<span id="cb1-442"><a href="#cb1-442" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-443"><a href="#cb1-443" aria-hidden="true" tabindex="-1"></a><span class="fu">## **🤝 Connect &amp; Collaborate**</span></span>
+<span id="cb1-438"><a href="#cb1-438" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-439"><a href="#cb1-439" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-440"><a href="#cb1-440" aria-hidden="true" tabindex="-1"></a><span class="fu">## **📖 My Recommendations**</span></span>
+<span id="cb1-441"><a href="#cb1-441" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-442"><a href="#cb1-442" aria-hidden="true" tabindex="-1"></a>::: {.highlight-box}</span>
+<span id="cb1-443"><a href="#cb1-443" aria-hidden="true" tabindex="-1"></a><span class="fu">### **If I were starting over in data analytics, here's what I'd focus on:**</span></span>
 <span id="cb1-444"><a href="#cb1-444" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-445"><a href="#cb1-445" aria-hidden="true" tabindex="-1"></a>Have resources to recommend? Want to collaborate on learning materials?</span>
-<span id="cb1-446"><a href="#cb1-446" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-447"><a href="#cb1-447" aria-hidden="true" tabindex="-1"></a>📧 **Email:** <span class="co">[</span><span class="ot">nichodemuswerre@gmail.com</span><span class="co">](mailto:nichodemuswerre@gmail.com)</span>  </span>
-<span id="cb1-448"><a href="#cb1-448" aria-hidden="true" tabindex="-1"></a>💼 **LinkedIn:** <span class="co">[</span><span class="ot">linkedin.com/in/nichodemusamollo</span><span class="co">](https://linkedin.com/in/nichodemusamollo)</span>  </span>
-<span id="cb1-449"><a href="#cb1-449" aria-hidden="true" tabindex="-1"></a>🐙 **GitHub:** <span class="co">[</span><span class="ot">github.com/gondamol</span><span class="co">](https://github.com/gondamol)</span>  </span>
-<span id="cb1-450"><a href="#cb1-450" aria-hidden="true" tabindex="-1"></a>🐦 **Twitter:** <span class="co">[</span><span class="ot">@nwerre</span><span class="co">](https://twitter.com/nwerre)</span></span>
+<span id="cb1-445"><a href="#cb1-445" aria-hidden="true" tabindex="-1"></a>**Months 1-3: Foundations**</span>
+<span id="cb1-446"><a href="#cb1-446" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Learn SQL (SQLBolt + Mode tutorials)</span>
+<span id="cb1-447"><a href="#cb1-447" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Pick ONE language: R OR Python</span>
+<span id="cb1-448"><a href="#cb1-448" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Master Excel/Google Sheets</span>
+<span id="cb1-449"><a href="#cb1-449" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>Learn basic statistics (Khan Academy)</span>
+<span id="cb1-450"><a href="#cb1-450" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>Build 3 simple projects</span>
 <span id="cb1-451"><a href="#cb1-451" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-452"><a href="#cb1-452" aria-hidden="true" tabindex="-1"></a>---</span>
-<span id="cb1-453"><a href="#cb1-453" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-454"><a href="#cb1-454" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> style</span><span class="op">=</span><span class="st">"text-align: center; font-style: italic; color: #666; margin: 2rem 0;"</span><span class="dt">&gt;</span></span>
-<span id="cb1-455"><a href="#cb1-455" aria-hidden="true" tabindex="-1"></a>*This resource list is continually updated. Last update: October 2025*  </span>
-<span id="cb1-456"><a href="#cb1-456" aria-hidden="true" tabindex="-1"></a>*Bookmark this page and check back regularly for new additions!*</span>
-<span id="cb1-457"><a href="#cb1-457" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+<span id="cb1-452"><a href="#cb1-452" aria-hidden="true" tabindex="-1"></a>**Months 4-6: Intermediate Skills**</span>
+<span id="cb1-453"><a href="#cb1-453" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Data visualization (ggplot2 or matplotlib)</span>
+<span id="cb1-454"><a href="#cb1-454" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Exploratory data analysis</span>
+<span id="cb1-455"><a href="#cb1-455" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Statistical inference</span>
+<span id="cb1-456"><a href="#cb1-456" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>Git &amp; GitHub basics</span>
+<span id="cb1-457"><a href="#cb1-457" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>Build portfolio website</span>
+<span id="cb1-458"><a href="#cb1-458" aria-hidden="true" tabindex="-1"></a><span class="ss">6. </span>Complete 2-3 Kaggle competitions</span>
+<span id="cb1-459"><a href="#cb1-459" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-460"><a href="#cb1-460" aria-hidden="true" tabindex="-1"></a>**Months 7-9: Specialization**</span>
+<span id="cb1-461"><a href="#cb1-461" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Choose domain (health, finance, marketing)</span>
+<span id="cb1-462"><a href="#cb1-462" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Learn domain-specific tools</span>
+<span id="cb1-463"><a href="#cb1-463" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Machine learning basics</span>
+<span id="cb1-464"><a href="#cb1-464" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>Dashboard building (Tableau/Power BI)</span>
+<span id="cb1-465"><a href="#cb1-465" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>Write 5 blog posts explaining projects</span>
+<span id="cb1-466"><a href="#cb1-466" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-467"><a href="#cb1-467" aria-hidden="true" tabindex="-1"></a>**Months 10-12: Job Ready**</span>
+<span id="cb1-468"><a href="#cb1-468" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Advanced analytics projects</span>
+<span id="cb1-469"><a href="#cb1-469" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Real-world datasets (not just tutorials)</span>
+<span id="cb1-470"><a href="#cb1-470" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Practice interviews (technical + behavioral)</span>
+<span id="cb1-471"><a href="#cb1-471" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>Network on LinkedIn</span>
+<span id="cb1-472"><a href="#cb1-472" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>Apply to entry-level roles</span>
+<span id="cb1-473"><a href="#cb1-473" aria-hidden="true" tabindex="-1"></a><span class="ss">6. </span>Consider freelancing for experience</span>
+<span id="cb1-474"><a href="#cb1-474" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-475"><a href="#cb1-475" aria-hidden="true" tabindex="-1"></a>**Key principle:** **Build projects, not just skills. Employers hire problem-solvers.**</span>
+<span id="cb1-476"><a href="#cb1-476" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-477"><a href="#cb1-477" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-478"><a href="#cb1-478" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-479"><a href="#cb1-479" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-480"><a href="#cb1-480" aria-hidden="true" tabindex="-1"></a><span class="fu">## **🤝 Connect &amp; Collaborate**</span></span>
+<span id="cb1-481"><a href="#cb1-481" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-482"><a href="#cb1-482" aria-hidden="true" tabindex="-1"></a>Have resources to recommend? Want to collaborate on learning materials?</span>
+<span id="cb1-483"><a href="#cb1-483" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-484"><a href="#cb1-484" aria-hidden="true" tabindex="-1"></a>📧 **Email:** <span class="co">[</span><span class="ot">nichodemuswerre@gmail.com</span><span class="co">](mailto:nichodemuswerre@gmail.com)</span>  </span>
+<span id="cb1-485"><a href="#cb1-485" aria-hidden="true" tabindex="-1"></a>💼 **LinkedIn:** <span class="co">[</span><span class="ot">linkedin.com/in/nichodemusamollo</span><span class="co">](https://linkedin.com/in/nichodemusamollo)</span>  </span>
+<span id="cb1-486"><a href="#cb1-486" aria-hidden="true" tabindex="-1"></a>🐙 **GitHub:** <span class="co">[</span><span class="ot">github.com/gondamol</span><span class="co">](https://github.com/gondamol)</span>  </span>
+<span id="cb1-487"><a href="#cb1-487" aria-hidden="true" tabindex="-1"></a>🐦 **Twitter:** <span class="co">[</span><span class="ot">@nwerre</span><span class="co">](https://twitter.com/nwerre)</span></span>
+<span id="cb1-488"><a href="#cb1-488" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-489"><a href="#cb1-489" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-490"><a href="#cb1-490" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-491"><a href="#cb1-491" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> style</span><span class="op">=</span><span class="st">"text-align: center; font-style: italic; color: #666; margin: 2rem 0;"</span><span class="dt">&gt;</span></span>
+<span id="cb1-492"><a href="#cb1-492" aria-hidden="true" tabindex="-1"></a>*This resource list is continually updated. Last update: October 2025*  </span>
+<span id="cb1-493"><a href="#cb1-493" aria-hidden="true" tabindex="-1"></a>*Bookmark this page and check back regularly for new additions!*</span>
+<span id="cb1-494"><a href="#cb1-494" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 
