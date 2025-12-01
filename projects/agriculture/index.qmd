@@ -83,17 +83,16 @@ Coming soon:
 
 ---
 
-### 🍚 Food Security Analysis - Lake Victoria Basin
+### 🌍 [Food Security Early Warning (EA)](food-security-early-warning.qmd)
 
-**Food insecurity patterns in Homabay and neighboring counties**
+**Price shocks + rainfall anomalies for early action (Kenya + EA)**
 
-Coming soon:
-- Seasonal hunger analysis
-- Market access mapping
-- Fish vs farming contributions
-- Nutrition outcomes by livelihood
+- Offline demo with included market + rainfall data (Nairobi, Kisumu, Eldoret)
+- Pure R pipeline (dplyr/zoo) with easy swap to live WFP/CHIRPS feeds
+- Leaflet hotspot maps, alert tables, and price trend chart
+- Weekly refresh-ready; outputs tailored for NGOs, govts, and donors
 
-**Status**: Planned
+**Status**: ✅ Ready to demo
 
 ---
 

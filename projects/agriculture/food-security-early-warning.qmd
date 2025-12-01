@@ -1,0 +1,143 @@
+---
+title: "East Africa Food Security Early Warning (Demo)"
+subtitle: "R + dplyr/zoo with included market price & rainfall data"
+page-layout: full
+execute:
+  warning: false
+  message: false
+---
+
+::: {.hero-banner}
+# 🌍 Food Security Early Warning (Kenya demo)
+
+Runnable, offline demo that scores market-level price shocks and rainfall anomalies using included data for Nairobi, Kisumu, and Eldoret. Built to show a full R workflow (no internet, no external DB).
+:::
+
+## 💡 What this delivers
+
+- Calculates **price shock z-scores** (7-day rolling baseline) for maize and beans
+- Flags **rainfall deficits/excess** (7-day rolling deviation)
+- Combines them into a **risk score** and surfaces top markets
+- Produces **map, alert table, and trend chart** — all reproducible from the repo with no internet
+
+## 📦 Data included (repo)
+
+- `data/food-security/market_prices.csv` — 10 days of maize/beans prices for Nairobi, Kisumu, Eldoret with lat/long
+- `data/food-security/rainfall.csv` — matching daily rainfall for the same locations
+
+## 🧭 How to run
+
+```bash
+quarto render projects/agriculture/food-security-early-warning.qmd
+```
+
+Requires R packages: `dplyr`, `readr`, `zoo`, `ggplot2`, `leaflet`, `scales`, `knitr`.
+
+## 🔌 Load data
+
+```{r}
+library(dplyr)
+library(readr)
+library(zoo)
+
+data_dir <- file.path("..", "..", "data", "food-security")
+prices <- read_csv(file.path(data_dir, "market_prices.csv"), show_col_types = FALSE)
+rain <- read_csv(file.path(data_dir, "rainfall.csv"), show_col_types = FALSE)
+```
+
+## 🧠 Feature engineering (R)
+
+```{r}
+price_anom <- prices |>
+  mutate(date = as.Date(date)) |>
+  group_by(market, commodity) |>
+  arrange(date) |>
+  mutate(
+    price_mean_7 = dplyr::lag(zoo::rollapplyr(price, 7, mean, fill = NA, align = "right")),
+    price_sd_7   = dplyr::lag(zoo::rollapplyr(price, 7, sd, fill = NA, align = "right")),
+    price_z      = (price - price_mean_7) / ifelse(price_sd_7 %in% c(0, NA), NA, price_sd_7)
+  )
+
+rain_anom <- rain |>
+  mutate(date = as.Date(date)) |>
+  group_by(admin2) |>
+  arrange(date) |>
+  mutate(
+    rain_mean_7 = dplyr::lag(zoo::rollapplyr(rainfall_mm, 7, mean, fill = NA, align = "right")),
+    rain_pct_dev = (rainfall_mm - rain_mean_7) / ifelse(rain_mean_7 %in% c(0, NA), NA, rain_mean_7)
+  )
+
+risk <- price_anom |>
+  left_join(rain_anom, by = c("admin1", "date"), suffix = c("_price", "_rain")) |>
+  mutate(
+    risk_score = 0.6 * price_z + 0.4 * coalesce(-1 * rain_pct_dev, 0)
+  )
+```
+
+## 📈 Outputs (table, chart, map)
+
+```{r}
+library(ggplot2)
+library(leaflet)
+library(scales)
+library(knitr)
+
+risk <- risk
+latest_date <- max(as.Date(risk$date, na.rm = TRUE))
+risk_latest <- filter(risk, as.Date(date) == latest_date)
+
+top_alerts <- risk_latest |>
+  group_by(market) |>
+  summarise(risk = mean(risk_score, na.rm = TRUE)) |>
+  arrange(desc(risk)) |>
+  mutate(risk = round(risk, 2))
+
+price_trend <- risk |>
+  filter(commodity == "Maize") |>
+  ggplot(aes(as.Date(date), price, color = market)) +
+  geom_line(size = 1) +
+  labs(title = "Maize price trend (KES/kg)", x = NULL, y = "KES/kg") +
+  theme_minimal()
+
+risk_latest_map <- filter(risk_latest, !is.na(risk_score) & !is.na(lon) & !is.na(lat))
+rng <- range(risk_latest_map$risk_score, na.rm = TRUE)
+radius_vals <- ifelse(length(rng) < 2 || diff(rng) == 0,
+                      rep(8, nrow(risk_latest_map)),
+                      rescale(risk_latest_map$risk_score, to = c(6, 14), from = rng))
+
+map <- leaflet(risk_latest_map) |>
+  addTiles() |>
+  addCircleMarkers(
+    lng = ~lon, lat = ~lat,
+    radius = radius_vals,
+    color = ~ifelse(risk_score > mean(risk_latest_map$risk_score, na.rm = TRUE), "#d7191c", "#2b83ba"),
+    label = ~paste0(market, " (", commodity, "): ", round(risk_score, 2)),
+    fillOpacity = 0.8, stroke = FALSE
+  ) |>
+  addLegend(position = "bottomright", colors = c("#d7191c", "#2b83ba"),
+            labels = c("Above-avg risk", "Below-avg risk"),
+            title = paste("Risk as of", latest_date))
+
+top_alerts
+
+knitr::kable(top_alerts, caption = paste0("Top Markets by Risk — ", latest_date))
+
+price_trend
+
+map
+```
+
+## 🗺️ Interpretation
+
+- Nairobi shows a short-term maize spike with simultaneous low rainfall → higher composite risk.
+- Kisumu prices climb steadily but adequate rain tempers the score.
+- Eldoret prices stabilize after a mild bump; rainfall deficits reduce but do not spike risk.
+
+## 🚀 Next steps to productionize
+
+1. Swap the included CSVs for live WFP/CHIRPS pulls (Python or R) with daily cron.
+2. Add affordability index (staple basket vs median income).
+3. Publish a slim CSV/Parquet feed + email summary for partners.
+4. Add forecasting (ARIMA/prophet) to flag near-future shocks.
+
+[← Back to Agriculture](index.qmd) | [← All Projects](../index.qmd)
