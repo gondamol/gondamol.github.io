@@ -259,6 +259,43 @@ A comprehensive collection of free and paid resources for aspiring and practicin
 3. [Zenodo](https://zenodo.org/) - Research data repository (FREE)
 4. [Open ICPSR](https://www.openicpsr.org/) - Social science data (FREE)
 
+**Survey & Microdata:**
+
+1. [World Bank Microdata Library (catalog 5911 example)](https://microdata.worldbank.org/index.php/catalog/5911/get-microdata) - Household and health survey microdata (FREE with registration)
+2. [DHS Program: Stata Indicator Library](https://github.com/DHSProgram/DHS-Indicators-Stata) - Stata code templates for DHS survey indicators (FREE)
+3. [IPUMS DHS](https://www.idhsdata.org/idhs/) - Harmonized DHS microdata (FREE with registration)
+4. [UNICEF MICS Microdata](https://mics.unicef.org/surveys) - Multiple Indicator Cluster Surveys (FREE with registration)
+
+**Streaming & Real-Time Data:**
+
+1. [Awesome Public Real-Time Datasets](https://github.com/bytewax/awesome-public-real-time-datasets) - Curated feeds for streaming and pipeline projects (FREE)
+2. [OpenSky Network API](https://opensky-network.org/apidoc/) - Live air traffic data (FREE)
+3. [USGS Earthquake API](https://earthquake.usgs.gov/fdsnws/event/1/) - Near real-time seismic data (FREE)
+4. [Transport for London Unified API](https://api.tfl.gov.uk/) - Live transport status (FREE with key)
+
+**Setup notes (real-time feeds):**
+
+- Quarto can mix R and Python chunks; use `httr2`/`jsonlite` in R or `requests` in Python for GET calls.
+- Most APIs return JSON; wrap responses into `tibble::as_tibble()` or `pandas.DataFrame` for quick plotting.
+- OpenSky and USGS require no keys for basic use; TfL needs a free app key (register, set as env var `TFL_APP_KEY`).
+- For streaming experiments, pair the Bytewax list with `websocket`/`httpuv` in R or `websockets`/`asyncio` in Python.
+
+**Open Practice Datasets:**
+
+1. [Kaggle Datasets](https://www.kaggle.com/datasets) - Community datasets for modeling and dashboards (FREE)
+2. [Google Dataset Search](https://datasetsearch.research.google.com/) - Search engine for open datasets (FREE)
+3. [Data.gov](https://catalog.data.gov/dataset) - US government open data (FREE)
+4. [data.europa.eu](https://data.europa.eu/en) - European Union open data portal (FREE)
+5. [Registry of Open Data on AWS](https://registry.opendata.aws/) - Ready-to-use public datasets in the cloud (FREE)
+
+### **Sample Project Ideas (R, Python, SQL in Quarto)** {.project-card}
+
+1. **Flight traffic monitor (OpenSky API + R/Python):** Pull live flights every 60 seconds, cache to SQLite with `DBI::dbWriteTable()` or `pandas.to_sql()`, then map routes with `leaflet` (R) or `plotly` (Python).
+2. **Earthquake alert map (USGS + R):** Fetch last 24h quakes, bucket magnitudes in dplyr, visualize with `ggplot2`/`geom_point()` and annotate cities; add a SQL chunk to aggregate by country from SQLite.
+3. **Transit reliability dashboard (TfL + SQL):** Collect bus arrival predictions to a Postgres/SQLite table, compute headway irregularity via SQL window functions, chart peak-hour gaps with `ggplot2` or `seaborn`.
+4. **Streaming sentiment mini-pipeline (Bytewax list + Python):** Pick any public websocket feed, stream into DuckDB using `duckdb` Python API, run live SQL for hourly aggregates, and render in a Quarto page.
+5. **Household survey microdata cleaner (DHS/MICS + R + SQL):** Use DHS Stata templates for indicator definitions, import microdata with `haven`, stage to DuckDB via `dbplyr`, and build a reproducible ETL Quarto doc with R/Python chunks side by side.
+
 ### **Health Economics Tools** {.project-card}
 
 **Cost-Effectiveness Analysis:**
