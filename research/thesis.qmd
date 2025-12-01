@@ -25,9 +25,9 @@ knitr::opts_chunk$set(
 ::: {.hero-banner}
 # 🎓 MSc Thesis Research Project
 
-**Exploring Financial Determinants of Effective Hypertension and Diabetes Management in Primary Health Facilities in Kisumu County**
+**Financial Determinants of Effective Hypertension and Diabetes Care in Rural Primary Health Facilities in Kisumu, Kenya: A Mixed-Methods Study**
 
-**Status:** Data Collection & Analysis Phase | **Expected Completion:** 2025
+**Status:** Preprint available (not peer reviewed) | **DOI:** [10.21203/rs.3.rs-8079392/v1](https://doi.org/10.21203/rs.3.rs-8079392/v1) | **License:** CC BY 4.0 | **Expected Journal Submission:** 2025
 :::
 
 ## **Project Overview**

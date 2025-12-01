@@ -8,15 +8,15 @@ page-layout: full
 
 ::: {.project-card}
 ::: {.project-header}
-### 🎓 MSc Thesis (In Progress)
+### 🎓 MSc Thesis (Preprint Available)
 :::
 
 ::: {.project-body}
-**Title:** Exploring Financial Determinants of Effective Hypertension and Diabetes Management in Primary Health Facilities in Kisumu County
+**Title:** Financial Determinants of Effective Hypertension and Diabetes Care in Rural Primary Health Facilities in Kisumu, Kenya: A Mixed-Methods Study
 
-**Status:** Data Collection & Analysis Phase
-
-**Expected Completion:** 2025
+**Status:** Preprint (not peer reviewed) — [DOI: 10.21203/rs.3.rs-8079392/v1](https://doi.org/10.21203/rs.3.rs-8079392/v1)  
+**License:** CC BY 4.0  
+**Expected Journal Submission:** 2025
 
 **Key Focus Areas:**
 - Health facility financing and resource allocation
@@ -24,7 +24,7 @@ page-layout: full
 - Cost-effectiveness analysis
 - Policy recommendations for sustainable NCD financing
 
-[View Full Thesis Project →](thesis.qmd){.cta-button}
+[Read Preprint →](https://doi.org/10.21203/rs.3.rs-8079392/v1){.cta-button} [View Thesis Project →](thesis.qmd){.cta-button}
 :::
 :::
 
@@ -42,6 +42,9 @@ page-layout: full
 
 3. Ouma, O. J., Omondi, D., Akinyi, I., **Amollo, N. W.**, Ogutu, S., Obinge, E., … van Olmen, J. (2025). Addressing priority gaps in access and quality of NCD services in primary care settings in rural Kenya: A participatory approach to intervention development. [In Press]
    - Role: Conceptualization, data collection, management, analysis, and co-writing results & discussion
+
+4. **Amollo, N. W.**, Ogol, J., Museve, E., Owenga, J. A., et al. (2024). *Financial Determinants of Effective Hypertension and Diabetes Care in Rural Primary Health Facilities in Kisumu, Kenya: A Mixed-Methods Study.* Preprint. [https://doi.org/10.21203/rs.3.rs-8079392/v1](https://doi.org/10.21203/rs.3.rs-8079392/v1) — CC BY 4.0.
+   - Role: First author; study design, mixed-methods analysis, writing
 
 ---
 
