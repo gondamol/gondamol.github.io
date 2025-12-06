@@ -1,4 +1,5 @@
 project:
+  # Force rebuild
   type: website
   output-dir: _site
   render:
@@ -35,7 +36,7 @@ website:
   title: "Nic|Data"
   site-url: "https://gondamol.github.io"
   description: "Research Data Manager & Data Scientist specializing in Health Financial Diaries, Data Analysis, Machine Learning, and Outcomes & Impact Evaluation - Research on Livelihood and Financial Behavior of Low-Income Households"
-        
+
   navbar:
     background: primary
     search: true
@@ -109,7 +110,7 @@ website:
 
 format:
   html:
-    theme: 
+    theme:
       light: [cosmo, custom.scss]
       dark: [darkly, custom.scss]
     css: [styles.scss, _footer.css, _newsletter-popup.scss]

@@ -17,6 +17,7 @@ Showcasing 7+ years of impactful work in health data analytics, data management,
 ::: {.skill-category}
 ### [🏥 Health Data Analytics](health-analytics.qmd)
 Real-world analytics projects driving health improvements:
+
 - NCD management dashboards
 - COVID-19 vaccination analysis
 - Maternal mortality prediction
@@ -29,6 +30,7 @@ Real-world analytics projects driving health improvements:
 ::: {.skill-category}
 ### [🗄️ Data Management](data-management.qmd)
 Robust data systems for clinical trials and research:
+
 - Multi-site HIV treatment trials
 - Malaria vaccine efficacy studies
 - Longitudinal NCD cohorts
@@ -41,6 +43,7 @@ Robust data systems for clinical trials and research:
 ::: {.skill-category}
 ### [🚀 Real-Time Analytics Engineering](analytics-engineering/) **NEW!**
 End-to-end automation projects solving real-world problems:
+
 - Job Market Intelligence (web scraping + NLP)
 - E-commerce Price Tracker (Jumia, Kilimall, Amazon)
 - Social Media Analytics (sentiment analysis)
@@ -53,6 +56,7 @@ End-to-end automation projects solving real-world problems:
 ::: {.skill-category}
 ### [🌾 Agriculture & Agribusiness](agriculture/)
 Data-driven agricultural investment analysis:
+
 - Goat farming economics (Homabay County)
 - Crop viability analysis (Ndhiwa)
 - Climate-resilient agriculture
@@ -65,6 +69,7 @@ Data-driven agricultural investment analysis:
 ::: {.skill-category}
 ### [📋 Survey Tools](survey-tools.qmd)
 Electronic data capture system design and implementation:
+
 - National health facility assessments
 - Clinical trial databases (REDCap)
 - Community health worker apps
@@ -77,6 +82,7 @@ Electronic data capture system design and implementation:
 ::: {.skill-category}
 ### [🏛️ Politics & Governance](politics-governance/index.qmd)
 Data and analytics on governance and public policy:
+
 - Elections and turnout
 - Government spending and budgets
 - Civic engagement & representation
@@ -88,6 +94,7 @@ Data and analytics on governance and public policy:
 ::: {.skill-category}
 ### [📊 Dashboards](dashboards.qmd)
 Interactive visualizations for real-time decision making:
+
 - Facility performance monitoring
 - Disease surveillance systems
 - Clinical trial management
@@ -269,6 +276,7 @@ I believe in **open, reproducible, and transparent research**. Where possible, p
 ::: {.skills-grid}
 ::: {.skill-category}
 ### 🏥 Health Focus Areas
+
 - HIV/AIDS
 - Tuberculosis
 - Malaria
@@ -280,6 +288,7 @@ I believe in **open, reproducible, and transparent research**. Where possible, p
 
 ::: {.skill-category}
 ### 📋 Study Types
+
 - Clinical trials (Phases I-IV)
 - Cohort studies
 - Cross-sectional surveys
@@ -290,6 +299,7 @@ I believe in **open, reproducible, and transparent research**. Where possible, p
 
 ::: {.skill-category}
 ### 🌍 Geographic Experience
+
 - Kenya (primary)
 - Uganda
 - Tanzania
@@ -299,6 +309,7 @@ I believe in **open, reproducible, and transparent research**. Where possible, p
 
 ::: {.skill-category}
 ### 🤝 Collaborations
+
 - Academic institutions
 - Government health departments
 - International NGOs
