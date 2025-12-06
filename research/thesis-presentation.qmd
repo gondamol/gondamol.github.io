@@ -1,9 +1,9 @@
 ---
-title: "Exploring Financial Determinants of Effective Hypertension and Diabetes Management"
-subtitle: "A Study of Primary Health Facilities in Kisumu County, Kenya"
-author: "Nichodemus Amollo, MSc Candidate"
+title: "Financial Determinants of Effective Hypertension and Diabetes Care"
+subtitle: "A Mixed-Methods Study in Rural Primary Health Facilities in Kisumu, Kenya"
+author: "Nichodemus Werre Amollo"
 institute: "Jaramogi Oginga Odinga University of Science and Technology (JOOUST)"
-date: "2025"
+date: "2024-08-30"
 format:
   revealjs:
     theme: [default, custom-presentation.scss]
@@ -14,39 +14,59 @@ format:
     preview-links: auto
     controls: true
     progress: true
-    history: true
     center: true
-    mouse-wheel: true
     width: 1280
     height: 720
     logo: ../img/profile.jpeg
-    footer: "Nichodemus Amollo | MSc Biostatistics & Epidemiology | JOOUST"
+    footer: "Nichodemus Amollo | MSc Thesis Defense"
 ---
 
-## {background-image="../img/profile.jpeg" background-opacity="0.3"}
+## {background-image="../img/profile.jpeg" background-opacity="0.2"}
 
-::: {style="text-align: center; margin-top: 10%;"}
-<h1 style="font-size: 2.5em; color: #2c5282;">Financial Determinants of NCDs Management</h1>
-<h3 style="color: #667eea;">Hypertension & Diabetes in Kisumu County</h3>
+::: {style="text-align: center; margin-top: 5%;"}
+<h1 style="font-size: 2.2em; color: #2c5282; font-weight: bold;">Financial Determinants of Effective Hypertension and Diabetes Care</h1>
+<h3 style="color: #4a5568; margin-top: 20px;">A Mixed-Methods Study in Rural Primary Health Facilities in Kisumu, Kenya</h3>
 
-**Nichodemus Amollo**  
-MSc Candidate, Biostatistics & Epidemiology  
-JOOUST, Kenya
+<div style="margin-top: 50px; font-size: 1.1em;">
+**Nichodemus Werre Amollo**  
+*School of Health Sciences, JOOUST*
+</div>
 
-<small>Supervisors: Dr. [Name], Dr. [Name]</small>
+<div style="margin-top: 20px; font-size: 0.9em; color: #718096;">
+**Advisors:**  
+Japheth Ogol, Elijah Museve, Jane Adhiambo Owenga,  
+Dickens Omondi Aduda, Daniel Onguru
+</div>
 :::
 
 ---
 
-## Outline {.smaller}
+## Outline
 
-1. Background & Context
-2. Research Problem
-3. Research Questions & Objectives
-4. Methods & Design
-5. Preliminary Results
-6. Discussion & Implications
-7. Conclusions & Recommendations
+::: {.columns}
+::: {.column width="50%"}
+1.  **Background & Problem**
+    *   The NCD Crisis
+    *   Financing Gaps
+    *   Research Questions
+2.  **Methodology**
+    *   Study Design
+    *   Setting & Population
+    *   Data Collection
+:::
+
+::: {.column width="50%"}
+3.  **Results**
+    *   Facility Characteristics
+    *   Funding Sources
+    *   Planning & Budgeting
+    *   Financial Autonomy
+    *   Impact on Service Delivery
+4.  **Discussion & Conclusion**
+    *   Key Insights
+    *   Recommendations
+:::
+:::
 
 ---
 
@@ -54,126 +74,40 @@ JOOUST, Kenya
 
 ---
 
-## The Global NCD Crisis {.smaller}
-
-::: {.incremental}
-- **71% of global deaths** are from NCDs (WHO, 2023)
-- **Hypertension**: Affects 1.28 billion adults worldwide
-- **Diabetes**: 537 million adults (IDF, 2021)
-- **Africa's burden**: Fastest growing NCD epidemic
-- **Kenya context**: 
-  - 24.5% adults have hypertension
-  - 3.3% have diabetes
-  - **Kisumu County**: Above-average prevalence
-:::
-
-::: {.notes}
-Start with the big picture - NCDs are the leading cause of death globally. Africa's epidemic is growing faster than other regions.
-:::
-
----
-
-## The Financial Challenge {.smaller background-color="#f7fafc"}
+## The NCD Crisis in Kenya {.smaller}
 
 ::: {.columns}
-::: {.column width="50%"}
-### Out-of-Pocket Costs
-
-- Consultations: KES 100-500
-- Medications (monthly):
-  - Hypertension: KES 500-2,000
-  - Diabetes: KES 1,500-5,000
-- Complications: KES 10,000+
+::: {.column width="60%"}
+*   **Rising Burden:** NCDs account for **27% of deaths** in Kenya.
+*   **Prevalence:**
+    *   **26%** of adults have elevated blood pressure.
+    *   **5.6%** have raised blood glucose.
+*   **The Challenge:** Effective management requires *sustained* access to medicines and monitoring.
+*   **The Gap:** Despite devolution (2013), financing for NCDs at Primary Health Care (PHC) level remains weak.
 :::
 
-::: {.column width="50%"}
-### Low-Income Reality
-
-- Average daily income: < KES 200
-- Household size: 4-6 people
-- Healthcare: 5-10% of income
-- **Result**: Catastrophic spending
+::: {.column width="40%"}
+::: {.callout-note appearance="simple"}
+## Key Statistic
+Cardiovascular diseases are now responsible for over **27%** of all deaths in Kenya, surpassing many communicable diseases.
 :::
 :::
-
-::: {.fragment}
-<center><h3 style="color: #e53e3e;">Financial barriers → Poor disease control → Complications → Higher costs</h3></center>
 :::
 
 ---
 
-## Gaps in Current Knowledge {.smaller}
+## Problem Statement
 
-::: {.incremental}
-**What we know:**
-- Financial barriers exist
-- Medication adherence is poor
-- NCDs are rising in Kenya
+::: {style="background-color: #ebf8ff; padding: 30px; border-radius: 10px; border-left: 5px solid #2b6cb0;"}
+**Despite the availability of PHC facilities in Kisumu County, hypertension and diabetes control rates remain suboptimal.**
 
-**What we DON'T know:**
-- **Specific financial determinants** of effective management
-- **Threshold effects**: How much is enough?
-- **Household financial coping strategies**
-- **Which interventions** are most cost-effective
+Financing is a critical input, yet we lack specific evidence on how **facility-level financing mechanisms** (sources, budgeting, autonomy) directly influence NCD service delivery in rural devolved systems.
 :::
 
-::: {.fragment}
-<div class="callout-important">
-**This study fills the gap:** Quantifying financial determinants using health financial diaries and clinical outcomes data.
-</div>
-:::
+<br>
 
----
-
-# Research Problem
-
----
-
-## Problem Statement {background-color="#ebf8ff"}
-
-::: {style="font-size: 1.2em; padding: 2rem;"}
-Despite availability of primary healthcare facilities in Kisumu County, **hypertension and diabetes control rates remain suboptimal** (< 30% controlled).
-
-**Central Question:**
-
-> To what extent do **household financial factors** determine effective disease management among patients attending primary health facilities?
-:::
-
----
-
-## Research Questions {.smaller}
-
-::: {.incremental}
-1. What is the **prevalence of controlled vs. uncontrolled** hypertension and diabetes in Kisumu primary facilities?
-
-2. What are the **household financial characteristics** of patients with NCDs?
-
-3. Which **specific financial factors** (income, expenditure, savings, health spending) are associated with disease control?
-
-4. What **financial coping strategies** do households employ?
-
-5. What is the **relationship between financial protection mechanisms** (insurance, subsidies) and health outcomes?
-:::
-
----
-
-## Research Objectives {.smaller}
-
-::: {.panel-tabset}
-### Main Objective
-
-**To explore the financial determinants of effective hypertension and diabetes management** among patients attending primary health facilities in Kisumu County.
-
-### Specific Objectives
-
-1. Determine prevalence of controlled disease
-2. Characterize household financial profiles
-3. Identify key financial predictors of control
-4. Document financial coping strategies
-5. Assess impact of financial protection mechanisms
-6. Develop recommendations for policy
-
-:::
+### Study Aim
+To examine the **financial determinants** shaping hypertension and diabetes care in PHC facilities within Seme Sub-County.
 
 ---
 
@@ -181,497 +115,144 @@ Despite availability of primary healthcare facilities in Kisumu County, **hypert
 
 ---
 
-## Study Design {.smaller}
+## Study Design & Setting {.smaller}
 
-::: {.columns}
-::: {.column width="60%"}
-**Cross-sectional analytical study**
+*   **Design:** Convergent parallel **mixed-methods cross-sectional study**.
+*   **Setting:** Seme Sub-County, Kisumu, Kenya.
+*   **Population:** **7 Public PHC Facilities** (Levels 2–4).
+    *   *Selection:* Purposive sampling of facilities providing NCD services.
+*   **Data Collection (Jan–Aug 2024):**
+    *   **Quantitative:** Structured questionnaires, retrospective financial record review.
+    *   **Qualitative:** In-depth interviews with facility in-charges.
 
-**Setting:**
-- 8 primary health facilities
-- Kisumu County, Kenya
-- Urban & rural mix
-
-**Population:**
-- Adults 18+ years
-- Diagnosed hypertension/diabetes
-- ≥ 6 months follow-up
-:::
-
-::: {.column width="40%"}
-**Data Collection:**
-
-1. Clinical records
-2. Financial diaries (30 days)
-3. Structured surveys
-4. In-depth interviews (qualitative)
-:::
+::: {.callout-tip appearance="simple"}
+## Conceptual Framework
+Guided by the **WHO Health Financing Framework**, analyzing:
+1. Sources of Financing
+2. Planning & Budgeting
+3. Resource Allocation
+4. Financial Autonomy
 :::
 
 ---
 
-## Sample Size Calculation {.smaller}
-
-::: {style="background-color: #f7fafc; padding: 2rem; border-radius: 10px;"}
-**Formula:** 
-$$n = \frac{Z^2 \times p(1-p)}{d^2}$$
-
-Where:
-- Z = 1.96 (95% CI)
-- p = 0.30 (expected control rate)
-- d = 0.05 (precision)
-
-**Calculation:**
-$$n = \frac{1.96^2 \times 0.30(0.70)}{0.05^2} = 323$$
-
-**With 10% non-response:** **n = 355**
-:::
+# Results
 
 ---
 
-## Variables & Measurement {.smaller}
+## 1. Funding Sources: Narrow & Unstable {.smaller}
 
-::: {.panel-tabset}
-### Outcome
+Facilities rely on a limited mix of funding, creating vulnerability.
 
-**Disease Control (Binary)**
+| Source | % of Facilities (n=7) |
+| :--- | :--- |
+| **NHIF Reimbursements** | **71.4%** (n=5) |
+| **Donor Support (Danida)** | **71.4%** (n=5) |
+| **Direct County Funding** | **28.6%** (n=2) |
+| **User Fees** | **28.6%** (n=2) |
 
-**Hypertension:**
-- Controlled: SBP <140 AND DBP <90 mmHg
-- Uncontrolled: Otherwise
-
-**Diabetes:**
-- Controlled: HbA1c <7% OR FBS <7 mmol/L
-- Uncontrolled: Otherwise
-
-### Financial Predictors
-
-- Monthly household income
-- Healthcare expenditure
-- Out-of-pocket costs
-- Savings/assets
-- Insurance coverage
-- Debt/borrowing
-- Income shocks
-
-### Covariates
-
-- Age, sex, education
-- Disease duration
-- Comorbidities
-- Medication adherence
-- Distance to facility
-- Employment status
-
-:::
-
----
-
-## Data Collection Tools {.smaller}
-
-::: {.columns}
-::: {.column width="50%"}
-### Quantitative
-
-**1. Clinical Assessment**
-- BP measurement (3 readings)
-- Blood glucose/HbA1c
-- Medication review
-- Comorbidity assessment
-
-**2. Financial Diary (30 days)**
-- Daily income & expenditure
-- Health spending
-- Borrowing/savings
-- Implemented via mobile app
-:::
-
-::: {.column width="50%"}
-### Qualitative
-
-**3. Structured Survey**
-- Household demographics
-- Financial protection
-- Coping strategies
-- Access barriers
-
-**4. In-Depth Interviews**
-- Financial decision-making
-- Treatment prioritization
-- Household dynamics
-- Coping narratives
-:::
-:::
-
----
-
-## Data Analysis Plan {.smaller}
-
-::: {.incremental}
-**1. Descriptive Statistics**
-- Prevalence of disease control
-- Financial characteristics (median, IQR)
-- Patient demographics
-
-**2. Bivariate Analysis**
-- Chi-square tests (categorical)
-- Mann-Whitney U (continuous)
-- Financial profile by control status
-
-**3. Multivariable Modeling**
-- Logistic regression (disease control)
-- Adjusted odds ratios
-- Controlling for confounders
-
-**4. Qualitative Analysis**
-- Thematic analysis
-- NVivo software
-- Triangulation with quantitative findings
-:::
-
----
-
-# Preliminary Results
-
----
-
-## Study Progress {.smaller}
-
-::: {style="background-color: #f0fff4; padding: 2rem; border-radius: 10px;"}
-**Current Status:**
-
-✅ Ethics approval obtained (JOOUST-ERC-2024-045)  
-✅ Facility permissions secured  
-✅ Data collection tools piloted  
-✅ Research assistants trained  
-⏳ **Data collection**: 60% complete (215/355 participants)  
-⏳ **Financial diaries**: 180 completed  
-⏳ **In-depth interviews**: 15/30 completed  
-
-**Expected completion:** June 2025
-:::
-
----
-
-## Preliminary Findings: Demographics {.smaller}
-
-<div style="background-color: #fffaf0; padding: 1.5rem; border-radius: 10px;">
-
-**Participants (n=215)**
-
-| Characteristic | Value |
-|----------------|-------|
-| **Mean age** | 58.3 years (SD: 12.1) |
-| **Female** | 58.6% |
-| **Married** | 67.4% |
-| **Primary education** | 52.1% |
-| **Employed** | 38.2% |
-| **Urban residence** | 54.9% |
-| **Hypertension** | 68.8% |
-| **Diabetes** | 22.3% |
-| **Both conditions** | 8.9% |
-
-</div>
-
----
-
-## Preliminary Findings: Disease Control {.smaller background-color="#fff5f5"}
-
-::: {.columns}
-::: {.column width="50%"}
-### Hypertension Control (n=168)
-
-- **Controlled**: 41 (24.4%)
-- **Uncontrolled**: 127 (75.6%)
-
-**Reasons for poor control:**
-- Medication adherence: 58%
-- Affordability: 72%
-- Dietary compliance: 45%
-:::
-
-::: {.column width="50%"}
-### Diabetes Control (n=67)
-
-- **Controlled**: 19 (28.4%)
-- **Uncontrolled**: 48 (71.6%)
-
-**Reasons for poor control:**
-- Medication cost: 81%
-- Monitoring costs: 64%
-- Dietary challenges: 69%
-:::
+::: {.fragment}
+> "We cannot specifically say this money is for NCDs. It’s all pooled for many competing needs."  
+> — *Facility In-charge, Level 3*
 :::
 
 ::: {.fragment}
-<center><h3 style="color: #c53030;">Control rates are ALARMINGLY LOW</h3></center>
+*   **57.1%** of facilities relied on only **two** funding streams.
+*   NHIF reimbursements faced delays of **2–4 months**.
 :::
 
 ---
 
-## Preliminary Findings: Financial Profile {.smaller}
+## 2. Planning & Budgeting: "Ritual Planning" {.smaller}
 
-**Household Economics (n=180 with complete diaries)**
-
-| Indicator | Median (IQR) |
-|-----------|--------------|
-| **Monthly income** | KES 8,500 (5,200-14,000) |
-| **Monthly expenditure** | KES 9,200 (6,100-15,300) |
-| **Healthcare spending** | KES 1,200 (600-2,400) |
-| **% income on health** | 14.1% (8.2%-22.5%) |
-| **Medication costs** | KES 800 (400-1,800) |
-| **Consultation costs** | KES 250 (100-500) |
-| **Catastrophic spending (>10%)** | **67.8%** |
-
-::: {.fragment}
-<div class="callout-warning">
-**Two-thirds of households experience catastrophic health spending!**
-</div>
-:::
-
----
-
-## Preliminary Findings: Financial Barriers {.smaller}
-
-**Self-reported barriers (n=215)**
-
-| Barrier | n (%) |
-|---------|-------|
-| **Cannot afford medications consistently** | 156 (72.6%) |
-| **Delay/skip doses due to cost** | 142 (66.0%) |
-| **Cannot afford monitoring** | 118 (54.9%) |
-| **Borrow money for treatment** | 98 (45.6%) |
-| **Sell assets for healthcare** | 34 (15.8%) |
-| **Skip meals to buy medication** | 89 (41.4%) |
-
-::: {.fragment style="color: #c53030; font-size: 1.3em; text-align: center;"}
-**Financial barriers are the PRIMARY obstacle to effective management**
-:::
-
----
-
-## Preliminary Findings: Coping Strategies {.smaller background-color="#f7fafc"}
-
-**How households cope with NCD costs (qualitative themes):**
-
-::: {.incremental}
-1. **Medication rationing** - "I take one pill instead of two when money is tight"
-2. **Treatment delays** - "I wait until I feel really sick before going to the clinic"
-3. **Borrowing** - "I borrow from friends, family, or chamas monthly"
-4. **Asset sales** - "I sold my chickens to pay for my mother's medication"
-5. **Income diversification** - "I do casual work on weekends to cover health costs"
-6. **Dietary compromises** - "I can't afford the recommended diet - I eat what I can"
-:::
-
----
-
-# Discussion
-
----
-
-## Key Insights {.smaller}
-
-::: {.incremental}
-**1. Financial barriers are CRITICAL**
-- 72% cannot afford medications consistently
-- 68% experience catastrophic health spending
-- Strong association between income and disease control (preliminary analysis)
-
-**2. Current financing mechanisms are inadequate**
-- NHIF coverage: Only 28% enrolled
-- Of those enrolled: 62% still face significant out-of-pocket costs
-- Subsidies: Limited awareness and accessibility
-
-**3. Household coping strategies are unsustainable**
-- Borrowing creates debt cycles
-- Asset sales erode household resilience
-- Treatment rationing worsens health outcomes
-:::
-
----
-
-## Comparison with Literature {.smaller}
-
-::: {.panel-tabset}
-### Global Context
-
-**Similar findings worldwide:**
-
-- Philippines: 31% hypertension control, cost main barrier (Sy et al., 2020)
-- Bangladesh: 18% diabetes control, financial hardship in 65% (Khan et al., 2019)
-- Sub-Saharan Africa: 7-20% hypertension control (Guwatudde et al., 2015)
-
-**Our findings align:** Financial barriers are a universal challenge in low-resource settings.
-
-### Kenya Specific
-
-**Consistent with national data:**
-
-- STEPS Survey 2015: 15% hypertension control
-- STEPwise Survey 2021: Slight improvement but still <30%
-- Urban-rural disparities persist
-
-**Our contribution:** First detailed financial diary study in Kenya's NCD context.
-
-### Novel Contributions
-
-**What's new:**
-
-1. Granular 30-day financial diaries (not just surveys)
-2. Linking financial data with clinical outcomes
-3. Mixed-methods approach capturing coping narratives
-4. Focus on PRIMARY care (not hospital-based)
-
-:::
-
----
-
-## Policy Implications {.smaller background-color="#ebf8ff"}
-
-**Based on preliminary findings, we recommend:**
-
-::: {.incremental}
-1. **Expand financial protection**
-   - Universal health coverage for NCDs
-   - Subsidized medication programs
-   - Voucher systems for the poorest
-
-2. **Reduce direct costs**
-   - Free/subsidized medications at public facilities
-   - Elimination of consultation fees for chronic conditions
-   - Community-based distribution programs
-
-3. **Income support**
-   - Social cash transfers for NCD patients
-   - Conditional cash transfers linked to adherence
-   - Livelihood support programs
-
-4. **Health insurance reforms**
-   - Mandatory NCD coverage in NHIF/SHA
-   - Reduced premiums for chronic patients
-   - Elimination of co-payments for essential NCD drugs
-:::
-
----
-
-## Study Limitations {.smaller}
+*   **100%** of facilities prepared annual workplans and budgets.
+*   **0%** achieved **comprehensive NCD-specific planning** (Workplan + Budget + Dedicated NCD Line).
+*   Budgets were described as "aspirational wish lists" rather than operational tools.
 
 ::: {.columns}
 ::: {.column width="50%"}
-**Design Limitations:**
-
-- Cross-sectional (cannot establish causality)
-- Single county (generalizability?)
-- Facility-based (excludes those not in care)
-- 30-day diaries (seasonal variations?)
+**The Reality:**
+*   "Bottom-up" budgeting exists in theory but not practice.
+*   Allocations rarely match requests.
+*   No ring-fenced funds for NCDs.
 :::
 
 ::: {.column width="50%"}
-**Mitigating Strategies:**
-
-- Robust sample size
-- Mixed methods for triangulation
-- Sensitivity analyses
-- Comparison with national data
-- Clear acknowledgment of limitations
+> "We budget but it's not actualized. These are just wish lists because the money is not enough to implement what we plan."  
+> — *In-charge, Level 2*
 :::
 :::
 
 ---
 
-# Conclusions
+## 3. Financial Autonomy: The "Triple Constraint" {.smaller}
+
+**Recentralization of Authority:**
+Despite having bank accounts, **100%** of facilities required county-level approval for expenditures.
+
+*   **Approval Delays:**
+    *   3–4 Weeks: **57.1%**
+    *   > 2 Months: **28.6%**
+
+::: {.alert style="background-color: #fff5f5; padding: 15px; border-radius: 5px; color: #c53030;"}
+**Consequence:** Facilities cannot procure medicines locally during central supply stockouts.
+:::
+
+> "When KEMSA doesn't supply... we can't act fast. We have to wait for county approval and by then there's a stockout."  
+> — *In-charge, Level 2*
 
 ---
 
-## Conclusions {.smaller background-color="#f0fff4"}
+## 4. Impact: Medication Stockouts {.smaller}
 
-::: {.incremental}
-**Preliminary findings suggest:**
+The lack of autonomy and unstable funding leads to frequent shortages.
 
-1. **Disease control rates are critically low** in Kisumu's primary facilities (<30% for both hypertension and diabetes)
+*   **85.7% (n=6)** reported **frequent or very frequent** stockouts of NCD medicines.
+*   **42.9%** reported stockouts "almost always".
 
-2. **Financial barriers are the PRIMARY determinant** of poor disease management
-   - 72% cannot afford consistent medication
-   - 68% experience catastrophic spending
-   - Coping strategies are harmful and unsustainable
+**Clinical Consequences:**
+1.  **Disease Progression:** Patients present with complications (strokes, kidney issues).
+2.  **Loss of Trust:** Patients abandon treatment or seek care elsewhere.
+3.  **Staff Demoralization:** Health workers feel helpless without tools.
 
-3. **Current financial protection mechanisms are inadequate**
-   - Low insurance coverage
-   - High out-of-pocket costs even among insured
-   - Limited awareness of subsidies
+> "The moment that there are no drugs there are complications... Some try to manage without, which is dangerous."
 
-4. **Urgent policy action is needed** to address financial barriers and improve NCD outcomes
-:::
+---
+
+# Conclusions & Recommendations
+
+---
+
+## Key Conclusions
+
+1.  **Severe Financial Constraints:** PHC facilities operate with narrow, unpredictable funding that undermines chronic care.
+2.  **Lack of Autonomy:** Centralized approval processes (taking weeks/months) prevent timely response to stockouts.
+3.  **No NCD Prioritization:** Lack of ring-fenced budgets means NCDs lose out to competing priorities.
+4.  **Systemic Failure:** The current architecture fails to deliver the "effectiveness" and "efficiency" promised by devolution and UHC policies.
 
 ---
 
 ## Recommendations {.smaller}
 
-::: {.panel-tabset}
-### For Policy
+::: {.columns}
+::: {.column width="50%"}
+**1. Strengthen Financial Autonomy**
+*   Allow facilities to retain/spend funds at source for emergencies.
+*   Streamline approval processes (digital systems).
 
-1. **Universal medication coverage** for essential NCD drugs
-2. **Free consultations** for chronic conditions
-3. **Expand NHIF/SHA** to include comprehensive NCD benefits
-4. **Social protection** programs for vulnerable NCD patients
-
-### For Programs
-
-1. **Community medication distribution** to reduce transport costs
-2. **Medication adherence support** programs
-3. **Financial counseling** for NCD patients
-4. **Livelihood support** integrated with NCD care
-
-### For Research
-
-1. **Longitudinal studies** to establish causality
-2. **Cost-effectiveness analyses** of financial protection interventions
-3. **Implementation research** on subsidy programs
-4. **Multi-county studies** for generalizability
-
+**2. Ring-Fence NCD Funds**
+*   Mandatory NCD budget lines in county/facility budgets.
+*   Allocations proportionate to disease burden.
 :::
 
----
+::: {.column width="50%"}
+**3. Diversify Financing**
+*   Reduce reliance on donors/NHIF.
+*   Ensure timely NHIF/SHA reimbursements.
 
-## Next Steps {.smaller}
-
-**Completion timeline:**
-
-| Activity | Timeline |
-|----------|----------|
-| Complete data collection | March 2025 |
-| Data cleaning & analysis | April 2025 |
-| Draft thesis chapters | May 2025 |
-| Revisions & finalization | June 2025 |
-| Defense | July 2025 |
-| Manuscript preparation | August 2025 |
-
-**Dissemination plans:**
-- Thesis defense (July 2025)
-- Journal submissions (2-3 papers)
-- Policy brief for Kisumu County
-- Presentations at conferences (APHRC, KAS annual meetings)
-
----
-
-## Acknowledgments {.smaller}
-
-::: {style="text-align: center;"}
-**Supervisors:**
-- Dr. [Name], JOOUST
-- Dr. [Name], JOOUST
-
-**Study participants:**
-- 215 patients who shared their stories and financial diaries
-
-**Facilities:**
-- 8 primary health facilities in Kisumu County
-
-**Funding:**
-- [If applicable]
-
-**Special thanks:**
-- Research assistants, facility staff, Kisumu County Health Department
+**4. Emergency Procurement**
+*   Establish facility-level revolving funds for stockouts.
+:::
 :::
 
 ---
@@ -681,20 +262,11 @@ $$n = \frac{1.96^2 \times 0.30(0.70)}{0.05^2} = 323$$
 ::: {style="text-align: center; margin-top: 15%;"}
 <h1 style="font-size: 3em; color: #2c5282;">Thank You!</h1>
 
-<h2 style="color: #667eea;">Questions & Discussion</h2>
+<div style="font-size: 1.2em; margin-top: 30px;">
+**Questions & Discussion**
+</div>
 
----
-
-**Contact:**  
-📧 nichodemuswerre@gmail.com  
-🔗 [linkedin.com/in/nichodemusamollo](https://linkedin.com/in/nichodemusamollo)  
-🐙 [github.com/gondamol](https://github.com/gondamol)
-
----
-
-**View full portfolio:** [gondamol.github.io](https://gondamol.github.io)
+<div style="font-size: 0.9em; color: #4a5568; margin-top: 50px;">
+**Contact:** nwere@ejooust.ac.ke
+</div>
 :::
-
-
-
-
