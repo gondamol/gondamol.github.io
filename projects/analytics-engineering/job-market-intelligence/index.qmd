@@ -16,7 +16,7 @@ A complete **data engineering pipeline** that scrapes job postings from multiple
 ::: {.callout-tip}
 ### View the Live Dashboard
 
-**[👉 Launch Job Market Intelligence Dashboard](https://gondamol-job-market-intelligence.streamlit.app)**
+**[👉 Launch Job Market Intelligence Dashboard](https://data-analytics-jobs.streamlit.app)**
 
 Real-time data analytics job market insights with 200+ jobs from 7+ sources!
 :::
@@ -313,7 +313,7 @@ chmod +x scripts/setup_cron.sh
 ::: {.success-box}
 ### 🔗 Resources
 
-[**🚀 View Live Dashboard**](https://gondamol-job-market-intelligence.streamlit.app){.cta-button}
+[**🚀 View Live Dashboard**](https://data-analytics-jobs.streamlit.app){.cta-button}
 [**📂 GitHub Repository**](https://github.com/gondamol/job-market-intelligence){.cta-button}
 [**📧 Contact Me**](mailto:nichodemuswerre@gmail.com){.cta-button}
 :::
