@@ -45,3 +45,6 @@ chromedriver*
 .env
 *.env.local
 secrets.toml
+
+# Alert tracking
+data/last_alerts.json

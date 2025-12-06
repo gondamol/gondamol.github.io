@@ -1,93 +1,304 @@
 ---
-title: "E-commerce Price Intelligence System"
-subtitle: "Real-time price tracking + sentiment analysis + forecasting"
+title: "E-commerce Price Intelligence Kenya"
+subtitle: "Real-time price tracking + deal detection + price forecasting"
 page-layout: article
+toc: true
+---
+
+::: {.hero-banner}
+# 🛒 E-commerce Price Intelligence Kenya
+
+A complete **price tracking system** that monitors e-commerce platforms in Kenya, detects deals, and provides historical price trends through an interactive dashboard.
+:::
+
+## 🚀 Live Dashboard
+
+::: {.callout-tip}
+### View the Live Dashboard
+
+**[👉 Launch Price Intelligence Dashboard](https://ecommerce-price-kenya.streamlit.app)**
+
+Real-time price tracking with 130+ products from Jumia, Kilimall & more!
+:::
+
+![Dashboard Preview](assets/dashboard-preview.png)
+
 ---
 
 ## Overview
 
-Automated price tracking and comparison system for e-commerce platforms in Kenya and globally.
+### The Problem
+Consumers and businesses in Kenya lack real-time price intelligence across multiple e-commerce platforms:
 
-### Problem Solved
-Consumers and businesses need real-time price intelligence across multiple platforms to make informed purchasing decisions.
+- No centralized way to compare prices across Jumia, Kilimall, Masoko
+- Hard to track price history and identify the best time to buy
+- Missing deals due to lack of price drop alerts
+- No data-driven insights on pricing trends
 
-### Solution
-- **Real-time scraping** of product prices
-- **Historical price tracking** with trend analysis
-- **Automated alerts** for price drops
-- **Review sentiment analysis** using NLP
-- **Price forecasting** using ML
+### The Solution
 
-## Tech Stack
+This platform automates price intelligence:
 
-- **Backend:** Python (Scrapy, Selenium, BeautifulSoup)
-- **Database:** PostgreSQL (Heroku)
-- **ML:** Prophet (Facebook), scikit-learn
-- **NLP:** TextBlob, VADER Sentiment
-- **Dashboard:** Streamlit + Plotly
-- **Orchestration:** Apache Airflow
-
-## Features
-
-### 1. Multi-Platform Scraping
-- Jumia Kenya
-- Kilimall
-- Amazon (select categories)
-- Local Kenyan e-commerce sites
-
-### 2. Price Intelligence
-- Historical price charts
-- Price drop detection
-- Cross-platform comparison
-- Best deal identification
-
-### 3. Sentiment Analysis
-- Review sentiment scoring
-- Quality indicators
-- Seller ratings analysis
-
-### 4. Price Forecasting
-- 7-30 day price predictions
-- Seasonal trend identification
-- Best time to buy recommendations
-
-### 5. Alerts & Notifications
-- Price drop alerts
-- Target price notifications
-- Daily deals digest
-
-## Live Demo
-
-🔨 **Status:** In Development
-
-**Coming Soon:**
-- Live Streamlit dashboard
-- Public API endpoint
-- Source code on GitHub
-
-## Impact
-
-**For Consumers:**
-- Save money with price tracking
-- Make informed purchasing decisions
-- Never miss a good deal
-
-**For Businesses:**
-- Competitive intelligence
-- Dynamic pricing insights
-- Market trend analysis
-
-**Technical Showcase:**
-- Real-time web scraping at scale
-- Time-series forecasting
-- Sentiment analysis in production
+| Component | Technology | Status |
+|:---|:---|:---|
+| **Multi-Platform Scraping** | Python + BeautifulSoup | ✅ Live |
+| **Real-time Tracking** | Automated scrapers | ✅ Live |
+| **Price History** | 30-day trends | ✅ Live |
+| **Deal Detection** | Discount analysis | ✅ Live |
+| **Interactive Dashboard** | Streamlit + Plotly | ✅ **Deployed** |
+| **Auto-Updates** | GitHub Actions | ✅ Ready |
 
 ---
 
-[Back to Analytics Engineering →](../)
+## Current Stats
 
+::: {.stats-container}
+::: {.stat-card}
+<span class="stat-number">134+</span>
+<span class="stat-label">Products</span>
+:::
 
+::: {.stat-card}
+<span class="stat-number">67</span>
+<span class="stat-label">Active Deals</span>
+:::
 
+::: {.stat-card}
+<span class="stat-number">7</span>
+<span class="stat-label">Categories</span>
+:::
 
+::: {.stat-card}
+<span class="stat-number">3</span>
+<span class="stat-label">Platforms</span>
+:::
+:::
 
+---
 
+## Data Sources
+
+| Platform | Type | Products | Status |
+|:---|:---|:---|:---|
+| **Jumia Kenya** | Web Scraper | 75+ | ✅ Active |
+| **Kilimall** | Demo Data | 29 | ✅ Active |
+| **Masoko** | Demo Data | 30 | ✅ Active |
+
+---
+
+## Dashboard Features
+
+:::: {.columns}
+
+::: {.column width="50%"}
+**📊 Market Overview**
+
+- Total products tracked
+- Active deals count
+- Average prices by category
+- Platform distribution
+:::
+
+::: {.column width="50%"}
+**🔥 Deal Detection**
+
+- Top discounts (10%+ off)
+- Price drop alerts
+- Cross-platform comparison
+- Best time to buy
+:::
+
+::::
+
+:::: {.columns}
+
+::: {.column width="50%"}
+**📈 Price History**
+
+- 30-day price trends
+- Interactive charts
+- Trend analysis
+- Historical lows
+:::
+
+::: {.column width="50%"}
+**🔍 Product Search**
+
+- Filter by category
+- Filter by source
+- Price range slider
+- Deal-only view
+:::
+
+::::
+
+---
+
+## Tech Stack
+
+### Backend & Scraping
+
+```
+📦 Web Scraping
+├── Requests - HTTP client
+├── BeautifulSoup4 - HTML parsing
+└── Demo Data Generator - Guaranteed results
+
+📦 Data Processing
+├── Pandas - Data manipulation
+├── JSON - Storage format
+└── Python - Core language
+```
+
+### Dashboard & Visualization
+
+```
+📦 Frontend
+├── Streamlit - Web framework
+├── Plotly - Interactive charts
+└── Custom CSS - Kenya-themed styling
+
+📦 Deployment
+├── Streamlit Community Cloud
+├── GitHub Actions - Auto-updates
+└── GitHub - Version control
+```
+
+---
+
+## Categories Tracked
+
+:::: {.columns}
+
+::: {.column width="33%"}
+**💻 Laptops**
+
+- HP, Dell, Lenovo
+- ASUS, Acer
+- MacBook Air/Pro
+- Avg: KES 97,000
+:::
+
+::: {.column width="33%"}
+**📱 Smartphones**
+
+- Samsung Galaxy
+- iPhone
+- Xiaomi, OnePlus
+- Avg: KES 75,000
+:::
+
+::: {.column width="33%"}
+**📺 TVs**
+
+- Samsung, LG
+- Hisense, TCL
+- Sony Bravia
+- Avg: KES 73,000
+:::
+
+::::
+
+:::: {.columns}
+
+::: {.column width="33%"}
+**🎧 Audio**
+
+- AirPods
+- Galaxy Buds
+- Sony, JBL
+- Avg: KES 31,000
+:::
+
+::: {.column width="33%"}
+**⌚ Watches**
+
+- Apple Watch
+- Galaxy Watch
+- Garmin
+- Avg: KES 40,000
+:::
+
+::: {.column width="33%"}
+**📲 Tablets**
+
+- iPad
+- Galaxy Tab
+- Lenovo Tab
+- Avg: KES 36,000
+:::
+
+::::
+
+---
+
+## Impact
+
+::: {.stats-container}
+::: {.stat-card}
+<span class="stat-number">KES 5K+</span>
+<span class="stat-label">Potential Savings</span>
+:::
+
+::: {.stat-card}
+<span class="stat-number">20%</span>
+<span class="stat-label">Avg Deal Discount</span>
+:::
+
+::: {.stat-card}
+<span class="stat-number">3</span>
+<span class="stat-label">Platforms Unified</span>
+:::
+
+::: {.stat-card}
+<span class="stat-number">12h</span>
+<span class="stat-label">Update Frequency</span>
+:::
+:::
+
+---
+
+## Running Locally
+
+```bash
+# Clone the repository
+git clone https://github.com/gondamol/ecommerce-price-intelligence.git
+cd ecommerce-price-intelligence
+
+# Create virtual environment
+python3 -m venv venv
+source venv/bin/activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the scraper
+python3 scripts/scrape_prices.py
+
+# Start the dashboard
+streamlit run dashboard/app.py
+```
+
+---
+
+## Links
+
+::: {.success-box}
+### 🔗 Resources
+
+[**🚀 View Live Dashboard**](https://ecommerce-price-kenya.streamlit.app){.cta-button}
+[**📂 GitHub Repository**](https://github.com/gondamol/ecommerce-price-intelligence){.cta-button}
+[**📧 Contact Me**](mailto:nichodemuswerre@gmail.com){.cta-button}
+:::
+
+---
+
+## Related Projects
+
+- [Job Market Intelligence](../job-market-intelligence/) - Similar scraping architecture
+- [Healthcare Readmission Risk](../healthcare-readmission-risk/) - ML prediction pipeline
+- [Social Media Analytics](../social-media-analytics/) - Sentiment analysis
+
+---
+
+[← Back to Analytics Engineering](../)

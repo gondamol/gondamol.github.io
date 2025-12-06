@@ -8,7 +8,7 @@ A comprehensive dashboard that scrapes, analyzes, and visualizes job postings fr
 
 ## 🌐 Live Dashboard
 
-**[View Live Dashboard →](https://job-market-intelligence.streamlit.app)**
+**[View Live Dashboard →](https://data-analytics-jobs.streamlit.app)**
 
 ## 📊 Data Sources
 
