@@ -1,81 +1,390 @@
 ---
 title: "Job Market Intelligence Platform"
-subtitle: "Real-time job scraping + NLP + automated alerts"
+subtitle: "Real-time job scraping + NLP skill extraction + automated alerts for Kenya"
 page-layout: article
+toc: true
 ---
+
+::: {.hero-banner}
+# 🎯 Job Market Intelligence Platform
+
+A complete **data engineering pipeline** that scrapes job postings from multiple Kenyan job boards, extracts skills using NLP, and provides actionable market intelligence through interactive dashboards.
+:::
 
 ## Overview
 
-Automated platform that scrapes job postings from multiple boards, extracts key information using NLP, and sends intelligent alerts.
+### The Problem
+Job seekers in Kenya waste **20+ hours per week** manually searching LinkedIn, Indeed, Fuzu, BrighterMonday, and other platforms. There's no centralized way to:
 
-### Problem Solved
-Job seekers waste 20+ hours/week manually searching LinkedIn, Indeed, Glassdoor, and other platforms.
+- Track which skills are most in-demand
+- Compare salaries across companies and experience levels
+- Get instant alerts for matching opportunities
+- Understand market trends over time
 
-### Solution
-- **Hourly scraping** of 6+ job boards
-- **NLP skill extraction** from job descriptions
-- **Smart matching** based on your profile
-- **Instant alerts** via Telegram/Email
-- **Market intelligence** dashboard
+### The Solution
 
-## Tech Stack
+This platform automates the entire job discovery process:
 
-- **Backend:** Python (Scrapy, Selenium, BeautifulSoup)
-- **Database:** PostgreSQL (Heroku)
-- **NLP:** spaCy
-- **Dashboard:** Streamlit
-- **Orchestration:** Apache Airflow
-- **Notifications:** Telegram Bot API
-
-## Features
-
-### 1. Multi-Platform Scraping
-- LinkedIn
-- Indeed
-- Glassdoor
-- AngelList
-- Fuzu (Kenya)
-- BrighterMonday (Kenya)
-
-### 2. Intelligent Analysis
-- Skill extraction (Python, R, SQL, etc.)
-- Salary range identification
-- Experience level parsing
-- Company information enrichment
-
-### 3. Smart Alerts
-- Job matching based on your criteria
-- Telegram/Email notifications
-- Daily digest of new matches
-
-### 4. Market Dashboard
-- Job trends by skill
-- Salary insights
-- Geographic distribution
-- Application tracker
-
-## Live Demo
-
-🔨 **Status:** In Development
-
-**Coming Soon:**
-- Live Streamlit dashboard
-- Public API endpoint
-- Source code on GitHub
-
-## Impact
-
-**For Job Seekers:**
-- Save 15+ hours/week
-- Never miss relevant opportunities
-- Data-driven salary negotiations
-
-**Technical Showcase:**
-- Real-time data pipeline
-- NLP in production
-- Full-stack automation
+| Component | Technology | Status |
+|:---|:---|:---|
+| **Multi-Board Scraping** | Python (BeautifulSoup, Scrapy) | ✅ Ready |
+| **Database Storage** | PostgreSQL + SQLAlchemy | ✅ Ready |
+| **NLP Skill Extraction** | spaCy + regex patterns | ✅ Ready |
+| **Interactive Dashboard** | Streamlit + Plotly | ✅ Ready |
+| **Automated Alerts** | Telegram Bot API | 🔄 In Progress |
+| **Scheduling** | Apache Airflow / Cron | 🔄 In Progress |
 
 ---
 
-[Back to Analytics Engineering →](../)
+## Live Demo
 
+::: {.callout-tip}
+### 🚀 Try the Dashboard
+
+Run the demo dashboard locally with:
+
+```bash
+cd projects/analytics-engineering/job-market-intelligence
+pip install streamlit plotly pandas
+streamlit run dashboard/demo_app.py
+```
+:::
+
+### Dashboard Features
+
+:::: {.columns}
+
+::: {.column width="50%"}
+**📊 Market Overview**
+
+- Total active jobs across all sources
+- Average salary ranges by experience
+- Jobs posted this week
+- Companies actively hiring
+:::
+
+::: {.column width="50%"}
+**🛠️ Skills Analysis**
+
+- Top 20 in-demand skills
+- Skills by category (Programming, Cloud, ML/AI)
+- Skill trends over time
+- Experience requirements
+:::
+
+::::
+
+:::: {.columns}
+
+::: {.column width="50%"}
+**📍 Geographic Insights**
+
+- Jobs by city (Nairobi, Mombasa, Kisumu)
+- Remote vs. on-site distribution
+- Regional salary comparisons
+:::
+
+::: {.column width="50%"}
+**🔍 Job Search**
+
+- Filter by location, experience, source
+- Search by title, company, skills
+- Salary range visibility
+- Direct application links
+:::
+
+::::
+
+---
+
+## Tech Stack
+
+### Backend & Data Pipeline
+
+```
+📦 Web Scraping Layer
+├── BeautifulSoup4 - HTML parsing
+├── Scrapy - Advanced crawling (optional)
+├── Selenium - JavaScript-rendered pages
+└── Requests - HTTP client
+
+📦 Data Storage
+├── PostgreSQL - Primary database
+├── SQLAlchemy ORM - Object mapping
+└── JSON files - Demo/backup
+
+📦 NLP & Processing
+├── spaCy - Named entity recognition
+├── Regex patterns - Skill matching
+├── Pandas - Data transformation
+└── NumPy - Numerical operations
+```
+
+### Dashboard & Visualization
+
+```
+📦 Frontend
+├── Streamlit - Web framework
+├── Plotly - Interactive charts
+├── Altair - Statistical visualizations
+└── CSS - Kenyan-themed styling
+
+📦 Notifications
+├── python-telegram-bot - Telegram alerts
+├── SendGrid - Email notifications
+└── Schedule - Task scheduling
+```
+
+---
+
+## Data Sources
+
+| Platform | Region | API Available | Status |
+|:---|:---|:---|:---|
+| **Fuzu** | Kenya | ❌ Scraping only | ✅ Scraper ready |
+| **BrighterMonday** | East Africa | ❌ Scraping only | 🔄 In progress |
+| **Indeed Kenya** | Kenya | ✅ Publisher API | 🔄 Planned |
+| **LinkedIn** | Global | ⚠️ Limited | 🔄 Planned |
+| **Glassdoor** | Global | ⚠️ Limited | 🔄 Planned |
+
+---
+
+## Project Structure
+
+```
+job-market-intelligence/
+├── pipeline/
+│   ├── scrapers/
+│   │   ├── base_scraper.py      # Abstract base class
+│   │   ├── fuzu_scraper.py      # Fuzu.com Kenya
+│   │   ├── indeed_scraper.py    # Indeed (placeholder)
+│   │   └── __init__.py
+│   ├── database/
+│   │   ├── connection.py        # DB connection pool
+│   │   ├── models.py            # SQLAlchemy ORM models
+│   │   ├── schema.sql           # PostgreSQL schema
+│   │   └── __init__.py
+│   ├── nlp/
+│   │   ├── skill_extractor.py   # NLP skill extraction
+│   │   └── __init__.py
+│   ├── notifications/
+│   │   ├── telegram_bot.py      # Telegram alerts
+│   │   └── __init__.py
+│   ├── config.py                # Configuration
+│   └── requirements.txt         # Dependencies
+├── dashboard/
+│   ├── app.py                   # Production app (DB)
+│   └── demo_app.py              # Demo app (JSON files)
+├── scripts/
+│   ├── generate_demo_data.py    # Sample data generator
+│   ├── run_scrapers.py          # Execute scrapers
+│   ├── process_skills.py        # NLP processing
+│   └── setup_database.py        # DB initialization
+├── data/
+│   ├── raw/                     # Raw scraped data
+│   └── processed/               # Cleaned data + demo JSON
+├── outputs/
+│   ├── figures/                 # Charts for reports
+│   └── reports/                 # Generated reports
+└── index.qmd                    # This page
+```
+
+---
+
+## Skills Tracked
+
+The NLP module extracts and categorizes these skills from job descriptions:
+
+:::: {.columns}
+
+::: {.column width="33%"}
+**💻 Programming**
+
+- Python
+- R
+- SQL
+- JavaScript
+- Scala
+:::
+
+::: {.column width="33%"}
+**☁️ Cloud & Big Data**
+
+- AWS
+- Azure
+- GCP
+- Spark
+- Airflow
+:::
+
+::: {.column width="33%"}
+**🤖 ML/AI**
+
+- Machine Learning
+- Deep Learning
+- TensorFlow
+- scikit-learn
+- NLP
+:::
+
+::::
+
+:::: {.columns}
+
+::: {.column width="33%"}
+**📊 BI Tools**
+
+- Power BI
+- Tableau
+- Looker
+- Excel
+:::
+
+::: {.column width="33%"}
+**🗄️ Databases**
+
+- PostgreSQL
+- MySQL
+- MongoDB
+- Redis
+:::
+
+::: {.column width="33%"}
+**🔧 DevOps**
+
+- Docker
+- Kubernetes
+- Git
+- CI/CD
+:::
+
+::::
+
+---
+
+## Impact
+
+::: {.stats-container}
+::: {.stat-card}
+<span class="stat-number">15+</span>
+<span class="stat-label">Hours/Week Saved</span>
+:::
+
+::: {.stat-card}
+<span class="stat-number">5+</span>
+<span class="stat-label">Job Boards Unified</span>
+:::
+
+::: {.stat-card}
+<span class="stat-number">28</span>
+<span class="stat-label">Skills Tracked</span>
+:::
+
+::: {.stat-card}
+<span class="stat-number">150+</span>
+<span class="stat-label">Demo Jobs</span>
+:::
+:::
+
+---
+
+## Getting Started
+
+### 1. Clone & Install
+
+```bash
+git clone https://github.com/gondamol/gondamol.github.io.git
+cd projects/analytics-engineering/job-market-intelligence
+
+# Create virtual environment
+python3 -m venv venv
+source venv/bin/activate
+
+# Install dependencies
+pip install -r pipeline/requirements.txt
+```
+
+### 2. Generate Demo Data
+
+```bash
+python3 scripts/generate_demo_data.py
+```
+
+### 3. Run Dashboard
+
+```bash
+streamlit run dashboard/demo_app.py
+```
+
+### 4. (Optional) Set Up Database
+
+```bash
+# Create PostgreSQL database
+createdb job_market_db
+
+# Run schema
+psql job_market_db < pipeline/database/schema.sql
+
+# Configure environment
+cp .env.example .env
+# Edit .env with your database credentials
+```
+
+### 5. (Optional) Run Scrapers
+
+```bash
+python3 scripts/run_scrapers.py
+```
+
+---
+
+## Roadmap
+
+- [x] **Phase 1:** Database schema and ORM models
+- [x] **Phase 2:** Base scraper with rate limiting
+- [x] **Phase 3:** Fuzu Kenya scraper
+- [x] **Phase 4:** NLP skill extraction
+- [x] **Phase 5:** Streamlit dashboard
+- [x] **Phase 6:** Demo data generation
+- [ ] **Phase 7:** BrighterMonday scraper
+- [ ] **Phase 8:** Telegram notifications
+- [ ] **Phase 9:** Airflow scheduling
+- [ ] **Phase 10:** Deploy to cloud
+
+---
+
+## Technical Highlights
+
+::: {.callout-note}
+### 🔧 Key Engineering Decisions
+
+1. **Abstract Base Scraper:** All scrapers inherit from `BaseScraper`, ensuring consistent rate limiting, retry logic, and logging.
+
+2. **Hybrid NLP Approach:** Combines spaCy NER with regex patterns for higher skill extraction accuracy.
+
+3. **Database-Optional Dashboard:** The demo mode reads from JSON files, making it easy to showcase without PostgreSQL.
+
+4. **Kenyan Focus:** Specifically targets Kenyan job boards (Fuzu, BrighterMonday) with KES salary parsing and local company data.
+:::
+
+---
+
+## Related Projects
+
+- [E-commerce Price Tracker](../ecommerce-price-intelligence/) - Similar scraping architecture
+- [Healthcare Readmission Risk](../healthcare-readmission-risk/) - ML prediction pipeline
+- [Social Media Analytics](../social-media-analytics/) - Sentiment analysis
+
+---
+
+::: {.success-box}
+### 💼 Open Source
+
+This project is open source and available for learning and adaptation. Feel free to use the scraper architecture as a template for your own data pipelines.
+
+[View on GitHub](https://github.com/gondamol){.cta-button} [Contact Me](mailto:nichodemuswerre@gmail.com){.cta-button}
+:::
+
+---
+
+[← Back to Analytics Engineering](../)
