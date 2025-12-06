@@ -1,8 +1,7 @@
-# Environment
-.env
+# Virtual environment
 venv/
+.venv/
 env/
-ENV/
 
 # Python
 __pycache__/
@@ -10,18 +9,15 @@ __pycache__/
 *$py.class
 *.so
 .Python
-
-# Database
-*.db
-*.sqlite3
-
-# Logs
-*.log
-logs/
+build/
+dist/
+eggs/
+*.egg-info/
+*.egg
 
 # IDE
-.vscode/
 .idea/
+.vscode/
 *.swp
 *.swo
 
@@ -29,17 +25,23 @@ logs/
 .DS_Store
 Thumbs.db
 
-# Data files
-data/
-*.csv
-*.json
+# Logs
+logs/*.log
+*.log
+
+# Scraped data (too large for git, regenerated on demand)
+data/scraped/*.json
 
 # Temporary files
-tmp/
-temp/
+*.tmp
+*.temp
+.cache/
 
+# Selenium drivers
+*.chromedriver
+chromedriver*
 
-
-
-
-
+# Secrets (if any)
+.env
+*.env.local
+secrets.toml

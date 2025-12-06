@@ -1,0 +1,182 @@
+[
+  {
+    "name": "BI",
+    "category": "BI Tool",
+    "job_count": 146,
+    "percentage": 71.2
+  },
+  {
+    "name": "Git",
+    "category": "Other",
+    "job_count": 70,
+    "percentage": 34.1
+  },
+  {
+    "name": "Python",
+    "category": "Programming",
+    "job_count": 62,
+    "percentage": 30.2
+  },
+  {
+    "name": "SQL",
+    "category": "Programming",
+    "job_count": 53,
+    "percentage": 25.9
+  },
+  {
+    "name": "Excel",
+    "category": "Other",
+    "job_count": 52,
+    "percentage": 25.4
+  },
+  {
+    "name": "Scala",
+    "category": "Programming",
+    "job_count": 48,
+    "percentage": 23.4
+  },
+  {
+    "name": "Analytics",
+    "category": "Analytics",
+    "job_count": 45,
+    "percentage": 22.0
+  },
+  {
+    "name": "AWS",
+    "category": "Cloud",
+    "job_count": 34,
+    "percentage": 16.6
+  },
+  {
+    "name": "Java",
+    "category": "Programming",
+    "job_count": 28,
+    "percentage": 13.7
+  },
+  {
+    "name": "Dashboard",
+    "category": "BI Tool",
+    "job_count": 23,
+    "percentage": 11.2
+  },
+  {
+    "name": "JavaScript",
+    "category": "Programming",
+    "job_count": 18,
+    "percentage": 8.8
+  },
+  {
+    "name": "ETL",
+    "category": "Other",
+    "job_count": 18,
+    "percentage": 8.8
+  },
+  {
+    "name": "Data Science",
+    "category": "Other",
+    "job_count": 18,
+    "percentage": 8.8
+  },
+  {
+    "name": "Visualization",
+    "category": "Other",
+    "job_count": 17,
+    "percentage": 8.3
+  },
+  {
+    "name": "Statistics",
+    "category": "Analytics",
+    "job_count": 17,
+    "percentage": 8.3
+  },
+  {
+    "name": "Machine Learning",
+    "category": "ML/AI",
+    "job_count": 16,
+    "percentage": 7.8
+  },
+  {
+    "name": "Docker",
+    "category": "Other",
+    "job_count": 15,
+    "percentage": 7.3
+  },
+  {
+    "name": "Spark",
+    "category": "Other",
+    "job_count": 13,
+    "percentage": 6.3
+  },
+  {
+    "name": "Amazon Web Services",
+    "category": "Other",
+    "job_count": 13,
+    "percentage": 6.3
+  },
+  {
+    "name": "GCP",
+    "category": "Cloud",
+    "job_count": 12,
+    "percentage": 5.9
+  },
+  {
+    "name": "Tableau",
+    "category": "BI Tool",
+    "job_count": 11,
+    "percentage": 5.4
+  },
+  {
+    "name": "Azure",
+    "category": "Cloud",
+    "job_count": 10,
+    "percentage": 4.9
+  },
+  {
+    "name": "Power BI",
+    "category": "BI Tool",
+    "job_count": 10,
+    "percentage": 4.9
+  },
+  {
+    "name": "Snowflake",
+    "category": "Cloud",
+    "job_count": 10,
+    "percentage": 4.9
+  },
+  {
+    "name": "Data Analysis",
+    "category": "Analytics",
+    "job_count": 9,
+    "percentage": 4.4
+  },
+  {
+    "name": "TypeScript",
+    "category": "Other",
+    "job_count": 9,
+    "percentage": 4.4
+  },
+  {
+    "name": "Pandas",
+    "category": "Other",
+    "job_count": 8,
+    "percentage": 3.9
+  },
+  {
+    "name": "Apache Kafka",
+    "category": "Other",
+    "job_count": 8,
+    "percentage": 3.9
+  },
+  {
+    "name": "Business Intelligence",
+    "category": "Other",
+    "job_count": 7,
+    "percentage": 3.4
+  },
+  {
+    "name": "Kubernetes",
+    "category": "Other",
+    "job_count": 7,
+    "percentage": 3.4
+  }
+]

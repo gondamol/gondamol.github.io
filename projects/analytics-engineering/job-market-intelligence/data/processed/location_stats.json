@@ -1,0 +1,62 @@
+[
+  {
+    "location": "Europe",
+    "job_count": 52
+  },
+  {
+    "location": "",
+    "job_count": 32
+  },
+  {
+    "location": "USA",
+    "job_count": 18
+  },
+  {
+    "location": "Remote",
+    "job_count": 17
+  },
+  {
+    "location": "United States",
+    "job_count": 6
+  },
+  {
+    "location": "UK",
+    "job_count": 6
+  },
+  {
+    "location": "San Francisco",
+    "job_count": 4
+  },
+  {
+    "location": "Texas",
+    "job_count": 4
+  },
+  {
+    "location": "Canada",
+    "job_count": 4
+  },
+  {
+    "location": "Mexico",
+    "job_count": 4
+  },
+  {
+    "location": "New York",
+    "job_count": 3
+  },
+  {
+    "location": "US",
+    "job_count": 3
+  },
+  {
+    "location": "Munich",
+    "job_count": 3
+  },
+  {
+    "location": "Costa Rica",
+    "job_count": 3
+  },
+  {
+    "location": "CET +/- 3 HOURS",
+    "job_count": 2
+  }
+]

@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "name": "BI",
+    "category": "BI Tool"
+  },
+  {
+    "id": 2,
+    "name": "Git",
+    "category": "Other"
+  },
+  {
+    "id": 3,
+    "name": "Python",
+    "category": "Programming"
+  },
+  {
+    "id": 4,
+    "name": "SQL",
+    "category": "Programming"
+  },
+  {
+    "id": 5,
+    "name": "Excel",
+    "category": "Other"
+  },
+  {
+    "id": 6,
+    "name": "Scala",
+    "category": "Programming"
+  },
+  {
+    "id": 7,
+    "name": "Analytics",
+    "category": "Analytics"
+  },
+  {
+    "id": 8,
+    "name": "AWS",
+    "category": "Cloud"
+  },
+  {
+    "id": 9,
+    "name": "Java",
+    "category": "Programming"
+  },
+  {
+    "id": 10,
+    "name": "Dashboard",
+    "category": "BI Tool"
+  },
+  {
+    "id": 11,
+    "name": "JavaScript",
+    "category": "Programming"
+  },
+  {
+    "id": 12,
+    "name": "ETL",
+    "category": "Other"
+  },
+  {
+    "id": 13,
+    "name": "Data Science",
+    "category": "Other"
+  },
+  {
+    "id": 14,
+    "name": "Visualization",
+    "category": "Other"
+  },
+  {
+    "id": 15,
+    "name": "Statistics",
+    "category": "Analytics"
+  },
+  {
+    "id": 16,
+    "name": "Machine Learning",
+    "category": "ML/AI"
+  },
+  {
+    "id": 17,
+    "name": "Docker",
+    "category": "Other"
+  },
+  {
+    "id": 18,
+    "name": "Spark",
+    "category": "Other"
+  },
+  {
+    "id": 19,
+    "name": "Amazon Web Services",
+    "category": "Other"
+  },
+  {
+    "id": 20,
+    "name": "GCP",
+    "category": "Cloud"
+  },
+  {
+    "id": 21,
+    "name": "Tableau",
+    "category": "BI Tool"
+  },
+  {
+    "id": 22,
+    "name": "Azure",
+    "category": "Cloud"
+  },
+  {
+    "id": 23,
+    "name": "Power BI",
+    "category": "BI Tool"
+  },
+  {
+    "id": 24,
+    "name": "Snowflake",
+    "category": "Cloud"
+  },
+  {
+    "id": 25,
+    "name": "Data Analysis",
+    "category": "Analytics"
+  },
+  {
+    "id": 26,
+    "name": "TypeScript",
+    "category": "Other"
+  },
+  {
+    "id": 27,
+    "name": "Pandas",
+    "category": "Other"
+  },
+  {
+    "id": 28,
+    "name": "Apache Kafka",
+    "category": "Other"
+  },
+  {
+    "id": 29,
+    "name": "Business Intelligence",
+    "category": "Other"
+  },
+  {
+    "id": 30,
+    "name": "Kubernetes",
+    "category": "Other"
+  }
+]

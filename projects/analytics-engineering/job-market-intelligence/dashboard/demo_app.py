@@ -1,6 +1,6 @@
 """
 Streamlit Dashboard for Job Market Intelligence
-Demo Mode - Reads from JSON files (no database required)
+LIVE DATA - Real scraped jobs from multiple sources
 
 Run with: streamlit run dashboard/demo_app.py
 """
@@ -115,27 +115,29 @@ def load_data():
         return None
 
 
-def format_salary(amount: int) -> str:
+def format_salary(amount: int, currency: str = "USD") -> str:
     """Format salary with K suffix"""
+    if not amount:
+        return "N/A"
     if amount >= 1000000:
-        return f"KES {amount/1000000:.1f}M"
+        return f"${amount/1000000:.1f}M"
     elif amount >= 1000:
-        return f"KES {amount/1000:.0f}K"
-    return f"KES {amount:,}"
+        return f"${amount/1000:.0f}K"
+    return f"${amount:,}"
 
 
 def main():
     """Main dashboard function"""
     
     # Header
-    st.markdown('<p class="main-header">🎯 Kenya Job Market Intelligence</p>', unsafe_allow_html=True)
-    st.markdown('<p class="sub-header">Real-time Data Analytics Job Market Insights for Kenya</p>', unsafe_allow_html=True)
+    st.markdown('<p class="main-header">🎯 Data Analytics Job Market Intelligence</p>', unsafe_allow_html=True)
+    st.markdown('<p class="sub-header">Real-time Job Market Insights for Data Professionals</p>', unsafe_allow_html=True)
     
-    # Demo banner
+    # Live data banner
     st.markdown("""
     <div class="demo-banner">
-        📊 <strong>DEMO MODE</strong> - Displaying sample data generated for demonstration purposes. 
-        In production, this dashboard connects to live job scrapers.
+        🔴 <strong>LIVE DATA</strong> - Real jobs scraped from RemoteOK, Remotive, Arbeitnow, Jobicy & BrighterMonday.
+        Last updated: today
     </div>
     """, unsafe_allow_html=True)
     
@@ -179,11 +181,11 @@ def main():
         
         st.markdown("### 🎯 Data Sources")
         st.markdown("""
-        - Fuzu Kenya
+        - RemoteOK (API)
+        - Remotive (API)
+        - Arbeitnow (API)
+        - Jobicy (API)
         - BrighterMonday
-        - Indeed Kenya
-        - LinkedIn
-        - Glassdoor
         """)
     
     # Apply filters
@@ -408,7 +410,7 @@ def main():
             fig.update_layout(
                 barmode='group',
                 height=400,
-                yaxis_title='Salary (KES)',
+                yaxis_title='Salary (USD)',
                 legend={'orientation': 'h', 'y': 1.1}
             )
             st.plotly_chart(fig, use_container_width=True)
@@ -453,7 +455,7 @@ def main():
             'Experience': j['experience_level'],
             'Salary Range': f"{format_salary(j['salary_min'])} - {format_salary(j['salary_max'])}" if j.get('salary_min') else 'Not specified',
             'Source': j['source'].title(),
-            'Posted': j['posted_date'][:10] if j.get('posted_date') else 'N/A',
+            'Posted': str(j.get('posted_date', ''))[:10] if j.get('posted_date') else 'N/A',
             'Skills': ', '.join(j.get('skills', [])[:5]),
         }
         for j in display_jobs[:100]

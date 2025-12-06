@@ -1,204 +1,167 @@
-# 🎯 Job Market Intelligence Platform
+# 🎯 Job Market Intelligence Dashboard
 
-Automated job market intelligence platform that scrapes job postings from multiple boards, extracts insights using NLP, and provides intelligent alerts.
+> **Real-time Data Analytics Job Market Insights**
 
-## 🚀 Features
+A comprehensive dashboard that scrapes, analyzes, and visualizes job postings from multiple sources to provide actionable insights for data professionals.
 
-- **Multi-Source Scraping**: Indeed, Fuzu, Glassdoor, LinkedIn, BrighterMonday
-- **NLP Skill Extraction**: Automatic skill identification from job descriptions
-- **Smart Matching**: Intelligent job-user matching algorithm
-- **Real-time Alerts**: Telegram/Email notifications for relevant jobs
-- **Interactive Dashboard**: Streamlit dashboard with market insights
-- **RESTful API**: (Coming soon) Programmatic access to data
+![Dashboard Preview](assets/dashboard-preview.png)
 
-## 🏗️ Architecture
+## 🌐 Live Dashboard
 
-```
-job-market-intelligence/
-├── pipeline/              # Data pipeline
-│   ├── scrapers/         # Web scrapers for each source
-│   ├── nlp/              # Skill extraction using spaCy
-│   ├── matching/         # Job-user matching algorithm
-│   ├── notifications/    # Telegram/Email alerts
-│   └── database/         # PostgreSQL models & connection
-├── dashboard/            # Streamlit dashboard
-├── scripts/              # CLI tools
-└── tests/                # Unit tests
-```
+**[View Live Dashboard →](https://job-market-intelligence.streamlit.app)**
 
-## 📋 Prerequisites
+## 📊 Data Sources
 
-- Python 3.9+
-- PostgreSQL 14+
-- (Optional) Telegram Bot Token
-- (Optional) SendGrid API Key
+| Source | Type | Jobs |
+|--------|------|------|
+| RemoteOK | API | ~90+ |
+| Jobicy | API | ~50 |
+| Landing Jobs | API | ~50 |
+| Arbeitnow | API | ~10 |
+| Remotive | API | ~5 |
+| Himalayas | API | ~5 |
+| BrighterMonday | Scraper | Kenya-specific |
 
-## 🛠️ Installation
+**Total: 200+ real job postings updated regularly**
 
-### 1. Clone & Setup
+## ✨ Features
+
+### 📈 Market Overview
+- Total active job postings
+- Companies actively hiring
+- Average salary ranges (USD)
+- Skills demand tracking
+
+### 🛠️ Skills Analysis
+- Top 30 most in-demand skills
+- Skills by category (Programming, Cloud, ML/AI, BI Tools)
+- Percentage of jobs requiring each skill
+
+### 💼 Company Insights
+- Top hiring companies
+- Job distribution by company
+- Company-specific trends
+
+### 📍 Location Distribution
+- Geographic job distribution
+- Remote vs on-site opportunities
+- Regional market analysis
+
+### 💰 Salary Insights
+- Salary ranges by experience level
+- Industry salary benchmarks
+- Compensation trends
+
+### 🔍 Job Search
+- Filter by location, experience, source
+- Search by title, company, or skills
+- Direct links to apply
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Python 3.10+
+- pip
+
+### Local Installation
 
 ```bash
+# Clone the repository
+git clone https://github.com/gondamol/job-market-intelligence.git
 cd job-market-intelligence
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-pip install -r pipeline/requirements.txt
-```
 
-### 2. Download spaCy Model
+# Create virtual environment
+python3 -m venv venv
+source venv/bin/activate
 
-```bash
-python -m spacy download en_core_web_sm
-```
+# Install dependencies
+pip install -r requirements.txt
 
-### 3. Configure Environment
-
-```bash
-cp .env.example .env
-# Edit .env with your configuration
-```
-
-### 4. Setup Database
-
-```bash
-# Create PostgreSQL database
-createdb job_market_db
-
-# Run migrations
-python scripts/setup_database.py
-```
-
-## 🚀 Usage
-
-### Run Scrapers
-
-```bash
-# Run all enabled scrapers
-python scripts/run_scrapers.py
-
-# Run specific scraper
-python scripts/run_scrapers.py --source indeed
-```
-
-### Extract Skills
-
-```bash
-# Process all jobs
-python scripts/process_skills.py
-
-# Process limited number
-python scripts/process_skills.py --limit 100
-```
-
-### Run Job Matching
-
-```bash
-# Match jobs to users
-python scripts/run_matching.py --min-score 70
-```
-
-### Send Notifications
-
-```bash
-# Send daily digests
-python scripts/send_notifications.py --digest
-```
-
-### Launch Dashboard
-
-```bash
+# Run the dashboard
 streamlit run dashboard/app.py
 ```
 
-Dashboard will be available at http://localhost:8501
-
-## 🗄️ Database Schema
-
-Key tables:
-- `jobs`: Job postings
-- `companies`: Company information
-- `skills`: Skills master table
-- `job_skills`: Job-skill relationships
-- `user_profiles`: User preferences
-- `job_alerts`: Match alerts
-- `scraping_logs`: Scraper run logs
-
-## 🔄 Automation
-
-### Using Cron (Linux/Mac)
+### Running Scrapers
 
 ```bash
-# Edit crontab
-crontab -e
+# Activate virtual environment
+source venv/bin/activate
 
-# Run scrapers every hour
-0 * * * * cd /path/to/project && /path/to/venv/bin/python scripts/run_scrapers.py
+# Run all scrapers
+python3 scripts/run_all_scrapers.py
 
-# Extract skills every 2 hours
-0 */2 * * * cd /path/to/project && /path/to/venv/bin/python scripts/process_skills.py
-
-# Run matching every 3 hours
-0 */3 * * * cd /path/to/project && /path/to/venv/bin/python scripts/run_matching.py
-
-# Send digests daily at 8 AM
-0 8 * * * cd /path/to/project && /path/to/venv/bin/python scripts/send_notifications.py --digest
+# Update dashboard data
+python3 scripts/update_dashboard_data.py
 ```
 
-### Using Apache Airflow (Recommended for Production)
+## 📁 Project Structure
 
-See `airflow_dags/` directory for DAG examples.
+```
+job-market-intelligence/
+├── dashboard/
+│   ├── app.py              # Main Streamlit dashboard
+│   └── demo_app.py         # Development version
+├── scripts/
+│   ├── run_all_scrapers.py         # Master scraper script
+│   ├── scrape_all_sources.py       # Main API scrapers
+│   ├── scrape_additional_sources.py # Extra API scrapers
+│   ├── scrape_linkedin.py          # LinkedIn scraper (Selenium)
+│   ├── scrape_brightermonday.py    # Kenya job board scraper
+│   └── update_dashboard_data.py    # Dashboard data updater
+├── data/
+│   ├── processed/          # Dashboard-ready data
+│   └── scraped/            # Raw scraped data
+├── logs/                   # Scraper logs
+├── .streamlit/
+│   └── config.toml         # Streamlit configuration
+├── requirements.txt        # Python dependencies
+└── README.md
+```
 
-## 🐳 Docker Deployment
+## 🔧 Technology Stack
+
+| Category | Technology |
+|----------|------------|
+| **Frontend** | Streamlit, Plotly |
+| **Data** | Pandas, JSON |
+| **Scraping** | Requests, BeautifulSoup, Selenium |
+| **APIs** | RemoteOK, Remotive, Arbeitnow, Jobicy |
+| **Deployment** | Streamlit Community Cloud |
+
+## 📈 Key Insights
+
+Based on current data:
+
+- **Top Skills**: Python, SQL, R, Excel, Power BI, AWS
+- **Experience**: ~60% Senior roles, ~20% Mid-level, ~10% Entry
+- **Remote**: ~85% of positions are remote-friendly
+- **Industries**: Tech, Finance, Healthcare, Consulting
+
+## 🔄 Automated Updates
+
+The dashboard data is refreshed regularly via scheduled scrapers:
 
 ```bash
-# Build image
-docker build -t job-market-intelligence .
-
-# Run with Docker Compose
-docker-compose up -d
+# Set up cron job (every 6 hours)
+chmod +x scripts/setup_cron.sh
+./scripts/setup_cron.sh
 ```
-
-## 📊 Dashboard Features
-
-- **Real-time Metrics**: Active jobs, sources, salaries
-- **Interactive Charts**: Top locations, companies, skills
-- **Skill Analysis**: Most in-demand skills by category
-- **Job Browser**: Filter and search recent postings
-- **Market Trends**: Salary trends, hiring patterns
-
-## 🔒 Legal & Ethical Considerations
-
-- ✅ Respects robots.txt
-- ✅ Rate limiting (2s between requests)
-- ✅ Clear user-agent identification
-- ✅ Uses official APIs where available
-- ✅ No PII storage beyond user profiles
-- ✅ Complies with platform ToS
 
 ## 🤝 Contributing
 
-Contributions welcome! Areas for improvement:
-- Additional scrapers (Remote.co, Wellfound, etc.)
-- Machine learning for salary prediction
-- Browser extension for easy job tracking
-- Public API with authentication
+Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📝 License
 
-MIT License - See LICENSE file
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 👤 Author
 
-**Nicodemus Werre**
-- Portfolio: [gondamol.github.io](https://gondamol.github.io)
+**Nicodemus Werre Amollo**
+- Website: [gondamol.github.io](https://gondamol.github.io)
 - LinkedIn: [linkedin.com/in/amollow](https://linkedin.com/in/amollow)
 - Email: nichodemuswerre@gmail.com
 
 ---
 
-**Note**: This is an educational project demonstrating data engineering and analytics skills. Always ensure compliance with websites' Terms of Service when scraping.
-
-
-
-
-
-
+*Built with ❤️ using Streamlit and Python*
