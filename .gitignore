@@ -51,3 +51,11 @@ Thumbs.db
 # Temporary files
 *.tmp
 *.log
+
+**/*.quarto_ipynb
+
+# Windows attachment metadata
+*:Zone.Identifier
+
+# Local render support folders
+**/index_files/

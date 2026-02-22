@@ -1,376 +1,397 @@
 ---
-title: "Projects Portfolio"
-subtitle: "Real-world health data analytics, data management, and survey implementation projects"
+title: ""
 page-layout: full
-title-block-banner: true
+toc: false
 ---
 
-::: {.hero-banner}
-# 💼 Professional Projects Portfolio
-
-Showcasing 7+ years of impactful work in health data analytics, data management, and digital health solutions — with a special focus on health financial diaries, health economics, and rigorous impact evaluation.
-:::
-
-## **Project Categories**
-
-::: {.skills-grid}
-::: {.skill-category}
-### [🏥 Health Data Analytics](health-analytics.qmd)
-Real-world analytics projects driving health improvements:
-
-- NCD management dashboards
-- COVID-19 vaccination analysis
-- Maternal mortality prediction
-- TB contact tracing networks
-- Mental health service utilization
-
-**Impact:** 100K+ patients, 50+ facilities
-:::
-
-::: {.skill-category}
-### [🗄️ Data Management](data-management.qmd)
-Robust data systems for clinical trials and research:
-
-- Multi-site HIV treatment trials
-- Malaria vaccine efficacy studies
-- Longitudinal NCD cohorts
-- Disease surveillance platforms
-- Health information exchange
-
-**Impact:** 500K+ records, 99.5% data quality
-:::
-
-::: {.skill-category}
-### [🚀 Real-Time Analytics Engineering](analytics-engineering/) **NEW!**
-End-to-end automation projects solving real-world problems:
-
-- Job Market Intelligence (web scraping + NLP)
-- E-commerce Price Tracker (Jumia, Kilimall, Amazon)
-- Social Media Analytics (sentiment analysis)
-- Supply Chain Intelligence (logistics tracking)
-- Healthcare Readmission Risk (ML prediction)
-
-**Impact:** Live data pipelines, real users, automation at scale
-:::
-
-::: {.skill-category}
-### [🌾 Agriculture & Agribusiness](agriculture/)
-Data-driven agricultural investment analysis:
-
-- Goat farming economics (Homabay County)
-- Crop viability analysis (Ndhiwa)
-- Climate-resilient agriculture
-- Poultry farming economics
-- Food security analysis
-
-**Focus:** Evidence-based farming in Kenya
-:::
-
-::: {.skill-category}
-### [📋 Survey Tools](survey-tools.qmd)
-Electronic data capture system design and implementation:
-
-- National health facility assessments
-- Clinical trial databases (REDCap)
-- Community health worker apps
-- Emergency humanitarian assessments
-- Patient-reported outcomes systems
-
-**Impact:** 100+ surveys, 50K+ respondents
-:::
-
-::: {.skill-category}
-### [🏛️ Politics & Governance](politics-governance/index.qmd)
-Data and analytics on governance and public policy:
-
-- Elections and turnout
-- Government spending and budgets
-- Civic engagement & representation
-- Kenya focus with SSA comparisons
-
-**Impact:** Context breadth for policy analysis
-:::
-
-::: {.skill-category}
-### [📊 Dashboards](dashboards.qmd)
-Interactive visualizations for real-time decision making:
-
-- Facility performance monitoring
-- Disease surveillance systems
-- Clinical trial management
-- NCD patient tracking
-- Financial intelligence dashboards
-
-**Impact:** 500+ daily users, 70% time savings
-:::
-:::
-
----
-
-## **Featured Projects**
-
-::: {.tile-grid}
-::: {.tile-card}
-::: {.tile-card-header}
-### 🎓 MSc Thesis
-NCD Financing in Primary Care
-:::
-::: {.tile-body}
-30+ facilities, 500+ patients, dashboards & cost-effectiveness.
-
-[View Project →](../research/thesis.qmd){.tile-link}
-:::
-:::
-
-::: {.tile-card}
-::: {.tile-card-header}
-### 🔬 HIV Treatment Trial
-Senior Data Manager
-:::
-::: {.tile-body}
-1,200+ participants across 12 sites; 99.7% completeness.
-
-[Details →](data-management.qmd){.tile-link}
-:::
-:::
-
-::: {.tile-card}
-::: {.tile-card-header}
-### 📱 Facility Assessment
-National Health Facilities
-:::
-::: {.tile-body}
-500+ facilities, real-time QC, SurveyCTO workflows.
-
-[Details →](survey-tools.qmd){.tile-link}
-:::
-:::
-
-::: {.tile-card}
-::: {.tile-card-header}
-### 🗺️ Vaccination Equity
-Geospatial Analysis
-:::
-::: {.tile-body}
-Coverage gaps; 35% rural increase via targeted siting.
-
-[Details →](health-analytics.qmd){.tile-link}
-:::
-:::
-
-::: {.tile-card}
-::: {.tile-card-header}
-### 🎗️ Cancer Survival (KEMRI)
-KM, CIF, HR, LTFU
-:::
-::: {.tile-body}
-Esophageal & HIV-related cancers; interventions & insights.
-
-[View Analysis →](cancer-survival-analysis/index.qmd){.tile-link}
-:::
-:::
-:::
-
----
-
-## **Project Impact Summary**
-
-::: {.stats-container}
-::: {.stat-card}
-<span class="stat-number">50+</span>
-<span class="stat-label">Projects Completed</span>
-:::
-
-::: {.stat-card}
-<span class="stat-number">100K+</span>
-<span class="stat-label">Patients Impacted</span>
-:::
-
-::: {.stat-card}
-<span class="stat-number">500K+</span>
-<span class="stat-label">Records Managed</span>
-:::
-
-::: {.stat-card}
-<span class="stat-number">100+</span>
-<span class="stat-label">Facilities Served</span>
-:::
-:::
-
-::: {.stats-container}
-::: {.stat-card}
-<span class="stat-number">99.5%</span>
-<span class="stat-label">Average Data Quality</span>
-:::
-
-::: {.stat-card}
-<span class="stat-number">KES 20M+</span>
-<span class="stat-label">Cost Savings Identified</span>
-:::
-
-::: {.stat-card}
-<span class="stat-number">15+</span>
-<span class="stat-label">Policy Changes</span>
-:::
-
-::: {.stat-card}
-<span class="stat-number">500+</span>
-<span class="stat-label">People Trained</span>
-:::
-:::
-
----
-
-## **Technical Capabilities Demonstrated**
-
-### **Programming & Analysis**
-- **R:** Advanced data analysis, Shiny dashboards, package development
-- **Python:** Machine learning, automation, API development
-- **SQL:** Database design, complex queries, optimization
-- **Stata:** Statistical modeling, survey analysis
-
-### **Data Collection Platforms**
-- **REDCap:** 50+ databases designed for clinical trials
-- **SurveyCTO:** 30+ field surveys implemented
-- **KoboCollect:** 20+ humanitarian assessments
-- **CommCare:** 5+ CHW programs
-
-### **Visualization Tools**
-- **R Shiny:** 15+ production dashboards
-- **Tableau:** Business intelligence dashboards
-- **ggplot2/plotly:** Publication-quality graphics
-- **Leaflet/QGIS:** Geospatial visualizations
-
----
-
-## **Why These Projects Matter**
-
-::: {.highlight-box}
-### 🎯 Real-World Impact
-
-Every project in this portfolio has:
-
-✅ **Measurable Impact** - Improved health outcomes, cost savings, or efficiency gains  
-✅ **Scalable Solutions** - Designed for replication in other settings  
-✅ **Rigorous Methods** - Evidence-based approaches and best practices  
-✅ **Stakeholder Value** - Actionable insights for decision-makers  
-✅ **Knowledge Sharing** - Documentation and training materials  
-✅ **Social Media Ready** - Stories worth sharing to inspire others
-:::
-
----
-
-## **Open Science Commitment**
-
-I believe in **open, reproducible, and transparent research**. Where possible, projects include:
-
-- 📖 **Open Code** - GitHub repositories with documented code
-- 📊 **Open Data** - Anonymized datasets in public repositories
-- 📝 **Open Methods** - Detailed methodology documentation
-- 🎓 **Open Education** - Training materials freely available
-
----
-
-## **Sector Experience**
-
-::: {.skills-grid}
-::: {.skill-category}
-### 🏥 Health Focus Areas
-
-- HIV/AIDS
-- Tuberculosis
-- Malaria
-- Non-communicable diseases
-- Maternal & child health
-- Mental health
-- COVID-19 response
-:::
-
-::: {.skill-category}
-### 📋 Study Types
-
-- Clinical trials (Phases I-IV)
-- Cohort studies
-- Cross-sectional surveys
-- Health facility assessments
-- Program evaluation
-- Surveillance systems
-:::
-
-::: {.skill-category}
-### 🌍 Geographic Experience
-
-- Kenya (primary)
-- Uganda
-- Tanzania
-- Rwanda
-- Multi-country projects
-:::
-
-::: {.skill-category}
-### 🤝 Collaborations
-
-- Academic institutions
-- Government health departments
-- International NGOs
-- Research networks
-- Private sector partners
-:::
-:::
-
----
-
-## **Testimonials**
-
-::: {.info-box}
-> "Nichodemus's data management was exemplary. His attention to detail and proactive approach to quality control were key to our trial's success. Zero critical audit findings across 24 monitoring visits speaks volumes."
-
-— **Principal Investigator, Phase III Clinical Trial**
-
-> "The dashboard Nichodemus developed transformed how we monitor facility performance. What used to take 2 weeks now takes 5 minutes, and the insights are actionable immediately."
-
-— **County Health Management Team**
-
-> "His ability to design user-friendly survey tools that work in challenging field conditions is unmatched. The SurveyCTO system he built for our assessment was flawless."
-
-— **Project Director, Health Facility Assessment**
-:::
-
----
-
-## **Available for New Projects**
-
-I'm currently **accepting consulting and contract opportunities** in:
-
-✅ Health data analytics and visualization  
-✅ Clinical trial data management  
-✅ Survey design and implementation (REDCap, SurveyCTO)  
-✅ Dashboard development (R Shiny, Tableau)  
-✅ Data management system setup  
-✅ Training and capacity building  
-
-**Remote work:** Proven track record of successful remote collaboration
-
----
-
-::: {.success-box}
-### 💼 Let's Collaborate!
-
-Whether you need a senior data manager for a clinical trial, expertise in survey design, or advanced analytics capabilities, I'm ready to contribute to your team's success.
-
-[Contact Me](mailto:nichodemuswerre@gmail.com){.cta-button} [Download CV](../cv/index.qmd){.cta-button} [View Skills](../skills/index.qmd){.cta-button}
-:::
-
----
-
-## **Legacy Projects**
-
-View additional projects and analyses:
-
-- [Tidy Tuesday Analyses](../tidy-tuesday/index.qmd) - Weekly data visualization challenges
-- [Blog Posts](../blogs/index.qmd) - Technical tutorials and insights
-- [GitHub Repositories](https://github.com/gondamol) - Open-source code and tools
-
----
-
-[Back to Home →](../index.qmd)
+```{=html}
+<div class="section-pad">
+<div class="section-inner">
+  <span class="section-eyebrow">Portfolio</span>
+  <h1 class="section-h" style="font-size:clamp(2.4rem,4vw,3.4rem);margin-top:0.5rem;margin-bottom:0.8rem;">
+    Projects &amp; Case Studies
+  </h1>
+  <p class="section-sub">
+    Real work across six SDG domains. Public health, agriculture, finance, education, environment,
+    and governance. Each project reflects field experience or original analysis.
+  </p>
+
+  <!-- Global filter -->
+  <div class="proj-filters" role="tablist" aria-label="Filter projects by domain" style="margin-bottom:3rem;">
+    <button class="proj-filter active" data-filter="all" role="tab" aria-selected="true">All</button>
+    <button class="proj-filter" data-filter="health" role="tab" aria-selected="false">Public Health</button>
+    <button class="proj-filter" data-filter="agriculture" role="tab" aria-selected="false">Agriculture</button>
+    <button class="proj-filter" data-filter="finance" role="tab" aria-selected="false">Finance</button>
+    <button class="proj-filter" data-filter="analytics" role="tab" aria-selected="false">Analytics</button>
+  </div>
+
+  <!-- ─── HEALTH & M&E ────────────────────── -->
+  <div class="proj-section-header" style="margin-bottom:1.2rem;">
+    <span class="section-eyebrow" style="margin-bottom:0;">Public Health &amp; M&amp;E</span>
+  </div>
+  <div class="project-grid allProjects" style="margin-bottom:5rem;">
+
+    <a href="../research/thesis.qmd" class="proj-card proj-featured" data-category="health">
+      <div class="proj-thumb" style="background:#1a2e1a;">
+        <div class="proj-thumb-pattern" style="--dot:#ffffff10;"></div>
+        <img src="../img/professor nyongo launching the dashboard.jpeg"
+             alt="Professor Nyongo launching the Kisumu health dashboard"
+             style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.5;"
+             onerror="this.remove()">
+        <span class="proj-icon proj-icon-hero">📈</span>
+      </div>
+      <div class="proj-body">
+        <p class="proj-domain" style="color:#7fbf7f;">MSc Research · Kisumu County · Georgetown gui2de</p>
+        <h3 class="proj-title">Financial Determinants of NCD Management in Primary Health Facilities</h3>
+        <p class="proj-desc">Mixed methods study across 7 public primary care facilities in Seme Sub County examining how facility financing architecture shapes continuity of hypertension and diabetes care.</p>
+
+        <div class="proj-thesis-plot" aria-label="Manuscript facility findings plot">
+          <p class="proj-thesis-plot-title">Manuscript data snapshot from 7 facilities</p>
+          <div class="proj-thesis-bars">
+            <div class="proj-thesis-bar" data-value="85.7">
+              <div class="proj-thesis-head">
+                <span class="proj-thesis-label">Frequent medicine stockouts</span>
+                <span class="proj-thesis-value">85.7%</span>
+              </div>
+              <div class="proj-thesis-track"><span class="proj-thesis-fill"></span></div>
+            </div>
+            <div class="proj-thesis-bar" data-value="100">
+              <div class="proj-thesis-head">
+                <span class="proj-thesis-label">Facilities without direct spending autonomy</span>
+                <span class="proj-thesis-value">100%</span>
+              </div>
+              <div class="proj-thesis-track"><span class="proj-thesis-fill"></span></div>
+            </div>
+            <div class="proj-thesis-bar" data-value="28.6">
+              <div class="proj-thesis-head">
+                <span class="proj-thesis-label">Facilities receiving direct county funding</span>
+                <span class="proj-thesis-value">28.6%</span>
+              </div>
+              <div class="proj-thesis-track"><span class="proj-thesis-fill"></span></div>
+            </div>
+            <div class="proj-thesis-bar" data-value="0">
+              <div class="proj-thesis-head">
+                <span class="proj-thesis-label">Facilities with dedicated NCD budget line</span>
+                <span class="proj-thesis-value">0%</span>
+              </div>
+              <div class="proj-thesis-track"><span class="proj-thesis-fill"></span></div>
+            </div>
+          </div>
+        </div>
+        <div class="proj-footer">
+          <span class="proj-tags"><span>Manuscript data</span><span>Mixed methods</span><span>Health financing</span><span>Primary care</span></span>
+          <span class="proj-arrow">Read case study →</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="../tidy-tuesday/2024-maternal-mortality.qmd" class="proj-card proj-half" data-category="health">
+      <div class="proj-thumb" style="background:#1e2a1e;height:180px;">
+        <div class="proj-thumb-pattern" style="--dot:#ffffff0d;"></div>
+        <span class="proj-icon">📉</span>
+      </div>
+      <div class="proj-body">
+        <p class="proj-domain" style="color:#7fbf7f;">Maternal Health · SDG 3</p>
+        <h3 class="proj-title">Maternal Mortality Trends in Sub-Saharan Africa</h3>
+        <p class="proj-desc">Multi-country analysis of maternal mortality ratios using WHO data, with difference-in-differences modelling and publication-quality visualisations.</p>
+        <div class="proj-footer">
+          <span class="proj-tags"><span>R</span><span>ggplot2</span><span>DiD</span></span>
+          <span class="proj-arrow">View →</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="../posts/kisumu-cancer-dashboard/index.qmd" class="proj-card proj-half" data-category="health">
+      <div class="proj-thumb" style="background:#2a1a1a;height:180px;">
+        <div class="proj-thumb-pattern" style="--dot:#ffffff0d;"></div>
+        <span class="proj-icon">🧬</span>
+      </div>
+      <div class="proj-body">
+        <p class="proj-domain" style="color:#e07f7f;">Oncology · KEMRI</p>
+        <h3 class="proj-title">Cancer Surveillance Dashboard in Kisumu</h3>
+        <p class="proj-desc">Epidemiological analysis of cancer incidence data from the KEMRI Oncology Registry, with interactive Power BI dashboard and trend analysis.</p>
+        <div class="proj-footer">
+          <span class="proj-tags"><span>Power BI</span><span>R</span><span>Epidemiology</span></span>
+          <span class="proj-arrow">View →</span>
+        </div>
+      </div>
+    </a>
+
+    <div class="proj-card proj-half" data-category="health">
+      <div class="proj-thumb" style="background:#183222;height:180px;">
+        <div class="proj-thumb-pattern" style="--dot:#ffffff0d;"></div>
+        <span class="proj-icon">📊</span>
+      </div>
+      <div class="proj-body">
+        <p class="proj-domain" style="color:#7fbf7f;">MEL Systems · USAID reporting context</p>
+        <h3 class="proj-title">MEL Framework for Multi Site Health Programmes</h3>
+        <p class="proj-desc">Designed indicator trees, data quality checks, and reporting schedules for complex health programmes. Supported alignment between field operations, donor metrics, and learning agendas.</p>
+        <div class="proj-footer">
+          <span class="proj-tags"><span>MEL</span><span>Indicator design</span><span>QA</span></span>
+          <span class="proj-arrow">Case brief</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="proj-card proj-half" data-category="health">
+      <div class="proj-thumb" style="background:#2b1d1d;height:180px;">
+        <div class="proj-thumb-pattern" style="--dot:#ffffff0d;"></div>
+        <span class="proj-icon">💊</span>
+      </div>
+      <div class="proj-body">
+        <p class="proj-domain" style="color:#e07f7f;">Health Economics · Georgetown gui2de</p>
+        <h3 class="proj-title">Health Financing Impact Evaluation</h3>
+        <p class="proj-desc">Built panel data workflows and quasi experimental analyses for health financing and household expenditure studies. Integrated dashboards and quarterly evidence products for program decisions.</p>
+        <div class="proj-footer">
+          <span class="proj-tags"><span>DiD</span><span>Panel data</span><span>Policy reporting</span></span>
+          <span class="proj-arrow">Case brief</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ─── AGRICULTURE ──────────────────────── -->
+  <div class="proj-section-header" style="margin-bottom:1.2rem;">
+    <span class="section-eyebrow" style="margin-bottom:0;">Agriculture &amp; Food Security</span>
+  </div>
+  <div class="project-grid allProjects" style="margin-bottom:5rem;">
+
+    <a href="../posts/agriculture-data-analysis/index.qmd" class="proj-card proj-featured" data-category="agriculture">
+      <div class="proj-thumb" style="background:#2a1e08;">
+        <div class="proj-thumb-pattern" style="--dot:#ffffff10;"></div>
+        <img src="../img/goats drinking near goat pen, digging water pan in the background.jpeg"
+             alt="Goats at the farm — small-ruminant production in Homa Bay"
+             style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.55;"
+             onerror="this.remove()">
+        <span class="proj-icon proj-icon-hero">🌾</span>
+      </div>
+      <div class="proj-body">
+        <p class="proj-domain" style="color:#d4a84b;">Agricultural Economics · Homa Bay County · SDG 2</p>
+        <h3 class="proj-title">Goat Farming Economics: Small-Ruminant Production Systems</h3>
+        <p class="proj-desc">Field-collected profitability analysis of small-ruminant production in Homa Bay. Combines cost data from smallholder farmers with market price modelling to produce practical decision tools for extension services.</p>
+        <div class="proj-footer">
+          <span class="proj-tags"><span>R</span><span>Economic modelling</span><span>Field data</span></span>
+          <span class="proj-arrow">View case study →</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="../tidy-tuesday/food-security.qmd" class="proj-card proj-half" data-category="agriculture">
+      <div class="proj-thumb" style="background:#1a2a10;height:180px;">
+        <div class="proj-thumb-pattern" style="--dot:#ffffff0d;"></div>
+        <span class="proj-icon">🌽</span>
+      </div>
+      <div class="proj-body">
+        <p class="proj-domain" style="color:#a8c87f;">Food Security · SDG 2</p>
+        <h3 class="proj-title">Food Security Analysis in East Africa</h3>
+        <p class="proj-desc">Regional food security trends using FAO and household survey data. Vulnerability mapping and seasonal analysis.</p>
+        <div class="proj-footer">
+          <span class="proj-tags"><span>R</span><span>FAO data</span><span>Mapping</span></span>
+          <span class="proj-arrow">View →</span>
+        </div>
+      </div>
+    </a>
+
+    <div class="proj-card proj-half" data-category="agriculture">
+      <div class="proj-thumb" style="background:#2a2a12;height:180px;">
+        <div class="proj-thumb-pattern" style="--dot:#ffffff0d;"></div>
+        <span class="proj-icon">🚜</span>
+      </div>
+      <div class="proj-body">
+        <p class="proj-domain" style="color:#a8c87f;">Agri logistics · Input systems</p>
+        <h3 class="proj-title">Agricultural Supply Chain Analytics</h3>
+        <p class="proj-desc">Mapped fertilizer and seed distribution workflows, modeled delivery delays, and designed monitoring views for stock movement and last mile access in rural counties.</p>
+        <div class="proj-footer">
+          <span class="proj-tags"><span>Supply chain</span><span>Forecasting</span><span>Logistics</span></span>
+          <span class="proj-arrow">Case brief</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ─── FINANCE & ECONOMICS ─────────────── -->
+  <div class="proj-section-header" style="margin-bottom:1.2rem;">
+    <span class="section-eyebrow" style="margin-bottom:0;">Finance &amp; Economics</span>
+  </div>
+  <div class="project-grid allProjects" style="margin-bottom:5rem;">
+
+    <a href="../tidy-tuesday/financial-inclusion.qmd" class="proj-card proj-half" data-category="finance">
+      <div class="proj-thumb" style="background:#0d1a2e;height:200px;">
+        <div class="proj-thumb-pattern" style="--dot:#ffffff10;"></div>
+        <span class="proj-icon">💳</span>
+      </div>
+      <div class="proj-body">
+        <p class="proj-domain" style="color:#6fa8dc;">Financial Inclusion · SDG 10</p>
+        <h3 class="proj-title">Mobile Money, Banking Access and Health Outcomes</h3>
+        <p class="proj-desc">Correlation analysis linking mobile money penetration, formal banking access, and health expenditure patterns across Sub-Saharan Africa using World Bank and GSMA datasets.</p>
+        <div class="proj-footer">
+          <span class="proj-tags"><span>Python</span><span>Plotly</span><span>Regression</span></span>
+          <span class="proj-arrow">View →</span>
+        </div>
+      </div>
+    </a>
+
+    <div class="proj-card proj-half" data-category="finance">
+      <div class="proj-thumb" style="background:#162037;height:200px;">
+        <div class="proj-thumb-pattern" style="--dot:#ffffff10;"></div>
+        <span class="proj-icon">🏢</span>
+      </div>
+      <div class="proj-body">
+        <p class="proj-domain" style="color:#6fa8dc;">Urban economics · Nairobi</p>
+        <h3 class="proj-title">Nairobi Real Estate Dashboard</h3>
+        <p class="proj-desc">Developed exploratory real estate analytics with neighborhood segmentation, trend decomposition, and valuation support indicators for investor and planning teams.</p>
+        <div class="proj-footer">
+          <span class="proj-tags"><span>Spatial analysis</span><span>Power BI</span><span>Valuation</span></span>
+          <span class="proj-arrow">Case brief</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="proj-card proj-half" data-category="finance">
+      <div class="proj-thumb" style="background:#10243c;height:200px;">
+        <div class="proj-thumb-pattern" style="--dot:#ffffff10;"></div>
+        <span class="proj-icon">🏦</span>
+      </div>
+      <div class="proj-body">
+        <p class="proj-domain" style="color:#6fa8dc;">Household finance · Longitudinal data</p>
+        <h3 class="proj-title">Financial Diaries Analytics</h3>
+        <p class="proj-desc">Built analysis pipelines for high frequency household diaries, with volatility indicators, coping strategy tracking, and policy focused summaries for social protection design.</p>
+        <div class="proj-footer">
+          <span class="proj-tags"><span>Panel data</span><span>R</span><span>Policy briefs</span></span>
+          <span class="proj-arrow">Case brief</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ─── SUPPLY CHAIN & ANALYTICS ENGINEERING -->
+  <div class="proj-section-header" style="margin-bottom:1.2rem;">
+    <span class="section-eyebrow" style="margin-bottom:0;">Supply Chain &amp; Analytics Engineering</span>
+  </div>
+  <div class="project-grid allProjects" style="margin-bottom:2rem;">
+
+    <div class="proj-card proj-half" data-category="analytics">
+      <div class="proj-thumb" style="background:#162233;height:180px;">
+        <div class="proj-thumb-pattern" style="--dot:#ffffff10;"></div>
+        <span class="proj-icon">🔗</span>
+      </div>
+      <div class="proj-body">
+        <p class="proj-domain" style="color:#8cb5d9;">Operations intelligence · Tatu City</p>
+        <h3 class="proj-title">Supply Chain Intelligence for Tatu City Operations</h3>
+        <p class="proj-desc">Defined data model requirements for shipment visibility, stock accuracy, and service level tracking across procurement and delivery stages.</p>
+        <div class="proj-footer">
+          <span class="proj-tags"><span>SQL</span><span>Dashboards</span><span>Operations</span></span>
+          <span class="proj-arrow">Case brief</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="proj-card proj-half" data-category="analytics">
+      <div class="proj-thumb" style="background:#1d1f2b;height:180px;">
+        <div class="proj-thumb-pattern" style="--dot:#ffffff10;"></div>
+        <span class="proj-icon">🗄️</span>
+      </div>
+      <div class="proj-body">
+        <p class="proj-domain" style="color:#8cb5d9;">Data engineering · Multi country RCT</p>
+        <h3 class="proj-title">Research Data Engineering Pipeline</h3>
+        <p class="proj-desc">Architected a reproducible pipeline for cleaning, harmonization, and dashboard outputs using SQL, R, and automated validation layers across multiple countries.</p>
+        <div class="proj-footer">
+          <span class="proj-tags"><span>PostgreSQL</span><span>ETL</span><span>QA</span></span>
+          <span class="proj-arrow">Case brief</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="proj-card proj-half" data-category="analytics">
+      <div class="proj-thumb" style="background:#1a2533;height:180px;">
+        <div class="proj-thumb-pattern" style="--dot:#ffffff10;"></div>
+        <span class="proj-icon">📡</span>
+      </div>
+      <div class="proj-body">
+        <p class="proj-domain" style="color:#8cb5d9;">Health information systems · DHIS2</p>
+        <h3 class="proj-title">DHIS2 Integration and Reporting Automation</h3>
+        <p class="proj-desc">Designed a reporting workflow that joins DHIS2 extracts with field operations data for faster indicator reporting, exception monitoring, and partner dashboards.</p>
+        <div class="proj-footer">
+          <span class="proj-tags"><span>DHIS2</span><span>Automation</span><span>Monitoring</span></span>
+          <span class="proj-arrow">Case brief</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+</div>
+
+<script>
+(function() {
+  var filters = document.querySelectorAll('.proj-filter');
+  var allGrids = document.querySelectorAll('.allProjects');
+  var chartFills = document.querySelectorAll('.proj-thesis-fill');
+
+  function animateThesisPlot() {
+    chartFills.forEach(function(fill) {
+      var parent = fill.closest('.proj-thesis-bar');
+      if (!parent) return;
+      var value = Number(parent.dataset.value || 0);
+      fill.style.width = Math.max(0, Math.min(100, value)) + '%';
+    });
+  }
+
+  if (chartFills.length) {
+    if ('IntersectionObserver' in window) {
+      var chart = document.querySelector('.proj-thesis-plot');
+      if (chart) {
+        var seen = false;
+        var observer = new IntersectionObserver(function(entries) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting && !seen) {
+              seen = true;
+              animateThesisPlot();
+            }
+          });
+        }, {threshold: 0.25});
+        observer.observe(chart);
+      } else {
+        animateThesisPlot();
+      }
+    } else {
+      animateThesisPlot();
+    }
+  }
+
+  filters.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      filters.forEach(function(b) {
+        b.classList.remove('active');
+        b.setAttribute('aria-selected', 'false');
+      });
+      this.classList.add('active');
+      this.setAttribute('aria-selected', 'true');
+
+      var f = this.dataset.filter;
+
+      allGrids.forEach(function(grid) {
+        var cards = grid.querySelectorAll('[data-category]');
+        var anyVisible = false;
+        cards.forEach(function(card) {
+          var show = f === 'all' || card.dataset.category === f;
+          card.style.opacity = show ? '1' : '0.14';
+          card.style.transform = show ? '' : 'scale(0.97)';
+          card.style.pointerEvents = show ? '' : 'none';
+          if (show) anyVisible = true;
+        });
+        grid.style.display = anyVisible ? '' : 'none';
+        var header = grid.previousElementSibling;
+        if (header && header.classList.contains('proj-section-header')) {
+          header.style.display = anyVisible ? '' : 'none';
+        }
+      });
+    });
+  });
+})();
+</script>
+```

@@ -49,7 +49,7 @@ Coming soon:
 - Input cost-benefit analysis
 - Crop calendar optimization
 
-**Status**: In Development
+**Status**: Active scoping
 
 ---
 

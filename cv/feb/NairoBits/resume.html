@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nichodemus Werre Amollo - MEL Specialist Resume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;700&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #0F172A;
+            /* Slate 900 */
+            --secondary-color: #0EA5E9;
+            /* Sky 500 */
+            --accent-color: #10B981;
+            /* Emerald 500 */
+            --text-color: #334155;
+            /* Slate 700 */
+            --light-bg: #F8FAFC;
+            /* Slate 50 */
+            --white: #FFFFFF;
+            --border-color: #E2E8F0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--light-bg);
+            color: var(--text-color);
+            line-height: 1.6;
+            font-size: 14px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            background: var(--white);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            border-radius: 8px;
+            overflow: hidden;
+            display: grid;
+            grid-template-columns: 300px 1fr;
+        }
+
+        /* Sidebar Styles */
+        .sidebar {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 40px 30px;
+        }
+
+        .profile-img-container {
+            width: 120px;
+            height: 120px;
+            background-color: var(--secondary-color);
+            border-radius: 50%;
+            margin: 0 auto 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            font-weight: bold;
+            color: var(--white);
+            border: 4px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .contact-info {
+            margin-bottom: 40px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            font-size: 13px;
+        }
+
+        .contact-item svg {
+            margin-right: 10px;
+            width: 16px;
+            height: 16px;
+            stroke: var(--secondary-color);
+        }
+
+        .contact-item a {
+            color: var(--white);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .contact-item a:hover {
+            color: var(--secondary-color);
+        }
+
+        .sidebar-section {
+            margin-bottom: 40px;
+        }
+
+        .sidebar-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            color: var(--secondary-color);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 10px;
+        }
+
+        .skill-group {
+            margin-bottom: 20px;
+        }
+
+        .skill-group-title {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #CBD5E1;
+        }
+
+        .skill-tag {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+
+        .education-item {
+            margin-bottom: 20px;
+        }
+
+        .degree {
+            font-weight: 600;
+            font-size: 14px;
+            display: block;
+        }
+
+        .school {
+            font-size: 13px;
+            color: #94A3B8;
+            display: block;
+        }
+
+        .year {
+            font-size: 12px;
+            color: #64748B;
+        }
+
+        /* Main Content Styles */
+        .main-content {
+            padding: 50px;
+        }
+
+        .header {
+            margin-bottom: 40px;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 30px;
+        }
+
+        .name {
+            font-family: 'Outfit', sans-serif;
+            font-size: 36px;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            line-height: 1.2;
+        }
+
+        .title {
+            font-size: 18px;
+            color: var(--secondary-color);
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .section-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 20px;
+            color: var(--primary-color);
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+        }
+
+        .section-title::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--border-color);
+            margin-left: 15px;
+        }
+
+        .summary {
+            margin-bottom: 40px;
+            color: var(--text-color);
+            font-size: 15px;
+        }
+
+        .experience-item {
+            margin-bottom: 35px;
+            position: relative;
+            padding-left: 20px;
+            border-left: 2px solid var(--border-color);
+        }
+
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 8px;
+        }
+
+        .role {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        .company {
+            font-weight: 500;
+            color: var(--secondary-color);
+        }
+
+        .date {
+            font-size: 13px;
+            color: #64748B;
+            font-weight: 500;
+        }
+
+        .experience-details ul {
+            list-style-type: none;
+        }
+
+        .experience-details li {
+            margin-bottom: 8px;
+            position: relative;
+            padding-left: 15px;
+            font-size: 14px;
+        }
+
+        .experience-details li::before {
+            content: "•";
+            color: var(--accent-color);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        @media print {
+            body {
+                background: white;
+                -webkit-print-color-adjust: exact;
+            }
+
+            .container {
+                box-shadow: none;
+                margin: 0;
+                width: 100%;
+                max-width: none;
+            }
+
+            .sidebar {
+                -webkit-print-color-adjust: exact;
+                background-color: var(--primary-color) !important;
+                color: white !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="sidebar">
+            <div class="profile-img-container">
+                NA
+            </div>
+
+            <div class="contact-info">
+                <div class="contact-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                    </svg>
+                    <span>+254 725 737 867</span>
+                </div>
+                <div class="contact-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                    <a href="mailto:nichodemuswerre@gmail.com">nichodemuswerre@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                    <span>Nairobi, Kenya</span>
+                </div>
+                <div class="contact-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                    <a href="https://linkedin.com/in/nichodemusamollo" target="_blank">LinkedIn Profile</a>
+                </div>
+                <div class="contact-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                    </svg>
+                    <a href="https://gondamol.github.io/cv/" target="_blank">Portfolio</a>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">Education</h3>
+                <div class="education-item">
+                    <span class="degree">MSc Statistics & Data Science</span>
+                    <span class="school">JOOUST</span>
+                    <span class="year">Expected 2026</span>
+                </div>
+                <div class="education-item">
+                    <span class="degree">Grad Cert, Social Impact Analytics</span>
+                    <span class="school">Univ. of San Francisco</span>
+                    <span class="year">2025</span>
+                </div>
+                <div class="education-item">
+                    <span class="degree">BSc Statistics</span>
+                    <span class="school">Maseno University</span>
+                    <span class="year">2016</span>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">Expertise</h3>
+
+                <div class="skill-group">
+                    <div class="skill-group-title">M&E Frameworks</div>
+                    <div>
+                        <span class="skill-tag">Logframes</span>
+                        <span class="skill-tag">ToC</span>
+                        <span class="skill-tag">KPIs</span>
+                        <span class="skill-tag">Result Frameworks</span>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <div class="skill-group-title">Data Collection</div>
+                    <div>
+                        <span class="skill-tag">ODK</span>
+                        <span class="skill-tag">SurveyCTO</span>
+                        <span class="skill-tag">KoboToolbox</span>
+                        <span class="skill-tag">Mobile Surveys</span>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <div class="skill-group-title">Analytics & Tools</div>
+                    <div>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">R</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">Stata</span>
+                        <span class="skill-tag">Tableau</span>
+                        <span class="skill-tag">PowerBI</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">Certifications</h3>
+                <div class="education-item">
+                    <span class="degree">Project Management</span>
+                    <span class="school">Google, 2024</span>
+                </div>
+                <div class="education-item">
+                    <span class="degree">Research Methodology</span>
+                    <span class="school">Johns Hopkins, 2024</span>
+                </div>
+                <div class="education-item">
+                    <span class="degree">Adv. Data Analysis</span>
+                    <span class="school">DataCamp, 2025</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="header">
+                <h1 class="name">NICHODEMUS WERRE AMOLLO</h1>
+                <div class="title">Monitoring, Evaluation & Learning (MEL) Specialist</div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">Professional Summary</h2>
+                <p class="summary">
+                    Results-oriented MEL Specialist with over 8 years of experience designing and executing robust
+                    monitoring, evaluation, and learning frameworks for impactful development programs. Expert in
+                    harnessing advanced data analytics to drive strategic decision-making, optimize program performance,
+                    and demonstrate tangible impact. Adept at managing complex data collection systems, building staff
+                    capacity, and producing high-quality donor reports. Committed to leveraging evidence-based insights
+                    to empower underserved communities and advance digital inclusion.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">Professional Experience</h2>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <div class="role">Lead Research Data Scientist & MEL Specialist</div>
+                            <div class="company">Georgetown University (gui2de)</div>
+                        </div>
+                        <div class="date">2023 – Present</div>
+                    </div>
+                    <div class="experience-details">
+                        <ul>
+                            <li><strong>M&E Systems Design:</strong> Architected and implemented a high-frequency M&E
+                                system ("Financial Diaries") tracking economic resilience indicators for 1,000+
+                                households, ensuring timely and accurate data capture for programmatic decision-making.
+                            </li>
+                            <li><strong>Data Quality Assurance:</strong> Developed and operationalized comprehensive
+                                data quality protocols, reducing data discrepancies by 30% and ensuring full compliance
+                                with rigorous donor requirements.</li>
+                            <li><strong>Impact Reporting:</strong> Synthesized complex quantitative data into actionable
+                                insights for program leadership, directly influencing the revision of intervention
+                                strategies to better target vulnerable populations.</li>
+                            <li><strong>Strategic Support:</strong> Provided critical data inputs for quarterly donor
+                                reports, demonstrating program impact and identifying areas for course correction.</li>
+                            <li><strong>Capacity Building:</strong> Mentored a team of 5 junior analysts in data
+                                management best practices, escalating their proficiency in handling large-scale
+                                datasets.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <div class="role">Senior Research Data Scientist (M&E Lead)</div>
+                            <div class="company">KEMRI (Medical Research Institute)</div>
+                        </div>
+                        <div class="date">2020 – 2023</div>
+                    </div>
+                    <div class="experience-details">
+                        <ul>
+                            <li><strong>Innovative Monitoring Tools:</strong> Spearheaded the design of an "Early
+                                Warning System" that functioned as a real-time monitoring tool for health interventions,
+                                significantly reducing response times from 2 weeks to 3 days.</li>
+                            <li><strong>Cross-Functional Coordination:</strong> Coordinated with field teams to
+                                harmonize data collection tools across multiple project sites, ensuring consistency,
+                                reliability, and validity of performance data.</li>
+                            <li><strong>Reporting & Communication:</strong> Produced comprehensive impact reports for
+                                international stakeholders, detailing program achievements, challenges, and lessons
+                                learned to inform future programming.</li>
+                            <li><strong>Data Utilization:</strong> Conducted regular data audits and feedback sessions
+                                with field staff to improve data collection standards and foster a culture of
+                                data-driven decision-making.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <div class="role">Evaluation Lead</div>
+                            <div class="company">LERIS Hub</div>
+                        </div>
+                        <div class="date">2017 – 2020</div>
+                    </div>
+                    <div class="experience-details">
+                        <ul>
+                            <li><strong>Program Evaluation:</strong> Led the monitoring and evaluation of youth
+                                empowerment programs, overseeing the design and execution of baseline, mid-term, and
+                                end-line surveys.</li>
+                            <li><strong>Inclusive Data Collection:</strong> Implemented "Offline-First" mobile data
+                                collection systems to reach marginalized rural populations, increasing data coverage by
+                                25% and ensuring inclusivity in program impact assessment.</li>
+                            <li><strong>Donor Reporting:</strong> Authored detailed narrative and statistical reports
+                                for donor submissions, highlighting the program's success in increasing digital literacy
+                                among rural youth.</li>
+                            <li><strong>Capacity Building:</strong> Facilitated M&E workshops for program staff,
+                                enhancing their capacity to utilize data for adaptive management and program
+                                improvement.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

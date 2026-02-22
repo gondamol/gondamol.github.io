@@ -229,7 +229,7 @@ Transforming health data into actionable insights for improved patient outcomes
 ::: {.project-card}
 ::: {.project-header}
 #### 🧠 Understanding Barriers to Mental Health Care
-**Status:** Completed | **Impact:** Service redesign in progress | **Social Media Ready:** ✅
+**Status:** Completed | **Impact:** Service redesign underway | **Social Media Ready:** ✅
 :::
 
 ::: {.project-body}
@@ -299,7 +299,7 @@ Policy Changes{.stat-label}
 ## **Upcoming Projects**
 
 ::: {.highlight-box}
-### 🚀 In Development
+### 🚀 Active Roadmap
 
 **1. Antibiotic Resistance Surveillance Dashboard**
 - Real-time tracking of AMR patterns across 20 hospitals

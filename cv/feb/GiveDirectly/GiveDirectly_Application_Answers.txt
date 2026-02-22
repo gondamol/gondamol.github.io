@@ -1,0 +1,30 @@
+**Why are you interested in this role at GiveDirectly? (200 words max)**
+
+I am interested in this role because I am living proof of GiveDirectly’s thesis: **Cash is the benchmark.** 
+
+Years ago, my family was a beneficiary of a cash transfer program. I saw firsthand that when you give people cash, you don't just solve a temporary hunger gap—you give them the dignity of choice. That transfer allowed us to prioritize *our* specific needs in a way no pre-packaged aid shipment ever could.
+
+Now, as a Data Scientist, I am frustrated by the "evidence-free interventions" that still dominate the sector. I have spent 8 years building data systems for health and agriculture programs, often seeing resources wasted on "training" or "inputs" that farmers didn't want. 
+
+I want to join GiveDirectly because you are unapologetically data-driven and radically efficient. I want to apply my skills in **Causal Inference** and **Crisis Targeting** to the Emergency Cash team, ensuring that when a drought or flood hits, we don't just react—we respond with precision, delivering the same agency to thousands of others that was once delivered to my family.
+
+--------------------------------------------------------------------------------
+
+**Describe an analysis product you developed to inform a humanitarian program design or operational decision. What was your approach and how was it used? What were the major challenges or tradeoffs? (300 words max)**
+
+**The Product: The "Volatility Vulnerability" Index**
+
+**Context:** While leading the "Health Financial Diaries" project (Georgetown University), we needed to identify households in rural Kenya that were vulnerable to health shocks. Traditional targeting (Asset Indices) failed because many families had assets (e.g., a cow) but zero liquidity—meaning a $10 medical bill could force them to sell the cow, trapping them in poverty.
+
+**Approach:**
+I developed a new targeting metric: **"The Liquidity Volatility Score."**
+1.  **Data Source:** I architected a high-frequency ODK system where 1,000+ households reported *daily* cash flows for 6 months, not just monthly averages.
+2.  **Analysis:** I used Python to calculate the coefficient of variation (CV) of daily net cash flow for each household. 
+3.  **Visualization:** I built an R-Shiny dashboard that mapped households not by "wealth," but by "financial instability."
+
+**Use:**
+The product revealed that 30% of "non-poor" households (by asset standards) had extreme volatility scores. Operational leaders used this list to target a new **"Emergency Health Wallet"** pilot product specifically to this "invisible middle" group, rather than the traditional poorest-of-the-poor.
+
+**Challenges & Tradeoffs:**
+*   **Tradeoff (Precision vs. Cost):** Collecting daily data is expensive and causes respondent fatigue. I had to trade off sample size for data depth. To mitigate this, I used the heavy data to train a "proxy model" (Random Forest) that could predict Volatility Scores using just 10 simple questions, allowing us to scale the targeting to 10,000+ people without the daily burden.
+*   **Challenge:** Explaining "Cash Flow Volatility" to non-technical stakeholders was hard. I solved this by visualizing "Availability Heatmaps"—showing the specific days of the month a family had $0, which made the vulnerability visceral and actionable.

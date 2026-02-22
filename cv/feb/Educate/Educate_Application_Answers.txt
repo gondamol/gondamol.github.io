@@ -1,0 +1,40 @@
+To the Educate! Hiring Team, 
+
+Please find below my answers to the application questions.
+
+------------------------------------------------------------------------------------------------
+**Q1: When you start a new data project, what do you do before you look at the data? Can you walk me through your approach with a real example?**
+
+**Answer:**
+
+Before I ever touch a dataset or write a single line of SQL, I start by defining the **"Causal Framework"** and aligning on the **"Theory of Change."** Data without a theoretical scaffold is just noise; to turn it into evidence, we must first understand the mechanism we are trying to measure.
+
+My approach follows three steps: **(1) Interrogate the "Why"**, **(2) Map the Causal Logic (DAGs)**, and **(3) Define Hypothesis-Led Features.**
+
+**Real World Example:**
+While leading the "Health Financial Diaries" project at Georgetown University’s evaluation hub, we were tasked with understanding why low-income households weren't purchasing health insurance despite having adequate income. Check-box logic suggested "affordability" was the issue, but I paused the data collection to first map the *behavioral* theory. 
+
+1.  **Interrogate:** I held workshops with field officers to understand the "financial life" of a user. We realized income wasn't a monthly paycheck; it was volatile, daily, and shock-prone.
+2.  **Map:** I drew a Causal Directed Acyclic Graph (DAG) that hypothesized that *liquidity timing mismatch*—not total income—was the blocker. 
+3.  **Define:** Instead of just collecting "monthly income" (the standard variable), I designed the data architecture to capture "daily cash flow variance" and "shock frequency." 
+
+By doing this *before* looking at the data, we built a dataset capable of proving that households *could* afford insurance, but only if payments matched their daily cash flow. This insight led to a "pay-as-you-go" product pilot that increased uptake by 40%.
+
+------------------------------------------------------------------------------------------------
+**Q2: Tell me about a time your analysis changed how a program, product, or policy was actually designed or delivered — not just reported on. What happened?**
+
+**Answer:**
+
+A core tenet of my work is moving beyond "average treatment effects" to understand **heterogeneity**—finding out for *whom* a program works and *why*. I once saved a youth skills program from being scrapped by proving it needed a pivot, not a cancellation.
+
+**The Situation:**
+At LERIS Hub, I was evaluating a youth ag-tech skilling program. The aggregate "Average Treatment Effect" analysis showed a null result: generally, youth incomes weren't increasing significantly compared to the control group. The recommendation on the table was to sunset the program.
+
+**The Analysis:**
+I refused to stop at the average. I performed a heterogeneity analysis using interaction terms (Gender x Location x Digital Literacy). I discovered a "crossover" effect: Urban male youth were succeeding wildly, but rural female youth were actually *losing* money because the cost of travel to internet cafes (to access the digital curriculum) outweighed their potential gains. The "average" of these two groups was zero, hiding the success of one and the failure of the other.
+
+**The Action (Pivot):**
+I presented these findings not as a failure report, but as a design challenge. I recommended unbundling the product: keeping the digital-first model for urban centers but pivoting the rural model to an **offline-first, SMS-based curriculum** that eliminated travel costs.
+
+**The Result:**
+Program leadership accepted the recommendation. Six months after the pivot, the rural cohort's ROI turned positive (+15% income), and the program was renewed for another 2-year cycle. My analysis didn't just report on the past; it architected the future of the product.

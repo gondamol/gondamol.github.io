@@ -1,618 +1,194 @@
 ---
-title: "About Me"
-subtitle: "A Journey of Resilience, Vision & Impact"
+title: ""
 page-layout: article
-format:
-  html:
-    linestretch: 1.7
-    css: about-animations.css
-    include-after-body: _includes/aos-vis.html
+toc: false
 ---
 
-::: {.hero-banner style="position: relative; z-index: 1;"}
-# **<i class="fas fa-mountain" aria-hidden="true"></i> Resilience to Impact: A Data-Driven Journey**
+```{=html}
+<div style="padding:5rem 0 3.5rem 0;">
+  <span class="section-eyebrow">About Me</span>
+  <h1 class="section-h" style="font-size:clamp(2.4rem,4vw,3.6rem);margin-top:0.5rem;margin-bottom:0;">From the field<br>to the boardroom.</h1>
+</div>
+```
 
-<div class="about-hero-quote" data-aos="fade-up" data-aos-delay="200">
-“Just as a blazing fire makes flame and brightness out of everything that is thrown into it.” — Marcus Aurelius<br>
-From rural Kenya to global health data science, I turn obstacles into fuel for service.
+::: {.columns}
+::: {.column width="58%"}
+
+My name is **Nichodemus Amollo**. I grew up near Lake Victoria in Homa Bay, Western Kenya, where I learned to pay attention — to the weather, to the lake, to what people say and what they don't. That instinct has served me well in data work.
+
+I started at **KEMRI** managing oncology data. It taught me something that no methods course quite captures: data quality is a moral act. Every row is a person waiting for a diagnosis. That sense of responsibility has traveled with me into every job since.
+
+Over eight years I have worked across the full research lifecycle — designing digital survey tools for communities without internet, building the SQL databases that receive the data, leading field teams of 50+ across three countries, and delivering the reports and dashboards that move funders and governments. I currently work with **Georgetown University gui2de** on health financial diaries and impact evaluations. I am also a part-time lecturer in Biostatistics at JOOUST and a candidate for an MSc in Biostatistics and Epidemiology.
+
+What makes me useful is that I can operate at both ends. I can sit with a community health worker and explain why data completeness matters. Then walk into a boardroom and present the findings. That translation — between the field and the funder — is where I work best.
+
+Outside of data: I keep goats and tend a kitchen garden in Homa Bay. There is something honest about agriculture — it keeps development work grounded in reality. I also love football, running, and long conversations over tea that go further than they were supposed to.
+
+:::
+::: {.column width="4%"}
+:::
+::: {.column width="38%"}
+
+```{=html}
+<div style="background:var(--warm);padding:1.8rem;border:1px solid var(--border);margin-bottom:1.2rem;">
+  <p style="font-size:0.65rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);margin-bottom:0.9rem;">Currently</p>
+  <div style="margin-bottom:0.75rem;">
+    <p style="font-size:0.88rem;font-weight:500;color:var(--ink);margin:0 0 0.1rem;">Research Data Manager</p>
+    <p style="font-size:0.78rem;color:var(--muted);margin:0;">Georgetown University gui2de · Remote</p>
+  </div>
+  <div style="margin-bottom:0.75rem;">
+    <p style="font-size:0.88rem;font-weight:500;color:var(--ink);margin:0 0 0.1rem;">MSc Candidate — Biostatistics &amp; Epidemiology</p>
+    <p style="font-size:0.78rem;color:var(--muted);margin:0;">JOOUST · Kenya</p>
+  </div>
+  <div>
+    <p style="font-size:0.88rem;font-weight:500;color:var(--ink);margin:0 0 0.1rem;">Part-Time Lecturer — Biostatistics</p>
+    <p style="font-size:0.78rem;color:var(--muted);margin:0;">JOOUST</p>
+  </div>
 </div>
 
-::: {.social-links .hero-social-links}
-[<i class="fab fa-linkedin"></i> LinkedIn](https://linkedin.com/in/amollow){.btn .btn-primary}
-[<i class="fab fa-github"></i> GitHub](https://github.com/gondamol){.btn .btn-primary}
-[<i class="fab fa-twitter"></i> Twitter](https://twitter.com/nwerre){.btn .btn-primary}
-[<i class="fab fa-kaggle"></i> Kaggle](https://kaggle.com/nwerre){.btn .btn-primary}
-[<i class="fas fa-envelope"></i> Email](mailto:nichodemuswerre@gmail.com){.btn .btn-primary}
-:::
-:::
-
----
-
-## **<i class="fas fa-user-circle"></i> Who I Am**
-
-::: {.profile-card data-aos="fade-up"}
-I am a **Research Data Manager and Data Scientist** specializing in **Health Financial Diaries, Data Analysis, Machine Learning, and Outcomes & Impact Evaluation**. With **8+ years of progressive experience**, I conduct research on the **livelihood and financial behavior of low-income households**, combining expertise in **health economics** with advanced data science to drive evidence-based decision-making for multi-million dollar international projects.
-
-My career combines **end-to-end data management**, **advanced statistical analysis**, **rigorous M&E frameworks**, **field operations leadership**, and **capacity building**. Currently with **Georgetown University gui2de** conducting RCTs and impact evaluations, I specialize in transforming complex data into actionable insights that drive program success and policy change.
-
-**What makes me different:** I've led the complete project lifecycle—from designing M&E frameworks and training field teams of 50+ enumerators, to conducting high-frequency checks (HFCs) in R & Stata, to delivering compelling donor reports. With **Washington University M&E Certification** (2025) and 3 published papers, I bring both academic rigor and practical field experience.
-:::
-
----
-
-## **<i class="fas fa-seedling"></i> My Journey: The Story of Resilience**
-
-### **Interactive Journey Timeline**
-
-<div id="journey-timeline-viz" style="height: 600px; border: 1px solid #e0e0e0; border-radius: 12px; margin: 2rem 0; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);" data-aos="fade-up" data-aos-duration="1000"></div>
-
-<script src="https://unpkg.com/vis-timeline@latest/standalone/umd/vis-timeline-graph2d.min.js"></script>
-<script>
-  var journeyItems = new vis.DataSet([
-    {id: 1, content: '<div style="text-align: left;"><strong><i class="fas fa-baby"></i> The Beginning</strong><br><small>Orphaned in Rural Kenya</small></div>', start: '1990-01-01', group: 'personal', className: 'journey-personal'},
-    {id: 2, content: '<div style="text-align: left;"><strong><i class="fas fa-book"></i> Education</strong><br><small>Top Quartile Achievement</small></div>', start: '2000-01-01', end: '2014-12-31', group: 'education', className: 'journey-education'},
-    {id: 3, content: '<div style="text-align: left;"><strong><i class="fas fa-briefcase"></i> KEMRI</strong><br><small>Data Analyst</small></div>', start: '2015-06-01', end: '2017-12-31', group: 'work', className: 'journey-work'},
-    {id: 4, content: '<div style="text-align: left;"><strong><i class="fas fa-users"></i> LERIS Hub</strong><br><small>M&E Specialist</small></div>', start: '2017-01-01', end: '2019-12-31', group: 'work', className: 'journey-work'},
-    {id: 5, content: '<div style="text-align: left;"><strong><i class="fas fa-chart-line"></i> Georgetown</strong><br><small>Research Data Manager</small></div>', start: '2020-01-01', group: 'work', className: 'journey-work'},
-    {id: 6, content: '<div style="text-align: left;"><strong><i class="fas fa-graduation-cap"></i> MSc Studies</strong><br><small>Biostatistics & Epidemiology</small></div>', start: '2022-01-01', end: '2025-12-31', group: 'education', className: 'journey-education'},
-    {id: 7, content: '<div style="text-align: left;"><strong><i class="fas fa-trophy"></i> 500+ Trained</strong><br><small>Capacity Building</small></div>', start: '2019-06-01', group: 'achievement', className: 'journey-achievement', type: 'point'},
-    {id: 8, content: '<div style="text-align: left;"><strong><i class="fas fa-file-alt"></i> 3 Publications</strong><br><small>Research Impact</small></div>', start: '2021-03-01', group: 'achievement', className: 'journey-achievement', type: 'point'}
-  ]);
-
-  var journeyGroups = new vis.DataSet([
-    {id: 'personal', content: '<i class="fas fa-heart"></i> Personal Journey', className: 'timeline-group-personal'},
-    {id: 'education', content: '<i class="fas fa-graduation-cap"></i> Education', className: 'timeline-group-education'},
-    {id: 'work', content: '<i class="fas fa-briefcase"></i> Professional', className: 'timeline-group-work'},
-    {id: 'achievement', content: '<i class="fas fa-trophy"></i> Achievements', className: 'timeline-group-achievement'}
-  ]);
-
-  var journeyOptions = {
-    width: '100%',
-    height: '100%',
-    margin: {item: 20},
-    orientation: 'top',
-    showCurrentTime: false,
-    zoomMin: 1000 * 60 * 60 * 24 * 365,
-    zoomMax: 1000 * 60 * 60 * 24 * 365 * 40,
-    start: '1990-01-01',
-    end: '2026-01-01',
-    editable: false,
-    selectable: true
-  };
-
-  var journeyContainer = document.getElementById('journey-timeline-viz');
-  var journeyTimeline = new vis.Timeline(journeyContainer, journeyItems, journeyGroups, journeyOptions);
-</script>
-
-<link href="https://unpkg.com/vis-timeline@latest/styles/vis-timeline-graph2d.min.css" rel="stylesheet" type="text/css" />
-
----
-
-## **<i class="fas fa-gem"></i> What Adversity Taught Me**
-
-::: {.resilience-grid}
-::: {.flip-card data-aos="zoom-in" data-aos-delay="100"}
-<div class="flip-card-inner">
-<div class="flip-card-front">
-<div class="resilience-icon"><i class="fas fa-fist-raised"></i></div>
-<h3>Resilience</h3>
+<div style="background:#fff;padding:1.8rem;border:1px solid var(--border);margin-bottom:1.2rem;">
+  <p style="font-size:0.65rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);margin-bottom:0.9rem;">At a Glance</p>
+  <div style="font-size:0.83rem;color:var(--text);display:flex;flex-direction:column;gap:0.6rem;">
+    <div>📍 Nairobi, Kenya. Open to remote and on-site.</div>
+    <div>🗣️ English, Kiswahili, Dholuo</div>
+    <div>🏛️ NGO · Corporate · Research · Government</div>
+    <div>🎓 MSc Thesis: NCD financing, Kisumu County</div>
+    <div>📝 3 co-authored publications (oncology, epidemiology)</div>
+  </div>
 </div>
-<div class="flip-card-back">
-<h3><i class="fas fa-fist-raised"></i> Resilience</h3>
-<p>Loss instilled an unshakeable drive to create lasting impact. Every challenge became fuel for my passion.</p>
-</div>
-</div>
-:::
 
-::: {.flip-card data-aos="zoom-in" data-aos-delay="200"}
-<div class="flip-card-inner">
-<div class="flip-card-front">
-<div class="resilience-icon"><i class="fas fa-lightbulb"></i></div>
-<h3>Resourcefulness</h3>
+<div style="background:#fff;padding:1.8rem;border:1px solid var(--border);">
+  <p style="font-size:0.65rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);margin-bottom:0.9rem;">Outside Work</p>
+  <div style="font-size:0.83rem;color:var(--text);display:flex;flex-direction:column;gap:0.45rem;">
+    <div>🐐 Goat farming — Homa Bay County</div>
+    <div>⚽ Football — watching and playing</div>
+    <div>🏃 Running &amp; fitness</div>
+    <div>📚 Agricultural economics &amp; development</div>
+    <div>🌍 Open governance &amp; civic data</div>
+  </div>
 </div>
-<div class="flip-card-back">
-<h3><i class="fas fa-lightbulb"></i> Resourcefulness</h3>
-<p>Scarcity sharpened my problem-solving and innovation skills. I learned to find solutions where others see obstacles.</p>
-</div>
-</div>
-:::
+```
 
-::: {.flip-card data-aos="zoom-in" data-aos-delay="300"}
-<div class="flip-card-inner">
-<div class="flip-card-front">
-<div class="resilience-icon"><i class="fas fa-heart"></i></div>
-<h3>Empathy</h3>
-</div>
-<div class="flip-card-back">
-<h3><i class="fas fa-heart"></i> Empathy</h3>
-<p>Personal struggles deepened my commitment to health equity. I understand what it means to overcome barriers.</p>
-</div>
-</div>
-:::
-
-::: {.flip-card data-aos="zoom-in" data-aos-delay="400"}
-<div class="flip-card-inner">
-<div class="flip-card-front">
-<div class="resilience-icon"><i class="fas fa-hands-helping"></i></div>
-<h3>Gratitude</h3>
-</div>
-<div class="flip-card-back">
-<h3><i class="fas fa-hands-helping"></i> Gratitude</h3>
-<p>Mentors' support fueled my passion for capacity building. Now I pay it forward by training 500+ researchers.</p>
-</div>
-</div>
-:::
-
-::: {.flip-card data-aos="zoom-in" data-aos-delay="500"}
-<div class="flip-card-inner">
-<div class="flip-card-front">
-<div class="resilience-icon"><i class="fas fa-users"></i></div>
-<h3>Team Spirit</h3>
-</div>
-<div class="flip-card-back">
-<h3><i class="fas fa-users"></i> Team Spirit</h3>
-<p>Community taught me that collaboration multiplies impact. Together, we achieve more than we could alone.</p>
-</div>
-</div>
-:::
-:::
-
-::: {.vision-box data-aos="fade-up"}
-**<i class="fas fa-quote-left"></i> I believe data can change lives—and I've dedicated my career to proving it. <i class="fas fa-quote-right"></i>**
-:::
-
----
-
-## **<i class="fas fa-trophy"></i> Career Highlights**
-
-::: {.highlights-container}
-::: {.highlight-card data-aos="slide-up" data-aos-delay="100"}
-<div class="highlight-number"><i class="fas fa-university"></i></div>
-### Georgetown University gui2de
-Leading RCTs and impact evaluations for health/development programs
-:::
-
-::: {.highlight-card data-aos="slide-up" data-aos-delay="200"}
-<div class="highlight-number"><i class="fas fa-hospital"></i></div>
-### KEMRI
-Transformed oncology data into policy-driving cancer epidemiology dashboards
-:::
-
-::: {.highlight-card data-aos="slide-up" data-aos-delay="300"}
-<div class="highlight-number"><i class="fas fa-sitemap"></i></div>
-### LERIS Hub
-Built M&E frameworks for 8 health programs, led consultancies
-:::
-
-::: {.highlight-card data-aos="slide-up" data-aos-delay="400"}
-<div class="highlight-number"><i class="fas fa-globe-africa"></i></div>
-### Multi-Country Projects
-Coordinated data across Kenya, Uganda, Tanzania (1,535+ sites)
-:::
-
-::: {.highlight-card data-aos="slide-up" data-aos-delay="500"}
-<div class="highlight-number"><i class="fas fa-user-graduate"></i></div>
-### 500+ Researchers Trained
-Capacity building in R, Stata, M&E, data management
-:::
-
-::: {.highlight-card data-aos="slide-up" data-aos-delay="600"}
-<div class="highlight-number"><i class="fas fa-file-alt"></i></div>
-### 3 Publications
-Cancer epidemiology (data manager & analyst)
-:::
-
-::: {.highlight-card data-aos="slide-up" data-aos-delay="700"}
-<div class="highlight-number"><i class="fas fa-dollar-sign"></i></div>
-### KES 20M+ Cost Savings
-Identified through rigorous analytics
 :::
 :::
 
 ---
 
-## **<i class="fas fa-compass"></i> What Drives Me**
+## What drives the work
 
-::: {.mission-section data-aos="fade-up"}
-### <i class="fas fa-bullseye"></i> My Professional Mission
+I believe data has a side — it either serves the people it was collected from, or it serves the institutions that collected it. My goal is always the former.
 
-To bridge the gap between raw health data and meaningful insights that improve lives. I believe that:
-
-::: {.mission-grid}
-::: {.mission-item}
-<div class="mission-icon"><i class="fas fa-check-circle"></i></div>
-**Data quality is non-negotiable** - Every data point represents a person
-:::
-
-::: {.mission-item}
-<div class="mission-icon"><i class="fas fa-flask"></i></div>
-**Open science advances health** - Reproducible research should be the standard
-:::
-
-::: {.mission-item}
-<div class="mission-icon"><i class="fas fa-tools"></i></div>
-**Technology should empower** - Tools should solve problems, not create them
-:::
-
-::: {.mission-item}
-<div class="mission-icon"><i class="fas fa-chalkboard-teacher"></i></div>
-**Capacity building multiplies impact** - Teaching others creates lasting change
-:::
-:::
-:::
+That shows up in how I approach M&E: not as a compliance checklist, but as a learning system. It shows up in how I train enumerators: I want them to understand why the question is structured the way it is, not just how to tap the screen. And it shows up in how I write reports: I want to change a decision, not demonstrate that I can run a regression.
 
 ---
 
-## **<i class="fas fa-microscope"></i> Current Focus**
+## Skills & Tools
 
-::: {.focus-section data-aos="fade-up"}
-### <i class="fas fa-graduation-cap"></i> MSc Thesis Research
-
-I'm currently completing my **MSc in Epidemiology and Biostatistics** at JOOUST, with my thesis examining:
-
-**"Exploring Financial Determinants of Effective Hypertension and Diabetes Management in Primary Health Facilities in Kisumu County"**
-
-This research investigates the critical intersection of health facility financing and NCD management outcomes, employing:
-
-- <i class="fas fa-flask"></i> Mixed-methods case study design
-- <i class="fas fa-hospital"></i> Financial assessments of 30+ health facilities
-- <i class="fas fa-user-friends"></i> Patient outcome tracking (500+ participants)
-- <i class="fas fa-calculator"></i> Cost-effectiveness analysis
-- <i class="fas fa-chart-bar"></i> Interactive dashboards for real-time monitoring
-
-[<i class="fas fa-arrow-right"></i> View Thesis Project →](../research/thesis.qmd){.cta-button style="margin-top: 1rem;"}
-:::
+```{=html}
+<div class="skills-grid-4" style="margin-bottom:3rem;">
+  <div>
+    <p class="skill-group-title">Analytics & Stats</p>
+    <div class="skill-item"><span class="skill-name">R</span><div class="skill-bar-wrap"><div class="skill-bar" style="width:92%"></div></div></div>
+    <div class="skill-item"><span class="skill-name">STATA</span><div class="skill-bar-wrap"><div class="skill-bar" style="width:88%"></div></div></div>
+    <div class="skill-item"><span class="skill-name">Python</span><div class="skill-bar-wrap"><div class="skill-bar" style="width:78%"></div></div></div>
+    <div class="skill-item"><span class="skill-name">SPSS</span><div class="skill-bar-wrap"><div class="skill-bar" style="width:82%"></div></div></div>
+  </div>
+  <div>
+    <p class="skill-group-title">Data & Databases</p>
+    <div class="skill-item"><span class="skill-name">SQL</span><div class="skill-bar-wrap"><div class="skill-bar" style="width:85%"></div></div></div>
+    <div class="skill-item"><span class="skill-name">PostgreSQL</span><div class="skill-bar-wrap"><div class="skill-bar" style="width:70%"></div></div></div>
+    <div class="skill-item"><span class="skill-name">DHIS2/KHIS</span><div class="skill-bar-wrap"><div class="skill-bar" style="width:82%"></div></div></div>
+    <div class="skill-item"><span class="skill-name">Excel</span><div class="skill-bar-wrap"><div class="skill-bar" style="width:95%"></div></div></div>
+  </div>
+  <div>
+    <p class="skill-group-title">Data Collection</p>
+    <div class="skill-item"><span class="skill-name">KoboToolbox</span><div class="skill-bar-wrap"><div class="skill-bar" style="width:95%"></div></div></div>
+    <div class="skill-item"><span class="skill-name">ODK</span><div class="skill-bar-wrap"><div class="skill-bar" style="width:92%"></div></div></div>
+    <div class="skill-item"><span class="skill-name">REDCap</span><div class="skill-bar-wrap"><div class="skill-bar" style="width:78%"></div></div></div>
+    <div class="skill-item"><span class="skill-name">SurveyCTO</span><div class="skill-bar-wrap"><div class="skill-bar" style="width:75%"></div></div></div>
+  </div>
+  <div>
+    <p class="skill-group-title">BI & Reporting</p>
+    <div class="skill-item"><span class="skill-name">Power BI</span><div class="skill-bar-wrap"><div class="skill-bar" style="width:85%"></div></div></div>
+    <div class="skill-item"><span class="skill-name">R Markdown</span><div class="skill-bar-wrap"><div class="skill-bar" style="width:92%"></div></div></div>
+    <div class="skill-item"><span class="skill-name">Quarto</span><div class="skill-bar-wrap"><div class="skill-bar" style="width:80%"></div></div></div>
+    <div class="skill-item"><span class="skill-name">Tableau</span><div class="skill-bar-wrap"><div class="skill-bar" style="width:65%"></div></div></div>
+  </div>
+</div>
+```
 
 ---
 
-## **<i class="fas fa-brain"></i> Research Interests**
+## A few highlights
 
-My intellectual curiosity spans multiple domains:
+- Built real-time high-frequency check (HFC) systems in R and Stata across multi-country RCTs, catching data errors before they compound.
+- Managed a field team of 50+ enumerators across Kenya, Uganda, and Tanzania, including remote coordination through the COVID-19 pandemic.
+- Designed and digitised the M&E framework for a 1,535-site health programme: XLSForm coding through DHIS2 integration.
+- Three co-authored publications on cancer epidemiology from the KEMRI dataset years.
+- Identified procurement inefficiencies that saved an estimated KES 20M+ through analysis alone.
 
-::: {.skills-grid}
-::: {.skill-category data-aos="zoom-in" data-aos-delay="100"}
-### <i class="fas fa-chart-bar"></i> Methodological Interests
-- <i class="fas fa-project-diagram"></i> **Computational Epidemiology** - Agent-based modeling, network analysis
-- <i class="fas fa-chart-pie"></i> **Bayesian Statistics** - Modern statistical methods for health research
-- <i class="fas fa-robot"></i> **Machine Learning** - Predictive modeling for health outcomes
-- <i class="fas fa-link"></i> **Causal Inference** - Understanding what works and why
-:::
-
-::: {.skill-category data-aos="zoom-in" data-aos-delay="200"}
-### <i class="fas fa-heartbeat"></i> Health Focus Areas
-- <i class="fas fa-stethoscope"></i> **Non-Communicable Diseases** - Hypertension, diabetes, CVD
-- <i class="fas fa-virus"></i> **Infectious Diseases** - HIV/AIDS, TB, malaria
-- <i class="fas fa-hospital-alt"></i> **Health Systems** - Financing, efficiency, quality improvement
-- <i class="fas fa-sync"></i> **Implementation Science** - Translating evidence to practice
-:::
-
-::: {.skill-category data-aos="zoom-in" data-aos-delay="300"}
-### <i class="fas fa-code"></i> Technical Passions
-- <i class="fas fa-book-open"></i> **Reproducible Research** - Open science, version control, documentation
-- <i class="fas fa-box"></i> **R Package Development** - Building tools for researchers
-- <i class="fas fa-paint-brush"></i> **Data Visualization** - Making complex data accessible
-- <i class="fas fa-shield-alt"></i> **Data Quality** - Automated systems for ensuring data integrity
-:::
-
-::: {.skill-category data-aos="zoom-in" data-aos-delay="400"}
-### <i class="fas fa-globe"></i> Global Health
-- <i class="fas fa-balance-scale"></i> **Health Equity** - Addressing disparities in care
-- <i class="fas fa-hand-holding-heart"></i> **Resource-Limited Settings** - Innovative solutions for challenging contexts
-- <i class="fas fa-handshake"></i> **Community Engagement** - Participatory research approaches
-- <i class="fas fa-user-graduate"></i> **Capacity Building** - Sustainable skill development
-:::
-:::
+[View full CV →](../cv/index.qmd){.btn-solid style="margin-top:1.5rem;display:inline-block;"}
 
 ---
 
-## **<i class="fas fa-chalkboard-teacher"></i> Teaching & Mentoring**
+## Services {#services}
 
-::: {.teaching-section data-aos="fade-up"}
-Education is a core part of my professional identity. I serve as:
+What I offer as a consultant, collaborator, or embedded team member:
 
-### <i class="fas fa-university"></i> Part-Time Lecturer - Biostatistics
-**Jaramogi Oginga Odinga University of Science and Technology (JOOUST)** | 2020 - Present
+```{=html}
+<div class="services-grid">
 
-Teaching undergraduate and graduate courses in biostatistics and epidemiology, with a focus on practical R programming skills for health sciences students.
+  <div class="svc-card">
+    <span class="svc-icon">📐</span>
+    <h4 class="svc-title">Study Design & Protocol Development</h4>
+    <p class="svc-body">Research question formulation, sampling strategy, ethical submissions, instrument design (quantitative & qualitative). IRB-ready protocols for health, agriculture, and finance programmes.</p>
+    <div class="svc-tags"><span>M&E</span><span>RCT</span><span>Mixed methods</span><span>XLSForm</span></div>
+  </div>
 
-### <i class="fas fa-laptop-code"></i> R Programming Instructor
-**LERIS HUB** | 2019 - Present
+  <div class="svc-card">
+    <span class="svc-icon">🗄️</span>
+    <h4 class="svc-title">Data Management & Engineering</h4>
+    <p class="svc-body">Database architecture, HFC systems, automated cleaning pipelines in R and Python. Reproducible data workflows that teams can hand off without losing institutional knowledge.</p>
+    <div class="svc-tags"><span>R</span><span>SQL</span><span>Python</span><span>PostgreSQL</span></div>
+  </div>
 
-Designing and delivering comprehensive R programming workshops for health researchers. I've trained 200+ participants in data visualization, statistical modeling, and reproducible research practices.
+  <div class="svc-card">
+    <span class="svc-icon">📊</span>
+    <h4 class="svc-title">Analytics & Impact Evaluation</h4>
+    <p class="svc-body">Descriptive to advanced econometrics — regression, DiD, RDD, survival analysis. Telling the story behind the numbers for funder reports, policy briefs, and publications.</p>
+    <div class="svc-tags"><span>Stata</span><span>R</span><span>Regression</span><span>DiD</span></div>
+  </div>
 
-**Workshop Topics:**
+  <div class="svc-card">
+    <span class="svc-icon">🖥️</span>
+    <h4 class="svc-title">Dashboards & Reporting</h4>
+    <p class="svc-body">Automated dashboards in Power BI, R Shiny, and Quarto. From operational monitoring dashboards for field programmes to donor-facing KPI reports updated on a schedule.</p>
+    <div class="svc-tags"><span>Power BI</span><span>R Shiny</span><span>Quarto</span><span>Tableau</span></div>
+  </div>
 
-- <i class="fas fa-book"></i> Introduction to R for Health Researchers
-- <i class="fas fa-chart-line"></i> Data Visualization with ggplot2
-- <i class="fas fa-database"></i> REDCap for Clinical Trials
-- <i class="fas fa-file-alt"></i> Reproducible Research with R Markdown
-- <i class="fas fa-calculator"></i> Advanced Statistical Modeling
-:::
+  <div class="svc-card">
+    <span class="svc-icon">🌍</span>
+    <h4 class="svc-title">Field Data Collection</h4>
+    <p class="svc-body">End-to-end management of CAPI surveys — tool building in KoboToolbox / ODK, enumerator recruitment and training, daily HFC, and data transmission to headquarters.</p>
+    <div class="svc-tags"><span>KoboToolbox</span><span>ODK</span><span>REDCap</span><span>CommCare</span></div>
+  </div>
+
+  <div class="svc-card">
+    <span class="svc-icon">🎓</span>
+    <h4 class="svc-title">Training & Capacity Building</h4>
+    <p class="svc-body">Workshops in R, Stata, survey design, data management, and M&E frameworks. I have trained teams ranging from government statisticians to community health workers.</p>
+    <div class="svc-tags"><span>R workshops</span><span>Stata</span><span>M&E training</span></div>
+  </div>
+
+</div>
+```
+
+[Get in touch about a project →](mailto:nichodemuswerre@gmail.com){.btn-solid style="margin-top:2rem;display:inline-block;"}
 
 ---
 
-## **<i class="fas fa-university"></i> Open Governance & Civic Tech** {#governance}
+## Open to
 
-::: {.governance-section data-aos="fade-up"}
-### <i class="fas fa-balance-scale"></i> A Passion for People-Centric Governance
+Senior M&E and Research Data Manager roles, data analytics consulting across supply chain, health, agriculture, finance and real estate, research partnerships in health financing and agricultural economics, and training and capacity building in R, Stata, survey design, and data management.
 
-My commitment to **open governance** and **digital civic tools** was born during my time as a junior officer with **Homa Bay County Government**. This experience opened my eyes to both the potential and challenges of public service.
-
-**What I learned:**
-
-- <i class="fas fa-eye"></i> Citizens need transparent access to government data and decision-making processes
-- <i class="fas fa-users"></i> Digital tools can bridge the gap between government and citizens
-- <i class="fas fa-gavel"></i> Accountability mechanisms are essential for trust in public institutions
-- <i class="fas fa-hand-holding-heart"></i> Governments should be designed around people's needs, not bureaucratic convenience
-
-**Why I left public service:**
-
-While I deeply valued the opportunity to serve, I realized I wasn't in a position to make the transformative changes I envisioned. The constraints of the system limited my ability to build the digital civic tools and transparency mechanisms I believed were necessary.
-
-**My ongoing commitment:**
-
-I continue to work on tools and projects that advance open governance and civic engagement. My goal is to one day contribute to policies and platforms that:
-
-- <i class="fas fa-unlock"></i> Make government data more accessible and understandable
-- <i class="fas fa-bullhorn"></i> Enable citizens to participate meaningfully in governance
-- <i class="fas fa-shield-alt"></i> Create accountability systems that hold leaders responsible
-- <i class="fas fa-heart"></i> Transform governments to be truly people-centric
-
-::: {.highlight-box style="margin-top: 2rem;"}
-**<i class="fas fa-quote-left"></i>** I hope to one day make a meaningful mark in policies that transform how governments serve their people, making transparency and accountability the norm rather than the exception. **<i class="fas fa-quote-right"></i>**
-
-Even outside formal public service, I remain committed to using my data science and technology skills to advance democratic participation and government transparency.
-:::
-:::
-
----
-
-## **<i class="fas fa-heart"></i> Beyond Work: The Whole Person**
-
-::: {.personal-section}
-### <i class="fas fa-cow"></i> Farm Life & Agriculture
-
-There's something deeply therapeutic about farm life. Growing up in rural Kenya, I developed a profound appreciation for agriculture and animal husbandry. Today, my farm is my sanctuary.
-
-::: {.highlight-box data-aos="fade-up"}
-**<i class="fas fa-leaf"></i> Why farming matters to me:**
-
-- <i class="fas fa-mountain"></i> **Grounding** - Connects me to my roots and reminds me where I came from
-- <i class="fas fa-spa"></i> **Therapeutic** - There's a meditative quality to watching animals graze peacefully
-- <i class="fas fa-chart-line"></i> **Practical** - Informs my agricultural economics research with real-world experience
-- <i class="fas fa-smile"></i> **Joyful** - Honestly, I just love watching my goats eat grass! <i class="fas fa-grin"></i>
-
-**Fun fact:** My goat farming project in Homa Bay isn't just research - it's a passion project combining data science with animal husbandry.
-:::
-
-### <i class="fas fa-dumbbell"></i> Fitness & Wellness
-
-My life experiences taught me that **sustainable impact requires sustainable energy**. I maintain a disciplined approach to wellness—physically, mentally, and professionally:
-
-::: {.info-box data-aos="fade-up"}
-**<i class="fas fa-fire"></i> My fitness philosophy:**
-
-**Routine:**
-
-- <i class="fas fa-sun"></i> Morning workouts (5-6 days/week) - Start the day with energy
-- <i class="fas fa-dumbbell"></i> Strength training - Building physical resilience
-- <i class="fas fa-running"></i> Outdoor running - Connecting with nature
-- <i class="fas fa-spa"></i> Yoga/stretching - Mental clarity and flexibility
-
-**Why it matters:**
-
-- <i class="fas fa-brain"></i> **Mental clarity** - Better problem-solving and analytical thinking
-- <i class="fas fa-smile"></i> **Stress management** - Balancing demanding data projects
-- <i class="fas fa-target"></i> **Discipline** - The same focus needed for complex analyses
-- <i class="fas fa-balance-scale"></i> **Work-life balance** - Essential for long-term productivity
-:::
-
-Whether I'm conducting HFCs in the field, building dashboards for donors, or training research assistants, **I bring 100% focus and energy** to drive project success.
-
-[<i class="fas fa-arrow-right"></i> Explore more about my personal interests →](../personal/index.qmd){.cta-button style="margin-top: 1rem;"}
-:::
-
----
-
-## **<i class="fas fa-star"></i> Personal Philosophy & Core Values**
-
-::: {.values-section}
-::: {.success-box data-aos="fade-up"}
-**<i class="fas fa-compass"></i> What drives me:**
-
-**1. <i class="fas fa-fist-raised"></i> Resilience**  
-From losing parents early to leading international research projects, every setback taught me that persistence pays off.
-
-**2. <i class="fas fa-users"></i> Community & Mentorship**  
-I wouldn't be here without community support. Now I pay it forward by training 500+ researchers and mentoring aspiring data scientists.
-
-**3. <i class="fas fa-bullseye"></i> Purpose-Driven Work**  
-Data isn't just numbers - it's about improving lives. My research on low-income households' financial behavior directly informs policies that help vulnerable populations.
-
-**4. <i class="fas fa-graduation-cap"></i> Continuous Learning**  
-From statistics to machine learning to farming techniques - curiosity drives growth.
-
-**5. <i class="fas fa-seedling"></i> Authenticity**  
-Stay true to your roots while reaching for the stars. My farm animals keep me grounded even as I work on cutting-edge research.
-:::
-
-This personal journey informs my professional commitment to health equity and patient-centered research.
-:::
-
----
-
-## **<i class="fas fa-rocket"></i> Future Aspirations**
-
-::: {.future-section}
-### <i class="fas fa-graduation-cap"></i> PhD Studies
-
-I plan to pursue doctoral studies (starting 2025/2026) focusing on:
-
-- <i class="fas fa-vial"></i> **Statistical methods in clinical trials** - Adaptive designs, Bayesian approaches
-- <i class="fas fa-network-wired"></i> **Health data interoperability** - Integrating health information systems
-- <i class="fas fa-box"></i> **R package development** - Creating tools for reproducible health research
-- <i class="fas fa-brain"></i> **Machine learning for health outcomes** - Predictive modeling in resource-limited settings
-
-### <i class="fas fa-code"></i> R Package Development
-
-I'm actively developing R packages based on my thesis work:
-
-- **`ncdfinance`** - Tools for analyzing health facility financing for NCDs
-- **`surveyflow`** - Workflow management for survey data collection
-
-### <i class="fas fa-globe"></i> Global Impact
-
-My ultimate goal is to contribute to **global health improvement** through:
-
-- <i class="fas fa-microscope"></i> Rigorous, reproducible research
-- <i class="fas fa-code-branch"></i> Open-source tool development
-- <i class="fas fa-hand-holding-heart"></i> Capacity building in Africa
-- <i class="fas fa-balance-scale"></i> Evidence-based policy influence
-:::
-
----
-
-## **<i class="fas fa-shield-alt"></i> Professional Values**
-
-::: {.values-matrix}
-::: {.value-flip-card data-aos="flip-left" data-aos-delay="100"}
-<div class="value-flip-inner">
-<div class="value-flip-front">
-<div class="value-icon-large"><i class="fas fa-handshake"></i></div>
-<h3>Integrity</h3>
-</div>
-<div class="value-flip-back">
-<h3><i class="fas fa-handshake"></i> Integrity</h3>
-<p>Honesty in all professional dealings</p>
-</div>
-</div>
-:::
-
-::: {.value-flip-card data-aos="flip-left" data-aos-delay="200"}
-<div class="value-flip-inner">
-<div class="value-flip-front">
-<div class="value-icon-large"><i class="fas fa-medal"></i></div>
-<h3>Excellence</h3>
-</div>
-<div class="value-flip-back">
-<h3><i class="fas fa-medal"></i> Excellence</h3>
-<p>Commitment to the highest standards</p>
-</div>
-</div>
-:::
-
-::: {.value-flip-card data-aos="flip-left" data-aos-delay="300"}
-<div class="value-flip-inner">
-<div class="value-flip-front">
-<div class="value-icon-large"><i class="fas fa-users"></i></div>
-<h3>Collaboration</h3>
-</div>
-<div class="value-flip-back">
-<h3><i class="fas fa-users"></i> Collaboration</h3>
-<p>Better outcomes through teamwork</p>
-</div>
-</div>
-:::
-
-::: {.value-flip-card data-aos="flip-left" data-aos-delay="400"}
-<div class="value-flip-inner">
-<div class="value-flip-front">
-<div class="value-icon-large"><i class="fas fa-lightbulb"></i></div>
-<h3>Innovation</h3>
-</div>
-<div class="value-flip-back">
-<h3><i class="fas fa-lightbulb"></i> Innovation</h3>
-<p>Creative solutions to complex problems</p>
-</div>
-</div>
-:::
-
-::: {.value-flip-card data-aos="flip-left" data-aos-delay="500"}
-<div class="value-flip-inner">
-<div class="value-flip-front">
-<div class="value-icon-large"><i class="fas fa-balance-scale"></i></div>
-<h3>Equity</h3>
-</div>
-<div class="value-flip-back">
-<h3><i class="fas fa-balance-scale"></i> Equity</h3>
-<p>Commitment to reducing health disparities</p>
-</div>
-</div>
-:::
-
-::: {.value-flip-card data-aos="flip-left" data-aos-delay="600"}
-<div class="value-flip-inner">
-<div class="value-flip-front">
-<div class="value-icon-large"><i class="fas fa-eye"></i></div>
-<h3>Transparency</h3>
-</div>
-<div class="value-flip-back">
-<h3><i class="fas fa-eye"></i> Transparency</h3>
-<p>Open science and reproducible research</p>
-</div>
-</div>
-:::
-
-::: {.value-flip-card data-aos="flip-left" data-aos-delay="700"}
-<div class="value-flip-inner">
-<div class="value-flip-front">
-<div class="value-icon-large"><i class="fas fa-chart-line"></i></div>
-<h3>Continuous Learning</h3>
-</div>
-<div class="value-flip-back">
-<h3><i class="fas fa-chart-line"></i> Continuous Learning</h3>
-<p>Always growing and improving</p>
-</div>
-</div>
-:::
-:::
-
----
-
-## **<i class="fas fa-handshake"></i> Let's Connect**
-
-I'm always interested in connecting with:
-
-- <i class="fas fa-microscope"></i> Researchers working on health data challenges
-- <i class="fas fa-building"></i> Organizations seeking data management expertise
-- <i class="fas fa-user-graduate"></i> Students interested in health data science
-- <i class="fas fa-code"></i> Collaborators on open-source projects
-
-**Ways to reach me:**
-
-📧 **Email:** [nichodemuswerre@gmail.com](mailto:nichodemuswerre@gmail.com)  
-💼 **LinkedIn:** [linkedin.com/in/amollow](https://linkedin.com/in/amollow)  
-🐙 **GitHub:** [github.com/gondamol](https://github.com/gondamol)  
-🐦 **Twitter:** [@nwerre](https://twitter.com/nwerre)  
-📊 **Kaggle:** [kaggle.com/nwerre](https://kaggle.com/nwerre)
-
----
-
-::: {.opportunity-box data-aos="zoom-in"}
-### <i class="fas fa-briefcase"></i> Open to Opportunities
-
-I am currently **available for remote positions** as a:
-
-- <i class="fas fa-chart-line"></i> **Research Data Manager** - End-to-end data leadership
-- <i class="fas fa-microscope"></i> **Research Data Analyst** - Advanced statistical analysis
-- <i class="fas fa-bullseye"></i> **Senior M&E Specialist** - Program monitoring & evaluation
-- <i class="fas fa-vial"></i> **Biostatistician** - Clinical trials & epidemiological studies
-
-With proven experience managing international projects remotely, I deliver exceptional results regardless of location.
-
-[<i class="fas fa-file-alt"></i> View CV](../cv/index.qmd){.cta-button} [<i class="fas fa-project-diagram"></i> See Projects](../projects/index.qmd){.cta-button}
-:::
-
----
-
-[<i class="fas fa-arrow-left"></i> Back to Home →](../index.qmd)
-
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 800,
-    easing: 'ease-in-out',
-    once: true,
-    offset: 100
-  });
-</script>
+[Get in touch →](mailto:nichodemuswerre@gmail.com){.btn-solid}

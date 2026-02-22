@@ -12,6 +12,23 @@ A comprehensive collection of free and paid resources for aspiring and practicin
 
 ---
 
+## **📄 Resume**
+
+```{=html}
+<div style="background:var(--warm);border:1px solid var(--border);padding:1.6rem 1.5rem;margin-bottom:2rem;">
+  <p style="margin:0 0 0.8rem;font-size:0.92rem;color:var(--text);max-width:none;">
+    Latest resume for download and quick review.
+  </p>
+  <div style="display:flex;gap:0.8rem;flex-wrap:wrap;">
+    <a href="../cv/Nichodemus_Amollo_CV.pdf" class="btn-solid" target="_blank" rel="noopener">View PDF ↗</a>
+    <a href="../cv/Nichodemus_Amollo_CV.pdf" class="btn-ghost" download>Download PDF ↓</a>
+    <a href="../cv/index.qmd" class="btn-ghost">Open CV Page →</a>
+  </div>
+</div>
+```
+
+---
+
 ## **📊 Data Analytics Tools**
 
 ### **R Programming** {.project-card}

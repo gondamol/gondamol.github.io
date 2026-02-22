@@ -1,389 +1,353 @@
 ---
-title: "Beyond Data: The Whole Person"
-subtitle: "Philosophy, Practice, & Purpose"
+title: ""
 page-layout: article
+toc: true
+toc-title: "On this page"
 ---
 
-<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+```{=html}
+<div style="padding:4.5rem 0 3rem 0;">
+  <span class="section-eyebrow">Life</span>
+  <h1 class="section-h" style="font-size:clamp(2rem,4vw,3.2rem);margin-top:0.4rem;">Beyond data, practice and purpose.</h1>
+  <p class="section-sub">
+    This page shares the habits, values, and experiences that shape how I work and how I serve.
+  </p>
+</div>
+```
 
-::: {.hero-banner}
-# **The Human Behind the Data**
+## The Human Behind the Data
 
-*"He who has a why to live can bear almost any how."* - Friedrich Nietzsche  
-These are the habits, philosophies, and practices that sustain my work in health data science, impact evaluation, and long-term research.
-:::
+> "He who has a why to live can bear almost any how." Friedrich Nietzsche
 
----
+I am a data professional, and I am also a person shaped by philosophy, spiritual reflection, farming, training, and community work. These practices help me stay grounded, especially when research work becomes complex.
 
-## **🏛️ Philosophy & Spiritual Practice** {data-aos="fade-up"}
+## Philosophy and Spiritual Practice
 
 ### Stoic Discipline
 
-I practice **Stoic philosophy religiously**. Not as an intellectual exercise, but as a daily framework for living with:
+Stoic thought is part of my daily structure. It helps me stay calm, think clearly, and focus on what I can control.
 
-- **Emotional resilience** when facing life's inevitable challenges
-- **Rational thinking** in decision-making and problem-solving
-- **Virtue ethics** guiding every action
-- ***Memento mori*** - remembering mortality to live fully present
+My daily Stoic practice includes:
 
-::: {.info-box}
-**Daily Practice:**
-
-- Morning reading of *Meditations* by Marcus Aurelius
-- Evening reflection on Stoic principles
-- Journaling on virtue, wisdom, justice, courage
-- Applying philosophical wisdom to modern data work
-:::
+1. Morning reading from *Meditations*.
+2. Evening reflection on choices, character, and duty.
+3. Journaling around wisdom, justice, courage, and self control.
 
 ### Integrated Spirituality
 
-My spiritual life honors multiple traditions:
-
-::: {.highlight-box}
-**Ancestral Reverence** - I honor the **gods of my ancestors** (African traditional spirituality), staying connected to my roots and cultural heritage.
-
-**Christian Faith** - I follow **Christ Jesus**, finding profound wisdom in His teachings on compassion, service, and love.
-
-**Buddhist Morality** - I deeply respect **Buddhist approaches to morality** - mindfulness, compassion, non-attachment. *I would call myself a Buddha* in the sense of seeking enlightenment through daily practice and ethical living.
-
-**"The religions of my ancestors, the teachings of Christ, and the wisdom of the Buddha all point toward the same truth: live with integrity, serve others, cultivate inner peace."**
-:::
-
----
-
-## **📚 Reading & Intellectual Life** {data-aos="fade-up"}
-
-### Currently Reading
-
-::: {.success-box}
-**📖 Meditations** by Marcus Aurelius
-
-My constant companion. I read this daily, returning to its wisdom for guidance on resilience, duty, and rational living. Every page reminds me that obstacles are opportunities, that we control only our responses, not external events.
-:::
-
-### Stoic Classics
-
-1. **Meditations** by Marcus Aurelius - *Daily practice*
-2. **Letters from a Stoic** by Seneca - *Practical wisdom for daily life*
-3. **Discourses and Enchiridion** by Epictetus - *The foundation of Stoic ethics*
-4. **The Obstacle Is the Way** by Ryan Holiday - *Modern Stoicism*
-5. **A Guide to the Good Life** by William B. Irvine - *Practical Stoic techniques*
-6. **The Daily Stoic** by Ryan Holiday - *365 days of wisdom*
-7. **Stoicism and the Art of Happiness** by Donald Robertson - *Psychological insights*
-
-### Nietzsche's Provocations
-
-Friedrich Nietzsche challenges my thinking and strengthens my philosophical foundations:
-
-1. **Thus Spoke Zarathustra** - *The eternal recurrence and Übermensch*
-2. **Beyond Good and Evil** - *Questioning morality itself*
-3. **The Gay Science** - *"God is dead" and life-affirming philosophy*
-4. **On the Genealogy of Morals** - *The origin of moral concepts*
-5. **Twilight of the Idols** - *Philosophical hammer blows*
-6. **Ecce Homo** - *Nietzsche's bold autobiography*
-7. **The Birth of Tragedy** - *Apollonian and Dionysian forces*
-
-### Buddhist Wisdom
-
-1. **The Heart of the Buddha's Teaching** by Thich Nhat Hanh
-2. **When Things Fall Apart** by Pema Chödrön
-3. **Zen Mind, Beginner's Mind** by Shunryu Suzuki
-4. **The Art of Happiness** by Dalai Lama
-
----
-
-## **🐄 Farm Life & Nature** {data-aos="fade-up"}
-
-The farm is my sanctuary - where philosophical principles meet practical living.
-
-::: {.highlight-box}
-**Why farming matters:**
-
-- **Grounding** - Connects me to ancestral traditions and the earth
-- **Stoic practice** - Accepting what nature provides, working with seasons
-- **Mindfulness** - Present moment awareness while tending animals
-- **Simplicity** - Finding joy in watching goats eat grass 🐐
-- **Resilience** - Learning from crop failures and livestock challenges
-:::
-
----
-
-## **💪 Physical Discipline** {data-aos="fade-up"}
-
-### Fitness Practice
-
-A strong body supports a disciplined mind:
-
-::: {.info-box}
-**Training Regimen:**
-
-- **Morning workouts** (5-6 days/week) - Start each day with physical discipline
-- **Strength training** - Building resilience through progressive overload
-- **Running** - Meditative movement, connecting mind and body
-- **Yoga/stretching** - Flexibility, balance, presence
-
-**Philosophy:** *"No citizen has a right to be an amateur in the matter of physical training. What a disgrace it is for a man to grow old without ever seeing the beauty and strength of which his body is capable."* - Socrates
-:::
-
-### Hydration Discipline
-
-**Water is essential.** I drink significant amounts daily:
-
-- 💧 **3-4 liters** minimum per day
-- Mental clarity during long coding sessions
-- Physical performance optimization
-- Health maintenance
-- *Simple, foundational, non-negotiable*
-
----
-
-## **💻 Building for Impact: Learning to Vibe Code** {data-aos="fade-up"}
-
-I'm currently learning **AI-assisted development** (vibe coding) to build software that serves humanity:
-
-::: {.project-card}
-::: {.project-header}
-### 🏥 Health
-:::
-::: {.project-body}
-**surveyKE** - Simplifying health data collection across Africa
-
-**Health Monitoring Apps** - Tools for rural community health workers
-
-**Telemedicine Platforms** - Bridging healthcare access gaps
-:::
-:::
-
-::: {.project-card}
-::: {.project-header}
-### 🌍 Climate Change
-:::
-::: {.project-body}
-**Agricultural Climate Adaptation** - Helping farmers respond to changing patterns
-
-**Environmental Data Viz** - Making climate data accessible
-
-**Carbon Tracking** - Tools for smallholder farm sustainability
-:::
-:::
-
-::: {.project-card}
-::: {.project-header}
-### 🌱 Personal Growth
-:::
-::: {.project-body}
-**Stoic Daily** - Daily philosophical reflection app (Meditations-inspired)
-
-**Habit Tracker** - Built on Stoic principles of discipline
-
-**Mindfulness Tools** - Integrating Buddhist practices
-:::
-:::
-
-::: {.project-card}
-::: {.project-header}
-### 🗳️ Democracy & Civic Engagement
-:::
-::: {.project-body}
-**Open Government Dashboards** - Transparency through data
-
-**Civic Participation Tools** - Lowering barriers to democratic engagement
-
-**Public Accountability Platforms** - Data-driven governance monitoring
-:::
-:::
-
-::: {.project-card}
-::: {.project-header}
-### 🌾 Agriculture & Social Development
-:::
-::: {.project-body}
-**Farm Management Systems** - Designed for smallholder farmers
-
-**Market Linkage Platforms** - Connecting producers to buyers
-
-**Community Data Tools** - Empowering local agricultural cooperatives
-:::
-:::
-
-**Open to collaboration on any of these!** Building in public, all open source.
-
----
-
-## **⚖️ Core Values** {data-aos="fade-up"}
-
-### Integrity & Truthfulness
-
-::: {.success-box}
-**Truth above comfort.**
-
-I speak honestly even when it's difficult. Research demands truthfulness - in data, in reporting, in acknowledging limitations. This extends to every area of life.
-
-- Transparent about mistakes and learnings
-- Honest in all professional dealings
-- Authentic voice, not performative
-- *"The truth will set you free"* - living this daily
-:::
-
-### Civic Engagement
-
-::: {.info-box}
-**Data for the public good.**
-
-My work serves communities:
-
-- Research on **low-income household financial behavior** → informs policy
-- Building **open source tools** → reduces barriers in African research
-- Training **500+ researchers** → multiplies impact through capacity building
-- **Democratic participation** → using data for transparent governance
-- **Community projects** → direct service to vulnerable populations
-
-*Not just talking about impact - creating it through action.*
-:::
-
----
-
-## **🤝 The Collaborative Builder** {data-aos="fade-up"}
-
-My work demonstrates team-player qualities through action:
-
-### Multi-Country Research Coordination
-
-- Led data collection across **Kenya, Uganda, Tanzania**
-- Coordinated teams at **1,535+ sites**
-- Managed **cross-functional partnerships** (Georgetown gui2de, University of Alaska)
-
-### Capacity Building at Scale
-
-- **Trained 500+ researchers** in data management and M&E
-- Developed **training protocols** used across institutions
-- **Mentored** aspiring data scientists and analysts
-
-### Field Team Leadership
-
-- Recruited, trained, and supervised **50+ field enumerators**
-- Created **collaborative field cultures**
-- Problem-solved together through challenges
-
-### Open Source Contribution
-
-- Building **surveyKE** as open collaboration
-- Sharing **code on GitHub**
-- Inviting **community participation**
-
-*These actions speak louder than any claim of "being a team player."*
-
----
-
-## **🎯 Finding Balance** {data-aos="fade-up"}
-
-### Daily Rhythm
-
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
-
-<div class="tile-card">
-<div class="tile-card-header">
-<h4 class="tile-title">Morning (5:30 AM)</h4>
+My spiritual life brings together multiple streams of wisdom.
+
+1. Ancestral reverence, to stay connected to identity and heritage.
+2. Christian faith, with emphasis on compassion, service, and love.
+3. Buddhist morality, with mindfulness, non attachment, and ethical presence.
+
+I see these paths as complementary ways of living with integrity and inner peace.
+
+## Reading and Intellectual Life
+
+### Current Anchor Text
+
+I read *Meditations* by Marcus Aurelius consistently. It keeps my mind clear during hard periods and reminds me to treat obstacles as training.
+
+### Core Reading Themes
+
+1. Stoic classics by Marcus Aurelius, Seneca, and Epictetus.
+2. Nietzsche, especially his work on meaning, courage, and self creation.
+3. Buddhist texts focused on compassion, discipline, and awareness.
+
+## Farm Life and Nature
+
+The farm in Homa Bay is where theory meets reality. It keeps my analysis honest. When I work on food systems, risk, and cash flow, I am not writing from distance. I am writing from lived experience.
+
+```{=html}
+<div class="gallery-grid" style="margin:2rem 0 3rem;">
+  <div class="gal-item gal-large">
+    <div class="gal-ph" style="overflow:hidden;">
+      <img src="../img/personal/outdoor1.jpeg"
+           alt="Green hills and open land in Homa Bay that shape my farming work"
+           class="gal-img" onerror="this.remove()">
+      <div class="gal-overlay"><span class="gal-label">Land that keeps me grounded</span></div>
+    </div>
+  </div>
+
+  <div class="gal-item gal-tall">
+    <div class="gal-ph">
+      <img src="../img/farming/goat-grazing-1.jpeg"
+           alt="Goat herd grazing on sloped land in Homa Bay"
+           class="gal-img" onerror="this.remove()">
+      <div class="gal-overlay"><span class="gal-label">Morning grazing routine</span></div>
+    </div>
+  </div>
+
+  <div class="gal-item">
+    <div class="gal-ph">
+      <img src="../img/we brought local east african goats in the new pen 3.jpeg"
+           alt="Local East African goats inside a new pen"
+           class="gal-img" onerror="this.remove()">
+      <div class="gal-overlay"><span class="gal-label">Herd growth in practice</span></div>
+    </div>
+  </div>
+
+  <div class="gal-item">
+    <div class="gal-ph">
+      <img src="../img/newly constructed goat pen.jpeg"
+           alt="Newly constructed goat pen at the farm"
+           class="gal-img" onerror="this.remove()">
+      <div class="gal-overlay"><span class="gal-label">Infrastructure first</span></div>
+    </div>
+  </div>
+
+  <div class="gal-item">
+    <div class="gal-ph">
+      <img src="../img/foundation for water pan i started it.jpeg"
+           alt="Digging the foundation for a water pan"
+           class="gal-img" onerror="this.remove()">
+      <div class="gal-overlay"><span class="gal-label">Water resilience work</span></div>
+    </div>
+  </div>
+
+  <div class="gal-item">
+    <div class="gal-ph">
+      <img src="../img/goat new kid.jpeg"
+           alt="A new goat kid with the mother on the farm"
+           class="gal-img" onerror="this.remove()">
+      <div class="gal-overlay"><span class="gal-label">New life on the farm</span></div>
+    </div>
+  </div>
+
+  <div class="gal-item">
+    <div class="gal-ph">
+      <img src="../img/goats drinking near goat pen, digging water pan in the background.jpeg"
+           alt="Goats drinking near the pen while water work continues in the background"
+           class="gal-img" onerror="this.remove()">
+      <div class="gal-overlay"><span class="gal-label">Water and herd planning</span></div>
+    </div>
+  </div>
+
+  <div class="gal-item">
+    <div class="gal-ph">
+      <img src="../img/in seacrh of water during drought in karachuonyo.jpeg"
+           alt="Landscape from drought period showing why water storage matters"
+           class="gal-img" onerror="this.remove()">
+      <div class="gal-overlay"><span class="gal-label">Drought reality</span></div>
+    </div>
+  </div>
 </div>
-<div class="tile-body">
-• Read <em>Meditations</em><br>
-• Workout/Run<br>
-• Farm check<br>
-• Water (1L)
+```
+
+## Physical Discipline
+
+Physical training keeps my mind stable and focused. I train most mornings, and I use movement to reset and think clearly.
+
+My fitness rhythm includes:
+
+1. Strength sessions across the week.
+2. Running and active recovery.
+3. Hydration discipline, usually 3 to 4 liters per day.
+
+```{=html}
+<div class="gallery-grid" style="margin:2rem 0 3rem;">
+  <div class="gal-item gal-large">
+    <div class="gal-ph" style="overflow:hidden;">
+      <img src="../img/bench pressing in the gym.jpeg"
+           alt="Bench press session during morning training"
+           class="gal-img" onerror="this.remove()">
+      <div class="gal-overlay"><span class="gal-label">Strength before deep work</span></div>
+    </div>
+  </div>
+
+  <div class="gal-item">
+    <div class="gal-ph">
+      <img src="../img/me in the gym.jpeg"
+           alt="Gym training session focused on consistency"
+           class="gal-img" onerror="this.remove()">
+      <div class="gal-overlay"><span class="gal-label">Consistency over intensity</span></div>
+    </div>
+  </div>
+
+  <div class="gal-item">
+    <div class="gal-ph">
+      <img src="../img/personal/swim.jpeg"
+           alt="Pool recovery session supporting mobility and endurance"
+           class="gal-img" onerror="this.remove()">
+      <div class="gal-overlay"><span class="gal-label">Recovery and mobility</span></div>
+    </div>
+  </div>
+
+  <div class="gal-item">
+    <div class="gal-ph">
+      <img src="../img/personal/ball.jpeg"
+           alt="Ball session outdoors for active movement"
+           class="gal-img" onerror="this.remove()">
+      <div class="gal-overlay"><span class="gal-label">Play and movement</span></div>
+    </div>
+  </div>
+
+  <div class="gal-item">
+    <div class="gal-ph">
+      <img src="../img/wth my buddy Karoli in the gym.jpeg"
+           alt="Training with a friend in the gym"
+           class="gal-img" onerror="this.remove()">
+      <div class="gal-overlay"><span class="gal-label">Discipline with community</span></div>
+    </div>
+  </div>
+
+  <div class="gal-item gal-tall">
+    <div class="gal-ph">
+      <img src="../img/new profile pic.jpeg"
+           alt="Portrait photo after training"
+           class="gal-img" onerror="this.remove()">
+      <div class="gal-overlay"><span class="gal-label">Energy and focus</span></div>
+    </div>
+  </div>
+
+  <div class="gal-item">
+    <div class="gal-ph">
+      <img src="../img/personal/outdoor.jpeg"
+           alt="Outdoor training setting with open landscape"
+           class="gal-img" onerror="this.remove()">
+      <div class="gal-overlay"><span class="gal-label">Outdoor reset</span></div>
+    </div>
+  </div>
 </div>
+```
+
+## The Collaborative Builder
+
+I value execution with people, not in isolation. Most of my best outcomes came from cross functional collaboration.
+
+1. Multi country coordination across Kenya, Uganda, Tanzania, and Rwanda.
+2. Team leadership for field operations and data quality.
+3. Training and mentorship for analysts and enumerators.
+4. Open source sharing for tools and workflows.
+
+```{=html}
+<div class="gallery-grid" style="margin:2rem 0 3rem;">
+  <div class="gal-item gal-large">
+    <div class="gal-ph" style="overflow:hidden;">
+      <img src="../img/kesho conference kemri with colleagues from kemri.jpeg"
+           alt="Group photo with colleagues and partners at KESHO conference"
+           class="gal-img" onerror="this.remove()">
+      <div class="gal-overlay"><span class="gal-label">Working with research teams</span></div>
+    </div>
+  </div>
+
+  <div class="gal-item">
+    <div class="gal-ph">
+      <img src="../img/professor nyongo launching the dashboard.jpeg"
+           alt="Public launch of a dashboard during conference session"
+           class="gal-img" onerror="this.remove()">
+      <div class="gal-overlay"><span class="gal-label">Evidence to public action</span></div>
+    </div>
+  </div>
+
+  <div class="gal-item">
+    <div class="gal-ph">
+      <img src="../img/kesho in the conference hall sharing the dashboard.jpeg"
+           alt="Presenting analytics outputs in a conference hall"
+           class="gal-img" onerror="this.remove()">
+      <div class="gal-overlay"><span class="gal-label">Sharing results clearly</span></div>
+    </div>
+  </div>
+
+  <div class="gal-item">
+    <div class="gal-ph">
+      <img src="../img/with kisumu health team and professor nyongo during lauch of kisumu cancer dashboard .jpeg"
+           alt="With Kisumu health team and partners during dashboard work"
+           class="gal-img" onerror="this.remove()">
+      <div class="gal-overlay"><span class="gal-label">Partnership in practice</span></div>
+    </div>
+  </div>
+
+  <div class="gal-item">
+    <div class="gal-ph">
+      <img src="../img/youths working together digging water pan.jpeg"
+           alt="Youth community members working together on a water pan"
+           class="gal-img" onerror="this.remove()">
+      <div class="gal-overlay"><span class="gal-label">Community first work</span></div>
+    </div>
+  </div>
+
+  <div class="gal-item">
+    <div class="gal-ph">
+      <img src="../img/photo at kesho.jpeg"
+           alt="Conference portrait at KESHO event"
+           class="gal-img" onerror="this.remove()">
+      <div class="gal-overlay"><span class="gal-label">Conference networking</span></div>
+    </div>
+  </div>
+
+  <div class="gal-item">
+    <div class="gal-ph">
+      <img src="../img/photo at kesho 2.jpeg"
+           alt="Working session portrait at KESHO conference"
+           class="gal-img" onerror="this.remove()">
+      <div class="gal-overlay"><span class="gal-label">Research practice</span></div>
+    </div>
+  </div>
+
+  <div class="gal-item gal-tall">
+    <div class="gal-ph">
+      <img src="../img/kesho conference kemri.jpeg"
+           alt="Presenting dashboard insights at KESHO conference"
+           class="gal-img" onerror="this.remove()">
+      <div class="gal-overlay"><span class="gal-label">Data to policy</span></div>
+    </div>
+  </div>
+
+  <div class="gal-item">
+    <div class="gal-ph">
+      <img src="../img/kesho conference with other researchers.jpeg"
+           alt="Collaborative photo with researchers during KESHO conference"
+           class="gal-img" onerror="this.remove()">
+      <div class="gal-overlay"><span class="gal-label">Regional collaboration</span></div>
+    </div>
+  </div>
 </div>
+```
 
-<div class="tile-card">
-<div class="tile-card-header">
-<h4 class="tile-title">Deep Work (7:30 AM - 1 PM)</h4>
+## Building for Impact
+
+I am learning AI assisted development to build practical tools in public.
+
+1. Health tools for data collection and monitoring.
+2. Climate and agriculture tools for adaptation and planning.
+3. Civic and governance tools for transparency and accountability.
+4. Personal growth tools rooted in discipline and reflection.
+
+## Core Values
+
+1. Integrity and truthfulness, even when truth is uncomfortable.
+2. Service and compassion, especially for low resource communities.
+3. Discipline, in both technical work and personal habits.
+4. Civic contribution through open tools and evidence led action.
+
+## Daily Rhythm
+
+**Morning**
+Read, train, plan, and set the tone for the day.
+
+**Deep work block**
+Research analysis, coding, writing, and model building.
+
+**Afternoon**
+Collaboration, meetings, field coordination, and learning.
+
+**Evening**
+Reflection, reading, family time, and reset.
+
+## Why This Matters
+
+Philosophy is not abstract for me. It is practical. It guides how I write code, manage data, train teams, and make decisions. This is how I keep my work useful, humane, and accountable.
+
+## Connect on Shared Values
+
+If you care about research quality, open collaboration, practical software for Africa, or disciplined long term work, I am open to connect.
+
+```{=html}
+<div style="margin-top:2rem;display:flex;gap:0.8rem;flex-wrap:wrap;">
+  <a href="mailto:nichodemuswerre@gmail.com" class="btn-solid">Email Me</a>
+  <a href="https://github.com/gondamol" class="btn-ghost" target="_blank">GitHub ↗</a>
+  <a href="https://www.linkedin.com/in/nichodemusamollo/" class="btn-ghost" target="_blank">LinkedIn ↗</a>
 </div>
-<div class="tile-body">
-• Research & analysis<br>
-• Coding & building<br>
-• Writing & reporting<br>
-• Water throughout
-</div>
-</div>
-
-<div class="tile-card">
-<div class="tile-card-header">
-<h4 class="tile-title">Afternoon</h4>
-</div>
-<div class="tile-body">
-• Meetings & collaboration<br>
-• Learning & reading<br>
-• Farm work<br>
-• Physical activity
-</div>
-</div>
-
-<div class="tile-card">
-<div class="tile-card-header">
-<h4 class="tile-title">Evening</h4>
-</div>
-<div class="tile-body">
-• Stoic reflection<br>
-• Reading (Nietzsche, philosophy)<br>
-• Family time<br>
-• Prepare for tomorrow
-</div>
-</div>
-
-</div>
-
----
-
-## **🌟 Why This Matters** {data-aos="fade-up"}
-
-::: {.warning-box}
-**Philosophy isn't abstract - it's lived.**
-
-Every line of code I write, every dataset I analyze, every person I train - it's all guided by:
-
-- **Stoic discipline** → Resilience through challenges
-- **Ancestral wisdom** → Staying grounded in identity
-- **Christian compassion** → Service to others
-- **Buddhist mindfulness** → Present, intentional action
-- **Nietzschean strength** → Creating meaning, becoming who I am
-
-This is who I am. Not just a data scientist, but a philosopher-practitioner building tools that serve humanity while living with integrity, discipline, and purpose.
-:::
-
----
-
-## **📬 Connect on Shared Values** {data-aos="zoom-in"}
-
-::: {style="text-align: center; margin: 2rem 0;"}
-
-Interested in discussing:
-
-- **Stoic philosophy** and daily practice
-- **Collaborative projects** in health, climate, democracy
-- **Vibe coding** and AI-assisted development
-- **Farming & sustainable living**
-- **Building tools that matter**
-
-**Open to meaningful collaboration with others who share these values.**
-
-[LinkedIn](https://linkedin.com/in/nichodemusamollo){.btn .btn-primary style="margin: 0.5rem;"}
-[GitHub](https://github.com/gondamol){.btn .btn-primary style="margin: 0.5rem;"}
-[Email](mailto:nichodemuswerre@gmail.com){.btn .btn-primary style="margin: 0.5rem;"}
-
-:::
-
----
-
-<div style="text-align: center; font-style: italic; color: #666; margin: 3rem 0;">
-*"The impediment to action advances action. What stands in the way becomes the way."*  
-- Marcus Aurelius, <em>Meditations</em>
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 1000,
-    easing: 'ease-in-out',
-    once: true,
-    offset: 100
-  });
-</script>
+```

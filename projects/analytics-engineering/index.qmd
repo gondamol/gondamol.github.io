@@ -30,7 +30,7 @@ Instead of theoretical case studies with synthetic data, these are **real automa
 ::: {.project-card}
 ### 🎯 [Job Market Intelligence Platform](job-market-intelligence/)
 
-**Status:** 🔨 In Development | **Priority:** 1 (Pilot Project)
+**Status:** 🔨 Active Build | **Priority:** 1 (Pilot Project)
 
 **The Problem:** Job seekers waste 20+ hours/week manually searching multiple platforms
 
@@ -187,7 +187,7 @@ Explore each project to see live demos, source code, and implementation details.
 
 **Questions or want to collaborate?**
 - 📧 [Contact me](mailto:nichodemuswerre@gmail.com)
-- 💼 [LinkedIn](https://linkedin.com/in/amollow)
+- 💼 [LinkedIn](https://www.linkedin.com/in/nichodemusamollo/)
 - 🐙 [GitHub](https://github.com/gondamol)
 
 ---
