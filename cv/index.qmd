@@ -1,347 +1,340 @@
 ---
-title: "My Journey & Curriculum Vitae"
-subtitle: "Resilient beginnings, rigorous science, global health impact"
-format:
-  html:
-    toc: true
-    toc-depth: 3
-    include-after-body: _includes/aos-vis.html
+title: ""
 page-layout: article
-css: cv-animations.css
+toc: true
+toc-title: "On this page"
 ---
 
-::: {.hero-banner}
-# **Resilience to Impact: A Data-Driven Journey**
-:::
-
-## **The Beginning: Rising from Adversity**
-
-Growing up as an **orphaned child with limited resources** in rural Kenya, the odds were stacked against me. Without the safety net that many take for granted, every educational milestone required extraordinary determination, resourcefulness, and an unwavering belief that **data and education could change lives**.
-
-::: {.highlight-box data-aos="fade-up"}
-### 🌟 From Struggle to Strength
-
-**What shaped me:**
-
-- **Loss taught me resilience** - Losing parents early instilled a drive to create lasting impact
-- **Scarcity taught me resourcefulness** - Limited resources sharpened my problem-solving abilities  
-- **Adversity taught me empathy** - Personal challenges deepened my commitment to health equity  
-- **Community taught me collaboration** - Support from mentors fueled my passion for capacity building
-
-From a childhood of scarcity to a career in global health, I've learned to treat every obstacle as raw material for wiser, more impactful work.
-:::
-
----
-
-# **Professional Profile**
-
-**Research Data Manager | Data Scientist | M&E Specialist**
-
-Specializing in: **Health Financial Diaries | Data Analysis | Machine Learning | Impact Evaluation | Research on Livelihood & Financial Behavior | Health Economics**
-
----
-
-## **Interactive Professional Timeline**
-
-<div id="timeline-visualization" style="height: 500px; border: 1px solid #e0e0e0; border-radius: 8px; margin: 2rem 0;" data-aos="fade-up" data-aos-duration="1000"></div>
-
-<script src="https://unpkg.com/vis-timeline@latest/standalone/umd/vis-timeline-graph2d.min.js"></script>
-<script>
-  // Timeline data
-  var items = new vis.DataSet([
-    // Education
-    {id: 1, content: 'BSc Statistics', start: '2010-09-01', end: '2014-12-31', group: 'education', className: 'education-item'},
-    {id: 2, content: 'MSc Biostatistics & Epidemiology (In Progress)', start: '2022-01-01', end: '2025-12-31', group: 'education', className: 'education-item'},
-    {id: 3, content: 'Washington U. M&E Certification', start: '2024-01-01', end: '2025-06-30', group: 'education', className: 'education-item'},
-    
-    // Professional Experience
-    {id: 10, content: 'Research Data Manager - Georgetown gui2de', start: '2020-01-01', group: 'work', className: 'work-item'},
-    {id: 11, content: 'Research Data Analyst - University of Alaska', start: '2019-01-01', end: '2020-12-31', group: 'work', className: 'work-item'},
-    {id: 12, content: 'M&E Specialist - Various Organizations', start: '2017-01-01', end: '2019-12-31', group: 'work', className: 'work-item'},
-    {id: 13, content: 'Data Analyst - KEMRI', start: '2015-06-01', end: '2017-12-31', group: 'work', className: 'work-item'},
-    
-    // Key Achievements
-    {id: 20, content: '500+ Researchers Trained', start: '2019-06-01', group: 'achievements', className: 'achievement-item', type: 'point'},
-    {id: 21, content: '3 Publications', start: '2021-03-01', group: 'achievements', className: 'achievement-item', type: 'point'},
-    {id: 22, content: 'KES 20M+ Cost Savings Identified', start: '2022-09-01', group: 'achievements', className: 'achievement-item', type: 'point'},
-    {id: 23, content: 'Led 50+ Multi-Country Field Teams', start: '2020-06-01', group: 'achievements', className: 'achievement-item', type: 'point'}
-  ]);
-
-  var groups = new vis.DataSet([
-    {id: 'education', content: '🎓 Education', className: 'timeline-group-education'},
-    {id: 'work', content: '💼 Professional', className: 'timeline-group-work'},
-    {id: 'achievements', content: '🏆 Milestones', className: 'timeline-group-achievements'}
-  ]);
-
-  var options = {
-    width: '100%',
-    height: '100%',
-    margin: {item: 20},
-    orientation: 'top',
-    showCurrentTime: false,
-    zoomMin: 1000 * 60 * 60 * 24 * 365,
-    zoomMax: 1000 * 60 * 60 * 24 * 365 * 20,
-    start: '2010-01-01',
-    end: '2026-01-01'
-  };
-
-  var container = document.getElementById('timeline-visualization');
-  var timeline = new vis.Timeline(container, items, groups, options);
-</script>
-
----
-
-## **Professional Experience** {data-aos="fade-up"}
-
-::: {.experience-timeline}
-
-### **Senior Research Data Manager** {.timeline-item data-aos="fade-right"}
-**Georgetown University gui2de** | *January 2020 - Present (Remote)*
-
-Leading end-to-end data management for multi-million dollar RCTs and impact evaluations focusing on **health financial diaries** and **financial behavior of low-income households**.
-
-**Key Responsibilities:**
-- Design and implement **health financial diary** systems for longitudinal research
-- Conduct **impact evaluations** on health financing interventions
-- Analyze **livelihood patterns** and **financial behavior** of low-income households
-- Lead data collection teams across multiple countries
-- Develop **machine learning models** for predictive analytics
-- Build automated dashboards for real-time monitoring
-
-**Impact:**
-- Managed data for **15+ RCTs** studying health economics
-- Trained **200+ field researchers** in financial diary methodologies
-- Reduced data collection costs by **30%** through mobile data systems
-- Published **2 papers** on health financial behaviors
-
----
-
-### **Research Data Analyst** {.timeline-item data-aos="fade-right"}
-**University of Alaska Anchorage** | *2019 - 2020 (Remote)*
-
-Conducted **data analysis** for health economics research, focusing on **financial determinants** of health-seeking behavior.
-
-**Key Projects:**
-- Analyzed **household financial data** to identify barriers to healthcare access
-- Developed **econometric models** for health expenditure analysis
-- Created interactive dashboards for stakeholder reporting
-
----
-
-### **M&E Specialist & Data Manager** {.timeline-item data-aos="fade-right"}
-**Various Organizations (KEMRI, LERIS Hub, etc.)** | *2015 - 2019*
-
-Led **monitoring and evaluation frameworks** for health and agricultural projects, with focus on **financial sustainability** and **impact measurement**.
-
-**Achievements:**
-- Designed M&E systems for **8+ programs** (USAID/NIH-funded)
-- Conducted **cost-effectiveness analyses** for health interventions
-- Managed **oncology data** for cancer epidemiology research
-- Led field teams of **50+ enumerators**
-
-:::
-
----
-
-## **Core Competencies** {data-aos="fade-up"}
-
-::: {.skills-grid}
-::: {.skill-category data-aos="zoom-in" data-aos-delay="100"}
-### 📊 Health Economics & Financial Research
-- **Health Financial Diaries** - Longitudinal financial data collection
-- **Livelihood Analysis** - Income, expenditure, and coping strategies
-- **Financial Behavior Research** - Low-income household decision-making
-- **Cost-Effectiveness Analysis** - Economic evaluation of interventions
-- **Health Expenditure Analysis** - Out-of-pocket spending, catastrophic costs
-:::
-
-::: {.skill-category data-aos="zoom-in" data-aos-delay="200"}
-### 🔬 Data Science & Machine Learning
-- **Predictive Modeling** - Classification, regression, clustering
-- **Machine Learning** - Random forests, XGBoost, neural networks
-- **Statistical Analysis** - Survival analysis, Bayesian methods
-- **Programming** - R (expert), Python, Stata, SQL
-- **Big Data** - MongoDB, PostgreSQL, data pipelines
-:::
-
-::: {.skill-category data-aos="zoom-in" data-aos-delay="300"}
-### 📈 Impact Evaluation & M&E
-- **RCTs & Quasi-Experimental Designs** - Causal inference
-- **Theory of Change** - LogFrames, Results Frameworks
-- **Outcomes Measurement** - KPI tracking, performance monitoring
-- **Field Data Collection** - Mobile surveys, digitalized tools
-- **Quality Assurance** - High-frequency checks, validation
-:::
-
-::: {.skill-category data-aos="zoom-in" data-aos-delay="400"}
-### 💻 Technical Tools
-- **Programming:** R, Python, Stata, SQL, SPSS
-- **Survey Platforms:** ODK, SurveyCTO, REDCap, KoboCollect
-- **Visualization:** Tableau, Power BI, ggplot2, Shiny
-- **Databases:** MongoDB, PostgreSQL, MySQL
-- **Analysis:** Survival analysis, econometrics, ML libraries
-:::
-:::
-
----
-
-## **Education & Certifications** {data-aos="fade-up"}
-
-::: {.education-section}
-
-### **MSc in Biostatistics & Epidemiology** *(Expected 2025)* {data-aos="flip-left"}
-**Jaramogi Oginga Odinga University of Science and Technology (JOOUST)**
-
-**Thesis:** "Exploring Financial Determinants of Effective Hypertension and Diabetes Management in Primary Health Facilities in Kisumu County"
-
-**Focus Areas:**
-- Health economics and financing
-- Statistical modeling for health outcomes
-- Epidemiological research methods
-
----
-
-### **Certificate in Monitoring & Evaluation in Global Health** *(Expected 2025)* {data-aos="flip-left"}
-**University of Washington**
-
-Comprehensive training in M&E frameworks, impact evaluation, and results measurement.
-
----
-
-### **BSc in Statistics** *(2014)* {data-aos="flip-left"}
-**Maseno University, Kenya**
-
-Foundation in statistical theory, probability, and data analysis.
-
-:::
-
----
-
-## **Selected Publications** {data-aos="fade-up"}
-
-1. **Amollo, N.** et al. (2023). "Financial Determinants of Healthcare Seeking Behavior in Rural Kenya." *Journal of Health Economics*. (In Press)
-
-2. **Amollo, N.** & Team (2022). "Livelihood Strategies and Health Expenditure Patterns among Low-Income Households." *Health Policy & Planning*.
-
-3. Co-author (2021). "Impact of Mobile Money on Healthcare Access in East Africa." *BMC Public Health*.
-
----
-
-## **Key Projects** {data-aos="fade-up"}
-
-### **Health Financial Diaries Study** {.project-highlight data-aos="slide-up"}
-**Georgetown gui2de** | 2020-Present
-
-Longitudinal study tracking **financial behaviors** and **health-seeking patterns** of 1,000+ low-income households across Kenya and Uganda.
-
-**Methods:** Daily financial diaries, monthly surveys, qualitative interviews
-**Tools:** SurveyCTO, R, MongoDB, Shiny dashboards
-**Impact:** Informed **3 policy briefs** on health financing strategies
-
----
-
-### **Impact Evaluation of Health Insurance Schemes** {.project-highlight data-aos="slide-up"}
-**Multiple Partners** | 2019-2022
-
-RCT evaluating the **impact of micro health insurance** on financial protection and health outcomes.
-
-**Analysis:** Difference-in-differences, propensity score matching
-**Results:** **40% reduction** in catastrophic health expenditure among insured households
-
----
-
-### **Oncology Data Management System** {.project-highlight data-aos="slide-up"}
-**KEMRI** | 2016-2019
-
-Designed and managed **cancer registry** database for epidemiological research.
-
-**Outcomes:** Enabled **5 publications** on cancer epidemiology in Kenya
-
----
-
-## **Technical Skills Summary** {data-aos="fade-up"}
-
-**Expert Level:**
-- R Programming (tidyverse, ggplot2, shiny, survival analysis)
-- Statistical Analysis (regression, ML, Bayesian methods)
-- Health Economics Analysis
-- Survey Design & Implementation
-- Data Management Systems
-
-**Advanced:**
-- Python (pandas, scikit-learn, matplotlib)
-- SQL (PostgreSQL, MySQL, MongoDB)
-- Stata (data cleaning, analysis, HFCs)
-- Tableau & Power BI
-- Git/GitHub
-
-**Specialized:**
-- Health financial diary methodologies
-- Impact evaluation techniques
-- Cost-effectiveness analysis
-- Oncology data management
-- Field team leadership
-
----
-
-## **Training & Capacity Building** {data-aos="fade-up"}
-
-**Trained 500+ researchers and enumerators in:**
-- Financial diary data collection methods
-- Mobile survey tools (ODK, SurveyCTO)
-- Data quality protocols
-- Statistical analysis in R
-- M&E frameworks
-
-**Developed training modules for:**
-- Health financial diaries implementation
-- Data management best practices
-- Statistical analysis for health research
-- Field data collection protocols
-
----
-
-## **Languages**
-
-- **English:** Fluent (Professional)
-- **Swahili:** Native
-- **Luo:** Native
-
----
-
-## **Professional Memberships**
-
-- Member, **International Health Economics Association (iHEA)**
-- Member, **African Population and Health Research Center (APHRC)**
-- Member, **Kenya Statistical Society**
-
----
-
-## **References**
-
-Available upon request.
-
----
-
-<div style="text-align: center; margin: 3rem 0;" data-aos="zoom-in">
-
-### 📧 **Let's Connect**
-
-**Email:** [nichodemuswerre@gmail.com](mailto:nichodemuswerre@gmail.com)  
-**Phone:** +254 725 737 867  
-**LinkedIn:** [linkedin.com/in/nichodemusamollo](https://linkedin.com/in/nichodemusamollo)  
-**GitHub:** [github.com/gondamol](https://github.com/gondamol)
-
-[Download PDF CV](#){.cta-button} [View Portfolio](../projects/index.qmd){.cta-button}
+```{=html}
+<div class="cv-shell">
+
+  <section class="cv-hero-block">
+    <div class="cv-hero-main">
+      <span class="section-eyebrow">Curriculum Vitae</span>
+      <h1 class="cv-hero-name">Nichodemus Amollo</h1>
+      <p class="cv-hero-title">Research Data Manager, Biostatistician, Monitoring and Evaluation Specialist</p>
+      <p class="cv-hero-summary">
+        I build practical data systems for health and development programs across East Africa,
+        connecting strong field operations, sound statistics, and clear reporting for decision makers.
+      </p>
+
+      <div class="cv-contact-row">
+        <span class="cv-contact-chip">Nairobi, Kenya</span>
+        <span class="cv-contact-chip">nichodemuswerre@gmail.com</span>
+        <span class="cv-contact-chip">+254 725 737 867</span>
+        <a href="https://www.linkedin.com/in/nichodemusamollo/" target="_blank" class="cv-contact-chip cv-contact-link">linkedin.com/in/nichodemusamollo</a>
+      </div>
+    </div>
+
+    <div class="cv-hero-actions">
+      <a href="Nichodemus_Amollo_CV.pdf" class="btn-solid" target="_blank">View PDF</a>
+      <a href="Nichodemus_Amollo_CV.pdf" class="btn-ghost" download>Download PDF</a>
+      <p class="cv-action-note">Printable copy and sharing ready copy</p>
+    </div>
+  </section>
+
+  <section class="cv-stat-grid">
+    <article class="cv-stat-card">
+      <span class="cv-stat-num">8+</span>
+      <span class="cv-stat-label">Years in applied data and evaluation</span>
+    </article>
+    <article class="cv-stat-card">
+      <span class="cv-stat-num">4</span>
+      <span class="cv-stat-label">Countries supported in East Africa</span>
+    </article>
+    <article class="cv-stat-card">
+      <span class="cv-stat-num">500+</span>
+      <span class="cv-stat-label">Participants in mixed methods work</span>
+    </article>
+    <article class="cv-stat-card">
+      <span class="cv-stat-num">30+</span>
+      <span class="cv-stat-label">Facilities covered in thesis and field studies</span>
+    </article>
+  </section>
+
+  <section class="cv-focus-strip" aria-label="Core focus areas">
+    <span>Health systems research</span>
+    <span>Impact evaluation</span>
+    <span>Biostatistics</span>
+    <span>Data quality systems</span>
+    <span>Dashboard reporting</span>
+    <span>Capacity building</span>
+  </section>
 
 </div>
+```
 
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+## Professional Summary {#summary}
+
+I currently lead research data and statistical delivery for Georgetown University gui2de portfolios in Kenya, Uganda, Tanzania, and Rwanda. My work includes study design, data quality architecture, analysis planning, and publication support. I am strongest where field implementation, analytics engineering, and policy reporting need to work together as one system.
+
+## Experience Explorer {#experience}
+
+```{=html}
+<div class="cv-filter-wrap">
+  <p class="cv-filter-title">Browse roles by focus area or keyword</p>
+
+  <div class="cv-filter-row" role="tablist" aria-label="Experience filters">
+    <button class="cv-filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+    <button class="cv-filter-btn" data-filter="health" role="tab" aria-selected="false">Health Research</button>
+    <button class="cv-filter-btn" data-filter="mel" role="tab" aria-selected="false">MEL</button>
+    <button class="cv-filter-btn" data-filter="systems" role="tab" aria-selected="false">Data Systems</button>
+    <button class="cv-filter-btn" data-filter="leadership" role="tab" aria-selected="false">Leadership</button>
+  </div>
+
+  <label class="cv-search-wrap" for="cvKeywordSearch">
+    <span>Keyword search</span>
+    <input id="cvKeywordSearch" type="search" placeholder="Try: georgetown, stata, dashboards, lecturer">
+  </label>
+
+  <p class="cv-filter-count">Showing <span id="cvVisibleCount">6</span> role entries</p>
+</div>
+
+<div id="cvExperienceList" class="cv-exp-list">
+
+  <details class="cv-exp-item" data-tags="health,mel,systems,leadership" data-search="georgetown gui2de biostatistician health financial diaries quality control dashboard r stata sql power bi mentorship" open>
+    <summary>
+      <span class="cv-exp-year">2025 to Present</span>
+      <span class="cv-exp-role">Lead Biostatistician and Research Data Manager</span>
+      <span class="cv-exp-org">Georgetown University gui2de, East Africa</span>
+    </summary>
+    <div class="cv-exp-body">
+      <p>Lead end to end data and statistical operations for health systems and implementation studies.</p>
+      <ul>
+        <li>Designed quality control workflows and automated reporting pipelines for partner teams.</li>
+        <li>Built analysis and dashboard outputs in R, Stata, SQL, Power BI, and R Shiny.</li>
+        <li>Supported evidence translation for technical reviews, donor reporting, and policy dialogue.</li>
+      </ul>
+      <div class="cv-tag-row"><span>Health</span><span>MEL</span><span>Data systems</span><span>Leadership</span></div>
+    </div>
+  </details>
+
+  <details class="cv-exp-item" data-tags="health,systems" data-search="kemri statistician surveillance data systems reproducibility forecasting survival analysis dashboards ncd cancer" open>
+    <summary>
+      <span class="cv-exp-year">2023 to 2025</span>
+      <span class="cv-exp-role">Senior Statistician and Data Systems Lead</span>
+      <span class="cv-exp-org">KEMRI, Nairobi and Kisumu</span>
+    </summary>
+    <div class="cv-exp-body">
+      <p>Managed integrated surveillance and research datasets with focus on reproducibility and decision support.</p>
+      <ul>
+        <li>Developed regression, forecasting, and survival analysis workflows for health outcomes monitoring.</li>
+        <li>Built dashboard products that reduced reporting effort and improved cross team visibility.</li>
+        <li>Contributed to publication pipelines in cancer and non communicable disease studies.</li>
+      </ul>
+      <div class="cv-tag-row"><span>Health</span><span>Statistics</span><span>Automation</span></div>
+    </div>
+  </details>
+
+  <details class="cv-exp-item" data-tags="mel,systems,leadership" data-search="jooust vlir uos evaluation manager data manager kenya uganda rwanda training enumerators mixed methods" open>
+    <summary>
+      <span class="cv-exp-year">2021 to 2023</span>
+      <span class="cv-exp-role">Senior Research Data Manager and Evaluation Lead</span>
+      <span class="cv-exp-org">JOOUST and VLIR UOS Regional Program, Kenya, Uganda, Rwanda</span>
+    </summary>
+    <div class="cv-exp-body">
+      <p>Coordinated regional evaluation datasets and analytics cycles across distributed partners.</p>
+      <ul>
+        <li>Standardized data structures and quality protocols for cross country comparability.</li>
+        <li>Supported quasi experimental analyses across education and livelihoods programs.</li>
+        <li>Trained 30 plus enumerators and analysts in reproducible field and analysis practice.</li>
+      </ul>
+      <div class="cv-tag-row"><span>Evaluation</span><span>Capacity building</span><span>Regional coordination</span></div>
+    </div>
+  </details>
+
+  <details class="cv-exp-item" data-tags="mel,leadership" data-search="leris hub analyst mel specialist monitoring framework indicator tracking donor reports field teams" open>
+    <summary>
+      <span class="cv-exp-year">2017 to 2021</span>
+      <span class="cv-exp-role">Data Analyst and MEL Specialist</span>
+      <span class="cv-exp-org">LERIS Hub, Kenya and Uganda</span>
+    </summary>
+    <div class="cv-exp-body">
+      <p>Designed monitoring frameworks and field data systems for health and livelihoods initiatives.</p>
+      <ul>
+        <li>Produced donor and policy reports with clear indicator tracking and narrative synthesis.</li>
+        <li>Strengthened field implementation through training and quality assurance routines.</li>
+      </ul>
+      <div class="cv-tag-row"><span>MEL</span><span>Field operations</span><span>Reporting</span></div>
+    </div>
+  </details>
+
+  <details class="cv-exp-item" data-tags="systems" data-search="community development initiative odk kobotoolbox mobile data collection western kenya" open>
+    <summary>
+      <span class="cv-exp-year">2016 to 2017</span>
+      <span class="cv-exp-role">Data Systems Analyst</span>
+      <span class="cv-exp-org">Lake Region Community Development Initiative, Western Kenya</span>
+    </summary>
+    <div class="cv-exp-body">
+      <p>Implemented mobile data collection pipelines and program reporting flows for community projects.</p>
+      <div class="cv-tag-row"><span>ODK</span><span>KoboToolbox</span><span>Data capture</span></div>
+    </div>
+  </details>
+
+  <details class="cv-exp-item" data-tags="health,leadership" data-search="lecturer biostatistics applied r mentoring students university teaching" open>
+    <summary>
+      <span class="cv-exp-year">2020 to Present</span>
+      <span class="cv-exp-role">Part Time Lecturer, Biostatistics and Applied R</span>
+      <span class="cv-exp-org">JOOUST, Bondo</span>
+    </summary>
+    <div class="cv-exp-body">
+      <p>Teach biostatistics and applied analytics modules and mentor students in practical research methods.</p>
+      <div class="cv-tag-row"><span>Teaching</span><span>Mentorship</span><span>Biostatistics</span></div>
+    </div>
+  </details>
+
+</div>
+```
+
+## Education {#education}
+
+```{=html}
+<div class="cv-edu-grid">
+  <article class="cv-edu-card">
+    <p class="cv-edu-year">2022 to 2026 expected</p>
+    <h4>MSc, Epidemiology and Biostatistics</h4>
+    <p>Jaramogi Oginga Odinga University of Science and Technology</p>
+    <p class="cv-edu-note">
+      Thesis focus on financial determinants of effective hypertension and diabetes care in rural primary health facilities in Kisumu County.
+    </p>
+  </article>
+
+  <article class="cv-edu-card">
+    <p class="cv-edu-year">2016</p>
+    <h4>BSc, Statistics, Honours</h4>
+    <p>University of Nairobi, Kenya</p>
+    <p class="cv-edu-note">Second Class Upper Division.</p>
+  </article>
+</div>
+```
+
+## Skills and Tools {#skills}
+
+```{=html}
+<div class="cv-skill-accordion">
+
+  <details open>
+    <summary>Statistical and analytical methods</summary>
+    <div class="cv-chip-row">
+      <span>R</span><span>Python</span><span>Stata</span><span>SPSS</span><span>Excel advanced</span><span>Survival analysis</span><span>Forecasting</span>
+    </div>
+  </details>
+
+  <details>
+    <summary>Data systems and analytics engineering</summary>
+    <div class="cv-chip-row">
+      <span>SQL</span><span>PostgreSQL</span><span>ETL</span><span>API data flow</span><span>Validation checks</span><span>Reproducible reporting</span>
+    </div>
+  </details>
+
+  <details>
+    <summary>Data collection and field operations</summary>
+    <div class="cv-chip-row">
+      <span>KoboToolbox</span><span>ODK</span><span>SurveyCTO</span><span>REDCap</span><span>CommCare</span><span>DHIS2 KHIS</span><span>Enumerator training</span>
+    </div>
+  </details>
+
+  <details>
+    <summary>Visualization and communication</summary>
+    <div class="cv-chip-row">
+      <span>Power BI</span><span>Tableau</span><span>R Shiny</span><span>ggplot2</span><span>Plotly</span><span>Quarto</span><span>Policy reports</span>
+    </div>
+  </details>
+
+  <details>
+    <summary>Evaluation and causal methods</summary>
+    <div class="cv-chip-row">
+      <span>RCT support</span><span>Difference in differences</span><span>Propensity score methods</span><span>Theory of change</span><span>Logframe design</span>
+    </div>
+  </details>
+
+</div>
+```
+
+## Certifications {#certifications}
+
+```{=html}
+<div class="cert-list">
+  <span class="cert-badge">Monitoring and Evaluation in Global Health, University of Washington</span>
+  <span class="cert-badge">Economic Evaluation, University of Washington</span>
+  <span class="cert-badge">Biomedical Research Ethics, CITI Program</span>
+  <span class="cert-badge">Research Methodology and Quantitative Methods, Johns Hopkins</span>
+  <span class="cert-badge">AWS Certified Cloud Practitioner</span>
+  <span class="cert-badge">Google Data Analytics Professional Certificate</span>
+  <span class="cert-badge">Data Science and Advanced R training, DataCamp</span>
+</div>
+```
+
+## Selected Publications {#publications}
+
+1. Amollo N W, Ogol J, Museve E, Owenga J A, Aduda D O, Onguru D (2025). Financial determinants of effective hypertension and diabetes care in rural primary health facilities in Kisumu County.
+2. Mangale D I, Adhiambo H, Adagi P A, Nyandieka E, Abente B, Achieng S, Amollo N W, Odeny T A (2025). Characteristics and mortality risk among esophageal cancer patients with varied HIV status seeking care in western Kenya.
+3. Odeny T A, Adhiambo H F, Mangale D I, Were N A, Nyandieka E, Adagi P A, Amollo N W, Atieno D (2025). Survival disparities in cervical cancer patients with and without HIV at JOOTRH.
+4. Ouma O J, Omondi D, Akinyi I, Amollo N W, Ogutu S, Obinge E, van Olmen J (2025). Addressing priority gaps in access and quality of non communicable disease services in primary care settings in rural Kenya.
+
+## Languages {#languages}
+
+English fluent, Kiswahili fluent, Dholuo native.
+
+## Referees {#referees}
+
+Available on request.
+
+```{=html}
+<div class="cv-footer-actions">
+  <a href="Nichodemus_Amollo_CV.pdf" class="btn-solid" target="_blank">View PDF</a>
+  <a href="Nichodemus_Amollo_CV.pdf" class="btn-ghost" download>Download PDF</a>
+</div>
+
 <script>
-  AOS.init({
-    duration: 800,
-    easing: 'ease-in-out',
-    once: true,
-    offset: 100
+(function() {
+  var buttons = Array.from(document.querySelectorAll('.cv-filter-btn'));
+  var items = Array.from(document.querySelectorAll('.cv-exp-item'));
+  var count = document.getElementById('cvVisibleCount');
+  var search = document.getElementById('cvKeywordSearch');
+  var active = 'all';
+
+  function passFilter(item) {
+    var tags = (item.dataset.tags || '').split(',');
+    if (active === 'all') return true;
+    return tags.indexOf(active) !== -1;
+  }
+
+  function passSearch(item) {
+    var term = search && search.value ? search.value.trim().toLowerCase() : '';
+    if (!term) return true;
+    var hay = (item.dataset.search || '').toLowerCase();
+    return hay.indexOf(term) !== -1;
+  }
+
+  function render() {
+    var visible = 0;
+    items.forEach(function(item) {
+      var match = passFilter(item) && passSearch(item);
+      item.style.display = match ? '' : 'none';
+      if (match) visible += 1;
+    });
+    if (count) count.textContent = String(visible);
+  }
+
+  buttons.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      active = btn.dataset.filter || 'all';
+      buttons.forEach(function(other) {
+        other.classList.remove('active');
+        other.setAttribute('aria-selected', 'false');
+      });
+      btn.classList.add('active');
+      btn.setAttribute('aria-selected', 'true');
+      render();
+    });
   });
+
+  if (search) {
+    search.addEventListener('input', render);
+  }
+
+  render();
+})();
 </script>
+```

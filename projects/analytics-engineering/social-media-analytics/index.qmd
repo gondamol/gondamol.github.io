@@ -54,7 +54,7 @@ Brands need instant awareness of social media mentions, sentiment shifts, and po
 
 ## Live Demo
 
-🔨 **Status:** In Development
+🔨 **Status:** Active build
 
 ---
 

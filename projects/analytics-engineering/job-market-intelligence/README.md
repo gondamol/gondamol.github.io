@@ -159,7 +159,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Nicodemus Werre Amollo**
 - Website: [gondamol.github.io](https://gondamol.github.io)
-- LinkedIn: [linkedin.com/in/amollow](https://linkedin.com/in/amollow)
+- LinkedIn: [linkedin.com/in/amollow](https://www.linkedin.com/in/nichodemusamollo/)
 - Email: nichodemuswerre@gmail.com
 
 ---

@@ -7,6 +7,6 @@ categories: [news, code, analysis]
 
 This is a post with executable code.
 
-```{r}
+```r
 1 + 1
 ```

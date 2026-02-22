@@ -143,7 +143,7 @@ I'm actively seeking PhD opportunities starting in 2025/2026.
 
 ## **Research Software**
 
-### **R Packages (In Development)**
+### **R Packages in Portfolio Plan**
 
 1. **`ncdfinance`** - Tools for analyzing health facility financing for NCDs
    - Budget analysis functions

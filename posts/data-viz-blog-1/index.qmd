@@ -32,7 +32,7 @@ Visualizations help us:
 
 ## R Visualization: ggplot2 Mastery
 
-```{r}
+```r
 #| echo: true
 #| eval: false
 #| fig-width: 12
@@ -148,5 +148,5 @@ Mastering data visualization requires practice and understanding of both the tec
 
 ---
 
-[← Back to Blog](../index.qmd) | [View All Visualizations](../../../visualizations/index.qmd)
+[← Back to Blog](../../blogs/index.qmd) | [View All Visualizations](../../visualizations/index.qmd)
 

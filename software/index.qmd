@@ -17,7 +17,7 @@ Creating tools that make health and development data collection and analysis mor
 ### **surveyKE: Advanced Survey Tools for Kenya & Africa** {.highlight-box}
 
 ::: {style="margin: 2rem 0;"}
-**Status:** 🔨 In Development  
+**Status:** 🔨 Active build  
 **GitHub:** [github.com/gondamol/surveyKE](https://github.com/gondamol/surveyKE) *(Coming Soon)*  
 **License:** MIT
 
@@ -222,7 +222,7 @@ baseline <- survey_ke(
 
 :::
 
-**Legend:** ✅ Complete | 🔨 In Progress | 📋 Planned
+**Legend:** ✅ Complete | 🔨 Active build | 📋 Planned
 
 ---
 

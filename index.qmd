@@ -1,183 +1,813 @@
 ---
-title: "Nichodemus Amollo"
-subtitle: "Health Financial Diaries | Data Science & ML | Impact Evaluation | Health Economics"
+title: ""
 page-layout: full
+toc: false
 ---
 
-::: {.text-center .no-frame style="margin-bottom: 2rem;"}
-![Portrait of Nichodemus Amollo](profile.jpeg){width=250px class="profile-photo floating" style="margin-top: 2rem;"}
+```{=html}
+<!-- ════════════════════════════════════════════
+     HERO
+════════════════════════════════════════════ -->
+<section class="hero reveal-on-scroll">
+  <div class="hero-text">
+    <p class="eyebrow">Data Analyst · Research Data Manager · M&amp;E</p>
+    <h1 class="hero-name">Nichodemus<br><em>Amollo</em></h1>
+    <p class="hero-bio">
+      I work at the intersection of field research and data engineering.
+      Designing surveys in communities with no internet, building the pipelines
+      that clean and model what comes back, and writing the reports that move
+      funders. Eight years, three countries, one through-line: data that
+      actually reaches the people it was collected from.
+    </p>
+    <div class="hero-domains">
+      <span class="domain green">Public Health</span>
+      <span class="domain green">Agriculture</span>
+      <span class="domain terracotta">M&amp;E / Impact Eval</span>
+      <span class="domain gold">Finance</span>
+      <span class="domain slate">Supply Chain</span>
+      <span class="domain slate">Real Estate</span>
+    </div>
+    <div class="hero-cta">
+      <a href="projects/index.qmd" class="btn-solid">See My Work</a>
+      <a href="about/index.qmd" class="btn-ghost">My Story →</a>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="photo-frame">
+      <img
+        src="img/profile.jpeg"
+        alt="Nichodemus Amollo, Research Data Manager"
+        class="hero-photo"
+        onerror="this.parentElement.style.background='#2a3d2a'"
+      >
+    </div>
+    <div class="stat-row">
+      <div class="stat">
+        <span class="stat-n">8+</span>
+        <span class="stat-l">Years</span>
+      </div>
+      <div class="stat">
+        <span class="stat-n">3</span>
+        <span class="stat-l">Countries</span>
+      </div>
+      <div class="stat">
+        <span class="stat-n">500+</span>
+        <span class="stat-l">Researchers trained</span>
+      </div>
+      <div class="stat">
+        <span class="stat-n">6</span>
+        <span class="stat-l">SDG domains</span>
+      </div>
+    </div>
+  </div>
+</section>
+```
 
-::: {.social-links .no-frame}
-[<i class="fab fa-linkedin"></i> LinkedIn](https://linkedin.com/in/amollow){.btn .btn-primary}
-[<i class="fab fa-github"></i> GitHub](https://github.com/gondamol){.btn .btn-primary}
-[<i class="fab fa-twitter"></i> Twitter](https://twitter.com/nwerre){.btn .btn-primary}
-[<i class="fab fa-kaggle"></i> Kaggle](https://kaggle.com/nwerre){.btn .btn-primary}
-[<i class="fas fa-envelope"></i> Email](mailto:nichodemuswerre@gmail.com){.btn .btn-primary}
-:::
-:::
+```{=html}
+<!-- ════════════════════════════════════════════
+     WHAT I DO — dark band
+════════════════════════════════════════════ -->
+<section class="band-dark section-divider reveal-on-scroll">
+  <div class="band-inner">
+    <p class="section-eyebrow light">Expertise</p>
+    <h2 class="section-h light">Data, end to end.</h2>
+    <div class="expertise-row">
 
-::: {.hero-banner}
-# **<i class="fas fa-brain icon-bounce" aria-hidden="true"></i> Research Data Manager | Data Scientist | M&E Specialist**
+      <div class="exp-card" tabindex="0">
+        <div class="exp-num">01</div>
+        <div class="exp-icon">🔬</div>
+        <h3 class="exp-title">Research &amp; M&amp;E</h3>
+        <p class="exp-body">Designing studies, building logframes, leading RCTs and quasi-experimental evaluations. Field teams of 50+ across Kenya, Uganda and Tanzania. Final reports for USAID and government ministries.</p>
+        <div class="exp-chips">
+          <span>ODK</span><span>KoboToolbox</span><span>REDCap</span><span>SPSS</span><span>Stata</span>
+        </div>
+        <div class="exp-card-arrow">→</div>
+      </div>
 
-<div class="hero-subtitle">
-“Just as a blazing fire makes flame and brightness out of everything that is thrown into it.” — Marcus Aurelius  
-From rural Kenya to global health data science, I turn obstacles into fuel for service.
+      <div class="exp-card" tabindex="0">
+        <div class="exp-num">02</div>
+        <div class="exp-icon">📊</div>
+        <h3 class="exp-title">Data Analytics &amp; BI</h3>
+        <p class="exp-body">SQL pipelines, Power BI dashboards, R Markdown publications. I turn messy survey exports into decisions. Work spans public health KPIs, agricultural economics, real estate markets, and financial inclusion indices.</p>
+        <div class="exp-chips">
+          <span>SQL</span><span>Power BI</span><span>R</span><span>Python</span><span>Quarto</span>
+        </div>
+        <div class="exp-card-arrow">→</div>
+      </div>
+
+      <div class="exp-card" tabindex="0">
+        <div class="exp-num">03</div>
+        <div class="exp-icon">⚙️</div>
+        <h3 class="exp-title">Full Data Lifecycle</h3>
+        <p class="exp-body">Literature review through tool design, digitalization, field training, HFC, cleaning, analysis, reporting, and stakeholder engagement. Every step owned and handed off clean and reproducible.</p>
+        <div class="exp-chips">
+          <span>XLSForm</span><span>DHIS2/KHIS</span><span>HFC</span><span>PostgreSQL</span><span>Git</span>
+        </div>
+        <div class="exp-card-arrow">→</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+```
+
+```{=html}
+<!-- ════════════════════════════════════════════
+     HOW I WORK — lifecycle with hover tooltips
+════════════════════════════════════════════ -->
+<section class="band-warm section-divider reveal-on-scroll">
+  <div class="band-inner">
+    <p class="section-eyebrow">Process</p>
+    <h2 class="section-h">The full data lifecycle,<br>owned end to end.</h2>
+    <p class="section-sub">From the first community conversation to the final policy brief. Every step, every time.</p>
+    <div class="lifecycle-cards">
+
+      <div class="lc-card" tabindex="0">
+        <div class="lc-card-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="1"/><line x1="9" y1="12" x2="15" y2="12"/><line x1="9" y1="16" x2="13" y2="16"/></svg>
+        </div>
+        <span class="lc-card-num">01</span>
+        <h4 class="lc-card-name">Study Design &amp; Tools</h4>
+        <p class="lc-card-tools">ODK · KoboToolbox · REDCap · Lit Review</p>
+        <div class="lc-card-hover-text">Scoping, protocol design, IRB submissions, tool digitization. Setting the foundation for high-quality data from day one.</div>
+      </div>
+
+      <div class="lc-card" tabindex="0">
+        <div class="lc-card-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="9" y1="7" x2="15" y2="7"/><line x1="9" y1="11" x2="15" y2="11"/><line x1="9" y1="15" x2="12" y2="15"/></svg>
+        </div>
+        <span class="lc-card-num">02</span>
+        <h4 class="lc-card-name">Digitalization &amp; CAPI</h4>
+        <p class="lc-card-tools">XLSForm · DHIS2 · CommCare</p>
+        <div class="lc-card-hover-text">Converting paper forms into robust digital instruments. Skip logic, validation rules, and offline capability built in.</div>
+      </div>
+
+      <div class="lc-card" tabindex="0">
+        <div class="lc-card-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <span class="lc-card-num">03</span>
+        <h4 class="lc-card-name">Field Teams &amp; Training</h4>
+        <p class="lc-card-tools">HFC · Supervision · QA Protocols</p>
+        <div class="lc-card-hover-text">Recruiting, training and supervising enumerators. Daily HFC, debriefs, and quality audits across multi-site studies.</div>
+      </div>
+
+      <div class="lc-card" tabindex="0">
+        <div class="lc-card-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 3h18M3 9h18M9 3v18M3 15l4-4 4 4 4-6 4 6"/></svg>
+        </div>
+        <span class="lc-card-num">04</span>
+        <h4 class="lc-card-name">Data Cleaning</h4>
+        <p class="lc-card-tools">R · Python · Stata · SPSS</p>
+        <div class="lc-card-hover-text">Outlier detection, deduplication, range checks, consistency flags. Reproducible cleaning scripts from day one.</div>
+      </div>
+
+      <div class="lc-card" tabindex="0">
+        <div class="lc-card-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="8" y1="11" x2="14" y2="11"/><line x1="11" y1="8" x2="11" y2="14"/></svg>
+        </div>
+        <span class="lc-card-num">05</span>
+        <h4 class="lc-card-name">Analysis &amp; Modelling</h4>
+        <p class="lc-card-tools">SQL · Regression · DiD · ML</p>
+        <div class="lc-card-hover-text">Descriptive stats to advanced econometrics. Difference-in-differences, survival analysis, mixed-methods frameworks.</div>
+      </div>
+
+      <div class="lc-card" tabindex="0">
+        <div class="lc-card-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 17V13"/><path d="M12 17V9"/><path d="M16 17V11"/></svg>
+        </div>
+        <span class="lc-card-num">06</span>
+        <h4 class="lc-card-name">Reporting &amp; Dashboards</h4>
+        <p class="lc-card-tools">Power BI · R Markdown · Quarto</p>
+        <div class="lc-card-hover-text">Interactive dashboards, automated reports, and publication-ready charts that update with new data.</div>
+      </div>
+
+      <div class="lc-card" tabindex="0">
+        <div class="lc-card-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        </div>
+        <span class="lc-card-num">07</span>
+        <h4 class="lc-card-name">Stakeholder Engagement</h4>
+        <p class="lc-card-tools">Policy Briefs · Presentations</p>
+        <div class="lc-card-hover-text">Translating findings for funders, ministries, and communities. Presentations, policy briefs, and learning events.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+```
+
+```{=html}
+<!-- ════════════════════════════════════════════
+     FEATURED PROJECTS
+════════════════════════════════════════════ -->
+<section class="section-pad section-divider reveal-on-scroll">
+  <div class="section-inner">
+    <p class="section-eyebrow">Selected Work</p>
+    <h2 class="section-h">Projects &amp; Case Studies</h2>
+    <p class="section-sub">Real work across public health, agriculture, finance, and development — from field surveys to analytics pipelines.</p>
+
+    <!-- Filter tabs -->
+    <div class="proj-filters" role="tablist" aria-label="Filter projects">
+      <button class="proj-filter active" data-filter="all" role="tab" aria-selected="true">All</button>
+      <button class="proj-filter" data-filter="health" role="tab" aria-selected="false">Public Health</button>
+      <button class="proj-filter" data-filter="agriculture" role="tab" aria-selected="false">Agriculture</button>
+      <button class="proj-filter" data-filter="finance" role="tab" aria-selected="false">Finance</button>
+      <button class="proj-filter" data-filter="analytics" role="tab" aria-selected="false">Analytics</button>
+    </div>
+
+    <div class="proj-meta">
+      <p class="proj-count" id="projectCount" aria-live="polite">Showing <strong>all</strong> projects</p>
+      <p class="proj-hint">Use filters to focus on one domain.</p>
+    </div>
+
+    <div class="project-grid" id="projectGrid">
+
+      <!-- FEATURED  -->
+      <a href="research/thesis.qmd" class="proj-card proj-featured" data-category="health">
+        <div class="proj-thumb" style="background:#1a2e1a;">
+          <div class="proj-thumb-pattern" style="--dot:#ffffff10;"></div>
+          <img src="img/professor nyongo launching the dashboard.jpeg"
+               alt="Professor Nyongo launching the Kisumu cancer dashboard"
+               style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.55;"
+               onerror="this.remove()">
+          <span class="proj-icon" style="position:relative;z-index:2;">🏥</span>
+        </div>
+        <div class="proj-body">
+          <p class="proj-domain" style="color:#7fbf7f;">Public Health · MSc Research · Kisumu County</p>
+          <h3 class="proj-title">Financial Determinants of NCD Management</h3>
+          <p class="proj-desc">Mixed-methods study across 30+ facilities and 500+ patients in Kisumu County investigating how health facility financing shapes hypertension and diabetes outcomes. Includes a real-time R Shiny monitoring dashboard.</p>
+          <div class="proj-footer">
+            <span class="proj-tags"><span>R</span><span>Mixed methods</span><span>Georgetown gui2de</span></span>
+            <span class="proj-arrow">Read case study →</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- STANDARD cards -->
+      <a href="tidy-tuesday/2024-maternal-mortality.qmd" class="proj-card proj-half" data-category="health">
+        <div class="proj-thumb" style="background:#1e2a1e;height:180px;">
+          <div class="proj-thumb-pattern" style="--dot:#ffffff0d;"></div>
+          <span class="proj-icon" style="font-size:2rem;">🌸</span>
+        </div>
+        <div class="proj-body">
+          <p class="proj-domain" style="color:#7fbf7f;">Maternal Health · SDG 3</p>
+          <h3 class="proj-title">Maternal Mortality Trends in Sub-Saharan Africa</h3>
+          <p class="proj-desc">Multi-country analysis using WHO data. Difference-in-differences modelling, ggplot2 publication charts.</p>
+          <div class="proj-footer">
+            <span class="proj-tags"><span>R</span><span>DiD</span><span>ggplot2</span></span>
+            <span class="proj-arrow">View →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="posts/agriculture-data-analysis/index.qmd" class="proj-card proj-half" data-category="agriculture">
+        <div class="proj-thumb" style="background:#2a1e08;height:180px;">
+          <div class="proj-thumb-pattern" style="--dot:#ffffff0d;"></div>
+          <span class="proj-icon" style="font-size:2rem;">🌾</span>
+        </div>
+        <div class="proj-body">
+          <p class="proj-domain" style="color:#d4a84b;">Agriculture · SDG 2</p>
+          <h3 class="proj-title">Goat Farming Economics in Homa Bay</h3>
+          <p class="proj-desc">Profitability analysis of small-ruminant production. Field-collected cost data combined with market price modelling.</p>
+          <div class="proj-footer">
+            <span class="proj-tags"><span>R</span><span>Economic modelling</span></span>
+            <span class="proj-arrow">View →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="tidy-tuesday/financial-inclusion.qmd" class="proj-card proj-half" data-category="finance">
+        <div class="proj-thumb" style="background:#0d1a2e;height:180px;">
+          <div class="proj-thumb-pattern" style="--dot:#ffffff0d;"></div>
+          <span class="proj-icon" style="font-size:2rem;">💳</span>
+        </div>
+        <div class="proj-body">
+          <p class="proj-domain" style="color:#6fa8dc;">Finance · SDG 10</p>
+          <h3 class="proj-title">Financial Inclusion and Health in Africa</h3>
+          <p class="proj-desc">Mobile money penetration, formal banking access, and health expenditure. World Bank and GSMA data.</p>
+          <div class="proj-footer">
+            <span class="proj-tags"><span>Python</span><span>Plotly</span><span>Regression</span></span>
+            <span class="proj-arrow">View →</span>
+          </div>
+        </div>
+      </a>
+
+      <div class="proj-card proj-half" data-category="analytics">
+        <div class="proj-thumb" style="background:#141b24;height:180px;">
+          <div class="proj-thumb-pattern" style="--dot:#ffffff10;"></div>
+          <span class="proj-icon" style="font-size:2rem;">🔗</span>
+        </div>
+        <div class="proj-body">
+          <p class="proj-domain" style="color:#8cb5d9;">Operations Analytics · Tatu City</p>
+          <h3 class="proj-title">Supply Chain Intelligence Blueprint</h3>
+          <p class="proj-desc">Designed a logistics analytics architecture covering inventory flow, shipment reliability, and service level monitoring for distributed operations in Kenya.</p>
+          <div class="proj-footer">
+            <span class="proj-tags"><span>SQL</span><span>Forecasting</span><span>Operations</span></span>
+            <span class="proj-arrow">Portfolio brief</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-card proj-half" data-category="analytics">
+        <div class="proj-thumb" style="background:#1a2030;height:180px;">
+          <div class="proj-thumb-pattern" style="--dot:#ffffff10;"></div>
+          <span class="proj-icon" style="font-size:2rem;">🏢</span>
+        </div>
+        <div class="proj-body">
+          <p class="proj-domain" style="color:#8cb5d9;">Urban Analytics · Nairobi</p>
+          <h3 class="proj-title">Nairobi Real Estate Signals Dashboard</h3>
+          <p class="proj-desc">Built a neighborhood level exploratory model for rent and sales patterns, combining trend decomposition, geospatial segmentation, and valuation signals.</p>
+          <div class="proj-footer">
+            <span class="proj-tags"><span>Geospatial</span><span>Power BI</span><span>Modeling</span></span>
+            <span class="proj-arrow">Portfolio brief</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-card proj-half" data-category="health">
+        <div class="proj-thumb" style="background:#2a1a1a;height:180px;">
+          <div class="proj-thumb-pattern" style="--dot:#ffffff10;"></div>
+          <span class="proj-icon" style="font-size:2rem;">💊</span>
+        </div>
+        <div class="proj-body">
+          <p class="proj-domain" style="color:#e07f7f;">Health Economics · Georgetown gui2de</p>
+          <h3 class="proj-title">Health Financing Impact Evaluation</h3>
+          <p class="proj-desc">Quasi experimental evaluation of service financing and household spending volatility, with indicator tracking for implementation quality and policy use.</p>
+          <div class="proj-footer">
+            <span class="proj-tags"><span>DiD</span><span>Panel data</span><span>MEL</span></span>
+            <span class="proj-arrow">Portfolio brief</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="margin-top:3rem;">
+      <a href="projects/index.qmd" class="btn-solid">All Projects →</a>
+    </div>
+  </div>
+</section>
+
+<script>
+(function() {
+  const filters = document.querySelectorAll('.proj-filter');
+  const cards = Array.from(document.querySelectorAll('#projectGrid [data-category]'));
+  const countEl = document.getElementById('projectCount');
+  const totalCards = cards.length;
+
+  function showCard(card) {
+    if (card._hideTimer) {
+      window.clearTimeout(card._hideTimer);
+      card._hideTimer = null;
+    }
+    card.hidden = false;
+    card.classList.remove('is-leaving');
+    requestAnimationFrame(() => {
+      card.classList.add('is-visible');
+    });
+  }
+
+  function hideCard(card) {
+    if (card._hideTimer) {
+      window.clearTimeout(card._hideTimer);
+    }
+    card.classList.remove('is-visible');
+    card.classList.add('is-leaving');
+    card._hideTimer = window.setTimeout(() => {
+      card.hidden = true;
+      card.classList.remove('is-leaving');
+      card._hideTimer = null;
+    }, 170);
+  }
+
+  function updateCount(visibleCount, activeFilter) {
+    if (!countEl) return;
+    const labels = {
+      all: 'all domains',
+      health: 'public health',
+      agriculture: 'agriculture',
+      finance: 'finance',
+      analytics: 'analytics'
+    };
+    const label = labels[activeFilter] || activeFilter;
+    countEl.innerHTML = 'Showing <strong>' + visibleCount + ' / ' + totalCards + '</strong> projects · ' + label;
+  }
+
+  function applyFilter(filterName) {
+    let visibleCount = 0;
+    cards.forEach(card => {
+      const show = filterName === 'all' || card.dataset.category === filterName;
+      if (show) {
+        visibleCount += 1;
+        showCard(card);
+      } else {
+        hideCard(card);
+      }
+    });
+    updateCount(visibleCount, filterName);
+  }
+
+  cards.forEach(card => card.classList.add('is-visible'));
+
+  filters.forEach(btn => {
+    btn.addEventListener('click', function() {
+      filters.forEach(b => {
+        b.classList.remove('active');
+        b.setAttribute('aria-selected', 'false');
+      });
+      this.classList.add('active');
+      this.setAttribute('aria-selected', 'true');
+      applyFilter(this.dataset.filter);
+    });
+  });
+
+  applyFilter('all');
+})();
+</script>
+```
+
+```{=html}
+<!-- ════════════════════════════════════════════
+     TECHNICAL SKILLS
+════════════════════════════════════════════ -->
+<section class="band-warm section-divider reveal-on-scroll">
+  <div class="band-inner">
+    <p class="section-eyebrow">Technical Skills</p>
+    <h2 class="section-h">Tools I trust.</h2>
+    <p class="section-sub">Built through field work, not just coursework. Each tool has solved a real problem.</p>
+
+    <div class="skills-showcase" id="skillsShowcase">
+
+      <div class="skill-category">
+        <p class="skill-cat-label">Analytics &amp; Stats</p>
+        <div class="skill-row"><span class="sk-name">R</span><div class="sk-track"><div class="sk-fill" data-width="92"></div></div><span class="sk-pct">Expert</span></div>
+        <div class="skill-row"><span class="sk-name">Stata</span><div class="sk-track"><div class="sk-fill" data-width="88"></div></div><span class="sk-pct">Advanced</span></div>
+        <div class="skill-row"><span class="sk-name">Python</span><div class="sk-track"><div class="sk-fill" data-width="78"></div></div><span class="sk-pct">Proficient</span></div>
+        <div class="skill-row"><span class="sk-name">SPSS</span><div class="sk-track"><div class="sk-fill" data-width="82"></div></div><span class="sk-pct">Advanced</span></div>
+      </div>
+
+      <div class="skill-category">
+        <p class="skill-cat-label">Data &amp; Databases</p>
+        <div class="skill-row"><span class="sk-name">SQL</span><div class="sk-track"><div class="sk-fill" data-width="85"></div></div><span class="sk-pct">Advanced</span></div>
+        <div class="skill-row"><span class="sk-name">PostgreSQL</span><div class="sk-track"><div class="sk-fill" data-width="70"></div></div><span class="sk-pct">Proficient</span></div>
+        <div class="skill-row"><span class="sk-name">DHIS2/KHIS</span><div class="sk-track"><div class="sk-fill" data-width="82"></div></div><span class="sk-pct">Advanced</span></div>
+        <div class="skill-row"><span class="sk-name">Excel</span><div class="sk-track"><div class="sk-fill" data-width="95"></div></div><span class="sk-pct">Expert</span></div>
+      </div>
+
+      <div class="skill-category">
+        <p class="skill-cat-label">Data Collection</p>
+        <div class="skill-row"><span class="sk-name">KoboToolbox</span><div class="sk-track"><div class="sk-fill" data-width="95"></div></div><span class="sk-pct">Expert</span></div>
+        <div class="skill-row"><span class="sk-name">ODK</span><div class="sk-track"><div class="sk-fill" data-width="92"></div></div><span class="sk-pct">Expert</span></div>
+        <div class="skill-row"><span class="sk-name">REDCap</span><div class="sk-track"><div class="sk-fill" data-width="78"></div></div><span class="sk-pct">Proficient</span></div>
+        <div class="skill-row"><span class="sk-name">CommCare</span><div class="sk-track"><div class="sk-fill" data-width="72"></div></div><span class="sk-pct">Proficient</span></div>
+      </div>
+
+      <div class="skill-category">
+        <p class="skill-cat-label">Reporting &amp; BI</p>
+        <div class="skill-row"><span class="sk-name">Power BI</span><div class="sk-track"><div class="sk-fill" data-width="85"></div></div><span class="sk-pct">Advanced</span></div>
+        <div class="skill-row"><span class="sk-name">R Markdown</span><div class="sk-track"><div class="sk-fill" data-width="92"></div></div><span class="sk-pct">Expert</span></div>
+        <div class="skill-row"><span class="sk-name">Quarto</span><div class="sk-track"><div class="sk-fill" data-width="80"></div></div><span class="sk-pct">Advanced</span></div>
+        <div class="skill-row"><span class="sk-name">Tableau</span><div class="sk-track"><div class="sk-fill" data-width="65"></div></div><span class="sk-pct">Proficient</span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+```
+
+```{=html}
+<!-- ════════════════════════════════════════════
+     SERVICES SNAPSHOT
+════════════════════════════════════════════ -->
+<section class="section-pad section-divider reveal-on-scroll">
+  <div class="section-inner">
+    <p class="section-eyebrow">Services</p>
+    <h2 class="section-h">How I support teams.</h2>
+    <p class="section-sub">End-to-end support, from study design to decision-ready reporting. Professional, reproducible, and built for real-world operations.</p>
+
+    <div class="services-grid services-grid-home">
+      <div class="svc-card">
+        <span class="svc-icon">📐</span>
+        <h4 class="svc-title">Research Design &amp; M&amp;E Systems</h4>
+        <p class="svc-body">Protocol design, indicators, and digital instruments for programmes that need clean monitoring from day one.</p>
+        <div class="svc-tags"><span>Logframes</span><span>ODK/Kobo</span><span>Impact Eval</span></div>
+      </div>
+
+      <div class="svc-card">
+        <span class="svc-icon">🗄️</span>
+        <h4 class="svc-title">Data Pipelines &amp; Quality Control</h4>
+        <p class="svc-body">Reproducible cleaning pipelines, high-frequency checks, and database workflows in R, SQL, and Python.</p>
+        <div class="svc-tags"><span>R</span><span>SQL</span><span>Python</span></div>
+      </div>
+
+      <div class="svc-card">
+        <span class="svc-icon">📊</span>
+        <h4 class="svc-title">Dashboards &amp; Decision Reporting</h4>
+        <p class="svc-body">Interactive dashboards and concise reporting for funders, ministries, and executive teams.</p>
+        <div class="svc-tags"><span>Power BI</span><span>Quarto</span><span>R Shiny</span></div>
+      </div>
+    </div>
+
+    <div class="services-cta-row">
+      <a href="about/index.qmd#services" class="btn-solid">Explore Full Services →</a>
+      <a href="mailto:nichodemuswerre@gmail.com" class="btn-ghost">Discuss a Project →</a>
+    </div>
+  </div>
+</section>
+```
+
+```{=html}
+<!-- ════════════════════════════════════════════
+     BACKGROUND — CV preview
+════════════════════════════════════════════ -->
+<section class="section-pad section-divider reveal-on-scroll">
+  <div class="section-inner">
+    <p class="section-eyebrow">Background</p>
+    <h2 class="section-h">Where I have worked<br>and learned.</h2>
+
+    <div class="cv-preview-grid">
+      <!-- Experience -->
+      <div class="cv-col">
+        <h3 class="cv-col-head">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+          Experience
+        </h3>
+        <div class="cv-item">
+          <span class="cv-year">2025 – Present</span>
+          <h4 class="cv-role">Lead Research Data Manager</h4>
+          <p class="cv-org">Georgetown University gui2de · Remote / Kenya</p>
+          <p class="cv-detail">Leading data architecture for the Health Financial Diaries project, tracking financial resilience across 1,000+ households. Designing automated R Shiny dashboards for real-time policy metrics.</p>
+        </div>
+        <div class="cv-item">
+          <span class="cv-year">2023 – 2025</span>
+          <h4 class="cv-role">Senior Statistician and Data Systems Lead</h4>
+          <p class="cv-org">KEMRI · Nairobi and Kisumu</p>
+          <p class="cv-detail">Built integrated health analytics pipelines and survival analysis workflows for surveillance, decision support, and partner reporting.</p>
+        </div>
+        <div class="cv-item">
+          <span class="cv-year">2021 – 2023</span>
+          <h4 class="cv-role">Senior Research Data Manager and Evaluation Lead</h4>
+          <p class="cv-org">JOOUST and VLIR UOS · Kenya, Uganda, Rwanda</p>
+          <p class="cv-detail">Coordinated cross country datasets, supported randomized and quasi experimental analysis, and trained data teams on quality and reproducibility.</p>
+        </div>
+        <div class="cv-item">
+          <span class="cv-year">2017 – 2021</span>
+          <h4 class="cv-role">Data Analyst and MEL Specialist</h4>
+          <p class="cv-org">LERIS Hub · Kenya and Uganda</p>
+          <p class="cv-detail">Designed monitoring frameworks and data collection workflows, then delivered policy and donor reporting products for complex programs.</p>
+        </div>
+      </div>
+
+      <!-- Education & Certs -->
+      <div class="cv-col">
+        <h3 class="cv-col-head">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          Education &amp; Certifications
+        </h3>
+        <div class="cv-item">
+          <span class="cv-year">2022 – 2026 expected</span>
+          <h4 class="cv-role">MSc, Epidemiology &amp; Biostatistics</h4>
+          <p class="cv-org">JOOUST · Kenya</p>
+          <p class="cv-detail">Thesis focus on financial determinants of effective hypertension and diabetes care in rural primary facilities.</p>
+        </div>
+        <div class="cv-item">
+          <span class="cv-year">2016</span>
+          <h4 class="cv-role">BSc, Statistics (Honours)</h4>
+          <p class="cv-org">University of Nairobi · Kenya</p>
+          <p class="cv-detail">Second Class Upper Division.</p>
+        </div>
+        <div class="cv-item">
+          <span class="cv-year">Certifications</span>
+          <h4 class="cv-role">Professional Certificates</h4>
+          <div class="cert-list">
+            <span class="cert-badge">Google Data Analytics</span>
+            <span class="cert-badge">M&amp;E in Global Health, Washington</span>
+            <span class="cert-badge">Economic Evaluation, Washington</span>
+            <span class="cert-badge">Biomedical Research Ethics, CITI</span>
+            <span class="cert-badge">AWS Cloud Practitioner</span>
+            <span class="cert-badge">Advanced R, DataCamp</span>
+          </div>
+        </div>
+
+        <div style="margin-top:2.5rem;padding-top:1.8rem;border-top:1px solid var(--border);">
+          <a href="cv/index.qmd" class="btn-solid" style="margin-right:0.8rem;">View Full CV</a>
+          <a href="cv/Nichodemus_Amollo_CV.pdf" class="btn-ghost" download>Download CV ↓</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+```
+
+```{=html}
+<!-- ════════════════════════════════════════════
+     GALLERY — personal life, real photos
+════════════════════════════════════════════ -->
+<section class="band-dark band-gallery section-divider reveal-on-scroll">
+  <div class="band-inner">
+    <p class="section-eyebrow light">Life Beyond Data</p>
+    <h2 class="section-h light">Field, Farm &amp; People</h2>
+    <p class="section-sub light">A window into the life that informs the work. Communities, land, and moments that remind me why it all matters.</p>
+    <div class="gallery-grid">
+
+      <div class="gal-item gal-large">
+        <div class="gal-ph" data-label="Farm — Western Kenya" style="overflow:hidden;">
+          <img src="img/foundation for water pan i started it and love this labour.jpeg"
+               alt="Building foundations for the water pan project in Western Kenya"
+               class="gal-img" onerror="this.remove()">
+          <div class="gal-overlay"><span class="gal-label">Farm — Western Kenya</span></div>
+        </div>
+      </div>
+
+      <div class="gal-item gal-tall">
+        <div class="gal-ph" data-label="Field Work">
+          <img src="img/in the confernce hall.jpeg"
+               alt="Working in the conference hall"
+               class="gal-img" onerror="this.remove()">
+          <div class="gal-overlay"><span class="gal-label">Field Work</span></div>
+        </div>
+      </div>
+
+      <div class="gal-item">
+        <div class="gal-ph" data-label="Goat Farming">
+          <img src="img/goat new kid.jpeg"
+               alt="New kid on the goat farm in Homa Bay"
+               class="gal-img" onerror="this.remove()">
+          <div class="gal-overlay"><span class="gal-label">Goat Farming</span></div>
+        </div>
+      </div>
+
+      <div class="gal-item">
+        <div class="gal-ph" data-label="KESHO Conference">
+          <img src="img/kesho in the conference hall sharing the dashboard.jpeg"
+               alt="Presenting data findings at the KESHO conference"
+               class="gal-img" onerror="this.remove()">
+          <div class="gal-overlay"><span class="gal-label">KESHO Conference</span></div>
+        </div>
+      </div>
+
+      <div class="gal-item">
+        <div class="gal-ph" data-label="Community">
+          <img src="img/youths working together digging water pan.jpeg"
+               alt="Community youth working together on the water pan project"
+               class="gal-img" onerror="this.remove()">
+          <div class="gal-overlay"><span class="gal-label">Community</span></div>
+        </div>
+      </div>
+
+      <div class="gal-item">
+        <div class="gal-ph" data-label="Training Teams">
+          <img src="img/kesho conference kemri with colleagues from kemri.jpeg"
+               alt="With colleagues from KEMRI at the KESHO conference"
+               class="gal-img" onerror="this.remove()">
+          <div class="gal-overlay"><span class="gal-label">Training Teams</span></div>
+        </div>
+      </div>
+
+      <div class="gal-item">
+        <div class="gal-ph" data-label="Policy Dialogue">
+          <img src="img/professor nyongo sharing the great insights for policy they see from the dashboard.jpeg"
+               alt="Policy insights session during Kisumu dashboard launch"
+               class="gal-img" onerror="this.remove()">
+          <div class="gal-overlay"><span class="gal-label">Policy Dialogue</span></div>
+        </div>
+      </div>
+
+      <div class="gal-item">
+        <div class="gal-ph" data-label="Farm Structure">
+          <img src="img/newly constructed goat pen.jpeg"
+               alt="Newly constructed goat pen at the farm"
+               class="gal-img" onerror="this.remove()">
+          <div class="gal-overlay"><span class="gal-label">Farm Structure</span></div>
+        </div>
+      </div>
+
+      <div class="gal-item gal-tall">
+        <div class="gal-ph" data-label="Conference Portrait">
+          <img src="img/photo at kesho 2.jpeg"
+               alt="Portrait taken at the KESHO conference"
+               class="gal-img" onerror="this.remove()">
+          <div class="gal-overlay"><span class="gal-label">Conference Portrait</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+```
+
+```{=html}
+<!-- ════════════════════════════════════════════
+     CONTACT
+════════════════════════════════════════════ -->
+<section class="section-pad section-divider reveal-on-scroll" id="contact">
+  <div class="section-inner contact-grid">
+    <div class="contact-left">
+      <p class="section-eyebrow">Contact</p>
+      <h2 class="section-h">Let's work<br>together.</h2>
+      <p class="contact-intro">Whether you need a research partner, an analyst to embed in your team, or someone to build your M&amp;E system from scratch, I would like to hear from you.</p>
+      <div class="contact-links">
+        <a href="mailto:nichodemuswerre@gmail.com" class="contact-link" id="emailLink">
+          <span class="cl-icon">✉</span>
+          nichodemuswerre@gmail.com
+          <button class="copy-btn" id="copyEmail" title="Copy email" style="margin-left:auto;" onclick="event.preventDefault();copyToClipboard('nichodemuswerre@gmail.com','copyEmail')">Copy</button>
+        </a>
+        <a href="https://www.linkedin.com/in/nichodemusamollo/" target="_blank" rel="noopener" class="contact-link">
+          <span class="cl-icon">in</span> linkedin.com/in/nichodemusamollo
+        </a>
+        <a href="https://github.com/gondamol" target="_blank" rel="noopener" class="contact-link">
+          <span class="cl-icon">gh</span> github.com/gondamol
+        </a>
+        <span class="contact-link">
+          <span class="cl-icon">📍</span> Nairobi, Kenya — open to remote
+        </span>
+      </div>
+    </div>
+    <div class="contact-right">
+      <p class="form-label">Quick Message</p>
+      <input type="text"   class="form-field" placeholder="Your name" id="contactName" aria-label="Your name">
+      <input type="email"  class="form-field" placeholder="Email address" id="contactEmail" aria-label="Email address">
+      <input type="text"   class="form-field" placeholder="Organisation" id="contactOrg" aria-label="Organisation">
+      <textarea class="form-field form-textarea" placeholder="Tell me about your project..." id="contactMessage" aria-label="Message"></textarea>
+      <button
+        class="btn-solid"
+        style="cursor:pointer;width:100%;"
+        id="sendBtn"
+        onclick="this.textContent='Message sent ✓';this.style.background='var(--green)';this.disabled=true;"
+      >Send Message →</button>
+    </div>
+  </div>
+</section>
+
+<!-- Sticky mobile CTA -->
+<div class="sticky-cta-mobile" aria-hidden="true">
+  <a href="cv/index.qmd">View CV →</a>
 </div>
 
-**<i class="fas fa-chart-line"></i> 8+ years** driving impact through data | **<i class="fas fa-users"></i> 500+ researchers** trained | **<i class="fas fa-university"></i> Georgetown University gui2de**
+<script>
+(function() {
+  // ── Scroll reveal ──────────────────────────────────────
+  var prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var revealEls = document.querySelectorAll('.reveal-on-scroll');
+  if (!prefersReduced) {
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.06, rootMargin: '0px 0px -40px 0px' });
+    revealEls.forEach(function(el) { observer.observe(el); });
+  } else {
+    revealEls.forEach(function(el) { el.classList.add('is-visible'); });
+  }
 
-::: {.hero-cta}
-[<i class="fas fa-book-open"></i> Read My Story](about/index.qmd){.cta-button}
-[<i class="fas fa-project-diagram"></i> View Projects](projects/index.qmd){.cta-button}
-[<i class="fas fa-file-alt"></i> See CV](cv/index.qmd){.cta-button}
-:::
-:::
+  // ── Skill bar animation on scroll ─────────────────────
+  var skillsAnimated = false;
+  function animateSkills() {
+    if (skillsAnimated || prefersReduced) return;
+    var section = document.getElementById('skillsShowcase');
+    if (!section) return;
+    var rect = section.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 80) {
+      skillsAnimated = true;
+      section.querySelectorAll('.sk-fill').forEach(function(el) {
+        el.style.width = (el.dataset.width || 0) + '%';
+      });
+    }
+  }
+  window.addEventListener('scroll', animateSkills, { passive: true });
+  animateSkills();
 
----
+  // ── Navbar scroll shadow ───────────────────────────────
+  var navbar = document.querySelector('.navbar');
+  if (navbar) {
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 20) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    }, { passive: true });
+  }
+})();
 
-## **<i class="fas fa-rocket"></i> Impact at a Glance**
-
-::: {.stats-container}
-::: {.stat-card}
-<div class="stat-number">8+</div>
-<div class="stat-label"><i class="fas fa-calendar-alt"></i> Years Experience</div>
-:::
-
-::: {.stat-card}
-<div class="stat-number">500+</div>
-<div class="stat-label"><i class="fas fa-graduation-cap"></i> Researchers Trained</div>
-:::
-
-::: {.stat-card}
-<div class="stat-number">50+</div>
-<div class="stat-label"><i class="fas fa-users-cog"></i> Field Teams Led</div>
-:::
-
-::: {.stat-card}
-<div class="stat-number">3</div>
-<div class="stat-label"><i class="fas fa-file-alt"></i> Publications</div>
-:::
-:::
-
----
-
-## **<i class="fas fa-code"></i> Core Expertise**
-
-::: {.skills-grid}
-::: {.skill-category}
-### <i class="fas fa-chart-bar"></i> Data Science & Analytics
-
-- <i class="fas fa-robot"></i> Machine Learning & Statistical Modeling
-- <i class="fab fa-r-project"></i> R, Python, Stata, SQL
-- <i class="fas fa-money-bill-wave"></i> Health Financial Diaries
-- <i class="fas fa-project-diagram"></i> Survival & Network Analysis
-:::
-
-::: {.skill-category}
-### <i class="fas fa-bullseye"></i> M&E & Impact Evaluation
-
-- <i class="fas fa-vial"></i> RCTs & Quasi-Experimental Designs
-- <i class="fas fa-sitemap"></i> Theory of Change & LogFrames
-- <i class="fas fa-dollar-sign"></i> Cost-Effectiveness Analysis
-- <i class="fas fa-tachometer-alt"></i> Real-Time Dashboards
-:::
-
-::: {.skill-category}
-### <i class="fas fa-briefcase"></i> Research Leadership
-
-- <i class="fas fa-globe-africa"></i> Multi-Country Project Management
-- <i class="fas fa-chalkboard-teacher"></i> Field Team Training & Supervision
-- <i class="fas fa-check-circle"></i> Data Quality Assurance
-- <i class="fas fa-file-contract"></i> Donor Reporting
-:::
-
-::: {.skill-category}
-### <i class="fas fa-database"></i> Data Systems
-
-- <i class="fas fa-clipboard-list"></i> Survey Design (ODK, SurveyCTO, REDCap)
-- <i class="fas fa-server"></i> Database Management (MongoDB, PostgreSQL)
-- <i class="fas fa-chart-pie"></i> Dashboard Development (Tableau, Shiny)
-- <i class="fas fa-sync-alt"></i> High-Frequency Checks
-:::
-
-::: {.skill-category}
-### <i class="fas fa-book"></i> Capacity Building
-
-- <i class="fas fa-user-graduate"></i> Trained 500+ Researchers
-- <i class="fas fa-laptop-code"></i> R, Stata & M&E Training Programs
-- <i class="fas fa-clipboard-check"></i> Curriculum Development
-- <i class="fas fa-hands-helping"></i> Mentorship & Coaching
-:::
-
-::: {.skill-category}
-### <i class="fas fa-hospital"></i> Health Economics
-
-- <i class="fas fa-wallet"></i> Financial Diaries Research
-- <i class="fas fa-home"></i> Household Economic Behavior
-- <i class="fas fa-money-check-alt"></i> Health Financing Analysis
-- <i class="fas fa-hand-holding-usd"></i> Low-Income Population Studies
-:::
-:::
-
----
-
-## **<i class="fas fa-star"></i> Featured Work**
-
-::: {.project-card class="glow-effect"}
-::: {.project-header}
-### <i class="fas fa-microscope"></i> MSc Thesis: Financial Determinants of NCD Management
-:::
-::: {.project-body}
-Investigating how health financing impacts hypertension and diabetes outcomes in Kisumu County, Kenya. Mixed-methods study with 30+ facilities, 500+ patients.
-
-::: {.cta-stack}
-[<i class="fas fa-arrow-right"></i> View Research Dashboard →](research/thesis.qmd){.cta-button}
-:::
-:::
-:::
-
-::: {.project-card class="glow-effect"}
-::: {.project-header}
-### <i class="fas fa-code-branch"></i> surveyKE: Open Source Survey Tools for Africa
-:::
-::: {.project-body}
-Building advanced survey software with offline capabilities, Kenya-specific validations, and multi-language support for African research contexts.
-
-::: {.cta-stack}
-[<i class="fas fa-arrow-right"></i> Explore Project →](software/index.qmd){.cta-button}
-:::
-:::
-:::
-
----
-
-## **<i class="fas fa-hourglass-half"></i> Currently**
-
-::: {.highlight-box}
-**<i class="fas fa-briefcase"></i> Research Data Manager** @ Georgetown University gui2de (Remote)
-
-**<i class="fas fa-graduation-cap"></i> MSc Candidate** in Biostatistics & Epidemiology @ JOOUST
-
-**<i class="fas fa-certificate"></i> M&E Certification** @ University of Washington (2025)
-
-**<i class="fas fa-chalkboard"></i> Part-Time Lecturer** in Biostatistics @ JOOUST
-:::
-
----
-
-## **<i class="fas fa-handshake"></i> Let's Collaborate**
-
-Open to opportunities in:
-
-- <i class="fas fa-chart-line"></i> Senior M&E & Impact Evaluation roles
-- <i class="fas fa-heartbeat"></i> Health economics research collaborations
-- <i class="fas fa-laptop-code"></i> Data science consulting
-- <i class="fas fa-code"></i> Open source project partnerships
-
-[<i class="fas fa-paper-plane"></i> Get in Touch](mailto:nichodemuswerre@gmail.com){.cta-button .pulse} [<i class="fas fa-download"></i> Download CV](cv/index.qmd){.cta-button}
-
----
-
-::: {.brutal-quote}
-**<i class="fas fa-quote-left" aria-hidden="true"></i>** “Obstacles are fuel; the work is service.” **<i class="fas fa-quote-right" aria-hidden="true"></i>**
-:::
+// ── Copy-to-clipboard ──────────────────────────────────
+function copyToClipboard(text, btnId) {
+  if (!navigator.clipboard) return;
+  navigator.clipboard.writeText(text).then(function() {
+    var btn = document.getElementById(btnId);
+    if (btn) {
+      btn.textContent = 'Copied!';
+      btn.classList.add('copied');
+      setTimeout(function() {
+        btn.textContent = 'Copy';
+        btn.classList.remove('copied');
+      }, 2200);
+    }
+  });
+}
+</script>
+```

@@ -1,272 +1,305 @@
 ---
 title: "Financial Determinants of Effective Hypertension and Diabetes Care"
-subtitle: "A Mixed-Methods Study in Rural Primary Health Facilities in Kisumu, Kenya"
+subtitle: "Thesis Presentation"
 author: "Nichodemus Werre Amollo"
-institute: "Jaramogi Oginga Odinga University of Science and Technology (JOOUST)"
-date: "2024-08-30"
+institute: "Jaramogi Oginga Odinga University of Science and Technology"
+date: "2026-02-22"
 format:
   revealjs:
     theme: [default, custom-presentation.scss]
-    transition: slide
+    transition: fade
     background-transition: fade
     slide-number: true
-    chalkboard: true
-    preview-links: auto
     controls: true
     progress: true
-    center: true
-    width: 1280
-    height: 720
-    logo: ../img/profile.jpeg
-    footer: "Nichodemus Amollo | MSc Thesis Defense"
+    center: false
+    width: 1360
+    height: 768
+    chalkboard: true
+    footer: "Nichodemus Amollo · MSc Thesis"
 ---
 
-## {background-image="../img/profile.jpeg" background-opacity="0.2"}
+## {background-image="../img/professor nyongo launching the dashboard.jpeg" background-opacity="0.2"}
 
-::: {style="text-align: center; margin-top: 5%;"}
-<h1 style="font-size: 2.2em; color: #2c5282; font-weight: bold;">Financial Determinants of Effective Hypertension and Diabetes Care</h1>
-<h3 style="color: #4a5568; margin-top: 20px;">A Mixed-Methods Study in Rural Primary Health Facilities in Kisumu, Kenya</h3>
+::: {.deck-hero}
+<h1>Financial Determinants of Effective Hypertension and Diabetes Care</h1>
+<p class="deck-sub">A mixed methods study in rural primary health facilities in Kisumu County, Kenya.</p>
+<p class="deck-meta">Nichodemus Werre Amollo · MSc Epidemiology and Biostatistics</p>
+:::
 
-<div style="margin-top: 50px; font-size: 1.1em;">
-**Nichodemus Werre Amollo**  
-*School of Health Sciences, JOOUST*
+---
+
+## Why this study matters
+
+::: {.deck-grid}
+::: {.deck-card}
+<p class="deck-card-title">NCD pressure</p>
+NCDs now account for a major share of mortality in Kenya while hypertension and diabetes care demand is growing quickly.
+:::
+
+::: {.deck-card}
+<p class="deck-card-title">Financing bottleneck</p>
+Primary care facilities face practical financing constraints that affect medicine availability and care continuity.
+:::
+
+::: {.deck-card}
+<p class="deck-card-title">Policy relevance</p>
+County financing reforms can produce immediate quality gains when linked to facility execution realities.
+:::
+:::
+
+---
+
+## Study design
+
+::: {.deck-grid}
+::: {.deck-card}
+<p class="deck-card-title">Design</p>
+Convergent parallel mixed methods cross sectional study
+:::
+
+::: {.deck-card}
+<p class="deck-card-title">Setting</p>
+Seme Sub County in Kisumu County  
+7 public primary health facilities
+:::
+
+::: {.deck-card}
+<p class="deck-card-title">Data streams</p>
+Structured facility questionnaire  
+Financial record review from Jan to Aug 2024  
+In depth interviews with facility in charges
+:::
+:::
+
+---
+
+## Interactive result profile
+
+Click the controls to switch between percentage view and facility count view.
+
+```{=html}
+<div class="deck-controls">
+  <button class="deck-btn active" data-mode="percent" type="button">Percent view</button>
+  <button class="deck-btn" data-mode="count" type="button">Facility count view</button>
 </div>
+<div id="deckConstraintChart" class="deck-chart" aria-label="Interactive manuscript result chart"></div>
+```
 
-<div style="margin-top: 20px; font-size: 0.9em; color: #718096;">
-**Advisors:**  
-Japheth Ogol, Elijah Museve, Jane Adhiambo Owenga,  
-Dickens Omondi Aduda, Daniel Onguru
+---
+
+## Funding architecture pattern
+
+```{=html}
+<div class="deck-split">
+  <div class="deck-panel">
+    <h4>Observed funding dependence</h4>
+    <ul>
+      <li>71.4 percent of facilities depended on NHIF reimbursements</li>
+      <li>71.4 percent reported donor support dependence</li>
+      <li>Only 28.6 percent received direct county funding</li>
+      <li>57.1 percent relied on only two active funding streams</li>
+    </ul>
+  </div>
+  <div class="deck-panel">
+    <h4>Execution implication</h4>
+    <p>Where financing channels are narrow and delayed, procurement flexibility falls and stockout risk increases.</p>
+    <div class="deck-mini-bars">
+      <div class="mini-row"><span>Narrow stream dependence</span><b style="width:57.1%"></b></div>
+      <div class="mini-row"><span>Direct county funding</span><b style="width:28.6%"></b></div>
+      <div class="mini-row"><span>Frequent stockouts</span><b style="width:85.7%"></b></div>
+    </div>
+  </div>
 </div>
-:::
+```
 
 ---
 
-## Outline
+## Decision simulator for policy planning
 
-::: {.columns}
-::: {.column width="50%"}
-1.  **Background & Problem**
-    *   The NCD Crisis
-    *   Financing Gaps
-    *   Research Questions
-2.  **Methodology**
-    *   Study Design
-    *   Setting & Population
-    *   Data Collection
-:::
+Move the sliders to test a practical reform scenario and observe the projected stockout risk signal.
 
-::: {.column width="50%"}
-3.  **Results**
-    *   Facility Characteristics
-    *   Funding Sources
-    *   Planning & Budgeting
-    *   Financial Autonomy
-    *   Impact on Service Delivery
-4.  **Discussion & Conclusion**
-    *   Key Insights
-    *   Recommendations
-:::
-:::
+```{=html}
+<div class="deck-simulator">
+  <label>Facility spending autonomy improvement
+    <input id="autoRange" type="range" min="0" max="100" value="20">
+  </label>
+  <label>Disbursement speed improvement
+    <input id="speedRange" type="range" min="0" max="100" value="15">
+  </label>
+  <label>Emergency procurement readiness
+    <input id="emergRange" type="range" min="0" max="100" value="10">
+  </label>
 
----
-
-# Background & Context
-
----
-
-## The NCD Crisis in Kenya {.smaller}
-
-::: {.columns}
-::: {.column width="60%"}
-*   **Rising Burden:** NCDs account for **27% of deaths** in Kenya.
-*   **Prevalence:**
-    *   **26%** of adults have elevated blood pressure.
-    *   **5.6%** have raised blood glucose.
-*   **The Challenge:** Effective management requires *sustained* access to medicines and monitoring.
-*   **The Gap:** Despite devolution (2013), financing for NCDs at Primary Health Care (PHC) level remains weak.
-:::
-
-::: {.column width="40%"}
-::: {.callout-note appearance="simple"}
-## Key Statistic
-Cardiovascular diseases are now responsible for over **27%** of all deaths in Kenya, surpassing many communicable diseases.
-:::
-:::
-:::
-
----
-
-## Problem Statement
-
-::: {style="background-color: #ebf8ff; padding: 30px; border-radius: 10px; border-left: 5px solid #2b6cb0;"}
-**Despite the availability of PHC facilities in Kisumu County, hypertension and diabetes control rates remain suboptimal.**
-
-Financing is a critical input, yet we lack specific evidence on how **facility-level financing mechanisms** (sources, budgeting, autonomy) directly influence NCD service delivery in rural devolved systems.
-:::
-
-<br>
-
-### Study Aim
-To examine the **financial determinants** shaping hypertension and diabetes care in PHC facilities within Seme Sub-County.
-
----
-
-# Methodology
-
----
-
-## Study Design & Setting {.smaller}
-
-*   **Design:** Convergent parallel **mixed-methods cross-sectional study**.
-*   **Setting:** Seme Sub-County, Kisumu, Kenya.
-*   **Population:** **7 Public PHC Facilities** (Levels 2–4).
-    *   *Selection:* Purposive sampling of facilities providing NCD services.
-*   **Data Collection (Jan–Aug 2024):**
-    *   **Quantitative:** Structured questionnaires, retrospective financial record review.
-    *   **Qualitative:** In-depth interviews with facility in-charges.
-
-::: {.callout-tip appearance="simple"}
-## Conceptual Framework
-Guided by the **WHO Health Financing Framework**, analyzing:
-1. Sources of Financing
-2. Planning & Budgeting
-3. Resource Allocation
-4. Financial Autonomy
-:::
-
----
-
-# Results
-
----
-
-## 1. Funding Sources: Narrow & Unstable {.smaller}
-
-Facilities rely on a limited mix of funding, creating vulnerability.
-
-| Source | % of Facilities (n=7) |
-| :--- | :--- |
-| **NHIF Reimbursements** | **71.4%** (n=5) |
-| **Donor Support (Danida)** | **71.4%** (n=5) |
-| **Direct County Funding** | **28.6%** (n=2) |
-| **User Fees** | **28.6%** (n=2) |
-
-::: {.fragment}
-> "We cannot specifically say this money is for NCDs. It’s all pooled for many competing needs."  
-> — *Facility In-charge, Level 3*
-:::
-
-::: {.fragment}
-*   **57.1%** of facilities relied on only **two** funding streams.
-*   NHIF reimbursements faced delays of **2–4 months**.
-:::
-
----
-
-## 2. Planning & Budgeting: "Ritual Planning" {.smaller}
-
-*   **100%** of facilities prepared annual workplans and budgets.
-*   **0%** achieved **comprehensive NCD-specific planning** (Workplan + Budget + Dedicated NCD Line).
-*   Budgets were described as "aspirational wish lists" rather than operational tools.
-
-::: {.columns}
-::: {.column width="50%"}
-**The Reality:**
-*   "Bottom-up" budgeting exists in theory but not practice.
-*   Allocations rarely match requests.
-*   No ring-fenced funds for NCDs.
-:::
-
-::: {.column width="50%"}
-> "We budget but it's not actualized. These are just wish lists because the money is not enough to implement what we plan."  
-> — *In-charge, Level 2*
-:::
-:::
-
----
-
-## 3. Financial Autonomy: The "Triple Constraint" {.smaller}
-
-**Recentralization of Authority:**
-Despite having bank accounts, **100%** of facilities required county-level approval for expenditures.
-
-*   **Approval Delays:**
-    *   3–4 Weeks: **57.1%**
-    *   > 2 Months: **28.6%**
-
-::: {.alert style="background-color: #fff5f5; padding: 15px; border-radius: 5px; color: #c53030;"}
-**Consequence:** Facilities cannot procure medicines locally during central supply stockouts.
-:::
-
-> "When KEMSA doesn't supply... we can't act fast. We have to wait for county approval and by then there's a stockout."  
-> — *In-charge, Level 2*
-
----
-
-## 4. Impact: Medication Stockouts {.smaller}
-
-The lack of autonomy and unstable funding leads to frequent shortages.
-
-*   **85.7% (n=6)** reported **frequent or very frequent** stockouts of NCD medicines.
-*   **42.9%** reported stockouts "almost always".
-
-**Clinical Consequences:**
-1.  **Disease Progression:** Patients present with complications (strokes, kidney issues).
-2.  **Loss of Trust:** Patients abandon treatment or seek care elsewhere.
-3.  **Staff Demoralization:** Health workers feel helpless without tools.
-
-> "The moment that there are no drugs there are complications... Some try to manage without, which is dangerous."
-
----
-
-# Conclusions & Recommendations
-
----
-
-## Key Conclusions
-
-1.  **Severe Financial Constraints:** PHC facilities operate with narrow, unpredictable funding that undermines chronic care.
-2.  **Lack of Autonomy:** Centralized approval processes (taking weeks/months) prevent timely response to stockouts.
-3.  **No NCD Prioritization:** Lack of ring-fenced budgets means NCDs lose out to competing priorities.
-4.  **Systemic Failure:** The current architecture fails to deliver the "effectiveness" and "efficiency" promised by devolution and UHC policies.
-
----
-
-## Recommendations {.smaller}
-
-::: {.columns}
-::: {.column width="50%"}
-**1. Strengthen Financial Autonomy**
-*   Allow facilities to retain/spend funds at source for emergencies.
-*   Streamline approval processes (digital systems).
-
-**2. Ring-Fence NCD Funds**
-*   Mandatory NCD budget lines in county/facility budgets.
-*   Allocations proportionate to disease burden.
-:::
-
-::: {.column width="50%"}
-**3. Diversify Financing**
-*   Reduce reliance on donors/NHIF.
-*   Ensure timely NHIF/SHA reimbursements.
-
-**4. Emergency Procurement**
-*   Establish facility-level revolving funds for stockouts.
-:::
-:::
-
----
-
-## {background-image="../img/profile.jpeg" background-opacity="0.2"}
-
-::: {style="text-align: center; margin-top: 15%;"}
-<h1 style="font-size: 3em; color: #2c5282;">Thank You!</h1>
-
-<div style="font-size: 1.2em; margin-top: 30px;">
-**Questions & Discussion**
+  <div class="deck-risk-box">
+    <p class="risk-label">Projected stockout risk index</p>
+    <p id="riskValue" class="risk-value">72.6</p>
+    <div class="risk-track"><span id="riskFill" class="risk-fill"></span></div>
+  </div>
 </div>
+```
 
-<div style="font-size: 0.9em; color: #4a5568; margin-top: 50px;">
-**Contact:** nwere@ejooust.ac.ke
-</div>
+---
+
+## Key findings
+
+1. All facilities produced annual plans, but none had a complete NCD planning and dedicated budget line package.
+2. No facility had full direct spending autonomy despite holding bank accounts.
+3. County approval timelines often delayed procurement response during stockout periods.
+4. Frequent medicine stockouts were reported by 85.7 percent of facilities.
+
+---
+
+## Recommendations for county and facility action
+
+::: {.deck-grid}
+::: {.deck-card}
+<p class="deck-card-title">Financing rules</p>
+Ring fence NCD lines in planning and budget execution at facility and county levels.
 :::
+
+::: {.deck-card}
+<p class="deck-card-title">Procurement pathway</p>
+Create fast emergency procurement workflow for essential NCD medicines and diagnostics.
+:::
+
+::: {.deck-card}
+<p class="deck-card-title">Accountability loop</p>
+Track budget release, approval cycle time, and stockout days in one county facility dashboard.
+:::
+:::
+
+---
+
+## Implementation roadmap
+
+```{=html}
+<div class="deck-roadmap">
+  <div class="road-step">
+    <span class="road-kicker">Quarter 1</span>
+    <h4>Finance design</h4>
+    <p>Define ring fenced NCD budget structure and autonomy thresholds.</p>
+  </div>
+  <div class="road-step">
+    <span class="road-kicker">Quarter 2</span>
+    <h4>Digital workflow</h4>
+    <p>Deploy approval tracking and emergency procurement trigger logic.</p>
+  </div>
+  <div class="road-step">
+    <span class="road-kicker">Quarter 3</span>
+    <h4>Quality monitoring</h4>
+    <p>Run quarterly review on stockout days and refill reliability indicators.</p>
+  </div>
+  <div class="road-step">
+    <span class="road-kicker">Quarter 4</span>
+    <h4>Scale and adapt</h4>
+    <p>Expand to additional sub counties using evidence from implementation results.</p>
+  </div>
+</div>
+```
+
+---
+
+## Access full materials
+
+```{=html}
+<div class="deck-links">
+  <a href="thesis.html" target="_blank">Thesis page</a>
+  <a href="publications_files/01_NCDFin_ManuscriptV4.pdf" target="_blank">Current manuscript PDF</a>
+  <a href="../projects/index.html" target="_blank">Project portfolio</a>
+</div>
+```
+
+---
+
+## Thank you
+
+Questions, critique, and collaboration are welcome.
+
+Email: `nichodemuswerre@gmail.com`  
+LinkedIn: `linkedin.com/in/nichodemusamollo`
+
+```{=html}
+<script>
+(function() {
+  var percentData = [
+    {label: 'Frequent stockouts', value: 85.7},
+    {label: 'No direct autonomy', value: 100.0},
+    {label: 'Direct county funding', value: 28.6},
+    {label: 'Dedicated NCD budget line', value: 0.0}
+  ];
+
+  var countData = [
+    {label: 'Frequent stockouts', value: 6, total: 7},
+    {label: 'No direct autonomy', value: 7, total: 7},
+    {label: 'Direct county funding', value: 2, total: 7},
+    {label: 'Dedicated NCD budget line', value: 0, total: 7}
+  ];
+
+  function renderChart(mode) {
+    var root = document.getElementById('deckConstraintChart');
+    if (!root) return;
+
+    var rows = mode === 'count' ? countData : percentData;
+    var max = mode === 'count' ? 7 : 100;
+
+    var html = '<div class="deck-bar-list">';
+    rows.forEach(function(row) {
+      var num = mode === 'count' ? row.value : row.value.toFixed(1);
+      var suffix = mode === 'count' ? '/' + row.total : '%';
+      var width = (row.value / max) * 100;
+      html += ''
+        + '<div class="deck-bar-row">'
+        +   '<div class="deck-bar-head">'
+        +     '<span>' + row.label + '</span>'
+        +     '<strong>' + num + suffix + '</strong>'
+        +   '</div>'
+        +   '<div class="deck-bar-track"><span class="deck-bar-fill" style="width:' + width + '%"></span></div>'
+        + '</div>';
+    });
+    html += '</div>';
+    root.innerHTML = html;
+  }
+
+  function setMode(mode) {
+    var buttons = document.querySelectorAll('.deck-btn');
+    buttons.forEach(function(btn) {
+      var active = btn.dataset.mode === mode;
+      btn.classList.toggle('active', active);
+      btn.setAttribute('aria-pressed', active ? 'true' : 'false');
+    });
+    renderChart(mode);
+  }
+
+  var buttons = document.querySelectorAll('.deck-btn');
+  buttons.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      setMode(btn.dataset.mode || 'percent');
+    });
+  });
+
+  function updateRisk() {
+    var auto = Number((document.getElementById('autoRange') || {}).value || 0);
+    var speed = Number((document.getElementById('speedRange') || {}).value || 0);
+    var emerg = Number((document.getElementById('emergRange') || {}).value || 0);
+
+    // Heuristic scenario signal anchored to observed baseline 85.7
+    var risk = 85.7 - (auto * 0.24) - (speed * 0.19) - (emerg * 0.17);
+    risk = Math.max(15, Math.min(95, risk));
+
+    var riskValue = document.getElementById('riskValue');
+    var riskFill = document.getElementById('riskFill');
+    if (riskValue) riskValue.textContent = risk.toFixed(1);
+    if (riskFill) riskFill.style.width = risk + '%';
+  }
+
+  ['autoRange', 'speedRange', 'emergRange'].forEach(function(id) {
+    var el = document.getElementById(id);
+    if (el) el.addEventListener('input', updateRisk);
+  });
+
+  setMode('percent');
+  updateRisk();
+})();
+</script>
+```

@@ -484,7 +484,7 @@ def main():
         st.markdown("""
         - [GitHub Repository](https://github.com/gondamol)
         - [Portfolio](https://gondamol.github.io)
-        - [LinkedIn](https://linkedin.com/in/amollow)
+        - [LinkedIn](https://www.linkedin.com/in/nichodemusamollo/)
         """)
     
     with col2:

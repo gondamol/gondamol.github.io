@@ -1,131 +1,92 @@
 project:
-  # Force rebuild
   type: website
   output-dir: _site
   render:
-    - "*.qmd"
-    - "*.md"
-    - "!openspec/"
-    - "!projects/analytics-engineering/**/README.md"
-    - "!projects/analytics-engineering/**/*SUMMARY.md"
-    - "!projects/analytics-engineering/**/*READY.md"
-    - "!projects/analytics-engineering/**/requirements.txt"
-    - "!projects/analytics-engineering/**/pipeline/"
-    - "!projects/analytics-engineering/**/dashboard/"
-    - "!projects/analytics-engineering/**/scripts/"
-    - "!**/*SUMMARY.md"
-    - "!**/*PLACEHOLDERS.md"
-    - "!**/README.md"
-    - "!COMPREHENSIVE_PORTFOLIO_REVAMP_SUMMARY.md"
-    - "!FINAL_20MIN_REVAMP_SUMMARY.md"
-    - "!FINAL_IMPLEMENTATION_STATUS.md"
-    - "!IMPLEMENTATION_COMPLETE.md"
-    - "!PORTFOLIO_IMPROVEMENTS_SUMMARY.md"
-    - "!PROGRESS_REPORT_OCT19.md"
-    - "!SESSION_SUMMARY_OCT19.md"
-    - "!FINAL_SESSION_SUMMARY.md"
-    - "!QUICK_DEPLOY.md"
-    - "!QUICK_START_CHECKLIST.md"
-    - "!DEPLOYMENT_GUIDE.md"
-    - "!PORTFOLIO_EXPANSION_PLAN.md"
-    - "!AUTHENTIC_PROJECT_DETAILS.md"
-    - "!AGENTS.md"
+    - "index.qmd"
+    - "about/index.qmd"
+    - "projects/index.qmd"
+    - "cv/index.qmd"
+    - "personal/index.qmd"
+    - "blogs/index.qmd"
+    - "resources/index.qmd"
+    - "research/thesis.qmd"
+    - "research/thesis-presentation.qmd"
+    - "tidy-tuesday/index.qmd"
+    - "tidy-tuesday/2024-maternal-mortality.qmd"
+    - "tidy-tuesday/2023-mental-health.qmd"
+    - "tidy-tuesday/food-security.qmd"
+    - "tidy-tuesday/financial-inclusion.qmd"
+    - "tidy-tuesday/income-inequality-health.qmd"
+    - "posts/*/index.qmd"
 
 website:
-  page-navigation: true
-  title: "Nic|Data"
+  page-navigation: false
+  title: "Nic | Data"
   site-url: "https://gondamol.github.io"
-  description: "Research Data Manager & Data Scientist specializing in Health Financial Diaries, Data Analysis, Machine Learning, and Outcomes & Impact Evaluation - Research on Livelihood and Financial Behavior of Low-Income Households"
+  description: "Data Analyst & Research Data Manager — M&E, Health Analytics, Agriculture, Finance — Nairobi, Kenya"
+  favicon: "img/profile.jpeg"
 
   navbar:
-    background: primary
-    search: true
+    background: light
+    foreground: dark
+    search: false
     pinned: true
+    title: "Nic | Data"
     left:
-      - text: "Home"
-        href: index.qmd
       - text: "About"
         href: about/index.qmd
       - text: "Projects"
-        menu:
-          - text: "All Projects"
-            href: projects/index.qmd
-          - text: "---"
-          - text: "Real-Time Analytics Engineering 🚀 NEW"
-            href: projects/analytics-engineering/index.qmd
-          - text: "---"
-          - text: "Health Data Analytics"
-            href: projects/health-analytics.qmd
-          - text: "Data Management"
-            href: projects/data-management.qmd
-          - text: "Survey Design & Implementation"
-            href: projects/survey-tools.qmd
-          - text: "Dashboards & Visualization"
-            href: projects/dashboards.qmd
-          - text: "---"
-          - text: "Visualizations Gallery (50+ Projects)"
-            href: visualizations/index.qmd
-          - text: "TidyTuesday Challenges (100+ Projects)"
-            href: tidy-tuesday/index.qmd
-          - text: "Data Visualizations"
-            href: data-viz/index.qmd
-      - text: "Research"
-        menu:
-          - text: "Current Thesis"
-            href: research/thesis.qmd
-          - text: "Thesis Presentation"
-            href: research/thesis-presentation.qmd
-          - text: "Publications"
-            href: research/publications.qmd
-          - text: "---"
-          - text: "Presentations"
-            href: presentations/data-viz-presentation.qmd
-      - text: "Resources"
-        menu:
-          - text: "Learning Resources"
-            href: resources/index.qmd
-          - text: "Skills & Tools"
-            href: skills/index.qmd
-          - text: "Software"
-            href: software/index.qmd
-      - text: "Blog"
-        href: blogs/index.qmd
+        href: projects/index.qmd
+      - text: "Thesis"
+        href: research/thesis.qmd
+      - text: "Life"
+        href: personal/index.qmd
       - text: "CV"
         href: cv/index.qmd
-      - text: "Personal"
-        href: personal/index.qmd
+      - text: "Blog"
+        href: blogs/index.qmd
+      - text: "Resources"
+        href: resources/index.qmd
     right:
       - icon: github
         href: https://github.com/gondamol
         aria-label: GitHub
       - icon: linkedin
-        href: https://linkedin.com/in/amollow
+        href: https://www.linkedin.com/in/nichodemusamollo/
         aria-label: LinkedIn
-      - icon: twitter
-        href: https://twitter.com/nwerre
-        aria-label: Twitter
-      - icon: kaggle
-        href: https://kaggle.com/nwerre
-        aria-label: Kaggle
+      - text: "Get in Touch"
+        href: "mailto:nichodemuswerre@gmail.com"
+
+  page-footer:
+    background: dark
+    left: "© 2025 Nichodemus Amollo · Built with Quarto"
+    center: "Nairobi, Kenya"
+    right:
+      - icon: github
+        href: https://github.com/gondamol
+      - icon: linkedin
+        href: https://www.linkedin.com/in/nichodemusamollo/
+
+execute:
+  freeze: auto
+  echo: true
+  warning: false
+  message: false
 
 format:
   html:
     theme:
-      light: [cosmo, custom.scss]
-      dark: [darkly, custom.scss]
-    css: [styles.scss, _footer.css, _newsletter-popup.scss]
-    include-after-body: [_includes/footer.html, _includes/newsletter-popup.html]
-    toc: true
-    toc-depth: 3
+      light: [flatly, custom.scss]
+    css: styles.scss
+    toc: false
     code-fold: true
     code-tools: true
     code-copy: true
     link-external-newwindow: true
-    link-external-icon: true
     smooth-scroll: true
-    grid:
-      sidebar-width: 250px
-      body-width: 900px
-      margin-width: 250px
+    include-in-header:
+      text: |
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
 
 editor: source

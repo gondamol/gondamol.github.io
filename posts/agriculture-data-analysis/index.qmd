@@ -50,7 +50,7 @@ Agricultural data analysis is crucial for understanding food security, crop prod
 
 ## Example Analysis
 
-```{r}
+```r
 #| echo: true
 #| eval: false
 #| fig-width: 12
@@ -120,5 +120,5 @@ print(p)
 
 ---
 
-[← Back to Blog](../index.qmd) | [View Agriculture Projects](../../projects/agriculture/index.qmd)
+[← Back to Blog](../../blogs/index.qmd) | [View Agriculture Projects](../../projects/agriculture/index.qmd)
 

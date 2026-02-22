@@ -1,51 +1,172 @@
 ---
-title: "Financial Determinants of Effective Hypertension and Diabetes Care in Rural Primary Health Facilities in Kisumu, Kenya: A Mixed-Methods Study"
-subtitle: "MSc Thesis Research Project"
+title: "Thesis"
+subtitle: "MSc Epidemiology and Biostatistics Research"
 author: "Nichodemus Werre Amollo"
-date: "2024-08-30"
+date: "2026-02-22"
+page-layout: article
+toc: true
+toc-title: "On this page"
 format:
   html:
-    code-fold: true
-    toc: true
+    code-fold: false
     number-sections: false
 ---
 
-## Abstract
+```{=html}
+<div class="thesis-shell">
+  <section class="thesis-hero">
+    <span class="section-eyebrow">MSc Thesis</span>
+    <h1 class="thesis-title">Financial Determinants of Effective Hypertension and Diabetes Care in Rural Primary Health Facilities in Kisumu, Kenya: A Mixed Methods Study</h1>
+    <p class="thesis-meta">Nichodemus Werre Amollo · Jaramogi Oginga Odinga University of Science and Technology · Kisumu County, Kenya</p>
+    <div class="thesis-actions">
+      <a href="publications_files/01_NCDFin_ManuscriptV4.pdf" class="btn-solid" target="_blank">View Manuscript</a>
+      <a href="publications_files/01_NCDFin_ManuscriptV4.pdf" class="btn-ghost" download>Download PDF</a>
+      <a href="thesis-presentation.html" class="btn-ghost">Presentation</a>
+    </div>
+  </section>
 
-**Background:** Noncommunicable diseases (NCDs), particularly hypertension and diabetes, account for 27% of deaths in Kenya, with 26% of adults having elevated blood pressure. Despite devolution of health services to county governments in 2013, financing for NCD management at the primary health care (PHC) level remains weak. This study examines financial determinants shaping hypertension and diabetes care in PHC facilities within a devolved county health system in rural Kisumu County, Kenya.
+  <section class="thesis-kpi-grid" aria-label="Study quick facts">
+    <article class="thesis-kpi-card">
+      <span class="thesis-kpi-num">7</span>
+      <span class="thesis-kpi-label">Public primary care facilities</span>
+    </article>
+    <article class="thesis-kpi-card">
+      <span class="thesis-kpi-num">2024</span>
+      <span class="thesis-kpi-label">Financial review period: Jan to Aug</span>
+    </article>
+    <article class="thesis-kpi-card">
+      <span class="thesis-kpi-num">85.7%</span>
+      <span class="thesis-kpi-label">Facilities with frequent medicine stockouts</span>
+    </article>
+    <article class="thesis-kpi-card">
+      <span class="thesis-kpi-num">100%</span>
+      <span class="thesis-kpi-label">Facilities without direct spending autonomy</span>
+    </article>
+  </section>
+</div>
+```
 
-**Methods:** We conducted a convergent parallel mixed-methods cross-sectional study in seven public PHC facilities in Seme Sub-County. Quantitative data were collected via structured questionnaires and retrospective document review of financial records (January–August 2024). Qualitative data were gathered through in-depth interviews with facility in-charges exploring planning, budgeting, and resource allocation. Descriptive statistics were produced in STATA v16; qualitative data were analyzed thematically in R.
+## Abstract {#abstract}
 
-**Results:** All seven facilities prepared annual workplans and budgets, but none achieved comprehensive NCD-specific planning (workplan + budget + dedicated NCD budget line). Funding sources were narrow: 71.4% (n=5) depended on NHIF reimbursements and donor support, while only 28.6% (n=2) received direct county funding; 57.1% (n=4) relied on only two funding streams. Although all facilities held bank accounts, none had formal financial autonomy and expenditures required county-level approval, typically taking 3–4 weeks (57.1%, n=4) to over two months (28.6%, n=2). Combined with unreliable central supplies, this lack of autonomy meant facilities could not procure locally when stockouts occurred; consequently 85.7% (n=6) reported frequent medication stockouts. Facility in-charges attributed these failures to inadequate, unpredictable funding and centralized approval processes that prevented timely local procurement.
+**Background:** Non communicable diseases, especially hypertension and diabetes, account for a substantial share of mortality in Kenya. Despite health service devolution to county governments since 2013, financing for chronic care at the primary health care level remains weak. This study examined financial determinants shaping hypertension and diabetes care in rural Kisumu County.
 
-**Conclusions:** PHC facilities in this rural county operate under severely constrained financial conditions that undermine effective NCD care. Strengthening facility financial autonomy, instituting ring-fenced NCD budget lines, diversifying financing, and streamlining disbursement and emergency procurement mechanisms are urgent priorities to reduce stockouts and advance equitable chronic care under Kenya’s UHC agenda.
+**Methods:** The study used a convergent parallel mixed methods cross sectional design in seven public primary health care facilities in Seme Sub County. Quantitative data came from structured questionnaires and retrospective financial record review for January to August 2024. Qualitative data came from in depth interviews with facility in charges. Quantitative analysis used descriptive statistics in STATA v16 and qualitative analysis used thematic coding in R.
 
-## Study Overview
+**Results:** All seven facilities prepared annual workplans and budgets, but none achieved comprehensive NCD specific planning with a dedicated NCD budget line. Most facilities depended on NHIF reimbursements and donor support, while few received direct county funding. All facilities had bank accounts, but none had full spending autonomy. County level expenditure approval often took weeks to months, limiting timely local procurement during stockouts. Frequent medicine stockouts were reported by 85.7 percent of facilities.
 
-This research investigates the financial barriers hindering effective management of hypertension and diabetes in rural primary health care facilities. By focusing on the intersection of health financing and service delivery, the study highlights critical gaps in the devolved health system.
+**Conclusion:** Facility level financing constraints are strongly linked to weaker chronic disease service continuity in rural primary care. Strengthening facility spending autonomy, ring fencing NCD budgets, diversifying financing, and speeding disbursement and emergency procurement are critical for effective and equitable chronic care delivery under UHC.
 
-### Methodology Highlights
+## Scientific Contribution {#contribution}
 
--   **Study Design:** Convergent parallel mixed-methods cross-sectional study.
--   **Setting:** 7 public Primary Health Care (PHC) facilities in Seme Sub-County, Kisumu.
--   **Data Sources:**
-    -   Financial records (Jan–Aug 2024).
-    -   Structured questionnaires.
-    -   In-depth interviews with facility in-charges.
+```{=html}
+<div class="thesis-contrib-grid">
+  <article class="thesis-contrib-card">
+    <h4>Health financing evidence</h4>
+    <p>Provides facility level empirical evidence on how financing architecture influences continuity of hypertension and diabetes care in a devolved county system.</p>
+  </article>
+  <article class="thesis-contrib-card">
+    <h4>Operational policy relevance</h4>
+    <p>Links budgeting and approval bottlenecks to medicine availability and practical service delivery outcomes in rural public facilities.</p>
+  </article>
+  <article class="thesis-contrib-card">
+    <h4>Methods integration</h4>
+    <p>Combines financial records, structured facility data, and leadership interviews to explain both measurable and institutional drivers of chronic care gaps.</p>
+  </article>
+</div>
+```
 
-## Key Findings
+## Methodology {#methodology}
 
-::: {.callout-important}
-### Critical Insight
-**85.7%** of facilities reported frequent medication stockouts due to funding delays and lack of financial autonomy.
-:::
+```{=html}
+<div class="thesis-method-grid">
+  <article class="thesis-method-card">
+    <h4>Design</h4>
+    <ul>
+      <li>Convergent parallel mixed methods</li>
+      <li>Cross sectional facility assessment</li>
+      <li>Integrated interpretation across data streams</li>
+    </ul>
+  </article>
 
--   **Funding Instability:** 71.4% of facilities rely heavily on NHIF reimbursements and donor support, which are often delayed or unpredictable.
--   **Lack of Autonomy:** Despite having bank accounts, 100% of facilities require county-level approval for expenditures, with delays ranging from 3 weeks to over 2 months.
--   **Planning Gaps:** While all facilities have annual workplans, none have dedicated budget lines for NCDs, leading to chronic underfunding of these services.
+  <article class="thesis-method-card">
+    <h4>Setting and sample</h4>
+    <ul>
+      <li>Seme Sub County, Kisumu County, Kenya</li>
+      <li>Seven public primary health care facilities</li>
+      <li>Facility in charge interview participants</li>
+    </ul>
+  </article>
 
-## Full Thesis
+  <article class="thesis-method-card">
+    <h4>Quantitative stream</h4>
+    <ul>
+      <li>Structured financing questionnaires</li>
+      <li>Retrospective financial record review</li>
+      <li>Descriptive analysis in STATA v16</li>
+    </ul>
+  </article>
 
-The complete thesis manuscript details the full background, methodology, results, and policy recommendations.
+  <article class="thesis-method-card">
+    <h4>Qualitative stream</h4>
+    <ul>
+      <li>In depth interviews with facility leaders</li>
+      <li>Thematic coding and synthesis in R</li>
+      <li>Governance and decision flow interpretation</li>
+    </ul>
+  </article>
+</div>
+```
 
-[Download Full Thesis (PDF)](#){.btn .btn-primary role="button"}
+## Key Findings {#findings}
+
+```{=html}
+<div class="thesis-findings">
+  <article class="thesis-finding">
+    <span class="thesis-finding-num">01</span>
+    <h4>Planning quality gap</h4>
+    <p>All facilities reported planning processes, but none had a complete NCD planning package with a ring fenced NCD line item.</p>
+  </article>
+
+  <article class="thesis-finding">
+    <span class="thesis-finding-num">02</span>
+    <h4>Funding concentration risk</h4>
+    <p>Most facilities relied on narrow financing streams, mainly NHIF reimbursements and donor support, increasing vulnerability to delays and shocks.</p>
+  </article>
+
+  <article class="thesis-finding">
+    <span class="thesis-finding-num">03</span>
+    <h4>Approval bottlenecks</h4>
+    <p>Facilities had bank accounts but no direct spending authority. Approval pathways at county level delayed procurement actions.</p>
+  </article>
+
+  <article class="thesis-finding">
+    <span class="thesis-finding-num">04</span>
+    <h4>Service continuity impact</h4>
+    <p>Frequent medicine stockouts were reported by 85.7 percent of facilities, with direct implications for continuity of hypertension and diabetes care.</p>
+  </article>
+</div>
+```
+
+## Recommendations {#recommendations}
+
+1. Establish ring fenced NCD budget lines at facility planning level with protected execution rules.
+2. Expand facility level spending autonomy for approved essential NCD medicines and diagnostics.
+3. Introduce faster county disbursement and emergency procurement pathways for critical stockout risk periods.
+4. Diversify and stabilize financing sources beyond reimbursement and donor dependent channels.
+5. Build routine facility financing dashboards that track budget release, expenditure cycle time, stockout days, and refill reliability.
+6. Institutionalize quarterly county facility review forums linking financial performance to NCD service outcomes.
+
+## Manuscript and Citation {#manuscript}
+
+```{=html}
+<div class="thesis-manuscript-card">
+  <div class="thesis-actions">
+    <a href="publications_files/01_NCDFin_ManuscriptV4.pdf" class="btn-solid" target="_blank">Open Manuscript</a>
+    <a href="publications_files/01_NCDFin_ManuscriptV4.pdf" class="btn-ghost" download>Download Manuscript</a>
+  </div>
+</div>
+```
+
+Suggested citation:
+
+Amollo N W, Ogol J, Museve E, Owenga J A, Aduda D O, Onguru D. Financial Determinants of Effective Hypertension and Diabetes Care in Rural Primary Health Facilities in Kisumu, Kenya: A Mixed Methods Study. Manuscript Version 4. Published February 22, 2026.
