@@ -5,6 +5,7 @@ project:
     - "index.qmd"
     - "about/index.qmd"
     - "projects/index.qmd"
+    - "projects/real-estate-feasibility-studio/index.qmd"
     - "cv/index.qmd"
     - "personal/index.qmd"
     - "blogs/index.qmd"

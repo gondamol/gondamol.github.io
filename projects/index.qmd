@@ -233,21 +233,21 @@ toc: false
       </div>
     </a>
 
-    <div class="proj-card proj-half" data-category="finance">
+    <a href="real-estate-feasibility-studio/index.qmd" class="proj-card proj-half" data-category="finance">
       <div class="proj-thumb" style="background:#162037;height:200px;">
         <div class="proj-thumb-pattern" style="--dot:#ffffff10;"></div>
         <span class="proj-icon">🏢</span>
       </div>
       <div class="proj-body">
-        <p class="proj-domain" style="color:#6fa8dc;">Urban economics · Nairobi</p>
-        <h3 class="proj-title">Nairobi Real Estate Dashboard</h3>
-        <p class="proj-desc">Developed exploratory real estate analytics with neighborhood segmentation, trend decomposition, and valuation support indicators for investor and planning teams.</p>
+        <p class="proj-domain" style="color:#6fa8dc;">Real estate strategy · portfolio planning</p>
+        <h3 class="proj-title">Mixed Use Development Feasibility Studio</h3>
+        <p class="proj-desc">Case brief and decision studio built from public market indicators, listing level comparables, and developer cost assumptions. Covers SQL and R data pipeline, cleaning and harmonization, discounted cash flow analysis, scenario testing, and dashboard outputs for investment and ROI decisions.</p>
         <div class="proj-footer">
-          <span class="proj-tags"><span>Spatial analysis</span><span>Power BI</span><span>Valuation</span></span>
-          <span class="proj-arrow">Case brief</span>
+          <span class="proj-tags"><span>Data pipeline</span><span>DCF model</span><span>ROI strategy</span></span>
+          <span class="proj-arrow">Case brief and dashboard →</span>
         </div>
       </div>
-    </div>
+    </a>
 
     <div class="proj-card proj-half" data-category="finance">
       <div class="proj-thumb" style="background:#10243c;height:200px;">
@@ -273,21 +273,21 @@ toc: false
   </div>
   <div class="project-grid allProjects" style="margin-bottom:2rem;">
 
-    <div class="proj-card proj-half" data-category="analytics">
+    <a href="real-estate-feasibility-studio/index.qmd" class="proj-card proj-half" data-category="analytics">
       <div class="proj-thumb" style="background:#162233;height:180px;">
         <div class="proj-thumb-pattern" style="--dot:#ffffff10;"></div>
         <span class="proj-icon">🔗</span>
       </div>
       <div class="proj-body">
-        <p class="proj-domain" style="color:#8cb5d9;">Operations intelligence · Tatu City</p>
-        <h3 class="proj-title">Supply Chain Intelligence for Tatu City Operations</h3>
-        <p class="proj-desc">Defined data model requirements for shipment visibility, stock accuracy, and service level tracking across procurement and delivery stages.</p>
+        <p class="proj-domain" style="color:#8cb5d9;">Business analytics · development operations</p>
+        <h3 class="proj-title">Development Operations Case Brief</h3>
+        <p class="proj-desc">Shows end to end analytics delivery from data intake and cleaning to scenario modeling and executive dashboarding. Structured for finance, planning, engineering, and construction stakeholders aligning on cost control, phasing, and return outcomes.</p>
         <div class="proj-footer">
-          <span class="proj-tags"><span>SQL</span><span>Dashboards</span><span>Operations</span></span>
-          <span class="proj-arrow">Case brief</span>
+          <span class="proj-tags"><span>SQL</span><span>Cross functional</span><span>Decision support</span></span>
+          <span class="proj-arrow">Open case brief →</span>
         </div>
       </div>
-    </div>
+    </a>
 
     <div class="proj-card proj-half" data-category="analytics">
       <div class="proj-thumb" style="background:#1d1f2b;height:180px;">

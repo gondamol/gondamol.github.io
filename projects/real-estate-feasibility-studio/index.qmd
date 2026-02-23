@@ -1,0 +1,1208 @@
+---
+title: "Real Estate Feasibility Studio"
+subtitle: "Business Analyst case project for mixed use development strategy"
+date: "2026-02-23"
+page-layout: full
+toc: false
+execute:
+  echo: false
+format:
+  html:
+    code-fold: false
+---
+
+```{=html}
+<style>
+.reba-shell {
+  width: min(1220px, calc(100vw - 3rem));
+  margin: 1.6rem auto 4rem;
+  display: block;
+}
+
+/* Quarto may inject page layout classes on raw html wrappers.
+   Force our intended layout so there is no blank pre dashboard area. */
+.reba-shell.page-columns.page-full {
+  display: block !important;
+}
+
+.reba-shell.page-columns.page-full > * {
+  grid-column: auto !important;
+}
+
+.reba-hero {
+  border: 1px solid var(--border);
+  background:
+    radial-gradient(circle at 8% 18%, rgba(63, 123, 82, 0.16) 0, rgba(63, 123, 82, 0) 52%),
+    radial-gradient(circle at 90% 14%, rgba(184, 78, 22, 0.18) 0, rgba(184, 78, 22, 0) 48%),
+    linear-gradient(180deg, #ffffff 0%, #fbf8f3 100%);
+  padding: 1.25rem 1.3rem 1.15rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 14px 34px rgba(20, 20, 20, 0.07);
+}
+
+.reba-eyebrow {
+  margin: 0;
+  font-size: 0.67rem;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--terra);
+}
+
+.reba-title {
+  margin: 0.45rem 0 0.6rem;
+  font-size: clamp(1.68rem, 3vw, 2.6rem);
+  line-height: 1.08;
+}
+
+.reba-lead {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  max-width: 92ch;
+}
+
+.reba-toprow {
+  margin-top: 0.95rem;
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.reba-pill {
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.82);
+  padding: 0.25rem 0.7rem;
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.reba-btnrow {
+  margin-left: auto;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.reba-btn {
+  border: 1px solid var(--border);
+  background: #fff;
+  color: var(--ink);
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.42rem 0.75rem;
+  cursor: pointer;
+  transition: border-color 0.18s, color 0.18s, background 0.18s;
+}
+
+.reba-btn:hover {
+  border-color: var(--terra);
+  color: var(--terra);
+}
+
+.reba-btn.is-primary {
+  background: var(--terra);
+  border-color: var(--terra);
+  color: #fff;
+}
+
+.reba-btn.is-primary:hover {
+  background: #a54413;
+  border-color: #a54413;
+  color: #fff;
+}
+
+.reba-workbench {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  gap: 0.9rem;
+}
+
+.reba-workbench.page-columns.page-full {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: start !important;
+}
+
+.reba-workbench.page-columns.page-full > * {
+  grid-column: auto !important;
+}
+
+.reba-brief-grid {
+  margin-bottom: 0.95rem;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.62rem;
+}
+
+.reba-brief-card {
+  border: 1px solid var(--border);
+  background: #fff;
+  padding: 0.72rem 0.76rem;
+}
+
+.reba-brief-card h4 {
+  margin: 0 0 0.34rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--terra);
+  font-family: 'DM Sans', sans-serif;
+}
+
+.reba-brief-card p {
+  margin: 0;
+  max-width: none;
+  color: var(--muted);
+  font-size: 0.7rem;
+  line-height: 1.48;
+}
+
+.reba-panel,
+.reba-controls {
+  border: 1px solid var(--border);
+  background: #fff;
+  padding: 0.9rem 0.95rem;
+}
+
+.reba-controls {
+  flex: 0 0 320px;
+  width: 320px;
+  align-self: start;
+  position: sticky;
+  top: 96px;
+}
+
+.reba-output {
+  flex: 1 1 auto;
+  min-width: 0;
+  align-self: start;
+  margin-top: 0;
+}
+
+.reba-controls h3,
+.reba-panel h3 {
+  margin: 0 0 0.6rem;
+  font-size: 0.98rem;
+}
+
+.reba-muted {
+  margin: 0 0 0.6rem;
+  color: var(--muted);
+  font-size: 0.77rem;
+  line-height: 1.55;
+  max-width: none;
+}
+
+.reba-control-group {
+  border-top: 1px solid var(--border);
+  padding-top: 0.62rem;
+  margin-top: 0.62rem;
+}
+
+.reba-control {
+  margin: 0 0 0.62rem;
+}
+
+.reba-control:last-child {
+  margin-bottom: 0;
+}
+
+.reba-control label {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.03em;
+  color: var(--ink);
+  margin-bottom: 0.22rem;
+}
+
+.reba-control span {
+  color: var(--terra);
+  font-family: 'DM Mono', monospace;
+}
+
+.reba-control input[type="range"] {
+  width: 100%;
+}
+
+.reba-control select {
+  width: 100%;
+  border: 1px solid var(--border);
+  background: #fff;
+  font-size: 0.75rem;
+  color: var(--text);
+  padding: 0.34rem 0.45rem;
+}
+
+.reba-kpis {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0.58rem;
+  margin-bottom: 0.85rem;
+}
+
+.reba-kpi {
+  border: 1px solid var(--border);
+  background: linear-gradient(180deg, #ffffff 0%, #faf8f3 100%);
+  padding: 0.65rem 0.7rem;
+}
+
+.reba-kpi .k {
+  display: block;
+  font-size: 0.61rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.18rem;
+}
+
+.reba-kpi .v {
+  display: block;
+  font-size: 1.02rem;
+  font-family: 'Playfair Display', serif;
+  color: var(--ink);
+  line-height: 1.2;
+}
+
+.reba-kpi .s {
+  display: block;
+  margin-top: 0.18rem;
+  font-size: 0.64rem;
+  color: var(--muted);
+}
+
+.reba-grid-two {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 0.72rem;
+  margin-bottom: 0.72rem;
+}
+
+.reba-chart-legend {
+  margin-top: 0.45rem;
+  display: flex;
+  gap: 0.6rem;
+  font-size: 0.62rem;
+  color: var(--muted);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.reba-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 0.28rem;
+  vertical-align: middle;
+}
+
+.reba-dot.rev { background: #3f7b52; }
+.reba-dot.cost { background: #b84e16; }
+
+.reba-cashflow-bars {
+  border: 1px solid var(--border);
+  background: #fbfaf7;
+  padding: 0.68rem 0.5rem 0.35rem;
+  display: grid;
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+  gap: 0.3rem;
+}
+
+.reba-year {
+  display: grid;
+  justify-items: center;
+  align-content: end;
+  gap: 0.24rem;
+}
+
+.reba-bar-stack {
+  width: 100%;
+  max-width: 58px;
+  height: 146px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: linear-gradient(180deg, #ffffff 0%, #f6f3ee 100%);
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  gap: 4px;
+  padding: 3px;
+}
+
+.reba-bar {
+  width: 18px;
+  min-height: 3px;
+  border-radius: 1px 1px 0 0;
+}
+
+.reba-bar.rev { background: #3f7b52; }
+.reba-bar.cost { background: #b84e16; }
+
+.reba-year-net {
+  font-size: 0.56rem;
+  letter-spacing: 0.03em;
+  color: var(--muted);
+  font-family: 'DM Mono', monospace;
+}
+
+.reba-year-net.pos { color: #2d7d4a; }
+.reba-year-net.neg { color: #a94316; }
+
+.reba-year-tag {
+  font-size: 0.58rem;
+  color: var(--muted);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.reba-table-wrap {
+  border: 1px solid var(--border);
+  overflow: auto;
+}
+
+.reba-table,
+.reba-heatmap {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.reba-table th,
+.reba-table td,
+.reba-heatmap th,
+.reba-heatmap td {
+  border-bottom: 1px solid var(--border);
+  padding: 0.4rem 0.42rem;
+  text-align: left;
+  font-size: 0.67rem;
+}
+
+.reba-table th,
+.reba-heatmap th {
+  font-size: 0.58rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  background: #faf8f3;
+}
+
+.reba-table td:last-child,
+.reba-table th:last-child,
+.reba-heatmap td:last-child,
+.reba-heatmap th:last-child {
+  text-align: right;
+}
+
+.reba-demand {
+  display: grid;
+  gap: 0.45rem;
+  margin-top: 0.32rem;
+}
+
+.reba-demand-row {
+  display: grid;
+  grid-template-columns: 110px minmax(0, 1fr) 40px;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.reba-demand-row .n {
+  font-size: 0.64rem;
+  color: var(--text);
+}
+
+.reba-demand-track {
+  height: 10px;
+  border: 1px solid rgba(63, 123, 82, 0.3);
+  background: rgba(63, 123, 82, 0.08);
+  position: relative;
+}
+
+.reba-demand-fill {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, #2d7d4a 0%, #8ccf9b 100%);
+}
+
+.reba-demand-score {
+  font-size: 0.64rem;
+  font-family: 'DM Mono', monospace;
+  color: #2d7d4a;
+  text-align: right;
+}
+
+.reba-reco {
+  margin: 0.2rem 0 0;
+  padding-left: 1rem;
+}
+
+.reba-reco li {
+  margin: 0.34rem 0;
+  color: var(--muted);
+  font-size: 0.73rem;
+  line-height: 1.45;
+}
+
+.reba-boardbox {
+  border: 1px solid var(--border);
+  background: #fbfaf7;
+  padding: 0.65rem;
+}
+
+.reba-boardtext {
+  width: 100%;
+  min-height: 145px;
+  border: 1px solid var(--border);
+  background: #fff;
+  padding: 0.62rem;
+  font-size: 0.7rem;
+  line-height: 1.46;
+  color: var(--text);
+  font-family: 'DM Mono', monospace;
+}
+
+.reba-footnote {
+  margin: 0.55rem 0 0;
+  font-size: 0.62rem;
+  color: var(--muted);
+  max-width: none;
+}
+
+@media (max-width: 1220px) {
+  .reba-brief-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .reba-kpis {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 980px) {
+  .reba-shell {
+    width: min(1220px, calc(100vw - 2rem));
+  }
+
+  .reba-workbench {
+    flex-direction: column;
+  }
+
+  .reba-controls {
+    width: 100%;
+    flex: 1 1 auto;
+    position: static;
+  }
+
+  .reba-grid-two {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .reba-brief-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .reba-toprow {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .reba-btnrow {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .reba-btnrow .reba-btn {
+    flex: 1;
+  }
+
+  .reba-kpis {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .reba-cashflow-bars {
+    overflow: auto;
+    grid-template-columns: repeat(8, 72px);
+    justify-content: start;
+  }
+}
+</style>
+
+<div class="reba-shell">
+  <section class="reba-hero">
+    <p class="reba-eyebrow">Business Analyst Case Project</p>
+    <h1 class="reba-title">Mixed Use Development Feasibility Studio</h1>
+    <p class="reba-lead">
+      A live investment case dashboard built for real estate planning decisions. It combines product mix strategy,
+      market demand scoring, discounted cash flow modeling, sensitivity testing, and board ready reporting in one view.
+      This is the exact analysis workflow used to test viability before design freeze and budget approval.
+    </p>
+    <div class="reba-toprow">
+      <span class="reba-pill">Residential</span>
+      <span class="reba-pill">Commercial</span>
+      <span class="reba-pill">Retail</span>
+      <span class="reba-pill">Industrial</span>
+      <span class="reba-pill">DCF · NPV · IRR · ROI</span>
+      <div class="reba-btnrow">
+        <button class="reba-btn" id="rebaResetBtn" type="button">Reset baseline</button>
+        <button class="reba-btn is-primary" id="rebaCopyBtn" type="button">Copy board summary</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="reba-brief-grid" aria-label="Case brief summary">
+    <article class="reba-brief-card">
+      <h4>Data sources</h4>
+      <p>Portfolio demonstration dataset built from public Kenya macro indicators, sampled property listing comparables, and structured development cost assumptions from quantity survey templates.</p>
+    </article>
+    <article class="reba-brief-card">
+      <h4>Engineering and cleaning</h4>
+      <p>Data is standardized through schema checks, unit normalization, duplicate detection, outlier flags, and pricing alignment before any financial modeling is run.</p>
+    </article>
+    <article class="reba-brief-card">
+      <h4>Pipeline and analysis</h4>
+      <p>Modular SQL and R style pipeline transforms source tables into scenario ready model inputs powering DCF, NPV, IRR, ROI, payback, and sensitivity analysis.</p>
+    </article>
+    <article class="reba-brief-card">
+      <h4>Stakeholder value</h4>
+      <p>Creates one shared decision view for finance, planning, design, engineering, and construction teams, improving coordination, budget discipline, and return clarity.</p>
+    </article>
+  </section>
+
+  <section class="reba-workbench">
+    <aside class="reba-controls">
+      <h3>Model controls</h3>
+      <p class="reba-muted">Tune assumptions the same way a feasibility team would during investor and management review.</p>
+
+      <div class="reba-control-group">
+        <div class="reba-control">
+          <label for="rebaArea">Development area sqm <span id="rebaAreaOut"></span></label>
+          <input id="rebaArea" type="range" min="70000" max="260000" step="5000" value="150000" />
+        </div>
+        <div class="reba-control">
+          <label for="rebaLandCost">Land cost per sqm KES <span id="rebaLandCostOut"></span></label>
+          <input id="rebaLandCost" type="range" min="4000" max="18000" step="500" value="8500" />
+        </div>
+        <div class="reba-control">
+          <label for="rebaDiscount">Discount rate <span id="rebaDiscountOut"></span></label>
+          <input id="rebaDiscount" type="range" min="8" max="24" step="0.5" value="14" />
+        </div>
+        <div class="reba-control">
+          <label for="rebaFinanceRate">Finance cost rate <span id="rebaFinanceRateOut"></span></label>
+          <input id="rebaFinanceRate" type="range" min="2" max="16" step="0.5" value="7.5" />
+        </div>
+        <div class="reba-control">
+          <label for="rebaAbsorption">Absorption period years <span id="rebaAbsorptionOut"></span></label>
+          <input id="rebaAbsorption" type="range" min="4" max="9" step="1" value="6" />
+        </div>
+        <div class="reba-control">
+          <label for="rebaPriceAdj">Pricing shock <span id="rebaPriceAdjOut"></span></label>
+          <input id="rebaPriceAdj" type="range" min="80" max="125" step="1" value="100" />
+        </div>
+        <div class="reba-control">
+          <label for="rebaCostAdj">Construction cost shock <span id="rebaCostAdjOut"></span></label>
+          <input id="rebaCostAdj" type="range" min="80" max="125" step="1" value="100" />
+        </div>
+        <div class="reba-control">
+          <label for="rebaProfile">Capex curve</label>
+          <select id="rebaProfile">
+            <option value="front">Front loaded</option>
+            <option value="balanced" selected>Balanced</option>
+            <option value="back">Back loaded</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="reba-control-group">
+        <p class="reba-muted" style="margin-bottom:0.45rem;">Product mix raw sliders. The model auto normalizes to 100 percent.</p>
+        <div class="reba-control">
+          <label for="mixResidential">Residential share <span id="mixResidentialOut"></span></label>
+          <input id="mixResidential" type="range" min="0" max="100" step="1" value="42" />
+        </div>
+        <div class="reba-control">
+          <label for="mixCommercial">Commercial share <span id="mixCommercialOut"></span></label>
+          <input id="mixCommercial" type="range" min="0" max="100" step="1" value="24" />
+        </div>
+        <div class="reba-control">
+          <label for="mixRetail">Retail share <span id="mixRetailOut"></span></label>
+          <input id="mixRetail" type="range" min="0" max="100" step="1" value="17" />
+        </div>
+        <div class="reba-control">
+          <label for="mixIndustrial">Industrial share <span id="mixIndustrialOut"></span></label>
+          <input id="mixIndustrial" type="range" min="0" max="100" step="1" value="17" />
+        </div>
+      </div>
+    </aside>
+
+    <div class="reba-output">
+      <section class="reba-kpis" aria-label="Core financial outputs">
+        <article class="reba-kpi">
+          <span class="k">NPV</span>
+          <span class="v" id="kpiNpv">...</span>
+          <span class="s">Discounted value at selected rate</span>
+        </article>
+        <article class="reba-kpi">
+          <span class="k">IRR</span>
+          <span class="v" id="kpiIrr">...</span>
+          <span class="s">Internal return from model cash flow</span>
+        </article>
+        <article class="reba-kpi">
+          <span class="k">ROI</span>
+          <span class="v" id="kpiRoi">...</span>
+          <span class="s">Profit on total development cost</span>
+        </article>
+        <article class="reba-kpi">
+          <span class="k">Payback</span>
+          <span class="v" id="kpiPayback">...</span>
+          <span class="s">Year cumulative cash flow turns positive</span>
+        </article>
+        <article class="reba-kpi">
+          <span class="k">Total gross sales</span>
+          <span class="v" id="kpiSales">...</span>
+          <span class="s">Portfolio revenue across asset classes</span>
+        </article>
+      </section>
+
+      <section class="reba-grid-two">
+        <article class="reba-panel">
+          <h3>Eight year cash flow</h3>
+          <p class="reba-muted">Revenue and cost per year with net signal for phasing and funding pressure.</p>
+          <div class="reba-cashflow-bars" id="rebaCashflowBars" aria-label="Cash flow bars"></div>
+          <div class="reba-chart-legend">
+            <span><i class="reba-dot rev"></i>Revenue</span>
+            <span><i class="reba-dot cost"></i>Cost</span>
+          </div>
+        </article>
+
+        <article class="reba-panel">
+          <h3>Product mix and margin</h3>
+          <p class="reba-muted">Normalized mix, pricing assumptions, and gross margin by asset class.</p>
+          <div class="reba-table-wrap">
+            <table class="reba-table">
+              <thead>
+                <tr>
+                  <th>Asset class</th>
+                  <th>Share</th>
+                  <th>Avg price</th>
+                  <th>Avg cost</th>
+                  <th>Gross margin</th>
+                </tr>
+              </thead>
+              <tbody id="rebaMixBody"></tbody>
+            </table>
+          </div>
+        </article>
+      </section>
+
+      <section class="reba-grid-two">
+        <article class="reba-panel">
+          <h3>Sensitivity matrix</h3>
+          <p class="reba-muted">NPV stress test across combined price and cost shocks.</p>
+          <div class="reba-table-wrap">
+            <table class="reba-heatmap">
+              <thead id="rebaHeatmapHead">
+                <tr><th>Cost \ Price</th><th>Loading</th></tr>
+              </thead>
+              <tbody id="rebaHeatmapBody">
+                <tr><th>0%</th><td>Loading model</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+
+        <article class="reba-panel">
+          <h3>Market pulse and recommendations</h3>
+          <p class="reba-muted">Demand index is adjusted by pricing pressure and mix concentration risk.</p>
+          <div class="reba-demand" id="rebaDemandBars"></div>
+          <ul class="reba-reco" id="rebaRecommendations"></ul>
+        </article>
+      </section>
+
+      <article class="reba-panel">
+        <h3>Board brief draft</h3>
+        <p class="reba-muted">Auto generated talking points for investor, lender, and management presentation.</p>
+        <div class="reba-boardbox">
+          <textarea id="rebaBoardText" class="reba-boardtext" readonly></textarea>
+          <p class="reba-footnote">Scenario values are illustrative for portfolio demonstration. Replace assumptions with verified site data before investment approval.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+</div>
+
+<script>
+(function() {
+  var assets = [
+    { id: 'residential', label: 'Residential', price: 92000, cost: 56000, baseDemand: 82, targetShare: 0.42 },
+    { id: 'commercial', label: 'Commercial', price: 118000, cost: 74000, baseDemand: 68, targetShare: 0.24 },
+    { id: 'retail', label: 'Retail', price: 132000, cost: 86000, baseDemand: 64, targetShare: 0.17 },
+    { id: 'industrial', label: 'Industrial', price: 78000, cost: 51000, baseDemand: 74, targetShare: 0.17 }
+  ];
+
+  var capexProfiles = {
+    front: [0.34, 0.27, 0.16, 0.11, 0.06, 0.03, 0.02, 0.01],
+    balanced: [0.24, 0.22, 0.18, 0.13, 0.10, 0.07, 0.04, 0.02],
+    back: [0.16, 0.18, 0.17, 0.16, 0.14, 0.10, 0.06, 0.03]
+  };
+
+  var defaults = {
+    rebaArea: 150000,
+    rebaLandCost: 8500,
+    rebaDiscount: 14,
+    rebaFinanceRate: 7.5,
+    rebaAbsorption: 6,
+    rebaPriceAdj: 100,
+    rebaCostAdj: 100,
+    rebaProfile: 'balanced',
+    mixResidential: 42,
+    mixCommercial: 24,
+    mixRetail: 17,
+    mixIndustrial: 17
+  };
+
+  var inputIds = [
+    'rebaArea', 'rebaLandCost', 'rebaDiscount', 'rebaFinanceRate',
+    'rebaAbsorption', 'rebaPriceAdj', 'rebaCostAdj', 'rebaProfile',
+    'mixResidential', 'mixCommercial', 'mixRetail', 'mixIndustrial'
+  ];
+
+  var outIds = [
+    'rebaAreaOut', 'rebaLandCostOut', 'rebaDiscountOut', 'rebaFinanceRateOut',
+    'rebaAbsorptionOut', 'rebaPriceAdjOut', 'rebaCostAdjOut',
+    'mixResidentialOut', 'mixCommercialOut', 'mixRetailOut', 'mixIndustrialOut'
+  ];
+
+  function byId(id) {
+    return document.getElementById(id);
+  }
+
+  function clamp(n, min, max) {
+    return Math.max(min, Math.min(max, n));
+  }
+
+  function shortMoney(value) {
+    var sign = value < 0 ? '-' : '';
+    var abs = Math.abs(value);
+    if (abs >= 1000000000) return sign + 'KES ' + (abs / 1000000000).toFixed(2) + 'B';
+    if (abs >= 1000000) return sign + 'KES ' + (abs / 1000000).toFixed(1) + 'M';
+    return sign + 'KES ' + abs.toFixed(0);
+  }
+
+  function percent(v, digits) {
+    return (v * 100).toFixed(digits == null ? 1 : digits) + '%';
+  }
+
+  function normalizeShares(raw) {
+    var sum = raw.reduce(function(acc, v) { return acc + v; }, 0);
+    if (sum <= 0) {
+      return [0.42, 0.24, 0.17, 0.17];
+    }
+    return raw.map(function(v) { return v / sum; });
+  }
+
+  function buildSalesCurve(absorptionYears, weightedDemand) {
+    var horizon = 8;
+    var demandFactor = clamp(weightedDemand / 72, 0.72, 1.25);
+    var k = 1 + (1 - demandFactor) * 0.8;
+    var curve = [];
+    for (var year = 1; year <= horizon; year++) {
+      var ramp = 1 / (1 + Math.exp(-((year - (absorptionYears * 0.55)) / k)));
+      var tail = 1 / (1 + Math.exp(((year - absorptionYears - 0.7) / 1.05)));
+      var value = (ramp * tail) + 0.02;
+      curve.push(Math.max(0.015, value));
+    }
+    var sum = curve.reduce(function(acc, v) { return acc + v; }, 0);
+    return curve.map(function(v) { return v / sum; });
+  }
+
+  function npvFromRate(cashflows, rate) {
+    var total = 0;
+    for (var i = 0; i < cashflows.length; i++) {
+      total += cashflows[i] / Math.pow(1 + rate, i + 1);
+    }
+    return total;
+  }
+
+  function irr(cashflows) {
+    var min = -0.9;
+    var max = 1.8;
+    var npvMin = npvFromRate(cashflows, min);
+    var npvMax = npvFromRate(cashflows, max);
+    if (npvMin * npvMax > 0) return null;
+    for (var i = 0; i < 130; i++) {
+      var mid = (min + max) / 2;
+      var npvMid = npvFromRate(cashflows, mid);
+      if (npvMid === 0) return mid;
+      if (npvMid * npvMin > 0) {
+        min = mid;
+        npvMin = npvMid;
+      } else {
+        max = mid;
+      }
+    }
+    return (min + max) / 2;
+  }
+
+  function gatherInputs() {
+    return {
+      area: Number(byId('rebaArea').value),
+      landCost: Number(byId('rebaLandCost').value),
+      discountRate: Number(byId('rebaDiscount').value) / 100,
+      financeRate: Number(byId('rebaFinanceRate').value) / 100,
+      absorptionYears: Number(byId('rebaAbsorption').value),
+      priceAdj: Number(byId('rebaPriceAdj').value) / 100,
+      costAdj: Number(byId('rebaCostAdj').value) / 100,
+      capexProfile: byId('rebaProfile').value,
+      rawShares: [
+        Number(byId('mixResidential').value),
+        Number(byId('mixCommercial').value),
+        Number(byId('mixRetail').value),
+        Number(byId('mixIndustrial').value)
+      ]
+    };
+  }
+
+  function runModel(params, override) {
+    var area = override && override.area != null ? override.area : params.area;
+    var landCost = override && override.landCost != null ? override.landCost : params.landCost;
+    var discountRate = override && override.discountRate != null ? override.discountRate : params.discountRate;
+    var financeRate = override && override.financeRate != null ? override.financeRate : params.financeRate;
+    var absorptionYears = override && override.absorptionYears != null ? override.absorptionYears : params.absorptionYears;
+    var priceAdj = override && override.priceAdj != null ? override.priceAdj : params.priceAdj;
+    var costAdj = override && override.costAdj != null ? override.costAdj : params.costAdj;
+    var capexProfile = override && override.capexProfile ? override.capexProfile : params.capexProfile;
+    var shares = normalizeShares(override && override.rawShares ? override.rawShares : params.rawShares);
+
+    var classRows = [];
+    var weightedDemand = 0;
+    var totalRevenue = 0;
+    var totalConstruction = 0;
+
+    for (var i = 0; i < assets.length; i++) {
+      var asset = assets[i];
+      var share = shares[i];
+      var concentrationPenalty = Math.max(0, (share - asset.targetShare) * 120);
+      var demand = clamp(asset.baseDemand + (1 - priceAdj) * 48 - concentrationPenalty, 35, 95);
+      var classArea = area * share;
+      var unitPrice = asset.price * priceAdj;
+      var unitCost = asset.cost * costAdj;
+      var revenue = classArea * unitPrice;
+      var construction = classArea * unitCost;
+      var grossMargin = (unitPrice - unitCost) / unitPrice;
+
+      weightedDemand += demand * share;
+      totalRevenue += revenue;
+      totalConstruction += construction;
+
+      classRows.push({
+        label: asset.label,
+        share: share,
+        demand: demand,
+        unitPrice: unitPrice,
+        unitCost: unitCost,
+        grossMargin: grossMargin
+      });
+    }
+
+    var landCostTotal = area * landCost;
+    var infraCost = totalConstruction * 0.12;
+    var softCost = totalConstruction * 0.09;
+    var financeCost = (landCostTotal + totalConstruction + infraCost + softCost) * financeRate;
+    var totalCost = landCostTotal + totalConstruction + infraCost + softCost + financeCost;
+
+    var costCurveRaw = capexProfiles[capexProfile] || capexProfiles.balanced;
+    var costCurveSum = costCurveRaw.reduce(function(acc, v) { return acc + v; }, 0);
+    var costCurve = costCurveRaw.map(function(v) { return v / costCurveSum; });
+    var salesCurve = buildSalesCurve(absorptionYears, weightedDemand);
+
+    var yearly = [];
+    var cumulative = 0;
+    var payback = null;
+    for (var year = 0; year < 8; year++) {
+      var rev = totalRevenue * salesCurve[year];
+      var cost = totalCost * costCurve[year];
+      var net = rev - cost;
+      cumulative += net;
+      if (payback == null && cumulative >= 0) {
+        payback = year + 1;
+      }
+      yearly.push({ rev: rev, cost: cost, net: net, cumulative: cumulative });
+    }
+
+    var netSeries = yearly.map(function(y) { return y.net; });
+    var npv = npvFromRate(netSeries, discountRate);
+    var projectIrr = irr(netSeries);
+    var roi = (totalRevenue - totalCost) / totalCost;
+    var margin = (totalRevenue - totalCost) / totalRevenue;
+
+    return {
+      classRows: classRows,
+      yearly: yearly,
+      totalRevenue: totalRevenue,
+      totalCost: totalCost,
+      totalProfit: totalRevenue - totalCost,
+      weightedDemand: weightedDemand,
+      npv: npv,
+      irr: projectIrr,
+      roi: roi,
+      margin: margin,
+      payback: payback,
+      discountRate: discountRate,
+      landShare: landCostTotal / totalCost,
+      financeShare: financeCost / totalCost
+    };
+  }
+
+  function renderReadouts(params) {
+    byId('rebaAreaOut').textContent = Number(params.area).toLocaleString('en-KE');
+    byId('rebaLandCostOut').textContent = Number(params.landCost).toLocaleString('en-KE');
+    byId('rebaDiscountOut').textContent = (params.discountRate * 100).toFixed(1) + '%';
+    byId('rebaFinanceRateOut').textContent = (params.financeRate * 100).toFixed(1) + '%';
+    byId('rebaAbsorptionOut').textContent = String(params.absorptionYears);
+    byId('rebaPriceAdjOut').textContent = ((params.priceAdj - 1) * 100).toFixed(0) + '%';
+    byId('rebaCostAdjOut').textContent = ((params.costAdj - 1) * 100).toFixed(0) + '%';
+    byId('mixResidentialOut').textContent = String(params.rawShares[0]);
+    byId('mixCommercialOut').textContent = String(params.rawShares[1]);
+    byId('mixRetailOut').textContent = String(params.rawShares[2]);
+    byId('mixIndustrialOut').textContent = String(params.rawShares[3]);
+  }
+
+  function renderKpis(model) {
+    byId('kpiNpv').textContent = shortMoney(model.npv);
+    byId('kpiIrr').textContent = model.irr == null ? 'No solution' : percent(model.irr, 1);
+    byId('kpiRoi').textContent = percent(model.roi, 1);
+    byId('kpiPayback').textContent = model.payback == null ? '> 8 years' : ('Year ' + model.payback);
+    byId('kpiSales').textContent = shortMoney(model.totalRevenue);
+  }
+
+  function renderCashflow(model) {
+    var holder = byId('rebaCashflowBars');
+    var maxValue = 1;
+    model.yearly.forEach(function(y) {
+      maxValue = Math.max(maxValue, y.rev, y.cost);
+    });
+
+    holder.innerHTML = model.yearly.map(function(y, idx) {
+      var revHeight = Math.max(3, (y.rev / maxValue) * 100);
+      var costHeight = Math.max(3, (y.cost / maxValue) * 100);
+      var netClass = y.net >= 0 ? 'pos' : 'neg';
+      return ''
+        + '<div class="reba-year">'
+        + '  <div class="reba-bar-stack">'
+        + '    <span class="reba-bar cost" style="height:' + costHeight.toFixed(2) + '%"></span>'
+        + '    <span class="reba-bar rev" style="height:' + revHeight.toFixed(2) + '%"></span>'
+        + '  </div>'
+        + '  <div class="reba-year-net ' + netClass + '">' + shortMoney(y.net) + '</div>'
+        + '  <div class="reba-year-tag">Y' + (idx + 1) + '</div>'
+        + '</div>';
+    }).join('');
+  }
+
+  function renderMixTable(model) {
+    var body = byId('rebaMixBody');
+    body.innerHTML = model.classRows.map(function(r) {
+      return ''
+        + '<tr>'
+        + '  <td>' + r.label + '</td>'
+        + '  <td>' + percent(r.share, 1) + '</td>'
+        + '  <td>' + shortMoney(r.unitPrice) + '</td>'
+        + '  <td>' + shortMoney(r.unitCost) + '</td>'
+        + '  <td>' + percent(r.grossMargin, 1) + '</td>'
+        + '</tr>';
+    }).join('');
+  }
+
+  function renderHeatmap(params) {
+    var priceShocks = [-10, -5, 0, 5, 10];
+    var costShocks = [10, 5, 0, -5, -10];
+    var values = [];
+    var rows = [];
+
+    for (var i = 0; i < costShocks.length; i++) {
+      var row = [];
+      for (var j = 0; j < priceShocks.length; j++) {
+        var scenario = runModel(params, {
+          priceAdj: params.priceAdj * (1 + (priceShocks[j] / 100)),
+          costAdj: params.costAdj * (1 + (costShocks[i] / 100))
+        });
+        row.push(scenario.npv);
+        values.push(scenario.npv);
+      }
+      rows.push(row);
+    }
+
+    var min = Math.min.apply(null, values);
+    var max = Math.max.apply(null, values);
+    var spread = Math.max(1, max - min);
+
+    var head = '<tr><th>Cost \\ Price</th>' + priceShocks.map(function(p) {
+      return '<th>' + (p > 0 ? '+' : '') + p + '%</th>';
+    }).join('') + '</tr>';
+    byId('rebaHeatmapHead').innerHTML = head;
+
+    var bodyHtml = rows.map(function(row, rIdx) {
+      var left = '<th>' + (costShocks[rIdx] > 0 ? '+' : '') + costShocks[rIdx] + '%</th>';
+      var cells = row.map(function(v) {
+        var intensity = (Math.abs(v) - Math.min(Math.abs(min), Math.abs(max)) * 0.15) / spread;
+        intensity = clamp(intensity, 0.12, 0.92);
+        var color = v >= 0
+          ? 'rgba(45, 125, 74, ' + intensity.toFixed(3) + ')'
+          : 'rgba(184, 78, 22, ' + intensity.toFixed(3) + ')';
+        var textColor = intensity > 0.48 ? '#fff' : '#2d2b27';
+        return '<td style="background:' + color + ';color:' + textColor + ';font-family:DM Mono, monospace;">' + shortMoney(v) + '</td>';
+      }).join('');
+      return '<tr>' + left + cells + '</tr>';
+    }).join('');
+
+    byId('rebaHeatmapBody').innerHTML = bodyHtml;
+  }
+
+  function renderDemand(model) {
+    var box = byId('rebaDemandBars');
+    box.innerHTML = model.classRows.map(function(r) {
+      return ''
+        + '<div class="reba-demand-row">'
+        + '  <span class="n">' + r.label + '</span>'
+        + '  <div class="reba-demand-track"><span class="reba-demand-fill" style="width:' + r.demand.toFixed(1) + '%"></span></div>'
+        + '  <span class="reba-demand-score">' + r.demand.toFixed(0) + '</span>'
+        + '</div>';
+    }).join('');
+  }
+
+  function buildRecommendations(model, params) {
+    var items = [];
+
+    if (model.npv > 0 && model.irr != null && model.irr > (model.discountRate + 0.035)) {
+      items.push('Proceed with phase one approvals because the base case clears value and return thresholds.');
+    } else {
+      items.push('Refine assumptions before board approval since the base case does not strongly clear return thresholds.');
+    }
+
+    if (model.payback == null || model.payback > 7) {
+      items.push('Tighten phasing and pre sales strategy to shorten payback and reduce financing pressure.');
+    } else {
+      items.push('Current phasing is acceptable for lender conversations given payback timing.');
+    }
+
+    if (params.costAdj > 1.08) {
+      items.push('Run value engineering now because cost pressure is materially reducing project headroom.');
+    }
+
+    if (model.weightedDemand < 66) {
+      items.push('Rebalance product mix toward higher demand classes to improve absorption confidence.');
+    } else {
+      items.push('Demand profile is healthy enough to support planned release sequencing.');
+    }
+
+    if (model.landShare > 0.12) {
+      items.push('Land cost share is elevated so renegotiate land terms or increase effective sellable density.');
+    }
+
+    if (model.financeShare > 0.1) {
+      items.push('Finance cost share is high so prioritize faster collections and staged debt drawdown.');
+    }
+
+    return items.slice(0, 5);
+  }
+
+  function renderRecommendations(model, params) {
+    var list = byId('rebaRecommendations');
+    var recs = buildRecommendations(model, params);
+    list.innerHTML = recs.map(function(item) {
+      return '<li>' + item + '</li>';
+    }).join('');
+  }
+
+  function renderBoardBrief(model, params) {
+    var bestClass = model.classRows
+      .slice()
+      .sort(function(a, b) {
+        return (b.grossMargin * b.demand) - (a.grossMargin * a.demand);
+      })[0];
+
+    var text = ''
+      + 'Scenario overview\n'
+      + 'Total area: ' + Number(params.area).toLocaleString('en-KE') + ' sqm\n'
+      + 'Discount rate: ' + (params.discountRate * 100).toFixed(1) + '%\n'
+      + 'Absorption period: ' + params.absorptionYears + ' years\n\n'
+      + 'Financial result\n'
+      + 'NPV: ' + shortMoney(model.npv) + '\n'
+      + 'IRR: ' + (model.irr == null ? 'No solution' : percent(model.irr, 1)) + '\n'
+      + 'ROI: ' + percent(model.roi, 1) + '\n'
+      + 'Payback: ' + (model.payback == null ? 'Beyond year 8' : 'Year ' + model.payback) + '\n\n'
+      + 'Portfolio signal\n'
+      + 'Best risk adjusted class: ' + bestClass.label + '\n'
+      + 'Weighted demand index: ' + model.weightedDemand.toFixed(1) + ' / 100\n'
+      + 'Land cost share: ' + percent(model.landShare, 1) + '\n'
+      + 'Finance cost share: ' + percent(model.financeShare, 1) + '\n\n'
+      + 'Decision guidance\n'
+      + buildRecommendations(model, params).map(function(item, idx) {
+        return (idx + 1) + '. ' + item;
+      }).join('\n');
+
+    byId('rebaBoardText').value = text;
+  }
+
+  function updateAll() {
+    var params = gatherInputs();
+    renderReadouts(params);
+    var model = runModel(params);
+    renderKpis(model);
+    renderCashflow(model);
+    renderMixTable(model);
+    renderHeatmap(params);
+    renderDemand(model);
+    renderRecommendations(model, params);
+    renderBoardBrief(model, params);
+  }
+
+  function resetDefaults() {
+    inputIds.forEach(function(id) {
+      var el = byId(id);
+      if (!el) return;
+      el.value = defaults[id];
+    });
+    updateAll();
+  }
+
+  function copyBoardBrief() {
+    var text = byId('rebaBoardText').value;
+    if (navigator.clipboard && text) {
+      navigator.clipboard.writeText(text).then(function() {
+        var btn = byId('rebaCopyBtn');
+        var old = btn.textContent;
+        btn.textContent = 'Copied';
+        setTimeout(function() {
+          btn.textContent = old;
+        }, 1200);
+      });
+    }
+  }
+
+  inputIds.forEach(function(id) {
+    var el = byId(id);
+    if (!el) return;
+    el.addEventListener('input', updateAll);
+    el.addEventListener('change', updateAll);
+  });
+
+  byId('rebaResetBtn').addEventListener('click', resetDefaults);
+  byId('rebaCopyBtn').addEventListener('click', copyBoardBrief);
+
+  outIds.forEach(function(id) {
+    if (!byId(id)) {
+      console.warn('Missing output id', id);
+    }
+  });
+
+  updateAll();
+})();
+</script>
+```

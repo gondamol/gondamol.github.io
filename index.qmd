@@ -299,7 +299,7 @@ toc: false
           <span class="proj-icon" style="font-size:2rem;">🔗</span>
         </div>
         <div class="proj-body">
-          <p class="proj-domain" style="color:#8cb5d9;">Operations Analytics · Tatu City</p>
+          <p class="proj-domain" style="color:#8cb5d9;">Operations Analytics · Urban Development</p>
           <h3 class="proj-title">Supply Chain Intelligence Blueprint</h3>
           <p class="proj-desc">Designed a logistics analytics architecture covering inventory flow, shipment reliability, and service level monitoring for distributed operations in Kenya.</p>
           <div class="proj-footer">
