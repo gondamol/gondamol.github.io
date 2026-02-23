@@ -1,264 +1,147 @@
-/* Additional styling helpers for the neobrutalist system */
+/* styles.scss — additional page-level polish */
 
-.skill-category {
-  border: 3px solid #111;
-  box-shadow: 12px 12px 0 rgba(0, 0, 0, 0.9);
-}
-
-.project-card,
-.blog-card,
-.highlight-box,
-.info-box,
-.success-box {
-  border-width: 3px;
-  border-radius: 0;
-}
-
-/* Generic tile grid used across the site */
-.tile-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1.25rem;
-}
-
-/* SDG section layout on TidyTuesday page */
-.sdg-section {
-  --sdg-accent: #111111;
-  margin-bottom: 3rem;
-  padding: 1.75rem 1.75rem 2rem;
-  border: 3px solid var(--sdg-accent);
-  box-shadow: 12px 12px 0 rgba(0, 0, 0, 0.9);
-  background: #fffdf3;
-}
-
-.sdg-section h3 {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  margin-bottom: 0.4rem;
-}
-
-.sdg-section h3 i {
-  font-size: 1.4rem;
-}
-
-.sdg-tagline {
-  font-size: 0.9rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  margin-bottom: 1.4rem;
-  color: var(--sdg-accent);
-}
-
-/* TidyTuesday SDG grids: card-style links within each section */
-.sdg-tile-grid ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.1rem;
-}
-
-.sdg-tile-grid li {
-  border: 3px solid var(--sdg-accent);
-  box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.85);
-  background: #ffffff;
-  padding: 0.9rem 1rem;
-  transition: transform 0.1s ease-out, box-shadow 0.1s ease-out, background 0.1s ease-out;
-}
-
-.sdg-tile-grid li:hover {
-  transform: translate(-4px, -4px);
-  box-shadow: 12px 12px 0 rgba(0, 0, 0, 0.95);
-  background: #ffeaa7;
-}
-
-.sdg-tile-grid a {
-  display: block;
-  border-bottom: none;
-  text-transform: none;
-  font-weight: 700;
-  color: inherit;
-}
-
-.sdg-tile-grid a span {
-  display: block;
-}
-
-/* SDG-specific accent colors */
-.sdg-section.sdg-1 {
-  --sdg-accent: #e5243b;
-  background: #fff1f4;
-}
-
-.sdg-section.sdg-2 {
-  --sdg-accent: #dda63a;
-  background: #fff7e6;
-}
-
-.sdg-section.sdg-3 {
-  --sdg-accent: #4c9f38;
-  background: #f1fbf4;
-}
-
-.sdg-section.sdg-4 {
-  --sdg-accent: #c5192d;
-  background: #fff0f2;
-}
-
-.sdg-section.sdg-5 {
-  --sdg-accent: #ff3a21;
-  background: #fff2ec;
-}
-
-.sdg-section.sdg-6 {
-  --sdg-accent: #26bde2;
-  background: #eef9ff;
-}
-
-.sdg-section.sdg-7 {
-  --sdg-accent: #fcc30b;
-  background: #fff9e5;
-}
-
-.sdg-section.sdg-8 {
-  --sdg-accent: #a21942;
-  background: #fff0f5;
-}
-
-.sdg-section.sdg-9 {
-  --sdg-accent: #fd6925;
-  background: #fff3e9;
-}
-
-.sdg-section.sdg-10 {
-  --sdg-accent: #dd1367;
-  background: #fff0f7;
-}
-
-.sdg-section.sdg-11 {
-  --sdg-accent: #fd9d24;
-  background: #fff7ea;
-}
-
-.sdg-section.sdg-12 {
-  --sdg-accent: #bf8b2e;
-  background: #fff6e6;
-}
-
-.sdg-section.sdg-13 {
-  --sdg-accent: #3f7e44;
-  background: #f0faf1;
-}
-
-.sdg-section.sdg-14 {
-  --sdg-accent: #0a97d9;
-  background: #eaf6ff;
-}
-
-.sdg-section.sdg-15 {
-  --sdg-accent: #56c02b;
-  background: #f1fbf1;
-}
-
-.sdg-section.sdg-16 {
-  --sdg-accent: #00689d;
-  background: #e9f3fb;
-}
-
-.sdg-section.sdg-17 {
-  --sdg-accent: #19486a;
-  background: #edf2f7;
-}
-
-.sdg-item-title {
-  font-weight: 800;
-  font-size: 0.98rem;
-}
-
-.sdg-item-meta {
-  display: block;
-  margin-top: 0.2rem;
-  font-size: 0.78rem;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  opacity: 0.8;
-}
-
-.tile-card {
-  border: 3px solid #111;
-  box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.85);
-  border-radius: 0;
-  padding: 1rem 1.25rem;
+/* Code blocks */
+div.sourceCode {
   background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  overflow-x: auto;
 }
 
-.inline-pill {
+pre.sourceCode {
+  padding: 1.1rem 1.2rem;
+  font-size: 0.83em;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Figure captions */
+figcaption {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.72rem;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 0.6rem;
+  letter-spacing: 0.04em;
+}
+
+/* Abstract callout */
+.research-abstract {
+  background: var(--warm);
+  border-left: 3px solid var(--terra);
+  padding: 1.4rem 1.6rem;
+  margin: 2rem 0;
+  font-size: 0.9rem;
+  line-height: 1.78;
+}
+
+/* ── Quarto article layout breathing room ── */
+.page-layout-article .page-content {
+  max-width: 82ch;
+}
+
+/* ── TOC sidebar ── */
+#quarto-margin-sidebar {
+  padding-top: 2rem;
+}
+
+.sidebar-toc-top {
+  margin-bottom: 1.5rem;
+}
+
+nav#TOC li a {
+  font-size: 0.78rem;
+  color: var(--muted);
+  padding: 0.22rem 0;
+  display: block;
+  transition: color 0.18s;
+}
+
+nav#TOC li a:hover {
+  color: var(--terra);
+}
+
+nav#TOC li a.active {
+  color: var(--terra);
+}
+
+/* ── Footer ── */
+.page-footer {
+  background: var(--ink) !important;
+  color: rgba(245, 241, 234, 0.45);
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  padding: 2.5rem 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.page-footer a {
+  color: rgba(245, 241, 234, 0.45);
+  transition: color 0.18s;
+}
+
+.page-footer a:hover {
+  color: var(--terra-soft);
+}
+
+/* ── Mobile nav hamburger ── */
+.navbar-toggler {
+  border: 1px solid var(--border);
+}
+
+.navbar-collapse .nav-link[href*="mailto"] {
+  margin: 0.3rem 0;
   display: inline-block;
-  padding: 0.35rem 0.85rem;
-  border: 3px solid #111;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  margin-right: 0.5rem;
-  margin-bottom: 0.5rem;
 }
 
-.brutal-divider {
-  height: 3px;
-  width: 100%;
-  background: repeating-linear-gradient(90deg, #111, #111 12px, transparent 12px, transparent 24px);
+/* ── Smooth page transitions (article pages) ── */
+.page-content>* {
+  animation: fadeUp 0.5s ease both;
+  animation-delay: 0.05s;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page-content>* {
+    animation: none !important;
+  }
+}
+
+/* ── Highlight callout ── */
+.callout-highlight {
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--terra);
+  background: var(--warm);
+  padding: 1.4rem 1.6rem;
   margin: 2rem 0;
 }
 
-.badge-stack {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.6rem;
+.callout-highlight p {
+  margin: 0;
+  font-size: 0.9rem;
+  max-width: none;
 }
 
-.badge-stack .badge {
-  border-radius: 0;
-  border: 3px solid #111;
-  background: #fff;
-  padding: 0.35rem 0.9rem;
-  font-weight: 700;
+/* ── Responsive grid fix for about page ── */
+@media (max-width: 768px) {
+  .skills-grid-4 {
+    grid-template-columns: 1fr 1fr !important;
+  }
 }
 
-.zigzag-border {
-  border: 3px solid #111;
-  position: relative;
-}
-
-.zigzag-border::after {
-  content: "";
-  position: absolute;
-  left: -3px;
-  right: -3px;
-  bottom: -12px;
-  height: 12px;
-  background: repeating-linear-gradient(135deg, #111 0 8px, transparent 8px 16px);
-}
-
-.brutal-card {
-  border: 3px solid #111;
-  background: #fff;
-  padding: 1.5rem;
-  box-shadow: 12px 12px 0 rgba(0, 0, 0, 0.9);
-}
-
-.accent-note {
-  font-size: 0.95rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-}
-
-.monochrome-list {
-  list-style: none;
-  padding: 0;
-}
-
-.monochrome-list li {
-  padding: 0.45rem 0;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+@media (max-width: 480px) {
+  .skills-grid-4 {
+    grid-template-columns: 1fr !important;
+  }
 }

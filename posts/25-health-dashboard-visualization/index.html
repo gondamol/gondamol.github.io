@@ -2,14 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.31">
+<meta name="generator" content="quarto-1.8.27">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Nichodemus Amollo">
 <meta name="dcterms.date" content="2025-10-26">
 
-<title>Data Visualization Best Practices for Health Dashboards – Nic|Data</title>
+<title>Data Visualization Best Practices for Health Dashboards – Nic | Data</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -66,20 +66,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
+<link href="../../img/profile.jpeg" rel="icon" type="image/jpeg">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-8ef56b68f8fa1e9d2ba328e99e439f80.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-b4d8e255315082a850f3101be8cf4c50.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-3053e29e5f51fbac37d9511c7f4598d1.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-79f3bbf38959ca18c2d9f1c85bb8c30c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-3053e29e5f51fbac37d9511c7f4598d1.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-95df84677223e8ba3731cfb67d8c134e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -108,176 +106,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&amp;family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&amp;family=DM+Mono:wght@400&amp;display=swap" rel="stylesheet">
 
 
 <link rel="stylesheet" href="../../styles.scss">
-<link rel="stylesheet" href="../../_footer.css">
-<link rel="stylesheet" href="../../_newsletter-popup.scss">
 </head>
 
-<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
-    const toggleBodyColorMode = (bsSheetEl) => {
-      const mode = bsSheetEl.getAttribute("data-mode");
-      const bodyEl = window.document.querySelector("body");
-      if (mode === "dark") {
-        bodyEl.classList.add("quarto-dark");
-        bodyEl.classList.remove("quarto-light");
-      } else {
-        bodyEl.classList.add("quarto-light");
-        bodyEl.classList.remove("quarto-dark");
-      }
-    }
-    const toggleBodyColorPrimary = () => {
-      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
-      if (bsSheetEl) {
-        toggleBodyColorMode(bsSheetEl);
-      }
-    }
-    const setColorSchemeToggle = (alternate) => {
-      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
-      for (let i=0; i < toggles.length; i++) {
-        const toggle = toggles[i];
-        if (toggle) {
-          if (alternate) {
-            toggle.classList.add("alternate");
-          } else {
-            toggle.classList.remove("alternate");
-          }
-        }
-      }
-    };
-    const toggleColorMode = (alternate) => {
-      // Switch the stylesheets
-      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
-      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
-      manageTransitions('#quarto-margin-sidebar .nav-link', false);
-      if (alternate) {
-        // note: dark is layered on light, we don't disable primary!
-        enableStylesheet(alternateStylesheets);
-        for (const sheetNode of alternateStylesheets) {
-          if (sheetNode.id === "quarto-bootstrap") {
-            toggleBodyColorMode(sheetNode);
-          }
-        }
-      } else {
-        disableStylesheet(alternateStylesheets);
-        enableStylesheet(primaryStylesheets)
-        toggleBodyColorPrimary();
-      }
-      manageTransitions('#quarto-margin-sidebar .nav-link', true);
-      // Switch the toggles
-      setColorSchemeToggle(alternate)
-      // Hack to workaround the fact that safari doesn't
-      // properly recolor the scrollbar when toggling (#1455)
-      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
-        manageTransitions("body", false);
-        window.scrollTo(0, 1);
-        setTimeout(() => {
-          window.scrollTo(0, 0);
-          manageTransitions("body", true);
-        }, 40);
-      }
-    }
-    const disableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        stylesheet.rel = 'disabled-stylesheet';
-      }
-    }
-    const enableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
-          stylesheet.rel = 'stylesheet';
-        }
-      }
-    }
-    const manageTransitions = (selector, allowTransitions) => {
-      const els = window.document.querySelectorAll(selector);
-      for (let i=0; i < els.length; i++) {
-        const el = els[i];
-        if (allowTransitions) {
-          el.classList.remove('notransition');
-        } else {
-          el.classList.add('notransition');
-        }
-      }
-    }
-    const isFileUrl = () => {
-      return window.location.protocol === 'file:';
-    }
-    const hasAlternateSentinel = () => {
-      let styleSentinel = getColorSchemeSentinel();
-      if (styleSentinel !== null) {
-        return styleSentinel === "alternate";
-      } else {
-        return false;
-      }
-    }
-    const setStyleSentinel = (alternate) => {
-      const value = alternate ? "alternate" : "default";
-      if (!isFileUrl()) {
-        window.localStorage.setItem("quarto-color-scheme", value);
-      } else {
-        localAlternateSentinel = value;
-      }
-    }
-    const getColorSchemeSentinel = () => {
-      if (!isFileUrl()) {
-        const storageValue = window.localStorage.getItem("quarto-color-scheme");
-        return storageValue != null ? storageValue : localAlternateSentinel;
-      } else {
-        return localAlternateSentinel;
-      }
-    }
-    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-      let newTheme = '';
-      if(authorPrefersDark) {
-        newTheme = isAlternate ? baseTheme : alternateTheme;
-      } else {
-        newTheme = isAlternate ? alternateTheme : baseTheme;
-      }
-      const changeGiscusTheme = () => {
-        // From: https://github.com/giscus/giscus/issues/336
-        const sendMessage = (message) => {
-          const iframe = document.querySelector('iframe.giscus-frame');
-          if (!iframe) return;
-          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-        }
-        sendMessage({
-          setConfig: {
-            theme: newTheme
-          }
-        });
-      }
-      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-      if (isGiscussLoaded) {
-        changeGiscusTheme();
-      }
-    };
-    const authorPrefersDark = false;
-    const darkModeDefault = authorPrefersDark;
-      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
-    // Dark / light mode switch
-    window.quartoToggleColorScheme = () => {
-      // Read the current dark / light value
-      let toAlternate = !hasAlternateSentinel();
-      toggleColorMode(toAlternate);
-      setStyleSentinel(toAlternate);
-      toggleGiscusIfUsed(toAlternate, darkModeDefault);
-      window.dispatchEvent(new Event('resize'));
-    };
-    // Switch to dark mode if need be
-    if (hasAlternateSentinel()) {
-      toggleColorMode(true);
-    } else {
-      toggleColorMode(false);
-    }
-  </script>
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
@@ -285,123 +121,41 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../../index.html">
-    <span class="navbar-title">Nic|Data</span>
+    <span class="navbar-title">Nic | Data</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../index.html"> 
-<span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="../../about/index.html"> 
 <span class="menu-text">About</span></a>
   </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-projects" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Projects</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-projects">    
-        <li>
-    <a class="dropdown-item" href="../../projects/index.html">
- <span class="dropdown-text">All Projects</span></a>
-  </li>  
-        <li><hr class="dropdown-divider"></li>
-        <li>
-    <a class="dropdown-item" href="../../projects/analytics-engineering/index.html">
- <span class="dropdown-text">Real-Time Analytics Engineering 🚀 NEW</span></a>
-  </li>  
-        <li><hr class="dropdown-divider"></li>
-        <li>
-    <a class="dropdown-item" href="../../projects/health-analytics.html">
- <span class="dropdown-text">Health Data Analytics</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../projects/data-management.html">
- <span class="dropdown-text">Data Management</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../projects/survey-tools.html">
- <span class="dropdown-text">Survey Design &amp; Implementation</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../projects/dashboards.html">
- <span class="dropdown-text">Dashboards &amp; Visualization</span></a>
-  </li>  
-        <li><hr class="dropdown-divider"></li>
-        <li>
-    <a class="dropdown-item" href="../../visualizations/index.html">
- <span class="dropdown-text">Visualizations Gallery (50+ Projects)</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../tidy-tuesday/index.html">
- <span class="dropdown-text">TidyTuesday Challenges (100+ Projects)</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../data-viz/index.html">
- <span class="dropdown-text">Data Visualizations</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-research" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Research</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-research">    
-        <li>
-    <a class="dropdown-item" href="../../research/thesis.html">
- <span class="dropdown-text">Current Thesis</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../research/thesis-presentation.html">
- <span class="dropdown-text">Thesis Presentation</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../research/publications.html">
- <span class="dropdown-text">Publications</span></a>
-  </li>  
-        <li><hr class="dropdown-divider"></li>
-        <li>
-    <a class="dropdown-item" href="../../presentations/data-viz-presentation.html">
- <span class="dropdown-text">Presentations</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-resources" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Resources</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-resources">    
-        <li>
-    <a class="dropdown-item" href="../../resources/index.html">
- <span class="dropdown-text">Learning Resources</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../skills/index.html">
- <span class="dropdown-text">Skills &amp; Tools</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../software/index.html">
- <span class="dropdown-text">Software</span></a>
-  </li>  
-    </ul>
-  </li>
   <li class="nav-item">
-    <a class="nav-link" href="../../blogs/index.html"> 
-<span class="menu-text">Blog</span></a>
+    <a class="nav-link" href="../../projects/index.html"> 
+<span class="menu-text">Projects</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../research/thesis.html"> 
+<span class="menu-text">Thesis</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../personal/index.html"> 
+<span class="menu-text">Life</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../cv/index.html"> 
 <span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../personal/index.html"> 
-<span class="menu-text">Personal</span></a>
+    <a class="nav-link" href="../../blogs/index.html"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../resources/index.html"> 
+<span class="menu-text">Resources</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -411,19 +165,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://linkedin.com/in/amollow"> <i class="bi bi-linkedin" role="img" aria-label="LinkedIn">
+    <a class="nav-link" href="https://www.linkedin.com/in/nichodemusamollo/"> <i class="bi bi-linkedin" role="img" aria-label="LinkedIn">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com/nwerre"> <i class="bi bi-twitter" role="img" aria-label="Twitter">
-</i> 
-<span class="menu-text"></span></a>
-  </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://kaggle.com/nwerre"> <i class="bi bi-kaggle" role="img" aria-label="Kaggle">
-</i> 
-<span class="menu-text"></span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="mailto:nichodemuswerre@gmail.com"> 
+<span class="menu-text">Get in Touch</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -473,109 +221,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#why-health-dashboards-matter" id="toc-why-health-dashboards-matter" class="nav-link active" data-scroll-target="#why-health-dashboards-matter">Why Health Dashboards Matter</a></li>
-  <li><a href="#dashboard-design-principles" id="toc-dashboard-design-principles" class="nav-link" data-scroll-target="#dashboard-design-principles">Dashboard Design Principles</a>
-  <ul class="collapse">
-  <li><a href="#the-5-second-rule" id="toc-the-5-second-rule" class="nav-link" data-scroll-target="#the-5-second-rule">1. <strong>The 5-Second Rule</strong> ⏱️</a></li>
-  <li><a href="#know-your-audience" id="toc-know-your-audience" class="nav-link" data-scroll-target="#know-your-audience">2. <strong>Know Your Audience</strong> 👥</a></li>
-  <li><a href="#choose-the-right-chart-type" id="toc-choose-the-right-chart-type" class="nav-link" data-scroll-target="#choose-the-right-chart-type">3. <strong>Choose the Right Chart Type</strong> 📊</a></li>
-  </ul></li>
-  <li><a href="#chart-selection-guide-for-health-data" id="toc-chart-selection-guide-for-health-data" class="nav-link" data-scroll-target="#chart-selection-guide-for-health-data">Chart Selection Guide for Health Data</a>
-  <ul class="collapse">
-  <li><a href="#time-series-data-disease-trends-admissions-over-time" id="toc-time-series-data-disease-trends-admissions-over-time" class="nav-link" data-scroll-target="#time-series-data-disease-trends-admissions-over-time"><strong>Time Series Data</strong> (Disease trends, admissions over time)</a></li>
-  <li><a href="#comparisons-between-groups-facilities-treatments" id="toc-comparisons-between-groups-facilities-treatments" class="nav-link" data-scroll-target="#comparisons-between-groups-facilities-treatments"><strong>Comparisons</strong> (Between groups, facilities, treatments)</a></li>
-  <li><a href="#part-to-whole-disease-burden-distribution" id="toc-part-to-whole-disease-burden-distribution" class="nav-link" data-scroll-target="#part-to-whole-disease-burden-distribution"><strong>Part-to-Whole</strong> (Disease burden distribution)</a></li>
-  <li><a href="#relationships-bmi-vs.-disease-risk" id="toc-relationships-bmi-vs.-disease-risk" class="nav-link" data-scroll-target="#relationships-bmi-vs.-disease-risk"><strong>Relationships</strong> (BMI vs.&nbsp;disease risk)</a></li>
-  <li><a href="#geographic-data-disease-outbreaks-facility-locations" id="toc-geographic-data-disease-outbreaks-facility-locations" class="nav-link" data-scroll-target="#geographic-data-disease-outbreaks-facility-locations"><strong>Geographic Data</strong> (Disease outbreaks, facility locations)</a></li>
-  <li><a href="#distributions-patient-age-wait-times" id="toc-distributions-patient-age-wait-times" class="nav-link" data-scroll-target="#distributions-patient-age-wait-times"><strong>Distributions</strong> (Patient age, wait times)</a></li>
-  </ul></li>
-  <li><a href="#color-best-practices" id="toc-color-best-practices" class="nav-link" data-scroll-target="#color-best-practices">Color Best Practices</a>
-  <ul class="collapse">
-  <li><a href="#use-healthcare-color-psychology" id="toc-use-healthcare-color-psychology" class="nav-link" data-scroll-target="#use-healthcare-color-psychology">1. <strong>Use Healthcare Color Psychology</strong> 🎨</a></li>
-  <li><a href="#accessible-color-palettes" id="toc-accessible-color-palettes" class="nav-link" data-scroll-target="#accessible-color-palettes">2. <strong>Accessible Color Palettes</strong></a></li>
-  <li><a href="#semantic-colors" id="toc-semantic-colors" class="nav-link" data-scroll-target="#semantic-colors">3. <strong>Semantic Colors</strong></a></li>
-  </ul></li>
-  <li><a href="#key-metrics-for-health-dashboards" id="toc-key-metrics-for-health-dashboards" class="nav-link" data-scroll-target="#key-metrics-for-health-dashboards">Key Metrics for Health Dashboards</a>
-  <ul class="collapse">
-  <li><a href="#hospital-operations-dashboard" id="toc-hospital-operations-dashboard" class="nav-link" data-scroll-target="#hospital-operations-dashboard">Hospital Operations Dashboard</a></li>
-  <li><a href="#public-health-dashboard" id="toc-public-health-dashboard" class="nav-link" data-scroll-target="#public-health-dashboard">Public Health Dashboard</a></li>
-  <li><a href="#clinical-dashboard" id="toc-clinical-dashboard" class="nav-link" data-scroll-target="#clinical-dashboard">Clinical Dashboard</a></li>
-  </ul></li>
-  <li><a href="#dashboard-layout-best-practices" id="toc-dashboard-layout-best-practices" class="nav-link" data-scroll-target="#dashboard-layout-best-practices">Dashboard Layout Best Practices</a>
-  <ul class="collapse">
-  <li><a href="#the-f-pattern-layout" id="toc-the-f-pattern-layout" class="nav-link" data-scroll-target="#the-f-pattern-layout">The F-Pattern Layout 👁️</a></li>
-  <li><a href="#example-layout-structure" id="toc-example-layout-structure" class="nav-link" data-scroll-target="#example-layout-structure">Example Layout Structure</a></li>
-  <li><a href="#responsive-design" id="toc-responsive-design" class="nav-link" data-scroll-target="#responsive-design">Responsive Design</a></li>
-  </ul></li>
-  <li><a href="#tools-for-building-health-dashboards" id="toc-tools-for-building-health-dashboards" class="nav-link" data-scroll-target="#tools-for-building-health-dashboards">Tools for Building Health Dashboards</a>
-  <ul class="collapse">
-  <li><a href="#r-shiny-free-highly-customizable" id="toc-r-shiny-free-highly-customizable" class="nav-link" data-scroll-target="#r-shiny-free-highly-customizable">1. <strong>R Shiny</strong> (FREE, highly customizable) ⭐</a></li>
-  <li><a href="#tableau-user-friendly" id="toc-tableau-user-friendly" class="nav-link" data-scroll-target="#tableau-user-friendly">2. <strong>Tableau</strong> ($$, user-friendly)</a></li>
-  <li><a href="#power-bi-microsoft-ecosystem" id="toc-power-bi-microsoft-ecosystem" class="nav-link" data-scroll-target="#power-bi-microsoft-ecosystem">3. <strong>Power BI</strong> ($$, Microsoft ecosystem)</a></li>
-  <li><a href="#plotly-dash-python-free" id="toc-plotly-dash-python-free" class="nav-link" data-scroll-target="#plotly-dash-python-free">4. <strong>Plotly Dash</strong> (Python, FREE)</a></li>
-  <li><a href="#flexdashboard-r-markdown-free" id="toc-flexdashboard-r-markdown-free" class="nav-link" data-scroll-target="#flexdashboard-r-markdown-free">5. <strong>Flexdashboard</strong> (R Markdown, FREE) ⭐</a></li>
-  </ul></li>
-  <li><a href="#real-world-dashboard-examples" id="toc-real-world-dashboard-examples" class="nav-link" data-scroll-target="#real-world-dashboard-examples">Real-World Dashboard Examples</a>
-  <ul class="collapse">
-  <li><a href="#example-1-covid-19-monitoring-dashboard" id="toc-example-1-covid-19-monitoring-dashboard" class="nav-link" data-scroll-target="#example-1-covid-19-monitoring-dashboard">Example 1: COVID-19 Monitoring Dashboard</a></li>
-  <li><a href="#example-2-hospital-emergency-department-dashboard" id="toc-example-2-hospital-emergency-department-dashboard" class="nav-link" data-scroll-target="#example-2-hospital-emergency-department-dashboard">Example 2: Hospital Emergency Department Dashboard</a></li>
-  <li><a href="#example-3-public-health-surveillance-dashboard" id="toc-example-3-public-health-surveillance-dashboard" class="nav-link" data-scroll-target="#example-3-public-health-surveillance-dashboard">Example 3: Public Health Surveillance Dashboard</a></li>
-  </ul></li>
-  <li><a href="#interactive-features-to-include" id="toc-interactive-features-to-include" class="nav-link" data-scroll-target="#interactive-features-to-include">Interactive Features to Include</a>
-  <ul class="collapse">
-  <li><a href="#filters" id="toc-filters" class="nav-link" data-scroll-target="#filters">1. <strong>Filters</strong> 🔍</a></li>
-  <li><a href="#drill-down" id="toc-drill-down" class="nav-link" data-scroll-target="#drill-down">2. <strong>Drill-Down</strong> 📊</a></li>
-  <li><a href="#tooltips" id="toc-tooltips" class="nav-link" data-scroll-target="#tooltips">3. <strong>Tooltips</strong> 💬</a></li>
-  <li><a href="#export-options" id="toc-export-options" class="nav-link" data-scroll-target="#export-options">4. <strong>Export Options</strong> 📥</a></li>
-  </ul></li>
-  <li><a href="#performance-optimization" id="toc-performance-optimization" class="nav-link" data-scroll-target="#performance-optimization">Performance Optimization</a>
-  <ul class="collapse">
-  <li><a href="#data-aggregation" id="toc-data-aggregation" class="nav-link" data-scroll-target="#data-aggregation">1. <strong>Data Aggregation</strong></a></li>
-  <li><a href="#caching" id="toc-caching" class="nav-link" data-scroll-target="#caching">2. <strong>Caching</strong></a></li>
-  <li><a href="#lazy-loading" id="toc-lazy-loading" class="nav-link" data-scroll-target="#lazy-loading">3. <strong>Lazy Loading</strong></a></li>
-  </ul></li>
-  <li><a href="#accessibility-checklist" id="toc-accessibility-checklist" class="nav-link" data-scroll-target="#accessibility-checklist">Accessibility Checklist</a></li>
-  <li><a href="#common-mistakes-to-avoid" id="toc-common-mistakes-to-avoid" class="nav-link" data-scroll-target="#common-mistakes-to-avoid">Common Mistakes to Avoid</a>
-  <ul class="collapse">
-  <li><a href="#mistake-1-too-much-information" id="toc-mistake-1-too-much-information" class="nav-link" data-scroll-target="#mistake-1-too-much-information">❌ <strong>Mistake 1: Too Much Information</strong></a></li>
-  <li><a href="#mistake-2-misleading-visualizations" id="toc-mistake-2-misleading-visualizations" class="nav-link" data-scroll-target="#mistake-2-misleading-visualizations">❌ <strong>Mistake 2: Misleading Visualizations</strong></a></li>
-  <li><a href="#mistake-3-no-context" id="toc-mistake-3-no-context" class="nav-link" data-scroll-target="#mistake-3-no-context">❌ <strong>Mistake 3: No Context</strong></a></li>
-  <li><a href="#mistake-4-static-dashboard" id="toc-mistake-4-static-dashboard" class="nav-link" data-scroll-target="#mistake-4-static-dashboard">❌ <strong>Mistake 4: Static Dashboard</strong></a></li>
-  </ul></li>
-  <li><a href="#testing-your-dashboard" id="toc-testing-your-dashboard" class="nav-link" data-scroll-target="#testing-your-dashboard">Testing Your Dashboard</a>
-  <ul class="collapse">
-  <li><a href="#user-testing-checklist" id="toc-user-testing-checklist" class="nav-link" data-scroll-target="#user-testing-checklist">User Testing Checklist</a></li>
-  <li><a href="#ab-testing" id="toc-ab-testing" class="nav-link" data-scroll-target="#ab-testing">A/B Testing</a></li>
-  </ul></li>
-  <li><a href="#deployment-options" id="toc-deployment-options" class="nav-link" data-scroll-target="#deployment-options">Deployment Options</a>
-  <ul class="collapse">
-  <li><a href="#shinyapps.io-easiest-for-r" id="toc-shinyapps.io-easiest-for-r" class="nav-link" data-scroll-target="#shinyapps.io-easiest-for-r">1. <strong>Shinyapps.io</strong> (Easiest for R)</a></li>
-  <li><a href="#rstudio-connect-enterprise" id="toc-rstudio-connect-enterprise" class="nav-link" data-scroll-target="#rstudio-connect-enterprise">2. <strong>RStudio Connect</strong> (Enterprise)</a></li>
-  <li><a href="#docker-cloud-most-flexible" id="toc-docker-cloud-most-flexible" class="nav-link" data-scroll-target="#docker-cloud-most-flexible">3. <strong>Docker + Cloud</strong> (Most flexible)</a></li>
-  <li><a href="#github-pages-static-dashboards-only" id="toc-github-pages-static-dashboards-only" class="nav-link" data-scroll-target="#github-pages-static-dashboards-only">4. <strong>GitHub Pages</strong> (Static dashboards only)</a></li>
-  </ul></li>
-  <li><a href="#maintenance-and-updates" id="toc-maintenance-and-updates" class="nav-link" data-scroll-target="#maintenance-and-updates">Maintenance and Updates</a>
-  <ul class="collapse">
-  <li><a href="#regular-reviews" id="toc-regular-reviews" class="nav-link" data-scroll-target="#regular-reviews">Regular Reviews</a></li>
-  </ul></li>
-  <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources">Resources</a>
-  <ul class="collapse">
-  <li><a href="#learning" id="toc-learning" class="nav-link" data-scroll-target="#learning">Learning</a></li>
-  <li><a href="#tools" id="toc-tools" class="nav-link" data-scroll-target="#tools">Tools</a></li>
-  <li><a href="#communities" id="toc-communities" class="nav-link" data-scroll-target="#communities">Communities</a></li>
-  </ul></li>
-  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
-
 
 
 
@@ -644,7 +292,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="time-series-data-disease-trends-admissions-over-time" class="level3">
 <h3 class="anchored" data-anchor-id="time-series-data-disease-trends-admissions-over-time"><strong>Time Series Data</strong> (Disease trends, admissions over time)</h3>
 <p><strong>Best: Line Charts</strong></p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># R example: COVID-19 cases over time</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># R example: COVID-19 cases over time</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(covid_data, <span class="fu">aes</span>(<span class="at">x =</span> date, <span class="at">y =</span> cases)) <span class="sc">+</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">color =</span> <span class="st">"#00539B"</span>, <span class="at">size =</span> <span class="fl">1.2</span>) <span class="sc">+</span></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"loess"</span>, <span class="at">se =</span> <span class="cn">FALSE</span>, </span>
@@ -653,13 +301,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>       <span class="at">subtitle =</span> <span class="st">"7-day moving average shown in orange"</span>,</span>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Date"</span>, <span class="at">y =</span> <span class="st">"Number of Cases"</span>) <span class="sc">+</span></span>
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">16</span>, <span class="at">face =</span> <span class="st">"bold"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">16</span>, <span class="at">face =</span> <span class="st">"bold"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p><strong>When to use:</strong> - Continuous time series - Showing trends and patterns - Comparing multiple time series (max 5 lines)</p>
 </section>
 <section id="comparisons-between-groups-facilities-treatments" class="level3">
 <h3 class="anchored" data-anchor-id="comparisons-between-groups-facilities-treatments"><strong>Comparisons</strong> (Between groups, facilities, treatments)</h3>
 <p><strong>Best: Bar Charts (horizontal for long labels)</strong></p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Hospital comparison</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Hospital comparison</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(hospital_data, <span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">reorder</span>(hospital, mortality_rate), </span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>                           <span class="at">y =</span> mortality_rate)) <span class="sc">+</span></span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="at">fill =</span> <span class="st">"#00539B"</span>) <span class="sc">+</span></span>
@@ -668,13 +316,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>() <span class="sc">+</span></span>
 <span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Hospital Mortality Rates"</span>,</span>
 <span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="cn">NULL</span>, <span class="at">y =</span> <span class="st">"Mortality Rate (%)"</span>) <span class="sc">+</span></span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p><strong>When to use:</strong> - Comparing categories - Ranking data - Showing discrete values</p>
 </section>
 <section id="part-to-whole-disease-burden-distribution" class="level3">
 <h3 class="anchored" data-anchor-id="part-to-whole-disease-burden-distribution"><strong>Part-to-Whole</strong> (Disease burden distribution)</h3>
 <p><strong>Best: Stacked Bar Charts or Waffle Charts</strong></p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Disease burden by age group</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Disease burden by age group</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(disease_data, <span class="fu">aes</span>(<span class="at">x =</span> year, <span class="at">y =</span> cases, <span class="at">fill =</span> age_group)) <span class="sc">+</span></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="at">position =</span> <span class="st">"fill"</span>) <span class="sc">+</span></span>
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> scales<span class="sc">::</span>percent) <span class="sc">+</span></span>
@@ -682,25 +330,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Malaria Cases by Age Group"</span>,</span>
 <span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Proportion of Cases"</span>, </span>
 <span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>       <span class="at">fill =</span> <span class="st">"Age Group"</span>) <span class="sc">+</span></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p><strong>Avoid: Pie charts</strong> (except for 2-3 categories max)</p>
 </section>
 <section id="relationships-bmi-vs.-disease-risk" class="level3">
 <h3 class="anchored" data-anchor-id="relationships-bmi-vs.-disease-risk"><strong>Relationships</strong> (BMI vs.&nbsp;disease risk)</h3>
 <p><strong>Best: Scatter Plots</strong></p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># BMI vs Blood Pressure</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># BMI vs Blood Pressure</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(patient_data, <span class="fu">aes</span>(<span class="at">x =</span> bmi, <span class="at">y =</span> systolic_bp)) <span class="sc">+</span></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">alpha =</span> <span class="fl">0.5</span>, <span class="at">color =</span> <span class="st">"#00539B"</span>) <span class="sc">+</span></span>
 <span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>, <span class="at">color =</span> <span class="st">"#FFA500"</span>) <span class="sc">+</span></span>
 <span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Relationship Between BMI and Blood Pressure"</span>,</span>
 <span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"BMI (kg/m²)"</span>, </span>
 <span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Systolic BP (mmHg)"</span>) <span class="sc">+</span></span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="geographic-data-disease-outbreaks-facility-locations" class="level3">
 <h3 class="anchored" data-anchor-id="geographic-data-disease-outbreaks-facility-locations"><strong>Geographic Data</strong> (Disease outbreaks, facility locations)</h3>
 <p><strong>Best: Choropleth Maps or Point Maps</strong></p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Disease prevalence map</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Disease prevalence map</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(sf)</span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(viridis)</span>
 <span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
@@ -709,12 +357,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_viridis</span>(<span class="at">option =</span> <span class="st">"plasma"</span>, </span>
 <span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>                     <span class="at">name =</span> <span class="st">"Prevalence (%)"</span>) <span class="sc">+</span></span>
 <span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Malaria Prevalence by County"</span>) <span class="sc">+</span></span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_void</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_void</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="distributions-patient-age-wait-times" class="level3">
 <h3 class="anchored" data-anchor-id="distributions-patient-age-wait-times"><strong>Distributions</strong> (Patient age, wait times)</h3>
 <p><strong>Best: Histograms or Box Plots</strong></p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Age distribution</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Age distribution</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(patient_data, <span class="fu">aes</span>(<span class="at">x =</span> age)) <span class="sc">+</span></span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>(<span class="at">binwidth =</span> <span class="dv">5</span>, <span class="at">fill =</span> <span class="st">"#00539B"</span>, <span class="at">color =</span> <span class="st">"white"</span>) <span class="sc">+</span></span>
 <span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Patient Age Distribution"</span>,</span>
@@ -727,7 +375,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>() <span class="sc">+</span></span>
 <span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Wait Times by Department"</span>,</span>
 <span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="cn">NULL</span>, <span class="at">y =</span> <span class="st">"Wait Time (minutes)"</span>) <span class="sc">+</span></span>
-<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <hr>
 </section>
 </section>
@@ -740,7 +388,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="accessible-color-palettes" class="level3">
 <h3 class="anchored" data-anchor-id="accessible-color-palettes">2. <strong>Accessible Color Palettes</strong></h3>
-<div class="sourceCode" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Colorblind-friendly palette</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Colorblind-friendly palette</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(viridis)</span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Sequential (for continuous data)</span></span>
@@ -752,7 +400,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Categorical (for groups)</span></span>
 <span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(RColorBrewer)</span>
-<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a><span class="fu">scale_fill_brewer</span>(<span class="at">palette =</span> <span class="st">"Set2"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a><span class="fu">scale_fill_brewer</span>(<span class="at">palette =</span> <span class="st">"Set2"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p><strong>Test your colors:</strong> - <a href="https://colororacle.org/">Color Oracle</a> - Colorblind simulator - <a href="https://projects.susielu.com/viz-palette">Viz Palette</a> - Test combinations</p>
 </section>
 <section id="semantic-colors" class="level3">
@@ -767,7 +415,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h3 class="anchored" data-anchor-id="hospital-operations-dashboard">Hospital Operations Dashboard</h3>
 <p><strong>Primary Metrics:</strong> 1. <strong>Bed Occupancy Rate</strong> (Target: 85-90%) 2. <strong>Average Length of Stay</strong> (Lower is often better) 3. <strong>Patient Wait Time</strong> (Emergency: &lt;15 min) 4. <strong>Readmission Rate</strong> (Target: &lt;8% within 30 days) 5. <strong>Staff-to-Patient Ratio</strong></p>
 <p><strong>Visual example:</strong></p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># KPI cards</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># KPI cards</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(flexdashboard)</span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="co"># In your dashboard</span></span>
@@ -776,7 +424,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">caption =</span> <span class="st">"Bed Occupancy"</span>,</span>
 <span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">icon =</span> <span class="st">"fa-bed"</span>,</span>
 <span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">color =</span> <span class="fu">ifelse</span>(occupancy <span class="sc">&gt;=</span> <span class="dv">85</span> <span class="sc">&amp;&amp;</span> occupancy <span class="sc">&lt;=</span> <span class="dv">90</span>, <span class="st">"success"</span>, <span class="st">"warning"</span>)</span>
-<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="public-health-dashboard" class="level3">
 <h3 class="anchored" data-anchor-id="public-health-dashboard">Public Health Dashboard</h3>
@@ -812,7 +460,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="responsive-design" class="level3">
 <h3 class="anchored" data-anchor-id="responsive-design">Responsive Design</h3>
-<div class="sourceCode" id="cb10"><pre class="sourceCode css code-with-copy"><code class="sourceCode css"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co">/* Mobile-first approach */</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode css code-with-copy"><code class="sourceCode css"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co">/* Mobile-first approach */</span></span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="im">@media</span> <span class="fu">(</span><span class="kw">max-width</span><span class="ch">:</span> <span class="dv">768</span><span class="dt">px</span><span class="fu">)</span> {</span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">.kpi-card</span> {</span>
 <span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>    <span class="kw">width</span><span class="ch">:</span> <span class="dv">100</span><span class="dt">%</span><span class="op">;</span></span>
@@ -833,7 +481,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb10-19"><a href="#cb10-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">.chart</span> {</span>
 <span id="cb10-20"><a href="#cb10-20" aria-hidden="true" tabindex="-1"></a>    <span class="kw">height</span><span class="ch">:</span> <span class="dv">500</span><span class="dt">px</span><span class="op">;</span></span>
 <span id="cb10-21"><a href="#cb10-21" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb10-22"><a href="#cb10-22" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb10-22"><a href="#cb10-22" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <hr>
 </section>
 </section>
@@ -843,7 +491,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h3 class="anchored" data-anchor-id="r-shiny-free-highly-customizable">1. <strong>R Shiny</strong> (FREE, highly customizable) ⭐</h3>
 <p><strong>Pros:</strong> - Complete control over design - Integration with R statistical packages - Can embed complex analyses - Free deployment options</p>
 <p><strong>Example:</strong></p>
-<div class="sourceCode" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(shiny)</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(shiny)</span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(shinydashboard)</span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
 <span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
@@ -906,7 +554,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb11-61"><a href="#cb11-61" aria-hidden="true" tabindex="-1"></a>  })</span>
 <span id="cb11-62"><a href="#cb11-62" aria-hidden="true" tabindex="-1"></a>}</span>
 <span id="cb11-63"><a href="#cb11-63" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-64"><a href="#cb11-64" aria-hidden="true" tabindex="-1"></a><span class="fu">shinyApp</span>(ui, server)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb11-64"><a href="#cb11-64" aria-hidden="true" tabindex="-1"></a><span class="fu">shinyApp</span>(ui, server)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="tableau-user-friendly" class="level3">
 <h3 class="anchored" data-anchor-id="tableau-user-friendly">2. <strong>Tableau</strong> ($$, user-friendly)</h3>
@@ -921,7 +569,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="plotly-dash-python-free" class="level3">
 <h3 class="anchored" data-anchor-id="plotly-dash-python-free">4. <strong>Plotly Dash</strong> (Python, FREE)</h3>
 <p><strong>Pros:</strong> - Python-based - Highly interactive - Good for ML integration - Deployment options</p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> dash</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> dash</span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> dash <span class="im">import</span> dcc, html</span>
 <span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> plotly.express <span class="im">as</span> px</span>
 <span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
@@ -954,13 +602,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb12-31"><a href="#cb12-31" aria-hidden="true" tabindex="-1"></a>])</span>
 <span id="cb12-32"><a href="#cb12-32" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb12-33"><a href="#cb12-33" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="va">__name__</span> <span class="op">==</span> <span class="st">'__main__'</span>:</span>
-<span id="cb12-34"><a href="#cb12-34" aria-hidden="true" tabindex="-1"></a>    app.run_server(debug<span class="op">=</span><span class="va">True</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb12-34"><a href="#cb12-34" aria-hidden="true" tabindex="-1"></a>    app.run_server(debug<span class="op">=</span><span class="va">True</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="flexdashboard-r-markdown-free" class="level3">
 <h3 class="anchored" data-anchor-id="flexdashboard-r-markdown-free">5. <strong>Flexdashboard</strong> (R Markdown, FREE) ⭐</h3>
 <p><strong>Pros:</strong> - Static or dynamic dashboards - Easy to create from R Markdown - Beautiful layouts - Can host for free</p>
 <p><strong>Example:</strong></p>
-<div class="sourceCode" id="cb13"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Hospital Dashboard"</span></span>
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="an">output:</span><span class="co"> </span></span>
 <span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="co">  flexdashboard::flex_dashboard:</span></span>
@@ -1007,7 +655,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb13-45"><a href="#cb13-45" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(data, <span class="fu">aes</span>(<span class="at">x =</span> date, <span class="at">y =</span> admissions)) <span class="sc">+</span></span>
 <span id="cb13-46"><a href="#cb13-46" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">size =</span> <span class="fl">1.2</span>, <span class="at">color =</span> <span class="st">"#00539B"</span>) <span class="sc">+</span></span>
 <span id="cb13-47"><a href="#cb13-47" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span>
-<span id="cb13-48"><a href="#cb13-48" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb13-48"><a href="#cb13-48" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <hr>
 </section>
 </section>
@@ -1048,7 +696,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><strong>Purpose:</strong> Real-time ED performance monitoring</p>
 <p><strong>Auto-refresh:</strong> Every 5 minutes</p>
 <p><strong>Key Metrics:</strong></p>
-<div class="sourceCode" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Real-time ED dashboard metrics</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Real-time ED dashboard metrics</span></span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>metrics <span class="ot">&lt;-</span> <span class="fu">list</span>(</span>
 <span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">patients_waiting =</span> <span class="fu">sum</span>(ed_data<span class="sc">$</span>status <span class="sc">==</span> <span class="st">"Waiting"</span>),</span>
 <span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">avg_wait_time =</span> <span class="fu">mean</span>(ed_data<span class="sc">$</span>wait_time),</span>
@@ -1062,7 +710,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a>  metrics<span class="sc">$</span>avg_wait_time <span class="sc">&lt;</span> <span class="dv">15</span> <span class="sc">~</span> <span class="st">"green"</span>,</span>
 <span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a>  metrics<span class="sc">$</span>avg_wait_time <span class="sc">&lt;</span> <span class="dv">30</span> <span class="sc">~</span> <span class="st">"orange"</span>,</span>
 <span id="cb14-14"><a href="#cb14-14" aria-hidden="true" tabindex="-1"></a>  <span class="cn">TRUE</span> <span class="sc">~</span> <span class="st">"red"</span></span>
-<span id="cb14-15"><a href="#cb14-15" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb14-15"><a href="#cb14-15" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p><strong>Visualizations:</strong> 1. Patient flow (Sankey diagram) 2. Wait times by triage level (grouped bar) 3. Hourly arrival pattern (area chart) 4. Staff utilization (gauge charts)</p>
 </section>
 <section id="example-3-public-health-surveillance-dashboard" class="level3">
@@ -1070,7 +718,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><strong>Purpose:</strong> Disease outbreak detection</p>
 <p><strong>Update Frequency:</strong> Daily</p>
 <p><strong>Key Features:</strong></p>
-<div class="sourceCode" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Outbreak detection algorithm</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Outbreak detection algorithm</span></span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>detect_outbreak <span class="ot">&lt;-</span> <span class="cf">function</span>(current_cases, baseline) {</span>
 <span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>  threshold <span class="ot">&lt;-</span> baseline <span class="sc">+</span> <span class="dv">2</span> <span class="sc">*</span> <span class="fu">sd</span>(baseline)</span>
 <span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>  alert <span class="ot">&lt;-</span> current_cases <span class="sc">&gt;</span> threshold</span>
@@ -1087,7 +735,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb15-15"><a href="#cb15-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">annotate</span>(<span class="st">"text"</span>, <span class="at">x =</span> <span class="fu">max</span>(disease_data<span class="sc">$</span>date), </span>
 <span id="cb15-16"><a href="#cb15-16" aria-hidden="true" tabindex="-1"></a>           <span class="at">y =</span> outbreak_threshold,</span>
 <span id="cb15-17"><a href="#cb15-17" aria-hidden="true" tabindex="-1"></a>           <span class="at">label =</span> <span class="st">"Outbreak Threshold"</span>, </span>
-<span id="cb15-18"><a href="#cb15-18" aria-hidden="true" tabindex="-1"></a>           <span class="at">vjust =</span> <span class="sc">-</span><span class="fl">0.5</span>, <span class="at">color =</span> <span class="st">"red"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb15-18"><a href="#cb15-18" aria-hidden="true" tabindex="-1"></a>           <span class="at">vjust =</span> <span class="sc">-</span><span class="fl">0.5</span>, <span class="at">color =</span> <span class="st">"red"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p><strong>Components:</strong> 1. Epidemic curve 2. Geographic hotspots (map) 3. Case demographics (population pyramid) 4. Alert system (conditional formatting)</p>
 <hr>
 </section>
@@ -1096,14 +744,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="interactive-features-to-include">Interactive Features to Include</h2>
 <section id="filters" class="level3">
 <h3 class="anchored" data-anchor-id="filters">1. <strong>Filters</strong> 🔍</h3>
-<div class="sourceCode" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Shiny filters example</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Shiny filters example</span></span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="fu">selectInput</span>(<span class="st">"facility"</span>, <span class="st">"Select Facility:"</span>,</span>
 <span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>            <span class="at">choices =</span> <span class="fu">unique</span>(data<span class="sc">$</span>facility),</span>
 <span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>            <span class="at">multiple =</span> <span class="cn">TRUE</span>)</span>
 <span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a><span class="fu">dateRangeInput</span>(<span class="st">"dates"</span>, <span class="st">"Date Range:"</span>,</span>
 <span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>               <span class="at">start =</span> <span class="fu">Sys.Date</span>() <span class="sc">-</span> <span class="dv">30</span>,</span>
-<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a>               <span class="at">end =</span> <span class="fu">Sys.Date</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a>               <span class="at">end =</span> <span class="fu">Sys.Date</span>())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="drill-down" class="level3">
 <h3 class="anchored" data-anchor-id="drill-down">2. <strong>Drill-Down</strong> 📊</h3>
@@ -1111,7 +759,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="tooltips" class="level3">
 <h3 class="anchored" data-anchor-id="tooltips">3. <strong>Tooltips</strong> 💬</h3>
-<div class="sourceCode" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># ggplot tooltips with plotly</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># ggplot tooltips with plotly</span></span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(plotly)</span>
 <span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>p <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(data, <span class="fu">aes</span>(<span class="at">x =</span> date, <span class="at">y =</span> cases, </span>
@@ -1119,11 +767,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>                                  <span class="st">"&lt;br&gt;Cases:"</span>, cases))) <span class="sc">+</span></span>
 <span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>()</span>
 <span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplotly</span>(p, <span class="at">tooltip =</span> <span class="st">"text"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplotly</span>(p, <span class="at">tooltip =</span> <span class="st">"text"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="export-options" class="level3">
 <h3 class="anchored" data-anchor-id="export-options">4. <strong>Export Options</strong> 📥</h3>
-<div class="sourceCode" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Download button</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Download button</span></span>
 <span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="fu">downloadButton</span>(<span class="st">"download_data"</span>, <span class="st">"Download Data"</span>)</span>
 <span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Server</span></span>
@@ -1134,7 +782,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">content =</span> <span class="cf">function</span>(file) {</span>
 <span id="cb18-10"><a href="#cb18-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">write_csv</span>(<span class="fu">filtered_data</span>(), file)</span>
 <span id="cb18-11"><a href="#cb18-11" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb18-12"><a href="#cb18-12" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb18-12"><a href="#cb18-12" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <hr>
 </section>
 </section>
@@ -1142,7 +790,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="performance-optimization">Performance Optimization</h2>
 <section id="data-aggregation" class="level3">
 <h3 class="anchored" data-anchor-id="data-aggregation">1. <strong>Data Aggregation</strong></h3>
-<div class="sourceCode" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Pre-aggregate data</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Pre-aggregate data</span></span>
 <span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>daily_summary <span class="ot">&lt;-</span> raw_data <span class="sc">%&gt;%</span></span>
 <span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(date, facility) <span class="sc">%&gt;%</span></span>
 <span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(</span>
@@ -1151,11 +799,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">max_wait =</span> <span class="fu">max</span>(wait_time)</span>
 <span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a>  )</span>
 <span id="cb19-9"><a href="#cb19-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-10"><a href="#cb19-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Use summary instead of raw data</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb19-10"><a href="#cb19-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Use summary instead of raw data</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="caching" class="level3">
 <h3 class="anchored" data-anchor-id="caching">2. <strong>Caching</strong></h3>
-<div class="sourceCode" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Cache expensive computations</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Cache expensive computations</span></span>
 <span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>predictions <span class="ot">&lt;-</span> <span class="fu">reactive</span>({</span>
 <span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">req</span>(input<span class="sc">$</span>date_range)</span>
 <span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Cache for 1 hour</span></span>
@@ -1163,15 +811,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">predict_admissions</span>(<span class="fu">data</span>(), input<span class="sc">$</span>date_range),</span>
 <span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">cache =</span> cachem<span class="sc">::</span><span class="fu">cache_mem</span>(<span class="at">max_age =</span> <span class="dv">3600</span>)</span>
 <span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb20-9"><a href="#cb20-9" aria-hidden="true" tabindex="-1"></a>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb20-9"><a href="#cb20-9" aria-hidden="true" tabindex="-1"></a>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="lazy-loading" class="level3">
 <h3 class="anchored" data-anchor-id="lazy-loading">3. <strong>Lazy Loading</strong></h3>
-<div class="sourceCode" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load data only when tab is opened</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load data only when tab is opened</span></span>
 <span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>output<span class="sc">$</span>detailed_table <span class="ot">&lt;-</span> <span class="fu">renderDT</span>({</span>
 <span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">req</span>(input<span class="sc">$</span>tabs <span class="sc">==</span> <span class="st">"details"</span>)  <span class="co"># Only load if on this tab</span></span>
 <span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">datatable</span>(<span class="fu">detailed_data</span>())</span>
-<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <hr>
 </section>
 </section>
@@ -1199,12 +847,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h3 class="anchored" data-anchor-id="mistake-3-no-context">❌ <strong>Mistake 3: No Context</strong></h3>
 <p><strong>Problem:</strong> “87%” displayed with no interpretation</p>
 <p><strong>Solution:</strong> Add: - Target values or benchmarks - Trend indicators (↑↓) - Historical comparison - Reference ranges</p>
-<div class="sourceCode" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">valueBox</span>(</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">valueBox</span>(</span>
 <span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">value =</span> <span class="st">"87%"</span>,</span>
 <span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">caption =</span> <span class="st">"Bed Occupancy (Target: 85-90%)"</span>,</span>
 <span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">icon =</span> <span class="st">"fa-bed"</span>,</span>
 <span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">color =</span> <span class="st">"success"</span></span>
-<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="mistake-4-static-dashboard" class="level3">
 <h3 class="anchored" data-anchor-id="mistake-4-static-dashboard">❌ <strong>Mistake 4: Static Dashboard</strong></h3>
@@ -1243,7 +891,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="ab-testing" class="level3">
 <h3 class="anchored" data-anchor-id="ab-testing">A/B Testing</h3>
-<div class="sourceCode" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Track which dashboard version performs better</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Track which dashboard version performs better</span></span>
 <span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>log_interaction <span class="ot">&lt;-</span> <span class="cf">function</span>(user_id, version, action, timestamp) {</span>
 <span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">write_csv</span>(</span>
 <span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">data.frame</span>(user_id, version, action, timestamp),</span>
@@ -1258,7 +906,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb23-13"><a href="#cb23-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(</span>
 <span id="cb23-14"><a href="#cb23-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">avg_time_on_page =</span> <span class="fu">mean</span>(time_on_page),</span>
 <span id="cb23-15"><a href="#cb23-15" aria-hidden="true" tabindex="-1"></a>    <span class="at">click_through_rate =</span> <span class="fu">sum</span>(clicked) <span class="sc">/</span> <span class="fu">n</span>()</span>
-<span id="cb23-16"><a href="#cb23-16" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb23-16"><a href="#cb23-16" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <hr>
 </section>
 </section>
@@ -1266,7 +914,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="deployment-options">Deployment Options</h2>
 <section id="shinyapps.io-easiest-for-r" class="level3">
 <h3 class="anchored" data-anchor-id="shinyapps.io-easiest-for-r">1. <strong>Shinyapps.io</strong> (Easiest for R)</h3>
-<div class="sourceCode" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Install rsconnect</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Install rsconnect</span></span>
 <span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"rsconnect"</span>)</span>
 <span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Configure account</span></span>
@@ -1277,7 +925,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a>)</span>
 <span id="cb24-10"><a href="#cb24-10" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb24-11"><a href="#cb24-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Deploy</span></span>
-<span id="cb24-12"><a href="#cb24-12" aria-hidden="true" tabindex="-1"></a>rsconnect<span class="sc">::</span><span class="fu">deployApp</span>(<span class="st">"path/to/dashboard"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb24-12"><a href="#cb24-12" aria-hidden="true" tabindex="-1"></a>rsconnect<span class="sc">::</span><span class="fu">deployApp</span>(<span class="st">"path/to/dashboard"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p><strong>Free tier:</strong> 5 apps, 25 active hours/month</p>
 </section>
 <section id="rstudio-connect-enterprise" class="level3">
@@ -1291,7 +939,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="docker-cloud-most-flexible" class="level3">
 <h3 class="anchored" data-anchor-id="docker-cloud-most-flexible">3. <strong>Docker + Cloud</strong> (Most flexible)</h3>
-<div class="sourceCode" id="cb25"><pre class="sourceCode dockerfile code-with-copy"><code class="sourceCode dockerfile"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Dockerfile</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb25"><pre class="sourceCode dockerfile code-with-copy"><code class="sourceCode dockerfile"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Dockerfile</span></span>
 <span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="kw">FROM</span> rocker/shiny:latest</span>
 <span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Install R packages</span></span>
@@ -1304,17 +952,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb25-11"><a href="#cb25-11" aria-hidden="true" tabindex="-1"></a><span class="kw">EXPOSE</span> 3838</span>
 <span id="cb25-12"><a href="#cb25-12" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb25-13"><a href="#cb25-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Run</span></span>
-<span id="cb25-14"><a href="#cb25-14" aria-hidden="true" tabindex="-1"></a><span class="kw">CMD</span> [<span class="st">"/usr/bin/shiny-server"</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb25-14"><a href="#cb25-14" aria-hidden="true" tabindex="-1"></a><span class="kw">CMD</span> [<span class="st">"/usr/bin/shiny-server"</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="github-pages-static-dashboards-only" class="level3">
 <h3 class="anchored" data-anchor-id="github-pages-static-dashboards-only">4. <strong>GitHub Pages</strong> (Static dashboards only)</h3>
-<div class="sourceCode" id="cb26"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Build flexdashboard</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb26"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Build flexdashboard</span></span>
 <span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a><span class="ex">Rscript</span> <span class="at">-e</span> <span class="st">"rmarkdown::render('dashboard.Rmd')"</span></span>
 <span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Push to gh-pages branch</span></span>
 <span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add dashboard.html</span>
 <span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Update dashboard"</span></span>
-<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push origin gh-pages</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push origin gh-pages</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <hr>
 </section>
 </section>
@@ -1376,271 +1024,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 
 </main> <!-- /main -->
-<div class="portfolio-footer">
-  <div class="footer-container">
-    <!-- Main Footer Content -->
-    <div class="footer-content">
-      <!-- Navigation Links -->
-      <div class="footer-section">
-        <h4><i class="fas fa-sitemap" aria-hidden="true"></i> Navigation</h4>
-        <ul>
-          <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-          <li><a href="about/index.html"><i class="fas fa-user"></i> About</a></li>
-          <li><a href="projects/index.html"><i class="fas fa-project-diagram"></i> Projects</a></li>
-          <li><a href="research/thesis.html"><i class="fas fa-microscope"></i> Research</a></li>
-          <li><a href="data-viz/index.html"><i class="fas fa-chart-line"></i> Data Visualizations</a></li>
-          <li><a href="blogs/index.html"><i class="fas fa-blog"></i> Blog</a></li>
-          <li><a href="cv/index.html"><i class="fas fa-file-alt"></i> CV</a></li>
-          <li><a href="resources/index.html"><i class="fas fa-book"></i> Resources</a></li>
-        </ul>
-      </div>
-
-      <!-- Projects & Work -->
-      <div class="footer-section">
-        <h4><i class="fas fa-briefcase" aria-hidden="true"></i> Projects &amp; Work</h4>
-        <ul>
-          <li><a href="projects/health-analytics.html"><i class="fas fa-heartbeat"></i> Health Analytics</a></li>
-          <li><a href="projects/data-management.html"><i class="fas fa-database"></i> Data Management</a></li>
-          <li><a href="projects/survey-tools.html"><i class="fas fa-clipboard-list"></i> Survey Tools</a></li>
-          <li><a href="projects/dashboards.html"><i class="fas fa-chart-pie"></i> Dashboards</a></li>
-          <li><a href="projects/analytics-engineering/index.html"><i class="fas fa-cogs"></i> Analytics Engineering</a></li>
-          <li><a href="projects/politics-governance/index.html"><i class="fas fa-university"></i> Governance &amp; Civic Tech</a></li>
-          <li><a href="projects/agriculture/index.html"><i class="fas fa-seedling"></i> Agriculture Projects</a></li>
-          <li><a href="tidy-tuesday/index.html"><i class="fas fa-calendar-alt"></i> TidyTuesday</a></li>
-          <li><a href="software/index.html"><i class="fas fa-code"></i> Software Development</a></li>
-        </ul>
-      </div>
-
-      <!-- Contact & Social -->
-      <div class="footer-section">
-        <h4><i class="fas fa-envelope" aria-hidden="true"></i> Contact &amp; Social</h4>
-        <ul>
-          <li><a href="tel:+254725737867"><i class="fas fa-phone"></i> +254 725 737 867</a></li>
-          <li><a href="mailto:nichodemuswerre@gmail.com"><i class="fas fa-envelope"></i> Email</a></li>
-          <li><a href="https://linkedin.com/in/amollow" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-          <li><a href="https://github.com/gondamol" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a></li>
-          <li><a href="https://twitter.com/nwerre" target="_blank" rel="noopener noreferrer"><i class="fab fa-x-twitter"></i> X (Twitter)</a></li>
-          <li><a href="https://kaggle.com/nwerre" target="_blank" rel="noopener noreferrer"><i class="fab fa-kaggle"></i> Kaggle</a></li>
-        </ul>
-        <!-- Newsletter Subscribe Button -->
-        <div class="footer-newsletter">
-          <button onclick="showNewsletterPopup()" class="footer-subscribe-btn">
-            <i class="fas fa-envelope-open-text"></i> Subscribe to Newsletter
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <!-- Bottom Bar -->
-    <div class="footer-bottom">
-      <div class="footer-copyright">
-        <p>
-          <i class="fas fa-copyright"></i> 2024 <strong>Nichodemus Amollo</strong> | Research Data Manager &amp; Data Scientist<br>
-          <small>Health Financial Diaries • Data Science &amp; ML • Impact Evaluation • Health Economics</small>
-        </p>
-      </div>
-      <div class="footer-badge">
-        <p>
-          <i class="fas fa-code" aria-hidden="true"></i> Built with <i class="fas fa-heart" aria-hidden="true" style="color: #f56565;"></i> using <strong>Quarto</strong> &amp; <strong>R</strong>
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<script>
-// Fix footer links to work from any page depth
-(function() {
-  const footer = document.querySelector('.portfolio-footer');
-  if (!footer) return;
-  
-  // Get the base path (site root)
-  const path = window.location.pathname;
-  const depth = path.split('/').filter(p => p && !p.endsWith('.html')).length;
-  const basePath = depth > 0 ? '../'.repeat(depth) : '';
-  
-  // Fix all relative links in the footer
-  const links = footer.querySelectorAll('a[href^="index.html"], a[href^="about/"], a[href^="projects/"], a[href^="research/"], a[href^="data-viz/"], a[href^="blogs/"], a[href^="cv/"], a[href^="resources/"], a[href^="tidy-tuesday/"], a[href^="software/"]');
-  links.forEach(link => {
-    const href = link.getAttribute('href');
-    if (href && !href.startsWith('http') && !href.startsWith('tel:') && !href.startsWith('mailto:')) {
-      link.setAttribute('href', basePath + href);
-    }
-  });
-})();
-</script>
-<!-- Newsletter Subscription Popup -->
-<div id="newsletter-popup" class="newsletter-popup" style="display: none;">
-  <div class="newsletter-popup-content">
-    <button class="newsletter-close" onclick="closeNewsletterPopup()" aria-label="Close">
-      <i class="fas fa-times"></i>
-    </button>
-    <div class="newsletter-header">
-      <i class="fas fa-envelope-open-text newsletter-icon"></i>
-      <h2>Stay Updated!</h2>
-      <p>Get the latest data science insights, visualization tips, and project updates delivered to your inbox.</p>
-    </div>
-    <form class="newsletter-form" id="newsletter-form" onsubmit="handleNewsletterSubmit(event)">
-      <div class="newsletter-input-group">
-        <i class="fas fa-user"></i>
-        <input type="text" name="name" placeholder="Your Name" required="">
-      </div>
-      <div class="newsletter-input-group">
-        <i class="fas fa-envelope"></i>
-        <input type="email" name="email" placeholder="your.email@example.com" required="">
-      </div>
-      <button type="submit" class="newsletter-submit-btn">
-        <span>Subscribe</span>
-        <i class="fas fa-arrow-right"></i>
-      </button>
-    </form>
-    <div class="newsletter-footer">
-      <small>We respect your privacy. Unsubscribe anytime.</small>
-      <div class="newsletter-social">
-        <a href="https://twitter.com/nwerre" target="_blank" aria-label="Twitter">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a href="https://linkedin.com/in/amollow" target="_blank" aria-label="LinkedIn">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="https://github.com/gondamol" target="_blank" aria-label="GitHub">
-          <i class="fab fa-github"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<script>
-// Newsletter Popup Logic
-(function() {
-  // Check if user has dismissed popup within the last 10 minutes
-  function shouldShowPopup() {
-    const dismissedAt = localStorage.getItem('newsletterPopupDismissed');
-    if (!dismissedAt) return true;
-    
-    const dismissedTime = parseInt(dismissedAt, 10);
-    const now = Date.now();
-    const tenMinutes = 10 * 60 * 1000; // 10 minutes in milliseconds
-    
-    // Show again if more than 10 minutes have passed
-    return (now - dismissedTime) > tenMinutes;
-  }
-  
-  // Internal function to show popup (checks timing)
-  function showPopupIfAllowed() {
-    if (!shouldShowPopup()) return;
-    
-    const popup = document.getElementById('newsletter-popup');
-    if (popup) {
-      popup.style.display = 'flex';
-      document.body.style.overflow = 'hidden';
-      
-      // Animate in
-      setTimeout(() => {
-        popup.classList.add('show');
-      }, 10);
-    }
-  }
-  
-  // Show after 2 minutes delay (automatic popup)
-  const twoMinutes = 2 * 60 * 1000; // 2 minutes in milliseconds
-  setTimeout(() => {
-    showPopupIfAllowed();
-  }, twoMinutes);
-})();
-
-// Global function to show popup from footer button (bypasses timing check)
-function showNewsletterPopup() {
-  const popup = document.getElementById('newsletter-popup');
-  if (popup) {
-    popup.style.display = 'flex';
-    document.body.style.overflow = 'hidden';
-    
-    // Animate in
-    setTimeout(() => {
-      popup.classList.add('show');
-    }, 10);
-  }
-}
-
-// Close popup function
-function closeNewsletterPopup() {
-  const popup = document.getElementById('newsletter-popup');
-  if (popup) {
-    popup.classList.remove('show');
-    setTimeout(() => {
-      popup.style.display = 'none';
-      document.body.style.overflow = '';
-    }, 300);
-    // Store timestamp when dismissed (valid for 10 minutes)
-    localStorage.setItem('newsletterPopupDismissed', Date.now().toString());
-  }
-}
-
-// Handle form submission
-function handleNewsletterSubmit(event) {
-  event.preventDefault();
-  
-  const formData = new FormData(event.target);
-  const data = {
-    name: formData.get('name'),
-    email: formData.get('email')
-  };
-  
-  // Here you would integrate with your email service (Mailchimp, ConvertKit, etc.)
-  // For now, we'll just log and show success message
-  console.log('Newsletter signup:', data);
-  
-  // Show success message
-  const form = event.target;
-  form.innerHTML = `
-    <div class="newsletter-success">
-      <i class="fas fa-check-circle"></i>
-      <h3>Thank you, ${data.name}!</h3>
-      <p>Check your email to confirm your subscription.</p>
-    </div>
-  `;
-  
-  // Close after 2 seconds
-  setTimeout(() => {
-    closeNewsletterPopup();
-    // Mark as subscribed (don't show popup again for this user)
-    localStorage.setItem('newsletterPopupDismissed', Date.now().toString());
-  }, 2000);
-}
-
-// Close on background click
-document.addEventListener('click', (e) => {
-  const popup = document.getElementById('newsletter-popup');
-  if (e.target === popup) {
-    closeNewsletterPopup();
-  }
-});
-
-// Close on ESC key
-document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape') {
-    closeNewsletterPopup();
-  }
-});
-</script>
-
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
-    // Ensure there is a toggle, if there isn't float one in the top right
-    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
-      const a = window.document.createElement('a');
-      a.classList.add('top-right');
-      a.classList.add('quarto-color-scheme-toggle');
-      a.href = "";
-      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
-      const i = window.document.createElement("i");
-      i.classList.add('bi');
-      a.appendChild(i);
-      window.document.body.appendChild(a);
-    }
-    setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {
@@ -1690,13 +1075,14 @@ document.addEventListener('keydown', (e) => {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
@@ -1781,8 +1167,6 @@ document.addEventListener('keydown', (e) => {
             if (link.getAttribute("rel") === null) {
               link.setAttribute("rel", "noopener");
             }
-            // default icon
-            link.classList.add("external");
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -2096,7 +1480,7 @@ document.addEventListener('keydown', (e) => {
     }
   });
   </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="sourceCode" id="cb27" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb27" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Data Visualization Best Practices for Health Dashboards"</span></span>
 <span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a><span class="an">subtitle:</span><span class="co"> "Design Dashboards That Inform, Engage, and Drive Action in Healthcare Settings"</span></span>
 <span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "Nichodemus Amollo"</span></span>
@@ -3094,9 +2478,35 @@ document.addEventListener('keydown', (e) => {
 <span id="cb27-996"><a href="#cb27-996" aria-hidden="true" tabindex="-1"></a><span class="in">---</span></span>
 <span id="cb27-997"><a href="#cb27-997" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb27-998"><a href="#cb27-998" aria-hidden="true" tabindex="-1"></a><span class="in">*What challenges have you faced creating health dashboards? Share your experiences below!*</span></span>
-<span id="cb27-999"><a href="#cb27-999" aria-hidden="true" tabindex="-1"></a></span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+<span id="cb27-999"><a href="#cb27-999" aria-hidden="true" tabindex="-1"></a></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2025 Nichodemus Amollo · Built with Quarto</p>
+</div>   
+    <div class="nav-footer-center">
+<p>Nairobi, Kenya</p>
+</div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/gondamol">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/nichodemusamollo/">
+      <i class="bi bi-linkedin" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
 
 
 

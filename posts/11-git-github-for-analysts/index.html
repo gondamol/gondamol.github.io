@@ -2,14 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.31">
+<meta name="generator" content="quarto-1.8.27">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Nichodemus Amollo">
 <meta name="dcterms.date" content="2025-10-15">
 
-<title>Git &amp; GitHub for Data Analysts: Stop Losing Your Work (15-Minute Setup) – Nic|Data</title>
+<title>Git &amp; GitHub for Data Analysts: Stop Losing Your Work (15-Minute Setup) – Nic | Data</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -66,20 +66,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
+<link href="../../img/profile.jpeg" rel="icon" type="image/jpeg">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-8ef56b68f8fa1e9d2ba328e99e439f80.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-b4d8e255315082a850f3101be8cf4c50.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-3053e29e5f51fbac37d9511c7f4598d1.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-79f3bbf38959ca18c2d9f1c85bb8c30c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-3053e29e5f51fbac37d9511c7f4598d1.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-95df84677223e8ba3731cfb67d8c134e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -108,176 +106,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&amp;family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&amp;family=DM+Mono:wght@400&amp;display=swap" rel="stylesheet">
 
 
 <link rel="stylesheet" href="../../styles.scss">
-<link rel="stylesheet" href="../../_footer.css">
-<link rel="stylesheet" href="../../_newsletter-popup.scss">
 </head>
 
-<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
-    const toggleBodyColorMode = (bsSheetEl) => {
-      const mode = bsSheetEl.getAttribute("data-mode");
-      const bodyEl = window.document.querySelector("body");
-      if (mode === "dark") {
-        bodyEl.classList.add("quarto-dark");
-        bodyEl.classList.remove("quarto-light");
-      } else {
-        bodyEl.classList.add("quarto-light");
-        bodyEl.classList.remove("quarto-dark");
-      }
-    }
-    const toggleBodyColorPrimary = () => {
-      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
-      if (bsSheetEl) {
-        toggleBodyColorMode(bsSheetEl);
-      }
-    }
-    const setColorSchemeToggle = (alternate) => {
-      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
-      for (let i=0; i < toggles.length; i++) {
-        const toggle = toggles[i];
-        if (toggle) {
-          if (alternate) {
-            toggle.classList.add("alternate");
-          } else {
-            toggle.classList.remove("alternate");
-          }
-        }
-      }
-    };
-    const toggleColorMode = (alternate) => {
-      // Switch the stylesheets
-      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
-      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
-      manageTransitions('#quarto-margin-sidebar .nav-link', false);
-      if (alternate) {
-        // note: dark is layered on light, we don't disable primary!
-        enableStylesheet(alternateStylesheets);
-        for (const sheetNode of alternateStylesheets) {
-          if (sheetNode.id === "quarto-bootstrap") {
-            toggleBodyColorMode(sheetNode);
-          }
-        }
-      } else {
-        disableStylesheet(alternateStylesheets);
-        enableStylesheet(primaryStylesheets)
-        toggleBodyColorPrimary();
-      }
-      manageTransitions('#quarto-margin-sidebar .nav-link', true);
-      // Switch the toggles
-      setColorSchemeToggle(alternate)
-      // Hack to workaround the fact that safari doesn't
-      // properly recolor the scrollbar when toggling (#1455)
-      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
-        manageTransitions("body", false);
-        window.scrollTo(0, 1);
-        setTimeout(() => {
-          window.scrollTo(0, 0);
-          manageTransitions("body", true);
-        }, 40);
-      }
-    }
-    const disableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        stylesheet.rel = 'disabled-stylesheet';
-      }
-    }
-    const enableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
-          stylesheet.rel = 'stylesheet';
-        }
-      }
-    }
-    const manageTransitions = (selector, allowTransitions) => {
-      const els = window.document.querySelectorAll(selector);
-      for (let i=0; i < els.length; i++) {
-        const el = els[i];
-        if (allowTransitions) {
-          el.classList.remove('notransition');
-        } else {
-          el.classList.add('notransition');
-        }
-      }
-    }
-    const isFileUrl = () => {
-      return window.location.protocol === 'file:';
-    }
-    const hasAlternateSentinel = () => {
-      let styleSentinel = getColorSchemeSentinel();
-      if (styleSentinel !== null) {
-        return styleSentinel === "alternate";
-      } else {
-        return false;
-      }
-    }
-    const setStyleSentinel = (alternate) => {
-      const value = alternate ? "alternate" : "default";
-      if (!isFileUrl()) {
-        window.localStorage.setItem("quarto-color-scheme", value);
-      } else {
-        localAlternateSentinel = value;
-      }
-    }
-    const getColorSchemeSentinel = () => {
-      if (!isFileUrl()) {
-        const storageValue = window.localStorage.getItem("quarto-color-scheme");
-        return storageValue != null ? storageValue : localAlternateSentinel;
-      } else {
-        return localAlternateSentinel;
-      }
-    }
-    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-      let newTheme = '';
-      if(authorPrefersDark) {
-        newTheme = isAlternate ? baseTheme : alternateTheme;
-      } else {
-        newTheme = isAlternate ? alternateTheme : baseTheme;
-      }
-      const changeGiscusTheme = () => {
-        // From: https://github.com/giscus/giscus/issues/336
-        const sendMessage = (message) => {
-          const iframe = document.querySelector('iframe.giscus-frame');
-          if (!iframe) return;
-          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-        }
-        sendMessage({
-          setConfig: {
-            theme: newTheme
-          }
-        });
-      }
-      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-      if (isGiscussLoaded) {
-        changeGiscusTheme();
-      }
-    };
-    const authorPrefersDark = false;
-    const darkModeDefault = authorPrefersDark;
-      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
-    // Dark / light mode switch
-    window.quartoToggleColorScheme = () => {
-      // Read the current dark / light value
-      let toAlternate = !hasAlternateSentinel();
-      toggleColorMode(toAlternate);
-      setStyleSentinel(toAlternate);
-      toggleGiscusIfUsed(toAlternate, darkModeDefault);
-      window.dispatchEvent(new Event('resize'));
-    };
-    // Switch to dark mode if need be
-    if (hasAlternateSentinel()) {
-      toggleColorMode(true);
-    } else {
-      toggleColorMode(false);
-    }
-  </script>
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
@@ -285,123 +121,41 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../../index.html">
-    <span class="navbar-title">Nic|Data</span>
+    <span class="navbar-title">Nic | Data</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../index.html"> 
-<span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="../../about/index.html"> 
 <span class="menu-text">About</span></a>
   </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-projects" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Projects</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-projects">    
-        <li>
-    <a class="dropdown-item" href="../../projects/index.html">
- <span class="dropdown-text">All Projects</span></a>
-  </li>  
-        <li><hr class="dropdown-divider"></li>
-        <li>
-    <a class="dropdown-item" href="../../projects/analytics-engineering/index.html">
- <span class="dropdown-text">Real-Time Analytics Engineering 🚀 NEW</span></a>
-  </li>  
-        <li><hr class="dropdown-divider"></li>
-        <li>
-    <a class="dropdown-item" href="../../projects/health-analytics.html">
- <span class="dropdown-text">Health Data Analytics</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../projects/data-management.html">
- <span class="dropdown-text">Data Management</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../projects/survey-tools.html">
- <span class="dropdown-text">Survey Design &amp; Implementation</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../projects/dashboards.html">
- <span class="dropdown-text">Dashboards &amp; Visualization</span></a>
-  </li>  
-        <li><hr class="dropdown-divider"></li>
-        <li>
-    <a class="dropdown-item" href="../../visualizations/index.html">
- <span class="dropdown-text">Visualizations Gallery (50+ Projects)</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../tidy-tuesday/index.html">
- <span class="dropdown-text">TidyTuesday Challenges (100+ Projects)</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../data-viz/index.html">
- <span class="dropdown-text">Data Visualizations</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-research" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Research</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-research">    
-        <li>
-    <a class="dropdown-item" href="../../research/thesis.html">
- <span class="dropdown-text">Current Thesis</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../research/thesis-presentation.html">
- <span class="dropdown-text">Thesis Presentation</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../research/publications.html">
- <span class="dropdown-text">Publications</span></a>
-  </li>  
-        <li><hr class="dropdown-divider"></li>
-        <li>
-    <a class="dropdown-item" href="../../presentations/data-viz-presentation.html">
- <span class="dropdown-text">Presentations</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-resources" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Resources</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-resources">    
-        <li>
-    <a class="dropdown-item" href="../../resources/index.html">
- <span class="dropdown-text">Learning Resources</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../skills/index.html">
- <span class="dropdown-text">Skills &amp; Tools</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../software/index.html">
- <span class="dropdown-text">Software</span></a>
-  </li>  
-    </ul>
-  </li>
   <li class="nav-item">
-    <a class="nav-link" href="../../blogs/index.html"> 
-<span class="menu-text">Blog</span></a>
+    <a class="nav-link" href="../../projects/index.html"> 
+<span class="menu-text">Projects</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../research/thesis.html"> 
+<span class="menu-text">Thesis</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../personal/index.html"> 
+<span class="menu-text">Life</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../cv/index.html"> 
 <span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../personal/index.html"> 
-<span class="menu-text">Personal</span></a>
+    <a class="nav-link" href="../../blogs/index.html"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../resources/index.html"> 
+<span class="menu-text">Resources</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -411,19 +165,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://linkedin.com/in/amollow"> <i class="bi bi-linkedin" role="img" aria-label="LinkedIn">
+    <a class="nav-link" href="https://www.linkedin.com/in/nichodemusamollo/"> <i class="bi bi-linkedin" role="img" aria-label="LinkedIn">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com/nwerre"> <i class="bi bi-twitter" role="img" aria-label="Twitter">
-</i> 
-<span class="menu-text"></span></a>
-  </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://kaggle.com/nwerre"> <i class="bi bi-kaggle" role="img" aria-label="Kaggle">
-</i> 
-<span class="menu-text"></span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="mailto:nichodemuswerre@gmail.com"> 
+<span class="menu-text">Get in Touch</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -472,86 +220,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#why-data-analysts-need-git" id="toc-why-data-analysts-need-git" class="nav-link active" data-scroll-target="#why-data-analysts-need-git">Why Data Analysts Need Git</a></li>
-  <li><a href="#what-is-git" id="toc-what-is-git" class="nav-link" data-scroll-target="#what-is-git">What is Git?</a></li>
-  <li><a href="#minute-git-setup" id="toc-minute-git-setup" class="nav-link" data-scroll-target="#minute-git-setup">5-Minute Git Setup</a>
-  <ul class="collapse">
-  <li><a href="#step-1-install-git" id="toc-step-1-install-git" class="nav-link" data-scroll-target="#step-1-install-git"><strong>Step 1: Install Git</strong></a></li>
-  <li><a href="#step-2-configure-git" id="toc-step-2-configure-git" class="nav-link" data-scroll-target="#step-2-configure-git"><strong>Step 2: Configure Git</strong></a></li>
-  <li><a href="#step-3-create-github-account" id="toc-step-3-create-github-account" class="nav-link" data-scroll-target="#step-3-create-github-account"><strong>Step 3: Create GitHub Account</strong></a></li>
-  </ul></li>
-  <li><a href="#the-10-git-commands-youll-use-daily" id="toc-the-10-git-commands-youll-use-daily" class="nav-link" data-scroll-target="#the-10-git-commands-youll-use-daily">The 10 Git Commands You’ll Use Daily</a>
-  <ul class="collapse">
-  <li><a href="#create-a-project" id="toc-create-a-project" class="nav-link" data-scroll-target="#create-a-project"><strong>1. Create a Project</strong></a></li>
-  <li><a href="#check-status" id="toc-check-status" class="nav-link" data-scroll-target="#check-status"><strong>2. Check Status</strong></a></li>
-  <li><a href="#stage-changes" id="toc-stage-changes" class="nav-link" data-scroll-target="#stage-changes"><strong>3. Stage Changes</strong></a></li>
-  <li><a href="#commit-changes" id="toc-commit-changes" class="nav-link" data-scroll-target="#commit-changes"><strong>4. Commit Changes</strong></a></li>
-  <li><a href="#view-history" id="toc-view-history" class="nav-link" data-scroll-target="#view-history"><strong>5. View History</strong></a></li>
-  <li><a href="#create-branch-for-experiments" id="toc-create-branch-for-experiments" class="nav-link" data-scroll-target="#create-branch-for-experiments"><strong>6. Create Branch</strong> (for experiments)</a></li>
-  <li><a href="#merge-branch" id="toc-merge-branch" class="nav-link" data-scroll-target="#merge-branch"><strong>7. Merge Branch</strong></a></li>
-  <li><a href="#push-to-github" id="toc-push-to-github" class="nav-link" data-scroll-target="#push-to-github"><strong>8. Push to GitHub</strong></a></li>
-  <li><a href="#pull-from-github" id="toc-pull-from-github" class="nav-link" data-scroll-target="#pull-from-github"><strong>9. Pull from GitHub</strong></a></li>
-  <li><a href="#clone-repository" id="toc-clone-repository" class="nav-link" data-scroll-target="#clone-repository"><strong>10. Clone Repository</strong></a></li>
-  </ul></li>
-  <li><a href="#the-git-workflow-for-data-analysts" id="toc-the-git-workflow-for-data-analysts" class="nav-link" data-scroll-target="#the-git-workflow-for-data-analysts">The Git Workflow for Data Analysts</a>
-  <ul class="collapse">
-  <li><a href="#daily-workflow" id="toc-daily-workflow" class="nav-link" data-scroll-target="#daily-workflow"><strong>Daily Workflow:</strong></a></li>
-  <li><a href="#branching-workflow" id="toc-branching-workflow" class="nav-link" data-scroll-target="#branching-workflow"><strong>Branching Workflow:</strong></a></li>
-  </ul></li>
-  <li><a href="#github-for-your-portfolio" id="toc-github-for-your-portfolio" class="nav-link" data-scroll-target="#github-for-your-portfolio">GitHub for Your Portfolio</a>
-  <ul class="collapse">
-  <li><a href="#why-github-matters" id="toc-why-github-matters" class="nav-link" data-scroll-target="#why-github-matters"><strong>Why GitHub Matters:</strong></a></li>
-  <li><a href="#what-to-put-on-github" id="toc-what-to-put-on-github" class="nav-link" data-scroll-target="#what-to-put-on-github"><strong>What to Put on GitHub:</strong></a></li>
-  <li><a href="#make-your-github-shine" id="toc-make-your-github-shine" class="nav-link" data-scroll-target="#make-your-github-shine"><strong>Make Your GitHub Shine:</strong></a></li>
-  </ul></li>
-  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results">Results</a></li>
-  <li><a href="#author" id="toc-author" class="nav-link" data-scroll-target="#author">Author</a></li>
-  <li><a href="#dont-commit-these-files" id="toc-dont-commit-these-files" class="nav-link" data-scroll-target="#dont-commit-these-files">Don’t commit these files</a>
-  <ul class="collapse">
-  <li><a href="#problem-2-i-need-to-go-back-to-a-previous-version" id="toc-problem-2-i-need-to-go-back-to-a-previous-version" class="nav-link" data-scroll-target="#problem-2-i-need-to-go-back-to-a-previous-version"><strong>Problem 2: “I need to go back to a previous version!”</strong></a></li>
-  <li><a href="#problem-3-i-accidentally-committed-a-password" id="toc-problem-3-i-accidentally-committed-a-password" class="nav-link" data-scroll-target="#problem-3-i-accidentally-committed-a-password"><strong>Problem 3: “I accidentally committed a password!”</strong></a></li>
-  <li><a href="#problem-4-merge-conflict" id="toc-problem-4-merge-conflict" class="nav-link" data-scroll-target="#problem-4-merge-conflict"><strong>Problem 4: “Merge conflict!”</strong></a></li>
-  <li><a href="#github-features-you-should-use" id="toc-github-features-you-should-use" class="nav-link" data-scroll-target="#github-features-you-should-use">GitHub Features You Should Use</a>
-  <ul class="collapse">
-  <li><a href="#github-issues" id="toc-github-issues" class="nav-link" data-scroll-target="#github-issues"><strong>1. GitHub Issues</strong></a></li>
-  <li><a href="#github-projects" id="toc-github-projects" class="nav-link" data-scroll-target="#github-projects"><strong>2. GitHub Projects</strong></a></li>
-  <li><a href="#github-actions" id="toc-github-actions" class="nav-link" data-scroll-target="#github-actions"><strong>3. GitHub Actions</strong></a></li>
-  <li><a href="#github-pages" id="toc-github-pages" class="nav-link" data-scroll-target="#github-pages"><strong>4. GitHub Pages</strong></a></li>
-  <li><a href="#github-gists" id="toc-github-gists" class="nav-link" data-scroll-target="#github-gists"><strong>5. GitHub Gists</strong></a></li>
-  </ul></li>
-  <li><a href="#free-github-resources" id="toc-free-github-resources" class="nav-link" data-scroll-target="#free-github-resources">FREE GitHub Resources</a>
-  <ul class="collapse">
-  <li><a href="#learning" id="toc-learning" class="nav-link" data-scroll-target="#learning"><strong>Learning:</strong></a></li>
-  <li><a href="#tools" id="toc-tools" class="nav-link" data-scroll-target="#tools"><strong>Tools:</strong></a></li>
-  <li><a href="#practice" id="toc-practice" class="nav-link" data-scroll-target="#practice"><strong>Practice:</strong></a></li>
-  </ul></li>
-  <li><a href="#git-commit-message-best-practices" id="toc-git-commit-message-best-practices" class="nav-link" data-scroll-target="#git-commit-message-best-practices">Git Commit Message Best Practices</a></li>
-  <li><a href="#github-in-your-job-search" id="toc-github-in-your-job-search" class="nav-link" data-scroll-target="#github-in-your-job-search">GitHub in Your Job Search</a>
-  <ul class="collapse">
-  <li><a href="#resume" id="toc-resume" class="nav-link" data-scroll-target="#resume"><strong>Resume:</strong></a></li>
-  <li><a href="#cover-letter" id="toc-cover-letter" class="nav-link" data-scroll-target="#cover-letter"><strong>Cover Letter:</strong></a></li>
-  <li><a href="#linkedin" id="toc-linkedin" class="nav-link" data-scroll-target="#linkedin"><strong>LinkedIn:</strong></a></li>
-  </ul></li>
-  <li><a href="#day-github-challenge" id="toc-day-github-challenge" class="nav-link" data-scroll-target="#day-github-challenge">30-Day GitHub Challenge</a>
-  <ul class="collapse">
-  <li><a href="#week-1" id="toc-week-1" class="nav-link" data-scroll-target="#week-1"><strong>Week 1:</strong></a></li>
-  <li><a href="#week-2" id="toc-week-2" class="nav-link" data-scroll-target="#week-2"><strong>Week 2:</strong></a></li>
-  <li><a href="#week-3" id="toc-week-3" class="nav-link" data-scroll-target="#week-3"><strong>Week 3:</strong></a></li>
-  <li><a href="#week-4" id="toc-week-4" class="nav-link" data-scroll-target="#week-4"><strong>Week 4:</strong></a></li>
-  </ul></li>
-  <li><a href="#take-action-next-30-minutes" id="toc-take-action-next-30-minutes" class="nav-link" data-scroll-target="#take-action-next-30-minutes">Take Action (Next 30 Minutes)</a></li>
-  </ul></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
-
 
 
 
@@ -582,16 +253,16 @@ final_analysis_v2_FINAL_revised_USE_THIS_ONE.xlsx</code></pre>
 <h3 class="anchored" data-anchor-id="step-1-install-git"><strong>Step 1: Install Git</strong></h3>
 <p><strong>Windows:</strong> - Download: <a href="https://git-scm.com/">git-scm.com</a> - Run installer (default options)</p>
 <p><strong>Mac:</strong></p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Open Terminal and paste:</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> install git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Open Terminal and paste:</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> install git</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p><strong>Linux:</strong></p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt-get install git  <span class="co"># Ubuntu/Debian</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> yum install git      <span class="co"># CentOS/RHEL</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt-get install git  <span class="co"># Ubuntu/Debian</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> yum install git      <span class="co"># CentOS/RHEL</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="step-2-configure-git" class="level3">
 <h3 class="anchored" data-anchor-id="step-2-configure-git"><strong>Step 2: Configure Git</strong></h3>
-<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> user.name <span class="st">"Your Name"</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> user.email <span class="st">"your.email@example.com"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> user.name <span class="st">"Your Name"</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> user.email <span class="st">"your.email@example.com"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="step-3-create-github-account" class="level3">
 <h3 class="anchored" data-anchor-id="step-3-create-github-account"><strong>Step 3: Create GitHub Account</strong></h3>
@@ -608,52 +279,52 @@ final_analysis_v2_FINAL_revised_USE_THIS_ONE.xlsx</code></pre>
 <h2 class="anchored" data-anchor-id="the-10-git-commands-youll-use-daily">The 10 Git Commands You’ll Use Daily</h2>
 <section id="create-a-project" class="level3">
 <h3 class="anchored" data-anchor-id="create-a-project"><strong>1. Create a Project</strong></h3>
-<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> my-data-project</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> my-data-project</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> my-data-project</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> init  <span class="co"># Initialize Git</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> init  <span class="co"># Initialize Git</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="check-status" class="level3">
 <h3 class="anchored" data-anchor-id="check-status"><strong>2. Check Status</strong></h3>
-<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status  <span class="co"># See what's changed</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status  <span class="co"># See what's changed</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="stage-changes" class="level3">
 <h3 class="anchored" data-anchor-id="stage-changes"><strong>3. Stage Changes</strong></h3>
-<div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add analysis.py  <span class="co"># Stage one file</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .            <span class="co"># Stage all files</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add analysis.py  <span class="co"># Stage one file</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .            <span class="co"># Stage all files</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="commit-changes" class="level3">
 <h3 class="anchored" data-anchor-id="commit-changes"><strong>4. Commit Changes</strong></h3>
-<div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Add initial analysis script"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Add initial analysis script"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="view-history" class="level3">
 <h3 class="anchored" data-anchor-id="view-history"><strong>5. View History</strong></h3>
-<div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> log  <span class="co"># See all commits</span></span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> log <span class="at">--oneline</span>  <span class="co"># Compact view</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> log  <span class="co"># See all commits</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> log <span class="at">--oneline</span>  <span class="co"># Compact view</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="create-branch-for-experiments" class="level3">
 <h3 class="anchored" data-anchor-id="create-branch-for-experiments"><strong>6. Create Branch</strong> (for experiments)</h3>
-<div class="sourceCode" id="cb10"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> branch feature-new-model  <span class="co"># Create branch</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> branch feature-new-model  <span class="co"># Create branch</span></span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout feature-new-model  <span class="co"># Switch to it</span></span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Or both in one:</span></span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout <span class="at">-b</span> feature-new-model</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout <span class="at">-b</span> feature-new-model</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="merge-branch" class="level3">
 <h3 class="anchored" data-anchor-id="merge-branch"><strong>7. Merge Branch</strong></h3>
-<div class="sourceCode" id="cb11"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout main  <span class="co"># Go back to main</span></span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> merge feature-new-model  <span class="co"># Merge changes</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout main  <span class="co"># Go back to main</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> merge feature-new-model  <span class="co"># Merge changes</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="push-to-github" class="level3">
 <h3 class="anchored" data-anchor-id="push-to-github"><strong>8. Push to GitHub</strong></h3>
-<div class="sourceCode" id="cb12"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote add origin https://github.com/yourusername/repo-name.git</span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push <span class="at">-u</span> origin main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote add origin https://github.com/yourusername/repo-name.git</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push <span class="at">-u</span> origin main</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="pull-from-github" class="level3">
 <h3 class="anchored" data-anchor-id="pull-from-github"><strong>9. Pull from GitHub</strong></h3>
-<div class="sourceCode" id="cb13"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> pull  <span class="co"># Get latest changes</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> pull  <span class="co"># Get latest changes</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="clone-repository" class="level3">
 <h3 class="anchored" data-anchor-id="clone-repository"><strong>10. Clone Repository</strong></h3>
-<div class="sourceCode" id="cb14"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/username/repo-name.git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb14"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/username/repo-name.git</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <hr>
 </section>
 </section>
@@ -661,7 +332,7 @@ final_analysis_v2_FINAL_revised_USE_THIS_ONE.xlsx</code></pre>
 <h2 class="anchored" data-anchor-id="the-git-workflow-for-data-analysts">The Git Workflow for Data Analysts</h2>
 <section id="daily-workflow" class="level3">
 <h3 class="anchored" data-anchor-id="daily-workflow"><strong>Daily Workflow:</strong></h3>
-<div class="sourceCode" id="cb15"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Start your day</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb15"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Start your day</span></span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> pull  <span class="co"># Get latest changes</span></span>
 <span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. Work on analysis</span></span>
@@ -681,12 +352,12 @@ final_analysis_v2_FINAL_revised_USE_THIS_ONE.xlsx</code></pre>
 <span id="cb15-18"><a href="#cb15-18" aria-hidden="true" tabindex="-1"></a><span class="co"># 6. Push to GitHub</span></span>
 <span id="cb15-19"><a href="#cb15-19" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push</span>
 <span id="cb15-20"><a href="#cb15-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-21"><a href="#cb15-21" aria-hidden="true" tabindex="-1"></a><span class="co"># 7. Repeat throughout the day</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb15-21"><a href="#cb15-21" aria-hidden="true" tabindex="-1"></a><span class="co"># 7. Repeat throughout the day</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <hr>
 </section>
 <section id="branching-workflow" class="level3">
 <h3 class="anchored" data-anchor-id="branching-workflow"><strong>Branching Workflow:</strong></h3>
-<div class="sourceCode" id="cb16"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Main branch = production code</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb16"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Main branch = production code</span></span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Feature branches = experiments</span></span>
 <span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Create experiment branch</span></span>
@@ -706,7 +377,7 @@ final_analysis_v2_FINAL_revised_USE_THIS_ONE.xlsx</code></pre>
 <span id="cb16-18"><a href="#cb16-18" aria-hidden="true" tabindex="-1"></a><span class="co"># If it doesn't work, just delete branch</span></span>
 <span id="cb16-19"><a href="#cb16-19" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> branch <span class="at">-d</span> experiment-new-feature</span>
 <span id="cb16-20"><a href="#cb16-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb16-21"><a href="#cb16-21" aria-hidden="true" tabindex="-1"></a><span class="co"># No harm done! Main branch is untouched.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb16-21"><a href="#cb16-21" aria-hidden="true" tabindex="-1"></a><span class="co"># No harm done! Main branch is untouched.</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <hr>
 </section>
 </section>
@@ -733,7 +404,7 @@ final_analysis_v2_FINAL_revised_USE_THIS_ONE.xlsx</code></pre>
 <h3 class="anchored" data-anchor-id="make-your-github-shine"><strong>Make Your GitHub Shine:</strong></h3>
 <section id="professional-profile" class="level4">
 <h4 class="anchored" data-anchor-id="professional-profile"><strong>1. Professional Profile</strong></h4>
-<div class="sourceCode" id="cb17"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># README.md on your profile repo (username/username)</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb17"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># README.md on your profile repo (username/username)</span></span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="fu"># Hi, I'm [Your Name] 👋</span></span>
 <span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a></span>
@@ -754,11 +425,11 @@ final_analysis_v2_FINAL_revised_USE_THIS_ONE.xlsx</code></pre>
 <span id="cb17-19"><a href="#cb17-19" aria-hidden="true" tabindex="-1"></a><span class="fu">## Connect With Me</span></span>
 <span id="cb17-20"><a href="#cb17-20" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>LinkedIn: <span class="co">[</span><span class="ot">link</span><span class="co">]</span></span>
 <span id="cb17-21"><a href="#cb17-21" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Portfolio: <span class="co">[</span><span class="ot">link</span><span class="co">]</span></span>
-<span id="cb17-22"><a href="#cb17-22" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Email: <span class="co">[</span><span class="ot">email</span><span class="co">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb17-22"><a href="#cb17-22" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Email: <span class="co">[</span><span class="ot">email</span><span class="co">]</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="readme-for-each-project" class="level4">
 <h4 class="anchored" data-anchor-id="readme-for-each-project"><strong>2. README for Each Project</strong></h4>
-<div class="sourceCode" id="cb18"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># Project Name</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb18"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># Project Name</span></span>
 <span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="fu">## Problem Statement</span></span>
 <span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>What business problem does this solve?</span>
@@ -780,7 +451,7 @@ final_analysis_v2_FINAL_revised_USE_THIS_ONE.xlsx</code></pre>
 <span id="cb18-20"><a href="#cb18-20" aria-hidden="true" tabindex="-1"></a><span class="fu">## How to Run</span></span>
 <span id="cb18-21"><a href="#cb18-21" aria-hidden="true" tabindex="-1"></a><span class="in">```bash</span></span>
 <span id="cb18-22"><a href="#cb18-22" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install <span class="at">-r</span> requirements.txt</span>
-<span id="cb18-23"><a href="#cb18-23" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> analysis.py</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb18-23"><a href="#cb18-23" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> analysis.py</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 </section>
 </section>
@@ -811,27 +482,27 @@ git reset --soft HEAD~1
 git reset HEAD file-to-remove</code></pre>
 <section id="problem-2-i-need-to-go-back-to-a-previous-version" class="level3">
 <h3 class="anchored" data-anchor-id="problem-2-i-need-to-go-back-to-a-previous-version"><strong>Problem 2: “I need to go back to a previous version!”</strong></h3>
-<div class="sourceCode" id="cb21"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># See history</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb21"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># See history</span></span>
 <span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> log <span class="at">--oneline</span></span>
 <span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Go back to specific commit</span></span>
 <span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout abc123  <span class="co"># Replace with commit hash</span></span>
 <span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Or create new branch from old commit</span></span>
-<span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout <span class="at">-b</span> old-version abc123</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout <span class="at">-b</span> old-version abc123</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="problem-3-i-accidentally-committed-a-password" class="level3">
 <h3 class="anchored" data-anchor-id="problem-3-i-accidentally-committed-a-password"><strong>Problem 3: “I accidentally committed a password!”</strong></h3>
-<div class="sourceCode" id="cb22"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Remove from last commit</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb22"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Remove from last commit</span></span>
 <span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> rm <span class="at">--cached</span> file-with-password</span>
 <span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">--amend</span></span>
 <span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a><span class="co"># If already pushed, you MUST change the password immediately</span></span>
-<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Then use tools like BFG Repo-Cleaner to remove from history</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Then use tools like BFG Repo-Cleaner to remove from history</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="problem-4-merge-conflict" class="level3">
 <h3 class="anchored" data-anchor-id="problem-4-merge-conflict"><strong>Problem 4: “Merge conflict!”</strong></h3>
-<div class="sourceCode" id="cb23"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Open conflicted file, you'll see:</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb23"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Open conflicted file, you'll see:</span></span>
 <span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;&lt;&lt;&lt;&lt;&lt;&lt;</span> HEAD</span>
 <span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a><span class="ex">Your</span> changes</span>
 <span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a><span class="ex">=======</span></span>
@@ -841,7 +512,7 @@ git reset HEAD file-to-remove</code></pre>
 <span id="cb23-8"><a href="#cb23-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Edit file to keep what you want</span></span>
 <span id="cb23-9"><a href="#cb23-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Then:</span></span>
 <span id="cb23-10"><a href="#cb23-10" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add conflicted-file</span>
-<span id="cb23-11"><a href="#cb23-11" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Resolve merge conflict"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb23-11"><a href="#cb23-11" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Resolve merge conflict"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <hr>
 </section>
 <section id="github-features-you-should-use" class="level2">
@@ -1005,271 +676,8 @@ and demonstrates my ability to [skill]."</code></pre>
 </section>
 
 </main> <!-- /main -->
-<div class="portfolio-footer">
-  <div class="footer-container">
-    <!-- Main Footer Content -->
-    <div class="footer-content">
-      <!-- Navigation Links -->
-      <div class="footer-section">
-        <h4><i class="fas fa-sitemap" aria-hidden="true"></i> Navigation</h4>
-        <ul>
-          <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-          <li><a href="about/index.html"><i class="fas fa-user"></i> About</a></li>
-          <li><a href="projects/index.html"><i class="fas fa-project-diagram"></i> Projects</a></li>
-          <li><a href="research/thesis.html"><i class="fas fa-microscope"></i> Research</a></li>
-          <li><a href="data-viz/index.html"><i class="fas fa-chart-line"></i> Data Visualizations</a></li>
-          <li><a href="blogs/index.html"><i class="fas fa-blog"></i> Blog</a></li>
-          <li><a href="cv/index.html"><i class="fas fa-file-alt"></i> CV</a></li>
-          <li><a href="resources/index.html"><i class="fas fa-book"></i> Resources</a></li>
-        </ul>
-      </div>
-
-      <!-- Projects & Work -->
-      <div class="footer-section">
-        <h4><i class="fas fa-briefcase" aria-hidden="true"></i> Projects &amp; Work</h4>
-        <ul>
-          <li><a href="projects/health-analytics.html"><i class="fas fa-heartbeat"></i> Health Analytics</a></li>
-          <li><a href="projects/data-management.html"><i class="fas fa-database"></i> Data Management</a></li>
-          <li><a href="projects/survey-tools.html"><i class="fas fa-clipboard-list"></i> Survey Tools</a></li>
-          <li><a href="projects/dashboards.html"><i class="fas fa-chart-pie"></i> Dashboards</a></li>
-          <li><a href="projects/analytics-engineering/index.html"><i class="fas fa-cogs"></i> Analytics Engineering</a></li>
-          <li><a href="projects/politics-governance/index.html"><i class="fas fa-university"></i> Governance &amp; Civic Tech</a></li>
-          <li><a href="projects/agriculture/index.html"><i class="fas fa-seedling"></i> Agriculture Projects</a></li>
-          <li><a href="tidy-tuesday/index.html"><i class="fas fa-calendar-alt"></i> TidyTuesday</a></li>
-          <li><a href="software/index.html"><i class="fas fa-code"></i> Software Development</a></li>
-        </ul>
-      </div>
-
-      <!-- Contact & Social -->
-      <div class="footer-section">
-        <h4><i class="fas fa-envelope" aria-hidden="true"></i> Contact &amp; Social</h4>
-        <ul>
-          <li><a href="tel:+254725737867"><i class="fas fa-phone"></i> +254 725 737 867</a></li>
-          <li><a href="mailto:nichodemuswerre@gmail.com"><i class="fas fa-envelope"></i> Email</a></li>
-          <li><a href="https://linkedin.com/in/amollow" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-          <li><a href="https://github.com/gondamol" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a></li>
-          <li><a href="https://twitter.com/nwerre" target="_blank" rel="noopener noreferrer"><i class="fab fa-x-twitter"></i> X (Twitter)</a></li>
-          <li><a href="https://kaggle.com/nwerre" target="_blank" rel="noopener noreferrer"><i class="fab fa-kaggle"></i> Kaggle</a></li>
-        </ul>
-        <!-- Newsletter Subscribe Button -->
-        <div class="footer-newsletter">
-          <button onclick="showNewsletterPopup()" class="footer-subscribe-btn">
-            <i class="fas fa-envelope-open-text"></i> Subscribe to Newsletter
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <!-- Bottom Bar -->
-    <div class="footer-bottom">
-      <div class="footer-copyright">
-        <p>
-          <i class="fas fa-copyright"></i> 2024 <strong>Nichodemus Amollo</strong> | Research Data Manager &amp; Data Scientist<br>
-          <small>Health Financial Diaries • Data Science &amp; ML • Impact Evaluation • Health Economics</small>
-        </p>
-      </div>
-      <div class="footer-badge">
-        <p>
-          <i class="fas fa-code" aria-hidden="true"></i> Built with <i class="fas fa-heart" aria-hidden="true" style="color: #f56565;"></i> using <strong>Quarto</strong> &amp; <strong>R</strong>
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<script>
-// Fix footer links to work from any page depth
-(function() {
-  const footer = document.querySelector('.portfolio-footer');
-  if (!footer) return;
-  
-  // Get the base path (site root)
-  const path = window.location.pathname;
-  const depth = path.split('/').filter(p => p && !p.endsWith('.html')).length;
-  const basePath = depth > 0 ? '../'.repeat(depth) : '';
-  
-  // Fix all relative links in the footer
-  const links = footer.querySelectorAll('a[href^="index.html"], a[href^="about/"], a[href^="projects/"], a[href^="research/"], a[href^="data-viz/"], a[href^="blogs/"], a[href^="cv/"], a[href^="resources/"], a[href^="tidy-tuesday/"], a[href^="software/"]');
-  links.forEach(link => {
-    const href = link.getAttribute('href');
-    if (href && !href.startsWith('http') && !href.startsWith('tel:') && !href.startsWith('mailto:')) {
-      link.setAttribute('href', basePath + href);
-    }
-  });
-})();
-</script>
-<!-- Newsletter Subscription Popup -->
-<div id="newsletter-popup" class="newsletter-popup" style="display: none;">
-  <div class="newsletter-popup-content">
-    <button class="newsletter-close" onclick="closeNewsletterPopup()" aria-label="Close">
-      <i class="fas fa-times"></i>
-    </button>
-    <div class="newsletter-header">
-      <i class="fas fa-envelope-open-text newsletter-icon"></i>
-      <h2>Stay Updated!</h2>
-      <p>Get the latest data science insights, visualization tips, and project updates delivered to your inbox.</p>
-    </div>
-    <form class="newsletter-form" id="newsletter-form" onsubmit="handleNewsletterSubmit(event)">
-      <div class="newsletter-input-group">
-        <i class="fas fa-user"></i>
-        <input type="text" name="name" placeholder="Your Name" required="">
-      </div>
-      <div class="newsletter-input-group">
-        <i class="fas fa-envelope"></i>
-        <input type="email" name="email" placeholder="your.email@example.com" required="">
-      </div>
-      <button type="submit" class="newsletter-submit-btn">
-        <span>Subscribe</span>
-        <i class="fas fa-arrow-right"></i>
-      </button>
-    </form>
-    <div class="newsletter-footer">
-      <small>We respect your privacy. Unsubscribe anytime.</small>
-      <div class="newsletter-social">
-        <a href="https://twitter.com/nwerre" target="_blank" aria-label="Twitter">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a href="https://linkedin.com/in/amollow" target="_blank" aria-label="LinkedIn">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="https://github.com/gondamol" target="_blank" aria-label="GitHub">
-          <i class="fab fa-github"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<script>
-// Newsletter Popup Logic
-(function() {
-  // Check if user has dismissed popup within the last 10 minutes
-  function shouldShowPopup() {
-    const dismissedAt = localStorage.getItem('newsletterPopupDismissed');
-    if (!dismissedAt) return true;
-    
-    const dismissedTime = parseInt(dismissedAt, 10);
-    const now = Date.now();
-    const tenMinutes = 10 * 60 * 1000; // 10 minutes in milliseconds
-    
-    // Show again if more than 10 minutes have passed
-    return (now - dismissedTime) > tenMinutes;
-  }
-  
-  // Internal function to show popup (checks timing)
-  function showPopupIfAllowed() {
-    if (!shouldShowPopup()) return;
-    
-    const popup = document.getElementById('newsletter-popup');
-    if (popup) {
-      popup.style.display = 'flex';
-      document.body.style.overflow = 'hidden';
-      
-      // Animate in
-      setTimeout(() => {
-        popup.classList.add('show');
-      }, 10);
-    }
-  }
-  
-  // Show after 2 minutes delay (automatic popup)
-  const twoMinutes = 2 * 60 * 1000; // 2 minutes in milliseconds
-  setTimeout(() => {
-    showPopupIfAllowed();
-  }, twoMinutes);
-})();
-
-// Global function to show popup from footer button (bypasses timing check)
-function showNewsletterPopup() {
-  const popup = document.getElementById('newsletter-popup');
-  if (popup) {
-    popup.style.display = 'flex';
-    document.body.style.overflow = 'hidden';
-    
-    // Animate in
-    setTimeout(() => {
-      popup.classList.add('show');
-    }, 10);
-  }
-}
-
-// Close popup function
-function closeNewsletterPopup() {
-  const popup = document.getElementById('newsletter-popup');
-  if (popup) {
-    popup.classList.remove('show');
-    setTimeout(() => {
-      popup.style.display = 'none';
-      document.body.style.overflow = '';
-    }, 300);
-    // Store timestamp when dismissed (valid for 10 minutes)
-    localStorage.setItem('newsletterPopupDismissed', Date.now().toString());
-  }
-}
-
-// Handle form submission
-function handleNewsletterSubmit(event) {
-  event.preventDefault();
-  
-  const formData = new FormData(event.target);
-  const data = {
-    name: formData.get('name'),
-    email: formData.get('email')
-  };
-  
-  // Here you would integrate with your email service (Mailchimp, ConvertKit, etc.)
-  // For now, we'll just log and show success message
-  console.log('Newsletter signup:', data);
-  
-  // Show success message
-  const form = event.target;
-  form.innerHTML = `
-    <div class="newsletter-success">
-      <i class="fas fa-check-circle"></i>
-      <h3>Thank you, ${data.name}!</h3>
-      <p>Check your email to confirm your subscription.</p>
-    </div>
-  `;
-  
-  // Close after 2 seconds
-  setTimeout(() => {
-    closeNewsletterPopup();
-    // Mark as subscribed (don't show popup again for this user)
-    localStorage.setItem('newsletterPopupDismissed', Date.now().toString());
-  }, 2000);
-}
-
-// Close on background click
-document.addEventListener('click', (e) => {
-  const popup = document.getElementById('newsletter-popup');
-  if (e.target === popup) {
-    closeNewsletterPopup();
-  }
-});
-
-// Close on ESC key
-document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape') {
-    closeNewsletterPopup();
-  }
-});
-</script>
-
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
-    // Ensure there is a toggle, if there isn't float one in the top right
-    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
-      const a = window.document.createElement('a');
-      a.classList.add('top-right');
-      a.classList.add('quarto-color-scheme-toggle');
-      a.href = "";
-      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
-      const i = window.document.createElement("i");
-      i.classList.add('bi');
-      a.appendChild(i);
-      window.document.body.appendChild(a);
-    }
-    setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {
@@ -1319,13 +727,14 @@ document.addEventListener('keydown', (e) => {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
@@ -1410,8 +819,6 @@ document.addEventListener('keydown', (e) => {
             if (link.getAttribute("rel") === null) {
               link.setAttribute("rel", "noopener");
             }
-            // default icon
-            link.classList.add("external");
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -1725,7 +1132,7 @@ document.addEventListener('keydown', (e) => {
     }
   });
   </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="sourceCode" id="cb30" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb30" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Git &amp; GitHub for Data Analysts: Stop Losing Your Work (15-Minute Setup)"</span></span>
 <span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a><span class="an">subtitle:</span><span class="co"> "The Version Control Skills That Will Save Your Career"</span></span>
 <span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "Nichodemus Amollo"</span></span>
@@ -2231,9 +1638,35 @@ document.addEventListener('keydown', (e) => {
 <span id="cb30-504"><a href="#cb30-504" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Kaggle for Beginners</span><span class="co">](../08-kaggle-competitions-guide/)</span></span>
 <span id="cb30-505"><a href="#cb30-505" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Your Ultimate 100-Day Roadmap</span><span class="co">](../01-data-analytics-roadmap/)</span></span>
 <span id="cb30-506"><a href="#cb30-506" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb30-507"><a href="#cb30-507" aria-hidden="true" tabindex="-1"></a>**Tags:** #Git #GitHub #VersionControl #Tools #Portfolio #Career</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+<span id="cb30-507"><a href="#cb30-507" aria-hidden="true" tabindex="-1"></a>**Tags:** #Git #GitHub #VersionControl #Tools #Portfolio #Career</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2025 Nichodemus Amollo · Built with Quarto</p>
+</div>   
+    <div class="nav-footer-center">
+<p>Nairobi, Kenya</p>
+</div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/gondamol">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/nichodemusamollo/">
+      <i class="bi bi-linkedin" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
 
 
 

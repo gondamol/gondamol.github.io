@@ -2,14 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.31">
+<meta name="generator" content="quarto-1.8.27">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Nichodemus Amollo">
 <meta name="dcterms.date" content="2025-10-26">
 
-<title>Why Reproducible Research Matters in Public Health – Nic|Data</title>
+<title>Why Reproducible Research Matters in Public Health – Nic | Data</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -66,20 +66,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
+<link href="../../img/profile.jpeg" rel="icon" type="image/jpeg">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-8ef56b68f8fa1e9d2ba328e99e439f80.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-b4d8e255315082a850f3101be8cf4c50.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-3053e29e5f51fbac37d9511c7f4598d1.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-79f3bbf38959ca18c2d9f1c85bb8c30c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-3053e29e5f51fbac37d9511c7f4598d1.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-95df84677223e8ba3731cfb67d8c134e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -108,176 +106,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&amp;family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&amp;family=DM+Mono:wght@400&amp;display=swap" rel="stylesheet">
 
 
 <link rel="stylesheet" href="../../styles.scss">
-<link rel="stylesheet" href="../../_footer.css">
-<link rel="stylesheet" href="../../_newsletter-popup.scss">
 </head>
 
-<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
-    const toggleBodyColorMode = (bsSheetEl) => {
-      const mode = bsSheetEl.getAttribute("data-mode");
-      const bodyEl = window.document.querySelector("body");
-      if (mode === "dark") {
-        bodyEl.classList.add("quarto-dark");
-        bodyEl.classList.remove("quarto-light");
-      } else {
-        bodyEl.classList.add("quarto-light");
-        bodyEl.classList.remove("quarto-dark");
-      }
-    }
-    const toggleBodyColorPrimary = () => {
-      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
-      if (bsSheetEl) {
-        toggleBodyColorMode(bsSheetEl);
-      }
-    }
-    const setColorSchemeToggle = (alternate) => {
-      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
-      for (let i=0; i < toggles.length; i++) {
-        const toggle = toggles[i];
-        if (toggle) {
-          if (alternate) {
-            toggle.classList.add("alternate");
-          } else {
-            toggle.classList.remove("alternate");
-          }
-        }
-      }
-    };
-    const toggleColorMode = (alternate) => {
-      // Switch the stylesheets
-      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
-      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
-      manageTransitions('#quarto-margin-sidebar .nav-link', false);
-      if (alternate) {
-        // note: dark is layered on light, we don't disable primary!
-        enableStylesheet(alternateStylesheets);
-        for (const sheetNode of alternateStylesheets) {
-          if (sheetNode.id === "quarto-bootstrap") {
-            toggleBodyColorMode(sheetNode);
-          }
-        }
-      } else {
-        disableStylesheet(alternateStylesheets);
-        enableStylesheet(primaryStylesheets)
-        toggleBodyColorPrimary();
-      }
-      manageTransitions('#quarto-margin-sidebar .nav-link', true);
-      // Switch the toggles
-      setColorSchemeToggle(alternate)
-      // Hack to workaround the fact that safari doesn't
-      // properly recolor the scrollbar when toggling (#1455)
-      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
-        manageTransitions("body", false);
-        window.scrollTo(0, 1);
-        setTimeout(() => {
-          window.scrollTo(0, 0);
-          manageTransitions("body", true);
-        }, 40);
-      }
-    }
-    const disableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        stylesheet.rel = 'disabled-stylesheet';
-      }
-    }
-    const enableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
-          stylesheet.rel = 'stylesheet';
-        }
-      }
-    }
-    const manageTransitions = (selector, allowTransitions) => {
-      const els = window.document.querySelectorAll(selector);
-      for (let i=0; i < els.length; i++) {
-        const el = els[i];
-        if (allowTransitions) {
-          el.classList.remove('notransition');
-        } else {
-          el.classList.add('notransition');
-        }
-      }
-    }
-    const isFileUrl = () => {
-      return window.location.protocol === 'file:';
-    }
-    const hasAlternateSentinel = () => {
-      let styleSentinel = getColorSchemeSentinel();
-      if (styleSentinel !== null) {
-        return styleSentinel === "alternate";
-      } else {
-        return false;
-      }
-    }
-    const setStyleSentinel = (alternate) => {
-      const value = alternate ? "alternate" : "default";
-      if (!isFileUrl()) {
-        window.localStorage.setItem("quarto-color-scheme", value);
-      } else {
-        localAlternateSentinel = value;
-      }
-    }
-    const getColorSchemeSentinel = () => {
-      if (!isFileUrl()) {
-        const storageValue = window.localStorage.getItem("quarto-color-scheme");
-        return storageValue != null ? storageValue : localAlternateSentinel;
-      } else {
-        return localAlternateSentinel;
-      }
-    }
-    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-      let newTheme = '';
-      if(authorPrefersDark) {
-        newTheme = isAlternate ? baseTheme : alternateTheme;
-      } else {
-        newTheme = isAlternate ? alternateTheme : baseTheme;
-      }
-      const changeGiscusTheme = () => {
-        // From: https://github.com/giscus/giscus/issues/336
-        const sendMessage = (message) => {
-          const iframe = document.querySelector('iframe.giscus-frame');
-          if (!iframe) return;
-          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-        }
-        sendMessage({
-          setConfig: {
-            theme: newTheme
-          }
-        });
-      }
-      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-      if (isGiscussLoaded) {
-        changeGiscusTheme();
-      }
-    };
-    const authorPrefersDark = false;
-    const darkModeDefault = authorPrefersDark;
-      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
-    // Dark / light mode switch
-    window.quartoToggleColorScheme = () => {
-      // Read the current dark / light value
-      let toAlternate = !hasAlternateSentinel();
-      toggleColorMode(toAlternate);
-      setStyleSentinel(toAlternate);
-      toggleGiscusIfUsed(toAlternate, darkModeDefault);
-      window.dispatchEvent(new Event('resize'));
-    };
-    // Switch to dark mode if need be
-    if (hasAlternateSentinel()) {
-      toggleColorMode(true);
-    } else {
-      toggleColorMode(false);
-    }
-  </script>
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
@@ -285,123 +121,41 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../../index.html">
-    <span class="navbar-title">Nic|Data</span>
+    <span class="navbar-title">Nic | Data</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../index.html"> 
-<span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="../../about/index.html"> 
 <span class="menu-text">About</span></a>
   </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-projects" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Projects</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-projects">    
-        <li>
-    <a class="dropdown-item" href="../../projects/index.html">
- <span class="dropdown-text">All Projects</span></a>
-  </li>  
-        <li><hr class="dropdown-divider"></li>
-        <li>
-    <a class="dropdown-item" href="../../projects/analytics-engineering/index.html">
- <span class="dropdown-text">Real-Time Analytics Engineering 🚀 NEW</span></a>
-  </li>  
-        <li><hr class="dropdown-divider"></li>
-        <li>
-    <a class="dropdown-item" href="../../projects/health-analytics.html">
- <span class="dropdown-text">Health Data Analytics</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../projects/data-management.html">
- <span class="dropdown-text">Data Management</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../projects/survey-tools.html">
- <span class="dropdown-text">Survey Design &amp; Implementation</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../projects/dashboards.html">
- <span class="dropdown-text">Dashboards &amp; Visualization</span></a>
-  </li>  
-        <li><hr class="dropdown-divider"></li>
-        <li>
-    <a class="dropdown-item" href="../../visualizations/index.html">
- <span class="dropdown-text">Visualizations Gallery (50+ Projects)</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../tidy-tuesday/index.html">
- <span class="dropdown-text">TidyTuesday Challenges (100+ Projects)</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../data-viz/index.html">
- <span class="dropdown-text">Data Visualizations</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-research" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Research</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-research">    
-        <li>
-    <a class="dropdown-item" href="../../research/thesis.html">
- <span class="dropdown-text">Current Thesis</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../research/thesis-presentation.html">
- <span class="dropdown-text">Thesis Presentation</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../research/publications.html">
- <span class="dropdown-text">Publications</span></a>
-  </li>  
-        <li><hr class="dropdown-divider"></li>
-        <li>
-    <a class="dropdown-item" href="../../presentations/data-viz-presentation.html">
- <span class="dropdown-text">Presentations</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-resources" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Resources</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-resources">    
-        <li>
-    <a class="dropdown-item" href="../../resources/index.html">
- <span class="dropdown-text">Learning Resources</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../skills/index.html">
- <span class="dropdown-text">Skills &amp; Tools</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../software/index.html">
- <span class="dropdown-text">Software</span></a>
-  </li>  
-    </ul>
-  </li>
   <li class="nav-item">
-    <a class="nav-link" href="../../blogs/index.html"> 
-<span class="menu-text">Blog</span></a>
+    <a class="nav-link" href="../../projects/index.html"> 
+<span class="menu-text">Projects</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../research/thesis.html"> 
+<span class="menu-text">Thesis</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../personal/index.html"> 
+<span class="menu-text">Life</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../cv/index.html"> 
 <span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../personal/index.html"> 
-<span class="menu-text">Personal</span></a>
+    <a class="nav-link" href="../../blogs/index.html"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../resources/index.html"> 
+<span class="menu-text">Resources</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -411,19 +165,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://linkedin.com/in/amollow"> <i class="bi bi-linkedin" role="img" aria-label="LinkedIn">
+    <a class="nav-link" href="https://www.linkedin.com/in/nichodemusamollo/"> <i class="bi bi-linkedin" role="img" aria-label="LinkedIn">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com/nwerre"> <i class="bi bi-twitter" role="img" aria-label="Twitter">
-</i> 
-<span class="menu-text"></span></a>
-  </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://kaggle.com/nwerre"> <i class="bi bi-kaggle" role="img" aria-label="Kaggle">
-</i> 
-<span class="menu-text"></span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="mailto:nichodemuswerre@gmail.com"> 
+<span class="menu-text">Get in Touch</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -472,83 +220,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#the-reproducibility-crisis-in-public-health" id="toc-the-reproducibility-crisis-in-public-health" class="nav-link active" data-scroll-target="#the-reproducibility-crisis-in-public-health">The Reproducibility Crisis in Public Health</a></li>
-  <li><a href="#what-is-reproducible-research" id="toc-what-is-reproducible-research" class="nav-link" data-scroll-target="#what-is-reproducible-research">What is Reproducible Research?</a>
-  <ul class="collapse">
-  <li><a href="#reproducible-vs.-replicable" id="toc-reproducible-vs.-replicable" class="nav-link" data-scroll-target="#reproducible-vs.-replicable">Reproducible vs.&nbsp;Replicable</a></li>
-  </ul></li>
-  <li><a href="#why-reproducibility-matters-in-public-health" id="toc-why-reproducibility-matters-in-public-health" class="nav-link" data-scroll-target="#why-reproducibility-matters-in-public-health">Why Reproducibility Matters in Public Health</a>
-  <ul class="collapse">
-  <li><a href="#public-trust-and-credibility" id="toc-public-trust-and-credibility" class="nav-link" data-scroll-target="#public-trust-and-credibility">1. <strong>Public Trust and Credibility</strong> 🤝</a></li>
-  <li><a href="#better-decision-making" id="toc-better-decision-making" class="nav-link" data-scroll-target="#better-decision-making">2. <strong>Better Decision Making</strong> 📊</a></li>
-  <li><a href="#accelerating-scientific-progress" id="toc-accelerating-scientific-progress" class="nav-link" data-scroll-target="#accelerating-scientific-progress">3. <strong>Accelerating Scientific Progress</strong> 🚀</a></li>
-  <li><a href="#cost-efficiency" id="toc-cost-efficiency" class="nav-link" data-scroll-target="#cost-efficiency">4. <strong>Cost Efficiency</strong> 💰</a></li>
-  </ul></li>
-  <li><a href="#common-barriers-to-reproducibility" id="toc-common-barriers-to-reproducibility" class="nav-link" data-scroll-target="#common-barriers-to-reproducibility">Common Barriers to Reproducibility</a>
-  <ul class="collapse">
-  <li><a href="#technical-barriers" id="toc-technical-barriers" class="nav-link" data-scroll-target="#technical-barriers">Technical Barriers</a></li>
-  <li><a href="#cultural-barriers" id="toc-cultural-barriers" class="nav-link" data-scroll-target="#cultural-barriers">Cultural Barriers</a></li>
-  <li><a href="#resource-barriers" id="toc-resource-barriers" class="nav-link" data-scroll-target="#resource-barriers">Resource Barriers</a></li>
-  </ul></li>
-  <li><a href="#best-practices-for-reproducible-research" id="toc-best-practices-for-reproducible-research" class="nav-link" data-scroll-target="#best-practices-for-reproducible-research">Best Practices for Reproducible Research</a>
-  <ul class="collapse">
-  <li><a href="#use-version-control-gitgithub" id="toc-use-version-control-gitgithub" class="nav-link" data-scroll-target="#use-version-control-gitgithub">1. <strong>Use Version Control (Git/GitHub)</strong> 📁</a></li>
-  <li><a href="#document-everything" id="toc-document-everything" class="nav-link" data-scroll-target="#document-everything">2. <strong>Document Everything</strong> 📝</a></li>
-  <li><a href="#use-open-source-tools" id="toc-use-open-source-tools" class="nav-link" data-scroll-target="#use-open-source-tools">3. <strong>Use Open Source Tools</strong> 🛠️</a></li>
-  <li><a href="#share-your-data" id="toc-share-your-data" class="nav-link" data-scroll-target="#share-your-data">4. <strong>Share Your Data</strong> 📂</a></li>
-  <li><a href="#use-literate-programming" id="toc-use-literate-programming" class="nav-link" data-scroll-target="#use-literate-programming">5. <strong>Use Literate Programming</strong> 📖</a></li>
-  <li><a href="#specify-your-computing-environment" id="toc-specify-your-computing-environment" class="nav-link" data-scroll-target="#specify-your-computing-environment">6. <strong>Specify Your Computing Environment</strong> 💻</a></li>
-  <li><a href="#adopt-a-standard-project-structure" id="toc-adopt-a-standard-project-structure" class="nav-link" data-scroll-target="#adopt-a-standard-project-structure">7. <strong>Adopt a Standard Project Structure</strong> 🗂️</a></li>
-  <li><a href="#use-automated-workflows" id="toc-use-automated-workflows" class="nav-link" data-scroll-target="#use-automated-workflows">8. <strong>Use Automated Workflows</strong> ⚙️</a></li>
-  </ul></li>
-  <li><a href="#practical-example-a-reproducible-analysis" id="toc-practical-example-a-reproducible-analysis" class="nav-link" data-scroll-target="#practical-example-a-reproducible-analysis">Practical Example: A Reproducible Analysis</a>
-  <ul class="collapse">
-  <li><a href="#step-1-set-up-project-structure" id="toc-step-1-set-up-project-structure" class="nav-link" data-scroll-target="#step-1-set-up-project-structure">Step 1: Set Up Project Structure</a></li>
-  <li><a href="#step-2-create-readme" id="toc-step-2-create-readme" class="nav-link" data-scroll-target="#step-2-create-readme">Step 2: Create README</a></li>
-  <li><a href="#step-3-write-documented-code" id="toc-step-3-write-documented-code" class="nav-link" data-scroll-target="#step-3-write-documented-code">Step 3: Write Documented Code</a></li>
-  <li><a href="#step-4-share-your-work" id="toc-step-4-share-your-work" class="nav-link" data-scroll-target="#step-4-share-your-work">Step 4: Share Your Work</a></li>
-  </ul></li>
-  <li><a href="#tools-for-reproducible-health-research" id="toc-tools-for-reproducible-health-research" class="nav-link" data-scroll-target="#tools-for-reproducible-health-research">Tools for Reproducible Health Research</a>
-  <ul class="collapse">
-  <li><a href="#r-ecosystem" id="toc-r-ecosystem" class="nav-link" data-scroll-target="#r-ecosystem">R Ecosystem 📊</a></li>
-  <li><a href="#python-ecosystem" id="toc-python-ecosystem" class="nav-link" data-scroll-target="#python-ecosystem">Python Ecosystem 🐍</a></li>
-  <li><a href="#general-tools" id="toc-general-tools" class="nav-link" data-scroll-target="#general-tools">General Tools 🔧</a></li>
-  </ul></li>
-  <li><a href="#publishing-reproducible-research" id="toc-publishing-reproducible-research" class="nav-link" data-scroll-target="#publishing-reproducible-research">Publishing Reproducible Research</a>
-  <ul class="collapse">
-  <li><a href="#pre-registration" id="toc-pre-registration" class="nav-link" data-scroll-target="#pre-registration">Pre-registration</a></li>
-  <li><a href="#open-access-journals" id="toc-open-access-journals" class="nav-link" data-scroll-target="#open-access-journals">Open Access Journals</a></li>
-  <li><a href="#data-and-code-availability" id="toc-data-and-code-availability" class="nav-link" data-scroll-target="#data-and-code-availability">Data and Code Availability</a></li>
-  </ul></li>
-  <li><a href="#teaching-reproducibility" id="toc-teaching-reproducibility" class="nav-link" data-scroll-target="#teaching-reproducibility">Teaching Reproducibility</a>
-  <ul class="collapse">
-  <li><a href="#for-students" id="toc-for-students" class="nav-link" data-scroll-target="#for-students">For Students</a></li>
-  <li><a href="#for-institutions" id="toc-for-institutions" class="nav-link" data-scroll-target="#for-institutions">For Institutions</a></li>
-  </ul></li>
-  <li><a href="#the-future-of-reproducible-health-research" id="toc-the-future-of-reproducible-health-research" class="nav-link" data-scroll-target="#the-future-of-reproducible-health-research">The Future of Reproducible Health Research</a>
-  <ul class="collapse">
-  <li><a href="#emerging-trends" id="toc-emerging-trends" class="nav-link" data-scroll-target="#emerging-trends">Emerging Trends</a></li>
-  <li><a href="#challenges-ahead" id="toc-challenges-ahead" class="nav-link" data-scroll-target="#challenges-ahead">Challenges Ahead</a></li>
-  </ul></li>
-  <li><a href="#getting-started-checklist" id="toc-getting-started-checklist" class="nav-link" data-scroll-target="#getting-started-checklist">Getting Started Checklist</a></li>
-  <li><a href="#resources-for-learning-more" id="toc-resources-for-learning-more" class="nav-link" data-scroll-target="#resources-for-learning-more">Resources for Learning More</a>
-  <ul class="collapse">
-  <li><a href="#online-courses" id="toc-online-courses" class="nav-link" data-scroll-target="#online-courses">Online Courses</a></li>
-  <li><a href="#books" id="toc-books" class="nav-link" data-scroll-target="#books">Books</a></li>
-  <li><a href="#communities" id="toc-communities" class="nav-link" data-scroll-target="#communities">Communities</a></li>
-  </ul></li>
-  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
-
 
 
 
@@ -639,10 +313,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="best-practices-for-reproducible-research">Best Practices for Reproducible Research</h2>
 <section id="use-version-control-gitgithub" class="level3">
 <h3 class="anchored" data-anchor-id="use-version-control-gitgithub">1. <strong>Use Version Control (Git/GitHub)</strong> 📁</h3>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Initialize a Git repository for your project</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Initialize a Git repository for your project</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> init</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Initial commit of analysis scripts"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Initial commit of analysis scripts"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p><strong>Benefits:</strong> - Track every change to your code - Collaborate seamlessly with team members - Revert to previous versions if needed</p>
 </section>
 <section id="document-everything" class="level3">
@@ -662,26 +336,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h3 class="anchored" data-anchor-id="use-literate-programming">5. <strong>Use Literate Programming</strong> 📖</h3>
 <p>Combine code, results, and narrative in one document:</p>
 <p><strong>R Markdown Example:</strong></p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate disease prevalence</span></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>prevalence <span class="ot">&lt;-</span> <span class="fu">sum</span>(cases) <span class="sc">/</span> population <span class="sc">*</span> <span class="dv">100</span></span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>The prevalence of disease X was <span class="in">`r round(prevalence, 2)`</span>%.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>The prevalence of disease X was <span class="in">`r round(prevalence, 2)`</span>%.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="specify-your-computing-environment" class="level3">
 <h3 class="anchored" data-anchor-id="specify-your-computing-environment">6. <strong>Specify Your Computing Environment</strong> 💻</h3>
 <p><strong>For R Projects:</strong></p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Use renv for dependency management</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Use renv for dependency management</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"renv"</span>)</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>renv<span class="sc">::</span><span class="fu">init</span>()</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>renv<span class="sc">::</span><span class="fu">snapshot</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>renv<span class="sc">::</span><span class="fu">snapshot</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p><strong>For Python Projects:</strong></p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create requirements file</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create requirements file</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> freeze <span class="op">&gt;</span> requirements.txt</span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Or use conda</span></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> env export <span class="op">&gt;</span> environment.yml</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> env export <span class="op">&gt;</span> environment.yml</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="adopt-a-standard-project-structure" class="level3">
 <h3 class="anchored" data-anchor-id="adopt-a-standard-project-structure">7. <strong>Adopt a Standard Project Structure</strong> 🗂️</h3>
@@ -703,14 +377,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="use-automated-workflows" class="level3">
 <h3 class="anchored" data-anchor-id="use-automated-workflows">8. <strong>Use Automated Workflows</strong> ⚙️</h3>
 <p><strong>Make files or workflow management:</strong></p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode makefile code-with-copy"><code class="sourceCode makefile"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Makefile for automated analysis</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode makefile code-with-copy"><code class="sourceCode makefile"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Makefile for automated analysis</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="dv">all:</span><span class="dt"> report.html</span></span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="dv">data/clean_data.csv:</span><span class="dt"> scripts/01-clean.R data/raw_data.csv</span></span>
 <span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="er">    </span>Rscript scripts/01-clean.R</span>
 <span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="dv">report.html:</span><span class="dt"> report.Rmd data/clean_data.csv</span></span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="er">    </span>R -e <span class="st">"rmarkdown::render('report.Rmd')"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="er">    </span>R -e <span class="st">"rmarkdown::render('report.Rmd')"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <hr>
 </section>
 </section>
@@ -718,13 +392,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="practical-example-a-reproducible-analysis">Practical Example: A Reproducible Analysis</h2>
 <section id="step-1-set-up-project-structure" class="level3">
 <h3 class="anchored" data-anchor-id="step-1-set-up-project-structure">Step 1: Set Up Project Structure</h3>
-<div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> malaria-study</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> malaria-study</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> malaria-study</span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> init</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> init</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="step-2-create-readme" class="level3">
 <h3 class="anchored" data-anchor-id="step-2-create-readme">Step 2: Create README</h3>
-<div class="sourceCode" id="cb8"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># Malaria Prevalence Analysis</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># Malaria Prevalence Analysis</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="fu">## Data Source</span></span>
 <span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>WHO Malaria Report 2024</span>
@@ -737,11 +411,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a><span class="fu">## How to Reproduce</span></span>
 <span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Clone this repository</span>
 <span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Install required packages: <span class="in">`renv::restore()`</span></span>
-<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Run analysis: <span class="in">`source("analysis.R")`</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Run analysis: <span class="in">`source("analysis.R")`</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="step-3-write-documented-code" class="level3">
 <h3 class="anchored" data-anchor-id="step-3-write-documented-code">Step 3: Write Documented Code</h3>
-<div class="sourceCode" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co">#' Malaria Prevalence Analysis</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co">#' Malaria Prevalence Analysis</span></span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="co">#' Author: Your Name</span></span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="co">#' Date: 2025-10-26</span></span>
 <span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a></span>
@@ -764,13 +438,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb9-21"><a href="#cb9-21" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Cases per 1000 population"</span>)</span>
 <span id="cb9-22"><a href="#cb9-22" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb9-23"><a href="#cb9-23" aria-hidden="true" tabindex="-1"></a><span class="co"># Save results</span></span>
-<span id="cb9-24"><a href="#cb9-24" aria-hidden="true" tabindex="-1"></a><span class="fu">ggsave</span>(<span class="fu">here</span>(<span class="st">"outputs/prevalence_trend.png"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb9-24"><a href="#cb9-24" aria-hidden="true" tabindex="-1"></a><span class="fu">ggsave</span>(<span class="fu">here</span>(<span class="st">"outputs/prevalence_trend.png"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="step-4-share-your-work" class="level3">
 <h3 class="anchored" data-anchor-id="step-4-share-your-work">Step 4: Share Your Work</h3>
-<div class="sourceCode" id="cb10"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Complete reproducible analysis"</span></span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push origin main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push origin main</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <hr>
 </section>
 </section>
@@ -922,271 +596,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 
 </main> <!-- /main -->
-<div class="portfolio-footer">
-  <div class="footer-container">
-    <!-- Main Footer Content -->
-    <div class="footer-content">
-      <!-- Navigation Links -->
-      <div class="footer-section">
-        <h4><i class="fas fa-sitemap" aria-hidden="true"></i> Navigation</h4>
-        <ul>
-          <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-          <li><a href="about/index.html"><i class="fas fa-user"></i> About</a></li>
-          <li><a href="projects/index.html"><i class="fas fa-project-diagram"></i> Projects</a></li>
-          <li><a href="research/thesis.html"><i class="fas fa-microscope"></i> Research</a></li>
-          <li><a href="data-viz/index.html"><i class="fas fa-chart-line"></i> Data Visualizations</a></li>
-          <li><a href="blogs/index.html"><i class="fas fa-blog"></i> Blog</a></li>
-          <li><a href="cv/index.html"><i class="fas fa-file-alt"></i> CV</a></li>
-          <li><a href="resources/index.html"><i class="fas fa-book"></i> Resources</a></li>
-        </ul>
-      </div>
-
-      <!-- Projects & Work -->
-      <div class="footer-section">
-        <h4><i class="fas fa-briefcase" aria-hidden="true"></i> Projects &amp; Work</h4>
-        <ul>
-          <li><a href="projects/health-analytics.html"><i class="fas fa-heartbeat"></i> Health Analytics</a></li>
-          <li><a href="projects/data-management.html"><i class="fas fa-database"></i> Data Management</a></li>
-          <li><a href="projects/survey-tools.html"><i class="fas fa-clipboard-list"></i> Survey Tools</a></li>
-          <li><a href="projects/dashboards.html"><i class="fas fa-chart-pie"></i> Dashboards</a></li>
-          <li><a href="projects/analytics-engineering/index.html"><i class="fas fa-cogs"></i> Analytics Engineering</a></li>
-          <li><a href="projects/politics-governance/index.html"><i class="fas fa-university"></i> Governance &amp; Civic Tech</a></li>
-          <li><a href="projects/agriculture/index.html"><i class="fas fa-seedling"></i> Agriculture Projects</a></li>
-          <li><a href="tidy-tuesday/index.html"><i class="fas fa-calendar-alt"></i> TidyTuesday</a></li>
-          <li><a href="software/index.html"><i class="fas fa-code"></i> Software Development</a></li>
-        </ul>
-      </div>
-
-      <!-- Contact & Social -->
-      <div class="footer-section">
-        <h4><i class="fas fa-envelope" aria-hidden="true"></i> Contact &amp; Social</h4>
-        <ul>
-          <li><a href="tel:+254725737867"><i class="fas fa-phone"></i> +254 725 737 867</a></li>
-          <li><a href="mailto:nichodemuswerre@gmail.com"><i class="fas fa-envelope"></i> Email</a></li>
-          <li><a href="https://linkedin.com/in/amollow" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-          <li><a href="https://github.com/gondamol" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a></li>
-          <li><a href="https://twitter.com/nwerre" target="_blank" rel="noopener noreferrer"><i class="fab fa-x-twitter"></i> X (Twitter)</a></li>
-          <li><a href="https://kaggle.com/nwerre" target="_blank" rel="noopener noreferrer"><i class="fab fa-kaggle"></i> Kaggle</a></li>
-        </ul>
-        <!-- Newsletter Subscribe Button -->
-        <div class="footer-newsletter">
-          <button onclick="showNewsletterPopup()" class="footer-subscribe-btn">
-            <i class="fas fa-envelope-open-text"></i> Subscribe to Newsletter
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <!-- Bottom Bar -->
-    <div class="footer-bottom">
-      <div class="footer-copyright">
-        <p>
-          <i class="fas fa-copyright"></i> 2024 <strong>Nichodemus Amollo</strong> | Research Data Manager &amp; Data Scientist<br>
-          <small>Health Financial Diaries • Data Science &amp; ML • Impact Evaluation • Health Economics</small>
-        </p>
-      </div>
-      <div class="footer-badge">
-        <p>
-          <i class="fas fa-code" aria-hidden="true"></i> Built with <i class="fas fa-heart" aria-hidden="true" style="color: #f56565;"></i> using <strong>Quarto</strong> &amp; <strong>R</strong>
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<script>
-// Fix footer links to work from any page depth
-(function() {
-  const footer = document.querySelector('.portfolio-footer');
-  if (!footer) return;
-  
-  // Get the base path (site root)
-  const path = window.location.pathname;
-  const depth = path.split('/').filter(p => p && !p.endsWith('.html')).length;
-  const basePath = depth > 0 ? '../'.repeat(depth) : '';
-  
-  // Fix all relative links in the footer
-  const links = footer.querySelectorAll('a[href^="index.html"], a[href^="about/"], a[href^="projects/"], a[href^="research/"], a[href^="data-viz/"], a[href^="blogs/"], a[href^="cv/"], a[href^="resources/"], a[href^="tidy-tuesday/"], a[href^="software/"]');
-  links.forEach(link => {
-    const href = link.getAttribute('href');
-    if (href && !href.startsWith('http') && !href.startsWith('tel:') && !href.startsWith('mailto:')) {
-      link.setAttribute('href', basePath + href);
-    }
-  });
-})();
-</script>
-<!-- Newsletter Subscription Popup -->
-<div id="newsletter-popup" class="newsletter-popup" style="display: none;">
-  <div class="newsletter-popup-content">
-    <button class="newsletter-close" onclick="closeNewsletterPopup()" aria-label="Close">
-      <i class="fas fa-times"></i>
-    </button>
-    <div class="newsletter-header">
-      <i class="fas fa-envelope-open-text newsletter-icon"></i>
-      <h2>Stay Updated!</h2>
-      <p>Get the latest data science insights, visualization tips, and project updates delivered to your inbox.</p>
-    </div>
-    <form class="newsletter-form" id="newsletter-form" onsubmit="handleNewsletterSubmit(event)">
-      <div class="newsletter-input-group">
-        <i class="fas fa-user"></i>
-        <input type="text" name="name" placeholder="Your Name" required="">
-      </div>
-      <div class="newsletter-input-group">
-        <i class="fas fa-envelope"></i>
-        <input type="email" name="email" placeholder="your.email@example.com" required="">
-      </div>
-      <button type="submit" class="newsletter-submit-btn">
-        <span>Subscribe</span>
-        <i class="fas fa-arrow-right"></i>
-      </button>
-    </form>
-    <div class="newsletter-footer">
-      <small>We respect your privacy. Unsubscribe anytime.</small>
-      <div class="newsletter-social">
-        <a href="https://twitter.com/nwerre" target="_blank" aria-label="Twitter">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a href="https://linkedin.com/in/amollow" target="_blank" aria-label="LinkedIn">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="https://github.com/gondamol" target="_blank" aria-label="GitHub">
-          <i class="fab fa-github"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<script>
-// Newsletter Popup Logic
-(function() {
-  // Check if user has dismissed popup within the last 10 minutes
-  function shouldShowPopup() {
-    const dismissedAt = localStorage.getItem('newsletterPopupDismissed');
-    if (!dismissedAt) return true;
-    
-    const dismissedTime = parseInt(dismissedAt, 10);
-    const now = Date.now();
-    const tenMinutes = 10 * 60 * 1000; // 10 minutes in milliseconds
-    
-    // Show again if more than 10 minutes have passed
-    return (now - dismissedTime) > tenMinutes;
-  }
-  
-  // Internal function to show popup (checks timing)
-  function showPopupIfAllowed() {
-    if (!shouldShowPopup()) return;
-    
-    const popup = document.getElementById('newsletter-popup');
-    if (popup) {
-      popup.style.display = 'flex';
-      document.body.style.overflow = 'hidden';
-      
-      // Animate in
-      setTimeout(() => {
-        popup.classList.add('show');
-      }, 10);
-    }
-  }
-  
-  // Show after 2 minutes delay (automatic popup)
-  const twoMinutes = 2 * 60 * 1000; // 2 minutes in milliseconds
-  setTimeout(() => {
-    showPopupIfAllowed();
-  }, twoMinutes);
-})();
-
-// Global function to show popup from footer button (bypasses timing check)
-function showNewsletterPopup() {
-  const popup = document.getElementById('newsletter-popup');
-  if (popup) {
-    popup.style.display = 'flex';
-    document.body.style.overflow = 'hidden';
-    
-    // Animate in
-    setTimeout(() => {
-      popup.classList.add('show');
-    }, 10);
-  }
-}
-
-// Close popup function
-function closeNewsletterPopup() {
-  const popup = document.getElementById('newsletter-popup');
-  if (popup) {
-    popup.classList.remove('show');
-    setTimeout(() => {
-      popup.style.display = 'none';
-      document.body.style.overflow = '';
-    }, 300);
-    // Store timestamp when dismissed (valid for 10 minutes)
-    localStorage.setItem('newsletterPopupDismissed', Date.now().toString());
-  }
-}
-
-// Handle form submission
-function handleNewsletterSubmit(event) {
-  event.preventDefault();
-  
-  const formData = new FormData(event.target);
-  const data = {
-    name: formData.get('name'),
-    email: formData.get('email')
-  };
-  
-  // Here you would integrate with your email service (Mailchimp, ConvertKit, etc.)
-  // For now, we'll just log and show success message
-  console.log('Newsletter signup:', data);
-  
-  // Show success message
-  const form = event.target;
-  form.innerHTML = `
-    <div class="newsletter-success">
-      <i class="fas fa-check-circle"></i>
-      <h3>Thank you, ${data.name}!</h3>
-      <p>Check your email to confirm your subscription.</p>
-    </div>
-  `;
-  
-  // Close after 2 seconds
-  setTimeout(() => {
-    closeNewsletterPopup();
-    // Mark as subscribed (don't show popup again for this user)
-    localStorage.setItem('newsletterPopupDismissed', Date.now().toString());
-  }, 2000);
-}
-
-// Close on background click
-document.addEventListener('click', (e) => {
-  const popup = document.getElementById('newsletter-popup');
-  if (e.target === popup) {
-    closeNewsletterPopup();
-  }
-});
-
-// Close on ESC key
-document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape') {
-    closeNewsletterPopup();
-  }
-});
-</script>
-
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
-    // Ensure there is a toggle, if there isn't float one in the top right
-    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
-      const a = window.document.createElement('a');
-      a.classList.add('top-right');
-      a.classList.add('quarto-color-scheme-toggle');
-      a.href = "";
-      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
-      const i = window.document.createElement("i");
-      i.classList.add('bi');
-      a.appendChild(i);
-      window.document.body.appendChild(a);
-    }
-    setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {
@@ -1236,13 +647,14 @@ document.addEventListener('keydown', (e) => {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
@@ -1327,8 +739,6 @@ document.addEventListener('keydown', (e) => {
             if (link.getAttribute("rel") === null) {
               link.setAttribute("rel", "noopener");
             }
-            // default icon
-            link.classList.add("external");
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -1642,7 +1052,7 @@ document.addEventListener('keydown', (e) => {
     }
   });
   </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="sourceCode" id="cb11" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Why Reproducible Research Matters in Public Health"</span></span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="an">subtitle:</span><span class="co"> "Building Trust Through Transparency: The Critical Role of Reproducibility in Health Sciences"</span></span>
 <span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "Nichodemus Amollo"</span></span>
@@ -2076,9 +1486,35 @@ document.addEventListener('keydown', (e) => {
 <span id="cb11-432"><a href="#cb11-432" aria-hidden="true" tabindex="-1"></a>---</span>
 <span id="cb11-433"><a href="#cb11-433" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb11-434"><a href="#cb11-434" aria-hidden="true" tabindex="-1"></a>*Have you encountered reproducibility issues in your research? Share your experiences in the comments below!*</span>
-<span id="cb11-435"><a href="#cb11-435" aria-hidden="true" tabindex="-1"></a></span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+<span id="cb11-435"><a href="#cb11-435" aria-hidden="true" tabindex="-1"></a></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2025 Nichodemus Amollo · Built with Quarto</p>
+</div>   
+    <div class="nav-footer-center">
+<p>Nairobi, Kenya</p>
+</div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/gondamol">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/nichodemusamollo/">
+      <i class="bi bi-linkedin" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
 
 
 

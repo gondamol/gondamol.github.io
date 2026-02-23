@@ -1,0 +1,135 @@
+---
+title: "Data Visualizations Gallery"
+subtitle: "50+ Projects Showcasing R, Python, and JavaScript Visualization Libraries"
+author: "Nichodemus Amollo"
+format:
+  html:
+    toc: true
+    toc-depth: 2
+    code-fold: show
+---
+
+::: {.hero-banner}
+# **<i class="fas fa-chart-line"></i> Data Visualizations Gallery**
+
+Explore 50+ visualization projects showcasing advanced techniques in R, Python, D3.js, and interactive web visualizations
+:::
+
+## Categories
+
+### **<i class="fab fa-r-project"></i> R Visualizations**
+
+::: {.tile-grid}
+::: {.tile-card}
+#### ggplot2 Projects
+Advanced ggplot2 techniques, custom themes, and publication-quality plots
+[Explore →](#r-ggplot2)
+:::
+
+::: {.tile-card}
+#### Plotly Interactive Charts
+Interactive dashboards and web-based visualizations with Plotly
+[Explore →](#r-plotly)
+:::
+
+::: {.tile-card}
+#### Leaflet Maps
+Interactive maps with custom markers, popups, and spatial layers
+[Explore →](#r-leaflet)
+:::
+
+::: {.tile-card}
+#### gganimate Animations
+Animated visualizations showing data evolution over time
+[Explore →](#r-gganimate)
+:::
+:::
+
+### **<i class="fab fa-python"></i> Python Visualizations**
+
+::: {.tile-grid}
+::: {.tile-card}
+#### Matplotlib Advanced
+Publication-quality plots with advanced styling
+[Explore →](#python-matplotlib)
+:::
+
+::: {.tile-card}
+#### Seaborn Statistical Viz
+Statistical plotting and distribution analysis
+[Explore →](#python-seaborn)
+:::
+
+::: {.tile-card}
+#### Plotly Python Dashboards
+Interactive web dashboards with Dash
+[Explore →](#python-plotly)
+:::
+
+::: {.tile-card}
+#### Bokeh Interactive
+Modern web browser visualizations
+[Explore →](#python-bokeh)
+:::
+:::
+
+### **<i class="fab fa-js"></i> JavaScript & D3.js**
+
+::: {.tile-grid}
+::: {.tile-card}
+#### D3.js Bar Charts
+Interactive bar charts and histograms
+[Explore →](#d3-basic)
+:::
+
+::: {.tile-card}
+#### D3.js Network Graphs
+Force-directed graphs and network visualizations
+[Explore →](#d3-advanced)
+:::
+
+::: {.tile-card}
+#### D3.js Maps
+Geographic visualizations with GeoJSON
+[Explore →](#d3-maps)
+:::
+:::
+
+---
+
+## Featured Projects
+
+### Advanced ggplot2 Patterns & Techniques
+
+::: {.project-card}
+**Description**: Exploring advanced ggplot2 techniques including faceting, custom themes, and statistical transformations.
+
+**Packages**: ggplot2, dplyr, patchwork, viridis
+
+[View Project →](advanced-ggplot2-patterns.qmd)
+:::
+
+### Interactive Charts with Plotly
+
+::: {.project-card}
+**Description**: Creating interactive dashboards and charts using plotly for web-based data exploration.
+
+**Packages**: plotly, ggplot2, dplyr
+
+[View Project →](interactive-plotly-charts.qmd)
+:::
+
+### Interactive Maps with Leaflet
+
+::: {.project-card}
+**Description**: Building interactive maps showing spatial data with custom markers, popups, and layers.
+
+**Packages**: leaflet, sf, dplyr
+
+[View Project →](leaflet-interactive-maps.qmd)
+:::
+
+---
+
+[⬅️ Back to Home](../index.qmd) | [📊 TidyTuesday Projects](../tidy-tuesday/index.html)
+
