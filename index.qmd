@@ -28,8 +28,8 @@ toc: false
       <span class="domain slate">Real Estate</span>
     </div>
     <div class="hero-cta">
-      <a href="projects/index.qmd" class="btn-solid">See My Work</a>
-      <a href="about/index.qmd" class="btn-ghost">My Story →</a>
+      <a href="projects/index.html" class="btn-solid">See My Work</a>
+      <a href="about/index.html" class="btn-ghost">My Story →</a>
     </div>
   </div>
   <div class="hero-visual">
@@ -224,7 +224,7 @@ toc: false
     <div class="project-grid" id="projectGrid">
 
       <!-- FEATURED  -->
-      <a href="research/thesis.qmd" class="proj-card proj-featured" data-category="health">
+      <a href="research/thesis.html" class="proj-card proj-featured" data-category="health">
         <div class="proj-thumb" style="background:#1a2e1a;">
           <div class="proj-thumb-pattern" style="--dot:#ffffff10;"></div>
           <img src="img/professor nyongo launching the dashboard.jpeg"
@@ -245,7 +245,7 @@ toc: false
       </a>
 
       <!-- STANDARD cards -->
-      <a href="tidy-tuesday/2024-maternal-mortality.qmd" class="proj-card proj-half" data-category="health">
+      <a href="tidy-tuesday/2024-maternal-mortality.html" class="proj-card proj-half" data-category="health">
         <div class="proj-thumb" style="background:#1e2a1e;height:180px;">
           <div class="proj-thumb-pattern" style="--dot:#ffffff0d;"></div>
           <span class="proj-icon" style="font-size:2rem;">🌸</span>
@@ -261,7 +261,7 @@ toc: false
         </div>
       </a>
 
-      <a href="posts/agriculture-data-analysis/index.qmd" class="proj-card proj-half" data-category="agriculture">
+      <a href="posts/agriculture-data-analysis/index.html" class="proj-card proj-half" data-category="agriculture">
         <div class="proj-thumb" style="background:#2a1e08;height:180px;">
           <div class="proj-thumb-pattern" style="--dot:#ffffff0d;"></div>
           <span class="proj-icon" style="font-size:2rem;">🌾</span>
@@ -277,7 +277,7 @@ toc: false
         </div>
       </a>
 
-      <a href="tidy-tuesday/financial-inclusion.qmd" class="proj-card proj-half" data-category="finance">
+      <a href="tidy-tuesday/financial-inclusion.html" class="proj-card proj-half" data-category="finance">
         <div class="proj-thumb" style="background:#0d1a2e;height:180px;">
           <div class="proj-thumb-pattern" style="--dot:#ffffff0d;"></div>
           <span class="proj-icon" style="font-size:2rem;">💳</span>
@@ -344,7 +344,7 @@ toc: false
     </div>
 
     <div style="margin-top:3rem;">
-      <a href="projects/index.qmd" class="btn-solid">All Projects →</a>
+      <a href="projects/index.html" class="btn-solid">All Projects →</a>
     </div>
   </div>
 </section>
@@ -591,7 +591,7 @@ toc: false
         </div>
 
         <div style="margin-top:2.5rem;padding-top:1.8rem;border-top:1px solid var(--border);">
-          <a href="cv/index.qmd" class="btn-solid" style="margin-right:0.8rem;">View Full CV</a>
+          <a href="cv/index.html" class="btn-solid" style="margin-right:0.8rem;">View Full CV</a>
           <a href="cv/Nichodemus_Amollo_CV.pdf" class="btn-ghost" download>Download CV ↓</a>
         </div>
       </div>
@@ -742,7 +742,7 @@ toc: false
 
 <!-- Sticky mobile CTA -->
 <div class="sticky-cta-mobile" aria-hidden="true">
-  <a href="cv/index.qmd">View CV →</a>
+  <a href="cv/index.html">View CV →</a>
 </div>
 
 <script>

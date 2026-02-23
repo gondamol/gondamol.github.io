@@ -31,7 +31,7 @@ toc: false
   </div>
   <div class="project-grid allProjects" style="margin-bottom:5rem;">
 
-    <a href="../research/thesis.qmd" class="proj-card proj-featured" data-category="health">
+    <a href="../research/thesis.html" class="proj-card proj-featured" data-category="health">
       <div class="proj-thumb" style="background:#1a2e1a;">
         <div class="proj-thumb-pattern" style="--dot:#ffffff10;"></div>
         <img src="../img/professor nyongo launching the dashboard.jpeg"
@@ -85,7 +85,7 @@ toc: false
       </div>
     </a>
 
-    <a href="../tidy-tuesday/2024-maternal-mortality.qmd" class="proj-card proj-half" data-category="health">
+    <a href="../tidy-tuesday/2024-maternal-mortality.html" class="proj-card proj-half" data-category="health">
       <div class="proj-thumb" style="background:#1e2a1e;height:180px;">
         <div class="proj-thumb-pattern" style="--dot:#ffffff0d;"></div>
         <span class="proj-icon">📉</span>
@@ -101,7 +101,7 @@ toc: false
       </div>
     </a>
 
-    <a href="../posts/kisumu-cancer-dashboard/index.qmd" class="proj-card proj-half" data-category="health">
+    <a href="../posts/kisumu-cancer-dashboard/index.html" class="proj-card proj-half" data-category="health">
       <div class="proj-thumb" style="background:#2a1a1a;height:180px;">
         <div class="proj-thumb-pattern" style="--dot:#ffffff0d;"></div>
         <span class="proj-icon">🧬</span>
@@ -157,7 +157,7 @@ toc: false
   </div>
   <div class="project-grid allProjects" style="margin-bottom:5rem;">
 
-    <a href="../posts/agriculture-data-analysis/index.qmd" class="proj-card proj-featured" data-category="agriculture">
+    <a href="../posts/agriculture-data-analysis/index.html" class="proj-card proj-featured" data-category="agriculture">
       <div class="proj-thumb" style="background:#2a1e08;">
         <div class="proj-thumb-pattern" style="--dot:#ffffff10;"></div>
         <img src="../img/goats drinking near goat pen, digging water pan in the background.jpeg"
@@ -177,7 +177,7 @@ toc: false
       </div>
     </a>
 
-    <a href="../tidy-tuesday/food-security.qmd" class="proj-card proj-half" data-category="agriculture">
+    <a href="../tidy-tuesday/food-security.html" class="proj-card proj-half" data-category="agriculture">
       <div class="proj-thumb" style="background:#1a2a10;height:180px;">
         <div class="proj-thumb-pattern" style="--dot:#ffffff0d;"></div>
         <span class="proj-icon">🌽</span>
@@ -217,7 +217,7 @@ toc: false
   </div>
   <div class="project-grid allProjects" style="margin-bottom:5rem;">
 
-    <a href="../tidy-tuesday/financial-inclusion.qmd" class="proj-card proj-half" data-category="finance">
+    <a href="../tidy-tuesday/financial-inclusion.html" class="proj-card proj-half" data-category="finance">
       <div class="proj-thumb" style="background:#0d1a2e;height:200px;">
         <div class="proj-thumb-pattern" style="--dot:#ffffff10;"></div>
         <span class="proj-icon">💳</span>
@@ -233,7 +233,7 @@ toc: false
       </div>
     </a>
 
-    <a href="real-estate-feasibility-studio/index.qmd" class="proj-card proj-half" data-category="finance">
+    <a href="real-estate-feasibility-studio/index.html" class="proj-card proj-half" data-category="finance">
       <div class="proj-thumb" style="background:#162037;height:200px;">
         <div class="proj-thumb-pattern" style="--dot:#ffffff10;"></div>
         <span class="proj-icon">🏢</span>
@@ -273,7 +273,7 @@ toc: false
   </div>
   <div class="project-grid allProjects" style="margin-bottom:2rem;">
 
-    <a href="real-estate-feasibility-studio/index.qmd" class="proj-card proj-half" data-category="analytics">
+    <a href="real-estate-feasibility-studio/index.html" class="proj-card proj-half" data-category="analytics">
       <div class="proj-thumb" style="background:#162233;height:180px;">
         <div class="proj-thumb-pattern" style="--dot:#ffffff10;"></div>
         <span class="proj-icon">🔗</span>
