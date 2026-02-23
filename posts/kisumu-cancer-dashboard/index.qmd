@@ -226,6 +226,19 @@ The launch was attended by:
 
 ---
 
+## Learn More About This Work
+
+This dashboard has also been featured in institutional and public media coverage:
+
+1. **KEMRI Newsroom**
+   - [Innovative cancer dashboard unveiled to transform cancer care](https://www.kemri.go.ke/innovative-cancer-dashboard-unveiled-totransform-cancer-care/)
+2. **The Standard**
+   - [Kisumu launches innovative cancer dashboard to track cancer patients](https://www.standardmedia.co.ke/counties/article/2001506798/kisumu-launches-innovative-cancer-dashboard-to-track-cancer-patients)
+
+Both pieces document the launch, the evidence on loss to follow-up, and the role of data systems in improving treatment continuity.
+
+---
+
 ## A Story of Triumph: Davin Adhiambo
 
 During the Cancer Survivor's Day celebrations, I met **Davin Adhiambo**, whose journey epitomizes why this work matters.
