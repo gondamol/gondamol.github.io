@@ -1,137 +1,148 @@
 ---
 title: "Research"
-subtitle: "Accepted publication, thesis work, and the questions I want to keep answering"
+subtitle: "Health financing, primary care, and chronic disease systems"
 page-layout: full
 ---
 
 ```{=html}
-<div class="research-shell">
-  <section class="research-hero">
-    <span class="section-eyebrow">Research</span>
-    <h1 class="research-title">Studying how financing, governance, and delivery systems shape chronic care in rural Kenya.</h1>
-    <p class="research-lead">My first-author mixed-methods manuscript on hypertension and diabetes care in Seme Sub-County has been accepted for publication in <em>BMC Public Health</em>. I am currently finalizing the thesis and administrative requirements for expected graduation in December 2026.</p>
-    <div class="research-actions">
-      <a href="thesis.html" class="btn-solid">View thesis</a>
-      <a href="publications_files/01_NCDFin_ManuscriptV4.pdf" class="btn-ghost" target="_blank">Read manuscript PDF</a>
-      <a href="../posts/47-facility-decision-space-chronic-care/index.html" class="btn-ghost">Read plain-language essay</a>
+<div class="research-page">
+  <section class="research-hero-panel">
+    <div class="research-hero-copy">
+      <span class="section-eyebrow">Research</span>
+      <p class="research-pretitle">Health financing · Primary care · Chronic disease systems</p>
+      <h1 class="research-headline">Studying what happens when clinics are expected to deliver chronic care without enough financial decision space to keep it running.</h1>
+      <p class="research-intro">My first-author paper on hypertension and diabetes care in rural Kisumu is forthcoming in <em>BMC Public Health</em>. Across my work, I focus on the institutional details that shape outcomes on the ground: budgets, approvals, reimbursement flows, facility autonomy, and the hidden mechanics behind service continuity.</p>
+      <div class="research-actions">
+        <a href="thesis.html" class="btn-solid">View thesis</a>
+        <a href="publications_files/01_NCDFin_ManuscriptV4.pdf" class="btn-ghost" target="_blank">Read manuscript PDF</a>
+        <a href="../posts/47-facility-decision-space-chronic-care/index.html" class="btn-ghost">Read essay</a>
+      </div>
+    </div>
+
+    <div class="research-hero-side">
+      <article class="research-publication-panel">
+        <p class="research-kicker">Forthcoming in BMC Public Health</p>
+        <h2>Financial Determinants of Effective Hypertension and Diabetes Care in Rural Primary Health Facilities in Kisumu, Kenya</h2>
+        <p class="research-panel-copy">A mixed-methods study of seven public primary care facilities in Seme Sub-County showing how narrow funding streams, delayed approvals, and missing protected NCD budgets undermine continuity of care.</p>
+
+        <div class="research-panel-stats">
+          <div class="research-panel-stat">
+            <strong>7</strong>
+            <span>public facilities studied</span>
+          </div>
+          <div class="research-panel-stat">
+            <strong>85.7%</strong>
+            <span>reported frequent stockouts</span>
+          </div>
+          <div class="research-panel-stat">
+            <strong>0%</strong>
+            <span>had full spending autonomy</span>
+          </div>
+          <div class="research-panel-stat">
+            <strong>BMC</strong>
+            <span>journal destination</span>
+          </div>
+        </div>
+      </article>
     </div>
   </section>
+  <section class="research-dossier-grid">
+    <article class="research-dossier-card">
+      <p class="research-kicker">Publication focus</p>
+      <h3>What the paper shows</h3>
+      <ul>
+        <li>Chronic-care breakdown in rural primary care is often a governance problem, not only a procurement problem.</li>
+        <li>Facilities can plan, budget, and still fail to sustain care if financial authority remains too far from the point of service.</li>
+        <li>Protected NCD budgets and faster local execution matter as much as funding volume.</li>
+      </ul>
+    </article>
 
-  <section class="research-kpi-grid" aria-label="Research milestones">
-    <article class="research-kpi-card">
-      <span class="research-kpi-value">BMC</span>
-      <span class="research-kpi-label">First-author manuscript accepted in BMC Public Health</span>
-    </article>
-    <article class="research-kpi-card">
-      <span class="research-kpi-value">7</span>
-      <span class="research-kpi-label">Public primary-care facilities studied in Seme Sub-County</span>
-    </article>
-    <article class="research-kpi-card">
-      <span class="research-kpi-value">Dec 2026</span>
-      <span class="research-kpi-label">Expected MSc graduation after thesis clearance</span>
+    <article class="research-dossier-card">
+      <p class="research-kicker">Methods</p>
+      <h3>How I work</h3>
+      <p>I use mixed-methods designs that connect financial records, structured facility data, and management interviews so the analysis stays close to operational reality.</p>
+      <div class="research-chip-row">
+        <span class="research-chip">Mixed methods</span>
+        <span class="research-chip">Health systems</span>
+        <span class="research-chip">Facility finance</span>
+        <span class="research-chip">Policy translation</span>
+        <span class="research-chip">R</span>
+        <span class="research-chip">STATA</span>
+      </div>
     </article>
   </section>
 </div>
 ```
-
-## Featured publication
-
-```{=html}
-<article class="research-pub-card">
-  <p class="research-pub-meta">Accepted manuscript · BMC Public Health</p>
-  <h3>Financial Determinants of Effective Hypertension and Diabetes Care in Rural Primary Health Facilities in Kisumu, Kenya: A Mixed-Methods Study</h3>
-  <p class="research-pub-lead">This first-author study examines how Kenya's devolved financing architecture shapes chronic care delivery for hypertension and diabetes in seven rural public facilities. The central finding is blunt: facilities can plan for NCD care, but without spending autonomy and protected budgets they cannot reliably sustain it.</p>
-  <div class="research-stat-grid">
-    <div class="research-stat">
-      <strong>71.4%</strong>
-      <span>depended mainly on NHIF reimbursements and donor support</span>
-    </div>
-    <div class="research-stat">
-      <strong>0%</strong>
-      <span>had full spending autonomy despite holding bank accounts</span>
-    </div>
-    <div class="research-stat">
-      <strong>85.7%</strong>
-      <span>reported frequent medication stockouts</span>
-    </div>
-  </div>
-</article>
-```
-
-- Core contribution: shows that chronic-care failure in rural primary care is often a governance and decision-space problem, not only a funding-volume problem.
-- Methods: convergent parallel mixed methods using structured facility questionnaires, retrospective financial record review, and interviews with facility in-charges.
-- Policy value: provides a baseline for evaluating the transition from NHIF to the Social Health Authority and for redesigning facility-level financial autonomy.
-- Public writing version: [Why facility decision space matters for chronic care in rural Kenya](../posts/47-facility-decision-space-chronic-care/index.qmd)
-
-## Selected contributions
-
-1. **Amollo, N. W.**, Ogol, J., Museve, E., Owenga, J. A., Aduda, D. O., Onguru, D. *Financial Determinants of Effective Hypertension and Diabetes Care in Rural Primary Health Facilities in Kisumu, Kenya: A Mixed-Methods Study.* Accepted in *BMC Public Health*.
-   Role: First author; study design, mixed-methods analysis, interpretation, and writing.
-
-2. Ouma, O. J., Omondi, D., Akinyi, I., **Amollo, N. W.**, Ogutu, S., Obinge, E., et al. *Addressing priority gaps in access and quality of NCD services in primary care settings in rural Kenya: A participatory approach to intervention development.*
-   Role: Conceptualization, data collection, management, analysis, and co-writing results and discussion.
-
-3. Mangale, D. I., Adhiambo, H., Adagi, P. A., Nyandieka, E., Abente, B., Achieng, S., **Amollo, N. W.**, and Odeny, T. A. *Characteristics and mortality risk among esophageal cancer patients with varied HIV status seeking care in western Kenya: A 10-year analysis.*
-   Role: Data management and analysis.
-
-4. Odeny, T. A., Adhiambo, H. F., Mangale, D. I., Were, N. A., Nyandieka, E., Adagi, P. A., **Amollo, N. W.**, and Atieno, D. *Survival disparities in cervical cancer patients with and without HIV at Jaramogi Oginga Odinga Teaching and Referral Hospital.*
-   Role: Data management and analysis.
 
 ## Research interests
 
 ```{=html}
-<div class="research-interest-grid">
-  <article class="research-interest-card">
+<div class="research-interest-mosaic">
+  <article class="research-interest-tile">
     <h4>Health financing and decision space</h4>
-    <p>How county financing rules, reimbursement flows, and facility autonomy shape frontline service delivery.</p>
+    <p>How county rules, purchasing arrangements, and approval chains shape what frontline facilities can actually do.</p>
   </article>
-  <article class="research-interest-card">
+  <article class="research-interest-tile">
     <h4>NCD care in primary health systems</h4>
-    <p>Hypertension and diabetes management, medicine continuity, and the operational realities of rural chronic care.</p>
+    <p>Hypertension and diabetes care, medicine continuity, and the operational conditions required for chronic-care delivery.</p>
   </article>
-  <article class="research-interest-card">
+  <article class="research-interest-tile">
     <h4>Mixed-methods health systems research</h4>
-    <p>Combining routine records, structured facility data, interviews, and implementation context into policy-relevant evidence.</p>
+    <p>Combining records, interviews, and implementation context to explain not just what failed, but why it failed.</p>
   </article>
-  <article class="research-interest-card">
+  <article class="research-interest-tile">
     <h4>Life-course diabetes epidemiology</h4>
-    <p>Urbanization, work history, and the social pathways through which diabetes risk accumulates across the life course.</p>
+    <p>Urbanization, work history, and the pathways through which diabetes risk accumulates and returns to rural settings.</p>
   </article>
-  <article class="research-interest-card">
+  <article class="research-interest-tile">
     <h4>Community-delivered intervention design</h4>
-    <p>Participatory models for lifestyle support, diabetes self-management, and locally grounded implementation strategies.</p>
+    <p>Locally grounded support models for chronic disease management, lifestyle change, and implementation feasibility.</p>
   </article>
-  <article class="research-interest-card">
-    <h4>Research data systems and reproducibility</h4>
-    <p>Practical data architecture, survey workflows, and transparent reporting for health research teams.</p>
+  <article class="research-interest-tile">
+    <h4>Research data systems</h4>
+    <p>Practical workflows for data capture, data quality, reproducibility, and research operations in real project environments.</p>
   </article>
 </div>
 ```
 
-## Current agenda
+## Selected publications and contributions
 
 ```{=html}
-<div class="research-track-grid">
-  <article class="research-track-card">
-    <p class="research-track-kicker">Now</p>
-    <h4>Thesis completion</h4>
-    <p>Finalizing thesis revisions, presentation materials, and administrative requirements for expected graduation in December 2026.</p>
+<div class="research-publication-stack">
+  <article class="research-citation-card research-citation-featured">
+    <p class="research-citation-meta">First author · Forthcoming</p>
+    <h3 class="research-citation-title">Financial Determinants of Effective Hypertension and Diabetes Care in Rural Primary Health Facilities in Kisumu, Kenya: A Mixed-Methods Study</h3>
+    <p class="research-citation-body">Forthcoming in <em>BMC Public Health</em>. Role: study design, mixed-methods analysis, interpretation, and writing.</p>
   </article>
-  <article class="research-track-card">
-    <p class="research-track-kicker">Next</p>
-    <h4>SHA transition follow-up</h4>
-    <p>Building on the accepted paper to study how the Social Health Authority changes facility liquidity, approvals, and chronic-care continuity.</p>
+
+  <article class="research-citation-card">
+    <p class="research-citation-meta">Co-author</p>
+    <h3 class="research-citation-title">Addressing priority gaps in access and quality of NCD services in primary care settings in rural Kenya: A participatory approach to intervention development</h3>
+    <p class="research-citation-body">Role: conceptualization, data collection, management, analysis, and co-writing results and discussion.</p>
   </article>
-  <article class="research-track-card">
-    <p class="research-track-kicker">Developing</p>
-    <h4>Diabetes risk and community pathways</h4>
-    <p>Extending the financing work toward life-course diabetes risk, community-based lifestyle modification, and implementation science in rural Kenya.</p>
+
+  <article class="research-citation-card">
+    <p class="research-citation-meta">Co-author</p>
+    <h3 class="research-citation-title">Characteristics and mortality risk among esophageal cancer patients with varied HIV status seeking care in western Kenya: A 10-year analysis</h3>
+    <p class="research-citation-body">Role: data management and analysis.</p>
+  </article>
+
+  <article class="research-citation-card">
+    <p class="research-citation-meta">Co-author</p>
+    <h3 class="research-citation-title">Survival disparities in cervical cancer patients with and without HIV at Jaramogi Oginga Odinga Teaching and Referral Hospital</h3>
+    <p class="research-citation-body">Role: data management and analysis.</p>
   </article>
 </div>
 ```
 
 ## Collaboration
 
-I am interested in collaborations on health systems research, chronic disease management, mixed-methods implementation studies, research data systems, and public-health analytics in Africa.
-
-[Email me](mailto:nichodemuswerre@gmail.com){.btn-solid} [View the thesis page](thesis.qmd){.btn-ghost}
+```{=html}
+<div class="research-collab-card">
+  <p>I am interested in collaborations on health systems research, chronic disease management, mixed-methods implementation studies, research data systems, and public-health analytics in Africa.</p>
+  <div class="research-actions">
+    <a href="mailto:nichodemuswerre@gmail.com" class="btn-solid">Email me</a>
+    <a href="thesis.html" class="btn-ghost">View thesis</a>
+  </div>
+</div>
+```

@@ -38,7 +38,7 @@ Outside of data: I keep goats and tend a kitchen garden in Homa Bay. There is so
   </div>
   <div style="margin-bottom:0.75rem;">
     <p style="font-size:0.88rem;font-weight:500;color:var(--ink);margin:0 0 0.1rem;">MSc Candidate — Biostatistics &amp; Epidemiology</p>
-    <p style="font-size:0.78rem;color:var(--muted);margin:0;">JOOUST · Thesis clearance in progress · Target graduation Dec 2026</p>
+    <p style="font-size:0.78rem;color:var(--muted);margin:0;">JOOUST · Final thesis stage · Expected graduation Dec 2026</p>
   </div>
   <div>
     <p style="font-size:0.88rem;font-weight:500;color:var(--ink);margin:0 0 0.1rem;">Part-Time Lecturer — Biostatistics</p>
@@ -53,7 +53,7 @@ Outside of data: I keep goats and tend a kitchen garden in Homa Bay. There is so
     <div>🗣️ English, Kiswahili, Dholuo</div>
     <div>🏛️ NGO · Corporate · Research · Government</div>
     <div>🎓 MSc Thesis: NCD financing, Kisumu County</div>
-    <div>📝 First-author manuscript accepted in BMC Public Health</div>
+    <div>📝 First-author paper forthcoming in BMC Public Health</div>
     <div>📚 Co-authored publications in oncology and epidemiology</div>
   </div>
 </div>
@@ -150,7 +150,7 @@ That shows up in how I approach M&E: not as a compliance checklist, but as a lea
 - Built real-time high-frequency check (HFC) systems in R and Stata across multi-country RCTs, catching data errors before they compound.
 - Managed a field team of 50+ enumerators across Kenya, Uganda, and Tanzania, including remote coordination through the COVID-19 pandemic.
 - Designed and digitised the M&E framework for a 1,535-site health programme: XLSForm coding through DHIS2 integration.
-- First-author manuscript accepted in *BMC Public Health* on financing constraints and chronic NCD care in rural Kisumu.
+- First-author paper forthcoming in *BMC Public Health* on financing constraints and chronic NCD care in rural Kisumu.
 - Co-authored oncology and epidemiology publications from KEMRI and university collaborations.
 - Identified procurement inefficiencies that saved an estimated KES 20M+ through analysis alone.
 

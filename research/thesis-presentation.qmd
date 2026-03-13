@@ -16,7 +16,7 @@ format:
     width: 1360
     height: 768
     chalkboard: true
-    footer: "Nichodemus Amollo · Accepted manuscript in BMC Public Health"
+    footer: "Nichodemus Amollo · Forthcoming in BMC Public Health"
 ---
 
 ## {background-image="../img/professor nyongo launching the dashboard.jpeg" background-opacity="0.2"}
@@ -24,7 +24,7 @@ format:
 ::: {.deck-hero}
 <h1>Financial Determinants of Effective Hypertension and Diabetes Care</h1>
 <p class="deck-sub">A mixed methods study in rural primary health facilities in Kisumu County, Kenya.</p>
-<p class="deck-status">Accepted in BMC Public Health · thesis finalization in progress for expected December 2026 graduation</p>
+<p class="deck-status">Forthcoming in BMC Public Health · final thesis stage</p>
 <p class="deck-meta">Nichodemus Werre Amollo · MSc Epidemiology and Biostatistics</p>
 :::
 

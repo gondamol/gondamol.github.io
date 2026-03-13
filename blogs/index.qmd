@@ -1,6 +1,6 @@
 ---
-title: "Blog & Essays"
-subtitle: "Research translation, technical notes, and career writing from health data practice"
+title: "Essays & Field Notes"
+subtitle: "Research translation, technical notes, and practical writing from health data work"
 page-layout: full
 listing:
   contents: 
@@ -14,89 +14,181 @@ listing:
 ---
 
 ```{=html}
-<div class="blog-shell">
-  <section class="blog-hero">
-    <div class="blog-hero-copy">
+<div class="blog-page">
+  <section class="blog-command-deck">
+    <div class="blog-command-copy">
       <span class="section-eyebrow">Writing</span>
-      <h1 class="blog-title">From manuscripts and field notes to practical public writing.</h1>
-      <p class="blog-lead">This section mixes research translation, health-systems commentary, technical tutorials, and career essays. The common thread is simple: make complex work useful to people who have to act on it.</p>
+      <p class="blog-overline">Research translation · Methods · Career · Field systems</p>
+      <h1 class="blog-command-title">A writing studio for public-health research, analytics practice, and the work around the work.</h1>
+      <p class="blog-command-lead">Use the explorer to move between research essays, technical notes, career strategy, and field systems writing. The goal is not volume. It is clarity, usefulness, and work that feels grounded in practice.</p>
       <div class="blog-hero-actions">
         <a href="../posts/47-facility-decision-space-chronic-care/index.html" class="btn-solid">Read the flagship essay</a>
         <a href="../research/publications.html" class="btn-ghost">Explore research</a>
       </div>
     </div>
 
-    <div class="blog-metric-grid" aria-label="Writing overview">
-      <article class="blog-metric-card">
+    <div class="blog-command-aside" aria-label="Writing overview">
+      <article class="blog-aside-card">
+        <p class="blog-kicker">Flagship essay</p>
+        <h3>When Clinics Can Diagnose but Cannot Buy Medicines</h3>
+        <p>The public essay built from the BMC Public Health paper and written for readers beyond academic journals.</p>
+        <a href="../posts/47-facility-decision-space-chronic-care/index.html">Open essay →</a>
+      </article>
+
+      <article class="blog-aside-card blog-aside-metric">
         <span class="blog-metric-value">50+</span>
-        <span class="blog-metric-label">Published posts across analytics, health, and career growth</span>
-      </article>
-      <article class="blog-metric-card">
-        <span class="blog-metric-value">1</span>
-        <span class="blog-metric-label">Accepted first-author BMC Public Health paper translated into public-facing writing</span>
-      </article>
-      <article class="blog-metric-card">
-        <span class="blog-metric-value">4</span>
-        <span class="blog-metric-label">Main lanes: research, technical tutorials, impact evaluation, and portfolio building</span>
+        <span class="blog-metric-label">Posts across analytics, health research, career development, and monitoring systems</span>
       </article>
     </div>
   </section>
 
-  <section class="blog-spotlight-grid">
-    <article class="blog-feature-card">
-      <p class="blog-kicker">Research spotlight</p>
-      <h2>Why facility decision space matters for chronic care in rural Kenya</h2>
-      <p class="blog-feature-copy">A plain-language essay built from the accepted manuscript: why medicine stockouts are often a governance problem, not just a procurement problem, and what county reforms should do next.</p>
-      <div class="blog-tag-row">
-        <span class="blog-tag">BMC Public Health</span>
-        <span class="blog-tag">Health financing</span>
-        <span class="blog-tag">NCD care</span>
+  <section class="blog-explorer-shell">
+    <div class="blog-filter-bar" role="tablist" aria-label="Blog streams">
+      <button class="blog-filter-btn active" data-filter="all" type="button">All writing</button>
+      <button class="blog-filter-btn" data-filter="research" type="button">Research</button>
+      <button class="blog-filter-btn" data-filter="technical" type="button">Technical</button>
+      <button class="blog-filter-btn" data-filter="career" type="button">Career</button>
+      <button class="blog-filter-btn" data-filter="field" type="button">Field systems</button>
+    </div>
+    <div class="blog-filter-status">
+      <p id="blogFilterLabel">Showing all writing</p>
+      <p id="blogFilterCount">Use the filters to reshape the archive.</p>
+    </div>
+  </section>
+
+  <section class="blog-feature-grid">
+    <article class="blog-story-card blog-story-primary">
+      <p class="blog-story-kicker">Research spotlight</p>
+      <h2>When Clinics Can Diagnose but Cannot Buy Medicines</h2>
+      <p>This essay translates the forthcoming BMC Public Health paper into a sharper public argument about budgets, approvals, and why chronic care fails before treatment ever starts.</p>
+      <div class="blog-story-tags">
+        <span class="blog-story-tag">BMC Public Health</span>
+        <span class="blog-story-tag">Health financing</span>
+        <span class="blog-story-tag">NCD care</span>
       </div>
       <a href="../posts/47-facility-decision-space-chronic-care/index.html" class="btn-solid">Open essay</a>
     </article>
 
     <div class="blog-side-stack">
-      <a class="blog-link-card" href="../posts/22-reproducible-research-public-health/index.html">
-        <p class="blog-kicker">Research methods</p>
+      <a class="blog-story-card blog-story-secondary" href="../posts/22-reproducible-research-public-health/index.html">
+        <p class="blog-story-kicker">Research methods</p>
         <h3>Why reproducible research matters in public health</h3>
-        <p>Transparent workflows, clearer documentation, and why reproducibility is a trust issue in health science.</p>
+        <p>Transparent workflows, better trust, and why method discipline is not optional in health science.</p>
       </a>
 
-      <a class="blog-link-card" href="../posts/30-health-financial-diaries-explainer/index.html">
-        <p class="blog-kicker">Health economics</p>
+      <a class="blog-story-card blog-story-secondary" href="../posts/30-health-financial-diaries-explainer/index.html">
+        <p class="blog-story-kicker">Health economics</p>
         <h3>Health financial diaries</h3>
-        <p>How high-frequency financial data reveals what standard household surveys often miss about care-seeking and coping.</p>
+        <p>How high-frequency financial data reveals what conventional surveys miss about care-seeking and coping.</p>
       </a>
 
-      <a class="blog-link-card" href="../posts/23-r-for-health-researchers/index.html">
-        <p class="blog-kicker">Technical writing</p>
+      <a class="blog-story-card blog-story-secondary" href="../posts/23-r-for-health-researchers/index.html">
+        <p class="blog-story-kicker">Technical writing</p>
         <h3>R for health researchers</h3>
         <p>A practical bridge between analysis, reporting, and reproducible public-health workflows.</p>
       </a>
     </div>
   </section>
-
-  <section class="blog-topic-grid" aria-label="Blog themes">
-    <article class="blog-topic-card">
-      <h3>Research translation</h3>
-      <p>Turn manuscripts, field observations, and policy questions into writing that health managers, collaborators, and non-specialists can actually use.</p>
-    </article>
-    <article class="blog-topic-card">
-      <h3>Technical notes</h3>
-      <p>Tutorials in R, SQL, dashboards, data management, and applied analytics for real project environments.</p>
-    </article>
-    <article class="blog-topic-card">
-      <h3>Career strategy</h3>
-      <p>Advice for analysts and researchers building strong portfolios from low-resource settings and practical work experience.</p>
-    </article>
-    <article class="blog-topic-card">
-      <h3>Field systems</h3>
-      <p>Lessons from survey operations, monitoring systems, health programs, and the everyday friction that shapes data quality.</p>
-    </article>
-  </section>
 </div>
+
+<script>
+(function() {
+  const filterButtons = Array.from(document.querySelectorAll('.blog-filter-btn'));
+  const filterLabel = document.getElementById('blogFilterLabel');
+  const filterCount = document.getElementById('blogFilterCount');
+
+  const streamNames = {
+    all: 'all writing',
+    research: 'research writing',
+    technical: 'technical writing',
+    career: 'career writing',
+    field: 'field systems writing'
+  };
+
+  const rules = [
+    { key: 'career', words: ['career', 'portfolio', 'job search', 'interview', 'salary', 'remote work', 'linkedin', 'personal brand', 'first job', 'roadmap'] },
+    { key: 'field', words: ['monitoring & evaluation', 'impact evaluation', 'survey design', 'data collection', 'field work', 'm&e', 'logframe', 'odk', 'mobile technology', 'data quality', 'health programs'] },
+    { key: 'research', words: ['public health', 'health financing', 'health systems', 'health research', 'research methods', 'cancer research', 'health economics', 'ncd', 'kenya', 'reproducibility'] },
+    { key: 'technical', words: ['r', 'python', 'sql', 'quarto', 'dashboards', 'dashboard', 'tableau', 'power bi', 'data engineering', 'data visualization', 'git', 'github', 'database', 'tools', 'automation'] }
+  ];
+
+  function detectStream(card) {
+    const text = [
+      ...Array.from(card.querySelectorAll('.listing-category')).map((node) => node.textContent || ''),
+      card.querySelector('.listing-title')?.textContent || '',
+      card.querySelector('.listing-subtitle')?.textContent || ''
+    ].join(' ').toLowerCase();
+
+    for (const rule of rules) {
+      if (rule.words.some((word) => text.includes(word))) {
+        return rule.key;
+      }
+    }
+    return 'technical';
+  }
+
+  function decorateCards() {
+    const cards = Array.from(document.querySelectorAll('#listing-listing .quarto-post'));
+    cards.forEach((card) => {
+      const stream = detectStream(card);
+      card.dataset.stream = stream;
+
+      const body = card.querySelector('.body');
+      if (body && !body.querySelector('.blog-stream-badge')) {
+        const badge = document.createElement('span');
+        badge.className = 'blog-stream-badge';
+        badge.textContent = streamNames[stream];
+        body.prepend(badge);
+      }
+    });
+    return cards;
+  }
+
+  function applyFilter(stream) {
+    const cards = Array.from(document.querySelectorAll('#listing-listing .quarto-post'));
+    let visible = 0;
+
+    cards.forEach((card) => {
+      const show = stream === 'all' || card.dataset.stream === stream;
+      card.classList.toggle('blog-post-hidden', !show);
+      if (show) visible += 1;
+    });
+
+    filterButtons.forEach((button) => {
+      button.classList.toggle('active', button.dataset.filter === stream);
+    });
+
+    if (filterLabel) {
+      filterLabel.textContent = stream === 'all'
+        ? 'Showing all writing'
+        : `Showing ${streamNames[stream]}`;
+    }
+
+    if (filterCount) {
+      filterCount.textContent = `${visible} posts visible`;
+    }
+  }
+
+  function init() {
+    const cards = decorateCards();
+    if (!cards.length) return;
+
+    filterButtons.forEach((button) => {
+      button.addEventListener('click', () => applyFilter(button.dataset.filter || 'all'));
+    });
+
+    applyFilter('all');
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init, { once: true });
+  } else {
+    init();
+  }
+})();
+</script>
 ```
 
-## Latest writing
+## Archive
 
 Recent essays and tutorials, sorted from newest to oldest.
