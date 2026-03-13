@@ -10,7 +10,105 @@
 <atom:link href="https://gondamol.github.io/blogs/index.xml" rel="self" type="application/rss+xml"/>
 <description>Data Analyst &amp; Research Data Manager — M&amp;E, Health Analytics, Agriculture, Finance — Nairobi, Kenya</description>
 <generator>quarto-1.8.27</generator>
-<lastBuildDate>Sun, 22 Feb 2026 21:00:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 12 Mar 2026 21:00:00 GMT</lastBuildDate>
+<item>
+  <title>Why Facility Decision Space Matters for Chronic Care in Rural Kenya</title>
+  <dc:creator>Nichodemus Amollo</dc:creator>
+  <link>https://gondamol.github.io/posts/47-facility-decision-space-chronic-care/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>BMC Public Health has accepted my first-author manuscript on the financial determinants of hypertension and diabetes care in rural primary health facilities in Kisumu County. That acceptance is a major academic milestone for me, but it also matters for a larger reason: the study captures a policy contradiction that health workers in rural Kenya deal with every day.</p>
+<p>Clinicians can diagnose hypertension. They can write the prescription. They can explain follow-up. But if the facility cannot spend quickly when medicines run out, the treatment pathway breaks down long before the science does.</p>
+<div class="research-abstract">
+<p><strong>Share-ready abstract:</strong> This study examined how financing arrangements shape hypertension and diabetes care in seven public primary health facilities in Seme Sub-County, Kisumu. Using a convergent parallel mixed-methods design, I combined facility questionnaires, retrospective financial record review, and interviews with facility in-charges. The study found that all facilities prepared plans and budgets, but none had a dedicated NCD budget line, none had full direct spending autonomy, and 85.7 percent reported frequent medicine stockouts. The main implication is that chronic-care continuity depends not only on funding volume, but on facility decision space: the ability to use available funds quickly, locally, and accountably when patient care is at risk.</p>
+</div>
+<section id="the-paradox-at-the-center-of-the-study" class="level2">
+<h2 class="anchored" data-anchor-id="the-paradox-at-the-center-of-the-study">The paradox at the center of the study</h2>
+<p>At first glance, the problem can look like ordinary underfunding. Kenya’s NCD burden is growing, and primary care facilities are already stretched. But the field evidence pointed to something more specific.</p>
+<p>All seven facilities in this study had annual workplans and budgets. All had bank accounts. Yet none had full formal autonomy to spend funds directly when urgent needs emerged. That means a facility could identify an NCD stockout, know where to buy the required medicine locally, and still be forced to wait for approval from a higher administrative level.</p>
+<p>That is the paradox: a system can appear financially organized on paper while remaining operationally paralyzed in practice.</p>
+</section>
+<section id="what-the-data-showed" class="level2">
+<h2 class="anchored" data-anchor-id="what-the-data-showed">What the data showed</h2>
+<p>Several findings kept repeating across the quantitative records and the interviews:</p>
+<ul>
+<li>71.4 percent of facilities depended mainly on NHIF reimbursements and donor support.</li>
+<li>Only 28.6 percent received direct county funding.</li>
+<li>57.1 percent relied on just two active funding streams.</li>
+<li>None had a dedicated NCD budget line.</li>
+<li>None had full direct spending autonomy.</li>
+<li>85.7 percent reported frequent medication stockouts.</li>
+</ul>
+<p>Taken together, those figures describe a system with narrow revenue options, weak protection for chronic-care budgets, and very limited local ability to respond when routine supply channels fail.</p>
+</section>
+<section id="why-this-is-a-governance-problem-not-only-a-supply-problem" class="level2">
+<h2 class="anchored" data-anchor-id="why-this-is-a-governance-problem-not-only-a-supply-problem">Why this is a governance problem, not only a supply problem</h2>
+<p>It is tempting to describe medicine stockouts as a logistics issue. Sometimes they are. But in this study, stockouts were also a financing-governance issue.</p>
+<p>When approval for spending takes weeks, a facility cannot bridge a gap in central supply. When NCD care has no protected budget line, it competes with every other immediate operational pressure. When reimbursements are delayed, planning becomes performative rather than actionable.</p>
+<p>This is why I argue that the sustainability of chronic care depends on <strong>facility decision space</strong>, not only on the total amount of money in the system. If the purse strings remain too far from the point of care, patients experience that distance as missed refills, interrupted treatment, and preventable complications.</p>
+</section>
+<section id="why-the-finding-matters-beyond-seme" class="level2">
+<h2 class="anchored" data-anchor-id="why-the-finding-matters-beyond-seme">Why the finding matters beyond Seme</h2>
+<p>The study was conducted in seven facilities in Seme Sub-County, so it should not be read as a statistical description of every county in Kenya. But the policy mechanisms it identifies are transferable.</p>
+<p>Many decentralized health systems face the same tension:</p>
+<ul>
+<li>central control is used to protect accountability</li>
+<li>frontline facilities are responsible for service delivery</li>
+<li>chronic disease care requires continuity rather than one-off response</li>
+</ul>
+<p>That combination creates friction. The deeper lesson from this work is that accountability systems must be designed so that they do not disable the very care they are supposed to safeguard.</p>
+</section>
+<section id="why-this-matters-now" class="level2">
+<h2 class="anchored" data-anchor-id="why-this-matters-now">Why this matters now</h2>
+<p>Kenya’s transition from NHIF to the Social Health Authority raises an obvious question: will new financing reforms improve the timeliness, predictability, and local usability of funds for chronic care?</p>
+<p>My accepted paper provides a baseline for answering that question. It documents what the system looked like before the new financing environment was fully operational. That matters because reforms are too often judged by legal intent or national announcements rather than by what changes at the facility counter.</p>
+<p>The real test is practical:</p>
+<ol type="1">
+<li>Can facilities access money faster when essential NCD medicines run out?</li>
+<li>Are NCD budgets becoming more visible and more protected?</li>
+<li>Are county approvals becoming quicker and more predictable?</li>
+<li>Do patients experience fewer interruptions in treatment?</li>
+</ol>
+<p>Those are the questions I want the next phase of my thesis and future doctoral research to keep following.</p>
+</section>
+<section id="where-this-research-is-taking-me" class="level2">
+<h2 class="anchored" data-anchor-id="where-this-research-is-taking-me">Where this research is taking me</h2>
+<p>This manuscript is not the end of the story. It has sharpened my research interests around four connected themes:</p>
+<ul>
+<li>health financing and facility-level decision space</li>
+<li>hypertension and diabetes care in rural primary health systems</li>
+<li>mixed-methods health systems research</li>
+<li>community-grounded pathways for better chronic disease management</li>
+</ul>
+<p>The thesis I am finalizing now is part of a broader research direction I want to keep building: evidence that is academically rigorous, operationally useful, and close enough to frontline reality to change actual decisions.</p>
+</section>
+<section id="short-abstract-for-applications-or-social-sharing" class="level2">
+<h2 class="anchored" data-anchor-id="short-abstract-for-applications-or-social-sharing">Short abstract for applications or social sharing</h2>
+<p><strong>Abstract:</strong> This study examined financial determinants of hypertension and diabetes care in seven rural public primary health facilities in Seme Sub-County, Kisumu County, Kenya. Using a convergent parallel mixed-methods design, it combined structured facility questionnaires, retrospective financial record review, and interviews with facility in-charges. All facilities prepared plans and budgets, but none had a dedicated NCD budget line and none had full direct spending autonomy despite holding bank accounts. Most relied on narrow and unstable funding streams, and 85.7 percent reported frequent medicine stockouts. The findings suggest that chronic-care continuity depends not only on the volume of financing but on whether frontline facilities have sufficient decision space to use funds quickly and accountably when patient care is at risk.</p>
+</section>
+<section id="social-media-caption" class="level2">
+<h2 class="anchored" data-anchor-id="social-media-caption">Social media caption</h2>
+<p>My first-author manuscript on financing constraints and chronic NCD care in rural Kenya has been accepted in <em>BMC Public Health</em>. The core finding is simple: facilities can have plans, bank accounts, and trained staff, but if they cannot spend quickly when medicines run out, continuity of care still collapses. I wrote a plain-language essay on why facility decision space matters for hypertension and diabetes care, and why this should shape the next phase of health-financing reform.</p>
+
+
+<!-- -->
+
+</section>
+
+ ]]></description>
+  <category>Public Health</category>
+  <category>Health Financing</category>
+  <category>Health Systems</category>
+  <category>NCDs</category>
+  <category>Kenya</category>
+  <guid>https://gondamol.github.io/posts/47-facility-decision-space-chronic-care/</guid>
+  <pubDate>Thu, 12 Mar 2026 21:00:00 GMT</pubDate>
+  <media:content url="https://gondamol.github.io/img/blog-health.svg" medium="image" type="image/svg+xml"/>
+</item>
 <item>
   <title>Analyzing Agricultural Data from Public Sources</title>
   <dc:creator>Nichodemus Amollo</dc:creator>
@@ -384,7 +482,7 @@ font-style: inherit;">print</span>(p)</span></code></pre></div></div>
   <category>Data Analysis</category>
   <category>Kaggle</category>
   <guid>https://gondamol.github.io/posts/agriculture-data-analysis/</guid>
-  <pubDate>Sun, 22 Feb 2026 21:00:00 GMT</pubDate>
+  <pubDate>Thu, 12 Mar 2026 21:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Creating Beautiful Data Visualizations with R and Python</title>
@@ -800,7 +898,7 @@ Note
   <category>R</category>
   <category>Python</category>
   <guid>https://gondamol.github.io/posts/data-viz-blog-1/</guid>
-  <pubDate>Sun, 22 Feb 2026 21:00:00 GMT</pubDate>
+  <pubDate>Thu, 12 Mar 2026 21:00:00 GMT</pubDate>
 </item>
 <item>
   <title>No Degree? No Problem. Break Into Data in 6 Months (Without Lying on Your CV)</title>
@@ -2398,131 +2496,6 @@ Do you <em>need</em> one to get into data analytics or data science? <strong>Not
   <guid>https://gondamol.github.io/posts/30-health-financial-diaries-explainer/</guid>
   <pubDate>Wed, 29 Oct 2025 21:00:00 GMT</pubDate>
   <media:content url="https://gondamol.github.io/img/blog-health.svg" medium="image" type="image/svg+xml"/>
-</item>
-<item>
-  <title>Impact Evaluation for Beginners: RCTs vs Quasi-Experimental Designs Explained Simply</title>
-  <dc:creator>Nichodemus Amollo</dc:creator>
-  <link>https://gondamol.github.io/posts/29-impact-evaluation-beginners/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<section id="what-is-impact-evaluation-really-asking" class="level2">
-<h2 class="anchored" data-anchor-id="what-is-impact-evaluation-really-asking">What Is Impact Evaluation Really Asking?</h2>
-<p>Impact evaluation asks a simple but hard question:</p>
-<blockquote class="blockquote">
-<p><strong>What would have happened to these people or places if the program never existed?</strong></p>
-</blockquote>
-<p>Because we can’t see the “alternate universe,” we build designs that <strong>approximate</strong> it.</p>
-<hr>
-</section>
-<section id="rcts-in-plain-language" class="level2">
-<h2 class="anchored" data-anchor-id="rcts-in-plain-language">RCTs in Plain Language</h2>
-<p>Randomized Controlled Trials (RCTs):</p>
-<ul>
-<li>Randomly assign units (people, facilities, communities) to:
-<ul>
-<li>Treatment group (gets the program)</li>
-<li>Control group (does not)</li>
-</ul></li>
-<li>Because assignment is random:
-<ul>
-<li>Groups are <em>similar on average</em> at baseline</li>
-<li>Differences at follow-up can be attributed to the program</li>
-</ul></li>
-</ul>
-<p>When to use RCTs:</p>
-<ul>
-<li>When randomization is ethical and feasible</li>
-<li>When you have clear units of assignment</li>
-<li>When funders or policymakers need strong causal evidence</li>
-</ul>
-<hr>
-</section>
-<section id="when-you-cant-randomize-quasi-experimental-designs" class="level2">
-<h2 class="anchored" data-anchor-id="when-you-cant-randomize-quasi-experimental-designs">When You Can’t Randomize: Quasi-Experimental Designs</h2>
-<p>Quasi-experimental designs help when:</p>
-<ul>
-<li>The program was rolled out based on policy decisions</li>
-<li>You can’t control assignment, but you <strong>can</strong> observe:
-<ul>
-<li>Timing</li>
-<li>Eligibility rules</li>
-<li>Other patterns</li>
-</ul></li>
-</ul>
-<p>Common designs:</p>
-<ul>
-<li><strong>Difference-in-Differences (DiD):</strong>
-<ul>
-<li>Compare change over time in treated vs comparison groups</li>
-</ul></li>
-<li><strong>Regression Discontinuity (RD):</strong>
-<ul>
-<li>Use a cutoff (score, income, age) that decides who gets treatment</li>
-</ul></li>
-<li><strong>Propensity Score Matching (PSM):</strong>
-<ul>
-<li>Match treated units to “similar” untreated ones based on observed characteristics</li>
-</ul></li>
-</ul>
-<hr>
-</section>
-<section id="how-to-explain-this-to-non-technical-stakeholders" class="level2">
-<h2 class="anchored" data-anchor-id="how-to-explain-this-to-non-technical-stakeholders">How to Explain This to Non-Technical Stakeholders</h2>
-<p>Avoid jargon like “average treatment effect.” Instead say:</p>
-<ul>
-<li>“We compared similar groups over time to see if the program made a difference.”</li>
-<li>“The only systematic difference between these groups is the program.”</li>
-<li>“Our design tries to isolate the impact of the program from other changes happening in the country.”</li>
-</ul>
-<p>Use visuals:</p>
-<ul>
-<li>Simple before/after charts</li>
-<li>Timeline diagrams</li>
-<li>clear labels: “Comparison Group” vs “Program Group”</li>
-</ul>
-<hr>
-</section>
-<section id="where-beginners-can-start" class="level2">
-<h2 class="anchored" data-anchor-id="where-beginners-can-start">Where Beginners Can Start</h2>
-<ul>
-<li>Read:
-<ul>
-<li>World Bank “Impact Evaluation in Practice”</li>
-<li>JPAL and IPA evaluation summaries</li>
-</ul></li>
-<li>Practice:
-<ul>
-<li>Simulate simple RCTs in R</li>
-<li>Recreate difference-in-differences with public panel data</li>
-</ul></li>
-<li>Portfolio idea:
-<ul>
-<li>Write a 2–3 page “evaluation design note” for a hypothetical health program, with:
-<ul>
-<li>Research question</li>
-<li>Indicators</li>
-<li>Design choice (RCT or quasi-experimental) and why</li>
-</ul></li>
-</ul></li>
-</ul>
-<p>If you can explain impact evaluation <strong>without</strong> jargon, you’ll be rare—and extremely useful to real projects.</p>
-
-
-<!-- -->
-
-</section>
-
- ]]></description>
-  <category>Impact Evaluation</category>
-  <category>Causal Inference</category>
-  <category>Monitoring &amp; Evaluation</category>
-  <guid>https://gondamol.github.io/posts/29-impact-evaluation-beginners/</guid>
-  <pubDate>Tue, 28 Oct 2025 21:00:00 GMT</pubDate>
-  <media:content url="https://gondamol.github.io/img/blog-mande.svg" medium="image" type="image/svg+xml"/>
 </item>
 </channel>
 </rss>
