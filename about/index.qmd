@@ -38,7 +38,7 @@ Outside of data: I keep goats and tend a kitchen garden in Homa Bay. There is so
   </div>
   <div style="margin-bottom:0.75rem;">
     <p style="font-size:0.88rem;font-weight:500;color:var(--ink);margin:0 0 0.1rem;">MSc Candidate — Biostatistics &amp; Epidemiology</p>
-    <p style="font-size:0.78rem;color:var(--muted);margin:0;">JOOUST · Kenya</p>
+    <p style="font-size:0.78rem;color:var(--muted);margin:0;">JOOUST · Thesis clearance in progress · Target graduation Dec 2026</p>
   </div>
   <div>
     <p style="font-size:0.88rem;font-weight:500;color:var(--ink);margin:0 0 0.1rem;">Part-Time Lecturer — Biostatistics</p>
@@ -53,7 +53,8 @@ Outside of data: I keep goats and tend a kitchen garden in Homa Bay. There is so
     <div>🗣️ English, Kiswahili, Dholuo</div>
     <div>🏛️ NGO · Corporate · Research · Government</div>
     <div>🎓 MSc Thesis: NCD financing, Kisumu County</div>
-    <div>📝 3 co-authored publications (oncology, epidemiology)</div>
+    <div>📝 First-author manuscript accepted in BMC Public Health</div>
+    <div>📚 Co-authored publications in oncology and epidemiology</div>
   </div>
 </div>
 
@@ -79,6 +80,31 @@ Outside of data: I keep goats and tend a kitchen garden in Homa Bay. There is so
 I believe data has a side — it either serves the people it was collected from, or it serves the institutions that collected it. My goal is always the former.
 
 That shows up in how I approach M&E: not as a compliance checklist, but as a learning system. It shows up in how I train enumerators: I want them to understand why the question is structured the way it is, not just how to tap the screen. And it shows up in how I write reports: I want to change a decision, not demonstrate that I can run a regression.
+
+---
+
+## Research interests
+
+```{=html}
+<div class="research-interest-grid" style="margin:1.2rem 0 3rem;">
+  <article class="research-interest-card">
+    <h4>Health financing and governance</h4>
+    <p>Facility decision space, reimbursement delays, and how devolved systems translate policy into actual care.</p>
+  </article>
+  <article class="research-interest-card">
+    <h4>NCDs in primary care</h4>
+    <p>Hypertension and diabetes management, medicine continuity, and service delivery quality in rural settings.</p>
+  </article>
+  <article class="research-interest-card">
+    <h4>Mixed-methods research</h4>
+    <p>Using records, interviews, and operational data together to explain not just what failed, but why.</p>
+  </article>
+  <article class="research-interest-card">
+    <h4>Implementation and community pathways</h4>
+    <p>Designing practical interventions that fit community realities rather than importing solutions unchanged.</p>
+  </article>
+</div>
+```
 
 ---
 
@@ -124,7 +150,8 @@ That shows up in how I approach M&E: not as a compliance checklist, but as a lea
 - Built real-time high-frequency check (HFC) systems in R and Stata across multi-country RCTs, catching data errors before they compound.
 - Managed a field team of 50+ enumerators across Kenya, Uganda, and Tanzania, including remote coordination through the COVID-19 pandemic.
 - Designed and digitised the M&E framework for a 1,535-site health programme: XLSForm coding through DHIS2 integration.
-- Three co-authored publications on cancer epidemiology from the KEMRI dataset years.
+- First-author manuscript accepted in *BMC Public Health* on financing constraints and chronic NCD care in rural Kisumu.
+- Co-authored oncology and epidemiology publications from KEMRI and university collaborations.
 - Identified procurement inefficiencies that saved an estimated KES 20M+ through analysis alone.
 
 [View full CV →](../cv/index.qmd){.btn-solid style="margin-top:1.5rem;display:inline-block;"}

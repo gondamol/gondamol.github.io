@@ -17,10 +17,12 @@ format:
   <section class="thesis-hero">
     <span class="section-eyebrow">MSc Thesis</span>
     <h1 class="thesis-title">Financial Determinants of Effective Hypertension and Diabetes Care in Rural Primary Health Facilities in Kisumu, Kenya: A Mixed Methods Study</h1>
+    <p class="thesis-status">Accepted manuscript in <em>BMC Public Health</em> · Thesis finalization and administrative clearance in progress for expected December 2026 graduation</p>
     <p class="thesis-meta">Nichodemus Werre Amollo · Jaramogi Oginga Odinga University of Science and Technology · Kisumu County, Kenya</p>
     <div class="thesis-actions">
       <a href="publications_files/01_NCDFin_ManuscriptV4.pdf" class="btn-solid" target="_blank">View Manuscript</a>
       <a href="publications_files/01_NCDFin_ManuscriptV4.pdf" class="btn-ghost" download>Download PDF</a>
+      <a href="publications.html" class="btn-ghost">Research Page</a>
       <a href="thesis-presentation.html" class="btn-ghost">Presentation</a>
     </div>
   </section>
@@ -31,16 +33,16 @@ format:
       <span class="thesis-kpi-label">Public primary care facilities</span>
     </article>
     <article class="thesis-kpi-card">
-      <span class="thesis-kpi-num">2024</span>
-      <span class="thesis-kpi-label">Financial review period: Jan to Aug</span>
+      <span class="thesis-kpi-num">BMC</span>
+      <span class="thesis-kpi-label">Accepted manuscript status</span>
     </article>
     <article class="thesis-kpi-card">
       <span class="thesis-kpi-num">85.7%</span>
       <span class="thesis-kpi-label">Facilities with frequent medicine stockouts</span>
     </article>
     <article class="thesis-kpi-card">
-      <span class="thesis-kpi-num">100%</span>
-      <span class="thesis-kpi-label">Facilities without direct spending autonomy</span>
+      <span class="thesis-kpi-num">0%</span>
+      <span class="thesis-kpi-label">Facilities with full direct spending autonomy</span>
     </article>
   </section>
 </div>
@@ -48,13 +50,13 @@ format:
 
 ## Abstract {#abstract}
 
-**Background:** Non communicable diseases, especially hypertension and diabetes, account for a substantial share of mortality in Kenya. Despite health service devolution to county governments since 2013, financing for chronic care at the primary health care level remains weak. This study examined financial determinants shaping hypertension and diabetes care in rural Kisumu County.
+**Background:** Noncommunicable diseases, including hypertension and diabetes, account for approximately 27 percent of all deaths in Kenya, while 26 percent of adults have elevated blood pressure. Despite devolution of health services to county governments in 2013, financing for chronic disease management at the primary health care level remains weak. This study examined financial determinants shaping hypertension and diabetes care in rural Kisumu County.
 
-**Methods:** The study used a convergent parallel mixed methods cross sectional design in seven public primary health care facilities in Seme Sub County. Quantitative data came from structured questionnaires and retrospective financial record review for January to August 2024. Qualitative data came from in depth interviews with facility in charges. Quantitative analysis used descriptive statistics in STATA v16 and qualitative analysis used thematic coding in R.
+**Methods:** We conducted a convergent parallel mixed-methods cross-sectional study in seven public primary health care facilities in Seme Sub-County. Quantitative data came from structured questionnaires and retrospective document review of financial records from January to August 2024. Qualitative data came from key informant interviews with facility in-charges. Descriptive statistics were produced in STATA v16 and qualitative data were analyzed thematically in R.
 
-**Results:** All seven facilities prepared annual workplans and budgets, but none achieved comprehensive NCD specific planning with a dedicated NCD budget line. Most facilities depended on NHIF reimbursements and donor support, while few received direct county funding. All facilities had bank accounts, but none had full spending autonomy. County level expenditure approval often took weeks to months, limiting timely local procurement during stockouts. Frequent medicine stockouts were reported by 85.7 percent of facilities.
+**Results:** All seven facilities prepared annual workplans and budgets, but none achieved comprehensive NCD-specific planning with a dedicated NCD budget line. Funding sources were narrow: 71.4 percent of facilities depended on NHIF reimbursements and donor support, only 28.6 percent received direct county funding, and 57.1 percent relied on just two funding streams. Although all facilities held bank accounts, none had formal financial autonomy. County-level expenditure approval typically took 3 to 4 weeks and sometimes more than 2 months, limiting timely local procurement during stockouts. Frequent medicine stockouts were reported by 85.7 percent of facilities.
 
-**Conclusion:** Facility level financing constraints are strongly linked to weaker chronic disease service continuity in rural primary care. Strengthening facility spending autonomy, ring fencing NCD budgets, diversifying financing, and speeding disbursement and emergency procurement are critical for effective and equitable chronic care delivery under UHC.
+**Conclusion:** Rural primary health care facilities operate under structural governance failures that systematically undermine effective NCD care. The centralization of financial authority at county level, absence of ring-fenced NCD budgets, and misalignment between planning processes and resource allocation create a chronic-care system that can prescribe treatment but cannot reliably sustain it. Strengthening facility decision space, protecting NCD budgets, and reforming disbursement and emergency procurement pathways are critical for equitable chronic care under Kenya's UHC agenda.
 
 ## Scientific Contribution {#contribution}
 
@@ -164,9 +166,10 @@ format:
     <a href="publications_files/01_NCDFin_ManuscriptV4.pdf" class="btn-solid" target="_blank">Open Manuscript</a>
     <a href="publications_files/01_NCDFin_ManuscriptV4.pdf" class="btn-ghost" download>Download Manuscript</a>
   </div>
+  <p class="thesis-manuscript-note">Accepted in <em>BMC Public Health</em>. Journal production details are pending; the PDF linked here is the accepted manuscript version used for thesis and presentation purposes.</p>
 </div>
 ```
 
 Suggested citation:
 
-Amollo N W, Ogol J, Museve E, Owenga J A, Aduda D O, Onguru D. Financial Determinants of Effective Hypertension and Diabetes Care in Rural Primary Health Facilities in Kisumu, Kenya: A Mixed Methods Study. Manuscript Version 4. Published February 22, 2026.
+Amollo N W, Ogol J, Museve E, Owenga J A, Aduda D O, Onguru D. Financial Determinants of Effective Hypertension and Diabetes Care in Rural Primary Health Facilities in Kisumu, Kenya: A Mixed Methods Study. Accepted manuscript. *BMC Public Health*. 2026.

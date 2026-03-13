@@ -1,198 +1,137 @@
 ---
-title: "Research & Publications"
-subtitle: "Academic Contributions and Ongoing Research"
+title: "Research"
+subtitle: "Accepted publication, thesis work, and the questions I want to keep answering"
 page-layout: full
 ---
 
-## **Current Research**
+```{=html}
+<div class="research-shell">
+  <section class="research-hero">
+    <span class="section-eyebrow">Research</span>
+    <h1 class="research-title">Studying how financing, governance, and delivery systems shape chronic care in rural Kenya.</h1>
+    <p class="research-lead">My first-author mixed-methods manuscript on hypertension and diabetes care in Seme Sub-County has been accepted for publication in <em>BMC Public Health</em>. I am currently finalizing the thesis and administrative requirements for expected graduation in December 2026.</p>
+    <div class="research-actions">
+      <a href="thesis.html" class="btn-solid">View thesis</a>
+      <a href="publications_files/01_NCDFin_ManuscriptV4.pdf" class="btn-ghost" target="_blank">Read manuscript PDF</a>
+      <a href="../posts/47-facility-decision-space-chronic-care/index.html" class="btn-ghost">Read plain-language essay</a>
+    </div>
+  </section>
 
-::: {.project-card}
-::: {.project-header}
-### 🎓 MSc Thesis (Preprint Available)
-:::
+  <section class="research-kpi-grid" aria-label="Research milestones">
+    <article class="research-kpi-card">
+      <span class="research-kpi-value">BMC</span>
+      <span class="research-kpi-label">First-author manuscript accepted in BMC Public Health</span>
+    </article>
+    <article class="research-kpi-card">
+      <span class="research-kpi-value">7</span>
+      <span class="research-kpi-label">Public primary-care facilities studied in Seme Sub-County</span>
+    </article>
+    <article class="research-kpi-card">
+      <span class="research-kpi-value">Dec 2026</span>
+      <span class="research-kpi-label">Expected MSc graduation after thesis clearance</span>
+    </article>
+  </section>
+</div>
+```
 
-::: {.project-body}
-**Title:** Financial Determinants of Effective Hypertension and Diabetes Care in Rural Primary Health Facilities in Kisumu, Kenya: A Mixed-Methods Study
+## Featured publication
 
-**Status:** Preprint (not peer reviewed) — [DOI: 10.21203/rs.3.rs-8079392/v1](https://doi.org/10.21203/rs.3.rs-8079392/v1)  
-**License:** CC BY 4.0  
-**Expected Journal Submission:** 2025
+```{=html}
+<article class="research-pub-card">
+  <p class="research-pub-meta">Accepted manuscript · BMC Public Health</p>
+  <h3>Financial Determinants of Effective Hypertension and Diabetes Care in Rural Primary Health Facilities in Kisumu, Kenya: A Mixed-Methods Study</h3>
+  <p class="research-pub-lead">This first-author study examines how Kenya's devolved financing architecture shapes chronic care delivery for hypertension and diabetes in seven rural public facilities. The central finding is blunt: facilities can plan for NCD care, but without spending autonomy and protected budgets they cannot reliably sustain it.</p>
+  <div class="research-stat-grid">
+    <div class="research-stat">
+      <strong>71.4%</strong>
+      <span>depended mainly on NHIF reimbursements and donor support</span>
+    </div>
+    <div class="research-stat">
+      <strong>0%</strong>
+      <span>had full spending autonomy despite holding bank accounts</span>
+    </div>
+    <div class="research-stat">
+      <strong>85.7%</strong>
+      <span>reported frequent medication stockouts</span>
+    </div>
+  </div>
+</article>
+```
 
-**Key Focus Areas:**
-- Health facility financing and resource allocation
-- Non-communicable disease (NCD) management outcomes
-- Cost-effectiveness analysis
-- Policy recommendations for sustainable NCD financing
+- Core contribution: shows that chronic-care failure in rural primary care is often a governance and decision-space problem, not only a funding-volume problem.
+- Methods: convergent parallel mixed methods using structured facility questionnaires, retrospective financial record review, and interviews with facility in-charges.
+- Policy value: provides a baseline for evaluating the transition from NHIF to the Social Health Authority and for redesigning facility-level financial autonomy.
+- Public writing version: [Why facility decision space matters for chronic care in rural Kenya](../posts/47-facility-decision-space-chronic-care/index.qmd)
 
-[Read Preprint →](https://doi.org/10.21203/rs.3.rs-8079392/v1){.cta-button} [View Thesis Project →](thesis.qmd){.cta-button}
-:::
-:::
+## Selected contributions
 
----
+1. **Amollo, N. W.**, Ogol, J., Museve, E., Owenga, J. A., Aduda, D. O., Onguru, D. *Financial Determinants of Effective Hypertension and Diabetes Care in Rural Primary Health Facilities in Kisumu, Kenya: A Mixed-Methods Study.* Accepted in *BMC Public Health*.
+   Role: First author; study design, mixed-methods analysis, interpretation, and writing.
 
-## **Publications**
+2. Ouma, O. J., Omondi, D., Akinyi, I., **Amollo, N. W.**, Ogutu, S., Obinge, E., et al. *Addressing priority gaps in access and quality of NCD services in primary care settings in rural Kenya: A participatory approach to intervention development.*
+   Role: Conceptualization, data collection, management, analysis, and co-writing results and discussion.
 
-### **Peer-Reviewed Journal Articles**
+3. Mangale, D. I., Adhiambo, H., Adagi, P. A., Nyandieka, E., Abente, B., Achieng, S., **Amollo, N. W.**, and Odeny, T. A. *Characteristics and mortality risk among esophageal cancer patients with varied HIV status seeking care in western Kenya: A 10-year analysis.*
+   Role: Data management and analysis.
 
-1. Mangale, D. I., Adhiambo, H., Adagi, P. A., Nyandieka, E., Abente, B., Achieng, S., … **Amollo, N. W.**, & Odeny, T. A. (2025). Characteristics and mortality risk among esophageal cancer patients with varied HIV status seeking care in western Kenya: A 10-year analysis. [In Press]
-   - Role: Data manager and analyst
+4. Odeny, T. A., Adhiambo, H. F., Mangale, D. I., Were, N. A., Nyandieka, E., Adagi, P. A., **Amollo, N. W.**, and Atieno, D. *Survival disparities in cervical cancer patients with and without HIV at Jaramogi Oginga Odinga Teaching and Referral Hospital.*
+   Role: Data management and analysis.
 
-2. Odeny, T. A., Adhiambo, H. F., Mangale, D. I., Were, N. A., Nyandieka, E., Adagi, P. A., … **Amollo, N. W.**, & Atieno, D. (2025). Survival disparities in cervical cancer patients with and without HIV at Jaramogi Oginga Odinga Teaching and Referral Hospital (JOOTRH). [In Press]
-   - Role: Data manager and analyst
+## Research interests
 
-3. Ouma, O. J., Omondi, D., Akinyi, I., **Amollo, N. W.**, Ogutu, S., Obinge, E., … van Olmen, J. (2025). Addressing priority gaps in access and quality of NCD services in primary care settings in rural Kenya: A participatory approach to intervention development. [In Press]
-   - Role: Conceptualization, data collection, management, analysis, and co-writing results & discussion
+```{=html}
+<div class="research-interest-grid">
+  <article class="research-interest-card">
+    <h4>Health financing and decision space</h4>
+    <p>How county financing rules, reimbursement flows, and facility autonomy shape frontline service delivery.</p>
+  </article>
+  <article class="research-interest-card">
+    <h4>NCD care in primary health systems</h4>
+    <p>Hypertension and diabetes management, medicine continuity, and the operational realities of rural chronic care.</p>
+  </article>
+  <article class="research-interest-card">
+    <h4>Mixed-methods health systems research</h4>
+    <p>Combining routine records, structured facility data, interviews, and implementation context into policy-relevant evidence.</p>
+  </article>
+  <article class="research-interest-card">
+    <h4>Life-course diabetes epidemiology</h4>
+    <p>Urbanization, work history, and the social pathways through which diabetes risk accumulates across the life course.</p>
+  </article>
+  <article class="research-interest-card">
+    <h4>Community-delivered intervention design</h4>
+    <p>Participatory models for lifestyle support, diabetes self-management, and locally grounded implementation strategies.</p>
+  </article>
+  <article class="research-interest-card">
+    <h4>Research data systems and reproducibility</h4>
+    <p>Practical data architecture, survey workflows, and transparent reporting for health research teams.</p>
+  </article>
+</div>
+```
 
-4. **Amollo, N. W.**, Ogol, J., Museve, E., Owenga, J. A., et al. (2024). *Financial Determinants of Effective Hypertension and Diabetes Care in Rural Primary Health Facilities in Kisumu, Kenya: A Mixed-Methods Study.* Preprint. [https://doi.org/10.21203/rs.3.rs-8079392/v1](https://doi.org/10.21203/rs.3.rs-8079392/v1) — CC BY 4.0.
-   - Role: First author; study design, mixed-methods analysis, writing
+## Current agenda
 
----
+```{=html}
+<div class="research-track-grid">
+  <article class="research-track-card">
+    <p class="research-track-kicker">Now</p>
+    <h4>Thesis completion</h4>
+    <p>Finalizing thesis revisions, presentation materials, and administrative requirements for expected graduation in December 2026.</p>
+  </article>
+  <article class="research-track-card">
+    <p class="research-track-kicker">Next</p>
+    <h4>SHA transition follow-up</h4>
+    <p>Building on the accepted paper to study how the Social Health Authority changes facility liquidity, approvals, and chronic-care continuity.</p>
+  </article>
+  <article class="research-track-card">
+    <p class="research-track-kicker">Developing</p>
+    <h4>Diabetes risk and community pathways</h4>
+    <p>Extending the financing work toward life-course diabetes risk, community-based lifestyle modification, and implementation science in rural Kenya.</p>
+  </article>
+</div>
+```
 
-### **Conference Papers**
+## Collaboration
 
-- Characterization of the Top 10 Cancers in the JOOTRH Oncology Database. [Conference paper]
+I am interested in collaborations on health systems research, chronic disease management, mixed-methods implementation studies, research data systems, and public-health analytics in Africa.
 
----
-
-### **Technical Reports & White Papers**
-
-1. **Amollo, N.** (2024). "Guidelines for implementing REDCap in multi-site clinical trials." *LERIS HUB Technical Report Series*, No. 2024-01.
-
-2. **Amollo, N.** & Team. (2023). "Health facility financing assessment: Kisumu County baseline report." *County Health Management Team*, Kisumu County.
-
-3. **Amollo, N.** (2023). "Best practices for survey data management in health research." *JOOUST Research Methods Series*, No. 5.
-
----
-
-### **Blog Posts & Popular Science**
-
-- [Why reproducible research matters in public health](../blogs/index.qmd)
-- [A beginner's guide to R for health researchers](../blogs/index.qmd)
-- [Designing effective mobile data collection systems](../blogs/index.qmd)
-- [Data visualization best practices for health dashboards](../blogs/index.qmd)
-
----
-
-## **Research Interests**
-
-My research focuses on the intersection of health data science, epidemiology, and health systems strengthening:
-
-::: {.skills-grid}
-::: {.skill-category}
-### 🏥 Health Systems Research
-- Health facility financing
-- NCD management in primary care
-- Cost-effectiveness analysis
-- Health economics
-:::
-
-::: {.skill-category}
-### 📊 Data Science Methods
-- Machine learning in healthcare
-- Predictive modeling
-- Causal inference
-- Bayesian statistics
-:::
-
-::: {.skill-category}
-### 🗄️ Data Management
-- Electronic data capture systems
-- Data quality frameworks
-- Survey design and implementation
-- Database management
-:::
-
-::: {.skill-category}
-### 🔬 Epidemiology
-- Non-communicable diseases
-- Computational epidemiology
-- Surveillance systems
-- Health outcomes research
-:::
-:::
-
----
-
-## **Research Collaborations**
-
-I actively collaborate with:
-
-- **Jaramogi Oginga Odinga University of Science and Technology (JOOUST)** - Teaching and research
-- **LERIS HUB** - Data science training and capacity building
-- **County Health Management Teams** - Health systems research
-- **International research networks** - Multi-site clinical trials
-
----
-
-## **Future Research Directions**
-
-::: {.highlight-box}
-### 🎯 PhD Research Aspirations
-
-I plan to pursue doctoral studies focusing on:
-
-- **Statistical methods in clinical trials** - Adaptive designs and Bayesian approaches
-- **Health data interoperability** - Integrating multiple health information systems
-- **R package development** - Creating tools for reproducible health research
-- **Machine learning for health outcomes** - Predictive modeling in resource-limited settings
-
-I'm actively seeking PhD opportunities starting in 2025/2026.
-:::
-
----
-
-## **Research Software**
-
-### **R Packages in Portfolio Plan**
-
-1. **`ncdfinance`** - Tools for analyzing health facility financing for NCDs
-   - Budget analysis functions
-   - Cost-effectiveness calculators
-   - Dashboard templates
-   - [GitHub Repository](https://github.com/gondamol/ncdfinance)
-
-2. **`surveyflow`** - Workflow management for survey data collection
-   - REDCap API integration
-   - Data quality checks
-   - Automated reporting
-   - [GitHub Repository](https://github.com/gondamol/surveyflow)
-
----
-
-## **Peer Review & Editorial Activities**
-
-**Journals Reviewed For:**
-- BMC Public Health
-- PLOS ONE
-- African Journal of Health Sciences
-- East African Medical Journal
-
-**Review Count:** 12+ manuscripts reviewed (2022-2024)
-
----
-
-## **Research Funding**
-
-### **Grants & Awards**
-
-- **MSc Research Grant**, JOOUST Research Fund (2024) - KES 300,000
-- **Best Student Presentation Award**, East African Health Research Conference (2024)
-- **DataCamp Scholarship**, Full access to data science courses (2023)
-
----
-
-## **Let's Collaborate!**
-
-I'm always interested in new research collaborations. If you're working on:
-
-✅ Health systems research in Africa  
-✅ Non-communicable disease management  
-✅ Health data analytics and dashboards  
-✅ Electronic data capture systems  
-✅ Reproducible research practices  
-
-**Let's connect!** 📧 [nichodemuswerre@gmail.com](mailto:nichodemuswerre@gmail.com)
-
----
-
-[View Thesis Dashboard →](thesis.qmd) | [See All Projects →](../projects/index.qmd) | [Back to Home →](../index.qmd)
+[Email me](mailto:nichodemuswerre@gmail.com){.btn-solid} [View the thesis page](thesis.qmd){.btn-ghost}

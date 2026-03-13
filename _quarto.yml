@@ -10,6 +10,7 @@ project:
     - "personal/index.qmd"
     - "blogs/index.qmd"
     - "resources/index.qmd"
+    - "research/publications.qmd"
     - "research/thesis.qmd"
     - "research/thesis-presentation.qmd"
     - "tidy-tuesday/index.qmd"
@@ -38,8 +39,8 @@ website:
         href: about/index.qmd
       - text: "Projects"
         href: projects/index.qmd
-      - text: "Thesis"
-        href: research/thesis.qmd
+      - text: "Research"
+        href: research/publications.qmd
       - text: "Life"
         href: personal/index.qmd
       - text: "CV"

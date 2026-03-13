@@ -234,12 +234,12 @@ toc: false
           <span class="proj-icon" style="position:relative;z-index:2;">🏥</span>
         </div>
         <div class="proj-body">
-          <p class="proj-domain" style="color:#7fbf7f;">Public Health · MSc Research · Kisumu County</p>
-          <h3 class="proj-title">Financial Determinants of NCD Management</h3>
-          <p class="proj-desc">Mixed-methods study across 30+ facilities and 500+ patients in Kisumu County investigating how health facility financing shapes hypertension and diabetes outcomes. Includes a real-time R Shiny monitoring dashboard.</p>
+          <p class="proj-domain" style="color:#7fbf7f;">Public Health · Accepted manuscript · Kisumu County</p>
+          <h3 class="proj-title">Financing Chronic Care in Rural Kenya</h3>
+          <p class="proj-desc">Seven-facility mixed-methods study in Seme Sub-County showing how narrow funding streams, county approval delays, and missing NCD budget lines disrupt hypertension and diabetes care. Accepted in BMC Public Health.</p>
           <div class="proj-footer">
-            <span class="proj-tags"><span>R</span><span>Mixed methods</span><span>Georgetown gui2de</span></span>
-            <span class="proj-arrow">Read case study →</span>
+            <span class="proj-tags"><span>R</span><span>Mixed methods</span><span>BMC Public Health</span></span>
+            <span class="proj-arrow">Read thesis →</span>
           </div>
         </div>
       </a>
