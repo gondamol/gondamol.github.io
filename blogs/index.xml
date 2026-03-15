@@ -10,95 +10,7 @@
 <atom:link href="https://gondamol.github.io/blogs/index.xml" rel="self" type="application/rss+xml"/>
 <description>Data Analyst &amp; Research Data Manager — M&amp;E, Health Analytics, Agriculture, Finance — Nairobi, Kenya</description>
 <generator>quarto-1.8.27</generator>
-<lastBuildDate>Thu, 12 Mar 2026 21:00:00 GMT</lastBuildDate>
-<item>
-  <title>When Clinics Can Diagnose but Cannot Buy Medicines</title>
-  <dc:creator>Nichodemus Amollo</dc:creator>
-  <link>https://gondamol.github.io/posts/47-facility-decision-space-chronic-care/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p>This essay draws on my forthcoming paper in <em>BMC Public Health</em> on the financial determinants of hypertension and diabetes care in rural primary health facilities in Kisumu County. The paper is built on formal analysis. The problem it describes, however, is easy to state in plain language: a clinic can know exactly what a patient needs and still be unable to act in time.</p>
-<p>Clinicians can diagnose hypertension. They can prescribe insulin. They can explain follow-up and complications. But if the facility cannot spend quickly when medicines run out, chronic care breaks down long before the science does.</p>
-<section id="the-contradiction-at-the-center-of-the-study" class="level2">
-<h2 class="anchored" data-anchor-id="the-contradiction-at-the-center-of-the-study">The contradiction at the center of the study</h2>
-<p>At first glance, the problem can look like ordinary underfunding. Kenya’s non-communicable disease burden is growing, and primary care facilities are already stretched. But the field evidence pointed to something more specific.</p>
-<p>All seven facilities in this study had annual workplans and budgets. All had bank accounts. Yet none had full formal autonomy to spend funds directly when urgent needs emerged. That means a facility could identify an NCD stockout, know where to buy the required medicine locally, and still be forced to wait for approval from a higher administrative level.</p>
-<p>That is the contradiction: a system can appear financially organized on paper while remaining operationally paralyzed in practice.</p>
-</section>
-<section id="what-the-evidence-showed" class="level2">
-<h2 class="anchored" data-anchor-id="what-the-evidence-showed">What the evidence showed</h2>
-<p>Several findings kept repeating across the quantitative records and the interviews:</p>
-<ul>
-<li>71.4 percent of facilities depended mainly on NHIF reimbursements and donor support.</li>
-<li>Only 28.6 percent received direct county funding.</li>
-<li>57.1 percent relied on just two active funding streams.</li>
-<li>None had a dedicated NCD budget line.</li>
-<li>None had full direct spending autonomy.</li>
-<li>85.7 percent reported frequent medication stockouts.</li>
-</ul>
-<p>Taken together, those figures describe a system with narrow revenue options, weak protection for chronic-care budgets, and very limited local ability to respond when routine supply channels fail.</p>
-</section>
-<section id="why-this-is-a-governance-problem-not-just-a-supply-problem" class="level2">
-<h2 class="anchored" data-anchor-id="why-this-is-a-governance-problem-not-just-a-supply-problem">Why this is a governance problem, not just a supply problem</h2>
-<p>It is tempting to describe medicine stockouts as a logistics issue. Sometimes they are. But in this study, stockouts were also a financing-governance issue.</p>
-<p>When approval for spending takes weeks, a facility cannot bridge a gap in central supply. When NCD care has no protected budget line, it competes with every other immediate operational pressure. When reimbursements are delayed, planning becomes performative rather than actionable.</p>
-<p>This is why I argue that the sustainability of chronic care depends on <strong>facility decision space</strong>, not only on the total amount of money in the system. If the purse strings remain too far from the point of care, patients experience that distance as missed refills, interrupted treatment, and preventable complications.</p>
-</section>
-<section id="why-this-matters-beyond-one-sub-county" class="level2">
-<h2 class="anchored" data-anchor-id="why-this-matters-beyond-one-sub-county">Why this matters beyond one sub-county</h2>
-<p>The study was conducted in seven facilities in Seme Sub-County, so it should not be read as a statistical description of every county in Kenya. But the policy mechanisms it identifies are transferable.</p>
-<p>Many decentralized health systems face the same tension:</p>
-<ul>
-<li>central control is used to protect accountability</li>
-<li>frontline facilities are responsible for service delivery</li>
-<li>chronic disease care requires continuity rather than one-off response</li>
-</ul>
-<p>That combination creates friction. The deeper lesson is that accountability systems have to be designed so that they do not disable the very care they are supposed to protect.</p>
-</section>
-<section id="why-ncd-care-keeps-losing-the-budget-fight" class="level2">
-<h2 class="anchored" data-anchor-id="why-ncd-care-keeps-losing-the-budget-fight">Why NCD care keeps losing the budget fight</h2>
-<p>Part of the problem is visibility. HIV, TB, and malaria programs often enter budgeting conversations with protected lines, established reporting structures, and stronger institutional attention. Hypertension and diabetes care often do not.</p>
-<p>When an NCD line is missing or weak, chronic care gets absorbed into general outpatient spending and loses every time a more immediate operational pressure appears. The result is not a dramatic single collapse. It is a slow, repeated erosion of continuity: no strips, no drugs, no local response, no trust.</p>
-<p>That is one reason this paper matters. It names the problem more precisely. The issue is not simply whether money exists somewhere in the system. The issue is whether the people responsible for care can use it fast enough, locally enough, and predictably enough.</p>
-</section>
-<section id="a-harder-definition-of-universal-health-coverage" class="level2">
-<h2 class="anchored" data-anchor-id="a-harder-definition-of-universal-health-coverage">A harder definition of Universal Health Coverage</h2>
-<p>Universal Health Coverage is sometimes discussed in the language of benefit packages, digital systems, and enrollment reforms. Those matter. But a harder definition starts at the facility counter.</p>
-<p>If a patient with diabetes arrives for review and the medicine is unavailable for weeks because the clinic cannot act without a distant approval, then UHC remains incomplete no matter how well the policy looks in a national presentation.</p>
-<p>The practical question is not whether the system can describe care. It is whether the system can sustain care.</p>
-</section>
-<section id="why-this-evidence-matters-now" class="level2">
-<h2 class="anchored" data-anchor-id="why-this-evidence-matters-now">Why this evidence matters now</h2>
-<p>Kenya’s financing reforms will keep being judged by legislation, launch language, and institutional optimism. They should also be judged by four simpler operational questions:</p>
-<ol type="1">
-<li>Can facilities access funds faster when essential NCD medicines run out?</li>
-<li>Are NCD budgets visible enough to survive ordinary budget competition?</li>
-<li>Are approval chains becoming shorter and more predictable?</li>
-<li>Do patients experience fewer interruptions in treatment?</li>
-</ol>
-<p>Those questions are less glamorous than reform slogans. They are also closer to the truth of whether chronic disease care is improving.</p>
-<p>The argument of the paper is straightforward: continuity of chronic care depends not only on financing volume, but on whether frontline facilities have enough decision space to protect treatment when the system is under strain.</p>
-<p>That is where this essay begins, and where the policy conversation should become more honest.</p>
-
-
-<!-- -->
-
-</section>
-
- ]]></description>
-  <category>Public Health</category>
-  <category>Health Financing</category>
-  <category>Health Systems</category>
-  <category>NCDs</category>
-  <category>Kenya</category>
-  <guid>https://gondamol.github.io/posts/47-facility-decision-space-chronic-care/</guid>
-  <pubDate>Thu, 12 Mar 2026 21:00:00 GMT</pubDate>
-  <media:content url="https://gondamol.github.io/img/blog-health.svg" medium="image" type="image/svg+xml"/>
-</item>
+<lastBuildDate>Sat, 14 Mar 2026 21:00:00 GMT</lastBuildDate>
 <item>
   <title>Analyzing Agricultural Data from Public Sources</title>
   <dc:creator>Nichodemus Amollo</dc:creator>
@@ -472,7 +384,7 @@ font-style: inherit;">print</span>(p)</span></code></pre></div></div>
   <category>Data Analysis</category>
   <category>Kaggle</category>
   <guid>https://gondamol.github.io/posts/agriculture-data-analysis/</guid>
-  <pubDate>Thu, 12 Mar 2026 21:00:00 GMT</pubDate>
+  <pubDate>Sat, 14 Mar 2026 21:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Creating Beautiful Data Visualizations with R and Python</title>
@@ -888,7 +800,95 @@ Note
   <category>R</category>
   <category>Python</category>
   <guid>https://gondamol.github.io/posts/data-viz-blog-1/</guid>
+  <pubDate>Sat, 14 Mar 2026 21:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>When Clinics Can Diagnose but Cannot Buy Medicines</title>
+  <dc:creator>Nichodemus Amollo</dc:creator>
+  <link>https://gondamol.github.io/posts/47-facility-decision-space-chronic-care/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>This essay draws on my forthcoming paper in <em>BMC Public Health</em> on the financial determinants of hypertension and diabetes care in rural primary health facilities in Kisumu County. The paper is built on formal analysis. The problem it describes, however, is easy to state in plain language: a clinic can know exactly what a patient needs and still be unable to act in time.</p>
+<p>Clinicians can diagnose hypertension. They can prescribe insulin. They can explain follow-up and complications. But if the facility cannot spend quickly when medicines run out, chronic care breaks down long before the science does.</p>
+<section id="the-contradiction-at-the-center-of-the-study" class="level2">
+<h2 class="anchored" data-anchor-id="the-contradiction-at-the-center-of-the-study">The contradiction at the center of the study</h2>
+<p>At first glance, the problem can look like ordinary underfunding. Kenya’s non-communicable disease burden is growing, and primary care facilities are already stretched. But the field evidence pointed to something more specific.</p>
+<p>All seven facilities in this study had annual workplans and budgets. All had bank accounts. Yet none had full formal autonomy to spend funds directly when urgent needs emerged. That means a facility could identify an NCD stockout, know where to buy the required medicine locally, and still be forced to wait for approval from a higher administrative level.</p>
+<p>That is the contradiction: a system can appear financially organized on paper while remaining operationally paralyzed in practice.</p>
+</section>
+<section id="what-the-evidence-showed" class="level2">
+<h2 class="anchored" data-anchor-id="what-the-evidence-showed">What the evidence showed</h2>
+<p>Several findings kept repeating across the quantitative records and the interviews:</p>
+<ul>
+<li>71.4 percent of facilities depended mainly on NHIF reimbursements and donor support.</li>
+<li>Only 28.6 percent received direct county funding.</li>
+<li>57.1 percent relied on just two active funding streams.</li>
+<li>None had a dedicated NCD budget line.</li>
+<li>None had full direct spending autonomy.</li>
+<li>85.7 percent reported frequent medication stockouts.</li>
+</ul>
+<p>Taken together, those figures describe a system with narrow revenue options, weak protection for chronic-care budgets, and very limited local ability to respond when routine supply channels fail.</p>
+</section>
+<section id="why-this-is-a-governance-problem-not-just-a-supply-problem" class="level2">
+<h2 class="anchored" data-anchor-id="why-this-is-a-governance-problem-not-just-a-supply-problem">Why this is a governance problem, not just a supply problem</h2>
+<p>It is tempting to describe medicine stockouts as a logistics issue. Sometimes they are. But in this study, stockouts were also a financing-governance issue.</p>
+<p>When approval for spending takes weeks, a facility cannot bridge a gap in central supply. When NCD care has no protected budget line, it competes with every other immediate operational pressure. When reimbursements are delayed, planning becomes performative rather than actionable.</p>
+<p>This is why I argue that the sustainability of chronic care depends on <strong>facility decision space</strong>, not only on the total amount of money in the system. If the purse strings remain too far from the point of care, patients experience that distance as missed refills, interrupted treatment, and preventable complications.</p>
+</section>
+<section id="why-this-matters-beyond-one-sub-county" class="level2">
+<h2 class="anchored" data-anchor-id="why-this-matters-beyond-one-sub-county">Why this matters beyond one sub-county</h2>
+<p>The study was conducted in seven facilities in Seme Sub-County, so it should not be read as a statistical description of every county in Kenya. But the policy mechanisms it identifies are transferable.</p>
+<p>Many decentralized health systems face the same tension:</p>
+<ul>
+<li>central control is used to protect accountability</li>
+<li>frontline facilities are responsible for service delivery</li>
+<li>chronic disease care requires continuity rather than one-off response</li>
+</ul>
+<p>That combination creates friction. The deeper lesson is that accountability systems have to be designed so that they do not disable the very care they are supposed to protect.</p>
+</section>
+<section id="why-ncd-care-keeps-losing-the-budget-fight" class="level2">
+<h2 class="anchored" data-anchor-id="why-ncd-care-keeps-losing-the-budget-fight">Why NCD care keeps losing the budget fight</h2>
+<p>Part of the problem is visibility. HIV, TB, and malaria programs often enter budgeting conversations with protected lines, established reporting structures, and stronger institutional attention. Hypertension and diabetes care often do not.</p>
+<p>When an NCD line is missing or weak, chronic care gets absorbed into general outpatient spending and loses every time a more immediate operational pressure appears. The result is not a dramatic single collapse. It is a slow, repeated erosion of continuity: no strips, no drugs, no local response, no trust.</p>
+<p>That is one reason this paper matters. It names the problem more precisely. The issue is not simply whether money exists somewhere in the system. The issue is whether the people responsible for care can use it fast enough, locally enough, and predictably enough.</p>
+</section>
+<section id="a-harder-definition-of-universal-health-coverage" class="level2">
+<h2 class="anchored" data-anchor-id="a-harder-definition-of-universal-health-coverage">A harder definition of Universal Health Coverage</h2>
+<p>Universal Health Coverage is sometimes discussed in the language of benefit packages, digital systems, and enrollment reforms. Those matter. But a harder definition starts at the facility counter.</p>
+<p>If a patient with diabetes arrives for review and the medicine is unavailable for weeks because the clinic cannot act without a distant approval, then UHC remains incomplete no matter how well the policy looks in a national presentation.</p>
+<p>The practical question is not whether the system can describe care. It is whether the system can sustain care.</p>
+</section>
+<section id="why-this-evidence-matters-now" class="level2">
+<h2 class="anchored" data-anchor-id="why-this-evidence-matters-now">Why this evidence matters now</h2>
+<p>Kenya’s financing reforms will keep being judged by legislation, launch language, and institutional optimism. They should also be judged by four simpler operational questions:</p>
+<ol type="1">
+<li>Can facilities access funds faster when essential NCD medicines run out?</li>
+<li>Are NCD budgets visible enough to survive ordinary budget competition?</li>
+<li>Are approval chains becoming shorter and more predictable?</li>
+<li>Do patients experience fewer interruptions in treatment?</li>
+</ol>
+<p>Those questions are less glamorous than reform slogans. They are also closer to the truth of whether chronic disease care is improving.</p>
+<p>The argument of the paper is straightforward: continuity of chronic care depends not only on financing volume, but on whether frontline facilities have enough decision space to protect treatment when the system is under strain.</p>
+<p>That is where this essay begins, and where the policy conversation should become more honest.</p>
+
+
+<!-- -->
+
+</section>
+
+ ]]></description>
+  <category>Public Health</category>
+  <category>Health Financing</category>
+  <category>Health Systems</category>
+  <category>NCDs</category>
+  <category>Kenya</category>
+  <guid>https://gondamol.github.io/posts/47-facility-decision-space-chronic-care/</guid>
   <pubDate>Thu, 12 Mar 2026 21:00:00 GMT</pubDate>
+  <media:content url="https://gondamol.github.io/img/blog-health.svg" medium="image" type="image/svg+xml"/>
 </item>
 <item>
   <title>No Degree? No Problem. Break Into Data in 6 Months (Without Lying on Your CV)</title>
@@ -1208,6 +1208,290 @@ Do you <em>need</em> one to get into data analytics or data science? <strong>Not
   <dc:creator>Nichodemus Amollo</dc:creator>
   <link>https://gondamol.github.io/posts/43-quarto-for-evaluators/</link>
   <description><![CDATA[ 
+<script src="https://cdn.jsdelivr.net/npm/monaco-editor@0.47.0/min/vs/loader.js"></script>
+<script type="module" id="qwebr-monaco-editor-init">
+
+  // Configure the Monaco Editor's loader
+  require.config({
+    paths: {
+      'vs': 'https://cdn.jsdelivr.net/npm/monaco-editor@0.47.0/min/vs'
+    }
+  });
+</script>
+<script type="module">
+// Function to update Monaco Editors when body class changes
+function updateMonacoEditorsOnBodyClassChange() {
+    // Select the body element
+    const body = document.querySelector('body');
+
+    // Options for the observer (which mutations to observe)
+    const observerOptions = {
+        attributes: true,  // Observe changes to attributes
+        attributeFilter: ['class'] // Only observe changes to the 'class' attribute
+    };
+
+    // Callback function to execute when mutations are observed
+    const bodyClassChangeCallback = function(mutationsList, observer) {
+        for(let mutation of mutationsList) {
+            if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
+                // Class attribute has changed
+                // Update all Monaco Editors on the page
+                updateMonacoEditorTheme();
+            }
+        }
+    };
+
+    // Create an observer instance linked to the callback function
+    const observer = new MutationObserver(bodyClassChangeCallback);
+
+    // Start observing the target node for configured mutations
+    observer.observe(body, observerOptions);
+}
+
+// Function to update all instances of Monaco Editors on the page
+function updateMonacoEditorTheme() {
+    // Determine what VS Theme to use
+    const vsThemeToUse = document.body.classList.contains("quarto-dark") ? 'vs-dark' : 'vs' ;
+
+    // Iterate through all initialized Monaco Editors
+    qwebrEditorInstances.forEach( function(editorInstance) { 
+        editorInstance.updateOptions({ theme: vsThemeToUse }); 
+    });
+}
+
+// Call the function to start observing changes to body class
+updateMonacoEditorsOnBodyClassChange();
+</script>
+<script type="module">
+// Global array to store Monaco Editor instances
+globalThis.qwebrEditorInstances = [];
+
+function isValidCodeLineNumbers(stringCodeLineNumbers) {
+  // Regular expression to match valid input strings
+  const regex = /^(\d+(-\d+)?)(,\d+(-\d+)?)*$/;
+  return regex.test(stringCodeLineNumbers);
+}
+
+// Function that builds and registers a Monaco Editor instance    
+globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
+
+  const initialCode = cellData.code;
+  const qwebrCounter = cellData.id;
+  const qwebrOptions = cellData.options;
+
+  // Retrieve the previously created document elements
+  let runButton = document.getElementById(`qwebr-button-run-${qwebrCounter}`);
+  let resetButton = document.getElementById(`qwebr-button-reset-${qwebrCounter}`);
+  let copyButton = document.getElementById(`qwebr-button-copy-${qwebrCounter}`);
+  let editorDiv = document.getElementById(`qwebr-editor-${qwebrCounter}`);
+
+  // Load the Monaco Editor and create an instance
+  let editor;
+  require(['vs/editor/editor.main'], function () {
+    editor = monaco.editor.create(editorDiv, {
+      value: initialCode,
+      language: 'r',
+      theme: 'vs-light',
+      automaticLayout: true,           // Works wonderfully with RevealJS
+      scrollBeyondLastLine: false,
+      minimap: {
+        enabled: false
+      },
+      fontSize: qwebrScaledFontSize(editorDiv, qwebrOptions),         
+      renderLineHighlight: "none",      // Disable current line highlighting
+      hideCursorInOverviewRuler: true,  // Remove cursor indictor in right hand side scroll bar
+      readOnly: qwebrOptions['read-only'] ?? false,
+      quickSuggestions: qwebrOptions['editor-quick-suggestions'] ?? false,
+      wordWrap: (qwebrOptions['editor-word-wrap'] == 'true' ? "on" : "off")
+    });
+
+    // Store the official counter ID to be used in keyboard shortcuts
+    editor.__qwebrCounter = qwebrCounter;
+
+    // Store the official div container ID
+    editor.__qwebrEditorId = `qwebr-editor-${qwebrCounter}`;
+
+    // Store the initial code value and options
+    editor.__qwebrinitialCode = initialCode;
+    editor.__qwebrOptions = qwebrOptions;
+
+    // Set at the model level the preferred end of line (EOL) character to LF.
+    // This prevent `\r\n` from being given to the webR engine if the user is on Windows.
+    // See details in: https://github.com/coatless/quarto-webr/issues/94
+    // Associated error text: 
+    // Error: <text>:1:7 unexpected input
+
+    // Retrieve the underlying model
+    const model = editor.getModel();
+    // Set EOL for the model
+    model.setEOL(monaco.editor.EndOfLineSequence.LF);
+    
+    // Dynamically modify the height of the editor window if new lines are added.
+    let ignoreEvent = false;
+    const updateHeight = () => {
+      // Increment editor height by 2 to prevent vertical scroll bar from appearing
+      const contentHeight = editor.getContentHeight() + 2;
+
+      // Retrieve editor-max-height option
+      const maxEditorHeight = qwebrOptions['editor-max-height'];
+
+      // If editor-max-height is missing, allow infinite growth. Otherwise, threshold.
+      const editorHeight = !maxEditorHeight ?  contentHeight : Math.min(contentHeight, maxEditorHeight);
+
+      // We're avoiding a width change
+      //editorDiv.style.width = `${width}px`;
+      editorDiv.style.height = `${editorHeight}px`;
+      try {
+        ignoreEvent = true;
+
+        // The key to resizing is this call
+        editor.layout();
+      } finally {
+        ignoreEvent = false;
+      }
+    };
+
+    // Function to generate decorations to highlight lines
+    // in the editor based on input string.
+    function decoratorHighlightLines(codeLineNumbers) {
+      // Store the lines to be lighlight
+      let linesToHighlight = [];
+      
+      // Parse the codeLineNumbers string to get the line numbers to highlight
+      // First, split the string by commas
+      codeLineNumbers.split(',').forEach(part => {
+        // Check if we have a range of lines
+        if (part.includes('-')) {
+            // Handle range of lines (e.g., "6-8")
+            const [start, end] = part.split('-').map(Number);
+            for (let i = start; i <= end; i++) {
+                linesToHighlight.push(i);
+            }
+        } else {
+            // Handle single line (e.g., "7")
+            linesToHighlight.push(Number(part));
+        }
+      });
+  
+      // Create monaco decorations for the lines to highlight
+      const decorations = linesToHighlight.map(lineNumber => ({
+          range: new monaco.Range(lineNumber, 1, lineNumber, 1),
+          options: {
+              isWholeLine: true,
+              className: 'qwebr-editor-highlight-line'
+          }
+      }));
+  
+      // Return decorations to be applied to the editor
+      return decorations;
+    }
+
+    // Ensure that the editor-code-line-numbers option is set and valid
+    // then apply styling
+    if (qwebrOptions['editor-code-line-numbers']) {
+      // Remove all whitespace from the string
+      const codeLineNumbers = qwebrOptions['editor-code-line-numbers'].replace(/\s/g,'');
+      // Check if the string is valid for line numbers, e.g., "1,3-5,7"
+      if (isValidCodeLineNumbers(codeLineNumbers)) {
+        // Apply the decorations to the editor
+        editor.createDecorationsCollection(decoratorHighlightLines(codeLineNumbers));
+      } else {
+        // Warn the user that the input is invalid
+        console.warn(`Invalid "editor-code-line-numbers" value in code cell ${qwebrOptions['label']}: ${codeLineNumbers}`);
+      }
+    }
+
+    // Helper function to check if selected text is empty
+    function isEmptyCodeText(selectedCodeText) {
+      return (selectedCodeText === null || selectedCodeText === undefined || selectedCodeText === "");
+    }
+
+    // Registry of keyboard shortcuts that should be re-added to each editor window
+    // when focus changes.
+    const addWebRKeyboardShortCutCommands = () => {
+      // Add a keydown event listener for Shift+Enter to run all code in cell
+      editor.addCommand(monaco.KeyMod.Shift | monaco.KeyCode.Enter, () => {
+
+        // Retrieve all text inside the editor
+        qwebrExecuteCode(editor.getValue(), editor.__qwebrCounter, editor.__qwebrOptions);
+      });
+
+      // Add a keydown event listener for CMD/Ctrl+Enter to run selected code
+      editor.addCommand(monaco.KeyMod.CtrlCmd | monaco.KeyCode.Enter, () => {
+
+        // Get the selected text from the editor
+        const selectedText = editor.getModel().getValueInRange(editor.getSelection());
+        // Check if no code is selected
+        if (isEmptyCodeText(selectedText)) {
+          // Obtain the current cursor position
+          let currentPosition = editor.getPosition();
+          // Retrieve the current line content
+          let currentLine = editor.getModel().getLineContent(currentPosition.lineNumber);
+
+          // Propose a new position to move the cursor to
+          let newPosition = new monaco.Position(currentPosition.lineNumber + 1, 1);
+
+          // Check if the new position is beyond the last line of the editor
+          if (newPosition.lineNumber > editor.getModel().getLineCount()) {
+            // Add a new line at the end of the editor
+            editor.executeEdits("addNewLine", [{
+            range: new monaco.Range(newPosition.lineNumber, 1, newPosition.lineNumber, 1),
+            text: "\n", 
+            forceMoveMarkers: true,
+            }]);
+          }
+          
+          // Run the entire line of code.
+          qwebrExecuteCode(currentLine, editor.__qwebrCounter, editor.__qwebrOptions);
+
+          // Move cursor to new position
+          editor.setPosition(newPosition);
+        } else {
+          // Code to run when Ctrl+Enter is pressed with selected code
+          qwebrExecuteCode(selectedText, editor.__qwebrCounter, editor.__qwebrOptions);
+        }
+      });
+    }
+
+    // Register an on focus event handler for when a code cell is selected to update
+    // what keyboard shortcut commands should work.
+    // This is a workaround to fix a regression that happened with multiple
+    // editor windows since Monaco 0.32.0 
+    // https://github.com/microsoft/monaco-editor/issues/2947
+    editor.onDidFocusEditorText(addWebRKeyboardShortCutCommands);
+
+    // Register an on change event for when new code is added to the editor window
+    editor.onDidContentSizeChange(updateHeight);
+
+    // Manually re-update height to account for the content we inserted into the call
+    updateHeight();
+
+    // Store the editor instance in the global dictionary
+    qwebrEditorInstances[editor.__qwebrCounter] = editor;
+
+  });
+
+  // Add a click event listener to the run button
+  runButton.onclick = function () {
+    qwebrExecuteCode(editor.getValue(), editor.__qwebrCounter, editor.__qwebrOptions);
+  };
+
+  // Add a click event listener to the reset button
+  copyButton.onclick = function () {
+    // Retrieve current code data
+    const data = editor.getValue();
+    
+    // Write code data onto the clipboard.
+    navigator.clipboard.writeText(data || "");
+  };
+  
+  // Add a click event listener to the copy button
+  resetButton.onclick = function () {
+    editor.setValue(editor.__qwebrinitialCode);
+  };
+  
+}
+</script>
 
 
 
@@ -1244,6 +1528,12 @@ Do you <em>need</em> one to get into data analytics or data science? <strong>Not
 </ul></li>
 </ol>
 <p>You change the data and <strong>press render</strong>—the report updates.</p>
+</section>
+<section id="mini-playground" class="level2">
+<h2 class="anchored" data-anchor-id="mini-playground">Mini Playground</h2>
+<p>This browser-based code cell shows the kind of quick indicator summary you can keep inside a Quarto report and rerun whenever the data changes.</p>
+<div id="qwebr-insertion-location-1"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 <hr>
 </section>
 <section id="portfolio-idea" class="level2">

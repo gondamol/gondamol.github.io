@@ -73,6 +73,28 @@ $card-border-radius: 0;
   --t-slow: 0.5s;
 }
 
+html[data-theme='dark'] {
+  --ink: #f6efe5;
+  --paper: #101412;
+  --warm: #171d19;
+  --white: #131815;
+  --terra: #df7540;
+  --terra-light: #f29060;
+  --terra-soft: #f2c7a6;
+  --green: #86b98a;
+  --green-soft: #9fd2a3;
+  --gold: #d1aa5d;
+  --slate: #b7c0cd;
+  --border: #2c362f;
+  --border-dark: #39443d;
+  --muted: #aca395;
+  --text: #e7dfd4;
+  --shadow-sm: 0 18px 40px rgba(0, 0, 0, 0.16);
+  --shadow-md: 0 28px 60px rgba(0, 0, 0, 0.22);
+  --shadow-lg: 0 40px 90px rgba(0, 0, 0, 0.28);
+  --shadow-hover: 0 34px 80px rgba(0, 0, 0, 0.32);
+}
+
 /* ════════════════════════════════════════════
    BASE RESET & TYPOGRAPHY
 ════════════════════════════════════════════ */
@@ -84,6 +106,11 @@ $card-border-radius: 0;
 
 html {
   scroll-behavior: smooth;
+  color-scheme: light;
+}
+
+html[data-theme='dark'] {
+  color-scheme: dark;
 }
 
 body {
@@ -93,6 +120,7 @@ body {
   font-weight: 300;
   line-height: 1.75;
   -webkit-font-smoothing: antialiased;
+  transition: background-color var(--t-med) var(--ease-out), color var(--t-med) var(--ease-out);
 }
 
 h1,
@@ -191,20 +219,20 @@ blockquote {
 
 .navbar-brand {
   font-family: 'Playfair Display', serif;
-  font-size: 1.05rem;
+  font-size: 1.1rem;
   font-weight: 400;
   color: var(--ink) !important;
   letter-spacing: 0.01em;
 }
 
 .navbar .nav-link {
-  font-size: 0.75rem;
-  font-weight: 500;
-  letter-spacing: 0.1em;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--muted) !important;
-  padding: 0.4rem 0.8rem;
-  transition: color var(--t-fast) var(--ease-out);
+  padding: 0.5rem 0.9rem;
+  transition: color var(--t-fast) var(--ease-out), transform var(--t-fast) var(--ease-out);
   position: relative;
 }
 
@@ -223,6 +251,7 @@ blockquote {
 
 .navbar .nav-link:hover {
   color: var(--terra) !important;
+  transform: translateY(-1px);
 }
 
 .navbar .nav-link:hover::after,
@@ -232,15 +261,23 @@ blockquote {
 
 .navbar .nav-link.active {
   color: var(--terra) !important;
+  font-weight: 600;
 }
 
 .navbar .nav-link[href*="mailto"] {
-  background: var(--ink);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--ink) 0%, #2b342d 100%);
   color: var(--paper) !important;
-  padding: 0.4rem 1.2rem;
-  margin-left: 0.5rem;
-  font-size: 0.72rem;
-  transition: background var(--t-fast), transform var(--t-fast);
+  padding: 0.58rem 1.25rem;
+  margin-left: 0.7rem;
+  font-size: 0.76rem;
+  letter-spacing: 0.1em;
+  border-radius: 999px;
+  border: 1px solid rgba(25, 25, 23, 0.08);
+  box-shadow: 0 12px 24px rgba(25, 25, 23, 0.12);
+  transition: background var(--t-fast), transform var(--t-fast), box-shadow var(--t-fast), border-color var(--t-fast);
 }
 
 .navbar .nav-link[href*="mailto"]::after {
@@ -248,9 +285,189 @@ blockquote {
 }
 
 .navbar .nav-link[href*="mailto"]:hover {
-  background: var(--terra);
+  background: linear-gradient(135deg, var(--terra) 0%, var(--terra-light) 100%);
   color: #fff !important;
+  border-color: rgba(223, 117, 64, 0.45);
+  box-shadow: 0 14px 30px rgba(184, 78, 22, 0.2);
+  transform: translateY(-2px);
+}
+
+.quarto-navbar-tools {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  min-height: 42px;
+  padding: 0.45rem 0.78rem;
+  border: 1px solid rgba(25, 25, 23, 0.08);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.72);
+  color: var(--ink);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--t-fast) var(--ease-out), background-color var(--t-fast) var(--ease-out), color var(--t-fast) var(--ease-out), border-color var(--t-fast) var(--ease-out), box-shadow var(--t-fast) var(--ease-out);
+}
+
+.theme-toggle:hover {
   transform: translateY(-1px);
+  border-color: rgba(223, 117, 64, 0.35);
+  box-shadow: var(--shadow-md);
+}
+
+.theme-toggle:focus-visible {
+  outline: 2px solid rgba(223, 117, 64, 0.5);
+  outline-offset: 3px;
+}
+
+.theme-toggle__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.65rem;
+  height: 1.65rem;
+  border-radius: 999px;
+  background: rgba(223, 117, 64, 0.1);
+  color: var(--terra);
+}
+
+.theme-toggle__icon svg {
+  width: 0.95rem;
+  height: 0.95rem;
+}
+
+html[data-theme='dark'] .navbar {
+  background: rgba(12, 16, 14, 0.88) !important;
+  border-bottom-color: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.28);
+}
+
+html[data-theme='dark'] .navbar-brand,
+html[data-theme='dark'] .navbar .nav-link {
+  color: var(--text) !important;
+}
+
+html[data-theme='dark'] .navbar .nav-link:hover,
+html[data-theme='dark'] .navbar .nav-link.active {
+  color: var(--terra-soft) !important;
+}
+
+html[data-theme='dark'] .navbar .nav-link::after {
+  background: var(--terra-soft);
+}
+
+html[data-theme='dark'] .navbar .nav-link[href*="mailto"] {
+  background: linear-gradient(135deg, var(--terra) 0%, #c95f2d 100%);
+  color: #fff !important;
+  border-color: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 18px 32px rgba(0, 0, 0, 0.3);
+}
+
+html[data-theme='dark'] .navbar .nav-link[href*="mailto"]:hover {
+  background: linear-gradient(135deg, #f08a57 0%, #df7540 100%);
+}
+
+html[data-theme='dark'] .theme-toggle {
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+html[data-theme='dark'] .theme-toggle__icon {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--terra-soft);
+}
+
+html[data-theme='dark'] .theme-toggle:hover {
+  border-color: rgba(242, 199, 166, 0.25);
+}
+
+/* ════════════════════════════════════════════
+   DARK MODE — shared surface treatment
+════════════════════════════════════════════ */
+body,
+.navbar,
+.page-footer,
+.photo-frame,
+.stat-row,
+.stat,
+.proj-card,
+.svc-card,
+.contact-link,
+.contact-form-card,
+.form-field,
+.gal-ph,
+.cv-pdf-shell,
+.cv-story-card,
+.cv-cert-card,
+.cv-skill-card,
+.research-abstract,
+.callout-highlight,
+div.sourceCode {
+  transition: background-color var(--t-med) var(--ease-out), color var(--t-med) var(--ease-out), border-color var(--t-med) var(--ease-out), box-shadow var(--t-med) var(--ease-out);
+}
+
+html[data-theme='dark'] .section-pad {
+  border-top-color: rgba(255, 255, 255, 0.07);
+}
+
+html[data-theme='dark'] .band-dark {
+  background: #0b0f0d;
+}
+
+html[data-theme='dark'] .band-warm {
+  border-top-color: #262d29;
+  border-bottom-color: #262d29;
+}
+
+html[data-theme='dark'] .photo-frame,
+html[data-theme='dark'] .stat-row,
+html[data-theme='dark'] .proj-card,
+html[data-theme='dark'] .svc-card,
+html[data-theme='dark'] .contact-link,
+html[data-theme='dark'] .contact-form-card,
+html[data-theme='dark'] .form-field,
+html[data-theme='dark'] .gal-ph,
+html[data-theme='dark'] .cv-pdf-shell,
+html[data-theme='dark'] .cv-story-card,
+html[data-theme='dark'] .cv-cert-card,
+html[data-theme='dark'] .cv-skill-card,
+html[data-theme='dark'] .research-abstract,
+html[data-theme='dark'] .callout-highlight {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.02) 100%);
+  border-color: var(--border);
+  box-shadow: var(--shadow-sm);
+}
+
+html[data-theme='dark'] div.sourceCode {
+  background: rgba(255, 255, 255, 0.03);
+  border-color: var(--border);
+}
+
+html[data-theme='dark'] .stat {
+  border-color: var(--border);
+}
+
+html[data-theme='dark'] .page-footer {
+  background: #0b0f0d !important;
+  color: rgba(245, 241, 234, 0.56);
+  border-top-color: rgba(255, 255, 255, 0.08);
+}
+
+html[data-theme='dark'] .page-footer a {
+  color: rgba(245, 241, 234, 0.62);
+}
+
+html[data-theme='dark'] .page-footer a:hover {
+  color: var(--terra-soft);
 }
 
 /* ════════════════════════════════════════════
@@ -274,7 +491,7 @@ blockquote {
 .section-pad {
   padding: var(--section-gap) 4rem;
   position: relative;
-  border-top: 4px solid var(--border);
+  border-top: 3px solid var(--border);
   background: var(--paper);
 }
 
@@ -306,11 +523,11 @@ blockquote {
 /* Darker than paper so it reads as clearly distinct.
    Strong top+bottom borders make the band boundaries obvious. */
 .band-warm {
-  background: #ccc4b6;
+  background: var(--warm);
   padding: var(--section-gap) 4rem;
   position: relative;
-  border-top: 4px solid #b5afa4;
-  border-bottom: 4px solid #b5afa4;
+  border-top: 3px solid #cec8bc;
+  border-bottom: 3px solid #cec8bc;
 }
 
 .band-warm .band-inner {
@@ -321,6 +538,13 @@ blockquote {
 /* ─── Gradient divider (kept as subtle secondary layer) ──── */
 .section-divider {
   position: relative;
+}
+
+/* Explicit vertical rhythm for custom full-width sections */
+main .page-content > section.section-pad:not(:first-of-type),
+main .page-content > section.band-dark:not(:first-of-type),
+main .page-content > section.band-warm:not(:first-of-type) {
+  margin-top: clamp(1.8rem, 2.4vw, 2.8rem);
 }
 
 /* We no longer use ::before as the primary separator — the
@@ -506,136 +730,6 @@ main .page-content {
 /* Legacy alias */
 .btn-primary {
   @extend .btn-solid;
-}
-
-/* ════════════════════════════════════════════
-   SECTION SYSTEM — THE CORE SPACING ENGINE
-
-   Visual hierarchy rule:
-     • Hero          → --paper bg, no top border
-     • band-dark     → near-black bg  (automatic full contrast)
-     • band-warm     → warm grey bg   (--warm, clearly distinct from --paper)
-     • section-pad   → --paper bg, strong 3px top border + extra top pad
-
-   The key: spacing between sections, NOT inside them.
-   The section-pad top gap is achieved via margin-top on the
-   wrapper itself, not padding inside the section content.
-════════════════════════════════════════════ */
-
-/* ─── Paper sections (same bg as body) ─────
-   Get a strong visible border on top so they read
-   as a new block even against matching background.
-─────────────────────────────────────────── */
-.section-pad {
-  padding: var(--section-gap) 4rem;
-  position: relative;
-  border-top: 3px solid var(--border);
-  background: var(--paper);
-}
-
-/* First section-pad directly after hero has no top border */
-.hero+.section-pad,
-.hero-wrapper+.section-pad {
-  border-top: none;
-}
-
-.section-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* ─── Dark band ──────────────────────────── */
-.band-dark {
-  background: #191917;
-  padding: var(--section-gap) 4rem;
-  position: relative;
-}
-
-.band-dark .band-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* ─── Warm band ──────────────────────────── */
-/* Background is meaningfully darker/warmer than --paper (#f5f1ea)
-   so it reads as a clearly distinct band even to casual eyes. */
-.band-warm {
-  background: var(--warm);
-  /* #e2dbd0 — darker warm grey */
-  padding: var(--section-gap) 4rem;
-  position: relative;
-  border-top: 3px solid #cec8bc;
-  border-bottom: 3px solid #cec8bc;
-}
-
-.band-warm .band-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* ─── Gradient divider (kept as subtle secondary layer) ──── */
-.section-divider {
-  position: relative;
-}
-
-/* Explicit vertical rhythm for custom full-width sections */
-main .page-content>section.section-pad:not(:first-of-type),
-main .page-content>section.band-dark:not(:first-of-type),
-main .page-content>section.band-warm:not(:first-of-type) {
-  margin-top: clamp(1.8rem, 2.4vw, 2.8rem);
-}
-
-/* We no longer use ::before as the primary separator — the
-   border-top on section-pad and band-warm handles that now.
-   Keep ::before only for the dark->light transitions. */
-.band-dark.section-divider::after {
-  content: '';
-  display: block;
-  position: absolute;
-  bottom: -1px;
-  left: 0;
-  right: 0;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.12) 30%, rgba(255, 255, 255, 0.12) 70%, transparent);
-}
-
-/* ─── Section eyebrow label ────────────────── */
-.section-eyebrow {
-  display: block;
-  font-size: 0.68rem;
-  font-weight: 600;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--terra);
-  margin-bottom: 0.75rem;
-}
-
-.section-eyebrow.light {
-  color: #e8b89a;
-}
-
-.section-h {
-  font-family: 'Playfair Display', serif;
-  font-size: clamp(1.7rem, 2.8vw, 2.4rem);
-  color: var(--ink);
-  margin: 0 0 1rem;
-  line-height: 1.15;
-}
-
-.section-h.light {
-  color: #f5f1ea;
-}
-
-.section-sub {
-  font-size: 0.92rem;
-  color: var(--muted);
-  max-width: 60ch;
-  line-height: 1.8;
-  margin-bottom: 3rem;
-}
-
-.section-sub.light {
-  color: rgba(245, 241, 234, 0.6);
 }
 
 /* ════════════════════════════════════════════
@@ -1599,29 +1693,6 @@ main .page-content>section.band-warm:not(:first-of-type) {
   max-width: none;
 }
 
-.cert-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem;
-  margin-top: 0.6rem;
-}
-
-.cert-badge {
-  font-size: 0.62rem;
-  font-weight: 500;
-  letter-spacing: 0.05em;
-  padding: 0.25rem 0.7rem;
-  border: 1px solid var(--border);
-  color: var(--muted);
-  background: var(--warm);
-  transition: border-color var(--t-fast), color var(--t-fast);
-}
-
-.cert-badge:hover {
-  border-color: var(--terra);
-  color: var(--terra);
-}
-
 /* ════════════════════════════════════════════
    GALLERY — personal section
 ════════════════════════════════════════════ */
@@ -1702,6 +1773,7 @@ main .page-content>section.band-warm:not(:first-of-type) {
   height: 100%;
   object-fit: cover;
   display: block;
+  cursor: zoom-in;
   transition: transform 0.45s var(--ease-out);
 }
 
@@ -1746,6 +1818,74 @@ main .page-content>section.band-warm:not(:first-of-type) {
   border: none;
   color: var(--terra-soft);
   font-size: 0.72rem;
+}
+
+.lightbox-open {
+  overflow: hidden;
+}
+
+.site-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 1200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: rgba(12, 16, 14, 0.9);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.site-lightbox[hidden] {
+  display: none;
+}
+
+.site-lightbox__dialog {
+  max-width: min(92vw, 1180px);
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.site-lightbox__image {
+  max-width: 100%;
+  max-height: calc(90vh - 4rem);
+  object-fit: contain;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.4);
+}
+
+.site-lightbox__caption {
+  margin: 0;
+  text-align: center;
+  color: rgba(245, 241, 234, 0.78);
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  max-width: none;
+}
+
+.site-lightbox__close {
+  position: absolute;
+  top: 1.4rem;
+  right: 1.4rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.7rem 0.9rem;
+  cursor: pointer;
+  transition: background var(--t-fast), transform var(--t-fast), border-color var(--t-fast);
+}
+
+.site-lightbox__close:hover {
+  background: rgba(255, 255, 255, 0.16);
+  border-color: rgba(255, 255, 255, 0.22);
+  transform: translateY(-1px);
 }
 
 /* ════════════════════════════════════════════
@@ -1835,6 +1975,42 @@ main .page-content>section.band-warm:not(:first-of-type) {
 .form-textarea {
   min-height: 120px;
   resize: vertical;
+}
+
+.contact-form-card {
+  padding: 1.6rem;
+  border: 1px solid var(--border);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.96) 0%, rgba(250, 248, 243, 0.96) 100%);
+  box-shadow: var(--shadow-sm);
+}
+
+.form-honeypot {
+  position: absolute !important;
+  left: -9999px !important;
+  width: 1px !important;
+  height: 1px !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+.form-status {
+  margin: 0.9rem 0 0;
+  font-size: 0.78rem;
+  line-height: 1.6;
+  color: var(--muted);
+  max-width: none;
+}
+
+.form-status[data-state='pending'] {
+  color: var(--gold);
+}
+
+.form-status[data-state='success'] {
+  color: var(--green);
+}
+
+.form-status[data-state='error'] {
+  color: var(--terra);
 }
 
 /* ════════════════════════════════════════════
@@ -1961,60 +2137,6 @@ main .page-content>section.band-warm:not(:first-of-type) {
   padding: 0.2rem 0.58rem;
   border: 1px solid var(--border);
   color: var(--muted);
-}
-
-/* ════════════════════════════════════════════
-   CV PAGE — PDF viewer
-════════════════════════════════════════════ */
-.cv-pdf-bar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: var(--ink);
-  padding: 0.85rem 1.3rem;
-  border-radius: 2px 2px 0 0;
-}
-
-.cv-pdf-bar-title {
-  font-size: 0.75rem;
-  color: rgba(245, 241, 234, 0.55);
-  font-family: 'DM Mono', monospace;
-}
-
-.cv-pdf-actions {
-  display: flex;
-  gap: 0.5rem;
-}
-
-.cv-pdf-btn {
-  font-size: 0.7rem;
-  font-weight: 500;
-  letter-spacing: 0.07em;
-  text-transform: uppercase;
-  color: rgba(245, 241, 234, 0.7);
-  background: rgba(245, 241, 234, 0.1);
-  border: none;
-  padding: 0.38rem 0.95rem;
-  cursor: pointer;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  transition: background var(--t-fast), color var(--t-fast);
-}
-
-.cv-pdf-btn:hover {
-  background: var(--terra);
-  color: #fff !important;
-}
-
-.cv-pdf-embed {
-  width: 100%;
-  height: 780px;
-  border: none;
-  display: block;
-  border: 1px solid var(--border);
-  border-top: none;
 }
 
 /* ════════════════════════════════════════════
@@ -2392,29 +2514,6 @@ main .page-content>section.band-warm:not(:first-of-type) {
 }
 
 /* ────────────────────────────────────────────
-   STAT CARDS — hover
-──────────────────────────────────────────── */
-.stat {
-  cursor: default;
-  transition: background 0.2s;
-}
-.stat:hover { background: var(--terra); }
-.stat:hover .stat-n,
-.stat:hover .stat-l { color: #fff; }
-.stat-n, .stat-l { transition: color 0.2s; }
-
-/* ────────────────────────────────────────────
-   EXPERTISE CARDS — bottom border accent on hover
-──────────────────────────────────────────── */
-.exp-card {
-  border-bottom: 3px solid transparent;
-  transition: background 0.22s, border-bottom-color 0.22s;
-}
-.exp-card:hover {
-  border-bottom-color: var(--terra);
-}
-
-/* ────────────────────────────────────────────
    GALLERY — zoom on hover
 ──────────────────────────────────────────── */
 .gal-ph {
@@ -2620,6 +2719,13 @@ main .page-content>section.band-warm:not(:first-of-type) {
   border-radius: 3px;
   padding: 0.28rem 0.65rem;
   line-height: 1.4;
+  transition: border-color var(--t-fast), color var(--t-fast), background-color var(--t-fast);
+}
+
+.cert-badge:hover {
+  border-color: var(--terra);
+  color: var(--ink);
+  background: rgba(184, 78, 22, 0.12);
 }
 
 @media (max-width: 720px) {
