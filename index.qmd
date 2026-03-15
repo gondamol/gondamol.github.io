@@ -5,6 +5,8 @@ toc: false
 ---
 
 ```{=html}
+<div class="redesign-page redesign-page--home">
+
 <!-- ════════════════════════════════════════════
      HERO
 ════════════════════════════════════════════ -->
@@ -724,25 +726,37 @@ toc: false
         </span>
       </div>
     </div>
-    <div class="contact-right">
+    <form
+      class="contact-right contact-form-card"
+      id="contactForm"
+      action="https://formsubmit.co/ajax/nichodemuswerre@gmail.com"
+      method="POST"
+    >
       <p class="form-label">Quick Message</p>
-      <input type="text"   class="form-field" placeholder="Your name" id="contactName" aria-label="Your name">
-      <input type="email"  class="form-field" placeholder="Email address" id="contactEmail" aria-label="Email address">
-      <input type="text"   class="form-field" placeholder="Organisation" id="contactOrg" aria-label="Organisation">
-      <textarea class="form-field form-textarea" placeholder="Tell me about your project..." id="contactMessage" aria-label="Message"></textarea>
+      <input type="hidden" name="_subject" value="Portfolio contact form submission">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="text" name="_gotcha" class="form-honeypot" tabindex="-1" autocomplete="off">
+      <input type="text" name="name" class="form-field" placeholder="Your name" id="contactName" aria-label="Your name" required>
+      <input type="email" name="email" class="form-field" placeholder="Email address" id="contactEmail" aria-label="Email address" required>
+      <input type="text" name="organisation" class="form-field" placeholder="Organisation" id="contactOrg" aria-label="Organisation">
+      <textarea name="message" class="form-field form-textarea" placeholder="Tell me about your project..." id="contactMessage" aria-label="Message" required></textarea>
       <button
+        type="submit"
         class="btn-solid"
         style="cursor:pointer;width:100%;"
         id="sendBtn"
-        onclick="this.textContent='Message sent ✓';this.style.background='var(--green)';this.disabled=true;"
       >Send Message →</button>
-    </div>
+      <p class="form-status" id="contactFormStatus" aria-live="polite">Messages now route through the site form and fall back to email if there is a delivery issue.</p>
+    </form>
   </div>
 </section>
 
 <!-- Sticky mobile CTA -->
 <div class="sticky-cta-mobile" aria-hidden="true">
   <a href="cv/index.html">View CV →</a>
+</div>
+
 </div>
 
 <script>

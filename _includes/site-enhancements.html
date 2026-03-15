@@ -1,0 +1,139 @@
+<script>
+(function() {
+  function initGalleryLightbox() {
+    var galleryImages = Array.prototype.slice.call(document.querySelectorAll('.gallery-grid .gal-img'));
+    if (!galleryImages.length || document.querySelector('.site-lightbox')) return;
+
+    var overlay = document.createElement('div');
+    overlay.className = 'site-lightbox';
+    overlay.setAttribute('hidden', 'hidden');
+    overlay.innerHTML =
+      '<button type="button" class="site-lightbox__close" aria-label="Close image viewer">Close</button>' +
+      '<div class="site-lightbox__dialog" role="dialog" aria-modal="true" aria-label="Expanded image view">' +
+        '<img class="site-lightbox__image" alt="">' +
+        '<p class="site-lightbox__caption"></p>' +
+      '</div>';
+    document.body.appendChild(overlay);
+
+    var closeBtn = overlay.querySelector('.site-lightbox__close');
+    var lightboxImage = overlay.querySelector('.site-lightbox__image');
+    var lightboxCaption = overlay.querySelector('.site-lightbox__caption');
+    var lastTrigger = null;
+
+    function closeLightbox() {
+      overlay.setAttribute('hidden', 'hidden');
+      document.body.classList.remove('lightbox-open');
+      if (lastTrigger) lastTrigger.focus();
+    }
+
+    function openLightbox(img) {
+      lastTrigger = img;
+      lightboxImage.src = img.currentSrc || img.src;
+      lightboxImage.alt = img.alt || '';
+
+      var overlayLabel = '';
+      var labelNode = img.closest('.gal-ph');
+      if (labelNode) {
+        var textNode = labelNode.querySelector('.gal-label');
+        if (textNode) overlayLabel = textNode.textContent || '';
+      }
+      lightboxCaption.textContent = overlayLabel || img.alt || '';
+
+      overlay.removeAttribute('hidden');
+      document.body.classList.add('lightbox-open');
+      closeBtn.focus();
+    }
+
+    galleryImages.forEach(function(img) {
+      img.setAttribute('tabindex', '0');
+      img.setAttribute('role', 'button');
+      img.setAttribute('aria-label', (img.alt || 'Open image') + ' (expanded view)');
+      img.addEventListener('click', function() { openLightbox(img); });
+      img.addEventListener('keydown', function(event) {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          openLightbox(img);
+        }
+      });
+    });
+
+    closeBtn.addEventListener('click', closeLightbox);
+    overlay.addEventListener('click', function(event) {
+      if (event.target === overlay) closeLightbox();
+    });
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'Escape' && !overlay.hasAttribute('hidden')) {
+        closeLightbox();
+      }
+    });
+  }
+
+  function initContactForm() {
+    var form = document.getElementById('contactForm');
+    if (!form) return;
+
+    var submitBtn = document.getElementById('sendBtn');
+    var statusEl = document.getElementById('contactFormStatus');
+    var endpoint = form.getAttribute('action');
+
+    function setStatus(message, state) {
+      if (!statusEl) return;
+      statusEl.textContent = message;
+      statusEl.dataset.state = state || '';
+    }
+
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      if (!endpoint) {
+        setStatus('Form endpoint is missing. Please try the email link instead.', 'error');
+        return;
+      }
+
+      var formData = new FormData(form);
+      if (formData.get('_gotcha')) {
+        return;
+      }
+
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Sending...';
+      }
+      setStatus('Sending your message...', 'pending');
+
+      fetch(endpoint, {
+        method: 'POST',
+        headers: {
+          Accept: 'application/json'
+        },
+        body: formData
+      })
+        .then(function(response) {
+          if (!response.ok) {
+            throw new Error('Request failed');
+          }
+          return response.json();
+        })
+        .then(function() {
+          form.reset();
+          setStatus('Message sent. You should receive it in your inbox shortly.', 'success');
+          if (submitBtn) {
+            submitBtn.textContent = 'Message Sent ✓';
+          }
+        })
+        .catch(function() {
+          setStatus('The form could not be sent right now. Please use the email link if this keeps happening.', 'error');
+          if (submitBtn) {
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Send Message →';
+          }
+        });
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    initGalleryLightbox();
+    initContactForm();
+  });
+})();
+</script>

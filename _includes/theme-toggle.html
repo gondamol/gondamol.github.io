@@ -1,0 +1,100 @@
+<script>
+(function() {
+  var storageKey = 'nic-site-theme';
+  var moonIcon = '' +
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
+    '<path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"></path>' +
+    '</svg>';
+  var sunIcon = '' +
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
+    '<circle cx="12" cy="12" r="4.2"></circle>' +
+    '<path d="M12 2.5v2.2M12 19.3v2.2M4.9 4.9l1.6 1.6M17.5 17.5l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.9 19.1l1.6-1.6M17.5 6.5l1.6-1.6"></path>' +
+    '</svg>';
+
+  function readStoredTheme() {
+    try {
+      return localStorage.getItem(storageKey);
+    } catch (error) {
+      return null;
+    }
+  }
+
+  function persistTheme(theme) {
+    try {
+      localStorage.setItem(storageKey, theme);
+    } catch (error) {
+      // Ignore storage failures; the in-memory theme still works.
+    }
+  }
+
+  function applyTheme(theme, persist) {
+    var root = document.documentElement;
+    var toggle = document.querySelector('.theme-toggle');
+    var navbar = document.querySelector('.navbar');
+
+    root.setAttribute('data-theme', theme);
+    root.style.colorScheme = theme;
+
+    if (navbar) {
+      navbar.setAttribute('data-bs-theme', theme === 'dark' ? 'dark' : 'light');
+    }
+
+    if (toggle) {
+      var nextTheme = theme === 'dark' ? 'light' : 'dark';
+      var label = toggle.querySelector('.theme-toggle__label');
+      var icon = toggle.querySelector('.theme-toggle__icon');
+      toggle.setAttribute('aria-pressed', theme === 'dark' ? 'true' : 'false');
+      toggle.setAttribute('aria-label', theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+      toggle.dataset.theme = theme;
+      if (label) label.textContent = theme === 'dark' ? 'Light' : 'Dark';
+      if (icon) icon.innerHTML = theme === 'dark' ? sunIcon : moonIcon;
+      toggle.dataset.nextTheme = nextTheme;
+    }
+
+    if (persist !== false) {
+      persistTheme(theme);
+    }
+  }
+
+  function detectTheme() {
+    var storedTheme = readStoredTheme();
+    if (storedTheme === 'light' || storedTheme === 'dark') {
+      return storedTheme;
+    }
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  }
+
+  function injectToggle() {
+    var host = document.querySelector('.quarto-navbar-tools');
+    if (!host || host.querySelector('.theme-toggle')) return;
+
+    var button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'theme-toggle';
+    button.innerHTML = '<span class="theme-toggle__icon"></span><span class="theme-toggle__label"></span>';
+    button.addEventListener('click', function() {
+      var currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+      applyTheme(currentTheme === 'dark' ? 'light' : 'dark');
+    });
+
+    host.prepend(button);
+    applyTheme(detectTheme(), false);
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    injectToggle();
+
+    var mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    var onThemeChange = function(event) {
+      if (readStoredTheme()) return;
+      applyTheme(event.matches ? 'dark' : 'light', false);
+    };
+
+    if (typeof mediaQuery.addEventListener === 'function') {
+      mediaQuery.addEventListener('change', onThemeChange);
+    } else if (typeof mediaQuery.addListener === 'function') {
+      mediaQuery.addListener(onThemeChange);
+    }
+  });
+})();
+</script>

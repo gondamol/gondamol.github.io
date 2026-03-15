@@ -1,103 +1,168 @@
 ---
-title: "Essays & Field Notes"
-subtitle: "Research translation, technical notes, and practical writing from health data work"
+title: ""
+subtitle: ""
 page-layout: full
 listing:
-  contents: 
+  contents:
     - "../posts/*/index.qmd"
   sort: "date desc"
-  type: default
-  categories: false
+  type: grid
+  grid-columns: 3
+  categories: true
   fields: [image, date, title, subtitle, categories, reading-time]
   max-items: 100
   feed: true
 ---
 
 ```{=html}
-<div class="blog-page">
-  <section class="blog-command-deck">
-    <div class="blog-command-copy">
+<div class="redesign-page">
+
+<!-- ═══════════════════════════════════════════
+     BLOG HERO
+═══════════════════════════════════════════ -->
+<section class="bx-hero reveal-on-scroll">
+  <div class="bx-hero-inner">
+    <div class="bx-hero-copy">
       <span class="section-eyebrow">Writing</span>
-      <p class="blog-overline">Research translation · Methods · Career · Field systems</p>
-      <h1 class="blog-command-title">A writing studio for public-health research, analytics practice, and the work around the work.</h1>
-      <p class="blog-command-lead">Use the explorer to move between research essays, technical notes, career strategy, and field systems writing. The goal is not volume. It is clarity, usefulness, and work that feels grounded in practice.</p>
-      <div class="blog-hero-actions">
-        <a href="../posts/47-facility-decision-space-chronic-care/index.html" class="btn-solid">Read the flagship essay</a>
-        <a href="../research/publications.html" class="btn-ghost">Explore research</a>
+      <p class="bx-overline">Research translation · Methods · Career · Field systems</p>
+      <h1 class="bx-hero-heading">Essays &amp; Field Notes</h1>
+      <p class="bx-hero-lead">A writing studio for public-health research, analytics practice, and the work around the work. The goal is not volume — it is clarity, usefulness, and work grounded in practice.</p>
+      <div class="bx-hero-actions">
+        <a href="../posts/47-facility-decision-space-chronic-care/index.html" class="btn-solid">Read the Flagship Essay</a>
+        <a href="../research/publications.html" class="btn-ghost">Explore Research →</a>
       </div>
     </div>
 
-    <div class="blog-command-aside" aria-label="Writing overview">
-      <article class="blog-aside-card">
-        <p class="blog-kicker">Flagship essay</p>
+    <div class="bx-hero-aside">
+      <article class="bx-featured-card">
+        <span class="bx-card-kicker">Flagship Essay</span>
         <h3>When Clinics Can Diagnose but Cannot Buy Medicines</h3>
-        <p>The public essay built from the BMC Public Health paper and written for readers beyond academic journals.</p>
-        <a href="../posts/47-facility-decision-space-chronic-care/index.html">Open essay →</a>
+        <p>The public essay built from the BMC Public Health paper, written for readers beyond academic journals.</p>
+        <div class="bx-card-tags">
+          <span class="bx-tag bx-tag--research">Research</span>
+          <span class="bx-tag bx-tag--health">Health Financing</span>
+          <span class="bx-tag bx-tag--health">NCD Care</span>
+        </div>
+        <a href="../posts/47-facility-decision-space-chronic-care/index.html" class="bx-card-link">Open essay →</a>
       </article>
 
-      <article class="blog-aside-card blog-aside-metric">
-        <span class="blog-metric-value">50+</span>
-        <span class="blog-metric-label">Posts across analytics, health research, career development, and monitoring systems</span>
-      </article>
-    </div>
-  </section>
-
-  <section class="blog-explorer-shell">
-    <div class="blog-filter-bar" role="tablist" aria-label="Blog streams">
-      <button class="blog-filter-btn active" data-filter="all" type="button">All writing</button>
-      <button class="blog-filter-btn" data-filter="research" type="button">Research</button>
-      <button class="blog-filter-btn" data-filter="technical" type="button">Technical</button>
-      <button class="blog-filter-btn" data-filter="career" type="button">Career</button>
-      <button class="blog-filter-btn" data-filter="field" type="button">Field systems</button>
-    </div>
-    <div class="blog-filter-status">
-      <p id="blogFilterLabel">Showing all writing</p>
-      <p id="blogFilterCount">Use the filters to reshape the archive.</p>
-    </div>
-  </section>
-
-  <section class="blog-feature-grid">
-    <article class="blog-story-card blog-story-primary">
-      <p class="blog-story-kicker">Research spotlight</p>
-      <h2>When Clinics Can Diagnose but Cannot Buy Medicines</h2>
-      <p>This essay translates the forthcoming BMC Public Health paper into a sharper public argument about budgets, approvals, and why chronic care fails before treatment ever starts.</p>
-      <div class="blog-story-tags">
-        <span class="blog-story-tag">BMC Public Health</span>
-        <span class="blog-story-tag">Health financing</span>
-        <span class="blog-story-tag">NCD care</span>
+      <div class="bx-metric-card">
+        <span class="bx-metric-num">50+</span>
+        <span class="bx-metric-label">Posts across analytics, health research, career development, and monitoring systems</span>
       </div>
-      <a href="../posts/47-facility-decision-space-chronic-care/index.html" class="btn-solid">Open essay</a>
-    </article>
+    </div>
+  </div>
+</section>
 
-    <div class="blog-side-stack">
-      <a class="blog-story-card blog-story-secondary" href="../posts/22-reproducible-research-public-health/index.html">
-        <p class="blog-story-kicker">Research methods</p>
-        <h3>Why reproducible research matters in public health</h3>
-        <p>Transparent workflows, better trust, and why method discipline is not optional in health science.</p>
+<!-- ═══════════════════════════════════════════
+     FEATURED PICKS — Magazine Layout
+═══════════════════════════════════════════ -->
+<section class="bx-section reveal-on-scroll">
+  <div class="bx-section-inner">
+    <span class="section-eyebrow">Editor's Picks</span>
+    <h2 class="section-h">Recommended reading</h2>
+
+    <div class="bx-picks-grid">
+      <a class="bx-pick-card bx-pick--primary" href="../posts/47-facility-decision-space-chronic-care/index.html">
+        <div class="bx-pick-content">
+          <span class="bx-tag bx-tag--research">Research</span>
+          <h3>When Clinics Can Diagnose but Cannot Buy Medicines</h3>
+          <p>This essay translates a forthcoming BMC Public Health paper into a sharper public argument about budgets, approvals, and why chronic care fails before treatment starts.</p>
+          <span class="bx-pick-meta">Flagship · 12 min read</span>
+        </div>
       </a>
 
-      <a class="blog-story-card blog-story-secondary" href="../posts/30-health-financial-diaries-explainer/index.html">
-        <p class="blog-story-kicker">Health economics</p>
-        <h3>Health financial diaries</h3>
-        <p>How high-frequency financial data reveals what conventional surveys miss about care-seeking and coping.</p>
+      <a class="bx-pick-card bx-pick--secondary" href="../posts/22-reproducible-research-public-health/index.html">
+        <span class="bx-tag bx-tag--research">Research</span>
+        <h4>Why reproducible research matters in public health</h4>
+        <p>Transparent workflows, better trust, and why method discipline is not optional.</p>
       </a>
 
-      <a class="blog-story-card blog-story-secondary" href="../posts/23-r-for-health-researchers/index.html">
-        <p class="blog-story-kicker">Technical writing</p>
-        <h3>R for health researchers</h3>
-        <p>A practical bridge between analysis, reporting, and reproducible public-health workflows.</p>
+      <a class="bx-pick-card bx-pick--secondary" href="../posts/30-health-financial-diaries-explainer/index.html">
+        <span class="bx-tag bx-tag--health">Health Economics</span>
+        <h4>Health financial diaries</h4>
+        <p>How high-frequency financial data reveals what conventional surveys miss.</p>
+      </a>
+
+      <a class="bx-pick-card bx-pick--secondary" href="../posts/23-r-for-health-researchers/index.html">
+        <span class="bx-tag bx-tag--technical">Technical</span>
+        <h4>R for health researchers</h4>
+        <p>A practical bridge between analysis, reporting, and reproducible workflows.</p>
       </a>
     </div>
-  </section>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     CATEGORY EXPLORER STRIP
+═══════════════════════════════════════════ -->
+<section class="bx-section bx-section--warm reveal-on-scroll">
+  <div class="bx-section-inner">
+    <span class="section-eyebrow">Browse</span>
+    <h2 class="section-h">Explore by topic</h2>
+
+    <div class="bx-categories-grid">
+      <button class="bx-category-card active" data-filter="all" type="button">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+        <span class="bx-cat-name">All Writing</span>
+        <span class="bx-cat-count" id="countAll"></span>
+      </button>
+      <button class="bx-category-card" data-filter="research" type="button">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <span class="bx-cat-name">Research</span>
+        <span class="bx-cat-count" id="countResearch"></span>
+      </button>
+      <button class="bx-category-card" data-filter="technical" type="button">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        <span class="bx-cat-name">Technical</span>
+        <span class="bx-cat-count" id="countTechnical"></span>
+      </button>
+      <button class="bx-category-card" data-filter="career" type="button">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+        <span class="bx-cat-name">Career</span>
+        <span class="bx-cat-count" id="countCareer"></span>
+      </button>
+      <button class="bx-category-card" data-filter="field" type="button">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="1"/></svg>
+        <span class="bx-cat-name">Field Systems</span>
+        <span class="bx-cat-count" id="countField"></span>
+      </button>
+    </div>
+
+    <div class="bx-filter-status">
+      <p id="bxFilterLabel">Showing <strong>all writing</strong></p>
+      <p id="bxFilterCount"></p>
+    </div>
+  </div>
+</section>
+
 </div>
 
 <script>
 (function() {
-  const filterButtons = Array.from(document.querySelectorAll('.blog-filter-btn'));
-  const filterLabel = document.getElementById('blogFilterLabel');
-  const filterCount = document.getElementById('blogFilterCount');
+  // Scroll reveal
+  var prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var revealEls = document.querySelectorAll('.reveal-on-scroll');
+  if (!prefersReduced) {
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.06, rootMargin: '0px 0px -40px 0px' });
+    revealEls.forEach(function(el) { observer.observe(el); });
+  } else {
+    revealEls.forEach(function(el) { el.classList.add('is-visible'); });
+  }
 
-  const streamNames = {
+  // Blog category filtering
+  var filterButtons = Array.from(document.querySelectorAll('.bx-category-card'));
+  var filterLabel = document.getElementById('bxFilterLabel');
+  var filterCount = document.getElementById('bxFilterCount');
+
+  var streamNames = {
     all: 'all writing',
     research: 'research writing',
     technical: 'technical writing',
@@ -105,76 +170,94 @@ listing:
     field: 'field systems writing'
   };
 
-  const rules = [
-    { key: 'career', words: ['career', 'portfolio', 'job search', 'interview', 'salary', 'remote work', 'linkedin', 'personal brand', 'first job', 'roadmap'] },
-    { key: 'field', words: ['monitoring & evaluation', 'impact evaluation', 'survey design', 'data collection', 'field work', 'm&e', 'logframe', 'odk', 'mobile technology', 'data quality', 'health programs'] },
-    { key: 'research', words: ['public health', 'health financing', 'health systems', 'health research', 'research methods', 'cancer research', 'health economics', 'ncd', 'kenya', 'reproducibility'] },
-    { key: 'technical', words: ['r', 'python', 'sql', 'quarto', 'dashboards', 'dashboard', 'tableau', 'power bi', 'data engineering', 'data visualization', 'git', 'github', 'database', 'tools', 'automation'] }
+  var rules = [
+    { key: 'career', words: ['career', 'portfolio', 'job search', 'interview', 'salary', 'remote work', 'linkedin', 'personal brand', 'first job', 'roadmap', 'first 90 days', 'hired', 'negotiate'] },
+    { key: 'field', words: ['monitoring & evaluation', 'impact evaluation', 'survey design', 'data collection', 'field work', 'm&e', 'logframe', 'odk', 'mobile technology', 'data quality', 'health programs', 'evaluator'] },
+    { key: 'research', words: ['public health', 'health financing', 'health systems', 'health research', 'research methods', 'cancer research', 'health economics', 'ncd', 'reproducibility', 'reproducible', 'maternal', 'epidemiology'] },
+    { key: 'technical', words: ['r', 'python', 'sql', 'quarto', 'dashboards', 'dashboard', 'tableau', 'power bi', 'data engineering', 'data visualization', 'git', 'github', 'database', 'tools', 'automation', 'statistics', 'a/b testing', 'data cleaning'] }
   ];
 
   function detectStream(card) {
-    const text = [
-      ...Array.from(card.querySelectorAll('.listing-category')).map((node) => node.textContent || ''),
-      card.querySelector('.listing-title')?.textContent || '',
-      card.querySelector('.listing-subtitle')?.textContent || ''
+    var text = [
+      ...(Array.from(card.querySelectorAll('.listing-category')).map(function(n) { return n.textContent || ''; })),
+      (card.querySelector('.listing-title') ? card.querySelector('.listing-title').textContent : ''),
+      (card.querySelector('.listing-subtitle') ? card.querySelector('.listing-subtitle').textContent : '')
     ].join(' ').toLowerCase();
 
-    for (const rule of rules) {
-      if (rule.words.some((word) => text.includes(word))) {
-        return rule.key;
+    for (var i = 0; i < rules.length; i++) {
+      for (var j = 0; j < rules[i].words.length; j++) {
+        if (text.indexOf(rules[i].words[j]) !== -1) {
+          return rules[i].key;
+        }
       }
     }
     return 'technical';
   }
 
   function decorateCards() {
-    const cards = Array.from(document.querySelectorAll('#listing-listing .quarto-post'));
-    cards.forEach((card) => {
-      const stream = detectStream(card);
-      card.dataset.stream = stream;
+    var cards = Array.from(document.querySelectorAll('#listing-listing .quarto-post'));
+    var counts = { all: cards.length, research: 0, technical: 0, career: 0, field: 0 };
 
-      const body = card.querySelector('.body');
-      if (body && !body.querySelector('.blog-stream-badge')) {
-        const badge = document.createElement('span');
-        badge.className = 'blog-stream-badge';
+    cards.forEach(function(card) {
+      var stream = detectStream(card);
+      card.dataset.stream = stream;
+      counts[stream] = (counts[stream] || 0) + 1;
+
+      // Add stream badge
+      var body = card.querySelector('.body');
+      if (body && !body.querySelector('.bx-stream-badge')) {
+        var badge = document.createElement('span');
+        badge.className = 'bx-stream-badge bx-stream-badge--' + stream;
         badge.textContent = streamNames[stream];
         body.prepend(badge);
       }
     });
+
+    // Update counts
+    var countAllEl = document.getElementById('countAll');
+    var countResEl = document.getElementById('countResearch');
+    var countTechEl = document.getElementById('countTechnical');
+    var countCarEl = document.getElementById('countCareer');
+    var countFieldEl = document.getElementById('countField');
+    if (countAllEl) countAllEl.textContent = counts.all + ' posts';
+    if (countResEl) countResEl.textContent = counts.research + ' posts';
+    if (countTechEl) countTechEl.textContent = counts.technical + ' posts';
+    if (countCarEl) countCarEl.textContent = counts.career + ' posts';
+    if (countFieldEl) countFieldEl.textContent = counts.field + ' posts';
+
     return cards;
   }
 
   function applyFilter(stream) {
-    const cards = Array.from(document.querySelectorAll('#listing-listing .quarto-post'));
-    let visible = 0;
+    var cards = Array.from(document.querySelectorAll('#listing-listing .quarto-post'));
+    var visible = 0;
 
-    cards.forEach((card) => {
-      const show = stream === 'all' || card.dataset.stream === stream;
+    cards.forEach(function(card) {
+      var show = stream === 'all' || card.dataset.stream === stream;
       card.classList.toggle('blog-post-hidden', !show);
-      if (show) visible += 1;
+      if (show) visible++;
     });
 
-    filterButtons.forEach((button) => {
-      button.classList.toggle('active', button.dataset.filter === stream);
+    filterButtons.forEach(function(btn) {
+      btn.classList.toggle('active', btn.dataset.filter === stream);
     });
 
     if (filterLabel) {
-      filterLabel.textContent = stream === 'all'
-        ? 'Showing all writing'
-        : `Showing ${streamNames[stream]}`;
+      filterLabel.innerHTML = 'Showing <strong>' + (streamNames[stream] || stream) + '</strong>';
     }
-
     if (filterCount) {
-      filterCount.textContent = `${visible} posts visible`;
+      filterCount.textContent = visible + ' of ' + cards.length + ' posts';
     }
   }
 
   function init() {
-    const cards = decorateCards();
+    var cards = decorateCards();
     if (!cards.length) return;
 
-    filterButtons.forEach((button) => {
-      button.addEventListener('click', () => applyFilter(button.dataset.filter || 'all'));
+    filterButtons.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        applyFilter(btn.dataset.filter || 'all');
+      });
     });
 
     applyFilter('all');

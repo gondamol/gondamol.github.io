@@ -5,6 +5,10 @@ author: "Nichodemus Amollo"
 date: "2025-11-12"
 categories: [Quarto, R, Reporting, Monitoring & Evaluation]
 image: "/img/blog-mande.svg"
+filters:
+  - webr
+webr:
+  show-startup-message: false
 ---
 
 ## Why Quarto Is a Game-Changer
@@ -35,6 +39,20 @@ Quarto lets you:
    - `slides.html` (presentations)
 
 You change the data and **press render**—the report updates.
+
+## Mini Playground
+
+This browser-based code cell shows the kind of quick indicator summary you can keep inside a Quarto report and rerun whenever the data changes.
+
+```{webr-r}
+programme <- data.frame(
+  county = c("Kisumu", "Kisumu", "Homa Bay", "Siaya", "Siaya"),
+  month = c("Jan", "Feb", "Jan", "Jan", "Feb"),
+  visits = c(128, 141, 96, 87, 111)
+)
+
+aggregate(visits ~ county, data = programme, FUN = sum)
+```
 
 ---
 

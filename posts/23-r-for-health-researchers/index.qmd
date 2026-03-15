@@ -4,6 +4,10 @@ subtitle: "From Clinical Data to Statistical Insights: Your Complete Roadmap to 
 author: "Nichodemus Amollo"
 date: "2025-10-26"
 categories: [R Programming, Health Research, Statistics, Tutorial, Beginners]
+filters:
+  - webr
+webr:
+  show-startup-message: false
 ---
 
 ## Why R for Health Research?
@@ -82,6 +86,22 @@ bmi <- weight_kg / (height_m^2)
 print(bmi)
 ```
 
+### Try It Live in Your Browser
+
+The cell below runs with webR directly in the browser, so readers can edit the values and rerun the code without leaving the post.
+
+```{webr-r}
+age <- 29
+weight_kg <- 72
+height_m <- 1.74
+
+bmi <- weight_kg / (height_m ^ 2)
+message <- if (bmi < 25) "BMI is in the reference range." else "BMI suggests follow-up may be useful."
+
+round(bmi, 1)
+message
+```
+
 ### Understanding R Objects
 
 ```r
@@ -102,6 +122,17 @@ patients <- data.frame(
 
 # View the data
 print(patients)
+```
+
+```{webr-r}
+patients <- data.frame(
+  id = 1:5,
+  age = c(23, 45, 67, 34, 56),
+  diabetes = c(FALSE, TRUE, TRUE, FALSE, TRUE)
+)
+
+mean(patients$age)
+table(patients$diabetes)
 ```
 
 ---

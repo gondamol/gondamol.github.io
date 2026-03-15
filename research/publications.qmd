@@ -1,148 +1,654 @@
 ---
-title: "Research"
-subtitle: "Health financing, primary care, and chronic disease systems"
+title: ""
+subtitle: ""
 page-layout: full
+toc: false
 ---
 
 ```{=html}
-<div class="research-page">
-  <section class="research-hero-panel">
-    <div class="research-hero-copy">
+<div class="redesign-page">
+
+<!-- ═══════════════════════════════════════════
+     RESEARCH HERO — Full-Width Impact Statement
+═══════════════════════════════════════════ -->
+<section class="rx-hero reveal-on-scroll">
+  <div class="rx-hero-inner">
+    <div class="rx-hero-copy">
       <span class="section-eyebrow">Research</span>
-      <p class="research-pretitle">Health financing · Primary care · Chronic disease systems</p>
-      <h1 class="research-headline">Studying what happens when clinics are expected to deliver chronic care without enough financial decision space to keep it running.</h1>
-      <p class="research-intro">My first-author paper on hypertension and diabetes care in rural Kisumu is forthcoming in <em>BMC Public Health</em>. Across my work, I focus on the institutional details that shape outcomes on the ground: budgets, approvals, reimbursement flows, facility autonomy, and the hidden mechanics behind service continuity.</p>
-      <div class="research-actions">
-        <a href="thesis.html" class="btn-solid">View thesis</a>
-        <a href="publications_files/01_NCDFin_ManuscriptV4.pdf" class="btn-ghost" target="_blank">Read manuscript PDF</a>
-        <a href="../posts/47-facility-decision-space-chronic-care/index.html" class="btn-ghost">Read essay</a>
+      <h1 class="rx-hero-heading">Studying what happens when clinics are&nbsp;expected to deliver chronic care without enough financial decision space.</h1>
+      <p class="rx-hero-lead">My first-author paper on hypertension and diabetes care in rural Kisumu is forthcoming in <em>BMC Public Health</em>. I focus on the institutional details that shape outcomes on the ground: budgets, approvals, reimbursement flows, and the hidden mechanics behind service continuity.</p>
+      <div class="rx-hero-actions">
+        <a href="thesis.html" class="btn-solid">View Thesis</a>
+        <a href="publications_files/01_NCDFin_ManuscriptV4.pdf" class="btn-ghost" target="_blank">Read Manuscript PDF →</a>
+        <a href="../posts/47-facility-decision-space-chronic-care/index.html" class="btn-ghost">Read Public Essay →</a>
       </div>
     </div>
+    <div class="rx-hero-visual">
+      <img src="../img/ncd manuscript.png"
+           alt="NCD Finance manuscript preview"
+           class="rx-manuscript-preview"
+           onerror="this.parentElement.style.display='none'">
+    </div>
+  </div>
+</section>
 
-    <div class="research-hero-side">
-      <article class="research-publication-panel">
-        <p class="research-kicker">Forthcoming in BMC Public Health</p>
-        <h2>Financial Determinants of Effective Hypertension and Diabetes Care in Rural Primary Health Facilities in Kisumu, Kenya</h2>
-        <p class="research-panel-copy">A mixed-methods study of seven public primary care facilities in Seme Sub-County showing how narrow funding streams, delayed approvals, and missing protected NCD budgets undermine continuity of care.</p>
+<!-- ═══════════════════════════════════════════
+     IMPACT STATS STRIP
+═══════════════════════════════════════════ -->
+<section class="rx-stats-strip reveal-on-scroll">
+  <div class="rx-stats-inner">
+    <div class="rx-stat-card">
+      <span class="rx-stat-num">4</span>
+      <span class="rx-stat-label">Publications & manuscripts</span>
+    </div>
+    <div class="rx-stat-card">
+      <span class="rx-stat-num">7</span>
+      <span class="rx-stat-label">Public facilities studied</span>
+    </div>
+    <div class="rx-stat-card">
+      <span class="rx-stat-num">3</span>
+      <span class="rx-stat-label">Countries covered</span>
+    </div>
+    <div class="rx-stat-card">
+      <span class="rx-stat-num">1000+</span>
+      <span class="rx-stat-label">Households tracked</span>
+    </div>
+    <div class="rx-stat-card">
+      <span class="rx-stat-num">10yr</span>
+      <span class="rx-stat-label">Cancer registry analysis</span>
+    </div>
+    <div class="rx-stat-card">
+      <span class="rx-stat-num">85.7%</span>
+      <span class="rx-stat-label">Reported frequent stockouts</span>
+    </div>
+  </div>
+</section>
 
-        <div class="research-panel-stats">
-          <div class="research-panel-stat">
-            <strong>7</strong>
-            <span>public facilities studied</span>
-          </div>
-          <div class="research-panel-stat">
-            <strong>85.7%</strong>
-            <span>reported frequent stockouts</span>
-          </div>
-          <div class="research-panel-stat">
-            <strong>0%</strong>
-            <span>had full spending autonomy</span>
-          </div>
-          <div class="research-panel-stat">
-            <strong>BMC</strong>
-            <span>journal destination</span>
-          </div>
+<!-- ═══════════════════════════════════════════
+     FEATURED PUBLICATION — Full Card
+═══════════════════════════════════════════ -->
+<section class="rx-section reveal-on-scroll">
+  <div class="rx-section-inner">
+    <span class="section-eyebrow">Featured Publication</span>
+    <h2 class="section-h">Flagship paper</h2>
+
+    <article class="rx-pub-card rx-pub-featured">
+      <div class="rx-pub-header">
+        <div class="rx-pub-badges">
+          <span class="rx-badge rx-badge--forthcoming">Forthcoming</span>
+          <span class="rx-badge rx-badge--role">First Author</span>
         </div>
+        <span class="rx-pub-journal">BMC Public Health</span>
+      </div>
+      <h3 class="rx-pub-title">Financial Determinants of Effective Hypertension and Diabetes Care in Rural Primary Health Facilities in Kisumu, Kenya: A Mixed-Methods Study</h3>
+      <p class="rx-pub-abstract">A mixed-methods study of seven public primary care facilities in Seme Sub-County showing how narrow funding streams, delayed county approvals, and missing protected NCD budget lines undermine continuity of chronic care for hypertension and diabetes patients.</p>
+      <div class="rx-pub-highlights">
+        <div class="rx-highlight">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          <span>Chronic-care breakdown is a governance problem, not only procurement</span>
+        </div>
+        <div class="rx-highlight">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          <span>Protected NCD budgets and faster local execution matter as much as funding volume</span>
+        </div>
+        <div class="rx-highlight">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          <span>Facilities can plan and budget, yet still fail if financial authority stays too distant</span>
+        </div>
+      </div>
+      <div class="rx-pub-chips">
+        <span>R</span><span>Mixed Methods</span><span>Health Systems</span><span>Facility Finance</span><span>Policy Translation</span><span>STATA</span>
+      </div>
+      <div class="rx-pub-actions">
+        <a href="publications_files/01_NCDFin_ManuscriptV4.pdf" class="btn-solid" target="_blank">Read PDF</a>
+        <a href="thesis.html" class="btn-ghost">View Full Thesis →</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     METHODS & APPROACH
+═══════════════════════════════════════════ -->
+<section class="rx-section rx-section--warm reveal-on-scroll">
+  <div class="rx-section-inner">
+    <span class="section-eyebrow">Approach</span>
+    <h2 class="section-h">How I work</h2>
+    <p class="section-sub">Mixed-methods designs that connect financial records, structured facility data, and management interviews so analysis stays close to operational reality.</p>
+
+    <div class="rx-methods-grid">
+      <article class="rx-method-card">
+        <div class="rx-method-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </div>
+        <h4>Study Design</h4>
+        <p>Scoping, protocol design, IRB submissions, tool digitization. Setting the foundation for high-quality data.</p>
+        <div class="rx-method-tools"><span>Cross-sectional</span><span>Qualitative</span><span>Mixed methods</span></div>
+      </article>
+
+      <article class="rx-method-card">
+        <div class="rx-method-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="9" y1="7" x2="15" y2="7"/><line x1="9" y1="11" x2="15" y2="11"/><line x1="9" y1="15" x2="12" y2="15"/></svg>
+        </div>
+        <h4>Data Collection</h4>
+        <p>Structured facility assessments, key informant interviews, financial record review, and health system observations.</p>
+        <div class="rx-method-tools"><span>KoboToolbox</span><span>REDCap</span><span>ODK</span></div>
+      </article>
+
+      <article class="rx-method-card">
+        <div class="rx-method-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 3h18M3 9h18M9 3v18M3 15l4-4 4 4 4-6 4 6"/></svg>
+        </div>
+        <h4>Analysis</h4>
+        <p>Descriptive statistics, thematic analysis, mixed-methods integration, and econometric modelling.</p>
+        <div class="rx-method-tools"><span>R</span><span>STATA</span><span>SPSS</span><span>DiD</span></div>
+      </article>
+
+      <article class="rx-method-card">
+        <div class="rx-method-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 17V13"/><path d="M12 17V9"/><path d="M16 17V11"/></svg>
+        </div>
+        <h4>Translation</h4>
+        <p>Policy briefs, stakeholder presentations, publication-ready manuscripts, and evidence-to-action workshops.</p>
+        <div class="rx-method-tools"><span>Quarto</span><span>R Markdown</span><span>Policy Briefs</span></div>
       </article>
     </div>
-  </section>
-  <section class="research-dossier-grid">
-    <article class="research-dossier-card">
-      <p class="research-kicker">Publication focus</p>
-      <h3>What the paper shows</h3>
-      <ul>
-        <li>Chronic-care breakdown in rural primary care is often a governance problem, not only a procurement problem.</li>
-        <li>Facilities can plan, budget, and still fail to sustain care if financial authority remains too far from the point of service.</li>
-        <li>Protected NCD budgets and faster local execution matter as much as funding volume.</li>
-      </ul>
-    </article>
-
-    <article class="research-dossier-card">
-      <p class="research-kicker">Methods</p>
-      <h3>How I work</h3>
-      <p>I use mixed-methods designs that connect financial records, structured facility data, and management interviews so the analysis stays close to operational reality.</p>
-      <div class="research-chip-row">
-        <span class="research-chip">Mixed methods</span>
-        <span class="research-chip">Health systems</span>
-        <span class="research-chip">Facility finance</span>
-        <span class="research-chip">Policy translation</span>
-        <span class="research-chip">R</span>
-        <span class="research-chip">STATA</span>
-      </div>
-    </article>
-  </section>
-</div>
-```
-
-## Research interests
-
-```{=html}
-<div class="research-interest-mosaic">
-  <article class="research-interest-tile">
-    <h4>Health financing and decision space</h4>
-    <p>How county rules, purchasing arrangements, and approval chains shape what frontline facilities can actually do.</p>
-  </article>
-  <article class="research-interest-tile">
-    <h4>NCD care in primary health systems</h4>
-    <p>Hypertension and diabetes care, medicine continuity, and the operational conditions required for chronic-care delivery.</p>
-  </article>
-  <article class="research-interest-tile">
-    <h4>Mixed-methods health systems research</h4>
-    <p>Combining records, interviews, and implementation context to explain not just what failed, but why it failed.</p>
-  </article>
-  <article class="research-interest-tile">
-    <h4>Life-course diabetes epidemiology</h4>
-    <p>Urbanization, work history, and the pathways through which diabetes risk accumulates and returns to rural settings.</p>
-  </article>
-  <article class="research-interest-tile">
-    <h4>Community-delivered intervention design</h4>
-    <p>Locally grounded support models for chronic disease management, lifestyle change, and implementation feasibility.</p>
-  </article>
-  <article class="research-interest-tile">
-    <h4>Research data systems</h4>
-    <p>Practical workflows for data capture, data quality, reproducibility, and research operations in real project environments.</p>
-  </article>
-</div>
-```
-
-## Selected publications and contributions
-
-```{=html}
-<div class="research-publication-stack">
-  <article class="research-citation-card research-citation-featured">
-    <p class="research-citation-meta">First author · Forthcoming</p>
-    <h3 class="research-citation-title">Financial Determinants of Effective Hypertension and Diabetes Care in Rural Primary Health Facilities in Kisumu, Kenya: A Mixed-Methods Study</h3>
-    <p class="research-citation-body">Forthcoming in <em>BMC Public Health</em>. Role: study design, mixed-methods analysis, interpretation, and writing.</p>
-  </article>
-
-  <article class="research-citation-card">
-    <p class="research-citation-meta">Co-author</p>
-    <h3 class="research-citation-title">Addressing priority gaps in access and quality of NCD services in primary care settings in rural Kenya: A participatory approach to intervention development</h3>
-    <p class="research-citation-body">Role: conceptualization, data collection, management, analysis, and co-writing results and discussion.</p>
-  </article>
-
-  <article class="research-citation-card">
-    <p class="research-citation-meta">Co-author</p>
-    <h3 class="research-citation-title">Characteristics and mortality risk among esophageal cancer patients with varied HIV status seeking care in western Kenya: A 10-year analysis</h3>
-    <p class="research-citation-body">Role: data management and analysis.</p>
-  </article>
-
-  <article class="research-citation-card">
-    <p class="research-citation-meta">Co-author</p>
-    <h3 class="research-citation-title">Survival disparities in cervical cancer patients with and without HIV at Jaramogi Oginga Odinga Teaching and Referral Hospital</h3>
-    <p class="research-citation-body">Role: data management and analysis.</p>
-  </article>
-</div>
-```
-
-## Collaboration
-
-```{=html}
-<div class="research-collab-card">
-  <p>I am interested in collaborations on health systems research, chronic disease management, mixed-methods implementation studies, research data systems, and public-health analytics in Africa.</p>
-  <div class="research-actions">
-    <a href="mailto:nichodemuswerre@gmail.com" class="btn-solid">Email me</a>
-    <a href="thesis.html" class="btn-ghost">View thesis</a>
   </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     RESEARCH INTERESTS — Icon Cards
+═══════════════════════════════════════════ -->
+<section class="rx-section reveal-on-scroll">
+  <div class="rx-section-inner">
+    <span class="section-eyebrow">Focus Areas</span>
+    <h2 class="section-h">Research interests</h2>
+
+    <div class="rx-interests-grid">
+      <article class="rx-interest-card">
+        <div class="rx-interest-icon">💰</div>
+        <h4>Health financing and decision space</h4>
+        <p>How county rules, purchasing arrangements, and approval chains shape what frontline facilities can actually do.</p>
+      </article>
+
+      <article class="rx-interest-card">
+        <div class="rx-interest-icon">💊</div>
+        <h4>NCD care in primary health systems</h4>
+        <p>Hypertension and diabetes care, medicine continuity, and the operational conditions required for chronic-care delivery.</p>
+      </article>
+
+      <article class="rx-interest-card">
+        <div class="rx-interest-icon">🔬</div>
+        <h4>Mixed-methods health systems research</h4>
+        <p>Combining records, interviews, and implementation context to explain not just what failed, but why it failed.</p>
+      </article>
+
+      <article class="rx-interest-card">
+        <div class="rx-interest-icon">🏥</div>
+        <h4>Life-course diabetes epidemiology</h4>
+        <p>Urbanization, work history, and the pathways through which diabetes risk accumulates and returns to rural settings.</p>
+      </article>
+
+      <article class="rx-interest-card">
+        <div class="rx-interest-icon">🤝</div>
+        <h4>Community-delivered intervention design</h4>
+        <p>Locally grounded support models for chronic disease management, lifestyle change, and implementation feasibility.</p>
+      </article>
+
+      <article class="rx-interest-card">
+        <div class="rx-interest-icon">⚙️</div>
+        <h4>Research data systems</h4>
+        <p>Practical workflows for data capture, data quality, reproducibility, and research operations in real project environments.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     ALL PUBLICATIONS — Card Stack
+═══════════════════════════════════════════ -->
+<section class="rx-section rx-section--dark reveal-on-scroll">
+  <div class="rx-section-inner">
+    <span class="section-eyebrow light">Publications</span>
+    <h2 class="section-h light">Selected publications & contributions</h2>
+
+    <div class="rx-pubs-stack">
+      <article class="rx-pub-card rx-pub-card--dark">
+        <div class="rx-pub-header">
+          <div class="rx-pub-badges">
+            <span class="rx-badge rx-badge--forthcoming">Forthcoming</span>
+            <span class="rx-badge rx-badge--role">First Author</span>
+          </div>
+          <span class="rx-pub-journal rx-pub-journal--light">BMC Public Health</span>
+        </div>
+        <h3 class="rx-pub-title rx-pub-title--light">Financial Determinants of Effective Hypertension and Diabetes Care in Rural Primary Health Facilities in Kisumu, Kenya: A Mixed-Methods Study</h3>
+        <p class="rx-pub-desc rx-pub-desc--light">Role: study design, mixed-methods analysis, interpretation, and writing.</p>
+        <div class="rx-pub-chips rx-pub-chips--dark"><span>R</span><span>Mixed Methods</span><span>BMC Public Health</span></div>
+      </article>
+
+      <article class="rx-pub-card rx-pub-card--dark">
+        <div class="rx-pub-header">
+          <div class="rx-pub-badges">
+            <span class="rx-badge rx-badge--published">Published</span>
+            <span class="rx-badge rx-badge--coauthor">Co-Author</span>
+          </div>
+        </div>
+        <h3 class="rx-pub-title rx-pub-title--light">Addressing priority gaps in access and quality of NCD services in primary care settings in rural Kenya: A participatory approach to intervention development</h3>
+        <p class="rx-pub-desc rx-pub-desc--light">Role: conceptualization, data collection, management, analysis, and co-writing results and discussion.</p>
+        <div class="rx-pub-chips rx-pub-chips--dark"><span>Participatory</span><span>NCD Services</span><span>Primary Care</span></div>
+      </article>
+
+      <article class="rx-pub-card rx-pub-card--dark">
+        <div class="rx-pub-header">
+          <div class="rx-pub-badges">
+            <span class="rx-badge rx-badge--published">Published</span>
+            <span class="rx-badge rx-badge--coauthor">Co-Author</span>
+          </div>
+        </div>
+        <h3 class="rx-pub-title rx-pub-title--light">Characteristics and mortality risk among esophageal cancer patients with varied HIV status seeking care in western Kenya: A 10-year analysis</h3>
+        <p class="rx-pub-desc rx-pub-desc--light">Role: data management and analysis.</p>
+        <div class="rx-pub-chips rx-pub-chips--dark"><span>Cancer Epidemiology</span><span>Survival Analysis</span><span>10-Year Study</span></div>
+      </article>
+
+      <article class="rx-pub-card rx-pub-card--dark">
+        <div class="rx-pub-header">
+          <div class="rx-pub-badges">
+            <span class="rx-badge rx-badge--published">Published</span>
+            <span class="rx-badge rx-badge--coauthor">Co-Author</span>
+          </div>
+        </div>
+        <h3 class="rx-pub-title rx-pub-title--light">Survival disparities in cervical cancer patients with and without HIV at Jaramogi Oginga Odinga Teaching and Referral Hospital</h3>
+        <p class="rx-pub-desc rx-pub-desc--light">Role: data management and analysis.</p>
+        <div class="rx-pub-chips rx-pub-chips--dark"><span>Cancer Research</span><span>HIV Co-morbidity</span><span>Survival Analysis</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     INTERACTIVE RESEARCH LAYER
+═══════════════════════════════════════════ -->
+<section class="rx-section rx-section--warm reveal-on-scroll">
+  <div class="rx-section-inner">
+    <span class="section-eyebrow">Interactive Research Layer</span>
+    <h2 class="section-h">Explore the research footprint</h2>
+    <p class="section-sub">These widgets turn the page from a static dossier into a browsable research surface: where the work happened, how the portfolio is distributed, and which outputs sit at each stage.</p>
+
+    <div class="rx-widget-grid">
+      <div class="rx-widget-card">
+        <div class="rx-widget-head">
+          <h3>Study geography</h3>
+          <p>Selected fieldwork, analysis, and collaboration footprint across the health systems work.</p>
+        </div>
+        <div id="researchMap" class="rx-widget-frame"></div>
+      </div>
+
+      <div class="rx-widget-card">
+        <div class="rx-widget-head">
+          <h3>Portfolio explorer</h3>
+          <p>Hover each output to see where it sits in the current publication pipeline.</p>
+        </div>
+        <div id="researchPortfolioChart" class="rx-widget-frame"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="rx-section reveal-on-scroll">
+  <div class="rx-section-inner">
+    <span class="section-eyebrow">Publications Explorer</span>
+    <h2 class="section-h">Sortable publication table</h2>
+    <p class="section-sub">This adds the searchable, filterable layer the audit called for, while keeping the editorial cards above for first-read storytelling.</p>
+
+    <div class="rx-table-toolbar">
+      <input
+        type="search"
+        id="researchTableSearch"
+        class="rx-table-search"
+        placeholder="Search publications, themes, or geography"
+        aria-label="Search publications table"
+      >
+      <p class="rx-table-hint">Filter by title, role, status, focus, or geography.</p>
+    </div>
+
+    <div class="rx-table-shell">
+      <table class="rx-data-table">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Status</th>
+            <th>Role</th>
+            <th>Focus</th>
+            <th>Geography</th>
+          </tr>
+        </thead>
+        <tbody id="researchTableBody"></tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     COLLABORATION CTA
+═══════════════════════════════════════════ -->
+<section class="rx-section reveal-on-scroll">
+  <div class="rx-section-inner">
+    <div class="rx-collab-card">
+      <div class="rx-collab-copy">
+        <span class="section-eyebrow">Collaborate</span>
+        <h2 class="section-h">Open to research partnerships</h2>
+        <p>I am interested in collaborations on health systems research, chronic disease management, mixed-methods implementation studies, research data systems, and public-health analytics in Africa.</p>
+        <div class="rx-collab-topics">
+          <span>Health financing</span>
+          <span>NCD care systems</span>
+          <span>Mixed-methods</span>
+          <span>Research data pipelines</span>
+          <span>Policy translation</span>
+          <span>Open-source tools</span>
+        </div>
+      </div>
+      <div class="rx-collab-actions">
+        <a href="mailto:nichodemuswerre@gmail.com" class="btn-solid">Email Me</a>
+        <a href="thesis.html" class="btn-ghost">View Thesis →</a>
+        <a href="https://github.com/gondamol" class="btn-ghost" target="_blank">GitHub ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 </div>
+
+<script>
+// Scroll reveal for research page
+(function() {
+  var researchSites = [
+    {
+      site: 'Seme Sub-County facilities',
+      location: 'Kisumu County, Kenya',
+      focus: 'Financing chronic care for hypertension and diabetes',
+      lat: -0.0907,
+      lon: 34.7679
+    },
+    {
+      site: 'JOOTRH referral analysis',
+      location: 'Kisumu, Kenya',
+      focus: 'Oncology survival and HIV co-morbidity analysis',
+      lat: -0.1022,
+      lon: 34.7617
+    },
+    {
+      site: 'National policy engagement',
+      location: 'Nairobi, Kenya',
+      focus: 'Stakeholder engagement and research translation',
+      lat: -1.2864,
+      lon: 36.8172
+    },
+    {
+      site: 'Regional methods collaboration',
+      location: 'Kampala, Uganda',
+      focus: 'Mixed-methods and public-health analytics exchange',
+      lat: 0.3476,
+      lon: 32.5825
+    },
+    {
+      site: 'Regional field systems exchange',
+      location: 'Dar es Salaam, Tanzania',
+      focus: 'Field systems, training, and implementation learning',
+      lat: -6.7924,
+      lon: 39.2083
+    }
+  ];
+
+  var portfolio = [
+    {
+      output: 'Financial determinants of chronic care',
+      year: 2026,
+      theme: 'Health financing',
+      status: 'Forthcoming',
+      role: 'First author',
+      geography: 'Kisumu'
+    },
+    {
+      output: 'Participatory NCD intervention development',
+      year: 2025,
+      theme: 'Primary care design',
+      status: 'Published',
+      role: 'Co-author',
+      geography: 'Rural Kenya'
+    },
+    {
+      output: 'Esophageal cancer and HIV mortality',
+      year: 2024,
+      theme: 'Oncology',
+      status: 'Published',
+      role: 'Co-author',
+      geography: 'Western Kenya'
+    },
+    {
+      output: 'Cervical cancer survival disparities',
+      year: 2024,
+      theme: 'Oncology',
+      status: 'Published',
+      role: 'Co-author',
+      geography: 'Kisumu'
+    }
+  ];
+
+  var publicationTable = [
+    {
+      title: 'Financial Determinants of Effective Hypertension and Diabetes Care in Rural Primary Health Facilities in Kisumu, Kenya',
+      status: 'Forthcoming',
+      role: 'First Author',
+      focus: 'Health financing and chronic care',
+      geography: 'Kisumu County'
+    },
+    {
+      title: 'Addressing priority gaps in access and quality of NCD services in primary care settings in rural Kenya',
+      status: 'Published',
+      role: 'Co-Author',
+      focus: 'Participatory intervention design',
+      geography: 'Rural Kenya'
+    },
+    {
+      title: 'Characteristics and mortality risk among esophageal cancer patients with varied HIV status seeking care in western Kenya',
+      status: 'Published',
+      role: 'Co-Author',
+      focus: 'Cancer survival and HIV',
+      geography: 'Western Kenya'
+    },
+    {
+      title: 'Survival disparities in cervical cancer patients with and without HIV at JOOTRH',
+      status: 'Published',
+      role: 'Co-Author',
+      focus: 'Cancer survival disparities',
+      geography: 'Kisumu'
+    }
+  ];
+
+  function loadScript(src) {
+    return new Promise(function(resolve, reject) {
+      var existing = document.querySelector('script[src="' + src + '"]');
+      if (existing) {
+        resolve();
+        return;
+      }
+      var script = document.createElement('script');
+      script.src = src;
+      script.onload = resolve;
+      script.onerror = reject;
+      document.head.appendChild(script);
+    });
+  }
+
+  function loadStylesheet(href) {
+    if (document.querySelector('link[href="' + href + '"]')) return;
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = href;
+    document.head.appendChild(link);
+  }
+
+  function renderResearchMap() {
+    var mapEl = document.getElementById('researchMap');
+    if (!mapEl || !window.L) return;
+
+    var map = L.map(mapEl, {
+      scrollWheelZoom: false,
+      zoomControl: true
+    }).setView([-1.2, 35.9], 5);
+
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+      attribution: '&copy; OpenStreetMap contributors &copy; CARTO'
+    }).addTo(map);
+
+    researchSites.forEach(function(site) {
+      L.circleMarker([site.lat, site.lon], {
+        radius: 8,
+        fillColor: '#b84e16',
+        fillOpacity: 0.9,
+        color: '#191917',
+        weight: 1.5
+      }).bindPopup(
+        '<strong>' + site.site + '</strong><br>' +
+        site.location + '<br>' +
+        site.focus
+      ).addTo(map);
+    });
+  }
+
+  function renderPortfolioChart() {
+    var chartEl = document.getElementById('researchPortfolioChart');
+    if (!chartEl || !window.Plotly) return;
+
+    var colors = {
+      Forthcoming: '#b84e16',
+      Published: '#2d4a2d'
+    };
+
+    var trace = {
+      x: portfolio.map(function(item) { return item.year; }),
+      y: portfolio.map(function(item) { return item.theme; }),
+      text: portfolio.map(function(item) {
+        return '<b>' + item.output + '</b><br>' +
+          'Role: ' + item.role + '<br>' +
+          'Geography: ' + item.geography;
+      }),
+      hovertemplate: '%{text}<extra></extra>',
+      mode: 'markers',
+      type: 'scatter',
+      marker: {
+        size: 18,
+        color: portfolio.map(function(item) { return colors[item.status]; }),
+        line: {
+          color: '#f5f1ea',
+          width: 1.5
+        }
+      }
+    };
+
+    Plotly.newPlot(chartEl, [trace], {
+      paper_bgcolor: 'rgba(0,0,0,0)',
+      plot_bgcolor: 'rgba(0,0,0,0)',
+      margin: { l: 10, r: 10, t: 10, b: 45 },
+      xaxis: { title: '', dtick: 1, tickmode: 'linear' },
+      yaxis: { title: '' }
+    }, {
+      displayModeBar: false,
+      responsive: true
+    });
+  }
+
+  function renderPublicationsTable() {
+    var tbody = document.getElementById('researchTableBody');
+    var searchInput = document.getElementById('researchTableSearch');
+    if (!tbody || !searchInput) return;
+
+    function drawRows(query) {
+      var normalizedQuery = (query || '').trim().toLowerCase();
+      var filtered = publicationTable.filter(function(row) {
+        var haystack = [
+          row.title,
+          row.status,
+          row.role,
+          row.focus,
+          row.geography
+        ].join(' ').toLowerCase();
+        return !normalizedQuery || haystack.indexOf(normalizedQuery) !== -1;
+      });
+
+      tbody.innerHTML = filtered.map(function(row) {
+        return '<tr>' +
+          '<td>' + row.title + '</td>' +
+          '<td>' + row.status + '</td>' +
+          '<td>' + row.role + '</td>' +
+          '<td>' + row.focus + '</td>' +
+          '<td>' + row.geography + '</td>' +
+        '</tr>';
+      }).join('');
+
+      if (!filtered.length) {
+        tbody.innerHTML = '<tr><td colspan="5">No publications match that search yet.</td></tr>';
+      }
+    }
+
+    searchInput.addEventListener('input', function() {
+      drawRows(searchInput.value);
+    });
+
+    drawRows('');
+  }
+
+  var prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var revealEls = document.querySelectorAll('.reveal-on-scroll');
+  if (!prefersReduced) {
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.06, rootMargin: '0px 0px -40px 0px' });
+    revealEls.forEach(function(el) { observer.observe(el); });
+  } else {
+    revealEls.forEach(function(el) { el.classList.add('is-visible'); });
+  }
+
+  // Stat counter animation
+  var statsAnimated = false;
+  function animateStats() {
+    if (statsAnimated || prefersReduced) return;
+    var strip = document.querySelector('.rx-stats-strip');
+    if (!strip) return;
+    var rect = strip.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 60) {
+      statsAnimated = true;
+      strip.querySelectorAll('.rx-stat-num').forEach(function(el) {
+        el.classList.add('rx-stat-num--animated');
+      });
+    }
+  }
+  window.addEventListener('scroll', animateStats, { passive: true });
+  animateStats();
+
+  renderPublicationsTable();
+  loadStylesheet('https://unpkg.com/leaflet@1.9.4/dist/leaflet.css');
+  Promise.all([
+    loadScript('https://unpkg.com/leaflet@1.9.4/dist/leaflet.js'),
+    loadScript('https://cdn.plot.ly/plotly-2.35.2.min.js')
+  ]).then(function() {
+    renderResearchMap();
+    renderPortfolioChart();
+  }).catch(function() {
+    var mapEl = document.getElementById('researchMap');
+    var chartEl = document.getElementById('researchPortfolioChart');
+    if (mapEl) {
+      mapEl.innerHTML = '<p class="rx-widget-fallback">The interactive map could not load in this browser.</p>';
+    }
+    if (chartEl) {
+      chartEl.innerHTML = '<p class="rx-widget-fallback">The interactive chart could not load in this browser.</p>';
+    }
+  });
+})();
+</script>
 ```
