@@ -1,0 +1,11 @@
+patient_id,age,sex,county,prior_admissions_6m,length_of_stay_days,medication_gap_days,comorbidity_score,follow_up_scheduled,transport_barrier_flag,readmitted_30d
+P001,64,F,Kisumu,2,5,12,4,yes,no,1
+P002,42,M,Homa Bay,0,2,0,1,yes,no,0
+P003,58,F,Siaya,1,4,8,3,no,yes,1
+P004,37,M,Kisii,0,2,1,1,yes,no,0
+P005,71,F,Kisumu,3,6,15,5,no,yes,1
+P006,55,M,Migori,1,3,4,2,yes,no,0
+P007,48,F,Homa Bay,2,5,11,3,no,yes,1
+P008,29,M,Siaya,0,1,0,0,yes,no,0
+P009,62,F,Kisumu,2,4,9,4,no,yes,1
+P010,46,M,Kisii,1,3,2,2,yes,no,0

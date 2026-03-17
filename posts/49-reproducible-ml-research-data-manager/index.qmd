@@ -1,0 +1,71 @@
+---
+title: "Reproducible ML: A Research Data Manager's View"
+subtitle: "If a model cannot be rerun, inspected, and trusted, it is not ready for decision-making."
+author: "Nichodemus Amollo"
+date: "2026-03-17"
+categories: [Machine Learning, Reproducibility, Data Engineering, Research]
+image: "/img/blog-engineering.svg"
+execute:
+  echo: false
+format:
+  html:
+    code-tools: false
+    code-fold: false
+    code-copy: false
+---
+
+One reason I am comfortable moving toward ML systems work is that the underlying habits are already familiar. Research data management, at its best, is about traceability, version control, validation, and disciplined handoff. Those same habits are what make machine learning reproducible.
+
+The language changes, but the responsibility does not.
+
+## Research rigor translates well
+
+When I build high-frequency checks for field data, I am asking:
+
+- where could this system fail quietly?
+- which assumptions should be tested automatically?
+- what needs to be documented so another analyst can rerun the workflow?
+
+Those are also ML questions.
+
+Reproducible ML does not begin with a model registry. It begins with simpler discipline:
+
+- a clean separation between raw, staged, and modeled data
+- explicit feature definitions
+- saved training assumptions
+- documented thresholds for evaluation
+- a clear record of which run produced which output
+
+## Why this matters outside research teams
+
+In many organizations, analysis is still person-dependent. One analyst knows the folder structure. Another remembers which columns need cleaning. A third person knows why a certain exception rule exists. That is fragile even before machine learning enters the picture.
+
+ML amplifies this fragility because it adds more moving parts:
+
+- training data windows
+- feature transformations
+- hyperparameters
+- calibration choices
+- deployment thresholds
+
+Without reproducibility, a model becomes difficult to defend and almost impossible to improve.
+
+## What "good enough" looks like
+
+Not every team needs an enterprise MLOps stack on day one. But most teams do need a minimum operating standard:
+
+1. **Version-controlled data prep scripts**
+2. **Saved model artifacts and feature lists**
+3. **A repeatable scoring pipeline**
+4. **A short README explaining assumptions and usage**
+5. **Basic monitoring for drift or degraded performance**
+
+That standard is realistic for small teams and already much stronger than the informal workflows many organizations rely on.
+
+## The hidden advantage of a research background
+
+People sometimes frame research work and production ML as different worlds. I do not think they are. Research discipline offers a strong starting point because it teaches caution, documentation, and respect for uncertainty.
+
+The gap is not from rigor to ML. The gap is from rigor to operationalization.
+
+That is why I am interested in the overlap between ETL, dashboards, model monitoring, and decision support. The model is only one part of the system. Reproducibility is what keeps the rest of the system from collapsing under it.

@@ -3,6 +3,13 @@ title: ""
 page-layout: article
 toc: true
 toc-title: "On this page"
+execute:
+  echo: false
+format:
+  html:
+    code-tools: false
+    code-fold: false
+    code-copy: false
 ---
 
 ```{=html}
@@ -12,10 +19,9 @@ toc-title: "On this page"
     <div class="cv-hero-main">
       <span class="section-eyebrow">Curriculum Vitae</span>
       <h1 class="cv-hero-name">Nichodemus Amollo</h1>
-      <p class="cv-hero-title">Research Data Manager, Biostatistician, Monitoring and Evaluation Specialist</p>
+      <p class="cv-hero-title">Research Data Manager, Biostatistician, and AI Systems Builder</p>
       <p class="cv-hero-summary">
-        I build practical data systems for health and development programs across East Africa,
-        connecting strong field operations, sound statistics, and clear reporting for decision makers.
+        I design data architecture, ML-aware analytics infrastructure, and statistical operations for health and development programs across East Africa, connecting field delivery, reproducible workflows, and decision-ready reporting.
       </p>
 
       <div class="cv-contact-row">
@@ -54,9 +60,10 @@ toc-title: "On this page"
 
   <section class="cv-focus-strip" aria-label="Core focus areas">
     <span>Health systems research</span>
-    <span>Impact evaluation</span>
+    <span>Data architecture</span>
+    <span>ML infrastructure</span>
     <span>Biostatistics</span>
-    <span>Data quality systems</span>
+    <span>Quality monitoring</span>
     <span>Dashboard reporting</span>
     <span>Capacity building</span>
   </section>
@@ -66,7 +73,7 @@ toc-title: "On this page"
 
 ## Professional Summary {#summary}
 
-I currently lead research data and statistical delivery for Georgetown University gui2de portfolios in Kenya, Uganda, Tanzania, and Rwanda. My work includes study design, data quality architecture, analysis planning, and publication support. I am strongest where field implementation, analytics engineering, and policy reporting need to work together as one system.
+I currently lead data architecture, ML-aware analytics infrastructure, and statistical operations for Georgetown University gui2de portfolios in Kenya, Uganda, Tanzania, and Rwanda. My work includes study design, ETL and quality architecture, analysis planning, dashboard delivery, and publication support. I am strongest where field implementation, analytics engineering, and decision-making need to behave like one system.
 
 ## Experience Explorer {#experience}
 
@@ -92,20 +99,20 @@ I currently lead research data and statistical delivery for Georgetown Universit
 
 <div id="cvExperienceList" class="cv-exp-list">
 
-  <details class="cv-exp-item" data-tags="health,mel,systems,leadership" data-search="georgetown gui2de biostatistician health financial diaries quality control dashboard r stata sql power bi mentorship" open>
+  <details class="cv-exp-item" data-tags="health,mel,systems,leadership" data-search="georgetown gui2de biostatistician health financial diaries quality control dashboard r stata sql power bi mentorship architecture etl infrastructure shiny" open>
     <summary>
       <span class="cv-exp-year">2025 to Present</span>
       <span class="cv-exp-role">Lead Biostatistician and Research Data Manager</span>
       <span class="cv-exp-org">Georgetown University gui2de, East Africa</span>
     </summary>
     <div class="cv-exp-body">
-      <p>Lead end to end data and statistical operations for health systems and implementation studies.</p>
+      <p>Lead data architecture, ML infrastructure, and statistical operations for health systems and implementation studies across East Africa.</p>
       <ul>
-        <li>Designed quality control workflows and automated reporting pipelines for partner teams.</li>
-        <li>Built analysis and dashboard outputs in R, Stata, SQL, Power BI, and R Shiny.</li>
-        <li>Supported evidence translation for technical reviews, donor reporting, and policy dialogue.</li>
+        <li>Architected ETL and quality monitoring workflows for 1,000+ household tracking data, making delivery reproducible across partner teams.</li>
+        <li>Built analysis, dashboard, and predictive monitoring systems in R, Stata, SQL, Power BI, and R Shiny.</li>
+        <li>Mentored analysts in Git workflows, reproducible reporting, and systems thinking while supporting donor and policy dialogue.</li>
       </ul>
-      <div class="cv-tag-row"><span>Health</span><span>MEL</span><span>Data systems</span><span>Leadership</span></div>
+      <div class="cv-tag-row"><span>Health</span><span>MEL</span><span>Data architecture</span><span>ML systems</span><span>Leadership</span></div>
     </div>
   </details>
 
@@ -186,6 +193,33 @@ I currently lead research data and statistical delivery for Georgetown Universit
 </div>
 ```
 
+## Technical Architecture & Infrastructure {#architecture}
+
+```{=html}
+<div class="cv-architecture-grid">
+  <article class="cv-architecture-card">
+    <p class="cv-architecture-kicker">Warehouse design</p>
+    <h4>PostgreSQL-backed study infrastructure</h4>
+    <p>Designed data architecture for 1,000+ household studies and multi-country partner reporting workflows.</p>
+  </article>
+  <article class="cv-architecture-card">
+    <p class="cv-architecture-kicker">Data ops</p>
+    <h4>Reproducible ETL and quality monitoring</h4>
+    <p>Built R-based ETL, HFC, and validation systems that surface issues early and keep downstream analysis trustworthy.</p>
+  </article>
+  <article class="cv-architecture-card">
+    <p class="cv-architecture-kicker">Dashboards</p>
+    <h4>Operational reporting with predictive components</h4>
+    <p>Architected Shiny and Power BI dashboards that combine routine monitoring, decision support, and early predictive signals.</p>
+  </article>
+  <article class="cv-architecture-card">
+    <p class="cv-architecture-kicker">Team systems</p>
+    <h4>Mentorship for reproducible delivery</h4>
+    <p>Coached analysts on Git workflows, documentation, and systems thinking so projects survive staff transitions and scale cleanly.</p>
+  </article>
+</div>
+```
+
 ## Education {#education}
 
 ```{=html}
@@ -214,6 +248,13 @@ I currently lead research data and statistical delivery for Georgetown Universit
 <div class="cv-skill-accordion">
 
   <details open>
+    <summary>Technical architecture and ML systems</summary>
+    <div class="cv-chip-row">
+      <span>PostgreSQL</span><span>ETL design</span><span>Data quality monitoring</span><span>R Shiny</span><span>Model monitoring</span><span>Reproducible ML</span><span>Git workflows</span>
+    </div>
+  </details>
+
+  <details>
     <summary>Statistical and analytical methods</summary>
     <div class="cv-chip-row">
       <span>R</span><span>Python</span><span>Stata</span><span>SPSS</span><span>Excel advanced</span><span>Survival analysis</span><span>Forecasting</span>

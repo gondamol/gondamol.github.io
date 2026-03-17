@@ -1,0 +1,59 @@
+---
+title: "Dashboards to Decisions"
+subtitle: "Why reporting systems should reduce friction, not just display more charts"
+author: "Nichodemus Amollo"
+date: "2026-03-17"
+categories: [Dashboards, Decision Support, Analytics Engineering, Public Health]
+image: "/img/blog-health.svg"
+execute:
+  echo: false
+format:
+  html:
+    code-tools: false
+    code-fold: false
+    code-copy: false
+---
+
+The most common dashboard failure is not bad color choice. It is that the dashboard never becomes part of a real decision process.
+
+I have seen monitoring systems that looked polished but did not change what anyone did on Monday morning. That is not a visualization problem. It is a systems problem.
+
+## A useful dashboard answers four questions
+
+1. What changed?
+2. Why does it matter?
+3. Who needs to act?
+4. What should happen next?
+
+If the dashboard cannot help a team answer those questions quickly, it is probably doing too much of the wrong work.
+
+## What makes dashboards usable in practice
+
+### Clear hierarchy
+
+Decision-makers rarely need twenty charts at once. They need a short list of top-line indicators first, followed by the ability to drill down when something looks wrong.
+
+### Thresholds, not just trends
+
+Trend lines are useful, but action often starts at a threshold: reimbursement lag above a certain number of days, stockout risk above a set level, or survey completeness below an acceptable floor.
+
+### Context for interpretation
+
+A rising number is not automatically bad and a falling one is not automatically good. Dashboards need operational framing so users do not misread normal variation as crisis or ignore genuine warning signs.
+
+### Clean data underneath
+
+No dashboard design can rescue weak upstream data handling. This is why I see dashboards and pipelines as part of the same craft. The visible interface is only as strong as the validation and transformation work underneath it.
+
+## The bridge to modern data products
+
+This is also where I see an overlap between classic reporting work and newer AI/data-product thinking. A dashboard is often the place where:
+
+- analytics becomes operational
+- model outputs become understandable
+- alerts become manageable
+- decision pathways become visible
+
+That is why I am interested in dashboards that do more than summarize the past. The goal is not to overwhelm people with interactivity. The goal is to reduce friction between evidence and action.
+
+When dashboards succeed, they make the next decision easier, faster, and better grounded. That is the standard I care about.

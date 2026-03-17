@@ -1,0 +1,15 @@
+{
+  "title": "Facility financing constraints and chronic disease continuity in rural Kenya",
+  "research_question": "How do financing bottlenecks shape continuity of chronic care in rural primary facilities?",
+  "methods": "Mixed-methods study using facility records, interviews, and process review across seven facilities.",
+  "main_findings": [
+    "Facilities experienced frequent medicine stockouts and approval delays.",
+    "Restricted spending autonomy weakened continuity of hypertension and diabetes care."
+  ],
+  "operational_implications": [
+    "Prioritize shorter procurement approval loops for chronic medicines.",
+    "Track reimbursement delays as a service delivery risk indicator."
+  ],
+  "equity_notes": "Low-resource facilities carry the largest burden when financing is delayed or inflexible.",
+  "limitations": "This output is a demonstration artifact and should be reviewed by a domain expert before use."
+}

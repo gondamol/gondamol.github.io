@@ -1,0 +1,81 @@
+---
+title: "ETL Pipeline Architecture for Multi-Country Research Operations"
+subtitle: "Raw extract to validated reporting model"
+page-layout: article
+toc: false
+execute:
+  echo: false
+format:
+  html:
+    code-tools: false
+    code-fold: false
+    code-copy: false
+---
+
+```{=html}
+<div style="padding:4.5rem 0 2.25rem;">
+  <span class="section-eyebrow">Project B · Data Pipeline / ETL Architecture</span>
+  <h1 class="section-h" style="font-size:clamp(2.2rem,4vw,3.2rem);margin-top:0.45rem;">A reproducible ETL pipeline for study operations.</h1>
+  <p class="section-sub" style="margin-bottom:0;">This project documents how I would move survey and facility extracts from raw files into a validated reporting layer that can feed dashboards, briefs, and partner reporting without manual spreadsheet firefighting.</p>
+</div>
+```
+
+## Pipeline objective
+
+The practical goal is simple: stop every analysis cycle from starting with a new round of ad hoc cleaning. The pipeline standardizes raw extracts, applies validation rules, and publishes a reporting-ready table with audit flags preserved.
+
+```{=html}
+<div class="services-grid" style="margin-top:1.5rem;margin-bottom:2.5rem;">
+  <article class="svc-card">
+    <span class="svc-icon">1</span>
+    <h4 class="svc-title">Ingest</h4>
+    <p class="svc-body">Load daily survey and facility files from multiple partner sites with schema checks at entry.</p>
+  </article>
+  <article class="svc-card">
+    <span class="svc-icon">2</span>
+    <h4 class="svc-title">Validate</h4>
+    <p class="svc-body">Run range checks, missingness rules, duplicate detection, and referential integrity against facility metadata.</p>
+  </article>
+  <article class="svc-card">
+    <span class="svc-icon">3</span>
+    <h4 class="svc-title">Transform</h4>
+    <p class="svc-body">Standardize names, dates, units, and indicator logic into a tidy reporting model.</p>
+  </article>
+  <article class="svc-card">
+    <span class="svc-icon">4</span>
+    <h4 class="svc-title">Publish</h4>
+    <p class="svc-body">Export clean tables and QA summaries for dashboards, analyst handoff, and stakeholder reporting.</p>
+  </article>
+</div>
+```
+
+## Validation rules included
+
+| Rule | Purpose |
+|---|---|
+| Unique household or patient ID | Prevent duplicate counting |
+| Allowed facility IDs only | Catch site mapping errors early |
+| Date ordering check | Ensure visit dates do not precede enrollment |
+| Income and expenditure bounds | Flag impossible or clearly mis-entered values |
+| Required fields by encounter type | Make downstream indicators safe to compute |
+
+## Output model
+
+The pipeline produces three layers:
+
+- `raw`: immutable copies of source extracts
+- `staging`: standardized field names and basic harmonization
+- `reporting`: one clean fact table joined to a facility reference table and QA summary
+
+## Files in this project
+
+- [etl_pipeline.R](./etl_pipeline.R) for the scripted ETL workflow
+- [data/raw_household_extract.csv](./data/raw_household_extract.csv) as a demo source file
+- [data/facility_reference.csv](./data/facility_reference.csv) for lookup validation
+- [README.md](./README.md) describing the folder structure and flow
+
+## Why it belongs in the portfolio
+
+This is the kind of work that makes dashboards trustworthy. It is also the bridge between research data management and modern data engineering: naming conventions, validation layers, reproducible jobs, and clear handoff contracts.
+
+[Back to Projects →](../../index.qmd){.btn-solid style="margin-top:2rem;display:inline-block;"}

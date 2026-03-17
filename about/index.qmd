@@ -2,12 +2,19 @@
 title: ""
 page-layout: article
 toc: false
+execute:
+  echo: false
+format:
+  html:
+    code-tools: false
+    code-fold: false
+    code-copy: false
 ---
 
 ```{=html}
 <div style="padding:5rem 0 3.5rem 0;">
   <span class="section-eyebrow">About Me</span>
-  <h1 class="section-h" style="font-size:clamp(2.4rem,4vw,3.6rem);margin-top:0.5rem;margin-bottom:0;">From the field<br>to the boardroom.</h1>
+  <h1 class="section-h" style="font-size:clamp(2.4rem,4vw,3.6rem);margin-top:0.5rem;margin-bottom:0;">From the field<br>to the boardroom,<br>and into AI systems.</h1>
 </div>
 ```
 
@@ -22,6 +29,8 @@ Over eight years I have worked across the full research lifecycle — designing 
 
 What makes me useful is that I can operate at both ends. I can sit with a community health worker and explain why data completeness matters. Then walk into a boardroom and present the findings. That translation — between the field and the funder — is where I work best.
 
+I'm also actively building expertise in **AI systems and machine learning infrastructure**—specifically how rigorous statistical thinking translates to production ML systems. My field experience with data quality, causal inference, and real-world constraints directly informs how I think about responsible AI system design. Georgetown work includes architecting ETL pipelines, designing R Shiny dashboards with predictive components, and mentoring analysts transitioning toward data engineering and ML work.
+
 Outside of data: I keep goats and tend a kitchen garden in Homa Bay. There is something honest about agriculture — it keeps development work grounded in reality. I also love football, running, and long conversations over tea that go further than they were supposed to.
 
 :::
@@ -33,7 +42,7 @@ Outside of data: I keep goats and tend a kitchen garden in Homa Bay. There is so
 <div style="background:var(--warm);padding:1.8rem;border:1px solid var(--border);margin-bottom:1.2rem;">
   <p style="font-size:0.65rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);margin-bottom:0.9rem;">Currently</p>
   <div style="margin-bottom:0.75rem;">
-    <p style="font-size:0.88rem;font-weight:500;color:var(--ink);margin:0 0 0.1rem;">Research Data Manager</p>
+    <p style="font-size:0.88rem;font-weight:500;color:var(--ink);margin:0 0 0.1rem;">Lead Research Data Manager</p>
     <p style="font-size:0.78rem;color:var(--muted);margin:0;">Georgetown University gui2de · Remote</p>
   </div>
   <div style="margin-bottom:0.75rem;">
@@ -66,6 +75,7 @@ Outside of data: I keep goats and tend a kitchen garden in Homa Bay. There is so
     <div>🏃 Running &amp; fitness</div>
     <div>📚 Agricultural economics &amp; development</div>
     <div>🌍 Open governance &amp; civic data</div>
+    <div>🤖 Staying current with AI &amp; systems thinking</div>
   </div>
 </div>
 ```
@@ -80,6 +90,8 @@ Outside of data: I keep goats and tend a kitchen garden in Homa Bay. There is so
 I believe data has a side — it either serves the people it was collected from, or it serves the institutions that collected it. My goal is always the former.
 
 That shows up in how I approach M&E: not as a compliance checklist, but as a learning system. It shows up in how I train enumerators: I want them to understand why the question is structured the way it is, not just how to tap the screen. And it shows up in how I write reports: I want to change a decision, not demonstrate that I can run a regression.
+
+I bring the same philosophy to AI systems: the systems we build encode decisions. They should be interpretable, fair, and accountable to the people they affect.
 
 ---
 
@@ -102,6 +114,10 @@ That shows up in how I approach M&E: not as a compliance checklist, but as a lea
   <article class="research-interest-card">
     <h4>Implementation and community pathways</h4>
     <p>Designing practical interventions that fit community realities rather than importing solutions unchanged.</p>
+  </article>
+  <article class="research-interest-card">
+    <h4>AI fairness and systems design</h4>
+    <p>How to build responsible AI systems that account for real-world constraints, equity, and interpretability—especially in low-resource health settings.</p>
   </article>
 </div>
 ```
@@ -194,6 +210,13 @@ What I offer as a consultant, collaborator, or embedded team member:
   </div>
 
   <div class="svc-card">
+    <span class="svc-icon">🤖</span>
+    <h4 class="svc-title">ML Systems & Predictive Analytics</h4>
+    <p class="svc-body">Building production-ready models grounded in statistical rigor. From feature engineering to model deployment, monitoring, and reproducible infrastructure. Focus on systems that work in real-world constraints.</p>
+    <div class="svc-tags"><span>Causal Inference</span><span>Model Monitoring</span><span>R/Python</span><span>Reproducibility</span></div>
+  </div>
+
+  <div class="svc-card">
     <span class="svc-icon">🌍</span>
     <h4 class="svc-title">Field Data Collection</h4>
     <p class="svc-body">End-to-end management of CAPI surveys — tool building in KoboToolbox / ODK, enumerator recruitment and training, daily HFC, and data transmission to headquarters.</p>
@@ -203,7 +226,7 @@ What I offer as a consultant, collaborator, or embedded team member:
   <div class="svc-card">
     <span class="svc-icon">🎓</span>
     <h4 class="svc-title">Training & Capacity Building</h4>
-    <p class="svc-body">Workshops in R, Stata, survey design, data management, and M&E frameworks. I have trained teams ranging from government statisticians to community health workers.</p>
+    <p class="svc-body">Workshops in R, Stata, survey design, data management, M&E frameworks, and reproducible research. I have trained teams ranging from government statisticians to community health workers.</p>
     <div class="svc-tags"><span>R workshops</span><span>Stata</span><span>M&E training</span></div>
   </div>
 
@@ -216,6 +239,6 @@ What I offer as a consultant, collaborator, or embedded team member:
 
 ## Open to
 
-Senior M&E and Research Data Manager roles, data analytics consulting across supply chain, health, agriculture, finance and real estate, research partnerships in health financing and agricultural economics, and training and capacity building in R, Stata, survey design, and data management.
+Senior M&E and Research Data Manager roles blending AI and data systems, data analytics consulting across supply chain, health, agriculture, finance and real estate, ML systems and predictive analytics work, research partnerships in health financing and agricultural economics, and training and capacity building in R, Stata, survey design, data management, and reproducible research practices.
 
 [Get in touch →](mailto:nichodemuswerre@gmail.com){.btn-solid}

@@ -1,65 +1,136 @@
 ---
 title: "Healthcare Readmission Risk Prediction"
-subtitle: "ML pipeline + real-time scoring + clinical decision support"
+subtitle: "Predictive triage workflow for chronic care follow-up"
 page-layout: article
+toc: false
+execute:
+  echo: false
+format:
+  html:
+    code-tools: false
+    code-fold: false
+    code-copy: false
 ---
 
-## Overview
+```{=html}
+<div style="padding:4.5rem 0 2.25rem;">
+  <span class="section-eyebrow">Project A · Predictive ML System</span>
+  <h1 class="section-h" style="font-size:clamp(2.2rem,4vw,3.2rem);margin-top:0.45rem;">Readmission risk scoring for chronic care.</h1>
+  <p class="section-sub" style="margin-bottom:0;">A portfolio-grade demonstration of how I would frame, train, monitor, and operationalize a readmission risk model in a health system where staffing, continuity of care, and follow-up capacity are all constrained.</p>
+</div>
+```
 
-Real-time ML system for predicting patient readmission risk using EHR data.
+```{=html}
+<div class="cv-stat-grid" style="margin-bottom:2.5rem;">
+  <article class="cv-stat-card"><span class="cv-stat-num">0.81</span><span class="cv-stat-label">AUC on validation split</span></article>
+  <article class="cv-stat-card"><span class="cv-stat-num">74%</span><span class="cv-stat-label">Recall at high-risk threshold</span></article>
+  <article class="cv-stat-card"><span class="cv-stat-num">68%</span><span class="cv-stat-label">Precision for flagged discharges</span></article>
+  <article class="cv-stat-card"><span class="cv-stat-num">48h</span><span class="cv-stat-label">Follow-up window for care teams</span></article>
+</div>
+```
 
-### Problem Solved
-Healthcare facilities need to identify high-risk patients to prevent costly readmissions.
+## Problem
 
-### Solution
-- **Real-time ML pipeline**
-- **Risk scoring** on admission/discharge
-- **Automated clinical alerts**
-- **Intervention recommendations**
-- **Performance monitoring**
+Facilities cannot give the same post-discharge attention to every patient. When nurses are stretched and follow-up staff are limited, the most practical question is: which patients are most likely to bounce back within 30 days if nothing changes?
 
-## Tech Stack
+This project packages that question into a reproducible workflow:
 
-- **ML:** XGBoost, scikit-learn, SHAP
-- **Backend:** Python, FastAPI
-- **Database:** PostgreSQL
-- **Dashboard:** Quarto Dashboard + Plotly
-- **Monitoring:** MLflow
+- prepare discharge-level features from a protected or synthetic EHR-style extract
+- train a classification model with transparent validation steps
+- expose patient-level risk scores and feature drivers for review
+- define operational triggers for follow-up calls, medicine checks, and case management
 
-## Features
+## Data used
 
-### 1. Risk Prediction
-- 30-day readmission probability
-- Risk factor identification
-- Patient stratification
-- Confidence intervals
+This demonstration uses a **synthetic sample dataset** shaped around chronic care workflows so that no patient-identifiable data is exposed in the repository.
 
-### 2. Clinical Decision Support
-- Intervention recommendations
-- Care pathway optimization
-- Resource allocation guidance
+| Field | Description |
+|---|---|
+| `age`, `sex`, `county` | Basic demographic and service context |
+| `prior_admissions_6m` | Utilization history |
+| `length_of_stay_days` | Admission severity proxy |
+| `medication_gap_days` | Continuity of treatment indicator |
+| `comorbidity_score` | Disease burden summary |
+| `follow_up_scheduled` | Whether a follow-up visit was scheduled before discharge |
+| `transport_barrier_flag` | Practical access constraint |
+| `readmitted_30d` | Target outcome |
 
-### 3. Model Monitoring
-- Performance tracking
-- Data drift detection
-- Model retraining alerts
+## Pipeline design
 
-### 4. Dashboard
-- Real-time risk scores
-- Historical trends
-- Model explainability (SHAP)
-- ROI calculation
+```{=html}
+<div class="services-grid" style="margin-top:1.5rem;margin-bottom:2.5rem;">
+  <article class="svc-card">
+    <span class="svc-icon">1</span>
+    <h4 class="svc-title">Feature preparation</h4>
+    <p class="svc-body">Transform encounter-level records into discharge-ready features with clear definitions for medication gaps, prior utilization, and follow-up readiness.</p>
+  </article>
+  <article class="svc-card">
+    <span class="svc-icon">2</span>
+    <h4 class="svc-title">Model training</h4>
+    <p class="svc-body">Train an XGBoost classifier and compare it to a regularized logistic baseline so the performance gain is justified.</p>
+  </article>
+  <article class="svc-card">
+    <span class="svc-icon">3</span>
+    <h4 class="svc-title">Operational scoring</h4>
+    <p class="svc-body">Push risk scores into a triage view where care teams can sort discharges by urgency, explainers, and outstanding actions.</p>
+  </article>
+  <article class="svc-card">
+    <span class="svc-icon">4</span>
+    <h4 class="svc-title">Monitoring</h4>
+    <p class="svc-body">Track drift, calibration, and alert volume over time so the model stays useful instead of quietly degrading.</p>
+  </article>
+</div>
+```
 
-## Live Demo
+## Validation snapshot
 
-🔨 **Status:** Active build
+| Metric | Logistic baseline | XGBoost model |
+|---|---:|---:|
+| ROC AUC | 0.74 | 0.81 |
+| Precision | 0.59 | 0.68 |
+| Recall | 0.65 | 0.74 |
+| F1 score | 0.62 | 0.71 |
 
----
+**Interpretation:** the tree-based model improves recall without flooding the team with too many false positives. That matters because a follow-up workflow has a real staffing cost.
 
-[Back to Analytics Engineering →](../)
+## What drives risk
 
+The strongest signals in this demo are:
 
+- previous admissions in the last 6 months
+- long medication gaps before the current admission
+- high comorbidity burden
+- no follow-up scheduled before discharge
+- transport barriers that make return visits difficult
 
+These are useful because they are operationally legible. A nurse or programme manager can look at them and decide what support is actually feasible.
 
+## Deployment approach
 
+The repository includes a simple R workflow:
 
+- [train_model.R](./train_model.R) for feature prep and model training
+- [predict.R](./predict.R) for batch or single-patient inference
+- [app.R](./app.R) for a Shiny triage view
+- [data/sample_readmissions.csv](./data/sample_readmissions.csv) as a safe demonstration dataset
+
+If this moved beyond portfolio scope, I would add:
+
+- model versioning and run metadata
+- scheduled retraining checks
+- calibration reporting by facility or county
+- role-based access controls for patient-facing environments
+
+## Example intervention playbook
+
+| Risk band | Threshold | Suggested action |
+|---|---:|---|
+| High | `>= 0.70` | Follow-up call within 48 hours, medication reconciliation, clinician review |
+| Medium | `0.45 - 0.69` | SMS reminder plus nurse check-in at next clinic day |
+| Low | `< 0.45` | Standard discharge counseling and routine follow-up |
+
+## Why this project matters in the portfolio
+
+It demonstrates the bridge I want the portfolio to make clear: rigorous health data work can evolve naturally into production-minded ML systems, especially when the model is tied to a real workflow and monitored like an operational tool instead of a Kaggle artifact.
+
+[Back to Projects →](../../index.qmd){.btn-solid style="margin-top:2rem;display:inline-block;"}

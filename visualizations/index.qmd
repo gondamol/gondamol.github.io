@@ -1,135 +1,82 @@
 ---
 title: "Data Visualizations Gallery"
-subtitle: "50+ Projects Showcasing R, Python, and JavaScript Visualization Libraries"
-author: "Nichodemus Amollo"
+subtitle: "A curated set of substantive R, Python, and D3 visualization builds"
+page-layout: article
+toc: false
+execute:
+  echo: false
 format:
   html:
-    toc: true
-    toc-depth: 2
-    code-fold: show
+    code-tools: false
+    code-fold: false
+    code-copy: false
 ---
 
-::: {.hero-banner}
-# **<i class="fas fa-chart-line"></i> Data Visualizations Gallery**
+```{=html}
+<div style="padding:4.5rem 0 2.5rem;">
+  <span class="section-eyebrow">Visualizations</span>
+  <h1 class="section-h" style="font-size:clamp(2.2rem,4vw,3.4rem);margin-top:0.5rem;">Curated visualization work.</h1>
+  <p class="section-sub" style="margin-bottom:0;">This section now highlights only the builds with enough substance to be worth reviewing. The placeholder and auto-generated stubs have been removed.</p>
+</div>
+```
 
-Explore 50+ visualization projects showcasing advanced techniques in R, Python, D3.js, and interactive web visualizations
-:::
+## Featured builds
 
-## Categories
+```{=html}
+<div class="services-grid" style="margin-top:1.5rem;">
+  <article class="svc-card">
+    <span class="svc-icon">📈</span>
+    <h4 class="svc-title">Advanced ggplot2 patterns</h4>
+    <p class="svc-body">Publication-quality small multiples, custom themes, and statistical annotations in R.</p>
+    <div class="svc-tags"><span>R</span><span>ggplot2</span><span>Design systems</span></div>
+    <p style="margin-top:1rem;"><a href="ggplot2-advanced-patterns.qmd" class="btn-ghost">View project →</a></p>
+  </article>
 
-### **<i class="fab fa-r-project"></i> R Visualizations**
+  <article class="svc-card">
+    <span class="svc-icon">🗺️</span>
+    <h4 class="svc-title">Leaflet mapping workflows</h4>
+    <p class="svc-body">Interactive mapping with custom popups, layers, and spatial storytelling for operational use.</p>
+    <div class="svc-tags"><span>Leaflet</span><span>Spatial data</span><span>Interactivity</span></div>
+    <p style="margin-top:1rem;"><a href="leaflet-maps.qmd" class="btn-ghost">View project →</a></p>
+  </article>
 
-::: {.tile-grid}
-::: {.tile-card}
-#### ggplot2 Projects
-Advanced ggplot2 techniques, custom themes, and publication-quality plots
-[Explore →](#r-ggplot2)
-:::
+  <article class="svc-card">
+    <span class="svc-icon">🕸️</span>
+    <h4 class="svc-title">D3 network and geographic graphics</h4>
+    <p class="svc-body">Custom D3 builds for force layouts, geographic rendering, and browser-based interaction design.</p>
+    <div class="svc-tags"><span>D3.js</span><span>Networks</span><span>GeoJSON</span></div>
+    <p style="margin-top:1rem;"><a href="d3-network-graphs.qmd" class="btn-ghost">View project →</a></p>
+  </article>
 
-::: {.tile-card}
-#### Plotly Interactive Charts
-Interactive dashboards and web-based visualizations with Plotly
-[Explore →](#r-plotly)
-:::
+  <article class="svc-card">
+    <span class="svc-icon">🐍</span>
+    <h4 class="svc-title">Python dashboard prototypes</h4>
+    <p class="svc-body">Dash, Matplotlib, and Seaborn examples focused on analytical clarity rather than filler volume.</p>
+    <div class="svc-tags"><span>Python</span><span>Dash</span><span>Matplotlib</span></div>
+    <p style="margin-top:1rem;"><a href="plotly-python-dash.qmd" class="btn-ghost">View project →</a></p>
+  </article>
+  <article class="svc-card">
+    <span class="svc-icon">🎞️</span>
+    <h4 class="svc-title">Animation and motion</h4>
+    <p class="svc-body">Narrative visual motion for change-over-time stories using gganimate and supporting R workflows.</p>
+    <div class="svc-tags"><span>gganimate</span><span>R</span><span>Storytelling</span></div>
+    <p style="margin-top:1rem;"><a href="gganimate-animations.qmd" class="btn-ghost">View project →</a></p>
+  </article>
 
-::: {.tile-card}
-#### Leaflet Maps
-Interactive maps with custom markers, popups, and spatial layers
-[Explore →](#r-leaflet)
-:::
+  <article class="svc-card">
+    <span class="svc-icon">🧭</span>
+    <h4 class="svc-title">Custom D3 radar component</h4>
+    <p class="svc-body">A more advanced front-end visualization build showing component thinking beyond notebook charts.</p>
+    <div class="svc-tags"><span>React</span><span>D3</span><span>Components</span></div>
+    <p style="margin-top:1rem;"><a href="react-d3-radar-chart.qmd" class="btn-ghost">View project →</a></p>
+  </article>
+</div>
+```
 
-::: {.tile-card}
-#### gganimate Animations
-Animated visualizations showing data evolution over time
-[Explore →](#r-gganimate)
-:::
-:::
+## Remaining library coverage
 
-### **<i class="fab fa-python"></i> Python Visualizations**
+- R: [ggplot2 advanced patterns](ggplot2-advanced-patterns.qmd), [gganimate animations](gganimate-animations.qmd), [plotly interactive charts](plotly-interactive-charts.qmd), [leaflet maps](leaflet-maps.qmd)
+- Python: [matplotlib advanced](matplotlib-advanced.qmd), [seaborn statistical](seaborn-statistical.qmd), [plotly python dash](plotly-python-dash.qmd), [bokeh interactive](bokeh-interactive.qmd)
+- JavaScript: [D3 bar charts](d3-bar-charts.qmd), [D3 network graphs](d3-network-graphs.qmd), [D3 geographic maps](d3-geographic-maps.qmd), [network visualization](network-visualization.qmd), [React D3 radar chart](react-d3-radar-chart.qmd)
 
-::: {.tile-grid}
-::: {.tile-card}
-#### Matplotlib Advanced
-Publication-quality plots with advanced styling
-[Explore →](#python-matplotlib)
-:::
-
-::: {.tile-card}
-#### Seaborn Statistical Viz
-Statistical plotting and distribution analysis
-[Explore →](#python-seaborn)
-:::
-
-::: {.tile-card}
-#### Plotly Python Dashboards
-Interactive web dashboards with Dash
-[Explore →](#python-plotly)
-:::
-
-::: {.tile-card}
-#### Bokeh Interactive
-Modern web browser visualizations
-[Explore →](#python-bokeh)
-:::
-:::
-
-### **<i class="fab fa-js"></i> JavaScript & D3.js**
-
-::: {.tile-grid}
-::: {.tile-card}
-#### D3.js Bar Charts
-Interactive bar charts and histograms
-[Explore →](#d3-basic)
-:::
-
-::: {.tile-card}
-#### D3.js Network Graphs
-Force-directed graphs and network visualizations
-[Explore →](#d3-advanced)
-:::
-
-::: {.tile-card}
-#### D3.js Maps
-Geographic visualizations with GeoJSON
-[Explore →](#d3-maps)
-:::
-:::
-
----
-
-## Featured Projects
-
-### Advanced ggplot2 Patterns & Techniques
-
-::: {.project-card}
-**Description**: Exploring advanced ggplot2 techniques including faceting, custom themes, and statistical transformations.
-
-**Packages**: ggplot2, dplyr, patchwork, viridis
-
-[View Project →](advanced-ggplot2-patterns.qmd)
-:::
-
-### Interactive Charts with Plotly
-
-::: {.project-card}
-**Description**: Creating interactive dashboards and charts using plotly for web-based data exploration.
-
-**Packages**: plotly, ggplot2, dplyr
-
-[View Project →](interactive-plotly-charts.qmd)
-:::
-
-### Interactive Maps with Leaflet
-
-::: {.project-card}
-**Description**: Building interactive maps showing spatial data with custom markers, popups, and layers.
-
-**Packages**: leaflet, sf, dplyr
-
-[View Project →](leaflet-interactive-maps.qmd)
-:::
-
----
-
-[⬅️ Back to Home](../index.qmd) | [📊 TidyTuesday Projects](../tidy-tuesday/index.html)
-
+[Back to Home →](../index.qmd){.btn-solid style="margin-top:2rem;display:inline-block;"}

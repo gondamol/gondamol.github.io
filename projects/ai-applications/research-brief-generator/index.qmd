@@ -1,0 +1,65 @@
+---
+title: "Research Brief Generator"
+subtitle: "LLM-assisted briefing workflow for health papers"
+page-layout: article
+toc: false
+execute:
+  echo: false
+format:
+  html:
+    code-tools: false
+    code-fold: false
+    code-copy: false
+---
+
+```{=html}
+<div style="padding:4.5rem 0 2.25rem;">
+  <span class="section-eyebrow">Project C · LLM Application</span>
+  <h1 class="section-h" style="font-size:clamp(2.2rem,4vw,3.2rem);margin-top:0.45rem;">Structured research briefs from long-form papers.</h1>
+  <p class="section-sub" style="margin-bottom:0;">A lightweight AI application for turning dense research papers into a consistent briefing format that a programme lead, policymaker, or field operations team can read quickly.</p>
+</div>
+```
+
+## Use case
+
+Research papers often contain the right evidence but arrive in the wrong format for a busy delivery team. This project creates a structured bridge:
+
+- input a paper as text or extracted PDF content
+- ask the model for a fixed briefing schema
+- export a short brief in JSON and markdown-ready text
+
+## Brief schema
+
+| Field | Purpose |
+|---|---|
+| `title` | Human-readable title |
+| `research_question` | What the paper is trying to answer |
+| `methods` | Study design in plain language |
+| `main_findings` | Bullet-ready evidence summary |
+| `operational_implications` | What a programme team should do with it |
+| `equity_notes` | Any fairness or implementation concerns |
+| `limitations` | What not to over-claim |
+
+## Workflow
+
+```{=html}
+<div class="cv-stat-grid" style="margin-bottom:2rem;">
+  <article class="cv-stat-card"><span class="cv-stat-num">1</span><span class="cv-stat-label">Load paper text</span></article>
+  <article class="cv-stat-card"><span class="cv-stat-num">2</span><span class="cv-stat-label">Apply structured prompt</span></article>
+  <article class="cv-stat-card"><span class="cv-stat-num">3</span><span class="cv-stat-label">Validate JSON output</span></article>
+  <article class="cv-stat-card"><span class="cv-stat-num">4</span><span class="cv-stat-label">Publish briefing note</span></article>
+</div>
+```
+
+## Files in this project
+
+- [generate_brief.py](./generate_brief.py) for the CLI workflow
+- [examples/sample_paper.txt](./examples/sample_paper.txt) as example input
+- [examples/sample_brief.json](./examples/sample_brief.json) as example output
+- [README.md](./README.md) with setup notes
+
+## Why it matters
+
+This project shows applied AI in a way that fits my background. It is not novelty for its own sake. It solves a real evidence translation problem and keeps the human reviewer in the loop.
+
+[Back to Projects →](../../index.qmd){.btn-solid style="margin-top:2rem;display:inline-block;"}

@@ -1,0 +1,59 @@
+---
+title: "Why Statistical Thinking Still Matters in AI Engineering"
+subtitle: "Good systems need more than models. They need disciplined thinking about uncertainty and evidence."
+author: "Nichodemus Amollo"
+date: "2026-03-17"
+categories: [AI Engineering, Statistics, Causal Inference, Machine Learning]
+image: "/img/blog-analytics.svg"
+execute:
+  echo: false
+format:
+  html:
+    code-tools: false
+    code-fold: false
+    code-copy: false
+---
+
+There is a version of the current AI wave that treats statistics as the old world and AI engineering as the new one. I think that framing is wrong.
+
+Statistical thinking is still one of the best safeguards we have when building AI systems.
+
+## What statistics protects us from
+
+It protects us from overconfidence.
+
+A system can achieve a strong benchmark score and still be misleading in at least three ways:
+
+- the target may be poorly defined
+- the training data may not represent the deployment context
+- the observed relationship may not support the decision we want to make
+
+Statistics does not remove these risks, but it gives us a language for seeing them earlier.
+
+## Three ideas I keep carrying into ML work
+
+### 1. Uncertainty is part of the output
+
+Predictions should not be treated as facts. Even when the interface shows a single number, the team designing the system should understand how stable that number is likely to be.
+
+### 2. Causal thinking matters
+
+Prediction alone does not tell us what action will help. A model may identify people at risk, but that is not the same as understanding which intervention changes the outcome. This is where causal reasoning remains valuable.
+
+### 3. Monitoring is not optional
+
+In research, you would not trust a result without understanding how it was produced. In AI systems, monitoring plays a similar role. If data distributions shift or calibration drifts, yesterday's model may no longer support today's decisions.
+
+## Why this matters in public-interest systems
+
+In commercial settings, a weak recommendation may reduce clicks. In health, agriculture, or social protection, a weak model can distort scarce resources. That does not mean we avoid AI. It means we build with stronger guardrails.
+
+The good news is that the bridge already exists. Many of the habits from classical quantitative work still apply:
+
+- define outcomes carefully
+- inspect assumptions
+- document transformations
+- evaluate across relevant subgroups
+- keep human review in the loop
+
+AI engineering does not become weaker when it borrows from statistical thinking. It becomes more trustworthy.

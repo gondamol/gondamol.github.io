@@ -1,0 +1,65 @@
+---
+title: "Building AI for Low-Resource Settings"
+subtitle: "Designing for weak connectivity, constrained staffing, and real-world trade-offs"
+author: "Nichodemus Amollo"
+date: "2026-03-17"
+categories: [AI Systems, Global Health, Low-Resource Settings, Systems Design]
+image: "/img/blog-mande.svg"
+execute:
+  echo: false
+format:
+  html:
+    code-tools: false
+    code-fold: false
+    code-copy: false
+---
+
+Much of the AI conversation assumes stable internet, abundant cloud infrastructure, and teams that can respond instantly to every alert. That is not the environment many public-interest systems operate in.
+
+If we want AI to be useful in low-resource settings, the design assumptions have to change.
+
+## Start with the environment, not the model
+
+The right first questions are often operational:
+
+- Will the tool still work when connectivity drops?
+- Who is expected to act on the output, and how much time do they actually have?
+- How often can the system be updated without breaking existing workflows?
+- What happens if the model is wrong in a place with limited fallback capacity?
+
+These are not secondary implementation details. They are core design constraints.
+
+## Principles that matter more in constrained environments
+
+### 1. Offline-first or low-bandwidth tolerance
+
+If a tool requires uninterrupted internet to remain useful, it may fail exactly where it is needed most. Inputs, outputs, and workflow logic should be designed with intermittent connectivity in mind.
+
+### 2. Legible predictions
+
+Users should be able to understand what a flag or risk score means without a long technical briefing. In settings where staffing is thin, interpretability is an operational necessity.
+
+### 3. Minimal alert burden
+
+An alerting system that overwhelms a team becomes background noise. In low-resource environments, a smaller number of trusted signals is usually better than a flood of questionable ones.
+
+### 4. Human override by design
+
+No model should quietly remove human judgment where local knowledge is strongest. Frontline staff often know contextual factors that never appear in the dataset.
+
+### 5. Equity checks built into evaluation
+
+If infrastructure, transport, and financing constraints vary across communities, the model may inherit those imbalances. Performance should be reviewed across different facility or population contexts, not only in aggregate.
+
+## Why this work interests me
+
+I have spent years in settings where data collection itself had to be designed around unstable conditions. That experience changes how I think about AI. It makes me less interested in cleverness for its own sake and more interested in systems that continue to work when the environment is imperfect.
+
+In my view, useful AI for low-resource settings will look less like magic and more like disciplined systems design:
+
+- careful data definitions
+- modest but actionable models
+- clear monitoring
+- realistic intervention pathways
+
+That is not a limitation. It is often the difference between something impressive in a demo and something genuinely usable.

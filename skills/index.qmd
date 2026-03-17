@@ -1,617 +1,130 @@
 ---
 title: "Skills & Expertise"
-subtitle: "Research Data Management | Advanced Analytics | M&E Leadership | Field Operations"
-page-layout: full
+subtitle: "Evidence-based capability across research, analytics engineering, and AI-ready systems"
+page-layout: article
+toc: false
+execute:
+  echo: false
+format:
+  html:
+    code-tools: false
+    code-fold: false
+    code-copy: false
 ---
 
-::: {.hero-banner}
-# **6+ Years Research Data Management & M&E Excellence**
-
-From data system design to advanced analytics to M&E frameworks - comprehensive expertise across the research data lifecycle
-:::
-
-## **Core Competencies for Research Data Management, Analysis & M&E Roles**
-
-::: {.skills-grid}
-::: {.skill-category}
-### 🎯 M&E & Impact Evaluation
-
-**M&E Framework Design:**
-- Theory of Change, LogFrames, Results Frameworks
-- Performance indicators & targets
-- M&E plans for USAID/NIH-funded programs
-
-**Impact Evaluation:**
-- RCTs and quasi-experimental designs
-- Cost-effectiveness analysis (CEA)
-- Difference-in-differences, regression discontinuity
-
-**Performance Monitoring:**
-- KPI tracking and real-time dashboards
-- High-frequency checks (HFCs) using R & Stata
-- Donor reporting (USAID, NIH, foundations)
-:::
-
-::: {.skill-category}
-### 👥 Leadership & Field Operations
-
-**Field Team Management:**
-- Recruited, trained, supervised 50+ field teams
-- Multi-country coordination (Kenya, Uganda, Tanzania)
-- Training protocol development for RAs
-
-**Capacity Building:**
-- Trained 500+ researchers in R, Stata, M&E
-- Developed training modules & SOPs
-- Built data-driven cultures in organizations
-
-**Problem Solving:**
-- Tackled field challenges ensuring data quality
-- Real-time troubleshooting during data collection
-- System failures and data discrepancy resolution
-:::
-
-::: {.skill-category}
-### 💻 Programming & Statistical Software
-
-**Expert Level:**
-- **R** - tidyverse, ggplot2, shiny, rmarkdown, data.table, survival, caret
-- **Stata** - Data management, HFCs, survey analysis, advanced statistics
-- **SQL** - PostgreSQL, MySQL, MongoDB, database design
-
-**Advanced Level:**
-- **Python** - pandas, numpy, scikit-learn, matplotlib, Gephi network analysis
-- **SPSS** - Survey analysis, descriptive/inferential statistics
-
-**Tools:**
-- Git/GitHub, LaTeX, Quarto, MS Office Suite
-:::
-
-::: {.skill-category}
-### 📋 Survey & Data Collection Tools
-
-**Electronic Data Capture (EDC)**
-- REDCap: Database design, API integration, quality control
-- SurveyCTO: Mobile data collection, offline functionality
-- KoboCollect: Humanitarian data collection
-- CommCare: Community health worker tools
-- OpenDataKit (ODK): Form design
-
-**Survey Design & Implementation**
-- Questionnaire design and validation
-- Logic and skip patterns
-- Real-time quality monitoring
-- Training and supervision
-:::
-
-::: {.skill-category}
-### 🗄️ Data Management & Systems
-
-**Database Management**
-- PostgreSQL: Database design and administration
-- MySQL: Web application databases
-- SQLite: Embedded databases
-- REDCap: Clinical trial databases
-
-**Data Processing**
-- ETL pipeline development
-- Data cleaning and validation
-- Data quality assurance frameworks
-- Data integration across systems
-- Master data management
-:::
-
-::: {.skill-category}
-### 📊 Data Analysis & Statistics
-
-**Statistical Methods**
-- Descriptive and inferential statistics
-- Regression analysis (linear, logistic, Cox)
-- Survival analysis
-- Mixed-effects models
-- Bayesian statistics
-- Time series analysis
-- Causal inference methods
-
-**Machine Learning**
-- Supervised learning (classification, regression)
-- Unsupervised learning (clustering, PCA)
-- Feature engineering
-- Model validation and tuning
-- Ensemble methods
-:::
-:::
-
-::: {.skills-grid}
-::: {.skill-category}
-### 📈 Data Visualization & Dashboards
-
-**Visualization Tools**
-- ggplot2: Publication-quality graphics
-- plotly: Interactive visualizations
-- Tableau: Business intelligence dashboards
-- Power BI: Corporate reporting
-- Shiny: Interactive web applications
-
-**Dashboard Development**
-- Real-time monitoring systems
-- KPI tracking dashboards
-- Geospatial visualizations
-- Automated reporting
-- User-friendly interfaces
-:::
-
-::: {.skill-category}
-### 🏥 Health Domain Expertise
-
-**Clinical Research**
-- Clinical trial data management
-- Good Clinical Practice (GCP)
-- Protocol development
-- Adverse event tracking
-- Regulatory compliance
-
-**Public Health**
-- Epidemiological analysis
-- Disease surveillance systems
-- Health facility assessments
-- Program monitoring & evaluation
-- Health economics
-:::
-
-::: {.skill-category}
-### 🔧 Development & Deployment
-
-**Software Development**
-- R package development
-- API integration
-- Web scraping
-- Automation scripts
-- Documentation
-
-**Version Control & Collaboration**
-- Git/GitHub: Advanced workflows
-- Collaborative coding
-- Code review practices
-- CI/CD basics
-- Project management
-:::
-
-::: {.skill-category}
-### 📝 Research & Communication
-
-**Research Methods**
-- Study design
-- Sampling methods
-- Power analysis
-- Reproducible research
-- Open science practices
-
-**Communication**
-- Scientific writing
-- Data storytelling
-- Technical documentation
-- Presentation skills
-- Training and mentorship
-:::
-:::
-
----
-
-## **Survey Tool Expertise**
-
-### **Electronic Data Capture Systems I've Implemented**
-
-::: {.project-card}
-::: {.project-header}
-#### 🔧 REDCap (Research Electronic Data Capture)
-:::
-
-::: {.project-body}
-**Experience Level:** Expert | **Projects:** 20+ | **Years:** 7+
-
-**Capabilities:**
-- Custom database design for clinical trials and observational studies
-- Complex branching logic and calculated fields
-- Multi-language support
-- Data quality rules and validation
-- API integration with R and Python
-- User management and data access groups
-- Survey distribution and tracking
-- Automated reporting and alerts
-
-**Notable Projects:**
-- Multi-site HIV cohort study (5,000+ participants)
-- NCD management database (2,000+ patients)
-- COVID-19 surveillance system (10+ sites)
-
-[View REDCap Projects →](../projects/survey-tools.qmd)
-:::
-:::
-
-::: {.project-card}
-::: {.project-header}
-#### 📱 SurveyCTO
-:::
-
-::: {.project-body}
-**Experience Level:** Expert | **Projects:** 15+ | **Years:** 5+
-
-**Capabilities:**
-- Mobile data collection for field teams
-- Offline data collection
-- GPS tracking and geolocation
-- Photo and audio capture
-- Real-time quality control
-- Server management
-- Complex skip logic
-- Automated data exports
-
-**Notable Projects:**
-- Health facility assessments (30+ facilities)
-- Household surveys (1,000+ households)
-- Patient follow-up tracking (500+ patients)
-
-[View SurveyCTO Projects →](../projects/survey-tools.qmd)
-:::
-:::
-
-::: {.project-card}
-::: {.project-header}
-#### 🌐 KoboCollect/KoboToolbox
-:::
-
-::: {.project-body}
-**Experience Level:** Advanced | **Projects:** 10+ | **Years:** 4+
-
-**Capabilities:**
-- Humanitarian and emergency data collection
-- Rapid deployment
-- Offline functionality
-- Multi-language surveys
-- Media file collection
-- GIS integration
-- Data exports and API access
-
-**Notable Projects:**
-- Healthcare provider assessments
-- Community health surveys
-- Training needs assessments
-
-[View KoboCollect Projects →](../projects/survey-tools.qmd)
-:::
-:::
-
----
-
-## **Programming Proficiency**
-
-### **R Programming**
-
-::: {.project-card}
-::: {.project-body}
-**Expertise Level:** Expert (8+ years)
-
-**Core Packages:**
-```r
-# Data manipulation & cleaning
-library(tidyverse)      # dplyr, tidyr, purrr, etc.
-library(data.table)     # High-performance data manipulation
-library(janitor)        # Data cleaning
-
-# Visualization
-library(ggplot2)        # Grammar of graphics
-library(plotly)         # Interactive plots
-library(patchwork)      # Combining plots
-
-# Statistical modeling
-library(survival)       # Survival analysis
-library(lme4)          # Mixed-effects models
-library(caret)         # Machine learning
-library(broom)         # Tidy model outputs
-
-# Reporting & dashboards
-library(rmarkdown)     # Dynamic documents
-library(shiny)         # Interactive web apps
-library(flexdashboard) # Dashboard layouts
-library(DT)            # Interactive tables
-
-# Specialized
-library(sf)            # Spatial data
-library(leaflet)       # Interactive maps
-library(httr)          # API interactions
+```{=html}
+<div style="padding:4.5rem 0 2.25rem;">
+  <span class="section-eyebrow">Skills</span>
+  <h1 class="section-h" style="font-size:clamp(2.2rem,4vw,3.2rem);margin-top:0.45rem;">What I can build, run, and improve.</h1>
+  <p class="section-sub" style="margin-bottom:0;">This page is intentionally specific. I care less about broad claims and more about whether a skill has been used to solve a real delivery, quality, or decision problem.</p>
+</div>
 ```
 
-**Accomplishments:**
-- Developed 5+ production Shiny applications
-- Created custom R packages for data management
-- Authored 50+ R Markdown reports
-- Trained 200+ researchers in R programming
+## Core capability areas
 
-[View R Projects →](../projects/index.qmd)
-:::
-:::
+```{=html}
+<div class="services-grid" style="margin-top:1.5rem;margin-bottom:2.5rem;">
+  <article class="svc-card">
+    <span class="svc-icon">📐</span>
+    <h4 class="svc-title">Statistics and causal thinking</h4>
+    <p class="svc-body">Regression, survival analysis, quasi-experimental methods, forecasting, and applied biostatistics for public-interest questions.</p>
+    <div class="svc-tags"><span>R</span><span>Stata</span><span>Survival analysis</span><span>DiD</span></div>
+  </article>
 
-### **Python Programming**
+  <article class="svc-card">
+    <span class="svc-icon">🗄️</span>
+    <h4 class="svc-title">Data architecture and operations</h4>
+    <p class="svc-body">ETL design, validation checks, reproducible reporting, warehouse thinking, and cross-team data handoffs that survive real operations.</p>
+    <div class="svc-tags"><span>SQL</span><span>PostgreSQL</span><span>ETL</span><span>Git</span></div>
+  </article>
 
-::: {.project-card}
-::: {.project-body}
-**Expertise Level:** Advanced (5+ years)
+  <article class="svc-card">
+    <span class="svc-icon">🤖</span>
+    <h4 class="svc-title">AI and ML systems</h4>
+    <p class="svc-body">Feature design, model framing, monitoring, and responsible deployment patterns grounded in statistical discipline rather than hype.</p>
+    <div class="svc-tags"><span>Python</span><span>XGBoost</span><span>Model monitoring</span><span>LLM workflows</span></div>
+  </article>
 
-**Core Libraries:**
-```python
-# Data manipulation
-import pandas as pd
-import numpy as np
+  <article class="svc-card">
+    <span class="svc-icon">🌍</span>
+    <h4 class="svc-title">Field data systems</h4>
+    <p class="svc-body">Survey design, digital tool building, enumerator training, and high-frequency checks across low-connectivity environments.</p>
+    <div class="svc-tags"><span>ODK</span><span>KoboToolbox</span><span>REDCap</span><span>QA protocols</span></div>
+  </article>
 
-# Visualization
-import matplotlib.pyplot as plt
-import seaborn as sns
-import plotly.express as px
+  <article class="svc-card">
+    <span class="svc-icon">📊</span>
+    <h4 class="svc-title">Dashboards and evidence translation</h4>
+    <p class="svc-body">Operational dashboards, reporting automation, and concise outputs for ministries, funders, programme teams, and executives.</p>
+    <div class="svc-tags"><span>Power BI</span><span>Shiny</span><span>Quarto</span><span>Policy briefs</span></div>
+  </article>
 
-# Machine learning
-from sklearn.model_selection import train_test_split
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import accuracy_score
-
-# Statistical analysis
-import scipy.stats as stats
-import statsmodels.api as sm
+  <article class="svc-card">
+    <span class="svc-icon">🎓</span>
+    <h4 class="svc-title">Capacity building</h4>
+    <p class="svc-body">Practical training in R, Stata, reproducible workflows, and data quality habits for teams that need more than one-off analysis help.</p>
+    <div class="svc-tags"><span>R workshops</span><span>Mentorship</span><span>Documentation</span></div>
+  </article>
+</div>
 ```
 
-**Applications:**
-- Machine learning model development
-- API development and integration
-- Data pipeline automation
-- Web scraping and data collection
+## Tools and methods
 
-[View Python Projects →](../projects/index.qmd)
-:::
-:::
+```{=html}
+<div class="cv-skill-accordion">
+  <details open>
+    <summary>Analytics and statistical methods</summary>
+    <div class="cv-chip-row">
+      <span>R</span><span>Stata</span><span>Python</span><span>SPSS</span><span>Survival analysis</span><span>Forecasting</span><span>Regression</span><span>Causal inference</span>
+    </div>
+  </details>
 
-### **SQL & Database Management**
+  <details>
+    <summary>Data engineering and infrastructure</summary>
+    <div class="cv-chip-row">
+      <span>SQL</span><span>PostgreSQL</span><span>ETL design</span><span>Validation checks</span><span>Data QA</span><span>Git workflows</span><span>Reproducible reporting</span>
+    </div>
+  </details>
 
-::: {.project-card}
-::: {.project-body}
-**Expertise Level:** Advanced (7+ years)
+  <details>
+    <summary>AI and machine learning</summary>
+    <div class="cv-chip-row">
+      <span>XGBoost</span><span>Classification workflows</span><span>Feature engineering</span><span>Model monitoring</span><span>LLM prompt design</span><span>Responsible AI framing</span>
+    </div>
+  </details>
 
-**Capabilities:**
-```sql
--- Complex queries
-SELECT 
-    f.facility_name,
-    COUNT(DISTINCT p.patient_id) as total_patients,
-    AVG(v.bp_systolic) as avg_systolic,
-    SUM(CASE WHEN v.bp_controlled = 'Yes' THEN 1 ELSE 0 END) * 100.0 / COUNT(*) as control_rate
-FROM facilities f
-JOIN patients p ON f.facility_id = p.facility_id
-JOIN visits v ON p.patient_id = v.patient_id
-WHERE v.visit_date >= '2024-01-01'
-GROUP BY f.facility_name
-HAVING COUNT(DISTINCT p.patient_id) > 10
-ORDER BY control_rate DESC;
+  <details>
+    <summary>Field systems and digital data collection</summary>
+    <div class="cv-chip-row">
+      <span>KoboToolbox</span><span>ODK</span><span>REDCap</span><span>SurveyCTO</span><span>CommCare</span><span>Enumerator training</span><span>High-frequency checks</span>
+    </div>
+  </details>
 
--- Database design
-CREATE TABLE patients (
-    patient_id SERIAL PRIMARY KEY,
-    facility_id INTEGER REFERENCES facilities(facility_id),
-    enrollment_date DATE NOT NULL,
-    diagnosis VARCHAR(100),
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
-
--- Indexes for performance
-CREATE INDEX idx_patients_facility ON patients(facility_id);
-CREATE INDEX idx_visits_date ON visits(visit_date);
+  <details>
+    <summary>Communication and dashboarding</summary>
+    <div class="cv-chip-row">
+      <span>Power BI</span><span>R Shiny</span><span>Quarto</span><span>R Markdown</span><span>Presentation decks</span><span>Policy briefs</span><span>Executive reporting</span>
+    </div>
+  </details>
+</div>
 ```
 
-**Accomplishments:**
-- Designed 10+ production databases
-- Managed databases with 100,000+ records
-- Optimized queries reducing runtime by 70%
-- Implemented automated backup systems
+## Evidence of use
 
-[View Database Projects →](../projects/data-management.qmd)
-:::
-:::
+| Area | Evidence |
+|---|---|
+| Data architecture | ETL and quality workflows for 1,000+ household studies and partner dashboards |
+| Field systems | Managed tool design, training, and QA across multi-country studies with 50+ field staff |
+| Statistics | Mixed-methods and quantitative analysis for health systems, oncology, and impact evaluation work |
+| Dashboards | Built Power BI, Quarto, and Shiny outputs for monitoring, reporting, and policy dialogue |
+| AI transition | Created portfolio projects in predictive ML, LLM-assisted evidence briefing, and dashboard-driven alerting |
 
----
+## Current edge
 
-## **Domain Expertise**
+The direction I am sharpening now is the overlap between rigorous research data work and modern data systems:
 
-### **Health Data Analytics**
+- reproducible ML and model monitoring
+- AI applications that support evidence translation
+- data engineering habits that make analytics easier to trust and scale
 
-::: {.stats-container}
-::: {.stat-card}
-**15+**{.stat-number}
-Clinical Trials{.stat-label}
-:::
-
-::: {.stat-card}
-**50+**{.stat-number}
-Health Surveys{.stat-label}
-:::
-
-::: {.stat-card}
-**100K+**{.stat-number}
-Patient Records{.stat-label}
-:::
-
-::: {.stat-card}
-**30+**{.stat-number}
-Health Facilities{.stat-label}
-:::
-:::
-
-**Specialized Areas:**
-- Clinical trial data management (Phases I-IV)
-- Non-communicable disease (NCD) analytics
-- Infectious disease surveillance
-- Health facility assessments
-- Patient outcome tracking
-- Cost-effectiveness analysis
-- Health economics
-- Program monitoring & evaluation
-
----
-
-## **Soft Skills**
-
-::: {.skills-grid}
-::: {.skill-category}
-### 👥 Leadership & Management
-- Team leadership and supervision
-- Project management
-- Stakeholder engagement
-- Conflict resolution
-- Decision-making under uncertainty
-:::
-
-::: {.skill-category}
-### 🎓 Training & Mentorship
-- Workshop design and delivery
-- One-on-one mentoring
-- Curriculum development
-- Capacity building
-- Knowledge transfer
-:::
-
-::: {.skill-category}
-### 💬 Communication
-- Scientific writing
-- Data storytelling
-- Presentation skills
-- Cross-cultural communication
-- Stakeholder reporting
-:::
-
-::: {.skill-category}
-### 🧩 Problem Solving
-- Analytical thinking
-- Creative solutions
-- Troubleshooting
-- Process optimization
-- Continuous improvement
-:::
-:::
-
----
-
-## **Certifications & Professional Development**
-
-### **Formal Certifications**
-
-::: {.timeline}
-::: {.timeline-item}
-::: {.timeline-marker}
-:::
-::: {.timeline-content}
-- **DataCamp Certified Data Scientist** (2023)
-- **Good Clinical Practice (GCP) Certification** (2022)
-- **REDCap Administrator Certification** (2021)
-- **SurveyCTO Advanced Training** (2021)
-- **R Shiny Development Certification** (2020)
-- **HIPAA Compliance Training** (2020)
-:::
-:::
-:::
-
-### **Workshops & Training Attended**
-
-- Advanced Bayesian Statistics Workshop (2024)
-- Machine Learning in Healthcare (2023)
-- Geospatial Analysis for Public Health (2023)
-- Advanced R Programming and Package Development (2022)
-- Clinical Trials Data Management Best Practices (2021)
-
----
-
-## **Languages**
-
-::: {.skills-grid}
-::: {.skill-category}
-### 🌍 Spoken Languages
-- **English**: Fluent (Professional)
-- **Swahili**: Fluent (Native)
-- **Dholuo**: Fluent (Native)
-- **French**: Basic (Learning)
-:::
-
-::: {.skill-category}
-### 💻 Programming Languages
-- **R**: Expert
-- **Python**: Advanced
-- **SQL**: Advanced
-- **Stata**: Advanced
-- **SAS**: Intermediate
-- **Bash**: Intermediate
-:::
-:::
-
----
-
-## **Tools & Technologies**
-
-### **Development Tools**
-- RStudio, VS Code, Jupyter
-- Git, GitHub, GitLab
-- Docker (basic)
-- Linux/Ubuntu command line
-
-### **Data Collection**
-- REDCap, SurveyCTO, KoboCollect
-- CommCare, ODK
-- Google Forms, Qualtrics
-
-### **Data Visualization**
-- R Shiny, Tableau, Power BI
-- ggplot2, plotly, D3.js (basic)
-
-### **Project Management**
-- Asana, Trello
-- Microsoft Project
-- Monday.com
-
----
-
-## **What Makes Me Stand Out**
-
-::: {.highlight-box}
-### 🌟 Unique Value Proposition for Research Data Management, Analysis & M&E Roles
-
-1. **End-to-End Data Management** - From database design through data collection, cleaning, analysis to reporting
-2. **Advanced Analytics** - Expert in R, Stata, Python, SQL for statistical modeling and machine learning
-3. **M&E Leadership** - Designed and implemented M&E frameworks for 8+ programs (USAID/NIH-funded)
-4. **Field Operations Excellence** - Led 50+ field teams, designed training protocols, conducted real-time HFCs
-5. **Survey Systems Expert** - REDCap, ODK, SurveyCTO, Kobo - all major platforms for mobile/web data collection
-6. **Multi-Country Experience** - Managed projects across Kenya, Uganda, Tanzania (1,535+ sites)
-7. **Proven Impact** - 500+ trained, 3 publications, KES 20M+ cost savings identified, 99.9% data quality
-8. **Remote Work Expert** - 3+ years managing international projects remotely (gui2de, University of Alaska)
-9. **Personal Journey** - Overcame adversity as orphaned child, bringing resilience & empathy to every project
-:::
-
----
-
-## **Available for Senior Remote Roles**
-
-✅ **Research Data Manager** - End-to-end data leadership for multi-site research projects  
-✅ **Research Data Analyst** - Advanced statistical analysis and data science for health research  
-✅ **Senior M&E Specialist / Manager** - Leading program M&E for global health/development  
-✅ **Biostatistician** - Clinical trials and epidemiological studies  
-✅ **Impact Evaluation Lead** - Designing and executing RCTs, quasi-experimental studies  
-✅ **Data Management Consultant** - Database design, quality assurance, training  
-✅ **Field Operations Lead** - Training protocols, team management, HFCs  
-
----
-
-::: {.success-box}
-### 🤝 Let's Work Together!
-
-Whether you need a senior data manager for your research project, expertise in survey design, or advanced analytics capabilities, I'm ready to contribute.
-
-[View Projects](../projects/index.qmd){.cta-button} [Download CV](../cv/index.qmd){.cta-button} [Contact Me](mailto:nichodemuswerre@gmail.com){.cta-button}
-:::
-
----
-
-[Back to Home →](../index.qmd)
+[See related projects →](../projects/index.qmd){.btn-solid style="margin-top:2rem;display:inline-block;"}

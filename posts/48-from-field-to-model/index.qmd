@@ -1,0 +1,62 @@
+---
+title: "From Field to Model: Why Domain Knowledge Still Matters in ML"
+subtitle: "The best models are not built away from reality. They are built with it."
+author: "Nichodemus Amollo"
+date: "2026-03-17"
+categories: [Machine Learning, Public Health, Domain Knowledge, AI Systems]
+image: "/img/blog-health.svg"
+execute:
+  echo: false
+format:
+  html:
+    code-tools: false
+    code-fold: false
+    code-copy: false
+---
+
+Machine learning conversations often start in the wrong place. They start with model choice, benchmark scores, or tooling. In practice, the harder question usually comes earlier: do we understand the world well enough to decide what should count as a useful signal in the first place?
+
+That is where field experience matters.
+
+In health systems work, I have seen datasets that looked complete on paper but were operationally misleading. A facility report might show that a medicine was "available" because it entered the stock ledger that week. But if approval delays meant the medicine reached patients too late, the service continuity story was very different from the spreadsheet story. A model trained on the wrong abstraction would learn confidence from noise.
+
+This is why domain knowledge is not a soft extra. It is part of model quality.
+
+## Where field knowledge changes the model
+
+It changes at least four things:
+
+1. **Target definition**
+
+What exactly are we predicting? "Readmission" is not just a label. It sits inside a care pathway, a staffing reality, and a follow-up system. If the operational response to a prediction is unclear, then the model objective is probably under-specified.
+
+2. **Feature design**
+
+A useful feature is not only statistically predictive. It should also make sense to the people expected to act on it. Prior admissions, medicine gaps, and transport barriers are valuable because they connect directly to intervention options.
+
+3. **Error cost**
+
+In many ML tutorials, false positives and false negatives are abstract trade-offs. In real programs they are budget, staff time, patient burden, and trust. Domain context tells you which mistakes the system can absorb and which ones it cannot.
+
+4. **Deployment constraints**
+
+A model is not deployed into a vacuum. It lands in a place with weak connectivity, competing reporting demands, approval chains, and limited time. If your design assumes frictionless operations, it will fail for reasons that are not mathematical.
+
+## Why this matters for low-resource settings
+
+The temptation in low-resource contexts is to think the solution is simply "more data" or "better AI." Often the deeper problem is that the system has not been described carefully enough. Missing domain knowledge leads teams to optimize for what is easy to measure rather than what truly shapes outcomes.
+
+That is one reason I see my background in research data management as relevant to AI systems. High-frequency checks, tool design, and causal thinking are not separate from ML. They are part of the discipline that keeps an ML workflow honest.
+
+## A better standard
+
+The standard should not be "Can we train a model?" It should be:
+
+- does the prediction align with an operational decision?
+- do the features reflect real constraints and pathways?
+- can users understand why a case is high risk?
+- do we know what to monitor after rollout?
+
+If those questions are missing, domain knowledge is missing too.
+
+The future of useful AI in health, agriculture, finance, and development will not be built only by people who know models. It will also be built by people who know the systems those models are entering. That overlap is where I want my work to live.

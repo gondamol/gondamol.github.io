@@ -97,7 +97,7 @@ Instead of theoretical case studies with synthetic data, these are **real automa
 :::
 
 ::: {.project-card}
-### 🏥 [Healthcare - Patient Readmission Risk](healthcare-readmission/)
+### 🏥 [Healthcare - Patient Readmission Risk](healthcare-readmission-risk/)
 
 **Status:** 📋 Planned | **Priority:** 4 (Maintain Health Expertise)
 
@@ -115,7 +115,7 @@ Instead of theoretical case studies with synthetic data, these are **real automa
 
 **Impact:** 25% readmission reduction, $4.5M savings per 1,000 beds
 
-[View Project Details →](healthcare-readmission/)
+[View Project Details →](healthcare-readmission-risk/)
 :::
 
 ::: {.project-card}

@@ -2,6 +2,13 @@
 title: ""
 page-layout: full
 toc: false
+execute:
+  echo: false
+format:
+  html:
+    code-tools: false
+    code-fold: false
+    code-copy: false
 ---
 
 ```{=html}
@@ -23,6 +30,94 @@ toc: false
     <button class="proj-filter" data-filter="agriculture" role="tab" aria-selected="false">Agriculture</button>
     <button class="proj-filter" data-filter="finance" role="tab" aria-selected="false">Finance</button>
     <button class="proj-filter" data-filter="analytics" role="tab" aria-selected="false">Analytics</button>
+  </div>
+
+  <!-- ─── AI / ML & SYSTEMS ───────────────── -->
+  <div class="proj-section-header" style="margin-bottom:1.2rem;">
+    <span class="section-eyebrow" style="margin-bottom:0;">AI, ML &amp; Data Systems</span>
+  </div>
+  <div class="project-grid allProjects" style="margin-bottom:5rem;">
+
+    <a href="analytics-engineering/healthcare-readmission-risk/index.html" class="proj-card proj-featured" data-category="analytics">
+      <div class="proj-thumb" style="background:#111a24;">
+        <div class="proj-thumb-pattern" style="--dot:#ffffff10;"></div>
+        <span class="proj-icon proj-icon-hero">🤖</span>
+      </div>
+      <div class="proj-body">
+        <p class="proj-domain" style="color:#8cb5d9;">Predictive ML · Health operations</p>
+        <h3 class="proj-title">Healthcare Readmission Risk Prediction</h3>
+        <p class="proj-desc">Portfolio-grade predictive triage workflow showing feature engineering, model validation, risk bands, and deployment thinking for chronic care follow-up.</p>
+        <div class="proj-footer">
+          <span class="proj-tags"><span>XGBoost</span><span>R</span><span>Shiny</span><span>Model monitoring</span></span>
+          <span class="proj-arrow">Open project →</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="data-engineering/etl-pipeline-architecture/index.html" class="proj-card proj-half" data-category="analytics">
+      <div class="proj-thumb" style="background:#162233;height:180px;">
+        <div class="proj-thumb-pattern" style="--dot:#ffffff10;"></div>
+        <span class="proj-icon">🗄️</span>
+      </div>
+      <div class="proj-body">
+        <p class="proj-domain" style="color:#8cb5d9;">Data engineering · ETL</p>
+        <h3 class="proj-title">ETL Pipeline Architecture</h3>
+        <p class="proj-desc">Raw survey and facility extracts transformed into validated reporting layers with reproducible R workflows and QA rules.</p>
+        <div class="proj-footer">
+          <span class="proj-tags"><span>R</span><span>ETL</span><span>Validation</span></span>
+          <span class="proj-arrow">Open project →</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="ai-applications/research-brief-generator/index.html" class="proj-card proj-half" data-category="analytics">
+      <div class="proj-thumb" style="background:#1a2030;height:180px;">
+        <div class="proj-thumb-pattern" style="--dot:#ffffff10;"></div>
+        <span class="proj-icon">🧠</span>
+      </div>
+      <div class="proj-body">
+        <p class="proj-domain" style="color:#8cb5d9;">AI application · Evidence translation</p>
+        <h3 class="proj-title">Research Brief Generator</h3>
+        <p class="proj-desc">LLM-assisted workflow for turning long-form health papers into structured implementation briefs with a consistent schema.</p>
+        <div class="proj-footer">
+          <span class="proj-tags"><span>Python</span><span>LLM workflow</span><span>JSON</span></span>
+          <span class="proj-arrow">Open project →</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="case-studies/ncd-financing-impact/index.html" class="proj-card proj-half" data-category="health">
+      <div class="proj-thumb" style="background:#1c2c1d;height:180px;">
+        <div class="proj-thumb-pattern" style="--dot:#ffffff10;"></div>
+        <span class="proj-icon">📉</span>
+      </div>
+      <div class="proj-body">
+        <p class="proj-domain" style="color:#7fbf7f;">Business case study · Health financing</p>
+        <h3 class="proj-title">NCD Financing Impact Case Study</h3>
+        <p class="proj-desc">Reframes chronic care financing bottlenecks as an operations problem with scenario modeling and implementation levers.</p>
+        <div class="proj-footer">
+          <span class="proj-tags"><span>Case study</span><span>Scenario model</span><span>Operations</span></span>
+          <span class="proj-arrow">Open project →</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="dashboards/health-financing-real-time/index.html" class="proj-card proj-half" data-category="analytics">
+      <div class="proj-thumb" style="background:#15251d;height:180px;">
+        <div class="proj-thumb-pattern" style="--dot:#ffffff10;"></div>
+        <span class="proj-icon">📡</span>
+      </div>
+      <div class="proj-body">
+        <p class="proj-domain" style="color:#8cb5d9;">Dashboard product · Monitoring</p>
+        <h3 class="proj-title">Health Financing Real-Time Dashboard</h3>
+        <p class="proj-desc">A synthetic Shiny dashboard concept for tracking reimbursement lag, stockout risk, and facility-level intervention priorities.</p>
+        <div class="proj-footer">
+          <span class="proj-tags"><span>Shiny</span><span>KPIs</span><span>Alerting</span></span>
+          <span class="proj-arrow">Open project →</span>
+        </div>
+      </div>
+    </a>
+
   </div>
 
   <!-- ─── HEALTH & M&E ────────────────────── -->

@@ -1,0 +1,66 @@
+---
+title: "Health Financing Real-Time Dashboard"
+subtitle: "Operational monitoring for service continuity"
+page-layout: article
+toc: false
+execute:
+  echo: false
+format:
+  html:
+    code-tools: false
+    code-fold: false
+    code-copy: false
+---
+
+```{=html}
+<div style="padding:4.5rem 0 2.25rem;">
+  <span class="section-eyebrow">Project E · Interactive Dashboard</span>
+  <h1 class="section-h" style="font-size:clamp(2.2rem,4vw,3.2rem);margin-top:0.45rem;">Real-time health financing dashboard.</h1>
+  <p class="section-sub" style="margin-bottom:0;">A Shiny-style monitoring concept that combines KPI tracking, facility comparison, and early warning signals for stockout or reimbursement risk.</p>
+</div>
+```
+
+## What the dashboard monitors
+
+- reimbursement lag by facility
+- medicine stockout exposure
+- household payment burden
+- facility-level risk flags for intervention prioritization
+
+```{=html}
+<div class="services-grid" style="margin-top:1.5rem;margin-bottom:2.5rem;">
+  <article class="svc-card">
+    <span class="svc-icon">📍</span>
+    <h4 class="svc-title">Facility drill-down</h4>
+    <p class="svc-body">Move from county view to facility detail to inspect reimbursement lag, stock status, and high-risk alerts.</p>
+  </article>
+  <article class="svc-card">
+    <span class="svc-icon">📦</span>
+    <h4 class="svc-title">Stockout forecasting</h4>
+    <p class="svc-body">Estimate near-term medicine stockout risk using historical lag and current consumption signals.</p>
+  </article>
+  <article class="svc-card">
+    <span class="svc-icon">📊</span>
+    <h4 class="svc-title">Executive KPI strip</h4>
+    <p class="svc-body">Show the handful of metrics decision-makers actually need each week rather than overwhelming them with charts.</p>
+  </article>
+  <article class="svc-card">
+    <span class="svc-icon">🚨</span>
+    <h4 class="svc-title">Alerting logic</h4>
+    <p class="svc-body">Escalate facilities that cross thresholds for payment delays, stock risk, or continuity-of-care danger.</p>
+  </article>
+</div>
+```
+
+## Project files
+
+- [app.R](./app.R) for the Shiny dashboard shell
+- [data_prep.R](./data_prep.R) for synthetic KPI preparation
+- [data/facility_kpis.csv](./data/facility_kpis.csv) as the demo data source
+- [README.md](./README.md) explaining the dashboard concept
+
+## Why it matters
+
+This project shows product thinking, not just analysis. The point is not to create another static report. It is to show how operational data, simple forecasting, and drill-down design can support faster decisions.
+
+[Back to Projects →](../../index.qmd){.btn-solid style="margin-top:2rem;display:inline-block;"}
