@@ -16,6 +16,7 @@ renv/staging/
 !README.md
 !**/README.md
 !docs/superpowers/specs/*.md
+!docs/superpowers/plans/*.md
 AGENTS.md
 AUTHENTIC_PROJECT_DETAILS.md
 COMPREHENSIVE_PORTFOLIO_REVAMP_SUMMARY.md
