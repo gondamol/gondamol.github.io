@@ -15,6 +15,7 @@ renv/staging/
 *.md
 !README.md
 !**/README.md
+!docs/superpowers/specs/*.md
 AGENTS.md
 AUTHENTIC_PROJECT_DETAILS.md
 COMPREHENSIVE_PORTFOLIO_REVAMP_SUMMARY.md
@@ -59,3 +60,18 @@ Thumbs.db
 
 # Local render support folders
 **/index_files/
+.aidesigner/*
+!.aidesigner/.gitkeep
+
+# Local tooling and caches
+.codex
+.superpowers/
+_extensions/quarto-ext/
+__pycache__/
+*.py[cod]
+
+# Private working files and source docs
+res/
+cv/feb/
+cv/*.docx
+research/publications_files/*.docx
