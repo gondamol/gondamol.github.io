@@ -16,29 +16,37 @@ format:
 
 <section class="editorial-hero reveal-on-scroll">
   <div class="editorial-hero__copy">
-    <p class="editorial-hero__eyebrow">Research Data Manager · AI Systems · Nairobi, Kenya</p>
-    <h1 class="editorial-hero__title">Field reality, data systems, and decision-grade analytics.</h1>
+    <p class="editorial-hero__eyebrow">Nairobi, Kenya · Research Data Manager · AI Systems</p>
+    <p class="editorial-hero__name">Nichodemus Amollo</p>
+    <h1 class="editorial-hero__title">I help teams turn messy field data into decisions they can trust.</h1>
     <p class="editorial-hero__lede">
-      I build research and data systems that hold up outside ideal conditions:
-      from survey design and field supervision to ETL pipelines, dashboard workflows,
-      and AI-ready infrastructure teams can trust.
+      I am a research data manager moving deeper into analytics engineering and AI systems.
+      My best work sits between collection and judgment: designing the study tools, cleaning the pipeline,
+      and shaping the dashboards, briefs, and models that decision-makers can actually use.
     </p>
+    <p class="editorial-hero__availability">Open to research data leadership, analytics engineering, and AI systems roles where rigor, delivery, and care all matter.</p>
     <div class="editorial-hero__actions">
       <a href="projects/index.html" class="btn-solid">Selected Work</a>
       <a href="about/index.html" class="btn-ghost">My Story</a>
     </div>
+    <div class="editorial-hero__trust" aria-label="Selected organisations">
+      <span>Georgetown gui2de</span>
+      <span>KEMRI</span>
+      <span>JOOUST</span>
+      <span>LERIS Hub</span>
+    </div>
     <dl class="editorial-hero__meta" aria-label="Selected background details">
       <div class="editorial-hero__meta-item">
-        <dt>Base</dt>
-        <dd>Nairobi, Kenya</dd>
+        <dt>Current</dt>
+        <dd>Lead Research Data Manager</dd>
       </div>
       <div class="editorial-hero__meta-item">
-        <dt>Scope</dt>
+        <dt>Range</dt>
         <dd>4 countries · 8+ years</dd>
       </div>
       <div class="editorial-hero__meta-item">
-        <dt>Focus</dt>
-        <dd>Research, systems, impact</dd>
+        <dt>Best At</dt>
+        <dd>Research, pipelines, impact</dd>
       </div>
     </dl>
   </div>
@@ -46,14 +54,19 @@ format:
   <figure class="editorial-hero__visual">
     <div class="editorial-hero__image-shell">
       <img
-        src="img/professor nyongo launching the dashboard.jpeg"
-        alt="Kisumu dashboard launch showing decision-focused health analytics in practice"
+        src="img/profile.jpeg"
+        alt="Nichodemus Amollo portrait"
         class="editorial-hero__image"
         onerror="this.parentElement.classList.add('is-empty')"
       >
+      <div class="editorial-hero__fieldnote">
+        <span class="editorial-hero__fieldnote-label">Current Work</span>
+        <strong>Building health financial diaries systems for 1,000+ households.</strong>
+        <span>Research design, ETL, quality control, and decision support for Georgetown gui2de.</span>
+      </div>
     </div>
     <figcaption class="editorial-hero__caption">
-      Kisumu dashboard launch. Evidence becomes useful when teams can see it, question it, and act on it.
+      I work best close to the people, programmes, and constraints the data is meant to serve.
     </figcaption>
   </figure>
 </section>
@@ -166,7 +179,7 @@ format:
     <p class="section-sub">Each one combines context, methods, and outcomes rather than just listing tools.</p>
 
     <div class="featured-ledger__grid">
-      <a href="research/thesis.html" class="ledger-card">
+      <a href="research/thesis.html" class="ledger-card ledger-card--primary">
         <div class="ledger-card__media">
           <img
             src="img/professor nyongo sharing the great insights for policy they see from the dashboard.jpeg"
@@ -176,7 +189,7 @@ format:
           >
         </div>
         <div class="ledger-card__body">
-          <p class="ledger-card__meta">2026 · Public Health · Mixed Methods</p>
+          <p class="ledger-card__meta">Case File 01 · 2026 · Public Health · Mixed Methods</p>
           <h3 class="ledger-card__title">Financing chronic care in rural Kenya</h3>
           <p class="ledger-card__text">
             A seven-facility study on how narrow funding streams, approval delays, and missing NCD budget lines disrupt hypertension and diabetes care.
@@ -184,6 +197,7 @@ format:
           <dl class="ledger-card__facts">
             <div><dt>Methods</dt><dd>Facility interviews, household data, policy analysis</dd></div>
             <div><dt>Output</dt><dd>Thesis, manuscript, and dashboard-ready evidence</dd></div>
+            <div><dt>Why it mattered</dt><dd>It turned everyday financial bottlenecks into something county and research stakeholders could discuss concretely.</dd></div>
           </dl>
           <span class="ledger-card__action">Open case file →</span>
         </div>
@@ -194,7 +208,7 @@ format:
           <span>Readmission Risk</span>
         </div>
         <div class="ledger-card__body">
-          <p class="ledger-card__meta">2026 · Analytics Engineering · Predictive Workflow</p>
+          <p class="ledger-card__meta">Case File 02 · 2026 · Analytics Engineering</p>
           <h3 class="ledger-card__title">Healthcare readmission risk pipeline</h3>
           <p class="ledger-card__text">
             Portfolio work that connects data preparation, modeling logic, and decision support in a clinically legible way.
@@ -212,7 +226,7 @@ format:
           <span>Research Brief Generator</span>
         </div>
         <div class="ledger-card__body">
-          <p class="ledger-card__meta">2026 · AI Applications · Research Ops</p>
+          <p class="ledger-card__meta">Case File 03 · 2026 · AI Applications</p>
           <h3 class="ledger-card__title">Research brief generator</h3>
           <p class="ledger-card__text">
             An AI-assisted workflow for turning structured inputs into clearer summaries and reusable research communication artifacts.
@@ -257,6 +271,7 @@ format:
         I’m open to research data leadership, analytics engineering, and collaborative work where evidence has to survive operational reality, not just a demo environment.
       </p>
       <p class="collab-channel__note">For teams building better health systems, stronger data infrastructure, and credible AI workflows.</p>
+      <p class="collab-channel__availability">Based in Nairobi, open to remote and hybrid work. I usually reply within 48 hours.</p>
     </div>
 
     <div class="collab-channel__actions">
@@ -265,6 +280,7 @@ format:
       <div class="collab-channel__links">
         <a href="https://github.com/gondamol" target="_blank" rel="noopener">GitHub</a>
         <a href="https://www.linkedin.com/in/nichodemusamollo/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="cv/Nichodemus_Amollo_CV.pdf" download>CV</a>
       </div>
     </div>
   </div>
