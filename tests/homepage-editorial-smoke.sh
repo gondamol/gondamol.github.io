@@ -17,7 +17,9 @@ require() {
 }
 
 require "editorial-hero"
-require "proof-ribbon-track"
+require "editorial-hero__domains"
+require "editorial-hero__stats"
+require "new profile pic.jpeg"
 require "chapter-band"
 require "featured-ledger"
 require "collab-channel"

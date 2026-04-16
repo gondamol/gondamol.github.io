@@ -3694,7 +3694,7 @@ main .page-content {
   display: grid;
   grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.95fr);
   gap: clamp(1.5rem, 4vw, 3.5rem);
-  align-items: end;
+  align-items: start;
   width: min(1180px, calc(100% - 3rem));
   margin: 0 auto;
   padding: clamp(2rem, 4vw, 3.5rem) 0 clamp(2.5rem, 6vw, 4.5rem);
@@ -3736,16 +3736,6 @@ main .page-content {
   font-size: 1rem;
 }
 
-.editorial-hero__availability {
-  margin: 0;
-  max-width: 58ch;
-  padding-left: 1rem;
-  border-left: 2px solid rgba(184, 78, 22, 0.26);
-  color: var(--ink);
-  font-size: 0.96rem;
-  line-height: 1.7;
-}
-
 .editorial-hero__actions {
   display: flex;
   flex-wrap: wrap;
@@ -3753,58 +3743,23 @@ main .page-content {
   align-items: center;
 }
 
-.editorial-hero__trust {
+.editorial-hero__domains {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.55rem;
-}
-
-.editorial-hero__trust span {
-  padding: 0.36rem 0.58rem;
-  border: 1px solid var(--border);
-  background: rgba(255, 255, 255, 0.6);
-  color: var(--ink);
-  font-size: 0.7rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.editorial-hero__meta {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 0.75rem;
-  margin: 0;
-  padding-top: 1rem;
-  border-top: 1px solid var(--border);
-}
-
-.editorial-hero__meta-item {
-  margin: 0;
-}
-
-.editorial-hero__meta dt {
-  margin: 0 0 0.25rem;
-  color: var(--muted);
-  font-size: 0.7rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-
-.editorial-hero__meta dd {
-  margin: 0;
-  color: var(--ink);
-  font-size: 0.96rem;
+  gap: 0.7rem 0.75rem;
 }
 
 .editorial-hero__visual {
   margin: 0;
   display: grid;
-  gap: 0.85rem;
+  gap: 0.95rem;
+  align-self: start;
+  align-content: start;
 }
 
 .editorial-hero__image-shell {
   position: relative;
-  min-height: 540px;
+  min-height: 640px;
   border: 1px solid var(--border);
   background:
     linear-gradient(180deg, rgba(184, 78, 22, 0.08), rgba(184, 78, 22, 0)),
@@ -3860,6 +3815,7 @@ main .page-content {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center 18%;
   display: block;
   filter: saturate(0.88) contrast(1.03);
 }
@@ -3871,96 +3827,41 @@ main .page-content {
   font-size: 0.73rem;
   letter-spacing: 0.04em;
   max-width: none;
+  text-align: center;
 }
 
-.proof-ribbon-shell {
-  position: relative;
-  width: min(1220px, calc(100% - 3rem));
-  margin: 0 auto;
-  overflow: hidden;
-}
-
-.proof-ribbon-shell::before,
-.proof-ribbon-shell::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 56px;
-  z-index: 2;
-  pointer-events: none;
-}
-
-.proof-ribbon-shell::before {
-  left: 0;
-  background: linear-gradient(90deg, var(--paper) 0%, rgba(245, 241, 234, 0) 100%);
-}
-
-.proof-ribbon-shell::after {
-  right: 0;
-  background: linear-gradient(270deg, var(--paper) 0%, rgba(245, 241, 234, 0) 100%);
-}
-
-.proof-ribbon {
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.74), rgba(255, 255, 255, 0.3)),
-    var(--paper);
-  overflow: hidden;
-}
-
-.proof-ribbon-track {
-  display: flex;
-  width: max-content;
-  will-change: transform;
-  animation: proofRibbonDrift 32s linear infinite;
-}
-
-.proof-ribbon-group {
-  display: flex;
-  gap: 0;
-}
-
-.proof-ribbon-item {
+.editorial-hero__stats {
   display: grid;
-  gap: 0.3rem;
-  min-width: 280px;
-  padding: 1rem 1.35rem;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.editorial-hero__stat {
+  display: grid;
+  gap: 0.18rem;
+  padding: 1.1rem 0.9rem;
+  justify-items: center;
+  text-align: center;
   border-right: 1px solid var(--border);
 }
 
-.proof-ribbon-item:nth-child(odd) {
-  background: rgba(255, 255, 255, 0.38);
+.editorial-hero__stat:last-child {
+  border-right: 0;
 }
 
-.proof-ribbon-label {
-  color: var(--muted);
-  font-size: 0.66rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-}
-
-.proof-ribbon-item strong {
-  font-size: 1.05rem;
+.editorial-hero__stat-value {
   color: var(--ink);
-  font-weight: 600;
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  line-height: 0.95;
 }
 
-.proof-ribbon-item span:last-child {
+.editorial-hero__stat-label {
   color: var(--muted);
-  font-size: 0.84rem;
-  line-height: 1.55;
-}
-
-@keyframes proofRibbonDrift {
-  from {
-    transform: translateX(0);
-  }
-
-  to {
-    transform: translateX(-50%);
-  }
+  font-size: 0.74rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
 }
 
 .chapter-band {
@@ -4332,26 +4233,6 @@ html[data-theme='dark'] .ledger-card {
   background: var(--white);
 }
 
-html[data-theme='dark'] .proof-ribbon {
-  background: rgba(19, 24, 21, 0.9);
-}
-
-html[data-theme='dark'] .proof-ribbon-shell::before {
-  background: linear-gradient(90deg, var(--paper) 0%, rgba(16, 20, 18, 0) 100%);
-}
-
-html[data-theme='dark'] .proof-ribbon-shell::after {
-  background: linear-gradient(270deg, var(--paper) 0%, rgba(16, 20, 18, 0) 100%);
-}
-
-html[data-theme='dark'] .proof-ribbon-item {
-  border-right-color: rgba(255, 255, 255, 0.08);
-}
-
-html[data-theme='dark'] .editorial-hero__trust span {
-  background: rgba(255, 255, 255, 0.03);
-}
-
 html[data-theme='dark'] .collab-channel__layout {
   background:
     radial-gradient(circle at top right, rgba(223, 117, 64, 0.22), transparent 30%),
@@ -4414,17 +4295,20 @@ html[data-theme='dark'] .collab-channel__layout {
     padding-bottom: 3rem;
   }
 
-  .editorial-hero,
-  .proof-ribbon-shell {
+  .editorial-hero {
     width: calc(100% - 1.5rem);
   }
 
-  .editorial-hero__meta {
-    grid-template-columns: 1fr;
+  .editorial-hero__stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .proof-ribbon-item {
-    min-width: 240px;
+  .editorial-hero__stat:nth-child(2) {
+    border-right: 0;
+  }
+
+  .editorial-hero__stat:nth-child(-n + 2) {
+    border-bottom: 1px solid var(--border);
   }
 
   .ledger-card--primary,
@@ -4443,11 +4327,6 @@ html[data-theme='dark'] .collab-channel__layout {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .proof-ribbon-track {
-    animation: none;
-    transform: none;
-  }
-
   .ledger-card,
   .collab-channel__cta {
     transition: none;

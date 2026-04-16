@@ -16,7 +16,7 @@ format:
 
 <section class="editorial-hero reveal-on-scroll">
   <div class="editorial-hero__copy">
-    <p class="editorial-hero__eyebrow">Nairobi, Kenya · Research Data Manager · AI Systems</p>
+    <p class="editorial-hero__eyebrow">Research Data Manager · AI Systems · Data Analyst · M&amp;E</p>
     <p class="editorial-hero__name">Nichodemus Amollo</p>
     <h1 class="editorial-hero__title">I help teams turn messy field data into decisions they can trust.</h1>
     <p class="editorial-hero__lede">
@@ -24,37 +24,24 @@ format:
       My best work sits between collection and judgment: designing the study tools, cleaning the pipeline,
       and shaping the dashboards, briefs, and models that decision-makers can actually use.
     </p>
-    <p class="editorial-hero__availability">Open to research data leadership, analytics engineering, and AI systems roles where rigor, delivery, and care all matter.</p>
+    <div class="editorial-hero__domains">
+      <span class="domain green">Public Health</span>
+      <span class="domain green">Agriculture</span>
+      <span class="domain terracotta">M&amp;E / Impact Eval</span>
+      <span class="domain gold">Finance</span>
+      <span class="domain slate">Supply Chain</span>
+      <span class="domain slate">Real Estate</span>
+    </div>
     <div class="editorial-hero__actions">
       <a href="projects/index.html" class="btn-solid">Selected Work</a>
       <a href="about/index.html" class="btn-ghost">My Story</a>
     </div>
-    <div class="editorial-hero__trust" aria-label="Selected organisations">
-      <span>Georgetown gui2de</span>
-      <span>KEMRI</span>
-      <span>JOOUST</span>
-      <span>LERIS Hub</span>
-    </div>
-    <dl class="editorial-hero__meta" aria-label="Selected background details">
-      <div class="editorial-hero__meta-item">
-        <dt>Current</dt>
-        <dd>Lead Research Data Manager</dd>
-      </div>
-      <div class="editorial-hero__meta-item">
-        <dt>Range</dt>
-        <dd>4 countries · 8+ years</dd>
-      </div>
-      <div class="editorial-hero__meta-item">
-        <dt>Best At</dt>
-        <dd>Research, pipelines, impact</dd>
-      </div>
-    </dl>
   </div>
 
   <figure class="editorial-hero__visual">
     <div class="editorial-hero__image-shell">
       <img
-        src="img/profile.jpeg"
+        src="img/new profile pic.jpeg"
         alt="Nichodemus Amollo portrait"
         class="editorial-hero__image"
         onerror="this.parentElement.classList.add('is-empty')"
@@ -68,36 +55,25 @@ format:
     <figcaption class="editorial-hero__caption">
       I work best close to the people, programmes, and constraints the data is meant to serve.
     </figcaption>
-  </figure>
-</section>
-
-<section class="proof-ribbon-shell reveal-on-scroll" aria-label="Selected proof points">
-  <div class="proof-ribbon">
-    <div class="proof-ribbon-track">
-      <div class="proof-ribbon-group">
-        <span class="proof-ribbon-item">
-          <span class="proof-ribbon-label">Architecture</span>
-          <strong>1,000+ households</strong>
-          <span>Health financial diaries, QA, and live dashboards</span>
-        </span>
-        <span class="proof-ribbon-item">
-          <span class="proof-ribbon-label">Operations</span>
-          <strong>50+ field staff</strong>
-          <span>Training, supervision, and multi-site delivery workflows</span>
-        </span>
-        <span class="proof-ribbon-item">
-          <span class="proof-ribbon-label">Direction</span>
-          <strong>AI-ready systems</strong>
-          <span>Reproducible analytics, model thinking, and careful monitoring</span>
-        </span>
-        <span class="proof-ribbon-item">
-          <span class="proof-ribbon-label">Range</span>
-          <strong>Public systems to agriculture</strong>
-          <span>Health, MEL, finance, real estate, and operations</span>
-        </span>
+    <div class="editorial-hero__stats" aria-label="Selected proof points">
+      <div class="editorial-hero__stat">
+        <span class="editorial-hero__stat-value">8+</span>
+        <span class="editorial-hero__stat-label">Years</span>
+      </div>
+      <div class="editorial-hero__stat">
+        <span class="editorial-hero__stat-value">3</span>
+        <span class="editorial-hero__stat-label">Countries</span>
+      </div>
+      <div class="editorial-hero__stat">
+        <span class="editorial-hero__stat-value">500+</span>
+        <span class="editorial-hero__stat-label">Researchers trained</span>
+      </div>
+      <div class="editorial-hero__stat">
+        <span class="editorial-hero__stat-value">6</span>
+        <span class="editorial-hero__stat-label">SDG domains</span>
       </div>
     </div>
-  </div>
+  </figure>
 </section>
 
 <section class="section-pad section-divider reveal-on-scroll">
@@ -306,15 +282,6 @@ format:
     revealEls.forEach(function(el) { observer.observe(el); });
   } else {
     revealEls.forEach(function(el) { el.classList.add('is-visible'); });
-  }
-
-  var track = document.querySelector('.proof-ribbon-track');
-  var group = track ? track.querySelector('.proof-ribbon-group') : null;
-  if (track && group && !track.dataset.enhanced) {
-    var clone = group.cloneNode(true);
-    clone.setAttribute('aria-hidden', 'true');
-    track.appendChild(clone);
-    track.dataset.enhanced = 'true';
   }
 
   var navbar = document.querySelector('.navbar');
