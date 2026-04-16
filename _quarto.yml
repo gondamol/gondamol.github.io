@@ -68,13 +68,15 @@ website:
 
   page-footer:
     background: dark
-    left: "© 2025 Nichodemus Amollo · Built with Quarto"
-    center: "Nairobi, Kenya"
+    left: "<span class='footer-title'>Nichodemus Amollo</span><span class='footer-meta'>Research Data Manager · Analytics Engineering · M&amp;E</span>"
+    center: "<a href='tel:+254725737867' class='footer-phone'>+254 725 737 867</a><span class='footer-meta'>Nairobi, Kenya · Open to remote and hybrid work</span>"
     right:
       - icon: github
         href: https://github.com/gondamol
       - icon: linkedin
         href: https://www.linkedin.com/in/nichodemusamollo/
+      - text: "CV"
+        href: cv/index.html
 
 execute:
   freeze: auto
