@@ -15,8 +15,6 @@ renv/staging/
 *.md
 !README.md
 !**/README.md
-!docs/superpowers/specs/*.md
-!docs/superpowers/plans/*.md
 AGENTS.md
 AUTHENTIC_PROJECT_DETAILS.md
 COMPREHENSIVE_PORTFOLIO_REVAMP_SUMMARY.md
@@ -33,6 +31,7 @@ QUICK_START_CHECKLIST.md
 SESSION_SUMMARY_OCT19.md
 
 # Internal documentation and spec files
+docs/superpowers/
 openspec/
 .cursor/
 
