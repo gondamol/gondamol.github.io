@@ -1,0 +1,6 @@
+record_id,facility_id,visit_date,monthly_income_kes,monthly_health_spend_kes,medicine_stockout_days
+R001,kis001,2026-02-01,12000,2400,5
+R002,HBY004,2026-02-02,8000,1800,7
+R003,SYA011,2026-02-03,9500,1200,0
+R004,KIS001,2026-02-04,15000,3200,10
+R005,HBY004,2026-02-05,6000,1400,4

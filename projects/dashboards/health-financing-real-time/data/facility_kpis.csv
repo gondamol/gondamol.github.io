@@ -1,0 +1,5 @@
+facility_name,county,reimbursement_lag_days,stockout_risk_pct,household_payment_burden_pct,high_risk_patients
+Kisumu Central HC,Kisumu,52,0.72,23,34
+Ringa SCH,Homa Bay,44,0.61,19,18
+Ugunja HC,Siaya,31,0.43,16,12
+Migori County HC,Migori,57,0.75,24,29

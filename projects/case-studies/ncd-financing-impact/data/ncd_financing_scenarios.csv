@@ -1,0 +1,4 @@
+scenario,baseline_stockout_days,improved_stockout_days
+Faster procurement approval,22,16
+Protected NCD budget line,22,14
+Local spending discretion,22,13

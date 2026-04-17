@@ -1,0 +1,59 @@
+---
+title: "D3.js Bar Charts & Histograms"
+subtitle: "Advanced visualization techniques using D3.js, HTML, CSS, JavaScript"
+format:
+  html:
+    toc: true
+    code-fold: show
+    code-tools: true
+    code-copy: true
+    theme: 
+      light: [cosmo, ../custom.scss]
+      dark: [darkly, ../custom.scss]
+---
+
+::: {.hero-banner}
+# **D3.js Bar Charts & Histograms**
+
+This project demonstrates advanced visualization techniques using **D3.js, HTML, CSS, JavaScript**.
+:::
+
+## Overview
+
+This visualization project showcases how to create professional, publication-quality visualizations using JavaScript and modern visualization libraries.
+
+## Key Features
+
+- Advanced styling and customization
+- Interactive elements
+- Publication-ready outputs
+- Reproducible code
+
+## Installation & Setup
+
+```r
+// Load D3.js library
+<script src="https://d3js.org/d3.v7.min.js"></script>
+```
+
+## Example Visualization
+
+```r
+// D3.js visualization code
+// [Visualization code specific to D3.js]
+```
+
+## Techniques Demonstrated
+
+1. **Technique 1**: Description
+2. **Technique 2**: Description  
+3. **Technique 3**: Description
+
+## Related Projects
+
+- [View All Visualizations](index.qmd)
+- [TidyTuesday Projects](../tidy-tuesday/index.html)
+
+---
+
+[⬅️ Back to Visualizations](index.qmd)

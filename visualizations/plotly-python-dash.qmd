@@ -1,0 +1,67 @@
+---
+title: "Interactive Dashboards with Plotly Python"
+subtitle: "Advanced visualization techniques using plotly, dash, pandas"
+format:
+  html:
+    toc: true
+    code-fold: show
+    code-tools: true
+    code-copy: true
+    theme: 
+      light: [cosmo, ../custom.scss]
+      dark: [darkly, ../custom.scss]
+---
+
+::: {.hero-banner}
+# **Interactive Dashboards with Plotly Python**
+
+This project demonstrates advanced visualization techniques using **plotly, dash, pandas**.
+:::
+
+## Overview
+
+This visualization project showcases how to create professional, publication-quality visualizations using Python and modern visualization libraries.
+
+## Key Features
+
+- Advanced styling and customization
+- Interactive elements
+- Publication-ready outputs
+- Reproducible code
+
+## Installation & Setup
+
+```r
+import plotly as plt
+# Add other imports as needed
+```
+
+## Example Visualization
+
+```r
+import numpy as np
+import pandas as pd
+
+data = pd.DataFrame({
+    'x': range(100),
+    'y': np.cumsum(np.random.randn(100))
+})
+
+# Create visualization
+# [Visualization code specific to package]
+```
+
+## Techniques Demonstrated
+
+1. **Technique 1**: Description
+2. **Technique 2**: Description  
+3. **Technique 3**: Description
+
+## Related Projects
+
+- [View All Visualizations](index.qmd)
+- [TidyTuesday Projects](../tidy-tuesday/index.html)
+
+---
+
+[⬅️ Back to Visualizations](index.qmd)

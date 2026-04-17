@@ -1,0 +1,117 @@
+---
+title: "React D3.js Radar Chart with Animation"
+subtitle: "Interactive radar chart inspired by react-graph-gallery.com"
+format:
+  html:
+    toc: true
+    code-fold: show
+    code-tools: true
+---
+
+::: {.hero-banner}
+# **<i class="fas fa-chart-pie"></i> Interactive Radar Chart with Animation**
+
+Creating beautiful animated radar charts using React and D3.js
+:::
+
+## Overview
+
+This project demonstrates how to create interactive, animated radar charts using React and D3.js, inspired by the [React Graph Gallery](https://www.react-graph-gallery.com/example/radar-chart-animation).
+
+## Key Features
+
+- Smooth animations
+- Interactive tooltips
+- Responsive design
+- Customizable styling
+
+## Implementation
+
+### React Component Structure
+
+```jsx
+import React, { useEffect, useRef } from 'react';
+import * as d3 from 'd3';
+
+const RadarChart = ({ data, width = 400, height = 400 }) => {
+  const svgRef = useRef();
+  
+  useEffect(() => {
+    // D3.js radar chart implementation
+    const svg = d3.select(svgRef.current);
+    
+    // Configuration
+    const radius = Math.min(width, height) / 2;
+    const angleSlice = (2 * Math.PI) / data.length;
+    
+    // Scales
+    const rScale = d3.scaleLinear()
+      .domain([0, 100])
+      .range([0, radius]);
+    
+    // Create axes
+    data.forEach((d, i) => {
+      const angle = i * angleSlice - Math.PI / 2;
+      // Draw axis line
+      // Add labels
+      // Draw data path
+    });
+    
+    // Animation
+    svg.selectAll('.radar-path')
+      .transition()
+      .duration(1000)
+      .attrTween('d', function(d) {
+        // Smooth animation tween
+      });
+      
+  }, [data, width, height]);
+  
+  return (
+    <svg ref={svgRef} width={width} height={height}>
+      <g transform={`translate(${width/2}, ${height/2})`} />
+    </svg>
+  );
+};
+
+export default RadarChart;
+```
+
+### Example Usage
+
+```jsx
+const App = () => {
+  const skillsData = [
+    { skill: 'R Programming', value: 90 },
+    { skill: 'Python', value: 85 },
+    { skill: 'SQL', value: 95 },
+    { skill: 'Data Visualization', value: 88 },
+    { skill: 'Machine Learning', value: 80 },
+    { skill: 'Statistics', value: 92 }
+  ];
+  
+  return (
+    <div>
+      <RadarChart data={skillsData} width={500} height={500} />
+    </div>
+  );
+};
+```
+
+## Interactive Features
+
+- **Hover Effects**: Show detailed values on hover
+- **Animations**: Smooth transitions when data updates
+- **Responsive**: Adapts to different screen sizes
+- **Customizable**: Easy to modify colors, scales, and styling
+
+## Related Projects
+
+- [View All Visualizations](index.qmd)
+- [D3.js Network Graphs](d3-network-graphs.qmd)
+- [Interactive Plotly Charts](../visualizations/plotly-interactive-charts.qmd)
+
+---
+
+[⬅️ Back to Visualizations](index.qmd)
+

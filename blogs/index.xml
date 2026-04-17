@@ -10,7 +10,7 @@
 <atom:link href="https://gondamol.github.io/blogs/index.xml" rel="self" type="application/rss+xml"/>
 <description>Data Analyst &amp; Research Data Manager — M&amp;E, Health Analytics, Agriculture, Finance — Nairobi, Kenya</description>
 <generator>quarto-1.8.27</generator>
-<lastBuildDate>Sat, 14 Mar 2026 21:00:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 16 Apr 2026 21:00:00 GMT</lastBuildDate>
 <item>
   <title>Analyzing Agricultural Data from Public Sources</title>
   <dc:creator>Nichodemus Amollo</dc:creator>
@@ -384,7 +384,7 @@ font-style: inherit;">print</span>(p)</span></code></pre></div></div>
   <category>Data Analysis</category>
   <category>Kaggle</category>
   <guid>https://gondamol.github.io/posts/agriculture-data-analysis/</guid>
-  <pubDate>Sat, 14 Mar 2026 21:00:00 GMT</pubDate>
+  <pubDate>Thu, 16 Apr 2026 21:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Creating Beautiful Data Visualizations with R and Python</title>
@@ -788,7 +788,7 @@ Note
 <li><a href="https://observablehq.com/@d3/gallery">D3.js Gallery</a></li>
 </ul>
 <hr>
-<p><a href="../../blogs/index.html">← Back to Blog</a> | <a href="../../visualizations/index.qmd">View All Visualizations</a></p>
+<p><a href="../../blogs/index.html">← Back to Blog</a> | <a href="../../visualizations/index.html">View All Visualizations</a></p>
 
 
 <!-- -->
@@ -800,7 +800,341 @@ Note
   <category>R</category>
   <category>Python</category>
   <guid>https://gondamol.github.io/posts/data-viz-blog-1/</guid>
-  <pubDate>Sat, 14 Mar 2026 21:00:00 GMT</pubDate>
+  <pubDate>Thu, 16 Apr 2026 21:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>From Field to Model: Why Domain Knowledge Still Matters in ML</title>
+  <dc:creator>Nichodemus Amollo</dc:creator>
+  <link>https://gondamol.github.io/posts/48-from-field-to-model/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Machine learning conversations often start in the wrong place. They start with model choice, benchmark scores, or tooling. In practice, the harder question usually comes earlier: do we understand the world well enough to decide what should count as a useful signal in the first place?</p>
+<p>That is where field experience matters.</p>
+<p>In health systems work, I have seen datasets that looked complete on paper but were operationally misleading. A facility report might show that a medicine was “available” because it entered the stock ledger that week. But if approval delays meant the medicine reached patients too late, the service continuity story was very different from the spreadsheet story. A model trained on the wrong abstraction would learn confidence from noise.</p>
+<p>This is why domain knowledge is not a soft extra. It is part of model quality.</p>
+<section id="where-field-knowledge-changes-the-model" class="level2">
+<h2 class="anchored" data-anchor-id="where-field-knowledge-changes-the-model">Where field knowledge changes the model</h2>
+<p>It changes at least four things:</p>
+<ol type="1">
+<li><strong>Target definition</strong></li>
+</ol>
+<p>What exactly are we predicting? “Readmission” is not just a label. It sits inside a care pathway, a staffing reality, and a follow-up system. If the operational response to a prediction is unclear, then the model objective is probably under-specified.</p>
+<ol start="2" type="1">
+<li><strong>Feature design</strong></li>
+</ol>
+<p>A useful feature is not only statistically predictive. It should also make sense to the people expected to act on it. Prior admissions, medicine gaps, and transport barriers are valuable because they connect directly to intervention options.</p>
+<ol start="3" type="1">
+<li><strong>Error cost</strong></li>
+</ol>
+<p>In many ML tutorials, false positives and false negatives are abstract trade-offs. In real programs they are budget, staff time, patient burden, and trust. Domain context tells you which mistakes the system can absorb and which ones it cannot.</p>
+<ol start="4" type="1">
+<li><strong>Deployment constraints</strong></li>
+</ol>
+<p>A model is not deployed into a vacuum. It lands in a place with weak connectivity, competing reporting demands, approval chains, and limited time. If your design assumes frictionless operations, it will fail for reasons that are not mathematical.</p>
+</section>
+<section id="why-this-matters-for-low-resource-settings" class="level2">
+<h2 class="anchored" data-anchor-id="why-this-matters-for-low-resource-settings">Why this matters for low-resource settings</h2>
+<p>The temptation in low-resource contexts is to think the solution is simply “more data” or “better AI.” Often the deeper problem is that the system has not been described carefully enough. Missing domain knowledge leads teams to optimize for what is easy to measure rather than what truly shapes outcomes.</p>
+<p>That is one reason I see my background in research data management as relevant to AI systems. High-frequency checks, tool design, and causal thinking are not separate from ML. They are part of the discipline that keeps an ML workflow honest.</p>
+</section>
+<section id="a-better-standard" class="level2">
+<h2 class="anchored" data-anchor-id="a-better-standard">A better standard</h2>
+<p>The standard should not be “Can we train a model?” It should be:</p>
+<ul>
+<li>does the prediction align with an operational decision?</li>
+<li>do the features reflect real constraints and pathways?</li>
+<li>can users understand why a case is high risk?</li>
+<li>do we know what to monitor after rollout?</li>
+</ul>
+<p>If those questions are missing, domain knowledge is missing too.</p>
+<p>The future of useful AI in health, agriculture, finance, and development will not be built only by people who know models. It will also be built by people who know the systems those models are entering. That overlap is where I want my work to live.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>Machine Learning</category>
+  <category>Public Health</category>
+  <category>Domain Knowledge</category>
+  <category>AI Systems</category>
+  <guid>https://gondamol.github.io/posts/48-from-field-to-model/</guid>
+  <pubDate>Mon, 16 Mar 2026 21:00:00 GMT</pubDate>
+  <media:content url="https://gondamol.github.io/img/blog-health.svg" medium="image" type="image/svg+xml"/>
+</item>
+<item>
+  <title>Reproducible ML: A Research Data Manager’s View</title>
+  <dc:creator>Nichodemus Amollo</dc:creator>
+  <link>https://gondamol.github.io/posts/49-reproducible-ml-research-data-manager/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>One reason I am comfortable moving toward ML systems work is that the underlying habits are already familiar. Research data management, at its best, is about traceability, version control, validation, and disciplined handoff. Those same habits are what make machine learning reproducible.</p>
+<p>The language changes, but the responsibility does not.</p>
+<section id="research-rigor-translates-well" class="level2">
+<h2 class="anchored" data-anchor-id="research-rigor-translates-well">Research rigor translates well</h2>
+<p>When I build high-frequency checks for field data, I am asking:</p>
+<ul>
+<li>where could this system fail quietly?</li>
+<li>which assumptions should be tested automatically?</li>
+<li>what needs to be documented so another analyst can rerun the workflow?</li>
+</ul>
+<p>Those are also ML questions.</p>
+<p>Reproducible ML does not begin with a model registry. It begins with simpler discipline:</p>
+<ul>
+<li>a clean separation between raw, staged, and modeled data</li>
+<li>explicit feature definitions</li>
+<li>saved training assumptions</li>
+<li>documented thresholds for evaluation</li>
+<li>a clear record of which run produced which output</li>
+</ul>
+</section>
+<section id="why-this-matters-outside-research-teams" class="level2">
+<h2 class="anchored" data-anchor-id="why-this-matters-outside-research-teams">Why this matters outside research teams</h2>
+<p>In many organizations, analysis is still person-dependent. One analyst knows the folder structure. Another remembers which columns need cleaning. A third person knows why a certain exception rule exists. That is fragile even before machine learning enters the picture.</p>
+<p>ML amplifies this fragility because it adds more moving parts:</p>
+<ul>
+<li>training data windows</li>
+<li>feature transformations</li>
+<li>hyperparameters</li>
+<li>calibration choices</li>
+<li>deployment thresholds</li>
+</ul>
+<p>Without reproducibility, a model becomes difficult to defend and almost impossible to improve.</p>
+</section>
+<section id="what-good-enough-looks-like" class="level2">
+<h2 class="anchored" data-anchor-id="what-good-enough-looks-like">What “good enough” looks like</h2>
+<p>Not every team needs an enterprise MLOps stack on day one. But most teams do need a minimum operating standard:</p>
+<ol type="1">
+<li><strong>Version-controlled data prep scripts</strong></li>
+<li><strong>Saved model artifacts and feature lists</strong></li>
+<li><strong>A repeatable scoring pipeline</strong></li>
+<li><strong>A short README explaining assumptions and usage</strong></li>
+<li><strong>Basic monitoring for drift or degraded performance</strong></li>
+</ol>
+<p>That standard is realistic for small teams and already much stronger than the informal workflows many organizations rely on.</p>
+</section>
+<section id="the-hidden-advantage-of-a-research-background" class="level2">
+<h2 class="anchored" data-anchor-id="the-hidden-advantage-of-a-research-background">The hidden advantage of a research background</h2>
+<p>People sometimes frame research work and production ML as different worlds. I do not think they are. Research discipline offers a strong starting point because it teaches caution, documentation, and respect for uncertainty.</p>
+<p>The gap is not from rigor to ML. The gap is from rigor to operationalization.</p>
+<p>That is why I am interested in the overlap between ETL, dashboards, model monitoring, and decision support. The model is only one part of the system. Reproducibility is what keeps the rest of the system from collapsing under it.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>Machine Learning</category>
+  <category>Reproducibility</category>
+  <category>Data Engineering</category>
+  <category>Research</category>
+  <guid>https://gondamol.github.io/posts/49-reproducible-ml-research-data-manager/</guid>
+  <pubDate>Mon, 16 Mar 2026 21:00:00 GMT</pubDate>
+  <media:content url="https://gondamol.github.io/img/blog-engineering.svg" medium="image" type="image/svg+xml"/>
+</item>
+<item>
+  <title>Building AI for Low-Resource Settings</title>
+  <dc:creator>Nichodemus Amollo</dc:creator>
+  <link>https://gondamol.github.io/posts/50-ai-low-resource-settings/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Much of the AI conversation assumes stable internet, abundant cloud infrastructure, and teams that can respond instantly to every alert. That is not the environment many public-interest systems operate in.</p>
+<p>If we want AI to be useful in low-resource settings, the design assumptions have to change.</p>
+<section id="start-with-the-environment-not-the-model" class="level2">
+<h2 class="anchored" data-anchor-id="start-with-the-environment-not-the-model">Start with the environment, not the model</h2>
+<p>The right first questions are often operational:</p>
+<ul>
+<li>Will the tool still work when connectivity drops?</li>
+<li>Who is expected to act on the output, and how much time do they actually have?</li>
+<li>How often can the system be updated without breaking existing workflows?</li>
+<li>What happens if the model is wrong in a place with limited fallback capacity?</li>
+</ul>
+<p>These are not secondary implementation details. They are core design constraints.</p>
+</section>
+<section id="principles-that-matter-more-in-constrained-environments" class="level2">
+<h2 class="anchored" data-anchor-id="principles-that-matter-more-in-constrained-environments">Principles that matter more in constrained environments</h2>
+<section id="offline-first-or-low-bandwidth-tolerance" class="level3">
+<h3 class="anchored" data-anchor-id="offline-first-or-low-bandwidth-tolerance">1. Offline-first or low-bandwidth tolerance</h3>
+<p>If a tool requires uninterrupted internet to remain useful, it may fail exactly where it is needed most. Inputs, outputs, and workflow logic should be designed with intermittent connectivity in mind.</p>
+</section>
+<section id="legible-predictions" class="level3">
+<h3 class="anchored" data-anchor-id="legible-predictions">2. Legible predictions</h3>
+<p>Users should be able to understand what a flag or risk score means without a long technical briefing. In settings where staffing is thin, interpretability is an operational necessity.</p>
+</section>
+<section id="minimal-alert-burden" class="level3">
+<h3 class="anchored" data-anchor-id="minimal-alert-burden">3. Minimal alert burden</h3>
+<p>An alerting system that overwhelms a team becomes background noise. In low-resource environments, a smaller number of trusted signals is usually better than a flood of questionable ones.</p>
+</section>
+<section id="human-override-by-design" class="level3">
+<h3 class="anchored" data-anchor-id="human-override-by-design">4. Human override by design</h3>
+<p>No model should quietly remove human judgment where local knowledge is strongest. Frontline staff often know contextual factors that never appear in the dataset.</p>
+</section>
+<section id="equity-checks-built-into-evaluation" class="level3">
+<h3 class="anchored" data-anchor-id="equity-checks-built-into-evaluation">5. Equity checks built into evaluation</h3>
+<p>If infrastructure, transport, and financing constraints vary across communities, the model may inherit those imbalances. Performance should be reviewed across different facility or population contexts, not only in aggregate.</p>
+</section>
+</section>
+<section id="why-this-work-interests-me" class="level2">
+<h2 class="anchored" data-anchor-id="why-this-work-interests-me">Why this work interests me</h2>
+<p>I have spent years in settings where data collection itself had to be designed around unstable conditions. That experience changes how I think about AI. It makes me less interested in cleverness for its own sake and more interested in systems that continue to work when the environment is imperfect.</p>
+<p>In my view, useful AI for low-resource settings will look less like magic and more like disciplined systems design:</p>
+<ul>
+<li>careful data definitions</li>
+<li>modest but actionable models</li>
+<li>clear monitoring</li>
+<li>realistic intervention pathways</li>
+</ul>
+<p>That is not a limitation. It is often the difference between something impressive in a demo and something genuinely usable.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>AI Systems</category>
+  <category>Global Health</category>
+  <category>Low-Resource Settings</category>
+  <category>Systems Design</category>
+  <guid>https://gondamol.github.io/posts/50-ai-low-resource-settings/</guid>
+  <pubDate>Mon, 16 Mar 2026 21:00:00 GMT</pubDate>
+  <media:content url="https://gondamol.github.io/img/blog-mande.svg" medium="image" type="image/svg+xml"/>
+</item>
+<item>
+  <title>Why Statistical Thinking Still Matters in AI Engineering</title>
+  <dc:creator>Nichodemus Amollo</dc:creator>
+  <link>https://gondamol.github.io/posts/51-statistical-thinking-ai-engineering/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>There is a version of the current AI wave that treats statistics as the old world and AI engineering as the new one. I think that framing is wrong.</p>
+<p>Statistical thinking is still one of the best safeguards we have when building AI systems.</p>
+<section id="what-statistics-protects-us-from" class="level2">
+<h2 class="anchored" data-anchor-id="what-statistics-protects-us-from">What statistics protects us from</h2>
+<p>It protects us from overconfidence.</p>
+<p>A system can achieve a strong benchmark score and still be misleading in at least three ways:</p>
+<ul>
+<li>the target may be poorly defined</li>
+<li>the training data may not represent the deployment context</li>
+<li>the observed relationship may not support the decision we want to make</li>
+</ul>
+<p>Statistics does not remove these risks, but it gives us a language for seeing them earlier.</p>
+</section>
+<section id="three-ideas-i-keep-carrying-into-ml-work" class="level2">
+<h2 class="anchored" data-anchor-id="three-ideas-i-keep-carrying-into-ml-work">Three ideas I keep carrying into ML work</h2>
+<section id="uncertainty-is-part-of-the-output" class="level3">
+<h3 class="anchored" data-anchor-id="uncertainty-is-part-of-the-output">1. Uncertainty is part of the output</h3>
+<p>Predictions should not be treated as facts. Even when the interface shows a single number, the team designing the system should understand how stable that number is likely to be.</p>
+</section>
+<section id="causal-thinking-matters" class="level3">
+<h3 class="anchored" data-anchor-id="causal-thinking-matters">2. Causal thinking matters</h3>
+<p>Prediction alone does not tell us what action will help. A model may identify people at risk, but that is not the same as understanding which intervention changes the outcome. This is where causal reasoning remains valuable.</p>
+</section>
+<section id="monitoring-is-not-optional" class="level3">
+<h3 class="anchored" data-anchor-id="monitoring-is-not-optional">3. Monitoring is not optional</h3>
+<p>In research, you would not trust a result without understanding how it was produced. In AI systems, monitoring plays a similar role. If data distributions shift or calibration drifts, yesterday’s model may no longer support today’s decisions.</p>
+</section>
+</section>
+<section id="why-this-matters-in-public-interest-systems" class="level2">
+<h2 class="anchored" data-anchor-id="why-this-matters-in-public-interest-systems">Why this matters in public-interest systems</h2>
+<p>In commercial settings, a weak recommendation may reduce clicks. In health, agriculture, or social protection, a weak model can distort scarce resources. That does not mean we avoid AI. It means we build with stronger guardrails.</p>
+<p>The good news is that the bridge already exists. Many of the habits from classical quantitative work still apply:</p>
+<ul>
+<li>define outcomes carefully</li>
+<li>inspect assumptions</li>
+<li>document transformations</li>
+<li>evaluate across relevant subgroups</li>
+<li>keep human review in the loop</li>
+</ul>
+<p>AI engineering does not become weaker when it borrows from statistical thinking. It becomes more trustworthy.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>AI Engineering</category>
+  <category>Statistics</category>
+  <category>Causal Inference</category>
+  <category>Machine Learning</category>
+  <guid>https://gondamol.github.io/posts/51-statistical-thinking-ai-engineering/</guid>
+  <pubDate>Mon, 16 Mar 2026 21:00:00 GMT</pubDate>
+  <media:content url="https://gondamol.github.io/img/blog-analytics.svg" medium="image" type="image/svg+xml"/>
+</item>
+<item>
+  <title>Dashboards to Decisions</title>
+  <dc:creator>Nichodemus Amollo</dc:creator>
+  <link>https://gondamol.github.io/posts/52-dashboards-to-decisions/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>The most common dashboard failure is not bad color choice. It is that the dashboard never becomes part of a real decision process.</p>
+<p>I have seen monitoring systems that looked polished but did not change what anyone did on Monday morning. That is not a visualization problem. It is a systems problem.</p>
+<section id="a-useful-dashboard-answers-four-questions" class="level2">
+<h2 class="anchored" data-anchor-id="a-useful-dashboard-answers-four-questions">A useful dashboard answers four questions</h2>
+<ol type="1">
+<li>What changed?</li>
+<li>Why does it matter?</li>
+<li>Who needs to act?</li>
+<li>What should happen next?</li>
+</ol>
+<p>If the dashboard cannot help a team answer those questions quickly, it is probably doing too much of the wrong work.</p>
+</section>
+<section id="what-makes-dashboards-usable-in-practice" class="level2">
+<h2 class="anchored" data-anchor-id="what-makes-dashboards-usable-in-practice">What makes dashboards usable in practice</h2>
+<section id="clear-hierarchy" class="level3">
+<h3 class="anchored" data-anchor-id="clear-hierarchy">Clear hierarchy</h3>
+<p>Decision-makers rarely need twenty charts at once. They need a short list of top-line indicators first, followed by the ability to drill down when something looks wrong.</p>
+</section>
+<section id="thresholds-not-just-trends" class="level3">
+<h3 class="anchored" data-anchor-id="thresholds-not-just-trends">Thresholds, not just trends</h3>
+<p>Trend lines are useful, but action often starts at a threshold: reimbursement lag above a certain number of days, stockout risk above a set level, or survey completeness below an acceptable floor.</p>
+</section>
+<section id="context-for-interpretation" class="level3">
+<h3 class="anchored" data-anchor-id="context-for-interpretation">Context for interpretation</h3>
+<p>A rising number is not automatically bad and a falling one is not automatically good. Dashboards need operational framing so users do not misread normal variation as crisis or ignore genuine warning signs.</p>
+</section>
+<section id="clean-data-underneath" class="level3">
+<h3 class="anchored" data-anchor-id="clean-data-underneath">Clean data underneath</h3>
+<p>No dashboard design can rescue weak upstream data handling. This is why I see dashboards and pipelines as part of the same craft. The visible interface is only as strong as the validation and transformation work underneath it.</p>
+</section>
+</section>
+<section id="the-bridge-to-modern-data-products" class="level2">
+<h2 class="anchored" data-anchor-id="the-bridge-to-modern-data-products">The bridge to modern data products</h2>
+<p>This is also where I see an overlap between classic reporting work and newer AI/data-product thinking. A dashboard is often the place where:</p>
+<ul>
+<li>analytics becomes operational</li>
+<li>model outputs become understandable</li>
+<li>alerts become manageable</li>
+<li>decision pathways become visible</li>
+</ul>
+<p>That is why I am interested in dashboards that do more than summarize the past. The goal is not to overwhelm people with interactivity. The goal is to reduce friction between evidence and action.</p>
+<p>When dashboards succeed, they make the next decision easier, faster, and better grounded. That is the standard I care about.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>Dashboards</category>
+  <category>Decision Support</category>
+  <category>Analytics Engineering</category>
+  <category>Public Health</category>
+  <guid>https://gondamol.github.io/posts/52-dashboards-to-decisions/</guid>
+  <pubDate>Mon, 16 Mar 2026 21:00:00 GMT</pubDate>
+  <media:content url="https://gondamol.github.io/img/blog-health.svg" medium="image" type="image/svg+xml"/>
 </item>
 <item>
   <title>When Clinics Can Diagnose but Cannot Buy Medicines</title>
@@ -2244,537 +2578,6 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
   <category>Monitoring &amp; Evaluation</category>
   <guid>https://gondamol.github.io/posts/35-data-analyst-portfolio-health/</guid>
   <pubDate>Mon, 03 Nov 2025 21:00:00 GMT</pubDate>
-  <media:content url="https://gondamol.github.io/img/blog-health.svg" medium="image" type="image/svg+xml"/>
-</item>
-<item>
-  <title>7 Beginner Data Engineering Projects for Analysts (With Real-World Flavor)</title>
-  <dc:creator>Nichodemus Amollo</dc:creator>
-  <link>https://gondamol.github.io/posts/34-beginner-data-engineering-projects/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<section id="why-you-need-projects-not-just-courses" class="level2">
-<h2 class="anchored" data-anchor-id="why-you-need-projects-not-just-courses">Why You Need Projects, Not Just Courses</h2>
-<p>Courses teach you <strong>what tools exist</strong>.</p>
-<p>Projects show:</p>
-<ul>
-<li>You can connect tools together</li>
-<li>You understand data lifecycle</li>
-<li>You can ship something useful</li>
-</ul>
-<hr>
-</section>
-<section id="project-ideas" class="level2">
-<h2 class="anchored" data-anchor-id="project-ideas">7 Project Ideas</h2>
-<ol type="1">
-<li><strong>Survey Data Pipeline</strong>
-<ul>
-<li>Ingest XLSForm/CSV exports</li>
-<li>Clean and load into a SQLite/PostgreSQL database</li>
-</ul></li>
-<li><strong>Public Health API Ingestion</strong>
-<ul>
-<li>Pull daily COVID-19 or vaccination data</li>
-<li>Store and aggregate for dashboarding</li>
-</ul></li>
-<li><strong>Job Market Scraper</strong>
-<ul>
-<li>Collect job postings for data roles</li>
-<li>Analyze skills demand over time</li>
-</ul></li>
-<li><strong>Data Quality Monitor</strong>
-<ul>
-<li>Check incoming survey batches</li>
-<li>Flag outliers and unusual patterns</li>
-</ul></li>
-<li><strong>Simple Data Warehouse</strong>
-<ul>
-<li>Model fact and dimension tables for a small NGO</li>
-</ul></li>
-<li><strong>Dashboard Data Feed</strong>
-<ul>
-<li>Build a pipeline that refreshes dashboard tables weekly</li>
-</ul></li>
-<li><strong>ETL for an Evaluation Study</strong>
-<ul>
-<li>Merge baseline, midline, and endline datasets</li>
-<li>Produce analysis-ready panel data</li>
-</ul></li>
-</ol>
-<hr>
-</section>
-<section id="how-to-present-these-projects" class="level2">
-<h2 class="anchored" data-anchor-id="how-to-present-these-projects">How to Present These Projects</h2>
-<p>For each project:</p>
-<ul>
-<li>1–2 paragraphs: Problem &amp; context</li>
-<li>Diagram: Source → Transform → Store → Use</li>
-<li>Screenshots: Logs, tables, dashboards</li>
-<li>Key learning points and “what I’d improve next”</li>
-</ul>
-<p>Recruiters care less about buzzwords and more about proof that you can <strong>get data from A to B reliably</strong>.</p>
-
-
-<!-- -->
-
-</section>
-
- ]]></description>
-  <category>Data Engineering</category>
-  <category>Projects</category>
-  <category>Portfolio</category>
-  <guid>https://gondamol.github.io/posts/34-beginner-data-engineering-projects/</guid>
-  <pubDate>Sun, 02 Nov 2025 21:00:00 GMT</pubDate>
-  <media:content url="https://gondamol.github.io/img/blog-engineering.svg" medium="image" type="image/svg+xml"/>
-</item>
-<item>
-  <title>R for Monitoring &amp; Evaluation: 7 Workflows That Will Change Your Life</title>
-  <dc:creator>Nichodemus Amollo</dc:creator>
-  <link>https://gondamol.github.io/posts/33-r-for-monitoring-and-evaluation/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<section id="why-r-is-a-secret-weapon-for-me" class="level2">
-<h2 class="anchored" data-anchor-id="why-r-is-a-secret-weapon-for-me">Why R Is a Secret Weapon for M&amp;E</h2>
-<p>Most M&amp;E teams live in:</p>
-<ul>
-<li>Excel</li>
-<li>SPSS or Stata</li>
-<li>Manually updated Word/PDF reports</li>
-</ul>
-<p>R lets you:</p>
-<ul>
-<li>Clean data reproducibly</li>
-<li>Reuse scripts across projects</li>
-<li>Generate entire reports with <strong>one command</strong></li>
-</ul>
-<hr>
-</section>
-<section id="high-impact-workflows" class="level2">
-<h2 class="anchored" data-anchor-id="high-impact-workflows">7 High-Impact Workflows</h2>
-<ol type="1">
-<li><strong>Automated Cleaning of Survey Data</strong>
-<ul>
-<li>Handle missing values</li>
-<li>Recode factors</li>
-<li>Detect outliers</li>
-</ul></li>
-<li><strong>Indicator Calculation</strong>
-<ul>
-<li>Coverage, quality, equity indicators</li>
-<li>By district/facility/age/sex</li>
-</ul></li>
-<li><strong>Data Quality Dashboards</strong>
-<ul>
-<li>Missingness, duplicates, logical checks</li>
-</ul></li>
-<li><strong>Monitoring Dashboards</strong>
-<ul>
-<li>Monthly or quarterly indicator updates</li>
-</ul></li>
-<li><strong>Impact Analysis</strong>
-<ul>
-<li>Before/after comparisons</li>
-<li>Difference-in-differences</li>
-</ul></li>
-<li><strong>Reproducible Reports</strong>
-<ul>
-<li>Quarto reports by country/partner</li>
-</ul></li>
-<li><strong>Small Simulation Studies</strong>
-<ul>
-<li>Sample size sensitivity</li>
-<li>Scenario planning</li>
-</ul></li>
-</ol>
-<hr>
-</section>
-<section id="example-from-kobo-export-to-clean-dataset" class="level2">
-<h2 class="anchored" data-anchor-id="example-from-kobo-export-to-clean-dataset">Example: From Kobo Export to Clean Dataset</h2>
-<p>Conceptually:</p>
-<ol type="1">
-<li>Read raw CSV from Kobo into R</li>
-<li>Clean variable names and types</li>
-<li>Recode key variables (e.g., facility IDs, districts)</li>
-<li>Save a versioned clean file into <code>data/clean/</code></li>
-</ol>
-<p>If you can turn <strong>messy raw exports into clean analysis-ready data</strong> with one script, you become extremely valuable.</p>
-<hr>
-</section>
-<section id="how-to-learn-r-for-me-quickly" class="level2">
-<h2 class="anchored" data-anchor-id="how-to-learn-r-for-me-quickly">How to Learn R for M&amp;E Quickly</h2>
-<ul>
-<li>Start with:
-<ul>
-<li><code>tidyverse</code> for data wrangling</li>
-<li><code>janitor</code> for quick cleaning</li>
-<li><code>readr</code> for imports</li>
-</ul></li>
-<li>Practice on:
-<ul>
-<li>DHS, MICS, or other public health datasets</li>
-<li>Your own anonymized program data (if allowed)</li>
-</ul></li>
-</ul>
-<p>Focus on <strong>real workflows</strong>, not isolated functions.</p>
-
-
-<!-- -->
-
-</section>
-
- ]]></description>
-  <category>R</category>
-  <category>Monitoring &amp; Evaluation</category>
-  <category>Automation</category>
-  <guid>https://gondamol.github.io/posts/33-r-for-monitoring-and-evaluation/</guid>
-  <pubDate>Sat, 01 Nov 2025 21:00:00 GMT</pubDate>
-  <media:content url="https://gondamol.github.io/img/blog-mande.svg" medium="image" type="image/svg+xml"/>
-</item>
-<item>
-  <title>From Field Enumerator to Data Analyst: A Realistic Transition Plan</title>
-  <dc:creator>Nichodemus Amollo</dc:creator>
-  <link>https://gondamol.github.io/posts/32-data-analyst-from-field-enumerator/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<section id="why-enumerators-make-great-analysts" class="level2">
-<h2 class="anchored" data-anchor-id="why-enumerators-make-great-analysts">Why Enumerators Make Great Analysts</h2>
-<p>If you’ve worked as a field enumerator, you already understand:</p>
-<ul>
-<li>What questions confuse respondents</li>
-<li>How skip patterns work in real life</li>
-<li>What “bad data” looks like on the ground</li>
-</ul>
-<p>That perspective is <strong>gold</strong> for data teams—if you can add technical skills on top.</p>
-<hr>
-</section>
-<section id="step-1-own-the-tools-you-already-use" class="level2">
-<h2 class="anchored" data-anchor-id="step-1-own-the-tools-you-already-use">Step 1: Own the Tools You Already Use</h2>
-<p>If you’ve used:</p>
-<ul>
-<li>ODK / SurveyCTO / Kobo / REDCap</li>
-</ul>
-<p>Learn the <strong>back end</strong>:</p>
-<ul>
-<li>How forms are designed</li>
-<li>How data is stored</li>
-<li>How exports are structured</li>
-</ul>
-<p>Ask for:</p>
-<ul>
-<li>Access to <strong>practice datasets</strong></li>
-<li>A chance to help with basic cleaning in Excel or R</li>
-</ul>
-<hr>
-</section>
-<section id="step-2-learn-the-core-data-stack" class="level2">
-<h2 class="anchored" data-anchor-id="step-2-learn-the-core-data-stack">Step 2: Learn the Core Data Stack</h2>
-<p>You don’t need 10 tools. Start with:</p>
-<ul>
-<li>Excel:
-<ul>
-<li>Filters, pivot tables, VLOOKUP/XLOOKUP</li>
-</ul></li>
-<li>R or Python:
-<ul>
-<li>Import CSVs</li>
-<li>Clean and transform</li>
-<li>Create summary tables and charts</li>
-</ul></li>
-<li>SQL:
-<ul>
-<li>SELECT, WHERE, GROUP BY, JOIN</li>
-</ul></li>
-</ul>
-<p>Build portfolio pieces using <strong>realistic survey data</strong> (anonymized or public).</p>
-<hr>
-</section>
-<section id="step-3-volunteer-for-hybrid-tasks" class="level2">
-<h2 class="anchored" data-anchor-id="step-3-volunteer-for-hybrid-tasks">Step 3: Volunteer for Hybrid Tasks</h2>
-<p>In your next assignment:</p>
-<ul>
-<li>Volunteer to:
-<ul>
-<li>Run basic data checks at the end of each day</li>
-<li>Help prepare summary tables for supervisors</li>
-<li>Document field challenges that explain data patterns</li>
-</ul></li>
-</ul>
-<p>You become the bridge between <strong>field teams and analysts</strong>—and that’s often how you get promoted.</p>
-<hr>
-</section>
-<section id="step-4-package-your-story-for-recruiters" class="level2">
-<h2 class="anchored" data-anchor-id="step-4-package-your-story-for-recruiters">Step 4: Package Your Story for Recruiters</h2>
-<p>On your CV and LinkedIn:</p>
-<ul>
-<li>Highlight:
-<ul>
-<li>“Collected data from X participants across Y sites”</li>
-<li>“Supported daily data quality review and feedback”</li>
-<li>“Helped design or refine digital survey tools”</li>
-</ul></li>
-<li>Add:
-<ul>
-<li>2–3 small data projects (cleaning + analysis + charts)</li>
-</ul></li>
-</ul>
-<p>You’re not “just an enumerator.” You’re someone who <strong>understands data at its source</strong> and is learning to drive insights.</p>
-
-
-<!-- -->
-
-</section>
-
- ]]></description>
-  <category>Career</category>
-  <category>Data Analytics</category>
-  <category>Monitoring &amp; Evaluation</category>
-  <guid>https://gondamol.github.io/posts/32-data-analyst-from-field-enumerator/</guid>
-  <pubDate>Fri, 31 Oct 2025 21:00:00 GMT</pubDate>
-  <media:content url="https://gondamol.github.io/img/blog-analytics.svg" medium="image" type="image/svg+xml"/>
-</item>
-<item>
-  <title>Evaluation Dashboards That Donors Actually Use: A Practical Blueprint</title>
-  <dc:creator>Nichodemus Amollo</dc:creator>
-  <link>https://gondamol.github.io/posts/31-evaluation-dashboard-blueprint/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<section id="why-most-evaluation-dashboards-fail" class="level2">
-<h2 class="anchored" data-anchor-id="why-most-evaluation-dashboards-fail">Why Most Evaluation Dashboards Fail</h2>
-<p>Common dashboard problems:</p>
-<ul>
-<li>Try to show <strong>everything</strong> instead of answering a few key questions</li>
-<li>Use fancy visuals but <strong>hide the core indicators</strong></li>
-<li>Are built for data people, not for <strong>program managers or donors</strong></li>
-</ul>
-<p>Good dashboards:</p>
-<ul>
-<li>Start from <strong>decisions</strong> and work backward</li>
-<li>Focus on <strong>5–10 critical indicators</strong></li>
-<li>Have <strong>clear structure</strong>: Overview → Drill-down → Details</li>
-</ul>
-<hr>
-</section>
-<section id="a-simple-layout-for-an-me-dashboard" class="level2">
-<h2 class="anchored" data-anchor-id="a-simple-layout-for-an-me-dashboard">A Simple Layout for an M&amp;E Dashboard</h2>
-<ol type="1">
-<li><strong>Header</strong>
-<ul>
-<li>Project name, geography, timeline</li>
-<li>Last update date</li>
-</ul></li>
-<li><strong>Top-line Results</strong>
-<ul>
-<li>3–5 big metrics:
-<ul>
-<li>Coverage</li>
-<li>Quality</li>
-<li>Equity</li>
-</ul></li>
-</ul></li>
-<li><strong>Trends Over Time</strong>
-<ul>
-<li>Time-series for core indicators</li>
-</ul></li>
-<li><strong>Disaggregation</strong>
-<ul>
-<li>By county/district, sex, age group, facility type</li>
-</ul></li>
-<li><strong>Data Quality &amp; Notes</strong>
-<ul>
-<li>Missingness</li>
-<li>Known caveats</li>
-</ul></li>
-</ol>
-<hr>
-</section>
-<section id="building-this-with-r-quarto-conceptually" class="level2">
-<h2 class="anchored" data-anchor-id="building-this-with-r-quarto-conceptually">Building This with R + Quarto (Conceptually)</h2>
-<p>You can:</p>
-<ul>
-<li>Use R to:
-<ul>
-<li>Load cleaned data from a database or CSV</li>
-<li>Compute indicators and disaggregations</li>
-<li>Generate plots with <code>ggplot2</code></li>
-</ul></li>
-<li>Use Quarto to:
-<ul>
-<li>Create a parameterized report per region or partner</li>
-<li>Schedule automated updates</li>
-</ul></li>
-</ul>
-<p>Portfolio idea:</p>
-<ul>
-<li>Build a static evaluation dashboard for:
-<ul>
-<li>Maternal health</li>
-<li>Immunization</li>
-<li>NCD outcomes</li>
-</ul></li>
-<li>Host it via GitHub Pages or Quarto Publish.</li>
-</ul>
-<hr>
-</section>
-<section id="checklist-for-donor-ready-dashboards" class="level2">
-<h2 class="anchored" data-anchor-id="checklist-for-donor-ready-dashboards">Checklist for Donor-Ready Dashboards</h2>
-<ul class="task-list">
-<li><label><input type="checkbox">The first screen answers “Are we on track?”</label></li>
-<li><label><input type="checkbox">Indicators match the logframe / results framework</label></li>
-<li><label><input type="checkbox">Disaggregations align with equity priorities</label></li>
-<li><label><input type="checkbox">Definitions and caveats are documented</label></li>
-<li><label><input type="checkbox">Data refresh schedule is clear</label></li>
-</ul>
-<p>Make the dashboard feel like a <strong>decision tool</strong>, not a portfolio decoration.</p>
-
-
-<!-- -->
-
-</section>
-
- ]]></description>
-  <category>Dashboards</category>
-  <category>Monitoring &amp; Evaluation</category>
-  <category>Data Visualization</category>
-  <guid>https://gondamol.github.io/posts/31-evaluation-dashboard-blueprint/</guid>
-  <pubDate>Thu, 30 Oct 2025 21:00:00 GMT</pubDate>
-  <media:content url="https://gondamol.github.io/img/blog-analytics.svg" medium="image" type="image/svg+xml"/>
-</item>
-<item>
-  <title>Health Financial Diaries: The Most Underrated Tool in Health Economics</title>
-  <dc:creator>Nichodemus Amollo</dc:creator>
-  <link>https://gondamol.github.io/posts/30-health-financial-diaries-explainer/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<section id="why-traditional-surveys-miss-the-real-story" class="level2">
-<h2 class="anchored" data-anchor-id="why-traditional-surveys-miss-the-real-story">Why Traditional Surveys Miss the Real Story</h2>
-<p>Standard household surveys often ask:</p>
-<ul>
-<li>“How much did you spend on health in the last month/3 months/12 months?”</li>
-</ul>
-<p>But real life is messy:</p>
-<ul>
-<li>People forget small but frequent expenses</li>
-<li>Lump-sum costs (e.g., hospitalization) distort recall</li>
-<li>Informal payments and borrowing are underreported</li>
-</ul>
-<p>That’s where <strong>health financial diaries</strong> come in.</p>
-<hr>
-</section>
-<section id="what-are-health-financial-diaries" class="level2">
-<h2 class="anchored" data-anchor-id="what-are-health-financial-diaries">What Are Health Financial Diaries?</h2>
-<p>Health financial diaries:</p>
-<ul>
-<li>Track <strong>daily or weekly</strong> health-related financial flows, such as:
-<ul>
-<li>Clinic fees</li>
-<li>Drugs and diagnostics</li>
-<li>Transport to facilities</li>
-<li>Lost income due to illness</li>
-<li>Borrowing, gifts, and asset sales to pay for care</li>
-</ul></li>
-<li>Used over weeks or months to:
-<ul>
-<li>Capture volatility</li>
-<li>Understand coping strategies</li>
-<li>Reveal hidden burdens of illness</li>
-</ul></li>
-</ul>
-<hr>
-</section>
-<section id="what-they-let-you-analyze" class="level2">
-<h2 class="anchored" data-anchor-id="what-they-let-you-analyze">What They Let You Analyze</h2>
-<p>With diaries, you can:</p>
-<ul>
-<li>Map <strong>cash flow shocks</strong> due to health events</li>
-<li>Estimate <strong>catastrophic health expenditure</strong> more accurately</li>
-<li>Understand <strong>borrowing patterns and informal insurance</strong></li>
-<li>Link episodes of illness to:
-<ul>
-<li><strong>Treatment choices</strong></li>
-<li><strong>Facility types</strong></li>
-<li><strong>Delays and drop-outs</strong></li>
-</ul></li>
-</ul>
-<hr>
-</section>
-<section id="challenges-and-how-to-design-around-them" class="level2">
-<h2 class="anchored" data-anchor-id="challenges-and-how-to-design-around-them">Challenges (And How to Design Around Them)</h2>
-<ul>
-<li>Participant fatigue:
-<ul>
-<li>Keep instruments short and focused</li>
-<li>Use prompts (SMS, phone, in-person visits)</li>
-</ul></li>
-<li>Data quality:
-<ul>
-<li>Train enumerators well</li>
-<li>Use high-frequency checks to catch inconsistencies</li>
-</ul></li>
-<li>Ethics and burden:
-<ul>
-<li>Compensate fairly</li>
-<li>Respect privacy and sensitivity around finances</li>
-</ul></li>
-</ul>
-<hr>
-</section>
-<section id="portfolio-idea-a-mini-financial-diaries-simulation" class="level2">
-<h2 class="anchored" data-anchor-id="portfolio-idea-a-mini-financial-diaries-simulation">Portfolio Idea: A Mini Financial Diaries Simulation</h2>
-<p>Even without field data, you can:</p>
-<ul>
-<li>Simulate 50–100 households with:
-<ul>
-<li>Daily income</li>
-<li>Random health shocks</li>
-<li>Different coping strategies</li>
-</ul></li>
-<li>Use R to:
-<ul>
-<li>Plot daily cash flows</li>
-<li>Identify “catastrophic” events</li>
-<li>Compare “with insurance” vs “without insurance” scenarios</li>
-</ul></li>
-</ul>
-<p>Publish:</p>
-<ul>
-<li>A small dashboard or Quarto report with:
-<ul>
-<li>Key charts</li>
-<li>A short interpretation section</li>
-</ul></li>
-</ul>
-<p>This shows you understand <strong>health financing at the household level</strong>, not just at the macro budget level.</p>
-
-
-<!-- -->
-
-</section>
-
- ]]></description>
-  <category>Health Economics</category>
-  <category>Financial Diaries</category>
-  <category>Health Financing</category>
-  <guid>https://gondamol.github.io/posts/30-health-financial-diaries-explainer/</guid>
-  <pubDate>Wed, 29 Oct 2025 21:00:00 GMT</pubDate>
   <media:content url="https://gondamol.github.io/img/blog-health.svg" medium="image" type="image/svg+xml"/>
 </item>
 </channel>
