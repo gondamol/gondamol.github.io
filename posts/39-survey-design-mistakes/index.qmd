@@ -1,48 +1,51 @@
 ---
-title: "10 Survey Design Mistakes That Will Destroy Your Data (And How to Avoid Them)"
-subtitle: "From leading questions to broken skip logic—fix these before you go to the field"
+title: "Survey design mistakes that destroy field data"
+subtitle: "What I watch for before tools go to enumerators"
 author: "Nichodemus Amollo"
 date: "2025-11-08"
-categories: [Survey Design, Data Quality, Monitoring & Evaluation]
+categories: [Survey Design, Data Quality, Monitoring & Evaluation, Field Systems]
 image: "/img/blog-mande.svg"
 ---
 
-## Why Survey Design Is Underrated
+Bad instruments waste money quietly. Enumerators work hard, households give time, and the dataset still cannot answer the research question. These are the failure modes I look for when reviewing questionnaires before a pilot — and again after the first HFC cycle.
 
-Bad survey instruments:
+## Ten design failures (and what to do)
 
-- Confuse respondents
-- Overwork enumerators
-- Produce data that’s hard to analyze—or impossible to trust
+1. **Double-barreled questions** — Ask one thing per item.  
+2. **Leading wording** — If the “right” answer is obvious, you are measuring social desirability.  
+3. **Unrealistic recall periods** — “How much did you spend on health last year?” is often fiction; diaries and shorter windows exist for a reason.  
+4. **Broken skip logic** — Test every path on a device, not only on paper.  
+5. **Overlapping numeric ranges** — 0–5 and 5–10 both claim 5.  
+6. **Missing refuse / don’t know** — Forced answers create noise that looks like data.  
+7. **Internal jargon** — Acronyms that make sense in Nairobi HQ may not in a rural interview.  
+8. **Too many open text fields** — Open text is expensive to code and easy to abandon.  
+9. **No unique IDs** — Household, visit, and person IDs must be stable before the first interview.  
+10. **Translation as an afterthought** — Back-translation and field pilot in the interview language are part of design, not polish.
 
-As a data person, you should care deeply about **questionnaire design**.
+## The pilot is not optional
 
----
+A pilot with a few real respondents and the actual enumerator team catches more than a committee meeting. I want:
 
-## 10 Common Mistakes
+- Timing per module  
+- Places where people stall or refuse  
+- Constraint failures that fire too often  
+- Questions that produce nonsense when taken literally  
 
-1. Double-barreled questions  
-2. Leading or loaded wording  
-3. Too many open-ended questions  
-4. Inconsistent response scales  
-5. Missing “Don’t know / Refuse” options  
-6. Overlapping ranges  
-7. Broken skip logic  
-8. Asking for unrealistic recall periods  
-9. Using internal jargon or acronyms  
-10. Ignoring translation and cultural context  
+Then the form version is locked for the wave — or versioned explicitly if it must change.
 
----
+## After the form ships
 
-## How to Improve Quickly
+Design does not end at deploy. HFC should watch for:
 
-- Pilot with:
-  - A few respondents
-  - At least one experienced enumerator
-- Debrief:
-  - Ask enumerators which questions confused people
-  - Look at early data for strange patterns
+- Modules with sudden missingness spikes  
+- Enumerators with outlier interview lengths  
+- Options never selected (dead branches)  
+- Duplicate IDs  
 
-Small investments in instrument design can save **weeks of pain** in cleaning and analysis.
+That is how survey design and research data systems stay connected.
 
+## Related
 
+- [Mobile data collection](/posts/24-mobile-data-collection/)  
+- [Diaries systems](/projects/health-financial-diaries/)  
+- [Reproducible research as operations](/posts/22-reproducible-research-public-health/)

@@ -1,72 +1,35 @@
 ---
-title: "Statistical Power for Evaluators: Stop Running Underpowered Studies"
-subtitle: "A plain-language guide to sample size, detectable effect, and trade-offs in impact evaluations"
+title: "Statistical power for programme evaluators"
+subtitle: "Stop running underpowered studies by accident"
 author: "Nichodemus Amollo"
 date: "2025-11-07"
 categories: [Statistics, Impact Evaluation, Monitoring & Evaluation]
 image: "/img/blog-mande.svg"
 ---
 
-## Why Power Matters More Than P-Values
+Power is not a ritual number you paste into a proposal. It is a design claim: given the sample you can actually field, the variation you should expect, and the effect size that would matter for a decision, **how often would a real effect be detected?**
 
-A beautifully designed evaluation is useless if:
+Underpowered evaluations waste partners and communities twice — once in the field, and again when a null result is over-interpreted as “no impact.”
 
-- There aren’t enough units (patients, schools, facilities)
-- The expected effect is too small to detect
+## What I want on the table before sample size is fixed
 
-Underpowered studies:
+1. **Primary outcome** — one main estimand, not twelve co-primary wishes  
+2. **Minimum effect that would change a decision** — programme-relevant, not only statistically convenient  
+3. **Clustering** — schools, facilities, villages: design effects are not optional footnotes  
+4. **Attrition** — especially in multi-wave household work  
+5. **Multiple comparisons** — if you will look at many outcomes, say so in the analysis plan  
 
-- Waste money
-- Exhaust field teams
-- Provide inconclusive evidence
+## Practical habits
 
----
+- Compute power for the design you will run (clusters, ICC assumptions), not for an i.i.d. fantasy  
+- Prefer transparent assumptions over black-box software defaults you cannot defend  
+- If the affordable sample cannot detect a policy-relevant effect, redesign the question or the study — do not pretend  
 
-## The Three Levers of Power
+## Link to field systems
 
-1. **Sample Size**
-2. **Size of Effect You Care About**
-3. **Variation in the Outcome**
+Power calculations assume you will obtain the sample you planned with usable data quality. That is why HFC, instrument design, and ops apps are not separate from evaluation methods: **dirty or incomplete data shrink effective N**.
 
-Constraints:
+## Related
 
-- Budget and logistics limit sample size
-- Programs can’t always produce huge effects
-
-Your job: Be explicit about these trade-offs **before** data collection.
-
----
-
-## A Simple Way to Explain Power
-
-To non-statisticians:
-
-> “Given our sample size and variability, this study can reliably detect at least a X% change in outcome. Smaller changes might be real but will be hard to confirm statistically.”
-
-This shifts expectations from:
-
-- “Will we see a significant result?”
-to
-- “What size of effect can this study realistically pick up?”
-
----
-
-## What Beginners Can Do with R
-
-You don’t need advanced math:
-
-- Use simple functions or packages (e.g., `pwr` in R)
-- Simulate:
-  - Different sample sizes
-  - Different effect sizes
-  - Varying levels of noise
-
-Plot how **power changes** across these scenarios and include it in:
-
-- Protocols
-- Funding proposals
-- Limitations sections
-
-Power analysis is not a formality—it’s part of honest evaluation design.
-
-
+- [Reproducible research as operations](/posts/22-reproducible-research-public-health/)  
+- [Survey design mistakes](/posts/39-survey-design-mistakes/)
