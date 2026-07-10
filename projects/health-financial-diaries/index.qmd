@@ -1,0 +1,132 @@
+---
+title: "Health Financial Diaries Systems"
+subtitle: "Field streaming, HFCs, and live ops apps for a year-long household study"
+page-layout: article
+toc: true
+toc-title: "On this page"
+execute:
+  echo: false
+format:
+  html:
+    code-tools: false
+    code-fold: false
+    code-copy: false
+---
+
+```{=html}
+<div style="padding:4.5rem 0 1.5rem;">
+  <span class="section-eyebrow">Field delivery · Georgetown gui2de</span>
+  <h1 class="section-h" style="font-size:clamp(2.2rem,4vw,3.2rem);margin-top:0.45rem;">Research data systems for a one-year household diaries study.</h1>
+  <p class="section-sub" style="margin-bottom:1.25rem;">
+    Three hundred households. High-frequency checks. Automated quality workflows. Live apps on the study database so supervisors could act while data was still streaming from the field — not only after the wave closed.
+  </p>
+  <div style="display:flex;flex-wrap:wrap;gap:0.75rem;margin-bottom:0.5rem;">
+    <a href="https://ra-leaderboard.streamlit.app/" class="btn-solid" target="_blank" rel="noopener">Open RA leaderboard →</a>
+    <a href="https://gui2de.georgetown.edu/profiles/nichodemus-amollo/" class="btn-ghost" target="_blank" rel="noopener">gui2de profile →</a>
+    <a href="../../posts/30-health-financial-diaries-explainer/index.html" class="btn-ghost">Related note →</a>
+  </div>
+</div>
+```
+
+```{=html}
+<div class="cv-stat-grid" style="margin-bottom:2.5rem;">
+  <article class="cv-stat-card"><span class="cv-stat-num">300</span><span class="cv-stat-label">Households followed for one year</span></article>
+  <article class="cv-stat-card"><span class="cv-stat-num">HFC</span><span class="cv-stat-label">High-frequency quality checks in the field loop</span></article>
+  <article class="cv-stat-card"><span class="cv-stat-num">Live</span><span class="cv-stat-label">Ops apps on the study database</span></article>
+  <article class="cv-stat-card"><span class="cv-stat-num">97%</span><span class="cv-stat-label">Clean interviews (sample month snapshot)</span></article>
+</div>
+```
+
+## Role
+
+**Lead research data systems** for Georgetown University gui2de Health Financial Diaries work in East Africa: architecture, high-frequency checks, automation, and field-facing performance products.
+
+This page describes systems and operational products that can be shown publicly. Raw diary records, household identifiers, and partner-restricted extracts stay private.
+
+## Problem
+
+Year-long high-frequency household finance data fails in predictable ways if quality only happens at the end of a wave:
+
+- Completeness and cleanliness drift by research assistant (RA) and by week  
+- Issues compound while teams wait for a batch clean  
+- Supervisors cannot see throughput, completion, or clean rates while the field is still active  
+
+The design goal was a **streaming ops loop**: field capture → study database → automated checks → live apps for supervisors.
+
+## What we built
+
+### 1. Study scale and follow-up
+
+- **300 households** followed for **one year**  
+- High-frequency diary capture of health-related financial flows and related events  
+- Digital field workflows feeding a central study database  
+
+### 2. High-frequency checks (HFCs)
+
+HFCs were not a report written after the fact. They were part of the daily operating rhythm: validation, completeness, and cleanliness signals that could surface problems early enough for field leadership to respond.
+
+### 3. Automated systems
+
+Automated workflows reduced ad hoc spreadsheet firefighting: standardized extracts, quality rules, and reporting layers that could update as new field data arrived.
+
+### 4. Live ops apps
+
+Two products sat on top of the live database while data streamed from the field:
+
+| Product | What it did | Public access |
+|---|---|---|
+| **RA leaderboard / performance** | Field / RA monitoring — volume, completion, clean rates, rankings for supervisors | [ra-leaderboard.streamlit.app](https://ra-leaderboard.streamlit.app/){target="_blank"} |
+| **Fuel / issues app** | Connected to the study database; **aggregated field issues in real time** as data streamed in | **No public URL** (internal ops tool) |
+
+Fuel is intentionally not exposed publicly. It still belongs in this case study because it proves the streaming architecture: supervisors could see aggregated issues **while** field data was arriving, not only after wave closeout.
+
+## Field team performance dashboard
+
+Sample month snapshot from the RA performance product. **Staff names are redacted** for public display (shown as RA–1, RA–2, RA–3). Aggregate KPIs remain visible.
+
+```{=html}
+<figure style="margin:1.5rem 0 2rem;border:1px solid var(--border);background:#fff;padding:0.75rem;">
+  <img src="../../img/diaries/field-team-performance-dashboard.png"
+       alt="Redacted RA Performance Dashboard showing interviews, cashflows, completion and clean rates"
+       style="width:100%;height:auto;display:block;">
+  <figcaption style="font-size:0.85rem;color:var(--muted);padding:0.75rem 0.25rem 0.25rem;">
+    RA Performance Dashboard (names redacted) — sample month: 552 interviews · 45,238 cashflow events · 90% average completion · 97% clean interviews.
+  </figcaption>
+</figure>
+```
+
+These metrics matter because they are **operational**, not decorative: they tell supervisors who is completing work cleanly and where the quality system needs attention.
+
+## Architecture (public-safe view)
+
+```
+Field RAs / instruments
+        ↓
+  Study database
+        ↓
+  HFCs + automated quality rules
+        ↓
+   ┌────────────────────┬────────────────────┐
+   │  RA leaderboard    │  Fuel / issues app │
+   │  (performance)     │  (live issue feed) │
+   └────────────────────┴────────────────────┘
+        ↓
+  Analysis & policy products (partner channels)
+```
+
+## What this demonstrates
+
+For research and programme hiring, this work shows:
+
+1. Ownership of **end-to-end research data systems**, not only analysis at the end  
+2. Quality architecture under **real field constraints**  
+3. Product thinking for **field supervisors**, not only for PIs or donors  
+4. Streaming design: act while data is arriving  
+
+## Related
+
+- [gui2de profile — Nichodemus Amollo](https://gui2de.georgetown.edu/profiles/nichodemus-amollo/){target="_blank"}  
+- [Field note: systems behind a year of diaries](../../posts/30-health-financial-diaries-explainer/index.html)  
+- [Back to Projects](../index.html)
+
+[Get in touch →](mailto:nichodemuswerre@gmail.com){.btn-solid style="margin-top:1.5rem;display:inline-block;"}

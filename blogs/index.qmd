@@ -4,13 +4,24 @@ subtitle: ""
 page-layout: full
 listing:
   contents:
-    - "../posts/*/index.qmd"
+    - "../posts/47-facility-decision-space-chronic-care/index.qmd"
+    - "../posts/kisumu-cancer-dashboard/index.qmd"
+    - "../posts/30-health-financial-diaries-explainer/index.qmd"
+    - "../posts/48-from-field-to-model/index.qmd"
+    - "../posts/49-reproducible-ml-research-data-manager/index.qmd"
+    - "../posts/50-ai-low-resource-settings/index.qmd"
+    - "../posts/51-statistical-thinking-ai-engineering/index.qmd"
+    - "../posts/52-dashboards-to-decisions/index.qmd"
+    - "../posts/24-mobile-data-collection/index.qmd"
+    - "../posts/22-reproducible-research-public-health/index.qmd"
+    - "../posts/39-survey-design-mistakes/index.qmd"
+    - "../posts/38-statistical-power-for-evaluators/index.qmd"
   sort: "date desc"
   type: grid
   grid-columns: 3
   categories: true
   fields: [image, date, title, subtitle, categories, reading-time]
-  max-items: 100
+  max-items: 20
   feed: true
 ---
 
@@ -24,9 +35,9 @@ listing:
   <div class="bx-hero-inner">
     <div class="bx-hero-copy">
       <span class="section-eyebrow">Writing</span>
-      <p class="bx-overline">Research translation · Methods · Career · Field systems</p>
+      <p class="bx-overline">Research translation · Field systems · Methods</p>
       <h1 class="bx-hero-heading">Essays &amp; Field Notes</h1>
-      <p class="bx-hero-lead">A writing studio for public-health research, analytics practice, and the work around the work. The goal is not volume — it is clarity, usefulness, and work grounded in practice.</p>
+      <p class="bx-hero-lead">A short public set of writing grounded in health systems research and programme data work. Clarity over volume. No career listicles.</p>
       <div class="bx-hero-actions">
         <a href="../posts/47-facility-decision-space-chronic-care/index.html" class="btn-solid">Read the Flagship Essay</a>
         <a href="../research/publications.html" class="btn-ghost">Explore Research →</a>
@@ -47,8 +58,8 @@ listing:
       </article>
 
       <div class="bx-metric-card">
-        <span class="bx-metric-num">50+</span>
-        <span class="bx-metric-label">Posts across analytics, health research, career development, and monitoring systems</span>
+        <span class="bx-metric-num">12</span>
+        <span class="bx-metric-label">Curated public notes — research, field systems, and methods</span>
       </div>
     </div>
   </div>
@@ -72,22 +83,22 @@ listing:
         </div>
       </a>
 
-      <a class="bx-pick-card bx-pick--secondary" href="../posts/22-reproducible-research-public-health/index.html">
-        <span class="bx-tag bx-tag--research">Research</span>
-        <h4>Why reproducible research matters in public health</h4>
-        <p>Transparent workflows, better trust, and why method discipline is not optional.</p>
-      </a>
-
       <a class="bx-pick-card bx-pick--secondary" href="../posts/30-health-financial-diaries-explainer/index.html">
-        <span class="bx-tag bx-tag--health">Health Economics</span>
+        <span class="bx-tag bx-tag--health">Field systems</span>
         <h4>Health financial diaries</h4>
-        <p>How high-frequency financial data reveals what conventional surveys miss.</p>
+        <p>High-frequency household finance data — context for the systems case study.</p>
       </a>
 
-      <a class="bx-pick-card bx-pick--secondary" href="../posts/23-r-for-health-researchers/index.html">
-        <span class="bx-tag bx-tag--technical">Technical</span>
-        <h4>R for health researchers</h4>
-        <p>A practical bridge between analysis, reporting, and reproducible workflows.</p>
+      <a class="bx-pick-card bx-pick--secondary" href="../posts/48-from-field-to-model/index.html">
+        <span class="bx-tag bx-tag--technical">Methods</span>
+        <h4>From field to model</h4>
+        <p>Why domain knowledge still shapes useful targeting and ML systems.</p>
+      </a>
+
+      <a class="bx-pick-card bx-pick--secondary" href="../posts/kisumu-cancer-dashboard/index.html">
+        <span class="bx-tag bx-tag--research">Delivery</span>
+        <h4>Kisumu cancer dashboard</h4>
+        <p>Research data management through to a county-facing surveillance product.</p>
       </a>
     </div>
   </div>

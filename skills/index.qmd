@@ -113,7 +113,7 @@ format:
 
 | Area | Evidence |
 |---|---|
-| Data architecture | ETL and quality workflows for 1,000+ household studies and partner dashboards |
+| Data architecture | ETL, HFC, and live ops apps for a 300-household year-long diaries study and partner dashboards |
 | Field systems | Managed tool design, training, and QA across multi-country studies with 50+ field staff |
 | Statistics | Mixed-methods and quantitative analysis for health systems, oncology, and impact evaluation work |
 | Dashboards | Built Power BI, Quarto, and Shiny outputs for monitoring, reporting, and policy dialogue |

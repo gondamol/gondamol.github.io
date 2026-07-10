@@ -50,8 +50,8 @@ toc: false
       <span class="rx-stat-label">Countries covered</span>
     </div>
     <div class="rx-stat-card">
-      <span class="rx-stat-num">1000+</span>
-      <span class="rx-stat-label">Households tracked</span>
+      <span class="rx-stat-num">300</span>
+      <span class="rx-stat-label">Households · diaries (1 year)</span>
     </div>
     <div class="rx-stat-card">
       <span class="rx-stat-num">10yr</span>

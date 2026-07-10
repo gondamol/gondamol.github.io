@@ -5,6 +5,8 @@ project:
     - "index.qmd"
     - "about/index.qmd"
     - "projects/index.qmd"
+    - "projects/health-financial-diaries/index.qmd"
+    - "projects/rebuild-targeting/index.qmd"
     - "projects/analytics-engineering/healthcare-readmission-risk/index.qmd"
     - "projects/data-engineering/etl-pipeline-architecture/index.qmd"
     - "projects/ai-applications/research-brief-generator/index.qmd"
@@ -26,18 +28,30 @@ project:
     - "tidy-tuesday/food-security.qmd"
     - "tidy-tuesday/financial-inclusion.qmd"
     - "tidy-tuesday/income-inequality-health.qmd"
-    - "posts/*/index.qmd"
+    # Curated writing only (KEEP set) — SEO career posts excluded from render/listing
+    - "posts/47-facility-decision-space-chronic-care/index.qmd"
+    - "posts/kisumu-cancer-dashboard/index.qmd"
+    - "posts/30-health-financial-diaries-explainer/index.qmd"
+    - "posts/48-from-field-to-model/index.qmd"
+    - "posts/49-reproducible-ml-research-data-manager/index.qmd"
+    - "posts/50-ai-low-resource-settings/index.qmd"
+    - "posts/51-statistical-thinking-ai-engineering/index.qmd"
+    - "posts/52-dashboards-to-decisions/index.qmd"
+    - "posts/24-mobile-data-collection/index.qmd"
+    - "posts/22-reproducible-research-public-health/index.qmd"
+    - "posts/39-survey-design-mistakes/index.qmd"
+    - "posts/38-statistical-power-for-evaluators/index.qmd"
 
 website:
   page-navigation: false
   title: "Nic | Data"
   site-url: "https://gondamol.github.io"
-  description: "Data Analyst & Research Data Manager — M&E, Health Analytics, Agriculture, Finance — Nairobi, Kenya"
+  description: "Research data systems for health and development programmes — field instruments, quality architecture, and decision products. Nairobi, Kenya."
   favicon: "img/profile.jpeg"
 
   navbar:
-    background: light
-    foreground: dark
+    background: dark
+    foreground: light
     search: false
     pinned: true
     title: "Nic | Data"
@@ -68,7 +82,7 @@ website:
 
   page-footer:
     background: dark
-    left: "<span class='footer-title'>Nichodemus Amollo</span><span class='footer-meta'>Research Data Manager · Analytics Engineering · M&amp;E</span>"
+    left: "<span class='footer-title'>Nichodemus Amollo</span><span class='footer-meta'>Research Data Systems · Health &amp; Development Programmes</span>"
     center: "<a href='tel:+254725737867' class='footer-phone'>+254 725 737 867</a><span class='footer-meta'>Nairobi, Kenya · Open to remote and hybrid work</span>"
     right:
       - icon: github
@@ -116,6 +130,6 @@ format:
         </script>
         <meta name="color-scheme" content="light dark">
         <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=DM+Mono:wght@400&family=Noto+Sans+Condensed:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 editor: source

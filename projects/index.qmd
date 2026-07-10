@@ -16,129 +16,103 @@ format:
 <div class="section-inner">
   <span class="section-eyebrow">Portfolio</span>
   <h1 class="section-h" style="font-size:clamp(2.4rem,4vw,3.4rem);margin-top:0.5rem;margin-bottom:0.8rem;">
-    Projects &amp; Case Studies
+    Selected work
   </h1>
   <p class="section-sub">
-    Real work across six SDG domains. Public health, agriculture, finance, education, environment,
-    and governance. Each project reflects field experience or original analysis.
+    Field delivery and original research first. Methods-lab demos are labeled and kept secondary —
+    they never outrank programme systems you can open and inspect.
   </p>
 
-  <!-- Global filter -->
-  <div class="proj-filters" role="tablist" aria-label="Filter projects by domain" style="margin-bottom:3rem;">
+  <div class="proj-filters" role="tablist" aria-label="Filter projects by type" style="margin-bottom:3rem;">
     <button class="proj-filter active" data-filter="all" role="tab" aria-selected="true">All</button>
-    <button class="proj-filter" data-filter="health" role="tab" aria-selected="false">Public Health</button>
-    <button class="proj-filter" data-filter="agriculture" role="tab" aria-selected="false">Agriculture</button>
-    <button class="proj-filter" data-filter="finance" role="tab" aria-selected="false">Finance</button>
-    <button class="proj-filter" data-filter="analytics" role="tab" aria-selected="false">Analytics</button>
+    <button class="proj-filter" data-filter="delivery" role="tab" aria-selected="false">Field delivery</button>
+    <button class="proj-filter" data-filter="research" role="tab" aria-selected="false">Research</button>
+    <button class="proj-filter" data-filter="lab" role="tab" aria-selected="false">Methods lab</button>
   </div>
 
-  <!-- ─── AI / ML & SYSTEMS ───────────────── -->
+  <!-- ─── FIELD DELIVERY ───────────────── -->
   <div class="proj-section-header" style="margin-bottom:1.2rem;">
-    <span class="section-eyebrow" style="margin-bottom:0;">AI, ML &amp; Data Systems</span>
+    <span class="section-eyebrow" style="margin-bottom:0;">Field delivery &amp; programme systems</span>
   </div>
   <div class="project-grid allProjects" style="margin-bottom:5rem;">
 
-    <a href="analytics-engineering/healthcare-readmission-risk/index.html" class="proj-card proj-featured" data-category="analytics">
-      <div class="proj-thumb" style="background:#111a24;">
+    <a href="health-financial-diaries/index.html" class="proj-card proj-featured" data-category="delivery">
+      <div class="proj-thumb" style="background:#0f1f18;">
         <div class="proj-thumb-pattern" style="--dot:#ffffff10;"></div>
-        <span class="proj-icon proj-icon-hero">🤖</span>
+        <img src="../img/diaries/field-team-performance-dashboard.png"
+             alt="RA performance dashboard for health financial diaries"
+             style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.85;"
+             onerror="this.remove()">
       </div>
       <div class="proj-body">
-        <p class="proj-domain" style="color:#8cb5d9;">Predictive ML · Health operations</p>
-        <h3 class="proj-title">Healthcare Readmission Risk Prediction</h3>
-        <p class="proj-desc">Portfolio-grade predictive triage workflow showing feature engineering, model validation, risk bands, and deployment thinking for chronic care follow-up.</p>
+        <p class="proj-domain" style="color:#7fbf7f;">Georgetown gui2de · Health financial diaries</p>
+        <h3 class="proj-title">Diaries systems: 300 households, one year</h3>
+        <p class="proj-desc">HFCs, automated quality workflows, an RA leaderboard, and a fuel/issues app that aggregated field problems in real time as data streamed into the study database.</p>
         <div class="proj-footer">
-          <span class="proj-tags"><span>XGBoost</span><span>R</span><span>Shiny</span><span>Model monitoring</span></span>
-          <span class="proj-arrow">Open project →</span>
+          <span class="proj-tags"><span>HFC</span><span>Streamlit</span><span>Live ops apps</span><span>300 HH</span></span>
+          <span class="proj-arrow">Open case study →</span>
         </div>
       </div>
     </a>
 
-    <a href="data-engineering/etl-pipeline-architecture/index.html" class="proj-card proj-half" data-category="analytics">
-      <div class="proj-thumb" style="background:#162233;height:180px;">
-        <div class="proj-thumb-pattern" style="--dot:#ffffff10;"></div>
-        <span class="proj-icon">🗄️</span>
-      </div>
-      <div class="proj-body">
-        <p class="proj-domain" style="color:#8cb5d9;">Data engineering · ETL</p>
-        <h3 class="proj-title">ETL Pipeline Architecture</h3>
-        <p class="proj-desc">Raw survey and facility extracts transformed into validated reporting layers with reproducible R workflows and QA rules.</p>
-        <div class="proj-footer">
-          <span class="proj-tags"><span>R</span><span>ETL</span><span>Validation</span></span>
-          <span class="proj-arrow">Open project →</span>
-        </div>
-      </div>
-    </a>
-
-    <a href="ai-applications/research-brief-generator/index.html" class="proj-card proj-half" data-category="analytics">
+    <a href="rebuild-targeting/index.html" class="proj-card proj-half" data-category="delivery">
       <div class="proj-thumb" style="background:#1a2030;height:180px;">
         <div class="proj-thumb-pattern" style="--dot:#ffffff10;"></div>
-        <span class="proj-icon">🧠</span>
+        <img src="../img/rebuild/rebuild-targeting-02.png"
+             alt="Re:BUiLD targeting app hero"
+             style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.9;"
+             onerror="this.remove()">
       </div>
       <div class="proj-body">
-        <p class="proj-domain" style="color:#8cb5d9;">AI application · Evidence translation</p>
-        <h3 class="proj-title">Research Brief Generator</h3>
-        <p class="proj-desc">LLM-assisted workflow for turning long-form health papers into structured implementation briefs with a consistent schema.</p>
+        <p class="proj-domain" style="color:#8cb5d9;">Application · IRC Re:BUiLD · gui2de</p>
+        <h3 class="proj-title">Cash-plus targeting recommender</h3>
+        <p class="proj-desc">Shiny decision-support for IRC field teams. Application layer from causal forest targeting models — Cash vs Cash + Network with cost-aware rationale. Live app.</p>
         <div class="proj-footer">
-          <span class="proj-tags"><span>Python</span><span>LLM workflow</span><span>JSON</span></span>
-          <span class="proj-arrow">Open project →</span>
+          <span class="proj-tags"><span>Shiny</span><span>Causal forest</span><span>6,260 participants</span></span>
+          <span class="proj-arrow">Case study &amp; live app →</span>
         </div>
       </div>
     </a>
 
-    <a href="case-studies/ncd-financing-impact/index.html" class="proj-card proj-half" data-category="health">
-      <div class="proj-thumb" style="background:#1c2c1d;height:180px;">
-        <div class="proj-thumb-pattern" style="--dot:#ffffff10;"></div>
-        <span class="proj-icon">📉</span>
+    <a href="../posts/kisumu-cancer-dashboard/index.html" class="proj-card proj-half" data-category="delivery">
+      <div class="proj-thumb" style="background:#2a1a1a;height:180px;">
+        <div class="proj-thumb-pattern" style="--dot:#ffffff0d;"></div>
+        <img src="../img/with kisumu health team and professor nyongo during lauch of kisumu cancer dashboard .jpeg"
+             alt="Kisumu cancer dashboard launch"
+             style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.55;"
+             onerror="this.remove()">
       </div>
       <div class="proj-body">
-        <p class="proj-domain" style="color:#7fbf7f;">Business case study · Health financing</p>
-        <h3 class="proj-title">NCD Financing Impact Case Study</h3>
-        <p class="proj-desc">Reframes chronic care financing bottlenecks as an operations problem with scenario modeling and implementation levers.</p>
+        <p class="proj-domain" style="color:#e07f7f;">KEMRI · Oncology data systems</p>
+        <h3 class="proj-title">Kisumu cancer surveillance dashboard</h3>
+        <p class="proj-desc">Research data management for multi-year oncology records: REDCap architecture, quality systems, survival analysis, and a county-facing dashboard launched with local leadership.</p>
         <div class="proj-footer">
-          <span class="proj-tags"><span>Case study</span><span>Scenario model</span><span>Operations</span></span>
-          <span class="proj-arrow">Open project →</span>
-        </div>
-      </div>
-    </a>
-
-    <a href="dashboards/health-financing-real-time/index.html" class="proj-card proj-half" data-category="analytics">
-      <div class="proj-thumb" style="background:#15251d;height:180px;">
-        <div class="proj-thumb-pattern" style="--dot:#ffffff10;"></div>
-        <span class="proj-icon">📡</span>
-      </div>
-      <div class="proj-body">
-        <p class="proj-domain" style="color:#8cb5d9;">Dashboard product · Monitoring</p>
-        <h3 class="proj-title">Health Financing Real-Time Dashboard</h3>
-        <p class="proj-desc">A synthetic Shiny dashboard concept for tracking reimbursement lag, stockout risk, and facility-level intervention priorities.</p>
-        <div class="proj-footer">
-          <span class="proj-tags"><span>Shiny</span><span>KPIs</span><span>Alerting</span></span>
-          <span class="proj-arrow">Open project →</span>
+          <span class="proj-tags"><span>REDCap</span><span>Survival analysis</span><span>Tableau</span></span>
+          <span class="proj-arrow">Read delivery story →</span>
         </div>
       </div>
     </a>
 
   </div>
 
-  <!-- ─── HEALTH & M&E ────────────────────── -->
+  <!-- ─── RESEARCH ────────────────────── -->
   <div class="proj-section-header" style="margin-bottom:1.2rem;">
-    <span class="section-eyebrow" style="margin-bottom:0;">Public Health &amp; M&amp;E</span>
+    <span class="section-eyebrow" style="margin-bottom:0;">Research &amp; evidence</span>
   </div>
   <div class="project-grid allProjects" style="margin-bottom:5rem;">
 
-    <a href="../research/thesis.html" class="proj-card proj-featured" data-category="health">
+    <a href="../research/thesis.html" class="proj-card proj-featured" data-category="research">
       <div class="proj-thumb" style="background:#1a2e1a;">
         <div class="proj-thumb-pattern" style="--dot:#ffffff10;"></div>
-        <img src="../img/professor nyongo launching the dashboard.jpeg"
-             alt="Professor Nyongo launching the Kisumu health dashboard"
-             style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.5;"
+        <img src="../img/ncd manuscript.png"
+             alt="NCD financing manuscript"
+             style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.45;"
              onerror="this.remove()">
-        <span class="proj-icon proj-icon-hero">📈</span>
       </div>
       <div class="proj-body">
-        <p class="proj-domain" style="color:#7fbf7f;">MSc Research · Kisumu County · Georgetown gui2de</p>
-        <h3 class="proj-title">Financial Determinants of NCD Management in Primary Health Facilities</h3>
-        <p class="proj-desc">Mixed methods study across 7 public primary care facilities in Seme Sub County examining how facility financing architecture shapes continuity of hypertension and diabetes care.</p>
+        <p class="proj-domain" style="color:#7fbf7f;">MSc research · Forthcoming BMC Public Health</p>
+        <h3 class="proj-title">Financial determinants of NCD care in rural primary facilities</h3>
+        <p class="proj-desc">Mixed-methods study across seven public primary care facilities in Seme Sub-County: facility decision space, stockouts, and financing architecture for hypertension and diabetes care.</p>
 
         <div class="proj-thesis-plot" aria-label="Manuscript facility findings plot">
           <p class="proj-thesis-plot-title">Manuscript data snapshot from 7 facilities</p>
@@ -174,247 +148,112 @@ format:
           </div>
         </div>
         <div class="proj-footer">
-          <span class="proj-tags"><span>Manuscript data</span><span>Mixed methods</span><span>Health financing</span><span>Primary care</span></span>
-          <span class="proj-arrow">Read case study →</span>
+          <span class="proj-tags"><span>First author</span><span>Mixed methods</span><span>Health financing</span></span>
+          <span class="proj-arrow">Read thesis →</span>
         </div>
       </div>
     </a>
 
-    <a href="../tidy-tuesday/2024-maternal-mortality.html" class="proj-card proj-half" data-category="health">
+    <a href="case-studies/ncd-financing-impact/index.html" class="proj-card proj-half" data-category="research">
+      <div class="proj-thumb" style="background:#1c2c1d;height:180px;">
+        <div class="proj-thumb-pattern" style="--dot:#ffffff10;"></div>
+      </div>
+      <div class="proj-body">
+        <p class="proj-domain" style="color:#7fbf7f;">Operations framing · Health financing</p>
+        <h3 class="proj-title">NCD financing as an operations problem</h3>
+        <p class="proj-desc">Reframes the Kisumu chronic-care financing work for strategy and operations audiences: bottlenecks, levers, and scenario logic.</p>
+        <div class="proj-footer">
+          <span class="proj-tags"><span>Case study</span><span>Scenario model</span></span>
+          <span class="proj-arrow">Open →</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="../posts/47-facility-decision-space-chronic-care/index.html" class="proj-card proj-half" data-category="research">
       <div class="proj-thumb" style="background:#1e2a1e;height:180px;">
         <div class="proj-thumb-pattern" style="--dot:#ffffff0d;"></div>
-        <span class="proj-icon">📉</span>
       </div>
       <div class="proj-body">
-        <p class="proj-domain" style="color:#7fbf7f;">Maternal Health · SDG 3</p>
-        <h3 class="proj-title">Maternal Mortality Trends in Sub-Saharan Africa</h3>
-        <p class="proj-desc">Multi-country analysis of maternal mortality ratios using WHO data, with difference-in-differences modelling and publication-quality visualisations.</p>
+        <p class="proj-domain" style="color:#7fbf7f;">Public essay · Health systems</p>
+        <h3 class="proj-title">When clinics can diagnose but cannot buy medicines</h3>
+        <p class="proj-desc">Plain-language argument from the BMC paper: budgets, approval chains, and facility decision space.</p>
         <div class="proj-footer">
-          <span class="proj-tags"><span>R</span><span>ggplot2</span><span>DiD</span></span>
-          <span class="proj-arrow">View →</span>
+          <span class="proj-tags"><span>Essay</span><span>Policy translation</span></span>
+          <span class="proj-arrow">Read essay →</span>
         </div>
       </div>
     </a>
-
-    <a href="../posts/kisumu-cancer-dashboard/index.html" class="proj-card proj-half" data-category="health">
-      <div class="proj-thumb" style="background:#2a1a1a;height:180px;">
-        <div class="proj-thumb-pattern" style="--dot:#ffffff0d;"></div>
-        <span class="proj-icon">🧬</span>
-      </div>
-      <div class="proj-body">
-        <p class="proj-domain" style="color:#e07f7f;">Oncology · KEMRI</p>
-        <h3 class="proj-title">Cancer Surveillance Dashboard in Kisumu</h3>
-        <p class="proj-desc">Epidemiological analysis of cancer incidence data from the KEMRI Oncology Registry, with interactive Power BI dashboard and trend analysis.</p>
-        <div class="proj-footer">
-          <span class="proj-tags"><span>Power BI</span><span>R</span><span>Epidemiology</span></span>
-          <span class="proj-arrow">View →</span>
-        </div>
-      </div>
-    </a>
-
-    <div class="proj-card proj-half" data-category="health">
-      <div class="proj-thumb" style="background:#183222;height:180px;">
-        <div class="proj-thumb-pattern" style="--dot:#ffffff0d;"></div>
-        <span class="proj-icon">📊</span>
-      </div>
-      <div class="proj-body">
-        <p class="proj-domain" style="color:#7fbf7f;">MEL Systems · USAID reporting context</p>
-        <h3 class="proj-title">MEL Framework for Multi Site Health Programmes</h3>
-        <p class="proj-desc">Designed indicator trees, data quality checks, and reporting schedules for complex health programmes. Supported alignment between field operations, donor metrics, and learning agendas.</p>
-        <div class="proj-footer">
-          <span class="proj-tags"><span>MEL</span><span>Indicator design</span><span>QA</span></span>
-          <span class="proj-arrow">Case brief</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="proj-card proj-half" data-category="health">
-      <div class="proj-thumb" style="background:#2b1d1d;height:180px;">
-        <div class="proj-thumb-pattern" style="--dot:#ffffff0d;"></div>
-        <span class="proj-icon">💊</span>
-      </div>
-      <div class="proj-body">
-        <p class="proj-domain" style="color:#e07f7f;">Health Economics · Georgetown gui2de</p>
-        <h3 class="proj-title">Health Financing Impact Evaluation</h3>
-        <p class="proj-desc">Built panel data workflows and quasi experimental analyses for health financing and household expenditure studies. Integrated dashboards and quarterly evidence products for program decisions.</p>
-        <div class="proj-footer">
-          <span class="proj-tags"><span>DiD</span><span>Panel data</span><span>Policy reporting</span></span>
-          <span class="proj-arrow">Case brief</span>
-        </div>
-      </div>
-    </div>
 
   </div>
 
-  <!-- ─── AGRICULTURE ──────────────────────── -->
+  <!-- ─── METHODS LAB ───────────────── -->
   <div class="proj-section-header" style="margin-bottom:1.2rem;">
-    <span class="section-eyebrow" style="margin-bottom:0;">Agriculture &amp; Food Security</span>
+    <span class="section-eyebrow" style="margin-bottom:0;">Methods lab</span>
   </div>
-  <div class="project-grid allProjects" style="margin-bottom:5rem;">
-
-    <a href="../posts/agriculture-data-analysis/index.html" class="proj-card proj-featured" data-category="agriculture">
-      <div class="proj-thumb" style="background:#2a1e08;">
-        <div class="proj-thumb-pattern" style="--dot:#ffffff10;"></div>
-        <img src="../img/goats drinking near goat pen, digging water pan in the background.jpeg"
-             alt="Goats at the farm — small-ruminant production in Homa Bay"
-             style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.55;"
-             onerror="this.remove()">
-        <span class="proj-icon proj-icon-hero">🌾</span>
-      </div>
-      <div class="proj-body">
-        <p class="proj-domain" style="color:#d4a84b;">Agricultural Economics · Homa Bay County · SDG 2</p>
-        <h3 class="proj-title">Goat Farming Economics: Small-Ruminant Production Systems</h3>
-        <p class="proj-desc">Field-collected profitability analysis of small-ruminant production in Homa Bay. Combines cost data from smallholder farmers with market price modelling to produce practical decision tools for extension services.</p>
-        <div class="proj-footer">
-          <span class="proj-tags"><span>R</span><span>Economic modelling</span><span>Field data</span></span>
-          <span class="proj-arrow">View case study →</span>
-        </div>
-      </div>
-    </a>
-
-    <a href="../tidy-tuesday/food-security.html" class="proj-card proj-half" data-category="agriculture">
-      <div class="proj-thumb" style="background:#1a2a10;height:180px;">
-        <div class="proj-thumb-pattern" style="--dot:#ffffff0d;"></div>
-        <span class="proj-icon">🌽</span>
-      </div>
-      <div class="proj-body">
-        <p class="proj-domain" style="color:#a8c87f;">Food Security · SDG 2</p>
-        <h3 class="proj-title">Food Security Analysis in East Africa</h3>
-        <p class="proj-desc">Regional food security trends using FAO and household survey data. Vulnerability mapping and seasonal analysis.</p>
-        <div class="proj-footer">
-          <span class="proj-tags"><span>R</span><span>FAO data</span><span>Mapping</span></span>
-          <span class="proj-arrow">View →</span>
-        </div>
-      </div>
-    </a>
-
-    <div class="proj-card proj-half" data-category="agriculture">
-      <div class="proj-thumb" style="background:#2a2a12;height:180px;">
-        <div class="proj-thumb-pattern" style="--dot:#ffffff0d;"></div>
-        <span class="proj-icon">🚜</span>
-      </div>
-      <div class="proj-body">
-        <p class="proj-domain" style="color:#a8c87f;">Agri logistics · Input systems</p>
-        <h3 class="proj-title">Agricultural Supply Chain Analytics</h3>
-        <p class="proj-desc">Mapped fertilizer and seed distribution workflows, modeled delivery delays, and designed monitoring views for stock movement and last mile access in rural counties.</p>
-        <div class="proj-footer">
-          <span class="proj-tags"><span>Supply chain</span><span>Forecasting</span><span>Logistics</span></span>
-          <span class="proj-arrow">Case brief</span>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- ─── FINANCE & ECONOMICS ─────────────── -->
-  <div class="proj-section-header" style="margin-bottom:1.2rem;">
-    <span class="section-eyebrow" style="margin-bottom:0;">Finance &amp; Economics</span>
-  </div>
-  <div class="project-grid allProjects" style="margin-bottom:5rem;">
-
-    <a href="../tidy-tuesday/financial-inclusion.html" class="proj-card proj-half" data-category="finance">
-      <div class="proj-thumb" style="background:#0d1a2e;height:200px;">
-        <div class="proj-thumb-pattern" style="--dot:#ffffff10;"></div>
-        <span class="proj-icon">💳</span>
-      </div>
-      <div class="proj-body">
-        <p class="proj-domain" style="color:#6fa8dc;">Financial Inclusion · SDG 10</p>
-        <h3 class="proj-title">Mobile Money, Banking Access and Health Outcomes</h3>
-        <p class="proj-desc">Correlation analysis linking mobile money penetration, formal banking access, and health expenditure patterns across Sub-Saharan Africa using World Bank and GSMA datasets.</p>
-        <div class="proj-footer">
-          <span class="proj-tags"><span>Python</span><span>Plotly</span><span>Regression</span></span>
-          <span class="proj-arrow">View →</span>
-        </div>
-      </div>
-    </a>
-
-    <a href="real-estate-feasibility-studio/index.html" class="proj-card proj-half" data-category="finance">
-      <div class="proj-thumb" style="background:#162037;height:200px;">
-        <div class="proj-thumb-pattern" style="--dot:#ffffff10;"></div>
-        <span class="proj-icon">🏢</span>
-      </div>
-      <div class="proj-body">
-        <p class="proj-domain" style="color:#6fa8dc;">Real estate strategy · portfolio planning</p>
-        <h3 class="proj-title">Mixed Use Development Feasibility Studio</h3>
-        <p class="proj-desc">Case brief and decision studio built from public market indicators, listing level comparables, and developer cost assumptions. Covers SQL and R data pipeline, cleaning and harmonization, discounted cash flow analysis, scenario testing, and dashboard outputs for investment and ROI decisions.</p>
-        <div class="proj-footer">
-          <span class="proj-tags"><span>Data pipeline</span><span>DCF model</span><span>ROI strategy</span></span>
-          <span class="proj-arrow">Case brief and dashboard →</span>
-        </div>
-      </div>
-    </a>
-
-    <div class="proj-card proj-half" data-category="finance">
-      <div class="proj-thumb" style="background:#10243c;height:200px;">
-        <div class="proj-thumb-pattern" style="--dot:#ffffff10;"></div>
-        <span class="proj-icon">🏦</span>
-      </div>
-      <div class="proj-body">
-        <p class="proj-domain" style="color:#6fa8dc;">Household finance · Longitudinal data</p>
-        <h3 class="proj-title">Financial Diaries Analytics</h3>
-        <p class="proj-desc">Built analysis pipelines for high frequency household diaries, with volatility indicators, coping strategy tracking, and policy focused summaries for social protection design.</p>
-        <div class="proj-footer">
-          <span class="proj-tags"><span>Panel data</span><span>R</span><span>Policy briefs</span></span>
-          <span class="proj-arrow">Case brief</span>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- ─── SUPPLY CHAIN & ANALYTICS ENGINEERING -->
-  <div class="proj-section-header" style="margin-bottom:1.2rem;">
-    <span class="section-eyebrow" style="margin-bottom:0;">Supply Chain &amp; Analytics Engineering</span>
-  </div>
+  <p class="section-sub" style="margin-top:-0.5rem;margin-bottom:1.5rem;">
+    Labeled demonstrations and tooling samples. Useful for methods conversation — not primary programme evidence.
+  </p>
   <div class="project-grid allProjects" style="margin-bottom:2rem;">
 
-    <a href="real-estate-feasibility-studio/index.html" class="proj-card proj-half" data-category="analytics">
+    <a href="data-engineering/etl-pipeline-architecture/index.html" class="proj-card proj-half" data-category="lab">
       <div class="proj-thumb" style="background:#162233;height:180px;">
         <div class="proj-thumb-pattern" style="--dot:#ffffff10;"></div>
-        <span class="proj-icon">🔗</span>
       </div>
       <div class="proj-body">
-        <p class="proj-domain" style="color:#8cb5d9;">Business analytics · development operations</p>
-        <h3 class="proj-title">Development Operations Case Brief</h3>
-        <p class="proj-desc">Shows end to end analytics delivery from data intake and cleaning to scenario modeling and executive dashboarding. Structured for finance, planning, engineering, and construction stakeholders aligning on cost control, phasing, and return outcomes.</p>
+        <p class="proj-domain" style="color:#8cb5d9;">Demonstration · ETL</p>
+        <h3 class="proj-title">ETL pipeline architecture</h3>
+        <p class="proj-desc">How raw survey and facility extracts move into validated reporting layers with reproducible R workflows and QA rules.</p>
         <div class="proj-footer">
-          <span class="proj-tags"><span>SQL</span><span>Cross functional</span><span>Decision support</span></span>
-          <span class="proj-arrow">Open case brief →</span>
+          <span class="proj-tags"><span>Demo</span><span>R</span><span>Validation</span></span>
+          <span class="proj-arrow">Open →</span>
         </div>
       </div>
     </a>
 
-    <div class="proj-card proj-half" data-category="analytics">
-      <div class="proj-thumb" style="background:#1d1f2b;height:180px;">
+    <a href="analytics-engineering/healthcare-readmission-risk/index.html" class="proj-card proj-half" data-category="lab">
+      <div class="proj-thumb" style="background:#111a24;height:180px;">
         <div class="proj-thumb-pattern" style="--dot:#ffffff10;"></div>
-        <span class="proj-icon">🗄️</span>
       </div>
       <div class="proj-body">
-        <p class="proj-domain" style="color:#8cb5d9;">Data engineering · Multi country RCT</p>
-        <h3 class="proj-title">Research Data Engineering Pipeline</h3>
-        <p class="proj-desc">Architected a reproducible pipeline for cleaning, harmonization, and dashboard outputs using SQL, R, and automated validation layers across multiple countries.</p>
+        <p class="proj-domain" style="color:#8cb5d9;">Demonstration · Predictive workflow</p>
+        <h3 class="proj-title">Healthcare readmission risk (synthetic)</h3>
+        <p class="proj-desc">Portfolio demonstration of feature design, validation, and operational scoring on synthetic discharge data — not a deployed clinical product.</p>
         <div class="proj-footer">
-          <span class="proj-tags"><span>PostgreSQL</span><span>ETL</span><span>QA</span></span>
-          <span class="proj-arrow">Case brief</span>
+          <span class="proj-tags"><span>Demo</span><span>XGBoost</span><span>Synthetic data</span></span>
+          <span class="proj-arrow">Open →</span>
         </div>
       </div>
-    </div>
+    </a>
 
-    <div class="proj-card proj-half" data-category="analytics">
-      <div class="proj-thumb" style="background:#1a2533;height:180px;">
+    <a href="ai-applications/research-brief-generator/index.html" class="proj-card proj-half" data-category="lab">
+      <div class="proj-thumb" style="background:#1a2030;height:180px;">
         <div class="proj-thumb-pattern" style="--dot:#ffffff10;"></div>
-        <span class="proj-icon">📡</span>
       </div>
       <div class="proj-body">
-        <p class="proj-domain" style="color:#8cb5d9;">Health information systems · DHIS2</p>
-        <h3 class="proj-title">DHIS2 Integration and Reporting Automation</h3>
-        <p class="proj-desc">Designed a reporting workflow that joins DHIS2 extracts with field operations data for faster indicator reporting, exception monitoring, and partner dashboards.</p>
+        <p class="proj-domain" style="color:#8cb5d9;">Demonstration · LLM workflow</p>
+        <h3 class="proj-title">Research brief generator</h3>
+        <p class="proj-desc">Structured workflow for turning long-form research inputs into implementation-style briefs with a consistent schema.</p>
         <div class="proj-footer">
-          <span class="proj-tags"><span>DHIS2</span><span>Automation</span><span>Monitoring</span></span>
-          <span class="proj-arrow">Case brief</span>
+          <span class="proj-tags"><span>Demo</span><span>Python</span><span>LLM</span></span>
+          <span class="proj-arrow">Open →</span>
         </div>
       </div>
-    </div>
+    </a>
+
+    <a href="dashboards/health-financing-real-time/index.html" class="proj-card proj-half" data-category="lab">
+      <div class="proj-thumb" style="background:#15251d;height:180px;">
+        <div class="proj-thumb-pattern" style="--dot:#ffffff10;"></div>
+      </div>
+      <div class="proj-body">
+        <p class="proj-domain" style="color:#8cb5d9;">Demonstration · Dashboard concept</p>
+        <h3 class="proj-title">Health financing KPI dashboard (synthetic)</h3>
+        <p class="proj-desc">Shiny concept for reimbursement lag, stockout risk, and facility priorities — illustrative data only.</p>
+        <div class="proj-footer">
+          <span class="proj-tags"><span>Demo</span><span>Shiny</span><span>KPIs</span></span>
+          <span class="proj-arrow">Open →</span>
+        </div>
+      </div>
+    </a>
 
   </div>
 
@@ -424,7 +263,7 @@ format:
 <script>
 (function() {
   var filters = document.querySelectorAll('.proj-filter');
-  var allGrids = document.querySelectorAll('.allProjects');
+  var cards = document.querySelectorAll('.allProjects .proj-card');
   var chartFills = document.querySelectorAll('.proj-thesis-fill');
 
   function animateThesisPlot() {
@@ -466,24 +305,11 @@ format:
       });
       this.classList.add('active');
       this.setAttribute('aria-selected', 'true');
-
-      var f = this.dataset.filter;
-
-      allGrids.forEach(function(grid) {
-        var cards = grid.querySelectorAll('[data-category]');
-        var anyVisible = false;
-        cards.forEach(function(card) {
-          var show = f === 'all' || card.dataset.category === f;
-          card.style.opacity = show ? '1' : '0.14';
-          card.style.transform = show ? '' : 'scale(0.97)';
-          card.style.pointerEvents = show ? '' : 'none';
-          if (show) anyVisible = true;
-        });
-        grid.style.display = anyVisible ? '' : 'none';
-        var header = grid.previousElementSibling;
-        if (header && header.classList.contains('proj-section-header')) {
-          header.style.display = anyVisible ? '' : 'none';
-        }
+      var f = this.getAttribute('data-filter');
+      cards.forEach(function(card) {
+        var cat = card.getAttribute('data-category') || '';
+        var show = (f === 'all') || (cat === f);
+        card.style.display = show ? '' : 'none';
       });
     });
   });

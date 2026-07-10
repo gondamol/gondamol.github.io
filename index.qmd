@@ -17,16 +17,16 @@ format:
 <section class="editorial-hero reveal-on-scroll">
   <div class="editorial-hero__copy">
     <div class="editorial-hero__primary">
-      <p class="editorial-hero__eyebrow">Research Data Manager · AI Systems · Data Analyst · M&amp;E</p>
+      <p class="editorial-hero__eyebrow">Research Data Systems · Health &amp; Development Programmes</p>
       <h1 class="editorial-hero__nameplate">
         <span class="editorial-hero__given-name">
           <span class="editorial-hero__given-accent">Nic</span><span class="editorial-hero__given-rest">hodemus</span>
         </span>
         <span class="editorial-hero__surname">Amollo</span>
       </h1>
-      <p class="editorial-hero__title">I help teams turn messy field data into decisions they can trust.</p>
+      <p class="editorial-hero__title">I build the data systems and evidence products that make health and development programmes trustworthy.</p>
       <p class="editorial-hero__lede">
-        I work at the intersection of field research and data engineering. The work often starts with designing surveys in communities with no internet, then moves through the pipelines that clean and model what comes back. From there it becomes reports, dashboards, and decisions teams can actually use. I work best close to the people, programmes, and constraints the data is meant to serve.
+        From field instruments to policy-facing analysis: survey design in low-connectivity settings, high-frequency quality checks, pipelines that hold up under real operations, and decision tools for teams who cannot wait for a perfect spreadsheet. I work best close to the people, programmes, and constraints the data is meant to serve.
       </p>
     </div>
     <div class="editorial-hero__secondary">
@@ -37,26 +37,26 @@ format:
       <div class="editorial-hero__ticker" aria-label="Selected capabilities">
         <div class="editorial-hero__ticker-track">
           <div class="editorial-hero__ticker-group">
-            <span class="editorial-hero__ticker-chip">Research Design</span>
+            <span class="editorial-hero__ticker-chip">Study Design</span>
             <span class="editorial-hero__ticker-chip">Survey Systems</span>
             <span class="editorial-hero__ticker-chip">ODK / Kobo / REDCap</span>
+            <span class="editorial-hero__ticker-chip">HFC &amp; Quality</span>
             <span class="editorial-hero__ticker-chip">ETL Pipelines</span>
-            <span class="editorial-hero__ticker-chip">Quality Control</span>
-            <span class="editorial-hero__ticker-chip">Dashboards</span>
+            <span class="editorial-hero__ticker-chip">Field Ops Apps</span>
             <span class="editorial-hero__ticker-chip">R · Python · SQL</span>
-            <span class="editorial-hero__ticker-chip">Analytics Engineering</span>
-            <span class="editorial-hero__ticker-chip">AI Systems</span>
+            <span class="editorial-hero__ticker-chip">Dashboards</span>
+            <span class="editorial-hero__ticker-chip">Causal Targeting</span>
           </div>
           <div class="editorial-hero__ticker-group" aria-hidden="true">
-            <span class="editorial-hero__ticker-chip">Research Design</span>
+            <span class="editorial-hero__ticker-chip">Study Design</span>
             <span class="editorial-hero__ticker-chip">Survey Systems</span>
             <span class="editorial-hero__ticker-chip">ODK / Kobo / REDCap</span>
+            <span class="editorial-hero__ticker-chip">HFC &amp; Quality</span>
             <span class="editorial-hero__ticker-chip">ETL Pipelines</span>
-            <span class="editorial-hero__ticker-chip">Quality Control</span>
-            <span class="editorial-hero__ticker-chip">Dashboards</span>
+            <span class="editorial-hero__ticker-chip">Field Ops Apps</span>
             <span class="editorial-hero__ticker-chip">R · Python · SQL</span>
-            <span class="editorial-hero__ticker-chip">Analytics Engineering</span>
-            <span class="editorial-hero__ticker-chip">AI Systems</span>
+            <span class="editorial-hero__ticker-chip">Dashboards</span>
+            <span class="editorial-hero__ticker-chip">Causal Targeting</span>
           </div>
         </div>
       </div>
@@ -68,13 +68,13 @@ format:
       <img
         src="img/new profile pic.jpeg"
         alt="Nichodemus Amollo portrait"
-        class="editorial-hero__image"
+        class="editorial-hero__image img-archival"
         onerror="this.parentElement.classList.add('is-empty')"
       >
       <div class="editorial-hero__fieldnote">
         <span class="editorial-hero__fieldnote-label">Current Work</span>
-        <strong>Building health financial diaries systems for 1,000+ households.</strong>
-        <span>Research design, ETL, quality control, and decision support for Georgetown gui2de.</span>
+        <strong>Health financial diaries systems for 300 households over one year.</strong>
+        <span>HFCs, automated quality workflows, and live field apps for Georgetown gui2de.</span>
       </div>
     </div>
     <div class="editorial-hero__stats" aria-label="Selected proof points">
@@ -87,12 +87,12 @@ format:
         <span class="editorial-hero__stat-label">Countries</span>
       </div>
       <div class="editorial-hero__stat">
-        <span class="editorial-hero__stat-value">500+</span>
-        <span class="editorial-hero__stat-label">Researchers trained</span>
+        <span class="editorial-hero__stat-value">300</span>
+        <span class="editorial-hero__stat-label">HH diaries (1 yr)</span>
       </div>
       <div class="editorial-hero__stat">
-        <span class="editorial-hero__stat-value">6</span>
-        <span class="editorial-hero__stat-label">SDG domains</span>
+        <span class="editorial-hero__stat-value">7</span>
+        <span class="editorial-hero__stat-label">Facilities (thesis)</span>
       </div>
     </div>
   </figure>
@@ -101,27 +101,27 @@ format:
 <section class="expertise-story section-pad section-divider reveal-on-scroll">
   <div class="section-inner">
     <p class="section-eyebrow">Expertise</p>
-    <h2 class="section-h">Data, end to end.</h2>
-    <p class="section-sub">From research design to dashboard delivery, the work is built for teams operating in real places with real constraints.</p>
+    <h2 class="section-h">Programme evidence, end to end.</h2>
+    <p class="section-sub">Built for research and delivery teams operating under real field constraints — not classroom demos.</p>
 
     <div class="expertise-story__grid">
       <article class="expertise-story__card">
         <span class="expertise-story__index">01</span>
-        <h3>Research &amp; M&amp;E</h3>
-        <p>Designing studies, building logframes, and leading RCTs and quasi-experimental evaluations across Kenya, Uganda, and Tanzania.</p>
-        <p class="expertise-story__tools">ODK · KoboToolbox · REDCap · SPSS · Stata</p>
+        <h3>Research data systems</h3>
+        <p>Study design, digital instruments, multi-country field teams, and HFCs that catch errors while collection is still running.</p>
+        <p class="expertise-story__tools">ODK · KoboToolbox · REDCap · HFC · XLSForm</p>
       </article>
       <article class="expertise-story__card">
         <span class="expertise-story__index">02</span>
-        <h3>Data Analytics &amp; BI</h3>
-        <p>Turning messy survey exports into decisions through SQL pipelines, Power BI dashboards, and reproducible R and Python workflows.</p>
-        <p class="expertise-story__tools">SQL · Power BI · R · Python · Quarto</p>
+        <h3>Quality architecture &amp; ops apps</h3>
+        <p>Pipelines, validation layers, and live tools for supervisors — leaderboards, issue feeds, and dashboards on the study database.</p>
+        <p class="expertise-story__tools">SQL · R · Python · Streamlit · Shiny</p>
       </article>
       <article class="expertise-story__card">
         <span class="expertise-story__index">03</span>
-        <h3>Full Data Lifecycle</h3>
-        <p>Owning the chain from literature review and tool design through training, HFC, cleaning, analysis, reporting, and stakeholder engagement.</p>
-        <p class="expertise-story__tools">XLSForm · DHIS2/KHIS · HFC · PostgreSQL · Git</p>
+        <h3>Analysis &amp; decision products</h3>
+        <p>Mixed methods, biostatistics, and evidence translation for funders, ministries, and programme leadership — including model-to-app targeting tools.</p>
+        <p class="expertise-story__tools">Stata · R · Causal methods · Power BI · Quarto</p>
       </article>
     </div>
   </div>
@@ -130,17 +130,15 @@ format:
 <section class="lifecycle-atlas section-pad section-divider reveal-on-scroll">
   <div class="section-inner">
     <p class="section-eyebrow">Process</p>
-    <h2 class="section-h">The full data lifecycle, owned end to end.</h2>
-    <p class="section-sub">From the first community conversation to the final policy brief. Every step is structured to keep quality, speed, and trust intact.</p>
+    <h2 class="section-h">From field capture to a decision someone can defend.</h2>
+    <p class="section-sub">Five steps. Quality, speed, and trust stay intact under real operations.</p>
 
     <div class="lifecycle-atlas__grid">
-      <article class="lifecycle-atlas__step" tabindex="0"><span>01</span><h3>Study Design &amp; Tools</h3><p class="lifecycle-atlas__stack">ODK · KoboToolbox · REDCap · Lit Review</p><div class="lifecycle-atlas__hover">Scoping, protocol design, IRB submissions, and tool digitization that set the foundation for high-quality data from day one.</div></article>
-      <article class="lifecycle-atlas__step" tabindex="0"><span>02</span><h3>Digitalization &amp; CAPI</h3><p class="lifecycle-atlas__stack">XLSForm · DHIS2 · CommCare</p><div class="lifecycle-atlas__hover">Turning paper instruments into robust digital systems with skip logic, validation rules, and offline capability built in.</div></article>
-      <article class="lifecycle-atlas__step" tabindex="0"><span>03</span><h3>Field Teams &amp; Training</h3><p class="lifecycle-atlas__stack">HFC · Supervision · QA Protocols</p><div class="lifecycle-atlas__hover">Recruiting, training, and supporting enumerators with daily HFC rhythms, debriefs, and cross-site quality checks.</div></article>
-      <article class="lifecycle-atlas__step" tabindex="0"><span>04</span><h3>Data Cleaning</h3><p class="lifecycle-atlas__stack">R · Python · Stata · SPSS</p><div class="lifecycle-atlas__hover">Outlier detection, deduplication, range checks, and reproducible cleaning scripts built early rather than patched in later.</div></article>
-      <article class="lifecycle-atlas__step" tabindex="0"><span>05</span><h3>Analysis &amp; Modelling</h3><p class="lifecycle-atlas__stack">SQL · Regression · DiD · ML</p><div class="lifecycle-atlas__hover">From descriptive work to mixed-methods and econometric analysis that clarifies trade-offs instead of hiding them.</div></article>
-      <article class="lifecycle-atlas__step" tabindex="0"><span>06</span><h3>Reporting &amp; Dashboards</h3><p class="lifecycle-atlas__stack">Power BI · R Markdown · Quarto</p><div class="lifecycle-atlas__hover">Interactive dashboards, automated reports, and publication-ready charts that update with the work as it evolves.</div></article>
-      <article class="lifecycle-atlas__step" tabindex="0"><span>07</span><h3>Stakeholder Engagement</h3><p class="lifecycle-atlas__stack">Policy Briefs · Presentations</p><div class="lifecycle-atlas__hover">Translating findings for funders, ministries, and communities through clear briefs, presentations, and learning events.</div></article>
+      <article class="lifecycle-atlas__step" tabindex="0"><span>01</span><h3>Design &amp; instruments</h3><p class="lifecycle-atlas__stack">Protocols · ODK · Kobo · REDCap</p><div class="lifecycle-atlas__hover">Scoping, tool digitization, and offline-ready CAPI that set quality before the first interview.</div></article>
+      <article class="lifecycle-atlas__step" tabindex="0"><span>02</span><h3>Field teams &amp; HFC</h3><p class="lifecycle-atlas__stack">Training · Supervision · Daily QC</p><div class="lifecycle-atlas__hover">Enumerator systems, high-frequency checks, and debriefs that catch errors before they compound.</div></article>
+      <article class="lifecycle-atlas__step" tabindex="0"><span>03</span><h3>Pipelines &amp; automation</h3><p class="lifecycle-atlas__stack">SQL · R · Python · Validation</p><div class="lifecycle-atlas__hover">Reproducible cleaning and quality layers so analysis does not start from a new spreadsheet firefight every cycle.</div></article>
+      <article class="lifecycle-atlas__step" tabindex="0"><span>04</span><h3>Analysis &amp; models</h3><p class="lifecycle-atlas__stack">Biostats · Mixed methods · Causal</p><div class="lifecycle-atlas__hover">Descriptive through econometric and causal work that names trade-offs instead of hiding them.</div></article>
+      <article class="lifecycle-atlas__step" tabindex="0"><span>05</span><h3>Products &amp; decisions</h3><p class="lifecycle-atlas__stack">Dashboards · Shiny · Briefs</p><div class="lifecycle-atlas__hover">Ops apps, policy briefs, and recommender tools that programme teams can actually use.</div></article>
     </div>
   </div>
 </section>
@@ -148,71 +146,62 @@ format:
 <section class="portfolio-memory section-pad section-divider reveal-on-scroll">
   <div class="section-inner">
     <p class="section-eyebrow">Selected Work</p>
-    <h2 class="section-h">Projects &amp; case studies.</h2>
-    <p class="section-sub">Work across public health, finance, urban analytics, and analytics engineering, from field studies to decision-ready systems.</p>
+    <h2 class="section-h">Real delivery, not demos.</h2>
+    <p class="section-sub">Programme data systems, field apps, and original health systems research. Methods-lab projects live under Projects when you want tooling samples.</p>
 
     <div class="portfolio-memory__grid">
-      <a href="research/thesis.html" class="portfolio-memory__card portfolio-memory__card--feature">
+      <a href="projects/health-financial-diaries/index.html" class="portfolio-memory__card portfolio-memory__card--feature">
         <div class="portfolio-memory__media">
-          <img src="img/with kisumu health team and professor nyongo during lauch of kisumu cancer dashboard .jpeg" alt="Health team and dashboard launch discussion in Kisumu" onerror="this.remove()">
+          <img src="img/diaries/field-team-performance-dashboard.png" alt="RA performance dashboard for health financial diaries field teams" onerror="this.remove()">
         </div>
         <div class="portfolio-memory__body">
-          <p class="portfolio-memory__meta">Public Health · Published in BMC Public Health</p>
-          <h3>Financing chronic care in rural Kenya</h3>
-          <p>Seven-facility mixed-methods work in Seme Sub-County showing how narrow funding streams, county approval delays, and missing NCD budget lines disrupt hypertension and diabetes care.</p>
-          <p class="portfolio-memory__tags">R · Mixed Methods · Published Paper</p>
-          <span>Read paper →</span>
+          <p class="portfolio-memory__meta meta-text">Field delivery · Georgetown gui2de</p>
+          <h3>Health financial diaries systems</h3>
+          <p>Three hundred households over one year: HFCs, automated quality workflows, an RA leaderboard, and a fuel/issues app that aggregated field problems in real time as data streamed into the study database.</p>
+          <p class="portfolio-memory__tags">HFC · Streamlit · Ops dashboards · 300 HH</p>
+          <span>Read case study →</span>
         </div>
       </a>
-      <a href="projects/analytics-engineering/healthcare-readmission-risk/index.html" class="portfolio-memory__card">
+      <a href="projects/rebuild-targeting/index.html" class="portfolio-memory__card">
+        <div class="portfolio-memory__media portfolio-memory__media--compact portfolio-memory__media--dashboard">
+          <img src="img/rebuild/rebuild-targeting-02.png" alt="Re:BUiLD cash-plus targeting app home screen" onerror="this.remove()">
+        </div>
+        <div class="portfolio-memory__body">
+          <p class="portfolio-memory__meta meta-text">Application · IRC Re:BUiLD · gui2de</p>
+          <h3>Cash-plus targeting recommender</h3>
+          <p>Shiny decision-support app for IRC field teams. I built the application layer from gui2de causal targeting models so caseworkers can score Cash vs Cash + Network with cost-aware rationale.</p>
+          <p class="portfolio-memory__tags">Shiny · Causal forest · 6,260 participants</p>
+          <span>Case study &amp; live app →</span>
+        </div>
+      </a>
+      <a href="research/thesis.html" class="portfolio-memory__card">
         <div class="portfolio-memory__media portfolio-memory__media--compact">
-          <img src="img/professor nyongo launching the dashboard.jpeg" alt="Health analytics dashboard presentation" onerror="this.remove()">
+          <img src="img/ncd manuscript.png" alt="NCD financing manuscript preview" onerror="this.remove()">
         </div>
         <div class="portfolio-memory__body">
-          <p class="portfolio-memory__meta">Analytics Engineering · Health</p>
-          <h3>Healthcare readmission risk pipeline</h3>
-          <p>Portfolio work that connects data preparation, modelling logic, and decision support in a clinically legible way.</p>
-          <p class="portfolio-memory__tags">Python · SQL · Monitoring</p>
-          <span>View →</span>
+          <p class="portfolio-memory__meta meta-text">Research · Forthcoming BMC Public Health</p>
+          <h3>Financing chronic care in rural Kenya</h3>
+          <p>Seven-facility mixed-methods study on facility decision space, stockouts, and why clinics can diagnose but still fail to sustain hypertension and diabetes care.</p>
+          <p class="portfolio-memory__tags">Mixed methods · Health financing · First author</p>
+          <span>Read thesis →</span>
         </div>
       </a>
-      <a href="projects/analytics-engineering/supply-chain-tracker/index.html" class="portfolio-memory__card">
-        <div class="portfolio-memory__media portfolio-memory__media--compact portfolio-memory__media--dashboard">
-          <img src="projects/analytics-engineering/ecommerce-price-intelligence/assets/dashboard-preview.png" alt="Operations analytics dashboard preview" onerror="this.remove()">
+      <a href="posts/kisumu-cancer-dashboard/index.html" class="portfolio-memory__card">
+        <div class="portfolio-memory__media portfolio-memory__media--compact">
+          <img src="img/with kisumu health team and professor nyongo during lauch of kisumu cancer dashboard .jpeg" alt="Kisumu cancer dashboard launch with health team" onerror="this.remove()">
         </div>
         <div class="portfolio-memory__body">
-          <p class="portfolio-memory__meta">Operations Analytics · Urban Development</p>
-          <h3>Supply chain intelligence blueprint</h3>
-          <p>Logistics analytics architecture covering inventory flow, shipment reliability, and service-level monitoring for distributed operations.</p>
-          <p class="portfolio-memory__tags">SQL · Forecasting · Operations</p>
-          <span>Portfolio brief →</span>
-        </div>
-      </a>
-      <a href="projects/real-estate-feasibility-studio/index.html" class="portfolio-memory__card">
-        <div class="portfolio-memory__media portfolio-memory__media--compact portfolio-memory__media--dashboard">
-          <img src="projects/analytics-engineering/job-market-intelligence/assets/dashboard-preview.png" alt="Urban analytics dashboard preview" onerror="this.remove()">
-        </div>
-        <div class="portfolio-memory__body">
-          <p class="portfolio-memory__meta">Urban Analytics · Nairobi</p>
-          <h3>Nairobi real estate signals dashboard</h3>
-          <p>Neighbourhood-level exploration of rent and sales patterns using trend decomposition, geospatial segmentation, and valuation signals.</p>
-          <p class="portfolio-memory__tags">Geospatial · Power BI · Modelling</p>
-          <span>Portfolio brief →</span>
-        </div>
-      </a>
-      <a href="projects/ai-applications/research-brief-generator/index.html" class="portfolio-memory__card">
-        <div class="portfolio-memory__media portfolio-memory__media--compact portfolio-memory__media--document">
-          <img src="img/ncd manuscript.png" alt="Research manuscript and AI-assisted writing workflow preview" onerror="this.remove()">
-        </div>
-        <div class="portfolio-memory__body">
-          <p class="portfolio-memory__meta">AI Applications · Research Communication</p>
-          <h3>Research brief generator</h3>
-          <p>An AI-assisted workflow for turning structured inputs into concise, reusable summaries without losing research structure.</p>
-          <p class="portfolio-memory__tags">Python · Workflow Design · AI</p>
-          <span>View →</span>
+          <p class="portfolio-memory__meta meta-text">Systems · KEMRI · Oncology</p>
+          <h3>Kisumu cancer surveillance dashboard</h3>
+          <p>Research data management for multi-year oncology records: REDCap architecture, quality systems, survival analysis, and a county-facing dashboard launched with local leadership.</p>
+          <p class="portfolio-memory__tags">REDCap · Survival analysis · Tableau</p>
+          <span>Read delivery story →</span>
         </div>
       </a>
     </div>
+    <p style="margin-top:1.75rem;">
+      <a href="projects/index.html" class="btn-ghost">All projects →</a>
+    </p>
   </div>
 </section>
 
@@ -241,7 +230,7 @@ format:
       <div class="background-ledger__column">
         <h3 class="background-ledger__heading">Experience</h3>
         <div class="background-ledger__timeline">
-          <article class="background-ledger__entry"><span>2025 – Present</span><h4>Lead Research Data Manager</h4><p class="background-ledger__org">Georgetown University gui2de · Remote / Kenya</p><p>Leading data architecture for the Health Financial Diaries project across 1,000+ households, with automated dashboards for real-time policy metrics.</p></article>
+          <article class="background-ledger__entry"><span>2025 – Present</span><h4>Lead Research Data Manager</h4><p class="background-ledger__org">Georgetown University gui2de · Remote / Kenya</p><p>Health financial diaries systems for 300 households over one year (HFCs, automation, live field apps); Shiny application for Re:BUiLD cash-plus targeting with IRC partners.</p></article>
           <article class="background-ledger__entry"><span>2023 – 2025</span><h4>Senior Statistician and Data Systems Lead</h4><p class="background-ledger__org">KEMRI · Nairobi and Kisumu</p><p>Built integrated health analytics pipelines and survival-analysis workflows for surveillance, decision support, and partner reporting.</p></article>
           <article class="background-ledger__entry"><span>2021 – 2023</span><h4>Senior Research Data Manager and Evaluation Lead</h4><p class="background-ledger__org">JOOUST and VLIR UOS · Kenya, Uganda, Rwanda</p><p>Coordinated cross-country datasets, supported randomized and quasi-experimental analysis, and trained teams on quality and reproducibility.</p></article>
           <article class="background-ledger__entry"><span>2017 – 2021</span><h4>Data Analyst and MEL Specialist</h4><p class="background-ledger__org">LERIS Hub · Kenya and Uganda</p><p>Designed monitoring frameworks and data-collection workflows, then delivered policy and donor reporting products for complex programmes.</p></article>
@@ -281,7 +270,7 @@ format:
 <section class="collab-channel section-pad section-divider reveal-on-scroll" id="contact">
   <div class="section-inner collab-channel__layout">
     <div class="collab-channel__copy">
-      <p class="collab-channel__status">Channel Open</p>
+      <p class="collab-channel__status meta-text">Channel Open</p>
       <h2 class="collab-channel__title">What if we worked together?</h2>
       <p class="collab-channel__text">
         Whether you need a research partner, an analyst embedded in your team, or someone to build the M&amp;E system from scratch, I’d like to hear from you.
@@ -296,6 +285,7 @@ format:
       <div class="collab-channel__links">
         <a href="https://github.com/gondamol" target="_blank" rel="noopener">GitHub</a>
         <a href="https://www.linkedin.com/in/nichodemusamollo/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://gui2de.georgetown.edu/profiles/nichodemus-amollo/" target="_blank" rel="noopener">gui2de</a>
         <a href="cv/Nichodemus_Amollo_CV.pdf" download>CV</a>
       </div>
     </div>

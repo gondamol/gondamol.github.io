@@ -14,7 +14,7 @@ format:
 ```{=html}
 <div style="padding:5rem 0 3.5rem 0;">
   <span class="section-eyebrow">About Me</span>
-  <h1 class="section-h" style="font-size:clamp(2.4rem,4vw,3.6rem);margin-top:0.5rem;margin-bottom:0;">From the field<br>to the boardroom,<br>and into AI systems.</h1>
+  <h1 class="section-h" style="font-size:clamp(2.4rem,4vw,3.6rem);margin-top:0.5rem;margin-bottom:0;">From the field<br>to systems that<br>programmes can trust.</h1>
 </div>
 ```
 
@@ -25,11 +25,9 @@ My name is **Nichodemus Amollo**. I grew up near Lake Victoria in Homa Bay, West
 
 I started at **KEMRI** managing oncology data. It taught me something that no methods course quite captures: data quality is a moral act. Every row is a person waiting for a diagnosis. That sense of responsibility has traveled with me into every job since.
 
-Over eight years I have worked across the full research lifecycle — designing digital survey tools for communities without internet, building the SQL databases that receive the data, leading field teams of 50+ across three countries, and delivering the reports and dashboards that move funders and governments. I currently work with **Georgetown University gui2de** on health financial diaries and impact evaluations. I am also a part-time lecturer in Biostatistics at JOOUST and a candidate for an MSc in Biostatistics and Epidemiology.
+Over eight years I have worked across the full research lifecycle — designing digital survey tools for communities without internet, building the databases that receive the data, running high-frequency quality systems, leading field teams across three countries, and delivering reports and apps that programme teams can actually use. I currently work with **[Georgetown University gui2de](https://gui2de.georgetown.edu/profiles/nichodemus-amollo/)** on health financial diaries (**300 households over one year**: HFCs, automation, live field apps) and on the **Re:BUiLD cash-plus targeting** Shiny application for IRC partners. I am also a part-time lecturer in Biostatistics at JOOUST and a candidate for an MSc in Biostatistics and Epidemiology.
 
-What makes me useful is that I can operate at both ends. I can sit with a community health worker and explain why data completeness matters. Then walk into a boardroom and present the findings. That translation — between the field and the funder — is where I work best.
-
-I'm also actively building expertise in **AI systems and machine learning infrastructure**—specifically how rigorous statistical thinking translates to production ML systems. My field experience with data quality, causal inference, and real-world constraints directly informs how I think about responsible AI system design. Georgetown work includes architecting ETL pipelines, designing R Shiny dashboards with predictive components, and mentoring analysts transitioning toward data engineering and ML work.
+What makes me useful is that I can operate at both ends. I can sit with a community health worker and explain why data completeness matters. Then walk into a boardroom — or ship a caseworker tool — so findings and models become decisions. That translation — between the field and the institution — is where I work best.
 
 Outside of data: I keep goats and tend a kitchen garden in Homa Bay. There is something honest about agriculture — it keeps development work grounded in reality. I also love football, running, and long conversations over tea that go further than they were supposed to.
 
@@ -163,12 +161,12 @@ I bring the same philosophy to AI systems: the systems we build encode decisions
 
 ## A few highlights
 
-- Built real-time high-frequency check (HFC) systems in R and Stata across multi-country RCTs, catching data errors before they compound.
-- Managed a field team of 50+ enumerators across Kenya, Uganda, and Tanzania, including remote coordination through the COVID-19 pandemic.
-- Designed and digitised the M&E framework for a 1,535-site health programme: XLSForm coding through DHIS2 integration.
+- Built diaries research data systems for **300 households over one year** at gui2de: HFCs, automated quality workflows, [RA leaderboard](https://ra-leaderboard.streamlit.app/), and a fuel/issues app aggregating field problems in real time.
+- Developed the **Shiny application** for [Re:BUiLD cash-plus targeting](https://rebuild.shinyapps.io/rebuild-targeting/) from gui2de causal models for IRC field teams.
+- Built real-time high-frequency check (HFC) systems in R and Stata across multi-country research operations, catching data errors before they compound.
+- Managed large field teams across Kenya, Uganda, and Tanzania, including remote coordination through the COVID-19 pandemic.
 - First-author paper forthcoming in *BMC Public Health* on financing constraints and chronic NCD care in rural Kisumu.
-- Co-authored oncology and epidemiology publications from KEMRI and university collaborations.
-- Identified procurement inefficiencies that saved an estimated KES 20M+ through analysis alone.
+- Research data management for KEMRI oncology systems, including the Kisumu cancer surveillance dashboard launched with county leadership.
 
 [View full CV →](../cv/index.qmd){.btn-solid style="margin-top:1.5rem;display:inline-block;"}
 
