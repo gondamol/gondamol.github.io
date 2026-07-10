@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>index – Nic | Data</title>
+<title>Software – Nic | Data</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -91,7 +126,7 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -112,7 +147,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../projects/index.html" aria-current="page"> 
+    <a class="nav-link" href="../projects/index.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
@@ -159,309 +194,69 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
 
-
-
-
-<div class="section-pad">
-<div class="section-inner">
-  <span class="section-eyebrow">Portfolio</span>
-  <h1 class="section-h" style="font-size:clamp(2.4rem,4vw,3.4rem);margin-top:0.5rem;margin-bottom:0.8rem;">
-    Selected work
-  </h1>
-  <p class="section-sub">
-    Field delivery and original research first. Methods-lab demos are labeled and kept secondary —
-    they never outrank programme systems you can open and inspect.
-  </p>
-
-  <div class="proj-filters" role="tablist" aria-label="Filter projects by type" style="margin-bottom:3rem;">
-    <button class="proj-filter active" data-filter="all" role="tab" aria-selected="true">All</button>
-    <button class="proj-filter" data-filter="delivery" role="tab" aria-selected="false">Field delivery</button>
-    <button class="proj-filter" data-filter="research" role="tab" aria-selected="false">Research</button>
-    <button class="proj-filter" data-filter="lab" role="tab" aria-selected="false">Methods lab</button>
-  </div>
-
-  <!-- ─── FIELD DELIVERY ───────────────── -->
-  <div class="proj-section-header" style="margin-bottom:1.2rem;">
-    <span class="section-eyebrow" style="margin-bottom:0;">Field delivery &amp; programme systems</span>
-  </div>
-  <div class="project-grid allProjects" style="margin-bottom:5rem;">
-
-    <a href="health-financial-diaries/index.html" class="proj-card proj-featured" data-category="delivery">
-      <div class="proj-thumb" style="background:#0f1f18;">
-        <div class="proj-thumb-pattern" style="--dot:#ffffff10;"></div>
-        <img src="../img/diaries/field-team-performance-dashboard.png" alt="RA performance dashboard for health financial diaries" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.85;" onerror="this.remove()">
-      </div>
-      <div class="proj-body">
-        <p class="proj-domain" style="color:#7fbf7f;">Georgetown gui2de · Health financial diaries</p>
-        <h3 class="proj-title anchored">Diaries systems: 300 households, one year</h3>
-        <p class="proj-desc">HFCs, automated quality workflows, an RA leaderboard, and a fuel/issues app that aggregated field problems in real time as data streamed into the study database.</p>
-        <div class="proj-footer">
-          <span class="proj-tags"><span>HFC</span><span>Streamlit</span><span>Live ops apps</span><span>300 HH</span></span>
-          <span class="proj-arrow">Open case study →</span>
-        </div>
-      </div>
-    </a>
-
-    <a href="rebuild-targeting/index.html" class="proj-card proj-half" data-category="delivery">
-      <div class="proj-thumb" style="background:#1a2030;height:180px;">
-        <div class="proj-thumb-pattern" style="--dot:#ffffff10;"></div>
-        <img src="../img/rebuild/rebuild-targeting-02.png" alt="Re:BUiLD targeting app hero" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.9;" onerror="this.remove()">
-      </div>
-      <div class="proj-body">
-        <p class="proj-domain" style="color:#8cb5d9;">Application · IRC Re:BUiLD · gui2de</p>
-        <h3 class="proj-title anchored">Cash-plus targeting recommender</h3>
-        <p class="proj-desc">Shiny decision-support for IRC field teams. Application layer from causal forest targeting models — Cash vs Cash + Network with cost-aware rationale. Live app.</p>
-        <div class="proj-footer">
-          <span class="proj-tags"><span>Shiny</span><span>Causal forest</span><span>6,260 participants</span></span>
-          <span class="proj-arrow">Case study &amp; live app →</span>
-        </div>
-      </div>
-    </a>
-
-    <a href="../posts/kisumu-cancer-dashboard/index.html" class="proj-card proj-half" data-category="delivery">
-      <div class="proj-thumb" style="background:#2a1a1a;height:180px;">
-        <div class="proj-thumb-pattern" style="--dot:#ffffff0d;"></div>
-        <img src="../img/with kisumu health team and professor nyongo during lauch of kisumu cancer dashboard .jpeg" alt="Kisumu cancer dashboard launch" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.55;" onerror="this.remove()">
-      </div>
-      <div class="proj-body">
-        <p class="proj-domain" style="color:#e07f7f;">KEMRI · Oncology data systems</p>
-        <h3 class="proj-title anchored">Kisumu cancer surveillance dashboard</h3>
-        <p class="proj-desc">Research data management for multi-year oncology records: REDCap architecture, quality systems, survival analysis, and a county-facing dashboard launched with local leadership.</p>
-        <div class="proj-footer">
-          <span class="proj-tags"><span>REDCap</span><span>Survival analysis</span><span>Tableau</span></span>
-          <span class="proj-arrow">Read delivery story →</span>
-        </div>
-      </div>
-    </a>
-
-  </div>
-
-  <!-- ─── RESEARCH ────────────────────── -->
-  <div class="proj-section-header" style="margin-bottom:1.2rem;">
-    <span class="section-eyebrow" style="margin-bottom:0;">Research &amp; evidence</span>
-  </div>
-  <div class="project-grid allProjects" style="margin-bottom:5rem;">
-
-    <a href="../research/thesis.html" class="proj-card proj-featured" data-category="research">
-      <div class="proj-thumb" style="background:#1a2e1a;">
-        <div class="proj-thumb-pattern" style="--dot:#ffffff10;"></div>
-        <img src="../img/ncd manuscript.png" alt="NCD financing manuscript" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.45;" onerror="this.remove()">
-      </div>
-      <div class="proj-body">
-        <p class="proj-domain" style="color:#7fbf7f;">MSc research · Forthcoming BMC Public Health</p>
-        <h3 class="proj-title anchored">Financial determinants of NCD care in rural primary facilities</h3>
-        <p class="proj-desc">Mixed-methods study across seven public primary care facilities in Seme Sub-County: facility decision space, stockouts, and financing architecture for hypertension and diabetes care.</p>
-
-        <div class="proj-thesis-plot" aria-label="Manuscript facility findings plot">
-          <p class="proj-thesis-plot-title">Manuscript data snapshot from 7 facilities</p>
-          <div class="proj-thesis-bars">
-            <div class="proj-thesis-bar" data-value="85.7">
-              <div class="proj-thesis-head">
-                <span class="proj-thesis-label">Frequent medicine stockouts</span>
-                <span class="proj-thesis-value">85.7%</span>
-              </div>
-              <div class="proj-thesis-track"><span class="proj-thesis-fill"></span></div>
-            </div>
-            <div class="proj-thesis-bar" data-value="100">
-              <div class="proj-thesis-head">
-                <span class="proj-thesis-label">Facilities without direct spending autonomy</span>
-                <span class="proj-thesis-value">100%</span>
-              </div>
-              <div class="proj-thesis-track"><span class="proj-thesis-fill"></span></div>
-            </div>
-            <div class="proj-thesis-bar" data-value="28.6">
-              <div class="proj-thesis-head">
-                <span class="proj-thesis-label">Facilities receiving direct county funding</span>
-                <span class="proj-thesis-value">28.6%</span>
-              </div>
-              <div class="proj-thesis-track"><span class="proj-thesis-fill"></span></div>
-            </div>
-            <div class="proj-thesis-bar" data-value="0">
-              <div class="proj-thesis-head">
-                <span class="proj-thesis-label">Facilities with dedicated NCD budget line</span>
-                <span class="proj-thesis-value">0%</span>
-              </div>
-              <div class="proj-thesis-track"><span class="proj-thesis-fill"></span></div>
-            </div>
-          </div>
-        </div>
-        <div class="proj-footer">
-          <span class="proj-tags"><span>First author</span><span>Mixed methods</span><span>Health financing</span></span>
-          <span class="proj-arrow">Read thesis →</span>
-        </div>
-      </div>
-    </a>
-
-    <a href="case-studies/ncd-financing-impact/index.html" class="proj-card proj-half" data-category="research">
-      <div class="proj-thumb" style="background:#1c2c1d;height:180px;">
-        <div class="proj-thumb-pattern" style="--dot:#ffffff10;"></div>
-      </div>
-      <div class="proj-body">
-        <p class="proj-domain" style="color:#7fbf7f;">Operations framing · Health financing</p>
-        <h3 class="proj-title anchored">NCD financing as an operations problem</h3>
-        <p class="proj-desc">Reframes the Kisumu chronic-care financing work for strategy and operations audiences: bottlenecks, levers, and scenario logic.</p>
-        <div class="proj-footer">
-          <span class="proj-tags"><span>Case study</span><span>Scenario model</span></span>
-          <span class="proj-arrow">Open →</span>
-        </div>
-      </div>
-    </a>
-
-    <a href="../posts/47-facility-decision-space-chronic-care/index.html" class="proj-card proj-half" data-category="research">
-      <div class="proj-thumb" style="background:#1e2a1e;height:180px;">
-        <div class="proj-thumb-pattern" style="--dot:#ffffff0d;"></div>
-      </div>
-      <div class="proj-body">
-        <p class="proj-domain" style="color:#7fbf7f;">Public essay · Health systems</p>
-        <h3 class="proj-title anchored">When clinics can diagnose but cannot buy medicines</h3>
-        <p class="proj-desc">Plain-language argument from the BMC paper: budgets, approval chains, and facility decision space.</p>
-        <div class="proj-footer">
-          <span class="proj-tags"><span>Essay</span><span>Policy translation</span></span>
-          <span class="proj-arrow">Read essay →</span>
-        </div>
-      </div>
-    </a>
-
-  </div>
-
-  <!-- ─── METHODS LAB ───────────────── -->
-  <div class="proj-section-header" style="margin-bottom:1.2rem;">
-    <span class="section-eyebrow" style="margin-bottom:0;">Methods lab</span>
-  </div>
-  <p class="section-sub" style="margin-top:-0.5rem;margin-bottom:1.5rem;">
-    Labeled demonstrations and tooling samples. Useful for methods conversation — not primary programme evidence.
-  </p>
-  <div class="project-grid allProjects" style="margin-bottom:2rem;">
-
-    <a href="data-engineering/etl-pipeline-architecture/index.html" class="proj-card proj-half" data-category="lab">
-      <div class="proj-thumb" style="background:#162233;height:180px;">
-        <div class="proj-thumb-pattern" style="--dot:#ffffff10;"></div>
-      </div>
-      <div class="proj-body">
-        <p class="proj-domain" style="color:#8cb5d9;">Demonstration · ETL</p>
-        <h3 class="proj-title anchored">ETL pipeline architecture</h3>
-        <p class="proj-desc">How raw survey and facility extracts move into validated reporting layers with reproducible R workflows and QA rules.</p>
-        <div class="proj-footer">
-          <span class="proj-tags"><span>Demo</span><span>R</span><span>Validation</span></span>
-          <span class="proj-arrow">Open →</span>
-        </div>
-      </div>
-    </a>
-
-    <a href="analytics-engineering/healthcare-readmission-risk/index.html" class="proj-card proj-half" data-category="lab">
-      <div class="proj-thumb" style="background:#111a24;height:180px;">
-        <div class="proj-thumb-pattern" style="--dot:#ffffff10;"></div>
-      </div>
-      <div class="proj-body">
-        <p class="proj-domain" style="color:#8cb5d9;">Demonstration · Predictive workflow</p>
-        <h3 class="proj-title anchored">Healthcare readmission risk (synthetic)</h3>
-        <p class="proj-desc">Portfolio demonstration of feature design, validation, and operational scoring on synthetic discharge data — not a deployed clinical product.</p>
-        <div class="proj-footer">
-          <span class="proj-tags"><span>Demo</span><span>XGBoost</span><span>Synthetic data</span></span>
-          <span class="proj-arrow">Open →</span>
-        </div>
-      </div>
-    </a>
-
-    <a href="ai-applications/research-brief-generator/index.html" class="proj-card proj-half" data-category="lab">
-      <div class="proj-thumb" style="background:#1a2030;height:180px;">
-        <div class="proj-thumb-pattern" style="--dot:#ffffff10;"></div>
-      </div>
-      <div class="proj-body">
-        <p class="proj-domain" style="color:#8cb5d9;">Demonstration · LLM workflow</p>
-        <h3 class="proj-title anchored">Research brief generator</h3>
-        <p class="proj-desc">Structured workflow for turning long-form research inputs into implementation-style briefs with a consistent schema.</p>
-        <div class="proj-footer">
-          <span class="proj-tags"><span>Demo</span><span>Python</span><span>LLM</span></span>
-          <span class="proj-arrow">Open →</span>
-        </div>
-      </div>
-    </a>
-
-    <a href="dashboards/health-financing-real-time/index.html" class="proj-card proj-half" data-category="lab">
-      <div class="proj-thumb" style="background:#15251d;height:180px;">
-        <div class="proj-thumb-pattern" style="--dot:#ffffff10;"></div>
-      </div>
-      <div class="proj-body">
-        <p class="proj-domain" style="color:#8cb5d9;">Demonstration · Dashboard concept</p>
-        <h3 class="proj-title anchored">Health financing KPI dashboard (synthetic)</h3>
-        <p class="proj-desc">Shiny concept for reimbursement lag, stockout risk, and facility priorities — illustrative data only.</p>
-        <div class="proj-footer">
-          <span class="proj-tags"><span>Demo</span><span>Shiny</span><span>KPIs</span></span>
-          <span class="proj-arrow">Open →</span>
-        </div>
-      </div>
-    </a>
-
-  </div>
-
-</div>
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<div class="quarto-title-block"><div><h1 class="title">Software</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<p class="subtitle lead">Public tools in planning — scoped to real research ops pain</p>
 </div>
 
-<script>
-(function() {
-  var filters = document.querySelectorAll('.proj-filter');
-  var cards = document.querySelectorAll('.allProjects .proj-card');
-  var chartFills = document.querySelectorAll('.proj-thesis-fill');
-
-  function animateThesisPlot() {
-    chartFills.forEach(function(fill) {
-      var parent = fill.closest('.proj-thesis-bar');
-      if (!parent) return;
-      var value = Number(parent.dataset.value || 0);
-      fill.style.width = Math.max(0, Math.min(100, value)) + '%';
-    });
-  }
-
-  if (chartFills.length) {
-    if ('IntersectionObserver' in window) {
-      var chart = document.querySelector('.proj-thesis-plot');
-      if (chart) {
-        var seen = false;
-        var observer = new IntersectionObserver(function(entries) {
-          entries.forEach(function(entry) {
-            if (entry.isIntersecting && !seen) {
-              seen = true;
-              animateThesisPlot();
-            }
-          });
-        }, {threshold: 0.25});
-        observer.observe(chart);
-      } else {
-        animateThesisPlot();
-      }
-    } else {
-      animateThesisPlot();
-    }
-  }
-
-  filters.forEach(function(btn) {
-    btn.addEventListener('click', function() {
-      filters.forEach(function(b) {
-        b.classList.remove('active');
-        b.setAttribute('aria-selected', 'false');
-      });
-      this.classList.add('active');
-      this.setAttribute('aria-selected', 'true');
-      var f = this.getAttribute('data-filter');
-      cards.forEach(function(card) {
-        var cat = card.getAttribute('data-category') || '';
-        var show = (f === 'all') || (cat === f);
-        card.style.display = show ? '' : 'none';
-      });
-    });
-  });
-})();
-</script>
 
 
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>I only start packages when they solve a problem I have already hit in programme research. Two are in public scope now.</p>
+<section id="surveyflow" class="level2">
+<h2 class="anchored" data-anchor-id="surveyflow">surveyflow</h2>
+<p><strong>Research data operations helpers</strong> for survey and HFC workflows (ODK/Kobo-style exports, completeness, ID audits).</p>
+<ul>
+<li><a href="surveyflow/README.md">README / scope</a><br>
+</li>
+<li>Related: <a href="../projects/health-financial-diaries/index.html">diaries systems</a> · <a href="../posts/24-mobile-data-collection/index.html">mobile data collection</a></li>
+</ul>
+</section>
+<section id="ncdfinance" class="level2">
+<h2 class="anchored" data-anchor-id="ncdfinance">ncdfinance</h2>
+<p><strong>Facility NCD financing analysis helpers</strong> aligned with the Kisumu mixed-methods research (indicators, decision-space summaries, transparent scenarios).</p>
+<ul>
+<li><a href="ncdfinance/README.md">README / scope</a><br>
+</li>
+<li>Related: <a href="../research/thesis.html">thesis</a> · <a href="../posts/47-facility-decision-space-chronic-care/index.html">decision-space essay</a></li>
+</ul>
+</section>
+<section id="principles" class="level2">
+<h2 class="anchored" data-anchor-id="principles">Principles</h2>
+<ol type="1">
+<li>No real household or patient microdata in public repos<br>
+</li>
+<li>Synthetic examples only until partners clear anything more<br>
+</li>
+<li>Prefer small, documented recipes over framework bloat<br>
+</li>
+<li>Ship when a vignette can re-run on a clean machine</li>
+</ol>
+<p><a href="mailto:nichodemuswerre@gmail.com">Contact</a> if you want to collaborate on either package.</p>
+
+
+<!-- -->
+
+</section>
 
 </main> <!-- /main -->
 <script>
@@ -712,6 +507,119 @@ ul.task-list li input[type="checkbox"] {
       icon: icon
     };
     anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+    const viewSource = window.document.getElementById('quarto-view-source') ||
+                       window.document.getElementById('quarto-code-tools-source');
+    if (viewSource) {
+      const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+      viewSource.addEventListener("click", function(e) {
+        if (sourceUrl) {
+          // rstudio viewer pane
+          if (/\bcapabilities=\b/.test(window.location)) {
+            window.open(sourceUrl);
+          } else {
+            window.location.href = sourceUrl;
+          }
+        } else {
+          const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+          modal.show();
+        }
+        return false;
+      });
+    }
+    function toggleCodeHandler(show) {
+      return function(e) {
+        const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+        for (let i=0; i<detailsSrc.length; i++) {
+          const details = detailsSrc[i].parentElement;
+          if (show) {
+            details.open = true;
+          } else {
+            details.removeAttribute("open");
+          }
+        }
+        const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+        const fromCls = show ? "hidden" : "unhidden";
+        const toCls = show ? "unhidden" : "hidden";
+        for (let i=0; i<cellCodeDivs.length; i++) {
+          const codeDiv = cellCodeDivs[i];
+          if (codeDiv.classList.contains(fromCls)) {
+            codeDiv.classList.remove(fromCls);
+            codeDiv.classList.add(toCls);
+          } 
+        }
+        return false;
+      }
+    }
+    const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+    if (hideAllCode) {
+      hideAllCode.addEventListener("click", toggleCodeHandler(false));
+    }
+    const showAllCode = window.document.getElementById("quarto-show-all-code");
+    if (showAllCode) {
+      showAllCode.addEventListener("click", toggleCodeHandler(true));
+    }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
         var filterRegex = new RegExp("https:\/\/gondamol\.github\.io");
@@ -1045,7 +953,39 @@ ul.task-list li input[type="checkbox"] {
       }
     }
   });
-  </script>
+  </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Software"</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">subtitle:</span><span class="co"> "Public tools in planning — scoped to real research ops pain"</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="an">page-layout:</span><span class="co"> article</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="an">toc:</span><span class="co"> false</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>I only start packages when they solve a problem I have already hit in programme research. Two are in public scope now.</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="fu">## surveyflow</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>**Research data operations helpers** for survey and HFC workflows (ODK/Kobo-style exports, completeness, ID audits).</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">README / scope</span><span class="co">](surveyflow/README.md)</span>  </span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Related: <span class="co">[</span><span class="ot">diaries systems</span><span class="co">](../projects/health-financial-diaries/index.qmd)</span> · <span class="co">[</span><span class="ot">mobile data collection</span><span class="co">](../posts/24-mobile-data-collection/index.qmd)</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="fu">## ncdfinance</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>**Facility NCD financing analysis helpers** aligned with the Kisumu mixed-methods research (indicators, decision-space summaries, transparent scenarios).</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">README / scope</span><span class="co">](ncdfinance/README.md)</span>  </span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Related: <span class="co">[</span><span class="ot">thesis</span><span class="co">](../research/thesis.qmd)</span> · <span class="co">[</span><span class="ot">decision-space essay</span><span class="co">](../posts/47-facility-decision-space-chronic-care/index.qmd)</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="fu">## Principles</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>No real household or patient microdata in public repos  </span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Synthetic examples only until partners clear anything more  </span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Prefer small, documented recipes over framework bloat  </span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>Ship when a vignette can re-run on a clean machine  </span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Contact</span><span class="co">](mailto:nichodemuswerre@gmail.com)</span> if you want to collaborate on either package.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+</div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">

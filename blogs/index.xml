@@ -8,800 +8,9 @@
 <title>Nic | Data</title>
 <link>https://gondamol.github.io/blogs/</link>
 <atom:link href="https://gondamol.github.io/blogs/index.xml" rel="self" type="application/rss+xml"/>
-<description>Data Analyst &amp; Research Data Manager — M&amp;E, Health Analytics, Agriculture, Finance — Nairobi, Kenya</description>
+<description>Research data systems for health and development programmes — field instruments, quality architecture, and decision products. Nairobi, Kenya.</description>
 <generator>quarto-1.8.27</generator>
-<lastBuildDate>Thu, 16 Apr 2026 21:00:00 GMT</lastBuildDate>
-<item>
-  <title>Analyzing Agricultural Data from Public Sources</title>
-  <dc:creator>Nichodemus Amollo</dc:creator>
-  <link>https://gondamol.github.io/posts/agriculture-data-analysis/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<section id="analyzing-agricultural-data" class="level1 hero-banner">
-<h1><strong>Analyzing Agricultural Data</strong></h1>
-<p>A comprehensive guide to sourcing, cleaning, and analyzing agriculture datasets from Kaggle and other public sources</p>
-</section>
-<section id="introduction" class="level2">
-<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
-<p>Agricultural data analysis is crucial for understanding food security, crop productivity, and farming economics. In this post, we’ll explore how to source, clean, and analyze agriculture datasets from Kaggle and other public repositories.</p>
-</section>
-<section id="data-sources" class="level2">
-<h2 class="anchored" data-anchor-id="data-sources">Data Sources</h2>
-<section id="kaggle-datasets" class="level3">
-<h3 class="anchored" data-anchor-id="kaggle-datasets">Kaggle Datasets</h3>
-<ol type="1">
-<li><strong>Crop Production Data</strong>
-<ul>
-<li>Global crop yields</li>
-<li>Regional production statistics</li>
-<li>Climate impact on agriculture</li>
-</ul></li>
-<li><strong>Farm Economics</strong>
-<ul>
-<li>Cost of production</li>
-<li>Market prices</li>
-<li>Profitability analysis</li>
-</ul></li>
-<li><strong>Agricultural Trade</strong>
-<ul>
-<li>Export/import statistics</li>
-<li>Trade flows</li>
-<li>Market trends</li>
-</ul></li>
-</ol>
-</section>
-<section id="other-public-sources" class="level3">
-<h3 class="anchored" data-anchor-id="other-public-sources">Other Public Sources</h3>
-<ul>
-<li>FAO Statistics</li>
-<li>World Bank Agricultural Data</li>
-<li>USDA Datasets</li>
-<li>Open Government Data Portals</li>
-</ul>
-</section>
-</section>
-<section id="example-analysis" class="level2">
-<h2 class="anchored" data-anchor-id="example-analysis">Example Analysis</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">#| echo: true</span></span>
-<span id="cb1-2"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">#| eval: false</span></span>
-<span id="cb1-3"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">#| fig-width: 12</span></span>
-<span id="cb1-4"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">#| fig-height: 8</span></span>
-<span id="cb1-5"></span>
-<span id="cb1-6"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">library</span>(tidyverse)</span>
-<span id="cb1-7"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">library</span>(ggplot2)</span>
-<span id="cb1-8"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">library</span>(plotly)</span>
-<span id="cb1-9"></span>
-<span id="cb1-10"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Load sample agriculture data</span></span>
-<span id="cb1-11"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># In practice, you would load from Kaggle or other source</span></span>
-<span id="cb1-12"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">set.seed</span>(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">123</span>)</span>
-<span id="cb1-13">ag_data <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">data.frame</span>(</span>
-<span id="cb1-14">  <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">year =</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">rep</span>(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2015</span><span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">:</span><span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2024</span>, <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">each =</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">4</span>),</span>
-<span id="cb1-15">  <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">crop =</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">rep</span>(<span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">c</span>(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"Maize"</span>, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"Wheat"</span>, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"Rice"</span>, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"Beans"</span>), <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">10</span>),</span>
-<span id="cb1-16">  <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">yield =</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">c</span>(</span>
-<span id="cb1-17">    <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">rnorm</span>(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">10</span>, <span class="fl" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">3.5</span>, <span class="fl" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0.5</span>),  <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Maize</span></span>
-<span id="cb1-18">    <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">rnorm</span>(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">10</span>, <span class="fl" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2.8</span>, <span class="fl" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0.4</span>),  <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Wheat</span></span>
-<span id="cb1-19">    <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">rnorm</span>(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">10</span>, <span class="fl" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">4.2</span>, <span class="fl" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0.6</span>),  <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Rice</span></span>
-<span id="cb1-20">    <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">rnorm</span>(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">10</span>, <span class="fl" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1.8</span>, <span class="fl" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0.3</span>)   <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Beans</span></span>
-<span id="cb1-21">  ),</span>
-<span id="cb1-22">  <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">region =</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">rep</span>(<span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">c</span>(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"North"</span>, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"South"</span>, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"East"</span>, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"West"</span>), <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">10</span>)</span>
-<span id="cb1-23">)</span>
-<span id="cb1-24"></span>
-<span id="cb1-25"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Create visualization</span></span>
-<span id="cb1-26">p <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">ggplot</span>(ag_data, <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">aes</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">x =</span> year, <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">y =</span> yield, <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">color =</span> crop)) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span></span>
-<span id="cb1-27">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">geom_line</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">size =</span> <span class="fl" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1.2</span>, <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">alpha =</span> <span class="fl" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0.7</span>) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span></span>
-<span id="cb1-28">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">geom_point</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">size =</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2</span>) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span></span>
-<span id="cb1-29">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">facet_wrap</span>(<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">~</span>region, <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">ncol =</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2</span>) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span></span>
-<span id="cb1-30">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">scale_color_manual</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">values =</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">c</span>(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"#667eea"</span>, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"#764ba2"</span>, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"#f093fb"</span>, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"#4facfe"</span>)) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span></span>
-<span id="cb1-31">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">labs</span>(</span>
-<span id="cb1-32">    <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">title =</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"Crop Yield Trends by Region (2015-2024)"</span>,</span>
-<span id="cb1-33">    <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">subtitle =</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"Analysis of major crops across different regions"</span>,</span>
-<span id="cb1-34">    <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">x =</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"Year"</span>,</span>
-<span id="cb1-35">    <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">y =</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"Yield (tons/ha)"</span>,</span>
-<span id="cb1-36">    <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">color =</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"Crop"</span>,</span>
-<span id="cb1-37">    <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">caption =</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"Source: Public Agriculture Dataset | Analysis: Nichodemus Amollo"</span></span>
-<span id="cb1-38">  ) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span></span>
-<span id="cb1-39">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">theme_minimal</span>() <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span></span>
-<span id="cb1-40">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">theme</span>(</span>
-<span id="cb1-41">    <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">plot.title =</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">element_text</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">face =</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"bold"</span>, <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">size =</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">16</span>),</span>
-<span id="cb1-42">    <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">strip.text =</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">element_text</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">face =</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"bold"</span>)</span>
-<span id="cb1-43">  )</span>
-<span id="cb1-44"></span>
-<span id="cb1-45"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">print</span>(p)</span></code></pre></div></div>
-</section>
-<section id="key-insights" class="level2">
-<h2 class="anchored" data-anchor-id="key-insights">Key Insights</h2>
-<ol type="1">
-<li><strong>Yield Trends</strong>: Analyze productivity over time</li>
-<li><strong>Regional Variations</strong>: Compare performance across regions</li>
-<li><strong>Crop Comparison</strong>: Identify most productive crops</li>
-<li><strong>Seasonal Patterns</strong>: Understand temporal trends</li>
-</ol>
-</section>
-<section id="applications" class="level2">
-<h2 class="anchored" data-anchor-id="applications">Applications</h2>
-<ul>
-<li><strong>Policy Making</strong>: Evidence-based agricultural policies</li>
-<li><strong>Farm Planning</strong>: Data-driven crop selection</li>
-<li><strong>Market Analysis</strong>: Price and demand forecasting</li>
-<li><strong>Research</strong>: Academic research on food security</li>
-</ul>
-</section>
-<section id="resources" class="level2">
-<h2 class="anchored" data-anchor-id="resources">Resources</h2>
-<ul>
-<li><a href="https://www.kaggle.com/datasets?tags=13207-Agriculture">Kaggle Agriculture Datasets</a></li>
-<li><a href="http://www.fao.org/faostat/en/">FAO Statistics</a></li>
-<li><a href="https://data.worldbank.org/topic/agriculture-and-rural-development">World Bank Agriculture Data</a></li>
-</ul>
-<hr>
-<p><a href="../../blogs/index.html">← Back to Blog</a> | <a href="../../projects/agriculture/index.qmd">View Agriculture Projects</a></p>
-
-
-<!-- -->
-
-</section>
-
- ]]></description>
-  <category>Agriculture</category>
-  <category>Data Analysis</category>
-  <category>Kaggle</category>
-  <guid>https://gondamol.github.io/posts/agriculture-data-analysis/</guid>
-  <pubDate>Thu, 16 Apr 2026 21:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Creating Beautiful Data Visualizations with R and Python</title>
-  <dc:creator>Nichodemus Amollo</dc:creator>
-  <link>https://gondamol.github.io/posts/data-viz-blog-1/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<section id="creating-beautiful-data-visualizations" class="level1 hero-banner">
-<h1><strong>Creating Beautiful Data Visualizations</strong></h1>
-<p>A comprehensive guide to modern data visualization techniques in R and Python</p>
-</section>
-<section id="introduction" class="level2">
-<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
-<p>Data visualization is one of the most important skills for any data scientist or analyst. In this post, we’ll explore advanced techniques for creating publication-quality visualizations using R and Python.</p>
-</section>
-<section id="why-visualization-matters" class="level2">
-<h2 class="anchored" data-anchor-id="why-visualization-matters">Why Visualization Matters</h2>
-<p>Visualizations help us: - <strong>Communicate insights</strong> clearly to stakeholders - <strong>Explore data</strong> and discover patterns - <strong>Support decision-making</strong> with evidence - <strong>Tell compelling stories</strong> with data</p>
-</section>
-<section id="r-visualization-ggplot2-mastery" class="level2">
-<h2 class="anchored" data-anchor-id="r-visualization-ggplot2-mastery">R Visualization: ggplot2 Mastery</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">#| echo: true</span></span>
-<span id="cb1-2"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">#| eval: false</span></span>
-<span id="cb1-3"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">#| fig-width: 12</span></span>
-<span id="cb1-4"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">#| fig-height: 8</span></span>
-<span id="cb1-5"></span>
-<span id="cb1-6"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">library</span>(ggplot2)</span>
-<span id="cb1-7"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">library</span>(dplyr)</span>
-<span id="cb1-8"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">library</span>(patchwork)</span>
-<span id="cb1-9"></span>
-<span id="cb1-10"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Create sample data</span></span>
-<span id="cb1-11">data <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">data.frame</span>(</span>
-<span id="cb1-12">  <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">category =</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">rep</span>(<span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">c</span>(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"A"</span>, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"B"</span>, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"C"</span>), <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">each =</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">100</span>),</span>
-<span id="cb1-13">  <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">value =</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">c</span>(<span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">rnorm</span>(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">100</span>, <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">10</span>, <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2</span>), <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">rnorm</span>(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">100</span>, <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">15</span>, <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">3</span>), <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">rnorm</span>(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">100</span>, <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">12</span>, <span class="fl" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2.5</span>)),</span>
-<span id="cb1-14">  <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">date =</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">seq.Date</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">from =</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">as.Date</span>(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"2024-01-01"</span>), <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">by =</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"day"</span>, <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">length.out =</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">300</span>)</span>
-<span id="cb1-15">)</span>
-<span id="cb1-16"></span>
-<span id="cb1-17"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Advanced ggplot2 visualization</span></span>
-<span id="cb1-18">p1 <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">ggplot</span>(data, <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">aes</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">x =</span> date, <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">y =</span> value, <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">color =</span> category)) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span></span>
-<span id="cb1-19">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">geom_line</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">size =</span> <span class="fl" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1.2</span>, <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">alpha =</span> <span class="fl" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0.7</span>) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span></span>
-<span id="cb1-20">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">scale_color_manual</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">values =</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">c</span>(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"#667eea"</span>, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"#764ba2"</span>, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"#f093fb"</span>)) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span></span>
-<span id="cb1-21">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">labs</span>(</span>
-<span id="cb1-22">    <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">title =</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"Time Series Visualization"</span>,</span>
-<span id="cb1-23">    <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">subtitle =</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"Advanced ggplot2 techniques"</span>,</span>
-<span id="cb1-24">    <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">x =</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"Date"</span>,</span>
-<span id="cb1-25">    <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">y =</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"Value"</span>,</span>
-<span id="cb1-26">    <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">color =</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"Category"</span></span>
-<span id="cb1-27">  ) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span></span>
-<span id="cb1-28">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">theme_minimal</span>() <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span></span>
-<span id="cb1-29">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">theme</span>(</span>
-<span id="cb1-30">    <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">plot.title =</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">element_text</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">face =</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"bold"</span>, <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">size =</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">18</span>),</span>
-<span id="cb1-31">    <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">legend.position =</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"bottom"</span></span>
-<span id="cb1-32">  )</span>
-<span id="cb1-33"></span>
-<span id="cb1-34"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">print</span>(p1)</span></code></pre></div></div>
-<section id="key-ggplot2-techniques" class="level3">
-<h3 class="anchored" data-anchor-id="key-ggplot2-techniques">Key ggplot2 Techniques</h3>
-<ol type="1">
-<li><strong>Faceting</strong>: Create multiple plots</li>
-<li><strong>Custom Themes</strong>: Professional styling</li>
-<li><strong>Statistical Transformations</strong>: Built-in statistical analysis</li>
-<li><strong>Animated Plots</strong>: Using gganimate</li>
-</ol>
-</section>
-</section>
-<section id="python-visualization-matplotlib-seaborn" class="level2">
-<h2 class="anchored" data-anchor-id="python-visualization-matplotlib-seaborn">Python Visualization: Matplotlib &amp; Seaborn</h2>
-<p>Python provides excellent visualization libraries for creating statistical and interactive plots:</p>
-<p><strong>Key Python Visualization Libraries:</strong> - <strong>Matplotlib</strong>: Publication-quality static plots - <strong>Seaborn</strong>: Statistical visualizations built on Matplotlib - <strong>Plotly</strong>: Interactive web-based visualizations - <strong>Bokeh</strong>: Modern browser visualizations</p>
-<p><strong>Example Python Code</strong> (using Matplotlib and Seaborn):</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">import</span> matplotlib.pyplot <span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">as</span> plt</span>
-<span id="cb2-2"><span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">import</span> seaborn <span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">as</span> sns</span>
-<span id="cb2-3"><span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">import</span> pandas <span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">as</span> pd</span>
-<span id="cb2-4"><span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">import</span> numpy <span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">as</span> np</span>
-<span id="cb2-5"></span>
-<span id="cb2-6"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Set style</span></span>
-<span id="cb2-7">sns.set_style(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"whitegrid"</span>)</span>
-<span id="cb2-8">plt.rcParams[<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'figure.figsize'</span>] <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> (<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">12</span>, <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">8</span>)</span>
-<span id="cb2-9"></span>
-<span id="cb2-10"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Create sample data</span></span>
-<span id="cb2-11">np.random.seed(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">123</span>)</span>
-<span id="cb2-12">data <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> pd.DataFrame({</span>
-<span id="cb2-13">    <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'x'</span>: np.random.randn(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">100</span>),</span>
-<span id="cb2-14">    <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'y'</span>: np.random.randn(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">100</span>),</span>
-<span id="cb2-15">    <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'category'</span>: np.random.choice([<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'A'</span>, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'B'</span>, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'C'</span>], <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">100</span>)</span>
-<span id="cb2-16">})</span>
-<span id="cb2-17"></span>
-<span id="cb2-18"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Create visualization</span></span>
-<span id="cb2-19">fig, ax <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> plt.subplots()</span>
-<span id="cb2-20">sns.scatterplot(data<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span>data, x<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span><span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'x'</span>, y<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span><span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'y'</span>, hue<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span><span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'category'</span>, s<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">100</span>, alpha<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span><span class="fl" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0.7</span>)</span>
-<span id="cb2-21">plt.title(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'Scatter Plot with Seaborn'</span>, fontsize<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">16</span>, fontweight<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span><span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'bold'</span>)</span>
-<span id="cb2-22">plt.xlabel(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'X Variable'</span>)</span>
-<span id="cb2-23">plt.ylabel(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'Y Variable'</span>)</span>
-<span id="cb2-24">plt.tight_layout()</span>
-<span id="cb2-25">plt.show()</span></code></pre></div></div>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><strong>Note</strong>: To run Python code in Quarto, ensure you have Python installed and the <code>reticulate</code> package in R: <code>install.packages("reticulate")</code></p>
-</div>
-</div>
-</section>
-<section id="interactive-visualizations" class="level2">
-<h2 class="anchored" data-anchor-id="interactive-visualizations">Interactive Visualizations</h2>
-<p>For interactive dashboards and web-based visualizations, consider: - <strong>R</strong>: Plotly, Shiny - <strong>Python</strong>: Plotly Dash, Bokeh - <strong>JavaScript</strong>: D3.js, React + D3</p>
-</section>
-<section id="best-practices" class="level2">
-<h2 class="anchored" data-anchor-id="best-practices">Best Practices</h2>
-<ol type="1">
-<li><strong>Choose appropriate chart types</strong></li>
-<li><strong>Use color effectively</strong></li>
-<li><strong>Ensure accessibility</strong></li>
-<li><strong>Keep it simple</strong></li>
-<li><strong>Tell a story</strong></li>
-</ol>
-</section>
-<section id="conclusion" class="level2">
-<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
-<p>Mastering data visualization requires practice and understanding of both the technical tools and design principles. Start with the basics and gradually incorporate advanced techniques.</p>
-</section>
-<section id="resources" class="level2">
-<h2 class="anchored" data-anchor-id="resources">Resources</h2>
-<ul>
-<li><a href="https://ggplot2.tidyverse.org/">ggplot2 Documentation</a></li>
-<li><a href="https://seaborn.pydata.org/examples/index.html">Seaborn Gallery</a></li>
-<li><a href="https://observablehq.com/@d3/gallery">D3.js Gallery</a></li>
-</ul>
-<hr>
-<p><a href="../../blogs/index.html">← Back to Blog</a> | <a href="../../visualizations/index.html">View All Visualizations</a></p>
-
-
-<!-- -->
-
-</section>
-
- ]]></description>
-  <category>Data Visualization</category>
-  <category>R</category>
-  <category>Python</category>
-  <guid>https://gondamol.github.io/posts/data-viz-blog-1/</guid>
-  <pubDate>Thu, 16 Apr 2026 21:00:00 GMT</pubDate>
-</item>
+<lastBuildDate>Mon, 16 Mar 2026 21:00:00 GMT</lastBuildDate>
 <item>
   <title>From Field to Model: Why Domain Knowledge Still Matters in ML</title>
   <dc:creator>Nichodemus Amollo</dc:creator>
@@ -1225,920 +434,7 @@ Note
   <media:content url="https://gondamol.github.io/img/blog-health.svg" medium="image" type="image/svg+xml"/>
 </item>
 <item>
-  <title>No Degree? No Problem. Break Into Data in 6 Months (Without Lying on Your CV)</title>
-  <dc:creator>Nichodemus Amollo</dc:creator>
-  <link>https://gondamol.github.io/posts/46-break-into-data-without-degree/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<section id="the-truth-degrees-help-portfolios-hire" class="level2">
-<h2 class="anchored" data-anchor-id="the-truth-degrees-help-portfolios-hire">The Truth: Degrees Help, Portfolios Hire</h2>
-<p>Do degrees help? Sure.<br>
-Do you <em>need</em> one to get into data analytics or data science? <strong>Not anymore.</strong></p>
-<p>What hiring managers really care about:</p>
-<ul>
-<li>Can you work with <strong>real, messy data</strong>?</li>
-<li>Can you communicate <strong>insights clearly</strong>?</li>
-<li>Can you take feedback and <strong>iterate quickly</strong>?</li>
-</ul>
-<p>You can prove all three without a traditional degree.</p>
-<hr>
-</section>
-<section id="step-1-pick-a-lane-so-you-dont-drown-in-tutorials" class="level2">
-<h2 class="anchored" data-anchor-id="step-1-pick-a-lane-so-you-dont-drown-in-tutorials">Step 1: Pick a Lane (So You Don’t Drown in Tutorials)</h2>
-<p>Instead of trying to “learn data,” pick one of these lanes for your first job:</p>
-<ul>
-<li><strong>Data Analyst</strong> – dashboards, SQL, Excel, business questions</li>
-<li><strong>Monitoring &amp; Evaluation Analyst</strong> – surveys, indicators, impact</li>
-<li><strong>Junior Data Scientist</strong> – modeling, experiments, ML basics</li>
-<li><strong>Analytics Engineer</strong> – data pipelines, SQL, BI models</li>
-</ul>
-<p>Pick <strong>one</strong> lane and let it guide:</p>
-<ul>
-<li>Which tools you learn first</li>
-<li>What projects you build</li>
-<li>Which roles you apply for</li>
-</ul>
-<hr>
-</section>
-<section id="step-2-learn-the-3-core-tools-deep-not-wide" class="level2">
-<h2 class="anchored" data-anchor-id="step-2-learn-the-3-core-tools-deep-not-wide">Step 2: Learn the 3 Core Tools (Deep, Not Wide)</h2>
-<p>For most entry roles, you need:</p>
-<ol type="1">
-<li><strong>SQL</strong> – join, filter, aggregate, window functions<br>
-</li>
-<li><strong>One analysis language</strong> – R or Python (not both at first)<br>
-</li>
-<li><strong>One visualization tool</strong> – Power BI, Tableau, or Quarto dashboards</li>
-</ol>
-<p>Your 6-month focus:</p>
-<ul>
-<li>60%: Practicing these tools on real datasets<br>
-</li>
-<li>30%: Turning outputs into <strong>portfolio projects</strong><br>
-</li>
-<li>10%: LinkedIn, CV, networking</li>
-</ul>
-<hr>
-</section>
-<section id="step-3-build-3-end-to-end-projects-not-30-mini-ones" class="level2">
-<h2 class="anchored" data-anchor-id="step-3-build-3-end-to-end-projects-not-30-mini-ones">Step 3: Build 3 End-to-End Projects (Not 30 Mini Ones)</h2>
-<p>Aim for <strong>three</strong> strong projects that show:</p>
-<ol type="1">
-<li><strong>Data Cleaning &amp; Quality</strong>
-<ul>
-<li>Take a messy public dataset</li>
-<li>Clean it and document issues</li>
-</ul></li>
-<li><strong>Analysis &amp; Storytelling</strong>
-<ul>
-<li>Answer 2–3 real questions (e.g., “Which regions are under-served?”)</li>
-<li>Use charts + plain-language explanations</li>
-</ul></li>
-<li><strong>Dashboard or Reproducible Report</strong>
-<ul>
-<li>Build something someone could use every month</li>
-<li>Host it (GitHub Pages, shinyapps, or screenshots + repo)</li>
-</ul></li>
-</ol>
-<p>Each project should live in a <strong>GitHub repo</strong> with:</p>
-<ul>
-<li>A clear README</li>
-<li>Screenshots or rendered reports</li>
-<li>A short story: problem → method → insights → recommendation</li>
-</ul>
-<hr>
-</section>
-<section id="step-4-package-your-story-for-recruiters-without-a-degree" class="level2">
-<h2 class="anchored" data-anchor-id="step-4-package-your-story-for-recruiters-without-a-degree">Step 4: Package Your Story for Recruiters (Without a Degree)</h2>
-<p>On your CV:</p>
-<ul>
-<li>Education:
-<ul>
-<li>List short, focused courses (not every YouTube video)</li>
-</ul></li>
-<li>Projects:
-<ul>
-<li>Highlight 3–5 strong portfolio pieces with links</li>
-</ul></li>
-<li>Skills:
-<ul>
-<li>Group by lane (e.g., “Analytics: SQL, Power BI, R”)</li>
-</ul></li>
-</ul>
-<p>On LinkedIn:</p>
-<ul>
-<li>Headline example:
-<ul>
-<li>“Entry-Level Data Analyst | SQL • Power BI • R | Built 3 End-to-End Analytics Projects”</li>
-</ul></li>
-<li>About section:
-<ul>
-<li>3–4 bullets with outcomes (e.g., “Built a health dashboard used by X people”)</li>
-</ul></li>
-</ul>
-<p>You’re not selling a <strong>degree</strong>—you’re selling <strong>evidence</strong>.</p>
-<hr>
-</section>
-<section id="step-5-apply-strategically-not-to-300-jobs" class="level2">
-<h2 class="anchored" data-anchor-id="step-5-apply-strategically-not-to-300-jobs">Step 5: Apply Strategically (Not to 300 Jobs)</h2>
-<p>Target:</p>
-<ul>
-<li>Roles with:
-<ul>
-<li>“Junior”, “Analyst”, “Assistant”, “Associate”</li>
-<li>Remote-friendly or flexible on degrees</li>
-</ul></li>
-<li>Organizations where:
-<ul>
-<li>Data is important but teams are still small (NGOs, startups, research labs)</li>
-</ul></li>
-</ul>
-<p>For each application:</p>
-<ul>
-<li>Mention <strong>one</strong> of your projects that matches their domain</li>
-<li>Link a dashboard or report that feels relevant</li>
-</ul>
-<p>Instead of sending 300 generic applications, send <strong>50 thoughtful ones</strong> with a clear signal:</p>
-<blockquote class="blockquote">
-<p>“Even without a degree, I’ve done the kind of work you need.”</p>
-</blockquote>
-<p>That’s how you turn “no degree” from a weakness into a <strong>story of initiative and self-learning</strong>.</p>
-
-
-<!-- -->
-
-</section>
-
- ]]></description>
-  <category>Career</category>
-  <category>Data Analytics</category>
-  <category>Data Science</category>
-  <category>Beginners</category>
-  <guid>https://gondamol.github.io/posts/46-break-into-data-without-degree/</guid>
-  <pubDate>Fri, 14 Nov 2025 21:00:00 GMT</pubDate>
-  <media:content url="https://gondamol.github.io/img/blog-analytics.svg" medium="image" type="image/svg+xml"/>
-</item>
-<item>
-  <title>Build Your First Impact Dashboard in R (Even If You’ve Never Shipped a Shiny App)</title>
-  <dc:creator>Nichodemus Amollo</dc:creator>
-  <link>https://gondamol.github.io/posts/45-beginner-impact-dashboard-in-r/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<section id="why-start-with-a-simple-dashboard" class="level2">
-<h2 class="anchored" data-anchor-id="why-start-with-a-simple-dashboard">Why Start with a Simple Dashboard</h2>
-<p>You don’t need a complex app:</p>
-<ul>
-<li>2–3 tabs</li>
-<li>5–7 key indicators</li>
-<li>Clear filters (date, geography, facility)</li>
-</ul>
-<p>Your goal is to:</p>
-<ul>
-<li>Show <strong>you can move from static charts to interactive tools</strong></li>
-<li>Give program teams something they can actually use</li>
-</ul>
-<hr>
-</section>
-<section id="a-minimal-architecture" class="level2">
-<h2 class="anchored" data-anchor-id="a-minimal-architecture">A Minimal Architecture</h2>
-<ul>
-<li>Data:
-<ul>
-<li>A clean table of events/visits</li>
-<li>A lookup table for facilities/geographies</li>
-</ul></li>
-<li>R:
-<ul>
-<li><code>shiny</code> or <code>flexdashboard</code></li>
-<li><code>dplyr</code> + <code>ggplot2</code></li>
-</ul></li>
-</ul>
-<p>Tabs:</p>
-<ol type="1">
-<li>Overview</li>
-<li>Trends</li>
-<li>Disaggregation</li>
-</ol>
-<hr>
-</section>
-<section id="portfolio-tip" class="level2">
-<h2 class="anchored" data-anchor-id="portfolio-tip">Portfolio Tip</h2>
-<p>Host your dashboard:</p>
-<ul>
-<li>On shinyapps.io (free tier)</li>
-<li>Or publish screenshots + code on GitHub</li>
-</ul>
-<p>Include in your CV:</p>
-<blockquote class="blockquote">
-<p>“Built and deployed an interactive dashboard showing X indicators across Y facilities, used by Z stakeholders for quarterly review.”</p>
-</blockquote>
-<p>This single project can dramatically elevate your profile as a junior analyst or M&amp;E specialist.</p>
-
-
-<!-- -->
-
-</section>
-
- ]]></description>
-  <category>Dashboards</category>
-  <category>R</category>
-  <category>Monitoring &amp; Evaluation</category>
-  <guid>https://gondamol.github.io/posts/45-beginner-impact-dashboard-in-r/</guid>
-  <pubDate>Thu, 13 Nov 2025 21:00:00 GMT</pubDate>
-  <media:content url="https://gondamol.github.io/img/blog-analytics.svg" medium="image" type="image/svg+xml"/>
-</item>
-<item>
-  <title>20 Health Data Science Project Ideas That Go Beyond Kaggle</title>
-  <dc:creator>Nichodemus Amollo</dc:creator>
-  <link>https://gondamol.github.io/posts/44-health-data-science-project-ideas/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<section id="why-you-need-health-specific-projects" class="level2">
-<h2 class="anchored" data-anchor-id="why-you-need-health-specific-projects">Why You Need Health-Specific Projects</h2>
-<p>Generic projects:</p>
-<ul>
-<li>Titanic survival</li>
-<li>MNIST digits</li>
-</ul>
-<p>…don’t show that you understand <strong>health systems, patients, and financing</strong>.</p>
-<p>Health-specific projects do.</p>
-<hr>
-</section>
-<section id="themes-with-project-ideas" class="level2">
-<h2 class="anchored" data-anchor-id="themes-with-project-ideas">5 Themes with Project Ideas</h2>
-<ol type="1">
-<li><strong>Non-Communicable Diseases (NCDs)</strong>
-<ul>
-<li>Blood pressure control dashboard</li>
-<li>Diabetes retention analysis</li>
-</ul></li>
-<li><strong>Maternal &amp; Child Health</strong>
-<ul>
-<li>ANC coverage inequalities</li>
-<li>Facility delivery vs home delivery patterns</li>
-</ul></li>
-<li><strong>Health Financing</strong>
-<ul>
-<li>Out-of-pocket burden by quintile</li>
-<li>Financial diary simulations</li>
-</ul></li>
-<li><strong>Service Delivery &amp; Readiness</strong>
-<ul>
-<li>Facility readiness index</li>
-<li>Service availability and readiness mapping</li>
-</ul></li>
-<li><strong>Human Resources for Health</strong>
-<ul>
-<li>Health worker distribution and workload</li>
-<li>Attrition and retention analysis</li>
-</ul></li>
-</ol>
-<hr>
-</section>
-<section id="how-to-make-these-projects-credible" class="level2">
-<h2 class="anchored" data-anchor-id="how-to-make-these-projects-credible">How to Make These Projects Credible</h2>
-<ul>
-<li>Use real or realistic data</li>
-<li>Ground them in:
-<ul>
-<li>WHO frameworks</li>
-<li>Your country’s health policies</li>
-</ul></li>
-<li>Include:
-<ul>
-<li>Clear data limitations</li>
-<li>Equity and access discussion</li>
-</ul></li>
-</ul>
-<p>This turns your portfolio into a <strong>signal of real-world understanding</strong>, not just coding practice.</p>
-
-
-<!-- -->
-
-</section>
-
- ]]></description>
-  <category>Health Data</category>
-  <category>Projects</category>
-  <category>Portfolio</category>
-  <guid>https://gondamol.github.io/posts/44-health-data-science-project-ideas/</guid>
-  <pubDate>Wed, 12 Nov 2025 21:00:00 GMT</pubDate>
-  <media:content url="https://gondamol.github.io/img/blog-health.svg" medium="image" type="image/svg+xml"/>
-</item>
-<item>
-  <title>Quarto for Evaluators: Turn Your Analysis into Auto-Updated Donor Reports</title>
-  <dc:creator>Nichodemus Amollo</dc:creator>
-  <link>https://gondamol.github.io/posts/43-quarto-for-evaluators/</link>
-  <description><![CDATA[ 
-<script src="https://cdn.jsdelivr.net/npm/monaco-editor@0.47.0/min/vs/loader.js"></script>
-<script type="module" id="qwebr-monaco-editor-init">
-
-  // Configure the Monaco Editor's loader
-  require.config({
-    paths: {
-      'vs': 'https://cdn.jsdelivr.net/npm/monaco-editor@0.47.0/min/vs'
-    }
-  });
-</script>
-<script type="module">
-// Function to update Monaco Editors when body class changes
-function updateMonacoEditorsOnBodyClassChange() {
-    // Select the body element
-    const body = document.querySelector('body');
-
-    // Options for the observer (which mutations to observe)
-    const observerOptions = {
-        attributes: true,  // Observe changes to attributes
-        attributeFilter: ['class'] // Only observe changes to the 'class' attribute
-    };
-
-    // Callback function to execute when mutations are observed
-    const bodyClassChangeCallback = function(mutationsList, observer) {
-        for(let mutation of mutationsList) {
-            if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
-                // Class attribute has changed
-                // Update all Monaco Editors on the page
-                updateMonacoEditorTheme();
-            }
-        }
-    };
-
-    // Create an observer instance linked to the callback function
-    const observer = new MutationObserver(bodyClassChangeCallback);
-
-    // Start observing the target node for configured mutations
-    observer.observe(body, observerOptions);
-}
-
-// Function to update all instances of Monaco Editors on the page
-function updateMonacoEditorTheme() {
-    // Determine what VS Theme to use
-    const vsThemeToUse = document.body.classList.contains("quarto-dark") ? 'vs-dark' : 'vs' ;
-
-    // Iterate through all initialized Monaco Editors
-    qwebrEditorInstances.forEach( function(editorInstance) { 
-        editorInstance.updateOptions({ theme: vsThemeToUse }); 
-    });
-}
-
-// Call the function to start observing changes to body class
-updateMonacoEditorsOnBodyClassChange();
-</script>
-<script type="module">
-// Global array to store Monaco Editor instances
-globalThis.qwebrEditorInstances = [];
-
-function isValidCodeLineNumbers(stringCodeLineNumbers) {
-  // Regular expression to match valid input strings
-  const regex = /^(\d+(-\d+)?)(,\d+(-\d+)?)*$/;
-  return regex.test(stringCodeLineNumbers);
-}
-
-// Function that builds and registers a Monaco Editor instance    
-globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
-
-  const initialCode = cellData.code;
-  const qwebrCounter = cellData.id;
-  const qwebrOptions = cellData.options;
-
-  // Retrieve the previously created document elements
-  let runButton = document.getElementById(`qwebr-button-run-${qwebrCounter}`);
-  let resetButton = document.getElementById(`qwebr-button-reset-${qwebrCounter}`);
-  let copyButton = document.getElementById(`qwebr-button-copy-${qwebrCounter}`);
-  let editorDiv = document.getElementById(`qwebr-editor-${qwebrCounter}`);
-
-  // Load the Monaco Editor and create an instance
-  let editor;
-  require(['vs/editor/editor.main'], function () {
-    editor = monaco.editor.create(editorDiv, {
-      value: initialCode,
-      language: 'r',
-      theme: 'vs-light',
-      automaticLayout: true,           // Works wonderfully with RevealJS
-      scrollBeyondLastLine: false,
-      minimap: {
-        enabled: false
-      },
-      fontSize: qwebrScaledFontSize(editorDiv, qwebrOptions),         
-      renderLineHighlight: "none",      // Disable current line highlighting
-      hideCursorInOverviewRuler: true,  // Remove cursor indictor in right hand side scroll bar
-      readOnly: qwebrOptions['read-only'] ?? false,
-      quickSuggestions: qwebrOptions['editor-quick-suggestions'] ?? false,
-      wordWrap: (qwebrOptions['editor-word-wrap'] == 'true' ? "on" : "off")
-    });
-
-    // Store the official counter ID to be used in keyboard shortcuts
-    editor.__qwebrCounter = qwebrCounter;
-
-    // Store the official div container ID
-    editor.__qwebrEditorId = `qwebr-editor-${qwebrCounter}`;
-
-    // Store the initial code value and options
-    editor.__qwebrinitialCode = initialCode;
-    editor.__qwebrOptions = qwebrOptions;
-
-    // Set at the model level the preferred end of line (EOL) character to LF.
-    // This prevent `\r\n` from being given to the webR engine if the user is on Windows.
-    // See details in: https://github.com/coatless/quarto-webr/issues/94
-    // Associated error text: 
-    // Error: <text>:1:7 unexpected input
-
-    // Retrieve the underlying model
-    const model = editor.getModel();
-    // Set EOL for the model
-    model.setEOL(monaco.editor.EndOfLineSequence.LF);
-    
-    // Dynamically modify the height of the editor window if new lines are added.
-    let ignoreEvent = false;
-    const updateHeight = () => {
-      // Increment editor height by 2 to prevent vertical scroll bar from appearing
-      const contentHeight = editor.getContentHeight() + 2;
-
-      // Retrieve editor-max-height option
-      const maxEditorHeight = qwebrOptions['editor-max-height'];
-
-      // If editor-max-height is missing, allow infinite growth. Otherwise, threshold.
-      const editorHeight = !maxEditorHeight ?  contentHeight : Math.min(contentHeight, maxEditorHeight);
-
-      // We're avoiding a width change
-      //editorDiv.style.width = `${width}px`;
-      editorDiv.style.height = `${editorHeight}px`;
-      try {
-        ignoreEvent = true;
-
-        // The key to resizing is this call
-        editor.layout();
-      } finally {
-        ignoreEvent = false;
-      }
-    };
-
-    // Function to generate decorations to highlight lines
-    // in the editor based on input string.
-    function decoratorHighlightLines(codeLineNumbers) {
-      // Store the lines to be lighlight
-      let linesToHighlight = [];
-      
-      // Parse the codeLineNumbers string to get the line numbers to highlight
-      // First, split the string by commas
-      codeLineNumbers.split(',').forEach(part => {
-        // Check if we have a range of lines
-        if (part.includes('-')) {
-            // Handle range of lines (e.g., "6-8")
-            const [start, end] = part.split('-').map(Number);
-            for (let i = start; i <= end; i++) {
-                linesToHighlight.push(i);
-            }
-        } else {
-            // Handle single line (e.g., "7")
-            linesToHighlight.push(Number(part));
-        }
-      });
-  
-      // Create monaco decorations for the lines to highlight
-      const decorations = linesToHighlight.map(lineNumber => ({
-          range: new monaco.Range(lineNumber, 1, lineNumber, 1),
-          options: {
-              isWholeLine: true,
-              className: 'qwebr-editor-highlight-line'
-          }
-      }));
-  
-      // Return decorations to be applied to the editor
-      return decorations;
-    }
-
-    // Ensure that the editor-code-line-numbers option is set and valid
-    // then apply styling
-    if (qwebrOptions['editor-code-line-numbers']) {
-      // Remove all whitespace from the string
-      const codeLineNumbers = qwebrOptions['editor-code-line-numbers'].replace(/\s/g,'');
-      // Check if the string is valid for line numbers, e.g., "1,3-5,7"
-      if (isValidCodeLineNumbers(codeLineNumbers)) {
-        // Apply the decorations to the editor
-        editor.createDecorationsCollection(decoratorHighlightLines(codeLineNumbers));
-      } else {
-        // Warn the user that the input is invalid
-        console.warn(`Invalid "editor-code-line-numbers" value in code cell ${qwebrOptions['label']}: ${codeLineNumbers}`);
-      }
-    }
-
-    // Helper function to check if selected text is empty
-    function isEmptyCodeText(selectedCodeText) {
-      return (selectedCodeText === null || selectedCodeText === undefined || selectedCodeText === "");
-    }
-
-    // Registry of keyboard shortcuts that should be re-added to each editor window
-    // when focus changes.
-    const addWebRKeyboardShortCutCommands = () => {
-      // Add a keydown event listener for Shift+Enter to run all code in cell
-      editor.addCommand(monaco.KeyMod.Shift | monaco.KeyCode.Enter, () => {
-
-        // Retrieve all text inside the editor
-        qwebrExecuteCode(editor.getValue(), editor.__qwebrCounter, editor.__qwebrOptions);
-      });
-
-      // Add a keydown event listener for CMD/Ctrl+Enter to run selected code
-      editor.addCommand(monaco.KeyMod.CtrlCmd | monaco.KeyCode.Enter, () => {
-
-        // Get the selected text from the editor
-        const selectedText = editor.getModel().getValueInRange(editor.getSelection());
-        // Check if no code is selected
-        if (isEmptyCodeText(selectedText)) {
-          // Obtain the current cursor position
-          let currentPosition = editor.getPosition();
-          // Retrieve the current line content
-          let currentLine = editor.getModel().getLineContent(currentPosition.lineNumber);
-
-          // Propose a new position to move the cursor to
-          let newPosition = new monaco.Position(currentPosition.lineNumber + 1, 1);
-
-          // Check if the new position is beyond the last line of the editor
-          if (newPosition.lineNumber > editor.getModel().getLineCount()) {
-            // Add a new line at the end of the editor
-            editor.executeEdits("addNewLine", [{
-            range: new monaco.Range(newPosition.lineNumber, 1, newPosition.lineNumber, 1),
-            text: "\n", 
-            forceMoveMarkers: true,
-            }]);
-          }
-          
-          // Run the entire line of code.
-          qwebrExecuteCode(currentLine, editor.__qwebrCounter, editor.__qwebrOptions);
-
-          // Move cursor to new position
-          editor.setPosition(newPosition);
-        } else {
-          // Code to run when Ctrl+Enter is pressed with selected code
-          qwebrExecuteCode(selectedText, editor.__qwebrCounter, editor.__qwebrOptions);
-        }
-      });
-    }
-
-    // Register an on focus event handler for when a code cell is selected to update
-    // what keyboard shortcut commands should work.
-    // This is a workaround to fix a regression that happened with multiple
-    // editor windows since Monaco 0.32.0 
-    // https://github.com/microsoft/monaco-editor/issues/2947
-    editor.onDidFocusEditorText(addWebRKeyboardShortCutCommands);
-
-    // Register an on change event for when new code is added to the editor window
-    editor.onDidContentSizeChange(updateHeight);
-
-    // Manually re-update height to account for the content we inserted into the call
-    updateHeight();
-
-    // Store the editor instance in the global dictionary
-    qwebrEditorInstances[editor.__qwebrCounter] = editor;
-
-  });
-
-  // Add a click event listener to the run button
-  runButton.onclick = function () {
-    qwebrExecuteCode(editor.getValue(), editor.__qwebrCounter, editor.__qwebrOptions);
-  };
-
-  // Add a click event listener to the reset button
-  copyButton.onclick = function () {
-    // Retrieve current code data
-    const data = editor.getValue();
-    
-    // Write code data onto the clipboard.
-    navigator.clipboard.writeText(data || "");
-  };
-  
-  // Add a click event listener to the copy button
-  resetButton.onclick = function () {
-    editor.setValue(editor.__qwebrinitialCode);
-  };
-  
-}
-</script>
-
-
-
-
-
-<section id="why-quarto-is-a-game-changer" class="level2">
-<h2 class="anchored" data-anchor-id="why-quarto-is-a-game-changer">Why Quarto Is a Game-Changer</h2>
-<p>Typical M&amp;E reporting workflow:</p>
-<ul>
-<li>Do analysis in R/Excel</li>
-<li>Copy charts into Word</li>
-<li>Manually update every quarter</li>
-</ul>
-<p>Quarto lets you:</p>
-<ul>
-<li>Keep analysis and report in the <strong>same place</strong></li>
-<li>Regenerate everything when new data arrives</li>
-<li>Output HTML, PDF, and PowerPoint from one source</li>
-</ul>
-<hr>
-</section>
-<section id="what-a-quarto-workflow-looks-like" class="level2">
-<h2 class="anchored" data-anchor-id="what-a-quarto-workflow-looks-like">What a Quarto Workflow Looks Like</h2>
-<ol type="1">
-<li>Import and clean data in R/Python</li>
-<li>Calculate indicators</li>
-<li>Create charts and tables</li>
-<li>Write interpretation text</li>
-<li>Render to:
-<ul>
-<li><code>index.html</code></li>
-<li><code>report.pdf</code></li>
-<li><code>slides.html</code> (presentations)</li>
-</ul></li>
-</ol>
-<p>You change the data and <strong>press render</strong>—the report updates.</p>
-</section>
-<section id="mini-playground" class="level2">
-<h2 class="anchored" data-anchor-id="mini-playground">Mini Playground</h2>
-<p>This browser-based code cell shows the kind of quick indicator summary you can keep inside a Quarto report and rerun whenever the data changes.</p>
-<div id="qwebr-insertion-location-1"></div>
-<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
-<hr>
-</section>
-<section id="portfolio-idea" class="level2">
-<h2 class="anchored" data-anchor-id="portfolio-idea">Portfolio Idea</h2>
-<p>Build a Quarto report that:</p>
-<ul>
-<li>Summarizes key indicators for a programme</li>
-<li>Includes:
-<ul>
-<li>Data quality section</li>
-<li>Trends over time</li>
-<li>Equity breakdowns</li>
-</ul></li>
-<li>Renders as:
-<ul>
-<li>HTML for the web</li>
-<li>PDF for donors</li>
-</ul></li>
-</ul>
-<p>This shows that you understand <strong>both analysis and communication</strong>, which is exactly what evaluators need.</p>
-
-
-<!-- -->
-
-</section>
-
- ]]></description>
-  <category>Quarto</category>
-  <category>R</category>
-  <category>Reporting</category>
-  <category>Monitoring &amp; Evaluation</category>
-  <guid>https://gondamol.github.io/posts/43-quarto-for-evaluators/</guid>
-  <pubDate>Tue, 11 Nov 2025 21:00:00 GMT</pubDate>
-  <media:content url="https://gondamol.github.io/img/blog-mande.svg" medium="image" type="image/svg+xml"/>
-</item>
-<item>
-  <title>R vs Python for Monitoring &amp; Evaluation: Which One Should You Actually Learn First?</title>
-  <dc:creator>Nichodemus Amollo</dc:creator>
-  <link>https://gondamol.github.io/posts/42-r-vs-python-for-m-and-e/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<section id="the-real-question-for-me-professionals" class="level2">
-<h2 class="anchored" data-anchor-id="the-real-question-for-me-professionals">The Real Question for M&amp;E Professionals</h2>
-<p>It’s not:</p>
-<blockquote class="blockquote">
-<p>“Which language is better?”</p>
-</blockquote>
-<p>It’s:</p>
-<blockquote class="blockquote">
-<p>“Which language gets me from raw survey data to validated indicators and reports <strong>faster and more reliably</strong>?”</p>
-</blockquote>
-<hr>
-</section>
-<section id="when-r-wins" class="level2">
-<h2 class="anchored" data-anchor-id="when-r-wins">When R Wins</h2>
-<p>Best for:</p>
-<ul>
-<li>Heavy survey work</li>
-<li>Complex statistics</li>
-<li>Reproducible reports (Quarto, R Markdown)</li>
-</ul>
-<p>Pros:</p>
-<ul>
-<li>Massive ecosystem for stats and survey analysis</li>
-<li>Great integration with RStudio</li>
-<li>Natural fit for many global health workflows</li>
-</ul>
-<hr>
-</section>
-<section id="when-python-wins" class="level2">
-<h2 class="anchored" data-anchor-id="when-python-wins">When Python Wins</h2>
-<p>Best for:</p>
-<ul>
-<li>ML, NLP, integration with production systems</li>
-<li>When your team already uses Python for engineering</li>
-</ul>
-<p>Pros:</p>
-<ul>
-<li>Huge general-purpose ecosystem</li>
-<li>Great for scraping, APIs, and automation</li>
-</ul>
-<hr>
-</section>
-<section id="my-recommendation-for-me-health-evaluation" class="level2">
-<h2 class="anchored" data-anchor-id="my-recommendation-for-me-health-evaluation">My Recommendation for M&amp;E &amp; Health Evaluation</h2>
-<ul>
-<li>If your main work is:
-<ul>
-<li>Surveys</li>
-<li>Monitoring indicators</li>
-<li>Regressions and impact analysis</li>
-</ul></li>
-</ul>
-<p>➡️ <strong>Start with R.</strong></p>
-<ul>
-<li>If you later:
-<ul>
-<li>Need to integrate with production systems</li>
-<li>Want to do more ML/engineering</li>
-</ul></li>
-</ul>
-<p>➡️ Add Python on top.</p>
-<p>You don’t need to pick a side forever—<strong>you need a tool that helps you ship evaluations now</strong>.</p>
-
-
-<!-- -->
-
-</section>
-
- ]]></description>
-  <category>R</category>
-  <category>Python</category>
-  <category>Monitoring &amp; Evaluation</category>
-  <category>Tools</category>
-  <guid>https://gondamol.github.io/posts/42-r-vs-python-for-m-and-e/</guid>
-  <pubDate>Mon, 10 Nov 2025 21:00:00 GMT</pubDate>
-  <media:content url="https://gondamol.github.io/img/blog-mande.svg" medium="image" type="image/svg+xml"/>
-</item>
-<item>
-  <title>Data Quality for Beginners: 7 Checks Every Analyst Should Automate</title>
-  <dc:creator>Nichodemus Amollo</dc:creator>
-  <link>https://gondamol.github.io/posts/41-data-quality-for-beginners/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<section id="why-data-quality-is-your-real-job" class="level2">
-<h2 class="anchored" data-anchor-id="why-data-quality-is-your-real-job">Why Data Quality Is Your Real Job</h2>
-<p>If your data is trash, your:</p>
-<ul>
-<li>Models are misleading</li>
-<li>Dashboards tell the wrong story</li>
-<li>Policy recommendations can hurt people</li>
-</ul>
-<p>Data quality is not “extra” work—it’s core to being a serious analyst.</p>
-<hr>
-</section>
-<section id="checks-to-automate-on-every-dataset" class="level2">
-<h2 class="anchored" data-anchor-id="checks-to-automate-on-every-dataset">7 Checks to Automate on Every Dataset</h2>
-<ol type="1">
-<li><strong>Missingness patterns</strong> by variable and group<br>
-</li>
-<li><strong>Uniqueness</strong> of IDs<br>
-</li>
-<li><strong>Range checks</strong> for numeric variables<br>
-</li>
-<li><strong>Category consistency</strong> for factors/coded responses<br>
-</li>
-<li><strong>Cross-field logic</strong> (e.g., age vs date of birth, pregnancy vs sex)<br>
-</li>
-<li><strong>Duplicates</strong> and near-duplicates<br>
-</li>
-<li><strong>Date/time sanity</strong> (ordering, impossible dates)</li>
-</ol>
-<p>Automate these in:</p>
-<ul>
-<li>R (with tidyverse/janitor)</li>
-<li>Python (with pandas)</li>
-</ul>
-<hr>
-</section>
-<section id="how-to-turn-this-into-a-portfolio-project" class="level2">
-<h2 class="anchored" data-anchor-id="how-to-turn-this-into-a-portfolio-project">How to Turn This Into a Portfolio Project</h2>
-<ul>
-<li>Take any public health or development dataset</li>
-<li>Build:
-<ul>
-<li>A script that runs all 7 checks</li>
-<li>A short report or dashboard summarizing issues</li>
-</ul></li>
-<li>Include:
-<ul>
-<li>A “recommended data cleaning plan”</li>
-<li>Examples of how findings explain weird results</li>
-</ul></li>
-</ul>
-<p>Great analysts are <strong>paranoid about data quality</strong>—and employers love that.</p>
-
-
-<!-- -->
-
-</section>
-
- ]]></description>
-  <category>Data Quality</category>
-  <category>Data Cleaning</category>
-  <category>Monitoring &amp; Evaluation</category>
-  <guid>https://gondamol.github.io/posts/41-data-quality-for-beginners/</guid>
-  <pubDate>Sun, 09 Nov 2025 21:00:00 GMT</pubDate>
-  <media:content url="https://gondamol.github.io/img/blog-analytics.svg" medium="image" type="image/svg+xml"/>
-</item>
-<item>
-  <title>Logframes for Beginners: How to Stop Faking It in M&amp;E Meetings</title>
-  <dc:creator>Nichodemus Amollo</dc:creator>
-  <link>https://gondamol.github.io/posts/40-logframe-for-beginners/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<section id="what-a-logframe-really-is" class="level2">
-<h2 class="anchored" data-anchor-id="what-a-logframe-really-is">What a Logframe Really Is</h2>
-<p>A logical framework is just a <strong>structured way to tell the story</strong>:</p>
-<ul>
-<li>What do we do?</li>
-<li>What do we produce?</li>
-<li>What changes do we expect?</li>
-</ul>
-<p>Columns:</p>
-<ul>
-<li>Narrative summary</li>
-<li>Indicators</li>
-<li>Means of verification</li>
-<li>Assumptions/risks</li>
-</ul>
-<p>Rows:</p>
-<ul>
-<li>Goal / Impact</li>
-<li>Outcomes</li>
-<li>Outputs</li>
-<li>Activities</li>
-</ul>
-<hr>
-</section>
-<section id="how-to-read-a-logframe-like-a-pro" class="level2">
-<h2 class="anchored" data-anchor-id="how-to-read-a-logframe-like-a-pro">How to Read a Logframe Like a Pro</h2>
-<p>Ask:</p>
-<ul>
-<li>Are outputs sufficient to plausibly lead to outcomes?</li>
-<li>Are indicators measurable with available data systems?</li>
-<li>Are assumptions vaguely inspirational or actually testable?</li>
-</ul>
-<p>As a data person, you can add a lot by:</p>
-<ul>
-<li>Suggesting <strong>measurable, realistic indicators</strong></li>
-<li>Challenging vague assumptions</li>
-</ul>
-<hr>
-</section>
-<section id="quick-exercise" class="level2">
-<h2 class="anchored" data-anchor-id="quick-exercise">Quick Exercise</h2>
-<p>Take any project concept note and:</p>
-<ul>
-<li>Sketch a 4x4 logframe</li>
-<li>Define 1–2 indicators per level</li>
-<li>Identify 3–4 key risks</li>
-</ul>
-<p>You’ve done more logical thinking than many “formal” project designs.</p>
-
-
-<!-- -->
-
-</section>
-
- ]]></description>
-  <category>Monitoring &amp; Evaluation</category>
-  <category>Logframe</category>
-  <category>Project Design</category>
-  <guid>https://gondamol.github.io/posts/40-logframe-for-beginners/</guid>
-  <pubDate>Sat, 08 Nov 2025 21:00:00 GMT</pubDate>
-  <media:content url="https://gondamol.github.io/img/blog-mande.svg" medium="image" type="image/svg+xml"/>
-</item>
-<item>
-  <title>10 Survey Design Mistakes That Will Destroy Your Data (And How to Avoid Them)</title>
+  <title>Survey design mistakes that destroy field data</title>
   <dc:creator>Nichodemus Amollo</dc:creator>
   <link>https://gondamol.github.io/posts/39-survey-design-mistakes/</link>
   <description><![CDATA[ 
@@ -2147,57 +443,68 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 
 
 
-<section id="why-survey-design-is-underrated" class="level2">
-<h2 class="anchored" data-anchor-id="why-survey-design-is-underrated">Why Survey Design Is Underrated</h2>
-<p>Bad survey instruments:</p>
-<ul>
-<li>Confuse respondents</li>
-<li>Overwork enumerators</li>
-<li>Produce data that’s hard to analyze—or impossible to trust</li>
-</ul>
-<p>As a data person, you should care deeply about <strong>questionnaire design</strong>.</p>
-<hr>
-</section>
-<section id="common-mistakes" class="level2">
-<h2 class="anchored" data-anchor-id="common-mistakes">10 Common Mistakes</h2>
+<p>Bad instruments waste money quietly. Enumerators work hard, households give time, and the dataset still cannot answer the research question. These are the failure modes I look for when reviewing questionnaires before a pilot — and again after the first HFC cycle.</p>
+<section id="ten-design-failures-and-what-to-do" class="level2">
+<h2 class="anchored" data-anchor-id="ten-design-failures-and-what-to-do">Ten design failures (and what to do)</h2>
 <ol type="1">
-<li>Double-barreled questions<br>
+<li><strong>Double-barreled questions</strong> — Ask one thing per item.<br>
 </li>
-<li>Leading or loaded wording<br>
+<li><strong>Leading wording</strong> — If the “right” answer is obvious, you are measuring social desirability.<br>
 </li>
-<li>Too many open-ended questions<br>
+<li><strong>Unrealistic recall periods</strong> — “How much did you spend on health last year?” is often fiction; diaries and shorter windows exist for a reason.<br>
 </li>
-<li>Inconsistent response scales<br>
+<li><strong>Broken skip logic</strong> — Test every path on a device, not only on paper.<br>
 </li>
-<li>Missing “Don’t know / Refuse” options<br>
+<li><strong>Overlapping numeric ranges</strong> — 0–5 and 5–10 both claim 5.<br>
 </li>
-<li>Overlapping ranges<br>
+<li><strong>Missing refuse / don’t know</strong> — Forced answers create noise that looks like data.<br>
 </li>
-<li>Broken skip logic<br>
+<li><strong>Internal jargon</strong> — Acronyms that make sense in Nairobi HQ may not in a rural interview.<br>
 </li>
-<li>Asking for unrealistic recall periods<br>
+<li><strong>Too many open text fields</strong> — Open text is expensive to code and easy to abandon.<br>
 </li>
-<li>Using internal jargon or acronyms<br>
+<li><strong>No unique IDs</strong> — Household, visit, and person IDs must be stable before the first interview.<br>
 </li>
-<li>Ignoring translation and cultural context</li>
+<li><strong>Translation as an afterthought</strong> — Back-translation and field pilot in the interview language are part of design, not polish.</li>
 </ol>
-<hr>
 </section>
-<section id="how-to-improve-quickly" class="level2">
-<h2 class="anchored" data-anchor-id="how-to-improve-quickly">How to Improve Quickly</h2>
+<section id="the-pilot-is-not-optional" class="level2">
+<h2 class="anchored" data-anchor-id="the-pilot-is-not-optional">The pilot is not optional</h2>
+<p>A pilot with a few real respondents and the actual enumerator team catches more than a committee meeting. I want:</p>
 <ul>
-<li>Pilot with:
-<ul>
-<li>A few respondents</li>
-<li>At least one experienced enumerator</li>
-</ul></li>
-<li>Debrief:
-<ul>
-<li>Ask enumerators which questions confused people</li>
-<li>Look at early data for strange patterns</li>
-</ul></li>
+<li>Timing per module<br>
+</li>
+<li>Places where people stall or refuse<br>
+</li>
+<li>Constraint failures that fire too often<br>
+</li>
+<li>Questions that produce nonsense when taken literally</li>
 </ul>
-<p>Small investments in instrument design can save <strong>weeks of pain</strong> in cleaning and analysis.</p>
+<p>Then the form version is locked for the wave — or versioned explicitly if it must change.</p>
+</section>
+<section id="after-the-form-ships" class="level2">
+<h2 class="anchored" data-anchor-id="after-the-form-ships">After the form ships</h2>
+<p>Design does not end at deploy. HFC should watch for:</p>
+<ul>
+<li>Modules with sudden missingness spikes<br>
+</li>
+<li>Enumerators with outlier interview lengths<br>
+</li>
+<li>Options never selected (dead branches)<br>
+</li>
+<li>Duplicate IDs</li>
+</ul>
+<p>That is how survey design and research data systems stay connected.</p>
+</section>
+<section id="related" class="level2">
+<h2 class="anchored" data-anchor-id="related">Related</h2>
+<ul>
+<li><a href="../../posts/24-mobile-data-collection/">Mobile data collection</a><br>
+</li>
+<li><a href="../../projects/health-financial-diaries/">Diaries systems</a><br>
+</li>
+<li><a href="../../posts/22-reproducible-research-public-health/">Reproducible research as operations</a></li>
+</ul>
 
 
 <!-- -->
@@ -2208,12 +515,13 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
   <category>Survey Design</category>
   <category>Data Quality</category>
   <category>Monitoring &amp; Evaluation</category>
+  <category>Field Systems</category>
   <guid>https://gondamol.github.io/posts/39-survey-design-mistakes/</guid>
   <pubDate>Fri, 07 Nov 2025 21:00:00 GMT</pubDate>
   <media:content url="https://gondamol.github.io/img/blog-mande.svg" medium="image" type="image/svg+xml"/>
 </item>
 <item>
-  <title>Statistical Power for Evaluators: Stop Running Underpowered Studies</title>
+  <title>Statistical power for programme evaluators</title>
   <dc:creator>Nichodemus Amollo</dc:creator>
   <link>https://gondamol.github.io/posts/38-statistical-power-for-evaluators/</link>
   <description><![CDATA[ 
@@ -2222,68 +530,43 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 
 
 
-<section id="why-power-matters-more-than-p-values" class="level2">
-<h2 class="anchored" data-anchor-id="why-power-matters-more-than-p-values">Why Power Matters More Than P-Values</h2>
-<p>A beautifully designed evaluation is useless if:</p>
-<ul>
-<li>There aren’t enough units (patients, schools, facilities)</li>
-<li>The expected effect is too small to detect</li>
-</ul>
-<p>Underpowered studies:</p>
-<ul>
-<li>Waste money</li>
-<li>Exhaust field teams</li>
-<li>Provide inconclusive evidence</li>
-</ul>
-<hr>
-</section>
-<section id="the-three-levers-of-power" class="level2">
-<h2 class="anchored" data-anchor-id="the-three-levers-of-power">The Three Levers of Power</h2>
+<p>Power is not a ritual number you paste into a proposal. It is a design claim: given the sample you can actually field, the variation you should expect, and the effect size that would matter for a decision, <strong>how often would a real effect be detected?</strong></p>
+<p>Underpowered evaluations waste partners and communities twice — once in the field, and again when a null result is over-interpreted as “no impact.”</p>
+<section id="what-i-want-on-the-table-before-sample-size-is-fixed" class="level2">
+<h2 class="anchored" data-anchor-id="what-i-want-on-the-table-before-sample-size-is-fixed">What I want on the table before sample size is fixed</h2>
 <ol type="1">
-<li><strong>Sample Size</strong></li>
-<li><strong>Size of Effect You Care About</strong></li>
-<li><strong>Variation in the Outcome</strong></li>
+<li><strong>Primary outcome</strong> — one main estimand, not twelve co-primary wishes<br>
+</li>
+<li><strong>Minimum effect that would change a decision</strong> — programme-relevant, not only statistically convenient<br>
+</li>
+<li><strong>Clustering</strong> — schools, facilities, villages: design effects are not optional footnotes<br>
+</li>
+<li><strong>Attrition</strong> — especially in multi-wave household work<br>
+</li>
+<li><strong>Multiple comparisons</strong> — if you will look at many outcomes, say so in the analysis plan</li>
 </ol>
-<p>Constraints:</p>
-<ul>
-<li>Budget and logistics limit sample size</li>
-<li>Programs can’t always produce huge effects</li>
-</ul>
-<p>Your job: Be explicit about these trade-offs <strong>before</strong> data collection.</p>
-<hr>
 </section>
-<section id="a-simple-way-to-explain-power" class="level2">
-<h2 class="anchored" data-anchor-id="a-simple-way-to-explain-power">A Simple Way to Explain Power</h2>
-<p>To non-statisticians:</p>
-<blockquote class="blockquote">
-<p>“Given our sample size and variability, this study can reliably detect at least a X% change in outcome. Smaller changes might be real but will be hard to confirm statistically.”</p>
-</blockquote>
-<p>This shifts expectations from:</p>
+<section id="practical-habits" class="level2">
+<h2 class="anchored" data-anchor-id="practical-habits">Practical habits</h2>
 <ul>
-<li>“Will we see a significant result?” to</li>
-<li>“What size of effect can this study realistically pick up?”</li>
+<li>Compute power for the design you will run (clusters, ICC assumptions), not for an i.i.d. fantasy<br>
+</li>
+<li>Prefer transparent assumptions over black-box software defaults you cannot defend<br>
+</li>
+<li>If the affordable sample cannot detect a policy-relevant effect, redesign the question or the study — do not pretend</li>
 </ul>
-<hr>
 </section>
-<section id="what-beginners-can-do-with-r" class="level2">
-<h2 class="anchored" data-anchor-id="what-beginners-can-do-with-r">What Beginners Can Do with R</h2>
-<p>You don’t need advanced math:</p>
+<section id="link-to-field-systems" class="level2">
+<h2 class="anchored" data-anchor-id="link-to-field-systems">Link to field systems</h2>
+<p>Power calculations assume you will obtain the sample you planned with usable data quality. That is why HFC, instrument design, and ops apps are not separate from evaluation methods: <strong>dirty or incomplete data shrink effective N</strong>.</p>
+</section>
+<section id="related" class="level2">
+<h2 class="anchored" data-anchor-id="related">Related</h2>
 <ul>
-<li>Use simple functions or packages (e.g., <code>pwr</code> in R)</li>
-<li>Simulate:
-<ul>
-<li>Different sample sizes</li>
-<li>Different effect sizes</li>
-<li>Varying levels of noise</li>
-</ul></li>
+<li><a href="../../posts/22-reproducible-research-public-health/">Reproducible research as operations</a><br>
+</li>
+<li><a href="../../posts/39-survey-design-mistakes/">Survey design mistakes</a></li>
 </ul>
-<p>Plot how <strong>power changes</strong> across these scenarios and include it in:</p>
-<ul>
-<li>Protocols</li>
-<li>Funding proposals</li>
-<li>Limitations sections</li>
-</ul>
-<p>Power analysis is not a formality—it’s part of honest evaluation design.</p>
 
 
 <!-- -->
@@ -2299,273 +582,93 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
   <media:content url="https://gondamol.github.io/img/blog-mande.svg" medium="image" type="image/svg+xml"/>
 </item>
 <item>
-  <title>Land Remote Data Roles from the Global South: A No-BS Guide</title>
+  <title>Building the systems behind a year of health financial diaries</title>
   <dc:creator>Nichodemus Amollo</dc:creator>
-  <link>https://gondamol.github.io/posts/37-remote-data-roles-global-south/</link>
+  <link>https://gondamol.github.io/posts/30-health-financial-diaries-explainer/</link>
   <description><![CDATA[ 
 
 
 
 
 
-<section id="the-reality-of-remote-data-work" class="level2">
-<h2 class="anchored" data-anchor-id="the-reality-of-remote-data-work">The Reality of Remote Data Work</h2>
-<p>Remote roles are competitive—but it’s not impossible from the Global South.</p>
-<p>Challenges:</p>
-<ul>
-<li>Time zones</li>
-<li>Payment logistics</li>
-<li>Perception gaps about universities and institutions</li>
-</ul>
-<p>Advantages:</p>
-<ul>
-<li>You understand <strong>low- and middle-income contexts</strong> better than most</li>
-<li>You can work with <strong>local data and international methods</strong></li>
-</ul>
-<hr>
+<p>I spent a long stretch of my Georgetown gui2de work on <strong>health financial diaries</strong>: not only the research idea of high-frequency household finance data, but the <strong>systems that keep that data trustworthy while the field is still running</strong>.</p>
+<p>This is the first-person version of that work.</p>
+<section id="what-we-were-actually-collecting" class="level2">
+<h2 class="anchored" data-anchor-id="what-we-were-actually-collecting">What we were actually collecting</h2>
+<p>Standard household surveys often ask people to recall health spending over a month or a year. Memory fails. Small frequent costs disappear. Informal payments and borrowing get under-reported.</p>
+<p>Diaries try to fix that by tracking health-related financial flows <strong>more often</strong> — clinic fees, drugs, transport, lost income, gifts, loans, asset sales — so you can see volatility and coping, not only a smoothed total.</p>
+<p>On this study we followed <strong>300 households for one year</strong>. That is enough time for quality to drift, for research assistants (RAs) to differ, and for problems to compound if you only clean at the end of the wave.</p>
 </section>
-<section id="what-international-teams-actually-look-for" class="level2">
-<h2 class="anchored" data-anchor-id="what-international-teams-actually-look-for">What International Teams Actually Look For</h2>
+<section id="the-real-problem-was-not-the-questionnaire-alone" class="level2">
+<h2 class="anchored" data-anchor-id="the-real-problem-was-not-the-questionnaire-alone">The real problem was not the questionnaire alone</h2>
+<p>The hard part was operational:</p>
 <ul>
-<li>Reliable communication</li>
-<li>Documentation and reproducible work</li>
-<li>Ability to work with messy, real-world data</li>
-<li>Some overlap in working hours</li>
+<li>Data arrives continuously from the field<br>
+</li>
+<li>Completeness and cleanliness differ by RA and by week<br>
+</li>
+<li>Supervisors need signals <strong>during</strong> collection, not only after closeout<br>
+</li>
+<li>Issues that sit in a spreadsheet for two weeks become expensive to fix</li>
 </ul>
-<p>Stack doesn’t need to be fancy:</p>
-<ul>
-<li>SQL + R/Python + one BI tool</li>
-<li>GitHub for code and portfolio</li>
-</ul>
-<hr>
+<p>So we treated diaries as a <strong>streaming research data system</strong>: field capture → study database → high-frequency checks → live ops products → analysis and partner products.</p>
 </section>
-<section id="how-to-be-discoverable" class="level2">
-<h2 class="anchored" data-anchor-id="how-to-be-discoverable">How to Be Discoverable</h2>
-<ul>
-<li>Fix your LinkedIn:
-<ul>
-<li>Headline: “Health Data Analyst | M&amp;E | R + SQL”</li>
-<li>About: 3–4 bullet points focusing on outcomes you’ve driven</li>
-<li>Featured: link to 2–3 portfolio projects</li>
-</ul></li>
-<li>Use GitHub:
-<ul>
-<li>Host small, polished projects</li>
-<li>Add READMEs that explain context and methods</li>
-</ul></li>
-</ul>
-<hr>
+<section id="what-i-built-and-ran" class="level2">
+<h2 class="anchored" data-anchor-id="what-i-built-and-ran">What I built and ran</h2>
+<section id="high-frequency-checks-hfcs" class="level3">
+<h3 class="anchored" data-anchor-id="high-frequency-checks-hfcs">High-frequency checks (HFCs)</h3>
+<p>HFCs were part of the daily loop. The goal was simple: catch incomplete interviews, inconsistent cashflow patterns, and cleanliness problems early enough that field leadership could act while households were still in follow-up.</p>
 </section>
-<section id="where-to-look-for-remote-roles" class="level2">
-<h2 class="anchored" data-anchor-id="where-to-look-for-remote-roles">Where to Look for Remote Roles</h2>
-<ul>
-<li>International NGOs and research labs</li>
-<li>Remote-first companies (analytics consultancies, SaaS)</li>
-<li>Fellowships and fellow-like roles</li>
-</ul>
-<p>Look for:</p>
-<ul>
-<li>“Anywhere” or “Global” location tags</li>
-<li>Strong emphasis on writing and async collaboration</li>
-</ul>
-<hr>
+<section id="automated-systems" class="level3">
+<h3 class="anchored" data-anchor-id="automated-systems">Automated systems</h3>
+<p>We automated as much of the quality and reporting path as we could — so every cycle did not start with a new round of ad hoc spreadsheet firefighting. The study database was the spine; scripts and apps sat on top of it.</p>
 </section>
-<section id="how-to-pitch-yourself" class="level2">
-<h2 class="anchored" data-anchor-id="how-to-pitch-yourself">How to Pitch Yourself</h2>
-<p>Instead of:</p>
-<blockquote class="blockquote">
-<p>“I’m a data analyst from [country], looking for opportunities.”</p>
-</blockquote>
-<p>Try:</p>
-<blockquote class="blockquote">
-<p>“I design and automate data workflows for health and evaluation projects in low-resource settings. I’ve built dashboards used by X facilities and helped reduce reporting time by Y%.”</p>
-</blockquote>
-<p>Your location is not a weakness if you pair it with a <strong>strong, context-aware portfolio</strong>.</p>
-<hr>
-
-
-<!-- -->
-
-</section>
-
- ]]></description>
-  <category>Career</category>
-  <category>Remote Work</category>
-  <category>Data Analytics</category>
-  <guid>https://gondamol.github.io/posts/37-remote-data-roles-global-south/</guid>
-  <pubDate>Wed, 05 Nov 2025 21:00:00 GMT</pubDate>
-  <media:content url="https://gondamol.github.io/img/blog-analytics.svg" medium="image" type="image/svg+xml"/>
-</item>
-<item>
-  <title>A/B Testing for Health Programs: Can We Borrow from Tech Without Harming Patients?</title>
-  <dc:creator>Nichodemus Amollo</dc:creator>
-  <link>https://gondamol.github.io/posts/36-ab-testing-health-programs/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<section id="why-tech-loves-ab-tests-and-what-health-can-learn" class="level2">
-<h2 class="anchored" data-anchor-id="why-tech-loves-ab-tests-and-what-health-can-learn">Why Tech Loves A/B Tests (And What Health Can Learn)</h2>
-<p>In tech:</p>
-<ul>
-<li>A/B testing is used to:
-<ul>
-<li>Optimize click-through rates</li>
-<li>Test new features</li>
-<li>Improve revenue</li>
-</ul></li>
-</ul>
-<p>In health and development:</p>
-<ul>
-<li>Stakes are different:
-<ul>
-<li>We’re dealing with well-being, safety, and sometimes life-or-death</li>
-</ul></li>
-</ul>
-<p>But we <em>can</em> borrow experimentation ideas carefully.</p>
-<hr>
-</section>
-<section id="what-ab-testing-looks-like-in-health" class="level2">
-<h2 class="anchored" data-anchor-id="what-ab-testing-looks-like-in-health">What A/B Testing Looks Like in Health</h2>
-<p>Examples:</p>
-<ul>
-<li>Testing two reminder messages for clinic appointments</li>
-<li>Comparing two formats of health education materials</li>
-<li>Evaluating two outreach strategies for vaccination</li>
-</ul>
-<p>Key safeguards:</p>
-<ul>
-<li>Ethical review and approvals</li>
-<li>Informed consent where appropriate</li>
-<li>Clear principle: <strong>no group is offered worse than current standard of care</strong></li>
-</ul>
-<hr>
-</section>
-<section id="how-this-relates-to-rcts" class="level2">
-<h2 class="anchored" data-anchor-id="how-this-relates-to-rcts">How This Relates to RCTs</h2>
-<p>A/B tests are, in essence:</p>
-<ul>
-<li>Simple randomized controlled trials with:
-<ul>
-<li>A small number of arms</li>
-<li>Large samples</li>
-<li>Clear short-term outcomes</li>
-</ul></li>
-</ul>
-<p>Differences:</p>
-<ul>
-<li>In tech: outcomes are often clicks and purchases</li>
-<li>In health: outcomes are attendance, adherence, health status, equity</li>
-</ul>
-<hr>
-</section>
-<section id="how-a-junior-analyst-can-contribute" class="level2">
-<h2 class="anchored" data-anchor-id="how-a-junior-analyst-can-contribute">How a Junior Analyst Can Contribute</h2>
-<ul>
-<li>Help design:
-<ul>
-<li>Outcome measures</li>
-<li>Randomization procedures</li>
-</ul></li>
-<li>Help implement:
-<ul>
-<li>Data collection tools</li>
-<li>Analysis pipelines</li>
-</ul></li>
-<li>Help interpret:
-<ul>
-<li>Not just “did it work?” but “for whom?” and “why?”</li>
-</ul></li>
-</ul>
-<p>Experimentation in health requires both <strong>rigor and humility</strong>. If you can bring both, you’ll be a huge asset.</p>
-
-
-<!-- -->
-
-</section>
-
- ]]></description>
-  <category>A/B Testing</category>
-  <category>Impact Evaluation</category>
-  <category>Health Programs</category>
-  <guid>https://gondamol.github.io/posts/36-ab-testing-health-programs/</guid>
-  <pubDate>Tue, 04 Nov 2025 21:00:00 GMT</pubDate>
-  <media:content url="https://gondamol.github.io/img/blog-health.svg" medium="image" type="image/svg+xml"/>
-</item>
-<item>
-  <title>Data Analyst Portfolio for Health &amp; Development: 5 Projects That Get You Hired</title>
-  <dc:creator>Nichodemus Amollo</dc:creator>
-  <link>https://gondamol.github.io/posts/35-data-analyst-portfolio-health/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<section id="why-generic-portfolios-dont-work-in-global-health" class="level2">
-<h2 class="anchored" data-anchor-id="why-generic-portfolios-dont-work-in-global-health">Why Generic Portfolios Don’t Work in Global Health</h2>
-<p>Most beginner portfolios show:</p>
-<ul>
-<li>Sales dashboards</li>
-<li>Generic e-commerce datasets</li>
-<li>Kaggle competitions with no context</li>
-</ul>
-<p>Health &amp; development recruiters want to see:</p>
-<ul>
-<li>Impact metrics</li>
-<li>Facility or patient flows</li>
-<li>Equity and access questions</li>
-</ul>
-<hr>
-</section>
-<section id="portfolio-projects-that-translate" class="level2">
-<h2 class="anchored" data-anchor-id="portfolio-projects-that-translate">5 Portfolio Projects That Translate</h2>
+<section id="live-ops-apps" class="level3">
+<h3 class="anchored" data-anchor-id="live-ops-apps">Live ops apps</h3>
+<p>Two products mattered for day-to-day field control:</p>
 <ol type="1">
-<li><strong>Immunization Coverage Dashboard</strong>
-<ul>
-<li>By district, facility, age group</li>
-<li>Includes data quality flags</li>
-</ul></li>
-<li><strong>Maternal Health Outcomes Analysis</strong>
-<ul>
-<li>ANC visits, delivery outcomes, post-natal follow-up</li>
-<li>Trends and disparities by geography</li>
-</ul></li>
-<li><strong>Financial Protection Study</strong>
-<ul>
-<li>Out-of-pocket health expenditures</li>
-<li>Catastrophic spending and coping mechanisms</li>
-</ul></li>
-<li><strong>Facility Readiness Scorecard</strong>
-<ul>
-<li>Essential services, equipment, staffing</li>
-<li>Simple composite index + ranking</li>
-</ul></li>
-<li><strong>Survey Data Quality Report</strong>
-<ul>
-<li>Non-response, inconsistent answers, timing patterns</li>
-</ul></li>
+<li><p><strong>RA performance / leaderboard</strong> — volume, completion, and clean rates so supervisors could see who was keeping up and where quality was slipping.<br>
+Live: <a href="https://ra-leaderboard.streamlit.app/" target="_blank">ra-leaderboard.streamlit.app</a></p></li>
+<li><p><strong>Fuel / issues app</strong> — connected to the same study database, aggregating <strong>field issues in real time</strong> as data streamed in. There is <strong>no public URL</strong> for Fuel (internal ops tool). The point of naming it here is architectural: issues were not only discovered in an end-of-wave clean.</p></li>
 </ol>
-<hr>
+<figure style="margin:1.5rem 0 2rem;border:1px solid var(--border,#e5e0d8);background:#fff;padding:0.75rem;" class="figure">
+  <img src="https://gondamol.github.io/img/diaries/field-team-performance-dashboard.png" alt="Redacted RA performance dashboard showing interviews, cashflows, completion and clean rates" style="width:100%;height:auto;display:block;" class="figure-img">
+  <figcaption style="font-size:0.85rem;color:var(--muted,#6b6560);padding:0.75rem 0.25rem 0.25rem;">
+    RA performance dashboard (staff names redacted). Sample month snapshot: 552 interviews · 45,238 cashflow events · 90% average completion · 97% clean interviews.
+  </figcaption>
+</figure>
+<p>Those aggregate KPIs are the kind of number I care about in field systems: not vanity metrics, but signals a supervisor can use the same afternoon.</p>
 </section>
-<section id="how-to-make-each-project-recruiter-friendly" class="level2">
-<h2 class="anchored" data-anchor-id="how-to-make-each-project-recruiter-friendly">How to Make Each Project Recruiter-Friendly</h2>
+</section>
+<section id="what-diaries-systems-teach-that-a-single-dashboard-does-not" class="level2">
+<h2 class="anchored" data-anchor-id="what-diaries-systems-teach-that-a-single-dashboard-does-not">What diaries systems teach that a single dashboard does not</h2>
+<ol type="1">
+<li><strong>Quality is a time-series problem.</strong> A 97% clean rate in one month means nothing if you cannot see who is driving the remaining 3% and whether it is getting worse.<br>
+</li>
+<li><strong>Ops products are research infrastructure.</strong> Leaderboards and issue feeds are not side projects; they are how you protect the analysis you hope to publish later.<br>
+</li>
+<li><strong>Streaming beats batch-only QC.</strong> When data is still arriving, the cheapest error is the one you catch today.<br>
+</li>
+<li><strong>Role clarity matters.</strong> My job was systems and quality architecture for programme research — not only writing a methods paragraph after the fact.</li>
+</ol>
+</section>
+<section id="what-stays-private" class="level2">
+<h2 class="anchored" data-anchor-id="what-stays-private">What stays private</h2>
+<p>Raw diary records, household identifiers, and partner-restricted extracts do not belong on a public portfolio. Staff names on performance boards are redacted in public screenshots. The public story is the <strong>architecture and the operational metrics</strong>, not the microdata.</p>
+</section>
+<section id="if-you-are-building-something-similar" class="level2">
+<h2 class="anchored" data-anchor-id="if-you-are-building-something-similar">If you are building something similar</h2>
+<p>Start with the database contract and the HFC rhythm before you polish a donor dashboard. If supervisors cannot see completion, cleanliness, and open issues while the field is live, you do not have a diaries system yet — you have a delayed cleaning project.</p>
+</section>
+<section id="related" class="level2">
+<h2 class="anchored" data-anchor-id="related">Related</h2>
 <ul>
-<li>Provide:
-<ul>
-<li>Short context (what problem are we solving?)</li>
-<li>Plain-language summary of findings</li>
-<li>3–5 clear visuals</li>
-</ul></li>
-<li>Highlight:
-<ul>
-<li>Data limitations</li>
-<li>How you would improve the study if you had more resources</li>
-</ul></li>
+<li><a href="../../projects/health-financial-diaries/">Case study: Health financial diaries systems</a><br>
+</li>
+<li><a href="https://gui2de.georgetown.edu/profiles/nichodemus-amollo/" target="_blank">gui2de profile</a><br>
+</li>
+<li><a href="../../projects/rebuild-targeting/">Re:BUiLD targeting app (separate gui2de delivery)</a></li>
 </ul>
-<p>By using <strong>health &amp; development contexts</strong>, you show that you can think beyond numbers and connect to real-world impact.</p>
 
 
 <!-- -->
@@ -2573,12 +676,428 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 </section>
 
  ]]></description>
-  <category>Portfolio</category>
-  <category>Health Data</category>
-  <category>Monitoring &amp; Evaluation</category>
-  <guid>https://gondamol.github.io/posts/35-data-analyst-portfolio-health/</guid>
-  <pubDate>Mon, 03 Nov 2025 21:00:00 GMT</pubDate>
+  <category>Health Economics</category>
+  <category>Financial Diaries</category>
+  <category>Health Financing</category>
+  <category>Field Systems</category>
+  <category>Georgetown gui2de</category>
+  <guid>https://gondamol.github.io/posts/30-health-financial-diaries-explainer/</guid>
+  <pubDate>Wed, 29 Oct 2025 21:00:00 GMT</pubDate>
+  <media:content url="https://gondamol.github.io/img/diaries/field-team-performance-dashboard.png" medium="image" type="image/png" height="65" width="144"/>
+</item>
+<item>
+  <title>Mobile data collection that survives no-internet field days</title>
+  <dc:creator>Nichodemus Amollo</dc:creator>
+  <link>https://gondamol.github.io/posts/24-mobile-data-collection/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Mobile data collection is not “paper but on a phone.” In low-connectivity settings it is the front door of the research data system. If the form is wrong, the skip logic is broken, or the team cannot work offline, no amount of elegant analysis later will fix the week you already lost.</p>
+<p>This is how I think about CAPI tools after building and supervising field systems across East African programmes.</p>
+<section id="tools-i-actually-use" class="level2">
+<h2 class="anchored" data-anchor-id="tools-i-actually-use">Tools I actually use</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Tool</th>
+<th>Where it fits</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>ODK / ODK Central</strong></td>
+<td>Open, offline-first surveys; strong for multi-country research ops</td>
+</tr>
+<tr class="even">
+<td><strong>KoboToolbox</strong></td>
+<td>Humanitarian and NGO field work; familiar to many partners</td>
+</tr>
+<tr class="odd">
+<td><strong>REDCap</strong></td>
+<td>Clinical and longitudinal research; role-based access; audit trails</td>
+</tr>
+<tr class="even">
+<td><strong>XLSForm</strong></td>
+<td>The shared design language behind many CAPI stacks</td>
+</tr>
+</tbody>
+</table>
+<p>I pick tools with partners, connectivity, IRB constraints, and handoff in mind — not brand preference.</p>
+</section>
+<section id="design-rules-that-prevent-expensive-failures" class="level2">
+<h2 class="anchored" data-anchor-id="design-rules-that-prevent-expensive-failures">Design rules that prevent expensive failures</h2>
+<ol type="1">
+<li><strong>Design for offline first.</strong> If the team works without signal, the form must still submit later without drama.<br>
+</li>
+<li><strong>Validate at entry.</strong> Ranges, required fields, and constraints beat end-of-week cleaning arguments.<br>
+</li>
+<li><strong>Name everything.</strong> Consistent variable names and codebooks are how analysis starts on day two.<br>
+</li>
+<li><strong>Version the instrument.</strong> A silent form change mid-wave is a schema break.<br>
+</li>
+<li><strong>Train on the why.</strong> Enumerators who understand skip logic catch problems interviewers alone cannot.<br>
+</li>
+<li><strong>Pair forms with HFC.</strong> Digital capture without high-frequency checks is just faster ways to store bad data.</li>
+</ol>
+</section>
+<section id="what-good-looks-like-in-the-first-week-of-field" class="level2">
+<h2 class="anchored" data-anchor-id="what-good-looks-like-in-the-first-week-of-field">What “good” looks like in the first week of field</h2>
+<ul>
+<li>Piloted form with real respondents and real devices<br>
+</li>
+<li>Daily completeness and constraint-failure summaries<br>
+</li>
+<li>A named person responsible for form versions<br>
+</li>
+<li>A path from server extract → cleaning script → supervisor view</li>
+</ul>
+<p>On diaries work, that path continued into live supervisor apps. On oncology chart abstraction, REDCap plus multi-language QC scripts played the same role: protect the record while collection is still open.</p>
+</section>
+<section id="related" class="level2">
+<h2 class="anchored" data-anchor-id="related">Related</h2>
+<ul>
+<li><a href="../../projects/health-financial-diaries/">Diaries systems case study</a><br>
+</li>
+<li><a href="../../posts/39-survey-design-mistakes/">Survey design mistakes</a><br>
+</li>
+<li><a href="../../posts/22-reproducible-research-public-health/">Reproducible research as operations</a></li>
+</ul>
+
+
+<!-- -->
+
+</section>
+
+ ]]></description>
+  <category>Data Collection</category>
+  <category>ODK</category>
+  <category>Survey Design</category>
+  <category>Field Work</category>
+  <category>HFC</category>
+  <guid>https://gondamol.github.io/posts/24-mobile-data-collection/</guid>
+  <pubDate>Sat, 25 Oct 2025 21:00:00 GMT</pubDate>
+  <media:content url="https://gondamol.github.io/img/blog-mande.svg" medium="image" type="image/svg+xml"/>
+</item>
+<item>
+  <title>Reproducible research in public health is an operations problem</title>
+  <dc:creator>Nichodemus Amollo</dc:creator>
+  <link>https://gondamol.github.io/posts/22-reproducible-research-public-health/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>In public health, “reproducible research” is often introduced with crisis statistics and lab metaphors. Those debates matter. In the work I do, the more urgent version is plainer:</p>
+<p><strong>Can another analyst on the team re-run the quality checks and the core tables next month without calling me?</strong></p>
+<p>If the answer is no, the study is already at risk — especially when data are still streaming from the field.</p>
+<section id="what-reproducibility-means-on-a-field-study" class="level2">
+<h2 class="anchored" data-anchor-id="what-reproducibility-means-on-a-field-study">What reproducibility means on a field study</h2>
+<p>For household diaries, multi-country evaluations, or clinical chart abstraction, I treat reproducibility as four concrete things:</p>
+<ol type="1">
+<li><strong>Raw is sacred</strong> — immutable extracts or locked REDCap exports with dates and versions<br>
+</li>
+<li><strong>Cleaning is code</strong> — R or Stata scripts with named rules, not a one-off Excel “final_v7”<br>
+</li>
+<li><strong>HFC is scheduled</strong> — high-frequency checks run on a rhythm, with logs of what failed<br>
+</li>
+<li><strong>Outputs are rebuildable</strong> — Quarto/R Markdown (or equivalent) can regenerate tables and briefs</li>
+</ol>
+<p>That is closer to research data management than to a philosophy seminar.</p>
+</section>
+<section id="where-studies-actually-break" class="level2">
+<h2 class="anchored" data-anchor-id="where-studies-actually-break">Where studies actually break</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Failure mode</th>
+<th>What I have seen</th>
+<th>Mitigation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Analyst turnover</td>
+<td>Only one person knows the “real” cleaning steps</td>
+<td>Documented scripts + handoff notes</td>
+</tr>
+<tr class="even">
+<td>Wave panic</td>
+<td>QC postponed until closeout</td>
+<td>Daily/weekly HFC while field is live</td>
+</tr>
+<tr class="odd">
+<td>Silent schema drift</td>
+<td>New form versions break old code</td>
+<td>Versioned instruments + schema checks</td>
+</tr>
+<tr class="even">
+<td>Unowned indicators</td>
+<td>Dashboard numbers nobody can recompute</td>
+<td>Indicator dictionary + tested code</td>
+</tr>
+</tbody>
+</table>
+<p>On the health financial diaries work, live ops apps and HFCs existed precisely so quality debt did not wait for the end of a year-long follow-up.</p>
+</section>
+<section id="a-minimum-bar-for-health-and-development-teams" class="level2">
+<h2 class="anchored" data-anchor-id="a-minimum-bar-for-health-and-development-teams">A minimum bar for health and development teams</h2>
+<p>If a PI or programme lead asks whether the work is reproducible, I look for:</p>
+<ul>
+<li>A project folder with <code>raw/</code>, <code>scripts/</code>, <code>outputs/</code> (names can vary; structure cannot)<br>
+</li>
+<li>A short README: how to refresh HFC and main tables<br>
+</li>
+<li>Named responsibility for the database and for analysis<br>
+</li>
+<li>No patient or household identifiers in public repos</li>
+</ul>
+<p>I do not require perfect packaging on day one. I require that the next person is not starting from mythology.</p>
+</section>
+<section id="related" class="level2">
+<h2 class="anchored" data-anchor-id="related">Related</h2>
+<ul>
+<li><a href="../../projects/health-financial-diaries/">Diaries systems case study</a><br>
+</li>
+<li><a href="../../posts/38-statistical-power-for-evaluators/">Statistical power for evaluators</a><br>
+</li>
+<li><a href="../../posts/39-survey-design-mistakes/">Survey design mistakes that destroy data</a></li>
+</ul>
+
+
+<!-- -->
+
+</section>
+
+ ]]></description>
+  <category>Public Health</category>
+  <category>Research Methods</category>
+  <category>Reproducibility</category>
+  <category>Field Systems</category>
+  <guid>https://gondamol.github.io/posts/22-reproducible-research-public-health/</guid>
+  <pubDate>Sat, 25 Oct 2025 21:00:00 GMT</pubDate>
   <media:content url="https://gondamol.github.io/img/blog-health.svg" medium="image" type="image/svg+xml"/>
+</item>
+<item>
+  <title>Kisumu cancer surveillance: from chart abstraction to a county dashboard</title>
+  <dc:creator>Nichodemus Amollo</dc:creator>
+  <link>https://gondamol.github.io/posts/kisumu-cancer-dashboard/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>On 26 November 2024, Kisumu County leadership launched a <strong>cancer epidemiology dashboard</strong> built on multi-year oncology records from Jaramogi Oginga Odinga Teaching and Referral Hospital (JOOTRH). I served as <strong>Research Data Manager</strong> under Principal Investigator <strong>Dr.&nbsp;Thomas Odeny</strong> (Washington University in St.&nbsp;Louis), with KEMRI and county partners.</p>
+<p>This note describes the data system and my role — not a product pitch.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="dashboard-launch.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Dashboard launch ceremony with county leadership and the research team"><img src="https://gondamol.github.io/posts/kisumu-cancer-dashboard/dashboard-launch.jpg" class="img-fluid figure-img" alt="Dashboard launch ceremony with county leadership and the research team"></a></p>
+<figcaption>Dashboard launch ceremony with county leadership and the research team</figcaption>
+</figure>
+</div>
+<section id="why-the-work-mattered" class="level2">
+<h2 class="anchored" data-anchor-id="why-the-work-mattered">Why the work mattered</h2>
+<p>A retrospective review of oncology records at JOOTRH (roughly 2013–2023) made the continuity problem concrete:</p>
+<ul>
+<li><strong>About 59%</strong> of patients were lost to follow-up (LTFU) within the <strong>first year</strong> of care<br>
+</li>
+<li><strong>5-year survival</strong> in the analysed cohort was on the order of <strong>9%</strong><br>
+</li>
+<li><strong>Thousands of patient records</strong> (on the order of 3,400+ in the core analytic sample; later extracts grew as the registry was extended)<br>
+</li>
+<li>Advanced-stage presentation was common</li>
+</ul>
+<p>Those figures are clinical and operational: if patients disappear from care, treatment plans fail even when diagnosis was possible. A usable surveillance product had to sit on <strong>trusted records</strong>, not only on pretty charts.</p>
+</section>
+<section id="my-role-in-the-data-lifecycle" class="level2">
+<h2 class="anchored" data-anchor-id="my-role-in-the-data-lifecycle">My role in the data lifecycle</h2>
+<p>I owned research data management across the pipeline. The PI and clinical partners owned clinical interpretation and programme direction; I owned instruments, quality, analysis support, and dashboard data products.</p>
+<section id="data-capture-architecture-redcap" class="level3">
+<h3 class="anchored" data-anchor-id="data-capture-architecture-redcap">1. Data capture architecture (REDCap)</h3>
+<ul>
+<li>Designed REDCap forms for multi-year oncology chart abstraction<br>
+</li>
+<li>Validation rules and branching for treatment pathways<br>
+</li>
+<li>Fields spanning demographics, cancer type, staging, treatments, and outcomes</li>
+</ul>
+</section>
+<section id="team-and-protocols" class="level3">
+<h3 class="anchored" data-anchor-id="team-and-protocols">2. Team and protocols</h3>
+<ul>
+<li>Recruited and trained research assistants in medical chart abstraction<br>
+</li>
+<li>Standardised extraction protocols and SOPs<br>
+</li>
+<li>Supervised abstraction across large volumes of paper and electronic charts</li>
+</ul>
+</section>
+<section id="quality-assurance" class="level3">
+<h3 class="anchored" data-anchor-id="quality-assurance">3. Quality assurance</h3>
+<p>High-frequency and batch quality checks used:</p>
+<ul>
+<li><strong>Python</strong> for automated validation scripts<br>
+</li>
+<li><strong>R</strong> for statistical quality checks<br>
+</li>
+<li><strong>Stata</strong> for consistency checks on clinical fields</li>
+</ul>
+<p>Discrepancies went back to re-abstraction. Patient confidentiality and access control were treated as non-negotiable.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="data-workflow.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Data quality workflow diagram"><img src="https://gondamol.github.io/posts/kisumu-cancer-dashboard/data-workflow.jpg" class="img-fluid figure-img" alt="Data quality workflow diagram"></a></p>
+<figcaption>Data quality workflow diagram</figcaption>
+</figure>
+</div>
+</section>
+<section id="analysis-support" class="level3">
+<h3 class="anchored" data-anchor-id="analysis-support">4. Analysis support</h3>
+<ul>
+<li>Survival analysis (including Kaplan–Meier approaches)<br>
+</li>
+<li>LTFU patterns by cancer type and stage<br>
+</li>
+<li>Geographic patterns (Kisumu and neighbouring counties)<br>
+</li>
+<li>Treatment pathway summaries for clinical and county audiences</li>
+</ul>
+<p>The first-year LTFU finding was one of the results that most clearly justified a live monitoring product.</p>
+</section>
+<section id="dashboard-product-tableau" class="level3">
+<h3 class="anchored" data-anchor-id="dashboard-product-tableau">5. Dashboard product (Tableau)</h3>
+<p>Built a Tableau dashboard for programme and county users covering:</p>
+<ul>
+<li>Demographics and case mix<br>
+</li>
+<li>Cancer type distribution<br>
+</li>
+<li>Stage at diagnosis<br>
+</li>
+<li>Treatment and follow-up signals<br>
+</li>
+<li>Geographic patterns<br>
+</li>
+<li>Survival / outcome views where data allowed</li>
+</ul>
+<p>Patient-level views were restricted and de-identified as required by the study protocol and partner rules.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="dashboard-main.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Screenshot of the cancer epidemiology dashboard"><img src="https://gondamol.github.io/posts/kisumu-cancer-dashboard/dashboard-main.jpg" class="img-fluid figure-img" alt="Screenshot of the cancer epidemiology dashboard"></a></p>
+<figcaption>Screenshot of the cancer epidemiology dashboard</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="what-the-product-was-for" class="level2">
+<h2 class="anchored" data-anchor-id="what-the-product-was-for">What the product was for</h2>
+<p>The dashboard was a <strong>decision-support and surveillance surface</strong>, not a marketing demo. Practical uses included:</p>
+<ul>
+<li>Seeing where follow-up was failing<br>
+</li>
+<li>Supporting outreach and re-engagement conversations<br>
+</li>
+<li>Making case mix and geography legible for planning<br>
+</li>
+<li>Giving county and facility leaders a shared evidence product</li>
+</ul>
+<p>Claims about “first in the region” are easy to overstate; what is defensible is that this was a <strong>serious facility–county surveillance product</strong> built on multi-year abstracted records and launched with county leadership.</p>
+</section>
+<section id="launch-and-public-record" class="level2">
+<h2 class="anchored" data-anchor-id="launch-and-public-record">Launch and public record</h2>
+<p>The November 2024 launch included county leadership (including Governor Anyang’ Nyong’o), health officials, the PI, JOOTRH cancer leadership, and clinical staff. Coverage is public:</p>
+<ol type="1">
+<li><a href="https://www.kemri.go.ke/innovative-cancer-dashboard-unveiled-totransform-cancer-care/">KEMRI — Innovative cancer dashboard unveiled</a><br>
+</li>
+<li><a href="https://www.standardmedia.co.ke/counties/article/2001506798/kisumu-launches-innovative-cancer-dashboard-to-track-cancer-patients">The Standard — Kisumu launches cancer dashboard</a></li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="launch-ceremony.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="Launch ceremony with stakeholders"><img src="https://gondamol.github.io/posts/kisumu-cancer-dashboard/launch-ceremony.jpg" class="img-fluid figure-img" alt="Launch ceremony with stakeholders"></a></p>
+<figcaption>Launch ceremony with stakeholders</figcaption>
+</figure>
+</div>
+</section>
+<section id="constraints-we-actually-hit" class="level2">
+<h2 class="anchored" data-anchor-id="constraints-we-actually-hit">Constraints we actually hit</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Constraint</th>
+<th>What we did</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Incomplete older charts</td>
+<td>Multi-level validation; re-abstraction for critical fields</td>
+</tr>
+<tr class="even">
+<td>Inconsistent documentation over a decade</td>
+<td>Codebooks, SOPs, peer review of extracts</td>
+</tr>
+<tr class="odd">
+<td>Connectivity and power limits</td>
+<td>Batch workflows; offline-friendly capture habits where needed</td>
+</tr>
+<tr class="even">
+<td>Staff turnover on abstraction</td>
+<td>Training modules and continuous supervision</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="what-this-demonstrates" class="level2">
+<h2 class="anchored" data-anchor-id="what-this-demonstrates">What this demonstrates</h2>
+<ol type="1">
+<li>End-to-end <strong>research data management</strong> in a clinical registry setting<br>
+</li>
+<li><strong>HFC and multi-language QC</strong> (Python / R / Stata) under real record quality<br>
+</li>
+<li>Translation from analysis to a <strong>county-facing product</strong><br>
+</li>
+<li>Clear role boundary: data systems lead under a clinical PI</li>
+</ol>
+</section>
+<section id="related" class="level2">
+<h2 class="anchored" data-anchor-id="related">Related</h2>
+<ul>
+<li><a href="../../projects/index.html">Projects — field delivery</a><br>
+</li>
+<li><a href="../../research/publications.html">Research</a><br>
+</li>
+<li><a href="../../cv/index.html">CV</a></li>
+</ul>
+
+
+<!-- -->
+
+</section>
+
+ ]]></description>
+  <category>Cancer Research</category>
+  <category>Data Management</category>
+  <category>KEMRI</category>
+  <category>Tableau</category>
+  <category>Public Health</category>
+  <guid>https://gondamol.github.io/posts/kisumu-cancer-dashboard/</guid>
+  <pubDate>Mon, 25 Nov 2024 21:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
