@@ -1,91 +1,84 @@
 ---
-title: "Health Financial Diaries: The Most Underrated Tool in Health Economics"
-subtitle: "How daily financial tracking reveals what household surveys miss about healthcare costs"
+title: "Building the systems behind a year of health financial diaries"
+subtitle: "Three hundred households, high-frequency checks, and live field apps on a streaming study database"
 author: "Nichodemus Amollo"
 date: "2025-10-30"
-categories: [Health Economics, Financial Diaries, Health Financing]
-image: "/img/blog-health.svg"
+categories: [Health Economics, Financial Diaries, Health Financing, Field Systems, Georgetown gui2de]
+image: "/img/diaries/field-team-performance-dashboard.png"
 ---
 
-## Why Traditional Surveys Miss the Real Story
+I spent a long stretch of my Georgetown gui2de work on **health financial diaries**: not only the research idea of high-frequency household finance data, but the **systems that keep that data trustworthy while the field is still running**.
 
-Standard household surveys often ask:
+This is the first-person version of that work.
 
-- “How much did you spend on health in the last month/3 months/12 months?”
+## What we were actually collecting
 
-But real life is messy:
+Standard household surveys often ask people to recall health spending over a month or a year. Memory fails. Small frequent costs disappear. Informal payments and borrowing get under-reported.
 
-- People forget small but frequent expenses
-- Lump-sum costs (e.g., hospitalization) distort recall
-- Informal payments and borrowing are underreported
+Diaries try to fix that by tracking health-related financial flows **more often** — clinic fees, drugs, transport, lost income, gifts, loans, asset sales — so you can see volatility and coping, not only a smoothed total.
 
-That’s where **health financial diaries** come in.
+On this study we followed **300 households for one year**. That is enough time for quality to drift, for research assistants (RAs) to differ, and for problems to compound if you only clean at the end of the wave.
 
----
+## The real problem was not the questionnaire alone
 
-## What Are Health Financial Diaries?
+The hard part was operational:
 
-Health financial diaries:
+- Data arrives continuously from the field  
+- Completeness and cleanliness differ by RA and by week  
+- Supervisors need signals **during** collection, not only after closeout  
+- Issues that sit in a spreadsheet for two weeks become expensive to fix  
 
-- Track **daily or weekly** health-related financial flows, such as:
-  - Clinic fees
-  - Drugs and diagnostics
-  - Transport to facilities
-  - Lost income due to illness
-  - Borrowing, gifts, and asset sales to pay for care
-- Used over weeks or months to:
-  - Capture volatility
-  - Understand coping strategies
-  - Reveal hidden burdens of illness
+So we treated diaries as a **streaming research data system**: field capture → study database → high-frequency checks → live ops products → analysis and partner products.
 
----
+## What I built and ran
 
-## What They Let You Analyze
+### High-frequency checks (HFCs)
 
-With diaries, you can:
+HFCs were part of the daily loop. The goal was simple: catch incomplete interviews, inconsistent cashflow patterns, and cleanliness problems early enough that field leadership could act while households were still in follow-up.
 
-- Map **cash flow shocks** due to health events
-- Estimate **catastrophic health expenditure** more accurately
-- Understand **borrowing patterns and informal insurance**
-- Link episodes of illness to:
-  - **Treatment choices**
-  - **Facility types**
-  - **Delays and drop-outs**
+### Automated systems
 
----
+We automated as much of the quality and reporting path as we could — so every cycle did not start with a new round of ad hoc spreadsheet firefighting. The study database was the spine; scripts and apps sat on top of it.
 
-## Challenges (And How to Design Around Them)
+### Live ops apps
 
-- Participant fatigue:
-  - Keep instruments short and focused
-  - Use prompts (SMS, phone, in-person visits)
-- Data quality:
-  - Train enumerators well
-  - Use high-frequency checks to catch inconsistencies
-- Ethics and burden:
-  - Compensate fairly
-  - Respect privacy and sensitivity around finances
+Two products mattered for day-to-day field control:
 
----
+1. **RA performance / leaderboard** — volume, completion, and clean rates so supervisors could see who was keeping up and where quality was slipping.  
+   Live: [ra-leaderboard.streamlit.app](https://ra-leaderboard.streamlit.app/){target="_blank"}
 
-## Portfolio Idea: A Mini Financial Diaries Simulation
+2. **Fuel / issues app** — connected to the same study database, aggregating **field issues in real time** as data streamed in. There is **no public URL** for Fuel (internal ops tool). The point of naming it here is architectural: issues were not only discovered in an end-of-wave clean.
 
-Even without field data, you can:
+```{=html}
+<figure style="margin:1.5rem 0 2rem;border:1px solid var(--border,#e5e0d8);background:#fff;padding:0.75rem;">
+  <img src="/img/diaries/field-team-performance-dashboard.png"
+       alt="Redacted RA performance dashboard showing interviews, cashflows, completion and clean rates"
+       style="width:100%;height:auto;display:block;">
+  <figcaption style="font-size:0.85rem;color:var(--muted,#6b6560);padding:0.75rem 0.25rem 0.25rem;">
+    RA performance dashboard (staff names redacted). Sample month snapshot: 552 interviews · 45,238 cashflow events · 90% average completion · 97% clean interviews.
+  </figcaption>
+</figure>
+```
 
-- Simulate 50–100 households with:
-  - Daily income
-  - Random health shocks
-  - Different coping strategies
-- Use R to:
-  - Plot daily cash flows
-  - Identify “catastrophic” events
-  - Compare “with insurance” vs “without insurance” scenarios
+Those aggregate KPIs are the kind of number I care about in field systems: not vanity metrics, but signals a supervisor can use the same afternoon.
 
-Publish:
+## What diaries systems teach that a single dashboard does not
 
-- A small dashboard or Quarto report with:
-  - Key charts
-  - A short interpretation section
+1. **Quality is a time-series problem.** A 97% clean rate in one month means nothing if you cannot see who is driving the remaining 3% and whether it is getting worse.  
+2. **Ops products are research infrastructure.** Leaderboards and issue feeds are not side projects; they are how you protect the analysis you hope to publish later.  
+3. **Streaming beats batch-only QC.** When data is still arriving, the cheapest error is the one you catch today.  
+4. **Role clarity matters.** My job was systems and quality architecture for programme research — not only writing a methods paragraph after the fact.
 
-This shows you understand **health financing at the household level**, not just at the macro budget level.
+## What stays private
 
+Raw diary records, household identifiers, and partner-restricted extracts do not belong on a public portfolio. Staff names on performance boards are redacted in public screenshots. The public story is the **architecture and the operational metrics**, not the microdata.
+
+## If you are building something similar
+
+Start with the database contract and the HFC rhythm before you polish a donor dashboard. If supervisors cannot see completion, cleanliness, and open issues while the field is live, you do not have a diaries system yet — you have a delayed cleaning project.
+
+## Related
+
+- [Case study: Health financial diaries systems](/projects/health-financial-diaries/)  
+- [gui2de profile](https://gui2de.georgetown.edu/profiles/nichodemus-amollo/){target="_blank"}  
+- [Re:BUiLD targeting app (separate gui2de delivery)](/projects/rebuild-targeting/)
