@@ -207,16 +207,51 @@ format:
 
 <section class="tools-trust section-pad section-divider reveal-on-scroll">
   <div class="section-inner">
-    <p class="section-eyebrow">Technical Skills</p>
-    <h2 class="section-h">Tools I trust.</h2>
-    <p class="section-sub">Built through field work, not just coursework. Each tool here has solved a real delivery problem.</p>
-
-    <div class="tools-trust__grid">
-      <article class="tools-trust__group"><h3>Analytics &amp; Stats</h3><ul><li class="tools-trust__row tools-trust__row--expert"><span class="tools-trust__name">R</span><span class="tools-trust__meter"></span><strong>Expert</strong></li><li class="tools-trust__row tools-trust__row--advanced"><span class="tools-trust__name">Stata</span><span class="tools-trust__meter"></span><strong>Advanced</strong></li><li class="tools-trust__row tools-trust__row--proficient"><span class="tools-trust__name">Python</span><span class="tools-trust__meter"></span><strong>Proficient</strong></li><li class="tools-trust__row tools-trust__row--advanced"><span class="tools-trust__name">SPSS</span><span class="tools-trust__meter"></span><strong>Advanced</strong></li></ul></article>
-      <article class="tools-trust__group"><h3>Data &amp; Databases</h3><ul><li class="tools-trust__row tools-trust__row--advanced"><span class="tools-trust__name">SQL</span><span class="tools-trust__meter"></span><strong>Advanced</strong></li><li class="tools-trust__row tools-trust__row--proficient"><span class="tools-trust__name">PostgreSQL</span><span class="tools-trust__meter"></span><strong>Proficient</strong></li><li class="tools-trust__row tools-trust__row--advanced"><span class="tools-trust__name">DHIS2/KHIS</span><span class="tools-trust__meter"></span><strong>Advanced</strong></li><li class="tools-trust__row tools-trust__row--expert"><span class="tools-trust__name">Excel</span><span class="tools-trust__meter"></span><strong>Expert</strong></li></ul></article>
-      <article class="tools-trust__group"><h3>Data Collection</h3><ul><li class="tools-trust__row tools-trust__row--expert"><span class="tools-trust__name">KoboToolbox</span><span class="tools-trust__meter"></span><strong>Expert</strong></li><li class="tools-trust__row tools-trust__row--expert"><span class="tools-trust__name">ODK</span><span class="tools-trust__meter"></span><strong>Expert</strong></li><li class="tools-trust__row tools-trust__row--proficient"><span class="tools-trust__name">REDCap</span><span class="tools-trust__meter"></span><strong>Proficient</strong></li><li class="tools-trust__row tools-trust__row--proficient"><span class="tools-trust__name">CommCare</span><span class="tools-trust__meter"></span><strong>Proficient</strong></li></ul></article>
-      <article class="tools-trust__group"><h3>Reporting &amp; BI</h3><ul><li class="tools-trust__row tools-trust__row--advanced"><span class="tools-trust__name">Power BI</span><span class="tools-trust__meter"></span><strong>Advanced</strong></li><li class="tools-trust__row tools-trust__row--expert"><span class="tools-trust__name">R Markdown</span><span class="tools-trust__meter"></span><strong>Expert</strong></li><li class="tools-trust__row tools-trust__row--advanced"><span class="tools-trust__name">Quarto</span><span class="tools-trust__meter"></span><strong>Advanced</strong></li><li class="tools-trust__row tools-trust__row--proficient"><span class="tools-trust__name">Tableau</span><span class="tools-trust__meter"></span><strong>Proficient</strong></li></ul></article>
+    <p class="section-eyebrow">Writing</p>
+    <h2 class="section-h">Field notes worth reading.</h2>
+    <p class="section-sub">Three public pieces that match the work above — research translation, diaries systems, and model-to-field judgement.</p>
+    <div class="portfolio-memory__grid" style="margin-top:1.5rem;">
+      <a href="posts/47-facility-decision-space-chronic-care/index.html" class="portfolio-memory__card">
+        <div class="portfolio-memory__body">
+          <p class="portfolio-memory__meta meta-text">Research translation</p>
+          <h3>When clinics can diagnose but cannot buy medicines</h3>
+          <p>Facility decision space and chronic care, from the BMC Public Health paper.</p>
+          <span>Read essay →</span>
+        </div>
+      </a>
+      <a href="posts/30-health-financial-diaries-explainer/index.html" class="portfolio-memory__card">
+        <div class="portfolio-memory__body">
+          <p class="portfolio-memory__meta meta-text">Field systems</p>
+          <h3>Systems behind a year of health financial diaries</h3>
+          <p>300 households, HFCs, and live ops apps on a streaming study database.</p>
+          <span>Read note →</span>
+        </div>
+      </a>
+      <a href="posts/48-from-field-to-model/index.html" class="portfolio-memory__card">
+        <div class="portfolio-memory__body">
+          <p class="portfolio-memory__meta meta-text">Methods</p>
+          <h3>From field to model</h3>
+          <p>Why domain knowledge still shapes useful targeting and ML systems.</p>
+          <span>Read note →</span>
+        </div>
+      </a>
     </div>
+    <p style="margin-top:1.5rem;"><a href="blogs/index.html" class="btn-ghost">All writing →</a></p>
+  </div>
+</section>
+
+<section class="tools-trust section-pad section-divider reveal-on-scroll">
+  <div class="section-inner">
+    <p class="section-eyebrow">Tools</p>
+    <h2 class="section-h">Stack used in real delivery.</h2>
+    <p class="section-sub">No skill bars. Tools appear because they shipped something in the field or in analysis — not because of a self-score.</p>
+    <div class="background-ledger__chips" style="display:flex;flex-wrap:wrap;gap:0.5rem;margin-top:1.25rem;">
+      <span>R</span><span>Stata</span><span>Python</span><span>SQL</span><span>PostgreSQL</span>
+      <span>ODK</span><span>KoboToolbox</span><span>REDCap</span><span>XLSForm</span>
+      <span>HFC systems</span><span>Power BI</span><span>Tableau</span><span>Shiny</span><span>Streamlit</span>
+      <span>Quarto</span><span>R Markdown</span><span>DHIS2/KHIS</span><span>Git</span>
+    </div>
+    <p style="margin-top:1.25rem;"><a href="cv/index.html" class="btn-ghost">Full CV →</a></p>
   </div>
 </section>
 

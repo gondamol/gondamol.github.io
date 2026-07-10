@@ -172,71 +172,24 @@ I bring the same philosophy to AI systems: the systems we build encode decisions
 
 ---
 
-## Services {#services}
+## How I can join a team {#services}
 
-What I offer as a consultant, collaborator, or embedded team member:
+I am strongest as an embedded research data systems lead or close collaborator — not as a generic “dashboard vendor.”
 
-```{=html}
-<div class="services-grid">
+| Engagement | What that looks like |
+|---|---|
+| **Research data systems** | Instruments, REDCap/ODK/Kobo, HFC, pipelines, live field apps |
+| **Study & evaluation support** | Design input, quality architecture, analysis plans, reproducible reporting |
+| **Evidence products** | Dashboards, briefs, Shiny/Streamlit tools that programme teams actually use |
+| **Targeting / causal tools** | Application layers on research models (see Re:BUiLD) |
+| **Training** | R, Stata, survey design, data quality, reproducible workflows |
 
-  <div class="svc-card">
-    <span class="svc-icon">📐</span>
-    <h4 class="svc-title">Study Design & Protocol Development</h4>
-    <p class="svc-body">Research question formulation, sampling strategy, ethical submissions, instrument design (quantitative & qualitative). IRB-ready protocols for health, agriculture, and finance programmes.</p>
-    <div class="svc-tags"><span>M&E</span><span>RCT</span><span>Mixed methods</span><span>XLSForm</span></div>
-  </div>
-
-  <div class="svc-card">
-    <span class="svc-icon">🗄️</span>
-    <h4 class="svc-title">Data Management & Engineering</h4>
-    <p class="svc-body">Database architecture, HFC systems, automated cleaning pipelines in R and Python. Reproducible data workflows that teams can hand off without losing institutional knowledge.</p>
-    <div class="svc-tags"><span>R</span><span>SQL</span><span>Python</span><span>PostgreSQL</span></div>
-  </div>
-
-  <div class="svc-card">
-    <span class="svc-icon">📊</span>
-    <h4 class="svc-title">Analytics & Impact Evaluation</h4>
-    <p class="svc-body">Descriptive to advanced econometrics — regression, DiD, RDD, survival analysis. Telling the story behind the numbers for funder reports, policy briefs, and publications.</p>
-    <div class="svc-tags"><span>Stata</span><span>R</span><span>Regression</span><span>DiD</span></div>
-  </div>
-
-  <div class="svc-card">
-    <span class="svc-icon">🖥️</span>
-    <h4 class="svc-title">Dashboards & Reporting</h4>
-    <p class="svc-body">Automated dashboards in Power BI, R Shiny, and Quarto. From operational monitoring dashboards for field programmes to donor-facing KPI reports updated on a schedule.</p>
-    <div class="svc-tags"><span>Power BI</span><span>R Shiny</span><span>Quarto</span><span>Tableau</span></div>
-  </div>
-
-  <div class="svc-card">
-    <span class="svc-icon">🤖</span>
-    <h4 class="svc-title">ML Systems & Predictive Analytics</h4>
-    <p class="svc-body">Building production-ready models grounded in statistical rigor. From feature engineering to model deployment, monitoring, and reproducible infrastructure. Focus on systems that work in real-world constraints.</p>
-    <div class="svc-tags"><span>Causal Inference</span><span>Model Monitoring</span><span>R/Python</span><span>Reproducibility</span></div>
-  </div>
-
-  <div class="svc-card">
-    <span class="svc-icon">🌍</span>
-    <h4 class="svc-title">Field Data Collection</h4>
-    <p class="svc-body">End-to-end management of CAPI surveys — tool building in KoboToolbox / ODK, enumerator recruitment and training, daily HFC, and data transmission to headquarters.</p>
-    <div class="svc-tags"><span>KoboToolbox</span><span>ODK</span><span>REDCap</span><span>CommCare</span></div>
-  </div>
-
-  <div class="svc-card">
-    <span class="svc-icon">🎓</span>
-    <h4 class="svc-title">Training & Capacity Building</h4>
-    <p class="svc-body">Workshops in R, Stata, survey design, data management, M&E frameworks, and reproducible research. I have trained teams ranging from government statisticians to community health workers.</p>
-    <div class="svc-tags"><span>R workshops</span><span>Stata</span><span>M&E training</span></div>
-  </div>
-
-</div>
-```
-
-[Get in touch about a project →](mailto:nichodemuswerre@gmail.com){.btn-solid style="margin-top:2rem;display:inline-block;"}
+[Get in touch about a role or collaboration →](mailto:nichodemuswerre@gmail.com){.btn-solid style="margin-top:1.5rem;display:inline-block;"}
 
 ---
 
 ## Open to
 
-Senior M&E and Research Data Manager roles blending AI and data systems, data analytics consulting across supply chain, health, agriculture, finance and real estate, ML systems and predictive analytics work, research partnerships in health financing and agricultural economics, and training and capacity building in R, Stata, survey design, data management, and reproducible research practices.
+Research data manager and biostatistics roles in health and development programmes; partnerships on health financing and service delivery evidence; and capacity building that leaves teams with systems they can run without me.
 
 [Get in touch →](mailto:nichodemuswerre@gmail.com){.btn-solid}
