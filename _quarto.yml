@@ -18,6 +18,7 @@ project:
     - "blogs/index.qmd"
     - "resources/index.qmd"
     - "skills/index.qmd"
+    - "software/index.qmd"
     - "visualizations/index.qmd"
     - "research/publications.qmd"
     - "research/thesis.qmd"

@@ -45,27 +45,34 @@ format:
       <span class="cv-stat-label">Years in applied data and evaluation</span>
     </article>
     <article class="cv-stat-card">
-      <span class="cv-stat-num">4</span>
+      <span class="cv-stat-num">3+</span>
       <span class="cv-stat-label">Countries supported in East Africa</span>
     </article>
     <article class="cv-stat-card">
-      <span class="cv-stat-num">500+</span>
-      <span class="cv-stat-label">Participants in mixed methods work</span>
+      <span class="cv-stat-num">300</span>
+      <span class="cv-stat-label">Households · diaries follow-up (1 year)</span>
     </article>
     <article class="cv-stat-card">
-      <span class="cv-stat-num">30+</span>
-      <span class="cv-stat-label">Facilities covered in thesis and field studies</span>
+      <span class="cv-stat-num">7</span>
+      <span class="cv-stat-label">Primary facilities · NCD financing thesis</span>
     </article>
   </section>
 
   <section class="cv-focus-strip" aria-label="Core focus areas">
+    <span>Research data systems</span>
     <span>Health systems research</span>
-    <span>Data architecture</span>
-    <span>ML infrastructure</span>
+    <span>Quality monitoring / HFC</span>
     <span>Biostatistics</span>
-    <span>Quality monitoring</span>
-    <span>Dashboard reporting</span>
+    <span>Field ops apps</span>
+    <span>Evidence translation</span>
     <span>Capacity building</span>
+  </section>
+
+  <section class="cv-focus-strip" aria-label="Role-targeted CVs" style="margin-top:1rem;flex-wrap:wrap;gap:0.75rem;">
+    <span style="opacity:0.7;margin-right:0.5rem;">Role focus:</span>
+    <a href="#track-research-data" class="cv-contact-chip cv-contact-link">Research data systems</a>
+    <a href="#track-health-analytics" class="cv-contact-chip cv-contact-link">Health analytics / biostats</a>
+    <a href="#track-programme" class="cv-contact-chip cv-contact-link">Programme M&amp;E systems</a>
   </section>
 
 </div>
@@ -74,6 +81,31 @@ format:
 ## Professional Summary {#summary}
 
 I currently lead research data systems for Georgetown University gui2de portfolios in East Africa, including health financial diaries (300 households over one year: HFCs, automation, live field apps) and the Shiny application layer for Re:BUiLD cash-plus targeting with IRC partners. My work spans study design, quality architecture, analysis planning, programme-facing products, and publication support. I am strongest where field implementation, data systems, and decision-making need to behave like one system.
+
+## Role-targeted highlights {#tracks}
+
+Use these as talking tracks when tailoring applications. The full experience list below stays complete.
+
+### Research data systems {#track-research-data}
+
+- Diaries: 300 HH / 1 year · HFC · automation · RA leaderboard · Fuel issues app (internal)  
+- Re:BUiLD: Shiny application from causal targeting models for IRC field teams  
+- Oncology registry: REDCap architecture, multi-language QC, Tableau surveillance product  
+- Stack: ODK / Kobo / REDCap · SQL · R/Python pipelines · Streamlit / Shiny  
+
+### Health analytics & biostatistics {#track-health-analytics}
+
+- First-author mixed-methods NCD financing study (forthcoming *BMC Public Health*)  
+- Survival and LTFU analysis for multi-year oncology records  
+- Causal targeting application layer (CATE / cost-aware recommendations)  
+- Stack: R · Stata · survival methods · quasi-experimental support · Quarto  
+
+### Programme M&E systems {#track-programme}
+
+- Multi-country field teams and quality protocols  
+- Indicator and reporting products for partners and county leadership  
+- Training enumerators and analysts in reproducible practice  
+- Stack: logframes & indicator logic · DHIS2/KHIS familiarity · HFC · donor-facing reports  
 
 ## Experience Explorer {#experience}
 
