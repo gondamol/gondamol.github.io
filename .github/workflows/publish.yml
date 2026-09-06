@@ -10,16 +10,63 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+
+    env:
+      # renv autoloads from .Rprofile and replaces install.packages() with
+      # renv::install(), which forces source builds. That is what failed: `fs`
+      # was compiled from source and needs libuv headers the runner does not
+      # have. Disabled for the WHOLE job -- it was previously set only on the
+      # publish step, so the install step still went through renv.
+      RENV_CONFIG_AUTOLOADER_ENABLED: "FALSE"
+      RENV_CONFIG_STARTUP_QUIET: "TRUE"
+      # Fail the render on an R error rather than publishing a half-built site.
+      QUARTO_PRINT_STACK: "true"
+
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
 
+      - name: Install system libraries
+        # Needed by showtext / textshaping / ragg, which the tidy-tuesday pages
+        # load. Cheap, and it removes a whole class of build failure.
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends \
+            libfreetype6-dev libpng-dev libtiff5-dev libjpeg-dev \
+            libfontconfig1-dev libharfbuzz-dev libfribidi-dev \
+            libcurl4-openssl-dev libssl-dev libxml2-dev
+
       - name: Set up R
         uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: 'release'
+          # Posit Public Package Manager serves precompiled Linux binaries.
+          # Nothing is built from source, so the libuv failure cannot recur.
+          use-public-rspm: true
 
-      - name: Install knitr and rmarkdown
+      - name: Cache R packages
+        uses: actions/cache@v4
+        with:
+          path: ${{ env.R_LIBS_USER }}
+          key: ${{ runner.os }}-rlibs-v1-${{ hashFiles('.github/workflows/publish.yml') }}
+          restore-keys: ${{ runner.os }}-rlibs-v1-
+
+      - name: Install R packages
+        # The five rendered tidy-tuesday pages execute R, and no _freeze output
+        # is committed for them, so these have to be present at build time.
+        # Previously only knitr and rmarkdown were installed, so even a
+        # successful install would have failed at the first library() call.
         run: |
-          install.packages(c("knitr", "rmarkdown"), repos = "https://cloud.r-project.org")
+          pkgs <- c(
+            "knitr", "rmarkdown",          # Quarto's R engine
+            "tidyverse", "lubridate", "scales", "here",
+            "plotly", "DT", "ggtext", "patchwork", "showtext"
+          )
+          missing <- pkgs[!vapply(pkgs, requireNamespace, logical(1), quietly = TRUE)]
+          if (length(missing)) install.packages(missing)
+          invisible(lapply(pkgs, function(p)
+            if (!requireNamespace(p, quietly = TRUE)) stop("failed to install: ", p)))
+          cat("all R packages available\n")
         shell: Rscript {0}
 
       - name: Set up Quarto
@@ -31,4 +78,3 @@ jobs:
           target: gh-pages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          RENV_CONFIG_AUTOLOADER_ENABLED: "FALSE"
