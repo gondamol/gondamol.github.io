@@ -235,14 +235,14 @@
     "href": "tidy-tuesday/income-inequality-health.html#data-import",
     "title": "TidyTuesday: Income Inequality & Health",
     "section": "Data Import",
-    "text": "Data Import\n\n\nRows: 100\nColumns: 4\n$ id       &lt;int&gt; 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18…\n$ value    &lt;dbl&gt; -0.5604756, -0.7906531, 0.7680552, 0.8385636, 0.9678513, 2.68…\n$ category &lt;chr&gt; \"B\", \"B\", \"A\", \"B\", \"C\", \"C\", \"A\", \"B\", \"A\", \"B\", \"C\", \"C\", \"…\n$ date     &lt;date&gt; 2021-06-08, 2021-06-09, 2021-06-10, 2021-06-11, 2021-06-12, …\n\n\n       id             value          category              date           \n Min.   :  1.00   Min.   :-2.667   Length:100         Min.   :2021-06-08  \n 1st Qu.: 25.75   1st Qu.: 1.465   Class :character   1st Qu.:2021-07-02  \n Median : 50.50   Median : 2.192   Mode  :character   Median :2021-07-27  \n Mean   : 50.50   Mean   : 2.473                      Mean   :2021-07-27  \n 3rd Qu.: 75.25   3rd Qu.: 3.383                      3rd Qu.:2021-08-21  \n Max.   :100.00   Max.   :10.303                      Max.   :2021-09-15"
+    "text": "Data Import\n\n\nRows: 100\nColumns: 4\n$ id       &lt;int&gt; 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18…\n$ value    &lt;dbl&gt; -0.5604756, -0.7906531, 0.7680552, 0.8385636, 0.9678513, 2.68…\n$ category &lt;chr&gt; \"B\", \"B\", \"A\", \"B\", \"C\", \"C\", \"A\", \"B\", \"A\", \"B\", \"C\", \"C\", \"…\n$ date     &lt;date&gt; 2021-06-08, 2021-06-09, 2021-06-10, 2021-06-11, 2021-06-12, …\n\n\n       id             value             category        date           \n Min.   :  1.00   Min.   :-2.667   Length   :100   Min.   :2021-06-08  \n 1st Qu.: 25.75   1st Qu.: 1.465   N.unique :  3   1st Qu.:2021-07-02  \n Median : 50.50   Median : 2.192   N.blank  :  0   Median :2021-07-27  \n Mean   : 50.50   Mean   : 2.473   Min.nchar:  1   Mean   :2021-07-27  \n 3rd Qu.: 75.25   3rd Qu.: 3.383   Max.nchar:  1   3rd Qu.:2021-08-21  \n Max.   :100.00   Max.   :10.303                   Max.   :2021-09-15"
   },
   {
     "objectID": "tidy-tuesday/income-inequality-health.html#data-exploration",
     "href": "tidy-tuesday/income-inequality-health.html#data-exploration",
     "title": "TidyTuesday: Income Inequality & Health",
     "section": "Data Exploration",
-    "text": "Data Exploration\n\n\n  id      value category       date\n1  1 -0.5604756        B 2021-06-08\n2  2 -0.7906531        B 2021-06-09\n3  3  0.7680552        A 2021-06-10\n4  4  0.8385636        B 2021-06-11\n5  5  0.9678513        C 2021-06-12\n6  6  2.6829163        C 2021-06-13\n\n\n'data.frame':   100 obs. of  4 variables:\n $ id      : int  1 2 3 4 5 6 7 8 9 10 ...\n $ value   : num  -0.56 -0.791 0.768 0.839 0.968 ...\n $ category: chr  \"B\" \"B\" \"A\" \"B\" ...\n $ date    : Date, format: \"2021-06-08\" \"2021-06-09\" ...\n\n\n      id    value category     date \n       0        0        0        0 \n\n\n       id             value          category              date           \n Min.   :  1.00   Min.   :-2.667   Length:100         Min.   :2021-06-08  \n 1st Qu.: 25.75   1st Qu.: 1.465   Class :character   1st Qu.:2021-07-02  \n Median : 50.50   Median : 2.192   Mode  :character   Median :2021-07-27  \n Mean   : 50.50   Mean   : 2.473                      Mean   :2021-07-27  \n 3rd Qu.: 75.25   3rd Qu.: 3.383                      3rd Qu.:2021-08-21  \n Max.   :100.00   Max.   :10.303                      Max.   :2021-09-15"
+    "text": "Data Exploration\n\n\n  id      value category       date\n1  1 -0.5604756        B 2021-06-08\n2  2 -0.7906531        B 2021-06-09\n3  3  0.7680552        A 2021-06-10\n4  4  0.8385636        B 2021-06-11\n5  5  0.9678513        C 2021-06-12\n6  6  2.6829163        C 2021-06-13\n\n\n'data.frame':   100 obs. of  4 variables:\n $ id      : int  1 2 3 4 5 6 7 8 9 10 ...\n $ value   : num  -0.56 -0.791 0.768 0.839 0.968 ...\n $ category: chr  \"B\" \"B\" \"A\" \"B\" ...\n $ date    : Date, format: \"2021-06-08\" \"2021-06-09\" ...\n\n\n      id    value category     date \n       0        0        0        0 \n\n\n       id             value             category        date           \n Min.   :  1.00   Min.   :-2.667   Length   :100   Min.   :2021-06-08  \n 1st Qu.: 25.75   1st Qu.: 1.465   N.unique :  3   1st Qu.:2021-07-02  \n Median : 50.50   Median : 2.192   N.blank  :  0   Median :2021-07-27  \n Mean   : 50.50   Mean   : 2.473   Min.nchar:  1   Mean   :2021-07-27  \n 3rd Qu.: 75.25   3rd Qu.: 3.383   Max.nchar:  1   3rd Qu.:2021-08-21  \n Max.   :100.00   Max.   :10.303                   Max.   :2021-09-15"
   },
   {
     "objectID": "tidy-tuesday/income-inequality-health.html#data-wrangling",
@@ -291,7 +291,7 @@
     "href": "tidy-tuesday/income-inequality-health.html#session-info",
     "title": "TidyTuesday: Income Inequality & Health",
     "section": "Session Info",
-    "text": "Session Info\n\n\nCode\nutils::sessionInfo()\n\n\nR version 4.5.1 (2025-06-13 ucrt)\nPlatform: x86_64-w64-mingw32/x64\nRunning under: Windows 11 x64 (build 26200)\n\nMatrix products: default\n  LAPACK version 3.12.1\n\nlocale:\n[1] LC_COLLATE=English_United States.utf8 \n[2] LC_CTYPE=English_United States.utf8   \n[3] LC_MONETARY=English_United States.utf8\n[4] LC_NUMERIC=C                          \n[5] LC_TIME=English_United States.utf8    \n\ntime zone: Africa/Nairobi\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices datasets  utils     methods   base     \n\nother attached packages:\n [1] plotly_4.12.0   patchwork_1.3.2 ggtext_0.1.2    showtext_0.9-7 \n [5] showtextdb_3.0  sysfonts_0.8.9  here_1.0.2      lubridate_1.9.5\n [9] forcats_1.0.1   stringr_1.6.0   dplyr_1.2.0     purrr_1.2.1    \n[13] readr_2.1.6     tidyr_1.3.2     tibble_3.3.1    ggplot2_4.0.2  \n[17] tidyverse_2.0.0\n\nloaded via a namespace (and not attached):\n [1] utf8_1.2.6          generics_0.1.4      renv_1.0.7         \n [4] xml2_1.5.2          stringi_1.8.7       hms_1.1.4          \n [7] digest_0.6.39       magrittr_2.0.4      evaluate_1.0.5     \n[10] grid_4.5.1          timechange_0.4.0    RColorBrewer_1.1-3 \n[13] fastmap_1.2.0       rprojroot_2.1.1     jsonlite_2.0.0     \n[16] httr_1.4.8          crosstalk_1.2.2     viridisLite_0.4.3  \n[19] scales_1.4.0        lazyeval_0.2.2      cli_3.6.5          \n[22] rlang_1.1.7         withr_3.0.2         yaml_2.3.12        \n[25] otel_0.2.0          tools_4.5.1         tzdb_0.5.0         \n[28] vctrs_0.7.1         R6_2.6.1            lifecycle_1.0.5    \n[31] htmlwidgets_1.6.4   pkgconfig_2.0.3     pillar_1.11.1      \n[34] gtable_0.3.6        data.table_1.18.2.1 glue_1.8.0         \n[37] Rcpp_1.1.1          xfun_0.56           tidyselect_1.2.1   \n[40] knitr_1.51          farver_2.1.2        htmltools_0.5.9    \n[43] labeling_0.4.3      rmarkdown_2.30      compiler_4.5.1     \n[46] S7_0.2.1            gridtext_0.1.5     \n\n\n\n⬅️ Back to TidyTuesday Index"
+    "text": "Session Info\n\n\nCode\nutils::sessionInfo()\n\n\nR version 4.6.1 (2026-06-24)\nPlatform: x86_64-pc-linux-gnu\nRunning under: Ubuntu 24.04.4 LTS\n\nMatrix products: default\nBLAS:   /usr/lib/x86_64-linux-gnu/openblas-pthread/libblas.so.3 \nLAPACK: /usr/lib/x86_64-linux-gnu/openblas-pthread/libopenblasp-r0.3.26.so;  LAPACK version 3.12.0\n\nlocale:\n [1] LC_CTYPE=C.UTF-8       LC_NUMERIC=C           LC_TIME=C.UTF-8       \n [4] LC_COLLATE=C.UTF-8     LC_MONETARY=C.UTF-8    LC_MESSAGES=C.UTF-8   \n [7] LC_PAPER=C.UTF-8       LC_NAME=C              LC_ADDRESS=C          \n[10] LC_TELEPHONE=C         LC_MEASUREMENT=C.UTF-8 LC_IDENTIFICATION=C   \n\ntime zone: UTC\ntzcode source: system (glibc)\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nother attached packages:\n [1] plotly_4.12.1   patchwork_1.3.2 ggtext_0.2.0    showtext_0.9-8 \n [5] showtextdb_3.0  sysfonts_0.8.9  here_1.0.2      lubridate_1.9.5\n [9] forcats_1.0.1   stringr_1.6.0   dplyr_1.2.1     purrr_1.2.2    \n[13] readr_2.2.0     tidyr_1.3.2     tibble_3.3.1    ggplot2_4.0.3  \n[17] tidyverse_2.0.0\n\nloaded via a namespace (and not attached):\n [1] utf8_1.2.6          generics_0.1.4      xml2_1.6.0         \n [4] stringi_1.8.9       hms_1.1.4           digest_0.6.39      \n [7] magrittr_2.0.5      evaluate_1.0.5      grid_4.6.1         \n[10] timechange_0.4.0    RColorBrewer_1.1-3  fastmap_1.2.0      \n[13] rprojroot_2.1.1     jsonlite_2.0.0      httr_1.4.9         \n[16] crosstalk_1.2.2     viridisLite_0.4.3   scales_1.4.0       \n[19] cli_3.6.6           rlang_1.3.0         withr_3.0.3        \n[22] yaml_2.3.12         otel_0.2.0          tools_4.6.1        \n[25] tzdb_0.5.0          vctrs_0.7.3         R6_2.6.1           \n[28] lifecycle_1.0.5     htmlwidgets_1.6.4   pkgconfig_2.0.3    \n[31] pillar_1.11.1       gtable_0.3.6        data.table_1.18.6.1\n[34] glue_1.8.1          Rcpp_1.1.2          xfun_0.60          \n[37] tidyselect_1.2.1    knitr_1.51          farver_2.1.2       \n[40] htmltools_0.5.9     labeling_0.4.3      rmarkdown_2.32     \n[43] compiler_4.6.1      S7_0.2.2            gridtext_0.1.6     \n\n\n\n⬅️ Back to TidyTuesday Index"
   },
   {
     "objectID": "tidy-tuesday/food-security.html",
@@ -396,7 +396,7 @@
     "href": "tidy-tuesday/food-security.html#session-info",
     "title": "TidyTuesday: Global Food Security Index",
     "section": "Session Info",
-    "text": "Session Info\n\n\nR version 4.5.1 (2025-06-13 ucrt)\nPlatform: x86_64-w64-mingw32/x64\nRunning under: Windows 11 x64 (build 26200)\n\nMatrix products: default\n  LAPACK version 3.12.1\n\nlocale:\n[1] LC_COLLATE=English_United States.utf8 \n[2] LC_CTYPE=English_United States.utf8   \n[3] LC_MONETARY=English_United States.utf8\n[4] LC_NUMERIC=C                          \n[5] LC_TIME=English_United States.utf8    \n\ntime zone: Africa/Nairobi\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices datasets  utils     methods   base     \n\nother attached packages:\n [1] DT_0.34.0       scales_1.4.0    plotly_4.12.0   patchwork_1.3.2\n [5] ggtext_0.1.2    showtext_0.9-7  showtextdb_3.0  sysfonts_0.8.9 \n [9] here_1.0.2      lubridate_1.9.5 forcats_1.0.1   stringr_1.6.0  \n[13] dplyr_1.2.0     purrr_1.2.1     readr_2.1.6     tidyr_1.3.2    \n[17] tibble_3.3.1    ggplot2_4.0.2   tidyverse_2.0.0\n\nloaded via a namespace (and not attached):\n [1] gtable_0.3.6        xfun_0.56           bslib_0.10.0       \n [4] htmlwidgets_1.6.4   lattice_0.22-7      tzdb_0.5.0         \n [7] vctrs_0.7.1         tools_4.5.1         crosstalk_1.2.2    \n[10] generics_0.1.4      pkgconfig_2.0.3     Matrix_1.7-3       \n[13] data.table_1.18.2.1 RColorBrewer_1.1-3  S7_0.2.1           \n[16] lifecycle_1.0.5     compiler_4.5.1      farver_2.1.2       \n[19] htmltools_0.5.9     sass_0.4.10         yaml_2.3.12        \n[22] lazyeval_0.2.2      pillar_1.11.1       jquerylib_0.1.4    \n[25] cachem_1.1.0        nlme_3.1-168        tidyselect_1.2.1   \n[28] digest_0.6.39       stringi_1.8.7       labeling_0.4.3     \n[31] splines_4.5.1       rprojroot_2.1.1     fastmap_1.2.0      \n[34] grid_4.5.1          cli_3.6.5           magrittr_2.0.4     \n[37] withr_3.0.2         timechange_0.4.0    rmarkdown_2.30     \n[40] httr_1.4.8          otel_0.2.0          hms_1.1.4          \n[43] evaluate_1.0.5      knitr_1.51          viridisLite_0.4.3  \n[46] mgcv_1.9-3          rlang_1.1.7         gridtext_0.1.5     \n[49] Rcpp_1.1.1          glue_1.8.0          xml2_1.5.2         \n[52] renv_1.0.7          jsonlite_2.0.0      R6_2.6.1           \n\n\n\n⬅️ Back to TidyTuesday Index"
+    "text": "Session Info\n\n\nR version 4.6.1 (2026-06-24)\nPlatform: x86_64-pc-linux-gnu\nRunning under: Ubuntu 24.04.4 LTS\n\nMatrix products: default\nBLAS:   /usr/lib/x86_64-linux-gnu/openblas-pthread/libblas.so.3 \nLAPACK: /usr/lib/x86_64-linux-gnu/openblas-pthread/libopenblasp-r0.3.26.so;  LAPACK version 3.12.0\n\nlocale:\n [1] LC_CTYPE=C.UTF-8       LC_NUMERIC=C           LC_TIME=C.UTF-8       \n [4] LC_COLLATE=C.UTF-8     LC_MONETARY=C.UTF-8    LC_MESSAGES=C.UTF-8   \n [7] LC_PAPER=C.UTF-8       LC_NAME=C              LC_ADDRESS=C          \n[10] LC_TELEPHONE=C         LC_MEASUREMENT=C.UTF-8 LC_IDENTIFICATION=C   \n\ntime zone: UTC\ntzcode source: system (glibc)\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nother attached packages:\n [1] DT_0.34.0       scales_1.4.0    plotly_4.12.1   patchwork_1.3.2\n [5] ggtext_0.2.0    showtext_0.9-8  showtextdb_3.0  sysfonts_0.8.9 \n [9] here_1.0.2      lubridate_1.9.5 forcats_1.0.1   stringr_1.6.0  \n[13] dplyr_1.2.1     purrr_1.2.2     readr_2.2.0     tidyr_1.3.2    \n[17] tibble_3.3.1    ggplot2_4.0.3   tidyverse_2.0.0\n\nloaded via a namespace (and not attached):\n [1] sass_0.4.10         generics_0.1.4      xml2_1.6.0         \n [4] lattice_0.22-9      stringi_1.8.9       hms_1.1.4          \n [7] digest_0.6.39       magrittr_2.0.5      evaluate_1.0.5     \n[10] grid_4.6.1          timechange_0.4.0    RColorBrewer_1.1-3 \n[13] fastmap_1.2.0       Matrix_1.7-5        rprojroot_2.1.1    \n[16] jsonlite_2.0.0      mgcv_1.9-4          httr_1.4.9         \n[19] crosstalk_1.2.2     viridisLite_0.4.3   jquerylib_0.1.4    \n[22] cli_3.6.6           rlang_1.3.0         splines_4.6.1      \n[25] cachem_1.1.0        withr_3.0.3         yaml_2.3.12        \n[28] otel_0.2.0          tools_4.6.1         tzdb_0.5.0         \n[31] vctrs_0.7.3         R6_2.6.1            lifecycle_1.0.5    \n[34] htmlwidgets_1.6.4   pkgconfig_2.0.3     bslib_0.12.0       \n[37] pillar_1.11.1       gtable_0.3.6        data.table_1.18.6.1\n[40] glue_1.8.1          Rcpp_1.1.2          xfun_0.60          \n[43] tidyselect_1.2.1    knitr_1.51          farver_2.1.2       \n[46] nlme_3.1-169        htmltools_0.5.9     labeling_0.4.3     \n[49] rmarkdown_2.32      compiler_4.6.1      S7_0.2.2           \n[52] gridtext_0.1.6     \n\n\n\n⬅️ Back to TidyTuesday Index"
   },
   {
     "objectID": "tidy-tuesday/2024-maternal-mortality.html",
@@ -700,277 +700,151 @@
     "text": "Code\n\n\n\n\n\n\n\n\n  \n    Life\n    Beyond data,practice and purpose.\n    The habits, values, and experiences that shape how I work and how I serve. Philosophy, farm life, physical discipline, and community building — each informing the other.\n  \n\n\n\n\n  \n    \n\n      \n        \n          \n        \n        Philosophy & Spirit\n        Stoic practice, spiritual integration, and the daily disciplines that keep me clear and grounded.\n        Explore ↓\n      \n\n      \n        \n          \n        \n        Farm & Land\n        Goat farming, water infrastructure, and the rural economics that keep my data analysis honest.\n        Explore ↓\n      \n\n      \n        \n          \n        \n        Physical Discipline\n        Strength training, running, and movement — the practice that keeps my mind stable and focused.\n        Explore ↓\n      \n\n      \n        \n          \n        \n        Community & Collaboration\n        Multi-country coordination, mentorship, and the cross-functional partnerships that produce outcomes.\n        Explore ↓\n      \n\n    \n  \n\n\n\n\n  \n    \"He who has a why to live can bear almost any how.\"\n    — Friedrich Nietzsche\n  \n\n\n\n\n  \n    Philosophy\n    The inner discipline\n    I am a data professional, and I am also a person shaped by philosophy, spiritual reflection, farming, training, and community work. These practices help me stay grounded, especially when research work becomes complex.\n\n    \n      \n        \n          \n          Stoic Discipline\n        \n        Stoic thought is part of my daily structure. It helps me stay calm, think clearly, and focus on what I can control.\n        \n          Morning reading from Meditations\n          Evening reflection on choices, character, and duty\n          Journaling around wisdom, justice, courage, and self-control\n        \n      \n\n      \n        \n          \n          Integrated Spirituality\n        \n        My spiritual life brings together multiple streams of wisdom that I see as complementary paths to integrity and inner peace.\n        \n          Ancestral reverence — connected to identity and heritage\n          Christian faith — compassion, service, and love\n          Buddhist morality — mindfulness, non-attachment, ethical presence\n        \n      \n\n      \n        \n          \n          Reading & Intellectual Life\n        \n        I read Meditations by Marcus Aurelius consistently. It keeps my mind clear during hard periods.\n        \n          Marcus Aurelius Stoic classics\n          Seneca & Epictetus Practical philosophy\n          Nietzsche Meaning, courage, self-creation\n          Buddhist texts Compassion, discipline, awareness\n        \n      \n    \n  \n\n\n\n\n  \n    Farm & Nature\n    Where theory meets reality\n    The farm in Homa Bay is where analysis becomes lived experience. When I work on food systems, risk, and cash flow, I am writing from first-hand knowledge — not from distance.\n\n    \n      \n        \n          \n          Water Pan — Western Kenya\n        \n      \n\n      \n        \n          \n          Morning Grazing\n        \n      \n\n      \n        \n          \n          Herd Growth\n        \n      \n\n      \n        \n          \n          Infrastructure First\n        \n      \n\n      \n        \n          \n          New Life on the Farm\n        \n      \n\n      \n        \n          \n          Water & Herd Planning\n        \n      \n    \n  \n\n\n\n\n  \n    Fitness\n    Physical discipline\n    Physical training keeps my mind stable and focused. I train most mornings, and I use movement to reset and think clearly.\n\n    \n      \n        \n        Strength\n        4–5 sessions per week\n      \n      \n        \n        Running\n        Active recovery days\n      \n      \n        \n        Hydration\n        3–4 litres daily\n      \n    \n\n    \n      \n        \n          \n          Strength Before Deep Work\n        \n      \n\n      \n        \n          \n          Consistency Over Intensity\n        \n      \n\n      \n        \n          \n          Recovery & Mobility\n        \n      \n\n      \n        \n          \n          Energy & Focus\n        \n      \n\n      \n        \n          \n          Discipline With Community\n        \n      \n    \n  \n\n\n\n\n  \n    Community\n    The collaborative builder\n    Most of my best outcomes came from cross-functional collaboration. I value execution with people, not in isolation.\n\n    \n      \n        4\n        Countries coordinated\n        Kenya, Uganda, Tanzania, Rwanda\n      \n      \n        500+\n        Researchers trained\n        Analysts and enumerators\n      \n      \n        8+\n        Years of field leadership\n        Data quality & operations\n      \n    \n\n    \n      \n        \n          \n          Working With Research Teams\n        \n      \n\n      \n        \n          \n          Evidence to Public Action\n        \n      \n\n      \n        \n          \n          Sharing Results Clearly\n        \n      \n\n      \n        \n          \n          Community First Work\n        \n      \n\n      \n        \n          \n          Partnership in Practice\n        \n      \n    \n  \n\n\n\n\n  \n    Values\n    What I stand for\n\n    \n      \n        \n          \n        \n        Integrity\n        Truthfulness, even when truth is uncomfortable\n      \n      \n        \n          \n        \n        Compassion\n        Service, especially for low-resource communities\n      \n      \n        \n          \n        \n        Discipline\n        In both technical work and personal habits\n      \n      \n        \n          \n        \n        Civic Contribution\n        Open tools and evidence-led action\n      \n    \n  \n\n\n\n\n  \n    Rhythm\n    A day in focus\n\n    \n      \n        \n        \n          Morning\n          Read, train, plan\n          Stoic reading, gym session, and setting the tone for the day.\n        \n      \n      \n        \n        \n          Deep Work Block\n          Research & analysis\n          Coding, writing, model building, and data architecture.\n        \n      \n      \n        \n        \n          Afternoon\n          Collaborate & learn\n          Meetings, field coordination, mentorship, and learning.\n        \n      \n      \n        \n        \n          Evening\n          Reflect & reset\n          Reading, family time, journaling, and preparing for tomorrow.\n        \n      \n    \n  \n\n\n\n\n  \n    \n      \n        Connect\n        Connect on shared values\n        If you care about research quality, open collaboration, practical software for Africa, or disciplined long-term work, I am open to connect.\n      \n      \n        Email Me\n        GitHub ↗\n        LinkedIn ↗"
   },
   {
-    "objectID": "projects/real-estate-feasibility-studio/index.html",
-    "href": "projects/real-estate-feasibility-studio/index.html",
-    "title": "Real Estate Feasibility Studio",
+    "objectID": "projects/customer-intelligence/index.html",
+    "href": "projects/customer-intelligence/index.html",
+    "title": "Customer Intelligence & Decision Analytics",
     "section": "",
-    "text": "Business Analyst Case Project\n    Mixed Use Development Feasibility Studio\n    \n      A live investment case dashboard built for real estate planning decisions. It combines product mix strategy,\n      market demand scoring, discounted cash flow modeling, sensitivity testing, and board ready reporting in one view.\n      This is the exact analysis workflow used to test viability before design freeze and budget approval.\n    \n    \n      Residential\n      Commercial\n      Retail\n      Industrial\n      DCF · NPV · IRR · ROI\n      \n        Reset baseline\n        Copy board summary\n      \n    \n  \n\n  \n    \n      Data sources\n      Portfolio demonstration dataset built from public Kenya macro indicators, sampled property listing comparables, and structured development cost assumptions from quantity survey templates.\n    \n    \n      Engineering and cleaning\n      Data is standardized through schema checks, unit normalization, duplicate detection, outlier flags, and pricing alignment before any financial modeling is run.\n    \n    \n      Pipeline and analysis\n      Modular SQL and R style pipeline transforms source tables into scenario ready model inputs powering DCF, NPV, IRR, ROI, payback, and sensitivity analysis.\n    \n    \n      Stakeholder value\n      Creates one shared decision view for finance, planning, design, engineering, and construction teams, improving coordination, budget discipline, and return clarity.\n    \n  \n\n  \n    \n      Model controls\n      Tune assumptions the same way a feasibility team would during investor and management review.\n\n      \n        \n          Development area sqm \n          \n        \n        \n          Land cost per sqm KES \n          \n        \n        \n          Discount rate \n          \n        \n        \n          Finance cost rate \n          \n        \n        \n          Absorption period years \n          \n        \n        \n          Pricing shock \n          \n        \n        \n          Construction cost shock \n          \n        \n        \n          Capex curve\n          \n            Front loaded\n            Balanced\n            Back loaded\n          \n        \n      \n\n      \n        Product mix raw sliders. The model auto normalizes to 100 percent.\n        \n          Residential share \n          \n        \n        \n          Commercial share \n          \n        \n        \n          Retail share \n          \n        \n        \n          Industrial share \n          \n        \n      \n    \n\n    \n      \n        \n          NPV\n          ...\n          Discounted value at selected rate\n        \n        \n          IRR\n          ...\n          Internal return from model cash flow\n        \n        \n          ROI\n          ...\n          Profit on total development cost\n        \n        \n          Payback\n          ...\n          Year cumulative cash flow turns positive\n        \n        \n          Total gross sales\n          ...\n          Portfolio revenue across asset classes\n        \n      \n\n      \n        \n          Eight year cash flow\n          Revenue and cost per year with net signal for phasing and funding pressure.\n          \n          \n            Revenue\n            Cost\n          \n        \n\n        \n          Product mix and margin\n          Normalized mix, pricing assumptions, and gross margin by asset class.\n          \n            \n\n\n\nAsset class\nShare\nAvg price\nAvg cost\nGross margin\n\n\n\n\n\n\n          \n        \n      \n\n      \n        \n          Sensitivity matrix\n          NPV stress test across combined price and cost shocks.\n          \n            \n\n\n\nCost \\ Price\nLoading\n\n\n\n\n0%\nLoading model\n\n\n\n\n          \n        \n\n        \n          Market pulse and recommendations\n          Demand index is adjusted by pricing pressure and mix concentration risk.\n          \n          \n        \n      \n\n      \n        Board brief draft\n        Auto generated talking points for investor, lender, and management presentation.\n        \n          \n          Scenario values are illustrative for portfolio demonstration. Replace assumptions with verified site data before investment approval."
+    "text": "Analytics product · Real open data · Live dashboard\n  \n  Two years of real invoices from a UK giftware wholesaler — 1,067,371 lines, published by the UCI Machine Learning Repository — turned into account intelligence, calibrated predictive scores, and an explainable suggested action. Built end to end: acquisition, quality, analytical model, models, decision engine, and a deployed, live application.\n  \n    Open the live dashboard ↗\n    Repository & documentation ↗"
   },
   {
-    "objectID": "projects/case-studies/ncd-financing-impact/index.html",
-    "href": "projects/case-studies/ncd-financing-impact/index.html",
-    "title": "NCD Financing Impact Case Study",
+    "objectID": "projects/customer-intelligence/index.html#why-i-rebuilt-this-on-real-data",
+    "href": "projects/customer-intelligence/index.html#why-i-rebuilt-this-on-real-data",
+    "title": "Customer Intelligence & Decision Analytics",
+    "section": "Why I rebuilt this on real data",
+    "text": "Why I rebuilt this on real data\nI first built this on data I generated myself. It looked good — the attrition model scored 0.93 — and that was the problem. A model that good on invented data is measuring how knowable the invention was.\nSo I sourced open, properly licensed transaction data and rebuilt on it. The architecture did not change. What the numbers mean did.\n\n\n\n\nSynthetic version\nOn real data\n\n\n\n\nAttrition model\nROC-AUC 0.93\n0.734 ± 0.034\n\n\nData quality defects\n16 types, injected by me\nReal, and worse\n\n\nUnattributable revenue\nnone\n22.6% of the ledger\n\n\nSeasonality\nnone\n3× between February and November\n\n\n\nThe lower number is the honest one, and every awkward property below is something the invented data simply did not have."
+  },
+  {
+    "objectID": "projects/customer-intelligence/index.html#the-data-engineering-is-the-substance",
+    "href": "projects/customer-intelligence/index.html#the-data-engineering-is-the-substance",
+    "title": "Customer Intelligence & Decision Analytics",
+    "section": "The data engineering is the substance",
+    "text": "The data engineering is the substance\nThe source is one flat sheet of invoice lines. Almost everything interesting about it is a problem:\n\nInvoice and StockCode mix integers with alphanumeric codes. Read as numbers — which is what a naive load does — every credit note and administrative row silently disappears.\n0.57% of stock codes are not products at all: postage, carriage, manual adjustments, discounts, samples, bank charges, an Amazon commission of −£260,764, bad-debt write-offs, gift vouchers, and seventeen rows described as “This is a test product”.\nM and m are the same manual-adjustment code, entered two ways. Unified — but for administrative codes only, because product codes are case-significant: 84031A and 84031B are different items.\n22,950 negative quantities. Returns are separated, not netted off. Netting makes an account that buys £10,000 and returns £9,000 identical to one that buys £1,000 and returns nothing.\n243,007 lines carry no customer identifier. Real revenue that belongs to nobody. It stays in the revenue totals and is excluded from every account-level figure — and the site says so, because that is the difference between a measurement and a claim.\n5,305 stock codes and no categories. A derived keyword taxonomy carries 87.7% of revenue into eleven named categories. A published judgement, not a fact about the data."
+  },
+  {
+    "objectID": "projects/customer-intelligence/index.html#the-decision-that-mattered-most-was-a-window-not-a-model",
+    "href": "projects/customer-intelligence/index.html#the-decision-that-mattered-most-was-a-window-not-a-model",
+    "title": "Customer Intelligence & Decision Analytics",
+    "section": "The decision that mattered most was a window, not a model",
+    "text": "The decision that mattered most was a window, not a model\nThis business takes 84,711 invoice lines in November 2011 and 27,707 in February. That single fact determined the experimental design:\ntrain   features months  1–12  (Dec 09 – Nov 10) → outcome 13–15  (Dec 10 – Feb 11)\nscore   features months 13–24  (Dec 10 – Nov 11) → outcome 25–27  (Dec 11 – Feb 12, unobserved)\n\nBoth feature windows are twelve whole months, so seasonality averages out inside them. Both outcome windows are December–February, so the model is applied to the season it was trained on. A test enforces it.\nThe same reasoning fixed the growth model. The obvious target — “beats its own annual quarterly run-rate” — is wrong in a seasonal business: in a low quarter most accounts fall below their annual average whatever they do, and the model spends its capacity learning the calendar. Comparing the same quarter a year earlier moved ROC-AUC from 0.62 to 0.68 on identical features."
+  },
+  {
+    "objectID": "projects/customer-intelligence/index.html#what-the-models-do",
+    "href": "projects/customer-intelligence/index.html#what-the-models-do",
+    "title": "Customer Intelligence & Decision Analytics",
+    "section": "What the models do",
+    "text": "What the models do\n\n\n\n\n\n\n\n\nModel\nQuestion\nResult\n\n\n\n\nLapse risk\nWill an established account place no order next quarter?\nCross-validated ROC-AUC 0.734 ± 0.034, lift 1.66×\n\n\nGrowth propensity\nWill it beat the same quarter a year earlier?\nCross-validated ROC-AUC 0.684 ± 0.030, lift 2.00×\n\n\nNext best product\nWhat should we lead with?\nhit@5 0.314 vs 0.211 popularity — 1.49× lift\n\n\n\nBoth classifiers are quoted cross-validated with a spread, not on a single held-out split. Re-running the project with the rows in a different order moved a held-out AUC by 0.05 — about two standard errors on this sample, and enough to report as an improvement something that is only a different shuffle. The single split flattered both models by 0.03–0.04, in the same direction.\nBoth are calibrated in the large to three decimal places: predicted 0.451 against observed 0.454, and 0.239 against 0.240.\n\nA defect that ROC-AUC could not see\nAn account that had ordered the previous month, and was active in eight months of twelve, was scored at a 97.6% probability of lapsing. Its largest month sat fourteen standard deviations above the book mean and its returned value twenty — so the linear model was extrapolating far outside anything it had been trained on, and the sigmoid had saturated. I found it on the live dashboard, on the flagship page.\nThe AUC did not move when I fixed it. It is a ranking metric, the ranking was fine, and only the scores were nonsense — the same blind spot that had earlier hidden a calibration failure in this project.\nThe fix is standard: log-transform the heavy-tailed money and count features before standardising. Monotone, so nothing about the ordering changes; defined at zero, which matters because most of these are zero for somebody; and it turns “fourteen standard deviations” into “a large account”. Afterwards that account scores 0.112, no account exceeds 0.90, and discrimination is unchanged at 0.734. A test now fails the build if it returns.\n\n\nTwo negative results, published\nA category-expansion classifier scored ROC-AUC 0.550 — barely above chance. A category-level recommender then failed to beat a popularity baseline (0.927 against 0.936).\nBoth failed for the same structural reason, and finding it mattered more than either model would have: the median account already buys 9 of the 12 categories. “The top three you don’t buy” is most of what is left, so there is almost nothing to predict.\nReframed to product level — 400 products, median account buys 18 — the problem is real, and item-to-item collaborative filtering beats popularity by 1.49× at k=5. It can also name the product an account manager should lead with, which a propensity score never could.\nThe answer was to change the question, not to reach for a bigger model.\n\n  \n  One account: the evidence, which rule fired, the product to lead with, the constraint on acting, and how much confidence the trading history supports."
+  },
+  {
+    "objectID": "projects/customer-intelligence/index.html#from-prediction-to-action",
+    "href": "projects/customer-intelligence/index.html#from-prediction-to-action",
+    "title": "Customer Intelligence & Decision Analytics",
+    "section": "From prediction to action",
+    "text": "From prediction to action\nA probability is not a decision. The decision engine is a transparent ordered rule set rather than a model — a recommendation has to be arguable by the account manager who receives it, the rules encode commercial policy that should change deliberately, and learning actions from last year learns last year’s policy including its mistakes.\nThe ordering is the policy:\n\nService failure — a 20%+ return rate is not a sales opportunity.\nToo new to judge — onboarding, not a low-value label.\nNot scored — says so, rather than implying a judgement never made.\nRetention — graded by what the account is worth and how far past its own usual gap it has drifted.\nGrowth — only on an account that is not going anywhere.\nDeliberately nothing — a reachable outcome, recorded as a decision.\n\n17% of accounts reach a named account manager, and they hold 53% of revenue. An engine routing much more than that to human contact has produced a wish list rather than a plan, so the check sits on the page.\n\nThe accounts the models refuse to score\nOnly 1,703 of 5,914 accounts have an established ordering rhythm. The rest carry no score, sit in a “Not scored” quadrant, and their recommendation says why.\nThat was a bug I had to fix. Filling their risk with 1.0 to make the arithmetic work put them in the Retain quadrant — flagged as high-risk on the strength of a number the model had explicitly declined to produce. Enforcing eligibility at scoring time as well as training time cut the account-manager workload from 45% of the book to 17%."
+  },
+  {
+    "objectID": "projects/customer-intelligence/index.html#the-data-quality-section-is-real-now",
+    "href": "projects/customer-intelligence/index.html#the-data-quality-section-is-real-now",
+    "title": "Customer Intelligence & Decision Analytics",
+    "section": "The data quality section is real now",
+    "text": "The data quality section is real now\n\n  97.3%of records conform to the quality rules\n  22.6%of the ledger belongs to no customer at all\n\nBoth figures describe the same data. Conformance is a row-weighted average and at these defect rates it is arithmetically bound to look reassuring — it is the wrong number to lead with. The one that changes what the analysis can claim is the second.\nTwenty-two rules across seven dimensions found 235,143 unattributable lines, 34,058 exact duplicates, 3,427 negative quantities on invoices that are not credit notes, 1,215 stock codes carrying conflicting descriptions, and seventeen test rows in production data. None of it was injected.\n\nHow do I know the checks work?\nOn real data the answer is not known in advance, so the checks cannot be graded against it. So they are graded elsewhere: the synthetic generator from the first version of this project is retained as a validation harness. It injects sixteen defect types in known quantities, and the reconciliation of injected against detected is a test the build must pass. The complementary test matters as much — the same rules run over the undamaged data must all pass, or a check that always fires would look like a working detector.\nProve the instrument reads correctly against a known answer, then point it at data where the answer is unknown.\n\n  \n  Provenance, licence, and what is actually wrong with a widely used published dataset."
+  },
+  {
+    "objectID": "projects/customer-intelligence/index.html#governance-as-code",
+    "href": "projects/customer-intelligence/index.html#governance-as-code",
+    "title": "Customer Intelligence & Decision Analytics",
+    "section": "Governance as code",
+    "text": "Governance as code\n\nAttribution. CC BY 4.0 makes credit a condition of use, not a courtesy. The source, publisher, licence and citation are carried in code and shown on every page.\nProvenance. Each file is downloaded from its original publisher at build time and cached by SHA-256. A source that changes upstream is reported rather than silently changing every figure downstream.\nLeakage. Training and scoring features come from the same SQL file with a different window. A test greps the SQL for any month literal reaching into the outcome window.\nEligibility. Models refuse to score outside the population they were fitted on. Ineligible accounts get null, not zero — zero is a prediction, null is an admission.\nNothing dropped silently. Every removed line is counted with the rule and the reasoning, including the 235,143 that belong to nobody."
+  },
+  {
+    "objectID": "projects/customer-intelligence/index.html#how-this-connects-to-what-i-already-do",
+    "href": "projects/customer-intelligence/index.html#how-this-connects-to-what-i-already-do",
+    "title": "Customer Intelligence & Decision Analytics",
+    "section": "How this connects to what I already do",
+    "text": "How this connects to what I already do\nThe techniques are the same discipline pointed at a different subject.\n\n\n\n\n\n\n\nIn this project\nIn work I have delivered\n\n\n\n\nQuality rules graded against a known answer\nHigh-frequency checks and automated quality workflows on the health financial diaries study\n\n\nConformance log — nothing dropped silently\nData quality architecture for multi-year oncology records\n\n\nDecision engine with stated guardrails\nShiny decision-support for IRC field teams, from causal forest targeting models\n\n\nAccount 360 from a flat ledger\nResearch data management across multi-country programme systems\n\n\nAn application that reads artefacts\nReal-time field dashboards and operational apps\n\n\nCross-validated estimates with spreads\nMixed-methods research and survival analysis\n\n\n\nData management → Analytics → Statistical modelling → Decision support → Analytics products"
+  },
+  {
+    "objectID": "projects/customer-intelligence/index.html#limitations",
+    "href": "projects/customer-intelligence/index.html#limitations",
+    "title": "Customer Intelligence & Decision Analytics",
+    "section": "Limitations",
+    "text": "Limitations\nOne business, two years, one country of origin — a UK giftware wholesaler selling largely to trade customers, so nothing generalises without re-fitting. The lapse label is behavioural, not contractual: a wholesale customer cannot cancel, only stop ordering. 22.6% of the ledger is unattributable, so every per-account figure describes the 77% that can be attributed. The product taxonomy is derived by keyword rules — a published judgement covering 87.7% of revenue. 1,752 accounts train the lapse model, which is small and is why the reported spreads are what they are. Two years is two Christmases: enough to align the windows seasonally, not enough to model seasonality itself. And no causal claim is supported anywhere — permutation importance measures what a model relies on, not what causes an account to lapse."
+  },
+  {
+    "objectID": "projects/customer-intelligence/index.html#running-it",
+    "href": "projects/customer-intelligence/index.html#running-it",
+    "title": "Customer Intelligence & Decision Analytics",
+    "section": "Running it",
+    "text": "Running it\ngit clone https://github.com/gondamol/customer-intelligence.git\ncd customer-intelligence\n\nmake setup      # create the environment\nmake run        # open the application — derived artefacts are committed\nmake all        # or rebuild everything from the published source\nThe application starts immediately: the artefacts it reads are in the repository, so there is no build step and no data download at start-up. make all re-fetches Online Retail II from UCI and rebuilds the whole pipeline. 123 tests cover the source adapter, the conformed layer, seasonal window alignment, leakage controls, model behaviour, the decision rules and the recommender.\n\n  Open the live dashboard ↗\n  Repository ↗\n  All projects\n\n\nThe domain may change. The analytical problem remains: turning complex data into better decisions."
+  },
+  {
+    "objectID": "projects/dashboards/health-financing-real-time/index.html",
+    "href": "projects/dashboards/health-financing-real-time/index.html",
+    "title": "Health Financing Real-Time Dashboard",
     "section": "",
-    "text": "Project D · Business Impact Case Study\n  \n  This page reframes the Kisumu NCD financing work in language that a strategy, operations, or investment audience can absorb quickly: bottlenecks, risk, intervention options, and expected service gains."
+    "text": "Project E · Interactive Dashboard\n  \n  A Shiny-style monitoring concept that combines KPI tracking, facility comparison, and early warning signals for stockout or reimbursement risk."
   },
   {
-    "objectID": "projects/case-studies/ncd-financing-impact/index.html#challenge",
-    "href": "projects/case-studies/ncd-financing-impact/index.html#challenge",
-    "title": "NCD Financing Impact Case Study",
-    "section": "Challenge",
-    "text": "Challenge\nSeven public facilities were expected to maintain hypertension and diabetes care, but they operated with:\n\nno dedicated NCD budget line\ndelayed procurement and reimbursement cycles\nlimited autonomy to redirect funds when chronic medicine demand changed"
+    "objectID": "projects/dashboards/health-financing-real-time/index.html#what-the-dashboard-monitors",
+    "href": "projects/dashboards/health-financing-real-time/index.html#what-the-dashboard-monitors",
+    "title": "Health Financing Real-Time Dashboard",
+    "section": "What the dashboard monitors",
+    "text": "What the dashboard monitors\n\nreimbursement lag by facility\nmedicine stockout exposure\nhousehold payment burden\nfacility-level risk flags for intervention prioritization\n\n\n  \n    📍\n    Facility drill-down\n    Move from county view to facility detail to inspect reimbursement lag, stock status, and high-risk alerts.\n  \n  \n    📦\n    Stockout forecasting\n    Estimate near-term medicine stockout risk using historical lag and current consumption signals.\n  \n  \n    📊\n    Executive KPI strip\n    Show the handful of metrics decision-makers actually need each week rather than overwhelming them with charts.\n  \n  \n    🚨\n    Alerting logic\n    Escalate facilities that cross thresholds for payment delays, stock risk, or continuity-of-care danger."
   },
   {
-    "objectID": "projects/case-studies/ncd-financing-impact/index.html#data-approach",
-    "href": "projects/case-studies/ncd-financing-impact/index.html#data-approach",
-    "title": "NCD Financing Impact Case Study",
-    "section": "Data approach",
-    "text": "Data approach\nThe case combined facility records, financial process review, and qualitative evidence from staff and managers to identify where service continuity breaks down."
+    "objectID": "projects/dashboards/health-financing-real-time/index.html#project-files",
+    "href": "projects/dashboards/health-financing-real-time/index.html#project-files",
+    "title": "Health Financing Real-Time Dashboard",
+    "section": "Project files",
+    "text": "Project files\n\napp.R for the Shiny dashboard shell\ndata_prep.R for synthetic KPI preparation\ndata/facility_kpis.csv as the demo data source\nREADME.md explaining the dashboard concept"
   },
   {
-    "objectID": "projects/case-studies/ncd-financing-impact/index.html#scenario-modeling",
-    "href": "projects/case-studies/ncd-financing-impact/index.html#scenario-modeling",
-    "title": "NCD Financing Impact Case Study",
-    "section": "Scenario modeling",
-    "text": "Scenario modeling\n\n  85.7%Facilities reporting frequent stockouts\n  100%Facilities without direct spending autonomy\n  18%Projected continuity gain with faster approvals\n  3Operational levers modeled\n\n\n\n\n\n\n\n\nLever\nModeled effect\n\n\n\n\nFaster procurement approval\nFewer medicine interruption days\n\n\nProtected chronic care budget line\nMore predictable medicine availability\n\n\nLocal facility spending discretion\nQuicker response to small stock gaps"
+    "objectID": "projects/dashboards/health-financing-real-time/index.html#why-it-matters",
+    "href": "projects/dashboards/health-financing-real-time/index.html#why-it-matters",
+    "title": "Health Financing Real-Time Dashboard",
+    "section": "Why it matters",
+    "text": "Why it matters\nThis project shows product thinking, not just analysis. The point is not to create another static report. It is to show how operational data, simple forecasting, and drill-down design can support faster decisions.\nBack to Projects →"
   },
   {
-    "objectID": "projects/case-studies/ncd-financing-impact/index.html#operational-recommendation",
-    "href": "projects/case-studies/ncd-financing-impact/index.html#operational-recommendation",
-    "title": "NCD Financing Impact Case Study",
-    "section": "Operational recommendation",
-    "text": "Operational recommendation\nThe most realistic first move is not a full financing overhaul. It is a tighter operating model:\n\nprotect a minimum NCD budget line\nmonitor reimbursement lag as a service KPI\nauthorize low-cost local purchases when stockout risk passes a threshold"
+    "objectID": "projects/ai-applications/research-brief-generator/index.html",
+    "href": "projects/ai-applications/research-brief-generator/index.html",
+    "title": "Research Brief Generator",
+    "section": "",
+    "text": "Project C · LLM Application\n  \n  A lightweight AI application for turning dense research papers into a consistent briefing format that a programme lead, policymaker, or field operations team can read quickly."
   },
   {
-    "objectID": "projects/case-studies/ncd-financing-impact/index.html#files-in-this-project",
-    "href": "projects/case-studies/ncd-financing-impact/index.html#files-in-this-project",
-    "title": "NCD Financing Impact Case Study",
+    "objectID": "projects/ai-applications/research-brief-generator/index.html#use-case",
+    "href": "projects/ai-applications/research-brief-generator/index.html#use-case",
+    "title": "Research Brief Generator",
+    "section": "Use case",
+    "text": "Use case\nResearch papers often contain the right evidence but arrive in the wrong format for a busy delivery team. This project creates a structured bridge:\n\ninput a paper as text or extracted PDF content\nask the model for a fixed briefing schema\nexport a short brief in JSON and markdown-ready text"
+  },
+  {
+    "objectID": "projects/ai-applications/research-brief-generator/index.html#brief-schema",
+    "href": "projects/ai-applications/research-brief-generator/index.html#brief-schema",
+    "title": "Research Brief Generator",
+    "section": "Brief schema",
+    "text": "Brief schema\n\n\n\nField\nPurpose\n\n\n\n\ntitle\nHuman-readable title\n\n\nresearch_question\nWhat the paper is trying to answer\n\n\nmethods\nStudy design in plain language\n\n\nmain_findings\nBullet-ready evidence summary\n\n\noperational_implications\nWhat a programme team should do with it\n\n\nequity_notes\nAny fairness or implementation concerns\n\n\nlimitations\nWhat not to over-claim"
+  },
+  {
+    "objectID": "projects/ai-applications/research-brief-generator/index.html#workflow",
+    "href": "projects/ai-applications/research-brief-generator/index.html#workflow",
+    "title": "Research Brief Generator",
+    "section": "Workflow",
+    "text": "Workflow\n\n  1Load paper text\n  2Apply structured prompt\n  3Validate JSON output\n  4Publish briefing note"
+  },
+  {
+    "objectID": "projects/ai-applications/research-brief-generator/index.html#files-in-this-project",
+    "href": "projects/ai-applications/research-brief-generator/index.html#files-in-this-project",
+    "title": "Research Brief Generator",
     "section": "Files in this project",
-    "text": "Files in this project\n\nscenario_model.R for the scenario calculations\ndata/ncd_financing_scenarios.csv with example assumptions\nREADME.md summarizing the case-study framing\n\nBack to Projects →"
+    "text": "Files in this project\n\ngenerate_brief.py for the CLI workflow\nexamples/sample_paper.txt as example input\nexamples/sample_brief.json as example output\nREADME.md with setup notes"
   },
   {
-    "objectID": "projects/data-engineering/etl-pipeline-architecture/index.html",
-    "href": "projects/data-engineering/etl-pipeline-architecture/index.html",
-    "title": "ETL Pipeline Architecture for Multi-Country Research Operations",
-    "section": "",
-    "text": "Project B · Data Pipeline / ETL Architecture\n  \n  This project documents how I would move survey and facility extracts from raw files into a validated reporting layer that can feed dashboards, briefs, and partner reporting without manual spreadsheet firefighting."
-  },
-  {
-    "objectID": "projects/data-engineering/etl-pipeline-architecture/index.html#pipeline-objective",
-    "href": "projects/data-engineering/etl-pipeline-architecture/index.html#pipeline-objective",
-    "title": "ETL Pipeline Architecture for Multi-Country Research Operations",
-    "section": "Pipeline objective",
-    "text": "Pipeline objective\nThe practical goal is simple: stop every analysis cycle from starting with a new round of ad hoc cleaning. The pipeline standardizes raw extracts, applies validation rules, and publishes a reporting-ready table with audit flags preserved.\n\n  \n    1\n    Ingest\n    Load daily survey and facility files from multiple partner sites with schema checks at entry.\n  \n  \n    2\n    Validate\n    Run range checks, missingness rules, duplicate detection, and referential integrity against facility metadata.\n  \n  \n    3\n    Transform\n    Standardize names, dates, units, and indicator logic into a tidy reporting model.\n  \n  \n    4\n    Publish\n    Export clean tables and QA summaries for dashboards, analyst handoff, and stakeholder reporting."
-  },
-  {
-    "objectID": "projects/data-engineering/etl-pipeline-architecture/index.html#validation-rules-included",
-    "href": "projects/data-engineering/etl-pipeline-architecture/index.html#validation-rules-included",
-    "title": "ETL Pipeline Architecture for Multi-Country Research Operations",
-    "section": "Validation rules included",
-    "text": "Validation rules included\n\n\n\n\n\n\n\nRule\nPurpose\n\n\n\n\nUnique household or patient ID\nPrevent duplicate counting\n\n\nAllowed facility IDs only\nCatch site mapping errors early\n\n\nDate ordering check\nEnsure visit dates do not precede enrollment\n\n\nIncome and expenditure bounds\nFlag impossible or clearly mis-entered values\n\n\nRequired fields by encounter type\nMake downstream indicators safe to compute"
-  },
-  {
-    "objectID": "projects/data-engineering/etl-pipeline-architecture/index.html#output-model",
-    "href": "projects/data-engineering/etl-pipeline-architecture/index.html#output-model",
-    "title": "ETL Pipeline Architecture for Multi-Country Research Operations",
-    "section": "Output model",
-    "text": "Output model\nThe pipeline produces three layers:\n\nraw: immutable copies of source extracts\nstaging: standardized field names and basic harmonization\nreporting: one clean fact table joined to a facility reference table and QA summary"
-  },
-  {
-    "objectID": "projects/data-engineering/etl-pipeline-architecture/index.html#files-in-this-project",
-    "href": "projects/data-engineering/etl-pipeline-architecture/index.html#files-in-this-project",
-    "title": "ETL Pipeline Architecture for Multi-Country Research Operations",
-    "section": "Files in this project",
-    "text": "Files in this project\n\netl_pipeline.R for the scripted ETL workflow\ndata/raw_household_extract.csv as a demo source file\ndata/facility_reference.csv for lookup validation\nREADME.md describing the folder structure and flow"
-  },
-  {
-    "objectID": "projects/data-engineering/etl-pipeline-architecture/index.html#why-it-belongs-in-the-portfolio",
-    "href": "projects/data-engineering/etl-pipeline-architecture/index.html#why-it-belongs-in-the-portfolio",
-    "title": "ETL Pipeline Architecture for Multi-Country Research Operations",
-    "section": "Why it belongs in the portfolio",
-    "text": "Why it belongs in the portfolio\nThis is the kind of work that makes dashboards trustworthy. It is also the bridge between research data management and modern data engineering: naming conventions, validation layers, reproducible jobs, and clear handoff contracts.\nBack to Projects →"
-  },
-  {
-    "objectID": "projects/rebuild-targeting/index.html",
-    "href": "projects/rebuild-targeting/index.html",
-    "title": "Re:BUiLD Cash-Plus Targeting",
-    "section": "",
-    "text": "Application development · Georgetown gui2de · IRC Re:BUiLD\n  \n  \n    I built the Shiny application that turns gui2de cash-plus targeting analysis into a decision-support tool for IRC caseworkers: score one applicant or a batch, compare Cash only versus Cash + Network, and see a plain-language rationale with cost-aware economics.\n  \n  \n    Open live app →\n    gui2de profile →\n    gui2de Re:BUiLD page →"
-  },
-  {
-    "objectID": "projects/rebuild-targeting/index.html#my-role-accurate-credit",
-    "href": "projects/rebuild-targeting/index.html#my-role-accurate-credit",
-    "title": "Re:BUiLD Cash-Plus Targeting",
-    "section": "My role (accurate credit)",
-    "text": "My role (accurate credit)\nOn the product’s Targeting Development Team I am listed as Application (gui2de East Africa): I developed the Shiny recommender from the targeting models so field teams could use the analysis operationally.\n\n\n\nRole\nPerson\nUnit\n\n\n\n\nAcademic lead: targeting\nAndrew Zeitlin\ngui2de\n\n\nAnalyst\nEthan Sager\ngui2de\n\n\nApplication\nNichodemus Amollo\ngui2de East Africa\n\n\nProject management\nAlex Wendo\ngui2de East Africa\n\n\n\nI do not claim sole ownership of the causal forest or the working-paper analysis. I claim the application layer: assessment UX, economics inputs, recommendation presentation, batch workflow, and deployment of a tool caseworkers can run.\n\n  \n  \n    On-product team credit — Application: Nichodemus Amollo, gui2de East Africa."
-  },
-  {
-    "objectID": "projects/rebuild-targeting/index.html#programme-context",
-    "href": "projects/rebuild-targeting/index.html#programme-context",
-    "title": "Re:BUiLD Cash-Plus Targeting",
-    "section": "Programme context",
-    "text": "Programme context\nRe:BUiLD (Refugees in East Africa: Boosting Urban Innovations for Livelihoods Development) is a multi-year initiative led by the International Rescue Committee with support from the IKEA Foundation, pairing livelihoods services for refugee and host-community residents of Kampala and Nairobi with rigorous evidence generation. Georgetown gui2de supports the research and evidence layer.\nLive tool: rebuild.shinyapps.io/rebuild-targeting"
-  },
-  {
-    "objectID": "projects/rebuild-targeting/index.html#problem-the-app-solves",
-    "href": "projects/rebuild-targeting/index.html#problem-the-app-solves",
-    "title": "Re:BUiLD Cash-Plus Targeting",
-    "section": "Problem the app solves",
-    "text": "Problem the app solves\nAverage treatment effects hide real heterogeneity: networking helps some participants much more than others, and networking is more expensive to deliver than cash. Field teams need a participant-specific, cost-aware recommendation that still leaves the final call with the caseworker."
-  },
-  {
-    "objectID": "projects/rebuild-targeting/index.html#what-the-recommender-does",
-    "href": "projects/rebuild-targeting/index.html#what-the-recommender-does",
-    "title": "Re:BUiLD Cash-Plus Targeting",
-    "section": "What the recommender does",
-    "text": "What the recommender does\n\nEnter a profile — screening characteristics (e.g. age, baseline monthly revenue, refugee status, language fluency, and related fields).\n\nSee the prediction — estimated change in monthly income if networking is added to cash, weighed against delivery cost.\n\nReview with judgement — clear Cash only or Cash + Network recommendation with rationale and cost-benefit comparison.\n\nAlso supports batch upload so programmes can score a list of applicants, not only one-by-one.\n\n  \n  \n    Product home: decision support for IRC field teams, grounded in a causal forest trained on 6,260 real programme participants."
-  },
-  {
-    "objectID": "projects/rebuild-targeting/index.html#methods-spine-for-technical-readers",
-    "href": "projects/rebuild-targeting/index.html#methods-spine-for-technical-readers",
-    "title": "Re:BUiLD Cash-Plus Targeting",
-    "section": "Methods spine (for technical readers)",
-    "text": "Methods spine (for technical readers)\n\nModel family: causal forest (Wager & Athey; grf in R)\n\nEstimand: conditional average treatment effect (CATE) of Cash + Network versus Cash only\n\nTraining sample: 6,260 Wave 2 programme participants across Uganda and Kenya (Kampala and Nairobi)\n\nDecision rule (app logic): compare CATE to an opportunity-cost expression built from programme economics (cost of cash, cost of networking, benefit of cash)\n\nUX requirement: every recommendation needs a rationale and a cost-benefit comparison, not only a score\n\n\n  \n  \n    Assessment UI: programme economics and applicant profile on the left; recommended placement, expected extra income, and net gain on the right."
-  },
-  {
-    "objectID": "projects/rebuild-targeting/index.html#caveats-the-product-is-honest-about",
-    "href": "projects/rebuild-targeting/index.html#caveats-the-product-is-honest-about",
-    "title": "Re:BUiLD Cash-Plus Targeting",
-    "section": "Caveats the product is honest about",
-    "text": "Caveats the product is honest about\n\nRecommendations are advisory; caseworkers keep final judgement\n\nModel fit is specific to the training contexts and waves; do not casually extrapolate to new countries without re-training\n\nCross-site transport of targeting rules is a research concern, not something the app pretends is solved\n\nUse non-identifying participant IDs unless the deployment environment is approved for identifiable data"
-  },
-  {
-    "objectID": "projects/rebuild-targeting/index.html#what-this-demonstrates",
-    "href": "projects/rebuild-targeting/index.html#what-this-demonstrates",
-    "title": "Re:BUiLD Cash-Plus Targeting",
-    "section": "What this demonstrates",
-    "text": "What this demonstrates\n\nTurning research models into field software under partner branding and real users\n\nClear role boundaries (application vs academic lead vs analyst)\n\nCost-aware causal targeting presented in language caseworkers can use\n\nDeployment discipline (Shiny, methodology tab, batch + single assessment paths)"
-  },
-  {
-    "objectID": "projects/rebuild-targeting/index.html#links",
-    "href": "projects/rebuild-targeting/index.html#links",
-    "title": "Re:BUiLD Cash-Plus Targeting",
-    "section": "Links",
-    "text": "Links\n\nLive Re:BUiLD targeting app\n\ngui2de profile — Nichodemus Amollo\n\ngui2de Re:BUiLD research page\n\nBack to Projects\n\nGet in touch →"
-  },
-  {
-    "objectID": "projects/index.html",
-    "href": "projects/index.html",
-    "title": "\n    Selected work\n  ",
-    "section": "",
-    "text": "Portfolio\n  \n    Selected work\n  \n  \n    Field delivery and original research first. Methods-lab demos are labeled and kept secondary —\n    they never outrank programme systems you can open and inspect.\n  \n\n  \n    All\n    Field delivery\n    Research\n    Methods lab\n  \n\n  \n  \n    Field delivery & programme systems\n  \n  \n\n    \n      \n        \n        \n      \n      \n        Georgetown gui2de · Health financial diaries\n        Diaries systems: 300 households, one year\n        HFCs, automated quality workflows, an RA leaderboard, and a fuel/issues app that aggregated field problems in real time as data streamed into the study database.\n        \n          HFCStreamlitLive ops apps300 HH\n          Open case study →\n        \n      \n    \n\n    \n      \n        \n        \n      \n      \n        Application · IRC Re:BUiLD · gui2de\n        Cash-plus targeting recommender\n        Shiny decision-support for IRC field teams. Application layer from causal forest targeting models — Cash vs Cash + Network with cost-aware rationale. Live app.\n        \n          ShinyCausal forest6,260 participants\n          Case study & live app →\n        \n      \n    \n\n    \n      \n        \n        \n      \n      \n        KEMRI · Oncology data systems\n        Kisumu cancer surveillance dashboard\n        Research data management for multi-year oncology records: REDCap architecture, quality systems, survival analysis, and a county-facing dashboard launched with local leadership.\n        \n          REDCapSurvival analysisTableau\n          Read delivery story →\n        \n      \n    \n\n  \n\n  \n  \n    Research & evidence\n  \n  \n\n    \n      \n        \n        \n      \n      \n        MSc research · Forthcoming BMC Public Health\n        Financial determinants of NCD care in rural primary facilities\n        Mixed-methods study across seven public primary care facilities in Seme Sub-County: facility decision space, stockouts, and financing architecture for hypertension and diabetes care.\n\n        \n          Manuscript data snapshot from 7 facilities\n          \n            \n              \n                Frequent medicine stockouts\n                85.7%\n              \n              \n            \n            \n              \n                Facilities without direct spending autonomy\n                100%\n              \n              \n            \n            \n              \n                Facilities receiving direct county funding\n                28.6%\n              \n              \n            \n            \n              \n                Facilities with dedicated NCD budget line\n                0%\n              \n              \n            \n          \n        \n        \n          First authorMixed methodsHealth financing\n          Read thesis →\n        \n      \n    \n\n    \n      \n        \n      \n      \n        Operations framing · Health financing\n        NCD financing as an operations problem\n        Reframes the Kisumu chronic-care financing work for strategy and operations audiences: bottlenecks, levers, and scenario logic.\n        \n          Case studyScenario model\n          Open →\n        \n      \n    \n\n    \n      \n        \n      \n      \n        Public essay · Health systems\n        When clinics can diagnose but cannot buy medicines\n        Plain-language argument from the BMC paper: budgets, approval chains, and facility decision space.\n        \n          EssayPolicy translation\n          Read essay →\n        \n      \n    \n\n  \n\n  \n  \n    Methods lab\n  \n  \n    Labeled demonstrations and tooling samples. Useful for methods conversation — not primary programme evidence.\n  \n  \n\n    \n      \n        \n      \n      \n        Demonstration · ETL\n        ETL pipeline architecture\n        How raw survey and facility extracts move into validated reporting layers with reproducible R workflows and QA rules.\n        \n          DemoRValidation\n          Open →\n        \n      \n    \n\n    \n      \n        \n      \n      \n        Demonstration · Predictive workflow\n        Healthcare readmission risk (synthetic)\n        Portfolio demonstration of feature design, validation, and operational scoring on synthetic discharge data — not a deployed clinical product.\n        \n          DemoXGBoostSynthetic data\n          Open →\n        \n      \n    \n\n    \n      \n        \n      \n      \n        Demonstration · LLM workflow\n        Research brief generator\n        Structured workflow for turning long-form research inputs into implementation-style briefs with a consistent schema.\n        \n          DemoPythonLLM\n          Open →\n        \n      \n    \n\n    \n      \n        \n      \n      \n        Demonstration · Dashboard concept\n        Health financing KPI dashboard (synthetic)\n        Shiny concept for reimbursement lag, stockout risk, and facility priorities — illustrative data only.\n        \n          DemoShinyKPIs\n          Open →"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "\n        \n          Nichodemus\n        \n        Amollo\n      ",
-    "section": "",
-    "text": "Research Data Systems · Health & Development Programmes\n      \n        \n          Nichodemus\n        \n        Amollo\n      \n      I build the data systems and evidence products that make health and development programmes trustworthy.\n      \n        From field instruments to policy-facing analysis: survey design in low-connectivity settings, high-frequency quality checks, pipelines that hold up under real operations, and decision tools for teams who cannot wait for a perfect spreadsheet. I work best close to the people, programmes, and constraints the data is meant to serve.\n      \n    \n    \n      \n        Selected Work\n        My Story\n      \n      \n        \n          \n            Study Design\n            Survey Systems\n            ODK / Kobo / REDCap\n            HFC & Quality\n            ETL Pipelines\n            Field Ops Apps\n            R · Python · SQL\n            Dashboards\n            Causal Targeting\n          \n          \n            Study Design\n            Survey Systems\n            ODK / Kobo / REDCap\n            HFC & Quality\n            ETL Pipelines\n            Field Ops Apps\n            R · Python · SQL\n            Dashboards\n            Causal Targeting\n          \n        \n      \n    \n  \n\n  \n    \n      \n      \n        Current Work\n        Health financial diaries systems for 300 households over one year.\n        HFCs, automated quality workflows, and live field apps for Georgetown gui2de.\n      \n    \n    \n      \n        8+\n        Years\n      \n      \n        3\n        Countries\n      \n      \n        300\n        HH diaries (1 yr)\n      \n      \n        7\n        Facilities (thesis)\n      \n    \n  \n\n\n\n  \n    Expertise\n    Programme evidence, end to end.\n    Built for research and delivery teams operating under real field constraints — not classroom demos.\n\n    \n      \n        01\n        Research data systems\n        Study design, digital instruments, multi-country field teams, and HFCs that catch errors while collection is still running.\n        ODK · KoboToolbox · REDCap · HFC · XLSForm\n      \n      \n        02\n        Quality architecture & ops apps\n        Pipelines, validation layers, and live tools for supervisors — leaderboards, issue feeds, and dashboards on the study database.\n        SQL · R · Python · Streamlit · Shiny\n      \n      \n        03\n        Analysis & decision products\n        Mixed methods, biostatistics, and evidence translation for funders, ministries, and programme leadership — including model-to-app targeting tools.\n        Stata · R · Causal methods · Power BI · Quarto\n      \n    \n  \n\n\n\n  \n    Process\n    From field capture to a decision someone can defend.\n    Five steps. Quality, speed, and trust stay intact under real operations.\n\n    \n      01Design & instrumentsProtocols · ODK · Kobo · REDCapScoping, tool digitization, and offline-ready CAPI that set quality before the first interview.\n      02Field teams & HFCTraining · Supervision · Daily QCEnumerator systems, high-frequency checks, and debriefs that catch errors before they compound.\n      03Pipelines & automationSQL · R · Python · ValidationReproducible cleaning and quality layers so analysis does not start from a new spreadsheet firefight every cycle.\n      04Analysis & modelsBiostats · Mixed methods · CausalDescriptive through econometric and causal work that names trade-offs instead of hiding them.\n      05Products & decisionsDashboards · Shiny · BriefsOps apps, policy briefs, and recommender tools that programme teams can actually use.\n    \n  \n\n\n\n  \n    Selected Work\n    Real delivery, not demos.\n    Programme data systems, field apps, and original health systems research. Methods-lab projects live under Projects when you want tooling samples.\n\n    \n      \n        \n          \n        \n        \n          Field delivery · Georgetown gui2de\n          Health financial diaries systems\n          Three hundred households over one year: HFCs, automated quality workflows, an RA leaderboard, and a fuel/issues app that aggregated field problems in real time as data streamed into the study database.\n          HFC · Streamlit · Ops dashboards · 300 HH\n          Read case study →\n        \n      \n      \n        \n          \n        \n        \n          Application · IRC Re:BUiLD · gui2de\n          Cash-plus targeting recommender\n          Shiny decision-support app for IRC field teams. I built the application layer from gui2de causal targeting models so caseworkers can score Cash vs Cash + Network with cost-aware rationale.\n          Shiny · Causal forest · 6,260 participants\n          Case study & live app →\n        \n      \n      \n        \n          \n        \n        \n          Research · Forthcoming BMC Public Health\n          Financing chronic care in rural Kenya\n          Seven-facility mixed-methods study on facility decision space, stockouts, and why clinics can diagnose but still fail to sustain hypertension and diabetes care.\n          Mixed methods · Health financing · First author\n          Read thesis →\n        \n      \n      \n        \n          \n        \n        \n          Systems · KEMRI · Oncology\n          Kisumu cancer surveillance dashboard\n          Research data management for multi-year oncology records: REDCap architecture, quality systems, survival analysis, and a county-facing dashboard launched with local leadership.\n          REDCap · Survival analysis · Tableau\n          Read delivery story →\n        \n      \n    \n    \n      All projects →\n    \n  \n\n\n\n  \n    Writing\n    Field notes worth reading.\n    Three public pieces that match the work above — research translation, diaries systems, and model-to-field judgement.\n    \n      \n        \n          Research translation\n          When clinics can diagnose but cannot buy medicines\n          Facility decision space and chronic care, from the BMC Public Health paper.\n          Read essay →\n        \n      \n      \n        \n          Field systems\n          Systems behind a year of health financial diaries\n          300 households, HFCs, and live ops apps on a streaming study database.\n          Read note →\n        \n      \n      \n        \n          Methods\n          From field to model\n          Why domain knowledge still shapes useful targeting and ML systems.\n          Read note →\n        \n      \n    \n    All writing →\n  \n\n\n\n  \n    Tools\n    Stack used in real delivery.\n    No skill bars. Tools appear because they shipped something in the field or in analysis — not because of a self-score.\n    \n      RStataPythonSQLPostgreSQL\n      ODKKoboToolboxREDCapXLSForm\n      HFC systemsPower BITableauShinyStreamlit\n      QuartoR MarkdownDHIS2/KHISGit\n    \n    Full CV →\n  \n\n\n\n  \n    Background\n    Where I have worked and learned.\n    A track record built through delivery, not just titles: research systems, public health analytics, cross-country fieldwork, and reporting that senior stakeholders can act on.\n\n    \n      \n        Experience\n        \n          2025 – PresentLead Research Data ManagerGeorgetown University gui2de · Remote / KenyaHealth financial diaries systems for 300 households over one year (HFCs, automation, live field apps); Shiny application for Re:BUiLD cash-plus targeting with IRC partners.\n          2023 – 2025Senior Statistician and Data Systems LeadKEMRI · Nairobi and KisumuBuilt integrated health analytics pipelines and survival-analysis workflows for surveillance, decision support, and partner reporting.\n          2021 – 2023Senior Research Data Manager and Evaluation LeadJOOUST and VLIR UOS · Kenya, Uganda, RwandaCoordinated cross-country datasets, supported randomized and quasi-experimental analysis, and trained teams on quality and reproducibility.\n          2017 – 2021Data Analyst and MEL SpecialistLERIS Hub · Kenya and UgandaDesigned monitoring frameworks and data-collection workflows, then delivered policy and donor reporting products for complex programmes.\n        \n      \n      \n        Education & Certifications\n        \n          2022 – 2026 expectedMSc, Epidemiology & BiostatisticsJOOUST · KenyaThesis focus on financial determinants of effective hypertension and diabetes care in rural primary facilities.\n          2016BSc, Statistics (Honours)University of Nairobi · KenyaSecond Class Upper Division.\n          CertificatesProfessional developmentGoogle Data AnalyticsM&E in Global HealthEconomic EvaluationBiomedical Research EthicsCITIAWS Cloud PractitionerAdvanced R\n        \n        \n          View Full CV\n          Download CV\n        \n      \n    \n  \n\n\n\n  \n    Life Beyond Data\n    Field, farm & people.\n    A window into the life that informs the work: communities, land, teams, and the long view behind the numbers.\n\n    \n      Goat Farming\n      KESHO Conference\n      Policy Dialogue\n      Community & Labour\n    \n  \n\n\n\n  \n    \n      Channel Open\n      What if we worked together?\n      \n        Whether you need a research partner, an analyst embedded in your team, or someone to build the M&E system from scratch, I’d like to hear from you.\n      \n      For teams building better health systems, stronger data infrastructure, and decision-ready evidence that can survive real-world operations.\n      Nairobi, Kenya. Open to remote and hybrid work, with replies usually within 48 hours.\n    \n\n    \n      +254 725 737 867\n      Initiate Contact\n      \n        GitHub\n        LinkedIn\n        gui2de\n        CV"
-  },
-  {
-    "objectID": "about/index.html",
-    "href": "about/index.html",
-    "title": "From the fieldto systems thatprogrammes can trust.",
-    "section": "",
-    "text": "About Me"
-  },
-  {
-    "objectID": "about/index.html#what-drives-the-work",
-    "href": "about/index.html#what-drives-the-work",
-    "title": "From the fieldto systems thatprogrammes can trust.",
-    "section": "What drives the work",
-    "text": "What drives the work\nI believe data has a side — it either serves the people it was collected from, or it serves the institutions that collected it. My goal is always the former.\nThat shows up in how I approach M&E: not as a compliance checklist, but as a learning system. It shows up in how I train enumerators: I want them to understand why the question is structured the way it is, not just how to tap the screen. And it shows up in how I write reports: I want to change a decision, not demonstrate that I can run a regression.\nI bring the same philosophy to AI systems: the systems we build encode decisions. They should be interpretable, fair, and accountable to the people they affect."
-  },
-  {
-    "objectID": "about/index.html#research-interests",
-    "href": "about/index.html#research-interests",
-    "title": "From the fieldto systems thatprogrammes can trust.",
-    "section": "Research interests",
-    "text": "Research interests\n\n  \n    Health financing and governance\n    Facility decision space, reimbursement delays, and how devolved systems translate policy into actual care.\n  \n  \n    NCDs in primary care\n    Hypertension and diabetes management, medicine continuity, and service delivery quality in rural settings.\n  \n  \n    Mixed-methods research\n    Using records, interviews, and operational data together to explain not just what failed, but why.\n  \n  \n    Implementation and community pathways\n    Designing practical interventions that fit community realities rather than importing solutions unchanged.\n  \n  \n    AI fairness and systems design\n    How to build responsible AI systems that account for real-world constraints, equity, and interpretability—especially in low-resource health settings."
-  },
-  {
-    "objectID": "about/index.html#skills-tools",
-    "href": "about/index.html#skills-tools",
-    "title": "From the fieldto systems thatprogrammes can trust.",
-    "section": "Skills & Tools",
-    "text": "Skills & Tools\n\n  \n    Analytics & Stats\n    R\n    STATA\n    Python\n    SPSS\n  \n  \n    Data & Databases\n    SQL\n    PostgreSQL\n    DHIS2/KHIS\n    Excel\n  \n  \n    Data Collection\n    KoboToolbox\n    ODK\n    REDCap\n    SurveyCTO\n  \n  \n    BI & Reporting\n    Power BI\n    R Markdown\n    Quarto\n    Tableau"
-  },
-  {
-    "objectID": "about/index.html#a-few-highlights",
-    "href": "about/index.html#a-few-highlights",
-    "title": "From the fieldto systems thatprogrammes can trust.",
-    "section": "A few highlights",
-    "text": "A few highlights\n\nBuilt diaries research data systems for 300 households over one year at gui2de: HFCs, automated quality workflows, RA leaderboard, and a fuel/issues app aggregating field problems in real time.\nDeveloped the Shiny application for Re:BUiLD cash-plus targeting from gui2de causal models for IRC field teams.\nBuilt real-time high-frequency check (HFC) systems in R and Stata across multi-country research operations, catching data errors before they compound.\nManaged large field teams across Kenya, Uganda, and Tanzania, including remote coordination through the COVID-19 pandemic.\nFirst-author paper forthcoming in BMC Public Health on financing constraints and chronic NCD care in rural Kisumu.\nResearch data management for KEMRI oncology systems, including the Kisumu cancer surveillance dashboard launched with county leadership.\n\nView full CV →"
-  },
-  {
-    "objectID": "about/index.html#services",
-    "href": "about/index.html#services",
-    "title": "From the fieldto systems thatprogrammes can trust.",
-    "section": "How I can join a team",
-    "text": "How I can join a team\nI am strongest as an embedded research data systems lead or close collaborator — not as a generic “dashboard vendor.”\n\n\n\n\n\n\n\nEngagement\nWhat that looks like\n\n\n\n\nResearch data systems\nInstruments, REDCap/ODK/Kobo, HFC, pipelines, live field apps\n\n\nStudy & evaluation support\nDesign input, quality architecture, analysis plans, reproducible reporting\n\n\nEvidence products\nDashboards, briefs, Shiny/Streamlit tools that programme teams actually use\n\n\nTargeting / causal tools\nApplication layers on research models (see Re:BUiLD)\n\n\nTraining\nR, Stata, survey design, data quality, reproducible workflows\n\n\n\nGet in touch about a role or collaboration →"
-  },
-  {
-    "objectID": "about/index.html#open-to",
-    "href": "about/index.html#open-to",
-    "title": "From the fieldto systems thatprogrammes can trust.",
-    "section": "Open to",
-    "text": "Open to\nResearch data manager and biostatistics roles in health and development programmes; partnerships on health financing and service delivery evidence; and capacity building that leaves teams with systems they can run without me.\nGet in touch →"
-  },
-  {
-    "objectID": "projects/health-financial-diaries/index.html",
-    "href": "projects/health-financial-diaries/index.html",
-    "title": "Health Financial Diaries Systems",
-    "section": "",
-    "text": "Field delivery · Georgetown gui2de\n  \n  \n    Three hundred households. High-frequency checks. Automated quality workflows. Live apps on the study database so supervisors could act while data was still streaming from the field — not only after the wave closed.\n  \n  \n    Open RA leaderboard →\n    gui2de profile →\n    Related note →"
-  },
-  {
-    "objectID": "projects/health-financial-diaries/index.html#role",
-    "href": "projects/health-financial-diaries/index.html#role",
-    "title": "Health Financial Diaries Systems",
-    "section": "Role",
-    "text": "Role\nLead research data systems for Georgetown University gui2de Health Financial Diaries work in East Africa: architecture, high-frequency checks, automation, and field-facing performance products.\nThis page describes systems and operational products that can be shown publicly. Raw diary records, household identifiers, and partner-restricted extracts stay private."
-  },
-  {
-    "objectID": "projects/health-financial-diaries/index.html#problem",
-    "href": "projects/health-financial-diaries/index.html#problem",
-    "title": "Health Financial Diaries Systems",
-    "section": "Problem",
-    "text": "Problem\nYear-long high-frequency household finance data fails in predictable ways if quality only happens at the end of a wave:\n\nCompleteness and cleanliness drift by research assistant (RA) and by week\n\nIssues compound while teams wait for a batch clean\n\nSupervisors cannot see throughput, completion, or clean rates while the field is still active\n\nThe design goal was a streaming ops loop: field capture → study database → automated checks → live apps for supervisors."
-  },
-  {
-    "objectID": "projects/health-financial-diaries/index.html#what-we-built",
-    "href": "projects/health-financial-diaries/index.html#what-we-built",
-    "title": "Health Financial Diaries Systems",
-    "section": "What we built",
-    "text": "What we built\n\n1. Study scale and follow-up\n\n300 households followed for one year\n\nHigh-frequency diary capture of health-related financial flows and related events\n\nDigital field workflows feeding a central study database\n\n\n\n2. High-frequency checks (HFCs)\nHFCs were not a report written after the fact. They were part of the daily operating rhythm: validation, completeness, and cleanliness signals that could surface problems early enough for field leadership to respond.\n\n\n3. Automated systems\nAutomated workflows reduced ad hoc spreadsheet firefighting: standardized extracts, quality rules, and reporting layers that could update as new field data arrived.\n\n\n4. Live ops apps\nTwo products sat on top of the live database while data streamed from the field:\n\n\n\nProduct\nWhat it did\nPublic access\n\n\n\n\nRA leaderboard / performance\nField / RA monitoring — volume, completion, clean rates, rankings for supervisors\nra-leaderboard.streamlit.app\n\n\nFuel / issues app\nConnected to the study database; aggregated field issues in real time as data streamed in\nNo public URL (internal ops tool)\n\n\n\nFuel is intentionally not exposed publicly. It still belongs in this case study because it proves the streaming architecture: supervisors could see aggregated issues while field data was arriving, not only after wave closeout."
-  },
-  {
-    "objectID": "projects/health-financial-diaries/index.html#field-team-performance-dashboard",
-    "href": "projects/health-financial-diaries/index.html#field-team-performance-dashboard",
-    "title": "Health Financial Diaries Systems",
-    "section": "Field team performance dashboard",
-    "text": "Field team performance dashboard\nSample month snapshot from the RA performance product. Staff names are redacted for public display (shown as RA–1, RA–2, RA–3). Aggregate KPIs remain visible.\n\n  \n  \n    RA Performance Dashboard (names redacted) — sample month: 552 interviews · 45,238 cashflow events · 90% average completion · 97% clean interviews.\n  \n\nThese metrics matter because they are operational, not decorative: they tell supervisors who is completing work cleanly and where the quality system needs attention."
-  },
-  {
-    "objectID": "projects/health-financial-diaries/index.html#architecture-public-safe-view",
-    "href": "projects/health-financial-diaries/index.html#architecture-public-safe-view",
-    "title": "Health Financial Diaries Systems",
-    "section": "Architecture (public-safe view)",
-    "text": "Architecture (public-safe view)\nField RAs / instruments\n        ↓\n  Study database\n        ↓\n  HFCs + automated quality rules\n        ↓\n   ┌────────────────────┬────────────────────┐\n   │  RA leaderboard    │  Fuel / issues app │\n   │  (performance)     │  (live issue feed) │\n   └────────────────────┴────────────────────┘\n        ↓\n  Analysis & policy products (partner channels)"
-  },
-  {
-    "objectID": "projects/health-financial-diaries/index.html#what-this-demonstrates",
-    "href": "projects/health-financial-diaries/index.html#what-this-demonstrates",
-    "title": "Health Financial Diaries Systems",
-    "section": "What this demonstrates",
-    "text": "What this demonstrates\nFor research and programme hiring, this work shows:\n\nOwnership of end-to-end research data systems, not only analysis at the end\n\nQuality architecture under real field constraints\n\nProduct thinking for field supervisors, not only for PIs or donors\n\nStreaming design: act while data is arriving"
-  },
-  {
-    "objectID": "projects/health-financial-diaries/index.html#related",
-    "href": "projects/health-financial-diaries/index.html#related",
-    "title": "Health Financial Diaries Systems",
-    "section": "Related",
-    "text": "Related\n\ngui2de profile — Nichodemus Amollo\n\nField note: systems behind a year of diaries\n\nBack to Projects\n\nGet in touch →"
+    "objectID": "projects/ai-applications/research-brief-generator/index.html#why-it-matters",
+    "href": "projects/ai-applications/research-brief-generator/index.html#why-it-matters",
+    "title": "Research Brief Generator",
+    "section": "Why it matters",
+    "text": "Why it matters\nThis project shows applied AI in a way that fits my background. It is not novelty for its own sake. It solves a real evidence translation problem and keeps the human reviewer in the loop.\nBack to Projects →"
   },
   {
     "objectID": "projects/analytics-engineering/healthcare-readmission-risk/index.html",
@@ -1036,74 +910,277 @@
     "text": "Why this project matters in the portfolio\nIt demonstrates the bridge I want the portfolio to make clear: rigorous health data work can evolve naturally into production-minded ML systems, especially when the model is tied to a real workflow and monitored like an operational tool instead of a Kaggle artifact.\nBack to Projects →"
   },
   {
-    "objectID": "projects/ai-applications/research-brief-generator/index.html",
-    "href": "projects/ai-applications/research-brief-generator/index.html",
-    "title": "Research Brief Generator",
+    "objectID": "projects/health-financial-diaries/index.html",
+    "href": "projects/health-financial-diaries/index.html",
+    "title": "Health Financial Diaries Systems",
     "section": "",
-    "text": "Project C · LLM Application\n  \n  A lightweight AI application for turning dense research papers into a consistent briefing format that a programme lead, policymaker, or field operations team can read quickly."
+    "text": "Field delivery · Georgetown gui2de\n  \n  \n    Three hundred households. High-frequency checks. Automated quality workflows. Live apps on the study database so supervisors could act while data was still streaming from the field — not only after the wave closed.\n  \n  \n    Open RA leaderboard →\n    gui2de profile →\n    Related note →"
   },
   {
-    "objectID": "projects/ai-applications/research-brief-generator/index.html#use-case",
-    "href": "projects/ai-applications/research-brief-generator/index.html#use-case",
-    "title": "Research Brief Generator",
-    "section": "Use case",
-    "text": "Use case\nResearch papers often contain the right evidence but arrive in the wrong format for a busy delivery team. This project creates a structured bridge:\n\ninput a paper as text or extracted PDF content\nask the model for a fixed briefing schema\nexport a short brief in JSON and markdown-ready text"
+    "objectID": "projects/health-financial-diaries/index.html#role",
+    "href": "projects/health-financial-diaries/index.html#role",
+    "title": "Health Financial Diaries Systems",
+    "section": "Role",
+    "text": "Role\nLead research data systems for Georgetown University gui2de Health Financial Diaries work in East Africa: architecture, high-frequency checks, automation, and field-facing performance products.\nThis page describes systems and operational products that can be shown publicly. Raw diary records, household identifiers, and partner-restricted extracts stay private."
   },
   {
-    "objectID": "projects/ai-applications/research-brief-generator/index.html#brief-schema",
-    "href": "projects/ai-applications/research-brief-generator/index.html#brief-schema",
-    "title": "Research Brief Generator",
-    "section": "Brief schema",
-    "text": "Brief schema\n\n\n\nField\nPurpose\n\n\n\n\ntitle\nHuman-readable title\n\n\nresearch_question\nWhat the paper is trying to answer\n\n\nmethods\nStudy design in plain language\n\n\nmain_findings\nBullet-ready evidence summary\n\n\noperational_implications\nWhat a programme team should do with it\n\n\nequity_notes\nAny fairness or implementation concerns\n\n\nlimitations\nWhat not to over-claim"
+    "objectID": "projects/health-financial-diaries/index.html#problem",
+    "href": "projects/health-financial-diaries/index.html#problem",
+    "title": "Health Financial Diaries Systems",
+    "section": "Problem",
+    "text": "Problem\nYear-long high-frequency household finance data fails in predictable ways if quality only happens at the end of a wave:\n\nCompleteness and cleanliness drift by research assistant (RA) and by week\n\nIssues compound while teams wait for a batch clean\n\nSupervisors cannot see throughput, completion, or clean rates while the field is still active\n\nThe design goal was a streaming ops loop: field capture → study database → automated checks → live apps for supervisors."
   },
   {
-    "objectID": "projects/ai-applications/research-brief-generator/index.html#workflow",
-    "href": "projects/ai-applications/research-brief-generator/index.html#workflow",
-    "title": "Research Brief Generator",
-    "section": "Workflow",
-    "text": "Workflow\n\n  1Load paper text\n  2Apply structured prompt\n  3Validate JSON output\n  4Publish briefing note"
+    "objectID": "projects/health-financial-diaries/index.html#what-we-built",
+    "href": "projects/health-financial-diaries/index.html#what-we-built",
+    "title": "Health Financial Diaries Systems",
+    "section": "What we built",
+    "text": "What we built\n\n1. Study scale and follow-up\n\n300 households followed for one year\n\nHigh-frequency diary capture of health-related financial flows and related events\n\nDigital field workflows feeding a central study database\n\n\n\n2. High-frequency checks (HFCs)\nHFCs were not a report written after the fact. They were part of the daily operating rhythm: validation, completeness, and cleanliness signals that could surface problems early enough for field leadership to respond.\n\n\n3. Automated systems\nAutomated workflows reduced ad hoc spreadsheet firefighting: standardized extracts, quality rules, and reporting layers that could update as new field data arrived.\n\n\n4. Live ops apps\nTwo products sat on top of the live database while data streamed from the field:\n\n\n\nProduct\nWhat it did\nPublic access\n\n\n\n\nRA leaderboard / performance\nField / RA monitoring — volume, completion, clean rates, rankings for supervisors\nra-leaderboard.streamlit.app\n\n\nFuel / issues app\nConnected to the study database; aggregated field issues in real time as data streamed in\nNo public URL (internal ops tool)\n\n\n\nFuel is intentionally not exposed publicly. It still belongs in this case study because it proves the streaming architecture: supervisors could see aggregated issues while field data was arriving, not only after wave closeout."
   },
   {
-    "objectID": "projects/ai-applications/research-brief-generator/index.html#files-in-this-project",
-    "href": "projects/ai-applications/research-brief-generator/index.html#files-in-this-project",
-    "title": "Research Brief Generator",
+    "objectID": "projects/health-financial-diaries/index.html#field-team-performance-dashboard",
+    "href": "projects/health-financial-diaries/index.html#field-team-performance-dashboard",
+    "title": "Health Financial Diaries Systems",
+    "section": "Field team performance dashboard",
+    "text": "Field team performance dashboard\nSample month snapshot from the RA performance product. Staff names are redacted for public display (shown as RA–1, RA–2, RA–3). Aggregate KPIs remain visible.\n\n  \n  \n    RA Performance Dashboard (names redacted) — sample month: 552 interviews · 45,238 cashflow events · 90% average completion · 97% clean interviews.\n  \n\nThese metrics matter because they are operational, not decorative: they tell supervisors who is completing work cleanly and where the quality system needs attention."
+  },
+  {
+    "objectID": "projects/health-financial-diaries/index.html#architecture-public-safe-view",
+    "href": "projects/health-financial-diaries/index.html#architecture-public-safe-view",
+    "title": "Health Financial Diaries Systems",
+    "section": "Architecture (public-safe view)",
+    "text": "Architecture (public-safe view)\nField RAs / instruments\n        ↓\n  Study database\n        ↓\n  HFCs + automated quality rules\n        ↓\n   ┌────────────────────┬────────────────────┐\n   │  RA leaderboard    │  Fuel / issues app │\n   │  (performance)     │  (live issue feed) │\n   └────────────────────┴────────────────────┘\n        ↓\n  Analysis & policy products (partner channels)"
+  },
+  {
+    "objectID": "projects/health-financial-diaries/index.html#what-this-demonstrates",
+    "href": "projects/health-financial-diaries/index.html#what-this-demonstrates",
+    "title": "Health Financial Diaries Systems",
+    "section": "What this demonstrates",
+    "text": "What this demonstrates\nFor research and programme hiring, this work shows:\n\nOwnership of end-to-end research data systems, not only analysis at the end\n\nQuality architecture under real field constraints\n\nProduct thinking for field supervisors, not only for PIs or donors\n\nStreaming design: act while data is arriving"
+  },
+  {
+    "objectID": "projects/health-financial-diaries/index.html#related",
+    "href": "projects/health-financial-diaries/index.html#related",
+    "title": "Health Financial Diaries Systems",
+    "section": "Related",
+    "text": "Related\n\ngui2de profile — Nichodemus Amollo\n\nField note: systems behind a year of diaries\n\nBack to Projects\n\nGet in touch →"
+  },
+  {
+    "objectID": "about/index.html",
+    "href": "about/index.html",
+    "title": "From the fieldto systems thatprogrammes can trust.",
+    "section": "",
+    "text": "About Me"
+  },
+  {
+    "objectID": "about/index.html#what-drives-the-work",
+    "href": "about/index.html#what-drives-the-work",
+    "title": "From the fieldto systems thatprogrammes can trust.",
+    "section": "What drives the work",
+    "text": "What drives the work\nI believe data has a side — it either serves the people it was collected from, or it serves the institutions that collected it. My goal is always the former.\nThat shows up in how I approach M&E: not as a compliance checklist, but as a learning system. It shows up in how I train enumerators: I want them to understand why the question is structured the way it is, not just how to tap the screen. And it shows up in how I write reports: I want to change a decision, not demonstrate that I can run a regression.\nI bring the same philosophy to AI systems: the systems we build encode decisions. They should be interpretable, fair, and accountable to the people they affect."
+  },
+  {
+    "objectID": "about/index.html#research-interests",
+    "href": "about/index.html#research-interests",
+    "title": "From the fieldto systems thatprogrammes can trust.",
+    "section": "Research interests",
+    "text": "Research interests\n\n  \n    Health financing and governance\n    Facility decision space, reimbursement delays, and how devolved systems translate policy into actual care.\n  \n  \n    NCDs in primary care\n    Hypertension and diabetes management, medicine continuity, and service delivery quality in rural settings.\n  \n  \n    Mixed-methods research\n    Using records, interviews, and operational data together to explain not just what failed, but why.\n  \n  \n    Implementation and community pathways\n    Designing practical interventions that fit community realities rather than importing solutions unchanged.\n  \n  \n    AI fairness and systems design\n    How to build responsible AI systems that account for real-world constraints, equity, and interpretability—especially in low-resource health settings."
+  },
+  {
+    "objectID": "about/index.html#skills-tools",
+    "href": "about/index.html#skills-tools",
+    "title": "From the fieldto systems thatprogrammes can trust.",
+    "section": "Skills & Tools",
+    "text": "Skills & Tools\n\n  \n    Analytics & Stats\n    R\n    STATA\n    Python\n    SPSS\n  \n  \n    Data & Databases\n    SQL\n    PostgreSQL\n    DHIS2/KHIS\n    Excel\n  \n  \n    Data Collection\n    KoboToolbox\n    ODK\n    REDCap\n    SurveyCTO\n  \n  \n    BI & Reporting\n    Power BI\n    R Markdown\n    Quarto\n    Tableau"
+  },
+  {
+    "objectID": "about/index.html#a-few-highlights",
+    "href": "about/index.html#a-few-highlights",
+    "title": "From the fieldto systems thatprogrammes can trust.",
+    "section": "A few highlights",
+    "text": "A few highlights\n\nBuilt diaries research data systems for 300 households over one year at gui2de: HFCs, automated quality workflows, RA leaderboard, and a fuel/issues app aggregating field problems in real time.\nDeveloped the Shiny application for Re:BUiLD cash-plus targeting from gui2de causal models for IRC field teams.\nBuilt real-time high-frequency check (HFC) systems in R and Stata across multi-country research operations, catching data errors before they compound.\nManaged large field teams across Kenya, Uganda, and Tanzania, including remote coordination through the COVID-19 pandemic.\nFirst-author paper forthcoming in BMC Public Health on financing constraints and chronic NCD care in rural Kisumu.\nResearch data management for KEMRI oncology systems, including the Kisumu cancer surveillance dashboard launched with county leadership.\n\nView full CV →"
+  },
+  {
+    "objectID": "about/index.html#services",
+    "href": "about/index.html#services",
+    "title": "From the fieldto systems thatprogrammes can trust.",
+    "section": "How I can join a team",
+    "text": "How I can join a team\nI am strongest as an embedded research data systems lead or close collaborator — not as a generic “dashboard vendor.”\n\n\n\n\n\n\n\nEngagement\nWhat that looks like\n\n\n\n\nResearch data systems\nInstruments, REDCap/ODK/Kobo, HFC, pipelines, live field apps\n\n\nStudy & evaluation support\nDesign input, quality architecture, analysis plans, reproducible reporting\n\n\nEvidence products\nDashboards, briefs, Shiny/Streamlit tools that programme teams actually use\n\n\nTargeting / causal tools\nApplication layers on research models (see Re:BUiLD)\n\n\nTraining\nR, Stata, survey design, data quality, reproducible workflows\n\n\n\nGet in touch about a role or collaboration →"
+  },
+  {
+    "objectID": "about/index.html#open-to",
+    "href": "about/index.html#open-to",
+    "title": "From the fieldto systems thatprogrammes can trust.",
+    "section": "Open to",
+    "text": "Open to\nResearch data manager and biostatistics roles in health and development programmes; partnerships on health financing and service delivery evidence; and capacity building that leaves teams with systems they can run without me.\nGet in touch →"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "\n        \n          Nichodemus\n        \n        Amollo\n      ",
+    "section": "",
+    "text": "Research Data Systems · Health & Development Programmes\n      \n        \n          Nichodemus\n        \n        Amollo\n      \n      I build the data systems and evidence products that make health and development programmes trustworthy.\n      \n        From field instruments to policy-facing analysis: survey design in low-connectivity settings, high-frequency quality checks, pipelines that hold up under real operations, and decision tools for teams who cannot wait for a perfect spreadsheet. I work best close to the people, programmes, and constraints the data is meant to serve.\n      \n    \n    \n      \n        Selected Work\n        My Story\n      \n      \n        \n          \n            Study Design\n            Survey Systems\n            ODK / Kobo / REDCap\n            HFC & Quality\n            ETL Pipelines\n            Field Ops Apps\n            R · Python · SQL\n            Dashboards\n            Causal Targeting\n          \n          \n            Study Design\n            Survey Systems\n            ODK / Kobo / REDCap\n            HFC & Quality\n            ETL Pipelines\n            Field Ops Apps\n            R · Python · SQL\n            Dashboards\n            Causal Targeting\n          \n        \n      \n    \n  \n\n  \n    \n      \n      \n        Current Work\n        Health financial diaries systems for 300 households over one year.\n        HFCs, automated quality workflows, and live field apps for Georgetown gui2de.\n      \n    \n    \n      \n        8+\n        Years\n      \n      \n        3\n        Countries\n      \n      \n        300\n        HH diaries (1 yr)\n      \n      \n        7\n        Facilities (thesis)\n      \n    \n  \n\n\n\n  \n    Expertise\n    Programme evidence, end to end.\n    Built for research and delivery teams operating under real field constraints — not classroom demos.\n\n    \n      \n        01\n        Research data systems\n        Study design, digital instruments, multi-country field teams, and HFCs that catch errors while collection is still running.\n        ODK · KoboToolbox · REDCap · HFC · XLSForm\n      \n      \n        02\n        Quality architecture & ops apps\n        Pipelines, validation layers, and live tools for supervisors — leaderboards, issue feeds, and dashboards on the study database.\n        SQL · R · Python · Streamlit · Shiny\n      \n      \n        03\n        Analysis & decision products\n        Mixed methods, biostatistics, and evidence translation for funders, ministries, and programme leadership — including model-to-app targeting tools.\n        Stata · R · Causal methods · Power BI · Quarto\n      \n    \n  \n\n\n\n  \n    Process\n    From field capture to a decision someone can defend.\n    Five steps. Quality, speed, and trust stay intact under real operations.\n\n    \n      01Design & instrumentsProtocols · ODK · Kobo · REDCapScoping, tool digitization, and offline-ready CAPI that set quality before the first interview.\n      02Field teams & HFCTraining · Supervision · Daily QCEnumerator systems, high-frequency checks, and debriefs that catch errors before they compound.\n      03Pipelines & automationSQL · R · Python · ValidationReproducible cleaning and quality layers so analysis does not start from a new spreadsheet firefight every cycle.\n      04Analysis & modelsBiostats · Mixed methods · CausalDescriptive through econometric and causal work that names trade-offs instead of hiding them.\n      05Products & decisionsDashboards · Shiny · BriefsOps apps, policy briefs, and recommender tools that programme teams can actually use.\n    \n  \n\n\n\n  \n    Selected Work\n    Real delivery, not demos.\n    Programme data systems, field apps, and original health systems research. Methods-lab projects live under Projects when you want tooling samples.\n\n    \n      \n        \n          \n        \n        \n          Field delivery · Georgetown gui2de\n          Health financial diaries systems\n          Three hundred households over one year: HFCs, automated quality workflows, an RA leaderboard, and a fuel/issues app that aggregated field problems in real time as data streamed into the study database.\n          HFC · Streamlit · Ops dashboards · 300 HH\n          Read case study →\n        \n      \n      \n        \n          \n        \n        \n          Application · IRC Re:BUiLD · gui2de\n          Cash-plus targeting recommender\n          Shiny decision-support app for IRC field teams. I built the application layer from gui2de causal targeting models so caseworkers can score Cash vs Cash + Network with cost-aware rationale.\n          Shiny · Causal forest · 6,260 participants\n          Case study & live app →\n        \n      \n      \n        \n          \n        \n        \n          Research · Forthcoming BMC Public Health\n          Financing chronic care in rural Kenya\n          Seven-facility mixed-methods study on facility decision space, stockouts, and why clinics can diagnose but still fail to sustain hypertension and diabetes care.\n          Mixed methods · Health financing · First author\n          Read thesis →\n        \n      \n      \n        \n          \n        \n        \n          Systems · KEMRI · Oncology\n          Kisumu cancer surveillance dashboard\n          Research data management for multi-year oncology records: REDCap architecture, quality systems, survival analysis, and a county-facing dashboard launched with local leadership.\n          REDCap · Survival analysis · Tableau\n          Read delivery story →\n        \n      \n    \n    \n      All projects →\n    \n  \n\n\n\n  \n    Writing\n    Field notes worth reading.\n    Three public pieces that match the work above — research translation, diaries systems, and model-to-field judgement.\n    \n      \n        \n          Research translation\n          When clinics can diagnose but cannot buy medicines\n          Facility decision space and chronic care, from the BMC Public Health paper.\n          Read essay →\n        \n      \n      \n        \n          Field systems\n          Systems behind a year of health financial diaries\n          300 households, HFCs, and live ops apps on a streaming study database.\n          Read note →\n        \n      \n      \n        \n          Methods\n          From field to model\n          Why domain knowledge still shapes useful targeting and ML systems.\n          Read note →\n        \n      \n    \n    All writing →\n  \n\n\n\n  \n    Tools\n    Stack used in real delivery.\n    No skill bars. Tools appear because they shipped something in the field or in analysis — not because of a self-score.\n    \n      RStataPythonSQLPostgreSQL\n      ODKKoboToolboxREDCapXLSForm\n      HFC systemsPower BITableauShinyStreamlit\n      QuartoR MarkdownDHIS2/KHISGit\n    \n    Full CV →\n  \n\n\n\n  \n    Background\n    Where I have worked and learned.\n    A track record built through delivery, not just titles: research systems, public health analytics, cross-country fieldwork, and reporting that senior stakeholders can act on.\n\n    \n      \n        Experience\n        \n          2025 – PresentLead Research Data ManagerGeorgetown University gui2de · Remote / KenyaHealth financial diaries systems for 300 households over one year (HFCs, automation, live field apps); Shiny application for Re:BUiLD cash-plus targeting with IRC partners.\n          2023 – 2025Senior Statistician and Data Systems LeadKEMRI · Nairobi and KisumuBuilt integrated health analytics pipelines and survival-analysis workflows for surveillance, decision support, and partner reporting.\n          2021 – 2023Senior Research Data Manager and Evaluation LeadJOOUST and VLIR UOS · Kenya, Uganda, RwandaCoordinated cross-country datasets, supported randomized and quasi-experimental analysis, and trained teams on quality and reproducibility.\n          2017 – 2021Data Analyst and MEL SpecialistLERIS Hub · Kenya and UgandaDesigned monitoring frameworks and data-collection workflows, then delivered policy and donor reporting products for complex programmes.\n        \n      \n      \n        Education & Certifications\n        \n          2022 – 2026 expectedMSc, Epidemiology & BiostatisticsJOOUST · KenyaThesis focus on financial determinants of effective hypertension and diabetes care in rural primary facilities.\n          2016BSc, Statistics (Honours)University of Nairobi · KenyaSecond Class Upper Division.\n          CertificatesProfessional developmentGoogle Data AnalyticsM&E in Global HealthEconomic EvaluationBiomedical Research EthicsCITIAWS Cloud PractitionerAdvanced R\n        \n        \n          View Full CV\n          Download CV\n        \n      \n    \n  \n\n\n\n  \n    Life Beyond Data\n    Field, farm & people.\n    A window into the life that informs the work: communities, land, teams, and the long view behind the numbers.\n\n    \n      Goat Farming\n      KESHO Conference\n      Policy Dialogue\n      Community & Labour\n    \n  \n\n\n\n  \n    \n      Channel Open\n      What if we worked together?\n      \n        Whether you need a research partner, an analyst embedded in your team, or someone to build the M&E system from scratch, I’d like to hear from you.\n      \n      For teams building better health systems, stronger data infrastructure, and decision-ready evidence that can survive real-world operations.\n      Nairobi, Kenya. Open to remote and hybrid work, with replies usually within 48 hours.\n    \n\n    \n      +254 725 737 867\n      Initiate Contact\n      \n        GitHub\n        LinkedIn\n        gui2de\n        CV"
+  },
+  {
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "\n    Selected work\n  ",
+    "section": "",
+    "text": "Portfolio\n  \n    Selected work\n  \n  \n    Field delivery and original research first. Methods-lab demos are labeled and kept secondary —\n    they never outrank programme systems you can open and inspect.\n  \n\n  \n    All\n    Field delivery\n    Research\n    Methods lab\n  \n\n  \n  \n    Field delivery & programme systems\n  \n  \n\n    \n      \n        \n        \n      \n      \n        Georgetown gui2de · Health financial diaries\n        Diaries systems: 300 households, one year\n        HFCs, automated quality workflows, an RA leaderboard, and a fuel/issues app that aggregated field problems in real time as data streamed into the study database.\n        \n          HFCStreamlitLive ops apps300 HH\n          Open case study →\n        \n      \n    \n\n    \n      \n        \n        \n      \n      \n        Application · IRC Re:BUiLD · gui2de\n        Cash-plus targeting recommender\n        Shiny decision-support for IRC field teams. Application layer from causal forest targeting models — Cash vs Cash + Network with cost-aware rationale. Live app.\n        \n          ShinyCausal forest6,260 participants\n          Case study & live app →\n        \n      \n    \n\n    \n      \n        \n        \n      \n      \n        KEMRI · Oncology data systems\n        Kisumu cancer surveillance dashboard\n        Research data management for multi-year oncology records: REDCap architecture, quality systems, survival analysis, and a county-facing dashboard launched with local leadership.\n        \n          REDCapSurvival analysisTableau\n          Read delivery story →\n        \n      \n    \n\n  \n\n  \n  \n    Research & evidence\n  \n  \n\n    \n      \n        \n        \n      \n      \n        MSc research · Forthcoming BMC Public Health\n        Financial determinants of NCD care in rural primary facilities\n        Mixed-methods study across seven public primary care facilities in Seme Sub-County: facility decision space, stockouts, and financing architecture for hypertension and diabetes care.\n\n        \n          Manuscript data snapshot from 7 facilities\n          \n            \n              \n                Frequent medicine stockouts\n                85.7%\n              \n              \n            \n            \n              \n                Facilities without direct spending autonomy\n                100%\n              \n              \n            \n            \n              \n                Facilities receiving direct county funding\n                28.6%\n              \n              \n            \n            \n              \n                Facilities with dedicated NCD budget line\n                0%\n              \n              \n            \n          \n        \n        \n          First authorMixed methodsHealth financing\n          Read thesis →\n        \n      \n    \n\n    \n      \n        \n      \n      \n        Operations framing · Health financing\n        NCD financing as an operations problem\n        Reframes the Kisumu chronic-care financing work for strategy and operations audiences: bottlenecks, levers, and scenario logic.\n        \n          Case studyScenario model\n          Open →\n        \n      \n    \n\n    \n      \n        \n      \n      \n        Public essay · Health systems\n        When clinics can diagnose but cannot buy medicines\n        Plain-language argument from the BMC paper: budgets, approval chains, and facility decision space.\n        \n          EssayPolicy translation\n          Read essay →\n        \n      \n    \n\n  \n\n  \n  \n    Methods lab\n  \n  \n    Labeled demonstrations and tooling samples. Useful for methods conversation — not primary programme evidence.\n  \n  \n\n    \n      \n        \n      \n      \n        Demonstration · ETL\n        ETL pipeline architecture\n        How raw survey and facility extracts move into validated reporting layers with reproducible R workflows and QA rules.\n        \n          DemoRValidation\n          Open →\n        \n      \n    \n\n    \n      \n        \n        \n      \n      \n        Live dashboard · Real open data (UCI, CC BY 4.0)\n        Customer intelligence & decision analytics\n        An end-to-end analytics product on a real, openly published transaction ledger — 1.07m invoice lines from a UK giftware wholesaler. Real data quality defects, seasonally-aligned experimental design, cross-validated models, a recommender that beats its baseline, and a decision engine that stops at a suggested action with its reasoning attached.\n        \n          PythonDuckDB & SQLscikit-learnStreamlit1.07m rows\n          Case study & live dashboard →\n        \n      \n    \n\n    \n      \n        \n      \n      \n        Demonstration · Predictive workflow\n        Healthcare readmission risk (synthetic)\n        Portfolio demonstration of feature design, validation, and operational scoring on synthetic discharge data — not a deployed clinical product.\n        \n          DemoXGBoostSynthetic data\n          Open →\n        \n      \n    \n\n    \n      \n        \n      \n      \n        Demonstration · LLM workflow\n        Research brief generator\n        Structured workflow for turning long-form research inputs into implementation-style briefs with a consistent schema.\n        \n          DemoPythonLLM\n          Open →\n        \n      \n    \n\n    \n      \n        \n      \n      \n        Demonstration · Dashboard concept\n        Health financing KPI dashboard (synthetic)\n        Shiny concept for reimbursement lag, stockout risk, and facility priorities — illustrative data only.\n        \n          DemoShinyKPIs\n          Open →"
+  },
+  {
+    "objectID": "projects/rebuild-targeting/index.html",
+    "href": "projects/rebuild-targeting/index.html",
+    "title": "Re:BUiLD Cash-Plus Targeting",
+    "section": "",
+    "text": "Application development · Georgetown gui2de · IRC Re:BUiLD\n  \n  \n    I built the Shiny application that turns gui2de cash-plus targeting analysis into a decision-support tool for IRC caseworkers: score one applicant or a batch, compare Cash only versus Cash + Network, and see a plain-language rationale with cost-aware economics.\n  \n  \n    Open live app →\n    gui2de profile →\n    gui2de Re:BUiLD page →"
+  },
+  {
+    "objectID": "projects/rebuild-targeting/index.html#my-role-accurate-credit",
+    "href": "projects/rebuild-targeting/index.html#my-role-accurate-credit",
+    "title": "Re:BUiLD Cash-Plus Targeting",
+    "section": "My role (accurate credit)",
+    "text": "My role (accurate credit)\nOn the product’s Targeting Development Team I am listed as Application (gui2de East Africa): I developed the Shiny recommender from the targeting models so field teams could use the analysis operationally.\n\n\n\nRole\nPerson\nUnit\n\n\n\n\nAcademic lead: targeting\nAndrew Zeitlin\ngui2de\n\n\nAnalyst\nEthan Sager\ngui2de\n\n\nApplication\nNichodemus Amollo\ngui2de East Africa\n\n\nProject management\nAlex Wendo\ngui2de East Africa\n\n\n\nI do not claim sole ownership of the causal forest or the working-paper analysis. I claim the application layer: assessment UX, economics inputs, recommendation presentation, batch workflow, and deployment of a tool caseworkers can run.\n\n  \n  \n    On-product team credit — Application: Nichodemus Amollo, gui2de East Africa."
+  },
+  {
+    "objectID": "projects/rebuild-targeting/index.html#programme-context",
+    "href": "projects/rebuild-targeting/index.html#programme-context",
+    "title": "Re:BUiLD Cash-Plus Targeting",
+    "section": "Programme context",
+    "text": "Programme context\nRe:BUiLD (Refugees in East Africa: Boosting Urban Innovations for Livelihoods Development) is a multi-year initiative led by the International Rescue Committee with support from the IKEA Foundation, pairing livelihoods services for refugee and host-community residents of Kampala and Nairobi with rigorous evidence generation. Georgetown gui2de supports the research and evidence layer.\nLive tool: rebuild.shinyapps.io/rebuild-targeting"
+  },
+  {
+    "objectID": "projects/rebuild-targeting/index.html#problem-the-app-solves",
+    "href": "projects/rebuild-targeting/index.html#problem-the-app-solves",
+    "title": "Re:BUiLD Cash-Plus Targeting",
+    "section": "Problem the app solves",
+    "text": "Problem the app solves\nAverage treatment effects hide real heterogeneity: networking helps some participants much more than others, and networking is more expensive to deliver than cash. Field teams need a participant-specific, cost-aware recommendation that still leaves the final call with the caseworker."
+  },
+  {
+    "objectID": "projects/rebuild-targeting/index.html#what-the-recommender-does",
+    "href": "projects/rebuild-targeting/index.html#what-the-recommender-does",
+    "title": "Re:BUiLD Cash-Plus Targeting",
+    "section": "What the recommender does",
+    "text": "What the recommender does\n\nEnter a profile — screening characteristics (e.g. age, baseline monthly revenue, refugee status, language fluency, and related fields).\n\nSee the prediction — estimated change in monthly income if networking is added to cash, weighed against delivery cost.\n\nReview with judgement — clear Cash only or Cash + Network recommendation with rationale and cost-benefit comparison.\n\nAlso supports batch upload so programmes can score a list of applicants, not only one-by-one.\n\n  \n  \n    Product home: decision support for IRC field teams, grounded in a causal forest trained on 6,260 real programme participants."
+  },
+  {
+    "objectID": "projects/rebuild-targeting/index.html#methods-spine-for-technical-readers",
+    "href": "projects/rebuild-targeting/index.html#methods-spine-for-technical-readers",
+    "title": "Re:BUiLD Cash-Plus Targeting",
+    "section": "Methods spine (for technical readers)",
+    "text": "Methods spine (for technical readers)\n\nModel family: causal forest (Wager & Athey; grf in R)\n\nEstimand: conditional average treatment effect (CATE) of Cash + Network versus Cash only\n\nTraining sample: 6,260 Wave 2 programme participants across Uganda and Kenya (Kampala and Nairobi)\n\nDecision rule (app logic): compare CATE to an opportunity-cost expression built from programme economics (cost of cash, cost of networking, benefit of cash)\n\nUX requirement: every recommendation needs a rationale and a cost-benefit comparison, not only a score\n\n\n  \n  \n    Assessment UI: programme economics and applicant profile on the left; recommended placement, expected extra income, and net gain on the right."
+  },
+  {
+    "objectID": "projects/rebuild-targeting/index.html#caveats-the-product-is-honest-about",
+    "href": "projects/rebuild-targeting/index.html#caveats-the-product-is-honest-about",
+    "title": "Re:BUiLD Cash-Plus Targeting",
+    "section": "Caveats the product is honest about",
+    "text": "Caveats the product is honest about\n\nRecommendations are advisory; caseworkers keep final judgement\n\nModel fit is specific to the training contexts and waves; do not casually extrapolate to new countries without re-training\n\nCross-site transport of targeting rules is a research concern, not something the app pretends is solved\n\nUse non-identifying participant IDs unless the deployment environment is approved for identifiable data"
+  },
+  {
+    "objectID": "projects/rebuild-targeting/index.html#what-this-demonstrates",
+    "href": "projects/rebuild-targeting/index.html#what-this-demonstrates",
+    "title": "Re:BUiLD Cash-Plus Targeting",
+    "section": "What this demonstrates",
+    "text": "What this demonstrates\n\nTurning research models into field software under partner branding and real users\n\nClear role boundaries (application vs academic lead vs analyst)\n\nCost-aware causal targeting presented in language caseworkers can use\n\nDeployment discipline (Shiny, methodology tab, batch + single assessment paths)"
+  },
+  {
+    "objectID": "projects/rebuild-targeting/index.html#links",
+    "href": "projects/rebuild-targeting/index.html#links",
+    "title": "Re:BUiLD Cash-Plus Targeting",
+    "section": "Links",
+    "text": "Links\n\nLive Re:BUiLD targeting app\n\ngui2de profile — Nichodemus Amollo\n\ngui2de Re:BUiLD research page\n\nBack to Projects\n\nGet in touch →"
+  },
+  {
+    "objectID": "projects/data-engineering/etl-pipeline-architecture/index.html",
+    "href": "projects/data-engineering/etl-pipeline-architecture/index.html",
+    "title": "ETL Pipeline Architecture for Multi-Country Research Operations",
+    "section": "",
+    "text": "Project B · Data Pipeline / ETL Architecture\n  \n  This project documents how I would move survey and facility extracts from raw files into a validated reporting layer that can feed dashboards, briefs, and partner reporting without manual spreadsheet firefighting."
+  },
+  {
+    "objectID": "projects/data-engineering/etl-pipeline-architecture/index.html#pipeline-objective",
+    "href": "projects/data-engineering/etl-pipeline-architecture/index.html#pipeline-objective",
+    "title": "ETL Pipeline Architecture for Multi-Country Research Operations",
+    "section": "Pipeline objective",
+    "text": "Pipeline objective\nThe practical goal is simple: stop every analysis cycle from starting with a new round of ad hoc cleaning. The pipeline standardizes raw extracts, applies validation rules, and publishes a reporting-ready table with audit flags preserved.\n\n  \n    1\n    Ingest\n    Load daily survey and facility files from multiple partner sites with schema checks at entry.\n  \n  \n    2\n    Validate\n    Run range checks, missingness rules, duplicate detection, and referential integrity against facility metadata.\n  \n  \n    3\n    Transform\n    Standardize names, dates, units, and indicator logic into a tidy reporting model.\n  \n  \n    4\n    Publish\n    Export clean tables and QA summaries for dashboards, analyst handoff, and stakeholder reporting."
+  },
+  {
+    "objectID": "projects/data-engineering/etl-pipeline-architecture/index.html#validation-rules-included",
+    "href": "projects/data-engineering/etl-pipeline-architecture/index.html#validation-rules-included",
+    "title": "ETL Pipeline Architecture for Multi-Country Research Operations",
+    "section": "Validation rules included",
+    "text": "Validation rules included\n\n\n\n\n\n\n\nRule\nPurpose\n\n\n\n\nUnique household or patient ID\nPrevent duplicate counting\n\n\nAllowed facility IDs only\nCatch site mapping errors early\n\n\nDate ordering check\nEnsure visit dates do not precede enrollment\n\n\nIncome and expenditure bounds\nFlag impossible or clearly mis-entered values\n\n\nRequired fields by encounter type\nMake downstream indicators safe to compute"
+  },
+  {
+    "objectID": "projects/data-engineering/etl-pipeline-architecture/index.html#output-model",
+    "href": "projects/data-engineering/etl-pipeline-architecture/index.html#output-model",
+    "title": "ETL Pipeline Architecture for Multi-Country Research Operations",
+    "section": "Output model",
+    "text": "Output model\nThe pipeline produces three layers:\n\nraw: immutable copies of source extracts\nstaging: standardized field names and basic harmonization\nreporting: one clean fact table joined to a facility reference table and QA summary"
+  },
+  {
+    "objectID": "projects/data-engineering/etl-pipeline-architecture/index.html#files-in-this-project",
+    "href": "projects/data-engineering/etl-pipeline-architecture/index.html#files-in-this-project",
+    "title": "ETL Pipeline Architecture for Multi-Country Research Operations",
     "section": "Files in this project",
-    "text": "Files in this project\n\ngenerate_brief.py for the CLI workflow\nexamples/sample_paper.txt as example input\nexamples/sample_brief.json as example output\nREADME.md with setup notes"
+    "text": "Files in this project\n\netl_pipeline.R for the scripted ETL workflow\ndata/raw_household_extract.csv as a demo source file\ndata/facility_reference.csv for lookup validation\nREADME.md describing the folder structure and flow"
   },
   {
-    "objectID": "projects/ai-applications/research-brief-generator/index.html#why-it-matters",
-    "href": "projects/ai-applications/research-brief-generator/index.html#why-it-matters",
-    "title": "Research Brief Generator",
-    "section": "Why it matters",
-    "text": "Why it matters\nThis project shows applied AI in a way that fits my background. It is not novelty for its own sake. It solves a real evidence translation problem and keeps the human reviewer in the loop.\nBack to Projects →"
+    "objectID": "projects/data-engineering/etl-pipeline-architecture/index.html#why-it-belongs-in-the-portfolio",
+    "href": "projects/data-engineering/etl-pipeline-architecture/index.html#why-it-belongs-in-the-portfolio",
+    "title": "ETL Pipeline Architecture for Multi-Country Research Operations",
+    "section": "Why it belongs in the portfolio",
+    "text": "Why it belongs in the portfolio\nThis is the kind of work that makes dashboards trustworthy. It is also the bridge between research data management and modern data engineering: naming conventions, validation layers, reproducible jobs, and clear handoff contracts.\nBack to Projects →"
   },
   {
-    "objectID": "projects/dashboards/health-financing-real-time/index.html",
-    "href": "projects/dashboards/health-financing-real-time/index.html",
-    "title": "Health Financing Real-Time Dashboard",
+    "objectID": "projects/case-studies/ncd-financing-impact/index.html",
+    "href": "projects/case-studies/ncd-financing-impact/index.html",
+    "title": "NCD Financing Impact Case Study",
     "section": "",
-    "text": "Project E · Interactive Dashboard\n  \n  A Shiny-style monitoring concept that combines KPI tracking, facility comparison, and early warning signals for stockout or reimbursement risk."
+    "text": "Project D · Business Impact Case Study\n  \n  This page reframes the Kisumu NCD financing work in language that a strategy, operations, or investment audience can absorb quickly: bottlenecks, risk, intervention options, and expected service gains."
   },
   {
-    "objectID": "projects/dashboards/health-financing-real-time/index.html#what-the-dashboard-monitors",
-    "href": "projects/dashboards/health-financing-real-time/index.html#what-the-dashboard-monitors",
-    "title": "Health Financing Real-Time Dashboard",
-    "section": "What the dashboard monitors",
-    "text": "What the dashboard monitors\n\nreimbursement lag by facility\nmedicine stockout exposure\nhousehold payment burden\nfacility-level risk flags for intervention prioritization\n\n\n  \n    📍\n    Facility drill-down\n    Move from county view to facility detail to inspect reimbursement lag, stock status, and high-risk alerts.\n  \n  \n    📦\n    Stockout forecasting\n    Estimate near-term medicine stockout risk using historical lag and current consumption signals.\n  \n  \n    📊\n    Executive KPI strip\n    Show the handful of metrics decision-makers actually need each week rather than overwhelming them with charts.\n  \n  \n    🚨\n    Alerting logic\n    Escalate facilities that cross thresholds for payment delays, stock risk, or continuity-of-care danger."
+    "objectID": "projects/case-studies/ncd-financing-impact/index.html#challenge",
+    "href": "projects/case-studies/ncd-financing-impact/index.html#challenge",
+    "title": "NCD Financing Impact Case Study",
+    "section": "Challenge",
+    "text": "Challenge\nSeven public facilities were expected to maintain hypertension and diabetes care, but they operated with:\n\nno dedicated NCD budget line\ndelayed procurement and reimbursement cycles\nlimited autonomy to redirect funds when chronic medicine demand changed"
   },
   {
-    "objectID": "projects/dashboards/health-financing-real-time/index.html#project-files",
-    "href": "projects/dashboards/health-financing-real-time/index.html#project-files",
-    "title": "Health Financing Real-Time Dashboard",
-    "section": "Project files",
-    "text": "Project files\n\napp.R for the Shiny dashboard shell\ndata_prep.R for synthetic KPI preparation\ndata/facility_kpis.csv as the demo data source\nREADME.md explaining the dashboard concept"
+    "objectID": "projects/case-studies/ncd-financing-impact/index.html#data-approach",
+    "href": "projects/case-studies/ncd-financing-impact/index.html#data-approach",
+    "title": "NCD Financing Impact Case Study",
+    "section": "Data approach",
+    "text": "Data approach\nThe case combined facility records, financial process review, and qualitative evidence from staff and managers to identify where service continuity breaks down."
   },
   {
-    "objectID": "projects/dashboards/health-financing-real-time/index.html#why-it-matters",
-    "href": "projects/dashboards/health-financing-real-time/index.html#why-it-matters",
-    "title": "Health Financing Real-Time Dashboard",
-    "section": "Why it matters",
-    "text": "Why it matters\nThis project shows product thinking, not just analysis. The point is not to create another static report. It is to show how operational data, simple forecasting, and drill-down design can support faster decisions.\nBack to Projects →"
+    "objectID": "projects/case-studies/ncd-financing-impact/index.html#scenario-modeling",
+    "href": "projects/case-studies/ncd-financing-impact/index.html#scenario-modeling",
+    "title": "NCD Financing Impact Case Study",
+    "section": "Scenario modeling",
+    "text": "Scenario modeling\n\n  85.7%Facilities reporting frequent stockouts\n  100%Facilities without direct spending autonomy\n  18%Projected continuity gain with faster approvals\n  3Operational levers modeled\n\n\n\n\n\n\n\n\nLever\nModeled effect\n\n\n\n\nFaster procurement approval\nFewer medicine interruption days\n\n\nProtected chronic care budget line\nMore predictable medicine availability\n\n\nLocal facility spending discretion\nQuicker response to small stock gaps"
+  },
+  {
+    "objectID": "projects/case-studies/ncd-financing-impact/index.html#operational-recommendation",
+    "href": "projects/case-studies/ncd-financing-impact/index.html#operational-recommendation",
+    "title": "NCD Financing Impact Case Study",
+    "section": "Operational recommendation",
+    "text": "Operational recommendation\nThe most realistic first move is not a full financing overhaul. It is a tighter operating model:\n\nprotect a minimum NCD budget line\nmonitor reimbursement lag as a service KPI\nauthorize low-cost local purchases when stockout risk passes a threshold"
+  },
+  {
+    "objectID": "projects/case-studies/ncd-financing-impact/index.html#files-in-this-project",
+    "href": "projects/case-studies/ncd-financing-impact/index.html#files-in-this-project",
+    "title": "NCD Financing Impact Case Study",
+    "section": "Files in this project",
+    "text": "Files in this project\n\nscenario_model.R for the scenario calculations\ndata/ncd_financing_scenarios.csv with example assumptions\nREADME.md summarizing the case-study framing\n\nBack to Projects →"
+  },
+  {
+    "objectID": "projects/real-estate-feasibility-studio/index.html",
+    "href": "projects/real-estate-feasibility-studio/index.html",
+    "title": "Real Estate Feasibility Studio",
+    "section": "",
+    "text": "Business Analyst Case Project\n    Mixed Use Development Feasibility Studio\n    \n      A live investment case dashboard built for real estate planning decisions. It combines product mix strategy,\n      market demand scoring, discounted cash flow modeling, sensitivity testing, and board ready reporting in one view.\n      This is the exact analysis workflow used to test viability before design freeze and budget approval.\n    \n    \n      Residential\n      Commercial\n      Retail\n      Industrial\n      DCF · NPV · IRR · ROI\n      \n        Reset baseline\n        Copy board summary\n      \n    \n  \n\n  \n    \n      Data sources\n      Portfolio demonstration dataset built from public Kenya macro indicators, sampled property listing comparables, and structured development cost assumptions from quantity survey templates.\n    \n    \n      Engineering and cleaning\n      Data is standardized through schema checks, unit normalization, duplicate detection, outlier flags, and pricing alignment before any financial modeling is run.\n    \n    \n      Pipeline and analysis\n      Modular SQL and R style pipeline transforms source tables into scenario ready model inputs powering DCF, NPV, IRR, ROI, payback, and sensitivity analysis.\n    \n    \n      Stakeholder value\n      Creates one shared decision view for finance, planning, design, engineering, and construction teams, improving coordination, budget discipline, and return clarity.\n    \n  \n\n  \n    \n      Model controls\n      Tune assumptions the same way a feasibility team would during investor and management review.\n\n      \n        \n          Development area sqm \n          \n        \n        \n          Land cost per sqm KES \n          \n        \n        \n          Discount rate \n          \n        \n        \n          Finance cost rate \n          \n        \n        \n          Absorption period years \n          \n        \n        \n          Pricing shock \n          \n        \n        \n          Construction cost shock \n          \n        \n        \n          Capex curve\n          \n            Front loaded\n            Balanced\n            Back loaded\n          \n        \n      \n\n      \n        Product mix raw sliders. The model auto normalizes to 100 percent.\n        \n          Residential share \n          \n        \n        \n          Commercial share \n          \n        \n        \n          Retail share \n          \n        \n        \n          Industrial share \n          \n        \n      \n    \n\n    \n      \n        \n          NPV\n          ...\n          Discounted value at selected rate\n        \n        \n          IRR\n          ...\n          Internal return from model cash flow\n        \n        \n          ROI\n          ...\n          Profit on total development cost\n        \n        \n          Payback\n          ...\n          Year cumulative cash flow turns positive\n        \n        \n          Total gross sales\n          ...\n          Portfolio revenue across asset classes\n        \n      \n\n      \n        \n          Eight year cash flow\n          Revenue and cost per year with net signal for phasing and funding pressure.\n          \n          \n            Revenue\n            Cost\n          \n        \n\n        \n          Product mix and margin\n          Normalized mix, pricing assumptions, and gross margin by asset class.\n          \n            \n\n\n\nAsset class\nShare\nAvg price\nAvg cost\nGross margin\n\n\n\n\n\n\n          \n        \n      \n\n      \n        \n          Sensitivity matrix\n          NPV stress test across combined price and cost shocks.\n          \n            \n\n\n\nCost \\ Price\nLoading\n\n\n\n\n0%\nLoading model\n\n\n\n\n          \n        \n\n        \n          Market pulse and recommendations\n          Demand index is adjusted by pricing pressure and mix concentration risk.\n          \n          \n        \n      \n\n      \n        Board brief draft\n        Auto generated talking points for investor, lender, and management presentation.\n        \n          \n          Scenario values are illustrative for portfolio demonstration. Replace assumptions with verified site data before investment approval."
   },
   {
     "objectID": "cv/index.html",

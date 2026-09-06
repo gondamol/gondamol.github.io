@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.27">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -11,10 +11,16 @@
 
 <title>TidyTuesday: Global Food Security Index – Nic | Data</title>
 <style>
-code{white-space: pre-wrap;}
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -69,19 +75,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../img/profile.jpeg" rel="icon" type="image/jpeg">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-c4c2ef47ae8c5b6559b874393782336f.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-143f9c3e9ebf7bb70b4ff5d8871e5fa1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-c4c2ef47ae8c5b6559b874393782336f.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7d3e12fd0e56b94dfdbe6a015c4c31d6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-2b8464706ace5af64c66484c01a98cb9.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7d3e12fd0e56b94dfdbe6a015c4c31d6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-b25b354c4b71c37f9993ce5bac014e64.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-ca4f2e91741198af129894bad3ec1933.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-b25b354c4b71c37f9993ce5bac014e64.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-f844eea2c04e8f25b5c4a585678ecaed.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-548842bb5ed778a9d17d0353366ea143.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-f844eea2c04e8f25b5c4a585678ecaed.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -120,7 +125,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/dt-core-1.13.6/js/jquery.dataTables.min.js"></script>
 <link href="../site_libs/crosstalk-1.2.2/css/crosstalk.min.css" rel="stylesheet">
 <script src="../site_libs/crosstalk-1.2.2/js/crosstalk.min.js"></script>
-<script src="../site_libs/plotly-binding-4.12.0/plotly.js"></script>
+<script src="../site_libs/plotly-binding-4.12.1/plotly.js"></script>
 <script src="../site_libs/typedarray-0.1/typedarray.min.js"></script>
 <link href="../site_libs/plotly-htmlwidgets-css-2.25.2/plotly-htmlwidgets.css" rel="stylesheet">
 <script src="../site_libs/plotly-main-2.25.2/plotly-latest.min.js"></script>
@@ -528,7 +533,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell">
 <div class="cell-output-display">
 <div class="plotly html-widget html-fill-item" id="htmlwidget-88ca4cc4abcbd77cefee" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-88ca4cc4abcbd77cefee">{"x":{"visdat":{"64e0f7535a2":["function () ","plotlyVisDat"]},"cur_data":"64e0f7535a2","attrs":{"64e0f7535a2":{"x":{},"y":{},"text":{},"hoverinfo":"text","mode":"markers","marker":{"opacity":0.69999999999999996,"sizemode":"diameter","sizeref":2},"color":{},"size":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"title":{"text":"Food Security Index vs Undernourishment (Interactive)","font":{"size":18}},"xaxis":{"domain":[0,1],"automargin":true,"title":"Food Security Index"},"yaxis":{"domain":[0,1],"automargin":true,"title":"Undernourishment Rate (%)"},"hovermode":"closest","showlegend":true},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[68.626816854221943,31.277988316870932,67.780751789531593,90.573947209364093],"y":[36.495510245042951,67.289735976880266,37.803526872568995,6.1306344072265562],"text":["Country: Brazil <br>Food Security Index: 68.6 <br>Undernourishment: 36.5 %","Country: Haiti <br>Food Security Index: 31.3 <br>Undernourishment: 67.3 %","Country: Mexico <br>Food Security Index: 67.8 <br>Undernourishment: 37.8 %","Country: USA <br>Food Security Index: 90.6 <br>Undernourishment: 6.1 %"],"hoverinfo":["text","text","text","text"],"mode":"markers","marker":{"color":"rgba(102,194,165,1)","size":[24.962295354103752,80.581794698189213,23.515824545595599,10.137123370499195],"sizemode":"diameter","opacity":0.69999999999999996,"sizeref":2,"line":{"color":"rgba(102,194,165,1)"}},"type":"scatter","name":"Americas","textfont":{"color":"rgba(102,194,165,1)","size":[24.962295354103752,80.581794698189213,23.515824545595599,10.137123370499195]},"error_y":{"color":"rgba(102,194,165,1)","width":[]},"error_x":{"color":"rgba(102,194,165,1)","width":[]},"line":{"color":"rgba(102,194,165,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[75.509152646554639,84.41264352886833],"y":[23.93853847464565,21.544769499348362],"text":["Country: China <br>Food Security Index: 75.5 <br>Undernourishment: 23.9 %","Country: Japan <br>Food Security Index: 84.4 <br>Undernourishment: 21.5 %"],"hoverinfo":["text","text"],"mode":"markers","marker":{"color":"rgba(252,141,98,1)","size":[23.646979022360405,14.203314103494471],"sizemode":"diameter","opacity":0.69999999999999996,"sizeref":2,"line":{"color":"rgba(252,141,98,1)"}},"type":"scatter","name":"East Asia","textfont":{"color":"rgba(252,141,98,1)","size":[23.646979022360405,14.203314103494471]},"error_y":{"color":"rgba(252,141,98,1)","width":[]},"error_x":{"color":"rgba(252,141,98,1)","width":[]},"line":{"color":"rgba(252,141,98,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[91.119964457813921,87.074810330865063,83.611544221500466,31.852504484664742],"y":[11.265847169118581,10.574817405249753,14.791645748526488,68.526164850391368],"text":["Country: France <br>Food Security Index: 91.1 <br>Undernourishment: 11.3 %","Country: Germany <br>Food Security Index: 87.1 <br>Undernourishment: 10.6 %","Country: UK <br>Food Security Index: 83.6 <br>Undernourishment: 14.8 %","Country: Yemen <br>Food Security Index: 31.9 <br>Undernourishment: 68.5 %"],"hoverinfo":["text","text","text","text"],"mode":"markers","marker":{"color":"rgba(141,160,203,1)","size":[10,14.066504026986017,12.156037139444489,88.755782189848702],"sizemode":"diameter","opacity":0.69999999999999996,"sizeref":2,"line":{"color":"rgba(141,160,203,1)"}},"type":"scatter","name":"Europe & Middle East","textfont":{"color":"rgba(141,160,203,1)","size":[10,14.066504026986017,12.156037139444489,88.755782189848702]},"error_y":{"color":"rgba(141,160,203,1)","width":[]},"error_x":{"color":"rgba(141,160,203,1)","width":[]},"line":{"color":"rgba(141,160,203,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[82.839812855877668],"y":[15.204785897609135],"text":"Country: Australia <br>Food Security Index: 82.8 <br>Undernourishment: 15.2 %","hoverinfo":"text","mode":"markers","marker":{"color":"rgba(231,138,195,1)","size":[41.97299070020054],"sizemode":"diameter","opacity":0.69999999999999996,"sizeref":2,"line":{"color":"rgba(231,138,195,1)"}},"type":"scatter","name":"Oceania","textfont":{"color":"rgba(231,138,195,1)","size":41.97299070020054},"error_y":{"color":"rgba(231,138,195,1)","width":41.97299070020054},"error_x":{"color":"rgba(231,138,195,1)","width":41.97299070020054},"line":{"color":"rgba(231,138,195,1)","width":41.97299070020054},"xaxis":"x","yaxis":"y","frame":null},{"x":[34.033582007146769,62.523096452568097,58.785292529654726,62.746817538541222,61.61666785978494],"y":[62.572271638850637,39.696587954389344,40.976815360506919,30.782296256043903,38.107249649440853],"text":["Country: Afghanistan <br>Food Security Index: 34 <br>Undernourishment: 62.6 %","Country: Bangladesh <br>Food Security Index: 62.5 <br>Undernourishment: 39.7 %","Country: India <br>Food Security Index: 58.8 <br>Undernourishment: 41 %","Country: Indonesia <br>Food Security Index: 62.7 <br>Undernourishment: 30.8 %","Country: Philippines <br>Food Security Index: 61.6 <br>Undernourishment: 38.1 %"],"hoverinfo":["text","text","text","text","text"],"mode":"markers","marker":{"color":"rgba(166,216,84,1)","size":[100,36.250834275700996,35.535729308224759,39.957651455044342,41.97299070020054],"sizemode":"diameter","opacity":0.69999999999999996,"sizeref":2,"line":{"color":"rgba(166,216,84,1)"}},"type":"scatter","name":"South Asia","textfont":{"color":"rgba(166,216,84,1)","size":[100,36.250834275700996,35.535729308224759,39.957651455044342,41.97299070020054]},"error_y":{"color":"rgba(166,216,84,1)","width":[]},"error_x":{"color":"rgba(166,216,84,1)","width":[]},"line":{"color":"rgba(166,216,84,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[48.583588477904797,43.371047178401767,44.071506009438664,52.871501197948461,29.932046918583971,68.168001260449657,27.073035508423583,43.54728798208896,50.94995884289294],"y":[47.548923101949555,54.151657823884676,55.8055759966716,50.958779492902579,72.063351532733876,26.605857540757036,68.3588934277916,55.260511666915065,48.635059249394459],"text":["Country: Ethiopia <br>Food Security Index: 48.6 <br>Undernourishment: 47.5 %","Country: Ghana <br>Food Security Index: 43.4 <br>Undernourishment: 54.2 %","Country: Kenya <br>Food Security Index: 44.1 <br>Undernourishment: 55.8 %","Country: Nigeria <br>Food Security Index: 52.9 <br>Undernourishment: 51 %","Country: Somalia <br>Food Security Index: 29.9 <br>Undernourishment: 72.1 %","Country: South Africa <br>Food Security Index: 68.2 <br>Undernourishment: 26.6 %","Country: Sudan <br>Food Security Index: 27.1 <br>Undernourishment: 68.4 %","Country: Tanzania <br>Food Security Index: 43.5 <br>Undernourishment: 55.3 %","Country: Uganda <br>Food Security Index: 50.9 <br>Undernourishment: 48.6 %"],"hoverinfo":["text","text","text","text","text","text","text","text","text"],"mode":"markers","marker":{"color":"rgba(255,217,47,1)","size":[64.295249509455374,41.97299070020054,54.185766623311181,69.430701178059735,87.116874441967084,41.97299070020054,84.9743495084101,72.329951703278979,65.453633259024485],"sizemode":"diameter","opacity":0.69999999999999996,"sizeref":2,"line":{"color":"rgba(255,217,47,1)"}},"type":"scatter","name":"Sub-Saharan Africa","textfont":{"color":"rgba(255,217,47,1)","size":[64.295249509455374,41.97299070020054,54.185766623311181,69.430701178059735,87.116874441967084,41.97299070020054,84.9743495084101,72.329951703278979,65.453633259024485]},"error_y":{"color":"rgba(255,217,47,1)","width":[]},"error_x":{"color":"rgba(255,217,47,1)","width":[]},"line":{"color":"rgba(255,217,47,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<script type="application/json" data-for="htmlwidget-88ca4cc4abcbd77cefee">{"x":{"visdat":{"20fa7374c1c6":["function () ","plotlyVisDat"]},"cur_data":"20fa7374c1c6","attrs":{"20fa7374c1c6":{"x":{},"y":{},"text":{},"hoverinfo":"text","mode":"markers","marker":{"opacity":0.69999999999999996,"sizemode":"diameter","sizeref":2},"color":{},"size":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"title":{"text":"Food Security Index vs Undernourishment (Interactive)","font":{"size":18}},"xaxis":{"domain":[0,1],"automargin":true,"title":"Food Security Index"},"yaxis":{"domain":[0,1],"automargin":true,"title":"Undernourishment Rate (%)"},"hovermode":"closest","showlegend":true},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[68.626816854221943,31.277988316870932,67.780751789531593,90.573947209364093],"y":[36.495510245042951,67.289735976880266,37.803526872568995,6.1306344072265562],"text":["Country: Brazil <br>Food Security Index: 68.6 <br>Undernourishment: 36.5 %","Country: Haiti <br>Food Security Index: 31.3 <br>Undernourishment: 67.3 %","Country: Mexico <br>Food Security Index: 67.8 <br>Undernourishment: 37.8 %","Country: USA <br>Food Security Index: 90.6 <br>Undernourishment: 6.1 %"],"hoverinfo":["text","text","text","text"],"mode":"markers","marker":{"color":"rgba(102,194,165,1)","size":[24.962295354103752,80.581794698189213,23.515824545595599,10.137123370499195],"sizemode":"diameter","opacity":0.69999999999999996,"sizeref":2,"line":{"color":"rgba(102,194,165,1)"}},"type":"scatter","name":"Americas","textfont":{"color":"rgba(102,194,165,1)","size":[24.962295354103752,80.581794698189213,23.515824545595599,10.137123370499195]},"error_y":{"color":"rgba(102,194,165,1)","width":[]},"error_x":{"color":"rgba(102,194,165,1)","width":[]},"line":{"color":"rgba(102,194,165,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[75.509152646554639,84.41264352886833],"y":[23.93853847464565,21.544769499348362],"text":["Country: China <br>Food Security Index: 75.5 <br>Undernourishment: 23.9 %","Country: Japan <br>Food Security Index: 84.4 <br>Undernourishment: 21.5 %"],"hoverinfo":["text","text"],"mode":"markers","marker":{"color":"rgba(252,141,98,1)","size":[23.646979022360405,14.203314103494471],"sizemode":"diameter","opacity":0.69999999999999996,"sizeref":2,"line":{"color":"rgba(252,141,98,1)"}},"type":"scatter","name":"East Asia","textfont":{"color":"rgba(252,141,98,1)","size":[23.646979022360405,14.203314103494471]},"error_y":{"color":"rgba(252,141,98,1)","width":[]},"error_x":{"color":"rgba(252,141,98,1)","width":[]},"line":{"color":"rgba(252,141,98,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[91.119964457813921,87.074810330865063,83.611544221500466,31.852504484664742],"y":[11.265847169118581,10.574817405249753,14.791645748526488,68.526164850391368],"text":["Country: France <br>Food Security Index: 91.1 <br>Undernourishment: 11.3 %","Country: Germany <br>Food Security Index: 87.1 <br>Undernourishment: 10.6 %","Country: UK <br>Food Security Index: 83.6 <br>Undernourishment: 14.8 %","Country: Yemen <br>Food Security Index: 31.9 <br>Undernourishment: 68.5 %"],"hoverinfo":["text","text","text","text"],"mode":"markers","marker":{"color":"rgba(141,160,203,1)","size":[10,14.066504026986017,12.156037139444489,88.755782189848702],"sizemode":"diameter","opacity":0.69999999999999996,"sizeref":2,"line":{"color":"rgba(141,160,203,1)"}},"type":"scatter","name":"Europe & Middle East","textfont":{"color":"rgba(141,160,203,1)","size":[10,14.066504026986017,12.156037139444489,88.755782189848702]},"error_y":{"color":"rgba(141,160,203,1)","width":[]},"error_x":{"color":"rgba(141,160,203,1)","width":[]},"line":{"color":"rgba(141,160,203,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[82.839812855877668],"y":[15.204785897609135],"text":"Country: Australia <br>Food Security Index: 82.8 <br>Undernourishment: 15.2 %","hoverinfo":"text","mode":"markers","marker":{"color":"rgba(231,138,195,1)","size":[41.97299070020054],"sizemode":"diameter","opacity":0.69999999999999996,"sizeref":2,"line":{"color":"rgba(231,138,195,1)"}},"type":"scatter","name":"Oceania","textfont":{"color":"rgba(231,138,195,1)","size":41.97299070020054},"error_y":{"color":"rgba(231,138,195,1)","width":41.97299070020054},"error_x":{"color":"rgba(231,138,195,1)","width":41.97299070020054},"line":{"color":"rgba(231,138,195,1)","width":41.97299070020054},"xaxis":"x","yaxis":"y","frame":null},{"x":[34.033582007146769,62.523096452568097,58.785292529654726,62.746817538541222,61.61666785978494],"y":[62.572271638850637,39.696587954389344,40.976815360506919,30.782296256043903,38.107249649440853],"text":["Country: Afghanistan <br>Food Security Index: 34 <br>Undernourishment: 62.6 %","Country: Bangladesh <br>Food Security Index: 62.5 <br>Undernourishment: 39.7 %","Country: India <br>Food Security Index: 58.8 <br>Undernourishment: 41 %","Country: Indonesia <br>Food Security Index: 62.7 <br>Undernourishment: 30.8 %","Country: Philippines <br>Food Security Index: 61.6 <br>Undernourishment: 38.1 %"],"hoverinfo":["text","text","text","text","text"],"mode":"markers","marker":{"color":"rgba(166,216,84,1)","size":[100,36.250834275700996,35.535729308224759,39.957651455044342,41.97299070020054],"sizemode":"diameter","opacity":0.69999999999999996,"sizeref":2,"line":{"color":"rgba(166,216,84,1)"}},"type":"scatter","name":"South Asia","textfont":{"color":"rgba(166,216,84,1)","size":[100,36.250834275700996,35.535729308224759,39.957651455044342,41.97299070020054]},"error_y":{"color":"rgba(166,216,84,1)","width":[]},"error_x":{"color":"rgba(166,216,84,1)","width":[]},"line":{"color":"rgba(166,216,84,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[48.583588477904797,43.371047178401767,44.071506009438664,52.871501197948461,29.932046918583971,68.168001260449657,27.073035508423583,43.54728798208896,50.94995884289294],"y":[47.548923101949555,54.151657823884676,55.8055759966716,50.958779492902579,72.063351532733876,26.605857540757036,68.3588934277916,55.260511666915065,48.635059249394459],"text":["Country: Ethiopia <br>Food Security Index: 48.6 <br>Undernourishment: 47.5 %","Country: Ghana <br>Food Security Index: 43.4 <br>Undernourishment: 54.2 %","Country: Kenya <br>Food Security Index: 44.1 <br>Undernourishment: 55.8 %","Country: Nigeria <br>Food Security Index: 52.9 <br>Undernourishment: 51 %","Country: Somalia <br>Food Security Index: 29.9 <br>Undernourishment: 72.1 %","Country: South Africa <br>Food Security Index: 68.2 <br>Undernourishment: 26.6 %","Country: Sudan <br>Food Security Index: 27.1 <br>Undernourishment: 68.4 %","Country: Tanzania <br>Food Security Index: 43.5 <br>Undernourishment: 55.3 %","Country: Uganda <br>Food Security Index: 50.9 <br>Undernourishment: 48.6 %"],"hoverinfo":["text","text","text","text","text","text","text","text","text"],"mode":"markers","marker":{"color":"rgba(255,217,47,1)","size":[64.295249509455374,41.97299070020054,54.185766623311181,69.430701178059735,87.116874441967084,41.97299070020054,84.9743495084101,72.329951703278979,65.453633259024485],"sizemode":"diameter","opacity":0.69999999999999996,"sizeref":2,"line":{"color":"rgba(255,217,47,1)"}},"type":"scatter","name":"Sub-Saharan Africa","textfont":{"color":"rgba(255,217,47,1)","size":[64.295249509455374,41.97299070020054,54.185766623311181,69.430701178059735,87.116874441967084,41.97299070020054,84.9743495084101,72.329951703278979,65.453633259024485]},"error_y":{"color":"rgba(255,217,47,1)","width":[]},"error_x":{"color":"rgba(255,217,47,1)","width":[]},"line":{"color":"rgba(255,217,47,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </section>
@@ -617,52 +622,52 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="session-info">Session Info</h2>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
-<pre><code>R version 4.5.1 (2025-06-13 ucrt)
-Platform: x86_64-w64-mingw32/x64
-Running under: Windows 11 x64 (build 26200)
+<pre><code>R version 4.6.1 (2026-06-24)
+Platform: x86_64-pc-linux-gnu
+Running under: Ubuntu 24.04.4 LTS
 
 Matrix products: default
-  LAPACK version 3.12.1
+BLAS:   /usr/lib/x86_64-linux-gnu/openblas-pthread/libblas.so.3 
+LAPACK: /usr/lib/x86_64-linux-gnu/openblas-pthread/libopenblasp-r0.3.26.so;  LAPACK version 3.12.0
 
 locale:
-[1] LC_COLLATE=English_United States.utf8 
-[2] LC_CTYPE=English_United States.utf8   
-[3] LC_MONETARY=English_United States.utf8
-[4] LC_NUMERIC=C                          
-[5] LC_TIME=English_United States.utf8    
+ [1] LC_CTYPE=C.UTF-8       LC_NUMERIC=C           LC_TIME=C.UTF-8       
+ [4] LC_COLLATE=C.UTF-8     LC_MONETARY=C.UTF-8    LC_MESSAGES=C.UTF-8   
+ [7] LC_PAPER=C.UTF-8       LC_NAME=C              LC_ADDRESS=C          
+[10] LC_TELEPHONE=C         LC_MEASUREMENT=C.UTF-8 LC_IDENTIFICATION=C   
 
-time zone: Africa/Nairobi
-tzcode source: internal
+time zone: UTC
+tzcode source: system (glibc)
 
 attached base packages:
-[1] stats     graphics  grDevices datasets  utils     methods   base     
+[1] stats     graphics  grDevices utils     datasets  methods   base     
 
 other attached packages:
- [1] DT_0.34.0       scales_1.4.0    plotly_4.12.0   patchwork_1.3.2
- [5] ggtext_0.1.2    showtext_0.9-7  showtextdb_3.0  sysfonts_0.8.9 
+ [1] DT_0.34.0       scales_1.4.0    plotly_4.12.1   patchwork_1.3.2
+ [5] ggtext_0.2.0    showtext_0.9-8  showtextdb_3.0  sysfonts_0.8.9 
  [9] here_1.0.2      lubridate_1.9.5 forcats_1.0.1   stringr_1.6.0  
-[13] dplyr_1.2.0     purrr_1.2.1     readr_2.1.6     tidyr_1.3.2    
-[17] tibble_3.3.1    ggplot2_4.0.2   tidyverse_2.0.0
+[13] dplyr_1.2.1     purrr_1.2.2     readr_2.2.0     tidyr_1.3.2    
+[17] tibble_3.3.1    ggplot2_4.0.3   tidyverse_2.0.0
 
 loaded via a namespace (and not attached):
- [1] gtable_0.3.6        xfun_0.56           bslib_0.10.0       
- [4] htmlwidgets_1.6.4   lattice_0.22-7      tzdb_0.5.0         
- [7] vctrs_0.7.1         tools_4.5.1         crosstalk_1.2.2    
-[10] generics_0.1.4      pkgconfig_2.0.3     Matrix_1.7-3       
-[13] data.table_1.18.2.1 RColorBrewer_1.1-3  S7_0.2.1           
-[16] lifecycle_1.0.5     compiler_4.5.1      farver_2.1.2       
-[19] htmltools_0.5.9     sass_0.4.10         yaml_2.3.12        
-[22] lazyeval_0.2.2      pillar_1.11.1       jquerylib_0.1.4    
-[25] cachem_1.1.0        nlme_3.1-168        tidyselect_1.2.1   
-[28] digest_0.6.39       stringi_1.8.7       labeling_0.4.3     
-[31] splines_4.5.1       rprojroot_2.1.1     fastmap_1.2.0      
-[34] grid_4.5.1          cli_3.6.5           magrittr_2.0.4     
-[37] withr_3.0.2         timechange_0.4.0    rmarkdown_2.30     
-[40] httr_1.4.8          otel_0.2.0          hms_1.1.4          
-[43] evaluate_1.0.5      knitr_1.51          viridisLite_0.4.3  
-[46] mgcv_1.9-3          rlang_1.1.7         gridtext_0.1.5     
-[49] Rcpp_1.1.1          glue_1.8.0          xml2_1.5.2         
-[52] renv_1.0.7          jsonlite_2.0.0      R6_2.6.1           </code></pre>
+ [1] sass_0.4.10         generics_0.1.4      xml2_1.6.0         
+ [4] lattice_0.22-9      stringi_1.8.9       hms_1.1.4          
+ [7] digest_0.6.39       magrittr_2.0.5      evaluate_1.0.5     
+[10] grid_4.6.1          timechange_0.4.0    RColorBrewer_1.1-3 
+[13] fastmap_1.2.0       Matrix_1.7-5        rprojroot_2.1.1    
+[16] jsonlite_2.0.0      mgcv_1.9-4          httr_1.4.9         
+[19] crosstalk_1.2.2     viridisLite_0.4.3   jquerylib_0.1.4    
+[22] cli_3.6.6           rlang_1.3.0         splines_4.6.1      
+[25] cachem_1.1.0        withr_3.0.3         yaml_2.3.12        
+[28] otel_0.2.0          tools_4.6.1         tzdb_0.5.0         
+[31] vctrs_0.7.3         R6_2.6.1            lifecycle_1.0.5    
+[34] htmlwidgets_1.6.4   pkgconfig_2.0.3     bslib_0.12.0       
+[37] pillar_1.11.1       gtable_0.3.6        data.table_1.18.6.1
+[40] glue_1.8.1          Rcpp_1.1.2          xfun_0.60          
+[43] tidyselect_1.2.1    knitr_1.51          farver_2.1.2       
+[46] nlme_3.1-169        htmltools_0.5.9     labeling_0.4.3     
+[49] rmarkdown_2.32      compiler_4.6.1      S7_0.2.2           
+[52] gridtext_0.1.6     </code></pre>
 </div>
 </div>
 <hr>
@@ -1018,16 +1023,16 @@ loaded via a namespace (and not attached):
     }
     function toggleCodeHandler(show) {
       return function(e) {
-        const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
-        for (let i=0; i<detailsSrc.length; i++) {
-          const details = detailsSrc[i].parentElement;
+        const cellDetails = window.document.querySelectorAll(".cell details.code-fold");
+        for (let i=0; i<cellDetails.length; i++) {
+          const details = cellDetails[i];
           if (show) {
             details.open = true;
           } else {
             details.removeAttribute("open");
           }
         }
-        const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+        const cellCodeDivs = window.document.querySelectorAll(".cell div.sourceCode.cell-code");
         const fromCls = show ? "hidden" : "unhidden";
         const toCls = show ? "unhidden" : "hidden";
         for (let i=0; i<cellCodeDivs.length; i++) {

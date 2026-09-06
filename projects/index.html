@@ -2,17 +2,23 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.27">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>index – Nic | Data</title>
 <style>
-code{white-space: pre-wrap;}
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -32,15 +38,14 @@ ul.task-list li input[type="checkbox"] {
 <link href="../img/profile.jpeg" rel="icon" type="image/jpeg">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-b4d8e255315082a850f3101be8cf4c50.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-31f83acc9cd1edb2889821b433ae8ec0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-0fc9a157cd3d393eb98194809f8e8306.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-224726e677151d31706f3872130d660e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -351,6 +356,22 @@ ul.task-list li input[type="checkbox"] {
         <div class="proj-footer">
           <span class="proj-tags"><span>Demo</span><span>R</span><span>Validation</span></span>
           <span class="proj-arrow">Open →</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="customer-intelligence/index.html" class="proj-card proj-featured" data-category="lab">
+      <div class="proj-thumb" style="background:#101820;">
+        <div class="proj-thumb-pattern" style="--dot:#ffffff10;"></div>
+        <img src="../img/customer-intelligence/05-decision-support.png" alt="Decision support screen showing a customer's evidence, the rule that fired, and the suggested action" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top left;opacity:0.92;" onerror="this.remove()">
+      </div>
+      <div class="proj-body">
+        <p class="proj-domain" style="color:#8cb5d9;">Live dashboard · Real open data (UCI, CC BY 4.0)</p>
+        <h3 class="proj-title anchored">Customer intelligence &amp; decision analytics</h3>
+        <p class="proj-desc">An end-to-end analytics product on a real, openly published transaction ledger — 1.07m invoice lines from a UK giftware wholesaler. Real data quality defects, seasonally-aligned experimental design, cross-validated models, a recommender that beats its baseline, and a decision engine that stops at a suggested action with its reasoning attached.</p>
+        <div class="proj-footer">
+          <span class="proj-tags"><span>Python</span><span>DuckDB &amp; SQL</span><span>scikit-learn</span><span>Streamlit</span><span>1.07m rows</span></span>
+          <span class="proj-arrow">Case study &amp; live dashboard →</span>
         </div>
       </div>
     </a>

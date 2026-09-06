@@ -9,8 +9,8 @@
 <link>https://gondamol.github.io/blogs/</link>
 <atom:link href="https://gondamol.github.io/blogs/index.xml" rel="self" type="application/rss+xml"/>
 <description>Research data systems for health and development programmes — field instruments, quality architecture, and decision products. Nairobi, Kenya.</description>
-<generator>quarto-1.8.27</generator>
-<lastBuildDate>Mon, 16 Mar 2026 21:00:00 GMT</lastBuildDate>
+<generator>quarto-1.10.18</generator>
+<lastBuildDate>Tue, 17 Mar 2026 00:00:00 GMT</lastBuildDate>
 <item>
   <title>From Field to Model: Why Domain Knowledge Still Matters in ML</title>
   <dc:creator>Nichodemus Amollo</dc:creator>
@@ -71,7 +71,7 @@
   <category>Domain Knowledge</category>
   <category>AI Systems</category>
   <guid>https://gondamol.github.io/posts/48-from-field-to-model/</guid>
-  <pubDate>Mon, 16 Mar 2026 21:00:00 GMT</pubDate>
+  <pubDate>Tue, 17 Mar 2026 00:00:00 GMT</pubDate>
   <media:content url="https://gondamol.github.io/img/blog-health.svg" medium="image" type="image/svg+xml"/>
 </item>
 <item>
@@ -144,7 +144,7 @@
   <category>Data Engineering</category>
   <category>Research</category>
   <guid>https://gondamol.github.io/posts/49-reproducible-ml-research-data-manager/</guid>
-  <pubDate>Mon, 16 Mar 2026 21:00:00 GMT</pubDate>
+  <pubDate>Tue, 17 Mar 2026 00:00:00 GMT</pubDate>
   <media:content url="https://gondamol.github.io/img/blog-engineering.svg" medium="image" type="image/svg+xml"/>
 </item>
 <item>
@@ -214,7 +214,7 @@
   <category>Low-Resource Settings</category>
   <category>Systems Design</category>
   <guid>https://gondamol.github.io/posts/50-ai-low-resource-settings/</guid>
-  <pubDate>Mon, 16 Mar 2026 21:00:00 GMT</pubDate>
+  <pubDate>Tue, 17 Mar 2026 00:00:00 GMT</pubDate>
   <media:content url="https://gondamol.github.io/img/blog-mande.svg" medium="image" type="image/svg+xml"/>
 </item>
 <item>
@@ -277,7 +277,7 @@
   <category>Causal Inference</category>
   <category>Machine Learning</category>
   <guid>https://gondamol.github.io/posts/51-statistical-thinking-ai-engineering/</guid>
-  <pubDate>Mon, 16 Mar 2026 21:00:00 GMT</pubDate>
+  <pubDate>Tue, 17 Mar 2026 00:00:00 GMT</pubDate>
   <media:content url="https://gondamol.github.io/img/blog-analytics.svg" medium="image" type="image/svg+xml"/>
 </item>
 <item>
@@ -342,7 +342,7 @@
   <category>Analytics Engineering</category>
   <category>Public Health</category>
   <guid>https://gondamol.github.io/posts/52-dashboards-to-decisions/</guid>
-  <pubDate>Mon, 16 Mar 2026 21:00:00 GMT</pubDate>
+  <pubDate>Tue, 17 Mar 2026 00:00:00 GMT</pubDate>
   <media:content url="https://gondamol.github.io/img/blog-health.svg" medium="image" type="image/svg+xml"/>
 </item>
 <item>
@@ -430,7 +430,7 @@
   <category>NCDs</category>
   <category>Kenya</category>
   <guid>https://gondamol.github.io/posts/47-facility-decision-space-chronic-care/</guid>
-  <pubDate>Thu, 12 Mar 2026 21:00:00 GMT</pubDate>
+  <pubDate>Fri, 13 Mar 2026 00:00:00 GMT</pubDate>
   <media:content url="https://gondamol.github.io/img/blog-health.svg" medium="image" type="image/svg+xml"/>
 </item>
 <item>
@@ -517,7 +517,7 @@
   <category>Monitoring &amp; Evaluation</category>
   <category>Field Systems</category>
   <guid>https://gondamol.github.io/posts/39-survey-design-mistakes/</guid>
-  <pubDate>Fri, 07 Nov 2025 21:00:00 GMT</pubDate>
+  <pubDate>Sat, 08 Nov 2025 00:00:00 GMT</pubDate>
   <media:content url="https://gondamol.github.io/img/blog-mande.svg" medium="image" type="image/svg+xml"/>
 </item>
 <item>
@@ -578,7 +578,7 @@
   <category>Impact Evaluation</category>
   <category>Monitoring &amp; Evaluation</category>
   <guid>https://gondamol.github.io/posts/38-statistical-power-for-evaluators/</guid>
-  <pubDate>Thu, 06 Nov 2025 21:00:00 GMT</pubDate>
+  <pubDate>Fri, 07 Nov 2025 00:00:00 GMT</pubDate>
   <media:content url="https://gondamol.github.io/img/blog-mande.svg" medium="image" type="image/svg+xml"/>
 </item>
 <item>
@@ -682,7 +682,7 @@ Live: <a href="https://ra-leaderboard.streamlit.app/" target="_blank">ra-leaderb
   <category>Field Systems</category>
   <category>Georgetown gui2de</category>
   <guid>https://gondamol.github.io/posts/30-health-financial-diaries-explainer/</guid>
-  <pubDate>Wed, 29 Oct 2025 21:00:00 GMT</pubDate>
+  <pubDate>Thu, 30 Oct 2025 00:00:00 GMT</pubDate>
   <media:content url="https://gondamol.github.io/img/diaries/field-team-performance-dashboard.png" medium="image" type="image/png" height="65" width="144"/>
 </item>
 <item>
@@ -782,7 +782,7 @@ Live: <a href="https://ra-leaderboard.streamlit.app/" target="_blank">ra-leaderb
   <category>Field Work</category>
   <category>HFC</category>
   <guid>https://gondamol.github.io/posts/24-mobile-data-collection/</guid>
-  <pubDate>Sat, 25 Oct 2025 21:00:00 GMT</pubDate>
+  <pubDate>Sun, 26 Oct 2025 00:00:00 GMT</pubDate>
   <media:content url="https://gondamol.github.io/img/blog-mande.svg" medium="image" type="image/svg+xml"/>
 </item>
 <item>
@@ -887,7 +887,7 @@ Live: <a href="https://ra-leaderboard.streamlit.app/" target="_blank">ra-leaderb
   <category>Reproducibility</category>
   <category>Field Systems</category>
   <guid>https://gondamol.github.io/posts/22-reproducible-research-public-health/</guid>
-  <pubDate>Sat, 25 Oct 2025 21:00:00 GMT</pubDate>
+  <pubDate>Sun, 26 Oct 2025 00:00:00 GMT</pubDate>
   <media:content url="https://gondamol.github.io/img/blog-health.svg" medium="image" type="image/svg+xml"/>
 </item>
 <item>
@@ -1097,7 +1097,7 @@ Live: <a href="https://ra-leaderboard.streamlit.app/" target="_blank">ra-leaderb
   <category>Tableau</category>
   <category>Public Health</category>
   <guid>https://gondamol.github.io/posts/kisumu-cancer-dashboard/</guid>
-  <pubDate>Mon, 25 Nov 2024 21:00:00 GMT</pubDate>
+  <pubDate>Tue, 26 Nov 2024 00:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
