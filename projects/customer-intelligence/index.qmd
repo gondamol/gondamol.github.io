@@ -1,6 +1,6 @@
 ---
 title: "Customer Intelligence & Decision Analytics"
-subtitle: "From data to decisions — an end-to-end analytics product on synthetic data"
+subtitle: "From data to decisions — an end-to-end analytics product on a real, open transaction ledger"
 page-layout: article
 toc: false
 execute:
@@ -14,202 +14,178 @@ format:
 
 ```{=html}
 <div style="padding:4.5rem 0 2.25rem;">
-  <span class="section-eyebrow">Methods lab · Analytics product · Synthetic data</span>
-  <h1 class="section-h" style="font-size:clamp(2.2rem,4vw,3.2rem);margin-top:0.45rem;">Turning fragmented customer data into decisions someone can act on.</h1>
-  <p class="section-sub" style="margin-bottom:1.6rem;">A complete analytics product built end to end: 50,000 synthetic customers, a deliberately damaged raw layer, a quality framework graded against a known answer, three predictive models, and a decision engine that stops at a suggested action with its reasoning attached — not at a chart.</p>
+  <span class="section-eyebrow">Analytics product · Real open data</span>
+  <h1 class="section-h" style="font-size:clamp(2.2rem,4vw,3.2rem);margin-top:0.45rem;">Turning a messy transaction ledger into decisions someone can act on.</h1>
+  <p class="section-sub" style="margin-bottom:1.6rem;">Two years of real invoices from a UK giftware wholesaler — 1,067,371 lines, published by the UCI Machine Learning Repository — turned into account intelligence, calibrated predictive scores, and an explainable suggested action. Built end to end: acquisition, quality, analytical model, models, decision engine, and a deployable application.</p>
   <p style="margin:0;">
-    <a href="https://github.com/gondamol/customer-intelligence" class="btn-primary" target="_blank" rel="noopener">Repository &amp; full documentation ↗</a>
+    <a href="https://github.com/gondamol/customer-intelligence" class="btn-primary" target="_blank" rel="noopener">Repository &amp; documentation ↗</a>
   </p>
 </div>
 ```
 
 ```{=html}
 <div class="cv-stat-grid" style="margin-bottom:2.75rem;">
-  <article class="cv-stat-card"><span class="cv-stat-num">50k</span><span class="cv-stat-label">Synthetic customers, 15-month panel</span></article>
-  <article class="cv-stat-card"><span class="cv-stat-num">22</span><span class="cv-stat-label">Quality checks across 7 dimensions</span></article>
-  <article class="cv-stat-card"><span class="cv-stat-num">16 / 16</span><span class="cv-stat-label">Injected defect types detected</span></article>
-  <article class="cv-stat-card"><span class="cv-stat-num">6.7×</span><span class="cv-stat-label">Attrition model lift over base rate</span></article>
+  <article class="cv-stat-card"><span class="cv-stat-num">1.07m</span><span class="cv-stat-label">Real invoice lines, 24-month panel</span></article>
+  <article class="cv-stat-card"><span class="cv-stat-num">22.6%</span><span class="cv-stat-label">Of the ledger belongs to no customer</span></article>
+  <article class="cv-stat-card"><span class="cv-stat-num">0.735</span><span class="cv-stat-label">Cross-validated ROC-AUC, lapse model</span></article>
+  <article class="cv-stat-card"><span class="cv-stat-num">1.49×</span><span class="cv-stat-label">Recommender lift over popularity</span></article>
 </div>
 ```
 
 ```{=html}
 <figure style="margin:0 0 2.75rem;">
   <img src="../../img/customer-intelligence/01-executive-view.png"
-       alt="Executive view of the Customer Intelligence application, showing headline figures, attrition risk bands and customers by segment"
+       alt="Executive view of the Customer Intelligence dashboard showing headline account figures and revenue by segment"
        style="width:100%;height:auto;border:1px solid var(--border,#e3e0d9);border-radius:8px;display:block;">
-  <figcaption style="font-size:0.78rem;color:var(--muted,#6b6b6b);margin-top:0.6rem;">The executive view: four questions in order — what is happening, why, where the opportunity is, and what to consider doing.</figcaption>
+  <figcaption style="font-size:0.78rem;color:var(--muted,#6b6b6b);margin-top:0.6rem;">The executive view: what is happening, why, where the opportunity is, and what to consider doing. Champions are 18.3% of accounts and 66.9% of revenue.</figcaption>
 </figure>
 ```
 
 ::: {.callout-highlight}
-**Synthetic demonstration.** Every customer, transaction and score in this project was generated. Nothing here describes a real organisation, customer, or portfolio, and no output is a financial, credit, or customer decision. The methodology is transferable to any data-intensive customer environment — financial services, telecoms, insurance, retail, healthcare.
+**Data:** [Online Retail II](https://archive.ics.uci.edu/dataset/502/online+retail+ii) — Chen, D. (2012), UCI Machine Learning Repository, used under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Scores and recommendations are my own work and are decision **support**: nothing in the system is an automated decision.
 :::
 
-## Why I built it
+## Why I rebuilt this on real data
 
-Most of my delivery work has been on the front half of this problem: designing instruments, building quality architecture, and getting trustworthy data out of field programmes across several countries. The back half — turning that data into a decision someone is accountable for — is where projects usually stall, and it is the part that is hardest to demonstrate from a CV line.
+I first built this on data I generated myself. It looked good — the attrition model scored **0.93** — and that was the problem. A model that good on invented data is measuring how knowable the invention was.
 
-So I built the whole thing, and made the seams visible.
+So I sourced open, properly licensed transaction data and rebuilt on it. The architecture did not change. What the numbers mean did.
 
-The central question is one I have met in every setting I have worked in, whether the subject was households, facilities, or customers:
+| | Synthetic version | On real data |
+|---|---|---|
+| Attrition model | ROC-AUC 0.93 | **0.735 ± 0.035** |
+| Data quality defects | 16 types, injected by me | Real, and worse |
+| Unattributable revenue | none | **22.6% of the ledger** |
+| Seasonality | none | 3× between February and November |
 
-> **How does an organisation turn fragmented records into an action it can defend?**
+The lower number is the honest one, and every awkward property below is something the invented data simply did not have.
 
-## The problem
+## The data engineering is the substance
 
-Customer data is fragmented by construction. A ledger holds balances, a switch holds card activity, a digital channel holds logins, a contact centre holds complaints. Each is authoritative about its own domain, and none of them knows who the customer is.
+The source is one flat sheet of invoice lines. Almost everything interesting about it is a problem:
 
-The consequence is not that reporting is hard. It is that the questions worth answering cannot be asked at all:
+- **`Invoice` and `StockCode` mix integers with alphanumeric codes.** Read as numbers — which is what a naive load does — every credit note and administrative row silently disappears.
+- **0.57% of stock codes are not products at all**: postage, carriage, manual adjustments, discounts, samples, bank charges, an **Amazon commission of −£260,764**, bad-debt write-offs, gift vouchers, and seventeen rows described as *"This is a test product"*.
+- **`M` and `m` are the same manual-adjustment code**, entered two ways. Unified — but for administrative codes only, because product codes are case-significant: `84031A` and `84031B` are different items.
+- **22,950 negative quantities.** Returns are *separated*, not netted off. Netting makes an account that buys £10,000 and returns £9,000 identical to one that buys £1,000 and returns nothing.
+- **243,007 lines carry no customer identifier.** Real revenue that belongs to nobody. It stays in the revenue totals and is excluded from every account-level figure — and the site says so, because that is the difference between a measurement and a claim.
+- **5,305 stock codes and no categories.** A derived keyword taxonomy carries 87.7% of revenue into eleven named categories. A published judgement, not a fact about the data.
 
-- Which relationships are quietly ending, while the balance still looks healthy?
-- Where is there genuine headroom, as opposed to a large existing balance?
-- Which customers should be contacted this week, by whom, and at what cost?
+## The decision that mattered most was a window, not a model
 
-## Architecture
+This business takes **84,711 invoice lines in November 2011 and 27,707 in February**. That single fact determined the experimental design:
 
 ```{=html}
-<pre style="font-size:0.78rem;line-height:1.5;overflow-x:auto;background:var(--surface,#fbfaf8);border:1px solid var(--border,#e3e0d9);border-radius:6px;padding:1.1rem 1.2rem;">
-                          SOURCE SYSTEMS
-        ┌───────────────┬───────┴────────┬────────────────┐
-        ▼               ▼                ▼                ▼
-    customers       accounts        transactions      engagement
-    products        balances        loans             interactions
-        └───────────────┴───────┬────────┴────────────────┘
-                                ▼
-                          RAW LAYER            as landed, defects intact
-                                │
-                   22 checks · 7 dimensions
-                                ▼
-                       CONFORMED LAYER         every dropped row logged
-                                ▼
-                        MONTHLY PANEL          customer × month, full spine
-                                ▼
-                         CUSTOMER 360          window-parameterised
-              ┌─────────────────┼─────────────────┐
-              ▼                 ▼                 ▼
-        SEGMENTATION       PREDICTION        OPPORTUNITY
-              └─────────────────┼─────────────────┘
-                                ▼
-                        DECISION ENGINE        transparent, ordered rules
-                                ▼
-                       STREAMLIT APPLICATION   reads artefacts, computes nothing
+<pre style="font-size:0.8rem;line-height:1.6;overflow-x:auto;background:var(--surface,#fbfaf8);border:1px solid var(--border,#e3e0d9);border-radius:6px;padding:1.1rem 1.2rem;">
+train   features months  1–12  (Dec 09 – Nov 10) → outcome 13–15  (Dec 10 – Feb 11)
+score   features months 13–24  (Dec 10 – Nov 11) → outcome 25–27  (Dec 11 – Feb 12, unobserved)
 </pre>
 ```
 
-Transformations live in SQL, not in a notebook — that is where this work belongs, and where a colleague can change it. DuckDB is the default engine so the project runs on a laptop with nothing installed; the SQL avoids engine-specific syntax and runs against PostgreSQL by setting one environment variable.
+Both feature windows are twelve whole months, so seasonality averages out inside them. **Both outcome windows are December–February**, so the model is applied to the season it was trained on. A test enforces it.
 
-## Data that behaves like data
+The same reasoning fixed the growth model. The obvious target — "beats its own annual quarterly run-rate" — is wrong in a seasonal business: in a low quarter most accounts fall below their annual average whatever they do, and the model spends its capacity learning the calendar. Comparing **the same quarter a year earlier** moved ROC-AUC from **0.62 to 0.68** on identical features.
 
-Nothing is drawn independently. Each synthetic customer carries latent traits — affluence, digital affinity, credit appetite, relationship stability — and every observable quantity is a noisy function of those traits. The traits are never written to disk; the models see only what an analyst would see.
+## What the models do
 
-What follows from that structure rather than being hard-coded:
+| Model | Question | Result |
+|---|---|---|
+| **Lapse risk** | Will an established account place no order next quarter? | Cross-validated ROC-AUC **0.735 ± 0.035**, lift 1.70× |
+| **Growth propensity** | Will it beat the same quarter a year earlier? | Cross-validated ROC-AUC **0.680 ± 0.033**, lift 1.66× |
+| **Next best product** | What should we lead with? | hit@5 **0.314** vs 0.211 popularity — **1.49× lift** |
 
-- income band rises monotonically with balances, transaction value, product holdings and digital engagement;
-- digital engagement falls monotonically with age;
-- customers heading for attrition show falling balances, fewer transactions, fewer logins **and** rising complaints, together;
-- around a third of declines **recover**, and a further group leaves abruptly inside the outcome window.
+Both classifiers are quoted **cross-validated with a spread**, not on a single held-out split. Re-running the project with the rows in a different order moved a held-out AUC by 0.05 — about two standard errors on this sample, and enough to report as an improvement something that is only a different shuffle. The single split flattered both models by 0.03–0.04, in the same direction.
 
-That last point is the one that took the most iteration. My first attempt produced an attrition model scoring **0.98 ROC-AUC**, which is not a good result — it is a warning. The decline process was too deterministic, so the answer was visible in the feature window. Adding genuine recovery and genuine exogenous attrition brought it to a defensible **0.92**, and the reason it is still high is the label definition rather than the model, which is stated in the model governance document rather than left for a reader to discover.
+Both are calibrated in the large to three decimal places: predicted 0.453 against observed 0.454, and 0.240 against 0.240.
 
-## The finding I would lead with
+### Two negative results, published
+
+A **category-expansion classifier** scored ROC-AUC **0.550** — barely above chance. A **category-level recommender** then failed to beat a popularity baseline (0.927 against 0.936).
+
+Both failed for the same structural reason, and finding it mattered more than either model would have: **the median account already buys 9 of the 12 categories**. "The top three you don't buy" is most of what is left, so there is almost nothing to predict.
+
+Reframed to **product** level — 400 products, median account buys 18 — the problem is real, and item-to-item collaborative filtering beats popularity by 1.49× at k=5. It can also name the product an account manager should lead with, which a propensity score never could.
+
+The answer was to change the question, not to reach for a bigger model.
+
+```{=html}
+<figure style="margin:1.75rem 0 2rem;">
+  <img src="../../img/customer-intelligence/05-decision-support.png"
+       alt="Decision support page showing one account's evidence, the rule that fired, what to lead with, and the constraints on acting"
+       style="width:100%;height:auto;border:1px solid var(--border,#e3e0d9);border-radius:8px;display:block;">
+  <figcaption style="font-size:0.78rem;color:var(--muted,#6b6b6b);margin-top:0.6rem;">One account: the evidence, which rule fired, the product to lead with, the constraint on acting, and how much confidence the trading history supports.</figcaption>
+</figure>
+```
+
+## From prediction to action
+
+A probability is not a decision. The decision engine is a transparent ordered rule set rather than a model — a recommendation has to be arguable by the account manager who receives it, the rules encode commercial policy that should change deliberately, and learning actions from last year learns last year's policy including its mistakes.
+
+The ordering *is* the policy:
+
+1. **Service failure** — a 20%+ return rate is not a sales opportunity.
+2. **Too new to judge** — onboarding, not a low-value label.
+3. **Not scored** — says so, rather than implying a judgement never made.
+4. **Retention** — graded by what the account is worth and how far past its own usual gap it has drifted.
+5. **Growth** — only on an account that is not going anywhere.
+6. **Deliberately nothing** — a reachable outcome, recorded as a decision.
+
+**15% of accounts reach a named account manager, and they hold 48% of revenue.** An engine routing much more than that to human contact has produced a wish list rather than a plan, so the check sits on the page.
+
+### The accounts the models refuse to score
+
+Only **1,703 of 5,914** accounts have an established ordering rhythm. The rest carry no score, sit in a **"Not scored"** quadrant, and their recommendation says why.
+
+That was a bug I had to fix. Filling their risk with 1.0 to make the arithmetic work put them in the *Retain* quadrant — flagged as high-risk on the strength of a number the model had explicitly declined to produce. Enforcing eligibility at scoring time as well as training time cut the account-manager workload from 45% of the book to 15%.
+
+## The data quality section is real now
 
 ```{=html}
 <div class="cv-stat-grid" style="grid-template-columns:repeat(2,minmax(0,1fr));margin:2rem 0 1.25rem;">
-  <article class="cv-stat-card"><span class="cv-stat-num">99.4%</span><span class="cv-stat-label">of records conform to the quality rules</span></article>
-  <article class="cv-stat-card"><span class="cv-stat-num">73%</span><span class="cv-stat-label">of customers are affected by at least one defect</span></article>
+  <article class="cv-stat-card"><span class="cv-stat-num">97.3%</span><span class="cv-stat-label">of records conform to the quality rules</span></article>
+  <article class="cv-stat-card"><span class="cv-stat-num">22.6%</span><span class="cv-stat-label">of the ledger belongs to no customer at all</span></article>
 </div>
 ```
 
-Both figures describe exactly the same data.
+Both figures describe the same data. Conformance is a row-weighted average and at these defect rates it is arithmetically bound to look reassuring — it is the wrong number to lead with. The one that changes what the analysis can *claim* is the second.
 
-Record-level conformance is a row-weighted average, and with per-rule defect rates under one percent it is arithmetically bound to sit near 100 — it will look reassuring whatever is actually wrong. But defects are not spread evenly. One damaged transaction row belongs to a customer, and most customers carry a problem somewhere in their record.
+Twenty-two rules across seven dimensions found 235,143 unattributable lines, 34,058 exact duplicates, 3,427 negative quantities on invoices that are not credit notes, 1,215 stock codes carrying conflicting descriptions, and seventeen test rows in production data. None of it was injected.
 
-Reporting only the first number would be technically accurate and materially misleading. It is the most common failure of a data quality dashboard, and it is why both numbers sit side by side on the application's landing page.
+### How do I know the checks work?
+
+On real data the answer is not known in advance, so the checks cannot be graded against it. So they are graded elsewhere: the synthetic generator from the first version of this project is retained as a **validation harness**. It injects sixteen defect types in known quantities, and the reconciliation of injected against detected is a test the build must pass. The complementary test matters as much — the same rules run over the *undamaged* data must all pass, or a check that always fires would look like a working detector.
+
+Prove the instrument reads correctly against a known answer, then point it at data where the answer is unknown.
 
 ```{=html}
 <figure style="margin:1.75rem 0 2rem;">
   <img src="../../img/customer-intelligence/06-data-quality.png"
-       alt="Data quality and governance page showing record-level conformance alongside the share of customers affected"
+       alt="Data quality and governance page showing provenance, licensing, and the real defects found in the source data"
        style="width:100%;height:auto;border:1px solid var(--border,#e3e0d9);border-radius:8px;display:block;">
-  <figcaption style="font-size:0.78rem;color:var(--muted,#6b6b6b);margin-top:0.6rem;">Both figures on the page, because reporting only the reassuring one would be technically accurate and materially misleading.</figcaption>
+  <figcaption style="font-size:0.78rem;color:var(--muted,#6b6b6b);margin-top:0.6rem;">Provenance, licence, and what is actually wrong with a widely used published dataset.</figcaption>
 </figure>
 ```
 
-A related result: nulling 100 customer identifiers was intended to orphan 443 accounts. The checks found 697. That is not a false positive — an account whose parent lost its key is orphaned too. **Defects cascade**, which is the argument for integrity checks that run across the whole model rather than table by table.
+## Governance as code
 
-## What the models do, and what they are not allowed to do
-
-| Layer | Approach | Result |
-|---|---|---|
-| Segmentation | Published rules, checked against K-means | Silhouette **0.15** — no natural clusters exist |
-| Attrition | Logistic regression | ROC-AUC **0.93**, 6.7× lift |
-| Investment propensity | Logistic regression, eligible population only | ROC-AUC **0.83**, 3.8× lift |
-| Lending propensity | Logistic regression, eligible population only | ROC-AUC **0.66**, 1.9× lift |
-| Opportunity | Five-component published heuristic | 0–100 relative score |
-
-Three decisions in that table are worth defending.
-
-**The clustering result is reported as a finding, not hidden.** A silhouette of 0.15 means the customer book does not fall into naturally distinct groups — customers sit on continuous gradients. That is the argument *for* the rule-based segmentation: if the segments are a management choice either way, they should be the choice that is stable month to month and explicable to the people acting on it.
-
-```{=html}
-<figure style="margin:1.75rem 0 2rem;">
-  <img src="../../img/customer-intelligence/03-segments.png"
-       alt="Customer segments page comparing share of customers against share of balances for each segment"
-       style="width:100%;height:auto;border:1px solid var(--border,#e3e0d9);border-radius:8px;display:block;">
-  <figcaption style="font-size:0.78rem;color:var(--muted,#6b6b6b);margin-top:0.6rem;">Share of customers against share of balances. High Value is 5% of the book and 32% of the balances — a segmentation where the two charts have the same shape has found nothing.</figcaption>
-</figure>
-```
-
-**The weakest model is published.** Lending propensity at 0.66 is modest. It lifts the base rate by about 1.9× at the operating threshold, which is genuinely useful for ordering a finite outreach list and genuinely insufficient for anything else — and reporting it honestly is what allows that distinction to be drawn.
-
-**Logistic regression ships, though gradient boosting scored higher.** The comparison table is published rather than hidden. A marginal gain in discrimination did not justify losing the per-customer explanation that makes a recommendation arguable.
-
-## From prediction to action
-
-A probability is not a decision. The decision engine is a transparent rule set rather than a model, because a recommendation has to be arguable, because the rules encode policy that should be changed deliberately, and because learning actions from historical outcomes learns the historical policy including its mistakes.
-
-The ordering *is* the policy:
-
-1. **Credit position** — nobody in arrears is sold anything, however attractive their scores.
-2. **Unresolved service failure** — fix it before any commercial conversation.
-3. **Retention** — graded by what the relationship is worth, so a relationship manager is not spent on a small at-risk account.
-4. **Activation** — early-tenure customers who never established a pattern.
-5. **Growth** — only on a stable relationship.
-6. **Deliberately nothing** — a reachable outcome, recorded as a decision.
-
-Every recommendation carries the rule that fired, the model reasons beneath it, the constraint on acting, and a confidence grade based on **how much history exists** — not on how extreme the score is. A decisive-looking score on three months of thin activity is the case to treat most carefully, not least.
-
-```{=html}
-<figure style="margin:1.75rem 0 2.25rem;">
-  <img src="../../img/customer-intelligence/05-decision-support.png"
-       alt="Decision support page showing one customer's evidence, the rule that fired, the reasoning and the constraints on acting"
-       style="width:100%;height:auto;border:1px solid var(--border,#e3e0d9);border-radius:8px;display:block;">
-  <figcaption style="font-size:0.78rem;color:var(--muted,#6b6b6b);margin-top:0.6rem;">One customer: the evidence, which rule fired, why the action follows, the constraint on acting, and how much confidence the history supports.</figcaption>
-</figure>
-```
-
-## Governance as code, not as an appendix
-
-- **Leakage.** Training features come from months 1–12 with the outcome in 13–15; scoring features from months 4–15 with the outcome unobserved. Both are produced by the *same SQL file* with a different window, so the two definitions cannot drift apart. A test greps the SQL for any month literal reaching into the outcome window.
-- **Protected attributes.** Gender is in the source data and shown in the customer profile, because a real extract would contain it. It is **not** an input to any model, and a test fails the build if that changes. "It was in the data" is not a reason to let a targeting model condition on it.
-- **Eligibility.** Each model scores only the population it could have been trained on. Ineligible customers get null, not zero — zero is a prediction, null is an admission.
-- **Data minimisation.** No names, addresses, contact details or identifiers are ever generated. A test enforces it.
-- **Nothing dropped silently.** Every removed row is counted with the rule and the reasoning.
+- **Attribution.** CC BY 4.0 makes credit a condition of use, not a courtesy. The source, publisher, licence and citation are carried in code and shown on every page.
+- **Provenance.** Each file is downloaded from its original publisher at build time and cached by SHA-256. A source that changes upstream is reported rather than silently changing every figure downstream.
+- **Leakage.** Training and scoring features come from the *same SQL file* with a different window. A test greps the SQL for any month literal reaching into the outcome window.
+- **Eligibility.** Models refuse to score outside the population they were fitted on. Ineligible accounts get null, not zero — zero is a prediction, null is an admission.
+- **Nothing dropped silently.** Every removed line is counted with the rule and the reasoning, including the 235,143 that belong to nobody.
 
 ## How this connects to what I already do
 
-The techniques here are not a departure from my delivery work; they are the same discipline pointed at a different subject.
+The techniques are the same discipline pointed at a different subject.
 
 | In this project | In work I have delivered |
 |---|---|
-| Quality checks graded against injected defects | High-frequency checks and automated quality workflows on the health financial diaries study |
+| Quality rules graded against a known answer | High-frequency checks and automated quality workflows on the health financial diaries study |
 | Conformance log — nothing dropped silently | Data quality architecture for multi-year oncology records |
 | Decision engine with stated guardrails | Shiny decision-support for IRC field teams, from causal forest targeting models |
-| Customer 360 from seven source tables | Research data management across multi-country programme systems |
+| Account 360 from a flat ledger | Research data management across multi-country programme systems |
 | An application that reads artefacts | Real-time field dashboards and operational apps |
-| Statistical rigour as the guardrail | Mixed-methods research and survival analysis |
-
-The progression I am demonstrating:
+| Cross-validated estimates with spreads | Mixed-methods research and survival analysis |
 
 ```
 Data management → Analytics → Statistical modelling → Decision support → Analytics products
@@ -217,9 +193,7 @@ Data management → Analytics → Statistical modelling → Decision support →
 
 ## Limitations
 
-A demonstration that hides its boundaries is worth less than one that names them.
-
-The data is synthetic and generated from a known process, so relationships are cleaner than reality — there are no seasonal effects, no macroeconomic shocks, no mid-panel migrations. Performance figures are a property of that process and are not a forecast for a real portfolio. The attrition label is *behavioural* ("went quiet") rather than commercial ("closed the account"), which is the main reason the reported AUC is high — it is the label that is easy, not the model that is exceptional. Fifteen months is too short a panel to have learned anything seasonal. The opportunity score is a stated heuristic, not a fitted model. And no causal claim is supported anywhere: permutation importance measures what a model relies on, not what causes attrition.
+One business, two years, one country of origin — a UK giftware wholesaler selling largely to trade customers, so nothing generalises without re-fitting. The lapse label is *behavioural*, not contractual: a wholesale customer cannot cancel, only stop ordering. 22.6% of the ledger is unattributable, so every per-account figure describes the 77% that can be attributed. The product taxonomy is derived by keyword rules — a published judgement covering 87.7% of revenue. 1,752 accounts train the lapse model, which is small and is why the reported spreads are what they are. Two years is two Christmases: enough to align the windows seasonally, not enough to model seasonality itself. And no causal claim is supported anywhere — permutation importance measures what a model relies on, not what causes an account to lapse.
 
 ## Running it
 
@@ -228,11 +202,11 @@ git clone https://github.com/gondamol/customer-intelligence.git
 cd customer-intelligence
 
 make setup      # create the environment
-make all        # generate, assess quality, build, model and score
-make run        # open the application
+make run        # open the application — derived artefacts are committed
+make all        # or rebuild everything from the published source
 ```
 
-`make all` takes about seven minutes on 50,000 customers; `make demo` runs the same pipeline on 8,000 for a quicker look. Seven test suites cover schema and referential integrity, the quality framework, leakage controls, feature generation, model behaviour, the decision rules, and the SQL layer.
+The application starts immediately: the artefacts it reads are in the repository, so there is no build step and no data download at start-up. `make all` re-fetches Online Retail II from UCI and rebuilds the whole pipeline. 123 tests cover the source adapter, the conformed layer, seasonal window alignment, leakage controls, model behaviour, the decision rules and the recommender.
 
 ```{=html}
 <div style="margin:2.5rem 0 1rem;">

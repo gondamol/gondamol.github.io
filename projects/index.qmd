@@ -219,11 +219,11 @@ format:
              onerror="this.remove()">
       </div>
       <div class="proj-body">
-        <p class="proj-domain" style="color:#8cb5d9;">Demonstration · Analytics product · Synthetic data</p>
+        <p class="proj-domain" style="color:#8cb5d9;">Analytics product · Real open data (UCI, CC BY 4.0)</p>
         <h3 class="proj-title">Customer intelligence &amp; decision analytics</h3>
-        <p class="proj-desc">An end-to-end analytics product on 50,000 synthetic customers: a deliberately damaged raw layer, 22 quality checks graded against 16 injected defects, three predictive models, and a decision engine that stops at a suggested action with its reasoning attached. Built to show how I get from fragmented records to a decision someone can defend.</p>
+        <p class="proj-desc">An end-to-end analytics product on a real, openly published transaction ledger — 1.07m invoice lines from a UK giftware wholesaler. Real data quality defects, seasonally-aligned experimental design, cross-validated models, a recommender that beats its baseline, and a decision engine that stops at a suggested action with its reasoning attached.</p>
         <div class="proj-footer">
-          <span class="proj-tags"><span>Python</span><span>DuckDB &amp; SQL</span><span>scikit-learn</span><span>Streamlit</span><span>Governance</span></span>
+          <span class="proj-tags"><span>Python</span><span>DuckDB &amp; SQL</span><span>scikit-learn</span><span>Streamlit</span><span>1.07m rows</span></span>
           <span class="proj-arrow">Open case study →</span>
         </div>
       </div>
