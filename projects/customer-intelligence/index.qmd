@@ -14,11 +14,12 @@ format:
 
 ```{=html}
 <div style="padding:4.5rem 0 2.25rem;">
-  <span class="section-eyebrow">Analytics product · Real open data</span>
+  <span class="section-eyebrow">Analytics product · Real open data · Live dashboard</span>
   <h1 class="section-h" style="font-size:clamp(2.2rem,4vw,3.2rem);margin-top:0.45rem;">Turning a messy transaction ledger into decisions someone can act on.</h1>
-  <p class="section-sub" style="margin-bottom:1.6rem;">Two years of real invoices from a UK giftware wholesaler — 1,067,371 lines, published by the UCI Machine Learning Repository — turned into account intelligence, calibrated predictive scores, and an explainable suggested action. Built end to end: acquisition, quality, analytical model, models, decision engine, and a deployable application.</p>
+  <p class="section-sub" style="margin-bottom:1.6rem;">Two years of real invoices from a UK giftware wholesaler — 1,067,371 lines, published by the UCI Machine Learning Repository — turned into account intelligence, calibrated predictive scores, and an explainable suggested action. Built end to end: acquisition, quality, analytical model, models, decision engine, and a deployed, live application.</p>
   <p style="margin:0;">
-    <a href="https://github.com/gondamol/customer-intelligence" class="btn-primary" target="_blank" rel="noopener">Repository &amp; documentation ↗</a>
+    <a href="https://nic-customer-intelligence.streamlit.app/" class="btn-primary" target="_blank" rel="noopener">Open the live dashboard ↗</a>
+    <a href="https://github.com/gondamol/customer-intelligence" class="btn-ghost" target="_blank" rel="noopener">Repository &amp; documentation ↗</a>
   </p>
 </div>
 ```
@@ -27,7 +28,7 @@ format:
 <div class="cv-stat-grid" style="margin-bottom:2.75rem;">
   <article class="cv-stat-card"><span class="cv-stat-num">1.07m</span><span class="cv-stat-label">Real invoice lines, 24-month panel</span></article>
   <article class="cv-stat-card"><span class="cv-stat-num">22.6%</span><span class="cv-stat-label">Of the ledger belongs to no customer</span></article>
-  <article class="cv-stat-card"><span class="cv-stat-num">0.735</span><span class="cv-stat-label">Cross-validated ROC-AUC, lapse model</span></article>
+  <article class="cv-stat-card"><span class="cv-stat-num">0.734</span><span class="cv-stat-label">Cross-validated ROC-AUC, lapse model</span></article>
   <article class="cv-stat-card"><span class="cv-stat-num">1.49×</span><span class="cv-stat-label">Recommender lift over popularity</span></article>
 </div>
 ```
@@ -37,7 +38,7 @@ format:
   <img src="../../img/customer-intelligence/01-executive-view.png"
        alt="Executive view of the Customer Intelligence dashboard showing headline account figures and revenue by segment"
        style="width:100%;height:auto;border:1px solid var(--border,#e3e0d9);border-radius:8px;display:block;">
-  <figcaption style="font-size:0.78rem;color:var(--muted,#6b6b6b);margin-top:0.6rem;">The executive view: what is happening, why, where the opportunity is, and what to consider doing. Champions are 18.3% of accounts and 66.9% of revenue.</figcaption>
+  <figcaption style="font-size:0.78rem;color:var(--muted,#6b6b6b);margin-top:0.6rem;">The executive view: what is happening, why, where the opportunity is, and what to consider doing. Champions are 18.3% of accounts and 66.9% of revenue. <a href="https://nic-customer-intelligence.streamlit.app/" target="_blank" rel="noopener">Open it live ↗</a></figcaption>
 </figure>
 ```
 
@@ -53,7 +54,7 @@ So I sourced open, properly licensed transaction data and rebuilt on it. The arc
 
 | | Synthetic version | On real data |
 |---|---|---|
-| Attrition model | ROC-AUC 0.93 | **0.735 ± 0.035** |
+| Attrition model | ROC-AUC 0.93 | **0.734 ± 0.034** |
 | Data quality defects | 16 types, injected by me | Real, and worse |
 | Unattributable revenue | none | **22.6% of the ledger** |
 | Seasonality | none | 3× between February and November |
@@ -90,13 +91,21 @@ The same reasoning fixed the growth model. The obvious target — "beats its own
 
 | Model | Question | Result |
 |---|---|---|
-| **Lapse risk** | Will an established account place no order next quarter? | Cross-validated ROC-AUC **0.735 ± 0.035**, lift 1.70× |
-| **Growth propensity** | Will it beat the same quarter a year earlier? | Cross-validated ROC-AUC **0.680 ± 0.033**, lift 1.66× |
+| **Lapse risk** | Will an established account place no order next quarter? | Cross-validated ROC-AUC **0.734 ± 0.034**, lift 1.66× |
+| **Growth propensity** | Will it beat the same quarter a year earlier? | Cross-validated ROC-AUC **0.684 ± 0.030**, lift 2.00× |
 | **Next best product** | What should we lead with? | hit@5 **0.314** vs 0.211 popularity — **1.49× lift** |
 
 Both classifiers are quoted **cross-validated with a spread**, not on a single held-out split. Re-running the project with the rows in a different order moved a held-out AUC by 0.05 — about two standard errors on this sample, and enough to report as an improvement something that is only a different shuffle. The single split flattered both models by 0.03–0.04, in the same direction.
 
-Both are calibrated in the large to three decimal places: predicted 0.453 against observed 0.454, and 0.240 against 0.240.
+Both are calibrated in the large to three decimal places: predicted 0.451 against observed 0.454, and 0.239 against 0.240.
+
+### A defect that ROC-AUC could not see
+
+An account that had ordered the *previous month*, and was active in eight months of twelve, was scored at a **97.6% probability of lapsing**. Its largest month sat fourteen standard deviations above the book mean and its returned value twenty — so the linear model was extrapolating far outside anything it had been trained on, and the sigmoid had saturated. I found it on the live dashboard, on the flagship page.
+
+**The AUC did not move when I fixed it.** It is a ranking metric, the ranking was fine, and only the scores were nonsense — the same blind spot that had earlier hidden a calibration failure in this project.
+
+The fix is standard: log-transform the heavy-tailed money and count features before standardising. Monotone, so nothing about the ordering changes; defined at zero, which matters because most of these are zero for somebody; and it turns "fourteen standard deviations" into "a large account". Afterwards that account scores **0.112**, no account exceeds 0.90, and discrimination is unchanged at 0.734. A test now fails the build if it returns.
 
 ### Two negative results, published
 
@@ -130,13 +139,13 @@ The ordering *is* the policy:
 5. **Growth** — only on an account that is not going anywhere.
 6. **Deliberately nothing** — a reachable outcome, recorded as a decision.
 
-**15% of accounts reach a named account manager, and they hold 48% of revenue.** An engine routing much more than that to human contact has produced a wish list rather than a plan, so the check sits on the page.
+**17% of accounts reach a named account manager, and they hold 53% of revenue.** An engine routing much more than that to human contact has produced a wish list rather than a plan, so the check sits on the page.
 
 ### The accounts the models refuse to score
 
 Only **1,703 of 5,914** accounts have an established ordering rhythm. The rest carry no score, sit in a **"Not scored"** quadrant, and their recommendation says why.
 
-That was a bug I had to fix. Filling their risk with 1.0 to make the arithmetic work put them in the *Retain* quadrant — flagged as high-risk on the strength of a number the model had explicitly declined to produce. Enforcing eligibility at scoring time as well as training time cut the account-manager workload from 45% of the book to 15%.
+That was a bug I had to fix. Filling their risk with 1.0 to make the arithmetic work put them in the *Retain* quadrant — flagged as high-risk on the strength of a number the model had explicitly declined to produce. Enforcing eligibility at scoring time as well as training time cut the account-manager workload from 45% of the book to 17%.
 
 ## The data quality section is real now
 
@@ -210,7 +219,8 @@ The application starts immediately: the artefacts it reads are in the repository
 
 ```{=html}
 <div style="margin:2.5rem 0 1rem;">
-  <a href="https://github.com/gondamol/customer-intelligence" class="btn-primary" target="_blank" rel="noopener">Repository &amp; documentation ↗</a>
+  <a href="https://nic-customer-intelligence.streamlit.app/" class="btn-primary" target="_blank" rel="noopener">Open the live dashboard ↗</a>
+  <a href="https://github.com/gondamol/customer-intelligence" class="btn-ghost" target="_blank" rel="noopener">Repository ↗</a>
   <a href="../index.html" class="btn-ghost">All projects</a>
 </div>
 ```
