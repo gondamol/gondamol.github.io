@@ -17,16 +17,16 @@ format:
 <section class="editorial-hero reveal-on-scroll">
   <div class="editorial-hero__copy">
     <div class="editorial-hero__primary">
-      <p class="editorial-hero__eyebrow">Research Data Systems · Health &amp; Development Programmes</p>
+      <p class="editorial-hero__eyebrow">Data &amp; Research Systems Architecture · Health and Development Programmes</p>
       <h1 class="editorial-hero__nameplate">
         <span class="editorial-hero__given-name">
           <span class="editorial-hero__given-accent">Nic</span><span class="editorial-hero__given-rest">hodemus</span>
         </span>
         <span class="editorial-hero__surname">Amollo</span>
       </h1>
-      <p class="editorial-hero__title">I build the data systems and evidence products that make health and development programmes trustworthy.</p>
+      <p class="editorial-hero__title">I own the research data architecture that health and development programmes depend on to make decisions they can defend.</p>
       <p class="editorial-hero__lede">
-        From field instruments to policy-facing analysis: survey design in low-connectivity settings, high-frequency quality checks, pipelines that hold up under real operations, and decision tools for teams who cannot wait for a perfect spreadsheet. I work best close to the people, programmes, and constraints the data is meant to serve.
+        Study databases, quality governance, analytic pipelines, and the decision products built on top — designed as one system rather than assembled per project. Currently leading research data architecture and statistical operations for Georgetown gui2de's East Africa portfolio, and setting the reproducibility standards teams keep working to after handover.
       </p>
     </div>
     <div class="editorial-hero__secondary">
@@ -73,8 +73,8 @@ format:
       >
       <div class="editorial-hero__fieldnote">
         <span class="editorial-hero__fieldnote-label">Current Work</span>
-        <strong>Health financial diaries systems for 300 households over one year.</strong>
-        <span>HFCs, automated quality workflows, and live field apps for Georgetown gui2de.</span>
+        <strong>End-to-end data architecture for a 300-household, twelve-month diaries panel.</strong>
+        <span>Automated quality governance and live field operations applications at Georgetown gui2de.</span>
       </div>
     </div>
     <div class="editorial-hero__stats" aria-label="Selected proof points">
@@ -242,14 +242,34 @@ format:
 
 <section class="tools-trust section-pad section-divider reveal-on-scroll">
   <div class="section-inner">
-    <p class="section-eyebrow">Tools</p>
-    <h2 class="section-h">Stack used in real delivery.</h2>
-    <p class="section-sub">No skill bars. Tools appear because they shipped something in the field or in analysis — not because of a self-score.</p>
-    <div class="background-ledger__chips" style="display:flex;flex-wrap:wrap;gap:0.5rem;margin-top:1.25rem;">
-      <span>R</span><span>Stata</span><span>Python</span><span>SQL</span><span>PostgreSQL</span>
-      <span>ODK</span><span>KoboToolbox</span><span>REDCap</span><span>XLSForm</span>
-      <span>HFC systems</span><span>Power BI</span><span>Tableau</span><span>Shiny</span><span>Streamlit</span>
-      <span>Quarto</span><span>R Markdown</span><span>DHIS2/KHIS</span><span>Git</span>
+    <p class="section-eyebrow">Stack</p>
+    <h2 class="section-h">Grouped by the layer it holds up.</h2>
+    <p class="section-sub">No skill bars. Tools appear under the system layer they own, and only because they shipped something in the field or in analysis — not because of a self-score.</p>
+    <div class="cv-architecture-grid" style="margin-top:1.5rem;">
+      <article class="cv-architecture-card">
+        <h3>Data architecture &amp; engineering</h3>
+        <div class="background-ledger__chips" style="margin-top:0.75rem;">
+          <span>PostgreSQL</span><span>SQL</span><span>R</span><span>Python</span><span>ETL design</span><span>Git</span>
+        </div>
+      </article>
+      <article class="cv-architecture-card">
+        <h3>Field capture &amp; quality governance</h3>
+        <div class="background-ledger__chips" style="margin-top:0.75rem;">
+          <span>ODK</span><span>KoboToolbox</span><span>REDCap</span><span>SurveyCTO</span><span>XLSForm</span><span>HFC systems</span><span>DHIS2/KHIS</span>
+        </div>
+      </article>
+      <article class="cv-architecture-card">
+        <h3>Analysis &amp; causal method</h3>
+        <div class="background-ledger__chips" style="margin-top:0.75rem;">
+          <span>Stata</span><span>R</span><span>Survival analysis</span><span>Forecasting</span><span>Causal forest</span><span>Quasi-experimental</span>
+        </div>
+      </article>
+      <article class="cv-architecture-card">
+        <h3>Decision support &amp; reporting</h3>
+        <div class="background-ledger__chips" style="margin-top:0.75rem;">
+          <span>Shiny</span><span>Streamlit</span><span>Power BI</span><span>Tableau</span><span>Quarto</span><span>R Markdown</span>
+        </div>
+      </article>
     </div>
     <p style="margin-top:1.25rem;"><a href="cv/index.html" class="btn-ghost">Full CV →</a></p>
   </div>
@@ -265,10 +285,10 @@ format:
       <div class="background-ledger__column">
         <h3 class="background-ledger__heading">Experience</h3>
         <div class="background-ledger__timeline">
-          <article class="background-ledger__entry"><span>2025 – Present</span><h4>Lead Research Data Manager</h4><p class="background-ledger__org">Georgetown University gui2de · Remote / Kenya</p><p>Health financial diaries systems for 300 households over one year (HFCs, automation, live field apps); Shiny application for Re:BUiLD cash-plus targeting with IRC partners.</p></article>
-          <article class="background-ledger__entry"><span>2023 – 2025</span><h4>Senior Statistician and Data Systems Lead</h4><p class="background-ledger__org">KEMRI · Nairobi and Kisumu</p><p>Built integrated health analytics pipelines and survival-analysis workflows for surveillance, decision support, and partner reporting.</p></article>
-          <article class="background-ledger__entry"><span>2021 – 2023</span><h4>Senior Research Data Manager and Evaluation Lead</h4><p class="background-ledger__org">JOOUST and VLIR UOS · Kenya, Uganda, Rwanda</p><p>Coordinated cross-country datasets, supported randomized and quasi-experimental analysis, and trained teams on quality and reproducibility.</p></article>
-          <article class="background-ledger__entry"><span>2017 – 2021</span><h4>Data Analyst and MEL Specialist</h4><p class="background-ledger__org">LERIS Hub · Kenya and Uganda</p><p>Designed monitoring frameworks and data-collection workflows, then delivered policy and donor reporting products for complex programmes.</p></article>
+          <article class="background-ledger__entry"><span>2025 – Present</span><h4>Lead Research Data Manager</h4><p class="background-ledger__org">Georgetown University gui2de · Remote / Kenya</p><p>Own the study data architecture and quality governance for a 300-household, twelve-month diaries panel, and delivered the production targeting application IRC caseworkers use on Re:BUiLD.</p></article>
+          <article class="background-ledger__entry"><span>2023 – 2025</span><h4>Senior Statistician and Data Systems Lead</h4><p class="background-ledger__org">KEMRI · Nairobi and Kisumu</p><p>Led the oncology registry architecture, quality control, and survival-analysis workflows behind a county-facing cancer surveillance dashboard and co-authored papers on cancer survival and mortality risk.</p></article>
+          <article class="background-ledger__entry"><span>2021 – 2023</span><h4>Senior Research Data Manager and Evaluation Lead</h4><p class="background-ledger__org">JOOUST and VLIR UOS · Kenya, Uganda, Rwanda</p><p>Standardised schemas and quality protocols across three countries so partner datasets could be pooled rather than reconciled by hand, and trained 30+ staff to run the pipelines unaided.</p></article>
+          <article class="background-ledger__entry"><span>2017 – 2021</span><h4>Data Analyst and MEL Specialist</h4><p class="background-ledger__org">LERIS Hub · Kenya and Uganda</p><p>Designed the monitoring architecture — indicator logic, collection workflows, and reporting layer — for health and livelihoods programmes across two countries.</p></article>
         </div>
       </div>
       <div class="background-ledger__column">

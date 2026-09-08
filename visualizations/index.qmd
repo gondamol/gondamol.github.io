@@ -16,7 +16,7 @@ format:
 <div style="padding:4.5rem 0 2.5rem;">
   <span class="section-eyebrow">Visualizations</span>
   <h1 class="section-h" style="font-size:clamp(2.2rem,4vw,3.4rem);margin-top:0.5rem;">Curated visualization work.</h1>
-  <p class="section-sub" style="margin-bottom:0;">This section now highlights only the builds with enough substance to be worth reviewing. The placeholder and auto-generated stubs have been removed.</p>
+  <p class="section-sub" style="margin-bottom:0;">Each build here solves a real presentation problem — small multiples that survive publication, geographies that stay readable at country scale, and interactive layers that hold up when someone actually explores the data.</p>
 </div>
 ```
 

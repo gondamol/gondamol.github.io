@@ -48,7 +48,7 @@ website:
   page-navigation: false
   title: "Nic | Data"
   site-url: "https://gondamol.github.io"
-  description: "Research data systems for health and development programmes — field instruments, quality architecture, and decision products. Nairobi, Kenya."
+  description: "Research data architecture for health and development programmes — study databases, quality governance, and decision products. Nairobi, Kenya."
   favicon: "img/profile.jpeg"
 
   navbar:
@@ -84,7 +84,7 @@ website:
 
   page-footer:
     background: dark
-    left: "<span class='footer-title'>Nichodemus Amollo</span><span class='footer-meta'>Research Data Systems · Health &amp; Development Programmes</span>"
+    left: "<span class='footer-title'>Nichodemus Amollo</span><span class='footer-meta'>Data &amp; Research Systems Architecture · Health and Development Programmes</span>"
     center: "<a href='tel:+254725737867' class='footer-phone'>+254 725 737 867</a><span class='footer-meta'>Nairobi, Kenya · Open to remote and hybrid work</span>"
     right:
       - icon: github

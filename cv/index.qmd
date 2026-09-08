@@ -19,9 +19,9 @@ format:
     <div class="cv-hero-main">
       <span class="section-eyebrow">Curriculum Vitae</span>
       <h1 class="cv-hero-name">Nichodemus Amollo</h1>
-      <p class="cv-hero-title">Research Data Systems Lead · Health &amp; Development Programmes</p>
+      <p class="cv-hero-title">Data &amp; Research Systems Architect · Health and Development Programmes</p>
       <p class="cv-hero-summary">
-        I build data systems and evidence products that make health and development programmes trustworthy — from field instruments and high-frequency checks to pipelines, live ops apps, and decision tools for partners across East Africa.
+        I own the research data architecture that programmes depend on to make defensible decisions — study databases, quality governance, analytic pipelines, and the decision products that sit on top of them.
       </p>
 
       <div class="cv-contact-row">
@@ -42,72 +42,113 @@ format:
   <section class="cv-stat-grid">
     <article class="cv-stat-card">
       <span class="cv-stat-num">8+</span>
-      <span class="cv-stat-label">Years in applied data and evaluation</span>
+      <span class="cv-stat-label">Years building research data systems</span>
     </article>
     <article class="cv-stat-card">
-      <span class="cv-stat-num">3+</span>
-      <span class="cv-stat-label">Countries supported in East Africa</span>
+      <span class="cv-stat-num">3</span>
+      <span class="cv-stat-label">Countries under one evidence architecture</span>
     </article>
     <article class="cv-stat-card">
       <span class="cv-stat-num">300</span>
-      <span class="cv-stat-label">Households · diaries follow-up (1 year)</span>
+      <span class="cv-stat-label">Households · 12-month diaries panel</span>
     </article>
     <article class="cv-stat-card">
-      <span class="cv-stat-num">7</span>
-      <span class="cv-stat-label">Primary facilities · NCD financing thesis</span>
+      <span class="cv-stat-num">6,260</span>
+      <span class="cv-stat-label">Participants scored by a production targeting model</span>
     </article>
   </section>
 
   <section class="cv-focus-strip" aria-label="Core focus areas">
-    <span>Research data systems</span>
-    <span>Health systems research</span>
-    <span>Quality monitoring / HFC</span>
-    <span>Biostatistics</span>
-    <span>Field ops apps</span>
-    <span>Evidence translation</span>
-    <span>Capacity building</span>
-  </section>
-
-  <section class="cv-focus-strip" aria-label="Role-targeted CVs" style="margin-top:1rem;flex-wrap:wrap;gap:0.75rem;">
-    <span style="opacity:0.7;margin-right:0.5rem;">Role focus:</span>
-    <a href="#track-research-data" class="cv-contact-chip cv-contact-link">Research data systems</a>
-    <a href="#track-health-analytics" class="cv-contact-chip cv-contact-link">Health analytics / biostats</a>
-    <a href="#track-programme" class="cv-contact-chip cv-contact-link">Programme M&amp;E systems</a>
+    <span>Research data architecture</span>
+    <span>Data integrity governance</span>
+    <span>Health surveillance systems</span>
+    <span>Causal and biostatistical analysis</span>
+    <span>Decision support products</span>
+    <span>Multi-country delivery</span>
+    <span>Team capability building</span>
   </section>
 
 </div>
 ```
 
-## Professional Summary {#summary}
+## Executive Profile {#summary}
 
-I currently lead research data systems for Georgetown University gui2de portfolios in East Africa, including health financial diaries (300 households over one year: HFCs, automation, live field apps) and the Shiny application layer for Re:BUiLD cash-plus targeting with IRC partners. My work spans study design, quality architecture, analysis planning, programme-facing products, and publication support. I am strongest where field implementation, data systems, and decision-making need to behave like one system.
+I architect the research data systems that health and development programmes depend on to make decisions they can defend — study databases, quality governance layers, analytic pipelines, and the decision products built on top, owned as one system rather than assembled per project. I currently lead research data architecture and statistical operations for Georgetown University gui2de's East Africa portfolio, covering a year-long health financial diaries panel across 300 households and the production application layer for IRC Re:BUiLD cash-plus targeting. Across eight years I have built the same architecture inside KEMRI oncology surveillance, a three-country VLIR-UOS evaluation programme, and multi-country field operations, and set the reproducibility standards teams continue to work to after handover. I am strongest where field implementation, data infrastructure, and executive decision-making have to behave like one system.
 
-## Role-targeted highlights {#tracks}
+## Core Competencies & Technical Architecture {#architecture}
 
-Use these as talking tracks when tailoring applications. The full experience list below stays complete.
+```{=html}
+<div class="cv-architecture-grid">
+  <article class="cv-architecture-card">
+    <p class="cv-architecture-kicker">System ownership</p>
+    <h4>Study data architecture, end to end</h4>
+    <p>Instrument logic, relational schema, and PostgreSQL-backed study infrastructure designed so a year-long household panel, multi-country partner workflows, and live field applications all read from one source of truth.</p>
+  </article>
+  <article class="cv-architecture-card">
+    <p class="cv-architecture-kicker">Data governance</p>
+    <h4>Quality as an engineered layer</h4>
+    <p>Automated high-frequency checks, validation rules, and audit trails that surface defects while collection is still running — moving quality from an end-of-round cleaning exercise to a managed daily metric.</p>
+  </article>
+  <article class="cv-architecture-card">
+    <p class="cv-architecture-kicker">Decision products</p>
+    <h4>Models translated into operational tools</h4>
+    <p>Shiny, Streamlit, and Power BI applications that carry causal and predictive models into the hands of caseworkers, supervisors, and county leadership, with the rationale for each recommendation attached.</p>
+  </article>
+  <article class="cv-architecture-card">
+    <p class="cv-architecture-kicker">Organisational capability</p>
+    <h4>Standards that outlast the engagement</h4>
+    <p>Git workflows, documentation, and analyst mentoring that keep pipelines runnable through staff transitions and let partner institutions operate the systems without external support.</p>
+  </article>
+</div>
 
-### Research data systems {#track-research-data}
+<div class="cv-skill-accordion">
 
-- Diaries: 300 HH / 1 year · HFC · automation · RA leaderboard · Fuel issues app (internal)  
-- Re:BUiLD: Shiny application from causal targeting models for IRC field teams  
-- Oncology registry: REDCap architecture, multi-language QC, Tableau surveillance product  
-- Stack: ODK / Kobo / REDCap · SQL · R/Python pipelines · Streamlit / Shiny  
+  <details open>
+    <summary>Research data architecture &amp; engineering</summary>
+    <div class="cv-chip-row">
+      <span>PostgreSQL</span><span>SQL</span><span>Schema &amp; instrument design</span><span>ETL design</span><span>API data flow</span><span>REDCap architecture</span><span>Reproducible pipelines</span><span>Git workflows</span>
+    </div>
+  </details>
 
-### Health analytics & biostatistics {#track-health-analytics}
+  <details>
+    <summary>Data integrity &amp; quality governance</summary>
+    <div class="cv-chip-row">
+      <span>High-frequency check frameworks</span><span>Automated validation</span><span>Multi-language QC</span><span>Duplicate &amp; ID audits</span><span>Enumerator accountability systems</span><span>Audit trails</span>
+    </div>
+  </details>
 
-- First-author mixed-methods NCD financing study (forthcoming *BMC Public Health*)  
-- Survival and LTFU analysis for multi-year oncology records  
-- Causal targeting application layer (CATE / cost-aware recommendations)  
-- Stack: R · Stata · survival methods · quasi-experimental support · Quarto  
+  <details>
+    <summary>Statistical, causal &amp; machine learning methods</summary>
+    <div class="cv-chip-row">
+      <span>R</span><span>Stata</span><span>Python</span><span>SPSS</span><span>Survival analysis</span><span>Loss-to-follow-up modelling</span><span>Forecasting</span><span>Difference-in-differences</span><span>Propensity score methods</span><span>Causal forest / CATE</span><span>RCT and quasi-experimental design support</span>
+    </div>
+  </details>
 
-### Programme M&E systems {#track-programme}
+  <details>
+    <summary>Health surveillance &amp; field data infrastructure</summary>
+    <div class="cv-chip-row">
+      <span>ODK</span><span>KoboToolbox</span><span>SurveyCTO</span><span>REDCap</span><span>CommCare</span><span>XLSForm</span><span>DHIS2 / KHIS</span><span>Offline-first CAPI</span><span>Oncology registries</span>
+    </div>
+  </details>
 
-- Multi-country field teams and quality protocols  
-- Indicator and reporting products for partners and county leadership  
-- Training enumerators and analysts in reproducible practice  
-- Stack: logframes & indicator logic · DHIS2/KHIS familiarity · HFC · donor-facing reports  
+  <details>
+    <summary>Interactive decision support &amp; evidence translation</summary>
+    <div class="cv-chip-row">
+      <span>R Shiny</span><span>Streamlit</span><span>Power BI</span><span>Tableau</span><span>Quarto</span><span>ggplot2</span><span>Plotly</span><span>Executive and policy briefing</span>
+    </div>
+  </details>
 
-## Experience Explorer {#experience}
+  <details>
+    <summary>Programme evaluation &amp; delivery leadership</summary>
+    <div class="cv-chip-row">
+      <span>Theory of change</span><span>Logframe and indicator design</span><span>Analysis plans</span><span>Donor and county reporting</span><span>Multi-country field coordination</span><span>Enumerator and analyst training</span>
+    </div>
+  </details>
+
+</div>
+```
+
+## Professional Experience {#experience}
 
 ```{=html}
 <div class="cv-filter-wrap">
@@ -116,8 +157,8 @@ Use these as talking tracks when tailoring applications. The full experience lis
   <div class="cv-filter-row" role="tablist" aria-label="Experience filters">
     <button class="cv-filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
     <button class="cv-filter-btn" data-filter="health" role="tab" aria-selected="false">Health Research</button>
-    <button class="cv-filter-btn" data-filter="mel" role="tab" aria-selected="false">MEL</button>
-    <button class="cv-filter-btn" data-filter="systems" role="tab" aria-selected="false">Data Systems</button>
+    <button class="cv-filter-btn" data-filter="mel" role="tab" aria-selected="false">Evaluation</button>
+    <button class="cv-filter-btn" data-filter="systems" role="tab" aria-selected="false">Data Architecture</button>
     <button class="cv-filter-btn" data-filter="leadership" role="tab" aria-selected="false">Leadership</button>
   </div>
 
@@ -131,93 +172,94 @@ Use these as talking tracks when tailoring applications. The full experience lis
 
 <div id="cvExperienceList" class="cv-exp-list">
 
-  <details class="cv-exp-item" data-tags="health,mel,systems,leadership" data-search="georgetown gui2de biostatistician health financial diaries quality control dashboard r stata sql power bi mentorship architecture etl infrastructure shiny" open>
+  <details class="cv-exp-item" data-tags="health,mel,systems,leadership" data-search="georgetown gui2de biostatistician research data manager health financial diaries high frequency checks quality governance dashboard r stata sql power bi mentorship architecture etl infrastructure shiny streamlit rebuild irc causal forest targeting" open>
     <summary>
       <span class="cv-exp-year">2025 to Present</span>
       <span class="cv-exp-role">Lead Biostatistician and Research Data Manager</span>
       <span class="cv-exp-org">Georgetown University gui2de, East Africa</span>
     </summary>
     <div class="cv-exp-body">
-      <p>Lead research data systems and statistical operations for health systems and implementation studies across East Africa.</p>
+      <p>Own the research data architecture and statistical operations for gui2de's health systems and implementation portfolio in East Africa, from instrument design through the decision products partners actually use.</p>
       <ul>
-        <li>Built diaries systems for a one-year follow-up of 300 households: HFCs, automated quality workflows, RA performance leaderboard, and a fuel/issues app aggregating field problems in real time from the study database.</li>
-        <li>Developed the Shiny application layer for Re:BUiLD cash-plus targeting (IRC / gui2de), turning causal forest models into a caseworker-facing recommender with cost-aware rationale.</li>
-        <li>Supported analysis, dashboards, and mentoring in R, Stata, SQL, Power BI, Streamlit, and Shiny for partner delivery.</li>
+        <li>Architected the end-to-end data system for a year-long health financial diaries panel across 300 households, pairing automated high-frequency checks with a live issue-aggregation application so supervisors resolved field problems while collection was still running rather than at cleaning.</li>
+        <li>Built a research assistant performance leaderboard directly on the streaming study database, making interview volume, completion, and clean-interview rates visible to field leadership daily and turning enumerator quality into a managed metric instead of an end-of-round discovery.</li>
+        <li>Delivered the production application layer for Re:BUiLD cash-plus targeting with IRC, translating gui2de causal forest models over 6,260 participants into a caseworker-facing recommender that scores Cash against Cash + Network with cost-aware rationale for every recommendation.</li>
+        <li>Set the analysis and reproducibility standards the team works to across R, Stata, SQL, Power BI, Streamlit, and Shiny, and mentor analysts on the workflows that keep partner deliverables auditable.</li>
       </ul>
-      <div class="cv-tag-row"><span>Health</span><span>MEL</span><span>Data architecture</span><span>ML systems</span><span>Leadership</span></div>
+      <div class="cv-tag-row"><span>Health</span><span>Data architecture</span><span>Quality governance</span><span>ML systems</span><span>Leadership</span></div>
     </div>
   </details>
 
-  <details class="cv-exp-item" data-tags="health,systems" data-search="kemri statistician surveillance data systems reproducibility forecasting survival analysis dashboards ncd cancer" open>
+  <details class="cv-exp-item" data-tags="health,systems,leadership" data-search="kemri statistician data systems lead surveillance reproducibility forecasting survival analysis loss to follow up redcap tableau dashboards ncd cancer oncology kisumu county" open>
     <summary>
       <span class="cv-exp-year">2023 to 2025</span>
       <span class="cv-exp-role">Senior Statistician and Data Systems Lead</span>
       <span class="cv-exp-org">KEMRI, Nairobi and Kisumu</span>
     </summary>
     <div class="cv-exp-body">
-      <p>Managed integrated surveillance and research datasets with focus on reproducibility and decision support.</p>
+      <p>Led the data systems behind multi-year oncology and non-communicable disease surveillance, taking responsibility for registry design, analytic method, and the products that reached county decision-makers.</p>
       <ul>
-        <li>Developed regression, forecasting, and survival analysis workflows for health outcomes monitoring.</li>
-        <li>Built dashboard products that reduced reporting effort and improved cross team visibility.</li>
-        <li>Contributed to publication pipelines in cancer and non communicable disease studies.</li>
+        <li>Designed the REDCap registry architecture and multi-language quality control layer that made years of fragmented oncology records analysable, and built the pipelines that kept them current.</li>
+        <li>Established survival, loss-to-follow-up, regression, and forecasting workflows that converted registry records into published evidence on mortality risk and care disparities among patients with and without HIV.</li>
+        <li>Delivered a county-facing cancer surveillance dashboard, launched with Kisumu health leadership, that replaced manual reporting cycles with a shared operational view across teams.</li>
       </ul>
-      <div class="cv-tag-row"><span>Health</span><span>Statistics</span><span>Automation</span></div>
+      <div class="cv-tag-row"><span>Health</span><span>Registry architecture</span><span>Survival analysis</span><span>Surveillance</span></div>
     </div>
   </details>
 
-  <details class="cv-exp-item" data-tags="mel,systems,leadership" data-search="jooust vlir uos evaluation manager data manager kenya uganda rwanda training enumerators mixed methods" open>
+  <details class="cv-exp-item" data-tags="mel,systems,leadership" data-search="jooust vlir uos evaluation lead senior research data manager kenya uganda rwanda training enumerators mixed methods quasi experimental standardisation schema comparability" open>
     <summary>
       <span class="cv-exp-year">2021 to 2023</span>
       <span class="cv-exp-role">Senior Research Data Manager and Evaluation Lead</span>
-      <span class="cv-exp-org">JOOUST and VLIR UOS Regional Program, Kenya, Uganda, Rwanda</span>
+      <span class="cv-exp-org">JOOUST and VLIR UOS Regional Programme, Kenya, Uganda, Rwanda</span>
     </summary>
     <div class="cv-exp-body">
-      <p>Coordinated regional evaluation datasets and analytics cycles across distributed partners.</p>
+      <p>Owned the evidence architecture for a three-country regional programme, giving distributed partners one set of data structures, definitions, and quality rules to work to.</p>
       <ul>
-        <li>Standardized data structures and quality protocols for cross country comparability.</li>
-        <li>Supported quasi experimental analyses across education and livelihoods programs.</li>
-        <li>Trained 30 plus enumerators and analysts in reproducible field and analysis practice.</li>
+        <li>Standardised schemas, variable definitions, and quality protocols across Kenya, Uganda, and Rwanda so partner datasets could be pooled and compared rather than reconciled by hand each cycle.</li>
+        <li>Directed the analytic cycle across education and livelihoods portfolios, supporting randomised and quasi-experimental designs from analysis plan through partner-facing reporting.</li>
+        <li>Trained more than 30 enumerators and analysts in reproducible field and analysis practice, leaving partner institutions able to run the pipelines without external support.</li>
       </ul>
-      <div class="cv-tag-row"><span>Evaluation</span><span>Capacity building</span><span>Regional coordination</span></div>
+      <div class="cv-tag-row"><span>Evaluation</span><span>Regional architecture</span><span>Capacity building</span></div>
     </div>
   </details>
 
-  <details class="cv-exp-item" data-tags="mel,leadership" data-search="leris hub analyst mel specialist monitoring framework indicator tracking donor reports field teams" open>
+  <details class="cv-exp-item" data-tags="mel,systems,leadership" data-search="leris hub data analyst mel specialist monitoring framework indicator design donor reports policy field teams quality assurance kenya uganda" open>
     <summary>
       <span class="cv-exp-year">2017 to 2021</span>
       <span class="cv-exp-role">Data Analyst and MEL Specialist</span>
       <span class="cv-exp-org">LERIS Hub, Kenya and Uganda</span>
     </summary>
     <div class="cv-exp-body">
-      <p>Designed monitoring frameworks and field data systems for health and livelihoods initiatives.</p>
+      <p>Designed the monitoring architecture — indicator logic, collection workflows, and reporting layer — for health and livelihoods programmes across two countries.</p>
       <ul>
-        <li>Produced donor and policy reports with clear indicator tracking and narrative synthesis.</li>
-        <li>Strengthened field implementation through training and quality assurance routines.</li>
+        <li>Produced donor and policy reporting products that tied indicator movement to specific programme decisions rather than to activity counts.</li>
+        <li>Built the field quality assurance routines and training that kept the underlying data defensible under funder scrutiny.</li>
       </ul>
-      <div class="cv-tag-row"><span>MEL</span><span>Field operations</span><span>Reporting</span></div>
+      <div class="cv-tag-row"><span>Monitoring architecture</span><span>Field operations</span><span>Reporting</span></div>
     </div>
   </details>
 
-  <details class="cv-exp-item" data-tags="systems" data-search="community development initiative odk kobotoolbox mobile data collection western kenya" open>
+  <details class="cv-exp-item" data-tags="systems" data-search="lake region community development initiative odk kobotoolbox mobile data collection western kenya digitisation" open>
     <summary>
       <span class="cv-exp-year">2016 to 2017</span>
       <span class="cv-exp-role">Data Systems Analyst</span>
       <span class="cv-exp-org">Lake Region Community Development Initiative, Western Kenya</span>
     </summary>
     <div class="cv-exp-body">
-      <p>Implemented mobile data collection pipelines and program reporting flows for community projects.</p>
-      <div class="cv-tag-row"><span>ODK</span><span>KoboToolbox</span><span>Data capture</span></div>
+      <p>Implemented mobile data collection pipelines and programme reporting flows, moving community project data off paper into structured, auditable capture.</p>
+      <div class="cv-tag-row"><span>ODK</span><span>KoboToolbox</span><span>Digitisation</span></div>
     </div>
   </details>
 
-  <details class="cv-exp-item" data-tags="health,leadership" data-search="lecturer biostatistics applied r mentoring students university teaching" open>
+  <details class="cv-exp-item" data-tags="health,leadership" data-search="lecturer biostatistics applied r mentoring students university teaching jooust bondo supervision" open>
     <summary>
       <span class="cv-exp-year">2020 to Present</span>
       <span class="cv-exp-role">Part Time Lecturer, Biostatistics and Applied R</span>
       <span class="cv-exp-org">JOOUST, Bondo</span>
     </summary>
     <div class="cv-exp-body">
-      <p>Teach biostatistics and applied analytics modules and mentor students in practical research methods.</p>
+      <p>Teach biostatistics and applied analytics, and supervise students through the full arc of a research question — design, analysis, and interpretation they can defend.</p>
       <div class="cv-tag-row"><span>Teaching</span><span>Mentorship</span><span>Biostatistics</span></div>
     </div>
   </details>
@@ -225,34 +267,38 @@ Use these as talking tracks when tailoring applications. The full experience lis
 </div>
 ```
 
-## Technical Architecture & Infrastructure {#architecture}
+## Key Systems & Products {#systems}
 
 ```{=html}
 <div class="cv-architecture-grid">
   <article class="cv-architecture-card">
-    <p class="cv-architecture-kicker">Warehouse design</p>
-    <h4>PostgreSQL-backed study infrastructure</h4>
-    <p>Designed data architecture for a 300-household year-long diaries study, multi-country partner workflows, and live field ops apps.</p>
+    <p class="cv-architecture-kicker">Georgetown gui2de</p>
+    <h4>Health financial diaries data system</h4>
+    <p>Study database, automated high-frequency checks, and live field operations applications supporting 300 households over twelve months of continuous collection.</p>
+    <p><a href="../projects/health-financial-diaries/index.html">Case study &rarr;</a></p>
   </article>
   <article class="cv-architecture-card">
-    <p class="cv-architecture-kicker">Data ops</p>
-    <h4>Reproducible ETL and quality monitoring</h4>
-    <p>Built R-based ETL, HFC, and validation systems that surface issues early and keep downstream analysis trustworthy.</p>
+    <p class="cv-architecture-kicker">IRC Re:BUiLD · gui2de</p>
+    <h4>Cash-plus targeting recommender</h4>
+    <p>Production Shiny application layer over causal forest targeting models, scoring 6,260 participants for caseworkers with cost-aware rationale.</p>
+    <p><a href="https://rebuild.shinyapps.io/rebuild-targeting/" target="_blank">Live application &rarr;</a></p>
   </article>
   <article class="cv-architecture-card">
-    <p class="cv-architecture-kicker">Dashboards</p>
-    <h4>Operational reporting with predictive components</h4>
-    <p>Architected Shiny and Power BI dashboards that combine routine monitoring, decision support, and early predictive signals.</p>
+    <p class="cv-architecture-kicker">Field operations</p>
+    <h4>Research assistant performance leaderboard</h4>
+    <p>Daily quality and productivity view built on the streaming study database, making completion and clean-interview rates a managed field metric.</p>
+    <p><a href="https://ra-leaderboard.streamlit.app/" target="_blank">Live application &rarr;</a></p>
   </article>
   <article class="cv-architecture-card">
-    <p class="cv-architecture-kicker">Team systems</p>
-    <h4>Mentorship for reproducible delivery</h4>
-    <p>Coached analysts on Git workflows, documentation, and systems thinking so projects survive staff transitions and scale cleanly.</p>
+    <p class="cv-architecture-kicker">KEMRI · Kisumu County</p>
+    <h4>Cancer surveillance dashboard</h4>
+    <p>REDCap registry architecture, quality systems, and survival analysis surfaced through a county-facing dashboard launched with local health leadership.</p>
+    <p><a href="../posts/kisumu-cancer-dashboard/index.html">Delivery story &rarr;</a></p>
   </article>
 </div>
 ```
 
-## Education {#education}
+## Education & Credentials {#education}
 
 ```{=html}
 <div class="cv-edu-grid">
@@ -261,7 +307,7 @@ Use these as talking tracks when tailoring applications. The full experience lis
     <h4>MSc, Epidemiology and Biostatistics</h4>
     <p>Jaramogi Oginga Odinga University of Science and Technology</p>
     <p class="cv-edu-note">
-      Thesis focus on financial determinants of effective hypertension and diabetes care in rural primary health facilities in Kisumu County.
+      Thesis: financial determinants of effective hypertension and diabetes care across seven rural primary health facilities in Kisumu County.
     </p>
   </article>
 
@@ -272,61 +318,7 @@ Use these as talking tracks when tailoring applications. The full experience lis
     <p class="cv-edu-note">Second Class Upper Division.</p>
   </article>
 </div>
-```
 
-## Skills and Tools {#skills}
-
-```{=html}
-<div class="cv-skill-accordion">
-
-  <details open>
-    <summary>Technical architecture and ML systems</summary>
-    <div class="cv-chip-row">
-      <span>PostgreSQL</span><span>ETL design</span><span>Data quality monitoring</span><span>R Shiny</span><span>Model monitoring</span><span>Reproducible ML</span><span>Git workflows</span>
-    </div>
-  </details>
-
-  <details>
-    <summary>Statistical and analytical methods</summary>
-    <div class="cv-chip-row">
-      <span>R</span><span>Python</span><span>Stata</span><span>SPSS</span><span>Excel advanced</span><span>Survival analysis</span><span>Forecasting</span>
-    </div>
-  </details>
-
-  <details>
-    <summary>Data systems and analytics engineering</summary>
-    <div class="cv-chip-row">
-      <span>SQL</span><span>PostgreSQL</span><span>ETL</span><span>API data flow</span><span>Validation checks</span><span>Reproducible reporting</span>
-    </div>
-  </details>
-
-  <details>
-    <summary>Data collection and field operations</summary>
-    <div class="cv-chip-row">
-      <span>KoboToolbox</span><span>ODK</span><span>SurveyCTO</span><span>REDCap</span><span>CommCare</span><span>DHIS2 KHIS</span><span>Enumerator training</span>
-    </div>
-  </details>
-
-  <details>
-    <summary>Visualization and communication</summary>
-    <div class="cv-chip-row">
-      <span>Power BI</span><span>Tableau</span><span>R Shiny</span><span>ggplot2</span><span>Plotly</span><span>Quarto</span><span>Policy reports</span>
-    </div>
-  </details>
-
-  <details>
-    <summary>Evaluation and causal methods</summary>
-    <div class="cv-chip-row">
-      <span>RCT support</span><span>Difference in differences</span><span>Propensity score methods</span><span>Theory of change</span><span>Logframe design</span>
-    </div>
-  </details>
-
-</div>
-```
-
-## Certifications {#certifications}
-
-```{=html}
 <div class="cert-list">
   <span class="cert-badge">Monitoring and Evaluation in Global Health, University of Washington</span>
   <span class="cert-badge">Economic Evaluation, University of Washington</span>
