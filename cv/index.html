@@ -164,408 +164,391 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#architecture" id="toc-architecture" class="nav-link active" data-scroll-target="#architecture">Core Competencies &amp; Technical Architecture</a></li>
-  <li><a href="#experience" id="toc-experience" class="nav-link" data-scroll-target="#experience">Professional Experience</a></li>
-  <li><a href="#systems" id="toc-systems" class="nav-link" data-scroll-target="#systems">Key Systems &amp; Products</a></li>
-  <li><a href="#education" id="toc-education" class="nav-link" data-scroll-target="#education">Education &amp; Credentials</a></li>
-  <li><a href="#publications" id="toc-publications" class="nav-link" data-scroll-target="#publications">Selected Publications</a></li>
-  <li><a href="#languages" id="toc-languages" class="nav-link" data-scroll-target="#languages">Languages</a></li>
-  <li><a href="#referees" id="toc-referees" class="nav-link" data-scroll-target="#referees">Referees</a></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
 
-<div class="cv-shell">
+<style>
+.cvx {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: clamp(2.25rem, 5vw, 4rem) clamp(1rem, 4vw, 2rem) clamp(2rem, 4vw, 3rem);
+}
 
-  <section class="cv-hero-block">
-    <div class="cv-hero-main">
-      <span class="section-eyebrow">Curriculum Vitae</span>
-      <h1 class="cv-hero-name">Nichodemus Amollo</h1>
-      <p class="cv-hero-title">Data &amp; Research Systems Architect · Health and Development Programmes</p>
-      <p class="cv-hero-summary">
-        I own the research data architecture that programmes depend on to make defensible decisions — study databases, quality governance, analytic pipelines, and the decision products that sit on top of them.
-      </p>
+/* ── Identity header ───────────────────────────── */
+.cvx-id {
+  border: 1px solid var(--border);
+  background: var(--white);
+  padding: clamp(1.35rem, 3vw, 2.1rem);
+  box-shadow: 0 10px 30px rgba(17, 17, 17, 0.05);
+}
+.cvx-id-top {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 1.5rem 2rem;
+  align-items: start;
+}
+.cvx-kicker {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.66rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0;
+}
+.cvx-name {
+  font-size: clamp(2rem, 4.2vw, 3rem);
+  line-height: 1.02;
+  letter-spacing: -0.02em;
+  margin: 0.35rem 0 0.4rem;
+  color: var(--ink);
+  text-wrap: balance;
+}
+.cvx-roleline {
+  margin: 0 0 0.7rem;
+  color: var(--terra);
+  font-weight: 500;
+  font-size: 0.95rem;
+  letter-spacing: 0.01em;
+}
+.cvx-claim {
+  margin: 0;
+  max-width: 62ch;
+  color: var(--text);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  text-wrap: pretty;
+}
+.cvx-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.15rem;
+}
+.cvx-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  align-items: stretch;
+}
+.cvx-actions .btn-solid,
+.cvx-actions .btn-ghost { justify-content: center; }
 
-      <div class="cv-contact-row">
-        <span class="cv-contact-chip">Nairobi, Kenya</span>
-        <span class="cv-contact-chip">nichodemuswerre@gmail.com</span>
-        <span class="cv-contact-chip">+254 725 737 867</span>
-        <a href="https://www.linkedin.com/in/nichodemusamollo/" target="_blank" class="cv-contact-chip cv-contact-link">linkedin.com/in/nichodemusamollo</a>
+.cvx-proof {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
+  gap: 0.85rem clamp(1.2rem, 3vw, 2.2rem);
+  margin-top: 1.4rem;
+  padding-top: 1.15rem;
+  border-top: 1px solid var(--border);
+}
+.cvx-proof div { display: flex; align-items: baseline; gap: 0.45rem; }
+.cvx-proof b {
+  font-family: 'DM Mono', monospace;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--ink);
+}
+.cvx-proof span { font-size: 0.76rem; color: var(--muted); }
+
+/* ── Two-column body ───────────────────────────── */
+.cvx-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.72fr) minmax(0, 1fr);
+  gap: clamp(2rem, 4.5vw, 3.75rem);
+  align-items: start;
+  margin-top: clamp(2rem, 4vw, 3rem);
+}
+
+.cvx-spine-h {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(1.3rem, 2.4vw, 1.65rem);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  margin: 0 0 1.15rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid var(--border);
+}
+.cvx-spine-h + .cvx-role { padding-top: 0; }
+
+.cvx-role { padding: 1.4rem 0; border-top: 1px solid var(--border); }
+.cvx-role:first-of-type { border-top: none; }
+.cvx-role-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.35rem 0.85rem;
+}
+.cvx-yr {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.71rem;
+  letter-spacing: 0.04em;
+  color: var(--terra);
+  white-space: nowrap;
+}
+.cvx-title { margin: 0; font-size: 1.06rem; font-weight: 600; color: var(--ink); line-height: 1.3; }
+.cvx-org { width: 100%; margin: 0.2rem 0 0; font-size: 0.81rem; color: var(--muted); }
+.cvx-lead { margin: 0.65rem 0 0.15rem; font-size: 0.9rem; line-height: 1.6; color: var(--text); }
+.cvx-role ul { margin: 0.55rem 0 0; padding-left: 1.05rem; }
+.cvx-role li { margin-bottom: 0.45rem; font-size: 0.875rem; line-height: 1.58; color: var(--text); }
+.cvx-role li:last-child { margin-bottom: 0; }
+.cvx-role a { color: var(--terra); text-underline-offset: 2px; }
+
+.cvx-earlier { display: flex; flex-direction: column; gap: 1rem; margin-top: 0.3rem; }
+.cvx-earlier-item {
+  display: grid;
+  grid-template-columns: 6rem minmax(0, 1fr);
+  gap: 0.2rem 1rem;
+}
+.cvx-earlier-item p { margin: 0; font-size: 0.85rem; line-height: 1.55; color: var(--text); }
+.cvx-earlier-item strong { font-weight: 600; color: var(--ink); }
+.cvx-earlier-item em { font-style: normal; color: var(--muted); }
+
+/* ── Rail ──────────────────────────────────────── */
+.cvx-rail > .cvx-railsec { margin-bottom: 2.15rem; }
+.cvx-rail > .cvx-railsec:last-child { margin-bottom: 0; }
+.cvx-rail-h {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.66rem;
+  font-weight: 400;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 0.9rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border);
+}
+.cvx-comp { display: flex; flex-direction: column; gap: 0.95rem; }
+.cvx-comp h4 { margin: 0 0 0.4rem; font-size: 0.82rem; font-weight: 600; color: var(--ink); line-height: 1.35; }
+.cvx-tags { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+.cvx-tags span {
+  font-size: 0.67rem;
+  line-height: 1.35;
+  padding: 0.2rem 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--text);
+  background: transparent;
+}
+.cvx-block { margin-bottom: 1rem; }
+.cvx-block:last-child { margin-bottom: 0; }
+.cvx-block h4 { margin: 0.15rem 0 0.15rem; font-size: 0.85rem; font-weight: 600; color: var(--ink); }
+.cvx-block p { margin: 0; font-size: 0.79rem; line-height: 1.5; color: var(--muted); }
+.cvx-block .cvx-yr { display: block; margin-bottom: 0.1rem; }
+.cvx-pubs { margin: 0; padding-left: 1.05rem; }
+.cvx-pubs li { margin-bottom: 0.6rem; font-size: 0.78rem; line-height: 1.5; color: var(--text); }
+.cvx-pubs li:last-child { margin-bottom: 0; }
+.cvx-note { margin: 0; font-size: 0.79rem; line-height: 1.55; color: var(--muted); }
+
+@media (max-width: 900px) {
+  .cvx-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+  .cvx-id-top { grid-template-columns: 1fr; }
+  .cvx-actions { flex-direction: row; flex-wrap: wrap; }
+  .cvx-earlier-item { grid-template-columns: 1fr; }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .cvx-role, .cvx-rail > .cvx-railsec {
+    animation: cvxRise 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+  .cvx-role:nth-of-type(2) { animation-delay: 0.06s; }
+  .cvx-role:nth-of-type(3) { animation-delay: 0.12s; }
+  .cvx-rail > .cvx-railsec:nth-child(2) { animation-delay: 0.06s; }
+  .cvx-rail > .cvx-railsec:nth-child(3) { animation-delay: 0.12s; }
+  .cvx-rail > .cvx-railsec:nth-child(4) { animation-delay: 0.18s; }
+  .cvx-rail > .cvx-railsec:nth-child(5) { animation-delay: 0.24s; }
+  @keyframes cvxRise {
+    from { opacity: 0; transform: translateY(10px); }
+    to   { opacity: 1; transform: none; }
+  }
+}
+
+@media print {
+  .cvx-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+  .cvx-actions, .cvx-id { box-shadow: none; }
+  .cvx-actions { display: none; }
+  .cvx-role, .cvx-rail > .cvx-railsec { animation: none; break-inside: avoid; }
+}
+</style>
+
+<div class="cvx">
+
+  <div class="cvx-id">
+    <div class="cvx-id-top">
+      <div>
+        <p class="cvx-kicker">Curriculum Vitae</p>
+        <h1 class="cvx-name">Nichodemus Amollo</h1>
+        <p class="cvx-roleline">Data &amp; Research Systems Architect · Health and Development Programmes</p>
+        <p class="cvx-claim">
+          I own the research data architecture that programmes depend on to make decisions they can defend — study databases, quality governance, analytic pipelines, and the decision products built on top.
+        </p>
+        <div class="cvx-contact">
+          <span class="cv-contact-chip">Nairobi, Kenya</span>
+          <a href="mailto:nichodemuswerre@gmail.com" class="cv-contact-chip cv-contact-link">nichodemuswerre@gmail.com</a>
+          <a href="tel:+254725737867" class="cv-contact-chip cv-contact-link">+254 725 737 867</a>
+          <a href="https://www.linkedin.com/in/nichodemusamollo/" target="_blank" class="cv-contact-chip cv-contact-link">LinkedIn</a>
+        </div>
+      </div>
+      <div class="cvx-actions">
+        <a href="Nichodemus_Amollo_CV.pdf" class="btn-solid" target="_blank">View PDF</a>
+        <a href="Nichodemus_Amollo_CV.pdf" class="btn-ghost" download="">Download PDF</a>
       </div>
     </div>
 
-    <div class="cv-hero-actions">
-      <a href="Nichodemus_Amollo_CV.pdf" class="btn-solid" target="_blank">View PDF</a>
-      <a href="Nichodemus_Amollo_CV.pdf" class="btn-ghost" download="">Download PDF</a>
-      <p class="cv-action-note">Printable copy and sharing ready copy</p>
+    <div class="cvx-proof">
+      <div><b>8+</b><span>years building research data systems</span></div>
+      <div><b>3</b><span>countries under one evidence architecture</span></div>
+      <div><b>300</b><span>household, 12-month diaries panel</span></div>
+      <div><b>6,260</b><span>participants scored in production</span></div>
     </div>
-  </section>
-
-  <section class="cv-stat-grid">
-    <article class="cv-stat-card">
-      <span class="cv-stat-num">8+</span>
-      <span class="cv-stat-label">Years building research data systems</span>
-    </article>
-    <article class="cv-stat-card">
-      <span class="cv-stat-num">3</span>
-      <span class="cv-stat-label">Countries under one evidence architecture</span>
-    </article>
-    <article class="cv-stat-card">
-      <span class="cv-stat-num">300</span>
-      <span class="cv-stat-label">Households · 12-month diaries panel</span>
-    </article>
-    <article class="cv-stat-card">
-      <span class="cv-stat-num">6,260</span>
-      <span class="cv-stat-label">Participants scored by a production targeting model</span>
-    </article>
-  </section>
-
-  <section class="cv-focus-strip" aria-label="Core focus areas">
-    <span>Research data architecture</span>
-    <span>Data integrity governance</span>
-    <span>Health surveillance systems</span>
-    <span>Causal and biostatistical analysis</span>
-    <span>Decision support products</span>
-    <span>Multi-country delivery</span>
-    <span>Team capability building</span>
-  </section>
-
-</div>
-<section id="architecture" class="level2">
-<h2 class="anchored" data-anchor-id="architecture">Core Competencies &amp; Technical Architecture</h2>
-<div class="cv-architecture-grid">
-  <article class="cv-architecture-card">
-    <p class="cv-architecture-kicker">System ownership</p>
-    <h4 class="anchored">Study data architecture, end to end</h4>
-    <p>Instrument logic, relational schema, and PostgreSQL-backed study infrastructure designed so a year-long household panel, multi-country partner workflows, and live field applications all read from one source of truth.</p>
-  </article>
-  <article class="cv-architecture-card">
-    <p class="cv-architecture-kicker">Data governance</p>
-    <h4 class="anchored">Quality as an engineered layer</h4>
-    <p>Automated high-frequency checks, validation rules, and audit trails that surface defects while collection is still running — moving quality from an end-of-round cleaning exercise to a managed daily metric.</p>
-  </article>
-  <article class="cv-architecture-card">
-    <p class="cv-architecture-kicker">Decision products</p>
-    <h4 class="anchored">Models translated into operational tools</h4>
-    <p>Shiny, Streamlit, and Power BI applications that carry causal and predictive models into the hands of caseworkers, supervisors, and county leadership, with the rationale for each recommendation attached.</p>
-  </article>
-  <article class="cv-architecture-card">
-    <p class="cv-architecture-kicker">Organisational capability</p>
-    <h4 class="anchored">Standards that outlast the engagement</h4>
-    <p>Git workflows, documentation, and analyst mentoring that keep pipelines runnable through staff transitions and let partner institutions operate the systems without external support.</p>
-  </article>
-</div>
-
-<div class="cv-skill-accordion">
-
-  <details open="">
-    <summary>Research data architecture &amp; engineering</summary>
-    <div class="cv-chip-row">
-      <span>PostgreSQL</span><span>SQL</span><span>Schema &amp; instrument design</span><span>ETL design</span><span>API data flow</span><span>REDCap architecture</span><span>Reproducible pipelines</span><span>Git workflows</span>
-    </div>
-  </details>
-
-  <details>
-    <summary>Data integrity &amp; quality governance</summary>
-    <div class="cv-chip-row">
-      <span>High-frequency check frameworks</span><span>Automated validation</span><span>Multi-language QC</span><span>Duplicate &amp; ID audits</span><span>Enumerator accountability systems</span><span>Audit trails</span>
-    </div>
-  </details>
-
-  <details>
-    <summary>Statistical, causal &amp; machine learning methods</summary>
-    <div class="cv-chip-row">
-      <span>R</span><span>Stata</span><span>Python</span><span>SPSS</span><span>Survival analysis</span><span>Loss-to-follow-up modelling</span><span>Forecasting</span><span>Difference-in-differences</span><span>Propensity score methods</span><span>Causal forest / CATE</span><span>RCT and quasi-experimental design support</span>
-    </div>
-  </details>
-
-  <details>
-    <summary>Health surveillance &amp; field data infrastructure</summary>
-    <div class="cv-chip-row">
-      <span>ODK</span><span>KoboToolbox</span><span>SurveyCTO</span><span>REDCap</span><span>CommCare</span><span>XLSForm</span><span>DHIS2 / KHIS</span><span>Offline-first CAPI</span><span>Oncology registries</span>
-    </div>
-  </details>
-
-  <details>
-    <summary>Interactive decision support &amp; evidence translation</summary>
-    <div class="cv-chip-row">
-      <span>R Shiny</span><span>Streamlit</span><span>Power BI</span><span>Tableau</span><span>Quarto</span><span>ggplot2</span><span>Plotly</span><span>Executive and policy briefing</span>
-    </div>
-  </details>
-
-  <details>
-    <summary>Programme evaluation &amp; delivery leadership</summary>
-    <div class="cv-chip-row">
-      <span>Theory of change</span><span>Logframe and indicator design</span><span>Analysis plans</span><span>Donor and county reporting</span><span>Multi-country field coordination</span><span>Enumerator and analyst training</span>
-    </div>
-  </details>
-
-</div>
-</section>
-<section id="experience" class="level2">
-<h2 class="anchored" data-anchor-id="experience">Professional Experience</h2>
-<div class="cv-filter-wrap">
-  <p class="cv-filter-title">Browse roles by focus area or keyword</p>
-
-  <div class="cv-filter-row" role="tablist" aria-label="Experience filters">
-    <button class="cv-filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
-    <button class="cv-filter-btn" data-filter="health" role="tab" aria-selected="false">Health Research</button>
-    <button class="cv-filter-btn" data-filter="mel" role="tab" aria-selected="false">Evaluation</button>
-    <button class="cv-filter-btn" data-filter="systems" role="tab" aria-selected="false">Data Architecture</button>
-    <button class="cv-filter-btn" data-filter="leadership" role="tab" aria-selected="false">Leadership</button>
   </div>
 
-  <label class="cv-search-wrap" for="cvKeywordSearch">
-    <span>Keyword search</span>
-    <input id="cvKeywordSearch" type="search" placeholder="Try: georgetown, stata, dashboards, lecturer">
-  </label>
+  <div class="cvx-grid">
 
-  <p class="cv-filter-count">Showing <span id="cvVisibleCount">6</span> role entries</p>
+    <div class="cvx-spine">
+      <h2 class="cvx-spine-h anchored">Experience</h2>
+
+      <article class="cvx-role">
+        <div class="cvx-role-head">
+          <span class="cvx-yr">2025 — Present</span>
+          <h3 class="cvx-title anchored">Lead Biostatistician and Research Data Manager</h3>
+          <p class="cvx-org">Georgetown University gui2de · East Africa</p>
+        </div>
+        <p class="cvx-lead">Own the research data architecture and statistical operations for the health systems and implementation portfolio, from instrument design through the decision products partners use.</p>
+        <ul>
+          <li>Architected the end-to-end data system for a <a href="../projects/health-financial-diaries/index.html">year-long health financial diaries panel across 300 households</a>, pairing automated high-frequency checks with a live issue-aggregation application so supervisors resolved field problems while collection was still running rather than at cleaning.</li>
+          <li>Built a <a href="https://ra-leaderboard.streamlit.app/" target="_blank">research assistant performance leaderboard</a> directly on the streaming study database, turning enumerator quality into a metric field leadership manages daily instead of discovering at end of round.</li>
+          <li>Delivered the production application layer for <a href="https://rebuild.shinyapps.io/rebuild-targeting/" target="_blank">Re:BUiLD cash-plus targeting</a> with IRC, translating causal forest models over 6,260 participants into a caseworker-facing recommender that scores Cash against Cash + Network with cost-aware rationale.</li>
+          <li>Set the analysis and reproducibility standards the team works to across R, Stata, SQL, Power BI, Streamlit, and Shiny, and mentor analysts on the workflows that keep partner deliverables auditable.</li>
+        </ul>
+      </article>
+
+      <article class="cvx-role">
+        <div class="cvx-role-head">
+          <span class="cvx-yr">2023 — 2025</span>
+          <h3 class="cvx-title anchored">Senior Statistician and Data Systems Lead</h3>
+          <p class="cvx-org">KEMRI · Nairobi and Kisumu</p>
+        </div>
+        <p class="cvx-lead">Led the data systems behind multi-year oncology and non-communicable disease surveillance, accountable for registry design, analytic method, and the products that reached county decision-makers.</p>
+        <ul>
+          <li>Designed the REDCap registry architecture and multi-language quality control layer that made years of fragmented oncology records analysable, and built the pipelines that kept them current.</li>
+          <li>Established survival, loss-to-follow-up, regression, and forecasting workflows that converted registry records into published evidence on mortality risk and care disparities among patients with and without HIV.</li>
+          <li>Delivered a <a href="../posts/kisumu-cancer-dashboard/index.html">county-facing cancer surveillance dashboard</a>, launched with Kisumu health leadership, replacing manual reporting cycles with a shared operational view.</li>
+        </ul>
+      </article>
+
+      <article class="cvx-role">
+        <div class="cvx-role-head">
+          <span class="cvx-yr">2021 — 2023</span>
+          <h3 class="cvx-title anchored">Senior Research Data Manager and Evaluation Lead</h3>
+          <p class="cvx-org">JOOUST and VLIR UOS Regional Programme · Kenya, Uganda, Rwanda</p>
+        </div>
+        <p class="cvx-lead">Owned the evidence architecture for a three-country programme, giving distributed partners one set of data structures, definitions, and quality rules.</p>
+        <ul>
+          <li>Standardised schemas, variable definitions, and quality protocols across three countries so partner datasets could be pooled and compared rather than reconciled by hand each cycle.</li>
+          <li>Directed the analytic cycle across education and livelihoods portfolios, supporting randomised and quasi-experimental designs from analysis plan through partner-facing reporting.</li>
+          <li>Trained more than 30 enumerators and analysts in reproducible practice, leaving partner institutions able to run the pipelines without external support.</li>
+        </ul>
+      </article>
+
+      <h2 class="cvx-spine-h anchored" style="margin-top:2.5rem;">Earlier roles</h2>
+      <div class="cvx-earlier">
+        <div class="cvx-earlier-item">
+          <span class="cvx-yr">2017 — 2021</span>
+          <p><strong>Data Analyst and MEL Specialist</strong> — <em>LERIS Hub, Kenya and Uganda.</em> Designed the monitoring architecture — indicator logic, collection workflows, and reporting layer — for health and livelihoods programmes, and built the field quality assurance routines that kept the data defensible under funder scrutiny.</p>
+        </div>
+        <div class="cvx-earlier-item">
+          <span class="cvx-yr">2016 — 2017</span>
+          <p><strong>Data Systems Analyst</strong> — <em>Lake Region Community Development Initiative, Western Kenya.</em> Implemented mobile data collection pipelines and reporting flows, moving community project data off paper into structured, auditable capture.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="cvx-rail">
+
+      <div class="cvx-railsec">
+        <h2 class="cvx-rail-h anchored">Core competencies</h2>
+        <div class="cvx-comp">
+          <div>
+            <h4 class="anchored">Research data architecture &amp; engineering</h4>
+            <div class="cvx-tags"><span>PostgreSQL</span><span>SQL</span><span>Schema design</span><span>ETL</span><span>REDCap</span><span>Git</span></div>
+          </div>
+          <div>
+            <h4 class="anchored">Data integrity &amp; quality governance</h4>
+            <div class="cvx-tags"><span>High-frequency checks</span><span>Automated validation</span><span>Multi-language QC</span><span>Audit trails</span></div>
+          </div>
+          <div>
+            <h4 class="anchored">Statistical, causal &amp; ML methods</h4>
+            <div class="cvx-tags"><span>R</span><span>Stata</span><span>Python</span><span>Survival analysis</span><span>Forecasting</span><span>Causal forest</span><span>Quasi-experimental</span></div>
+          </div>
+          <div>
+            <h4 class="anchored">Field data &amp; surveillance infrastructure</h4>
+            <div class="cvx-tags"><span>ODK</span><span>KoboToolbox</span><span>SurveyCTO</span><span>CommCare</span><span>XLSForm</span><span>DHIS2 / KHIS</span></div>
+          </div>
+          <div>
+            <h4 class="anchored">Decision support &amp; evidence translation</h4>
+            <div class="cvx-tags"><span>Shiny</span><span>Streamlit</span><span>Power BI</span><span>Tableau</span><span>Quarto</span><span>Policy briefing</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cvx-railsec">
+        <h2 class="cvx-rail-h anchored">Education</h2>
+        <div class="cvx-block">
+          <span class="cvx-yr">2022 — 2026 expected</span>
+          <h4 class="anchored">MSc, Epidemiology and Biostatistics</h4>
+          <p>Jaramogi Oginga Odinga University of Science and Technology. Thesis: financial determinants of effective hypertension and diabetes care across seven rural primary health facilities in Kisumu County.</p>
+        </div>
+        <div class="cvx-block">
+          <span class="cvx-yr">2016</span>
+          <h4 class="anchored">BSc, Statistics (Honours)</h4>
+          <p>University of Nairobi. Second Class Upper Division.</p>
+        </div>
+      </div>
+
+      <div class="cvx-railsec">
+        <h2 class="cvx-rail-h anchored">Teaching</h2>
+        <div class="cvx-block">
+          <span class="cvx-yr">2020 — Present</span>
+          <h4 class="anchored">Part-Time Lecturer, Biostatistics and Applied R</h4>
+          <p>JOOUST, Bondo. Supervise students through the full arc of a research question — design, analysis, and interpretation they can defend.</p>
+        </div>
+      </div>
+
+      <div class="cvx-railsec">
+        <h2 class="cvx-rail-h anchored">Certifications</h2>
+        <div class="cvx-tags">
+          <span>M&amp;E in Global Health, UW</span><span>Economic Evaluation, UW</span><span>Biomedical Research Ethics, CITI</span><span>Research Methodology, Johns Hopkins</span><span>AWS Cloud Practitioner</span><span>Google Data Analytics</span><span>Advanced R, DataCamp</span>
+        </div>
+      </div>
+
+      <div class="cvx-railsec">
+        <h2 class="cvx-rail-h anchored">Selected publications</h2>
+        <ol class="cvx-pubs">
+          <li>Amollo N W, Ogol J, Museve E, Owenga J A, Aduda D O, Onguru D (2025). Financial determinants of effective hypertension and diabetes care in rural primary health facilities in Kisumu County.</li>
+          <li>Mangale D I, Adhiambo H, Adagi P A, Nyandieka E, Abente B, Achieng S, Amollo N W, Odeny T A (2025). Characteristics and mortality risk among esophageal cancer patients with varied HIV status seeking care in western Kenya.</li>
+          <li>Odeny T A, Adhiambo H F, Mangale D I, Were N A, Nyandieka E, Adagi P A, Amollo N W, Atieno D (2025). Survival disparities in cervical cancer patients with and without HIV at JOOTRH.</li>
+          <li>Ouma O J, Omondi D, Akinyi I, Amollo N W, Ogutu S, Obinge E, van Olmen J (2025). Addressing priority gaps in access and quality of non communicable disease services in primary care settings in rural Kenya.</li>
+        </ol>
+      </div>
+
+      <div class="cvx-railsec">
+        <h2 class="cvx-rail-h anchored">Languages</h2>
+        <p class="cvx-note">English (fluent) · Kiswahili (fluent) · Dholuo (native). Referees available on request.</p>
+      </div>
+
+    </div>
+  </div>
 </div>
 
-<div id="cvExperienceList" class="cv-exp-list">
 
-  <details class="cv-exp-item" data-tags="health,mel,systems,leadership" data-search="georgetown gui2de biostatistician research data manager health financial diaries high frequency checks quality governance dashboard r stata sql power bi mentorship architecture etl infrastructure shiny streamlit rebuild irc causal forest targeting" open="">
-    <summary>
-      <span class="cv-exp-year">2025 to Present</span>
-      <span class="cv-exp-role">Lead Biostatistician and Research Data Manager</span>
-      <span class="cv-exp-org">Georgetown University gui2de, East Africa</span>
-    </summary>
-    <div class="cv-exp-body">
-      <p>Own the research data architecture and statistical operations for gui2de's health systems and implementation portfolio in East Africa, from instrument design through the decision products partners actually use.</p>
-      <ul>
-        <li>Architected the end-to-end data system for a year-long health financial diaries panel across 300 households, pairing automated high-frequency checks with a live issue-aggregation application so supervisors resolved field problems while collection was still running rather than at cleaning.</li>
-        <li>Built a research assistant performance leaderboard directly on the streaming study database, making interview volume, completion, and clean-interview rates visible to field leadership daily and turning enumerator quality into a managed metric instead of an end-of-round discovery.</li>
-        <li>Delivered the production application layer for Re:BUiLD cash-plus targeting with IRC, translating gui2de causal forest models over 6,260 participants into a caseworker-facing recommender that scores Cash against Cash + Network with cost-aware rationale for every recommendation.</li>
-        <li>Set the analysis and reproducibility standards the team works to across R, Stata, SQL, Power BI, Streamlit, and Shiny, and mentor analysts on the workflows that keep partner deliverables auditable.</li>
-      </ul>
-      <div class="cv-tag-row"><span>Health</span><span>Data architecture</span><span>Quality governance</span><span>ML systems</span><span>Leadership</span></div>
-    </div>
-  </details>
-
-  <details class="cv-exp-item" data-tags="health,systems,leadership" data-search="kemri statistician data systems lead surveillance reproducibility forecasting survival analysis loss to follow up redcap tableau dashboards ncd cancer oncology kisumu county" open="">
-    <summary>
-      <span class="cv-exp-year">2023 to 2025</span>
-      <span class="cv-exp-role">Senior Statistician and Data Systems Lead</span>
-      <span class="cv-exp-org">KEMRI, Nairobi and Kisumu</span>
-    </summary>
-    <div class="cv-exp-body">
-      <p>Led the data systems behind multi-year oncology and non-communicable disease surveillance, taking responsibility for registry design, analytic method, and the products that reached county decision-makers.</p>
-      <ul>
-        <li>Designed the REDCap registry architecture and multi-language quality control layer that made years of fragmented oncology records analysable, and built the pipelines that kept them current.</li>
-        <li>Established survival, loss-to-follow-up, regression, and forecasting workflows that converted registry records into published evidence on mortality risk and care disparities among patients with and without HIV.</li>
-        <li>Delivered a county-facing cancer surveillance dashboard, launched with Kisumu health leadership, that replaced manual reporting cycles with a shared operational view across teams.</li>
-      </ul>
-      <div class="cv-tag-row"><span>Health</span><span>Registry architecture</span><span>Survival analysis</span><span>Surveillance</span></div>
-    </div>
-  </details>
-
-  <details class="cv-exp-item" data-tags="mel,systems,leadership" data-search="jooust vlir uos evaluation lead senior research data manager kenya uganda rwanda training enumerators mixed methods quasi experimental standardisation schema comparability" open="">
-    <summary>
-      <span class="cv-exp-year">2021 to 2023</span>
-      <span class="cv-exp-role">Senior Research Data Manager and Evaluation Lead</span>
-      <span class="cv-exp-org">JOOUST and VLIR UOS Regional Programme, Kenya, Uganda, Rwanda</span>
-    </summary>
-    <div class="cv-exp-body">
-      <p>Owned the evidence architecture for a three-country regional programme, giving distributed partners one set of data structures, definitions, and quality rules to work to.</p>
-      <ul>
-        <li>Standardised schemas, variable definitions, and quality protocols across Kenya, Uganda, and Rwanda so partner datasets could be pooled and compared rather than reconciled by hand each cycle.</li>
-        <li>Directed the analytic cycle across education and livelihoods portfolios, supporting randomised and quasi-experimental designs from analysis plan through partner-facing reporting.</li>
-        <li>Trained more than 30 enumerators and analysts in reproducible field and analysis practice, leaving partner institutions able to run the pipelines without external support.</li>
-      </ul>
-      <div class="cv-tag-row"><span>Evaluation</span><span>Regional architecture</span><span>Capacity building</span></div>
-    </div>
-  </details>
-
-  <details class="cv-exp-item" data-tags="mel,systems,leadership" data-search="leris hub data analyst mel specialist monitoring framework indicator design donor reports policy field teams quality assurance kenya uganda" open="">
-    <summary>
-      <span class="cv-exp-year">2017 to 2021</span>
-      <span class="cv-exp-role">Data Analyst and MEL Specialist</span>
-      <span class="cv-exp-org">LERIS Hub, Kenya and Uganda</span>
-    </summary>
-    <div class="cv-exp-body">
-      <p>Designed the monitoring architecture — indicator logic, collection workflows, and reporting layer — for health and livelihoods programmes across two countries.</p>
-      <ul>
-        <li>Produced donor and policy reporting products that tied indicator movement to specific programme decisions rather than to activity counts.</li>
-        <li>Built the field quality assurance routines and training that kept the underlying data defensible under funder scrutiny.</li>
-      </ul>
-      <div class="cv-tag-row"><span>Monitoring architecture</span><span>Field operations</span><span>Reporting</span></div>
-    </div>
-  </details>
-
-  <details class="cv-exp-item" data-tags="systems" data-search="lake region community development initiative odk kobotoolbox mobile data collection western kenya digitisation" open="">
-    <summary>
-      <span class="cv-exp-year">2016 to 2017</span>
-      <span class="cv-exp-role">Data Systems Analyst</span>
-      <span class="cv-exp-org">Lake Region Community Development Initiative, Western Kenya</span>
-    </summary>
-    <div class="cv-exp-body">
-      <p>Implemented mobile data collection pipelines and programme reporting flows, moving community project data off paper into structured, auditable capture.</p>
-      <div class="cv-tag-row"><span>ODK</span><span>KoboToolbox</span><span>Digitisation</span></div>
-    </div>
-  </details>
-
-  <details class="cv-exp-item" data-tags="health,leadership" data-search="lecturer biostatistics applied r mentoring students university teaching jooust bondo supervision" open="">
-    <summary>
-      <span class="cv-exp-year">2020 to Present</span>
-      <span class="cv-exp-role">Part Time Lecturer, Biostatistics and Applied R</span>
-      <span class="cv-exp-org">JOOUST, Bondo</span>
-    </summary>
-    <div class="cv-exp-body">
-      <p>Teach biostatistics and applied analytics, and supervise students through the full arc of a research question — design, analysis, and interpretation they can defend.</p>
-      <div class="cv-tag-row"><span>Teaching</span><span>Mentorship</span><span>Biostatistics</span></div>
-    </div>
-  </details>
-
-</div>
-</section>
-<section id="systems" class="level2">
-<h2 class="anchored" data-anchor-id="systems">Key Systems &amp; Products</h2>
-<div class="cv-architecture-grid">
-  <article class="cv-architecture-card">
-    <p class="cv-architecture-kicker">Georgetown gui2de</p>
-    <h4 class="anchored">Health financial diaries data system</h4>
-    <p>Study database, automated high-frequency checks, and live field operations applications supporting 300 households over twelve months of continuous collection.</p>
-    <p><a href="../projects/health-financial-diaries/index.html">Case study →</a></p>
-  </article>
-  <article class="cv-architecture-card">
-    <p class="cv-architecture-kicker">IRC Re:BUiLD · gui2de</p>
-    <h4 class="anchored">Cash-plus targeting recommender</h4>
-    <p>Production Shiny application layer over causal forest targeting models, scoring 6,260 participants for caseworkers with cost-aware rationale.</p>
-    <p><a href="https://rebuild.shinyapps.io/rebuild-targeting/" target="_blank">Live application →</a></p>
-  </article>
-  <article class="cv-architecture-card">
-    <p class="cv-architecture-kicker">Field operations</p>
-    <h4 class="anchored">Research assistant performance leaderboard</h4>
-    <p>Daily quality and productivity view built on the streaming study database, making completion and clean-interview rates a managed field metric.</p>
-    <p><a href="https://ra-leaderboard.streamlit.app/" target="_blank">Live application →</a></p>
-  </article>
-  <article class="cv-architecture-card">
-    <p class="cv-architecture-kicker">KEMRI · Kisumu County</p>
-    <h4 class="anchored">Cancer surveillance dashboard</h4>
-    <p>REDCap registry architecture, quality systems, and survival analysis surfaced through a county-facing dashboard launched with local health leadership.</p>
-    <p><a href="../posts/kisumu-cancer-dashboard/index.html">Delivery story →</a></p>
-  </article>
-</div>
-</section>
-<section id="education" class="level2">
-<h2 class="anchored" data-anchor-id="education">Education &amp; Credentials</h2>
-<div class="cv-edu-grid">
-  <article class="cv-edu-card">
-    <p class="cv-edu-year">2022 to 2026 expected</p>
-    <h4 class="anchored">MSc, Epidemiology and Biostatistics</h4>
-    <p>Jaramogi Oginga Odinga University of Science and Technology</p>
-    <p class="cv-edu-note">
-      Thesis: financial determinants of effective hypertension and diabetes care across seven rural primary health facilities in Kisumu County.
-    </p>
-  </article>
-
-  <article class="cv-edu-card">
-    <p class="cv-edu-year">2016</p>
-    <h4 class="anchored">BSc, Statistics, Honours</h4>
-    <p>University of Nairobi, Kenya</p>
-    <p class="cv-edu-note">Second Class Upper Division.</p>
-  </article>
-</div>
-
-<div class="cert-list">
-  <span class="cert-badge">Monitoring and Evaluation in Global Health, University of Washington</span>
-  <span class="cert-badge">Economic Evaluation, University of Washington</span>
-  <span class="cert-badge">Biomedical Research Ethics, CITI Program</span>
-  <span class="cert-badge">Research Methodology and Quantitative Methods, Johns Hopkins</span>
-  <span class="cert-badge">AWS Certified Cloud Practitioner</span>
-  <span class="cert-badge">Google Data Analytics Professional Certificate</span>
-  <span class="cert-badge">Data Science and Advanced R training, DataCamp</span>
-</div>
-</section>
-<section id="publications" class="level2">
-<h2 class="anchored" data-anchor-id="publications">Selected Publications</h2>
-<ol type="1">
-<li>Amollo N W, Ogol J, Museve E, Owenga J A, Aduda D O, Onguru D (2025). Financial determinants of effective hypertension and diabetes care in rural primary health facilities in Kisumu County.</li>
-<li>Mangale D I, Adhiambo H, Adagi P A, Nyandieka E, Abente B, Achieng S, Amollo N W, Odeny T A (2025). Characteristics and mortality risk among esophageal cancer patients with varied HIV status seeking care in western Kenya.</li>
-<li>Odeny T A, Adhiambo H F, Mangale D I, Were N A, Nyandieka E, Adagi P A, Amollo N W, Atieno D (2025). Survival disparities in cervical cancer patients with and without HIV at JOOTRH.</li>
-<li>Ouma O J, Omondi D, Akinyi I, Amollo N W, Ogutu S, Obinge E, van Olmen J (2025). Addressing priority gaps in access and quality of non communicable disease services in primary care settings in rural Kenya.</li>
-</ol>
-</section>
-<section id="languages" class="level2">
-<h2 class="anchored" data-anchor-id="languages">Languages</h2>
-<p>English fluent, Kiswahili fluent, Dholuo native.</p>
-</section>
-<section id="referees" class="level2">
-<h2 class="anchored" data-anchor-id="referees">Referees</h2>
-<p>Available on request.</p>
-<div class="cv-footer-actions">
-  <a href="Nichodemus_Amollo_CV.pdf" class="btn-solid" target="_blank">View PDF</a>
-  <a href="Nichodemus_Amollo_CV.pdf" class="btn-ghost" download="">Download PDF</a>
-</div>
-
-<script>
-(function() {
-  var buttons = Array.from(document.querySelectorAll('.cv-filter-btn'));
-  var items = Array.from(document.querySelectorAll('.cv-exp-item'));
-  var count = document.getElementById('cvVisibleCount');
-  var search = document.getElementById('cvKeywordSearch');
-  var active = 'all';
-
-  function passFilter(item) {
-    var tags = (item.dataset.tags || '').split(',');
-    if (active === 'all') return true;
-    return tags.indexOf(active) !== -1;
-  }
-
-  function passSearch(item) {
-    var term = search && search.value ? search.value.trim().toLowerCase() : '';
-    if (!term) return true;
-    var hay = (item.dataset.search || '').toLowerCase();
-    return hay.indexOf(term) !== -1;
-  }
-
-  function render() {
-    var visible = 0;
-    items.forEach(function(item) {
-      var match = passFilter(item) && passSearch(item);
-      item.style.display = match ? '' : 'none';
-      if (match) visible += 1;
-    });
-    if (count) count.textContent = String(visible);
-  }
-
-  buttons.forEach(function(btn) {
-    btn.addEventListener('click', function() {
-      active = btn.dataset.filter || 'all';
-      buttons.forEach(function(other) {
-        other.classList.remove('active');
-        other.setAttribute('aria-selected', 'false');
-      });
-      btn.classList.add('active');
-      btn.setAttribute('aria-selected', 'true');
-      render();
-    });
-  });
-
-  if (search) {
-    search.addEventListener('input', render);
-  }
-
-  render();
-})();
-</script>
-
-
-</section>
 
 </main> <!-- /main -->
 <script>
