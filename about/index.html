@@ -263,56 +263,64 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <hr>
 </section>
-<section id="skills-tools" class="level2">
-<h2 class="anchored" data-anchor-id="skills-tools">Skills &amp; Tools</h2>
-<div class="skills-grid-4" style="margin-bottom:3rem;">
-  <div>
-    <p class="skill-group-title">Analytics &amp; Stats</p>
-    <div class="skill-item"><span class="skill-name">R</span><div class="skill-bar-wrap"><div class="skill-bar" style="width:92%"></div></div></div>
-    <div class="skill-item"><span class="skill-name">STATA</span><div class="skill-bar-wrap"><div class="skill-bar" style="width:88%"></div></div></div>
-    <div class="skill-item"><span class="skill-name">Python</span><div class="skill-bar-wrap"><div class="skill-bar" style="width:78%"></div></div></div>
-    <div class="skill-item"><span class="skill-name">SPSS</span><div class="skill-bar-wrap"><div class="skill-bar" style="width:82%"></div></div></div>
-  </div>
-  <div>
-    <p class="skill-group-title">Data &amp; Databases</p>
-    <div class="skill-item"><span class="skill-name">SQL</span><div class="skill-bar-wrap"><div class="skill-bar" style="width:85%"></div></div></div>
-    <div class="skill-item"><span class="skill-name">PostgreSQL</span><div class="skill-bar-wrap"><div class="skill-bar" style="width:70%"></div></div></div>
-    <div class="skill-item"><span class="skill-name">DHIS2/KHIS</span><div class="skill-bar-wrap"><div class="skill-bar" style="width:82%"></div></div></div>
-    <div class="skill-item"><span class="skill-name">Excel</span><div class="skill-bar-wrap"><div class="skill-bar" style="width:95%"></div></div></div>
-  </div>
-  <div>
-    <p class="skill-group-title">Data Collection</p>
-    <div class="skill-item"><span class="skill-name">KoboToolbox</span><div class="skill-bar-wrap"><div class="skill-bar" style="width:95%"></div></div></div>
-    <div class="skill-item"><span class="skill-name">ODK</span><div class="skill-bar-wrap"><div class="skill-bar" style="width:92%"></div></div></div>
-    <div class="skill-item"><span class="skill-name">REDCap</span><div class="skill-bar-wrap"><div class="skill-bar" style="width:78%"></div></div></div>
-    <div class="skill-item"><span class="skill-name">SurveyCTO</span><div class="skill-bar-wrap"><div class="skill-bar" style="width:75%"></div></div></div>
-  </div>
-  <div>
-    <p class="skill-group-title">BI &amp; Reporting</p>
-    <div class="skill-item"><span class="skill-name">Power BI</span><div class="skill-bar-wrap"><div class="skill-bar" style="width:85%"></div></div></div>
-    <div class="skill-item"><span class="skill-name">R Markdown</span><div class="skill-bar-wrap"><div class="skill-bar" style="width:92%"></div></div></div>
-    <div class="skill-item"><span class="skill-name">Quarto</span><div class="skill-bar-wrap"><div class="skill-bar" style="width:80%"></div></div></div>
-    <div class="skill-item"><span class="skill-name">Tableau</span><div class="skill-bar-wrap"><div class="skill-bar" style="width:65%"></div></div></div>
-  </div>
+<section id="core-competencies" class="level2">
+<h2 class="anchored" data-anchor-id="core-competencies">Core Competencies</h2>
+<div class="cv-skill-accordion" style="margin-bottom:3rem;">
+
+  <details open="">
+    <summary>Research data architecture &amp; engineering</summary>
+    <div class="cv-chip-row">
+      <span>PostgreSQL</span><span>SQL</span><span>Schema &amp; instrument design</span><span>ETL design</span><span>REDCap architecture</span><span>Reproducible pipelines</span><span>Git workflows</span>
+    </div>
+  </details>
+
+  <details>
+    <summary>Data integrity &amp; quality governance</summary>
+    <div class="cv-chip-row">
+      <span>High-frequency check frameworks</span><span>Automated validation</span><span>Multi-language QC</span><span>Duplicate &amp; ID audits</span><span>Audit trails</span>
+    </div>
+  </details>
+
+  <details>
+    <summary>Statistical, causal &amp; machine learning methods</summary>
+    <div class="cv-chip-row">
+      <span>R</span><span>Stata</span><span>Python</span><span>SPSS</span><span>Survival analysis</span><span>Forecasting</span><span>Difference-in-differences</span><span>Causal forest / CATE</span>
+    </div>
+  </details>
+
+  <details>
+    <summary>Health surveillance &amp; field data infrastructure</summary>
+    <div class="cv-chip-row">
+      <span>ODK</span><span>KoboToolbox</span><span>SurveyCTO</span><span>REDCap</span><span>CommCare</span><span>XLSForm</span><span>DHIS2 / KHIS</span><span>Offline-first CAPI</span>
+    </div>
+  </details>
+
+  <details>
+    <summary>Interactive decision support &amp; evidence translation</summary>
+    <div class="cv-chip-row">
+      <span>R Shiny</span><span>Streamlit</span><span>Power BI</span><span>Tableau</span><span>Quarto</span><span>R Markdown</span><span>Executive and policy briefing</span>
+    </div>
+  </details>
+
 </div>
 <hr>
 </section>
 <section id="a-few-highlights" class="level2">
 <h2 class="anchored" data-anchor-id="a-few-highlights">A few highlights</h2>
 <ul>
-<li>Built diaries research data systems for <strong>300 households over one year</strong> at gui2de: HFCs, automated quality workflows, <a href="https://ra-leaderboard.streamlit.app/">RA leaderboard</a>, and a fuel/issues app aggregating field problems in real time.</li>
-<li>Developed the <strong>Shiny application</strong> for <a href="https://rebuild.shinyapps.io/rebuild-targeting/">Re:BUiLD cash-plus targeting</a> from gui2de causal models for IRC field teams.</li>
-<li>Built real-time high-frequency check (HFC) systems in R and Stata across multi-country research operations, catching data errors before they compound.</li>
-<li>Managed large field teams across Kenya, Uganda, and Tanzania, including remote coordination through the COVID-19 pandemic.</li>
+<li>Architected the end-to-end data system for a <strong>300-household, twelve-month</strong> health financial diaries panel at gui2de, pairing automated high-frequency checks with an <a href="https://ra-leaderboard.streamlit.app/">RA performance leaderboard</a> and a live issue-aggregation app so supervisors resolved field problems mid-collection rather than at cleaning.</li>
+<li>Delivered the production application layer for <a href="https://rebuild.shinyapps.io/rebuild-targeting/">Re:BUiLD cash-plus targeting</a>, turning gui2de causal forest models over 6,260 participants into a caseworker-facing recommender with cost-aware rationale for every recommendation.</li>
+<li>Designed the real-time high-frequency check systems in R and Stata that multi-country research operations run on, catching data defects before they propagate into analysis.</li>
+<li>Led distributed field teams across Kenya, Uganda, and Tanzania, holding quality standards through remote coordination during the COVID-19 pandemic.</li>
+<li>Owned the KEMRI oncology data systems — REDCap registry architecture, quality control, and survival analysis — behind the Kisumu cancer surveillance dashboard launched with county health leadership.</li>
 <li>First-author paper forthcoming in <em>BMC Public Health</em> on financing constraints and chronic NCD care in rural Kisumu.</li>
-<li>Research data management for KEMRI oncology systems, including the Kisumu cancer surveillance dashboard launched with county leadership.</li>
 </ul>
 <p><a href="../cv/index.html" class="btn-solid" style="margin-top:1.5rem;display:inline-block;">View full CV →</a></p>
 <hr>
 </section>
 <section id="services" class="level2">
 <h2 class="anchored" data-anchor-id="services">How I can join a team</h2>
-<p>I am strongest as an embedded research data systems lead or close collaborator — not as a generic “dashboard vendor.”</p>
+<p>I am strongest owning a programme’s data architecture end to end — as an embedded systems lead or a senior collaborator accountable for the whole chain, not as a dashboard vendor.</p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 50%">
@@ -321,29 +329,29 @@ ul.task-list li input[type="checkbox"] {
 <thead>
 <tr class="header">
 <th>Engagement</th>
-<th>What that looks like</th>
+<th>What I take responsibility for</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>Research data systems</strong></td>
-<td>Instruments, REDCap/ODK/Kobo, HFC, pipelines, live field apps</td>
+<td><strong>Research data architecture</strong></td>
+<td>Instrument logic, study database design, REDCap/ODK/Kobo backends, pipelines, and the live field applications on top</td>
 </tr>
 <tr class="even">
-<td><strong>Study &amp; evaluation support</strong></td>
-<td>Design input, quality architecture, analysis plans, reproducible reporting</td>
+<td><strong>Data integrity governance</strong></td>
+<td>Quality architecture, automated high-frequency checks, validation rules, and audit trails that hold under funder scrutiny</td>
 </tr>
 <tr class="odd">
-<td><strong>Evidence products</strong></td>
-<td>Dashboards, briefs, Shiny/Streamlit tools that programme teams actually use</td>
+<td><strong>Study &amp; evaluation leadership</strong></td>
+<td>Design input, analysis plans, causal and biostatistical method, and reproducible reporting partners can re-run</td>
 </tr>
 <tr class="even">
-<td><strong>Targeting / causal tools</strong></td>
-<td>Application layers on research models (see Re:BUiLD)</td>
+<td><strong>Decision products</strong></td>
+<td>Shiny, Streamlit, and Power BI tools that carry models and indicators into operational hands with their rationale attached</td>
 </tr>
 <tr class="odd">
-<td><strong>Training</strong></td>
-<td>R, Stata, survey design, data quality, reproducible workflows</td>
+<td><strong>Team capability</strong></td>
+<td>R, Stata, survey design, and reproducible workflow standards that leave the team able to run the system without me</td>
 </tr>
 </tbody>
 </table>
@@ -945,7 +953,7 @@ ul.task-list li input[type="checkbox"] {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p><span class="footer-title">Nichodemus Amollo</span><span class="footer-meta">Research Data Systems · Health &amp; Development Programmes</span></p>
+<p><span class="footer-title">Nichodemus Amollo</span><span class="footer-meta">Data &amp; Research Systems Architecture · Health and Development Programmes</span></p>
 </div>   
     <div class="nav-footer-center">
 <p><a href="tel:+254725737867" class="footer-phone">+254 725 737 867</a><span class="footer-meta">Nairobi, Kenya · Open to remote and hybrid work</span></p>
