@@ -71,10 +71,6 @@ format:
 </div>
 ```
 
-## Executive Profile {#summary}
-
-I architect the research data systems that health and development programmes depend on to make decisions they can defend — study databases, quality governance layers, analytic pipelines, and the decision products built on top, owned as one system rather than assembled per project. I currently lead research data architecture and statistical operations for Georgetown University gui2de's East Africa portfolio, covering a year-long health financial diaries panel across 300 households and the production application layer for IRC Re:BUiLD cash-plus targeting. Across eight years I have built the same architecture inside KEMRI oncology surveillance, a three-country VLIR-UOS evaluation programme, and multi-country field operations, and set the reproducibility standards teams continue to work to after handover. I am strongest where field implementation, data infrastructure, and executive decision-making have to behave like one system.
-
 ## Core Competencies & Technical Architecture {#architecture}
 
 ```{=html}
