@@ -5,11 +5,11 @@
       xmlns:dc="http://purl.org/dc/elements/1.1/" 
       version="2.0">
 <channel>
-<title>Nic | Data</title>
+<title>Nichodemus Amollo</title>
 <link>https://gondamol.github.io/blogs/</link>
 <atom:link href="https://gondamol.github.io/blogs/index.xml" rel="self" type="application/rss+xml"/>
-<description>Research data architecture for health and development programmes — study databases, quality governance, and decision products. Nairobi, Kenya.</description>
-<generator>quarto-1.10.18</generator>
+<description>Statistician and epidemiologist in Nairobi, Kenya. Research data systems for health and development programmes, and research on health financing and chronic care.</description>
+<generator>quarto-1.10.19</generator>
 <lastBuildDate>Tue, 17 Mar 2026 00:00:00 GMT</lastBuildDate>
 <item>
   <title>From Field to Model: Why Domain Knowledge Still Matters in ML</title>
@@ -355,7 +355,7 @@
 
 
 
-<p>This essay draws on my forthcoming paper in <em>BMC Public Health</em> on the financial determinants of hypertension and diabetes care in rural primary health facilities in Kisumu County. The paper is built on formal analysis. The problem it describes, however, is easy to state in plain language: a clinic can know exactly what a patient needs and still be unable to act in time.</p>
+<p>This essay draws on my <a href="https://doi.org/10.1186/s12889-026-26963-8">paper in <em>BMC Public Health</em></a> (2026) on the financial determinants of hypertension and diabetes care in rural primary health facilities in Kisumu County. The paper is built on formal analysis. The problem it describes, however, is easy to state in plain language: a clinic can know exactly what a patient needs and still be unable to act in time.</p>
 <p>Clinicians can diagnose hypertension. They can prescribe insulin. They can explain follow-up and complications. But if the facility cannot spend quickly when medicines run out, chronic care breaks down long before the science does.</p>
 <section id="the-contradiction-at-the-center-of-the-study" class="level2">
 <h2 class="anchored" data-anchor-id="the-contradiction-at-the-center-of-the-study">The contradiction at the center of the study</h2>
