@@ -99,7 +99,7 @@ story.append(Paragraph(
 story += sec('PROFESSIONAL EXPERIENCE')
 
 story.append(job(
-    'Lead Biostatistician and Research Data Manager',
+    'Data Analyst',
     'Georgetown University gui2de \u00b7 East Africa (Kenya, Uganda, Tanzania, Rwanda) \u00b7 Remote',
     'April 2025 \u2013 Present',
     [

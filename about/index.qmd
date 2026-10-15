@@ -1,6 +1,8 @@
 ---
 title: ""
-page-layout: article
+pagetitle: "About | Nichodemus Amollo"
+description: "Statistician and epidemiologist from Homa Bay, Kenya. Research data systems, health financing research, and founder of GPAK Girls."
+page-layout: full
 toc: false
 execute:
   echo: false
@@ -12,192 +14,80 @@ format:
 ---
 
 ```{=html}
-<div style="padding:5rem 0 3.5rem 0;">
-  <span class="section-eyebrow">About Me</span>
-  <h1 class="section-h" style="font-size:clamp(2.4rem,4vw,3.6rem);margin-top:0.5rem;margin-bottom:0;">From the field<br>to systems that<br>programmes can trust.</h1>
-</div>
-```
+<main class="s-page">
 
-::: {.columns}
-::: {.column width="58%"}
-
-My name is **Nichodemus Amollo**. I grew up near Lake Victoria in Homa Bay, Western Kenya, where I learned to pay attention — to the weather, to the lake, to what people say and what they don't. That instinct has served me well in data work.
-
-I started at **KEMRI** managing oncology data. It taught me something that no methods course quite captures: data quality is a moral act. Every row is a person waiting for a diagnosis. That sense of responsibility has traveled with me into every job since.
-
-Over eight years I have worked across the full research lifecycle — designing digital survey tools for communities without internet, building the databases that receive the data, running high-frequency quality systems, leading field teams across three countries, and delivering reports and apps that programme teams can actually use. I currently work with **[Georgetown University gui2de](https://gui2de.georgetown.edu/profiles/nichodemus-amollo/)** on health financial diaries (**300 households over one year**: HFCs, automation, live field apps) and on the **Re:BUiLD cash-plus targeting** Shiny application for IRC partners. I am also a part-time lecturer in Biostatistics at JOOUST and a candidate for an MSc in Biostatistics and Epidemiology.
-
-What makes me useful is that I can operate at both ends. I can sit with a community health worker and explain why data completeness matters. Then walk into a boardroom — or ship a caseworker tool — so findings and models become decisions. That translation — between the field and the institution — is where I work best.
-
-Outside of data: I keep goats and tend a kitchen garden in Homa Bay. There is something honest about agriculture — it keeps development work grounded in reality. I also love football, running, and long conversations over tea that go further than they were supposed to.
-
-:::
-::: {.column width="4%"}
-:::
-::: {.column width="38%"}
-
-```{=html}
-<div style="background:var(--warm);padding:1.8rem;border:1px solid var(--border);margin-bottom:1.2rem;">
-  <p style="font-size:0.65rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);margin-bottom:0.9rem;">Currently</p>
-  <div style="margin-bottom:0.75rem;">
-    <p style="font-size:0.88rem;font-weight:500;color:var(--ink);margin:0 0 0.1rem;">Lead Research Data Manager</p>
-    <p style="font-size:0.78rem;color:var(--muted);margin:0;">Georgetown University gui2de · Remote</p>
-  </div>
-  <div style="margin-bottom:0.75rem;">
-    <p style="font-size:0.88rem;font-weight:500;color:var(--ink);margin:0 0 0.1rem;">MSc Candidate — Biostatistics &amp; Epidemiology</p>
-    <p style="font-size:0.78rem;color:var(--muted);margin:0;">JOOUST · Final thesis stage · Expected graduation Dec 2026</p>
-  </div>
+<header class="s-intro">
   <div>
-    <p style="font-size:0.88rem;font-weight:500;color:var(--ink);margin:0 0 0.1rem;">Part-Time Lecturer — Biostatistics</p>
-    <p style="font-size:0.78rem;color:var(--muted);margin:0;">JOOUST</p>
+    <p class="s-title" role="heading" aria-level="1">About</p>
+    <p class="s-lede">I grew up near Lake Victoria in Homa Bay, western Kenya, where I learned to pay attention: to the weather, to the lake, to what people say and what they don't. That instinct has served me well in data work.</p>
   </div>
-</div>
+  <img class="s-intro__photo" src="../img/new profile pic.jpeg" alt="Portrait of Nichodemus Amollo">
+</header>
 
-<div style="background:#fff;padding:1.8rem;border:1px solid var(--border);margin-bottom:1.2rem;">
-  <p style="font-size:0.65rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);margin-bottom:0.9rem;">At a Glance</p>
-  <div style="font-size:0.83rem;color:var(--text);display:flex;flex-direction:column;gap:0.6rem;">
-    <div>📍 Nairobi, Kenya. Open to remote and on-site.</div>
-    <div>🗣️ English, Kiswahili, Dholuo</div>
-    <div>🏛️ NGO · Corporate · Research · Government</div>
-    <div>🎓 MSc Thesis: NCD financing, Kisumu County</div>
-    <div>📝 First-author paper forthcoming in BMC Public Health</div>
-    <div>📚 Co-authored publications in oncology and epidemiology</div>
-  </div>
-</div>
+<p>At KEMRI I managed oncology data, and it taught me something no methods course quite captures: data quality is a moral act. Every row is a person waiting for a diagnosis. That sense of responsibility has travelled with me into every job since.</p>
 
-<div style="background:#fff;padding:1.8rem;border:1px solid var(--border);">
-  <p style="font-size:0.65rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);margin-bottom:0.9rem;">Outside Work</p>
-  <div style="font-size:0.83rem;color:var(--text);display:flex;flex-direction:column;gap:0.45rem;">
-    <div>🐐 Goat farming — Homa Bay County</div>
-    <div>⚽ Football — watching and playing</div>
-    <div>🏃 Running &amp; fitness</div>
-    <div>📚 Agricultural economics &amp; development</div>
-    <div>🌍 Open governance &amp; civic data</div>
-    <div>🤖 Staying current with AI &amp; systems thinking</div>
-  </div>
-</div>
+<p>Over eight years I have worked across the whole research lifecycle: designing digital survey tools for communities without internet, building the databases that receive the data, running high-frequency quality systems, leading field teams across three countries, and delivering reports and apps that programme teams actually use. Today I am a Data Analyst at <a href="https://gui2de.georgetown.edu/profiles/nichodemus-amollo/">Georgetown University's gui²de</a> in East Africa, where I build the data systems for studies including the Kenya HealthFin Diaries with FSD Kenya and the Re:BUiLD cash-plus targeting app for IRC.</p>
+
+<p>I hold a BSc in Statistics from the University of Nairobi and am completing an MSc in Epidemiology and Biostatistics at JOOUST, where I also lecture part time. My research is on health financing and chronic care in Kenya; you can read it on the <a href="../research/publications.html">research page</a>.</p>
+
+<p>What makes me useful is that I can work at both ends. I can sit with a community health worker and explain why data completeness matters, then walk into a boardroom, or ship a caseworker tool, so that findings and models become decisions.</p>
+
+<section class="s-section" aria-labelledby="gpak-h">
+  <h2 class="s-label" id="gpak-h">GPAK Girls</h2>
+  <p>In 2018, while serving as a volunteer local missionary with CGEC, I travelled from homestead to homestead in western Kenya and kept meeting girls whose problems the policies on paper had supposedly solved. I started paying for what I could out of my own earnings. That became <a href="https://www.gpakgirls.org/team">Girl Pride Africa Kenya (GPAK Girls)</a>.</p>
+  <p>From 2018 to 2020 it ran largely on personal contributions while we built the structure needed to operate legally. LARCOD became our first partner organisation, and GPAK Girls was registered with the NGOs Co-ordination Board of Kenya in April 2020. Based in Homa Bay, it supports adolescent mothers and pregnant girls through psychosocial and mental health support, health referrals, education, livelihoods and family strengthening.</p>
+  <p>A Director and programme team now run the organisation day to day. I contribute part time on data, technology, monitoring and evaluation, leadership and fundraising.</p>
+</section>
+
+<section class="s-section" aria-labelledby="now-h">
+  <h2 class="s-label" id="now-h">Now</h2>
+  <dl class="s-facts">
+    <dt>Work</dt>
+    <dd>Data Analyst, Georgetown University gui²de East Africa</dd>
+    <dt>Study</dt>
+    <dd>MSc Epidemiology and Biostatistics, JOOUST (final thesis stage)</dd>
+    <dt>Teaching</dt>
+    <dd>Part-time lecturer in biostatistics, JOOUST</dd>
+    <dt>Volunteer</dt>
+    <dd>Founder, GPAK Girls</dd>
+    <dt>Based in</dt>
+    <dd>Nairobi, Kenya. Open to remote and hybrid work.</dd>
+    <dt>Languages</dt>
+    <dd>English, Kiswahili, Dholuo</dd>
+  </dl>
+</section>
+
+<section class="s-section" aria-labelledby="highlights-h">
+  <h2 class="s-label" id="highlights-h">A few highlights</h2>
+  <ul class="s-list">
+    <li>Built the end-to-end data system for a 300-household, twelve-month health financial diaries panel at gui²de, pairing automated high-frequency checks with an <a href="https://ra-leaderboard.streamlit.app/">RA performance leaderboard</a> and a live issues app so supervisors fixed field problems during collection rather than at cleaning.</li>
+    <li>Delivered the production application layer for <a href="https://rebuild.shinyapps.io/rebuild-targeting/">Re:BUiLD cash-plus targeting</a>, turning gui²de causal forest models over 6,260 participants into a caseworker-facing recommender.</li>
+    <li>Ran the KEMRI oncology data systems (REDCap registry design, quality control and survival analysis) behind the Kisumu cancer surveillance dashboard launched with county health leadership.</li>
+    <li>Led distributed field teams across Kenya, Uganda and Tanzania, holding quality standards through remote coordination during the COVID-19 pandemic.</li>
+    <li>First-author paper in <a href="https://doi.org/10.1186/s12889-026-26963-8"><em>BMC Public Health</em></a> (2026) on financing constraints and chronic care in rural Kisumu, plus three first-author preprints since.</li>
+  </ul>
+</section>
+
+<section class="s-section" aria-labelledby="values-h">
+  <h2 class="s-label" id="values-h">What drives the work</h2>
+  <p>I believe data has a side. It either serves the people it was collected from, or it serves the institutions that collected it. My goal is always the former.</p>
+  <p>That shows up in how I approach M&amp;E: as a learning system, not a compliance checklist. It shows up in how I train enumerators: I want them to understand why a question is structured the way it is, not just how to tap the screen. And it shows up in how I write reports: I want to change a decision, not demonstrate that I can run a regression.</p>
+</section>
+
+<section class="s-section" aria-labelledby="life-h">
+  <h2 class="s-label" id="life-h">Outside work</h2>
+  <p>I keep goats and tend a kitchen garden in Homa Bay. There is something honest about agriculture; it keeps development work grounded in reality. I also love football, running, hiking and long conversations over tea that go further than they were supposed to.</p>
+  <figure class="s-figure">
+    <img src="../img/we brought local east african goats in the new pen.jpeg" alt="Local East African goats in the new pen in Homa Bay" loading="lazy">
+    <figcaption>The goat pen in Homa Bay. More in <a href="../personal/index.html">Life</a>.</figcaption>
+  </figure>
+</section>
+
+<section class="s-section" aria-labelledby="contact-h">
+  <h2 class="s-label" id="contact-h">Working together</h2>
+  <p>I am strongest owning a programme's data architecture end to end, as an embedded systems lead or a senior collaborator accountable for the whole chain: instruments, study databases, quality governance, analysis and the decision tools on top. I also take on research partnerships on health financing and service delivery evidence.</p>
+  <p>Email <a href="mailto:nichodemuswerre@gmail.com">nichodemuswerre@gmail.com</a>, or see the <a href="../cv/index.html">full CV</a>.</p>
+</section>
+
+</main>
 ```
-
-:::
-:::
-
----
-
-## What drives the work
-
-I believe data has a side — it either serves the people it was collected from, or it serves the institutions that collected it. My goal is always the former.
-
-That shows up in how I approach M&E: not as a compliance checklist, but as a learning system. It shows up in how I train enumerators: I want them to understand why the question is structured the way it is, not just how to tap the screen. And it shows up in how I write reports: I want to change a decision, not demonstrate that I can run a regression.
-
-I bring the same philosophy to AI systems: the systems we build encode decisions. They should be interpretable, fair, and accountable to the people they affect.
-
----
-
-## Research interests
-
-```{=html}
-<div class="research-interest-grid" style="margin:1.2rem 0 3rem;">
-  <article class="research-interest-card">
-    <h4>Health financing and governance</h4>
-    <p>Facility decision space, reimbursement delays, and how devolved systems translate policy into actual care.</p>
-  </article>
-  <article class="research-interest-card">
-    <h4>NCDs in primary care</h4>
-    <p>Hypertension and diabetes management, medicine continuity, and service delivery quality in rural settings.</p>
-  </article>
-  <article class="research-interest-card">
-    <h4>Mixed-methods research</h4>
-    <p>Using records, interviews, and operational data together to explain not just what failed, but why.</p>
-  </article>
-  <article class="research-interest-card">
-    <h4>Implementation and community pathways</h4>
-    <p>Designing practical interventions that fit community realities rather than importing solutions unchanged.</p>
-  </article>
-  <article class="research-interest-card">
-    <h4>AI fairness and systems design</h4>
-    <p>How to build responsible AI systems that account for real-world constraints, equity, and interpretability—especially in low-resource health settings.</p>
-  </article>
-</div>
-```
-
----
-
-## Core Competencies
-
-```{=html}
-<div class="cv-skill-accordion" style="margin-bottom:3rem;">
-
-  <details open>
-    <summary>Research data architecture &amp; engineering</summary>
-    <div class="cv-chip-row">
-      <span>PostgreSQL</span><span>SQL</span><span>Schema &amp; instrument design</span><span>ETL design</span><span>REDCap architecture</span><span>Reproducible pipelines</span><span>Git workflows</span>
-    </div>
-  </details>
-
-  <details>
-    <summary>Data integrity &amp; quality governance</summary>
-    <div class="cv-chip-row">
-      <span>High-frequency check frameworks</span><span>Automated validation</span><span>Multi-language QC</span><span>Duplicate &amp; ID audits</span><span>Audit trails</span>
-    </div>
-  </details>
-
-  <details>
-    <summary>Statistical, causal &amp; machine learning methods</summary>
-    <div class="cv-chip-row">
-      <span>R</span><span>Stata</span><span>Python</span><span>SPSS</span><span>Survival analysis</span><span>Forecasting</span><span>Difference-in-differences</span><span>Causal forest / CATE</span>
-    </div>
-  </details>
-
-  <details>
-    <summary>Health surveillance &amp; field data infrastructure</summary>
-    <div class="cv-chip-row">
-      <span>ODK</span><span>KoboToolbox</span><span>SurveyCTO</span><span>REDCap</span><span>CommCare</span><span>XLSForm</span><span>DHIS2 / KHIS</span><span>Offline-first CAPI</span>
-    </div>
-  </details>
-
-  <details>
-    <summary>Interactive decision support &amp; evidence translation</summary>
-    <div class="cv-chip-row">
-      <span>R Shiny</span><span>Streamlit</span><span>Power BI</span><span>Tableau</span><span>Quarto</span><span>R Markdown</span><span>Executive and policy briefing</span>
-    </div>
-  </details>
-
-</div>
-```
-
----
-
-## A few highlights
-
-- Architected the end-to-end data system for a **300-household, twelve-month** health financial diaries panel at gui2de, pairing automated high-frequency checks with an [RA performance leaderboard](https://ra-leaderboard.streamlit.app/) and a live issue-aggregation app so supervisors resolved field problems mid-collection rather than at cleaning.
-- Delivered the production application layer for [Re:BUiLD cash-plus targeting](https://rebuild.shinyapps.io/rebuild-targeting/), turning gui2de causal forest models over 6,260 participants into a caseworker-facing recommender with cost-aware rationale for every recommendation.
-- Designed the real-time high-frequency check systems in R and Stata that multi-country research operations run on, catching data defects before they propagate into analysis.
-- Led distributed field teams across Kenya, Uganda, and Tanzania, holding quality standards through remote coordination during the COVID-19 pandemic.
-- Owned the KEMRI oncology data systems — REDCap registry architecture, quality control, and survival analysis — behind the Kisumu cancer surveillance dashboard launched with county health leadership.
-- First-author paper forthcoming in *BMC Public Health* on financing constraints and chronic NCD care in rural Kisumu.
-
-[View full CV →](../cv/index.qmd){.btn-solid style="margin-top:1.5rem;display:inline-block;"}
-
----
-
-## How I can join a team {#services}
-
-I am strongest owning a programme's data architecture end to end — as an embedded systems lead or a senior collaborator accountable for the whole chain, not as a dashboard vendor.
-
-| Engagement | What I take responsibility for |
-|---|---|
-| **Research data architecture** | Instrument logic, study database design, REDCap/ODK/Kobo backends, pipelines, and the live field applications on top |
-| **Data integrity governance** | Quality architecture, automated high-frequency checks, validation rules, and audit trails that hold under funder scrutiny |
-| **Study & evaluation leadership** | Design input, analysis plans, causal and biostatistical method, and reproducible reporting partners can re-run |
-| **Decision products** | Shiny, Streamlit, and Power BI tools that carry models and indicators into operational hands with their rationale attached |
-| **Team capability** | R, Stata, survey design, and reproducible workflow standards that leave the team able to run the system without me |
-
-[Get in touch about a role or collaboration →](mailto:nichodemuswerre@gmail.com){.btn-solid style="margin-top:1.5rem;display:inline-block;"}
-
----
-
-## Open to
-
-Research data manager and biostatistics roles in health and development programmes; partnerships on health financing and service delivery evidence; and capacity building that leaves teams with systems they can run without me.
-
-[Get in touch →](mailto:nichodemuswerre@gmail.com){.btn-solid}

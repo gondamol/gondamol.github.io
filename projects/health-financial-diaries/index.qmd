@@ -39,7 +39,7 @@ format:
 
 ## Role
 
-**Lead research data systems** for Georgetown University gui2de Health Financial Diaries work in East Africa: architecture, high-frequency checks, automation, and field-facing performance products.
+**Data Analyst** on Georgetown University gui2de's Health Financial Diaries work in East Africa, building the data architecture, high-frequency checks, automation, and field-facing performance products.
 
 This page describes systems and operational products that can be shown publicly. Raw diary records, household identifiers, and partner-restricted extracts stay private.
 

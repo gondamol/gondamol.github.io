@@ -1,0 +1,458 @@
+/*-- scss:rules --*/
+/* ════════════════════════════════════════════
+   SIMPLE LAYER (Oct 2026)
+   One reading column, type-led hierarchy, one accent.
+   Used by the homepage, Research and About pages via `.s-page`.
+   Reuses the colour tokens from custom.scss so dark mode follows.
+════════════════════════════════════════════ */
+
+.s-page {
+  --s-measure: 46rem;
+  max-width: var(--s-measure);
+  margin: 0 auto;
+  padding: 4.5rem 0 5rem;
+  color: var(--text);
+  font-family: 'DM Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1.02rem;
+  line-height: 1.7;
+}
+
+.s-page p { margin: 0 0 1rem; }
+
+.s-page a {
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: var(--border);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+  transition: text-decoration-color 0.15s ease, color 0.15s ease;
+}
+
+.s-page a:hover,
+.s-page a:focus-visible {
+  color: var(--terra);
+  text-decoration-color: currentColor;
+}
+
+/* ── Intro ─────────────────────────────── */
+.s-intro {
+  display: grid;
+  grid-template-columns: 1fr 9.5rem;
+  gap: 2.5rem;
+  align-items: start;
+  margin-bottom: 1rem;
+}
+
+.s-intro__name {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 400;
+  font-size: clamp(2.2rem, 5vw, 3rem);
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  margin: 0 0 0.6rem;
+}
+
+.s-intro__role {
+  font-size: 0.95rem;
+  color: var(--muted);
+  margin: 0 0 1.6rem !important;
+}
+
+.s-intro__photo {
+  width: 9.5rem;
+  height: 9.5rem;
+  object-fit: cover;
+  object-position: center 20%;
+  border-radius: 50%;
+  display: block;
+  margin-top: 0.4rem;
+}
+
+.s-lede {
+  font-size: 1.12rem;
+  color: var(--ink);
+}
+
+.s-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 1.25rem;
+  padding: 0;
+  margin: 1.4rem 0 0;
+  list-style: none;
+  font-size: 0.92rem;
+}
+
+.s-links li { margin: 0; }
+
+/* ── Sections ──────────────────────────── */
+.s-section {
+  margin-top: 3.75rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.s-label {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 1.5rem !important;
+}
+
+.s-page .s-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 400;
+  font-size: clamp(2.2rem, 5vw, 3rem);
+  line-height: 1.1;
+  color: var(--ink);
+  margin: 0 0 1.25rem;
+}
+
+.s-page h2.s-h2 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.3;
+  color: var(--ink);
+  margin: 0 0 1rem;
+  border: 0;
+  padding: 0;
+}
+
+.s-more {
+  margin-top: 1.5rem !important;
+  font-size: 0.92rem;
+}
+
+.s-muted { color: var(--muted); }
+
+/* ── News: dated list ──────────────────── */
+.s-news {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.s-news li {
+  display: grid;
+  grid-template-columns: 5.5rem 1fr;
+  gap: 1rem;
+  padding: 0.55rem 0;
+  margin: 0;
+}
+
+.s-news time {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.82rem;
+  color: var(--muted);
+  padding-top: 0.2rem;
+  white-space: nowrap;
+}
+
+/* ── Publications ──────────────────────── */
+.s-pubs {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.s-pub {
+  padding: 0 0 1.6rem;
+  margin: 0 0 1.6rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.s-pub:last-child {
+  border-bottom: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.s-pub__title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.14rem;
+  line-height: 1.4;
+  color: var(--ink);
+  margin: 0 0 0.4rem !important;
+}
+
+.s-pub__title a { text-decoration: none; }
+
+.s-pub__authors,
+.s-pub__venue {
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: var(--muted);
+  margin: 0 0 0.15rem !important;
+}
+
+.s-pub__authors strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.s-tag {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  line-height: 1;
+  padding: 0.28rem 0.5rem;
+  margin-left: 0.35rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--muted);
+  vertical-align: 0.1em;
+  white-space: nowrap;
+}
+
+.s-tag--accent {
+  border-color: var(--terra);
+  color: var(--terra);
+}
+
+.s-pub__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem 1.1rem;
+  align-items: baseline;
+  margin-top: 0.6rem;
+  font-size: 0.88rem;
+}
+
+.s-pub details {
+  margin-top: 0.6rem;
+  font-size: 0.95rem;
+}
+
+.s-pub summary {
+  cursor: pointer;
+  font-size: 0.88rem;
+  color: var(--ink);
+  width: fit-content;
+}
+
+.s-pub summary:hover { color: var(--terra); }
+
+.s-pub details p {
+  margin: 0.6rem 0 0 !important;
+  padding-left: 1rem;
+  border-left: 2px solid var(--border);
+  color: var(--text);
+}
+
+/* ── Work list with thumbnails ─────────── */
+.s-work {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.s-work li { margin: 0 0 1.75rem; }
+
+.s-work a.s-work__row {
+  display: grid;
+  grid-template-columns: 10rem 1fr;
+  gap: 1.5rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.s-work__thumb {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  object-position: top center;
+  border: 1px solid var(--border);
+  background: var(--warm);
+  display: block;
+}
+
+.s-work__title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.14rem;
+  line-height: 1.35;
+  color: var(--ink);
+  margin: 0 0 0.3rem !important;
+}
+
+.s-work a.s-work__row:hover .s-work__title,
+.s-work a.s-work__row:focus-visible .s-work__title { color: var(--terra); }
+
+.s-work__meta {
+  font-size: 0.82rem;
+  color: var(--muted);
+  margin: 0 0 0.35rem !important;
+}
+
+.s-work__desc {
+  font-size: 0.95rem;
+  margin: 0 !important;
+}
+
+/* ── Simple link list (writing, themes) ── */
+.s-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.s-list li {
+  padding: 0.7rem 0;
+  margin: 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.s-list li:first-child { padding-top: 0; }
+.s-list li:last-child { border-bottom: 0; }
+
+.s-list__meta {
+  display: block;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.s-themes {
+  display: grid;
+  gap: 1.25rem;
+  margin: 0;
+}
+
+.s-themes h3 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin: 0 0 0.2rem;
+}
+
+.s-themes p {
+  margin: 0;
+  font-size: 0.97rem;
+}
+
+/* ── Figure ────────────────────────────── */
+.s-figure { margin: 2rem 0 0; }
+
+.s-figure img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+}
+
+.s-figure figcaption {
+  text-align: left;
+  margin-top: 0.5rem;
+}
+
+/* ── Facts list (About sidebar replacement) ── */
+.s-facts {
+  display: grid;
+  grid-template-columns: 9rem 1fr;
+  gap: 0.5rem 1.5rem;
+  margin: 0;
+  font-size: 0.97rem;
+}
+
+.s-facts dt {
+  font-weight: 400;
+  color: var(--muted);
+}
+
+.s-facts dd { margin: 0; }
+
+/* ── Phone ─────────────────────────────── */
+@media (max-width: 767.98px) {
+  .s-page {
+    padding: 2.5rem 0 3.5rem;
+    font-size: 1rem;
+  }
+
+  .s-intro {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .s-intro__photo {
+    order: -1;
+    width: 6rem;
+    height: 6rem;
+    margin: 0;
+  }
+
+  .s-section { margin-top: 2.75rem; }
+
+  .s-news li {
+    grid-template-columns: 1fr;
+    gap: 0.1rem;
+  }
+
+  .s-work a.s-work__row {
+    grid-template-columns: 6.5rem 1fr;
+    gap: 1rem;
+  }
+
+  .s-facts {
+    grid-template-columns: 1fr;
+    gap: 0.1rem;
+  }
+
+  .s-facts dd { margin-bottom: 0.6rem; }
+}
+
+/* Old theme rules give every h2 a bottom border; labels sit on the section rule only */
+.s-page h2.s-label {
+  border: 0;
+  padding: 0;
+  font-family: 'DM Sans', sans-serif;
+  line-height: 1.4;
+}
+
+/* Footer text links (ORCID, CV) were dark-on-dark */
+.nav-footer .footer-items .nav-link,
+.nav-footer .footer-items .nav-link p {
+  color: rgba(255, 255, 255, 0.72) !important;
+  margin: 0;
+}
+
+.nav-footer .footer-items .nav-link:hover,
+.nav-footer .footer-items .nav-link:hover p {
+  color: #ffffff !important;
+}
+
+/* Playfair defaults to old-style figures, which make "Type 2" and "2022" jump in titles */
+.s-page .s-intro__name,
+.s-page .s-title,
+.s-page .s-pub__title,
+.s-page .s-work__title {
+  font-variant-numeric: lining-nums;
+}
+
+/* Phone header: the full name plus the labelled toggle wrapped to two rows */
+@media (max-width: 767.98px) {
+  .theme-toggle {
+    min-height: 36px;
+    padding: 0.25rem;
+    gap: 0;
+  }
+
+  .theme-toggle__label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+
+  .navbar-brand {
+    letter-spacing: 0.1em;
+    font-size: 0.82rem;
+  }
+}

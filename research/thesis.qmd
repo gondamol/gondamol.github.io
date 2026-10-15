@@ -17,11 +17,10 @@ format:
   <section class="thesis-hero">
     <span class="section-eyebrow">MSc Thesis</span>
     <h1 class="thesis-title">Financial Determinants of Effective Hypertension and Diabetes Care in Rural Primary Health Facilities in Kisumu, Kenya: A Mixed Methods Study</h1>
-    <p class="thesis-status">Forthcoming in <em>BMC Public Health</em> · Final thesis stage</p>
+    <p class="thesis-status">Published in <em>BMC Public Health</em> (2026) · Final thesis stage</p>
     <p class="thesis-meta">Nichodemus Werre Amollo · Jaramogi Oginga Odinga University of Science and Technology · Kisumu County, Kenya</p>
     <div class="thesis-actions">
-      <a href="publications_files/01_NCDFin_ManuscriptV4.pdf" class="btn-solid" target="_blank">View Manuscript</a>
-      <a href="publications_files/01_NCDFin_ManuscriptV4.pdf" class="btn-ghost" download>Download PDF</a>
+      <a href="https://doi.org/10.1186/s12889-026-26963-8" class="btn-solid" target="_blank">Read the Article</a>
       <a href="publications.html" class="btn-ghost">Research Page</a>
       <a href="thesis-presentation.html" class="btn-ghost">Presentation</a>
     </div>
@@ -34,7 +33,7 @@ format:
     </article>
     <article class="thesis-kpi-card">
       <span class="thesis-kpi-num">BMC</span>
-      <span class="thesis-kpi-label">Forthcoming journal publication</span>
+      <span class="thesis-kpi-label">Published 2026, open access</span>
     </article>
     <article class="thesis-kpi-card">
       <span class="thesis-kpi-num">85.7%</span>
@@ -163,13 +162,12 @@ format:
 ```{=html}
 <div class="thesis-manuscript-card">
   <div class="thesis-actions">
-    <a href="publications_files/01_NCDFin_ManuscriptV4.pdf" class="btn-solid" target="_blank">Open Manuscript</a>
-    <a href="publications_files/01_NCDFin_ManuscriptV4.pdf" class="btn-ghost" download>Download Manuscript</a>
+    <a href="https://doi.org/10.1186/s12889-026-26963-8" class="btn-solid" target="_blank">Open Article</a>
   </div>
-  <p class="thesis-manuscript-note">Forthcoming in <em>BMC Public Health</em>. The PDF linked here is the current author manuscript used for thesis and presentation purposes.</p>
+  <p class="thesis-manuscript-note">Published open access in <em>BMC Public Health</em>, volume 26, article 1275 (2026).</p>
 </div>
 ```
 
 Suggested citation:
 
-Amollo N W, Ogol J, Museve E, Owenga J A, Aduda D O, Onguru D. Financial Determinants of Effective Hypertension and Diabetes Care in Rural Primary Health Facilities in Kisumu, Kenya: A Mixed Methods Study. Forthcoming in *BMC Public Health*. 2026.
+Amollo N W, Ogol J, Museve E, Owenga J A, Aduda D O, Onguru D. Financial Determinants of Effective Hypertension and Diabetes Care in Rural Primary Health Facilities in Kisumu, Kenya: A Mixed Methods Study. *BMC Public Health*. 2026;26:1275. doi:[10.1186/s12889-026-26963-8](https://doi.org/10.1186/s12889-026-26963-8)

@@ -46,9 +46,9 @@ project:
 
 website:
   page-navigation: false
-  title: "Nic | Data"
+  title: "Nichodemus Amollo"
   site-url: "https://gondamol.github.io"
-  description: "Research data architecture for health and development programmes — study databases, quality governance, and decision products. Nairobi, Kenya."
+  description: "Statistician and epidemiologist in Nairobi, Kenya. Research data systems for health and development programmes, and research on health financing and chronic care."
   favicon: "img/profile.jpeg"
 
   navbar:
@@ -56,22 +56,18 @@ website:
     foreground: light
     search: false
     pinned: true
-    title: "Nic | Data"
+    title: "Nichodemus Amollo"
     left:
-      - text: "About"
-        href: about/index.qmd
-      - text: "Projects"
-        href: projects/index.qmd
       - text: "Research"
         href: research/publications.qmd
-      - text: "Life"
-        href: personal/index.qmd
+      - text: "Projects"
+        href: projects/index.qmd
+      - text: "Writing"
+        href: blogs/index.qmd
+      - text: "About"
+        href: about/index.qmd
       - text: "CV"
         href: cv/index.qmd
-      - text: "Blog"
-        href: blogs/index.qmd
-      - text: "Resources"
-        href: resources/index.qmd
     right:
       - icon: github
         href: https://github.com/gondamol
@@ -79,18 +75,20 @@ website:
       - icon: linkedin
         href: https://www.linkedin.com/in/nichodemusamollo/
         aria-label: LinkedIn
-      - text: "Get in Touch"
+      - text: "Contact"
         href: "mailto:nichodemuswerre@gmail.com"
 
   page-footer:
     background: dark
-    left: "<span class='footer-title'>Nichodemus Amollo</span><span class='footer-meta'>Data &amp; Research Systems Architecture · Health and Development Programmes</span>"
+    left: "<span class='footer-title'>Nichodemus Amollo</span><span class='footer-meta'>Statistician and epidemiologist · Research data systems and health financing</span>"
     center: "<a href='tel:+254725737867' class='footer-phone'>+254 725 737 867</a><span class='footer-meta'>Nairobi, Kenya · Open to remote and hybrid work</span>"
     right:
       - icon: github
         href: https://github.com/gondamol
       - icon: linkedin
         href: https://www.linkedin.com/in/nichodemusamollo/
+      - text: "ORCID"
+        href: https://orcid.org/0009-0008-1501-601X
       - text: "CV"
         href: cv/index.html
 
@@ -103,7 +101,7 @@ execute:
 format:
   html:
     theme:
-      light: [flatly, custom.scss, styles.scss]
+      light: [flatly, custom.scss, styles.scss, _simple.scss]
     toc: false
     code-fold: true
     code-tools: true

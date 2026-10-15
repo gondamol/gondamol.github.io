@@ -110,7 +110,7 @@ format:
              onerror="this.remove()">
       </div>
       <div class="proj-body">
-        <p class="proj-domain" style="color:#7fbf7f;">MSc research · Forthcoming BMC Public Health</p>
+        <p class="proj-domain" style="color:#7fbf7f;">MSc research · BMC Public Health 2026</p>
         <h3 class="proj-title">Financial determinants of NCD care in rural primary facilities</h3>
         <p class="proj-desc">Mixed-methods study across seven public primary care facilities in Seme Sub-County: facility decision space, stockouts, and financing architecture for hypertension and diabetes care.</p>
 

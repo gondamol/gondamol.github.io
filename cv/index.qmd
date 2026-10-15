@@ -223,7 +223,7 @@ format:
       <div>
         <p class="cvx-kicker">Curriculum Vitae</p>
         <h1 class="cvx-name">Nichodemus Amollo</h1>
-        <p class="cvx-roleline">Data &amp; Research Systems Architect · Health and Development Programmes</p>
+        <p class="cvx-roleline">Data Analyst · Health and Development Programmes</p>
         <p class="cvx-claim">
           I own the research data architecture that programmes depend on to make decisions they can defend — study databases, quality governance, analytic pipelines, and the decision products built on top.
         </p>
@@ -256,7 +256,7 @@ format:
       <article class="cvx-role">
         <div class="cvx-role-head">
           <span class="cvx-yr">2025 — Present</span>
-          <h3 class="cvx-title">Lead Biostatistician and Research Data Manager</h3>
+          <h3 class="cvx-title">Data Analyst</h3>
           <p class="cvx-org">Georgetown University gui2de · East Africa</p>
         </div>
         <p class="cvx-lead">Own the research data architecture and statistical operations for the health systems and implementation portfolio, from instrument design through the decision products partners use.</p>
@@ -368,12 +368,15 @@ format:
       </div>
 
       <div class="cvx-railsec">
-        <h2 class="cvx-rail-h">Selected publications</h2>
+        <h2 class="cvx-rail-h">Publications and preprints</h2>
         <ol class="cvx-pubs">
-          <li>Amollo N W, Ogol J, Museve E, Owenga J A, Aduda D O, Onguru D (2025). Financial determinants of effective hypertension and diabetes care in rural primary health facilities in Kisumu County.</li>
-          <li>Mangale D I, Adhiambo H, Adagi P A, Nyandieka E, Abente B, Achieng S, Amollo N W, Odeny T A (2025). Characteristics and mortality risk among esophageal cancer patients with varied HIV status seeking care in western Kenya.</li>
-          <li>Odeny T A, Adhiambo H F, Mangale D I, Were N A, Nyandieka E, Adagi P A, Amollo N W, Atieno D (2025). Survival disparities in cervical cancer patients with and without HIV at JOOTRH.</li>
-          <li>Ouma O J, Omondi D, Akinyi I, Amollo N W, Ogutu S, Obinge E, van Olmen J (2025). Addressing priority gaps in access and quality of non communicable disease services in primary care settings in rural Kenya.</li>
+          <li>Amollo N W, Ogol J, Museve E, Owenga J A, Aduda D O, Onguru D (2026). Financial determinants of effective hypertension and diabetes care in rural primary health facilities in Kisumu, Kenya. <em>BMC Public Health</em> 26:1275.</li>
+          <li>Amollo N W, Ogol J (2026). Insurance coverage, healthcare use, and outpatient payment among adults with disability in Kenya before the SHA transition. <em>medRxiv</em> preprint.</li>
+          <li>Amollo N, Ogol J, Owenga J A (2026). Type 2 diabetes remission in sub-Saharan Africa: why pragmatic lifestyle trials are a health system priority. <em>Qeios</em> preprint.</li>
+          <li>Amollo N W, Hyera H F, Ouma O J (2026). Health insurance coverage, affordability barriers, and treatment gaps among Kenyan adults with diagnosed hypertension or diabetes before the SHA transition. <em>medRxiv</em> preprint.</li>
+          <li>Mangale D I, Adhiambo H, Adagi P A, Nyandieka E, Abente B, Achieng S, Amollo N W, Odeny T A (2025). Characteristics and mortality risk among esophageal cancer patients with varied HIV status seeking care in western Kenya. <em>J Clin Oncol</em> 43(16_suppl), abstract.</li>
+          <li>Odeny T A, Adhiambo H F, Mangale D I, Were N A, Nyandieka E, Adagi P A, Amollo N W, Atieno D (2025). Survival disparities in cervical cancer patients with and without HIV at JOOTRH. <em>J Clin Oncol</em> 43(16_suppl), abstract.</li>
+          <li>Ouma O J, Omondi D, Museve E, Akinyi I, Amollo N W, Ogutu S, Obinge E, Owenga J, Ayodo G, Bogers J, van Olmen J (2026). Addressing priority gaps in access and quality of NCD services in primary care settings in rural Kenya. <em>BMC Primary Care</em> 27:192 (2026).</li>
         </ol>
       </div>
 

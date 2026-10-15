@@ -78,7 +78,7 @@ listing:
         <div class="bx-pick-content">
           <span class="bx-tag bx-tag--research">Research</span>
           <h3>When Clinics Can Diagnose but Cannot Buy Medicines</h3>
-          <p>This essay translates a forthcoming BMC Public Health paper into a sharper public argument about budgets, approvals, and why chronic care fails before treatment starts.</p>
+          <p>This essay translates my 2026 BMC Public Health paper into a sharper public argument about budgets, approvals, and why chronic care fails before treatment starts.</p>
           <span class="bx-pick-meta">Flagship · 12 min read</span>
         </div>
       </a>

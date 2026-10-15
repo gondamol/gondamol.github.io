@@ -7,7 +7,7 @@ categories: [Public Health, Health Financing, Health Systems, NCDs, Kenya]
 image: "/img/blog-health.svg"
 ---
 
-This essay draws on my forthcoming paper in *BMC Public Health* on the financial determinants of hypertension and diabetes care in rural primary health facilities in Kisumu County. The paper is built on formal analysis. The problem it describes, however, is easy to state in plain language: a clinic can know exactly what a patient needs and still be unable to act in time.
+This essay draws on my [paper in *BMC Public Health*](https://doi.org/10.1186/s12889-026-26963-8) (2026) on the financial determinants of hypertension and diabetes care in rural primary health facilities in Kisumu County. The paper is built on formal analysis. The problem it describes, however, is easy to state in plain language: a clinic can know exactly what a patient needs and still be unable to act in time.
 
 Clinicians can diagnose hypertension. They can prescribe insulin. They can explain follow-up and complications. But if the facility cannot spend quickly when medicines run out, chronic care breaks down long before the science does.
 
